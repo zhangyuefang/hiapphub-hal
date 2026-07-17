@@ -1,0 +1,17 @@
+[package]
+name = "hap-mod-webserver"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+hap-common = { path = "../common" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+axum = "0.8"
+tokio = { version = "1", features = ["rt-multi-thread", "net", "sync", "time"] }
+hyper = "1"
+tower-http = { version = "0.6", features = ["cors"] }
+uuid = { version = "1", features = ["v4"] }

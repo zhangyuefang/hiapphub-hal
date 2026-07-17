@@ -2368,38 +2368,38 @@
     {
       "name": "PAGE_A4_WIDTH",
       "value": 595,
-      "value_type": "number",
       "descs": {
         "zh-CN": "A4纸宽度(pt)",
         "en-US": "A4 paper width in pt"
-      }
+      },
+      "type": "number"
     },
     {
       "name": "PAGE_A4_HEIGHT",
       "value": 842,
-      "value_type": "number",
       "descs": {
         "zh-CN": "A4纸高度(pt)",
         "en-US": "A4 paper height in pt"
-      }
+      },
+      "type": "number"
     },
     {
       "name": "PAGE_LETTER_WIDTH",
       "value": 612,
-      "value_type": "number",
       "descs": {
         "zh-CN": "Letter纸宽度(pt)",
         "en-US": "Letter paper width in pt"
-      }
+      },
+      "type": "number"
     },
     {
       "name": "PAGE_LETTER_HEIGHT",
       "value": 792,
-      "value_type": "number",
       "descs": {
         "zh-CN": "Letter纸高度(pt)",
         "en-US": "Letter paper height in pt"
-      }
+      },
+      "type": "number"
     }
   ]
 }

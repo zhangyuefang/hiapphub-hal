@@ -1232,65 +1232,65 @@
     {
       "name": "AES_128",
       "value": "aes-128-cbc",
-      "value_type": "string",
       "descs": {
         "zh-CN": "AES-128-CBC算法标识",
         "en-US": "AES-128-CBC algorithm identifier"
-      }
+      },
+      "type": "string"
     },
     {
       "name": "AES_256",
       "value": "aes-256-cbc",
-      "value_type": "string",
       "descs": {
         "zh-CN": "AES-256-CBC算法标识",
         "en-US": "AES-256-CBC algorithm identifier"
-      }
+      },
+      "type": "string"
     },
     {
       "name": "RSA_2048",
       "value": 2048,
-      "value_type": "number",
       "descs": {
         "zh-CN": "RSA 2048位密钥长度",
         "en-US": "RSA 2048-bit key length"
-      }
+      },
+      "type": "number"
     },
     {
       "name": "RSA_4096",
       "value": 4096,
-      "value_type": "number",
       "descs": {
         "zh-CN": "RSA 4096位密钥长度",
         "en-US": "RSA 4096-bit key length"
-      }
+      },
+      "type": "number"
     },
     {
       "name": "SHA256",
       "value": "sha256",
-      "value_type": "string",
       "descs": {
         "zh-CN": "SHA-256哈希算法",
         "en-US": "SHA-256 hash algorithm"
-      }
+      },
+      "type": "string"
     },
     {
       "name": "SHA512",
       "value": "sha512",
-      "value_type": "string",
       "descs": {
         "zh-CN": "SHA-512哈希算法",
         "en-US": "SHA-512 hash algorithm"
-      }
+      },
+      "type": "string"
     },
     {
       "name": "MD5",
       "value": "md5",
-      "value_type": "string",
       "descs": {
         "zh-CN": "MD5哈希算法",
         "en-US": "MD5 hash algorithm"
-      }
+      },
+      "type": "string"
     }
   ],
   "types": [

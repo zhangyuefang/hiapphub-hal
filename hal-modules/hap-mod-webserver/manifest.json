@@ -1,0 +1,852 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000039",
+  "name": "webserver",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🌐",
+  "min_shell_version": "0.1.0",
+  "category": "network",
+  "descriptions": {
+    "zh-CN": "Web服务模块",
+    "en-US": "Web server module"
+  },
+  "permission": "network",
+  "functions": [
+    {
+      "name": "listen",
+      "symbol": "hap_webserver_listen",
+      "params": [
+        {
+          "name": "port",
+          "type": "number",
+          "optional": true,
+          "default_value": "3000",
+          "descs": {
+            "zh-CN": "监听端口号",
+            "en-US": "Port to listen on"
+          }
+        },
+        {
+          "name": "host",
+          "type": "string",
+          "optional": true,
+          "default_value": "127.0.0.1",
+          "descs": {
+            "zh-CN": "绑定主机地址",
+            "en-US": "Host to bind"
+          }
+        },
+        {
+          "name": "cors",
+          "type": "boolean",
+          "optional": true,
+          "default_value": "false",
+          "descs": {
+            "zh-CN": "是否启用CORS跨域",
+            "en-US": "Enable CORS"
+          }
+        }
+      ],
+      "returns": {
+        "type": "ServerHandle",
+        "descs": {
+          "zh-CN": "服务器句柄",
+          "en-US": "Server handle"
+        }
+      },
+      "bridge_path": "webserver.listen",
+      "descriptions": {
+        "zh-CN": "启动 HTTP 服务器并开始监听请求",
+        "en-US": "Start HTTP server and begin listening"
+      },
+      "group": "server",
+      "async": true,
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ]
+    },
+    {
+      "name": "stop",
+      "symbol": "hap_webserver_stop",
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "boolean",
+        "descs": {
+          "zh-CN": "是否成功停止",
+          "en-US": "Whether stopped"
+        }
+      },
+      "bridge_path": "webserver.stop",
+      "descriptions": {
+        "zh-CN": "停止指定的 HTTP 服务器",
+        "en-US": "Stop the specified HTTP server"
+      },
+      "group": "server",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ]
+    },
+    {
+      "name": "list_servers",
+      "symbol": "hap_webserver_list_servers",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "活跃服务器列表",
+          "en-US": "Active server list"
+        }
+      },
+      "bridge_path": "webserver.listServers",
+      "descriptions": {
+        "zh-CN": "列出所有运行中的服务器实例",
+        "en-US": "List all running server instances"
+      },
+      "group": "server",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ]
+    },
+    {
+      "name": "server_info",
+      "symbol": "hap_webserver_server_info",
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "ServerInfo",
+        "descs": {
+          "zh-CN": "服务器信息",
+          "en-US": "Server info"
+        }
+      },
+      "bridge_path": "webserver.serverInfo",
+      "descriptions": {
+        "zh-CN": "获取指定服务器的运行状态信息",
+        "en-US": "Get server runtime info"
+      },
+      "group": "server",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ]
+    },
+    {
+      "name": "pending_count",
+      "symbol": "hap_webserver_pending_count",
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "descs": {
+          "zh-CN": "待处理请求数",
+          "en-US": "Pending request count"
+        }
+      },
+      "bridge_path": "webserver.pendingCount",
+      "descriptions": {
+        "zh-CN": "获取当前待处理的请求数量",
+        "en-US": "Get count of pending requests"
+      },
+      "group": "server",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ]
+    },
+    {
+      "name": "get_requests",
+      "symbol": "hap_webserver_get_requests",
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "待处理请求列表",
+          "en-US": "Pending request list"
+        }
+      },
+      "bridge_path": "webserver.getRequests",
+      "descriptions": {
+        "zh-CN": "获取所有待处理请求的详细信息（轮询模式）",
+        "en-US": "Get all pending requests info (polling)"
+      },
+      "group": "handler",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ]
+    },
+    {
+      "name": "respond",
+      "symbol": "hap_webserver_respond",
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        },
+        {
+          "name": "request_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "请求ID",
+            "en-US": "Request ID"
+          }
+        },
+        {
+          "name": "status",
+          "type": "number",
+          "optional": true,
+          "default_value": "200",
+          "descs": {
+            "zh-CN": "HTTP状态码",
+            "en-US": "HTTP status code"
+          }
+        },
+        {
+          "name": "headers",
+          "type": "object",
+          "optional": true,
+          "descs": {
+            "zh-CN": "响应头键值对",
+            "en-US": "Response headers"
+          }
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "响应体内容",
+            "en-US": "Response body"
+          }
+        }
+      ],
+      "returns": {
+        "type": "boolean",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        }
+      },
+      "bridge_path": "webserver.respond",
+      "descriptions": {
+        "zh-CN": "向挂起的请求发送 HTTP 响应",
+        "en-US": "Send HTTP response to pending request"
+      },
+      "group": "handler",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ]
+    },
+    {
+      "name": "respond_json",
+      "symbol": "hap_webserver_respond_json",
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        },
+        {
+          "name": "request_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "请求ID",
+            "en-US": "Request ID"
+          }
+        },
+        {
+          "name": "status",
+          "type": "number",
+          "optional": true,
+          "default_value": "200",
+          "descs": {
+            "zh-CN": "HTTP状态码",
+            "en-US": "HTTP status code"
+          }
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "descs": {
+            "zh-CN": "JSON数据对象",
+            "en-US": "JSON data object"
+          }
+        }
+      ],
+      "returns": {
+        "type": "boolean",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        }
+      },
+      "bridge_path": "webserver.respondJson",
+      "descriptions": {
+        "zh-CN": "以 JSON 格式响应请求（自动设置 Content-Type）",
+        "en-US": "Respond with JSON (auto Content-Type)"
+      },
+      "group": "handler",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ]
+    },
+    {
+      "name": "respond_file",
+      "symbol": "hap_webserver_respond_file",
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        },
+        {
+          "name": "request_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "请求ID",
+            "en-US": "Request ID"
+          }
+        },
+        {
+          "name": "file_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        },
+        {
+          "name": "content_type",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "MIME类型（自动推断）",
+            "en-US": "MIME type (auto-detected)"
+          }
+        }
+      ],
+      "returns": {
+        "type": "boolean",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        }
+      },
+      "bridge_path": "webserver.respondFile",
+      "descriptions": {
+        "zh-CN": "以文件内容响应请求（自动推断 MIME 类型）",
+        "en-US": "Respond with file content (auto MIME)"
+      },
+      "group": "handler",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ]
+    },
+    {
+      "name": "redirect",
+      "symbol": "hap_webserver_redirect",
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        },
+        {
+          "name": "request_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "请求ID",
+            "en-US": "Request ID"
+          }
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "重定向目标URL",
+            "en-US": "Redirect target URL"
+          }
+        },
+        {
+          "name": "status",
+          "type": "number",
+          "optional": true,
+          "default_value": "302",
+          "descs": {
+            "zh-CN": "重定向状态码",
+            "en-US": "Redirect status code"
+          }
+        }
+      ],
+      "returns": {
+        "type": "boolean",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        }
+      },
+      "bridge_path": "webserver.redirect",
+      "descriptions": {
+        "zh-CN": "发送 HTTP 重定向响应",
+        "en-US": "Send HTTP redirect response"
+      },
+      "group": "handler",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ]
+    },
+    {
+      "name": "set_timeout",
+      "symbol": "hap_webserver_set_timeout",
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        },
+        {
+          "name": "timeout_ms",
+          "type": "number",
+          "descs": {
+            "zh-CN": "超时时间（毫秒）",
+            "en-US": "Timeout in milliseconds"
+          }
+        }
+      ],
+      "returns": {
+        "type": "boolean",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        }
+      },
+      "bridge_path": "webserver.setTimeout",
+      "descriptions": {
+        "zh-CN": "设置请求响应超时时间",
+        "en-US": "Set request response timeout"
+      },
+      "group": "config",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ]
+    },
+    {
+      "name": "add_static",
+      "symbol": "hap_webserver_add_static",
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        },
+        {
+          "name": "dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "静态文件目录路径",
+            "en-US": "Static files directory"
+          }
+        }
+      ],
+      "returns": {
+        "type": "boolean",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        }
+      },
+      "bridge_path": "webserver.addStatic",
+      "descriptions": {
+        "zh-CN": "为服务器设置静态文件服务目录",
+        "en-US": "Set static file serving directory"
+      },
+      "group": "config",
+      "platform": [
+        "windows",
+        "macos",
+        "linux"
+      ]
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供 HTTP Web 服务器能力，基于 Axum 框架。支持启动/停止服务器、请求轮询与响应、JSON响应、文件响应、重定向、CORS、静态文件服务、超时配置等完整功能。",
+    "en-US": "HTTP web server powered by Axum. Supports server lifecycle, request polling & response, JSON/file responses, redirects, CORS, static serving, and timeout config."
+  },
+  "types": [
+    {
+      "name": "ServerHandle",
+      "descriptions": {
+        "zh-CN": "服务器句柄",
+        "en-US": "Server handle"
+      },
+      "fields": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器唯一ID",
+            "en-US": "Unique server ID"
+          }
+        },
+        {
+          "name": "port",
+          "type": "number",
+          "descs": {
+            "zh-CN": "实际监听端口",
+            "en-US": "Actual listening port"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ServerInfo",
+      "descriptions": {
+        "zh-CN": "服务器运行信息",
+        "en-US": "Server runtime info"
+      },
+      "fields": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        },
+        {
+          "name": "host",
+          "type": "string",
+          "descs": {
+            "zh-CN": "绑定主机",
+            "en-US": "Bound host"
+          }
+        },
+        {
+          "name": "port",
+          "type": "number",
+          "descs": {
+            "zh-CN": "端口号",
+            "en-US": "Port"
+          }
+        },
+        {
+          "name": "static_dir",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "静态目录",
+            "en-US": "Static dir"
+          }
+        },
+        {
+          "name": "pending_requests",
+          "type": "number",
+          "descs": {
+            "zh-CN": "待处理请求数",
+            "en-US": "Pending requests"
+          }
+        },
+        {
+          "name": "total_requests",
+          "type": "number",
+          "descs": {
+            "zh-CN": "累计请求数",
+            "en-US": "Total requests"
+          }
+        },
+        {
+          "name": "timeout_ms",
+          "type": "number",
+          "descs": {
+            "zh-CN": "超时时间(ms)",
+            "en-US": "Timeout(ms)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "RequestInfo",
+      "descriptions": {
+        "zh-CN": "请求信息",
+        "en-US": "Request info"
+      },
+      "fields": [
+        {
+          "name": "request_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "请求ID",
+            "en-US": "Request ID"
+          }
+        },
+        {
+          "name": "method",
+          "type": "string",
+          "descs": {
+            "zh-CN": "HTTP方法",
+            "en-US": "HTTP method"
+          }
+        },
+        {
+          "name": "uri",
+          "type": "string",
+          "descs": {
+            "zh-CN": "请求路径",
+            "en-US": "Request URI"
+          }
+        },
+        {
+          "name": "headers",
+          "type": "object",
+          "descs": {
+            "zh-CN": "请求头",
+            "en-US": "Headers"
+          }
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "descs": {
+            "zh-CN": "请求体",
+            "en-US": "Body"
+          }
+        },
+        {
+          "name": "elapsed_ms",
+          "type": "number",
+          "descs": {
+            "zh-CN": "已等待毫秒数",
+            "en-US": "Elapsed ms"
+          }
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "request",
+      "descriptions": {
+        "zh-CN": "收到HTTP请求",
+        "en-US": "HTTP request received"
+      },
+      "payload": [
+        {
+          "name": "request_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "请求ID",
+            "en-US": "Request ID"
+          }
+        },
+        {
+          "name": "method",
+          "type": "string",
+          "descs": {
+            "zh-CN": "HTTP方法",
+            "en-US": "HTTP method"
+          }
+        },
+        {
+          "name": "uri",
+          "type": "string",
+          "descs": {
+            "zh-CN": "请求路径",
+            "en-US": "Request URI"
+          }
+        },
+        {
+          "name": "headers",
+          "type": "object",
+          "descs": {
+            "zh-CN": "请求头",
+            "en-US": "Headers"
+          }
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "descs": {
+            "zh-CN": "请求体",
+            "en-US": "Body"
+          }
+        }
+      ]
+    }
+  ],
+  "constants": [
+    {
+      "name": "STATUS_OK",
+      "value": 200,
+      "group": "status",
+      "descs": {
+        "zh-CN": "成功",
+        "en-US": "OK"
+      },
+      "type": "number"
+    },
+    {
+      "name": "STATUS_CREATED",
+      "value": 201,
+      "group": "status",
+      "descs": {
+        "zh-CN": "已创建",
+        "en-US": "Created"
+      },
+      "type": "number"
+    },
+    {
+      "name": "STATUS_NO_CONTENT",
+      "value": 204,
+      "group": "status",
+      "descs": {
+        "zh-CN": "无内容",
+        "en-US": "No Content"
+      },
+      "type": "number"
+    },
+    {
+      "name": "STATUS_MOVED",
+      "value": 301,
+      "group": "status",
+      "descs": {
+        "zh-CN": "永久重定向",
+        "en-US": "Moved Permanently"
+      },
+      "type": "number"
+    },
+    {
+      "name": "STATUS_FOUND",
+      "value": 302,
+      "group": "status",
+      "descs": {
+        "zh-CN": "临时重定向",
+        "en-US": "Found"
+      },
+      "type": "number"
+    },
+    {
+      "name": "STATUS_BAD_REQUEST",
+      "value": 400,
+      "group": "status",
+      "descs": {
+        "zh-CN": "请求错误",
+        "en-US": "Bad Request"
+      },
+      "type": "number"
+    },
+    {
+      "name": "STATUS_UNAUTHORIZED",
+      "value": 401,
+      "group": "status",
+      "descs": {
+        "zh-CN": "未授权",
+        "en-US": "Unauthorized"
+      },
+      "type": "number"
+    },
+    {
+      "name": "STATUS_FORBIDDEN",
+      "value": 403,
+      "group": "status",
+      "descs": {
+        "zh-CN": "禁止访问",
+        "en-US": "Forbidden"
+      },
+      "type": "number"
+    },
+    {
+      "name": "STATUS_NOT_FOUND",
+      "value": 404,
+      "group": "status",
+      "descs": {
+        "zh-CN": "未找到",
+        "en-US": "Not Found"
+      },
+      "type": "number"
+    },
+    {
+      "name": "STATUS_SERVER_ERROR",
+      "value": 500,
+      "group": "status",
+      "descs": {
+        "zh-CN": "服务器错误",
+        "en-US": "Internal Server Error"
+      },
+      "type": "number"
+    }
+  ]
+}

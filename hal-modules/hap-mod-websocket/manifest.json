@@ -864,29 +864,29 @@
     {
       "name": "CLOSE_NORMAL",
       "value": 1000,
-      "value_type": "number",
       "descs": {
         "zh-CN": "正常关闭状态码",
         "en-US": "Normal close status code"
-      }
+      },
+      "type": "number"
     },
     {
       "name": "CLOSE_GOING_AWAY",
       "value": 1001,
-      "value_type": "number",
       "descs": {
         "zh-CN": "端点离开状态码",
         "en-US": "Going away status code"
-      }
+      },
+      "type": "number"
     },
     {
       "name": "CLOSE_PROTOCOL_ERROR",
       "value": 1002,
-      "value_type": "number",
       "descs": {
         "zh-CN": "协议错误状态码",
         "en-US": "Protocol error status code"
-      }
+      },
+      "type": "number"
     }
   ]
 }

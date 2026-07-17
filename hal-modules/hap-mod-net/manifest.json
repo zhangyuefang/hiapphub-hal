@@ -1426,20 +1426,20 @@
     {
       "name": "PROTOCOL_TCP",
       "value": "tcp",
-      "value_type": "string",
       "descs": {
         "zh-CN": "TCP协议",
         "en-US": "TCP protocol"
-      }
+      },
+      "type": "string"
     },
     {
       "name": "PROTOCOL_UDP",
       "value": "udp",
-      "value_type": "string",
       "descs": {
         "zh-CN": "UDP协议",
         "en-US": "UDP protocol"
-      }
+      },
+      "type": "string"
     }
   ]
 }

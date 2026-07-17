@@ -2,10 +2,33 @@
 set -e
 cd "$(dirname "$0")/.."
 
-SHELL_DATA_DIR="$HOME/.hiapphub"
+# Detect OS and set paths accordingly
+case "$(uname -s)" in
+    Darwin)
+        SHELL_DATA_DIR="$HOME/.hiapphub"
+        LIB_EXT="dylib"
+        SIGN_CMD="codesign -f -s -"
+        ;;
+    Linux)
+        SHELL_DATA_DIR="$HOME/.hiapphub"
+        LIB_EXT="so"
+        SIGN_CMD=""
+        ;;
+    MINGW*|MSYS*|CYGWIN*|Windows_NT)
+        SHELL_DATA_DIR="$APPDATA/hiapphub"
+        LIB_EXT="dll"
+        SIGN_CMD=""
+        ;;
+    *)
+        echo "Unsupported OS: $(uname -s)"
+        exit 1
+        ;;
+esac
+
 LIB_DIR="$SHELL_DATA_DIR/lib"
 
 echo "=== HAL Modules Deploy ==="
+echo "OS: $(uname -s), Lib dir: $LIB_DIR"
 echo "Building release..."
 cargo build --workspace --release 2>&1
 
@@ -14,13 +37,16 @@ echo "Deploying to $LIB_DIR..."
 mkdir -p "$LIB_DIR"
 
 DEPLOYED=0
-for lib in target/release/libhap_mod_*.dylib target/release/libhap_mod_*.so; do
+for lib in target/release/libhap_mod_*.$LIB_EXT target/release/hap_mod_*.$LIB_EXT; do
     [ -f "$lib" ] || continue
     BASENAME=$(basename "$lib")
     # libhap_mod_encoding.dylib -> hap-mod-encoding.hal
-    HAL_NAME=$(echo "$BASENAME" | sed 's/^lib//; s/\.dylib$/.hal/; s/\.so$/.hal/; s/_/-/g')
+    # hap_mod_encoding.dll -> hap-mod-encoding.hal (Windows no lib prefix)
+    HAL_NAME=$(echo "$BASENAME" | sed "s/^lib//; s/\.$LIB_EXT$/.hal/; s/_/-/g")
     cp "$lib" "$LIB_DIR/$HAL_NAME"
-    codesign -f -s - "$LIB_DIR/$HAL_NAME" 2>/dev/null || true
+    if [ -n "$SIGN_CMD" ]; then
+        $SIGN_CMD "$LIB_DIR/$HAL_NAME" 2>/dev/null || true
+    fi
     SIZE=$(du -h "$LIB_DIR/$HAL_NAME" | cut -f1)
     echo "  $HAL_NAME ($SIZE)"
     DEPLOYED=$((DEPLOYED + 1))
