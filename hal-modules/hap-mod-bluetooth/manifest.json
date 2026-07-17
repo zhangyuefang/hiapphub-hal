@@ -22,8 +22,8 @@
       "name": "scan_start",
       "symbol": "hap_bluetooth_scan_start",
       "descriptions": {
-        "zh-CN": "开始扫描BLE设备",
-        "en-US": "Start scanning BLE devices"
+        "zh-CN": "启动蓝牙低功耗（BLE）设备扫描，可按名称过滤",
+        "en-US": "Start BLE device scanning with optional name filter"
       },
       "params": [
         {
@@ -53,31 +53,36 @@
           "en-US": "Device list"
         }
       },
-      "bridge_path": "bluetooth.scanStart"
+      "bridge_path": "bluetooth.scanStart",
+      "group": "scan",
+      "async": true,
+      "description": "Start BLE device scanning with optional name filter"
     },
     {
       "name": "scan_stop",
       "symbol": "hap_bluetooth_scan_stop",
       "descriptions": {
-        "zh-CN": "停止扫描",
-        "en-US": "Stop scanning"
+        "zh-CN": "停止正在进行的蓝牙设备扫描",
+        "en-US": "Stop ongoing Bluetooth device scanning"
       },
       "params": [],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "bluetooth.scanStop"
+      "bridge_path": "bluetooth.scanStop",
+      "group": "scan",
+      "description": "Stop ongoing Bluetooth device scanning"
     },
     {
       "name": "connect",
       "symbol": "hap_bluetooth_connect",
       "descriptions": {
-        "zh-CN": "连接BLE设备",
-        "en-US": "Connect to BLE device"
+        "zh-CN": "连接到指定的 BLE 设备",
+        "en-US": "Connect to specified BLE device"
       },
       "params": [
         {
@@ -90,20 +95,23 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "BleConnection",
         "descs": {
           "zh-CN": "连接信息",
           "en-US": "Connection info"
         }
       },
-      "bridge_path": "bluetooth.connect"
+      "bridge_path": "bluetooth.connect",
+      "group": "connection",
+      "async": true,
+      "description": "Connect to specified BLE device"
     },
     {
       "name": "disconnect",
       "symbol": "hap_bluetooth_disconnect",
       "descriptions": {
-        "zh-CN": "断开BLE连接",
-        "en-US": "Disconnect BLE device"
+        "zh-CN": "断开与指定 BLE 设备的连接",
+        "en-US": "Disconnect from specified BLE device"
       },
       "params": [
         {
@@ -116,20 +124,22 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "bluetooth.disconnect"
+      "bridge_path": "bluetooth.disconnect",
+      "group": "connection",
+      "description": "Disconnect from specified BLE device"
     },
     {
       "name": "discover_services",
       "symbol": "hap_bluetooth_discover_services",
       "descriptions": {
-        "zh-CN": "发现设备服务",
-        "en-US": "Discover device services"
+        "zh-CN": "发现已连接 BLE 设备上的所有 GATT 服务",
+        "en-US": "Discover all GATT services on connected BLE device"
       },
       "params": [
         {
@@ -148,14 +158,17 @@
           "en-US": "Service list"
         }
       },
-      "bridge_path": "bluetooth.discoverServices"
+      "bridge_path": "bluetooth.discoverServices",
+      "group": "data",
+      "async": true,
+      "description": "Discover all GATT services on connected BLE device"
     },
     {
       "name": "read_characteristic",
       "symbol": "hap_bluetooth_read_characteristic",
       "descriptions": {
-        "zh-CN": "读取特征值",
-        "en-US": "Read characteristic value"
+        "zh-CN": "读取 BLE 设备指定服务中的特征值数据",
+        "en-US": "Read characteristic value from specified BLE service"
       },
       "params": [
         {
@@ -184,20 +197,23 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "CharValue",
         "descs": {
           "zh-CN": "特征值数据",
           "en-US": "Characteristic data"
         }
       },
-      "bridge_path": "bluetooth.readCharacteristic"
+      "bridge_path": "bluetooth.readCharacteristic",
+      "group": "data",
+      "async": true,
+      "description": "Read characteristic value from specified BLE service"
     },
     {
       "name": "write_characteristic",
       "symbol": "hap_bluetooth_write_characteristic",
       "descriptions": {
-        "zh-CN": "写入特征值",
-        "en-US": "Write characteristic value"
+        "zh-CN": "向 BLE 设备的指定特征写入数据",
+        "en-US": "Write data to specified BLE characteristic"
       },
       "params": [
         {
@@ -244,20 +260,23 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "bluetooth.writeCharacteristic"
+      "bridge_path": "bluetooth.writeCharacteristic",
+      "group": "data",
+      "async": true,
+      "description": "Write data to specified BLE characteristic"
     },
     {
       "name": "subscribe",
       "symbol": "hap_bluetooth_subscribe",
       "descriptions": {
-        "zh-CN": "订阅特征通知",
-        "en-US": "Subscribe to notifications"
+        "zh-CN": "订阅 BLE 特征值变化通知，实时接收数据更新",
+        "en-US": "Subscribe to BLE characteristic notifications"
       },
       "params": [
         {
@@ -294,20 +313,22 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "bluetooth.subscribe"
+      "bridge_path": "bluetooth.subscribe",
+      "group": "data",
+      "description": "Subscribe to BLE characteristic notifications"
     },
     {
       "name": "unsubscribe",
       "symbol": "hap_bluetooth_unsubscribe",
       "descriptions": {
-        "zh-CN": "取消订阅",
-        "en-US": "Unsubscribe notifications"
+        "zh-CN": "取消订阅 BLE 特征值变化通知",
+        "en-US": "Unsubscribe from BLE characteristic notifications"
       },
       "params": [
         {
@@ -336,20 +357,22 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "bluetooth.unsubscribe"
+      "bridge_path": "bluetooth.unsubscribe",
+      "group": "data",
+      "description": "Unsubscribe from BLE characteristic notifications"
     },
     {
       "name": "is_connected",
       "symbol": "hap_bluetooth_is_connected",
       "descriptions": {
-        "zh-CN": "检查设备连接状态",
-        "en-US": "Check connection state"
+        "zh-CN": "检查与指定 BLE 设备的连接是否仍然活跃",
+        "en-US": "Check if connection to specified BLE device is still active"
       },
       "params": [
         {
@@ -362,13 +385,193 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否已连接",
           "en-US": "Connected"
         }
       },
-      "bridge_path": "bluetooth.isConnected"
+      "bridge_path": "bluetooth.isConnected",
+      "group": "connection",
+      "description": "Check if connection to specified BLE device is still active"
+    }
+  ],
+  "types": [
+    {
+      "name": "BleDevice",
+      "descriptions": {
+        "zh-CN": "蓝牙设备信息",
+        "en-US": "BLE device info"
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID",
+            "en-US": "Device ID"
+          }
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备名称",
+            "en-US": "Device name"
+          }
+        },
+        {
+          "name": "rssi",
+          "type": "number",
+          "descs": {
+            "zh-CN": "信号强度",
+            "en-US": "Signal strength"
+          }
+        }
+      ]
+    },
+    {
+      "name": "BleConnection",
+      "descriptions": {
+        "zh-CN": "蓝牙连接",
+        "en-US": "BLE connection"
+      },
+      "fields": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID",
+            "en-US": "Device ID"
+          }
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备名",
+            "en-US": "Device name"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CharValue",
+      "descriptions": {
+        "zh-CN": "特征值",
+        "en-US": "Characteristic value"
+      },
+      "fields": [
+        {
+          "name": "value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "值(Base64)",
+            "en-US": "Value(Base64)"
+          }
+        },
+        {
+          "name": "uuid",
+          "type": "string",
+          "descs": {
+            "zh-CN": "特征UUID",
+            "en-US": "Characteristic UUID"
+          }
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "device_found",
+      "descriptions": {
+        "zh-CN": "发现设备",
+        "en-US": "Device found"
+      },
+      "payload": [
+        {
+          "name": "id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID",
+            "en-US": "Device ID"
+          }
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备名",
+            "en-US": "Device name"
+          }
+        },
+        {
+          "name": "rssi",
+          "type": "number",
+          "descs": {
+            "zh-CN": "信号强度",
+            "en-US": "RSSI"
+          }
+        }
+      ]
+    },
+    {
+      "name": "disconnected",
+      "descriptions": {
+        "zh-CN": "设备断开",
+        "en-US": "Device disconnected"
+      },
+      "payload": [
+        {
+          "name": "id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID",
+            "en-US": "Device ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "characteristic_changed",
+      "descriptions": {
+        "zh-CN": "特征值变化",
+        "en-US": "Characteristic changed"
+      },
+      "payload": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID",
+            "en-US": "Device ID"
+          }
+        },
+        {
+          "name": "service_uuid",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务UUID",
+            "en-US": "Service UUID"
+          }
+        },
+        {
+          "name": "char_uuid",
+          "type": "string",
+          "descs": {
+            "zh-CN": "特征UUID",
+            "en-US": "Characteristic UUID"
+          }
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "值(Base64)",
+            "en-US": "Value(Base64)"
+          }
+        }
+      ]
     }
   ]
 }

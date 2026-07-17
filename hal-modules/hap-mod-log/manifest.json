@@ -22,28 +22,36 @@
           "name": "tag",
           "type": "string",
           "descs": {
-            "zh-CN": "标签",
-            "en-US": "Tag"
-          }
+            "zh-CN": "日志标签（用于分类过滤）",
+            "en-US": "Log tag (for categorization/filtering)"
+          },
+          "desc": "Log tag (for categorization/filtering)"
         },
         {
           "name": "message",
           "type": "string",
           "descs": {
-            "zh-CN": "消息",
-            "en-US": "Message"
-          }
+            "zh-CN": "消息内容",
+            "en-US": "Message content"
+          },
+          "desc": "Message content"
         }
       ],
       "returns": {
         "type": "null",
-        "desc": ""
+        "desc": "Result object of type null",
+        "descs": {
+          "zh-CN": "null类型的结果对象",
+          "en-US": "Result object of type null"
+        }
       },
       "bridge_path": "log.debug",
       "descriptions": {
-        "zh-CN": "Debug 日志",
-        "en-US": "Debug log"
-      }
+        "zh-CN": "写入一条DEBUG级别的调试日志信息",
+        "en-US": "Write a DEBUG level log message"
+      },
+      "group": "write",
+      "description": "Write a DEBUG level log message"
     },
     {
       "name": "info",
@@ -53,28 +61,36 @@
           "name": "tag",
           "type": "string",
           "descs": {
-            "zh-CN": "标签",
-            "en-US": "Tag"
-          }
+            "zh-CN": "日志标签（用于分类过滤）",
+            "en-US": "Log tag (for categorization/filtering)"
+          },
+          "desc": "Log tag (for categorization/filtering)"
         },
         {
           "name": "message",
           "type": "string",
           "descs": {
-            "zh-CN": "消息",
-            "en-US": "Message"
-          }
+            "zh-CN": "消息内容",
+            "en-US": "Message content"
+          },
+          "desc": "Message content"
         }
       ],
       "returns": {
         "type": "null",
-        "desc": ""
+        "desc": "Result object of type null",
+        "descs": {
+          "zh-CN": "null类型的结果对象",
+          "en-US": "Result object of type null"
+        }
       },
       "bridge_path": "log.info",
       "descriptions": {
-        "zh-CN": "信息日志",
-        "en-US": "Info log"
-      }
+        "zh-CN": "写入一条INFO级别的普通日志信息",
+        "en-US": "Write an INFO level log message"
+      },
+      "group": "write",
+      "description": "Write an INFO level log message"
     },
     {
       "name": "warn",
@@ -84,28 +100,36 @@
           "name": "tag",
           "type": "string",
           "descs": {
-            "zh-CN": "标签",
-            "en-US": "Tag"
-          }
+            "zh-CN": "日志标签（用于分类过滤）",
+            "en-US": "Log tag (for categorization/filtering)"
+          },
+          "desc": "Log tag (for categorization/filtering)"
         },
         {
           "name": "message",
           "type": "string",
           "descs": {
-            "zh-CN": "消息",
-            "en-US": "Message"
-          }
+            "zh-CN": "消息内容",
+            "en-US": "Message content"
+          },
+          "desc": "Message content"
         }
       ],
       "returns": {
         "type": "null",
-        "desc": ""
+        "desc": "Result object of type null",
+        "descs": {
+          "zh-CN": "null类型的结果对象",
+          "en-US": "Result object of type null"
+        }
       },
       "bridge_path": "log.warn",
       "descriptions": {
-        "zh-CN": "警告日志",
-        "en-US": "Warn log"
-      }
+        "zh-CN": "写入一条WARN级别的警告日志信息",
+        "en-US": "Write a WARN level warning log message"
+      },
+      "group": "write",
+      "description": "Write a WARN level warning log message"
     },
     {
       "name": "error",
@@ -115,28 +139,36 @@
           "name": "tag",
           "type": "string",
           "descs": {
-            "zh-CN": "标签",
-            "en-US": "Tag"
-          }
+            "zh-CN": "日志标签（用于分类过滤）",
+            "en-US": "Log tag (for categorization/filtering)"
+          },
+          "desc": "Log tag (for categorization/filtering)"
         },
         {
           "name": "message",
           "type": "string",
           "descs": {
-            "zh-CN": "消息",
-            "en-US": "Message"
-          }
+            "zh-CN": "消息内容",
+            "en-US": "Message content"
+          },
+          "desc": "Message content"
         }
       ],
       "returns": {
         "type": "null",
-        "desc": ""
+        "desc": "Result object of type null",
+        "descs": {
+          "zh-CN": "null类型的结果对象",
+          "en-US": "Result object of type null"
+        }
       },
       "bridge_path": "log.error",
       "descriptions": {
-        "zh-CN": "错误日志",
-        "en-US": "Error log"
-      }
+        "zh-CN": "写入一条ERROR级别的错误日志信息",
+        "en-US": "Write an ERROR level error log message"
+      },
+      "group": "write",
+      "description": "Write an ERROR level error log message"
     },
     {
       "name": "trace",
@@ -146,28 +178,36 @@
           "name": "tag",
           "type": "string",
           "descs": {
-            "zh-CN": "标签",
-            "en-US": "Tag"
-          }
+            "zh-CN": "日志标签（用于分类过滤）",
+            "en-US": "Log tag (for categorization/filtering)"
+          },
+          "desc": "Log tag (for categorization/filtering)"
         },
         {
           "name": "message",
           "type": "string",
           "descs": {
-            "zh-CN": "消息",
-            "en-US": "Message"
-          }
+            "zh-CN": "消息内容",
+            "en-US": "Message content"
+          },
+          "desc": "Message content"
         }
       ],
       "returns": {
         "type": "null",
-        "desc": ""
+        "desc": "Result object of type null",
+        "descs": {
+          "zh-CN": "null类型的结果对象",
+          "en-US": "Result object of type null"
+        }
       },
       "bridge_path": "log.trace",
       "descriptions": {
-        "zh-CN": "Trace 日志",
-        "en-US": "Trace log"
-      }
+        "zh-CN": "输出跟踪级别日志",
+        "en-US": "Write a TRACE level detailed trace log"
+      },
+      "group": "write",
+      "description": "Write a TRACE level detailed trace log"
     },
     {
       "name": "set_level",
@@ -177,20 +217,27 @@
           "name": "level",
           "type": "string",
           "descs": {
-            "zh-CN": "级别",
-            "en-US": "Level"
-          }
+            "zh-CN": "压缩级别",
+            "en-US": "Compression level"
+          },
+          "desc": "Compression level"
         }
       ],
       "returns": {
         "type": "null",
-        "desc": ""
+        "desc": "Result object of type null",
+        "descs": {
+          "zh-CN": "null类型的结果对象",
+          "en-US": "Result object of type null"
+        }
       },
       "bridge_path": "log.setLevel",
       "descriptions": {
-        "zh-CN": "设置级别",
-        "en-US": "Set level"
-      }
+        "zh-CN": "设置日志输出级别",
+        "en-US": "Set level property of logging"
+      },
+      "group": "config",
+      "description": "Set level property of logging"
     },
     {
       "name": "set_file",
@@ -206,17 +253,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "log.setFile",
       "descriptions": {
-        "zh-CN": "设置日志文件",
-        "en-US": "Set log file"
-      }
+        "zh-CN": "设置file property",
+        "en-US": "Set file property of logging"
+      },
+      "group": "config",
+      "description": "Set file property of logging"
     },
     {
       "name": "flush",
@@ -224,13 +274,19 @@
       "params": [],
       "returns": {
         "type": "null",
-        "desc": ""
+        "desc": "Result object of type null",
+        "descs": {
+          "zh-CN": "null类型的结果对象",
+          "en-US": "Result object of type null"
+        }
       },
       "bridge_path": "log.flush",
       "descriptions": {
-        "zh-CN": "刷新",
-        "en-US": "Flush"
-      }
+        "zh-CN": "刷新日志缓冲区",
+        "en-US": "Flush buffered logs to disk immediately"
+      },
+      "group": "manage",
+      "description": "Flush buffered logs to disk immediately"
     },
     {
       "name": "read_lines",
@@ -248,15 +304,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "行",
-          "en-US": "Lines"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "log.readLines",
       "descriptions": {
-        "zh-CN": "读取行",
-        "en-US": "Read lines"
-      }
+        "zh-CN": "读取lines数据",
+        "en-US": "Read lines of logging"
+      },
+      "group": "query",
+      "description": "Read lines of logging"
     },
     {
       "name": "clear",
@@ -272,17 +331,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "log.clear",
       "descriptions": {
-        "zh-CN": "清除日志",
-        "en-US": "Clear log"
-      }
+        "zh-CN": "清空当前日志文件的所有内容",
+        "en-US": "Clear all content from current log file"
+      },
+      "group": "manage",
+      "description": "Clear all content from current log file"
     },
     {
       "name": "search",
@@ -308,15 +370,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Results"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "log.search",
       "descriptions": {
-        "zh-CN": "搜索日志",
-        "en-US": "Search log"
-      }
+        "zh-CN": "在日志文件中搜索匹配关键词的记录",
+        "en-US": "Search log file for records matching keywords"
+      },
+      "group": "query",
+      "description": "Search log file for records matching keywords"
     },
     {
       "name": "rotate",
@@ -332,21 +397,120 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "log.rotate",
       "descriptions": {
-        "zh-CN": "轮转日志",
-        "en-US": "Rotate log"
-      }
+        "zh-CN": "轮转日志文件",
+        "en-US": "Manually trigger log file rotation"
+      },
+      "group": "manage",
+      "description": "Manually trigger log file rotation"
     }
   ],
   "overviews": {
     "zh-CN": "提供结构化日志记录能力，支持多级别日志（trace/debug/info/warn/error）、文件输出、日志轮转、格式自定义、运行时级别动态调整等功能。",
     "en-US": "Structured logging with multi-level support (trace/debug/info/warn/error), file output, log rotation, custom formatting, and runtime level adjustment."
-  }
+  },
+  "constants": [
+    {
+      "name": "LEVEL_TRACE",
+      "value": "trace",
+      "type": "string",
+      "group": "level",
+      "descs": {
+        "zh-CN": "跟踪级别",
+        "en-US": "Trace level"
+      }
+    },
+    {
+      "name": "LEVEL_DEBUG",
+      "value": "debug",
+      "type": "string",
+      "group": "level",
+      "descs": {
+        "zh-CN": "调试级别",
+        "en-US": "Debug level"
+      }
+    },
+    {
+      "name": "LEVEL_INFO",
+      "value": "info",
+      "type": "string",
+      "group": "level",
+      "descs": {
+        "zh-CN": "信息级别",
+        "en-US": "Info level"
+      }
+    },
+    {
+      "name": "LEVEL_WARN",
+      "value": "warn",
+      "type": "string",
+      "group": "level",
+      "descs": {
+        "zh-CN": "警告级别",
+        "en-US": "Warning level"
+      }
+    },
+    {
+      "name": "LEVEL_ERROR",
+      "value": "error",
+      "type": "string",
+      "group": "level",
+      "descs": {
+        "zh-CN": "错误级别",
+        "en-US": "Error level"
+      }
+    }
+  ],
+  "types": [
+    {
+      "name": "LogEntry",
+      "descriptions": {
+        "zh-CN": "日志条目信息",
+        "en-US": "Log entry information"
+      },
+      "fields": [
+        {
+          "name": "level",
+          "type": "string",
+          "descs": {
+            "zh-CN": "日志级别（debug/info/warn/error）",
+            "en-US": "Log level"
+          }
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "日志消息内容",
+            "en-US": "Log message content"
+          }
+        },
+        {
+          "name": "timestamp",
+          "type": "string",
+          "descs": {
+            "zh-CN": "日志时间戳",
+            "en-US": "Log timestamp"
+          }
+        },
+        {
+          "name": "source",
+          "type": "string",
+          "descs": {
+            "zh-CN": "日志来源模块",
+            "en-US": "Log source module"
+          },
+          "optional": true
+        }
+      ]
+    }
+  ]
 }

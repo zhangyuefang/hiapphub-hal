@@ -9,8 +9,8 @@
   "min_shell_version": "0.1.0",
   "category": "network",
   "descriptions": {
-    "zh-CN": "WebSocket客户端模块",
-    "en-US": "WebSocket client module"
+    "zh-CN": "WebSocket 客户端与服务端模块",
+    "en-US": "WebSocket client and server module"
   },
   "permission": "network",
   "functions": [
@@ -28,7 +28,7 @@
         },
         {
           "name": "headers",
-          "type": "object",
+          "type": "Record",
           "descs": {
             "zh-CN": "自定义头部",
             "en-US": "Custom headers"
@@ -39,10 +39,11 @@
           "name": "protocols",
           "type": "array",
           "descs": {
-            "zh-CN": "协议s",
-            "en-US": "Protocols"
+            "zh-CN": "protocols参数",
+            "en-US": "protocols parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "protocols parameter"
         },
         {
           "name": "callback_id",
@@ -54,7 +55,7 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "WsConnection",
         "descs": {
           "zh-CN": "连接信息",
           "en-US": "Connection info"
@@ -62,9 +63,12 @@
       },
       "bridge_path": "websocket.connect",
       "descriptions": {
-        "zh-CN": "连接到 WebSocket 服务器",
-        "en-US": "Connect to WebSocket server"
-      }
+        "zh-CN": "建立到指定URL的WebSocket客户端连接",
+        "en-US": "Establish WebSocket client connection to URL"
+      },
+      "group": "client",
+      "async": true,
+      "description": "Establish WebSocket client connection to URL"
     },
     {
       "name": "send",
@@ -88,17 +92,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "websocket.send",
       "descriptions": {
-        "zh-CN": "发送文本消息",
-        "en-US": "Send text message"
-      }
+        "zh-CN": "通过 WebSocket 发送消息",
+        "en-US": "Send message data over WebSocket connection"
+      },
+      "group": "client",
+      "description": "Send message data over WebSocket connection"
     },
     {
       "name": "send_binary",
@@ -122,17 +129,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "websocket.sendBinary",
       "descriptions": {
-        "zh-CN": "发送二进制数据消息",
-        "en-US": "Send binary message"
-      }
+        "zh-CN": "通过 WebSocket 发送二进制数据",
+        "en-US": "Send binary of WebSocket"
+      },
+      "group": "client",
+      "description": "Send binary of WebSocket"
     },
     {
       "name": "close",
@@ -148,13 +158,14 @@
         },
         {
           "name": "code",
-          "type": "u32",
+          "type": "number",
           "descs": {
-            "zh-CN": "关闭码",
-            "en-US": "Close code"
+            "zh-CN": "关闭状态码（如1000=正常关闭）",
+            "en-US": "Close status code (e.g. 1000=normal)"
           },
           "optional": true,
-          "default_value": "1000"
+          "default_value": "1000",
+          "desc": "Close status code (e.g. 1000=normal)"
         },
         {
           "name": "reason",
@@ -167,17 +178,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "websocket.close",
       "descriptions": {
-        "zh-CN": "关闭连接",
-        "en-US": "Close connection"
-      }
+        "zh-CN": "关闭 WebSocket 连接",
+        "en-US": "Close WebSocket connection and release resources"
+      },
+      "group": "client",
+      "description": "Close WebSocket connection and release resources"
     },
     {
       "name": "state",
@@ -195,15 +209,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "状态",
-          "en-US": "State"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "websocket.state",
       "descriptions": {
-        "zh-CN": "获取连接状态",
-        "en-US": "Get connection state"
-      }
+        "zh-CN": "stateWebSocket",
+        "en-US": "State WebSocket"
+      },
+      "group": "client",
+      "description": "State WebSocket"
     },
     {
       "name": "set_auto_reconnect",
@@ -219,15 +236,16 @@
         },
         {
           "name": "enabled",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
-            "zh-CN": "启用",
-            "en-US": "Enable"
-          }
+            "zh-CN": "是否启用",
+            "en-US": "Whether enabled"
+          },
+          "desc": "Whether enabled"
         },
         {
           "name": "interval_ms",
-          "type": "u32",
+          "type": "number",
           "descs": {
             "zh-CN": "间隔(毫秒)",
             "en-US": "Interval ms"
@@ -236,7 +254,7 @@
         },
         {
           "name": "max_retries",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "最大重试",
             "en-US": "最大重试"
@@ -245,17 +263,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "websocket.setAutoReconnect",
       "descriptions": {
-        "zh-CN": "设置自动重连",
-        "en-US": "Set auto-reconnect"
-      }
+        "zh-CN": "设置自动重连策略",
+        "en-US": "Set auto reconnect property of WebSocket"
+      },
+      "group": "client",
+      "description": "Set auto reconnect property of WebSocket"
     },
     {
       "name": "ping",
@@ -271,17 +292,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "websocket.ping",
       "descriptions": {
-        "zh-CN": "发送 Ping",
-        "en-US": "Send ping"
-      }
+        "zh-CN": "pingWebSocket",
+        "en-US": "Ping WebSocket"
+      },
+      "group": "client",
+      "description": "Ping WebSocket"
     },
     {
       "name": "buffered_amount",
@@ -297,7 +321,7 @@
         }
       ],
       "returns": {
-        "type": "i32",
+        "type": "number",
         "descs": {
           "zh-CN": "已缓冲字节",
           "en-US": "Bytes buffered"
@@ -305,9 +329,11 @@
       },
       "bridge_path": "websocket.bufferedAmount",
       "descriptions": {
-        "zh-CN": "获取缓冲区大小",
-        "en-US": "Get buffered amount"
-      }
+        "zh-CN": "获取待发送数据的缓冲大小",
+        "en-US": "Buffered amount of WebSocket"
+      },
+      "group": "client",
+      "description": "Buffered amount of WebSocket"
     },
     {
       "name": "list_connections",
@@ -322,13 +348,545 @@
       },
       "bridge_path": "websocket.listConnections",
       "descriptions": {
-        "zh-CN": "列出连接",
-        "en-US": "List connections"
-      }
+        "zh-CN": "列出connections",
+        "en-US": "List connections of WebSocket"
+      },
+      "group": "client",
+      "description": "List connections of WebSocket"
+    },
+    {
+      "name": "listen",
+      "symbol": "hap_ws_server_listen",
+      "group": "server",
+      "descriptions": {
+        "zh-CN": "启动 WebSocket 服务器",
+        "en-US": "Start WebSocket server"
+      },
+      "params": [
+        {
+          "name": "host",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监听地址",
+            "en-US": "Listen address"
+          },
+          "optional": true,
+          "default_value": "\"0.0.0.0\""
+        },
+        {
+          "name": "port",
+          "type": "number",
+          "descs": {
+            "zh-CN": "WebSocket服务器监听端口",
+            "en-US": "WebSocket server listen port"
+          },
+          "desc": "WebSocket server listen port"
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "optional": true,
+          "default_value": "\"/\"",
+          "desc": "File path"
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "服务器 ID",
+          "en-US": "Server ID"
+        }
+      },
+      "bridge_path": "websocket.listen"
+    },
+    {
+      "name": "server_close",
+      "symbol": "hap_ws_server_close",
+      "group": "server",
+      "descriptions": {
+        "zh-CN": "关闭 WebSocket 服务器",
+        "en-US": "Stop WebSocket server"
+      },
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器 ID",
+            "en-US": "Server ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "boolean",
+        "descs": {
+          "zh-CN": "操作是否成功",
+          "en-US": "Whether operation succeeded"
+        },
+        "desc": "Whether operation succeeded"
+      },
+      "bridge_path": "websocket.serverClose"
+    },
+    {
+      "name": "server_send",
+      "symbol": "hap_ws_server_send",
+      "group": "server",
+      "descriptions": {
+        "zh-CN": "向客户端发送消息",
+        "en-US": "Server send of WebSocket"
+      },
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器 ID",
+            "en-US": "Server ID"
+          }
+        },
+        {
+          "name": "client_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "客户端 ID",
+            "en-US": "Client ID"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息数据",
+            "en-US": "Message data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "boolean",
+        "descs": {
+          "zh-CN": "操作是否成功",
+          "en-US": "Whether operation succeeded"
+        },
+        "desc": "Whether operation succeeded"
+      },
+      "bridge_path": "websocket.serverSend",
+      "description": "Server send of WebSocket"
+    },
+    {
+      "name": "server_broadcast",
+      "symbol": "hap_ws_server_broadcast",
+      "group": "server",
+      "descriptions": {
+        "zh-CN": "向所有客户端广播消息",
+        "en-US": "Server broadcast of WebSocket"
+      },
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器 ID",
+            "en-US": "Server ID"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息数据",
+            "en-US": "Message data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "descs": {
+          "zh-CN": "已发送数量",
+          "en-US": "Sent count"
+        }
+      },
+      "bridge_path": "websocket.serverBroadcast",
+      "description": "Server broadcast of WebSocket"
+    },
+    {
+      "name": "server_clients",
+      "symbol": "hap_ws_server_clients",
+      "group": "server",
+      "descriptions": {
+        "zh-CN": "获取已连接的客户端列表",
+        "en-US": "Server clients of WebSocket"
+      },
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器 ID",
+            "en-US": "Server ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "客户端列表",
+          "en-US": "Client list"
+        }
+      },
+      "bridge_path": "websocket.serverClients",
+      "description": "Server clients of WebSocket"
+    },
+    {
+      "name": "server_disconnect",
+      "symbol": "hap_ws_server_disconnect",
+      "group": "server",
+      "descriptions": {
+        "zh-CN": "断开指定客户端连接",
+        "en-US": "Server disconnect of WebSocket"
+      },
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器 ID",
+            "en-US": "Server ID"
+          }
+        },
+        {
+          "name": "client_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "客户端 ID",
+            "en-US": "Client ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "boolean",
+        "descs": {
+          "zh-CN": "操作是否成功",
+          "en-US": "Whether operation succeeded"
+        },
+        "desc": "Whether operation succeeded"
+      },
+      "bridge_path": "websocket.serverDisconnect",
+      "description": "Server disconnect of WebSocket"
     }
   ],
   "overviews": {
-    "zh-CN": "提供 WebSocket 客户端能力，支持连接/断开、消息收发、二进制数据传输、自动重连、心跳检测、子协议协商等功能。",
-    "en-US": "WebSocket client supporting connect/disconnect, message send/receive, binary data transfer, auto-reconnect, heartbeat, and subprotocol negotiation."
-  }
+    "zh-CN": "提供 WebSocket 客户端与服务端能力。客户端支持连接/断开、消息收发、二进制数据、自动重连、心跳检测；服务端支持监听端口、广播消息、管理客户端连接。",
+    "en-US": "WebSocket client and server module. Client supports connect/disconnect, messaging, binary data, auto-reconnect, heartbeat. Server supports listening, broadcasting, and client management."
+  },
+  "events": [
+    {
+      "name": "message",
+      "descriptions": {
+        "zh-CN": "收到消息",
+        "en-US": "Message received"
+      },
+      "payload": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接ID",
+            "en-US": "Connection ID"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息内容",
+            "en-US": "Message data"
+          }
+        },
+        {
+          "name": "is_binary",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否二进制",
+            "en-US": "Is binary"
+          }
+        }
+      ]
+    },
+    {
+      "name": "close",
+      "descriptions": {
+        "zh-CN": "连接关闭",
+        "en-US": "Connection closed"
+      },
+      "payload": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接ID",
+            "en-US": "Connection ID"
+          }
+        },
+        {
+          "name": "code",
+          "type": "number",
+          "descs": {
+            "zh-CN": "关闭码",
+            "en-US": "Close code"
+          }
+        },
+        {
+          "name": "reason",
+          "type": "string",
+          "descs": {
+            "zh-CN": "原因",
+            "en-US": "Reason"
+          }
+        }
+      ]
+    },
+    {
+      "name": "error",
+      "descriptions": {
+        "zh-CN": "连接错误",
+        "en-US": "Connection error"
+      },
+      "payload": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接ID",
+            "en-US": "Connection ID"
+          }
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "错误信息",
+            "en-US": "Error message"
+          }
+        }
+      ]
+    },
+    {
+      "name": "server_client_connect",
+      "descriptions": {
+        "zh-CN": "客户端连入(服务端)",
+        "en-US": "Client connected(server)"
+      },
+      "payload": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        },
+        {
+          "name": "client_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "客户端ID",
+            "en-US": "Client ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "server_client_disconnect",
+      "descriptions": {
+        "zh-CN": "客户端断开(服务端)",
+        "en-US": "Client disconnected(server)"
+      },
+      "payload": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        },
+        {
+          "name": "client_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "客户端ID",
+            "en-US": "Client ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ws_message",
+      "descriptions": {
+        "zh-CN": "WebSocket接收到消息",
+        "en-US": "WebSocket message received"
+      },
+      "payload": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接ID",
+            "en-US": "Connection ID"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息数据",
+            "en-US": "Message data"
+          }
+        },
+        {
+          "name": "is_binary",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否为二进制消息",
+            "en-US": "Whether binary message"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ws_close",
+      "descriptions": {
+        "zh-CN": "WebSocket连接关闭",
+        "en-US": "WebSocket connection closed"
+      },
+      "payload": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接ID",
+            "en-US": "Connection ID"
+          }
+        },
+        {
+          "name": "code",
+          "type": "number",
+          "descs": {
+            "zh-CN": "关闭状态码",
+            "en-US": "Close status code"
+          }
+        },
+        {
+          "name": "reason",
+          "type": "string",
+          "descs": {
+            "zh-CN": "关闭原因",
+            "en-US": "Close reason"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ws_server_connect",
+      "descriptions": {
+        "zh-CN": "服务端有新客户端连接",
+        "en-US": "Server new client connected"
+      },
+      "payload": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器ID",
+            "en-US": "Server ID"
+          }
+        },
+        {
+          "name": "client_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "客户端ID",
+            "en-US": "Client ID"
+          }
+        },
+        {
+          "name": "remote_addr",
+          "type": "string",
+          "descs": {
+            "zh-CN": "客户端地址",
+            "en-US": "Client address"
+          }
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "WsConnection",
+      "descriptions": {
+        "zh-CN": "WebSocket连接信息",
+        "en-US": "WebSocket connection info"
+      },
+      "fields": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接ID",
+            "en-US": "Connection ID"
+          }
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接地址",
+            "en-US": "Connection URL"
+          }
+        },
+        {
+          "name": "protocol",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "协商的子协议",
+            "en-US": "Negotiated sub-protocol"
+          }
+        }
+      ]
+    }
+  ],
+  "constants": [
+    {
+      "name": "CLOSE_NORMAL",
+      "value": 1000,
+      "value_type": "number",
+      "descs": {
+        "zh-CN": "正常关闭状态码",
+        "en-US": "Normal close status code"
+      }
+    },
+    {
+      "name": "CLOSE_GOING_AWAY",
+      "value": 1001,
+      "value_type": "number",
+      "descs": {
+        "zh-CN": "端点离开状态码",
+        "en-US": "Going away status code"
+      }
+    },
+    {
+      "name": "CLOSE_PROTOCOL_ERROR",
+      "value": 1002,
+      "value_type": "number",
+      "descs": {
+        "zh-CN": "协议错误状态码",
+        "en-US": "Protocol error status code"
+      }
+    }
+  ]
 }

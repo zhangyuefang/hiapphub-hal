@@ -28,7 +28,7 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "XmlNode",
         "descs": {
           "zh-CN": "JSON 树",
           "en-US": "JSON 树"
@@ -36,9 +36,11 @@
       },
       "bridge_path": "xml.parse",
       "descriptions": {
-        "zh-CN": "解析 XML",
-        "en-US": "Parse XML"
-      }
+        "zh-CN": "将XML字符串解析为结构化的节点树对象",
+        "en-US": "Parse XML string into structured node tree object"
+      },
+      "group": "parse",
+      "description": "Parse XML string into structured node tree object"
     },
     {
       "name": "stringify",
@@ -46,7 +48,7 @@
       "params": [
         {
           "name": "object",
-          "type": "object",
+          "type": "XmlNode",
           "descs": {
             "zh-CN": "JSON 对象",
             "en-US": "JSON object"
@@ -64,7 +66,8 @@
       "descriptions": {
         "zh-CN": "序列化为字符串到 XML",
         "en-US": "Stringify to XML"
-      }
+      },
+      "group": "generate"
     },
     {
       "name": "query_xpath",
@@ -90,15 +93,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "匹配项",
-          "en-US": "Matches"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "xml.queryXpath",
       "descriptions": {
-        "zh-CN": "XPath 查询",
-        "en-US": "XPath query"
-      }
+        "zh-CN": "查询XML的xpath",
+        "en-US": "Query xpath of XML"
+      },
+      "group": "query",
+      "description": "Query xpath of XML"
     },
     {
       "name": "validate",
@@ -114,17 +120,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ValidationResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "xml.validate",
       "descriptions": {
-        "zh-CN": "验证 XML",
-        "en-US": "Validate XML"
-      }
+        "zh-CN": "验证XML文档格式是否合法有效",
+        "en-US": "Validate if XML document is well-formed and valid"
+      },
+      "group": "parse",
+      "description": "Validate if XML document is well-formed and valid"
     },
     {
       "name": "read_file",
@@ -140,7 +149,7 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "XmlNode",
         "descs": {
           "zh-CN": "JSON 树",
           "en-US": "JSON 树"
@@ -148,9 +157,11 @@
       },
       "bridge_path": "xml.readFile",
       "descriptions": {
-        "zh-CN": "读取 XML 文件",
-        "en-US": "Read XML file"
-      }
+        "zh-CN": "读取XML的file",
+        "en-US": "Read file of XML"
+      },
+      "group": "parse",
+      "description": "Read file of XML"
     },
     {
       "name": "write_file",
@@ -166,7 +177,7 @@
         },
         {
           "name": "object",
-          "type": "object",
+          "type": "XmlNode",
           "descs": {
             "zh-CN": "JSON 对象",
             "en-US": "JSON object"
@@ -174,17 +185,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "xml.writeFile",
       "descriptions": {
-        "zh-CN": "写入 XML 文件",
-        "en-US": "Write XML file"
-      }
+        "zh-CN": "写入XML的file",
+        "en-US": "Write file of XML"
+      },
+      "group": "generate",
+      "description": "Write file of XML"
     },
     {
       "name": "transform_xslt",
@@ -210,19 +224,92 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "xml.transformXslt",
       "descriptions": {
-        "zh-CN": "XSLT 转换",
-        "en-US": "XSLT transform"
-      }
+        "zh-CN": "transformXML的xslt",
+        "en-US": "Transform xslt of XML"
+      },
+      "group": "query",
+      "description": "Transform xslt of XML"
     }
   ],
   "overviews": {
     "zh-CN": "提供 XML 文件的解析、生成、查询（XPath）和转换（XSLT）能力。支持 DOM 和 SAX 解析模式、命名空间处理、DTD/Schema 验证等功能。",
     "en-US": "XML parsing, generation, XPath queries, and XSLT transformation. Supports DOM and SAX parsing, namespace handling, and DTD/Schema validation."
-  }
+  },
+  "types": [
+    {
+      "name": "XmlNode",
+      "descriptions": {
+        "zh-CN": "XML 节点对象",
+        "en-US": "XML node object"
+      },
+      "fields": [
+        {
+          "name": "tag",
+          "type": "string",
+          "descs": {
+            "zh-CN": "节点标签名",
+            "en-US": "Node tag name"
+          }
+        },
+        {
+          "name": "attributes",
+          "type": "object",
+          "descs": {
+            "zh-CN": "节点属性键值对",
+            "en-US": "Node attributes"
+          }
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "节点文本内容",
+            "en-US": "Node text content"
+          },
+          "optional": true
+        },
+        {
+          "name": "children",
+          "type": "XmlNode[]",
+          "descs": {
+            "zh-CN": "子节点列表",
+            "en-US": "Child nodes"
+          },
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "ValidationResult",
+      "descriptions": {
+        "zh-CN": "XML验证结果",
+        "en-US": "XML validation result"
+      },
+      "fields": [
+        {
+          "name": "valid",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否有效",
+            "en-US": "Whether valid"
+          }
+        },
+        {
+          "name": "errors",
+          "type": "array",
+          "descs": {
+            "zh-CN": "验证错误列表",
+            "en-US": "Validation error list"
+          }
+        }
+      ]
+    }
+  ]
 }

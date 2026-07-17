@@ -22,8 +22,8 @@
       "name": "launch",
       "symbol": "hap_browser_launch",
       "descriptions": {
-        "zh-CN": "启动浏览器实例",
-        "en-US": "Launch browser instance"
+        "zh-CN": "启动一个新的浏览器实例（Chrome/Edge），可指定有头或无头模式",
+        "en-US": "Launch new browser instance (Chrome/Edge), supports headless mode"
       },
       "params": [
         {
@@ -59,26 +59,30 @@
           "type": "array",
           "optional": true,
           "descs": {
-            "zh-CN": "额外启动参数",
-            "en-US": "Extra launch arguments"
-          }
+            "zh-CN": "浏览器额外的命令行启动参数列表",
+            "en-US": "Additional browser command-line launch arguments"
+          },
+          "desc": "Additional browser command-line launch arguments"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "BrowserInstance",
         "descs": {
           "zh-CN": "浏览器实例信息",
           "en-US": "Browser instance info"
         }
       },
-      "bridge_path": "browser.launch"
+      "bridge_path": "browser.launch",
+      "async": true,
+      "description": "Launch new browser instance (Chrome/Edge), supports headless mode",
+      "group": "lifecycle"
     },
     {
       "name": "connect",
       "symbol": "hap_browser_connect",
       "descriptions": {
-        "zh-CN": "连接已运行的浏览器",
-        "en-US": "Connect to running browser"
+        "zh-CN": "通过 WebSocket URL 连接到已运行的浏览器实例的调试端口",
+        "en-US": "Connect to running browser instance via WebSocket debug URL"
       },
       "params": [
         {
@@ -91,20 +95,23 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "BrowserInstance",
         "descs": {
           "zh-CN": "浏览器实例信息",
           "en-US": "Browser instance info"
         }
       },
-      "bridge_path": "browser.connect"
+      "bridge_path": "browser.connect",
+      "async": true,
+      "description": "Connect to running browser instance via WebSocket debug URL",
+      "group": "lifecycle"
     },
     {
       "name": "close",
       "symbol": "hap_browser_close",
       "descriptions": {
-        "zh-CN": "关闭浏览器实例",
-        "en-US": "Close browser instance"
+        "zh-CN": "安全关闭浏览器实例并释放所有相关资源和页面连接",
+        "en-US": "Safely close browser instance and release all resources"
       },
       "params": [
         {
@@ -117,20 +124,22 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "browser.close"
+      "bridge_path": "browser.close",
+      "description": "Safely close browser instance and release all resources",
+      "group": "lifecycle"
     },
     {
       "name": "new_page",
       "symbol": "hap_browser_new_page",
       "descriptions": {
-        "zh-CN": "创建新标签页",
-        "en-US": "Create new tab"
+        "zh-CN": "在浏览器中创建一个新标签页并可选导航到指定URL",
+        "en-US": "Create new browser tab with optional URL navigation"
       },
       "params": [
         {
@@ -152,20 +161,22 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "PageInfo",
         "descs": {
           "zh-CN": "页面信息",
           "en-US": "Page info"
         }
       },
-      "bridge_path": "browser.newPage"
+      "bridge_path": "browser.newPage",
+      "description": "Create new browser tab with optional URL navigation",
+      "group": "page"
     },
     {
       "name": "navigate",
       "symbol": "hap_browser_navigate",
       "descriptions": {
-        "zh-CN": "导航到指定URL",
-        "en-US": "Navigate to URL"
+        "zh-CN": "导航页面到指定 URL 并等待页面加载完成",
+        "en-US": "Navigate page to URL and wait for load completion"
       },
       "params": [
         {
@@ -196,20 +207,23 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "PageInfo",
         "descs": {
           "zh-CN": "导航结果",
           "en-US": "Navigation result"
         }
       },
-      "bridge_path": "browser.navigate"
+      "bridge_path": "browser.navigate",
+      "async": true,
+      "description": "Navigate page to URL and wait for load completion",
+      "group": "navigate"
     },
     {
       "name": "evaluate",
       "symbol": "hap_browser_evaluate",
       "descriptions": {
-        "zh-CN": "执行JavaScript代码",
-        "en-US": "Execute JavaScript code"
+        "zh-CN": "在页面中执行 JavaScript 表达式并返回计算结果",
+        "en-US": "Execute JavaScript expression in page and return result"
       },
       "params": [
         {
@@ -230,20 +244,23 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "any",
         "descs": {
           "zh-CN": "执行结果",
           "en-US": "Execution result"
         }
       },
-      "bridge_path": "browser.evaluate"
+      "bridge_path": "browser.evaluate",
+      "async": true,
+      "description": "Execute JavaScript expression in page and return result",
+      "group": "capture"
     },
     {
       "name": "click",
       "symbol": "hap_browser_click",
       "descriptions": {
-        "zh-CN": "点击页面元素",
-        "en-US": "Click page element"
+        "zh-CN": "通过 CSS 选择器定位元素并模拟鼠标点击操作",
+        "en-US": "Locate element by CSS selector and simulate mouse click"
       },
       "params": [
         {
@@ -264,20 +281,23 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "browser.click"
+      "bridge_path": "browser.click",
+      "async": true,
+      "description": "Locate element by CSS selector and simulate mouse click",
+      "group": "interact"
     },
     {
       "name": "type_text",
       "symbol": "hap_browser_type_text",
       "descriptions": {
-        "zh-CN": "在元素中输入文本",
-        "en-US": "Type text into element"
+        "zh-CN": "在指定输入元素中逐字输入文本内容",
+        "en-US": "Type text character by character into specified input element"
       },
       "params": [
         {
@@ -316,20 +336,23 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "browser.typeText"
+      "bridge_path": "browser.typeText",
+      "async": true,
+      "description": "Type text character by character into specified input element",
+      "group": "interact"
     },
     {
       "name": "screenshot",
       "symbol": "hap_browser_screenshot",
       "descriptions": {
-        "zh-CN": "页面截图",
-        "en-US": "Take screenshot"
+        "zh-CN": "截取当前页面的屏幕截图，可保存为文件或返回 Base64",
+        "en-US": "Capture page screenshot, save to file or return as Base64"
       },
       "params": [
         {
@@ -371,20 +394,23 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ScreenshotResult",
         "descs": {
           "zh-CN": "截图结果(含base64数据)",
           "en-US": "Screenshot result (with base64 data)"
         }
       },
-      "bridge_path": "browser.screenshot"
+      "bridge_path": "browser.screenshot",
+      "async": true,
+      "description": "Capture page screenshot, save to file or return as Base64",
+      "group": "capture"
     },
     {
       "name": "get_html",
       "symbol": "hap_browser_get_html",
       "descriptions": {
-        "zh-CN": "获取页面HTML",
-        "en-US": "Get page HTML"
+        "zh-CN": "获取页面或指定元素的 HTML 源代码",
+        "en-US": "Get HTML source of page or specified element"
       },
       "params": [
         {
@@ -412,14 +438,16 @@
           "en-US": "HTML content"
         }
       },
-      "bridge_path": "browser.getHtml"
+      "bridge_path": "browser.getHtml",
+      "description": "Get HTML source of page or specified element",
+      "group": "navigate"
     },
     {
       "name": "wait_for_selector",
       "symbol": "hap_browser_wait_for_selector",
       "descriptions": {
-        "zh-CN": "等待元素出现",
-        "en-US": "Wait for selector"
+        "zh-CN": "等待指定 CSS 选择器的元素出现在页面 DOM 中",
+        "en-US": "Wait for element matching CSS selector to appear in DOM"
       },
       "params": [
         {
@@ -450,20 +478,23 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否找到",
           "en-US": "Found"
         }
       },
-      "bridge_path": "browser.waitForSelector"
+      "bridge_path": "browser.waitForSelector",
+      "async": true,
+      "description": "Wait for element matching CSS selector to appear in DOM",
+      "group": "navigate"
     },
     {
       "name": "get_cookies",
       "symbol": "hap_browser_get_cookies",
       "descriptions": {
-        "zh-CN": "获取Cookie",
-        "en-US": "Get cookies"
+        "zh-CN": "获取当前页面的所有 Cookie 信息",
+        "en-US": "Get all cookies for the current page"
       },
       "params": [
         {
@@ -482,14 +513,16 @@
           "en-US": "Cookie list"
         }
       },
-      "bridge_path": "browser.getCookies"
+      "bridge_path": "browser.getCookies",
+      "description": "Get all cookies for the current page",
+      "group": "cookie"
     },
     {
       "name": "set_cookies",
       "symbol": "hap_browser_set_cookies",
       "descriptions": {
-        "zh-CN": "设置Cookie",
-        "en-US": "Set cookies"
+        "zh-CN": "批量设置页面的 Cookie",
+        "en-US": "Set multiple cookies for the page"
       },
       "params": [
         {
@@ -510,20 +543,22 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "browser.setCookies"
+      "bridge_path": "browser.setCookies",
+      "description": "Set multiple cookies for the page",
+      "group": "cookie"
     },
     {
       "name": "pdf",
       "symbol": "hap_browser_pdf",
       "descriptions": {
-        "zh-CN": "导出页面为PDF",
-        "en-US": "Export page as PDF"
+        "zh-CN": "将当前页面导出为 PDF 文件",
+        "en-US": "Export current page as PDF file"
       },
       "params": [
         {
@@ -548,26 +583,30 @@
           "optional": true,
           "default_value": "false",
           "descs": {
-            "zh-CN": "横向",
-            "en-US": "Landscape"
-          }
+            "zh-CN": "landscape参数",
+            "en-US": "landscape parameter"
+          },
+          "desc": "landscape parameter"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ScreenshotResult",
         "descs": {
           "zh-CN": "导出结果",
           "en-US": "Export result"
         }
       },
-      "bridge_path": "browser.pdf"
+      "bridge_path": "browser.pdf",
+      "async": true,
+      "description": "Export current page as PDF file",
+      "group": "capture"
     },
     {
       "name": "list_pages",
       "symbol": "hap_browser_list_pages",
       "descriptions": {
-        "zh-CN": "列出所有标签页",
-        "en-US": "List all tabs"
+        "zh-CN": "列出浏览器实例中所有打开的标签页",
+        "en-US": "List all open tabs in the browser instance"
       },
       "params": [
         {
@@ -586,14 +625,16 @@
           "en-US": "Page list"
         }
       },
-      "bridge_path": "browser.listPages"
+      "bridge_path": "browser.listPages",
+      "description": "List all open tabs in the browser instance",
+      "group": "page"
     },
     {
       "name": "close_page",
       "symbol": "hap_browser_close_page",
       "descriptions": {
-        "zh-CN": "关闭标签页",
-        "en-US": "Close tab"
+        "zh-CN": "关闭指定的浏览器标签页",
+        "en-US": "Close specified browser tab"
       },
       "params": [
         {
@@ -606,20 +647,22 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "browser.closePage"
+      "bridge_path": "browser.closePage",
+      "description": "Close specified browser tab",
+      "group": "page"
     },
     {
       "name": "select",
       "symbol": "hap_browser_select",
       "descriptions": {
-        "zh-CN": "选择下拉选项",
-        "en-US": "Select dropdown option"
+        "zh-CN": "在下拉选择框中选择指定的选项值",
+        "en-US": "Select specified option value in dropdown"
       },
       "params": [
         {
@@ -642,26 +685,29 @@
           "name": "value",
           "type": "string",
           "descs": {
-            "zh-CN": "选项值",
-            "en-US": "Option value"
-          }
+            "zh-CN": "要设置的值",
+            "en-US": "Value to set"
+          },
+          "desc": "Value to set"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "browser.select"
+      "bridge_path": "browser.select",
+      "description": "Select specified option value in dropdown",
+      "group": "interact"
     },
     {
       "name": "query_selector",
       "symbol": "hap_browser_query_selector",
       "descriptions": {
-        "zh-CN": "查询元素属性",
-        "en-US": "Query element attributes"
+        "zh-CN": "查询页面中匹配 CSS 选择器的元素属性信息",
+        "en-US": "Query element attributes matching CSS selector"
       },
       "params": [
         {
@@ -691,13 +737,185 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ElementInfo",
         "descs": {
           "zh-CN": "元素信息",
           "en-US": "Element info"
         }
       },
-      "bridge_path": "browser.querySelector"
+      "bridge_path": "browser.querySelector",
+      "description": "Query element attributes matching CSS selector",
+      "group": "interact"
+    }
+  ],
+  "types": [
+    {
+      "name": "Cookie",
+      "descriptions": {
+        "zh-CN": "Cookie结构",
+        "en-US": "Cookie structure"
+      },
+      "fields": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "名称",
+            "en-US": "Name"
+          }
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "值",
+            "en-US": "Value"
+          }
+        },
+        {
+          "name": "domain",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "域名",
+            "en-US": "Domain"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "expires",
+          "type": "number",
+          "optional": true,
+          "descs": {
+            "zh-CN": "过期时间戳",
+            "en-US": "Expiry timestamp"
+          }
+        }
+      ]
+    },
+    {
+      "name": "BrowserInstance",
+      "descriptions": {
+        "zh-CN": "浏览器实例",
+        "en-US": "Browser instance"
+      },
+      "fields": [
+        {
+          "name": "browser_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "浏览器ID",
+            "en-US": "Browser ID"
+          }
+        },
+        {
+          "name": "ws_url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "WebSocket调试地址",
+            "en-US": "WebSocket debug URL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PageInfo",
+      "descriptions": {
+        "zh-CN": "页面信息",
+        "en-US": "Page info"
+      },
+      "fields": [
+        {
+          "name": "page_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "页面ID",
+            "en-US": "Page ID"
+          }
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "页面URL",
+            "en-US": "Page URL"
+          }
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "页面标题",
+            "en-US": "Page title"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ScreenshotResult",
+      "descriptions": {
+        "zh-CN": "截图结果",
+        "en-US": "Screenshot result"
+      },
+      "fields": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base64图片数据",
+            "en-US": "Base64 image data"
+          }
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图片格式(png)",
+            "en-US": "Image format"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ElementInfo",
+      "descriptions": {
+        "zh-CN": "DOM元素信息",
+        "en-US": "DOM element info"
+      },
+      "fields": [
+        {
+          "name": "tag",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标签名",
+            "en-US": "Tag name"
+          }
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文本内容",
+            "en-US": "Text content"
+          }
+        },
+        {
+          "name": "attributes",
+          "type": "object",
+          "descs": {
+            "zh-CN": "属性映射",
+            "en-US": "Attributes"
+          }
+        }
+      ]
     }
   ]
 }

@@ -22,23 +22,27 @@
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已编码",
-          "en-US": "Encoded"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.base64Encode",
       "descriptions": {
-        "zh-CN": "Base64 编码",
-        "en-US": "Base64 encode"
-      }
+        "zh-CN": "将数据编码为 Base64",
+        "en-US": "Base64 encode of encoding"
+      },
+      "group": "base",
+      "description": "Base64 encode of encoding"
     },
     {
       "name": "base64_decode",
@@ -56,15 +60,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已解码",
-          "en-US": "Decoded"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.base64Decode",
       "descriptions": {
-        "zh-CN": "Base64 解码",
-        "en-US": "Base64 decode"
-      }
+        "zh-CN": "解码 Base64 数据",
+        "en-US": "Base64 decode of encoding"
+      },
+      "group": "base",
+      "description": "Base64 decode of encoding"
     },
     {
       "name": "base64url_encode",
@@ -74,23 +81,26 @@
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已编码",
-          "en-US": "Encoded"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.base64urlEncode",
       "descriptions": {
-        "zh-CN": "Base64URL 编码",
+        "zh-CN": "将数据编码为 BASE64URL 格式",
         "en-US": "Base64URL encode"
-      }
+      },
+      "group": "base"
     },
     {
       "name": "base64url_decode",
@@ -108,15 +118,17 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已解码",
-          "en-US": "Decoded"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.base64urlDecode",
       "descriptions": {
-        "zh-CN": "Base64URL 解码",
+        "zh-CN": "解码 BASE64URL 格式数据",
         "en-US": "Base64URL decode"
-      }
+      },
+      "group": "base"
     },
     {
       "name": "base32_encode",
@@ -126,31 +138,36 @@
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         },
         {
           "name": "padding",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
-            "zh-CN": "填充",
-            "en-US": "Pad"
-          }
+            "zh-CN": "是否添加填充字符=",
+            "en-US": "Whether to add padding character ="
+          },
+          "desc": "Whether to add padding character ="
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已编码",
-          "en-US": "Encoded"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.base32Encode",
       "descriptions": {
-        "zh-CN": "Base32 编码",
-        "en-US": "Base32 encode"
-      }
+        "zh-CN": "将数据编码为 BASE32 格式",
+        "en-US": "Base32 encode of encoding"
+      },
+      "group": "base",
+      "description": "Base32 encode of encoding"
     },
     {
       "name": "base32_decode",
@@ -168,15 +185,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已解码",
-          "en-US": "Decoded"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.base32Decode",
       "descriptions": {
-        "zh-CN": "Base32 解码",
-        "en-US": "Base32 decode"
-      }
+        "zh-CN": "解码 BASE32 格式数据",
+        "en-US": "Base32 decode of encoding"
+      },
+      "group": "base",
+      "description": "Base32 decode of encoding"
     },
     {
       "name": "hex_encode",
@@ -186,9 +206,10 @@
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         }
       ],
       "returns": {
@@ -200,9 +221,11 @@
       },
       "bridge_path": "encoding.hexEncode",
       "descriptions": {
-        "zh-CN": "十六进制编码",
-        "en-US": "Hex encode"
-      }
+        "zh-CN": "将数据编码为十六进制",
+        "en-US": "Hex encode of encoding"
+      },
+      "group": "base",
+      "description": "Hex encode of encoding"
     },
     {
       "name": "hex_decode",
@@ -220,15 +243,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已解码",
-          "en-US": "Decoded"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.hexDecode",
       "descriptions": {
-        "zh-CN": "十六进制解码",
-        "en-US": "Hex decode"
-      }
+        "zh-CN": "解码十六进制数据",
+        "en-US": "Hex decode of encoding"
+      },
+      "group": "base",
+      "description": "Hex decode of encoding"
     },
     {
       "name": "url_encode",
@@ -238,31 +264,36 @@
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         },
         {
           "name": "component",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
-            "zh-CN": "组件",
-            "en-US": "Component"
-          }
+            "zh-CN": "component参数",
+            "en-US": "component parameter"
+          },
+          "desc": "component parameter"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已编码",
-          "en-US": "Encoded"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.urlEncode",
       "descriptions": {
-        "zh-CN": "URL 编码",
-        "en-US": "URL encode"
-      }
+        "zh-CN": "URL 编码字符串",
+        "en-US": "Url encode of encoding"
+      },
+      "group": "text",
+      "description": "Url encode of encoding"
     },
     {
       "name": "url_decode",
@@ -280,15 +311,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已解码",
-          "en-US": "Decoded"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.urlDecode",
       "descriptions": {
-        "zh-CN": "URL 解码",
-        "en-US": "URL decode"
-      }
+        "zh-CN": "URL 解码字符串",
+        "en-US": "Url decode of encoding"
+      },
+      "group": "text",
+      "description": "Url decode of encoding"
     },
     {
       "name": "html_encode",
@@ -306,15 +340,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已编码",
-          "en-US": "Encoded"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.htmlEncode",
       "descriptions": {
-        "zh-CN": "HTML 编码",
-        "en-US": "HTML encode"
-      }
+        "zh-CN": "将数据编码为 HTML 格式",
+        "en-US": "Html encode of encoding"
+      },
+      "group": "text",
+      "description": "Html encode of encoding"
     },
     {
       "name": "html_decode",
@@ -332,15 +369,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已解码",
-          "en-US": "Decoded"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.htmlDecode",
       "descriptions": {
-        "zh-CN": "HTML 解码",
-        "en-US": "HTML decode"
-      }
+        "zh-CN": "解码 HTML 格式数据",
+        "en-US": "Html decode of encoding"
+      },
+      "group": "text",
+      "description": "Html decode of encoding"
     },
     {
       "name": "text_convert",
@@ -350,39 +390,45 @@
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "文本",
-            "en-US": "Text"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         },
         {
           "name": "from",
           "type": "string",
           "descs": {
-            "zh-CN": "源",
-            "en-US": "Source"
-          }
+            "zh-CN": "源字符编码（如GBK/UTF-8）",
+            "en-US": "Source encoding (e.g. GBK/UTF-8)"
+          },
+          "desc": "Source encoding (e.g. GBK/UTF-8)"
         },
         {
           "name": "to",
           "type": "string",
           "descs": {
-            "zh-CN": "目标",
-            "en-US": "Target"
-          }
+            "zh-CN": "目标字符编码（如UTF-8/GBK）",
+            "en-US": "Target encoding (e.g. UTF-8/GBK)"
+          },
+          "desc": "Target encoding (e.g. UTF-8/GBK)"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已转换",
-          "en-US": "Converted"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.textConvert",
       "descriptions": {
-        "zh-CN": "转换编码",
-        "en-US": "Convert encoding"
-      }
+        "zh-CN": "文本转换编码",
+        "en-US": "Text convert of encoding"
+      },
+      "group": "text",
+      "description": "Text convert of encoding"
     },
     {
       "name": "detect_encoding",
@@ -398,7 +444,7 @@
         },
         {
           "name": "sample_size",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "采样大小",
             "en-US": "Sample size"
@@ -406,17 +452,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "EncodingDetectResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "encoding.detectEncoding",
       "descriptions": {
-        "zh-CN": "检测编码",
-        "en-US": "Detect encoding"
-      }
+        "zh-CN": "检测编码编码",
+        "en-US": "Detect encoding of encoding"
+      },
+      "group": "text",
+      "description": "Detect encoding of encoding"
     },
     {
       "name": "convert_file",
@@ -426,55 +475,63 @@
           "name": "input_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输入",
-            "en-US": "Input"
-          }
+            "zh-CN": "输入文件路径",
+            "en-US": "Input file path"
+          },
+          "desc": "Input file path"
         },
         {
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         },
         {
           "name": "from",
           "type": "string",
           "descs": {
-            "zh-CN": "源",
-            "en-US": "Source"
-          }
+            "zh-CN": "源文件字符编码",
+            "en-US": "Source file encoding"
+          },
+          "desc": "Source file encoding"
         },
         {
           "name": "to",
           "type": "string",
           "descs": {
-            "zh-CN": "目标",
-            "en-US": "Target"
-          }
+            "zh-CN": "目标字符编码",
+            "en-US": "Target encoding"
+          },
+          "desc": "Target encoding"
         },
         {
           "name": "bom",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
-            "zh-CN": "BOM",
-            "en-US": "BOM"
-          }
+            "zh-CN": "是否写入BOM标记",
+            "en-US": "Whether to write BOM marker"
+          },
+          "desc": "Whether to write BOM marker"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ConvertResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "encoding.convertFile",
       "descriptions": {
-        "zh-CN": "转换文件",
-        "en-US": "Convert file"
-      }
+        "zh-CN": "将文件的字符编码从一种转换为另一种",
+        "en-US": "Convert file character encoding from one to another"
+      },
+      "group": "text",
+      "description": "Convert file character encoding from one to another"
     },
     {
       "name": "base58_encode",
@@ -484,31 +541,36 @@
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         },
         {
           "name": "alphabet",
           "type": "string",
           "descs": {
-            "zh-CN": "字母表",
-            "en-US": "Alphabet"
-          }
+            "zh-CN": "alphabet参数",
+            "en-US": "alphabet parameter"
+          },
+          "desc": "alphabet parameter"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已编码",
-          "en-US": "Encoded"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.base58Encode",
       "descriptions": {
-        "zh-CN": "Base58 编码",
-        "en-US": "Base58 encode"
-      }
+        "zh-CN": "将数据编码为 BASE58 格式",
+        "en-US": "Base58 encode of encoding"
+      },
+      "group": "base",
+      "description": "Base58 encode of encoding"
     },
     {
       "name": "base58_decode",
@@ -526,27 +588,170 @@
           "name": "alphabet",
           "type": "string",
           "descs": {
-            "zh-CN": "字母表",
-            "en-US": "Alphabet"
-          }
+            "zh-CN": "alphabet参数",
+            "en-US": "alphabet parameter"
+          },
+          "desc": "alphabet parameter"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已解码",
-          "en-US": "Decoded"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "encoding.base58Decode",
       "descriptions": {
-        "zh-CN": "Base58 解码",
-        "en-US": "Base58 decode"
-      }
+        "zh-CN": "解码 BASE58 格式数据",
+        "en-US": "Base58 decode of encoding"
+      },
+      "group": "base",
+      "description": "Base58 decode of encoding"
     }
   ],
   "overviews": {
     "zh-CN": "提供字符编码转换、Base64/Hex 编解码、URL 编解码、HTML 实体转义、Unicode 处理等能力。支持 UTF-8/GBK/GB2312/Shift_JIS/EUC-KR 等多种字符集。",
     "en-US": "Character encoding conversion, Base64/Hex encoding, URL encoding, HTML entity escaping, and Unicode handling. Supports UTF-8/GBK/GB2312/Shift_JIS/EUC-KR and more character sets."
-  }
+  },
+  "constants": [
+    {
+      "name": "UTF8",
+      "value": "utf-8",
+      "type": "string",
+      "group": "charset",
+      "descs": {
+        "zh-CN": "UTF-8编码",
+        "en-US": "UTF-8 encoding"
+      }
+    },
+    {
+      "name": "GBK",
+      "value": "gbk",
+      "type": "string",
+      "group": "charset",
+      "descs": {
+        "zh-CN": "GBK编码",
+        "en-US": "GBK encoding"
+      }
+    },
+    {
+      "name": "GB2312",
+      "value": "gb2312",
+      "type": "string",
+      "group": "charset",
+      "descs": {
+        "zh-CN": "GB2312编码",
+        "en-US": "GB2312 encoding"
+      }
+    },
+    {
+      "name": "BIG5",
+      "value": "big5",
+      "type": "string",
+      "group": "charset",
+      "descs": {
+        "zh-CN": "BIG5编码",
+        "en-US": "BIG5 encoding"
+      }
+    },
+    {
+      "name": "SHIFT_JIS",
+      "value": "shift-jis",
+      "type": "string",
+      "group": "charset",
+      "descs": {
+        "zh-CN": "Shift-JIS编码",
+        "en-US": "Shift-JIS encoding"
+      }
+    },
+    {
+      "name": "ISO_8859_1",
+      "value": "iso-8859-1",
+      "type": "string",
+      "group": "charset",
+      "descs": {
+        "zh-CN": "ISO-8859-1编码",
+        "en-US": "ISO-8859-1 encoding"
+      }
+    }
+  ],
+  "types": [
+    {
+      "name": "EncodingResult",
+      "descriptions": {
+        "zh-CN": "编码/解码操作的结果",
+        "en-US": "Encoding/decoding operation result"
+      },
+      "fields": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "编码或解码后的数据",
+            "en-US": "Encoded or decoded data"
+          }
+        },
+        {
+          "name": "length",
+          "type": "number",
+          "descs": {
+            "zh-CN": "结果数据长度",
+            "en-US": "Result data length"
+          }
+        }
+      ]
+    },
+    {
+      "name": "EncodingDetectResult",
+      "descriptions": {
+        "zh-CN": "编码检测结果",
+        "en-US": "Encoding detection result"
+      },
+      "fields": [
+        {
+          "name": "encoding",
+          "type": "string",
+          "descs": {
+            "zh-CN": "检测到的编码",
+            "en-US": "Detected encoding"
+          }
+        },
+        {
+          "name": "confidence",
+          "type": "number",
+          "descs": {
+            "zh-CN": "检测置信度(0-1)",
+            "en-US": "Detection confidence (0-1)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ConvertResult",
+      "descriptions": {
+        "zh-CN": "编码转换结果",
+        "en-US": "Encoding conversion result"
+      },
+      "fields": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否成功",
+            "en-US": "Whether succeeded"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          }
+        }
+      ]
+    }
+  ]
 }

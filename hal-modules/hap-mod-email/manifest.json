@@ -22,8 +22,8 @@
       "name": "send",
       "symbol": "hap_email_send",
       "descriptions": {
-        "zh-CN": "发送邮件",
-        "en-US": "Send email"
+        "zh-CN": "通过 SMTP 协议发送电子邮件，支持HTML正文、抄送和附件",
+        "en-US": "Send email via SMTP with HTML body, CC/BCC and attachments support"
       },
       "params": [
         {
@@ -40,17 +40,19 @@
           "optional": true,
           "default_value": "587",
           "descs": {
-            "zh-CN": "端口",
-            "en-US": "Port"
-          }
+            "zh-CN": "smtp_port参数",
+            "en-US": "smtp_port parameter"
+          },
+          "desc": "smtp_port parameter"
         },
         {
           "name": "username",
           "type": "string",
           "descs": {
-            "zh-CN": "用户名",
-            "en-US": "Username"
-          }
+            "zh-CN": "SMTP登录用户名",
+            "en-US": "SMTP login username"
+          },
+          "desc": "SMTP login username"
         },
         {
           "name": "password",
@@ -64,9 +66,10 @@
           "name": "from",
           "type": "string",
           "descs": {
-            "zh-CN": "发件人",
-            "en-US": "From"
-          }
+            "zh-CN": "发件人邮箱地址",
+            "en-US": "Sender email address"
+          },
+          "desc": "Sender email address"
         },
         {
           "name": "to",
@@ -80,17 +83,19 @@
           "name": "subject",
           "type": "string",
           "descs": {
-            "zh-CN": "主题",
-            "en-US": "Subject"
-          }
+            "zh-CN": "邮件主题",
+            "en-US": "Email subject"
+          },
+          "desc": "Email subject"
         },
         {
           "name": "body",
           "type": "string",
           "descs": {
-            "zh-CN": "正文",
-            "en-US": "Body"
-          }
+            "zh-CN": "请求体内容",
+            "en-US": "Request body content"
+          },
+          "desc": "Request body content"
         },
         {
           "name": "html",
@@ -107,18 +112,20 @@
           "type": "array",
           "optional": true,
           "descs": {
-            "zh-CN": "抄送",
-            "en-US": "CC"
-          }
+            "zh-CN": "抄送邮箱地址列表",
+            "en-US": "CC email address list"
+          },
+          "desc": "CC email address list"
         },
         {
           "name": "bcc",
           "type": "array",
           "optional": true,
           "descs": {
-            "zh-CN": "密送",
-            "en-US": "BCC"
-          }
+            "zh-CN": "密送邮箱地址列表",
+            "en-US": "BCC email address list"
+          },
+          "desc": "BCC email address list"
         },
         {
           "name": "attachments",
@@ -141,20 +148,23 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "SendResult",
         "descs": {
           "zh-CN": "发送结果",
           "en-US": "Send result"
         }
       },
-      "bridge_path": "email.send"
+      "bridge_path": "email.send",
+      "group": "send",
+      "async": true,
+      "description": "Send email via SMTP with HTML body, CC/BCC and attachments support"
     },
     {
       "name": "fetch",
       "symbol": "hap_email_fetch",
       "descriptions": {
-        "zh-CN": "收取邮件",
-        "en-US": "Fetch emails"
+        "zh-CN": "通过 IMAP 协议获取邮箱中的邮件列表（支持只获取未读）",
+        "en-US": "Fetch email list via IMAP (supports unseen only filter)"
       },
       "params": [
         {
@@ -169,34 +179,38 @@
           "name": "host",
           "type": "string",
           "descs": {
-            "zh-CN": "服务器",
-            "en-US": "Server"
-          }
+            "zh-CN": "主机地址（IP或域名）",
+            "en-US": "Host (IP or domain)"
+          },
+          "desc": "Host (IP or domain)"
         },
         {
           "name": "port",
           "type": "number",
           "optional": true,
           "descs": {
-            "zh-CN": "端口",
-            "en-US": "Port"
-          }
+            "zh-CN": "IMAP服务器端口号",
+            "en-US": "IMAP server port number"
+          },
+          "desc": "IMAP server port number"
         },
         {
           "name": "username",
           "type": "string",
           "descs": {
-            "zh-CN": "用户名",
-            "en-US": "Username"
-          }
+            "zh-CN": "IMAP登录用户名",
+            "en-US": "IMAP login username"
+          },
+          "desc": "IMAP login username"
         },
         {
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string"
         },
         {
           "name": "folder",
@@ -204,9 +218,10 @@
           "optional": true,
           "default_value": "\"INBOX\"",
           "descs": {
-            "zh-CN": "文件夹",
-            "en-US": "Folder"
-          }
+            "zh-CN": "邮箱文件夹名（如INBOX/Sent）",
+            "en-US": "Mailbox folder name (e.g. INBOX/Sent)"
+          },
+          "desc": "Mailbox folder name (e.g. INBOX/Sent)"
         },
         {
           "name": "limit",
@@ -224,9 +239,10 @@
           "optional": true,
           "default_value": "false",
           "descs": {
-            "zh-CN": "仅未读",
-            "en-US": "Unseen only"
-          }
+            "zh-CN": "unseen_only参数",
+            "en-US": "unseen_only parameter"
+          },
+          "desc": "unseen_only parameter"
         },
         {
           "name": "use_tls",
@@ -246,14 +262,17 @@
           "en-US": "Email list"
         }
       },
-      "bridge_path": "email.fetch"
+      "bridge_path": "email.fetch",
+      "group": "receive",
+      "async": true,
+      "description": "Fetch email list via IMAP (supports unseen only filter)"
     },
     {
       "name": "list_folders",
       "symbol": "hap_email_list_folders",
       "descriptions": {
-        "zh-CN": "列出邮件文件夹",
-        "en-US": "List mail folders"
+        "zh-CN": "获取邮箱中所有文件夹（收件箱、已发送、草稿等）的列表",
+        "en-US": "List all mailbox folders (Inbox, Sent, Drafts, etc.)"
       },
       "params": [
         {
@@ -268,34 +287,38 @@
           "name": "host",
           "type": "string",
           "descs": {
-            "zh-CN": "服务器",
-            "en-US": "Server"
-          }
+            "zh-CN": "主机地址（IP或域名）",
+            "en-US": "Host (IP or domain)"
+          },
+          "desc": "Host (IP or domain)"
         },
         {
           "name": "port",
           "type": "number",
           "optional": true,
           "descs": {
-            "zh-CN": "端口",
-            "en-US": "Port"
-          }
+            "zh-CN": "IMAP服务器端口号",
+            "en-US": "IMAP server port number"
+          },
+          "desc": "IMAP server port number"
         },
         {
           "name": "username",
           "type": "string",
           "descs": {
-            "zh-CN": "用户名",
-            "en-US": "Username"
-          }
+            "zh-CN": "IMAP登录用户名",
+            "en-US": "IMAP login username"
+          },
+          "desc": "IMAP login username"
         },
         {
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string"
         },
         {
           "name": "use_tls",
@@ -315,48 +338,55 @@
           "en-US": "Folder list"
         }
       },
-      "bridge_path": "email.listFolders"
+      "bridge_path": "email.listFolders",
+      "group": "receive",
+      "async": true,
+      "description": "List all mailbox folders (Inbox, Sent, Drafts, etc.)"
     },
     {
       "name": "mark_read",
       "symbol": "hap_email_mark_read",
       "descriptions": {
-        "zh-CN": "标记已读",
-        "en-US": "Mark as read"
+        "zh-CN": "将指定邮件标记为已读状态",
+        "en-US": "Mark specified email as read"
       },
       "params": [
         {
           "name": "host",
           "type": "string",
           "descs": {
-            "zh-CN": "服务器",
-            "en-US": "Server"
-          }
+            "zh-CN": "主机地址（IP或域名）",
+            "en-US": "Host (IP or domain)"
+          },
+          "desc": "Host (IP or domain)"
         },
         {
           "name": "port",
           "type": "number",
           "optional": true,
           "descs": {
-            "zh-CN": "端口",
-            "en-US": "Port"
-          }
+            "zh-CN": "IMAP服务器端口号",
+            "en-US": "IMAP server port number"
+          },
+          "desc": "IMAP server port number"
         },
         {
           "name": "username",
           "type": "string",
           "descs": {
-            "zh-CN": "用户名",
-            "en-US": "Username"
-          }
+            "zh-CN": "IMAP登录用户名",
+            "en-US": "IMAP login username"
+          },
+          "desc": "IMAP login username"
         },
         {
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string"
         },
         {
           "name": "message_uid",
@@ -372,9 +402,10 @@
           "optional": true,
           "default_value": "\"INBOX\"",
           "descs": {
-            "zh-CN": "文件夹",
-            "en-US": "Folder"
-          }
+            "zh-CN": "邮件所在文件夹名",
+            "en-US": "Folder name containing the email"
+          },
+          "desc": "Folder name containing the email"
         },
         {
           "name": "use_tls",
@@ -388,54 +419,61 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "email.markRead"
+      "bridge_path": "email.markRead",
+      "group": "receive",
+      "async": true,
+      "description": "Mark specified email as read"
     },
     {
       "name": "delete",
       "symbol": "hap_email_delete",
       "descriptions": {
-        "zh-CN": "删除邮件",
-        "en-US": "Delete email"
+        "zh-CN": "从邮箱中永久删除指定的邮件",
+        "en-US": "Permanently delete specified email from mailbox"
       },
       "params": [
         {
           "name": "host",
           "type": "string",
           "descs": {
-            "zh-CN": "服务器",
-            "en-US": "Server"
-          }
+            "zh-CN": "主机地址（IP或域名）",
+            "en-US": "Host (IP or domain)"
+          },
+          "desc": "Host (IP or domain)"
         },
         {
           "name": "port",
           "type": "number",
           "optional": true,
           "descs": {
-            "zh-CN": "端口",
-            "en-US": "Port"
-          }
+            "zh-CN": "IMAP服务器端口号",
+            "en-US": "IMAP server port number"
+          },
+          "desc": "IMAP server port number"
         },
         {
           "name": "username",
           "type": "string",
           "descs": {
-            "zh-CN": "用户名",
-            "en-US": "Username"
-          }
+            "zh-CN": "IMAP登录用户名",
+            "en-US": "IMAP login username"
+          },
+          "desc": "IMAP login username"
         },
         {
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string"
         },
         {
           "name": "message_uid",
@@ -451,9 +489,10 @@
           "optional": true,
           "default_value": "\"INBOX\"",
           "descs": {
-            "zh-CN": "文件夹",
-            "en-US": "Folder"
-          }
+            "zh-CN": "邮件所在文件夹名",
+            "en-US": "Folder name containing the email"
+          },
+          "desc": "Folder name containing the email"
         },
         {
           "name": "use_tls",
@@ -467,54 +506,61 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "email.delete"
+      "bridge_path": "email.delete",
+      "group": "receive",
+      "async": true,
+      "description": "Permanently delete specified email from mailbox"
     },
     {
       "name": "download_attachment",
       "symbol": "hap_email_download_attachment",
       "descriptions": {
-        "zh-CN": "下载附件",
-        "en-US": "Download attachment"
+        "zh-CN": "下载邮件中的指定附件并保存到本地路径",
+        "en-US": "Download email attachment and save to local path"
       },
       "params": [
         {
           "name": "host",
           "type": "string",
           "descs": {
-            "zh-CN": "服务器",
-            "en-US": "Server"
-          }
+            "zh-CN": "主机地址（IP或域名）",
+            "en-US": "Host (IP or domain)"
+          },
+          "desc": "Host (IP or domain)"
         },
         {
           "name": "port",
           "type": "number",
           "optional": true,
           "descs": {
-            "zh-CN": "端口",
-            "en-US": "Port"
-          }
+            "zh-CN": "IMAP服务器端口号",
+            "en-US": "IMAP server port number"
+          },
+          "desc": "IMAP server port number"
         },
         {
           "name": "username",
           "type": "string",
           "descs": {
-            "zh-CN": "用户名",
-            "en-US": "Username"
-          }
+            "zh-CN": "IMAP登录用户名",
+            "en-US": "IMAP login username"
+          },
+          "desc": "IMAP login username"
         },
         {
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string"
         },
         {
           "name": "message_uid",
@@ -552,13 +598,109 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "DownloadResult",
         "descs": {
           "zh-CN": "下载结果",
           "en-US": "Download result"
         }
       },
-      "bridge_path": "email.downloadAttachment"
+      "bridge_path": "email.downloadAttachment",
+      "group": "receive",
+      "async": true,
+      "description": "Download email attachment and save to local path"
+    }
+  ],
+  "types": [
+    {
+      "name": "EmailAttachment",
+      "descriptions": {
+        "zh-CN": "邮件附件结构",
+        "en-US": "Email attachment"
+      },
+      "fields": [
+        {
+          "name": "filename",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件名",
+            "en-US": "File name"
+          }
+        },
+        {
+          "name": "content_type",
+          "type": "string",
+          "descs": {
+            "zh-CN": "MIME类型",
+            "en-US": "MIME type"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base64内容",
+            "en-US": "Base64 content"
+          }
+        }
+      ]
+    },
+    {
+      "name": "SendResult",
+      "descriptions": {
+        "zh-CN": "邮件发送结果",
+        "en-US": "Email send result"
+      },
+      "fields": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否发送成功",
+            "en-US": "Whether sent successfully"
+          }
+        },
+        {
+          "name": "message_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "邮件消息ID",
+            "en-US": "Email message ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "DownloadResult",
+      "descriptions": {
+        "zh-CN": "附件下载结果",
+        "en-US": "Attachment download result"
+      },
+      "fields": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否成功",
+            "en-US": "Whether succeeded"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "保存路径",
+            "en-US": "Save path"
+          }
+        },
+        {
+          "name": "size",
+          "type": "number",
+          "descs": {
+            "zh-CN": "文件大小(字节)",
+            "en-US": "File size in bytes"
+          }
+        }
+      ]
     }
   ]
 }

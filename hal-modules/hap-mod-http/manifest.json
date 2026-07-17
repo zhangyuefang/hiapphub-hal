@@ -22,31 +22,39 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         },
         {
           "name": "method",
           "type": "string",
           "descs": {
-            "zh-CN": "方法",
-            "en-US": "Method"
-          }
+            "zh-CN": "HTTP方法（GET/POST/PUT/DELETE等）",
+            "en-US": "HTTP method"
+          },
+          "desc": "HTTP method",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HttpResponse",
         "descs": {
-          "zh-CN": "响应",
-          "en-US": "Response"
-        }
+          "zh-CN": "HttpResponse类型的结果对象",
+          "en-US": "Result object of type HttpResponse"
+        },
+        "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.request",
       "descriptions": {
-        "zh-CN": "发送 HTTP 请求",
-        "en-US": "Send HTTP request"
-      }
+        "zh-CN": "发送自定义 HTTP 请求（支持 GET/POST/PUT/DELETE 等方法）",
+        "en-US": "Send custom HTTP request with any method"
+      },
+      "async": true,
+      "description": "Send custom HTTP request with any method",
+      "group": "request"
     },
     {
       "name": "get",
@@ -56,23 +64,29 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HttpResponse",
         "descs": {
-          "zh-CN": "响应",
-          "en-US": "Response"
-        }
+          "zh-CN": "HttpResponse类型的结果对象",
+          "en-US": "Result object of type HttpResponse"
+        },
+        "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.get",
       "descriptions": {
-        "zh-CN": "GET 请求",
-        "en-US": "GET request"
-      }
+        "zh-CN": "发送 HTTP GET 请求并返回响应内容",
+        "en-US": "Send HTTP GET request and return response"
+      },
+      "async": true,
+      "description": "Send HTTP GET request and return response",
+      "group": "request"
     },
     {
       "name": "post",
@@ -82,31 +96,39 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         },
         {
           "name": "body",
           "type": "string",
           "descs": {
-            "zh-CN": "主体",
-            "en-US": "Body"
-          }
+            "zh-CN": "请求体内容",
+            "en-US": "Request body content"
+          },
+          "desc": "Request body content",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HttpResponse",
         "descs": {
-          "zh-CN": "响应",
-          "en-US": "Response"
-        }
+          "zh-CN": "HttpResponse类型的结果对象",
+          "en-US": "Result object of type HttpResponse"
+        },
+        "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.post",
       "descriptions": {
-        "zh-CN": "POST 请求",
-        "en-US": "POST request"
-      }
+        "zh-CN": "发送 HTTP POST 请求，支持 JSON/表单/文件上传等请求体",
+        "en-US": "Send HTTP POST request with JSON/form/file upload body"
+      },
+      "async": true,
+      "description": "Send HTTP POST request with JSON/form/file upload body",
+      "group": "request"
     },
     {
       "name": "put",
@@ -116,31 +138,39 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         },
         {
           "name": "body",
           "type": "string",
           "descs": {
-            "zh-CN": "主体",
-            "en-US": "Body"
-          }
+            "zh-CN": "请求体内容",
+            "en-US": "Request body content"
+          },
+          "desc": "Request body content",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HttpResponse",
         "descs": {
-          "zh-CN": "响应",
-          "en-US": "Response"
-        }
+          "zh-CN": "HttpResponse类型的结果对象",
+          "en-US": "Result object of type HttpResponse"
+        },
+        "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.put",
       "descriptions": {
-        "zh-CN": "PUT 请求",
-        "en-US": "PUT request"
-      }
+        "zh-CN": "发送HTTP PUT请求（用于更新资源）",
+        "en-US": "Send HTTP PUT request (for updating resources)"
+      },
+      "async": true,
+      "group": "request",
+      "description": "Send HTTP PUT request (for updating resources)"
     },
     {
       "name": "patch",
@@ -150,31 +180,39 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         },
         {
           "name": "body",
           "type": "string",
           "descs": {
-            "zh-CN": "主体",
-            "en-US": "Body"
-          }
+            "zh-CN": "请求体内容",
+            "en-US": "Request body content"
+          },
+          "desc": "Request body content",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HttpResponse",
         "descs": {
-          "zh-CN": "响应",
-          "en-US": "Response"
-        }
+          "zh-CN": "HttpResponse类型的结果对象",
+          "en-US": "Result object of type HttpResponse"
+        },
+        "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.patch",
       "descriptions": {
-        "zh-CN": "PATCH 请求",
-        "en-US": "PATCH request"
-      }
+        "zh-CN": "发送HTTP PATCH请求（用于部分更新资源）",
+        "en-US": "Send HTTP PATCH request (for partial updates)"
+      },
+      "async": true,
+      "group": "request",
+      "description": "Send HTTP PATCH request (for partial updates)"
     },
     {
       "name": "delete",
@@ -184,23 +222,29 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HttpResponse",
         "descs": {
-          "zh-CN": "响应",
-          "en-US": "Response"
-        }
+          "zh-CN": "HttpResponse类型的结果对象",
+          "en-US": "Result object of type HttpResponse"
+        },
+        "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.delete",
       "descriptions": {
-        "zh-CN": "DELETE 请求",
-        "en-US": "DELETE request"
-      }
+        "zh-CN": "发送HTTP DELETE请求（用于删除资源）",
+        "en-US": "Send HTTP DELETE request (for deleting resources)"
+      },
+      "async": true,
+      "group": "request",
+      "description": "Send HTTP DELETE request (for deleting resources)"
     },
     {
       "name": "head",
@@ -210,23 +254,29 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HttpResponse",
         "descs": {
-          "zh-CN": "响应",
-          "en-US": "Response"
-        }
+          "zh-CN": "HttpResponse类型的结果对象",
+          "en-US": "Result object of type HttpResponse"
+        },
+        "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.head",
       "descriptions": {
-        "zh-CN": "HEAD 请求",
-        "en-US": "HEAD request"
-      }
+        "zh-CN": "发送HTTP HEAD请求（只获取响应头不获取正文）",
+        "en-US": "Send HTTP HEAD request (headers only, no body)"
+      },
+      "async": true,
+      "group": "request",
+      "description": "Send HTTP HEAD request (headers only, no body)"
     },
     {
       "name": "download",
@@ -236,9 +286,11 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         },
         {
           "name": "path",
@@ -246,21 +298,26 @@
           "descs": {
             "zh-CN": "保存路径",
             "en-US": "Save path"
-          }
+          },
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "DownloadResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "DownloadResult类型的结果对象",
+          "en-US": "Result object of type DownloadResult"
+        },
+        "desc": "Result object of type DownloadResult"
       },
       "bridge_path": "http.download",
       "descriptions": {
-        "zh-CN": "下载文件",
-        "en-US": "Download file"
-      }
+        "zh-CN": "下载远程文件到本地指定路径，支持断点续传",
+        "en-US": "Download remote file to local path with resume support"
+      },
+      "async": true,
+      "description": "Download remote file to local path with resume support",
+      "group": "transfer"
     },
     {
       "name": "upload",
@@ -270,9 +327,11 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         },
         {
           "name": "path",
@@ -280,21 +339,26 @@
           "descs": {
             "zh-CN": "文件路径",
             "en-US": "File path"
-          }
+          },
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HttpResponse",
         "descs": {
-          "zh-CN": "响应",
-          "en-US": "Response"
-        }
+          "zh-CN": "HttpResponse类型的结果对象",
+          "en-US": "Result object of type HttpResponse"
+        },
+        "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.upload",
       "descriptions": {
-        "zh-CN": "上传文件",
-        "en-US": "Upload file"
-      }
+        "zh-CN": "上传本地文件到远程服务器",
+        "en-US": "Upload local file to remote server"
+      },
+      "async": true,
+      "description": "Upload local file to remote server",
+      "group": "transfer"
     },
     {
       "name": "post_form",
@@ -304,31 +368,38 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         },
         {
           "name": "fields",
-          "type": "object",
+          "type": "Record",
           "descs": {
-            "zh-CN": "字段",
-            "en-US": "Fields"
-          }
+            "zh-CN": "表单字段键值对",
+            "en-US": "Form field key-value pairs"
+          },
+          "desc": "Form field key-value pairs"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HttpResponse",
         "descs": {
-          "zh-CN": "响应",
-          "en-US": "Response"
-        }
+          "zh-CN": "HttpResponse类型的结果对象",
+          "en-US": "Result object of type HttpResponse"
+        },
+        "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.postForm",
       "descriptions": {
-        "zh-CN": "POST 表单提交",
-        "en-US": "POST form"
-      }
+        "zh-CN": "postHTTP的form",
+        "en-US": "Post form of HTTP"
+      },
+      "async": true,
+      "group": "request",
+      "description": "Post form of HTTP"
     },
     {
       "name": "set_proxy",
@@ -344,17 +415,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "http.setProxy",
       "descriptions": {
-        "zh-CN": "设置代理",
-        "en-US": "Set proxy"
-      }
+        "zh-CN": "设置HTTP的proxy属性",
+        "en-US": "Set proxy property of HTTP"
+      },
+      "group": "session",
+      "description": "Set proxy property of HTTP"
     },
     {
       "name": "set_default_headers",
@@ -362,25 +436,30 @@
       "params": [
         {
           "name": "headers",
-          "type": "object",
+          "type": "Record",
           "descs": {
-            "zh-CN": "头部",
-            "en-US": "Headers"
-          }
+            "zh-CN": "HTTP请求头",
+            "en-US": "HTTP headers"
+          },
+          "desc": "HTTP headers",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "http.setDefaultHeaders",
       "descriptions": {
-        "zh-CN": "设置默认头部",
-        "en-US": "Set default headers"
-      }
+        "zh-CN": "设置HTTP的default headers属性",
+        "en-US": "Set default headers property of HTTP"
+      },
+      "group": "config",
+      "description": "Set default headers property of HTTP"
     },
     {
       "name": "set_default_timeout",
@@ -388,25 +467,29 @@
       "params": [
         {
           "name": "timeout_ms",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "超时(毫秒)",
             "en-US": "Timeout ms"
-          }
+          },
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "http.setDefaultTimeout",
       "descriptions": {
-        "zh-CN": "设置超时",
-        "en-US": "Set timeout"
-      }
+        "zh-CN": "设置HTTP的default timeout属性",
+        "en-US": "Set default timeout property of HTTP"
+      },
+      "group": "config",
+      "description": "Set default timeout property of HTTP"
     },
     {
       "name": "post_json",
@@ -416,31 +499,38 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         },
         {
           "name": "data",
-          "type": "object",
+          "type": "any",
           "descs": {
             "zh-CN": "JSON 数据",
             "en-US": "JSON data"
-          }
+          },
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HttpResponse",
         "descs": {
-          "zh-CN": "响应",
-          "en-US": "Response"
-        }
+          "zh-CN": "HttpResponse类型的结果对象",
+          "en-US": "Result object of type HttpResponse"
+        },
+        "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.postJson",
       "descriptions": {
-        "zh-CN": "POST JSON",
-        "en-US": "POST JSON"
-      }
+        "zh-CN": "postHTTP的json",
+        "en-US": "Post json of HTTP"
+      },
+      "async": true,
+      "group": "request",
+      "description": "Post json of HTTP"
     },
     {
       "name": "get_json",
@@ -450,23 +540,29 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HttpResponse",
         "descs": {
-          "zh-CN": "响应",
-          "en-US": "Response"
-        }
+          "zh-CN": "HttpResponse类型的结果对象",
+          "en-US": "Result object of type HttpResponse"
+        },
+        "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.getJson",
       "descriptions": {
-        "zh-CN": "GET JSON",
-        "en-US": "GET JSON"
-      }
+        "zh-CN": "获取HTTP的json信息",
+        "en-US": "Get json info of HTTP"
+      },
+      "async": true,
+      "group": "request",
+      "description": "Get json info of HTTP"
     },
     {
       "name": "put_json",
@@ -476,31 +572,38 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         },
         {
           "name": "data",
-          "type": "object",
+          "type": "any",
           "descs": {
             "zh-CN": "JSON 数据",
             "en-US": "JSON data"
-          }
+          },
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HttpResponse",
         "descs": {
-          "zh-CN": "响应",
-          "en-US": "Response"
-        }
+          "zh-CN": "HttpResponse类型的结果对象",
+          "en-US": "Result object of type HttpResponse"
+        },
+        "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.putJson",
       "descriptions": {
-        "zh-CN": "PUT JSON",
-        "en-US": "PUT JSON"
-      }
+        "zh-CN": "putHTTP的json",
+        "en-US": "Put json of HTTP"
+      },
+      "async": true,
+      "group": "request",
+      "description": "Put json of HTTP"
     },
     {
       "name": "patch_json",
@@ -510,31 +613,37 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         },
         {
           "name": "data",
-          "type": "object",
+          "type": "any",
           "descs": {
             "zh-CN": "JSON 数据",
             "en-US": "JSON data"
-          }
+          },
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HttpResponse",
         "descs": {
-          "zh-CN": "响应",
-          "en-US": "Response"
-        }
+          "zh-CN": "HttpResponse类型的结果对象",
+          "en-US": "Result object of type HttpResponse"
+        },
+        "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.patchJson",
       "descriptions": {
         "zh-CN": "PATCH JSON",
         "en-US": "PATCH JSON"
-      }
+      },
+      "async": true,
+      "group": "request"
     },
     {
       "name": "sse_connect",
@@ -544,23 +653,28 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "SseConnection",
         "descs": {
-          "zh-CN": "连接",
-          "en-US": "Connection"
-        }
+          "zh-CN": "SseConnection类型的结果对象",
+          "en-US": "Result object of type SseConnection"
+        },
+        "desc": "Result object of type SseConnection"
       },
       "bridge_path": "http.sseConnect",
       "descriptions": {
-        "zh-CN": "连接 SSE",
-        "en-US": "Connect SSE"
-      }
+        "zh-CN": "sseHTTP的connect",
+        "en-US": "Sse connect of HTTP"
+      },
+      "group": "sse",
+      "description": "Sse connect of HTTP"
     },
     {
       "name": "sse_close",
@@ -576,17 +690,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "http.sseClose",
       "descriptions": {
-        "zh-CN": "关闭 SSE",
-        "en-US": "Close SSE"
-      }
+        "zh-CN": "sseHTTP的close",
+        "en-US": "Sse close of HTTP"
+      },
+      "group": "sse",
+      "description": "Sse close of HTTP"
     },
     {
       "name": "list_sse",
@@ -595,15 +712,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "连接",
-          "en-US": "Connections"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "http.listSse",
       "descriptions": {
-        "zh-CN": "列出 SSE 连接",
-        "en-US": "List SSE connections"
-      }
+        "zh-CN": "列出HTTP的sse",
+        "en-US": "List sse of HTTP"
+      },
+      "group": "sse",
+      "description": "List sse of HTTP"
     },
     {
       "name": "set_cookie",
@@ -613,39 +733,46 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         },
         {
           "name": "name",
           "type": "string",
           "descs": {
-            "zh-CN": "名称",
-            "en-US": "Name"
-          }
+            "zh-CN": "名称标识",
+            "en-US": "Name identifier"
+          },
+          "desc": "Name identifier"
         },
         {
           "name": "value",
           "type": "string",
           "descs": {
-            "zh-CN": "值",
-            "en-US": "Value"
-          }
+            "zh-CN": "要设置的值",
+            "en-US": "Value to set"
+          },
+          "desc": "Value to set"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "http.setCookie",
       "descriptions": {
-        "zh-CN": "设置 Cookie",
-        "en-US": "Set cookie"
-      }
+        "zh-CN": "设置HTTP的cookie属性",
+        "en-US": "Set cookie property of HTTP"
+      },
+      "group": "config",
+      "description": "Set cookie property of HTTP"
     },
     {
       "name": "get_cookies",
@@ -655,9 +782,11 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         }
       ],
       "returns": {
@@ -669,9 +798,11 @@
       },
       "bridge_path": "http.getCookies",
       "descriptions": {
-        "zh-CN": "获取 Cookie",
-        "en-US": "Get cookies"
-      }
+        "zh-CN": "获取HTTP的cookies信息",
+        "en-US": "Get cookies info of HTTP"
+      },
+      "group": "config",
+      "description": "Get cookies info of HTTP"
     },
     {
       "name": "clear_cookies",
@@ -681,23 +812,28 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "http.clearCookies",
       "descriptions": {
-        "zh-CN": "清除 Cookie",
-        "en-US": "Clear cookies"
-      }
+        "zh-CN": "清空HTTP的cookies",
+        "en-US": "Clear cookies of HTTP"
+      },
+      "group": "config",
+      "description": "Clear cookies of HTTP"
     },
     {
       "name": "set_basic_auth",
@@ -715,23 +851,26 @@
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "http.setBasicAuth",
       "descriptions": {
         "zh-CN": "设置 Basic 认证",
         "en-US": "Set basic auth"
-      }
+      },
+      "group": "config"
     },
     {
       "name": "download_resume",
@@ -741,31 +880,39 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address",
+          "optional": true
         },
         {
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "DownloadResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "DownloadResult类型的结果对象",
+          "en-US": "Result object of type DownloadResult"
+        },
+        "desc": "Result object of type DownloadResult"
       },
       "bridge_path": "http.downloadResume",
       "descriptions": {
-        "zh-CN": "断点续传下载",
-        "en-US": "Resume download"
-      }
+        "zh-CN": "下载HTTP的resume",
+        "en-US": "Download resume of HTTP"
+      },
+      "async": true,
+      "group": "transfer",
+      "description": "Download resume of HTTP"
     },
     {
       "name": "cancel",
@@ -781,17 +928,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "http.cancel",
       "descriptions": {
-        "zh-CN": "取消请求",
-        "en-US": "Cancel request"
-      }
+        "zh-CN": "cancelHTTP",
+        "en-US": "Cancel HTTP"
+      },
+      "group": "transfer",
+      "description": "Cancel HTTP"
     },
     {
       "name": "sse_poll",
@@ -809,19 +959,262 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "事件",
-          "en-US": "Events"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "http.ssePoll",
       "descriptions": {
-        "zh-CN": "轮询 SSE 事件",
-        "en-US": "Poll SSE events"
-      }
+        "zh-CN": "sseHTTP的poll",
+        "en-US": "Sse poll of HTTP"
+      },
+      "group": "sse",
+      "description": "Sse poll of HTTP"
     }
   ],
   "overviews": {
     "zh-CN": "提供 HTTP/HTTPS 客户端能力，支持 GET/POST/PUT/DELETE 等方法、文件上传下载、Cookie 管理、代理设置、超时控制、请求拦截等功能。",
     "en-US": "HTTP/HTTPS client supporting GET/POST/PUT/DELETE methods, file upload/download, cookie management, proxy settings, timeout control, and request interception."
-  }
+  },
+  "types": [
+    {
+      "name": "HttpFile",
+      "descriptions": {
+        "zh-CN": "上传文件结构",
+        "en-US": "File upload structure"
+      },
+      "fields": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "表单字段名",
+            "en-US": "Form field name"
+          }
+        },
+        {
+          "name": "filename",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件名",
+            "en-US": "File name"
+          }
+        },
+        {
+          "name": "content_type",
+          "type": "string",
+          "optional": true,
+          "default_value": "application/octet-stream",
+          "descs": {
+            "zh-CN": "MIME类型",
+            "en-US": "MIME type"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base64编码的文件内容",
+            "en-US": "Base64 encoded content"
+          }
+        }
+      ]
+    },
+    {
+      "name": "HttpResponse",
+      "descriptions": {
+        "zh-CN": "HTTP响应结构",
+        "en-US": "HTTP response structure"
+      },
+      "fields": [
+        {
+          "name": "status",
+          "type": "number",
+          "descs": {
+            "zh-CN": "状态码",
+            "en-US": "Status code"
+          }
+        },
+        {
+          "name": "headers",
+          "type": "object",
+          "descs": {
+            "zh-CN": "响应头",
+            "en-US": "Response headers"
+          }
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "descs": {
+            "zh-CN": "响应体",
+            "en-US": "Response body"
+          }
+        }
+      ]
+    },
+    {
+      "name": "DownloadResult",
+      "descriptions": {
+        "zh-CN": "下载结果",
+        "en-US": "Download result"
+      },
+      "fields": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "保存路径",
+            "en-US": "Save path"
+          }
+        },
+        {
+          "name": "size",
+          "type": "number",
+          "descs": {
+            "zh-CN": "文件大小",
+            "en-US": "File size"
+          }
+        },
+        {
+          "name": "status",
+          "type": "number",
+          "descs": {
+            "zh-CN": "状态码",
+            "en-US": "Status code"
+          }
+        }
+      ]
+    },
+    {
+      "name": "SseConnection",
+      "descriptions": {
+        "zh-CN": "SSE连接信息",
+        "en-US": "SSE connection info"
+      },
+      "fields": [
+        {
+          "name": "sse_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "SSE连接ID",
+            "en-US": "SSE connection ID"
+          }
+        }
+      ]
+    }
+  ],
+  "constants": [
+    {
+      "name": "METHOD_GET",
+      "value": "GET",
+      "type": "string",
+      "group": "method",
+      "descs": {
+        "zh-CN": "GET方法",
+        "en-US": "GET method"
+      }
+    },
+    {
+      "name": "METHOD_POST",
+      "value": "POST",
+      "type": "string",
+      "group": "method",
+      "descs": {
+        "zh-CN": "POST方法",
+        "en-US": "POST method"
+      }
+    },
+    {
+      "name": "METHOD_PUT",
+      "value": "PUT",
+      "type": "string",
+      "group": "method",
+      "descs": {
+        "zh-CN": "PUT方法",
+        "en-US": "PUT method"
+      }
+    },
+    {
+      "name": "METHOD_DELETE",
+      "value": "DELETE",
+      "type": "string",
+      "group": "method",
+      "descs": {
+        "zh-CN": "DELETE方法",
+        "en-US": "DELETE method"
+      }
+    },
+    {
+      "name": "METHOD_PATCH",
+      "value": "PATCH",
+      "type": "string",
+      "group": "method",
+      "descs": {
+        "zh-CN": "PATCH方法",
+        "en-US": "PATCH method"
+      }
+    },
+    {
+      "name": "STATUS_OK",
+      "value": 200,
+      "type": "number",
+      "group": "status",
+      "descs": {
+        "zh-CN": "成功",
+        "en-US": "OK"
+      }
+    },
+    {
+      "name": "STATUS_CREATED",
+      "value": 201,
+      "type": "number",
+      "group": "status",
+      "descs": {
+        "zh-CN": "已创建",
+        "en-US": "Created"
+      }
+    },
+    {
+      "name": "STATUS_BAD_REQUEST",
+      "value": 400,
+      "type": "number",
+      "group": "status",
+      "descs": {
+        "zh-CN": "请求错误",
+        "en-US": "Bad Request"
+      }
+    },
+    {
+      "name": "STATUS_UNAUTHORIZED",
+      "value": 401,
+      "type": "number",
+      "group": "status",
+      "descs": {
+        "zh-CN": "未授权",
+        "en-US": "Unauthorized"
+      }
+    },
+    {
+      "name": "STATUS_NOT_FOUND",
+      "value": 404,
+      "type": "number",
+      "group": "status",
+      "descs": {
+        "zh-CN": "未找到",
+        "en-US": "Not Found"
+      }
+    },
+    {
+      "name": "STATUS_SERVER_ERROR",
+      "value": 500,
+      "type": "number",
+      "group": "status",
+      "descs": {
+        "zh-CN": "服务器错误",
+        "en-US": "Server Error"
+      }
+    }
+  ]
 }

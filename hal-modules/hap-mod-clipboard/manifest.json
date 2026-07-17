@@ -21,15 +21,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "剪贴板文本",
-          "en-US": "Clipboard text"
-        }
+          "zh-CN": "剪贴板中的文本字符串",
+          "en-US": "Text string from clipboard"
+        },
+        "desc": "Text string from clipboard"
       },
       "bridge_path": "clipboard.readText",
       "descriptions": {
-        "zh-CN": "读取文本",
-        "en-US": "Read text"
-      }
+        "zh-CN": "从系统剪贴板读取文本内容",
+        "en-US": "Read text content from system clipboard"
+      },
+      "group": "text",
+      "description": "Read text content from system clipboard"
     },
     {
       "name": "write_text",
@@ -39,30 +42,34 @@
           "name": "text",
           "type": "string",
           "descs": {
-            "zh-CN": "待写入文本",
-            "en-US": "Text to write"
-          }
+            "zh-CN": "要写入剪贴板的文本内容",
+            "en-US": "Text to write to clipboard"
+          },
+          "desc": "Text to write to clipboard"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeText",
       "descriptions": {
-        "zh-CN": "写入文本",
-        "en-US": "Write text"
-      }
+        "zh-CN": "将文本内容写入系统剪贴板（覆盖原有内容）",
+        "en-US": "Write text content to system clipboard (replaces existing)"
+      },
+      "group": "text",
+      "description": "Write text content to system clipboard (replaces existing)"
     },
     {
       "name": "has_text",
       "symbol": "hap_clipboard_has_text",
       "params": [],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否有文本",
           "en-US": "Has text"
@@ -70,9 +77,11 @@
       },
       "bridge_path": "clipboard.hasText",
       "descriptions": {
-        "zh-CN": "检查文本",
-        "en-US": "Check text"
-      }
+        "zh-CN": "检查剪贴板文本",
+        "en-US": "Check if clipboard text"
+      },
+      "group": "info",
+      "description": "Check if clipboard text"
     },
     {
       "name": "read_image",
@@ -89,7 +98,7 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ImageData",
         "descs": {
           "zh-CN": "图像数据",
           "en-US": "Image data"
@@ -97,9 +106,11 @@
       },
       "bridge_path": "clipboard.readImage",
       "descriptions": {
-        "zh-CN": "读取图像",
-        "en-US": "Read image"
-      }
+        "zh-CN": "从剪贴板读取图片数据（Base64编码PNG）",
+        "en-US": "Read image data from clipboard as Base64 PNG"
+      },
+      "group": "image",
+      "description": "Read image data from clipboard as Base64 PNG"
     },
     {
       "name": "write_image",
@@ -124,24 +135,27 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeImage",
       "descriptions": {
-        "zh-CN": "写入图像",
-        "en-US": "Write image"
-      }
+        "zh-CN": "将图片写入剪贴板",
+        "en-US": "Write image file or Base64 data to clipboard"
+      },
+      "group": "image",
+      "description": "Write image file or Base64 data to clipboard"
     },
     {
       "name": "has_image",
       "symbol": "hap_clipboard_has_image",
       "params": [],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否有图像",
           "en-US": "Has image"
@@ -149,9 +163,11 @@
       },
       "bridge_path": "clipboard.hasImage",
       "descriptions": {
-        "zh-CN": "检查图像",
-        "en-US": "Check image"
-      }
+        "zh-CN": "检查剪贴板图片",
+        "en-US": "Check if clipboard image"
+      },
+      "group": "image",
+      "description": "Check if clipboard image"
     },
     {
       "name": "read_html",
@@ -166,9 +182,11 @@
       },
       "bridge_path": "clipboard.readHtml",
       "descriptions": {
-        "zh-CN": "读取 HTML",
-        "en-US": "Read HTML"
-      }
+        "zh-CN": "读取剪贴板中的 HTML 内容",
+        "en-US": "Read html of clipboard"
+      },
+      "group": "rich",
+      "description": "Read html of clipboard"
     },
     {
       "name": "write_html",
@@ -193,17 +211,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeHtml",
       "descriptions": {
-        "zh-CN": "写入 HTML",
-        "en-US": "Write HTML"
-      }
+        "zh-CN": "将 HTML 内容写入剪贴板",
+        "en-US": "Write html of clipboard"
+      },
+      "group": "rich",
+      "description": "Write html of clipboard"
     },
     {
       "name": "read_files",
@@ -218,9 +239,11 @@
       },
       "bridge_path": "clipboard.readFiles",
       "descriptions": {
-        "zh-CN": "读取文件路径",
-        "en-US": "Read file paths"
-      }
+        "zh-CN": "读取剪贴板中的文件路径列表",
+        "en-US": "Read files of clipboard"
+      },
+      "group": "file",
+      "description": "Read files of clipboard"
     },
     {
       "name": "write_files",
@@ -236,26 +259,30 @@
         },
         {
           "name": "cut",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
-            "zh-CN": "剪切",
-            "en-US": "Cut"
+            "zh-CN": "是否为剪切操作（true=剪切/false=复制）",
+            "en-US": "Whether it is a cut operation (true=cut/false=copy)"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Whether it is a cut operation (true=cut/false=copy)"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeFiles",
       "descriptions": {
-        "zh-CN": "写入文件路径",
-        "en-US": "Write file paths"
-      }
+        "zh-CN": "将文件路径列表写入剪贴板",
+        "en-US": "Write files of clipboard"
+      },
+      "group": "file",
+      "description": "Write files of clipboard"
     },
     {
       "name": "available_formats",
@@ -270,26 +297,31 @@
       },
       "bridge_path": "clipboard.availableFormats",
       "descriptions": {
-        "zh-CN": "列出格式",
-        "en-US": "List formats"
-      }
+        "zh-CN": "获取剪贴板当前可用的数据格式",
+        "en-US": "Available formats of clipboard"
+      },
+      "group": "info",
+      "description": "Available formats of clipboard"
     },
     {
       "name": "clear",
       "symbol": "hap_clipboard_clear",
       "params": [],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "clipboard.clear",
       "descriptions": {
-        "zh-CN": "清除剪贴板",
-        "en-US": "Clear clipboard"
-      }
+        "zh-CN": "清空系统剪贴板的所有内容",
+        "en-US": "Clear all content from system clipboard"
+      },
+      "group": "text",
+      "description": "Clear all content from system clipboard"
     },
     {
       "name": "on_change",
@@ -305,7 +337,7 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ClipboardWatcher",
         "descs": {
           "zh-CN": "监视器 ID",
           "en-US": "Watcher ID"
@@ -313,9 +345,11 @@
       },
       "bridge_path": "clipboard.onChange",
       "descriptions": {
-        "zh-CN": "监视变化",
-        "en-US": "Watch changes"
-      }
+        "zh-CN": "监听剪贴板内容变化",
+        "en-US": "Listen for change event on clipboard"
+      },
+      "group": "event",
+      "description": "Listen for change event on clipboard"
     },
     {
       "name": "off_change",
@@ -331,17 +365,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "clipboard.offChange",
       "descriptions": {
-        "zh-CN": "停止监视",
-        "en-US": "Stop watching"
-      }
+        "zh-CN": "取消监听剪贴板变化",
+        "en-US": "Stop listening for change event on clipboard"
+      },
+      "group": "event",
+      "description": "Stop listening for change event on clipboard"
     },
     {
       "name": "read_rtf",
@@ -356,9 +393,11 @@
       },
       "bridge_path": "clipboard.readRtf",
       "descriptions": {
-        "zh-CN": "读取 RTF",
-        "en-US": "Read RTF"
-      }
+        "zh-CN": "从剪贴板读取富文本格式(RTF)内容",
+        "en-US": "Read Rich Text Format (RTF) content from clipboard"
+      },
+      "group": "rich",
+      "description": "Read Rich Text Format (RTF) content from clipboard"
     },
     {
       "name": "write_rtf",
@@ -374,17 +413,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeRtf",
       "descriptions": {
-        "zh-CN": "写入 RTF",
-        "en-US": "Write RTF"
-      }
+        "zh-CN": "将富文本格式(RTF)内容写入剪贴板",
+        "en-US": "Write Rich Text Format (RTF) content to clipboard"
+      },
+      "group": "rich",
+      "description": "Write Rich Text Format (RTF) content to clipboard"
     },
     {
       "name": "read_custom",
@@ -396,21 +438,25 @@
           "descs": {
             "zh-CN": "格式化名称",
             "en-US": "Format name"
-          }
+          },
+          "optional": true
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "数据",
-          "en-US": "Data"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "clipboard.readCustom",
       "descriptions": {
-        "zh-CN": "读取自定义格式",
-        "en-US": "Read custom format"
-      }
+        "zh-CN": "读取剪贴板中指定格式的自定义数据",
+        "en-US": "Read custom of clipboard"
+      },
+      "group": "custom",
+      "description": "Read custom of clipboard"
     },
     {
       "name": "write_custom",
@@ -422,29 +468,34 @@
           "descs": {
             "zh-CN": "格式化名称",
             "en-US": "Format name"
-          }
+          },
+          "optional": true
         },
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeCustom",
       "descriptions": {
-        "zh-CN": "写入自定义格式",
-        "en-US": "Write custom format"
-      }
+        "zh-CN": "写入自定义格式数据到剪贴板",
+        "en-US": "Write custom of clipboard"
+      },
+      "group": "custom",
+      "description": "Write custom of clipboard"
     },
     {
       "name": "write_multi",
@@ -452,7 +503,7 @@
       "params": [
         {
           "name": "items",
-          "type": "object",
+          "type": "array",
           "descs": {
             "zh-CN": "格式-数据对",
             "en-US": "Format-data pairs"
@@ -460,21 +511,145 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeMulti",
       "descriptions": {
-        "zh-CN": "写入多种格式",
-        "en-US": "Write multiple formats"
-      }
+        "zh-CN": "同时写入多种格式数据到剪贴板",
+        "en-US": "Write multi of clipboard"
+      },
+      "group": "custom",
+      "description": "Write multi of clipboard"
     }
   ],
   "overviews": {
     "zh-CN": "提供系统剪贴板的读写操作，支持纯文本、富文本（HTML）、图片等格式。可监听剪贴板变化、获取剪贴板历史、管理多条目剪贴板数据。",
     "en-US": "Read/write system clipboard supporting plain text, rich text (HTML), and images. Monitor clipboard changes, access clipboard history, and manage multiple clipboard entries."
-  }
+  },
+  "events": [
+    {
+      "name": "change",
+      "descriptions": {
+        "zh-CN": "剪贴板内容变更",
+        "en-US": "Clipboard changed"
+      },
+      "payload": [
+        {
+          "name": "formats",
+          "type": "array",
+          "descs": {
+            "zh-CN": "可用格式列表",
+            "en-US": "Available formats"
+          }
+        }
+      ]
+    },
+    {
+      "name": "clipboard_change",
+      "descriptions": {
+        "zh-CN": "剪贴板内容变化",
+        "en-US": "Clipboard content changed"
+      },
+      "payload": [
+        {
+          "name": "content_type",
+          "type": "string",
+          "descs": {
+            "zh-CN": "内容类型(text/image/files)",
+            "en-US": "Content type (text/image/files)"
+          }
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "ClipboardContent",
+      "descriptions": {
+        "zh-CN": "剪贴板内容对象",
+        "en-US": "Clipboard content object"
+      },
+      "fields": [
+        {
+          "name": "type",
+          "type": "string",
+          "descs": {
+            "zh-CN": "内容类型（text/image/files/html）",
+            "en-US": "Content type"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "内容数据",
+            "en-US": "Content data"
+          }
+        },
+        {
+          "name": "timestamp",
+          "type": "string",
+          "descs": {
+            "zh-CN": "写入时间戳",
+            "en-US": "Write timestamp"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ImageData",
+      "descriptions": {
+        "zh-CN": "剪贴板图像数据",
+        "en-US": "Clipboard image data"
+      },
+      "fields": [
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "图像宽度",
+            "en-US": "Image width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "图像高度",
+            "en-US": "Image height"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base64编码的图像数据",
+            "en-US": "Base64 encoded image data"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ClipboardWatcher",
+      "descriptions": {
+        "zh-CN": "剪贴板变化监听器",
+        "en-US": "Clipboard change watcher"
+      },
+      "fields": [
+        {
+          "name": "watcher_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监听器ID",
+            "en-US": "Watcher ID"
+          }
+        }
+      ]
+    }
+  ]
 }

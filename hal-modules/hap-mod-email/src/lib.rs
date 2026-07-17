@@ -66,24 +66,22 @@ mod tests {
     }
 
     #[test]
-    fn test_fetch_stub() {
+    fn test_fetch_invalid_host() {
         let r = call(funcs::hap_email_fetch, json!({
-            "protocol": "imap",
             "host": "imap.test.invalid",
             "username": "user",
             "password": "pass"
         }));
-        assert!(r.is_array());
+        assert!(r.get("error").is_some());
     }
 
     #[test]
-    fn test_list_folders_stub() {
+    fn test_list_folders_invalid_host() {
         let r = call(funcs::hap_email_list_folders, json!({
-            "protocol": "imap",
             "host": "imap.test.invalid",
             "username": "user",
             "password": "pass"
         }));
-        assert!(r.is_array());
+        assert!(r.get("error").is_some());
     }
 }

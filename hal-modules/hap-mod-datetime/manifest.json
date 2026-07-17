@@ -19,17 +19,20 @@
       "symbol": "hap_datetime_now",
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "DateTime",
         "descs": {
-          "zh-CN": "当前",
-          "en-US": "Now"
-        }
+          "zh-CN": "DateTime类型的结果对象",
+          "en-US": "Result object of type DateTime"
+        },
+        "desc": "Result object of type DateTime"
       },
       "bridge_path": "datetime.now",
       "descriptions": {
-        "zh-CN": "当前时间",
-        "en-US": "Current time"
-      }
+        "zh-CN": "获取当前本地日期时间的格式化字符串",
+        "en-US": "Get current local datetime as formatted string"
+      },
+      "group": "now",
+      "description": "Get current local datetime as formatted string"
     },
     {
       "name": "format",
@@ -37,11 +40,12 @@
       "params": [
         {
           "name": "unix_ms",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "时间戳",
-            "en-US": "Timestamp"
-          }
+            "zh-CN": "Unix毫秒时间戳",
+            "en-US": "Unix timestamp in milliseconds"
+          },
+          "desc": "Unix timestamp in milliseconds"
         },
         {
           "name": "pattern",
@@ -61,9 +65,11 @@
       },
       "bridge_path": "datetime.format",
       "descriptions": {
-        "zh-CN": "格式化日期时间",
-        "en-US": "Format datetime"
-      }
+        "zh-CN": "将日期时间按指定模板格式化为字符串",
+        "en-US": "Format datetime to string with specified template"
+      },
+      "group": "format",
+      "description": "Format datetime to string with specified template"
     },
     {
       "name": "parse",
@@ -79,17 +85,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "DateTime",
         "descs": {
-          "zh-CN": "已解析",
-          "en-US": "Parsed"
-        }
+          "zh-CN": "DateTime类型的结果对象",
+          "en-US": "Result object of type DateTime"
+        },
+        "desc": "Result object of type DateTime"
       },
       "bridge_path": "datetime.parse",
       "descriptions": {
-        "zh-CN": "解析日期时间",
-        "en-US": "Parse datetime"
-      }
+        "zh-CN": "将日期时间字符串解析为标准时间对象",
+        "en-US": "Parse datetime string into standard time object"
+      },
+      "group": "format",
+      "description": "Parse datetime string into standard time object"
     },
     {
       "name": "diff",
@@ -97,7 +106,7 @@
       "params": [
         {
           "name": "unix_ms_1",
-          "type": "i64",
+          "type": "number",
           "descs": {
             "zh-CN": "时间 1",
             "en-US": "Time 1"
@@ -105,7 +114,7 @@
         },
         {
           "name": "unix_ms_2",
-          "type": "i64",
+          "type": "number",
           "descs": {
             "zh-CN": "时间 2",
             "en-US": "Time 2"
@@ -115,23 +124,27 @@
           "name": "unit",
           "type": "string",
           "descs": {
-            "zh-CN": "单位",
-            "en-US": "Unit"
-          }
+            "zh-CN": "差值单位（ms/s/m/h/d/M/y）",
+            "en-US": "Diff unit (ms/s/m/h/d/M/y)"
+          },
+          "desc": "Diff unit (ms/s/m/h/d/M/y)"
         }
       ],
       "returns": {
-        "type": "f64",
+        "type": "number",
         "descs": {
-          "zh-CN": "差值",
-          "en-US": "Difference"
-        }
+          "zh-CN": "f64类型的结果对象",
+          "en-US": "Result object of type f64"
+        },
+        "desc": "Result object of type f64"
       },
       "bridge_path": "datetime.diff",
       "descriptions": {
-        "zh-CN": "时间差值",
-        "en-US": "Time diff"
-      }
+        "zh-CN": "计算两个日期时间之间的差值",
+        "en-US": "Calculate difference between two datetimes"
+      },
+      "group": "calc",
+      "description": "Calculate difference between two datetimes"
     },
     {
       "name": "add",
@@ -139,31 +152,34 @@
       "params": [
         {
           "name": "unix_ms",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "时间戳",
-            "en-US": "Timestamp"
-          }
+            "zh-CN": "基准Unix毫秒时间戳",
+            "en-US": "Base Unix timestamp in milliseconds"
+          },
+          "desc": "Base Unix timestamp in milliseconds"
         },
         {
           "name": "amount",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "数量",
-            "en-US": "Amount"
-          }
+            "zh-CN": "要增加的数量",
+            "en-US": "Amount to add"
+          },
+          "desc": "Amount to add"
         },
         {
           "name": "unit",
           "type": "string",
           "descs": {
-            "zh-CN": "单位",
-            "en-US": "Unit"
-          }
+            "zh-CN": "时间单位（ms/s/m/h/d/M/y）",
+            "en-US": "Time unit (ms/s/m/h/d/M/y)"
+          },
+          "desc": "Time unit (ms/s/m/h/d/M/y)"
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
           "zh-CN": "新时间戳",
           "en-US": "New timestamp"
@@ -171,9 +187,11 @@
       },
       "bridge_path": "datetime.add",
       "descriptions": {
-        "zh-CN": "添加时间",
-        "en-US": "Add time"
-      }
+        "zh-CN": "在日期时间上增加指定的时间间隔",
+        "en-US": "Add specified duration to datetime"
+      },
+      "group": "calc",
+      "description": "Add specified duration to datetime"
     },
     {
       "name": "start_of",
@@ -181,33 +199,38 @@
       "params": [
         {
           "name": "unix_ms",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "时间戳",
-            "en-US": "Timestamp"
-          }
+            "zh-CN": "Unix毫秒时间戳",
+            "en-US": "Unix timestamp in milliseconds"
+          },
+          "desc": "Unix timestamp in milliseconds"
         },
         {
           "name": "unit",
           "type": "string",
           "descs": {
-            "zh-CN": "单位",
-            "en-US": "Unit"
-          }
+            "zh-CN": "时间单位（day/week/month/year）",
+            "en-US": "Time unit (day/week/month/year)"
+          },
+          "desc": "Time unit (day/week/month/year)"
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "启动",
-          "en-US": "Start"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "datetime.startOf",
       "descriptions": {
-        "zh-CN": "启动的周期",
-        "en-US": "Start of period"
-      }
+        "zh-CN": "获取指定时间单位（日/周/月/年）的起始时刻",
+        "en-US": "Get start of specified time unit (day/week/month/year)"
+      },
+      "group": "calc",
+      "description": "Get start of specified time unit (day/week/month/year)"
     },
     {
       "name": "end_of",
@@ -215,33 +238,38 @@
       "params": [
         {
           "name": "unix_ms",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "时间戳",
-            "en-US": "Timestamp"
-          }
+            "zh-CN": "Unix毫秒时间戳",
+            "en-US": "Unix timestamp in milliseconds"
+          },
+          "desc": "Unix timestamp in milliseconds"
         },
         {
           "name": "unit",
           "type": "string",
           "descs": {
-            "zh-CN": "单位",
-            "en-US": "Unit"
-          }
+            "zh-CN": "时间单位（day/week/month/year）",
+            "en-US": "Time unit (day/week/month/year)"
+          },
+          "desc": "Time unit (day/week/month/year)"
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "结束",
-          "en-US": "End"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "datetime.endOf",
       "descriptions": {
-        "zh-CN": "结束的周期",
-        "en-US": "End of period"
-      }
+        "zh-CN": "获取时间单位结束点",
+        "en-US": "End of of datetime"
+      },
+      "group": "calc",
+      "description": "End of of datetime"
     },
     {
       "name": "timezone_list",
@@ -250,15 +278,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "时区",
-          "en-US": "Timezones"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "datetime.timezoneList",
       "descriptions": {
-        "zh-CN": "列出时区",
-        "en-US": "List timezones"
-      }
+        "zh-CN": "获取所有可用时区列表",
+        "en-US": "Timezone list of datetime"
+      },
+      "group": "timezone",
+      "description": "Timezone list of datetime"
     },
     {
       "name": "timezone_offset",
@@ -268,13 +299,14 @@
           "name": "timezone",
           "type": "string",
           "descs": {
-            "zh-CN": "时区",
-            "en-US": "Timezone"
-          }
+            "zh-CN": "timezone参数",
+            "en-US": "timezone parameter"
+          },
+          "desc": "timezone parameter"
         }
       ],
       "returns": {
-        "type": "i32",
+        "type": "number",
         "descs": {
           "zh-CN": "偏移(分钟)",
           "en-US": "Offset min"
@@ -282,9 +314,11 @@
       },
       "bridge_path": "datetime.timezoneOffset",
       "descriptions": {
-        "zh-CN": "TZ 偏移",
-        "en-US": "TZ offset"
-      }
+        "zh-CN": "获取指定时区的 UTC 偏移量",
+        "en-US": "Timezone offset of datetime"
+      },
+      "group": "timezone",
+      "description": "Timezone offset of datetime"
     },
     {
       "name": "to_unix",
@@ -300,7 +334,7 @@
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
           "zh-CN": "Unix 毫秒",
           "en-US": "Unix 毫秒"
@@ -308,9 +342,11 @@
       },
       "bridge_path": "datetime.toUnix",
       "descriptions": {
-        "zh-CN": "转 Unix",
-        "en-US": "To unix"
-      }
+        "zh-CN": "将日期时间转换为 Unix 时间戳",
+        "en-US": "To unix of datetime"
+      },
+      "group": "format",
+      "description": "To unix of datetime"
     },
     {
       "name": "from_unix",
@@ -318,7 +354,7 @@
       "params": [
         {
           "name": "unix_ms",
-          "type": "i64",
+          "type": "number",
           "descs": {
             "zh-CN": "Unix 毫秒",
             "en-US": "Unix 毫秒"
@@ -334,9 +370,11 @@
       },
       "bridge_path": "datetime.fromUnix",
       "descriptions": {
-        "zh-CN": "从 Unix",
-        "en-US": "From unix"
-      }
+        "zh-CN": "将 Unix 时间戳转换为日期时间",
+        "en-US": "From unix of datetime"
+      },
+      "group": "query",
+      "description": "From unix of datetime"
     },
     {
       "name": "is_leap_year",
@@ -344,25 +382,29 @@
       "params": [
         {
           "name": "year",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "年",
-            "en-US": "Year"
-          }
+            "zh-CN": "要判断的年份（如2024）",
+            "en-US": "Year to check (e.g. 2024)"
+          },
+          "desc": "Year to check (e.g. 2024)"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "闰年",
-          "en-US": "Leap"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "datetime.isLeapYear",
       "descriptions": {
-        "zh-CN": "是否闰年",
-        "en-US": "Is leap year"
-      }
+        "zh-CN": "检查是否为闰年",
+        "en-US": "Check if datetime leap year"
+      },
+      "group": "query",
+      "description": "Check if datetime leap year"
     },
     {
       "name": "days_in_month",
@@ -370,33 +412,38 @@
       "params": [
         {
           "name": "year",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "年",
+            "zh-CN": "年份",
             "en-US": "Year"
-          }
+          },
+          "desc": "Year"
         },
         {
           "name": "month",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "月",
-            "en-US": "Month"
-          }
+            "zh-CN": "月份（1-12）",
+            "en-US": "Month (1-12)"
+          },
+          "desc": "Month (1-12)"
         }
       ],
       "returns": {
-        "type": "i32",
+        "type": "number",
         "descs": {
-          "zh-CN": "日",
-          "en-US": "Days"
-        }
+          "zh-CN": "i32类型的结果对象",
+          "en-US": "Result object of type i32"
+        },
+        "desc": "Result object of type i32"
       },
       "bridge_path": "datetime.daysInMonth",
       "descriptions": {
-        "zh-CN": "月份天数",
-        "en-US": "Days in month"
-      }
+        "zh-CN": "获取指定月份的天数",
+        "en-US": "Days in month of datetime"
+      },
+      "group": "query",
+      "description": "Days in month of datetime"
     },
     {
       "name": "day_of_week",
@@ -404,25 +451,29 @@
       "params": [
         {
           "name": "unix_ms",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "时间戳",
-            "en-US": "Timestamp"
-          }
+            "zh-CN": "Unix毫秒时间戳",
+            "en-US": "Unix timestamp in milliseconds"
+          },
+          "desc": "Unix timestamp in milliseconds"
         }
       ],
       "returns": {
-        "type": "i32",
+        "type": "number",
         "descs": {
-          "zh-CN": "星期",
-          "en-US": "Weekday"
-        }
+          "zh-CN": "i32类型的结果对象",
+          "en-US": "Result object of type i32"
+        },
+        "desc": "Result object of type i32"
       },
       "bridge_path": "datetime.dayOfWeek",
       "descriptions": {
-        "zh-CN": "日的周",
-        "en-US": "Day of week"
-      }
+        "zh-CN": "获取星期几",
+        "en-US": "Day of week of datetime"
+      },
+      "group": "query",
+      "description": "Day of week of datetime"
     },
     {
       "name": "is_between",
@@ -430,41 +481,47 @@
       "params": [
         {
           "name": "unix_ms",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "时间戳",
-            "en-US": "Timestamp"
-          }
+            "zh-CN": "要判断的Unix毫秒时间戳",
+            "en-US": "Unix timestamp to check"
+          },
+          "desc": "Unix timestamp to check"
         },
         {
           "name": "start_ms",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "启动",
-            "en-US": "Start"
-          }
+            "zh-CN": "start_ms参数",
+            "en-US": "start_ms parameter"
+          },
+          "desc": "start_ms parameter"
         },
         {
           "name": "end_ms",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "结束",
-            "en-US": "End"
-          }
+            "zh-CN": "范围结束的Unix毫秒时间戳",
+            "en-US": "End Unix timestamp of range"
+          },
+          "desc": "End Unix timestamp of range"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "之间",
-          "en-US": "Between"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "datetime.isBetween",
       "descriptions": {
-        "zh-CN": "是否之间",
-        "en-US": "Is between"
-      }
+        "zh-CN": "检查日期是否在指定范围内",
+        "en-US": "Check if datetime between"
+      },
+      "group": "query",
+      "description": "Check if datetime between"
     },
     {
       "name": "relative",
@@ -472,25 +529,29 @@
       "params": [
         {
           "name": "unix_ms",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "时间戳",
-            "en-US": "Timestamp"
-          }
+            "zh-CN": "Unix毫秒时间戳",
+            "en-US": "Unix timestamp in milliseconds"
+          },
+          "desc": "Unix timestamp in milliseconds"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "相对",
-          "en-US": "Relative"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "datetime.relative",
       "descriptions": {
-        "zh-CN": "相对时间",
-        "en-US": "Relative time"
-      }
+        "zh-CN": "relative日期时间",
+        "en-US": "Relative datetime"
+      },
+      "group": "format",
+      "description": "Relative datetime"
     },
     {
       "name": "is_weekend",
@@ -498,25 +559,29 @@
       "params": [
         {
           "name": "unix_ms",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "时间戳",
-            "en-US": "Timestamp"
-          }
+            "zh-CN": "Unix毫秒时间戳",
+            "en-US": "Unix timestamp in milliseconds"
+          },
+          "desc": "Unix timestamp in milliseconds"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "周末",
-          "en-US": "Weekend"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "datetime.isWeekend",
       "descriptions": {
-        "zh-CN": "是否周末",
-        "en-US": "Is weekend"
-      }
+        "zh-CN": "检查日期是否为周末",
+        "en-US": "Check if datetime weekend"
+      },
+      "group": "query",
+      "description": "Check if datetime weekend"
     },
     {
       "name": "week_of_year",
@@ -524,25 +589,29 @@
       "params": [
         {
           "name": "unix_ms",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "时间戳",
-            "en-US": "Timestamp"
-          }
+            "zh-CN": "Unix毫秒时间戳",
+            "en-US": "Unix timestamp in milliseconds"
+          },
+          "desc": "Unix timestamp in milliseconds"
         }
       ],
       "returns": {
-        "type": "i32",
+        "type": "number",
         "descs": {
-          "zh-CN": "周",
-          "en-US": "Week"
-        }
+          "zh-CN": "i32类型的结果对象",
+          "en-US": "Result object of type i32"
+        },
+        "desc": "Result object of type i32"
       },
       "bridge_path": "datetime.weekOfYear",
       "descriptions": {
-        "zh-CN": "周的年",
-        "en-US": "Week of year"
-      }
+        "zh-CN": "获取日期在当年的第几周",
+        "en-US": "Week of year of datetime"
+      },
+      "group": "query",
+      "description": "Week of year of datetime"
     },
     {
       "name": "calendar",
@@ -550,33 +619,38 @@
       "params": [
         {
           "name": "year",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "年",
+            "zh-CN": "年份",
             "en-US": "Year"
-          }
+          },
+          "desc": "Year"
         },
         {
           "name": "month",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "月",
-            "en-US": "Month"
-          }
+            "zh-CN": "月份（1-12）",
+            "en-US": "Month (1-12)"
+          },
+          "desc": "Month (1-12)"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "CalendarMonth",
         "descs": {
-          "zh-CN": "日历",
-          "en-US": "Calendar"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "datetime.calendar",
       "descriptions": {
-        "zh-CN": "日历",
-        "en-US": "Calendar"
-      }
+        "zh-CN": "calendar日期时间",
+        "en-US": "Calendar datetime"
+      },
+      "group": "format",
+      "description": "Calendar datetime"
     },
     {
       "name": "is_valid",
@@ -592,21 +666,132 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "有效",
-          "en-US": "Valid"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "datetime.isValid",
       "descriptions": {
-        "zh-CN": "验证日期",
-        "en-US": "Validate date"
-      }
+        "zh-CN": "检查日期时间字符串是否有效",
+        "en-US": "Check if datetime valid"
+      },
+      "group": "query",
+      "description": "Check if datetime valid"
     }
   ],
   "overviews": {
     "zh-CN": "提供日期时间的获取、格式化、解析、计算、时区转换等能力。支持时间戳与字符串互转、日期差计算、日历操作、定时器管理等功能。",
     "en-US": "Date/time retrieval, formatting, parsing, arithmetic, and timezone conversion. Supports timestamp/string conversion, date difference calculation, calendar operations, and timer management."
-  }
+  },
+  "types": [
+    {
+      "name": "DateTime",
+      "descriptions": {
+        "zh-CN": "日期时间结构",
+        "en-US": "DateTime structure"
+      },
+      "fields": [
+        {
+          "name": "year",
+          "type": "number",
+          "descs": {
+            "zh-CN": "年",
+            "en-US": "Year"
+          }
+        },
+        {
+          "name": "month",
+          "type": "number",
+          "descs": {
+            "zh-CN": "月",
+            "en-US": "Month"
+          }
+        },
+        {
+          "name": "day",
+          "type": "number",
+          "descs": {
+            "zh-CN": "日",
+            "en-US": "Day"
+          }
+        },
+        {
+          "name": "hour",
+          "type": "number",
+          "descs": {
+            "zh-CN": "时",
+            "en-US": "Hour"
+          }
+        },
+        {
+          "name": "minute",
+          "type": "number",
+          "descs": {
+            "zh-CN": "分",
+            "en-US": "Minute"
+          }
+        },
+        {
+          "name": "second",
+          "type": "number",
+          "descs": {
+            "zh-CN": "秒",
+            "en-US": "Second"
+          }
+        },
+        {
+          "name": "timestamp",
+          "type": "number",
+          "descs": {
+            "zh-CN": "Unix时间戳(ms)",
+            "en-US": "Unix timestamp(ms)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CalendarMonth",
+      "descriptions": {
+        "zh-CN": "月历数据",
+        "en-US": "Calendar month data"
+      },
+      "fields": [
+        {
+          "name": "year",
+          "type": "number",
+          "descs": {
+            "zh-CN": "年份",
+            "en-US": "Year"
+          }
+        },
+        {
+          "name": "month",
+          "type": "number",
+          "descs": {
+            "zh-CN": "月份",
+            "en-US": "Month"
+          }
+        },
+        {
+          "name": "days",
+          "type": "array",
+          "descs": {
+            "zh-CN": "每日信息数组",
+            "en-US": "Daily info array"
+          }
+        },
+        {
+          "name": "weeks",
+          "type": "number",
+          "descs": {
+            "zh-CN": "总周数",
+            "en-US": "Total weeks"
+          }
+        }
+      ]
+    }
+  ]
 }

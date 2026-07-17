@@ -22,9 +22,10 @@
           "name": "accelerator",
           "type": "string",
           "descs": {
-            "zh-CN": "键组合",
-            "en-US": "Key combination"
-          }
+            "zh-CN": "accelerator参数",
+            "en-US": "accelerator parameter"
+          },
+          "desc": "accelerator parameter"
         },
         {
           "name": "callback_id",
@@ -36,7 +37,7 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ShortcutHandle",
         "descs": {
           "zh-CN": "快捷方式信息",
           "en-US": "Shortcut info"
@@ -44,9 +45,11 @@
       },
       "bridge_path": "shortcut.register",
       "descriptions": {
-        "zh-CN": "注册全局快捷键",
-        "en-US": "Register global shortcut"
-      }
+        "zh-CN": "注册一个全局键盘快捷键并绑定回调",
+        "en-US": "Register global keyboard shortcut with callback"
+      },
+      "group": "manage",
+      "description": "Register global keyboard shortcut with callback"
     },
     {
       "name": "unregister",
@@ -62,34 +65,40 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "shortcut.unregister",
       "descriptions": {
-        "zh-CN": "注销快捷方式",
-        "en-US": "Unregister shortcut"
-      }
+        "zh-CN": "注销已注册的全局快捷键",
+        "en-US": "Unregister a registered global shortcut"
+      },
+      "group": "manage",
+      "description": "Unregister a registered global shortcut"
     },
     {
       "name": "unregister_all",
       "symbol": "hap_shortcut_unregister_all",
       "params": [],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "shortcut.unregisterAll",
       "descriptions": {
-        "zh-CN": "注销所有",
-        "en-US": "Unregister all"
-      }
+        "zh-CN": "注销所有已注册的快捷键",
+        "en-US": "Unregister all of global shortcut"
+      },
+      "group": "manage",
+      "description": "Unregister all of global shortcut"
     },
     {
       "name": "is_registered",
@@ -99,13 +108,14 @@
           "name": "accelerator",
           "type": "string",
           "descs": {
-            "zh-CN": "键组合",
-            "en-US": "Key combination"
-          }
+            "zh-CN": "accelerator参数",
+            "en-US": "accelerator parameter"
+          },
+          "desc": "accelerator parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否已注册",
           "en-US": "Is registered"
@@ -113,9 +123,11 @@
       },
       "bridge_path": "shortcut.isRegistered",
       "descriptions": {
-        "zh-CN": "检查是否已注册",
-        "en-US": "Check if registered"
-      }
+        "zh-CN": "检查快捷键是否已注册",
+        "en-US": "Check if global shortcut registered"
+      },
+      "group": "manage",
+      "description": "Check if global shortcut registered"
     },
     {
       "name": "list",
@@ -130,13 +142,94 @@
       },
       "bridge_path": "shortcut.list",
       "descriptions": {
-        "zh-CN": "列出所有快捷方式",
-        "en-US": "List all shortcuts"
-      }
+        "zh-CN": "列出当前所有已注册的全局快捷键",
+        "en-US": "List all currently registered global shortcuts"
+      },
+      "group": "manage",
+      "description": "List all currently registered global shortcuts"
     }
   ],
   "overviews": {
     "zh-CN": "提供桌面快捷方式管理能力，包括创建、删除、查询快捷方式，支持自定义图标、启动参数等。适配 macOS/Windows/Linux 三平台。",
     "en-US": "Desktop shortcut management including create, delete, and query shortcuts with custom icons and launch parameters. Supports macOS/Windows/Linux."
-  }
+  },
+  "types": [
+    {
+      "name": "ShortcutInfo",
+      "descriptions": {
+        "zh-CN": "快捷键注册信息",
+        "en-US": "Shortcut registration info"
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "快捷键唯一标识",
+            "en-US": "Shortcut unique ID"
+          }
+        },
+        {
+          "name": "keys",
+          "type": "string",
+          "descs": {
+            "zh-CN": "按键组合（如 Ctrl+Shift+A）",
+            "en-US": "Key combination"
+          }
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "descs": {
+            "zh-CN": "快捷键描述",
+            "en-US": "Shortcut description"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ShortcutHandle",
+      "descriptions": {
+        "zh-CN": "快捷键注册句柄",
+        "en-US": "Shortcut registration handle"
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "快捷键ID",
+            "en-US": "Shortcut ID"
+          }
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "shortcut_triggered",
+      "descriptions": {
+        "zh-CN": "全局快捷键被触发",
+        "en-US": "Global shortcut triggered"
+      },
+      "payload": [
+        {
+          "name": "id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "被触发的快捷键ID",
+            "en-US": "Triggered shortcut ID"
+          }
+        },
+        {
+          "name": "keys",
+          "type": "string",
+          "descs": {
+            "zh-CN": "按键组合",
+            "en-US": "Key combination"
+          }
+        }
+      ]
+    }
+  ]
 }

@@ -1,4 +1,5 @@
 pub mod funcs;
+pub mod server;
 
 use hap_common::ffi::str_to_c;
 use std::ffi::c_char;
@@ -33,7 +34,7 @@ mod tests {
         let s = unsafe { CStr::from_ptr(ptr) }.to_str().unwrap();
         let v: serde_json::Value = serde_json::from_str(s).unwrap();
         assert_eq!(v["name"], "websocket");
-        assert_eq!(v["functions"].as_array().unwrap().len(), 9);
+        assert_eq!(v["functions"].as_array().unwrap().len(), 15);
         unsafe { free_c_string(ptr as *mut _); }
     }
 

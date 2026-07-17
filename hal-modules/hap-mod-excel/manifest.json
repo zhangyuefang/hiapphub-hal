@@ -22,50 +22,57 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "sheet",
-          "type": "object",
+          "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Worksheet name or index"
         },
         {
           "name": "range",
           "type": "string",
           "descs": {
-            "zh-CN": "范围",
-            "en-US": "Range"
+            "zh-CN": "单元格范围（如A1:D10）",
+            "en-US": "Cell range (e.g. A1:D10)"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Cell range (e.g. A1:D10)"
         },
         {
           "name": "header_row",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "头部行",
-            "en-US": "Header Row"
+            "zh-CN": "header_row参数",
+            "en-US": "header_row parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "header_row parameter"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "CellData",
         "descs": {
-          "zh-CN": "数据",
-          "en-US": "Data"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "excel.read",
       "descriptions": {
-        "zh-CN": "读取 Excel",
-        "en-US": "Read Excel"
-      }
+        "zh-CN": "从 Excel 读取单元格或区域数据",
+        "en-US": "Read data from Excel cell or specified range"
+      },
+      "group": "file",
+      "description": "Read data from Excel cell or specified range"
     },
     {
       "name": "write",
@@ -75,49 +82,56 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "rows",
           "type": "array",
           "descs": {
-            "zh-CN": "行",
-            "en-US": "Rows"
-          }
+            "zh-CN": "要写入的行数据（二维数组）",
+            "en-US": "Row data to write (2D array)"
+          },
+          "desc": "Row data to write (2D array)"
         },
         {
           "name": "headers",
           "type": "array",
           "descs": {
-            "zh-CN": "头部",
-            "en-US": "Headers"
+            "zh-CN": "HTTP请求头",
+            "en-US": "HTTP headers"
           },
-          "optional": true
+          "optional": true,
+          "desc": "HTTP headers"
         },
         {
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Worksheet name or index"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "WriteResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "excel.write",
       "descriptions": {
-        "zh-CN": "写入 Excel",
-        "en-US": "Write Excel"
-      }
+        "zh-CN": "写入数据到 Excel 单元格或区域",
+        "en-US": "Write data to Excel cell or range"
+      },
+      "group": "file",
+      "description": "Write data to Excel cell or range"
     },
     {
       "name": "open",
@@ -127,23 +141,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "Excel文件路径",
+            "en-US": "Excel file path"
+          },
+          "desc": "Excel file path"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "WorkbookHandle",
         "descs": {
-          "zh-CN": "工作簿",
-          "en-US": "Book"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "excel.open",
       "descriptions": {
-        "zh-CN": "打开工作簿",
-        "en-US": "Open workbook"
-      }
+        "zh-CN": "打开 Excel 文件",
+        "en-US": "Open Excel file (.xlsx/.xls) and get workbook handle"
+      },
+      "group": "file",
+      "description": "Open Excel file (.xlsx/.xls) and get workbook handle"
     },
     {
       "name": "create",
@@ -153,23 +171,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "新文件的保存路径",
+            "en-US": "Path for new file"
+          },
+          "desc": "Path for new file"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "WorkbookHandle",
         "descs": {
-          "zh-CN": "工作簿",
-          "en-US": "Book"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "excel.create",
       "descriptions": {
-        "zh-CN": "创建工作簿",
-        "en-US": "Create workbook"
-      }
+        "zh-CN": "创建新的 Excel 工作簿",
+        "en-US": "Create a new empty Excel workbook"
+      },
+      "group": "file",
+      "description": "Create a new empty Excel workbook"
     },
     {
       "name": "add_sheet",
@@ -187,23 +209,27 @@
           "name": "name",
           "type": "string",
           "descs": {
-            "zh-CN": "名称",
-            "en-US": "Name"
-          }
+            "zh-CN": "名称标识",
+            "en-US": "Name identifier"
+          },
+          "desc": "Name identifier"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.addSheet",
       "descriptions": {
-        "zh-CN": "添加工作表",
-        "en-US": "Add sheet"
-      }
+        "zh-CN": "添加新工作表",
+        "en-US": "Add sheet of Excel"
+      },
+      "group": "sheet",
+      "description": "Add sheet of Excel"
     },
     {
       "name": "delete_sheet",
@@ -221,23 +247,27 @@
           "name": "name",
           "type": "string",
           "descs": {
-            "zh-CN": "名称",
-            "en-US": "Name"
-          }
+            "zh-CN": "名称标识",
+            "en-US": "Name identifier"
+          },
+          "desc": "Name identifier"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.deleteSheet",
       "descriptions": {
         "zh-CN": "删除工作表",
-        "en-US": "Delete sheet"
-      }
+        "en-US": "Delete sheet of Excel"
+      },
+      "group": "sheet",
+      "description": "Delete sheet of Excel"
     },
     {
       "name": "rename_sheet",
@@ -255,31 +285,36 @@
           "name": "old_name",
           "type": "string",
           "descs": {
-            "zh-CN": "旧名称",
-            "en-US": "Old Name"
-          }
+            "zh-CN": "old_name参数",
+            "en-US": "old_name parameter"
+          },
+          "desc": "old_name parameter"
         },
         {
           "name": "new_name",
           "type": "string",
           "descs": {
-            "zh-CN": "新名称",
-            "en-US": "New Name"
-          }
+            "zh-CN": "new_name参数",
+            "en-US": "new_name parameter"
+          },
+          "desc": "new_name parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.renameSheet",
       "descriptions": {
         "zh-CN": "重命名工作表",
-        "en-US": "Rename sheet"
-      }
+        "en-US": "Rename sheet of Excel"
+      },
+      "group": "sheet",
+      "description": "Rename sheet of Excel"
     },
     {
       "name": "get_cell",
@@ -297,9 +332,11 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "cell",
@@ -313,15 +350,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "值",
-          "en-US": "Value"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "excel.getCell",
       "descriptions": {
-        "zh-CN": "获取单元格",
-        "en-US": "Get cell"
-      }
+        "zh-CN": "获取单元格属性信息",
+        "en-US": "Get cell info of Excel"
+      },
+      "group": "cell",
+      "description": "Get cell info of Excel"
     },
     {
       "name": "set_cell",
@@ -339,9 +379,11 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "cell",
@@ -355,23 +397,27 @@
           "name": "value",
           "type": "string",
           "descs": {
-            "zh-CN": "值",
-            "en-US": "Value"
-          }
+            "zh-CN": "要设置的值",
+            "en-US": "Value to set"
+          },
+          "desc": "Value to set"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.setCell",
       "descriptions": {
-        "zh-CN": "设置单元格",
-        "en-US": "Set cell"
-      }
+        "zh-CN": "设置单元格属性",
+        "en-US": "Set cell property of Excel"
+      },
+      "group": "cell",
+      "description": "Set cell property of Excel"
     },
     {
       "name": "get_range",
@@ -389,31 +435,38 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "range",
           "type": "string",
           "descs": {
-            "zh-CN": "范围",
-            "en-US": "Range"
-          }
+            "zh-CN": "单元格范围（如A1:D10）",
+            "en-US": "Cell range (e.g. A1:D10)"
+          },
+          "desc": "Cell range (e.g. A1:D10)",
+          "optional": true
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "值",
-          "en-US": "Values"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "excel.getRange",
       "descriptions": {
-        "zh-CN": "获取范围",
-        "en-US": "Get range"
-      }
+        "zh-CN": "获取区域属性信息",
+        "en-US": "Get range info of Excel"
+      },
+      "group": "cell",
+      "description": "Get range info of Excel"
     },
     {
       "name": "set_range",
@@ -431,39 +484,48 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "start_cell",
           "type": "string",
           "descs": {
-            "zh-CN": "启动",
-            "en-US": "Start"
-          }
+            "zh-CN": "start_cell参数",
+            "en-US": "start_cell parameter"
+          },
+          "desc": "start_cell parameter"
         },
         {
           "name": "values",
           "type": "array",
           "descs": {
-            "zh-CN": "值",
-            "en-US": "Values"
-          }
+            "zh-CN": "要写入的值（二维数组）",
+            "en-US": "Values to write (2D array)"
+          },
+          "desc": "Values to write (2D array)",
+          "optional": true,
+          "default_value": ""
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "WriteResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "excel.setRange",
       "descriptions": {
-        "zh-CN": "设置范围",
-        "en-US": "Set range"
-      }
+        "zh-CN": "批量设置区域属性",
+        "en-US": "Set range property of Excel"
+      },
+      "group": "cell",
+      "description": "Set range property of Excel"
     },
     {
       "name": "set_style",
@@ -481,21 +543,25 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "range",
           "type": "string",
           "descs": {
-            "zh-CN": "范围",
-            "en-US": "Range"
-          }
+            "zh-CN": "要设置样式的单元格范围",
+            "en-US": "Cell range to apply style"
+          },
+          "desc": "Cell range to apply style",
+          "optional": true
         },
         {
           "name": "style",
-          "type": "object",
+          "type": "CellStyle",
           "descs": {
             "zh-CN": "样式对象",
             "en-US": "Style object"
@@ -503,17 +569,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.setStyle",
       "descriptions": {
-        "zh-CN": "设置样式",
-        "en-US": "Set style"
-      }
+        "zh-CN": "设置单元格样式",
+        "en-US": "Set style property of Excel"
+      },
+      "group": "format",
+      "description": "Set style property of Excel"
     },
     {
       "name": "merge_cells",
@@ -531,31 +600,38 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "range",
           "type": "string",
           "descs": {
-            "zh-CN": "范围",
-            "en-US": "Range"
-          }
+            "zh-CN": "要合并的单元格范围（如A1:C3）",
+            "en-US": "Cell range to merge (e.g. A1:C3)"
+          },
+          "desc": "Cell range to merge (e.g. A1:C3)",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.mergeCells",
       "descriptions": {
         "zh-CN": "合并单元格",
-        "en-US": "Merge cells"
-      }
+        "en-US": "Merge cells of Excel"
+      },
+      "group": "format",
+      "description": "Merge cells of Excel"
     },
     {
       "name": "unmerge_cells",
@@ -573,31 +649,38 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "range",
           "type": "string",
           "descs": {
-            "zh-CN": "范围",
-            "en-US": "Range"
-          }
+            "zh-CN": "要取消合并的单元格范围",
+            "en-US": "Cell range to unmerge"
+          },
+          "desc": "Cell range to unmerge",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.unmergeCells",
       "descriptions": {
         "zh-CN": "取消合并单元格",
-        "en-US": "Unmerge cells"
-      }
+        "en-US": "Unmerge cells of Excel"
+      },
+      "group": "format",
+      "description": "Unmerge cells of Excel"
     },
     {
       "name": "set_column_width",
@@ -615,39 +698,46 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "column",
           "type": "string",
           "descs": {
-            "zh-CN": "列",
-            "en-US": "Column"
-          }
+            "zh-CN": "列标识（如A/B/C）",
+            "en-US": "Column identifier (e.g. A/B/C)"
+          },
+          "desc": "Column identifier (e.g. A/B/C)"
         },
         {
           "name": "width",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "宽度",
-            "en-US": "Width"
-          }
+            "zh-CN": "宽度（像素）",
+            "en-US": "Width in pixels"
+          },
+          "desc": "Width in pixels"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.setColumnWidth",
       "descriptions": {
-        "zh-CN": "设置列宽",
-        "en-US": "Set column width"
-      }
+        "zh-CN": "设置列宽度",
+        "en-US": "Set column width property of Excel"
+      },
+      "group": "format",
+      "description": "Set column width property of Excel"
     },
     {
       "name": "set_row_height",
@@ -665,39 +755,46 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "row",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "行",
-            "en-US": "Row"
-          }
+            "zh-CN": "行号（从1开始）",
+            "en-US": "Row number (1-based)"
+          },
+          "desc": "Row number (1-based)"
         },
         {
           "name": "height",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "高度",
-            "en-US": "Height"
-          }
+            "zh-CN": "高度（像素）",
+            "en-US": "Height in pixels"
+          },
+          "desc": "Height in pixels"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.setRowHeight",
       "descriptions": {
-        "zh-CN": "设置行高",
-        "en-US": "Set row height"
-      }
+        "zh-CN": "设置行高度",
+        "en-US": "Set row height property of Excel"
+      },
+      "group": "format",
+      "description": "Set row height property of Excel"
     },
     {
       "name": "save",
@@ -713,17 +810,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.save",
       "descriptions": {
-        "zh-CN": "保存",
-        "en-US": "Save"
-      }
+        "zh-CN": "保存对工作簿的所有修改到磁盘",
+        "en-US": "Save all workbook changes to disk"
+      },
+      "group": "file",
+      "description": "Save all workbook changes to disk"
     },
     {
       "name": "save_as",
@@ -741,23 +841,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.saveAs",
       "descriptions": {
-        "zh-CN": "保存作为",
-        "en-US": "Save as"
-      }
+        "zh-CN": "将工作簿另存为指定路径",
+        "en-US": "Save as of Excel"
+      },
+      "group": "file",
+      "description": "Save as of Excel"
     },
     {
       "name": "close",
@@ -773,17 +877,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.close",
       "descriptions": {
-        "zh-CN": "关闭",
-        "en-US": "Close"
-      }
+        "zh-CN": "关闭工作簿并释放资源（未保存的修改将丢失）",
+        "en-US": "Close workbook and release resources (unsaved changes lost)"
+      },
+      "group": "file",
+      "description": "Close workbook and release resources (unsaved changes lost)"
     },
     {
       "name": "list_sheets",
@@ -793,23 +900,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "工作表",
-          "en-US": "Sheets"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "excel.listSheets",
       "descriptions": {
-        "zh-CN": "列出工作表",
-        "en-US": "List sheets"
-      }
+        "zh-CN": "列出所有工作表名称",
+        "en-US": "List sheets of Excel"
+      },
+      "group": "sheet",
+      "description": "List sheets of Excel"
     },
     {
       "name": "to_csv",
@@ -819,49 +930,56 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "sheet",
-          "type": "object",
+          "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Worksheet name or index"
         },
         {
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         },
         {
           "name": "delimiter",
           "type": "string",
           "descs": {
-            "zh-CN": "分隔符",
+            "zh-CN": "分隔符字符",
             "en-US": "Delimiter character"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Delimiter character"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.toCsv",
       "descriptions": {
-        "zh-CN": "到 CSV",
-        "en-US": "To CSV"
-      }
+        "zh-CN": "将工作表导出为 CSV 文件",
+        "en-US": "To csv of Excel"
+      },
+      "group": "file",
+      "description": "To csv of Excel"
     },
     {
       "name": "to_json",
@@ -871,41 +989,47 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "sheet",
-          "type": "object",
+          "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Worksheet name or index"
         },
         {
           "name": "header_row",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "头部行",
-            "en-US": "Header Row"
+            "zh-CN": "header_row参数",
+            "en-US": "header_row parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "header_row parameter"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "数据",
-          "en-US": "Data"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "excel.toJson",
       "descriptions": {
-        "zh-CN": "转换为 JSON",
-        "en-US": "To JSON"
-      }
+        "zh-CN": "将工作表导出为 JSON 数据",
+        "en-US": "To json of Excel"
+      },
+      "group": "file",
+      "description": "To json of Excel"
     },
     {
       "name": "from_csv",
@@ -915,17 +1039,19 @@
           "name": "csv_path",
           "type": "string",
           "descs": {
-            "zh-CN": "CSV",
-            "en-US": "CSV"
-          }
+            "zh-CN": "csv_path参数",
+            "en-US": "csv_path parameter"
+          },
+          "desc": "csv_path parameter"
         },
         {
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         },
         {
           "name": "sheet_name",
@@ -940,24 +1066,28 @@
           "name": "delimiter",
           "type": "string",
           "descs": {
-            "zh-CN": "分隔符",
+            "zh-CN": "分隔符字符",
             "en-US": "Delimiter character"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Delimiter character"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.fromCsv",
       "descriptions": {
-        "zh-CN": "从 CSV",
-        "en-US": "From CSV"
-      }
+        "zh-CN": "从 CSV 文件导入数据到工作表",
+        "en-US": "From csv of Excel"
+      },
+      "group": "file",
+      "description": "From csv of Excel"
     },
     {
       "name": "auto_filter",
@@ -975,31 +1105,38 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "range",
           "type": "string",
           "descs": {
-            "zh-CN": "范围",
-            "en-US": "Range"
-          }
+            "zh-CN": "自动筛选的数据范围",
+            "en-US": "Data range for auto filter"
+          },
+          "desc": "Data range for auto filter",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.autoFilter",
       "descriptions": {
-        "zh-CN": "自动过滤器",
-        "en-US": "Auto filter"
-      }
+        "zh-CN": "设置自动筛选",
+        "en-US": "Auto filter of Excel"
+      },
+      "group": "format",
+      "description": "Auto filter of Excel"
     },
     {
       "name": "freeze_panes",
@@ -1017,39 +1154,46 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "row",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "行",
-            "en-US": "Row"
-          }
+            "zh-CN": "冻结起始行号",
+            "en-US": "Freeze pane start row"
+          },
+          "desc": "Freeze pane start row"
         },
         {
           "name": "col",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "列",
-            "en-US": "Col"
-          }
+            "zh-CN": "冻结起始列号",
+            "en-US": "Freeze pane start column"
+          },
+          "desc": "Freeze pane start column"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.freezePanes",
       "descriptions": {
         "zh-CN": "冻结窗格",
-        "en-US": "Freeze panes"
-      }
+        "en-US": "Freeze panes of Excel"
+      },
+      "group": "format",
+      "description": "Freeze panes of Excel"
     },
     {
       "name": "protect_sheet",
@@ -1067,32 +1211,38 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "要保护的工作表名称",
+            "en-US": "Worksheet name to protect"
+          },
+          "desc": "Worksheet name to protect",
+          "optional": true
         },
         {
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Password string"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.protectSheet",
       "descriptions": {
-        "zh-CN": "保护工作表",
-        "en-US": "Protect sheet"
-      }
+        "zh-CN": "保护工作表（设置密码）",
+        "en-US": "Protect sheet of Excel"
+      },
+      "group": "sheet",
+      "description": "Protect sheet of Excel"
     },
     {
       "name": "unprotect_sheet",
@@ -1110,32 +1260,38 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "要取消保护的工作表名称",
+            "en-US": "Worksheet name to unprotect"
+          },
+          "desc": "Worksheet name to unprotect",
+          "optional": true
         },
         {
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Password string"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.unprotectSheet",
       "descriptions": {
-        "zh-CN": "取消保护",
-        "en-US": "Unprotect"
-      }
+        "zh-CN": "取消工作表保护",
+        "en-US": "Unprotect sheet of Excel"
+      },
+      "group": "sheet",
+      "description": "Unprotect sheet of Excel"
     },
     {
       "name": "set_formula",
@@ -1153,39 +1309,46 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "cell",
           "type": "string",
           "descs": {
-            "zh-CN": "单元格",
-            "en-US": "Cell"
-          }
+            "zh-CN": "单元格地址（如A1）",
+            "en-US": "Cell address (e.g. A1)"
+          },
+          "desc": "Cell address (e.g. A1)"
         },
         {
           "name": "formula",
           "type": "string",
           "descs": {
-            "zh-CN": "公式",
-            "en-US": "Formula"
-          }
+            "zh-CN": "Excel公式（如=SUM(A1:A10)）",
+            "en-US": "Excel formula (e.g. =SUM(A1:A10))"
+          },
+          "desc": "Excel formula (e.g. =SUM(A1:A10))"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.setFormula",
       "descriptions": {
-        "zh-CN": "设置公式",
-        "en-US": "Set formula"
-      }
+        "zh-CN": "设置formula property",
+        "en-US": "Set formula property of Excel"
+      },
+      "group": "cell",
+      "description": "Set formula property of Excel"
     },
     {
       "name": "add_image",
@@ -1203,9 +1366,11 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "image_path",
@@ -1219,23 +1384,27 @@
           "name": "cell",
           "type": "string",
           "descs": {
-            "zh-CN": "单元格",
-            "en-US": "Cell"
-          }
+            "zh-CN": "图片插入位置的单元格（如B2）",
+            "en-US": "Cell position to insert image (e.g. B2)"
+          },
+          "desc": "Cell position to insert image (e.g. B2)"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.addImage",
       "descriptions": {
-        "zh-CN": "插入图片",
-        "en-US": "Add image"
-      }
+        "zh-CN": "在工作表中插入图片",
+        "en-US": "Add image of Excel"
+      },
+      "group": "content",
+      "description": "Add image of Excel"
     },
     {
       "name": "copy_sheet",
@@ -1261,23 +1430,27 @@
           "name": "new_name",
           "type": "string",
           "descs": {
-            "zh-CN": "新名称",
-            "en-US": "New Name"
-          }
+            "zh-CN": "new_name参数",
+            "en-US": "new_name parameter"
+          },
+          "desc": "new_name parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.copySheet",
       "descriptions": {
         "zh-CN": "复制工作表",
-        "en-US": "Copy sheet"
-      }
+        "en-US": "Copy sheet of Excel"
+      },
+      "group": "sheet",
+      "description": "Copy sheet of Excel"
     },
     {
       "name": "auto_fit_columns",
@@ -1295,23 +1468,28 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.autoFitColumns",
       "descriptions": {
-        "zh-CN": "自适应宽度",
-        "en-US": "Auto fit"
-      }
+        "zh-CN": "自动调整列宽以适应内容",
+        "en-US": "Auto fit columns of Excel"
+      },
+      "group": "format",
+      "description": "Auto fit columns of Excel"
     },
     {
       "name": "insert_row",
@@ -1329,40 +1507,47 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "row",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "行",
-            "en-US": "Row"
-          }
+            "zh-CN": "插入位置的行号",
+            "en-US": "Row number for insertion position"
+          },
+          "desc": "Row number for insertion position"
         },
         {
           "name": "count",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "数量",
-            "en-US": "Count"
+            "zh-CN": "插入的行数",
+            "en-US": "Number of rows to insert"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Number of rows to insert"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.insertRow",
       "descriptions": {
-        "zh-CN": "插入行",
-        "en-US": "Insert row"
-      }
+        "zh-CN": "在指定位置插入行",
+        "en-US": "Insert row of Excel"
+      },
+      "group": "cell",
+      "description": "Insert row of Excel"
     },
     {
       "name": "insert_column",
@@ -1380,40 +1565,47 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "column",
           "type": "string",
           "descs": {
-            "zh-CN": "列",
-            "en-US": "Column"
-          }
+            "zh-CN": "插入位置的列标识",
+            "en-US": "Column identifier for insertion"
+          },
+          "desc": "Column identifier for insertion"
         },
         {
           "name": "count",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "数量",
-            "en-US": "Count"
+            "zh-CN": "插入的列数",
+            "en-US": "Number of columns to insert"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Number of columns to insert"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.insertColumn",
       "descriptions": {
-        "zh-CN": "插入列",
-        "en-US": "Insert column"
-      }
+        "zh-CN": "在指定位置插入列",
+        "en-US": "Insert column of Excel"
+      },
+      "group": "cell",
+      "description": "Insert column of Excel"
     },
     {
       "name": "delete_row",
@@ -1431,40 +1623,47 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "row",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "行",
-            "en-US": "Row"
-          }
+            "zh-CN": "要删除的起始行号",
+            "en-US": "Starting row number to delete"
+          },
+          "desc": "Starting row number to delete"
         },
         {
           "name": "count",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "数量",
-            "en-US": "Count"
+            "zh-CN": "删除的行数",
+            "en-US": "Number of rows to delete"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Number of rows to delete"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.deleteRow",
       "descriptions": {
-        "zh-CN": "删除行",
-        "en-US": "Delete row"
-      }
+        "zh-CN": "删除指定行",
+        "en-US": "Delete row of Excel"
+      },
+      "group": "cell",
+      "description": "Delete row of Excel"
     },
     {
       "name": "delete_column",
@@ -1482,40 +1681,47 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "column",
           "type": "string",
           "descs": {
-            "zh-CN": "列",
-            "en-US": "Column"
-          }
+            "zh-CN": "要删除的起始列标识",
+            "en-US": "Starting column to delete"
+          },
+          "desc": "Starting column to delete"
         },
         {
           "name": "count",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "数量",
-            "en-US": "Count"
+            "zh-CN": "删除的列数",
+            "en-US": "Number of columns to delete"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Number of columns to delete"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.deleteColumn",
       "descriptions": {
-        "zh-CN": "删除列",
-        "en-US": "Delete column"
-      }
+        "zh-CN": "删除column",
+        "en-US": "Delete column of Excel"
+      },
+      "group": "cell",
+      "description": "Delete column of Excel"
     },
     {
       "name": "add_chart",
@@ -1533,9 +1739,11 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "图表所在的工作表名称",
+            "en-US": "Worksheet name for chart"
+          },
+          "desc": "Worksheet name for chart",
+          "optional": true
         },
         {
           "name": "data_range",
@@ -1558,24 +1766,28 @@
           "name": "position",
           "type": "string",
           "descs": {
-            "zh-CN": "位置",
-            "en-US": "Position"
+            "zh-CN": "position参数",
+            "en-US": "position parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "position parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.addChart",
       "descriptions": {
         "zh-CN": "添加图表",
-        "en-US": "Add chart"
-      }
+        "en-US": "Add chart of Excel"
+      },
+      "group": "content",
+      "description": "Add chart of Excel"
     },
     {
       "name": "set_conditional_format",
@@ -1593,21 +1805,25 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "range",
           "type": "string",
           "descs": {
-            "zh-CN": "范围",
-            "en-US": "Range"
-          }
+            "zh-CN": "条件格式应用的单元格范围",
+            "en-US": "Cell range for conditional format"
+          },
+          "desc": "Cell range for conditional format",
+          "optional": true
         },
         {
           "name": "rule",
-          "type": "object",
+          "type": "ConditionalRule",
           "descs": {
             "zh-CN": "条件规则",
             "en-US": "Condition rule"
@@ -1615,17 +1831,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.setConditionalFormat",
       "descriptions": {
-        "zh-CN": "条件格式",
-        "en-US": "Conditional format"
-      }
+        "zh-CN": "设置conditional format property",
+        "en-US": "Set conditional format property of Excel"
+      },
+      "group": "format",
+      "description": "Set conditional format property of Excel"
     },
     {
       "name": "add_data_validation",
@@ -1643,44 +1862,52 @@
           "name": "sheet",
           "type": "string",
           "descs": {
-            "zh-CN": "工作表",
-            "en-US": "Sheet"
-          }
+            "zh-CN": "工作表名称或索引",
+            "en-US": "Worksheet name or index"
+          },
+          "desc": "Worksheet name or index",
+          "optional": true
         },
         {
           "name": "range",
           "type": "string",
           "descs": {
-            "zh-CN": "范围",
-            "en-US": "Range"
-          }
+            "zh-CN": "数据验证的单元格范围",
+            "en-US": "Cell range for data validation"
+          },
+          "desc": "Cell range for data validation",
+          "optional": true
         },
         {
           "name": "values",
           "type": "array",
           "descs": {
-            "zh-CN": "有效值",
-            "en-US": "Valid values"
+            "zh-CN": "有效值列表（下拉选项）",
+            "en-US": "Valid values list (dropdown options)"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Valid values list (dropdown options)",
+          "default_value": ""
         },
         {
           "name": "min",
-          "type": "object",
+          "type": "any",
           "descs": {
-            "zh-CN": "最小值",
-            "en-US": "Minimum value"
+            "zh-CN": "验证规则的最小值",
+            "en-US": "Minimum value for validation rule"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Minimum value for validation rule"
         },
         {
           "name": "max",
-          "type": "object",
+          "type": "any",
           "descs": {
-            "zh-CN": "最大值",
-            "en-US": "Maximum value"
+            "zh-CN": "验证规则的最大值",
+            "en-US": "Maximum value for validation rule"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Maximum value for validation rule"
         },
         {
           "name": "error_message",
@@ -1693,17 +1920,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "excel.addDataValidation",
       "descriptions": {
-        "zh-CN": "数据验证",
-        "en-US": "Data validation"
-      }
+        "zh-CN": "添加data validation",
+        "en-US": "Add data validation of Excel"
+      },
+      "group": "format",
+      "description": "Add data validation of Excel"
     },
     {
       "name": "list_open",
@@ -1712,19 +1942,333 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "工作簿",
-          "en-US": "Books"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "excel.listOpen",
       "descriptions": {
-        "zh-CN": "列出已打开的",
-        "en-US": "List open"
-      }
+        "zh-CN": "列出open",
+        "en-US": "List open of Excel"
+      },
+      "group": "file",
+      "description": "List open of Excel"
     }
   ],
   "overviews": {
     "zh-CN": "提供 Excel（XLSX/XLS）文件的创建、读写、编辑能力。支持工作表管理、单元格操作、样式设置、公式、图表、数据验证、合并单元格、冻结窗格等功能。",
     "en-US": "Create, read, write, and edit Excel (XLSX/XLS) files. Supports worksheet management, cell operations, styling, formulas, charts, data validation, cell merging, and freeze panes."
-  }
+  },
+  "types": [
+    {
+      "name": "CellValue",
+      "descriptions": {
+        "zh-CN": "单元格的值及其类型信息",
+        "en-US": "Cell value and type info"
+      },
+      "fields": [
+        {
+          "name": "value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "单元格显示值",
+            "en-US": "Cell display value"
+          }
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "descs": {
+            "zh-CN": "值类型（string/number/boolean/date/formula）",
+            "en-US": "Value type"
+          }
+        },
+        {
+          "name": "formula",
+          "type": "string",
+          "descs": {
+            "zh-CN": "公式（如有）",
+            "en-US": "Formula if any"
+          },
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "SheetInfo",
+      "descriptions": {
+        "zh-CN": "工作表基本信息",
+        "en-US": "Worksheet basic info"
+      },
+      "fields": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表名称",
+            "en-US": "Sheet name"
+          }
+        },
+        {
+          "name": "index",
+          "type": "number",
+          "descs": {
+            "zh-CN": "工作表索引（从0开始）",
+            "en-US": "Sheet index (0-based)"
+          }
+        },
+        {
+          "name": "rows",
+          "type": "number",
+          "descs": {
+            "zh-CN": "行数",
+            "en-US": "Row count"
+          }
+        },
+        {
+          "name": "cols",
+          "type": "number",
+          "descs": {
+            "zh-CN": "列数",
+            "en-US": "Column count"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CellData",
+      "descriptions": {
+        "zh-CN": "单元格数据",
+        "en-US": "Cell data"
+      },
+      "fields": [
+        {
+          "name": "value",
+          "type": "any",
+          "descs": {
+            "zh-CN": "单元格值",
+            "en-US": "Cell value"
+          }
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "descs": {
+            "zh-CN": "值类型(string/number/boolean)",
+            "en-US": "Value type"
+          }
+        },
+        {
+          "name": "formula",
+          "type": "string",
+          "descs": {
+            "zh-CN": "公式(如有)",
+            "en-US": "Formula if any"
+          }
+        }
+      ]
+    },
+    {
+      "name": "WorkbookHandle",
+      "descriptions": {
+        "zh-CN": "工作簿操作句柄",
+        "en-US": "Workbook handle"
+      },
+      "fields": [
+        {
+          "name": "handle_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿句柄ID",
+            "en-US": "Workbook handle ID"
+          }
+        },
+        {
+          "name": "sheets",
+          "type": "array",
+          "descs": {
+            "zh-CN": "工作表名称列表",
+            "en-US": "Sheet name list"
+          }
+        }
+      ]
+    },
+    {
+      "name": "WriteResult",
+      "descriptions": {
+        "zh-CN": "写入操作结果",
+        "en-US": "Write operation result"
+      },
+      "fields": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否成功",
+            "en-US": "Whether succeeded"
+          }
+        },
+        {
+          "name": "cells_written",
+          "type": "number",
+          "descs": {
+            "zh-CN": "写入的单元格数",
+            "en-US": "Cells written"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CellStyle",
+      "descriptions": {
+        "zh-CN": "单元格样式",
+        "en-US": "Cell style"
+      },
+      "fields": [
+        {
+          "name": "bold",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否加粗",
+            "en-US": "Whether bold"
+          },
+          "optional": true
+        },
+        {
+          "name": "italic",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否斜体",
+            "en-US": "Whether italic"
+          },
+          "optional": true
+        },
+        {
+          "name": "font_size",
+          "type": "number",
+          "descs": {
+            "zh-CN": "字体大小",
+            "en-US": "Font size"
+          },
+          "optional": true
+        },
+        {
+          "name": "font_color",
+          "type": "string",
+          "descs": {
+            "zh-CN": "字体颜色(十六进制)",
+            "en-US": "Font color (hex)"
+          },
+          "optional": true
+        },
+        {
+          "name": "bg_color",
+          "type": "string",
+          "descs": {
+            "zh-CN": "背景颜色(十六进制)",
+            "en-US": "Background color (hex)"
+          },
+          "optional": true
+        },
+        {
+          "name": "align",
+          "type": "string",
+          "descs": {
+            "zh-CN": "对齐方式(left/center/right)",
+            "en-US": "Alignment (left/center/right)"
+          },
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "ConditionalRule",
+      "descriptions": {
+        "zh-CN": "条件格式规则",
+        "en-US": "Conditional format rule"
+      },
+      "fields": [
+        {
+          "name": "type",
+          "type": "string",
+          "descs": {
+            "zh-CN": "规则类型(cell_value/formula)",
+            "en-US": "Rule type (cell_value/formula)"
+          }
+        },
+        {
+          "name": "operator",
+          "type": "string",
+          "descs": {
+            "zh-CN": "操作符(>/</==/between)",
+            "en-US": "Operator (>/</==/between)"
+          }
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "descs": {
+            "zh-CN": "比较值",
+            "en-US": "Comparison value"
+          }
+        },
+        {
+          "name": "style",
+          "type": "CellStyle",
+          "descs": {
+            "zh-CN": "匹配时应用的样式",
+            "en-US": "Style when matched"
+          }
+        }
+      ]
+    }
+  ],
+  "constants": [
+    {
+      "name": "TYPE_STRING",
+      "value": "string",
+      "type": "string",
+      "descs": {
+        "zh-CN": "字符串类型",
+        "en-US": "String type"
+      }
+    },
+    {
+      "name": "TYPE_NUMBER",
+      "value": "number",
+      "type": "string",
+      "descs": {
+        "zh-CN": "数字类型",
+        "en-US": "Number type"
+      }
+    },
+    {
+      "name": "TYPE_BOOLEAN",
+      "value": "boolean",
+      "type": "string",
+      "descs": {
+        "zh-CN": "布尔类型",
+        "en-US": "Boolean type"
+      }
+    },
+    {
+      "name": "TYPE_DATE",
+      "value": "date",
+      "type": "string",
+      "descs": {
+        "zh-CN": "日期类型",
+        "en-US": "Date type"
+      }
+    },
+    {
+      "name": "TYPE_FORMULA",
+      "value": "formula",
+      "type": "string",
+      "descs": {
+        "zh-CN": "公式类型",
+        "en-US": "Formula type"
+      }
+    }
+  ]
 }

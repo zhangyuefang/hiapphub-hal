@@ -22,23 +22,26 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "URL"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "shellExt.openUrl",
       "descriptions": {
         "zh-CN": "打开 URL 在浏览器",
         "en-US": "Open URL in browser"
-      }
+      },
+      "group": "open"
     },
     {
       "name": "open_path",
@@ -48,23 +51,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "shellExt.openPath",
       "descriptions": {
-        "zh-CN": "打开文件/文件夹",
-        "en-US": "Open file/folder"
-      }
+        "zh-CN": "打开path",
+        "en-US": "Open path of shell"
+      },
+      "group": "open",
+      "description": "Open path of shell"
     },
     {
       "name": "open_with",
@@ -88,17 +95,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "shellExt.openWith",
       "descriptions": {
-        "zh-CN": "使用指定应用打开",
-        "en-US": "Open with app"
-      }
+        "zh-CN": "使用指定程序打开文件",
+        "en-US": "Open with of shell"
+      },
+      "group": "open",
+      "description": "Open with of shell"
     },
     {
       "name": "show_in_explorer",
@@ -108,23 +118,26 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "shellExt.showInExplorer",
       "descriptions": {
         "zh-CN": "在 Finder 中显示",
         "en-US": "Show in Finder"
-      }
+      },
+      "group": "open"
     },
     {
       "name": "trash",
@@ -134,23 +147,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "shellExt.trash",
       "descriptions": {
-        "zh-CN": "移到废纸篓",
-        "en-US": "Move to trash"
-      }
+        "zh-CN": "将文件移入回收站",
+        "en-US": "Trash shell"
+      },
+      "group": "open",
+      "description": "Trash shell"
     },
     {
       "name": "run_detached",
@@ -160,18 +177,20 @@
           "name": "command",
           "type": "string",
           "descs": {
-            "zh-CN": "命令",
-            "en-US": "Command"
-          }
+            "zh-CN": "要执行的命令",
+            "en-US": "Command to execute"
+          },
+          "desc": "Command to execute"
         },
         {
           "name": "args",
           "type": "array",
           "descs": {
-            "zh-CN": "参数",
-            "en-US": "Arguments"
+            "zh-CN": "命令行参数列表",
+            "en-US": "Command arguments list"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Command arguments list"
         },
         {
           "name": "cwd",
@@ -184,7 +203,7 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ProcessHandle",
         "descs": {
           "zh-CN": "进程信息",
           "en-US": "Process info"
@@ -192,9 +211,11 @@
       },
       "bridge_path": "shellExt.runDetached",
       "descriptions": {
-        "zh-CN": "后台运行进程",
-        "en-US": "Run detached process"
-      }
+        "zh-CN": "以分离模式运行程序",
+        "en-US": "Run detached of shell"
+      },
+      "group": "execute",
+      "description": "Run detached of shell"
     },
     {
       "name": "get_special_dir",
@@ -212,15 +233,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "路径",
-          "en-US": "Path"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "shellExt.getSpecialDir",
       "descriptions": {
-        "zh-CN": "获取特殊目录",
-        "en-US": "Get special directory"
-      }
+        "zh-CN": "获取special dir信息",
+        "en-US": "Get special dir info of shell"
+      },
+      "group": "file",
+      "description": "Get special dir info of shell"
     },
     {
       "name": "get_env",
@@ -230,23 +254,27 @@
           "name": "name",
           "type": "string",
           "descs": {
-            "zh-CN": "变量名",
-            "en-US": "Variable name"
-          }
+            "zh-CN": "名称标识",
+            "en-US": "Name identifier"
+          },
+          "desc": "Name identifier"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "值",
-          "en-US": "Value"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "shellExt.getEnv",
       "descriptions": {
-        "zh-CN": "获取环境变量",
-        "en-US": "Get env variable"
-      }
+        "zh-CN": "获取env信息",
+        "en-US": "Get env info of shell"
+      },
+      "group": "env",
+      "description": "Get env info of shell"
     },
     {
       "name": "set_env",
@@ -256,31 +284,36 @@
           "name": "name",
           "type": "string",
           "descs": {
-            "zh-CN": "变量名",
-            "en-US": "Variable name"
-          }
+            "zh-CN": "名称标识",
+            "en-US": "Name identifier"
+          },
+          "desc": "Name identifier"
         },
         {
           "name": "value",
           "type": "string",
           "descs": {
-            "zh-CN": "值",
-            "en-US": "Value"
-          }
+            "zh-CN": "要设置的值",
+            "en-US": "Value to set"
+          },
+          "desc": "Value to set"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "shellExt.setEnv",
       "descriptions": {
-        "zh-CN": "设置环境变量变量",
-        "en-US": "Set env variable"
-      }
+        "zh-CN": "设置env property",
+        "en-US": "Set env property of shell"
+      },
+      "group": "env",
+      "description": "Set env property of shell"
     },
     {
       "name": "get_file_icon",
@@ -313,9 +346,11 @@
       },
       "bridge_path": "shellExt.getFileIcon",
       "descriptions": {
-        "zh-CN": "获取文件图标",
-        "en-US": "Get file icon"
-      }
+        "zh-CN": "获取file icon信息",
+        "en-US": "Get file icon info of shell"
+      },
+      "group": "file",
+      "description": "Get file icon info of shell"
     },
     {
       "name": "get_mime_type",
@@ -341,7 +376,8 @@
       "descriptions": {
         "zh-CN": "获取 MIME 类型",
         "en-US": "Get MIME type"
-      }
+      },
+      "group": "file"
     },
     {
       "name": "get_default_app",
@@ -357,7 +393,7 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "AppInfo",
         "descs": {
           "zh-CN": "应用信息",
           "en-US": "App info"
@@ -365,9 +401,11 @@
       },
       "bridge_path": "shellExt.getDefaultApp",
       "descriptions": {
-        "zh-CN": "获取默认应用",
-        "en-US": "Get default app"
-      }
+        "zh-CN": "获取文件类型的默认打开程序",
+        "en-US": "Get default app info of shell"
+      },
+      "group": "file_assoc",
+      "description": "Get default app info of shell"
     },
     {
       "name": "create_shortcut",
@@ -402,33 +440,38 @@
           "name": "description",
           "type": "string",
           "descs": {
-            "zh-CN": "描述",
-            "en-US": "Description"
+            "zh-CN": "description参数",
+            "en-US": "description parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "description parameter"
         },
         {
           "name": "args",
           "type": "string",
           "descs": {
-            "zh-CN": "启动参数",
-            "en-US": "Launch arguments"
+            "zh-CN": "快捷方式启动时传递的命令行参数",
+            "en-US": "Command-line arguments passed when shortcut launches"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Command-line arguments passed when shortcut launches"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "shellExt.createShortcut",
       "descriptions": {
-        "zh-CN": "创建快捷方式",
-        "en-US": "Create shortcut"
-      }
+        "zh-CN": "创建桌面快捷方式",
+        "en-US": "Create shortcut of shell"
+      },
+      "group": "shortcut",
+      "description": "Create shortcut of shell"
     },
     {
       "name": "remove_shortcut",
@@ -444,17 +487,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "shellExt.removeShortcut",
       "descriptions": {
-        "zh-CN": "删除快捷方式",
-        "en-US": "Remove shortcut"
-      }
+        "zh-CN": "移除shortcut",
+        "en-US": "Remove shortcut of shell"
+      },
+      "group": "shortcut",
+      "description": "Remove shortcut of shell"
     },
     {
       "name": "shortcut_exists",
@@ -470,7 +516,7 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否存在",
           "en-US": "Exists"
@@ -478,9 +524,11 @@
       },
       "bridge_path": "shellExt.shortcutExists",
       "descriptions": {
-        "zh-CN": "检查快捷方式",
-        "en-US": "Check shortcut"
-      }
+        "zh-CN": "检查快捷方式是否存在",
+        "en-US": "Shortcut exists of shell"
+      },
+      "group": "shortcut",
+      "description": "Shortcut exists of shell"
     },
     {
       "name": "is_autostart",
@@ -496,25 +544,27 @@
         },
         {
           "name": "enabled",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "启用/禁用",
             "en-US": "Enable/disable"
           },
-          "optional": true
+          "optional": true,
+          "default_value": "true"
         },
         {
           "name": "args",
           "type": "array",
           "descs": {
-            "zh-CN": "启动参数",
-            "en-US": "Launch arguments"
+            "zh-CN": "开机自启动时传递的命令行参数",
+            "en-US": "Arguments passed during autostart"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Arguments passed during autostart"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否自启动",
           "en-US": "Is autostart"
@@ -522,9 +572,11 @@
       },
       "bridge_path": "shellExt.isAutostart",
       "descriptions": {
-        "zh-CN": "检查自启动",
-        "en-US": "Check autostart"
-      }
+        "zh-CN": "检查是否shell autostart",
+        "en-US": "Check if shell autostart"
+      },
+      "group": "shortcut",
+      "description": "Check if shell autostart"
     },
     {
       "name": "set_autostart",
@@ -540,36 +592,41 @@
         },
         {
           "name": "enabled",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
-            "zh-CN": "启用",
-            "en-US": "Enable"
+            "zh-CN": "是否启用",
+            "en-US": "Whether enabled"
           },
           "optional": true,
-          "default_value": "true"
+          "default_value": "true",
+          "desc": "Whether enabled"
         },
         {
           "name": "args",
           "type": "array",
           "descs": {
-            "zh-CN": "启动参数",
-            "en-US": "Launch arguments"
+            "zh-CN": "开机自启动时传递的命令行参数",
+            "en-US": "Arguments passed during autostart"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Arguments passed during autostart"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "shellExt.setAutostart",
       "descriptions": {
-        "zh-CN": "设置自启动",
-        "en-US": "Set autostart"
-      }
+        "zh-CN": "设置autostart property",
+        "en-US": "Set autostart property of shell"
+      },
+      "group": "shortcut",
+      "description": "Set autostart property of shell"
     },
     {
       "name": "list_printers",
@@ -584,9 +641,11 @@
       },
       "bridge_path": "shellExt.listPrinters",
       "descriptions": {
-        "zh-CN": "列出打印机",
-        "en-US": "List printers"
-      }
+        "zh-CN": "列出printers",
+        "en-US": "List printers of shell"
+      },
+      "group": "print",
+      "description": "List printers of shell"
     },
     {
       "name": "get_default_printer",
@@ -601,9 +660,11 @@
       },
       "bridge_path": "shellExt.getDefaultPrinter",
       "descriptions": {
-        "zh-CN": "获取默认打印机",
-        "en-US": "Get default printer"
-      }
+        "zh-CN": "获取default printer信息",
+        "en-US": "Get default printer info of shell"
+      },
+      "group": "print",
+      "description": "Get default printer info of shell"
     },
     {
       "name": "print_file",
@@ -628,7 +689,7 @@
         },
         {
           "name": "copies",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "打印份数",
             "en-US": "Number of copies"
@@ -639,14 +700,15 @@
           "name": "range",
           "type": "string",
           "descs": {
-            "zh-CN": "范围",
-            "en-US": "Range"
+            "zh-CN": "打印页码范围（如1-5）",
+            "en-US": "Print page range (e.g. 1-5)"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Print page range (e.g. 1-5)"
         },
         {
           "name": "duplex",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "双面打印",
             "en-US": "Duplex printing"
@@ -657,10 +719,11 @@
           "name": "orientation",
           "type": "string",
           "descs": {
-            "zh-CN": "方向",
-            "en-US": "Orientation"
+            "zh-CN": "orientation参数",
+            "en-US": "orientation parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "orientation parameter"
         },
         {
           "name": "paper_size",
@@ -673,30 +736,111 @@
         },
         {
           "name": "silent",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
-            "zh-CN": "静默",
-            "en-US": "Silent"
+            "zh-CN": "是否静默执行",
+            "en-US": "Whether to execute silently"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Whether to execute silently"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "shellExt.printFile",
       "descriptions": {
-        "zh-CN": "打印文件",
-        "en-US": "Print file"
-      }
+        "zh-CN": "调用系统打印功能打印文件",
+        "en-US": "Print file of shell"
+      },
+      "group": "print",
+      "description": "Print file of shell"
     }
   ],
   "overviews": {
     "zh-CN": "提供操作系统 Shell 扩展能力，包括在 Finder/Explorer 中显示文件、打开外部 URL、获取文件图标、读取系统环境变量、执行系统级操作等功能。",
     "en-US": "OS shell extensions including reveal in Finder/Explorer, open external URLs, get file icons, read system environment variables, and perform system-level operations."
-  }
+  },
+  "types": [
+    {
+      "name": "CommandResult",
+      "descriptions": {
+        "zh-CN": "命令执行结果",
+        "en-US": "Command execution result"
+      },
+      "fields": [
+        {
+          "name": "stdout",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标准输出内容",
+            "en-US": "Standard output content"
+          }
+        },
+        {
+          "name": "stderr",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标准错误输出",
+            "en-US": "Standard error output"
+          }
+        },
+        {
+          "name": "exit_code",
+          "type": "number",
+          "descs": {
+            "zh-CN": "进程退出码",
+            "en-US": "Process exit code"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ProcessHandle",
+      "descriptions": {
+        "zh-CN": "分离进程句柄",
+        "en-US": "Detached process handle"
+      },
+      "fields": [
+        {
+          "name": "pid",
+          "type": "number",
+          "descs": {
+            "zh-CN": "进程ID",
+            "en-US": "Process ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "AppInfo",
+      "descriptions": {
+        "zh-CN": "应用程序信息",
+        "en-US": "Application info"
+      },
+      "fields": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "应用名称",
+            "en-US": "App name"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "可执行文件路径",
+            "en-US": "Executable path"
+          }
+        }
+      ]
+    }
+  ]
 }

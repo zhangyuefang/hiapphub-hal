@@ -557,9 +557,10 @@ hap_fn!(hap_browser_get_html, GetHtmlParams, |params| {
         .ok_or_else(|| HapError::invalid_param("page_id not found"))?;
 
     let js = if let Some(ref sel) = params.selector {
+        let escaped_sel = sel.replace('\\', "\\\\").replace('\'', "\\'");
         format!(
             r#"(function(){{ var el = document.querySelector('{}'); return el ? el.outerHTML : null; }})()"#,
-            sel.replace('\'', "\\'")
+            escaped_sel
         )
     } else {
         "document.documentElement.outerHTML".to_string()

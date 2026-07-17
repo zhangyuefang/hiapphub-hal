@@ -22,26 +22,29 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "存储键名",
+            "en-US": "Storage key"
+          },
+          "desc": "Storage key"
         },
         {
           "name": "default_value",
           "type": "string",
           "descs": {
-            "zh-CN": "默认值",
-            "en-US": "Default value"
+            "zh-CN": "default_value参数",
+            "en-US": "default_value parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "default_value parameter"
         },
         {
           "name": "storage_dir",
@@ -56,15 +59,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "值",
-          "en-US": "Value"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "storage.get",
       "descriptions": {
-        "zh-CN": "获取值",
-        "en-US": "Get value"
-      }
+        "zh-CN": "根据键名从持久化存储中读取对应的值",
+        "en-US": "Read value from persistent storage by key"
+      },
+      "group": "kv",
+      "description": "Read value from persistent storage by key"
     },
     {
       "name": "set",
@@ -74,25 +80,28 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "存储键名",
+            "en-US": "Storage key"
+          },
+          "desc": "Storage key"
         },
         {
           "name": "value",
           "type": "string",
           "descs": {
-            "zh-CN": "值",
-            "en-US": "Value"
-          }
+            "zh-CN": "要存储的值（支持字符串、数字、布尔、对象）",
+            "en-US": "Value to store (string/number/boolean/object)"
+          },
+          "desc": "Value to store (string/number/boolean/object)"
         },
         {
           "name": "storage_dir",
@@ -105,17 +114,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "storage.set",
       "descriptions": {
-        "zh-CN": "设置值",
-        "en-US": "Set value"
-      }
+        "zh-CN": "将键值对写入持久化存储（已存在则覆盖）",
+        "en-US": "Write key-value pair to persistent storage (overwrites if exists)"
+      },
+      "group": "kv",
+      "description": "Write key-value pair to persistent storage (overwrites if exists)"
     },
     {
       "name": "delete",
@@ -125,17 +137,19 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "要删除的存储键名",
+            "en-US": "Storage key name to delete"
+          },
+          "desc": "Storage key name to delete"
         },
         {
           "name": "storage_dir",
@@ -148,17 +162,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "storage.delete",
       "descriptions": {
-        "zh-CN": "删除键",
-        "en-US": "Delete key"
-      }
+        "zh-CN": "从持久化存储中删除指定键的数据",
+        "en-US": "Delete data for specified key from persistent storage"
+      },
+      "group": "kv",
+      "description": "Delete data for specified key from persistent storage"
     },
     {
       "name": "has",
@@ -168,17 +185,19 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "要检查是否存在的键名",
+            "en-US": "Key name to check existence"
+          },
+          "desc": "Key name to check existence"
         },
         {
           "name": "storage_dir",
@@ -191,7 +210,7 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否存在",
           "en-US": "Exists"
@@ -199,9 +218,11 @@
       },
       "bridge_path": "storage.has",
       "descriptions": {
-        "zh-CN": "是否有键",
-        "en-US": "Has key"
-      }
+        "zh-CN": "检查存储中是否存在指定的键",
+        "en-US": "Check if specified key exists in storage"
+      },
+      "group": "kv",
+      "description": "Check if specified key exists in storage"
     },
     {
       "name": "keys",
@@ -211,9 +232,10 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "prefix",
@@ -237,15 +259,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "键",
-          "en-US": "Keys"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "storage.keys",
       "descriptions": {
-        "zh-CN": "列出键",
-        "en-US": "List keys"
-      }
+        "zh-CN": "获取存储中所有键名的列表",
+        "en-US": "Get list of all keys in storage"
+      },
+      "group": "kv",
+      "description": "Get list of all keys in storage"
     },
     {
       "name": "get_many",
@@ -255,17 +280,19 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "keys",
           "type": "array",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Keys"
-          }
+            "zh-CN": "要批量获取的键名列表",
+            "en-US": "List of key names to batch get"
+          },
+          "desc": "List of key names to batch get"
         },
         {
           "name": "storage_dir",
@@ -278,17 +305,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "Record",
         "descs": {
-          "zh-CN": "值",
-          "en-US": "Values"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "storage.getMany",
       "descriptions": {
-        "zh-CN": "获取多个",
-        "en-US": "Get many"
-      }
+        "zh-CN": "批量获取多个键的值",
+        "en-US": "Get many info of storage"
+      },
+      "group": "batch",
+      "description": "Get many info of storage"
     },
     {
       "name": "set_many",
@@ -298,17 +328,19 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "entries",
-          "type": "object",
+          "type": "Record",
           "descs": {
-            "zh-CN": "条目",
-            "en-US": "Entries"
-          }
+            "zh-CN": "键值对数组[{key,value}]",
+            "en-US": "Key-value pair array [{key,value}]"
+          },
+          "desc": "Key-value pair array [{key,value}]"
         },
         {
           "name": "storage_dir",
@@ -321,17 +353,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "storage.setMany",
       "descriptions": {
-        "zh-CN": "设置多个",
-        "en-US": "Set many"
-      }
+        "zh-CN": "批量设置多个键值对",
+        "en-US": "Set many property of storage"
+      },
+      "group": "batch",
+      "description": "Set many property of storage"
     },
     {
       "name": "clear",
@@ -341,9 +376,10 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "storage_dir",
@@ -356,17 +392,20 @@
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "已删除",
-          "en-US": "Deleted"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "storage.clear",
       "descriptions": {
-        "zh-CN": "清除命名空间",
-        "en-US": "Clear namespace"
-      }
+        "zh-CN": "清空当前命名空间下的所有存储数据",
+        "en-US": "Clear all stored data in current namespace"
+      },
+      "group": "kv",
+      "description": "Clear all stored data in current namespace"
     },
     {
       "name": "count",
@@ -376,9 +415,10 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "prefix",
@@ -400,17 +440,20 @@
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "数量",
-          "en-US": "Count"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "storage.count",
       "descriptions": {
-        "zh-CN": "计数键",
-        "en-US": "Count keys"
-      }
+        "zh-CN": "获取存储中键值对的数量",
+        "en-US": "Get total count of key-value pairs in storage"
+      },
+      "group": "kv",
+      "description": "Get total count of key-value pairs in storage"
     },
     {
       "name": "namespaces",
@@ -435,9 +478,11 @@
       },
       "bridge_path": "storage.namespaces",
       "descriptions": {
-        "zh-CN": "列出命名空间",
-        "en-US": "List namespaces"
-      }
+        "zh-CN": "namespaces持久化存储",
+        "en-US": "Namespaces storage"
+      },
+      "group": "namespace",
+      "description": "Namespaces storage"
     },
     {
       "name": "size",
@@ -462,17 +507,20 @@
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "字节",
-          "en-US": "Bytes"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "storage.size",
       "descriptions": {
-        "zh-CN": "存储大小",
-        "en-US": "Storage size"
-      }
+        "zh-CN": "获取存储数据占用的磁盘空间大小",
+        "en-US": "Get disk space used by stored data"
+      },
+      "group": "namespace",
+      "description": "Get disk space used by stored data"
     },
     {
       "name": "set_with_ttl",
@@ -482,29 +530,32 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "存储键名",
+            "en-US": "Storage key name"
+          },
+          "desc": "Storage key name"
         },
         {
           "name": "value",
           "type": "string",
           "descs": {
-            "zh-CN": "值",
-            "en-US": "Value"
-          }
+            "zh-CN": "要设置的值",
+            "en-US": "Value to set"
+          },
+          "desc": "Value to set"
         },
         {
           "name": "ttl_ms",
-          "type": "i64",
+          "type": "number",
           "descs": {
             "zh-CN": "TTL ms",
             "en-US": "TTL ms"
@@ -521,17 +572,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "storage.setWithTtl",
       "descriptions": {
-        "zh-CN": "设置带 TTL",
-        "en-US": "Set with TTL"
-      }
+        "zh-CN": "设置with ttl property",
+        "en-US": "Set with ttl property of storage"
+      },
+      "group": "kv",
+      "description": "Set with ttl property of storage"
     },
     {
       "name": "export",
@@ -541,17 +595,19 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         },
         {
           "name": "storage_dir",
@@ -564,17 +620,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ExportResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "storage.export",
       "descriptions": {
-        "zh-CN": "导出",
-        "en-US": "Export"
-      }
+        "zh-CN": "导出所有存储数据为 JSON",
+        "en-US": "Export all stored data to JSON file"
+      },
+      "group": "bulk",
+      "description": "Export all stored data to JSON file"
     },
     {
       "name": "import",
@@ -584,21 +643,23 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "input_path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "输入文件路径",
+            "en-US": "Input file path"
+          },
+          "desc": "Input file path"
         },
         {
           "name": "overwrite",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "是否覆盖已有文件",
             "en-US": "Overwrite existing"
@@ -617,17 +678,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ImportResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "storage.import",
       "descriptions": {
-        "zh-CN": "导入",
-        "en-US": "Import"
-      }
+        "zh-CN": "从JSON文件导入数据到存储中",
+        "en-US": "Import data from JSON file into storage"
+      },
+      "group": "bulk",
+      "description": "Import data from JSON file into storage"
     },
     {
       "name": "increment",
@@ -637,27 +701,30 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "要递增的计数器键名",
+            "en-US": "Counter key name to increment"
+          },
+          "desc": "Counter key name to increment"
         },
         {
           "name": "delta",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "递增量",
-            "en-US": "Increment delta"
+            "zh-CN": "递增步长值（默认1）",
+            "en-US": "Increment step value (default 1)"
           },
           "optional": true,
-          "default_value": "1"
+          "default_value": "1",
+          "desc": "Increment step value (default 1)"
         },
         {
           "name": "storage_dir",
@@ -670,17 +737,20 @@
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "新值",
-          "en-US": "New value"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "storage.increment",
       "descriptions": {
-        "zh-CN": "递增",
-        "en-US": "Increment"
-      }
+        "zh-CN": "increment持久化存储",
+        "en-US": "Increment storage"
+      },
+      "group": "kv",
+      "description": "Increment storage"
     },
     {
       "name": "delete_many",
@@ -690,17 +760,19 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "keys",
           "type": "array",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Keys"
-          }
+            "zh-CN": "要批量删除的键名列表",
+            "en-US": "List of key names to batch delete"
+          },
+          "desc": "List of key names to batch delete"
         },
         {
           "name": "storage_dir",
@@ -713,17 +785,20 @@
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "已删除",
-          "en-US": "Deleted"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "storage.deleteMany",
       "descriptions": {
-        "zh-CN": "删除多个",
-        "en-US": "Delete many"
-      }
+        "zh-CN": "删除many",
+        "en-US": "Delete many of storage"
+      },
+      "group": "kv",
+      "description": "Delete many of storage"
     },
     {
       "name": "values",
@@ -733,9 +808,10 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "prefix",
@@ -759,15 +835,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "值",
-          "en-US": "Values"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "storage.values",
       "descriptions": {
-        "zh-CN": "列出值",
-        "en-US": "List values"
-      }
+        "zh-CN": "values持久化存储",
+        "en-US": "Values storage"
+      },
+      "group": "bulk",
+      "description": "Values storage"
     },
     {
       "name": "entries",
@@ -777,9 +856,10 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "prefix",
@@ -803,15 +883,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "条目",
-          "en-US": "Entries"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "storage.entries",
       "descriptions": {
-        "zh-CN": "列出条目",
-        "en-US": "List entries"
-      }
+        "zh-CN": "entries持久化存储",
+        "en-US": "Entries storage"
+      },
+      "group": "bulk",
+      "description": "Entries storage"
     },
     {
       "name": "get_json",
@@ -821,17 +904,19 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "要获取JSON数据的键名",
+            "en-US": "Key name to get JSON data from"
+          },
+          "desc": "Key name to get JSON data from"
         },
         {
           "name": "storage_dir",
@@ -844,17 +929,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "any",
         "descs": {
-          "zh-CN": "值",
-          "en-US": "Value"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "storage.getJson",
       "descriptions": {
-        "zh-CN": "获取 JSON",
-        "en-US": "Get JSON"
-      }
+        "zh-CN": "获取json信息",
+        "en-US": "Get json info of storage"
+      },
+      "group": "kv",
+      "description": "Get json info of storage"
     },
     {
       "name": "set_json",
@@ -864,25 +952,28 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "要设置JSON数据的键名",
+            "en-US": "Key name to set JSON data to"
+          },
+          "desc": "Key name to set JSON data to"
         },
         {
           "name": "value",
-          "type": "object",
+          "type": "any",
           "descs": {
-            "zh-CN": "值",
-            "en-US": "Value"
-          }
+            "zh-CN": "要设置的值",
+            "en-US": "Value to set"
+          },
+          "desc": "Value to set"
         },
         {
           "name": "storage_dir",
@@ -895,17 +986,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "storage.setJson",
       "descriptions": {
-        "zh-CN": "设置 JSON",
-        "en-US": "Set JSON"
-      }
+        "zh-CN": "设置json property",
+        "en-US": "Set json property of storage"
+      },
+      "group": "kv",
+      "description": "Set json property of storage"
     },
     {
       "name": "on_change",
@@ -915,26 +1009,29 @@
           "name": "namespace",
           "type": "string",
           "descs": {
-            "zh-CN": "NS",
-            "en-US": "NS"
-          }
+            "zh-CN": "namespace参数",
+            "en-US": "namespace parameter"
+          },
+          "desc": "namespace parameter"
         },
         {
           "name": "key_prefix",
           "type": "string",
           "descs": {
-            "zh-CN": "键前缀",
-            "en-US": "Key Prefix"
+            "zh-CN": "key_prefix参数",
+            "en-US": "key_prefix parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "key_prefix parameter"
         },
         {
           "name": "callback_id",
           "type": "string",
           "descs": {
-            "zh-CN": "回调",
-            "en-US": "Callback"
-          }
+            "zh-CN": "异步回调标识符",
+            "en-US": "Async callback identifier"
+          },
+          "desc": "Async callback identifier"
         },
         {
           "name": "storage_dir",
@@ -947,17 +1044,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "StorageWatcher",
         "descs": {
-          "zh-CN": "监视器",
-          "en-US": "Watcher"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "storage.onChange",
       "descriptions": {
-        "zh-CN": "监视变化",
-        "en-US": "Watch changes"
-      }
+        "zh-CN": "监听存储变化事件",
+        "en-US": "Listen for change event on storage"
+      },
+      "group": "watch",
+      "description": "Listen for change event on storage"
     },
     {
       "name": "off_change",
@@ -967,27 +1067,219 @@
           "name": "watcher_id",
           "type": "string",
           "descs": {
-            "zh-CN": "监视器",
-            "en-US": "Watcher"
-          }
+            "zh-CN": "watcher_id参数",
+            "en-US": "watcher_id parameter"
+          },
+          "desc": "watcher_id parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "storage.offChange",
       "descriptions": {
-        "zh-CN": "停止监视",
-        "en-US": "Stop watching"
-      }
+        "zh-CN": "取消监听存储变化事件",
+        "en-US": "Stop listening for change event on storage"
+      },
+      "group": "watch",
+      "description": "Stop listening for change event on storage"
     }
   ],
   "overviews": {
     "zh-CN": "提供本地键值存储能力，支持按命名空间隔离的数据存取、批量操作、TTL 过期、数据导入导出、存储空间统计等功能。适用于应用配置和轻量数据持久化。",
     "en-US": "Local key-value storage with namespace isolation, batch operations, TTL expiry, import/export, and storage statistics. Suitable for app configuration and lightweight data persistence."
-  }
+  },
+  "events": [
+    {
+      "name": "change",
+      "descriptions": {
+        "zh-CN": "存储值变更",
+        "en-US": "Storage value changed"
+      },
+      "payload": [
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键名",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "old_value",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "旧值",
+            "en-US": "Old value"
+          }
+        },
+        {
+          "name": "new_value",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "新值",
+            "en-US": "New value"
+          }
+        }
+      ]
+    },
+    {
+      "name": "storage_change",
+      "descriptions": {
+        "zh-CN": "存储数据变化",
+        "en-US": "Storage data changed"
+      },
+      "payload": [
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "变化的键名",
+            "en-US": "Changed key name"
+          }
+        },
+        {
+          "name": "old_value",
+          "type": "any",
+          "descs": {
+            "zh-CN": "旧值",
+            "en-US": "Old value"
+          }
+        },
+        {
+          "name": "new_value",
+          "type": "any",
+          "descs": {
+            "zh-CN": "新值",
+            "en-US": "New value"
+          }
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "StorageEntry",
+      "descriptions": {
+        "zh-CN": "存储条目详情",
+        "en-US": "Storage entry details"
+      },
+      "fields": [
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储键名",
+            "en-US": "Storage key"
+          }
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储值（JSON字符串）",
+            "en-US": "Storage value (JSON string)"
+          }
+        },
+        {
+          "name": "size",
+          "type": "number",
+          "descs": {
+            "zh-CN": "值的字节大小",
+            "en-US": "Value size in bytes"
+          }
+        },
+        {
+          "name": "updated_at",
+          "type": "string",
+          "descs": {
+            "zh-CN": "最后更新时间",
+            "en-US": "Last update timestamp"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ExportResult",
+      "descriptions": {
+        "zh-CN": "存储导出结果",
+        "en-US": "Storage export result"
+      },
+      "fields": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否成功",
+            "en-US": "Whether succeeded"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "导出文件路径",
+            "en-US": "Export file path"
+          }
+        },
+        {
+          "name": "count",
+          "type": "number",
+          "descs": {
+            "zh-CN": "导出的键值对数",
+            "en-US": "Exported key-value pairs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ImportResult",
+      "descriptions": {
+        "zh-CN": "存储导入结果",
+        "en-US": "Storage import result"
+      },
+      "fields": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否成功",
+            "en-US": "Whether succeeded"
+          }
+        },
+        {
+          "name": "count",
+          "type": "number",
+          "descs": {
+            "zh-CN": "导入的键值对数",
+            "en-US": "Imported key-value pairs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "StorageWatcher",
+      "descriptions": {
+        "zh-CN": "存储变化监听器",
+        "en-US": "Storage change watcher"
+      },
+      "fields": [
+        {
+          "name": "watcher_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监听器ID",
+            "en-US": "Watcher ID"
+          }
+        }
+      ]
+    }
+  ]
 }

@@ -22,22 +22,24 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "数据库路径",
-            "en-US": "DB path"
-          }
+            "zh-CN": "数据库文件路径（不存在则自动创建）",
+            "en-US": "Database file path (created if not exists)"
+          },
+          "desc": "Database file path (created if not exists)"
         },
         {
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Password string"
         },
         {
           "name": "readonly",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "只读模式",
             "en-US": "Read only mode"
@@ -47,7 +49,7 @@
         },
         {
           "name": "create",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "不存在时创建",
             "en-US": "Create if not exists"
@@ -57,7 +59,7 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "DbHandle",
         "descs": {
           "zh-CN": "DB 信息",
           "en-US": "DB info"
@@ -65,9 +67,11 @@
       },
       "bridge_path": "sqlite.open",
       "descriptions": {
-        "zh-CN": "打开数据库",
-        "en-US": "Open database"
-      }
+        "zh-CN": "打开或创建一个SQLite数据库文件，获取数据库连接句柄",
+        "en-US": "Open or create SQLite database file and get connection handle"
+      },
+      "group": "connection",
+      "description": "Open or create SQLite database file and get connection handle"
     },
     {
       "name": "close",
@@ -83,17 +87,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "sqlite.close",
       "descriptions": {
-        "zh-CN": "关闭数据库",
-        "en-US": "Close database"
-      }
+        "zh-CN": "关闭数据库连接并释放所有相关资源",
+        "en-US": "Close database connection and release resources"
+      },
+      "group": "connection",
+      "description": "Close database connection and release resources"
     },
     {
       "name": "execute",
@@ -111,32 +118,37 @@
           "name": "sql",
           "type": "string",
           "descs": {
-            "zh-CN": "SQL",
-            "en-US": "SQL"
-          }
+            "zh-CN": "要执行的SQL语句",
+            "en-US": "SQL statement to execute"
+          },
+          "desc": "SQL statement to execute"
         },
         {
           "name": "params",
           "type": "string",
           "descs": {
-            "zh-CN": "绑定参数",
-            "en-US": "Bind parameters"
+            "zh-CN": "SQL语句的绑定参数列表",
+            "en-US": "SQL statement bind parameter list"
           },
-          "optional": true
+          "optional": true,
+          "desc": "SQL statement bind parameter list"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ExecResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "ExecResult类型的结果对象",
+          "en-US": "Result object of type ExecResult"
+        },
+        "desc": "Result object of type ExecResult"
       },
       "bridge_path": "sqlite.execute",
       "descriptions": {
-        "zh-CN": "执行 SQL",
-        "en-US": "Execute SQL"
-      }
+        "zh-CN": "执行SQL语句（INSERT/UPDATE/DELETE/DDL），返回受影响行数",
+        "en-US": "Execute SQL statement, return affected row count"
+      },
+      "group": "query",
+      "description": "Execute SQL statement, return affected row count"
     },
     {
       "name": "batch_execute",
@@ -160,17 +172,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ExecResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "ExecResult类型的结果对象",
+          "en-US": "Result object of type ExecResult"
+        },
+        "desc": "Result object of type ExecResult"
       },
       "bridge_path": "sqlite.batchExecute",
       "descriptions": {
-        "zh-CN": "批量执行",
-        "en-US": "Batch execute"
-      }
+        "zh-CN": "batchSQLite数据库的execute",
+        "en-US": "Batch execute of SQLite"
+      },
+      "group": "query",
+      "description": "Batch execute of SQLite"
     },
     {
       "name": "query",
@@ -188,32 +203,37 @@
           "name": "sql",
           "type": "string",
           "descs": {
-            "zh-CN": "SQL",
-            "en-US": "SQL"
-          }
+            "zh-CN": "SELECT查询语句",
+            "en-US": "SELECT query"
+          },
+          "desc": "SELECT query"
         },
         {
           "name": "params",
           "type": "string",
           "descs": {
-            "zh-CN": "绑定参数",
-            "en-US": "Bind parameters"
+            "zh-CN": "SQL查询的绑定参数列表",
+            "en-US": "SQL query bind parameter list"
           },
-          "optional": true
+          "optional": true,
+          "desc": "SQL query bind parameter list"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "array",
         "descs": {
-          "zh-CN": "行",
-          "en-US": "Rows"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "sqlite.query",
       "descriptions": {
-        "zh-CN": "查询",
-        "en-US": "Query"
-      }
+        "zh-CN": "执行SQL查询并返回结果集的所有行",
+        "en-US": "Execute SQL query and return all result rows"
+      },
+      "group": "query",
+      "description": "Execute SQL query and return all result rows"
     },
     {
       "name": "query_one",
@@ -231,32 +251,37 @@
           "name": "sql",
           "type": "string",
           "descs": {
-            "zh-CN": "SQL",
-            "en-US": "SQL"
-          }
+            "zh-CN": "SQL语句",
+            "en-US": "SQL statement"
+          },
+          "desc": "SQL statement"
         },
         {
           "name": "params",
           "type": "string",
           "descs": {
-            "zh-CN": "绑定参数",
-            "en-US": "Bind parameters"
+            "zh-CN": "SQL查询的绑定参数列表",
+            "en-US": "SQL query bind parameter list"
           },
-          "optional": true
+          "optional": true,
+          "desc": "SQL query bind parameter list"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "Record",
         "descs": {
-          "zh-CN": "行",
-          "en-US": "Row"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "sqlite.queryOne",
       "descriptions": {
-        "zh-CN": "查询单行",
-        "en-US": "Query one"
-      }
+        "zh-CN": "查询SQLite数据库的one",
+        "en-US": "Query one of SQLite"
+      },
+      "group": "query",
+      "description": "Query one of SQLite"
     },
     {
       "name": "query_objects",
@@ -274,32 +299,37 @@
           "name": "sql",
           "type": "string",
           "descs": {
-            "zh-CN": "SQL",
-            "en-US": "SQL"
-          }
+            "zh-CN": "SQL语句",
+            "en-US": "SQL statement"
+          },
+          "desc": "SQL statement"
         },
         {
           "name": "params",
           "type": "string",
           "descs": {
-            "zh-CN": "绑定参数",
-            "en-US": "Bind parameters"
+            "zh-CN": "SQL查询的绑定参数列表",
+            "en-US": "SQL query bind parameter list"
           },
-          "optional": true
+          "optional": true,
+          "desc": "SQL query bind parameter list"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "对象",
-          "en-US": "Objects"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "sqlite.queryObjects",
       "descriptions": {
-        "zh-CN": "查询对象",
-        "en-US": "Query objects"
-      }
+        "zh-CN": "查询SQLite数据库的objects",
+        "en-US": "Query objects of SQLite"
+      },
+      "group": "query",
+      "description": "Query objects of SQLite"
     },
     {
       "name": "begin",
@@ -324,17 +354,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "sqlite.begin",
       "descriptions": {
-        "zh-CN": "开始事务",
-        "en-US": "Begin transaction"
-      }
+        "zh-CN": "beginSQLite数据库",
+        "en-US": "Begin SQLite"
+      },
+      "group": "transaction",
+      "description": "Begin SQLite"
     },
     {
       "name": "commit",
@@ -350,17 +383,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "sqlite.commit",
       "descriptions": {
-        "zh-CN": "提交事务",
-        "en-US": "Commit"
-      }
+        "zh-CN": "commitSQLite数据库",
+        "en-US": "Commit SQLite"
+      },
+      "group": "transaction",
+      "description": "Commit SQLite"
     },
     {
       "name": "rollback",
@@ -376,17 +412,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "sqlite.rollback",
       "descriptions": {
-        "zh-CN": "回滚事务",
-        "en-US": "Rollback"
-      }
+        "zh-CN": "rollbackSQLite数据库",
+        "en-US": "Rollback SQLite"
+      },
+      "group": "transaction",
+      "description": "Rollback SQLite"
     },
     {
       "name": "vacuum",
@@ -402,17 +441,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "sqlite.vacuum",
       "descriptions": {
-        "zh-CN": "压缩",
-        "en-US": "Vacuum"
-      }
+        "zh-CN": "vacuumSQLite数据库",
+        "en-US": "Vacuum SQLite"
+      },
+      "group": "util",
+      "description": "Vacuum SQLite"
     },
     {
       "name": "backup",
@@ -430,23 +472,27 @@
           "name": "dest_path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "dest_path参数",
+            "en-US": "dest_path parameter"
+          },
+          "desc": "dest_path parameter"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "BackupResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "sqlite.backup",
       "descriptions": {
-        "zh-CN": "备份",
-        "en-US": "Backup"
-      }
+        "zh-CN": "backupSQLite数据库",
+        "en-US": "Backup SQLite"
+      },
+      "group": "util",
+      "description": "Backup SQLite"
     },
     {
       "name": "table_list",
@@ -464,15 +510,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "表",
-          "en-US": "Tables"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "sqlite.tableList",
       "descriptions": {
-        "zh-CN": "列出表",
-        "en-US": "List tables"
-      }
+        "zh-CN": "tableSQLite数据库的list",
+        "en-US": "Table list of SQLite"
+      },
+      "group": "schema",
+      "description": "Table list of SQLite"
     },
     {
       "name": "table_info",
@@ -490,23 +539,27 @@
           "name": "table_name",
           "type": "string",
           "descs": {
-            "zh-CN": "表",
-            "en-US": "Table"
-          }
+            "zh-CN": "table_name参数",
+            "en-US": "table_name parameter"
+          },
+          "desc": "table_name parameter"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "列",
-          "en-US": "Columns"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "sqlite.tableInfo",
       "descriptions": {
-        "zh-CN": "表信息",
-        "en-US": "Table info"
-      }
+        "zh-CN": "tableSQLite数据库的info",
+        "en-US": "Table info of SQLite"
+      },
+      "group": "schema",
+      "description": "Table info of SQLite"
     },
     {
       "name": "pragma",
@@ -524,32 +577,37 @@
           "name": "name",
           "type": "string",
           "descs": {
-            "zh-CN": "名称",
-            "en-US": "Name"
-          }
+            "zh-CN": "名称标识",
+            "en-US": "Name identifier"
+          },
+          "desc": "Name identifier"
         },
         {
           "name": "value",
           "type": "string",
           "descs": {
-            "zh-CN": "值",
-            "en-US": "Value"
+            "zh-CN": "要设置的值",
+            "en-US": "Value to set"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Value to set"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "值",
-          "en-US": "Value"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "sqlite.pragma",
       "descriptions": {
-        "zh-CN": "PRAGMA 操作",
-        "en-US": "Pragma"
-      }
+        "zh-CN": "pragmaSQLite数据库",
+        "en-US": "Pragma SQLite"
+      },
+      "group": "util",
+      "description": "Pragma SQLite"
     },
     {
       "name": "is_open",
@@ -565,7 +623,7 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "已打开的",
           "en-US": "Open"
@@ -573,9 +631,11 @@
       },
       "bridge_path": "sqlite.isOpen",
       "descriptions": {
-        "zh-CN": "是否已打开的",
-        "en-US": "Is open"
-      }
+        "zh-CN": "检查SQLite数据库是否open",
+        "en-US": "Check if SQLite open"
+      },
+      "group": "connection",
+      "description": "Check if SQLite open"
     },
     {
       "name": "db_size",
@@ -591,17 +651,20 @@
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "字节",
-          "en-US": "Bytes"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "sqlite.dbSize",
       "descriptions": {
-        "zh-CN": "DB 大小",
-        "en-US": "DB size"
-      }
+        "zh-CN": "dbSQLite数据库的size",
+        "en-US": "Db size of SQLite"
+      },
+      "group": "manage",
+      "description": "Db size of SQLite"
     },
     {
       "name": "count",
@@ -619,9 +682,10 @@
           "name": "table_name",
           "type": "string",
           "descs": {
-            "zh-CN": "表",
-            "en-US": "Table"
-          }
+            "zh-CN": "table_name参数",
+            "en-US": "table_name parameter"
+          },
+          "desc": "table_name parameter"
         },
         {
           "name": "where_clause",
@@ -636,24 +700,28 @@
           "name": "params",
           "type": "string",
           "descs": {
-            "zh-CN": "绑定参数",
-            "en-US": "Bind parameters"
+            "zh-CN": "SQL查询的绑定参数列表",
+            "en-US": "SQL query bind parameter list"
           },
-          "optional": true
+          "optional": true,
+          "desc": "SQL query bind parameter list"
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "数量",
-          "en-US": "Count"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "sqlite.count",
       "descriptions": {
-        "zh-CN": "计数行",
-        "en-US": "Count rows"
-      }
+        "zh-CN": "计数SQLite数据库",
+        "en-US": "Count SQLite"
+      },
+      "group": "query",
+      "description": "Count SQLite"
     },
     {
       "name": "index_list",
@@ -671,23 +739,27 @@
           "name": "table_name",
           "type": "string",
           "descs": {
-            "zh-CN": "表",
-            "en-US": "Table"
-          }
+            "zh-CN": "table_name参数",
+            "en-US": "table_name parameter"
+          },
+          "desc": "table_name parameter"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "索引",
-          "en-US": "Indexes"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "sqlite.indexList",
       "descriptions": {
-        "zh-CN": "列出索引",
-        "en-US": "List indexes"
-      }
+        "zh-CN": "indexSQLite数据库的list",
+        "en-US": "Index list of SQLite"
+      },
+      "group": "schema",
+      "description": "Index list of SQLite"
     },
     {
       "name": "export_csv",
@@ -713,22 +785,24 @@
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         },
         {
           "name": "delimiter",
           "type": "string",
           "descs": {
-            "zh-CN": "分隔符",
+            "zh-CN": "分隔符字符",
             "en-US": "Delimiter character"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Delimiter character"
         },
         {
           "name": "with_header",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "是否包含表头",
             "en-US": "Include header"
@@ -738,17 +812,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ExportResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "sqlite.exportCsv",
       "descriptions": {
-        "zh-CN": "导出 CSV",
-        "en-US": "Export CSV"
-      }
+        "zh-CN": "导出SQLite数据库的csv",
+        "en-US": "Export csv of SQLite"
+      },
+      "group": "util",
+      "description": "Export csv of SQLite"
     },
     {
       "name": "import_csv",
@@ -766,30 +843,33 @@
           "name": "table_name",
           "type": "string",
           "descs": {
-            "zh-CN": "表",
-            "en-US": "Table"
-          }
+            "zh-CN": "table_name参数",
+            "en-US": "table_name parameter"
+          },
+          "desc": "table_name parameter"
         },
         {
           "name": "csv_path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "csv_path参数",
+            "en-US": "csv_path parameter"
+          },
+          "desc": "csv_path parameter"
         },
         {
           "name": "delimiter",
           "type": "string",
           "descs": {
-            "zh-CN": "分隔符",
+            "zh-CN": "分隔符字符",
             "en-US": "Delimiter character"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Delimiter character"
         },
         {
           "name": "has_header",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "是否有表头",
             "en-US": "Has header row"
@@ -808,17 +888,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ImportResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "sqlite.importCsv",
       "descriptions": {
-        "zh-CN": "导入 CSV",
-        "en-US": "Import CSV"
-      }
+        "zh-CN": "导入SQLite数据库的csv",
+        "en-US": "Import csv of SQLite"
+      },
+      "group": "util",
+      "description": "Import csv of SQLite"
     },
     {
       "name": "wal_checkpoint",
@@ -836,24 +919,28 @@
           "name": "mode",
           "type": "string",
           "descs": {
-            "zh-CN": "模式",
-            "en-US": "Mode"
+            "zh-CN": "检查点模式（PASSIVE/FULL/RESTART/TRUNCATE）",
+            "en-US": "Checkpoint mode (PASSIVE/FULL/RESTART/TRUNCATE)"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Checkpoint mode (PASSIVE/FULL/RESTART/TRUNCATE)"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "sqlite.walCheckpoint",
       "descriptions": {
-        "zh-CN": "WAL 检查点",
-        "en-US": "WAL checkpoint"
-      }
+        "zh-CN": "walSQLite数据库的checkpoint",
+        "en-US": "Wal checkpoint of SQLite"
+      },
+      "group": "manage",
+      "description": "Wal checkpoint of SQLite"
     },
     {
       "name": "attach",
@@ -871,40 +958,46 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "alias",
           "type": "string",
           "descs": {
-            "zh-CN": "别名",
-            "en-US": "Alias"
-          }
+            "zh-CN": "附加数据库的别名",
+            "en-US": "Alias for attached database"
+          },
+          "desc": "Alias for attached database"
         },
         {
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Password string"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "sqlite.attach",
       "descriptions": {
-        "zh-CN": "附加数据库",
-        "en-US": "Attach DB"
-      }
+        "zh-CN": "附加SQLite数据库",
+        "en-US": "Attach SQLite"
+      },
+      "group": "manage",
+      "description": "Attach SQLite"
     },
     {
       "name": "detach",
@@ -922,23 +1015,27 @@
           "name": "alias",
           "type": "string",
           "descs": {
-            "zh-CN": "别名",
-            "en-US": "Alias"
-          }
+            "zh-CN": "要分离的数据库别名",
+            "en-US": "Database alias to detach"
+          },
+          "desc": "Database alias to detach"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "sqlite.detach",
       "descriptions": {
-        "zh-CN": "分离数据库",
-        "en-US": "Detach DB"
-      }
+        "zh-CN": "分离SQLite数据库",
+        "en-US": "Detach SQLite"
+      },
+      "group": "manage",
+      "description": "Detach SQLite"
     },
     {
       "name": "set_busy_timeout",
@@ -954,7 +1051,7 @@
         },
         {
           "name": "ms",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "超时(毫秒)",
             "en-US": "Timeout ms"
@@ -962,17 +1059,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "sqlite.setBusyTimeout",
       "descriptions": {
-        "zh-CN": "设置超时",
-        "en-US": "Set timeout"
-      }
+        "zh-CN": "设置SQLite数据库的busy timeout属性",
+        "en-US": "Set busy timeout property of SQLite"
+      },
+      "group": "manage",
+      "description": "Set busy timeout property of SQLite"
     },
     {
       "name": "interrupt",
@@ -988,17 +1088,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "sqlite.interrupt",
       "descriptions": {
-        "zh-CN": "中断操作",
-        "en-US": "Interrupt"
-      }
+        "zh-CN": "interruptSQLite数据库",
+        "en-US": "Interrupt SQLite"
+      },
+      "group": "manage",
+      "description": "Interrupt SQLite"
     },
     {
       "name": "change_password",
@@ -1016,23 +1119,27 @@
           "name": "new_password",
           "type": "string",
           "descs": {
-            "zh-CN": "新密码",
-            "en-US": "New Password"
-          }
+            "zh-CN": "new_password参数",
+            "en-US": "new_password parameter"
+          },
+          "desc": "new_password parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "sqlite.changePassword",
       "descriptions": {
-        "zh-CN": "修改密码",
-        "en-US": "Change password"
-      }
+        "zh-CN": "changeSQLite数据库的password",
+        "en-US": "Change password of SQLite"
+      },
+      "group": "manage",
+      "description": "Change password of SQLite"
     },
     {
       "name": "create_function",
@@ -1050,13 +1157,14 @@
           "name": "name",
           "type": "string",
           "descs": {
-            "zh-CN": "名称",
-            "en-US": "Name"
-          }
+            "zh-CN": "名称标识",
+            "en-US": "Name identifier"
+          },
+          "desc": "Name identifier"
         },
         {
           "name": "num_args",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "参数数量",
             "en-US": "参数数量"
@@ -1072,17 +1180,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "sqlite.createFunction",
       "descriptions": {
-        "zh-CN": "创建函数",
-        "en-US": "Create function"
-      }
+        "zh-CN": "创建SQLite数据库的function",
+        "en-US": "Create function of SQLite"
+      },
+      "group": "extension",
+      "description": "Create function of SQLite"
     },
     {
       "name": "remove_function",
@@ -1100,23 +1211,27 @@
           "name": "name",
           "type": "string",
           "descs": {
-            "zh-CN": "名称",
-            "en-US": "Name"
-          }
+            "zh-CN": "名称标识",
+            "en-US": "Name identifier"
+          },
+          "desc": "Name identifier"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "sqlite.removeFunction",
       "descriptions": {
-        "zh-CN": "删除函数",
-        "en-US": "Remove function"
-      }
+        "zh-CN": "移除SQLite数据库的function",
+        "en-US": "Remove function of SQLite"
+      },
+      "group": "extension",
+      "description": "Remove function of SQLite"
     },
     {
       "name": "list_open",
@@ -1125,19 +1240,198 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "数据库",
-          "en-US": "DBs"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "sqlite.listOpen",
       "descriptions": {
-        "zh-CN": "列出已打开的数据库",
-        "en-US": "List open DBs"
-      }
+        "zh-CN": "列出SQLite数据库的open",
+        "en-US": "List open of SQLite"
+      },
+      "group": "manage",
+      "description": "List open of SQLite"
     }
   ],
   "overviews": {
     "zh-CN": "提供 SQLite 数据库的完整操作能力，包括数据库打开/关闭、SQL 执行、预编译语句、事务管理、表操作、数据导入导出、备份恢复、PRAGMA 管理等功能。",
     "en-US": "Full SQLite database operations including open/close, SQL execution, prepared statements, transactions, table management, import/export, backup/restore, and PRAGMA management."
-  }
+  },
+  "types": [
+    {
+      "name": "ColumnInfo",
+      "descriptions": {
+        "zh-CN": "列信息",
+        "en-US": "Column info"
+      },
+      "fields": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "列名",
+            "en-US": "Column name"
+          }
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据类型",
+            "en-US": "Data type"
+          }
+        },
+        {
+          "name": "nullable",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否可空",
+            "en-US": "Is nullable"
+          }
+        },
+        {
+          "name": "primary_key",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否主键",
+            "en-US": "Is primary key"
+          }
+        }
+      ]
+    },
+    {
+      "name": "DbHandle",
+      "descriptions": {
+        "zh-CN": "数据库句柄",
+        "en-US": "Database handle"
+      },
+      "fields": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库ID",
+            "en-US": "Database ID"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ExecResult",
+      "descriptions": {
+        "zh-CN": "执行结果",
+        "en-US": "Execution result"
+      },
+      "fields": [
+        {
+          "name": "changes",
+          "type": "number",
+          "descs": {
+            "zh-CN": "影响行数",
+            "en-US": "Rows affected"
+          }
+        },
+        {
+          "name": "last_insert_id",
+          "type": "number",
+          "descs": {
+            "zh-CN": "最后插入ID",
+            "en-US": "Last insert ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "BackupResult",
+      "descriptions": {
+        "zh-CN": "数据库备份结果",
+        "en-US": "Database backup result"
+      },
+      "fields": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否成功",
+            "en-US": "Whether succeeded"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "备份文件路径",
+            "en-US": "Backup file path"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ExportResult",
+      "descriptions": {
+        "zh-CN": "导出操作结果",
+        "en-US": "Export operation result"
+      },
+      "fields": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否成功",
+            "en-US": "Whether succeeded"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "导出文件路径",
+            "en-US": "Export file path"
+          }
+        },
+        {
+          "name": "row_count",
+          "type": "number",
+          "descs": {
+            "zh-CN": "导出行数",
+            "en-US": "Exported row count"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ImportResult",
+      "descriptions": {
+        "zh-CN": "导入操作结果",
+        "en-US": "Import operation result"
+      },
+      "fields": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否成功",
+            "en-US": "Whether succeeded"
+          }
+        },
+        {
+          "name": "row_count",
+          "type": "number",
+          "descs": {
+            "zh-CN": "导入行数",
+            "en-US": "Imported row count"
+          }
+        }
+      ]
+    }
+  ]
 }

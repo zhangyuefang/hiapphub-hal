@@ -22,8 +22,8 @@
       "name": "create_cron",
       "symbol": "hap_scheduler_create_cron",
       "descriptions": {
-        "zh-CN": "创建Cron定时任务",
-        "en-US": "Create cron job"
+        "zh-CN": "创建基于 Cron 表达式的定时任务（如每天凌晨3点执行）",
+        "en-US": "Create scheduled task based on cron expression"
       },
       "params": [
         {
@@ -52,20 +52,22 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "TaskHandle",
         "descs": {
           "zh-CN": "任务信息",
           "en-US": "Task info"
         }
       },
-      "bridge_path": "scheduler.createCron"
+      "bridge_path": "scheduler.createCron",
+      "description": "Create scheduled task based on cron expression",
+      "group": "create"
     },
     {
       "name": "create_interval",
       "symbol": "hap_scheduler_create_interval",
       "descriptions": {
-        "zh-CN": "创建周期性任务",
-        "en-US": "Create interval task"
+        "zh-CN": "创建按固定时间间隔重复执行的定时任务",
+        "en-US": "Create task that repeats at fixed interval"
       },
       "params": [
         {
@@ -104,20 +106,22 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "TaskHandle",
         "descs": {
           "zh-CN": "任务信息",
           "en-US": "Task info"
         }
       },
-      "bridge_path": "scheduler.createInterval"
+      "bridge_path": "scheduler.createInterval",
+      "description": "Create task that repeats at fixed interval",
+      "group": "create"
     },
     {
       "name": "create_timeout",
       "symbol": "hap_scheduler_create_timeout",
       "descriptions": {
-        "zh-CN": "创建一次性延时任务",
-        "en-US": "Create timeout task"
+        "zh-CN": "创建在指定延迟后执行一次的延时任务",
+        "en-US": "Create one-shot task that fires after specified delay"
       },
       "params": [
         {
@@ -146,20 +150,22 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "TaskHandle",
         "descs": {
           "zh-CN": "任务信息",
           "en-US": "Task info"
         }
       },
-      "bridge_path": "scheduler.createTimeout"
+      "bridge_path": "scheduler.createTimeout",
+      "description": "Create one-shot task that fires after specified delay",
+      "group": "create"
     },
     {
       "name": "cancel",
       "symbol": "hap_scheduler_cancel",
       "descriptions": {
-        "zh-CN": "取消任务",
-        "en-US": "Cancel task"
+        "zh-CN": "取消并删除一个已注册的定时任务",
+        "en-US": "Cancel and remove a registered scheduled task"
       },
       "params": [
         {
@@ -172,20 +178,22 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "scheduler.cancel"
+      "bridge_path": "scheduler.cancel",
+      "description": "Cancel and remove a registered scheduled task",
+      "group": "manage"
     },
     {
       "name": "pause",
       "symbol": "hap_scheduler_pause",
       "descriptions": {
-        "zh-CN": "暂停任务",
-        "en-US": "Pause task"
+        "zh-CN": "暂停一个定时任务（不删除，可恢复）",
+        "en-US": "Pause a scheduled task (can be resumed later)"
       },
       "params": [
         {
@@ -198,20 +206,22 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "scheduler.pause"
+      "bridge_path": "scheduler.pause",
+      "description": "Pause a scheduled task (can be resumed later)",
+      "group": "manage"
     },
     {
       "name": "resume",
       "symbol": "hap_scheduler_resume",
       "descriptions": {
-        "zh-CN": "恢复任务",
-        "en-US": "Resume task"
+        "zh-CN": "恢复一个已暂停的定时任务继续执行",
+        "en-US": "Resume a previously paused scheduled task"
       },
       "params": [
         {
@@ -224,20 +234,22 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "scheduler.resume"
+      "bridge_path": "scheduler.resume",
+      "description": "Resume a previously paused scheduled task",
+      "group": "manage"
     },
     {
       "name": "list",
       "symbol": "hap_scheduler_list",
       "descriptions": {
-        "zh-CN": "列出所有任务",
-        "en-US": "List all tasks"
+        "zh-CN": "获取所有已注册的定时任务列表及其状态",
+        "en-US": "List all registered scheduled tasks with their status"
       },
       "params": [],
       "returns": {
@@ -247,14 +259,16 @@
           "en-US": "Task list"
         }
       },
-      "bridge_path": "scheduler.list"
+      "bridge_path": "scheduler.list",
+      "description": "List all registered scheduled tasks with their status",
+      "group": "manage"
     },
     {
       "name": "get_next_run",
       "symbol": "hap_scheduler_get_next_run",
       "descriptions": {
-        "zh-CN": "获取下次执行时间",
-        "en-US": "Get next run time"
+        "zh-CN": "计算指定 Cron 任务的下一次执行时间",
+        "en-US": "Calculate next execution time for a cron task"
       },
       "params": [
         {
@@ -267,13 +281,68 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "NextRun",
         "descs": {
           "zh-CN": "下次执行时间",
           "en-US": "Next run time"
         }
       },
-      "bridge_path": "scheduler.getNextRun"
+      "bridge_path": "scheduler.getNextRun",
+      "description": "Calculate next execution time for a cron task",
+      "group": "manage"
+    }
+  ],
+  "types": [
+    {
+      "name": "TaskHandle",
+      "descriptions": {
+        "zh-CN": "定时任务句柄",
+        "en-US": "Schedule handle"
+      },
+      "fields": [
+        {
+          "name": "task_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "任务ID",
+            "en-US": "Task ID"
+          }
+        },
+        {
+          "name": "next_run",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "下次执行时间",
+            "en-US": "Next run time"
+          }
+        }
+      ]
+    },
+    {
+      "name": "NextRun",
+      "descriptions": {
+        "zh-CN": "下次执行信息",
+        "en-US": "Next run info"
+      },
+      "fields": [
+        {
+          "name": "time",
+          "type": "string",
+          "descs": {
+            "zh-CN": "执行时间",
+            "en-US": "Run time"
+          }
+        },
+        {
+          "name": "remaining_ms",
+          "type": "number",
+          "descs": {
+            "zh-CN": "剩余毫秒",
+            "en-US": "Remaining ms"
+          }
+        }
+      ]
     }
   ]
 }

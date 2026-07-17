@@ -115,12 +115,12 @@ struct TypeTextParams {
 
 hap_fn!(hap_input_type_text, TypeTextParams, |params| {
     let mut enigo = create_enigo()?;
-    let delay = params.delay_ms.unwrap_or(0);
+    let delay = params.delay_ms.unwrap_or(0).max(0) as u64;
 
     if delay > 0 {
         for ch in params.text.chars() {
             enigo.text(&ch.to_string()).map_err(|e| HapError::internal(format!("{e}")))?;
-            std::thread::sleep(std::time::Duration::from_millis(delay as u64));
+            std::thread::sleep(std::time::Duration::from_millis(delay));
         }
     } else {
         enigo.text(&params.text).map_err(|e| HapError::internal(format!("{e}")))?;

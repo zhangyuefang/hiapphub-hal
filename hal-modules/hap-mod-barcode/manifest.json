@@ -22,8 +22,8 @@
       "name": "generate_qr",
       "symbol": "hap_barcode_generate_qr",
       "descriptions": {
-        "zh-CN": "生成二维码代码",
-        "en-US": "Generate QR code"
+        "zh-CN": "生成二维码图片数据",
+        "en-US": "Generate qr of barcode/QR code"
       },
       "params": [
         {
@@ -36,7 +36,7 @@
         },
         {
           "name": "size",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "图像大小 px",
             "en-US": "Image size px"
@@ -88,23 +88,26 @@
           "en-US": "Base64 PNG"
         }
       },
-      "bridge_path": "barcode.generateQr"
+      "bridge_path": "barcode.generateQr",
+      "group": "generate",
+      "description": "Generate qr of barcode/QR code"
     },
     {
       "name": "generate_barcode",
       "symbol": "hap_barcode_generate_barcode",
       "descriptions": {
-        "zh-CN": "生成条码",
-        "en-US": "Generate barcode"
+        "zh-CN": "生成条形码图片数据",
+        "en-US": "Generate barcode of barcode/QR code"
       },
       "params": [
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         },
         {
           "name": "format",
@@ -112,30 +115,33 @@
           "descs": {
             "zh-CN": "code128/ean13/...",
             "en-US": "code128/ean13/..."
-          }
-        },
-        {
-          "name": "width",
-          "type": "i32",
-          "descs": {
-            "zh-CN": "宽度",
-            "en-US": "Width"
           },
           "optional": true
         },
         {
-          "name": "height",
-          "type": "i32",
+          "name": "width",
+          "type": "number",
           "descs": {
-            "zh-CN": "高度",
-            "en-US": "Height"
+            "zh-CN": "宽度（像素）",
+            "en-US": "Width in pixels"
           },
           "optional": true,
-          "default_value": "80"
+          "desc": "Width in pixels"
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "高度（像素）",
+            "en-US": "Height in pixels"
+          },
+          "optional": true,
+          "default_value": "80",
+          "desc": "Height in pixels"
         },
         {
           "name": "show_text",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "显示文本",
             "en-US": "Show Text"
@@ -150,23 +156,26 @@
           "en-US": "Base64 PNG"
         }
       },
-      "bridge_path": "barcode.generateBarcode"
+      "bridge_path": "barcode.generateBarcode",
+      "group": "generate",
+      "description": "Generate barcode of barcode/QR code"
     },
     {
       "name": "save_qr",
       "symbol": "hap_barcode_save_qr",
       "descriptions": {
-        "zh-CN": "保存二维码到文件",
-        "en-US": "Save QR to file"
+        "zh-CN": "生成二维码并保存到文件",
+        "en-US": "Save qr of barcode/QR code"
       },
       "params": [
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         },
         {
           "name": "output_path",
@@ -178,7 +187,7 @@
         },
         {
           "name": "size",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "大小 px",
             "en-US": "Size px"
@@ -224,29 +233,33 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
-      "bridge_path": "barcode.saveQr"
+      "bridge_path": "barcode.saveQr",
+      "group": "generate",
+      "description": "Save qr of barcode/QR code"
     },
     {
       "name": "save_barcode",
       "symbol": "hap_barcode_save_barcode",
       "descriptions": {
-        "zh-CN": "保存条码到文件",
-        "en-US": "Save barcode to file"
+        "zh-CN": "生成条形码并保存到文件",
+        "en-US": "Save barcode of barcode/QR code"
       },
       "params": [
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         },
         {
           "name": "format",
@@ -254,7 +267,8 @@
           "descs": {
             "zh-CN": "条码格式",
             "en-US": "Barcode format"
-          }
+          },
+          "optional": true
         },
         {
           "name": "output_path",
@@ -266,7 +280,7 @@
         },
         {
           "name": "width",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "宽度(像素)",
             "en-US": "Width px"
@@ -275,7 +289,7 @@
         },
         {
           "name": "height",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "高度(像素)",
             "en-US": "Height px"
@@ -285,20 +299,23 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
-      "bridge_path": "barcode.saveBarcode"
+      "bridge_path": "barcode.saveBarcode",
+      "group": "generate",
+      "description": "Save barcode of barcode/QR code"
     },
     {
       "name": "decode_image",
       "symbol": "hap_barcode_decode_image",
       "descriptions": {
-        "zh-CN": "解码从图像文件",
-        "en-US": "Decode from image file"
+        "zh-CN": "从图片文件中识别解码条形码/二维码",
+        "en-US": "Decode image of barcode/QR code"
       },
       "params": [
         {
@@ -317,7 +334,9 @@
           "en-US": "Decoded results"
         }
       },
-      "bridge_path": "barcode.decodeImage"
+      "bridge_path": "barcode.decodeImage",
+      "group": "scan",
+      "description": "Decode image of barcode/QR code"
     },
     {
       "name": "decode_base64",
@@ -343,7 +362,8 @@
           "en-US": "Decoded results"
         }
       },
-      "bridge_path": "barcode.decodeBase64"
+      "bridge_path": "barcode.decodeBase64",
+      "group": "scan"
     },
     {
       "name": "generate_qr_with_logo",
@@ -357,9 +377,10 @@
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         },
         {
           "name": "logo_path",
@@ -379,7 +400,7 @@
         },
         {
           "name": "size",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "大小 px",
             "en-US": "Size px"
@@ -398,7 +419,7 @@
         },
         {
           "name": "logo_size_ratio",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "Logo 大小比例",
             "en-US": "Logo size ratio"
@@ -414,7 +435,72 @@
           "en-US": "Base64 PNG"
         }
       },
-      "bridge_path": "barcode.generateQrWithLogo"
+      "bridge_path": "barcode.generateQrWithLogo",
+      "group": "generate"
+    }
+  ],
+  "types": [
+    {
+      "name": "BarcodeResult",
+      "descriptions": {
+        "zh-CN": "条码/二维码扫描识别结果",
+        "en-US": "Barcode/QR code scan result"
+      },
+      "fields": [
+        {
+          "name": "text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "识别到的文本内容",
+            "en-US": "Decoded text content"
+          }
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "descs": {
+            "zh-CN": "条码格式（qrcode/ean13/code128等）",
+            "en-US": "Barcode format (qrcode/ean13/code128 etc)"
+          }
+        },
+        {
+          "name": "confidence",
+          "type": "number",
+          "descs": {
+            "zh-CN": "识别置信度（0-1）",
+            "en-US": "Recognition confidence (0-1)"
+          }
+        }
+      ]
+    }
+  ],
+  "constants": [
+    {
+      "name": "FORMAT_QRCODE",
+      "value": "qrcode",
+      "type": "string",
+      "descs": {
+        "zh-CN": "二维码格式",
+        "en-US": "QR Code format"
+      }
+    },
+    {
+      "name": "FORMAT_EAN13",
+      "value": "ean13",
+      "type": "string",
+      "descs": {
+        "zh-CN": "EAN-13 条码格式",
+        "en-US": "EAN-13 barcode format"
+      }
+    },
+    {
+      "name": "FORMAT_CODE128",
+      "value": "code128",
+      "type": "string",
+      "descs": {
+        "zh-CN": "Code 128 条码格式",
+        "en-US": "Code 128 barcode format"
+      }
     }
   ]
 }

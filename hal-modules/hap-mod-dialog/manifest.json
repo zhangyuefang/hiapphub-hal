@@ -38,7 +38,7 @@
         },
         {
           "name": "multiple",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "允许多个",
             "en-US": "Allow multiple"
@@ -65,9 +65,11 @@
       },
       "bridge_path": "dialog.openFile",
       "descriptions": {
-        "zh-CN": "打开文件选择对话框",
-        "en-US": "打开文件选择对话框"
-      }
+        "zh-CN": "打开系统文件选择对话框，让用户选择一个文件",
+        "en-US": "Open system file picker dialog to select a file"
+      },
+      "group": "file",
+      "description": "Open system file picker dialog to select a file"
     },
     {
       "name": "save_file",
@@ -119,9 +121,11 @@
       },
       "bridge_path": "dialog.saveFile",
       "descriptions": {
-        "zh-CN": "打开保存文件对话框",
-        "en-US": "打开保存文件对话框"
-      }
+        "zh-CN": "打开系统保存文件对话框，让用户选择保存位置",
+        "en-US": "Open save file dialog to choose save location"
+      },
+      "group": "file",
+      "description": "Open save file dialog to choose save location"
     },
     {
       "name": "open_directory",
@@ -147,7 +151,7 @@
         },
         {
           "name": "multiple",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "允许多个",
             "en-US": "Allow multiple"
@@ -165,9 +169,11 @@
       },
       "bridge_path": "dialog.openDirectory",
       "descriptions": {
-        "zh-CN": "打开目录选择对话框",
-        "en-US": "打开目录选择对话框"
-      }
+        "zh-CN": "打开系统目录选择对话框让用户选择文件夹",
+        "en-US": "Open directory picker dialog for user to select folder"
+      },
+      "group": "file",
+      "description": "Open directory picker dialog for user to select folder"
     },
     {
       "name": "message_box",
@@ -177,17 +183,21 @@
           "name": "title",
           "type": "string",
           "descs": {
-            "zh-CN": "标题",
-            "en-US": "Title"
-          }
+            "zh-CN": "标题文本",
+            "en-US": "Title text"
+          },
+          "desc": "Title text",
+          "optional": true
         },
         {
           "name": "message",
           "type": "string",
           "descs": {
-            "zh-CN": "消息",
-            "en-US": "Message"
-          }
+            "zh-CN": "消息内容",
+            "en-US": "Message content"
+          },
+          "desc": "Message content",
+          "optional": true
         },
         {
           "name": "buttons",
@@ -200,7 +210,7 @@
         },
         {
           "name": "default_button",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "默认按钮",
             "en-US": "Default Button"
@@ -211,14 +221,15 @@
           "name": "icon",
           "type": "string",
           "descs": {
-            "zh-CN": "图标",
-            "en-US": "Icon"
+            "zh-CN": "图标文件路径或名称",
+            "en-US": "Icon file path or name"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Icon file path or name"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "DialogResult",
         "descs": {
           "zh-CN": "按钮结果",
           "en-US": "Button result"
@@ -226,9 +237,11 @@
       },
       "bridge_path": "dialog.messageBox",
       "descriptions": {
-        "zh-CN": "显示消息对话框",
-        "en-US": "显示消息对话框"
-      }
+        "zh-CN": "显示自定义按钮的消息对话框",
+        "en-US": "Show message dialog with custom buttons"
+      },
+      "group": "input",
+      "description": "Show message dialog with custom buttons"
     },
     {
       "name": "input_box",
@@ -238,40 +251,45 @@
           "name": "title",
           "type": "string",
           "descs": {
-            "zh-CN": "标题",
-            "en-US": "Title"
-          }
+            "zh-CN": "标题文本",
+            "en-US": "Title text"
+          },
+          "desc": "Title text",
+          "optional": true
         },
         {
           "name": "message",
           "type": "string",
           "descs": {
-            "zh-CN": "提示",
-            "en-US": "Prompt"
+            "zh-CN": "消息内容",
+            "en-US": "Message content"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Message content"
         },
         {
           "name": "default_value",
           "type": "string",
           "descs": {
-            "zh-CN": "默认值",
-            "en-US": "Default value"
+            "zh-CN": "default_value参数",
+            "en-US": "default_value parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "default_value parameter"
         },
         {
           "name": "placeholder",
           "type": "string",
           "descs": {
-            "zh-CN": "占位符",
-            "en-US": "Placeholder"
+            "zh-CN": "placeholder参数",
+            "en-US": "placeholder parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "placeholder parameter"
         },
         {
           "name": "password",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "密码模式",
             "en-US": "Password mode"
@@ -281,16 +299,17 @@
         },
         {
           "name": "multiline",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
-            "zh-CN": "多行",
-            "en-US": "Multiline"
+            "zh-CN": "multiline参数",
+            "en-US": "multiline parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "multiline parameter"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "InputResult",
         "descs": {
           "zh-CN": "输入结果",
           "en-US": "Input result"
@@ -298,9 +317,11 @@
       },
       "bridge_path": "dialog.inputBox",
       "descriptions": {
-        "zh-CN": "显示输入对话框",
-        "en-US": "显示输入对话框"
-      }
+        "zh-CN": "显示带文本输入框的对话框获取用户输入",
+        "en-US": "Show input dialog to get user text input"
+      },
+      "group": "input",
+      "description": "Show input dialog to get user text input"
     },
     {
       "name": "color_picker",
@@ -317,7 +338,7 @@
         },
         {
           "name": "show_alpha",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "显示透明度",
             "en-US": "Show Alpha"
@@ -335,8 +356,10 @@
       "bridge_path": "dialog.colorPicker",
       "descriptions": {
         "zh-CN": "打开颜色选择器",
-        "en-US": "打开颜色选择器"
-      }
+        "en-US": "Color picker of dialog"
+      },
+      "group": "picker",
+      "description": "Color picker of dialog"
     },
     {
       "name": "progress",
@@ -346,22 +369,25 @@
           "name": "title",
           "type": "string",
           "descs": {
-            "zh-CN": "标题",
-            "en-US": "Title"
-          }
+            "zh-CN": "标题文本",
+            "en-US": "Title text"
+          },
+          "desc": "Title text",
+          "optional": true
         },
         {
           "name": "message",
           "type": "string",
           "descs": {
-            "zh-CN": "消息",
-            "en-US": "Message"
+            "zh-CN": "消息内容",
+            "en-US": "Message content"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Message content"
         },
         {
           "name": "cancellable",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "允许取消",
             "en-US": "允许取消"
@@ -371,7 +397,7 @@
         },
         {
           "name": "indeterminate",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "不确定模式",
             "en-US": "Indeterminate mode"
@@ -390,7 +416,7 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ProgressHandle",
         "descs": {
           "zh-CN": "对话框 ID",
           "en-US": "Dialog ID"
@@ -398,9 +424,11 @@
       },
       "bridge_path": "dialog.progress",
       "descriptions": {
-        "zh-CN": "创建进度对话框",
-        "en-US": "创建进度对话框"
-      }
+        "zh-CN": "progress对话框",
+        "en-US": "Progress dialog"
+      },
+      "group": "progress",
+      "description": "Progress dialog"
     },
     {
       "name": "progress_update",
@@ -416,7 +444,7 @@
         },
         {
           "name": "value",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "进度 0-1",
             "en-US": "进度 0-1"
@@ -426,24 +454,28 @@
           "name": "message",
           "type": "string",
           "descs": {
-            "zh-CN": "消息",
-            "en-US": "Message"
+            "zh-CN": "消息内容",
+            "en-US": "Message content"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Message content"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "状态",
-          "en-US": "Status"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "dialog.progressUpdate",
       "descriptions": {
-        "zh-CN": "更新进度",
-        "en-US": "更新进度"
-      }
+        "zh-CN": "更新进度条对话框的进度",
+        "en-US": "Progress update of dialog"
+      },
+      "group": "progress",
+      "description": "Progress update of dialog"
     },
     {
       "name": "progress_close",
@@ -459,17 +491,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "dialog.progressClose",
       "descriptions": {
-        "zh-CN": "关闭进度对话框",
-        "en-US": "关闭进度对话框"
-      }
+        "zh-CN": "关闭进度条对话框",
+        "en-US": "Progress close of dialog"
+      },
+      "group": "progress",
+      "description": "Progress close of dialog"
     },
     {
       "name": "date_picker",
@@ -479,10 +514,11 @@
           "name": "title",
           "type": "string",
           "descs": {
-            "zh-CN": "标题",
-            "en-US": "Title"
+            "zh-CN": "标题文本",
+            "en-US": "Title text"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Title text"
         },
         {
           "name": "default_date",
@@ -521,9 +557,11 @@
       },
       "bridge_path": "dialog.datePicker",
       "descriptions": {
-        "zh-CN": "日期选择器",
-        "en-US": "日期选择器"
-      }
+        "zh-CN": "打开日期选择器",
+        "en-US": "Date picker of dialog"
+      },
+      "group": "picker",
+      "description": "Date picker of dialog"
     },
     {
       "name": "list_select",
@@ -533,9 +571,11 @@
           "name": "title",
           "type": "string",
           "descs": {
-            "zh-CN": "标题",
-            "en-US": "Title"
-          }
+            "zh-CN": "标题文本",
+            "en-US": "Title text"
+          },
+          "desc": "Title text",
+          "optional": true
         },
         {
           "name": "items",
@@ -547,7 +587,7 @@
         },
         {
           "name": "multiple",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "允许多个",
             "en-US": "Allow multiple"
@@ -557,12 +597,13 @@
         },
         {
           "name": "search",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
-            "zh-CN": "搜索",
-            "en-US": "Search"
+            "zh-CN": "是否启用搜索过滤功能",
+            "en-US": "Whether to enable search filtering"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Whether to enable search filtering"
         }
       ],
       "returns": {
@@ -574,9 +615,11 @@
       },
       "bridge_path": "dialog.listSelect",
       "descriptions": {
-        "zh-CN": "列表选择对话框",
-        "en-US": "列表选择对话框"
-      }
+        "zh-CN": "显示列表选择对话框让用户从选项中选择",
+        "en-US": "Show list selection dialog for user to choose from options"
+      },
+      "group": "input",
+      "description": "Show list selection dialog for user to choose from options"
     },
     {
       "name": "confirm",
@@ -586,17 +629,21 @@
           "name": "title",
           "type": "string",
           "descs": {
-            "zh-CN": "标题",
-            "en-US": "Title"
-          }
+            "zh-CN": "对话框标题",
+            "en-US": "Dialog title"
+          },
+          "desc": "Dialog title",
+          "optional": true
         },
         {
           "name": "message",
           "type": "string",
           "descs": {
-            "zh-CN": "消息",
-            "en-US": "Message"
-          }
+            "zh-CN": "要显示的确认消息",
+            "en-US": "Confirmation message"
+          },
+          "desc": "Confirmation message",
+          "optional": true
         },
         {
           "name": "ok_label",
@@ -618,17 +665,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "已确认",
-          "en-US": "Confirmed"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "dialog.confirm",
       "descriptions": {
-        "zh-CN": "确认对话框",
-        "en-US": "确认对话框"
-      }
+        "zh-CN": "显示带有确认和取消按钮的确认对话框，返回用户选择",
+        "en-US": "Show confirm dialog with OK/Cancel, return user choice"
+      },
+      "group": "message",
+      "description": "Show confirm dialog with OK/Cancel, return user choice"
     },
     {
       "name": "notify",
@@ -638,13 +688,15 @@
           "name": "message",
           "type": "string",
           "descs": {
-            "zh-CN": "消息",
-            "en-US": "Message"
-          }
+            "zh-CN": "消息内容",
+            "en-US": "Message content"
+          },
+          "desc": "Message content",
+          "optional": true
         },
         {
           "name": "duration_ms",
-          "type": "u32",
+          "type": "number",
           "descs": {
             "zh-CN": "持续时间(毫秒)",
             "en-US": "Duration ms"
@@ -655,15 +707,18 @@
       "returns": {
         "type": "null",
         "descs": {
-          "zh-CN": "无",
-          "en-US": "void"
-        }
+          "zh-CN": "null类型的结果对象",
+          "en-US": "Result object of type null"
+        },
+        "desc": "Result object of type null"
       },
       "bridge_path": "dialog.notify",
       "descriptions": {
-        "zh-CN": "显示通知",
-        "en-US": "显示通知"
-      }
+        "zh-CN": "发送一条简短的系统级通知消息",
+        "en-US": "Send a brief system-level notification message"
+      },
+      "group": "notify",
+      "description": "Send a brief system-level notification message"
     },
     {
       "name": "time_picker",
@@ -673,10 +728,11 @@
           "name": "title",
           "type": "string",
           "descs": {
-            "zh-CN": "标题",
-            "en-US": "Title"
+            "zh-CN": "标题文本",
+            "en-US": "Title text"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Title text"
         },
         {
           "name": "default_time",
@@ -689,7 +745,7 @@
         },
         {
           "name": "is_24h",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "24-小时格式",
             "en-US": "24-hour format"
@@ -706,9 +762,11 @@
       },
       "bridge_path": "dialog.timePicker",
       "descriptions": {
-        "zh-CN": "时间选择器",
-        "en-US": "时间选择器"
-      }
+        "zh-CN": "显示时间选择器对话框",
+        "en-US": "Show time picker dialog"
+      },
+      "group": "picker",
+      "description": "Show time picker dialog"
     },
     {
       "name": "datetime_picker",
@@ -718,10 +776,11 @@
           "name": "title",
           "type": "string",
           "descs": {
-            "zh-CN": "标题",
-            "en-US": "Title"
+            "zh-CN": "标题文本",
+            "en-US": "Title text"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Title text"
         },
         {
           "name": "default_value",
@@ -736,23 +795,25 @@
           "name": "min",
           "type": "string",
           "descs": {
-            "zh-CN": "最小值",
-            "en-US": "Minimum value"
+            "zh-CN": "可选最小日期时间",
+            "en-US": "Minimum selectable datetime"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Minimum selectable datetime"
         },
         {
           "name": "max",
           "type": "string",
           "descs": {
-            "zh-CN": "最大值",
-            "en-US": "Maximum value"
+            "zh-CN": "可选最大日期时间",
+            "en-US": "Maximum selectable datetime"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Maximum selectable datetime"
         },
         {
           "name": "is_24h",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "是否 24H",
             "en-US": "Is 24H"
@@ -769,13 +830,109 @@
       },
       "bridge_path": "dialog.datetimePicker",
       "descriptions": {
-        "zh-CN": "日期时间选择器",
-        "en-US": "日期时间选择器"
-      }
+        "zh-CN": "显示日期时间选择器对话框",
+        "en-US": "Show datetime picker dialog"
+      },
+      "group": "picker",
+      "description": "Show datetime picker dialog"
     }
   ],
   "overviews": {
     "zh-CN": "提供系统原生对话框能力，包括消息提示、确认框、输入框、文件/目录选择器、保存对话框、日期/时间选择器、颜色选择器等。所有对话框均使用操作系统原生 UI。",
     "en-US": "System native dialogs including message alerts, confirmation, input, file/directory pickers, save dialogs, date/time pickers, and color pickers. All dialogs use the OS native UI."
-  }
+  },
+  "types": [
+    {
+      "name": "DialogResult",
+      "descriptions": {
+        "zh-CN": "对话框返回结果",
+        "en-US": "Dialog result"
+      },
+      "fields": [
+        {
+          "name": "confirmed",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "用户是否点击确认",
+            "en-US": "Whether user confirmed"
+          }
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "用户输入的值",
+            "en-US": "User input value"
+          }
+        }
+      ]
+    },
+    {
+      "name": "FileFilter",
+      "descriptions": {
+        "zh-CN": "文件选择器的过滤规则",
+        "en-US": "File picker filter rule"
+      },
+      "fields": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "过滤器名称（如'图片文件'）",
+            "en-US": "Filter name"
+          }
+        },
+        {
+          "name": "extensions",
+          "type": "string[]",
+          "descs": {
+            "zh-CN": "允许的扩展名列表",
+            "en-US": "Allowed extensions"
+          }
+        }
+      ]
+    },
+    {
+      "name": "InputResult",
+      "descriptions": {
+        "zh-CN": "输入对话框结果",
+        "en-US": "Input dialog result"
+      },
+      "fields": [
+        {
+          "name": "confirmed",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "用户是否确认",
+            "en-US": "Whether user confirmed"
+          }
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入的文本内容",
+            "en-US": "Input text content"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ProgressHandle",
+      "descriptions": {
+        "zh-CN": "进度条句柄",
+        "en-US": "Progress bar handle"
+      },
+      "fields": [
+        {
+          "name": "handle_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "进度条ID",
+            "en-US": "Progress bar ID"
+          }
+        }
+      ]
+    }
+  ]
 }

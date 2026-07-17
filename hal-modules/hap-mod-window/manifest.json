@@ -22,8 +22,8 @@
       "name": "list",
       "symbol": "hap_window_list",
       "descriptions": {
-        "zh-CN": "列出所有窗口",
-        "en-US": "List all windows"
+        "zh-CN": "获取系统中当前所有窗口的列表信息",
+        "en-US": "Get list of all current windows in the system"
       },
       "params": [
         {
@@ -44,31 +44,41 @@
           "en-US": "Window list"
         }
       },
-      "bridge_path": "window.list"
+      "bridge_path": "window.list",
+      "platform": [
+        "macos"
+      ],
+      "description": "Get list of all current windows in the system",
+      "group": "info"
     },
     {
       "name": "get_active",
       "symbol": "hap_window_get_active",
       "descriptions": {
-        "zh-CN": "获取当前活动窗口",
-        "en-US": "Get active window"
+        "zh-CN": "获取当前处于前台活动状态的窗口信息",
+        "en-US": "Get the currently active foreground window"
       },
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "WindowInfo",
         "descs": {
           "zh-CN": "窗口信息",
           "en-US": "Window info"
         }
       },
-      "bridge_path": "window.getActive"
+      "bridge_path": "window.getActive",
+      "platform": [
+        "macos"
+      ],
+      "description": "Get the currently active foreground window",
+      "group": "info"
     },
     {
       "name": "focus",
       "symbol": "hap_window_focus",
       "descriptions": {
-        "zh-CN": "聚焦窗口",
-        "en-US": "Focus window"
+        "zh-CN": "将指定窗口切换到前台并获取焦点",
+        "en-US": "Bring specified window to foreground and focus"
       },
       "params": [
         {
@@ -81,20 +91,25 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "window.focus"
+      "bridge_path": "window.focus",
+      "platform": [
+        "macos"
+      ],
+      "description": "Bring specified window to foreground and focus",
+      "group": "control"
     },
     {
       "name": "move_to",
       "symbol": "hap_window_move_to",
       "descriptions": {
-        "zh-CN": "移动窗口",
-        "en-US": "Move window"
+        "zh-CN": "将窗口移动到屏幕指定的坐标位置",
+        "en-US": "Move window to specified screen coordinates"
       },
       "params": [
         {
@@ -109,34 +124,41 @@
           "name": "x",
           "type": "number",
           "descs": {
-            "zh-CN": "目标X",
-            "en-US": "Target X"
-          }
+            "zh-CN": "X坐标位置",
+            "en-US": "X coordinate position"
+          },
+          "desc": "X coordinate position"
         },
         {
           "name": "y",
           "type": "number",
           "descs": {
-            "zh-CN": "目标Y",
-            "en-US": "Target Y"
-          }
+            "zh-CN": "Y坐标位置",
+            "en-US": "Y coordinate position"
+          },
+          "desc": "Y coordinate position"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "window.moveTo"
+      "bridge_path": "window.moveTo",
+      "platform": [
+        "macos"
+      ],
+      "description": "Move window to specified screen coordinates",
+      "group": "control"
     },
     {
       "name": "resize",
       "symbol": "hap_window_resize",
       "descriptions": {
-        "zh-CN": "调整窗口大小",
-        "en-US": "Resize window"
+        "zh-CN": "调整窗口的宽度和高度尺寸",
+        "en-US": "Resize window to specified width and height"
       },
       "params": [
         {
@@ -151,34 +173,41 @@
           "name": "width",
           "type": "number",
           "descs": {
-            "zh-CN": "宽度",
-            "en-US": "Width"
-          }
+            "zh-CN": "宽度（像素）",
+            "en-US": "Width in pixels"
+          },
+          "desc": "Width in pixels"
         },
         {
           "name": "height",
           "type": "number",
           "descs": {
-            "zh-CN": "高度",
-            "en-US": "Height"
-          }
+            "zh-CN": "高度（像素）",
+            "en-US": "Height in pixels"
+          },
+          "desc": "Height in pixels"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "window.resize"
+      "bridge_path": "window.resize",
+      "platform": [
+        "macos"
+      ],
+      "description": "Resize window to specified width and height",
+      "group": "control"
     },
     {
       "name": "minimize",
       "symbol": "hap_window_minimize",
       "descriptions": {
-        "zh-CN": "最小化窗口",
-        "en-US": "Minimize window"
+        "zh-CN": "将窗口最小化到任务栏/Dock",
+        "en-US": "Minimize window to taskbar/Dock"
       },
       "params": [
         {
@@ -191,20 +220,25 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "window.minimize"
+      "bridge_path": "window.minimize",
+      "platform": [
+        "macos"
+      ],
+      "description": "Minimize window to taskbar/Dock",
+      "group": "control"
     },
     {
       "name": "maximize",
       "symbol": "hap_window_maximize",
       "descriptions": {
-        "zh-CN": "最大化窗口",
-        "en-US": "Maximize window"
+        "zh-CN": "将窗口最大化占满整个屏幕",
+        "en-US": "Maximize window to fill the screen"
       },
       "params": [
         {
@@ -217,20 +251,25 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "window.maximize"
+      "bridge_path": "window.maximize",
+      "platform": [
+        "macos"
+      ],
+      "description": "Maximize window to fill the screen",
+      "group": "control"
     },
     {
       "name": "restore",
       "symbol": "hap_window_restore",
       "descriptions": {
-        "zh-CN": "恢复窗口",
-        "en-US": "Restore window"
+        "zh-CN": "将最小化的窗口恢复到正常显示状态",
+        "en-US": "Restore minimized window to normal state"
       },
       "params": [
         {
@@ -243,20 +282,25 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "window.restore"
+      "bridge_path": "window.restore",
+      "platform": [
+        "macos"
+      ],
+      "description": "Restore minimized window to normal state",
+      "group": "control"
     },
     {
       "name": "set_topmost",
       "symbol": "hap_window_set_topmost",
       "descriptions": {
-        "zh-CN": "设置置顶",
-        "en-US": "Set topmost"
+        "zh-CN": "设置窗口是否始终保持在最顶层显示",
+        "en-US": "Set whether window stays always on top"
       },
       "params": [
         {
@@ -277,20 +321,25 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "window.setTopmost"
+      "bridge_path": "window.setTopmost",
+      "platform": [
+        "macos"
+      ],
+      "description": "Set whether window stays always on top",
+      "group": "control"
     },
     {
       "name": "close",
       "symbol": "hap_window_close",
       "descriptions": {
-        "zh-CN": "关闭窗口",
-        "en-US": "Close window"
+        "zh-CN": "关闭指定窗口（发送关闭请求）",
+        "en-US": "Close specified window (send close request)"
       },
       "params": [
         {
@@ -303,20 +352,25 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
           "en-US": "Success"
         }
       },
-      "bridge_path": "window.close"
+      "bridge_path": "window.close",
+      "platform": [
+        "macos"
+      ],
+      "description": "Close specified window (send close request)",
+      "group": "control"
     },
     {
       "name": "screenshot",
       "symbol": "hap_window_screenshot",
       "descriptions": {
-        "zh-CN": "窗口截图",
-        "en-US": "Window screenshot"
+        "zh-CN": "截取指定窗口的屏幕截图",
+        "en-US": "Capture screenshot of specified window"
       },
       "params": [
         {
@@ -338,20 +392,25 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "CaptureResult",
         "descs": {
           "zh-CN": "截图结果",
           "en-US": "Screenshot result"
         }
       },
-      "bridge_path": "window.screenshot"
+      "bridge_path": "window.screenshot",
+      "platform": [
+        "macos"
+      ],
+      "description": "Capture screenshot of specified window",
+      "group": "capture"
     },
     {
       "name": "get_bounds",
       "symbol": "hap_window_get_bounds",
       "descriptions": {
-        "zh-CN": "获取窗口位置和大小",
-        "en-US": "Get window bounds"
+        "zh-CN": "获取窗口的位置和尺寸信息（x/y/width/height）",
+        "en-US": "Get window position and size (x/y/width/height)"
       },
       "params": [
         {
@@ -364,13 +423,167 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "WindowBounds",
         "descs": {
           "zh-CN": "位置和大小{x,y,width,height}",
           "en-US": "Bounds {x,y,width,height}"
         }
       },
-      "bridge_path": "window.getBounds"
+      "bridge_path": "window.getBounds",
+      "platform": [
+        "macos"
+      ],
+      "description": "Get window position and size (x/y/width/height)",
+      "group": "info"
+    }
+  ],
+  "types": [
+    {
+      "name": "WindowInfo",
+      "descriptions": {
+        "zh-CN": "窗口信息",
+        "en-US": "Window info"
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口ID",
+            "en-US": "Window ID"
+          }
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          }
+        },
+        {
+          "name": "app",
+          "type": "string",
+          "descs": {
+            "zh-CN": "应用名",
+            "en-US": "App name"
+          }
+        },
+        {
+          "name": "x",
+          "type": "number",
+          "descs": {
+            "zh-CN": "X位置",
+            "en-US": "X position"
+          }
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "Y位置",
+            "en-US": "Y position"
+          }
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "宽度",
+            "en-US": "Width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "高度",
+            "en-US": "Height"
+          }
+        }
+      ]
+    },
+    {
+      "name": "WindowBounds",
+      "descriptions": {
+        "zh-CN": "窗口边界",
+        "en-US": "Window bounds"
+      },
+      "fields": [
+        {
+          "name": "x",
+          "type": "number",
+          "descs": {
+            "zh-CN": "X",
+            "en-US": "X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "Y",
+            "en-US": "Y"
+          }
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "宽度",
+            "en-US": "Width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "高度",
+            "en-US": "Height"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CaptureResult",
+      "descriptions": {
+        "zh-CN": "窗口截图结果",
+        "en-US": "Window capture result"
+      },
+      "fields": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否成功",
+            "en-US": "Whether succeeded"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "截图保存路径",
+            "en-US": "Screenshot save path"
+          }
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "图像宽度",
+            "en-US": "Image width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "图像高度",
+            "en-US": "Image height"
+          }
+        }
+      ]
     }
   ]
 }

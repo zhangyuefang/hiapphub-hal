@@ -22,8 +22,8 @@
       "name": "recognize",
       "symbol": "hap_ocr_recognize",
       "descriptions": {
-        "zh-CN": "识别图片中的文字",
-        "en-US": "Recognize text in image"
+        "zh-CN": "对指定图片文件执行光学字符识别（OCR），提取文字内容",
+        "en-US": "Perform OCR on image file to extract text content"
       },
       "params": [
         {
@@ -45,20 +45,27 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "OcrResult",
         "descs": {
           "zh-CN": "识别结果",
           "en-US": "Recognition result"
         }
       },
-      "bridge_path": "ocr.recognize"
+      "bridge_path": "ocr.recognize",
+      "async": true,
+      "platform": [
+        "macos",
+        "linux"
+      ],
+      "description": "Perform OCR on image file to extract text content",
+      "group": "recognize"
     },
     {
       "name": "recognize_region",
       "symbol": "hap_ocr_recognize_region",
       "descriptions": {
-        "zh-CN": "识别图片指定区域的文字",
-        "en-US": "Recognize text in image region"
+        "zh-CN": "对图片中指定矩形区域执行文字识别",
+        "en-US": "Perform OCR on specified rectangular region of an image"
       },
       "params": [
         {
@@ -112,20 +119,27 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "OcrResult",
         "descs": {
           "zh-CN": "识别结果",
           "en-US": "Recognition result"
         }
       },
-      "bridge_path": "ocr.recognizeRegion"
+      "bridge_path": "ocr.recognizeRegion",
+      "async": true,
+      "platform": [
+        "macos",
+        "linux"
+      ],
+      "description": "Perform OCR on specified rectangular region of an image",
+      "group": "recognize"
     },
     {
       "name": "recognize_base64",
       "symbol": "hap_ocr_recognize_base64",
       "descriptions": {
-        "zh-CN": "识别Base64图片数据中的文字",
-        "en-US": "Recognize text from base64 image"
+        "zh-CN": "对 Base64 编码的图片数据执行文字识别",
+        "en-US": "Perform OCR on Base64 encoded image data"
       },
       "params": [
         {
@@ -147,20 +161,27 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "OcrResult",
         "descs": {
           "zh-CN": "识别结果",
           "en-US": "Recognition result"
         }
       },
-      "bridge_path": "ocr.recognizeBase64"
+      "bridge_path": "ocr.recognizeBase64",
+      "async": true,
+      "platform": [
+        "macos",
+        "linux"
+      ],
+      "description": "Perform OCR on Base64 encoded image data",
+      "group": "recognize"
     },
     {
       "name": "get_supported_languages",
       "symbol": "hap_ocr_get_supported_languages",
       "descriptions": {
-        "zh-CN": "获取支持的语言列表",
-        "en-US": "Get supported languages"
+        "zh-CN": "获取当前系统 OCR 引擎支持的语言列表",
+        "en-US": "Get list of languages supported by system OCR engine"
       },
       "params": [],
       "returns": {
@@ -170,14 +191,16 @@
           "en-US": "Language list"
         }
       },
-      "bridge_path": "ocr.getSupportedLanguages"
+      "bridge_path": "ocr.getSupportedLanguages",
+      "description": "Get list of languages supported by system OCR engine",
+      "group": "info"
     },
     {
       "name": "recognize_screen_region",
       "symbol": "hap_ocr_recognize_screen_region",
       "descriptions": {
-        "zh-CN": "截取屏幕区域并识别文字",
-        "en-US": "Capture screen region and recognize text"
+        "zh-CN": "截取屏幕指定区域并执行文字识别",
+        "en-US": "Capture screen region and perform OCR"
       },
       "params": [
         {
@@ -200,17 +223,19 @@
           "name": "width",
           "type": "number",
           "descs": {
-            "zh-CN": "宽度",
-            "en-US": "Width"
-          }
+            "zh-CN": "宽度（像素）",
+            "en-US": "Width in pixels"
+          },
+          "desc": "Width in pixels"
         },
         {
           "name": "height",
           "type": "number",
           "descs": {
-            "zh-CN": "高度",
-            "en-US": "Height"
-          }
+            "zh-CN": "高度（像素）",
+            "en-US": "Height in pixels"
+          },
+          "desc": "Height in pixels"
         },
         {
           "name": "languages",
@@ -223,13 +248,55 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "OcrResult",
         "descs": {
           "zh-CN": "识别结果",
           "en-US": "Recognition result"
         }
       },
-      "bridge_path": "ocr.recognizeScreenRegion"
+      "bridge_path": "ocr.recognizeScreenRegion",
+      "async": true,
+      "platform": [
+        "macos"
+      ],
+      "description": "Capture screen region and perform OCR",
+      "group": "recognize"
+    }
+  ],
+  "types": [
+    {
+      "name": "OcrResult",
+      "descriptions": {
+        "zh-CN": "OCR识别结果",
+        "en-US": "OCR result"
+      },
+      "fields": [
+        {
+          "name": "text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "识别文本",
+            "en-US": "Recognized text"
+          }
+        },
+        {
+          "name": "confidence",
+          "type": "number",
+          "descs": {
+            "zh-CN": "置信度(0-1)",
+            "en-US": "Confidence(0-1)"
+          }
+        },
+        {
+          "name": "regions",
+          "type": "array",
+          "optional": true,
+          "descs": {
+            "zh-CN": "文字区域列表",
+            "en-US": "Text regions"
+          }
+        }
+      ]
     }
   ]
 }

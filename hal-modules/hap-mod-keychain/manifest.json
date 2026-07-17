@@ -30,40 +30,46 @@
           "name": "account",
           "type": "string",
           "descs": {
-            "zh-CN": "账户",
-            "en-US": "Account"
-          }
+            "zh-CN": "账户名（密钥链的二级标识）",
+            "en-US": "Account name (secondary keychain identifier)"
+          },
+          "desc": "Account name (secondary keychain identifier)"
         },
         {
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string"
         },
         {
           "name": "label",
           "type": "string",
           "descs": {
-            "zh-CN": "标签",
-            "en-US": "Label"
+            "zh-CN": "显示标签文本",
+            "en-US": "Display label text"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Display label text"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "keychain.store",
       "descriptions": {
-        "zh-CN": "存储凭据",
-        "en-US": "Store credential"
-      }
+        "zh-CN": "store钥匙串/密钥存储",
+        "en-US": "Store keychain"
+      },
+      "group": "basic",
+      "description": "Store keychain"
     },
     {
       "name": "retrieve",
@@ -81,23 +87,27 @@
           "name": "account",
           "type": "string",
           "descs": {
-            "zh-CN": "账户",
-            "en-US": "Account"
-          }
+            "zh-CN": "账户名",
+            "en-US": "Account name"
+          },
+          "desc": "Account name"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "密码",
-          "en-US": "Password"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "keychain.retrieve",
       "descriptions": {
-        "zh-CN": "读取凭据",
-        "en-US": "Retrieve credential"
-      }
+        "zh-CN": "retrieve钥匙串/密钥存储",
+        "en-US": "Retrieve keychain"
+      },
+      "group": "basic",
+      "description": "Retrieve keychain"
     },
     {
       "name": "delete",
@@ -115,23 +125,27 @@
           "name": "account",
           "type": "string",
           "descs": {
-            "zh-CN": "账户",
-            "en-US": "Account"
-          }
+            "zh-CN": "账户名",
+            "en-US": "Account name"
+          },
+          "desc": "Account name"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "keychain.delete",
       "descriptions": {
-        "zh-CN": "删除凭据",
-        "en-US": "Delete credential"
-      }
+        "zh-CN": "删除钥匙串/密钥存储",
+        "en-US": "Delete keychain"
+      },
+      "group": "basic",
+      "description": "Delete keychain"
     },
     {
       "name": "has",
@@ -149,13 +163,14 @@
           "name": "account",
           "type": "string",
           "descs": {
-            "zh-CN": "账户",
-            "en-US": "Account"
-          }
+            "zh-CN": "账户名",
+            "en-US": "Account name"
+          },
+          "desc": "Account name"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "是否存在",
           "en-US": "Exists"
@@ -163,9 +178,11 @@
       },
       "bridge_path": "keychain.has",
       "descriptions": {
-        "zh-CN": "检查如果是否存在",
-        "en-US": "Check if exists"
-      }
+        "zh-CN": "has钥匙串/密钥存储",
+        "en-US": "Has keychain"
+      },
+      "group": "basic",
+      "description": "Has keychain"
     },
     {
       "name": "list",
@@ -189,9 +206,11 @@
       },
       "bridge_path": "keychain.list",
       "descriptions": {
-        "zh-CN": "列出凭据",
-        "en-US": "List credentials"
-      }
+        "zh-CN": "列出钥匙串/密钥存储",
+        "en-US": "List keychain"
+      },
+      "group": "basic",
+      "description": "List keychain"
     },
     {
       "name": "update",
@@ -209,40 +228,46 @@
           "name": "account",
           "type": "string",
           "descs": {
-            "zh-CN": "账户",
-            "en-US": "Account"
-          }
+            "zh-CN": "账户名",
+            "en-US": "Account name"
+          },
+          "desc": "Account name"
         },
         {
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "新密码",
-            "en-US": "New password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string"
         },
         {
           "name": "label",
           "type": "string",
           "descs": {
-            "zh-CN": "标签",
-            "en-US": "Label"
+            "zh-CN": "显示标签文本",
+            "en-US": "Display label text"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Display label text"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "keychain.update",
       "descriptions": {
-        "zh-CN": "更新凭据",
-        "en-US": "Update credential"
-      }
+        "zh-CN": "更新钥匙串/密钥存储",
+        "en-US": "Update keychain"
+      },
+      "group": "basic",
+      "description": "Update keychain"
     },
     {
       "name": "store_binary",
@@ -252,17 +277,19 @@
           "name": "service",
           "type": "string",
           "descs": {
-            "zh-CN": "服务",
-            "en-US": "Service"
-          }
+            "zh-CN": "服务名（密钥链的一级标识）",
+            "en-US": "Service name (primary keychain identifier)"
+          },
+          "desc": "Service name (primary keychain identifier)"
         },
         {
           "name": "account",
           "type": "string",
           "descs": {
-            "zh-CN": "账户",
-            "en-US": "Account"
-          }
+            "zh-CN": "账户名",
+            "en-US": "Account name"
+          },
+          "desc": "Account name"
         },
         {
           "name": "data",
@@ -274,17 +301,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "keychain.storeBinary",
       "descriptions": {
-        "zh-CN": "存储二进制数据",
-        "en-US": "Store binary data"
-      }
+        "zh-CN": "保存二进制数据到钥匙串",
+        "en-US": "Store binary of keychain"
+      },
+      "group": "binary",
+      "description": "Store binary of keychain"
     },
     {
       "name": "retrieve_binary",
@@ -294,17 +324,19 @@
           "name": "service",
           "type": "string",
           "descs": {
-            "zh-CN": "服务",
-            "en-US": "Service"
-          }
+            "zh-CN": "服务名",
+            "en-US": "Service name"
+          },
+          "desc": "Service name"
         },
         {
           "name": "account",
           "type": "string",
           "descs": {
-            "zh-CN": "账户",
-            "en-US": "Account"
-          }
+            "zh-CN": "账户名",
+            "en-US": "Account name"
+          },
+          "desc": "Account name"
         }
       ],
       "returns": {
@@ -316,9 +348,11 @@
       },
       "bridge_path": "keychain.retrieveBinary",
       "descriptions": {
-        "zh-CN": "读取二进制数据",
-        "en-US": "Retrieve binary"
-      }
+        "zh-CN": "从钥匙串获取二进制数据",
+        "en-US": "Retrieve binary of keychain"
+      },
+      "group": "binary",
+      "description": "Retrieve binary of keychain"
     },
     {
       "name": "clear",
@@ -334,24 +368,27 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "keychain.clear",
       "descriptions": {
-        "zh-CN": "清除全部凭据",
-        "en-US": "Clear all credentials"
-      }
+        "zh-CN": "清空钥匙串/密钥存储",
+        "en-US": "Clear keychain"
+      },
+      "group": "basic",
+      "description": "Clear keychain"
     },
     {
       "name": "biometric_available",
       "symbol": "hap_keychain_biometric_available",
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "BiometricInfo",
         "descs": {
           "zh-CN": "生物识别信息",
           "en-US": "Biometric info"
@@ -359,9 +396,11 @@
       },
       "bridge_path": "keychain.biometricAvailable",
       "descriptions": {
-        "zh-CN": "检查生物识别",
-        "en-US": "Check biometric"
-      }
+        "zh-CN": "检查生物识别是否可用",
+        "en-US": "Biometric available of keychain"
+      },
+      "group": "biometric",
+      "description": "Biometric available of keychain"
     },
     {
       "name": "biometric_authenticate",
@@ -377,21 +416,85 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "已认证",
-          "en-US": "Authenticated"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "keychain.biometricAuthenticate",
       "descriptions": {
-        "zh-CN": "生物识别认证",
-        "en-US": "Biometric auth"
-      }
+        "zh-CN": "使用生物识别进行认证",
+        "en-US": "Biometric authenticate of keychain"
+      },
+      "group": "biometric",
+      "description": "Biometric authenticate of keychain"
     }
   ],
   "overviews": {
     "zh-CN": "提供操作系统安全凭据存储（macOS Keychain / Windows Credential Manager / Linux Secret Service）的读写能力，用于安全地存储密码、令牌等敏感信息。",
     "en-US": "Secure credential storage using OS keychain (macOS Keychain / Windows Credential Manager / Linux Secret Service) for passwords, tokens, and other sensitive data."
-  }
+  },
+  "types": [
+    {
+      "name": "KeychainItem",
+      "descriptions": {
+        "zh-CN": "钥匙串存储条目",
+        "en-US": "Keychain storage item"
+      },
+      "fields": [
+        {
+          "name": "service",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务标识",
+            "en-US": "Service identifier"
+          }
+        },
+        {
+          "name": "account",
+          "type": "string",
+          "descs": {
+            "zh-CN": "账户名",
+            "en-US": "Account name"
+          }
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "descs": {
+            "zh-CN": "显示标签",
+            "en-US": "Display label"
+          },
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "BiometricInfo",
+      "descriptions": {
+        "zh-CN": "生物识别信息",
+        "en-US": "Biometric info"
+      },
+      "fields": [
+        {
+          "name": "available",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否支持生物识别",
+            "en-US": "Whether biometric is available"
+          }
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "descs": {
+            "zh-CN": "识别类型(face/fingerprint)",
+            "en-US": "Biometric type (face/fingerprint)"
+          }
+        }
+      ]
+    }
+  ]
 }

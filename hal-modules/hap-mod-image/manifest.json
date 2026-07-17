@@ -22,23 +22,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "图片文件的路径",
+            "en-US": "Path to the image file"
+          },
+          "desc": "Path to the image file"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ImageInfo",
         "descs": {
-          "zh-CN": "信息",
-          "en-US": "Info"
-        }
+          "zh-CN": "包含宽高、格式、色彩模式等的图像信息对象",
+          "en-US": "Image info object with dimensions, format, color mode"
+        },
+        "desc": "Image info object with dimensions, format, color mode"
       },
       "bridge_path": "image.info",
       "descriptions": {
-        "zh-CN": "图像信息",
-        "en-US": "Image info"
-      }
+        "zh-CN": "获取指定图片文件的基本信息（宽高、格式、色彩模式等）",
+        "en-US": "Get basic information of an image file (dimensions, format, color mode, etc.)"
+      },
+      "group": "basic",
+      "description": "Get basic information of an image file (dimensions, format, color mode, etc.)"
     },
     {
       "name": "resize",
@@ -48,47 +52,54 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "源图片文件路径",
+            "en-US": "Source image path"
+          },
+          "desc": "Source image path"
         },
         {
           "name": "width",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "宽度",
-            "en-US": "Width"
-          }
+            "zh-CN": "目标宽度（像素）",
+            "en-US": "Target width in pixels"
+          },
+          "desc": "Target width in pixels"
         },
         {
           "name": "height",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "高度",
-            "en-US": "Height"
-          }
+            "zh-CN": "目标高度（像素）",
+            "en-US": "Target height in pixels"
+          },
+          "desc": "Target height in pixels"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "操作是否成功",
+          "en-US": "Whether operation succeeded"
+        },
+        "desc": "Whether operation succeeded"
       },
       "bridge_path": "image.resize",
       "descriptions": {
-        "zh-CN": "调整大小",
-        "en-US": "Resize"
-      }
+        "zh-CN": "按指定的目标宽高缩放图片文件，可选择不同的插值算法",
+        "en-US": "Resize image to specified dimensions with selectable interpolation"
+      },
+      "group": "basic",
+      "description": "Resize image to specified dimensions with selectable interpolation"
     },
     {
       "name": "crop",
@@ -98,63 +109,72 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "源图片文件路径",
+            "en-US": "Source image path"
+          },
+          "desc": "Source image path"
         },
         {
           "name": "x",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "X",
-            "en-US": "X"
-          }
+            "zh-CN": "裁剪起始X坐标（像素）",
+            "en-US": "Crop start X coordinate"
+          },
+          "desc": "Crop start X coordinate"
         },
         {
           "name": "y",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "Y",
-            "en-US": "Y"
-          }
+            "zh-CN": "裁剪起始Y坐标（像素）",
+            "en-US": "Crop start Y coordinate"
+          },
+          "desc": "Crop start Y coordinate"
         },
         {
           "name": "w",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "W",
-            "en-US": "W"
-          }
+            "zh-CN": "裁剪区域宽度（像素）",
+            "en-US": "Crop region width in pixels"
+          },
+          "desc": "Crop region width in pixels"
         },
         {
           "name": "h",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "H",
-            "en-US": "H"
-          }
+            "zh-CN": "裁剪区域高度（像素）",
+            "en-US": "Crop region height in pixels"
+          },
+          "desc": "Crop region height in pixels"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "操作是否成功",
+          "en-US": "Whether operation succeeded"
+        },
+        "desc": "Whether operation succeeded"
       },
       "bridge_path": "image.crop",
       "descriptions": {
-        "zh-CN": "裁剪",
-        "en-US": "Crop"
-      }
+        "zh-CN": "从图片中裁剪出指定坐标和尺寸的矩形区域",
+        "en-US": "Crop a rectangular region from the image at specified coordinates"
+      },
+      "group": "basic",
+      "description": "Crop a rectangular region from the image at specified coordinates"
     },
     {
       "name": "rotate",
@@ -164,39 +184,45 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "源图片文件路径",
+            "en-US": "Source image path"
+          },
+          "desc": "Source image path"
         },
         {
           "name": "degrees",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "角度",
-            "en-US": "Degrees"
-          }
+            "zh-CN": "旋转角度（顺时针，支持90/180/270或任意值）",
+            "en-US": "Rotation degrees (clockwise)"
+          },
+          "desc": "Rotation degrees (clockwise)"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径（不指定则覆盖原文件）",
+            "en-US": "Output path (overwrites source if not specified)"
+          },
+          "desc": "Output path (overwrites source if not specified)"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "操作是否成功",
+          "en-US": "Whether operation succeeded"
+        },
+        "desc": "Whether operation succeeded"
       },
       "bridge_path": "image.rotate",
       "descriptions": {
-        "zh-CN": "旋转",
-        "en-US": "Rotate"
-      }
+        "zh-CN": "将图片旋转指定角度（支持90/180/270或任意角度）",
+        "en-US": "Rotate image by specified degrees"
+      },
+      "group": "basic",
+      "description": "Rotate image by specified degrees"
     },
     {
       "name": "flip",
@@ -206,39 +232,45 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "direction",
           "type": "string",
           "descs": {
-            "zh-CN": "h/v",
-            "en-US": "h/v"
-          }
+            "zh-CN": "翻转方向：h=水平翻转，v=垂直翻转",
+            "en-US": "Flip direction: h=horizontal, v=vertical"
+          },
+          "desc": "Flip direction: h=horizontal, v=vertical"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.flip",
       "descriptions": {
-        "zh-CN": "翻转",
-        "en-US": "Flip"
-      }
+        "zh-CN": "将图片沿水平轴或垂直轴翻转",
+        "en-US": "Flip image along horizontal or vertical axis"
+      },
+      "group": "basic",
+      "description": "Flip image along horizontal or vertical axis"
     },
     {
       "name": "convert",
@@ -248,31 +280,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "源图片文件路径",
+            "en-US": "Source image path"
+          },
+          "desc": "Source image path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.convert",
       "descriptions": {
-        "zh-CN": "转换格式",
-        "en-US": "Convert format"
-      }
+        "zh-CN": "将图片转换为其他格式（PNG/JPEG/WebP/BMP等）",
+        "en-US": "Convert image to another format"
+      },
+      "group": "basic",
+      "description": "Convert image to another format"
     },
     {
       "name": "compress",
@@ -282,39 +319,46 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "要压缩的图片文件路径",
+            "en-US": "Image file to compress"
+          },
+          "desc": "Image file to compress"
         },
         {
           "name": "quality",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "质量",
-            "en-US": "Quality"
-          }
+            "zh-CN": "压缩质量（1-100，越低压缩率越高）",
+            "en-US": "Quality (1-100, lower = more compression)"
+          },
+          "desc": "Quality (1-100, lower = more compression)",
+          "optional": true
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.compress",
       "descriptions": {
-        "zh-CN": "压缩",
-        "en-US": "Compress"
-      }
+        "zh-CN": "压缩图片文件大小，可指定目标质量或最大文件尺寸",
+        "en-US": "Compress image file size with quality or max size target"
+      },
+      "group": "basic",
+      "description": "Compress image file size with quality or max size target"
     },
     {
       "name": "thumbnail",
@@ -324,39 +368,45 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "源图片文件路径",
+            "en-US": "Source image path"
+          },
+          "desc": "Source image path"
         },
         {
           "name": "size",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "大小",
-            "en-US": "Size"
-          }
+            "zh-CN": "大小数值",
+            "en-US": "Size value"
+          },
+          "desc": "Size value"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.thumbnail",
       "descriptions": {
-        "zh-CN": "缩略图",
-        "en-US": "Thumbnail"
-      }
+        "zh-CN": "生成图片的缩略图（保持宽高比）",
+        "en-US": "Generate a thumbnail preserving aspect ratio"
+      },
+      "group": "basic",
+      "description": "Generate a thumbnail preserving aspect ratio"
     },
     {
       "name": "watermark_text",
@@ -366,39 +416,45 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "text",
           "type": "string",
           "descs": {
-            "zh-CN": "文本",
-            "en-US": "Text"
-          }
+            "zh-CN": "文本字符串",
+            "en-US": "Text string"
+          },
+          "desc": "Text string"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.watermarkText",
       "descriptions": {
-        "zh-CN": "文本水印",
-        "en-US": "Text watermark"
-      }
+        "zh-CN": "在图片上添加文字水印",
+        "en-US": "Watermark text of image"
+      },
+      "group": "draw",
+      "description": "Watermark text of image"
     },
     {
       "name": "watermark_image",
@@ -408,39 +464,45 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "watermark",
           "type": "string",
           "descs": {
-            "zh-CN": "水印",
-            "en-US": "Watermark"
-          }
+            "zh-CN": "watermark参数",
+            "en-US": "watermark parameter"
+          },
+          "desc": "watermark parameter"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.watermarkImage",
       "descriptions": {
-        "zh-CN": "图像水印",
-        "en-US": "Image watermark"
-      }
+        "zh-CN": "在图片上添加图片水印",
+        "en-US": "Watermark image of image"
+      },
+      "group": "draw",
+      "description": "Watermark image of image"
     },
     {
       "name": "blur",
@@ -450,39 +512,45 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "radius",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "半径",
-            "en-US": "Radius"
-          }
+            "zh-CN": "模糊半径（像素，越大越模糊）",
+            "en-US": "Blur radius in pixels (larger = more blur)"
+          },
+          "desc": "Blur radius in pixels (larger = more blur)"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.blur",
       "descriptions": {
-        "zh-CN": "模糊",
-        "en-US": "Blur"
-      }
+        "zh-CN": "对图片应用高斯模糊滤镜",
+        "en-US": "Apply Gaussian blur filter to the image"
+      },
+      "group": "filter",
+      "description": "Apply Gaussian blur filter to the image"
     },
     {
       "name": "sharpen",
@@ -492,39 +560,45 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "amount",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "数量",
-            "en-US": "Amount"
-          }
+            "zh-CN": "锐化强度值",
+            "en-US": "Sharpening intensity value"
+          },
+          "desc": "Sharpening intensity value"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.sharpen",
       "descriptions": {
-        "zh-CN": "锐化",
-        "en-US": "Sharpen"
-      }
+        "zh-CN": "对图片应用锐化滤镜以增强细节",
+        "en-US": "Apply sharpen filter to enhance details"
+      },
+      "group": "filter",
+      "description": "Apply sharpen filter to enhance details"
     },
     {
       "name": "grayscale",
@@ -534,31 +608,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.grayscale",
       "descriptions": {
-        "zh-CN": "灰度",
-        "en-US": "Grayscale"
-      }
+        "zh-CN": "grayscale图片",
+        "en-US": "Grayscale image"
+      },
+      "group": "filter",
+      "description": "Grayscale image"
     },
     {
       "name": "adjust",
@@ -568,31 +647,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.adjust",
       "descriptions": {
-        "zh-CN": "调整图像参数",
-        "en-US": "Adjust"
-      }
+        "zh-CN": "调整图片的色相、饱和度、亮度等色彩参数",
+        "en-US": "Adjust image hue, saturation, brightness parameters"
+      },
+      "group": "filter",
+      "description": "Adjust image hue, saturation, brightness parameters"
     },
     {
       "name": "overlay",
@@ -602,39 +686,45 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "overlay",
           "type": "string",
           "descs": {
-            "zh-CN": "叠加",
-            "en-US": "Overlay"
-          }
+            "zh-CN": "要叠加的前景图片路径",
+            "en-US": "Foreground image path to overlay"
+          },
+          "desc": "Foreground image path to overlay"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.overlay",
       "descriptions": {
-        "zh-CN": "叠加",
-        "en-US": "Overlay"
-      }
+        "zh-CN": "将一张图片叠加覆盖到另一张图片上",
+        "en-US": "Overlay one image on top of another"
+      },
+      "group": "draw",
+      "description": "Overlay one image on top of another"
     },
     {
       "name": "to_base64",
@@ -644,9 +734,10 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
@@ -658,9 +749,10 @@
       },
       "bridge_path": "image.toBase64",
       "descriptions": {
-        "zh-CN": "转换为 Base64",
+        "zh-CN": "将图片转换为 Base64 字符串",
         "en-US": "To base64"
-      }
+      },
+      "group": "basic"
     },
     {
       "name": "from_base64",
@@ -678,23 +770,26 @@
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.fromBase64",
       "descriptions": {
-        "zh-CN": "从 Base64 转换",
+        "zh-CN": "将 Base64 字符串保存为图片文件",
         "en-US": "From base64"
-      }
+      },
+      "group": "basic"
     },
     {
       "name": "exif",
@@ -704,13 +799,14 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ExifData",
         "descs": {
           "zh-CN": "EXIF",
           "en-US": "EXIF"
@@ -718,9 +814,11 @@
       },
       "bridge_path": "image.exif",
       "descriptions": {
-        "zh-CN": "获取 EXIF",
-        "en-US": "Get EXIF"
-      }
+        "zh-CN": "读取图片的EXIF元数据（拍摄信息、GPS等）",
+        "en-US": "Read image EXIF metadata (camera info, GPS, etc.)"
+      },
+      "group": "basic",
+      "description": "Read image EXIF metadata (camera info, GPS, etc.)"
     },
     {
       "name": "strip_exif",
@@ -730,31 +828,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.stripExif",
       "descriptions": {
-        "zh-CN": "清除 EXIF",
-        "en-US": "Strip EXIF"
-      }
+        "zh-CN": "移除图片的 EXIF 元数据",
+        "en-US": "Strip exif of image"
+      },
+      "group": "basic",
+      "description": "Strip exif of image"
     },
     {
       "name": "create_blank",
@@ -762,49 +865,57 @@
       "params": [
         {
           "name": "width",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "宽度",
-            "en-US": "Width"
-          }
+            "zh-CN": "宽度（像素）",
+            "en-US": "Width in pixels"
+          },
+          "desc": "Width in pixels"
         },
         {
           "name": "height",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "高度",
-            "en-US": "Height"
-          }
+            "zh-CN": "高度（像素）",
+            "en-US": "Height in pixels"
+          },
+          "desc": "Height in pixels"
         },
         {
           "name": "color",
           "type": "string",
           "descs": {
-            "zh-CN": "颜色",
-            "en-US": "Color"
-          }
+            "zh-CN": "颜色值（十六进制或RGB）",
+            "en-US": "Color value (hex or RGB)"
+          },
+          "desc": "Color value (hex or RGB)",
+          "optional": true
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.createBlank",
       "descriptions": {
-        "zh-CN": "创建空白图像",
-        "en-US": "Create blank"
-      }
+        "zh-CN": "创建blank",
+        "en-US": "Create blank of image"
+      },
+      "group": "draw",
+      "description": "Create blank of image"
     },
     {
       "name": "text",
@@ -814,39 +925,45 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "text",
           "type": "string",
           "descs": {
-            "zh-CN": "文本",
-            "en-US": "Text"
-          }
+            "zh-CN": "文本字符串",
+            "en-US": "Text string"
+          },
+          "desc": "Text string"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.text",
       "descriptions": {
-        "zh-CN": "绘制文本",
-        "en-US": "Draw text"
-      }
+        "zh-CN": "在图片上绘制渲染文字",
+        "en-US": "Draw/render text on image"
+      },
+      "group": "draw",
+      "description": "Draw/render text on image"
     },
     {
       "name": "extract_colors",
@@ -856,23 +973,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "颜色",
-          "en-US": "Colors"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "image.extractColors",
       "descriptions": {
-        "zh-CN": "提取颜色",
-        "en-US": "Extract colors"
-      }
+        "zh-CN": "提取图片中的主要颜色",
+        "en-US": "Extract colors of image"
+      },
+      "group": "analyze",
+      "description": "Extract colors of image"
     },
     {
       "name": "compare",
@@ -896,17 +1017,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "CompareResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "CompareResult类型的结果对象",
+          "en-US": "Result object of type CompareResult"
+        },
+        "desc": "Result object of type CompareResult"
       },
       "bridge_path": "image.compare",
       "descriptions": {
-        "zh-CN": "比较",
-        "en-US": "Compare"
-      }
+        "zh-CN": "比较两张图片的相似度差异",
+        "en-US": "Compare similarity difference between two images"
+      },
+      "group": "analyze",
+      "description": "Compare similarity difference between two images"
     },
     {
       "name": "pad",
@@ -916,31 +1040,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.pad",
       "descriptions": {
-        "zh-CN": "填充",
-        "en-US": "Pad"
-      }
+        "zh-CN": "为图片添加指定颜色和宽度的边距填充",
+        "en-US": "Add padding with specified color and width to image"
+      },
+      "group": "basic",
+      "description": "Add padding with specified color and width to image"
     },
     {
       "name": "concat",
@@ -950,31 +1079,36 @@
           "name": "paths",
           "type": "array",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Paths"
-          }
+            "zh-CN": "要拼接的多个图片文件路径列表",
+            "en-US": "List of image file paths to concatenate"
+          },
+          "desc": "List of image file paths to concatenate"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.concat",
       "descriptions": {
-        "zh-CN": "拼接",
-        "en-US": "Concat"
-      }
+        "zh-CN": "将多张图片横向或纵向拼接合并",
+        "en-US": "Concatenate multiple images horizontally or vertically"
+      },
+      "group": "basic",
+      "description": "Concatenate multiple images horizontally or vertically"
     },
     {
       "name": "invert",
@@ -984,31 +1118,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.invert",
       "descriptions": {
-        "zh-CN": "反色",
-        "en-US": "Invert"
-      }
+        "zh-CN": "反转图片颜色",
+        "en-US": "Invert all colors of image (negative effect)"
+      },
+      "group": "filter",
+      "description": "Invert all colors of image (negative effect)"
     },
     {
       "name": "sepia",
@@ -1018,31 +1157,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.sepia",
       "descriptions": {
-        "zh-CN": "棕褐色",
-        "en-US": "Sepia"
-      }
+        "zh-CN": "应用复古棕色调滤镜",
+        "en-US": "Convert image to vintage sepia tone"
+      },
+      "group": "filter",
+      "description": "Convert image to vintage sepia tone"
     },
     {
       "name": "opacity",
@@ -1052,31 +1196,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.opacity",
       "descriptions": {
-        "zh-CN": "设置透明度",
-        "en-US": "Set opacity"
-      }
+        "zh-CN": "调整图片的整体不透明度（透明度）",
+        "en-US": "Adjust overall image opacity/transparency"
+      },
+      "group": "filter",
+      "description": "Adjust overall image opacity/transparency"
     },
     {
       "name": "trim",
@@ -1086,31 +1235,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.trim",
       "descriptions": {
-        "zh-CN": "修剪",
-        "en-US": "Trim"
-      }
+        "zh-CN": "自动裁剪图片周围的空白或指定颜色边框",
+        "en-US": "Auto-trim whitespace or specified color border around image"
+      },
+      "group": "basic",
+      "description": "Auto-trim whitespace or specified color border around image"
     },
     {
       "name": "pixelate",
@@ -1120,31 +1274,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.pixelate",
       "descriptions": {
-        "zh-CN": "马赛克化",
-        "en-US": "Pixelate"
-      }
+        "zh-CN": "pixelate图片",
+        "en-US": "Pixelate image"
+      },
+      "group": "filter",
+      "description": "Pixelate image"
     },
     {
       "name": "mask",
@@ -1154,39 +1313,45 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "mask",
           "type": "string",
           "descs": {
-            "zh-CN": "蒙版",
-            "en-US": "Mask"
-          }
+            "zh-CN": "蒙版图片文件路径",
+            "en-US": "Mask image file path"
+          },
+          "desc": "Mask image file path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.mask",
       "descriptions": {
-        "zh-CN": "应用蒙版",
-        "en-US": "Apply mask"
-      }
+        "zh-CN": "使用蒙版图片对原图进行遮罩裁切",
+        "en-US": "Apply mask image to crop/clip original image"
+      },
+      "group": "draw",
+      "description": "Apply mask image to crop/clip original image"
     },
     {
       "name": "draw_rect",
@@ -1196,31 +1361,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.drawRect",
       "descriptions": {
-        "zh-CN": "绘制矩形",
-        "en-US": "Draw rect"
-      }
+        "zh-CN": "在图片上绘制矩形",
+        "en-US": "Draw rect of image"
+      },
+      "group": "draw",
+      "description": "Draw rect of image"
     },
     {
       "name": "draw_circle",
@@ -1230,31 +1400,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.drawCircle",
       "descriptions": {
-        "zh-CN": "绘制圆形",
-        "en-US": "Draw circle"
-      }
+        "zh-CN": "在图片上绘制圆形",
+        "en-US": "Draw circle of image"
+      },
+      "group": "draw",
+      "description": "Draw circle of image"
     },
     {
       "name": "draw_line",
@@ -1264,31 +1439,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.drawLine",
       "descriptions": {
-        "zh-CN": "绘制线条",
-        "en-US": "Draw line"
-      }
+        "zh-CN": "在图片上绘制线条",
+        "en-US": "Draw line of image"
+      },
+      "group": "draw",
+      "description": "Draw line of image"
     },
     {
       "name": "draw_arrow",
@@ -1298,31 +1478,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.drawArrow",
       "descriptions": {
-        "zh-CN": "绘制箭头",
-        "en-US": "Draw arrow"
-      }
+        "zh-CN": "在图片上绘制箭头",
+        "en-US": "Draw arrow of image"
+      },
+      "group": "draw",
+      "description": "Draw arrow of image"
     },
     {
       "name": "get_pixel",
@@ -1332,39 +1517,45 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "x",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "X",
-            "en-US": "X"
-          }
+            "zh-CN": "X坐标位置",
+            "en-US": "X coordinate position"
+          },
+          "desc": "X coordinate position"
         },
         {
           "name": "y",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "Y",
-            "en-US": "Y"
-          }
+            "zh-CN": "Y坐标位置",
+            "en-US": "Y coordinate position"
+          },
+          "desc": "Y coordinate position"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "PixelColor",
         "descs": {
-          "zh-CN": "颜色",
-          "en-US": "Color"
-        }
+          "zh-CN": "PixelColor类型的结果对象",
+          "en-US": "Result object of type PixelColor"
+        },
+        "desc": "Result object of type PixelColor"
       },
       "bridge_path": "image.getPixel",
       "descriptions": {
-        "zh-CN": "获取像素",
-        "en-US": "Get pixel"
-      }
+        "zh-CN": "获取pixel信息",
+        "en-US": "Get pixel info of image"
+      },
+      "group": "analyze",
+      "description": "Get pixel info of image"
     },
     {
       "name": "histogram",
@@ -1374,13 +1565,14 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "HistogramData",
         "descs": {
           "zh-CN": "获取直方图",
           "en-US": "Histogram"
@@ -1388,9 +1580,11 @@
       },
       "bridge_path": "image.histogram",
       "descriptions": {
-        "zh-CN": "获取直方图",
-        "en-US": "Histogram"
-      }
+        "zh-CN": "histogram图片",
+        "en-US": "Histogram image"
+      },
+      "group": "analyze",
+      "description": "Histogram image"
     },
     {
       "name": "round_corners",
@@ -1400,31 +1594,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.roundCorners",
       "descriptions": {
-        "zh-CN": "圆角处理",
-        "en-US": "Round corners"
-      }
+        "zh-CN": "为图片添加圆角效果",
+        "en-US": "Round corners of image"
+      },
+      "group": "basic",
+      "description": "Round corners of image"
     },
     {
       "name": "gif_from_frames",
@@ -1434,31 +1633,36 @@
           "name": "paths",
           "type": "array",
           "descs": {
-            "zh-CN": "帧",
-            "en-US": "Frames"
-          }
+            "zh-CN": "帧图片文件路径列表",
+            "en-US": "List of frame image file paths"
+          },
+          "desc": "List of frame image file paths"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.gifFromFrames",
       "descriptions": {
-        "zh-CN": "从帧合成 GIF",
-        "en-US": "GIF from frames"
-      }
+        "zh-CN": "将多帧图片合成 GIF 动图",
+        "en-US": "Gif from frames of image"
+      },
+      "group": "gif",
+      "description": "Gif from frames of image"
     },
     {
       "name": "split_gif",
@@ -1468,31 +1672,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output_dir",
           "type": "string",
           "descs": {
-            "zh-CN": "目录",
-            "en-US": "Dir"
-          }
+            "zh-CN": "output_dir参数",
+            "en-US": "output_dir parameter"
+          },
+          "desc": "output_dir parameter"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "帧",
-          "en-US": "Frames"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "image.splitGif",
       "descriptions": {
-        "zh-CN": "拆分 GIF",
-        "en-US": "Split GIF"
-      }
+        "zh-CN": "将 GIF 拆分为多帧图片",
+        "en-US": "Split gif of image"
+      },
+      "group": "gif",
+      "description": "Split gif of image"
     },
     {
       "name": "gif_info",
@@ -1502,23 +1711,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "GifInfo",
         "descs": {
-          "zh-CN": "信息",
-          "en-US": "Info"
-        }
+          "zh-CN": "GifInfo类型的结果对象",
+          "en-US": "Result object of type GifInfo"
+        },
+        "desc": "Result object of type GifInfo"
       },
       "bridge_path": "image.gifInfo",
       "descriptions": {
-        "zh-CN": "GIF 信息",
-        "en-US": "GIF info"
-      }
+        "zh-CN": "获取 GIF 动图信息（帧数/时长）",
+        "en-US": "Gif info of image"
+      },
+      "group": "gif",
+      "description": "Gif info of image"
     },
     {
       "name": "auto_orient",
@@ -1528,35 +1741,395 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件路径",
+            "en-US": "Output file path"
+          },
+          "desc": "Output file path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "image.autoOrient",
       "descriptions": {
-        "zh-CN": "自动校正方向",
-        "en-US": "Auto orient"
-      }
+        "zh-CN": "根据 EXIF 自动旋转图片方向",
+        "en-US": "Auto orient of image"
+      },
+      "group": "basic",
+      "description": "Auto orient of image"
     }
   ],
   "overviews": {
     "zh-CN": "提供图像处理能力，包括格式转换、缩放、裁剪、旋转、翻转、滤镜效果、水印添加、EXIF 读写、颜色空间转换、批量处理等功能。支持 PNG/JPEG/GIF/BMP/WebP/TIFF 等格式。",
     "en-US": "Image processing including format conversion, resize, crop, rotate, flip, filters, watermarks, EXIF read/write, color space conversion, and batch processing. Supports PNG/JPEG/GIF/BMP/WebP/TIFF."
-  }
+  },
+  "types": [
+    {
+      "name": "Rect",
+      "descriptions": {
+        "zh-CN": "矩形区域",
+        "en-US": "Rectangle region"
+      },
+      "fields": [
+        {
+          "name": "x",
+          "type": "number",
+          "descs": {
+            "zh-CN": "X坐标",
+            "en-US": "X coordinate"
+          }
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "Y坐标",
+            "en-US": "Y coordinate"
+          }
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "宽度",
+            "en-US": "Width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "高度",
+            "en-US": "Height"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "descriptions": {
+        "zh-CN": "颜色值",
+        "en-US": "Color value"
+      },
+      "fields": [
+        {
+          "name": "r",
+          "type": "number",
+          "descs": {
+            "zh-CN": "红色(0-255)",
+            "en-US": "Red(0-255)"
+          }
+        },
+        {
+          "name": "g",
+          "type": "number",
+          "descs": {
+            "zh-CN": "绿色(0-255)",
+            "en-US": "Green(0-255)"
+          }
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "descs": {
+            "zh-CN": "蓝色(0-255)",
+            "en-US": "Blue(0-255)"
+          }
+        },
+        {
+          "name": "a",
+          "type": "number",
+          "optional": true,
+          "default_value": "255",
+          "descs": {
+            "zh-CN": "透明度(0-255)",
+            "en-US": "Alpha(0-255)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ImageInfo",
+      "descriptions": {
+        "zh-CN": "图片信息",
+        "en-US": "Image info"
+      },
+      "fields": [
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "宽度(px)",
+            "en-US": "Width(px)"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "高度(px)",
+            "en-US": "Height(px)"
+          }
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "descs": {
+            "zh-CN": "格式",
+            "en-US": "Format"
+          }
+        },
+        {
+          "name": "size",
+          "type": "number",
+          "descs": {
+            "zh-CN": "文件大小",
+            "en-US": "File size"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ExifData",
+      "descriptions": {
+        "zh-CN": "EXIF数据",
+        "en-US": "EXIF data"
+      },
+      "fields": [
+        {
+          "name": "camera",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "相机型号",
+            "en-US": "Camera model"
+          }
+        },
+        {
+          "name": "datetime",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "拍摄时间",
+            "en-US": "Date taken"
+          }
+        },
+        {
+          "name": "gps",
+          "type": "object",
+          "optional": true,
+          "descs": {
+            "zh-CN": "GPS坐标",
+            "en-US": "GPS coordinates"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PixelColor",
+      "descriptions": {
+        "zh-CN": "像素颜色",
+        "en-US": "Pixel color"
+      },
+      "fields": [
+        {
+          "name": "r",
+          "type": "number",
+          "descs": {
+            "zh-CN": "红(0-255)",
+            "en-US": "Red(0-255)"
+          }
+        },
+        {
+          "name": "g",
+          "type": "number",
+          "descs": {
+            "zh-CN": "绿(0-255)",
+            "en-US": "Green(0-255)"
+          }
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "descs": {
+            "zh-CN": "蓝(0-255)",
+            "en-US": "Blue(0-255)"
+          }
+        },
+        {
+          "name": "a",
+          "type": "number",
+          "descs": {
+            "zh-CN": "透明度",
+            "en-US": "Alpha"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CompareResult",
+      "descriptions": {
+        "zh-CN": "图片对比结果",
+        "en-US": "Image compare result"
+      },
+      "fields": [
+        {
+          "name": "similarity",
+          "type": "number",
+          "descs": {
+            "zh-CN": "相似度(0-1)",
+            "en-US": "Similarity(0-1)"
+          }
+        },
+        {
+          "name": "diff_pixels",
+          "type": "number",
+          "descs": {
+            "zh-CN": "差异像素数",
+            "en-US": "Different pixels"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GifInfo",
+      "descriptions": {
+        "zh-CN": "GIF信息",
+        "en-US": "GIF info"
+      },
+      "fields": [
+        {
+          "name": "frames",
+          "type": "number",
+          "descs": {
+            "zh-CN": "帧数",
+            "en-US": "Frame count"
+          }
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "宽度",
+            "en-US": "Width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "高度",
+            "en-US": "Height"
+          }
+        },
+        {
+          "name": "duration_ms",
+          "type": "number",
+          "descs": {
+            "zh-CN": "总时长(ms)",
+            "en-US": "Duration(ms)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "HistogramData",
+      "descriptions": {
+        "zh-CN": "图像直方图数据",
+        "en-US": "Image histogram data"
+      },
+      "fields": [
+        {
+          "name": "red",
+          "type": "array",
+          "descs": {
+            "zh-CN": "红色通道分布(256值)",
+            "en-US": "Red channel distribution (256 values)"
+          }
+        },
+        {
+          "name": "green",
+          "type": "array",
+          "descs": {
+            "zh-CN": "绿色通道分布(256值)",
+            "en-US": "Green channel distribution"
+          }
+        },
+        {
+          "name": "blue",
+          "type": "array",
+          "descs": {
+            "zh-CN": "蓝色通道分布(256值)",
+            "en-US": "Blue channel distribution"
+          }
+        }
+      ]
+    }
+  ],
+  "constants": [
+    {
+      "name": "FORMAT_PNG",
+      "value": "png",
+      "type": "string",
+      "group": "format",
+      "descs": {
+        "zh-CN": "PNG格式",
+        "en-US": "PNG format"
+      }
+    },
+    {
+      "name": "FORMAT_JPEG",
+      "value": "jpeg",
+      "type": "string",
+      "group": "format",
+      "descs": {
+        "zh-CN": "JPEG格式",
+        "en-US": "JPEG format"
+      }
+    },
+    {
+      "name": "FORMAT_WEBP",
+      "value": "webp",
+      "type": "string",
+      "group": "format",
+      "descs": {
+        "zh-CN": "WebP格式",
+        "en-US": "WebP format"
+      }
+    },
+    {
+      "name": "FORMAT_GIF",
+      "value": "gif",
+      "type": "string",
+      "group": "format",
+      "descs": {
+        "zh-CN": "GIF格式",
+        "en-US": "GIF format"
+      }
+    },
+    {
+      "name": "FORMAT_BMP",
+      "value": "bmp",
+      "type": "string",
+      "group": "format",
+      "descs": {
+        "zh-CN": "BMP格式",
+        "en-US": "BMP format"
+      }
+    }
+  ]
 }

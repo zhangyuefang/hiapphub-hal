@@ -22,31 +22,37 @@
           "name": "algorithm",
           "type": "string",
           "descs": {
-            "zh-CN": "算法",
-            "en-US": "Algorithm"
-          }
+            "zh-CN": "哈希算法名称（md5/sha1/sha256/sha512）",
+            "en-US": "Hash algorithm (md5/sha1/sha256/sha512)"
+          },
+          "desc": "Hash algorithm (md5/sha1/sha256/sha512)",
+          "optional": true
         },
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "要计算哈希的字符串数据",
+            "en-US": "String data to hash"
+          },
+          "desc": "String data to hash"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "十六进制哈希",
-          "en-US": "Hex hash"
-        }
+          "zh-CN": "十六进制编码的哈希值字符串",
+          "en-US": "Hex-encoded hash string"
+        },
+        "desc": "Hex-encoded hash string"
       },
       "bridge_path": "crypto.hash",
       "descriptions": {
-        "zh-CN": "计算数据哈希",
-        "en-US": "Hash data"
-      }
+        "zh-CN": "使用指定算法计算字符串数据的哈希摘要值",
+        "en-US": "Compute hash digest of string data with specified algorithm"
+      },
+      "group": "hash",
+      "description": "Compute hash digest of string data with specified algorithm"
     },
     {
       "name": "hash_file",
@@ -56,31 +62,37 @@
           "name": "algorithm",
           "type": "string",
           "descs": {
-            "zh-CN": "算法",
-            "en-US": "Algorithm"
-          }
+            "zh-CN": "哈希算法名称",
+            "en-US": "Hash algorithm"
+          },
+          "desc": "Hash algorithm",
+          "optional": true
         },
         {
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "要计算哈希的文件路径",
+            "en-US": "File path to hash"
+          },
+          "desc": "File path to hash"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "十六进制哈希",
-          "en-US": "Hex hash"
-        }
+          "zh-CN": "十六进制编码的文件哈希值",
+          "en-US": "Hex-encoded file hash"
+        },
+        "desc": "Hex-encoded file hash"
       },
       "bridge_path": "crypto.hashFile",
       "descriptions": {
-        "zh-CN": "计算文件哈希",
-        "en-US": "Hash file"
-      }
+        "zh-CN": "计算文件内容的哈希摘要值（适用于大文件）",
+        "en-US": "Compute hash digest of file content (suitable for large files)"
+      },
+      "group": "hash",
+      "description": "Compute hash digest of file content (suitable for large files)"
     },
     {
       "name": "hmac",
@@ -90,39 +102,46 @@
           "name": "algorithm",
           "type": "string",
           "descs": {
-            "zh-CN": "算法",
-            "en-US": "Algorithm"
-          }
+            "zh-CN": "HMAC 算法（sha256/sha512）",
+            "en-US": "HMAC algorithm"
+          },
+          "desc": "HMAC algorithm",
+          "optional": true
         },
         {
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "HMAC 密钥字符串",
+            "en-US": "HMAC key string"
+          },
+          "desc": "HMAC key string"
         },
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "要认证的数据",
+            "en-US": "Data to authenticate"
+          },
+          "desc": "Data to authenticate"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "十六进制 HMAC",
-          "en-US": "Hex HMAC"
-        }
+          "zh-CN": "十六进制编码的 HMAC 值",
+          "en-US": "Hex-encoded HMAC value"
+        },
+        "desc": "Hex-encoded HMAC value"
       },
       "bridge_path": "crypto.hmac",
       "descriptions": {
-        "zh-CN": "HMAC",
-        "en-US": "HMAC"
-      }
+        "zh-CN": "使用密钥和指定算法计算 HMAC 消息认证码",
+        "en-US": "Compute HMAC message authentication code with key and algorithm"
+      },
+      "group": "hash",
+      "description": "Compute HMAC message authentication code with key and algorithm"
     },
     {
       "name": "random_bytes",
@@ -130,25 +149,31 @@
       "params": [
         {
           "name": "length",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "长度",
-            "en-US": "Length"
-          }
+            "zh-CN": "要生成的随机字节数量",
+            "en-US": "Number of random bytes to generate"
+          },
+          "desc": "Number of random bytes to generate",
+          "optional": true,
+          "default_value": "20"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "十六进制字节",
-          "en-US": "Hex bytes"
-        }
+          "zh-CN": "十六进制编码的随机字节串",
+          "en-US": "Hex-encoded random bytes"
+        },
+        "desc": "Hex-encoded random bytes"
       },
       "bridge_path": "crypto.randomBytes",
       "descriptions": {
-        "zh-CN": "随机字节",
-        "en-US": "Random bytes"
-      }
+        "zh-CN": "生成指定长度的密码学安全随机字节序列",
+        "en-US": "Generate cryptographically secure random bytes"
+      },
+      "group": "utility",
+      "description": "Generate cryptographically secure random bytes"
     },
     {
       "name": "generate_uuid",
@@ -157,15 +182,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "UUID",
-          "en-US": "UUID"
-        }
+          "zh-CN": "UUID 字符串（如 550e8400-e29b-41d4-a716-446655440000）",
+          "en-US": "UUID string"
+        },
+        "desc": "UUID string"
       },
       "bridge_path": "crypto.generateUuid",
       "descriptions": {
-        "zh-CN": "生成 UUID",
-        "en-US": "Generate UUID"
-      }
+        "zh-CN": "生成一个符合 RFC 4122 标准的 UUID v4 随机标识符",
+        "en-US": "Generate RFC 4122 compliant UUID v4 random identifier"
+      },
+      "group": "utility",
+      "description": "Generate RFC 4122 compliant UUID v4 random identifier"
     },
     {
       "name": "generate_key",
@@ -173,25 +201,29 @@
       "params": [
         {
           "name": "bits",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "位数",
-            "en-US": "Bits"
-          }
+            "zh-CN": "密钥位数（如2048/4096）",
+            "en-US": "Key size in bits (e.g. 2048/4096)"
+          },
+          "desc": "Key size in bits (e.g. 2048/4096)"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "键",
-          "en-US": "Key"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "crypto.generateKey",
       "descriptions": {
-        "zh-CN": "生成键",
-        "en-US": "Generate key"
-      }
+        "zh-CN": "生成随机密钥",
+        "en-US": "Generate key of crypto"
+      },
+      "group": "symmetric",
+      "description": "Generate key of crypto"
     },
     {
       "name": "derive_key",
@@ -201,17 +233,19 @@
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string"
         },
         {
           "name": "salt",
           "type": "string",
           "descs": {
-            "zh-CN": "盐值",
-            "en-US": "Salt"
-          }
+            "zh-CN": "密钥派生用的盐值",
+            "en-US": "Salt value for key derivation"
+          },
+          "desc": "Salt value for key derivation"
         }
       ],
       "returns": {
@@ -223,9 +257,11 @@
       },
       "bridge_path": "crypto.deriveKey",
       "descriptions": {
-        "zh-CN": "派生密钥",
-        "en-US": "Derive key"
-      }
+        "zh-CN": "从密码派生密钥（PBKDF2/scrypt）",
+        "en-US": "Derive key of crypto"
+      },
+      "group": "symmetric",
+      "description": "Derive key of crypto"
     },
     {
       "name": "encrypt",
@@ -235,39 +271,46 @@
           "name": "algorithm",
           "type": "string",
           "descs": {
-            "zh-CN": "算法",
-            "en-US": "Algorithm"
-          }
+            "zh-CN": "算法名称",
+            "en-US": "Algorithm name"
+          },
+          "desc": "Algorithm name",
+          "optional": true
         },
         {
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "加密密钥字符串",
+            "en-US": "Encryption key string"
+          },
+          "desc": "Encryption key string"
         },
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "EncryptResult",
         "descs": {
-          "zh-CN": "密文",
-          "en-US": "Ciphertext"
-        }
+          "zh-CN": "EncryptResult类型的结果对象",
+          "en-US": "Result object of type EncryptResult"
+        },
+        "desc": "Result object of type EncryptResult"
       },
       "bridge_path": "crypto.encrypt",
       "descriptions": {
-        "zh-CN": "加密",
-        "en-US": "Encrypt"
-      }
+        "zh-CN": "使用对称或非对称算法加密数据",
+        "en-US": "Encrypt data using symmetric or asymmetric algorithm"
+      },
+      "group": "symmetric",
+      "description": "Encrypt data using symmetric or asymmetric algorithm"
     },
     {
       "name": "decrypt",
@@ -277,39 +320,46 @@
           "name": "algorithm",
           "type": "string",
           "descs": {
-            "zh-CN": "算法",
-            "en-US": "Algorithm"
-          }
+            "zh-CN": "算法名称",
+            "en-US": "Algorithm name"
+          },
+          "desc": "Algorithm name",
+          "optional": true
         },
         {
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "解密密钥字符串",
+            "en-US": "Decryption key string"
+          },
+          "desc": "Decryption key string"
         },
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "密文",
-            "en-US": "Ciphertext"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "明文",
-          "en-US": "Plaintext"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "crypto.decrypt",
       "descriptions": {
-        "zh-CN": "解密",
-        "en-US": "Decrypt"
-      }
+        "zh-CN": "使用对称或非对称算法解密数据",
+        "en-US": "Decrypt data using symmetric or asymmetric algorithm"
+      },
+      "group": "symmetric",
+      "description": "Decrypt data using symmetric or asymmetric algorithm"
     },
     {
       "name": "sign",
@@ -319,39 +369,46 @@
           "name": "algorithm",
           "type": "string",
           "descs": {
-            "zh-CN": "算法",
-            "en-US": "Algorithm"
-          }
+            "zh-CN": "算法名称",
+            "en-US": "Algorithm name"
+          },
+          "desc": "Algorithm name",
+          "optional": true
         },
         {
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "签名用私钥",
+            "en-US": "Private key for signing"
+          },
+          "desc": "Private key for signing"
         },
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "签名",
-          "en-US": "Signature"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "crypto.sign",
       "descriptions": {
-        "zh-CN": "签名",
-        "en-US": "Sign"
-      }
+        "zh-CN": "使用私钥对数据进行数字签名",
+        "en-US": "Create digital signature of data using private key"
+      },
+      "group": "asymmetric",
+      "description": "Create digital signature of data using private key"
     },
     {
       "name": "verify",
@@ -361,47 +418,55 @@
           "name": "algorithm",
           "type": "string",
           "descs": {
-            "zh-CN": "算法",
-            "en-US": "Algorithm"
-          }
+            "zh-CN": "算法名称",
+            "en-US": "Algorithm name"
+          },
+          "desc": "Algorithm name",
+          "optional": true
         },
         {
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "验签用公钥",
+            "en-US": "Public key for verification"
+          },
+          "desc": "Public key for verification"
         },
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         },
         {
           "name": "signature",
           "type": "string",
           "descs": {
-            "zh-CN": "签名",
-            "en-US": "Signature"
-          }
+            "zh-CN": "signature参数",
+            "en-US": "signature parameter"
+          },
+          "desc": "signature parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "有效",
-          "en-US": "Valid"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "crypto.verify",
       "descriptions": {
-        "zh-CN": "验证",
-        "en-US": "Verify"
-      }
+        "zh-CN": "使用公钥验证数据的数字签名是否有效",
+        "en-US": "Verify digital signature of data using public key"
+      },
+      "group": "asymmetric",
+      "description": "Verify digital signature of data using public key"
     },
     {
       "name": "constant_time_eq",
@@ -411,31 +476,36 @@
           "name": "a",
           "type": "string",
           "descs": {
-            "zh-CN": "A",
-            "en-US": "A"
-          }
+            "zh-CN": "待比较的第一个字符串",
+            "en-US": "First string to compare"
+          },
+          "desc": "First string to compare"
         },
         {
           "name": "b",
           "type": "string",
           "descs": {
-            "zh-CN": "B",
-            "en-US": "B"
-          }
+            "zh-CN": "待比较的第二个字符串",
+            "en-US": "Second string to compare"
+          },
+          "desc": "Second string to compare"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "相等",
-          "en-US": "Equal"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "crypto.constantTimeEq",
       "descriptions": {
-        "zh-CN": "常量时间比较",
-        "en-US": "Constant time compare"
-      }
+        "zh-CN": "常量时间字符串比较（防时序攻击）",
+        "en-US": "Constant time eq of crypto"
+      },
+      "group": "utility",
+      "description": "Constant time eq of crypto"
     },
     {
       "name": "generate_keypair",
@@ -445,23 +515,28 @@
           "name": "algorithm",
           "type": "string",
           "descs": {
-            "zh-CN": "算法",
-            "en-US": "Algorithm"
-          }
+            "zh-CN": "算法名称",
+            "en-US": "Algorithm name"
+          },
+          "desc": "Algorithm name",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "KeyPair",
         "descs": {
-          "zh-CN": "密钥对",
-          "en-US": "Keypair"
-        }
+          "zh-CN": "KeyPair类型的结果对象",
+          "en-US": "Result object of type KeyPair"
+        },
+        "desc": "Result object of type KeyPair"
       },
       "bridge_path": "crypto.generateKeypair",
       "descriptions": {
-        "zh-CN": "生成密钥对",
-        "en-US": "Generate keypair"
-      }
+        "zh-CN": "生成非对称密钥对",
+        "en-US": "Generate keypair of crypto"
+      },
+      "group": "asymmetric",
+      "description": "Generate keypair of crypto"
     },
     {
       "name": "bcrypt_hash",
@@ -471,9 +546,10 @@
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string"
         }
       ],
       "returns": {
@@ -485,9 +561,11 @@
       },
       "bridge_path": "crypto.bcryptHash",
       "descriptions": {
-        "zh-CN": "Bcrypt 哈希",
-        "en-US": "Bcrypt hash"
-      }
+        "zh-CN": "使用 bcrypt 算法哈希密码",
+        "en-US": "Bcrypt hash of crypto"
+      },
+      "group": "utility",
+      "description": "Bcrypt hash of crypto"
     },
     {
       "name": "bcrypt_verify",
@@ -497,31 +575,36 @@
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string"
         },
         {
           "name": "hash",
           "type": "string",
           "descs": {
-            "zh-CN": "哈希",
-            "en-US": "Hash"
-          }
+            "zh-CN": "要比对的bcrypt哈希值",
+            "en-US": "Bcrypt hash to verify against"
+          },
+          "desc": "Bcrypt hash to verify against"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "匹配",
-          "en-US": "Match"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "crypto.bcryptVerify",
       "descriptions": {
-        "zh-CN": "Bcrypt 验证",
-        "en-US": "Bcrypt verify"
-      }
+        "zh-CN": "验证 bcrypt 密码哈希",
+        "en-US": "Bcrypt verify of crypto"
+      },
+      "group": "utility",
+      "description": "Bcrypt verify of crypto"
     },
     {
       "name": "encrypt_with_password",
@@ -531,31 +614,36 @@
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string"
         },
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "密文",
-          "en-US": "Ciphertext"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "crypto.encryptWithPassword",
       "descriptions": {
-        "zh-CN": "加密带密码",
-        "en-US": "Encrypt with password"
-      }
+        "zh-CN": "使用密码加密数据",
+        "en-US": "Encrypt with password of crypto"
+      },
+      "group": "symmetric",
+      "description": "Encrypt with password of crypto"
     },
     {
       "name": "decrypt_with_password",
@@ -565,31 +653,36 @@
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string"
         },
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "密文",
-            "en-US": "Ciphertext"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "明文",
-          "en-US": "Plaintext"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "crypto.decryptWithPassword",
       "descriptions": {
-        "zh-CN": "解密带密码",
-        "en-US": "Decrypt with password"
-      }
+        "zh-CN": "使用密码解密数据",
+        "en-US": "Decrypt with password of crypto"
+      },
+      "group": "symmetric",
+      "description": "Decrypt with password of crypto"
     },
     {
       "name": "rsa_encrypt",
@@ -599,31 +692,36 @@
           "name": "public_key",
           "type": "string",
           "descs": {
-            "zh-CN": "公钥",
-            "en-US": "Public key"
-          }
+            "zh-CN": "public_key参数",
+            "en-US": "public_key parameter"
+          },
+          "desc": "public_key parameter"
         },
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "密文",
-          "en-US": "Ciphertext"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "crypto.rsaEncrypt",
       "descriptions": {
-        "zh-CN": "RSA 加密",
-        "en-US": "RSA encrypt"
-      }
+        "zh-CN": "使用 RSA 公钥加密数据",
+        "en-US": "Rsa encrypt of crypto"
+      },
+      "group": "asymmetric",
+      "description": "Rsa encrypt of crypto"
     },
     {
       "name": "rsa_decrypt",
@@ -633,31 +731,36 @@
           "name": "private_key",
           "type": "string",
           "descs": {
-            "zh-CN": "私钥",
-            "en-US": "Private key"
-          }
+            "zh-CN": "private_key参数",
+            "en-US": "private_key parameter"
+          },
+          "desc": "private_key parameter"
         },
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "密文",
-            "en-US": "Ciphertext"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "明文",
-          "en-US": "Plaintext"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "crypto.rsaDecrypt",
       "descriptions": {
-        "zh-CN": "RSA 解密",
-        "en-US": "RSA decrypt"
-      }
+        "zh-CN": "使用 RSA 私钥解密数据",
+        "en-US": "Rsa decrypt of crypto"
+      },
+      "group": "asymmetric",
+      "description": "Rsa decrypt of crypto"
     },
     {
       "name": "generate_totp",
@@ -667,13 +770,14 @@
           "name": "secret",
           "type": "string",
           "descs": {
-            "zh-CN": "密钥",
-            "en-US": "Secret"
-          }
+            "zh-CN": "TOTP共享密钥（Base32编码）",
+            "en-US": "TOTP shared secret (Base32 encoded)"
+          },
+          "desc": "TOTP shared secret (Base32 encoded)"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "TotpResult",
         "descs": {
           "zh-CN": "TOTP",
           "en-US": "TOTP"
@@ -681,9 +785,11 @@
       },
       "bridge_path": "crypto.generateTotp",
       "descriptions": {
-        "zh-CN": "生成 TOTP",
-        "en-US": "Generate TOTP"
-      }
+        "zh-CN": "生成 TOTP 动态验证码",
+        "en-US": "Generate totp of crypto"
+      },
+      "group": "utility",
+      "description": "Generate totp of crypto"
     },
     {
       "name": "verify_totp",
@@ -693,38 +799,43 @@
           "name": "secret",
           "type": "string",
           "descs": {
-            "zh-CN": "密钥",
-            "en-US": "Secret"
-          }
+            "zh-CN": "TOTP共享密钥（Base32编码）",
+            "en-US": "TOTP shared secret (Base32 encoded)"
+          },
+          "desc": "TOTP shared secret (Base32 encoded)"
         },
         {
           "name": "code",
           "type": "string",
           "descs": {
-            "zh-CN": "代码",
-            "en-US": "Code"
-          }
+            "zh-CN": "用户输入的6位验证码",
+            "en-US": "6-digit verification code from user"
+          },
+          "desc": "6-digit verification code from user"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "有效",
-          "en-US": "Valid"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "crypto.verifyTotp",
       "descriptions": {
-        "zh-CN": "验证 TOTP",
-        "en-US": "Verify TOTP"
-      }
+        "zh-CN": "验证 TOTP 动态验证码",
+        "en-US": "Verify totp of crypto"
+      },
+      "group": "utility",
+      "description": "Verify totp of crypto"
     },
     {
       "name": "generate_totp_secret",
       "symbol": "hap_crypto_generate_totp_secret",
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "TotpSecret",
         "descs": {
           "zh-CN": "密钥和 URI",
           "en-US": "Secret and URI"
@@ -734,7 +845,8 @@
       "descriptions": {
         "zh-CN": "生成 TOTP 密钥",
         "en-US": "Generate TOTP secret"
-      }
+      },
+      "group": "utility"
     },
     {
       "name": "crc32",
@@ -744,9 +856,10 @@
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "数据",
-            "en-US": "Data"
-          }
+            "zh-CN": "数据内容",
+            "en-US": "Data content"
+          },
+          "desc": "Data content"
         }
       ],
       "returns": {
@@ -758,9 +871,11 @@
       },
       "bridge_path": "crypto.crc32",
       "descriptions": {
-        "zh-CN": "CRC32",
-        "en-US": "CRC32"
-      }
+        "zh-CN": "计算数据的CRC32循环冗余校验值",
+        "en-US": "Calculate CRC32 checksum of data"
+      },
+      "group": "hash",
+      "description": "Calculate CRC32 checksum of data"
     },
     {
       "name": "generate_password",
@@ -768,25 +883,31 @@
       "params": [
         {
           "name": "length",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "长度",
-            "en-US": "Length"
-          }
+            "zh-CN": "生成密码的字符长度",
+            "en-US": "Password length in characters"
+          },
+          "desc": "Password length in characters",
+          "optional": true,
+          "default_value": "20"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "密码",
-          "en-US": "Password"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "crypto.generatePassword",
       "descriptions": {
-        "zh-CN": "生成密码",
-        "en-US": "Generate password"
-      }
+        "zh-CN": "生成随机安全密码",
+        "en-US": "Generate password of crypto"
+      },
+      "group": "utility",
+      "description": "Generate password of crypto"
     },
     {
       "name": "x509_info",
@@ -796,13 +917,14 @@
           "name": "pem",
           "type": "string",
           "descs": {
-            "zh-CN": "PEM",
-            "en-US": "PEM"
-          }
+            "zh-CN": "PEM格式的X.509证书内容",
+            "en-US": "X.509 certificate content in PEM format"
+          },
+          "desc": "X.509 certificate content in PEM format"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "X509Info",
         "descs": {
           "zh-CN": "证书信息",
           "en-US": "Cert info"
@@ -810,9 +932,11 @@
       },
       "bridge_path": "crypto.x509Info",
       "descriptions": {
-        "zh-CN": "X509 信息",
-        "en-US": "X509 info"
-      }
+        "zh-CN": "解析 X.509 证书信息",
+        "en-US": "X509 info of crypto"
+      },
+      "group": "asymmetric",
+      "description": "X509 info of crypto"
     },
     {
       "name": "random_string",
@@ -820,33 +944,41 @@
       "params": [
         {
           "name": "length",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "长度",
-            "en-US": "Length"
-          }
+            "zh-CN": "生成的随机字符串长度",
+            "en-US": "Length of random string to generate"
+          },
+          "desc": "Length of random string to generate",
+          "optional": true,
+          "default_value": "20"
         },
         {
           "name": "charset",
           "type": "string",
           "descs": {
-            "zh-CN": "字符集",
-            "en-US": "Charset"
-          }
+            "zh-CN": "可用字符集（如alphanumeric/hex/custom）",
+            "en-US": "Character set (alphanumeric/hex/custom)"
+          },
+          "desc": "Character set (alphanumeric/hex/custom)",
+          "optional": true
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "字符串",
-          "en-US": "String"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "crypto.randomString",
       "descriptions": {
-        "zh-CN": "随机字符串",
-        "en-US": "Random string"
-      }
+        "zh-CN": "生成随机字符串",
+        "en-US": "Random string of crypto"
+      },
+      "group": "utility",
+      "description": "Random string of crypto"
     },
     {
       "name": "pem_to_der",
@@ -856,9 +988,10 @@
           "name": "pem",
           "type": "string",
           "descs": {
-            "zh-CN": "PEM",
-            "en-US": "PEM"
-          }
+            "zh-CN": "PEM编码的证书或密钥字符串",
+            "en-US": "PEM-encoded certificate or key string"
+          },
+          "desc": "PEM-encoded certificate or key string"
         }
       ],
       "returns": {
@@ -870,9 +1003,11 @@
       },
       "bridge_path": "crypto.pemToDer",
       "descriptions": {
-        "zh-CN": "PEM 到 DER",
-        "en-US": "PEM to DER"
-      }
+        "zh-CN": "将 PEM 格式转换为 DER 格式",
+        "en-US": "Pem to der of crypto"
+      },
+      "group": "asymmetric",
+      "description": "Pem to der of crypto"
     },
     {
       "name": "der_to_pem",
@@ -890,23 +1025,27 @@
           "name": "label",
           "type": "string",
           "descs": {
-            "zh-CN": "标签",
-            "en-US": "Label"
-          }
+            "zh-CN": "显示标签文本",
+            "en-US": "Display label text"
+          },
+          "desc": "Display label text"
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "PEM",
-          "en-US": "PEM"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "crypto.derToPem",
       "descriptions": {
-        "zh-CN": "DER 到 PEM",
-        "en-US": "DER to PEM"
-      }
+        "zh-CN": "将 DER 格式转换为 PEM 格式",
+        "en-US": "Der to pem of crypto"
+      },
+      "group": "asymmetric",
+      "description": "Der to pem of crypto"
     },
     {
       "name": "encrypt_file",
@@ -916,39 +1055,45 @@
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "文件加密密钥",
+            "en-US": "File encryption key"
+          },
+          "desc": "File encryption key"
         },
         {
           "name": "input_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输入",
-            "en-US": "Input"
-          }
+            "zh-CN": "输入文件路径",
+            "en-US": "Input file path"
+          },
+          "desc": "Input file path"
         },
         {
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "FileEncryptResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "FileEncryptResult类型的结果对象",
+          "en-US": "Result object of type FileEncryptResult"
+        },
+        "desc": "Result object of type FileEncryptResult"
       },
       "bridge_path": "crypto.encryptFile",
       "descriptions": {
-        "zh-CN": "加密文件",
-        "en-US": "Encrypt file"
-      }
+        "zh-CN": "加密整个文件并保存到指定路径",
+        "en-US": "Encrypt entire file and save to specified path"
+      },
+      "group": "symmetric",
+      "description": "Encrypt entire file and save to specified path"
     },
     {
       "name": "decrypt_file",
@@ -958,43 +1103,372 @@
           "name": "key",
           "type": "string",
           "descs": {
-            "zh-CN": "键",
-            "en-US": "Key"
-          }
+            "zh-CN": "文件解密密钥",
+            "en-US": "File decryption key"
+          },
+          "desc": "File decryption key"
         },
         {
           "name": "input_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输入",
-            "en-US": "Input"
-          }
+            "zh-CN": "输入文件路径",
+            "en-US": "Input file path"
+          },
+          "desc": "Input file path"
         },
         {
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "FileEncryptResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "FileEncryptResult类型的结果对象",
+          "en-US": "Result object of type FileEncryptResult"
+        },
+        "desc": "Result object of type FileEncryptResult"
       },
       "bridge_path": "crypto.decryptFile",
       "descriptions": {
-        "zh-CN": "解密文件",
-        "en-US": "Decrypt file"
-      }
+        "zh-CN": "解密加密文件并保存为明文文件",
+        "en-US": "Decrypt encrypted file and save as plaintext"
+      },
+      "group": "symmetric",
+      "description": "Decrypt encrypted file and save as plaintext"
     }
   ],
   "overviews": {
     "zh-CN": "提供对称/非对称加密、哈希摘要、HMAC、随机数生成、Base64/Hex 编解码等密码学能力。支持 AES-128/256-CBC/GCM、RSA-2048/4096、SHA-256/512、MD5 等算法。",
     "en-US": "Symmetric/asymmetric encryption, hash digests, HMAC, random number generation, and Base64/Hex encoding. Supports AES-128/256-CBC/GCM, RSA-2048/4096, SHA-256/512, MD5 and more."
-  }
+  },
+  "constants": [
+    {
+      "name": "HASH_MD5",
+      "value": "md5",
+      "type": "string",
+      "group": "hash",
+      "descs": {
+        "zh-CN": "MD5哈希",
+        "en-US": "MD5 hash"
+      }
+    },
+    {
+      "name": "HASH_SHA256",
+      "value": "sha256",
+      "type": "string",
+      "group": "hash",
+      "descs": {
+        "zh-CN": "SHA-256哈希",
+        "en-US": "SHA-256 hash"
+      }
+    },
+    {
+      "name": "HASH_SHA512",
+      "value": "sha512",
+      "type": "string",
+      "group": "hash",
+      "descs": {
+        "zh-CN": "SHA-512哈希",
+        "en-US": "SHA-512 hash"
+      }
+    },
+    {
+      "name": "ALG_AES_128_CBC",
+      "value": "aes-128-cbc",
+      "type": "string",
+      "group": "algorithm",
+      "descs": {
+        "zh-CN": "AES-128-CBC加密",
+        "en-US": "AES-128-CBC encryption"
+      }
+    },
+    {
+      "name": "ALG_AES_256_CBC",
+      "value": "aes-256-cbc",
+      "type": "string",
+      "group": "algorithm",
+      "descs": {
+        "zh-CN": "AES-256-CBC加密",
+        "en-US": "AES-256-CBC encryption"
+      }
+    },
+    {
+      "name": "ALG_AES_256_GCM",
+      "value": "aes-256-gcm",
+      "type": "string",
+      "group": "algorithm",
+      "descs": {
+        "zh-CN": "AES-256-GCM加密",
+        "en-US": "AES-256-GCM encryption"
+      }
+    },
+    {
+      "name": "ALG_RSA_2048",
+      "value": "rsa-2048",
+      "type": "string",
+      "group": "algorithm",
+      "descs": {
+        "zh-CN": "RSA 2048位",
+        "en-US": "RSA 2048-bit"
+      }
+    },
+    {
+      "name": "ALG_RSA_4096",
+      "value": "rsa-4096",
+      "type": "string",
+      "group": "algorithm",
+      "descs": {
+        "zh-CN": "RSA 4096位",
+        "en-US": "RSA 4096-bit"
+      }
+    },
+    {
+      "name": "AES_128",
+      "value": "aes-128-cbc",
+      "value_type": "string",
+      "descs": {
+        "zh-CN": "AES-128-CBC算法标识",
+        "en-US": "AES-128-CBC algorithm identifier"
+      }
+    },
+    {
+      "name": "AES_256",
+      "value": "aes-256-cbc",
+      "value_type": "string",
+      "descs": {
+        "zh-CN": "AES-256-CBC算法标识",
+        "en-US": "AES-256-CBC algorithm identifier"
+      }
+    },
+    {
+      "name": "RSA_2048",
+      "value": 2048,
+      "value_type": "number",
+      "descs": {
+        "zh-CN": "RSA 2048位密钥长度",
+        "en-US": "RSA 2048-bit key length"
+      }
+    },
+    {
+      "name": "RSA_4096",
+      "value": 4096,
+      "value_type": "number",
+      "descs": {
+        "zh-CN": "RSA 4096位密钥长度",
+        "en-US": "RSA 4096-bit key length"
+      }
+    },
+    {
+      "name": "SHA256",
+      "value": "sha256",
+      "value_type": "string",
+      "descs": {
+        "zh-CN": "SHA-256哈希算法",
+        "en-US": "SHA-256 hash algorithm"
+      }
+    },
+    {
+      "name": "SHA512",
+      "value": "sha512",
+      "value_type": "string",
+      "descs": {
+        "zh-CN": "SHA-512哈希算法",
+        "en-US": "SHA-512 hash algorithm"
+      }
+    },
+    {
+      "name": "MD5",
+      "value": "md5",
+      "value_type": "string",
+      "descs": {
+        "zh-CN": "MD5哈希算法",
+        "en-US": "MD5 hash algorithm"
+      }
+    }
+  ],
+  "types": [
+    {
+      "name": "EncryptResult",
+      "descriptions": {
+        "zh-CN": "加密结果",
+        "en-US": "Encryption result"
+      },
+      "fields": [
+        {
+          "name": "ciphertext",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密文(Base64)",
+            "en-US": "Ciphertext(Base64)"
+          }
+        },
+        {
+          "name": "iv",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "初始向量",
+            "en-US": "Initialization vector"
+          }
+        },
+        {
+          "name": "tag",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "认证标签(GCM)",
+            "en-US": "Auth tag(GCM)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "KeyPair",
+      "descriptions": {
+        "zh-CN": "密钥对",
+        "en-US": "Key pair"
+      },
+      "fields": [
+        {
+          "name": "public_key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "公钥(PEM)",
+            "en-US": "Public key(PEM)"
+          }
+        },
+        {
+          "name": "private_key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "私钥(PEM)",
+            "en-US": "Private key(PEM)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "TotpResult",
+      "descriptions": {
+        "zh-CN": "TOTP结果",
+        "en-US": "TOTP result"
+      },
+      "fields": [
+        {
+          "name": "code",
+          "type": "string",
+          "descs": {
+            "zh-CN": "验证码",
+            "en-US": "Verification code"
+          }
+        },
+        {
+          "name": "remaining",
+          "type": "number",
+          "descs": {
+            "zh-CN": "剩余秒数",
+            "en-US": "Remaining seconds"
+          }
+        }
+      ]
+    },
+    {
+      "name": "TotpSecret",
+      "descriptions": {
+        "zh-CN": "TOTP密钥",
+        "en-US": "TOTP secret"
+      },
+      "fields": [
+        {
+          "name": "secret",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密钥(Base32)",
+            "en-US": "Secret(Base32)"
+          }
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "otpauth URL",
+            "en-US": "otpauth URL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "X509Info",
+      "descriptions": {
+        "zh-CN": "证书信息",
+        "en-US": "Certificate info"
+      },
+      "fields": [
+        {
+          "name": "subject",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主题",
+            "en-US": "Subject"
+          }
+        },
+        {
+          "name": "issuer",
+          "type": "string",
+          "descs": {
+            "zh-CN": "颁发者",
+            "en-US": "Issuer"
+          }
+        },
+        {
+          "name": "not_before",
+          "type": "string",
+          "descs": {
+            "zh-CN": "生效时间",
+            "en-US": "Not before"
+          }
+        },
+        {
+          "name": "not_after",
+          "type": "string",
+          "descs": {
+            "zh-CN": "过期时间",
+            "en-US": "Not after"
+          }
+        }
+      ]
+    },
+    {
+      "name": "FileEncryptResult",
+      "descriptions": {
+        "zh-CN": "文件加密结果",
+        "en-US": "File encrypt result"
+      },
+      "fields": [
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output path"
+          }
+        },
+        {
+          "name": "size",
+          "type": "number",
+          "descs": {
+            "zh-CN": "输出大小",
+            "en-US": "Output size"
+          }
+        }
+      ]
+    }
+  ]
 }

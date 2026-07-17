@@ -45,7 +45,7 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "TrayHandle",
         "descs": {
           "zh-CN": "托盘 ID",
           "en-US": "Tray ID"
@@ -53,9 +53,11 @@
       },
       "bridge_path": "tray.create",
       "descriptions": {
-        "zh-CN": "创建托盘图标图标",
-        "en-US": "Create tray icon"
-      }
+        "zh-CN": "创建一个新的系统托盘图标实例",
+        "en-US": "Create a new system tray icon instance"
+      },
+      "group": "create",
+      "description": "Create a new system tray icon instance"
     },
     {
       "name": "set_icon",
@@ -79,17 +81,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "tray.setIcon",
       "descriptions": {
-        "zh-CN": "设置托盘图标",
-        "en-US": "Set tray icon"
-      }
+        "zh-CN": "设置图标属性系统托盘",
+        "en-US": "Set icon property of system tray"
+      },
+      "group": "create",
+      "description": "Set icon property of system tray"
     },
     {
       "name": "set_tooltip",
@@ -109,21 +114,25 @@
           "descs": {
             "zh-CN": "提示文本",
             "en-US": "Tooltip"
-          }
+          },
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "tray.setTooltip",
       "descriptions": {
-        "zh-CN": "设置提示文本",
-        "en-US": "Set tooltip"
-      }
+        "zh-CN": "设置托盘提示文字",
+        "en-US": "Set tooltip property of system tray"
+      },
+      "group": "create",
+      "description": "Set tooltip property of system tray"
     },
     {
       "name": "set_menu",
@@ -141,23 +150,27 @@
           "name": "items",
           "type": "array",
           "descs": {
-            "zh-CN": "菜单项",
-            "en-US": "Menu items"
-          }
+            "zh-CN": "菜单项数组（含label/action/子菜单）",
+            "en-US": "Menu item array (with label/action/submenu)"
+          },
+          "desc": "Menu item array (with label/action/submenu)"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "tray.setMenu",
       "descriptions": {
-        "zh-CN": "设置右键菜单",
-        "en-US": "Set context menu"
-      }
+        "zh-CN": "设置菜单属性系统托盘",
+        "en-US": "Set menu property of system tray"
+      },
+      "group": "menu",
+      "description": "Set menu property of system tray"
     },
     {
       "name": "update_menu_item",
@@ -181,25 +194,29 @@
         },
         {
           "name": "props",
-          "type": "object",
+          "type": "MenuItemProps",
           "descs": {
-            "zh-CN": "属性",
-            "en-US": "Properties"
-          }
+            "zh-CN": "要更新的菜单项属性",
+            "en-US": "Menu item properties to update"
+          },
+          "desc": "Menu item properties to update"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "tray.updateMenuItem",
       "descriptions": {
-        "zh-CN": "更新菜单项",
-        "en-US": "Update menu item"
-      }
+        "zh-CN": "更新托盘菜单中的某一项",
+        "en-US": "Update menu item of system tray"
+      },
+      "group": "menu",
+      "description": "Update menu item of system tray"
     },
     {
       "name": "destroy",
@@ -215,17 +232,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "tray.destroy",
       "descriptions": {
-        "zh-CN": "销毁托盘",
-        "en-US": "Destroy tray"
-      }
+        "zh-CN": "destroy系统托盘",
+        "en-US": "Destroy system tray"
+      },
+      "group": "create",
+      "description": "Destroy system tray"
     },
     {
       "name": "show_balloon",
@@ -243,17 +263,19 @@
           "name": "title",
           "type": "string",
           "descs": {
-            "zh-CN": "标题",
-            "en-US": "Title"
-          }
+            "zh-CN": "标题文本",
+            "en-US": "Title text"
+          },
+          "desc": "Title text"
         },
         {
           "name": "message",
           "type": "string",
           "descs": {
-            "zh-CN": "消息",
-            "en-US": "Message"
-          }
+            "zh-CN": "消息内容",
+            "en-US": "Message content"
+          },
+          "desc": "Message content"
         },
         {
           "name": "icon_type",
@@ -266,7 +288,7 @@
         },
         {
           "name": "timeout_ms",
-          "type": "u32",
+          "type": "number",
           "descs": {
             "zh-CN": "超时(毫秒)",
             "en-US": "Timeout in ms"
@@ -275,17 +297,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "tray.showBalloon",
       "descriptions": {
-        "zh-CN": "显示气泡通知",
-        "en-US": "Show balloon tip"
-      }
+        "zh-CN": "显示托盘气泡通知",
+        "en-US": "Show balloon of system tray"
+      },
+      "group": "display",
+      "description": "Show balloon of system tray"
     },
     {
       "name": "set_title",
@@ -303,23 +328,27 @@
           "name": "title",
           "type": "string",
           "descs": {
-            "zh-CN": "标题",
-            "en-US": "Title"
-          }
+            "zh-CN": "标题文本",
+            "en-US": "Title text"
+          },
+          "desc": "Title text"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "tray.setTitle",
       "descriptions": {
-        "zh-CN": "设置标题",
-        "en-US": "Set title"
-      }
+        "zh-CN": "设置托盘标题文字",
+        "en-US": "Set title property of system tray"
+      },
+      "group": "display",
+      "description": "Set title property of system tray"
     },
     {
       "name": "set_visible",
@@ -335,25 +364,29 @@
         },
         {
           "name": "visible",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
-            "zh-CN": "可见",
-            "en-US": "Visible"
-          }
+            "zh-CN": "是否可见",
+            "en-US": "Whether visible"
+          },
+          "desc": "Whether visible"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "tray.setVisible",
       "descriptions": {
-        "zh-CN": "设置可见性",
-        "en-US": "Set visibility"
-      }
+        "zh-CN": "设置托盘图标可见性",
+        "en-US": "Set visible property of system tray"
+      },
+      "group": "display",
+      "description": "Set visible property of system tray"
     },
     {
       "name": "set_blink",
@@ -369,7 +402,7 @@
         },
         {
           "name": "enabled",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "启用闪烁",
             "en-US": "Enable blink"
@@ -377,17 +410,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "tray.setBlink",
       "descriptions": {
-        "zh-CN": "设置闪烁",
-        "en-US": "Set blink"
-      }
+        "zh-CN": "设置托盘图标闪烁",
+        "en-US": "Set blink property of system tray"
+      },
+      "group": "display",
+      "description": "Set blink property of system tray"
     },
     {
       "name": "set_badge",
@@ -411,17 +447,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "tray.setBadge",
       "descriptions": {
-        "zh-CN": "设置角标",
-        "en-US": "Set badge"
-      }
+        "zh-CN": "设置托盘图标角标",
+        "en-US": "Set badge property of system tray"
+      },
+      "group": "badge",
+      "description": "Set badge property of system tray"
     },
     {
       "name": "list",
@@ -436,13 +475,215 @@
       },
       "bridge_path": "tray.list",
       "descriptions": {
-        "zh-CN": "列出托盘图标",
-        "en-US": "List tray icons"
-      }
+        "zh-CN": "列出所有已创建的托盘图标实例",
+        "en-US": "List all created tray icon instances"
+      },
+      "group": "display",
+      "description": "List all created tray icon instances"
     }
   ],
   "overviews": {
     "zh-CN": "提供系统托盘图标管理能力，包括托盘图标的创建/更新/删除、菜单管理、气泡通知、点击事件处理等功能。",
     "en-US": "System tray icon management including create/update/delete tray icons, menu management, balloon notifications, and click event handling."
-  }
+  },
+  "types": [
+    {
+      "name": "TrayMenuItem",
+      "descriptions": {
+        "zh-CN": "托盘菜单项定义",
+        "en-US": "Tray menu item definition"
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "菜单项唯一标识",
+            "en-US": "Menu item unique ID"
+          }
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "descs": {
+            "zh-CN": "显示文本",
+            "en-US": "Display text"
+          }
+        },
+        {
+          "name": "enabled",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否启用",
+            "en-US": "Whether enabled"
+          }
+        },
+        {
+          "name": "checked",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否选中（复选菜单）",
+            "en-US": "Whether checked"
+          },
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "TrayHandle",
+      "descriptions": {
+        "zh-CN": "托盘图标句柄",
+        "en-US": "Tray icon handle"
+      },
+      "fields": [
+        {
+          "name": "tray_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "托盘ID",
+            "en-US": "Tray ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "MenuItemProps",
+      "descriptions": {
+        "zh-CN": "菜单项属性",
+        "en-US": "Menu item properties"
+      },
+      "fields": [
+        {
+          "name": "label",
+          "type": "string",
+          "descs": {
+            "zh-CN": "显示文本",
+            "en-US": "Display text"
+          },
+          "optional": true
+        },
+        {
+          "name": "enabled",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否可用",
+            "en-US": "Whether enabled"
+          },
+          "optional": true
+        },
+        {
+          "name": "checked",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否选中",
+            "en-US": "Whether checked"
+          },
+          "optional": true
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图标路径",
+            "en-US": "Icon path"
+          },
+          "optional": true
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "tray_menu_clicked",
+      "descriptions": {
+        "zh-CN": "托盘菜单项被点击",
+        "en-US": "Tray menu item clicked"
+      },
+      "payload": [
+        {
+          "name": "item_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "被点击的菜单项ID",
+            "en-US": "Clicked menu item ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tray_clicked",
+      "descriptions": {
+        "zh-CN": "托盘图标被点击",
+        "en-US": "Tray icon clicked"
+      },
+      "payload": [
+        {
+          "name": "x",
+          "type": "number",
+          "descs": {
+            "zh-CN": "点击位置X坐标",
+            "en-US": "Click X position"
+          }
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "点击位置Y坐标",
+            "en-US": "Click Y position"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tray_click",
+      "descriptions": {
+        "zh-CN": "托盘图标被点击",
+        "en-US": "Tray icon clicked"
+      },
+      "payload": [
+        {
+          "name": "tray_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "托盘ID",
+            "en-US": "Tray ID"
+          }
+        },
+        {
+          "name": "button",
+          "type": "string",
+          "descs": {
+            "zh-CN": "鼠标按键(left/right)",
+            "en-US": "Mouse button (left/right)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "menu_click",
+      "descriptions": {
+        "zh-CN": "托盘菜单项被点击",
+        "en-US": "Tray menu item clicked"
+      },
+      "payload": [
+        {
+          "name": "tray_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "托盘ID",
+            "en-US": "Tray ID"
+          }
+        },
+        {
+          "name": "item_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "菜单项ID",
+            "en-US": "Menu item ID"
+          }
+        }
+      ]
+    }
+  ]
 }

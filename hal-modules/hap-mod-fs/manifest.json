@@ -22,23 +22,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "要读取的文本文件路径",
+            "en-US": "Path to the text file to read"
+          },
+          "desc": "Path to the text file to read",
+          "optional": true
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "内容",
-          "en-US": "Content"
-        }
+          "zh-CN": "文件的完整文本内容",
+          "en-US": "Complete text content of the file"
+        },
+        "desc": "Complete text content of the file"
       },
       "bridge_path": "fs.readTextFile",
       "descriptions": {
-        "zh-CN": "读取文本",
-        "en-US": "Read text"
-      }
+        "zh-CN": "读取文本文件的完整内容并返回字符串",
+        "en-US": "Read complete text file content and return as string"
+      },
+      "group": "file",
+      "description": "Read complete text file content and return as string"
     },
     {
       "name": "write_text_file",
@@ -48,31 +53,37 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "要写入的目标文件路径",
+            "en-US": "Target file path to write"
+          },
+          "desc": "Target file path to write",
+          "optional": true
         },
         {
           "name": "content",
           "type": "string",
           "descs": {
-            "zh-CN": "内容",
-            "en-US": "Content"
-          }
+            "zh-CN": "要写入的文本内容",
+            "en-US": "Text content to write"
+          },
+          "desc": "Text content to write"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "写入是否成功",
+          "en-US": "Whether write succeeded"
+        },
+        "desc": "Whether write succeeded"
       },
       "bridge_path": "fs.writeTextFile",
       "descriptions": {
-        "zh-CN": "写入文本",
-        "en-US": "Write text"
-      }
+        "zh-CN": "将文本内容写入文件，如果文件已存在则覆盖",
+        "en-US": "Write text content to file, overwriting if exists"
+      },
+      "group": "file",
+      "description": "Write text content to file, overwriting if exists"
     },
     {
       "name": "append_text_file",
@@ -82,31 +93,37 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "要追加内容的文件路径",
+            "en-US": "File path to append to"
+          },
+          "desc": "File path to append to",
+          "optional": true
         },
         {
           "name": "content",
           "type": "string",
           "descs": {
-            "zh-CN": "内容",
-            "en-US": "Content"
-          }
+            "zh-CN": "要追加的文本内容",
+            "en-US": "Text content to append"
+          },
+          "desc": "Text content to append"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "追加是否成功",
+          "en-US": "Whether append succeeded"
+        },
+        "desc": "Whether append succeeded"
       },
       "bridge_path": "fs.appendTextFile",
       "descriptions": {
-        "zh-CN": "追加文本",
-        "en-US": "Append text"
-      }
+        "zh-CN": "在文件末尾追加文本内容，不覆盖已有内容",
+        "en-US": "Append text content to end of file without overwriting"
+      },
+      "group": "file",
+      "description": "Append text content to end of file without overwriting"
     },
     {
       "name": "read_binary",
@@ -116,23 +133,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "要读取的二进制文件路径",
+            "en-US": "Path to binary file to read"
+          },
+          "desc": "Path to binary file to read",
+          "optional": true
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "Base64",
-          "en-US": "Base64"
-        }
+          "zh-CN": "文件内容的 Base64 编码字符串",
+          "en-US": "Base64 encoded string of file content"
+        },
+        "desc": "Base64 encoded string of file content"
       },
       "bridge_path": "fs.readBinary",
       "descriptions": {
-        "zh-CN": "读取二进制",
-        "en-US": "Read binary"
-      }
+        "zh-CN": "以二进制模式读取文件，返回 Base64 编码的内容",
+        "en-US": "Read file in binary mode, returns Base64 encoded content"
+      },
+      "group": "file",
+      "description": "Read file in binary mode, returns Base64 encoded content"
     },
     {
       "name": "write_binary",
@@ -142,31 +164,37 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "要写入的目标文件路径",
+            "en-US": "Target file path"
+          },
+          "desc": "Target file path",
+          "optional": true
         },
         {
           "name": "data",
           "type": "string",
           "descs": {
-            "zh-CN": "Base64",
-            "en-US": "Base64"
-          }
+            "zh-CN": "Base64 编码的二进制数据",
+            "en-US": "Base64 encoded binary data"
+          },
+          "desc": "Base64 encoded binary data"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "写入是否成功",
+          "en-US": "Whether write succeeded"
+        },
+        "desc": "Whether write succeeded"
       },
       "bridge_path": "fs.writeBinary",
       "descriptions": {
-        "zh-CN": "写入二进制",
-        "en-US": "Write binary"
-      }
+        "zh-CN": "将 Base64 编码的数据解码后写入二进制文件",
+        "en-US": "Decode Base64 data and write to binary file"
+      },
+      "group": "file",
+      "description": "Decode Base64 data and write to binary file"
     },
     {
       "name": "exists",
@@ -176,23 +204,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "要检查的文件或目录路径",
+            "en-US": "Path to check"
+          },
+          "desc": "Path to check",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "是否存在",
-          "en-US": "Exists"
-        }
+          "zh-CN": "路径是否存在（true/false）",
+          "en-US": "Whether path exists"
+        },
+        "desc": "Whether path exists"
       },
       "bridge_path": "fs.exists",
       "descriptions": {
-        "zh-CN": "检查是否存在",
-        "en-US": "Check exists"
-      }
+        "zh-CN": "检查文件或目录在指定路径是否存在",
+        "en-US": "Check if file or directory exists at path"
+      },
+      "group": "info",
+      "description": "Check if file or directory exists at path"
     },
     {
       "name": "stat",
@@ -202,23 +235,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "要查询的文件或目录路径",
+            "en-US": "Path to query"
+          },
+          "desc": "Path to query",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "FileStat",
         "descs": {
-          "zh-CN": "状态",
-          "en-US": "Stat"
-        }
+          "zh-CN": "FileStat类型的结果对象",
+          "en-US": "Result object of type FileStat"
+        },
+        "desc": "Result object of type FileStat"
       },
       "bridge_path": "fs.stat",
       "descriptions": {
-        "zh-CN": "获取文件状态",
-        "en-US": "File stat"
-      }
+        "zh-CN": "获取文件或目录的详细元信息（大小、创建时间、修改时间、权限等）",
+        "en-US": "Get detailed file/directory metadata (size, times, permissions)"
+      },
+      "group": "info",
+      "description": "Get detailed file/directory metadata (size, times, permissions)"
     },
     {
       "name": "list_dir",
@@ -228,23 +266,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "要列出内容的目录路径",
+            "en-US": "Directory path to list"
+          },
+          "desc": "Directory path to list",
+          "optional": true
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "条目",
-          "en-US": "Entries"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "fs.listDir",
       "descriptions": {
-        "zh-CN": "列出目录内容",
-        "en-US": "List directory"
-      }
+        "zh-CN": "列出指定目录下的所有文件和子目录名称",
+        "en-US": "List all files and subdirectories in a directory"
+      },
+      "group": "dir",
+      "description": "List all files and subdirectories in a directory"
     },
     {
       "name": "glob",
@@ -254,23 +297,27 @@
           "name": "pattern",
           "type": "string",
           "descs": {
-            "zh-CN": "模式",
-            "en-US": "Pattern"
-          }
+            "zh-CN": "匹配模式",
+            "en-US": "Match pattern"
+          },
+          "desc": "Match pattern"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "路径",
-          "en-US": "Paths"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "fs.glob",
       "descriptions": {
-        "zh-CN": "通配搜索",
-        "en-US": "Glob search"
-      }
+        "zh-CN": "使用通配符模式匹配搜索文件路径",
+        "en-US": "Search file paths using glob wildcard pattern"
+      },
+      "group": "dir",
+      "description": "Search file paths using glob wildcard pattern"
     },
     {
       "name": "mkdir",
@@ -280,23 +327,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "要创建的目录路径",
+            "en-US": "Directory path to create"
+          },
+          "desc": "Directory path to create",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.mkdir",
       "descriptions": {
-        "zh-CN": "创建目录",
-        "en-US": "Create directory"
-      }
+        "zh-CN": "创建目录，如果父目录不存在则递归创建整个路径",
+        "en-US": "Create directory, recursively creating parent dirs if needed"
+      },
+      "group": "dir",
+      "description": "Create directory, recursively creating parent dirs if needed"
     },
     {
       "name": "copy",
@@ -306,31 +358,36 @@
           "name": "source",
           "type": "string",
           "descs": {
-            "zh-CN": "源",
-            "en-US": "Source"
-          }
+            "zh-CN": "源文件路径",
+            "en-US": "Source file path"
+          },
+          "desc": "Source file path"
         },
         {
           "name": "dest",
           "type": "string",
           "descs": {
-            "zh-CN": "目标",
-            "en-US": "Dest"
-          }
+            "zh-CN": "目标路径",
+            "en-US": "Destination path"
+          },
+          "desc": "Destination path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.copy",
       "descriptions": {
-        "zh-CN": "复制文件",
-        "en-US": "Copy file"
-      }
+        "zh-CN": "复制文件或目录到目标路径（支持递归复制目录）",
+        "en-US": "Copy file or directory to target path (recursive for dirs)"
+      },
+      "group": "operate",
+      "description": "Copy file or directory to target path (recursive for dirs)"
     },
     {
       "name": "copy_dir",
@@ -340,31 +397,36 @@
           "name": "source",
           "type": "string",
           "descs": {
-            "zh-CN": "源",
-            "en-US": "Source"
-          }
+            "zh-CN": "源文件路径",
+            "en-US": "Source file path"
+          },
+          "desc": "Source file path"
         },
         {
           "name": "dest",
           "type": "string",
           "descs": {
-            "zh-CN": "目标",
-            "en-US": "Dest"
-          }
+            "zh-CN": "目标路径",
+            "en-US": "Destination path"
+          },
+          "desc": "Destination path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.copyDir",
       "descriptions": {
-        "zh-CN": "复制目录",
-        "en-US": "Copy directory"
-      }
+        "zh-CN": "递归复制整个目录",
+        "en-US": "Copy dir of filesystem"
+      },
+      "group": "operate",
+      "description": "Copy dir of filesystem"
     },
     {
       "name": "move",
@@ -374,31 +436,36 @@
           "name": "source",
           "type": "string",
           "descs": {
-            "zh-CN": "源",
-            "en-US": "Source"
-          }
+            "zh-CN": "源文件路径",
+            "en-US": "Source file path"
+          },
+          "desc": "Source file path"
         },
         {
           "name": "dest",
           "type": "string",
           "descs": {
-            "zh-CN": "目标",
-            "en-US": "Dest"
-          }
+            "zh-CN": "目标路径",
+            "en-US": "Destination path"
+          },
+          "desc": "Destination path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.move",
       "descriptions": {
-        "zh-CN": "移动文件",
-        "en-US": "Move file"
-      }
+        "zh-CN": "移动文件或目录到新的路径位置",
+        "en-US": "Move file or directory to new path location"
+      },
+      "group": "operate",
+      "description": "Move file or directory to new path location"
     },
     {
       "name": "remove",
@@ -408,23 +475,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.remove",
       "descriptions": {
-        "zh-CN": "删除",
-        "en-US": "Remove"
-      }
+        "zh-CN": "删除文件或目录（目录支持递归删除）",
+        "en-US": "Remove file or directory (recursive for directories)"
+      },
+      "group": "operate",
+      "description": "Remove file or directory (recursive for directories)"
     },
     {
       "name": "symlink",
@@ -434,31 +506,36 @@
           "name": "target",
           "type": "string",
           "descs": {
-            "zh-CN": "目标",
-            "en-US": "Target"
-          }
+            "zh-CN": "目标路径或地址",
+            "en-US": "Target path or address"
+          },
+          "desc": "Target path or address"
         },
         {
           "name": "link",
           "type": "string",
           "descs": {
-            "zh-CN": "链接",
-            "en-US": "Link"
-          }
+            "zh-CN": "符号链接的创建路径",
+            "en-US": "Path to create symbolic link"
+          },
+          "desc": "Path to create symbolic link"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.symlink",
       "descriptions": {
         "zh-CN": "创建符号链接",
-        "en-US": "Create symlink"
-      }
+        "en-US": "Symlink filesystem"
+      },
+      "group": "operate",
+      "description": "Symlink filesystem"
     },
     {
       "name": "read_link",
@@ -468,23 +545,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "目标",
-          "en-US": "Target"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "fs.readLink",
       "descriptions": {
-        "zh-CN": "读取符号链接",
-        "en-US": "Read symlink"
-      }
+        "zh-CN": "读取符号链接目标",
+        "en-US": "Read link of filesystem"
+      },
+      "group": "operate",
+      "description": "Read link of filesystem"
     },
     {
       "name": "set_permissions",
@@ -494,23 +576,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.setPermissions",
       "descriptions": {
         "zh-CN": "设置文件权限",
-        "en-US": "Set perms"
-      }
+        "en-US": "Set permissions property of filesystem"
+      },
+      "group": "operate",
+      "description": "Set permissions property of filesystem"
     },
     {
       "name": "temp_file",
@@ -519,15 +606,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "路径",
-          "en-US": "Path"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "fs.tempFile",
       "descriptions": {
         "zh-CN": "创建临时文件",
-        "en-US": "Temp file"
-      }
+        "en-US": "Temp file of filesystem"
+      },
+      "group": "operate",
+      "description": "Temp file of filesystem"
     },
     {
       "name": "temp_dir",
@@ -536,15 +626,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "路径",
-          "en-US": "Path"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "fs.tempDir",
       "descriptions": {
-        "zh-CN": "创建临时目录",
-        "en-US": "Temp dir"
-      }
+        "zh-CN": "获取临时目录路径",
+        "en-US": "Temp dir of filesystem"
+      },
+      "group": "operate",
+      "description": "Temp dir of filesystem"
     },
     {
       "name": "watch",
@@ -554,23 +647,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "WatchHandle",
         "descs": {
-          "zh-CN": "监视器",
-          "en-US": "Watcher"
-        }
+          "zh-CN": "WatchHandle类型的结果对象",
+          "en-US": "Result object of type WatchHandle"
+        },
+        "desc": "Result object of type WatchHandle"
       },
       "bridge_path": "fs.watch",
       "descriptions": {
-        "zh-CN": "监视路径",
-        "en-US": "Watch path"
-      }
+        "zh-CN": "监视文件或目录的变化（创建/修改/删除）",
+        "en-US": "Watch file or directory for changes (create/modify/delete)"
+      },
+      "group": "watch",
+      "description": "Watch file or directory for changes (create/modify/delete)"
     },
     {
       "name": "unwatch",
@@ -580,23 +678,27 @@
           "name": "watcher_id",
           "type": "string",
           "descs": {
-            "zh-CN": "ID",
-            "en-US": "ID"
-          }
+            "zh-CN": "watcher_id参数",
+            "en-US": "watcher_id parameter"
+          },
+          "desc": "watcher_id parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.unwatch",
       "descriptions": {
-        "zh-CN": "取消监视",
-        "en-US": "Unwatch"
-      }
+        "zh-CN": "unwatch文件系统",
+        "en-US": "Unwatch filesystem"
+      },
+      "group": "watch",
+      "description": "Unwatch filesystem"
     },
     {
       "name": "list_watchers",
@@ -605,22 +707,25 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "监视器",
-          "en-US": "Watchers"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "fs.listWatchers",
       "descriptions": {
-        "zh-CN": "列出监视器",
-        "en-US": "List watchers"
-      }
+        "zh-CN": "列出watchers",
+        "en-US": "List watchers of filesystem"
+      },
+      "group": "watch",
+      "description": "List watchers of filesystem"
     },
     {
       "name": "disk_usage",
       "symbol": "hap_fs_disk_usage",
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "DiskUsage",
         "descs": {
           "zh-CN": "使用情况",
           "en-US": "Usage"
@@ -628,9 +733,11 @@
       },
       "bridge_path": "fs.diskUsage",
       "descriptions": {
-        "zh-CN": "磁盘使用情况",
-        "en-US": "Disk usage"
-      }
+        "zh-CN": "获取磁盘使用情况",
+        "en-US": "Disk usage of filesystem"
+      },
+      "group": "system",
+      "description": "Disk usage of filesystem"
     },
     {
       "name": "is_dir",
@@ -640,23 +747,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "目录",
-          "en-US": "Dir"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.isDir",
       "descriptions": {
-        "zh-CN": "是否目录",
-        "en-US": "Is directory"
-      }
+        "zh-CN": "检查路径是否为目录",
+        "en-US": "Check if filesystem dir"
+      },
+      "group": "info",
+      "description": "Check if filesystem dir"
     },
     {
       "name": "is_file",
@@ -666,23 +778,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "文件",
-          "en-US": "File"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.isFile",
       "descriptions": {
-        "zh-CN": "是否文件",
-        "en-US": "Is file"
-      }
+        "zh-CN": "检查路径是否为文件",
+        "en-US": "Check if filesystem file"
+      },
+      "group": "info",
+      "description": "Check if filesystem file"
     },
     {
       "name": "file_size",
@@ -692,23 +809,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "字节",
-          "en-US": "Bytes"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "fs.fileSize",
       "descriptions": {
-        "zh-CN": "文件大小",
-        "en-US": "File size"
-      }
+        "zh-CN": "获取文件大小（字节）",
+        "en-US": "File size of filesystem"
+      },
+      "group": "info",
+      "description": "File size of filesystem"
     },
     {
       "name": "real_path",
@@ -718,23 +840,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已解析",
-          "en-US": "Resolved"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "fs.realPath",
       "descriptions": {
-        "zh-CN": "真实路径",
-        "en-US": "Real path"
-      }
+        "zh-CN": "获取文件真实绝对路径",
+        "en-US": "Real path of filesystem"
+      },
+      "group": "info",
+      "description": "Real path of filesystem"
     },
     {
       "name": "join_path",
@@ -752,15 +879,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "已拼接",
-          "en-US": "Joined"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "fs.joinPath",
       "descriptions": {
-        "zh-CN": "拼接路径s",
-        "en-US": "Join paths"
-      }
+        "zh-CN": "拼接路径片段",
+        "en-US": "Join path of filesystem"
+      },
+      "group": "info",
+      "description": "Join path of filesystem"
     },
     {
       "name": "parent_path",
@@ -770,23 +900,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "父级",
-          "en-US": "Parent"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "fs.parentPath",
       "descriptions": {
-        "zh-CN": "父级路径",
-        "en-US": "Parent path"
-      }
+        "zh-CN": "获取上级目录路径",
+        "en-US": "Parent path of filesystem"
+      },
+      "group": "info",
+      "description": "Parent path of filesystem"
     },
     {
       "name": "file_name",
@@ -796,23 +931,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "名称",
-          "en-US": "Name"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "fs.fileName",
       "descriptions": {
-        "zh-CN": "文件名",
-        "en-US": "File name"
-      }
+        "zh-CN": "获取路径中的文件名部分",
+        "en-US": "File name of filesystem"
+      },
+      "group": "info",
+      "description": "File name of filesystem"
     },
     {
       "name": "extension",
@@ -822,23 +962,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "扩展名",
-          "en-US": "Ext"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "fs.extension",
       "descriptions": {
-        "zh-CN": "扩展名",
-        "en-US": "Extension"
-      }
+        "zh-CN": "extension文件系统",
+        "en-US": "Extension filesystem"
+      },
+      "group": "info",
+      "description": "Extension filesystem"
     },
     {
       "name": "touch",
@@ -848,23 +993,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.touch",
       "descriptions": {
-        "zh-CN": "更新文件时间",
-        "en-US": "Touch file"
-      }
+        "zh-CN": "创建空文件或更新已有文件的修改时间",
+        "en-US": "Create empty file or update modification time"
+      },
+      "group": "operate",
+      "description": "Create empty file or update modification time"
     },
     {
       "name": "read_binary_range",
@@ -874,25 +1024,29 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         },
         {
           "name": "offset",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "偏移",
-            "en-US": "Offset"
-          }
+            "zh-CN": "起始偏移量",
+            "en-US": "Starting offset"
+          },
+          "desc": "Starting offset"
         },
         {
           "name": "length",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "长度",
-            "en-US": "Length"
-          }
+            "zh-CN": "读取的字节长度",
+            "en-US": "Number of bytes to read"
+          },
+          "desc": "Number of bytes to read"
         }
       ],
       "returns": {
@@ -904,9 +1058,11 @@
       },
       "bridge_path": "fs.readBinaryRange",
       "descriptions": {
-        "zh-CN": "读取范围",
-        "en-US": "Read range"
-      }
+        "zh-CN": "读取binary range数据",
+        "en-US": "Read binary range of filesystem"
+      },
+      "group": "file",
+      "description": "Read binary range of filesystem"
     },
     {
       "name": "checksum",
@@ -916,31 +1072,38 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         },
         {
           "name": "algorithm",
           "type": "string",
           "descs": {
-            "zh-CN": "算法",
-            "en-US": "Algorithm"
-          }
+            "zh-CN": "算法名称",
+            "en-US": "Algorithm name"
+          },
+          "desc": "Algorithm name",
+          "optional": true
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "哈希",
-          "en-US": "Hash"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "fs.checksum",
       "descriptions": {
-        "zh-CN": "校验和",
-        "en-US": "Checksum"
-      }
+        "zh-CN": "checksum文件系统",
+        "en-US": "Checksum filesystem"
+      },
+      "group": "info",
+      "description": "Checksum filesystem"
     },
     {
       "name": "read_text_lines",
@@ -950,23 +1113,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "array",
         "descs": {
-          "zh-CN": "行",
-          "en-US": "Lines"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "fs.readTextLines",
       "descriptions": {
-        "zh-CN": "读取行",
-        "en-US": "Read lines"
-      }
+        "zh-CN": "读取text lines数据",
+        "en-US": "Read text lines of filesystem"
+      },
+      "group": "file",
+      "description": "Read text lines of filesystem"
     },
     {
       "name": "write_atomic",
@@ -976,31 +1144,37 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         },
         {
           "name": "content",
           "type": "string",
           "descs": {
-            "zh-CN": "内容",
-            "en-US": "Content"
-          }
+            "zh-CN": "文本内容",
+            "en-US": "Text content"
+          },
+          "desc": "Text content"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.writeAtomic",
       "descriptions": {
-        "zh-CN": "原子写入",
-        "en-US": "Atomic write"
-      }
+        "zh-CN": "写入atomic数据",
+        "en-US": "Write atomic of filesystem"
+      },
+      "group": "file",
+      "description": "Write atomic of filesystem"
     },
     {
       "name": "hard_link",
@@ -1010,31 +1184,36 @@
           "name": "source",
           "type": "string",
           "descs": {
-            "zh-CN": "源",
-            "en-US": "Source"
-          }
+            "zh-CN": "源文件路径",
+            "en-US": "Source file path"
+          },
+          "desc": "Source file path"
         },
         {
           "name": "link",
           "type": "string",
           "descs": {
-            "zh-CN": "链接",
-            "en-US": "Link"
-          }
+            "zh-CN": "硬链接的创建路径",
+            "en-US": "Path to create hard link"
+          },
+          "desc": "Path to create hard link"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.hardLink",
       "descriptions": {
-        "zh-CN": "硬链接",
-        "en-US": "Hard link"
-      }
+        "zh-CN": "创建硬链接",
+        "en-US": "Hard link of filesystem"
+      },
+      "group": "operate",
+      "description": "Hard link of filesystem"
     },
     {
       "name": "line_count",
@@ -1044,23 +1223,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "行",
-          "en-US": "Lines"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "fs.lineCount",
       "descriptions": {
-        "zh-CN": "行数量",
-        "en-US": "Line count"
-      }
+        "zh-CN": "统计文件行数",
+        "en-US": "Line count of filesystem"
+      },
+      "group": "info",
+      "description": "Line count of filesystem"
     },
     {
       "name": "file_type",
@@ -1070,23 +1254,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "类型",
-          "en-US": "Type"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "fs.fileType",
       "descriptions": {
-        "zh-CN": "文件类型",
-        "en-US": "File type"
-      }
+        "zh-CN": "获取文件的 MIME 类型",
+        "en-US": "File type of filesystem"
+      },
+      "group": "info",
+      "description": "File type of filesystem"
     },
     {
       "name": "search_content",
@@ -1096,31 +1285,36 @@
           "name": "dir",
           "type": "string",
           "descs": {
-            "zh-CN": "目录",
-            "en-US": "Dir"
-          }
+            "zh-CN": "目录路径",
+            "en-US": "Directory path"
+          },
+          "desc": "Directory path"
         },
         {
           "name": "pattern",
           "type": "string",
           "descs": {
-            "zh-CN": "模式",
-            "en-US": "Pattern"
-          }
+            "zh-CN": "匹配模式",
+            "en-US": "Match pattern"
+          },
+          "desc": "Match pattern"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "匹配项",
-          "en-US": "Matches"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "fs.searchContent",
       "descriptions": {
-        "zh-CN": "搜索内容",
-        "en-US": "Search content"
-      }
+        "zh-CN": "在文件内容中搜索匹配文本",
+        "en-US": "Search content of filesystem"
+      },
+      "group": "search",
+      "description": "Search content of filesystem"
     },
     {
       "name": "normalize_path",
@@ -1130,9 +1324,11 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
@@ -1144,9 +1340,11 @@
       },
       "bridge_path": "fs.normalizePath",
       "descriptions": {
-        "zh-CN": "规范化",
-        "en-US": "Normalize"
-      }
+        "zh-CN": "规范化路径（解析 .. 和 .）",
+        "en-US": "Normalize path of filesystem"
+      },
+      "group": "info",
+      "description": "Normalize path of filesystem"
     },
     {
       "name": "truncate",
@@ -1156,31 +1354,37 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         },
         {
           "name": "size",
-          "type": "i64",
+          "type": "number",
           "descs": {
-            "zh-CN": "大小",
-            "en-US": "Size"
-          }
+            "zh-CN": "大小数值",
+            "en-US": "Size value"
+          },
+          "desc": "Size value"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.truncate",
       "descriptions": {
-        "zh-CN": "截断文件",
-        "en-US": "Truncate"
-      }
+        "zh-CN": "truncate文件系统",
+        "en-US": "Truncate filesystem"
+      },
+      "group": "file",
+      "description": "Truncate filesystem"
     },
     {
       "name": "lock_file",
@@ -1190,23 +1394,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "LockHandle",
         "descs": {
-          "zh-CN": "锁定",
-          "en-US": "Lock"
-        }
+          "zh-CN": "LockHandle类型的结果对象",
+          "en-US": "Result object of type LockHandle"
+        },
+        "desc": "Result object of type LockHandle"
       },
       "bridge_path": "fs.lockFile",
       "descriptions": {
-        "zh-CN": "锁定文件",
-        "en-US": "Lock file"
-      }
+        "zh-CN": "锁定文件（防止并发写入）",
+        "en-US": "Lock file of filesystem"
+      },
+      "group": "lock",
+      "description": "Lock file of filesystem"
     },
     {
       "name": "unlock_file",
@@ -1222,17 +1431,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "fs.unlockFile",
       "descriptions": {
-        "zh-CN": "解锁",
-        "en-US": "Unlock"
-      }
+        "zh-CN": "解锁文件",
+        "en-US": "Unlock file of filesystem"
+      },
+      "group": "lock",
+      "description": "Unlock file of filesystem"
     },
     {
       "name": "dir_size",
@@ -1242,23 +1454,28 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "字节",
-          "en-US": "Bytes"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "fs.dirSize",
       "descriptions": {
-        "zh-CN": "目录大小",
-        "en-US": "Dir size"
-      }
+        "zh-CN": "计算目录总大小",
+        "en-US": "Dir size of filesystem"
+      },
+      "group": "info",
+      "description": "Dir size of filesystem"
     },
     {
       "name": "compare",
@@ -1282,17 +1499,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "CompareResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "CompareResult类型的结果对象",
+          "en-US": "Result object of type CompareResult"
+        },
+        "desc": "Result object of type CompareResult"
       },
       "bridge_path": "fs.compare",
       "descriptions": {
-        "zh-CN": "比较文件",
-        "en-US": "Compare files"
-      }
+        "zh-CN": "compare文件系统",
+        "en-US": "Compare filesystem"
+      },
+      "group": "info",
+      "description": "Compare filesystem"
     },
     {
       "name": "list_locks",
@@ -1301,19 +1521,274 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "锁",
-          "en-US": "Locks"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "fs.listLocks",
       "descriptions": {
-        "zh-CN": "列出锁",
-        "en-US": "List locks"
-      }
+        "zh-CN": "列出locks",
+        "en-US": "List locks of filesystem"
+      },
+      "group": "lock",
+      "description": "List locks of filesystem"
     }
   ],
   "overviews": {
     "zh-CN": "提供文件系统操作能力，包括文件/目录的创建、读写、复制、移动、删除、权限管理、监控变化、临时文件管理等。支持文本和二进制文件操作、文件锁、符号链接等。",
     "en-US": "File system operations including create, read, write, copy, move, delete, permissions, change monitoring, and temp file management. Supports text/binary files, file locks, and symlinks."
-  }
+  },
+  "types": [
+    {
+      "name": "FileStat",
+      "descriptions": {
+        "zh-CN": "文件状态信息",
+        "en-US": "File status info"
+      },
+      "fields": [
+        {
+          "name": "size",
+          "type": "number",
+          "descs": {
+            "zh-CN": "文件大小(字节)",
+            "en-US": "File size(bytes)"
+          }
+        },
+        {
+          "name": "is_dir",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否目录",
+            "en-US": "Is directory"
+          }
+        },
+        {
+          "name": "is_file",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否文件",
+            "en-US": "Is file"
+          }
+        },
+        {
+          "name": "created",
+          "type": "number",
+          "descs": {
+            "zh-CN": "创建时间戳(ms)",
+            "en-US": "Created timestamp(ms)"
+          }
+        },
+        {
+          "name": "modified",
+          "type": "number",
+          "descs": {
+            "zh-CN": "修改时间戳(ms)",
+            "en-US": "Modified timestamp(ms)"
+          }
+        },
+        {
+          "name": "readonly",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否只读",
+            "en-US": "Is readonly"
+          }
+        }
+      ]
+    },
+    {
+      "name": "WatchEvent",
+      "descriptions": {
+        "zh-CN": "文件监听事件",
+        "en-US": "File watch event"
+      },
+      "fields": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "变更文件路径",
+            "en-US": "Changed file path"
+          }
+        },
+        {
+          "name": "event",
+          "type": "string",
+          "descs": {
+            "zh-CN": "事件类型(create/modify/delete/rename)",
+            "en-US": "Event type"
+          }
+        },
+        {
+          "name": "timestamp",
+          "type": "number",
+          "descs": {
+            "zh-CN": "时间戳(ms)",
+            "en-US": "Timestamp(ms)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "WatchHandle",
+      "descriptions": {
+        "zh-CN": "文件监听句柄",
+        "en-US": "Watch handle"
+      },
+      "fields": [
+        {
+          "name": "watch_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监听ID",
+            "en-US": "Watch ID"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监听路径",
+            "en-US": "Watched path"
+          }
+        }
+      ]
+    },
+    {
+      "name": "DiskUsage",
+      "descriptions": {
+        "zh-CN": "磁盘使用情况",
+        "en-US": "Disk usage"
+      },
+      "fields": [
+        {
+          "name": "total",
+          "type": "number",
+          "descs": {
+            "zh-CN": "总空间(字节)",
+            "en-US": "Total(bytes)"
+          }
+        },
+        {
+          "name": "used",
+          "type": "number",
+          "descs": {
+            "zh-CN": "已用空间",
+            "en-US": "Used(bytes)"
+          }
+        },
+        {
+          "name": "free",
+          "type": "number",
+          "descs": {
+            "zh-CN": "可用空间",
+            "en-US": "Free(bytes)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "LockHandle",
+      "descriptions": {
+        "zh-CN": "文件锁句柄",
+        "en-US": "File lock handle"
+      },
+      "fields": [
+        {
+          "name": "lock_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "锁ID",
+            "en-US": "Lock ID"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "锁定路径",
+            "en-US": "Locked path"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CompareResult",
+      "descriptions": {
+        "zh-CN": "文件比较结果",
+        "en-US": "File compare result"
+      },
+      "fields": [
+        {
+          "name": "identical",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否相同",
+            "en-US": "Is identical"
+          }
+        },
+        {
+          "name": "size_diff",
+          "type": "number",
+          "descs": {
+            "zh-CN": "大小差异",
+            "en-US": "Size difference"
+          }
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "change",
+      "descriptions": {
+        "zh-CN": "文件变更事件",
+        "en-US": "File change event"
+      },
+      "payload": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "变更路径",
+            "en-US": "Changed path"
+          }
+        },
+        {
+          "name": "event",
+          "type": "string",
+          "descs": {
+            "zh-CN": "事件类型(create/modify/delete/rename)",
+            "en-US": "Event type"
+          }
+        }
+      ]
+    },
+    {
+      "name": "file_change",
+      "descriptions": {
+        "zh-CN": "文件/目录变化事件",
+        "en-US": "File/directory change event"
+      },
+      "payload": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "变化的文件路径",
+            "en-US": "Changed file path"
+          }
+        },
+        {
+          "name": "event_type",
+          "type": "string",
+          "descs": {
+            "zh-CN": "事件类型(create/modify/delete/rename)",
+            "en-US": "Event type (create/modify/delete/rename)"
+          }
+        }
+      ]
+    }
+  ]
 }

@@ -50,16 +50,9 @@ mod tests {
     }
 
     #[test]
-    fn test_open_close() {
+    fn test_open_nonexistent_device() {
         let r = call(funcs::hap_usb_open, json!({ "vendor_id": 9999, "product_id": 9999 }));
-        assert!(r.get("handle_id").is_some());
-        let hid = r["handle_id"].as_str().unwrap().to_string();
-
-        let info = call(funcs::hap_usb_get_device_info, json!({ "handle_id": hid }));
-        assert_eq!(info["vendor_id"], 9999);
-
-        let c = call(funcs::hap_usb_close, json!({ "handle_id": hid }));
-        assert_eq!(c, json!(true));
+        assert!(r.get("error").is_some());
     }
 
     #[test]

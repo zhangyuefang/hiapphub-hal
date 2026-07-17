@@ -22,31 +22,34 @@
           "name": "source",
           "type": "string",
           "descs": {
-            "zh-CN": "源",
-            "en-US": "Source"
-          }
+            "zh-CN": "本地音频文件路径",
+            "en-US": "Local audio file path"
+          },
+          "desc": "Local audio file path"
         },
         {
           "name": "volume",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "音量 0-1",
-            "en-US": "Volume 0-1"
+            "zh-CN": "播放音量（0.0-1.0，1.0为最大音量）",
+            "en-US": "Volume level (0.0-1.0)"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Volume level (0.0-1.0)"
         },
         {
           "name": "callback_id",
           "type": "string",
           "descs": {
-            "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "zh-CN": "播放完成时的回调标识",
+            "en-US": "Callback ID for playback completion"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Callback ID for playback completion"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "PlayHandle",
         "descs": {
           "zh-CN": "播放器信息",
           "en-US": "Player info"
@@ -54,9 +57,12 @@
       },
       "bridge_path": "audio.play",
       "descriptions": {
-        "zh-CN": "播放音频文件",
-        "en-US": "Play audio file"
-      }
+        "zh-CN": "播放本地音频文件，支持调节音量和播放完成回调",
+        "en-US": "Play local audio file with volume control and completion callback"
+      },
+      "group": "playback",
+      "async": true,
+      "description": "Play local audio file with volume control and completion callback"
     },
     {
       "name": "play_url",
@@ -66,13 +72,14 @@
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "音频 URL",
-            "en-US": "Audio URL"
-          }
+            "zh-CN": "音频资源的网络URL地址",
+            "en-US": "Audio resource URL"
+          },
+          "desc": "Audio resource URL"
         },
         {
           "name": "volume",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "音量 0-1",
             "en-US": "Volume 0-1"
@@ -90,7 +97,7 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "PlayHandle",
         "descs": {
           "zh-CN": "播放器信息",
           "en-US": "Player info"
@@ -98,9 +105,12 @@
       },
       "bridge_path": "audio.playUrl",
       "descriptions": {
-        "zh-CN": "播放音频 URL",
-        "en-US": "Play audio URL"
-      }
+        "zh-CN": "播放网络音频流URL，支持HTTP/HTTPS音频资源",
+        "en-US": "Play audio from network URL (HTTP/HTTPS)"
+      },
+      "group": "playback",
+      "async": true,
+      "description": "Play audio from network URL (HTTP/HTTPS)"
     },
     {
       "name": "pause",
@@ -110,23 +120,27 @@
           "name": "player_id",
           "type": "string",
           "descs": {
-            "zh-CN": "播放器 ID",
-            "en-US": "Player ID"
-          }
+            "zh-CN": "要暂停的播放器实例ID",
+            "en-US": "Player instance ID to pause"
+          },
+          "desc": "Player instance ID to pause"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.pause",
       "descriptions": {
-        "zh-CN": "暂停",
-        "en-US": "Pause"
-      }
+        "zh-CN": "暂停当前正在播放的音频（可通过 resume 恢复）",
+        "en-US": "Pause currently playing audio (can be resumed)"
+      },
+      "group": "playback",
+      "description": "Pause currently playing audio (can be resumed)"
     },
     {
       "name": "resume",
@@ -142,17 +156,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.resume",
       "descriptions": {
-        "zh-CN": "恢复",
-        "en-US": "Resume"
-      }
+        "zh-CN": "恢复之前暂停的音频播放",
+        "en-US": "Resume previously paused audio playback"
+      },
+      "group": "playback",
+      "description": "Resume previously paused audio playback"
     },
     {
       "name": "stop",
@@ -168,34 +185,40 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.stop",
       "descriptions": {
-        "zh-CN": "停止",
-        "en-US": "Stop"
-      }
+        "zh-CN": "完全停止音频播放并释放资源",
+        "en-US": "Completely stop audio playback and release resources"
+      },
+      "group": "playback",
+      "description": "Completely stop audio playback and release resources"
     },
     {
       "name": "stop_all",
       "symbol": "hap_audio_stop_all",
       "params": [],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.stopAll",
       "descriptions": {
-        "zh-CN": "停止所有",
-        "en-US": "Stop all"
-      }
+        "zh-CN": "停止所有正在播放的音频实例",
+        "en-US": "Stop all currently playing audio instances"
+      },
+      "group": "playback",
+      "description": "Stop all currently playing audio instances"
     },
     {
       "name": "set_volume",
@@ -211,25 +234,30 @@
         },
         {
           "name": "volume",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "0-1",
-            "en-US": "0-1"
-          }
+            "zh-CN": "音量（0.0-1.0）",
+            "en-US": "Volume (0.0-1.0)"
+          },
+          "desc": "Volume (0.0-1.0)",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.setVolume",
       "descriptions": {
-        "zh-CN": "设置音量",
-        "en-US": "Set volume"
-      }
+        "zh-CN": "设置音频播放实例的音量大小",
+        "en-US": "Set volume property of audio"
+      },
+      "group": "playback",
+      "description": "Set volume property of audio"
     },
     {
       "name": "set_speed",
@@ -245,25 +273,29 @@
         },
         {
           "name": "speed",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "速度",
-            "en-US": "Speed"
-          }
+            "zh-CN": "播放速度倍率",
+            "en-US": "Playback speed multiplier"
+          },
+          "desc": "Playback speed multiplier"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.setSpeed",
       "descriptions": {
-        "zh-CN": "设置速度",
-        "en-US": "Set speed"
-      }
+        "zh-CN": "设置音频播放的速度倍率",
+        "en-US": "Set speed property of audio"
+      },
+      "group": "playback",
+      "description": "Set speed property of audio"
     },
     {
       "name": "get_position",
@@ -279,17 +311,20 @@
         }
       ],
       "returns": {
-        "type": "f64",
+        "type": "number",
         "descs": {
-          "zh-CN": "ms",
-          "en-US": "ms"
-        }
+          "zh-CN": "f64类型的结果对象",
+          "en-US": "Result object of type f64"
+        },
+        "desc": "Result object of type f64"
       },
       "bridge_path": "audio.getPosition",
       "descriptions": {
-        "zh-CN": "获取位置",
-        "en-US": "Get position"
-      }
+        "zh-CN": "获取音频当前的播放位置（毫秒）",
+        "en-US": "Get position info of audio"
+      },
+      "group": "playback",
+      "description": "Get position info of audio"
     },
     {
       "name": "get_duration",
@@ -305,17 +340,20 @@
         }
       ],
       "returns": {
-        "type": "f64",
+        "type": "number",
         "descs": {
-          "zh-CN": "ms",
-          "en-US": "ms"
-        }
+          "zh-CN": "f64类型的结果对象",
+          "en-US": "Result object of type f64"
+        },
+        "desc": "Result object of type f64"
       },
       "bridge_path": "audio.getDuration",
       "descriptions": {
-        "zh-CN": "获取时长",
-        "en-US": "Get duration"
-      }
+        "zh-CN": "获取音频文件的总时长（毫秒）",
+        "en-US": "Get duration info of audio"
+      },
+      "group": "playback",
+      "description": "Get duration info of audio"
     },
     {
       "name": "seek",
@@ -331,25 +369,29 @@
         },
         {
           "name": "position_ms",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "ms",
-            "en-US": "ms"
-          }
+            "zh-CN": "position_ms参数",
+            "en-US": "position_ms parameter"
+          },
+          "desc": "position_ms parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.seek",
       "descriptions": {
-        "zh-CN": "定位",
-        "en-US": "Seek"
-      }
+        "zh-CN": "跳转到音频的指定时间位置",
+        "en-US": "Seek to specified time position in audio"
+      },
+      "group": "playback",
+      "description": "Seek to specified time position in audio"
     },
     {
       "name": "is_playing",
@@ -365,17 +407,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "播放中",
-          "en-US": "Playing"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.isPlaying",
       "descriptions": {
-        "zh-CN": "检查播放中",
-        "en-US": "Check playing"
-      }
+        "zh-CN": "检查音频实例是否正在播放中",
+        "en-US": "Check if audio playing"
+      },
+      "group": "playback",
+      "description": "Check if audio playing"
     },
     {
       "name": "get_state",
@@ -393,15 +438,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "状态",
-          "en-US": "State"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "audio.getState",
       "descriptions": {
-        "zh-CN": "获取状态",
-        "en-US": "Get state"
-      }
+        "zh-CN": "获取音频播放器的当前状态",
+        "en-US": "Get state info of audio"
+      },
+      "group": "playback",
+      "description": "Get state info of audio"
     },
     {
       "name": "list_devices",
@@ -410,15 +458,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "设备",
-          "en-US": "Devices"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "audio.listDevices",
       "descriptions": {
-        "zh-CN": "列出设备",
-        "en-US": "List devices"
-      }
+        "zh-CN": "列出系统所有可用的音频输出设备",
+        "en-US": "List devices of audio"
+      },
+      "group": "device",
+      "description": "List devices of audio"
     },
     {
       "name": "set_device",
@@ -438,21 +489,25 @@
           "descs": {
             "zh-CN": "设备 ID",
             "en-US": "Device ID"
-          }
+          },
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.setDevice",
       "descriptions": {
-        "zh-CN": "设置设备",
-        "en-US": "Set device"
-      }
+        "zh-CN": "设置音频输出到指定的设备",
+        "en-US": "Set device property of audio"
+      },
+      "group": "device",
+      "description": "Set device property of audio"
     },
     {
       "name": "beep",
@@ -460,37 +515,42 @@
       "params": [
         {
           "name": "frequency",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "Hz",
-            "en-US": "Hz"
+            "zh-CN": "frequency参数",
+            "en-US": "frequency parameter"
           },
           "optional": true,
-          "default_value": "440"
+          "default_value": "440",
+          "desc": "frequency parameter"
         },
         {
           "name": "duration_ms",
-          "type": "u32",
+          "type": "number",
           "descs": {
-            "zh-CN": "ms",
-            "en-US": "ms"
+            "zh-CN": "duration_ms参数",
+            "en-US": "duration_ms parameter"
           },
           "optional": true,
-          "default_value": "200"
+          "default_value": "200",
+          "desc": "duration_ms parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.beep",
       "descriptions": {
-        "zh-CN": "蜂鸣",
-        "en-US": "Beep"
-      }
+        "zh-CN": "播放一个简短的系统提示音",
+        "en-US": "Play a short system beep sound"
+      },
+      "group": "device",
+      "description": "Play a short system beep sound"
     },
     {
       "name": "record_start",
@@ -515,7 +575,7 @@
         },
         {
           "name": "sample_rate",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "采样率(Hz)",
             "en-US": "Sample rate Hz"
@@ -524,12 +584,13 @@
         },
         {
           "name": "channels",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "声道数",
-            "en-US": "Number of channels"
+            "zh-CN": "录音声道数（1=单声道, 2=立体声）",
+            "en-US": "Recording channels (1=mono, 2=stereo)"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Recording channels (1=mono, 2=stereo)"
         },
         {
           "name": "device_id",
@@ -551,17 +612,21 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "RecordHandle",
         "descs": {
-          "zh-CN": "录音器",
-          "en-US": "录音器"
-        }
+          "zh-CN": "RecordHandle类型的结果对象",
+          "en-US": "Result object of type RecordHandle"
+        },
+        "desc": "Result object of type RecordHandle"
       },
       "bridge_path": "audio.recordStart",
       "descriptions": {
-        "zh-CN": "开始录音",
-        "en-US": "Start recording"
-      }
+        "zh-CN": "开始录制音频（从麦克风采集）",
+        "en-US": "Record start of audio"
+      },
+      "group": "record",
+      "async": true,
+      "description": "Record start of audio"
     },
     {
       "name": "record_pause",
@@ -571,23 +636,27 @@
           "name": "recorder_id",
           "type": "string",
           "descs": {
-            "zh-CN": "ID",
-            "en-US": "ID"
-          }
+            "zh-CN": "recorder_id参数",
+            "en-US": "recorder_id parameter"
+          },
+          "desc": "recorder_id parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.recordPause",
       "descriptions": {
-        "zh-CN": "暂停录音",
-        "en-US": "Pause recording"
-      }
+        "zh-CN": "暂停当前的音频录制",
+        "en-US": "Record pause of audio"
+      },
+      "group": "record",
+      "description": "Record pause of audio"
     },
     {
       "name": "record_resume",
@@ -597,23 +666,27 @@
           "name": "recorder_id",
           "type": "string",
           "descs": {
-            "zh-CN": "ID",
-            "en-US": "ID"
-          }
+            "zh-CN": "recorder_id参数",
+            "en-US": "recorder_id parameter"
+          },
+          "desc": "recorder_id parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.recordResume",
       "descriptions": {
-        "zh-CN": "恢复录音",
-        "en-US": "Resume recording"
-      }
+        "zh-CN": "恢复之前暂停的音频录制",
+        "en-US": "Record resume of audio"
+      },
+      "group": "record",
+      "description": "Record resume of audio"
     },
     {
       "name": "record_stop",
@@ -623,30 +696,34 @@
           "name": "recorder_id",
           "type": "string",
           "descs": {
-            "zh-CN": "ID",
-            "en-US": "ID"
-          }
+            "zh-CN": "recorder_id参数",
+            "en-US": "recorder_id parameter"
+          },
+          "desc": "recorder_id parameter"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "RecordResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "RecordResult类型的结果对象",
+          "en-US": "Result object of type RecordResult"
+        },
+        "desc": "Result object of type RecordResult"
       },
       "bridge_path": "audio.recordStop",
       "descriptions": {
-        "zh-CN": "停止录音",
-        "en-US": "Stop recording"
-      }
+        "zh-CN": "停止当前正在进行的音频录制",
+        "en-US": "Stop current audio recording"
+      },
+      "group": "record",
+      "description": "Stop current audio recording"
     },
     {
       "name": "get_system_volume",
       "symbol": "hap_audio_get_system_volume",
       "params": [],
       "returns": {
-        "type": "f64",
+        "type": "number",
         "descs": {
           "zh-CN": "0-100",
           "en-US": "0-100"
@@ -654,9 +731,11 @@
       },
       "bridge_path": "audio.getSystemVolume",
       "descriptions": {
-        "zh-CN": "获取系统音量",
-        "en-US": "Get system volume"
-      }
+        "zh-CN": "获取系统全局音量大小",
+        "en-US": "Get system volume info of audio"
+      },
+      "group": "system",
+      "description": "Get system volume info of audio"
     },
     {
       "name": "set_system_volume",
@@ -664,42 +743,49 @@
       "params": [
         {
           "name": "volume",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "0-100",
             "en-US": "0-100"
-          }
+          },
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.setSystemVolume",
       "descriptions": {
-        "zh-CN": "设置系统音量",
-        "en-US": "Set system volume"
-      }
+        "zh-CN": "设置系统全局音量大小",
+        "en-US": "Set system volume property of audio"
+      },
+      "group": "system",
+      "description": "Set system volume property of audio"
     },
     {
       "name": "is_muted",
       "symbol": "hap_audio_is_muted",
       "params": [],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "静音",
-          "en-US": "Muted"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.isMuted",
       "descriptions": {
-        "zh-CN": "检查静音",
-        "en-US": "Check muted"
-      }
+        "zh-CN": "检查系统是否处于静音状态",
+        "en-US": "Check if audio muted"
+      },
+      "group": "system",
+      "description": "Check if audio muted"
     },
     {
       "name": "set_muted",
@@ -707,25 +793,29 @@
       "params": [
         {
           "name": "muted",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
-            "zh-CN": "静音",
-            "en-US": "Mute"
-          }
+            "zh-CN": "是否静音（true=静音/false=取消静音）",
+            "en-US": "Whether to mute (true=mute/false=unmute)"
+          },
+          "desc": "Whether to mute (true=mute/false=unmute)"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.setMuted",
       "descriptions": {
-        "zh-CN": "设置静音",
-        "en-US": "Set muted"
-      }
+        "zh-CN": "设置系统静音或取消静音",
+        "en-US": "Set muted property of audio"
+      },
+      "group": "system",
+      "description": "Set muted property of audio"
     },
     {
       "name": "list_players",
@@ -734,15 +824,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "播放器",
-          "en-US": "Players"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "audio.listPlayers",
       "descriptions": {
-        "zh-CN": "列出播放器",
-        "en-US": "List players"
-      }
+        "zh-CN": "列出当前所有活跃的音频播放实例",
+        "en-US": "List players of audio"
+      },
+      "group": "playback",
+      "description": "List players of audio"
     },
     {
       "name": "file_info",
@@ -752,23 +845,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "AudioFileInfo",
         "descs": {
-          "zh-CN": "信息",
-          "en-US": "Info"
-        }
+          "zh-CN": "AudioFileInfo类型的结果对象",
+          "en-US": "Result object of type AudioFileInfo"
+        },
+        "desc": "Result object of type AudioFileInfo"
       },
       "bridge_path": "audio.fileInfo",
       "descriptions": {
-        "zh-CN": "文件信息",
-        "en-US": "File info"
-      }
+        "zh-CN": "获取音频文件的基本信息（格式、时长等）",
+        "en-US": "File info of audio"
+      },
+      "group": "edit",
+      "description": "File info of audio"
     },
     {
       "name": "convert",
@@ -778,31 +875,37 @@
           "name": "input_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输入",
-            "en-US": "Input"
-          }
+            "zh-CN": "输入文件路径",
+            "en-US": "Input file path"
+          },
+          "desc": "Input file path"
         },
         {
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ConvertResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "ConvertResult类型的结果对象",
+          "en-US": "Result object of type ConvertResult"
+        },
+        "desc": "Result object of type ConvertResult"
       },
       "bridge_path": "audio.convert",
       "descriptions": {
-        "zh-CN": "转换格式",
-        "en-US": "Convert format"
-      }
+        "zh-CN": "将音频文件转换为其他格式（MP3/WAV/OGG等）",
+        "en-US": "Convert audio file to another format (MP3/WAV/OGG)"
+      },
+      "group": "edit",
+      "async": true,
+      "description": "Convert audio file to another format (MP3/WAV/OGG)"
     },
     {
       "name": "trim",
@@ -812,47 +915,55 @@
           "name": "input_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输入",
-            "en-US": "Input"
-          }
+            "zh-CN": "输入文件路径",
+            "en-US": "Input file path"
+          },
+          "desc": "Input file path"
         },
         {
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         },
         {
           "name": "start_ms",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "启动",
-            "en-US": "Start"
-          }
+            "zh-CN": "start_ms参数",
+            "en-US": "start_ms parameter"
+          },
+          "desc": "start_ms parameter"
         },
         {
           "name": "end_ms",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "结束",
-            "en-US": "End"
-          }
+            "zh-CN": "裁剪结束时间（毫秒）",
+            "en-US": "Trim end time in milliseconds"
+          },
+          "desc": "Trim end time in milliseconds"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ConvertResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "ConvertResult类型的结果对象",
+          "en-US": "Result object of type ConvertResult"
+        },
+        "desc": "Result object of type ConvertResult"
       },
       "bridge_path": "audio.trim",
       "descriptions": {
-        "zh-CN": "修剪音频",
-        "en-US": "Trim audio"
-      }
+        "zh-CN": "裁剪音频文件的指定时间段",
+        "en-US": "Trim audio file to specified time range"
+      },
+      "group": "edit",
+      "async": true,
+      "description": "Trim audio file to specified time range"
     },
     {
       "name": "concat",
@@ -862,31 +973,37 @@
           "name": "input_paths",
           "type": "array",
           "descs": {
-            "zh-CN": "输入",
-            "en-US": "Inputs"
-          }
+            "zh-CN": "input_paths参数",
+            "en-US": "input_paths parameter"
+          },
+          "desc": "input_paths parameter"
         },
         {
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ConvertResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "ConvertResult类型的结果对象",
+          "en-US": "Result object of type ConvertResult"
+        },
+        "desc": "Result object of type ConvertResult"
       },
       "bridge_path": "audio.concat",
       "descriptions": {
-        "zh-CN": "拼接音频",
-        "en-US": "Concat audio"
-      }
+        "zh-CN": "将多个音频文件首尾拼接为一个文件",
+        "en-US": "Concatenate multiple audio files into one"
+      },
+      "group": "edit",
+      "async": true,
+      "description": "Concatenate multiple audio files into one"
     },
     {
       "name": "get_metadata",
@@ -896,23 +1013,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "AudioMetadata",
         "descs": {
-          "zh-CN": "元数据",
-          "en-US": "Metadata"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "audio.getMetadata",
       "descriptions": {
-        "zh-CN": "获取元数据",
-        "en-US": "Get metadata"
-      }
+        "zh-CN": "获取音频文件的ID3标签元数据",
+        "en-US": "Get metadata info of audio"
+      },
+      "group": "edit",
+      "description": "Get metadata info of audio"
     },
     {
       "name": "set_metadata",
@@ -922,13 +1043,14 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "metadata",
-          "type": "object",
+          "type": "AudioMetadata",
           "descs": {
             "zh-CN": "元数据标签",
             "en-US": "Metadata tags"
@@ -936,17 +1058,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.setMetadata",
       "descriptions": {
-        "zh-CN": "设置元数据",
-        "en-US": "Set metadata"
-      }
+        "zh-CN": "设置音频文件的ID3标签元数据",
+        "en-US": "Set metadata property of audio"
+      },
+      "group": "edit",
+      "description": "Set metadata property of audio"
     },
     {
       "name": "set_album_art",
@@ -956,31 +1081,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "音频",
-            "en-US": "Audio"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "image_path",
           "type": "string",
           "descs": {
-            "zh-CN": "图像",
-            "en-US": "Image"
-          }
+            "zh-CN": "image_path参数",
+            "en-US": "image_path parameter"
+          },
+          "desc": "image_path parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.setAlbumArt",
       "descriptions": {
-        "zh-CN": "设置专辑封面",
-        "en-US": "Set album art"
-      }
+        "zh-CN": "设置音频文件的专辑封面图片",
+        "en-US": "Set album art property of audio"
+      },
+      "group": "edit",
+      "description": "Set album art property of audio"
     },
     {
       "name": "normalize",
@@ -990,31 +1120,37 @@
           "name": "input_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输入",
-            "en-US": "Input"
-          }
+            "zh-CN": "输入文件路径",
+            "en-US": "Input file path"
+          },
+          "desc": "Input file path"
         },
         {
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.normalize",
       "descriptions": {
-        "zh-CN": "规范化",
-        "en-US": "Normalize"
-      }
+        "zh-CN": "normalize音频",
+        "en-US": "Normalize audio"
+      },
+      "group": "edit",
+      "async": true,
+      "description": "Normalize audio"
     },
     {
       "name": "get_waveform",
@@ -1024,19 +1160,21 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "samples",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "数量",
-            "en-US": "Count"
+            "zh-CN": "采样点数量",
+            "en-US": "Number of sample points"
           },
           "optional": true,
-          "default_value": "200"
+          "default_value": "200",
+          "desc": "Number of sample points"
         }
       ],
       "returns": {
@@ -1048,9 +1186,11 @@
       },
       "bridge_path": "audio.getWaveform",
       "descriptions": {
-        "zh-CN": "获取波形",
-        "en-US": "Get waveform"
-      }
+        "zh-CN": "获取音频文件的波形数据",
+        "en-US": "Get waveform info of audio"
+      },
+      "group": "edit",
+      "description": "Get waveform info of audio"
     },
     {
       "name": "split",
@@ -1060,39 +1200,46 @@
           "name": "input_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输入",
-            "en-US": "Input"
-          }
+            "zh-CN": "输入文件路径",
+            "en-US": "Input file path"
+          },
+          "desc": "Input file path"
         },
         {
           "name": "output_dir",
           "type": "string",
           "descs": {
-            "zh-CN": "目录",
-            "en-US": "Dir"
-          }
+            "zh-CN": "output_dir参数",
+            "en-US": "output_dir parameter"
+          },
+          "desc": "output_dir parameter"
         },
         {
           "name": "points_ms",
           "type": "array",
           "descs": {
-            "zh-CN": "点",
-            "en-US": "Points"
-          }
+            "zh-CN": "points_ms参数",
+            "en-US": "points_ms parameter"
+          },
+          "desc": "points_ms parameter"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "路径",
-          "en-US": "Paths"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "audio.split",
       "descriptions": {
-        "zh-CN": "拆分",
-        "en-US": "Split"
-      }
+        "zh-CN": "将音频文件按指定时间点分割为多段",
+        "en-US": "Split audio file into segments at specified points"
+      },
+      "group": "edit",
+      "async": true,
+      "description": "Split audio file into segments at specified points"
     },
     {
       "name": "fade",
@@ -1102,51 +1249,59 @@
           "name": "input_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输入",
-            "en-US": "Input"
-          }
+            "zh-CN": "输入文件路径",
+            "en-US": "Input file path"
+          },
+          "desc": "Input file path"
         },
         {
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         },
         {
           "name": "fade_in_ms",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "在",
-            "en-US": "In"
+            "zh-CN": "fade_in_ms参数",
+            "en-US": "fade_in_ms parameter"
           },
           "optional": true,
-          "default_value": "0.0"
+          "default_value": "0.0",
+          "desc": "fade_in_ms parameter"
         },
         {
           "name": "fade_out_ms",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Out"
+            "zh-CN": "fade_out_ms参数",
+            "en-US": "fade_out_ms parameter"
           },
           "optional": true,
-          "default_value": "0.0"
+          "default_value": "0.0",
+          "desc": "fade_out_ms parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.fade",
       "descriptions": {
-        "zh-CN": "淡入淡出",
-        "en-US": "Fade"
-      }
+        "zh-CN": "为音频添加淡入或淡出效果",
+        "en-US": "Add fade-in or fade-out effect to audio"
+      },
+      "group": "edit",
+      "async": true,
+      "description": "Add fade-in or fade-out effect to audio"
     },
     {
       "name": "mix",
@@ -1156,31 +1311,37 @@
           "name": "paths",
           "type": "array",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Paths"
-          }
+            "zh-CN": "要混合的多个音频文件路径列表",
+            "en-US": "List of audio file paths to mix"
+          },
+          "desc": "List of audio file paths to mix"
         },
         {
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.mix",
       "descriptions": {
-        "zh-CN": "混音",
-        "en-US": "Mix"
-      }
+        "zh-CN": "将多个音频轨道混合叠加为一个",
+        "en-US": "Mix multiple audio tracks into one"
+      },
+      "group": "edit",
+      "async": true,
+      "description": "Mix multiple audio tracks into one"
     },
     {
       "name": "list_recorders",
@@ -1195,9 +1356,11 @@
       },
       "bridge_path": "audio.listRecorders",
       "descriptions": {
-        "zh-CN": "列出录音器",
-        "en-US": "List recorders"
-      }
+        "zh-CN": "列出可用录音设备",
+        "en-US": "List recorders of audio"
+      },
+      "group": "record",
+      "description": "List recorders of audio"
     },
     {
       "name": "on_device_change",
@@ -1207,23 +1370,28 @@
           "name": "callback_id",
           "type": "string",
           "descs": {
-            "zh-CN": "回调",
-            "en-US": "Callback"
-          }
+            "zh-CN": "异步回调标识符",
+            "en-US": "Async callback identifier"
+          },
+          "desc": "Async callback identifier",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "DeviceWatcher",
         "descs": {
-          "zh-CN": "监视器",
-          "en-US": "Watcher"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "audio.onDeviceChange",
       "descriptions": {
-        "zh-CN": "监视设备",
-        "en-US": "Watch devices"
-      }
+        "zh-CN": "监听音频设备插拔变化事件",
+        "en-US": "Listen for device change event on audio"
+      },
+      "group": "system",
+      "description": "Listen for device change event on audio"
     },
     {
       "name": "off_device_change",
@@ -1233,27 +1401,385 @@
           "name": "watcher_id",
           "type": "string",
           "descs": {
-            "zh-CN": "监视器",
-            "en-US": "Watcher"
-          }
+            "zh-CN": "watcher_id参数",
+            "en-US": "watcher_id parameter"
+          },
+          "desc": "watcher_id parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "audio.offDeviceChange",
       "descriptions": {
-        "zh-CN": "停止监视",
-        "en-US": "Stop watching"
-      }
+        "zh-CN": "取消监听音频设备变化事件",
+        "en-US": "Stop listening for device change event on audio"
+      },
+      "group": "system",
+      "description": "Stop listening for device change event on audio"
     }
   ],
   "overviews": {
     "zh-CN": "提供音频录制、播放、格式转换、元数据读写、波形分析、音量控制等能力。支持 MP3/WAV/OGG/FLAC/AAC 等格式，以及混音、剪辑、效果器等高级操作。",
     "en-US": "Audio recording, playback, format conversion, metadata read/write, waveform analysis, and volume control. Supports MP3/WAV/OGG/FLAC/AAC formats, plus mixing, trimming, and effects."
-  }
+  },
+  "types": [
+    {
+      "name": "AudioDevice",
+      "descriptions": {
+        "zh-CN": "音频设备信息",
+        "en-US": "Audio device info"
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID",
+            "en-US": "Device ID"
+          }
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备名称",
+            "en-US": "Device name"
+          }
+        },
+        {
+          "name": "is_default",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否默认",
+            "en-US": "Is default"
+          }
+        },
+        {
+          "name": "is_input",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否输入设备",
+            "en-US": "Is input device"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PlayHandle",
+      "descriptions": {
+        "zh-CN": "播放句柄",
+        "en-US": "Play handle"
+      },
+      "fields": [
+        {
+          "name": "player_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "播放器ID",
+            "en-US": "Player ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "RecordHandle",
+      "descriptions": {
+        "zh-CN": "录音句柄",
+        "en-US": "Record handle"
+      },
+      "fields": [
+        {
+          "name": "recorder_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "录音器ID",
+            "en-US": "Recorder ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "RecordResult",
+      "descriptions": {
+        "zh-CN": "录音结果",
+        "en-US": "Record result"
+      },
+      "fields": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        },
+        {
+          "name": "duration_ms",
+          "type": "number",
+          "descs": {
+            "zh-CN": "时长(ms)",
+            "en-US": "Duration(ms)"
+          }
+        },
+        {
+          "name": "size",
+          "type": "number",
+          "descs": {
+            "zh-CN": "文件大小",
+            "en-US": "File size"
+          }
+        }
+      ]
+    },
+    {
+      "name": "AudioFileInfo",
+      "descriptions": {
+        "zh-CN": "音频文件信息",
+        "en-US": "Audio file info"
+      },
+      "fields": [
+        {
+          "name": "duration_ms",
+          "type": "number",
+          "descs": {
+            "zh-CN": "时长(ms)",
+            "en-US": "Duration(ms)"
+          }
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "descs": {
+            "zh-CN": "格式",
+            "en-US": "Format"
+          }
+        },
+        {
+          "name": "sample_rate",
+          "type": "number",
+          "descs": {
+            "zh-CN": "采样率",
+            "en-US": "Sample rate"
+          }
+        },
+        {
+          "name": "channels",
+          "type": "number",
+          "descs": {
+            "zh-CN": "声道数",
+            "en-US": "Channels"
+          }
+        },
+        {
+          "name": "bitrate",
+          "type": "number",
+          "descs": {
+            "zh-CN": "比特率",
+            "en-US": "Bitrate"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ConvertResult",
+      "descriptions": {
+        "zh-CN": "转换结果",
+        "en-US": "Convert result"
+      },
+      "fields": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output path"
+          }
+        },
+        {
+          "name": "size",
+          "type": "number",
+          "descs": {
+            "zh-CN": "文件大小",
+            "en-US": "File size"
+          }
+        }
+      ]
+    },
+    {
+      "name": "AudioMetadata",
+      "descriptions": {
+        "zh-CN": "音频文件元数据",
+        "en-US": "Audio file metadata"
+      },
+      "fields": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          }
+        },
+        {
+          "name": "artist",
+          "type": "string",
+          "descs": {
+            "zh-CN": "艺术家",
+            "en-US": "Artist"
+          }
+        },
+        {
+          "name": "album",
+          "type": "string",
+          "descs": {
+            "zh-CN": "专辑",
+            "en-US": "Album"
+          }
+        },
+        {
+          "name": "duration_ms",
+          "type": "number",
+          "descs": {
+            "zh-CN": "时长(毫秒)",
+            "en-US": "Duration in ms"
+          }
+        },
+        {
+          "name": "sample_rate",
+          "type": "number",
+          "descs": {
+            "zh-CN": "采样率(Hz)",
+            "en-US": "Sample rate in Hz"
+          }
+        },
+        {
+          "name": "channels",
+          "type": "number",
+          "descs": {
+            "zh-CN": "声道数",
+            "en-US": "Channels"
+          }
+        },
+        {
+          "name": "bitrate",
+          "type": "number",
+          "descs": {
+            "zh-CN": "比特率(bps)",
+            "en-US": "Bitrate in bps"
+          }
+        }
+      ]
+    },
+    {
+      "name": "DeviceWatcher",
+      "descriptions": {
+        "zh-CN": "音频设备变化监听器",
+        "en-US": "Audio device change watcher"
+      },
+      "fields": [
+        {
+          "name": "watcher_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监听器ID",
+            "en-US": "Watcher ID"
+          }
+        }
+      ]
+    }
+  ],
+  "constants": [
+    {
+      "name": "FORMAT_MP3",
+      "value": "mp3",
+      "type": "string",
+      "group": "format",
+      "descs": {
+        "zh-CN": "MP3格式",
+        "en-US": "MP3 format"
+      }
+    },
+    {
+      "name": "FORMAT_WAV",
+      "value": "wav",
+      "type": "string",
+      "group": "format",
+      "descs": {
+        "zh-CN": "WAV格式",
+        "en-US": "WAV format"
+      }
+    },
+    {
+      "name": "FORMAT_FLAC",
+      "value": "flac",
+      "type": "string",
+      "group": "format",
+      "descs": {
+        "zh-CN": "FLAC格式",
+        "en-US": "FLAC format"
+      }
+    },
+    {
+      "name": "FORMAT_OGG",
+      "value": "ogg",
+      "type": "string",
+      "group": "format",
+      "descs": {
+        "zh-CN": "OGG格式",
+        "en-US": "OGG format"
+      }
+    },
+    {
+      "name": "FORMAT_AAC",
+      "value": "aac",
+      "type": "string",
+      "group": "format",
+      "descs": {
+        "zh-CN": "AAC格式",
+        "en-US": "AAC format"
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "device_change",
+      "descriptions": {
+        "zh-CN": "音频设备变更",
+        "en-US": "Audio device changed"
+      },
+      "payload": [
+        {
+          "name": "type",
+          "type": "string",
+          "descs": {
+            "zh-CN": "变更类型(added/removed)",
+            "en-US": "Change type"
+          }
+        }
+      ]
+    },
+    {
+      "name": "playback_ended",
+      "descriptions": {
+        "zh-CN": "播放结束",
+        "en-US": "Playback ended"
+      },
+      "payload": [
+        {
+          "name": "player_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "播放器ID",
+            "en-US": "Player ID"
+          }
+        }
+      ]
+    }
+  ]
 }

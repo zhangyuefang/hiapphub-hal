@@ -20,7 +20,7 @@
       "params": [
         {
           "name": "display_id",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "显示器 ID",
             "en-US": "Display ID"
@@ -39,7 +39,7 @@
         },
         {
           "name": "quality",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "图像质量",
             "en-US": "Image quality"
@@ -49,17 +49,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "CaptureResult",
         "descs": {
-          "zh-CN": "捕获",
-          "en-US": "Capture"
-        }
+          "zh-CN": "CaptureResult类型的结果对象",
+          "en-US": "Result object of type CaptureResult"
+        },
+        "desc": "Result object of type CaptureResult"
       },
       "bridge_path": "screen.captureFull",
       "descriptions": {
-        "zh-CN": "全屏截图",
-        "en-US": "Capture full"
-      }
+        "zh-CN": "截取整个屏幕的完整截图并返回图像数据",
+        "en-US": "Capture full screen screenshot and return image data"
+      },
+      "group": "capture",
+      "description": "Capture full screen screenshot and return image data"
     },
     {
       "name": "capture_region",
@@ -67,35 +70,39 @@
       "params": [
         {
           "name": "x",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "X",
-            "en-US": "X"
-          }
+            "zh-CN": "X坐标位置",
+            "en-US": "X coordinate position"
+          },
+          "desc": "X coordinate position"
         },
         {
           "name": "y",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "Y",
-            "en-US": "Y"
-          }
+            "zh-CN": "Y坐标位置",
+            "en-US": "Y coordinate position"
+          },
+          "desc": "Y coordinate position"
         },
         {
           "name": "w",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "W",
-            "en-US": "W"
-          }
+            "zh-CN": "截取区域宽度（像素）",
+            "en-US": "Capture region width in pixels"
+          },
+          "desc": "Capture region width in pixels"
         },
         {
           "name": "h",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "H",
-            "en-US": "H"
-          }
+            "zh-CN": "截取区域高度（像素）",
+            "en-US": "Capture region height in pixels"
+          },
+          "desc": "Capture region height in pixels"
         },
         {
           "name": "format",
@@ -108,7 +115,7 @@
         },
         {
           "name": "quality",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "图像质量",
             "en-US": "Image quality"
@@ -118,17 +125,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "CaptureResult",
         "descs": {
-          "zh-CN": "捕获",
-          "en-US": "Capture"
-        }
+          "zh-CN": "CaptureResult类型的结果对象",
+          "en-US": "Result object of type CaptureResult"
+        },
+        "desc": "Result object of type CaptureResult"
       },
       "bridge_path": "screen.captureRegion",
       "descriptions": {
-        "zh-CN": "捕获区域",
-        "en-US": "Capture region"
-      }
+        "zh-CN": "截取屏幕指定区域",
+        "en-US": "Capture region of screen"
+      },
+      "group": "capture",
+      "description": "Capture region of screen"
     },
     {
       "name": "save_capture",
@@ -144,7 +154,7 @@
         },
         {
           "name": "display_id",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "显示器 ID",
             "en-US": "Display ID"
@@ -154,12 +164,13 @@
         },
         {
           "name": "region",
-          "type": "object",
+          "type": "CaptureRegion",
           "descs": {
-            "zh-CN": "区域",
-            "en-US": "Region"
+            "zh-CN": "截取区域坐标{x,y,w,h}（空则全屏）",
+            "en-US": "Capture region {x,y,w,h} (empty=fullscreen)"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Capture region {x,y,w,h} (empty=fullscreen)"
         },
         {
           "name": "format",
@@ -172,26 +183,30 @@
         },
         {
           "name": "quality",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "图像质量",
             "en-US": "Image quality"
           },
-          "optional": true
+          "optional": true,
+          "default_value": "90"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "screen.saveCapture",
       "descriptions": {
-        "zh-CN": "保存截图",
-        "en-US": "Save capture"
-      }
+        "zh-CN": "截图并保存到文件",
+        "en-US": "Save capture of screen"
+      },
+      "group": "capture",
+      "description": "Save capture of screen"
     },
     {
       "name": "list_displays",
@@ -200,49 +215,58 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "显示器",
-          "en-US": "Displays"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "screen.listDisplays",
       "descriptions": {
-        "zh-CN": "列出显示器",
-        "en-US": "List displays"
-      }
+        "zh-CN": "列出所有显示器",
+        "en-US": "List displays of screen"
+      },
+      "group": "display",
+      "description": "List displays of screen"
     },
     {
       "name": "get_primary",
       "symbol": "hap_screen_get_primary",
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "DisplayInfo",
         "descs": {
-          "zh-CN": "显示器",
-          "en-US": "Display"
-        }
+          "zh-CN": "DisplayInfo类型的结果对象",
+          "en-US": "Result object of type DisplayInfo"
+        },
+        "desc": "Result object of type DisplayInfo"
       },
       "bridge_path": "screen.getPrimary",
       "descriptions": {
-        "zh-CN": "主显示器",
-        "en-US": "Primary display"
-      }
+        "zh-CN": "获取primary信息",
+        "en-US": "Get primary info of screen"
+      },
+      "group": "info",
+      "description": "Get primary info of screen"
     },
     {
       "name": "get_cursor_pos",
       "symbol": "hap_screen_get_cursor_pos",
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "CursorPosition",
         "descs": {
-          "zh-CN": "位置",
-          "en-US": "Position"
-        }
+          "zh-CN": "CursorPosition类型的结果对象",
+          "en-US": "Result object of type CursorPosition"
+        },
+        "desc": "Result object of type CursorPosition"
       },
       "bridge_path": "screen.getCursorPos",
       "descriptions": {
-        "zh-CN": "游标位置",
-        "en-US": "Cursor position"
-      }
+        "zh-CN": "获取cursor pos信息",
+        "en-US": "Get cursor pos info of screen"
+      },
+      "group": "display",
+      "description": "Get cursor pos info of screen"
     },
     {
       "name": "color_at",
@@ -250,33 +274,38 @@
       "params": [
         {
           "name": "x",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "X",
-            "en-US": "X"
-          }
+            "zh-CN": "X坐标位置",
+            "en-US": "X coordinate position"
+          },
+          "desc": "X coordinate position"
         },
         {
           "name": "y",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "Y",
-            "en-US": "Y"
-          }
+            "zh-CN": "Y坐标位置",
+            "en-US": "Y coordinate position"
+          },
+          "desc": "Y coordinate position"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ScreenColor",
         "descs": {
-          "zh-CN": "颜色",
-          "en-US": "Color"
-        }
+          "zh-CN": "ScreenColor类型的结果对象",
+          "en-US": "Result object of type ScreenColor"
+        },
+        "desc": "Result object of type ScreenColor"
       },
       "bridge_path": "screen.colorAt",
       "descriptions": {
-        "zh-CN": "获取像素颜色",
-        "en-US": "Color at pixel"
-      }
+        "zh-CN": "获取屏幕指定坐标的颜色值",
+        "en-US": "Color at of screen"
+      },
+      "group": "display",
+      "description": "Color at of screen"
     },
     {
       "name": "capture_window",
@@ -286,23 +315,27 @@
           "name": "window_id",
           "type": "string",
           "descs": {
-            "zh-CN": "窗口",
-            "en-US": "Window"
-          }
+            "zh-CN": "window_id参数",
+            "en-US": "window_id parameter"
+          },
+          "desc": "window_id parameter"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "CaptureResult",
         "descs": {
-          "zh-CN": "捕获",
-          "en-US": "Capture"
-        }
+          "zh-CN": "CaptureResult类型的结果对象",
+          "en-US": "Result object of type CaptureResult"
+        },
+        "desc": "Result object of type CaptureResult"
       },
       "bridge_path": "screen.captureWindow",
       "descriptions": {
-        "zh-CN": "捕获窗口",
-        "en-US": "Capture window"
-      }
+        "zh-CN": "截取指定窗口画面",
+        "en-US": "Capture window of screen"
+      },
+      "group": "capture",
+      "description": "Capture window of screen"
     },
     {
       "name": "list_windows",
@@ -311,15 +344,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "窗口",
-          "en-US": "Windows"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "screen.listWindows",
       "descriptions": {
-        "zh-CN": "列出窗口",
-        "en-US": "List windows"
-      }
+        "zh-CN": "列出windows",
+        "en-US": "List windows of screen"
+      },
+      "group": "window",
+      "description": "List windows of screen"
     },
     {
       "name": "focus_window",
@@ -329,23 +365,27 @@
           "name": "window_id",
           "type": "string",
           "descs": {
-            "zh-CN": "窗口",
-            "en-US": "Window"
-          }
+            "zh-CN": "window_id参数",
+            "en-US": "window_id parameter"
+          },
+          "desc": "window_id parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "screen.focusWindow",
       "descriptions": {
-        "zh-CN": "聚焦窗口",
-        "en-US": "Focus window"
-      }
+        "zh-CN": "聚焦指定窗口到前台",
+        "en-US": "Focus window of screen"
+      },
+      "group": "window",
+      "description": "Focus window of screen"
     },
     {
       "name": "set_window_bounds",
@@ -361,23 +401,25 @@
         },
         {
           "name": "x",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "X",
-            "en-US": "X"
-          }
+            "zh-CN": "X坐标位置",
+            "en-US": "X coordinate position"
+          },
+          "desc": "X coordinate position"
         },
         {
           "name": "y",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "Y",
-            "en-US": "Y"
-          }
+            "zh-CN": "Y坐标位置",
+            "en-US": "Y coordinate position"
+          },
+          "desc": "Y coordinate position"
         },
         {
           "name": "width",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "宽度(像素)",
             "en-US": "Width px"
@@ -385,7 +427,7 @@
         },
         {
           "name": "height",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "高度(像素)",
             "en-US": "Height px"
@@ -393,17 +435,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "screen.setWindowBounds",
       "descriptions": {
-        "zh-CN": "设置边界",
-        "en-US": "Set bounds"
-      }
+        "zh-CN": "设置window bounds property",
+        "en-US": "Set window bounds property of screen"
+      },
+      "group": "window",
+      "description": "Set window bounds property of screen"
     },
     {
       "name": "minimize_window",
@@ -413,23 +458,27 @@
           "name": "window_id",
           "type": "string",
           "descs": {
-            "zh-CN": "窗口",
-            "en-US": "Window"
-          }
+            "zh-CN": "window_id参数",
+            "en-US": "window_id parameter"
+          },
+          "desc": "window_id parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "screen.minimizeWindow",
       "descriptions": {
-        "zh-CN": "最小化窗口",
-        "en-US": "Minimize"
-      }
+        "zh-CN": "最小化指定窗口",
+        "en-US": "Minimize window of screen"
+      },
+      "group": "window",
+      "description": "Minimize window of screen"
     },
     {
       "name": "restore_window",
@@ -439,23 +488,27 @@
           "name": "window_id",
           "type": "string",
           "descs": {
-            "zh-CN": "窗口",
-            "en-US": "Window"
-          }
+            "zh-CN": "window_id参数",
+            "en-US": "window_id parameter"
+          },
+          "desc": "window_id parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "screen.restoreWindow",
       "descriptions": {
-        "zh-CN": "恢复",
-        "en-US": "Restore"
-      }
+        "zh-CN": "恢复最小化的窗口",
+        "en-US": "Restore window of screen"
+      },
+      "group": "window",
+      "description": "Restore window of screen"
     },
     {
       "name": "maximize_window",
@@ -465,23 +518,27 @@
           "name": "window_id",
           "type": "string",
           "descs": {
-            "zh-CN": "窗口",
-            "en-US": "Window"
-          }
+            "zh-CN": "window_id参数",
+            "en-US": "window_id parameter"
+          },
+          "desc": "window_id parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "screen.maximizeWindow",
       "descriptions": {
-        "zh-CN": "最大化窗口",
-        "en-US": "Maximize"
-      }
+        "zh-CN": "最大化指定窗口",
+        "en-US": "Maximize window of screen"
+      },
+      "group": "window",
+      "description": "Maximize window of screen"
     },
     {
       "name": "close_window",
@@ -491,23 +548,27 @@
           "name": "window_id",
           "type": "string",
           "descs": {
-            "zh-CN": "窗口",
-            "en-US": "Window"
-          }
+            "zh-CN": "window_id参数",
+            "en-US": "window_id parameter"
+          },
+          "desc": "window_id parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "screen.closeWindow",
       "descriptions": {
-        "zh-CN": "关闭窗口",
-        "en-US": "Close window"
-      }
+        "zh-CN": "关闭window",
+        "en-US": "Close window of screen"
+      },
+      "group": "window",
+      "description": "Close window of screen"
     },
     {
       "name": "is_window_visible",
@@ -517,40 +578,47 @@
           "name": "window_id",
           "type": "string",
           "descs": {
-            "zh-CN": "窗口",
-            "en-US": "Window"
-          }
+            "zh-CN": "window_id参数",
+            "en-US": "window_id parameter"
+          },
+          "desc": "window_id parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "可见",
-          "en-US": "Visible"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "screen.isWindowVisible",
       "descriptions": {
-        "zh-CN": "检查可见",
-        "en-US": "Check visible"
-      }
+        "zh-CN": "检查是否screen window visible",
+        "en-US": "Check if screen window visible"
+      },
+      "group": "window",
+      "description": "Check if screen window visible"
     },
     {
       "name": "active_window",
       "symbol": "hap_screen_active_window",
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "WindowInfo",
         "descs": {
-          "zh-CN": "窗口",
-          "en-US": "Window"
-        }
+          "zh-CN": "WindowInfo类型的结果对象",
+          "en-US": "Result object of type WindowInfo"
+        },
+        "desc": "Result object of type WindowInfo"
       },
       "bridge_path": "screen.activeWindow",
       "descriptions": {
-        "zh-CN": "活跃的窗口",
-        "en-US": "Active window"
-      }
+        "zh-CN": "获取当前活跃窗口信息",
+        "en-US": "Active window of screen"
+      },
+      "group": "window",
+      "description": "Active window of screen"
     },
     {
       "name": "set_always_on_top",
@@ -560,31 +628,36 @@
           "name": "window_id",
           "type": "string",
           "descs": {
-            "zh-CN": "窗口",
-            "en-US": "Window"
-          }
+            "zh-CN": "window_id参数",
+            "en-US": "window_id parameter"
+          },
+          "desc": "window_id parameter"
         },
         {
           "name": "on_top",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
-            "zh-CN": "置顶",
-            "en-US": "On top"
-          }
+            "zh-CN": "是否置顶窗口",
+            "en-US": "Whether to keep window on top"
+          },
+          "desc": "Whether to keep window on top"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "screen.setAlwaysOnTop",
       "descriptions": {
-        "zh-CN": "置顶窗口",
-        "en-US": "Always on top"
-      }
+        "zh-CN": "设置窗口置顶属性屏幕",
+        "en-US": "Set always on top property of screen"
+      },
+      "group": "window",
+      "description": "Set always on top property of screen"
     },
     {
       "name": "set_window_opacity",
@@ -594,35 +667,256 @@
           "name": "window_id",
           "type": "string",
           "descs": {
-            "zh-CN": "窗口",
-            "en-US": "Window"
-          }
+            "zh-CN": "window_id参数",
+            "en-US": "window_id parameter"
+          },
+          "desc": "window_id parameter"
         },
         {
           "name": "opacity",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "透明度",
-            "en-US": "Opacity"
-          }
+            "zh-CN": "窗口不透明度（0.0-1.0）",
+            "en-US": "Window opacity (0.0-1.0)"
+          },
+          "desc": "Window opacity (0.0-1.0)"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "screen.setWindowOpacity",
       "descriptions": {
-        "zh-CN": "设置透明度",
-        "en-US": "Set opacity"
-      }
+        "zh-CN": "设置窗口透明度属性屏幕",
+        "en-US": "Set window opacity property of screen"
+      },
+      "group": "window",
+      "description": "Set window opacity property of screen"
     }
   ],
   "overviews": {
     "zh-CN": "提供屏幕操作能力，包括截屏、录屏、获取屏幕信息、多显示器管理、屏幕亮度控制、分辨率查询/设置、鼠标位置追踪等功能。",
     "en-US": "Screen operations including screenshots, screen recording, display info, multi-monitor management, brightness control, resolution query/set, and mouse position tracking."
-  }
+  },
+  "types": [
+    {
+      "name": "CaptureResult",
+      "descriptions": {
+        "zh-CN": "截屏结果",
+        "en-US": "Capture result"
+      },
+      "fields": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base64图片",
+            "en-US": "Base64 image"
+          }
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "宽度",
+            "en-US": "Width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "高度",
+            "en-US": "Height"
+          }
+        }
+      ]
+    },
+    {
+      "name": "DisplayInfo",
+      "descriptions": {
+        "zh-CN": "显示器信息",
+        "en-US": "Display info"
+      },
+      "fields": [
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "宽度",
+            "en-US": "Width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "高度",
+            "en-US": "Height"
+          }
+        },
+        {
+          "name": "scale",
+          "type": "number",
+          "descs": {
+            "zh-CN": "缩放比例",
+            "en-US": "Scale factor"
+          }
+        },
+        {
+          "name": "is_primary",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否主显示器",
+            "en-US": "Is primary"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CursorPosition",
+      "descriptions": {
+        "zh-CN": "光标位置",
+        "en-US": "Cursor position"
+      },
+      "fields": [
+        {
+          "name": "x",
+          "type": "number",
+          "descs": {
+            "zh-CN": "X坐标",
+            "en-US": "X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "Y坐标",
+            "en-US": "Y"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ScreenColor",
+      "descriptions": {
+        "zh-CN": "屏幕颜色",
+        "en-US": "Screen color"
+      },
+      "fields": [
+        {
+          "name": "r",
+          "type": "number",
+          "descs": {
+            "zh-CN": "红",
+            "en-US": "Red"
+          }
+        },
+        {
+          "name": "g",
+          "type": "number",
+          "descs": {
+            "zh-CN": "绿",
+            "en-US": "Green"
+          }
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "descs": {
+            "zh-CN": "蓝",
+            "en-US": "Blue"
+          }
+        },
+        {
+          "name": "hex",
+          "type": "string",
+          "descs": {
+            "zh-CN": "十六进制",
+            "en-US": "Hex"
+          }
+        }
+      ]
+    },
+    {
+      "name": "WindowInfo",
+      "descriptions": {
+        "zh-CN": "窗口信息",
+        "en-US": "Window info"
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口ID",
+            "en-US": "Window ID"
+          }
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          }
+        },
+        {
+          "name": "app",
+          "type": "string",
+          "descs": {
+            "zh-CN": "应用名",
+            "en-US": "App name"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CaptureRegion",
+      "descriptions": {
+        "zh-CN": "屏幕截取区域",
+        "en-US": "Screen capture region"
+      },
+      "fields": [
+        {
+          "name": "x",
+          "type": "number",
+          "descs": {
+            "zh-CN": "起始X坐标",
+            "en-US": "Start X coordinate"
+          }
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "起始Y坐标",
+            "en-US": "Start Y coordinate"
+          }
+        },
+        {
+          "name": "w",
+          "type": "number",
+          "descs": {
+            "zh-CN": "区域宽度",
+            "en-US": "Region width"
+          }
+        },
+        {
+          "name": "h",
+          "type": "number",
+          "descs": {
+            "zh-CN": "区域高度",
+            "en-US": "Region height"
+          }
+        }
+      ]
+    }
+  ]
 }

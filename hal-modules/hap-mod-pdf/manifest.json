@@ -22,23 +22,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "PdfInfo",
         "descs": {
-          "zh-CN": "信息",
-          "en-US": "Info"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "pdf.info",
       "descriptions": {
-        "zh-CN": "获取 PDF 信息",
-        "en-US": "Get PDF info"
-      }
+        "zh-CN": "获取PDF文件的元信息（页数、标题、作者、加密状态等）",
+        "en-US": "Get PDF metadata (pages, title, author, encryption)"
+      },
+      "group": "file",
+      "description": "Get PDF metadata (pages, title, author, encryption)"
     },
     {
       "name": "open",
@@ -48,32 +52,37 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Password string"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "PdfHandle",
         "descs": {
-          "zh-CN": "文档",
-          "en-US": "Doc"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "pdf.open",
       "descriptions": {
-        "zh-CN": "打开 PDF",
-        "en-US": "Open PDF"
-      }
+        "zh-CN": "打开PDF文件获取文档操作句柄",
+        "en-US": "Open PDF file and get document handle"
+      },
+      "group": "file",
+      "description": "Open PDF file and get document handle"
     },
     {
       "name": "create",
@@ -92,33 +101,38 @@
           "name": "author",
           "type": "string",
           "descs": {
-            "zh-CN": "作者",
-            "en-US": "Author"
+            "zh-CN": "PDF文档作者名称",
+            "en-US": "PDF document author name"
           },
-          "optional": true
+          "optional": true,
+          "desc": "PDF document author name"
         },
         {
           "name": "page_size",
-          "type": "object",
+          "type": "PageSize",
           "descs": {
-            "zh-CN": "页大小",
-            "en-US": "Page Size"
+            "zh-CN": "page_size参数",
+            "en-US": "page_size parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "page_size parameter"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "PdfHandle",
         "descs": {
-          "zh-CN": "文档",
-          "en-US": "Doc"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "pdf.create",
       "descriptions": {
-        "zh-CN": "创建 PDF",
-        "en-US": "Create PDF"
-      }
+        "zh-CN": "创建一个新的空白PDF文档文件",
+        "en-US": "Create a new empty PDF document"
+      },
+      "group": "file",
+      "description": "Create a new empty PDF document"
     },
     {
       "name": "add_page",
@@ -134,7 +148,7 @@
         },
         {
           "name": "width_mm",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "宽度(毫米)",
             "en-US": "Width in mm"
@@ -144,7 +158,7 @@
         },
         {
           "name": "height_mm",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "高度(毫米)",
             "en-US": "Height in mm"
@@ -154,17 +168,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "PageHandle",
         "descs": {
-          "zh-CN": "页",
-          "en-US": "Page"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "pdf.addPage",
       "descriptions": {
-        "zh-CN": "添加页面",
-        "en-US": "Add page"
-      }
+        "zh-CN": "添加PDF文档的page",
+        "en-US": "Add page of PDF"
+      },
+      "group": "content",
+      "description": "Add page of PDF"
     },
     {
       "name": "add_text",
@@ -180,39 +197,45 @@
         },
         {
           "name": "page_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "页",
-            "en-US": "Page"
-          }
+            "zh-CN": "page_index参数",
+            "en-US": "page_index parameter"
+          },
+          "desc": "page_index parameter",
+          "optional": true,
+          "default_value": "0"
         },
         {
           "name": "text",
           "type": "string",
           "descs": {
-            "zh-CN": "文本",
-            "en-US": "Text"
-          }
+            "zh-CN": "文本字符串",
+            "en-US": "Text string"
+          },
+          "desc": "Text string"
         },
         {
           "name": "x",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "X",
-            "en-US": "X"
-          }
+            "zh-CN": "X坐标位置",
+            "en-US": "X coordinate position"
+          },
+          "desc": "X coordinate position"
         },
         {
           "name": "y",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "Y",
-            "en-US": "Y"
-          }
+            "zh-CN": "Y坐标位置",
+            "en-US": "Y coordinate position"
+          },
+          "desc": "Y coordinate position"
         },
         {
           "name": "font_size",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "字号(磅)",
             "en-US": "Font size pt"
@@ -222,17 +245,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.addText",
       "descriptions": {
-        "zh-CN": "添加文本",
-        "en-US": "Add text"
-      }
+        "zh-CN": "添加PDF文档的text",
+        "en-US": "Add text of PDF"
+      },
+      "group": "content",
+      "description": "Add text of PDF"
     },
     {
       "name": "add_image",
@@ -248,11 +274,14 @@
         },
         {
           "name": "page_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "页",
-            "en-US": "Page"
-          }
+            "zh-CN": "page_index参数",
+            "en-US": "page_index parameter"
+          },
+          "desc": "page_index parameter",
+          "optional": true,
+          "default_value": "0"
         },
         {
           "name": "image_path",
@@ -264,23 +293,25 @@
         },
         {
           "name": "x",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "X",
-            "en-US": "X"
-          }
+            "zh-CN": "X坐标位置",
+            "en-US": "X coordinate position"
+          },
+          "desc": "X coordinate position"
         },
         {
           "name": "y",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "Y",
-            "en-US": "Y"
-          }
+            "zh-CN": "Y坐标位置",
+            "en-US": "Y coordinate position"
+          },
+          "desc": "Y coordinate position"
         },
         {
           "name": "width",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "宽度(像素)",
             "en-US": "Width px"
@@ -288,7 +319,7 @@
         },
         {
           "name": "height",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "高度(像素)",
             "en-US": "Height px"
@@ -296,17 +327,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.addImage",
       "descriptions": {
-        "zh-CN": "插入图片",
-        "en-US": "Add image"
-      }
+        "zh-CN": "添加PDF文档的image",
+        "en-US": "Add image of PDF"
+      },
+      "group": "content",
+      "description": "Add image of PDF"
     },
     {
       "name": "add_line",
@@ -322,67 +356,78 @@
         },
         {
           "name": "page_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "页",
-            "en-US": "Page"
-          }
+            "zh-CN": "page_index参数",
+            "en-US": "page_index parameter"
+          },
+          "desc": "page_index parameter",
+          "optional": true,
+          "default_value": "0"
         },
         {
           "name": "x1",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "X1",
-            "en-US": "X1"
-          }
+            "zh-CN": "起点X坐标（pt）",
+            "en-US": "Start X coordinate in pt"
+          },
+          "desc": "Start X coordinate in pt"
         },
         {
           "name": "y1",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "Y1",
-            "en-US": "Y1"
-          }
+            "zh-CN": "起点Y坐标（pt）",
+            "en-US": "Start Y coordinate in pt"
+          },
+          "desc": "Start Y coordinate in pt"
         },
         {
           "name": "x2",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "X2",
-            "en-US": "X2"
-          }
+            "zh-CN": "终点X坐标（pt）",
+            "en-US": "End X coordinate in pt"
+          },
+          "desc": "End X coordinate in pt"
         },
         {
           "name": "y2",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "Y2",
-            "en-US": "Y2"
-          }
+            "zh-CN": "终点Y坐标（pt）",
+            "en-US": "End Y coordinate in pt"
+          },
+          "desc": "End Y coordinate in pt"
         },
         {
           "name": "line_width",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "线宽",
-            "en-US": "Line width"
+            "zh-CN": "line_width参数",
+            "en-US": "line_width parameter"
           },
           "optional": true,
-          "default_value": "1.0"
+          "default_value": "1.0",
+          "desc": "line_width parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.addLine",
       "descriptions": {
-        "zh-CN": "添加行",
-        "en-US": "Add line"
-      }
+        "zh-CN": "添加PDF文档的line",
+        "en-US": "Add line of PDF"
+      },
+      "group": "content",
+      "description": "Add line of PDF"
     },
     {
       "name": "add_rect",
@@ -398,47 +443,54 @@
         },
         {
           "name": "page_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "页",
-            "en-US": "Page"
-          }
+            "zh-CN": "page_index参数",
+            "en-US": "page_index parameter"
+          },
+          "desc": "page_index parameter",
+          "optional": true,
+          "default_value": "0"
         },
         {
           "name": "x",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "X",
-            "en-US": "X"
-          }
+            "zh-CN": "X坐标位置",
+            "en-US": "X coordinate position"
+          },
+          "desc": "X coordinate position"
         },
         {
           "name": "y",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "Y",
-            "en-US": "Y"
-          }
+            "zh-CN": "Y坐标位置",
+            "en-US": "Y coordinate position"
+          },
+          "desc": "Y coordinate position"
         },
         {
           "name": "w",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "W",
-            "en-US": "W"
-          }
+            "zh-CN": "矩形宽度（pt）",
+            "en-US": "Rectangle width in pt"
+          },
+          "desc": "Rectangle width in pt"
         },
         {
           "name": "h",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "H",
-            "en-US": "H"
-          }
+            "zh-CN": "矩形高度（pt）",
+            "en-US": "Rectangle height in pt"
+          },
+          "desc": "Rectangle height in pt"
         },
         {
           "name": "fill",
-          "type": "bool",
+          "type": "boolean",
           "descs": {
             "zh-CN": "填充颜色",
             "en-US": "Fill color"
@@ -448,27 +500,31 @@
         },
         {
           "name": "line_width",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "线宽",
-            "en-US": "Line width"
+            "zh-CN": "line_width参数",
+            "en-US": "line_width parameter"
           },
           "optional": true,
-          "default_value": "1.0"
+          "default_value": "1.0",
+          "desc": "line_width parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.addRect",
       "descriptions": {
-        "zh-CN": "添加矩形",
-        "en-US": "Add rectangle"
-      }
+        "zh-CN": "添加PDF文档的rect",
+        "en-US": "Add rect of PDF"
+      },
+      "group": "content",
+      "description": "Add rect of PDF"
     },
     {
       "name": "add_table",
@@ -484,57 +540,67 @@
         },
         {
           "name": "page_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "页",
-            "en-US": "Page"
-          }
+            "zh-CN": "page_index参数",
+            "en-US": "page_index parameter"
+          },
+          "desc": "page_index parameter",
+          "optional": true,
+          "default_value": "0"
         },
         {
           "name": "x",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "X",
-            "en-US": "X"
-          }
+            "zh-CN": "X坐标位置",
+            "en-US": "X coordinate position"
+          },
+          "desc": "X coordinate position"
         },
         {
           "name": "y",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "Y",
-            "en-US": "Y"
-          }
+            "zh-CN": "Y坐标位置",
+            "en-US": "Y coordinate position"
+          },
+          "desc": "Y coordinate position"
         },
         {
           "name": "headers",
           "type": "array",
           "descs": {
-            "zh-CN": "头部",
-            "en-US": "Headers"
-          }
+            "zh-CN": "HTTP请求头",
+            "en-US": "HTTP headers"
+          },
+          "desc": "HTTP headers"
         },
         {
           "name": "rows",
           "type": "string",
           "descs": {
-            "zh-CN": "行",
-            "en-US": "Rows"
-          }
+            "zh-CN": "表格行数据（二维数组）",
+            "en-US": "Table row data (2D array)"
+          },
+          "desc": "Table row data (2D array)"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.addTable",
       "descriptions": {
-        "zh-CN": "添加表",
-        "en-US": "Add table"
-      }
+        "zh-CN": "添加PDF文档的table",
+        "en-US": "Add table of PDF"
+      },
+      "group": "content",
+      "description": "Add table of PDF"
     },
     {
       "name": "save",
@@ -552,23 +618,27 @@
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "SaveResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "pdf.save",
       "descriptions": {
-        "zh-CN": "保存 PDF",
-        "en-US": "Save PDF"
-      }
+        "zh-CN": "将对PDF文档的所有修改保存到磁盘",
+        "en-US": "Save all PDF document changes to disk"
+      },
+      "group": "file",
+      "description": "Save all PDF document changes to disk"
     },
     {
       "name": "close",
@@ -584,17 +654,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.close",
       "descriptions": {
-        "zh-CN": "关闭 PDF",
-        "en-US": "Close PDF"
-      }
+        "zh-CN": "关闭PDF文档并释放内存资源",
+        "en-US": "Close PDF document and release memory"
+      },
+      "group": "file",
+      "description": "Close PDF document and release memory"
     },
     {
       "name": "register_font",
@@ -612,9 +685,10 @@
           "name": "font_family",
           "type": "string",
           "descs": {
-            "zh-CN": "字体族",
-            "en-US": "Font Family"
-          }
+            "zh-CN": "font_family参数",
+            "en-US": "font_family parameter"
+          },
+          "desc": "font_family parameter"
         },
         {
           "name": "font_path",
@@ -634,9 +708,11 @@
       },
       "bridge_path": "pdf.registerFont",
       "descriptions": {
-        "zh-CN": "注册字体",
-        "en-US": "Register font"
-      }
+        "zh-CN": "注册PDF文档的font",
+        "en-US": "Register font of PDF"
+      },
+      "group": "content",
+      "description": "Register font of PDF"
     },
     {
       "name": "merge",
@@ -646,17 +722,19 @@
           "name": "input_paths",
           "type": "array",
           "descs": {
-            "zh-CN": "输入",
-            "en-US": "Inputs"
-          }
+            "zh-CN": "input_paths参数",
+            "en-US": "input_paths parameter"
+          },
+          "desc": "input_paths parameter"
         },
         {
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         },
         {
           "name": "callback_id",
@@ -669,17 +747,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "SaveResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "pdf.merge",
       "descriptions": {
-        "zh-CN": "合并 PDF",
-        "en-US": "Merge PDFs"
-      }
+        "zh-CN": "mergePDF文档",
+        "en-US": "Merge PDF"
+      },
+      "group": "file",
+      "description": "Merge PDF"
     },
     {
       "name": "split",
@@ -697,13 +778,14 @@
           "name": "output_dir",
           "type": "string",
           "descs": {
-            "zh-CN": "目录",
-            "en-US": "Dir"
-          }
+            "zh-CN": "output_dir参数",
+            "en-US": "output_dir parameter"
+          },
+          "desc": "output_dir parameter"
         },
         {
           "name": "pages_per_file",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "每文件页数",
             "en-US": "Pages per file"
@@ -715,15 +797,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "路径",
-          "en-US": "Paths"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "pdf.split",
       "descriptions": {
-        "zh-CN": "拆分 PDF",
+        "zh-CN": "splitPDF文档",
         "en-US": "Split PDF"
-      }
+      },
+      "group": "file",
+      "description": "Split PDF"
     },
     {
       "name": "extract_text",
@@ -733,28 +818,31 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "page_start",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "起始页",
-            "en-US": "Start page"
+            "zh-CN": "page_start参数",
+            "en-US": "page_start parameter"
           },
           "optional": true,
-          "default_value": "0"
+          "default_value": "0",
+          "desc": "page_start parameter"
         },
         {
           "name": "page_end",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "结束页",
-            "en-US": "End page"
+            "zh-CN": "page_end参数",
+            "en-US": "page_end parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "page_end parameter"
         },
         {
           "name": "callback_id",
@@ -769,15 +857,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "文本",
-          "en-US": "Text"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "pdf.extractText",
       "descriptions": {
-        "zh-CN": "提取文本",
-        "en-US": "Extract text"
-      }
+        "zh-CN": "提取PDF文档的text",
+        "en-US": "Extract text of PDF"
+      },
+      "group": "extract",
+      "description": "Extract text of PDF"
     },
     {
       "name": "to_images",
@@ -787,31 +878,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output_dir",
           "type": "string",
           "descs": {
-            "zh-CN": "目录",
-            "en-US": "Dir"
-          }
+            "zh-CN": "output_dir参数",
+            "en-US": "output_dir parameter"
+          },
+          "desc": "output_dir parameter"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "路径",
-          "en-US": "Paths"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "pdf.toImages",
       "descriptions": {
-        "zh-CN": "PDF 到图像",
-        "en-US": "PDF to images"
-      }
+        "zh-CN": "toPDF文档的images",
+        "en-US": "To images of PDF"
+      },
+      "group": "extract",
+      "description": "To images of PDF"
     },
     {
       "name": "add_watermark",
@@ -837,13 +933,14 @@
           "name": "text",
           "type": "string",
           "descs": {
-            "zh-CN": "文本",
-            "en-US": "Text"
-          }
+            "zh-CN": "文本字符串",
+            "en-US": "Text string"
+          },
+          "desc": "Text string"
         },
         {
           "name": "font_size",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "字号(磅)",
             "en-US": "Font size pt"
@@ -853,7 +950,7 @@
         },
         {
           "name": "opacity",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "透明度 0-1",
             "en-US": "Opacity 0-1"
@@ -863,7 +960,7 @@
         },
         {
           "name": "rotation",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "旋转角度",
             "en-US": "Rotation degrees"
@@ -873,17 +970,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.addWatermark",
       "descriptions": {
-        "zh-CN": "添加水印",
-        "en-US": "Add watermark"
-      }
+        "zh-CN": "添加PDF文档的watermark",
+        "en-US": "Add watermark of PDF"
+      },
+      "group": "content",
+      "description": "Add watermark of PDF"
     },
     {
       "name": "add_link",
@@ -899,65 +999,75 @@
         },
         {
           "name": "page_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "页码索引",
             "en-US": "Page index"
-          }
+          },
+          "optional": true,
+          "default_value": "0"
         },
         {
           "name": "x",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "X",
-            "en-US": "X"
-          }
+            "zh-CN": "X坐标位置",
+            "en-US": "X coordinate position"
+          },
+          "desc": "X coordinate position"
         },
         {
           "name": "y",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "Y",
-            "en-US": "Y"
-          }
+            "zh-CN": "Y坐标位置",
+            "en-US": "Y coordinate position"
+          },
+          "desc": "Y coordinate position"
         },
         {
           "name": "w",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "W",
-            "en-US": "W"
-          }
+            "zh-CN": "链接区域宽度（pt）",
+            "en-US": "Link area width in pt"
+          },
+          "desc": "Link area width in pt"
         },
         {
           "name": "h",
-          "type": "f64",
+          "type": "number",
           "descs": {
-            "zh-CN": "H",
-            "en-US": "H"
-          }
+            "zh-CN": "链接区域高度（pt）",
+            "en-US": "Link area height in pt"
+          },
+          "desc": "Link area height in pt"
         },
         {
           "name": "url",
           "type": "string",
           "descs": {
-            "zh-CN": "URL",
-            "en-US": "Url"
-          }
+            "zh-CN": "URL地址",
+            "en-US": "URL address"
+          },
+          "desc": "URL address"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.addLink",
       "descriptions": {
-        "zh-CN": "添加链接",
-        "en-US": "Add link"
-      }
+        "zh-CN": "添加PDF文档的link",
+        "en-US": "Add link of PDF"
+      },
+      "group": "content",
+      "description": "Add link of PDF"
     },
     {
       "name": "get_bookmarks",
@@ -967,23 +1077,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "书签",
-          "en-US": "Bookmarks"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "pdf.getBookmarks",
       "descriptions": {
-        "zh-CN": "获取书签列表",
-        "en-US": "Get bookmarks"
-      }
+        "zh-CN": "获取PDF文档的bookmarks信息",
+        "en-US": "Get bookmarks info of PDF"
+      },
+      "group": "navigate",
+      "description": "Get bookmarks info of PDF"
     },
     {
       "name": "add_bookmark",
@@ -1003,29 +1117,35 @@
           "descs": {
             "zh-CN": "对话框标题",
             "en-US": "Dialog title"
-          }
+          },
+          "optional": true
         },
         {
           "name": "page_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "页码索引",
             "en-US": "Page index"
-          }
+          },
+          "optional": true,
+          "default_value": "0"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.addBookmark",
       "descriptions": {
-        "zh-CN": "添加书签",
-        "en-US": "Add bookmark"
-      }
+        "zh-CN": "添加PDF文档的bookmark",
+        "en-US": "Add bookmark of PDF"
+      },
+      "group": "navigate",
+      "description": "Add bookmark of PDF"
     },
     {
       "name": "rotate_page",
@@ -1049,33 +1169,40 @@
         },
         {
           "name": "page_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "页",
-            "en-US": "Page"
-          }
+            "zh-CN": "page_index参数",
+            "en-US": "page_index parameter"
+          },
+          "desc": "page_index parameter",
+          "optional": true,
+          "default_value": "0"
         },
         {
           "name": "degrees",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "角度",
-            "en-US": "Degrees"
-          }
+            "zh-CN": "旋转角度（90/180/270）",
+            "en-US": "Rotation angle (90/180/270)"
+          },
+          "desc": "Rotation angle (90/180/270)"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.rotatePage",
       "descriptions": {
-        "zh-CN": "旋转页面",
-        "en-US": "Rotate page"
-      }
+        "zh-CN": "rotatePDF文档的page",
+        "en-US": "Rotate page of PDF"
+      },
+      "group": "page",
+      "description": "Rotate page of PDF"
     },
     {
       "name": "page_dimensions",
@@ -1085,13 +1212,14 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "page_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "页码索引",
             "en-US": "Page index"
@@ -1101,17 +1229,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "PageDimensions",
         "descs": {
-          "zh-CN": "尺寸",
-          "en-US": "Dimensions"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "pdf.pageDimensions",
       "descriptions": {
-        "zh-CN": "页面尺寸",
-        "en-US": "Page dimensions"
-      }
+        "zh-CN": "pagePDF文档的dimensions",
+        "en-US": "Page dimensions of PDF"
+      },
+      "group": "page",
+      "description": "Page dimensions of PDF"
     },
     {
       "name": "set_password",
@@ -1143,17 +1274,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.setPassword",
       "descriptions": {
-        "zh-CN": "设置密码",
-        "en-US": "Set password"
-      }
+        "zh-CN": "设置PDF文档的password属性",
+        "en-US": "Set password property of PDF"
+      },
+      "group": "security",
+      "description": "Set password property of PDF"
     },
     {
       "name": "remove_password",
@@ -1179,23 +1313,28 @@
           "name": "password",
           "type": "string",
           "descs": {
-            "zh-CN": "密码",
-            "en-US": "Password"
-          }
+            "zh-CN": "密码字符串",
+            "en-US": "Password string"
+          },
+          "desc": "Password string",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.removePassword",
       "descriptions": {
-        "zh-CN": "删除密码",
-        "en-US": "Remove password"
-      }
+        "zh-CN": "移除PDF文档的password",
+        "en-US": "Remove password of PDF"
+      },
+      "group": "security",
+      "description": "Remove password of PDF"
     },
     {
       "name": "html_to_pdf",
@@ -1213,23 +1352,26 @@
           "name": "output_path",
           "type": "string",
           "descs": {
-            "zh-CN": "输出",
-            "en-US": "Output"
-          }
+            "zh-CN": "输出文件保存路径",
+            "en-US": "Output file save path"
+          },
+          "desc": "Output file save path"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "SaveResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "pdf.htmlToPdf",
       "descriptions": {
         "zh-CN": "HTML 到 PDF",
         "en-US": "HTML to PDF"
-      }
+      },
+      "group": "file"
     },
     {
       "name": "add_page_numbers",
@@ -1255,14 +1397,15 @@
           "name": "position",
           "type": "string",
           "descs": {
-            "zh-CN": "位置",
-            "en-US": "Position"
+            "zh-CN": "position参数",
+            "en-US": "position parameter"
           },
-          "optional": true
+          "optional": true,
+          "desc": "position parameter"
         },
         {
           "name": "font_size",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "字号(磅)",
             "en-US": "Font size pt"
@@ -1272,7 +1415,7 @@
         },
         {
           "name": "start_number",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "起始页码",
             "en-US": "Start page number"
@@ -1282,17 +1425,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.addPageNumbers",
       "descriptions": {
-        "zh-CN": "添加页面数字",
-        "en-US": "Add page numbers"
-      }
+        "zh-CN": "添加PDF文档的page numbers",
+        "en-US": "Add page numbers of PDF"
+      },
+      "group": "content",
+      "description": "Add page numbers of PDF"
     },
     {
       "name": "add_header",
@@ -1310,13 +1456,14 @@
           "name": "text",
           "type": "string",
           "descs": {
-            "zh-CN": "文本",
-            "en-US": "Text"
-          }
+            "zh-CN": "文本字符串",
+            "en-US": "Text string"
+          },
+          "desc": "Text string"
         },
         {
           "name": "font_size",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "字号(磅)",
             "en-US": "Font size pt"
@@ -1326,17 +1473,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.addHeader",
       "descriptions": {
-        "zh-CN": "添加头部",
-        "en-US": "Add header"
-      }
+        "zh-CN": "添加PDF文档的header",
+        "en-US": "Add header of PDF"
+      },
+      "group": "content",
+      "description": "Add header of PDF"
     },
     {
       "name": "add_footer",
@@ -1354,13 +1504,14 @@
           "name": "text",
           "type": "string",
           "descs": {
-            "zh-CN": "文本",
-            "en-US": "Text"
-          }
+            "zh-CN": "文本字符串",
+            "en-US": "Text string"
+          },
+          "desc": "Text string"
         },
         {
           "name": "font_size",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "字号(磅)",
             "en-US": "Font size pt"
@@ -1370,17 +1521,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.addFooter",
       "descriptions": {
-        "zh-CN": "添加尾部",
-        "en-US": "Add footer"
-      }
+        "zh-CN": "添加PDF文档的footer",
+        "en-US": "Add footer of PDF"
+      },
+      "group": "content",
+      "description": "Add footer of PDF"
     },
     {
       "name": "flatten",
@@ -1404,17 +1558,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.flatten",
       "descriptions": {
-        "zh-CN": "扁平化",
-        "en-US": "Flatten"
-      }
+        "zh-CN": "flattenPDF文档",
+        "en-US": "Flatten PDF"
+      },
+      "group": "security",
+      "description": "Flatten PDF"
     },
     {
       "name": "insert_page",
@@ -1446,25 +1603,30 @@
         },
         {
           "name": "position",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "位置",
-            "en-US": "Position"
-          }
+            "zh-CN": "position参数",
+            "en-US": "position parameter"
+          },
+          "desc": "position parameter",
+          "optional": true
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.insertPage",
       "descriptions": {
-        "zh-CN": "插入页",
-        "en-US": "Insert page"
-      }
+        "zh-CN": "insertPDF文档的page",
+        "en-US": "Insert page of PDF"
+      },
+      "group": "page",
+      "description": "Insert page of PDF"
     },
     {
       "name": "delete_page",
@@ -1488,25 +1650,31 @@
         },
         {
           "name": "page_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "页",
-            "en-US": "Page"
-          }
+            "zh-CN": "page_index参数",
+            "en-US": "page_index parameter"
+          },
+          "desc": "page_index parameter",
+          "optional": true,
+          "default_value": "0"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.deletePage",
       "descriptions": {
-        "zh-CN": "删除页",
-        "en-US": "Delete page"
-      }
+        "zh-CN": "删除PDF文档的page",
+        "en-US": "Delete page of PDF"
+      },
+      "group": "page",
+      "description": "Delete page of PDF"
     },
     {
       "name": "reorder_pages",
@@ -1538,17 +1706,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.reorderPages",
       "descriptions": {
-        "zh-CN": "重排页面",
-        "en-US": "Reorder pages"
-      }
+        "zh-CN": "reorderPDF文档的pages",
+        "en-US": "Reorder pages of PDF"
+      },
+      "group": "page",
+      "description": "Reorder pages of PDF"
     },
     {
       "name": "get_form_fields",
@@ -1558,23 +1729,27 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "字段",
-          "en-US": "Fields"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "pdf.getFormFields",
       "descriptions": {
-        "zh-CN": "获取表单字段",
-        "en-US": "Get form fields"
-      }
+        "zh-CN": "获取PDF文档的form fields信息",
+        "en-US": "Get form fields info of PDF"
+      },
+      "group": "form",
+      "description": "Get form fields info of PDF"
     },
     {
       "name": "fill_form",
@@ -1598,25 +1773,29 @@
         },
         {
           "name": "fields",
-          "type": "object",
+          "type": "Record",
           "descs": {
-            "zh-CN": "字段",
-            "en-US": "Fields"
-          }
+            "zh-CN": "表单字段名与值的映射",
+            "en-US": "Form field name-value mapping"
+          },
+          "desc": "Form field name-value mapping"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.fillForm",
       "descriptions": {
-        "zh-CN": "填写表单",
-        "en-US": "Fill form"
-      }
+        "zh-CN": "fillPDF文档的form",
+        "en-US": "Fill form of PDF"
+      },
+      "group": "form",
+      "description": "Fill form of PDF"
     },
     {
       "name": "get_annotations",
@@ -1626,32 +1805,37 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "page_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "页码索引",
             "en-US": "Page index"
           },
-          "optional": true
+          "optional": true,
+          "default_value": "0"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "注释s",
-          "en-US": "Annotations"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "pdf.getAnnotations",
       "descriptions": {
-        "zh-CN": "获取注释列表",
-        "en-US": "Get annotations"
-      }
+        "zh-CN": "获取PDF文档的annotations信息",
+        "en-US": "Get annotations info of PDF"
+      },
+      "group": "annotate",
+      "description": "Get annotations info of PDF"
     },
     {
       "name": "add_annotation",
@@ -1667,51 +1851,59 @@
         },
         {
           "name": "page_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "页码索引",
             "en-US": "Page index"
-          }
+          },
+          "optional": true,
+          "default_value": "0"
         },
         {
           "name": "rect",
-          "type": "object",
+          "type": "Rect",
           "descs": {
-            "zh-CN": "矩形",
-            "en-US": "Rect"
-          }
+            "zh-CN": "注释区域矩形[x,y,w,h]",
+            "en-US": "Annotation area rectangle [x,y,w,h]"
+          },
+          "desc": "Annotation area rectangle [x,y,w,h]"
         },
         {
           "name": "content",
           "type": "string",
           "descs": {
-            "zh-CN": "内容",
-            "en-US": "Content"
+            "zh-CN": "文本内容",
+            "en-US": "Text content"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Text content"
         },
         {
           "name": "color",
           "type": "string",
           "descs": {
-            "zh-CN": "颜色",
-            "en-US": "Color"
+            "zh-CN": "颜色值（十六进制或RGB）",
+            "en-US": "Color value (hex or RGB)"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Color value (hex or RGB)"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.addAnnotation",
       "descriptions": {
-        "zh-CN": "添加注释",
-        "en-US": "Add annotation"
-      }
+        "zh-CN": "添加PDF文档的annotation",
+        "en-US": "Add annotation of PDF"
+      },
+      "group": "annotate",
+      "description": "Add annotation of PDF"
     },
     {
       "name": "remove_annotation",
@@ -1727,15 +1919,17 @@
         },
         {
           "name": "page_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "页码索引",
             "en-US": "Page index"
-          }
+          },
+          "optional": true,
+          "default_value": "0"
         },
         {
           "name": "annotation_index",
-          "type": "i32",
+          "type": "number",
           "descs": {
             "zh-CN": "注释索引",
             "en-US": "Annotation Index"
@@ -1743,17 +1937,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.removeAnnotation",
       "descriptions": {
-        "zh-CN": "删除注释",
-        "en-US": "Remove annotation"
-      }
+        "zh-CN": "移除PDF文档的annotation",
+        "en-US": "Remove annotation of PDF"
+      },
+      "group": "annotate",
+      "description": "Remove annotation of PDF"
     },
     {
       "name": "stamp_image",
@@ -1785,7 +1982,7 @@
         },
         {
           "name": "opacity",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "透明度 0-1",
             "en-US": "Opacity 0-1"
@@ -1795,7 +1992,7 @@
         },
         {
           "name": "scale",
-          "type": "f64",
+          "type": "number",
           "descs": {
             "zh-CN": "缩放比例",
             "en-US": "Scale factor"
@@ -1805,17 +2002,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "pdf.stampImage",
       "descriptions": {
-        "zh-CN": "盖印图像",
-        "en-US": "Stamp image"
-      }
+        "zh-CN": "stampPDF文档的image",
+        "en-US": "Stamp image of PDF"
+      },
+      "group": "content",
+      "description": "Stamp image of PDF"
     },
     {
       "name": "extract_images",
@@ -1825,31 +2025,36 @@
           "name": "path",
           "type": "string",
           "descs": {
-            "zh-CN": "路径",
-            "en-US": "Path"
-          }
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          },
+          "desc": "File path"
         },
         {
           "name": "output_dir",
           "type": "string",
           "descs": {
-            "zh-CN": "目录",
-            "en-US": "Dir"
-          }
+            "zh-CN": "output_dir参数",
+            "en-US": "output_dir parameter"
+          },
+          "desc": "output_dir parameter"
         }
       ],
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "路径",
-          "en-US": "Paths"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "pdf.extractImages",
       "descriptions": {
-        "zh-CN": "提取图像",
-        "en-US": "Extract images"
-      }
+        "zh-CN": "提取PDF文档的images",
+        "en-US": "Extract images of PDF"
+      },
+      "group": "extract",
+      "description": "Extract images of PDF"
     },
     {
       "name": "list_open",
@@ -1858,19 +2063,343 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "文档",
-          "en-US": "Docs"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "pdf.listOpen",
       "descriptions": {
-        "zh-CN": "列出已打开的文档",
-        "en-US": "List open docs"
-      }
+        "zh-CN": "列出PDF文档的open",
+        "en-US": "List open of PDF"
+      },
+      "group": "file",
+      "description": "List open of PDF"
     }
   ],
   "overviews": {
     "zh-CN": "提供 PDF 文件的创建、读取、编辑、合并、拆分、加密、水印等能力。支持文本提取、页面操作、表单填写、书签管理、图片插入等功能。",
     "en-US": "Create, read, edit, merge, split, encrypt, and watermark PDF files. Supports text extraction, page operations, form filling, bookmarks, and image insertion."
-  }
+  },
+  "types": [
+    {
+      "name": "PdfPageInfo",
+      "descriptions": {
+        "zh-CN": "PDF 页面信息",
+        "en-US": "PDF page information"
+      },
+      "fields": [
+        {
+          "name": "index",
+          "type": "number",
+          "descs": {
+            "zh-CN": "页码索引（从0开始）",
+            "en-US": "Page index (0-based)"
+          }
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "页面宽度（点）",
+            "en-US": "Page width in points"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "页面高度（点）",
+            "en-US": "Page height in points"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PdfMetadata",
+      "descriptions": {
+        "zh-CN": "PDF 文档元数据",
+        "en-US": "PDF document metadata"
+      },
+      "fields": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档标题",
+            "en-US": "Document title"
+          }
+        },
+        {
+          "name": "author",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档作者",
+            "en-US": "Document author"
+          }
+        },
+        {
+          "name": "page_count",
+          "type": "number",
+          "descs": {
+            "zh-CN": "总页数",
+            "en-US": "Total page count"
+          }
+        },
+        {
+          "name": "encrypted",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否加密",
+            "en-US": "Whether encrypted"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PdfInfo",
+      "descriptions": {
+        "zh-CN": "PDF文件信息",
+        "en-US": "PDF file info"
+      },
+      "fields": [
+        {
+          "name": "pages",
+          "type": "number",
+          "descs": {
+            "zh-CN": "总页数",
+            "en-US": "Total pages"
+          }
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档标题",
+            "en-US": "Document title"
+          }
+        },
+        {
+          "name": "author",
+          "type": "string",
+          "descs": {
+            "zh-CN": "作者",
+            "en-US": "Author"
+          }
+        },
+        {
+          "name": "encrypted",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否加密",
+            "en-US": "Whether encrypted"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PdfHandle",
+      "descriptions": {
+        "zh-CN": "PDF文档操作句柄",
+        "en-US": "PDF document handle"
+      },
+      "fields": [
+        {
+          "name": "handle_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档句柄ID",
+            "en-US": "Document handle ID"
+          }
+        },
+        {
+          "name": "pages",
+          "type": "number",
+          "descs": {
+            "zh-CN": "总页数",
+            "en-US": "Total pages"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PageHandle",
+      "descriptions": {
+        "zh-CN": "PDF页面句柄",
+        "en-US": "PDF page handle"
+      },
+      "fields": [
+        {
+          "name": "page_index",
+          "type": "number",
+          "descs": {
+            "zh-CN": "页面索引",
+            "en-US": "Page index"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PageDimensions",
+      "descriptions": {
+        "zh-CN": "页面尺寸信息",
+        "en-US": "Page dimensions"
+      },
+      "fields": [
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "宽度(pt)",
+            "en-US": "Width in pt"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "高度(pt)",
+            "en-US": "Height in pt"
+          }
+        }
+      ]
+    },
+    {
+      "name": "SaveResult",
+      "descriptions": {
+        "zh-CN": "保存操作结果",
+        "en-US": "Save operation result"
+      },
+      "fields": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否成功",
+            "en-US": "Whether succeeded"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "保存路径",
+            "en-US": "Save path"
+          }
+        },
+        {
+          "name": "size",
+          "type": "number",
+          "descs": {
+            "zh-CN": "文件大小(字节)",
+            "en-US": "File size in bytes"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PageSize",
+      "descriptions": {
+        "zh-CN": "页面尺寸配置",
+        "en-US": "Page size config"
+      },
+      "fields": [
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "宽度(pt)",
+            "en-US": "Width in pt"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "高度(pt)",
+            "en-US": "Height in pt"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Rect",
+      "descriptions": {
+        "zh-CN": "矩形区域",
+        "en-US": "Rectangle area"
+      },
+      "fields": [
+        {
+          "name": "x",
+          "type": "number",
+          "descs": {
+            "zh-CN": "X坐标",
+            "en-US": "X coordinate"
+          }
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "Y坐标",
+            "en-US": "Y coordinate"
+          }
+        },
+        {
+          "name": "w",
+          "type": "number",
+          "descs": {
+            "zh-CN": "宽度",
+            "en-US": "Width"
+          }
+        },
+        {
+          "name": "h",
+          "type": "number",
+          "descs": {
+            "zh-CN": "高度",
+            "en-US": "Height"
+          }
+        }
+      ]
+    }
+  ],
+  "constants": [
+    {
+      "name": "PAGE_A4_WIDTH",
+      "value": 595,
+      "value_type": "number",
+      "descs": {
+        "zh-CN": "A4纸宽度(pt)",
+        "en-US": "A4 paper width in pt"
+      }
+    },
+    {
+      "name": "PAGE_A4_HEIGHT",
+      "value": 842,
+      "value_type": "number",
+      "descs": {
+        "zh-CN": "A4纸高度(pt)",
+        "en-US": "A4 paper height in pt"
+      }
+    },
+    {
+      "name": "PAGE_LETTER_WIDTH",
+      "value": 612,
+      "value_type": "number",
+      "descs": {
+        "zh-CN": "Letter纸宽度(pt)",
+        "en-US": "Letter paper width in pt"
+      }
+    },
+    {
+      "name": "PAGE_LETTER_HEIGHT",
+      "value": 792,
+      "value_type": "number",
+      "descs": {
+        "zh-CN": "Letter纸高度(pt)",
+        "en-US": "Letter paper height in pt"
+      }
+    }
+  ]
 }

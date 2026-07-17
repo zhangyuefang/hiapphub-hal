@@ -19,7 +19,7 @@
       "symbol": "hap_power_battery_status",
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "BatteryStatus",
         "descs": {
           "zh-CN": "电池信息",
           "en-US": "Battery info"
@@ -27,16 +27,18 @@
       },
       "bridge_path": "power.batteryStatus",
       "descriptions": {
-        "zh-CN": "获取电池信息状态",
-        "en-US": "Get battery status"
-      }
+        "zh-CN": "获取电池电量、充电状态等信息",
+        "en-US": "Battery status of power"
+      },
+      "group": "info",
+      "description": "Battery status of power"
     },
     {
       "name": "is_on_battery",
       "symbol": "hap_power_is_on_battery",
       "params": [],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
           "zh-CN": "使用电池",
           "en-US": "On battery"
@@ -44,9 +46,11 @@
       },
       "bridge_path": "power.isOnBattery",
       "descriptions": {
-        "zh-CN": "检查是否使用电池",
-        "en-US": "Check if on battery"
-      }
+        "zh-CN": "检查当前是否使用电池供电",
+        "en-US": "Check if power on battery"
+      },
+      "group": "info",
+      "description": "Check if power on battery"
     },
     {
       "name": "prevent_sleep",
@@ -56,13 +60,14 @@
           "name": "reason",
           "type": "string",
           "descs": {
-            "zh-CN": "原因",
-            "en-US": "Reason"
-          }
+            "zh-CN": "阻止休眠的原因说明",
+            "en-US": "Reason for preventing sleep"
+          },
+          "desc": "Reason for preventing sleep"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "SleepLock",
         "descs": {
           "zh-CN": "锁定 ID",
           "en-US": "Lock ID"
@@ -70,9 +75,11 @@
       },
       "bridge_path": "power.preventSleep",
       "descriptions": {
-        "zh-CN": "阻止系统休眠",
-        "en-US": "Prevent system sleep"
-      }
+        "zh-CN": "阻止系统进入休眠状态",
+        "en-US": "Prevent sleep of power"
+      },
+      "group": "control",
+      "description": "Prevent sleep of power"
     },
     {
       "name": "allow_sleep",
@@ -88,41 +95,47 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "power.allowSleep",
       "descriptions": {
-        "zh-CN": "允许系统休眠",
-        "en-US": "Allow system sleep"
-      }
+        "zh-CN": "允许系统恢复休眠（释放锁定）",
+        "en-US": "Allow sleep of power"
+      },
+      "group": "control",
+      "description": "Allow sleep of power"
     },
     {
       "name": "screen_off",
       "symbol": "hap_power_screen_off",
       "params": [],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "power.screenOff",
       "descriptions": {
-        "zh-CN": "关闭屏幕",
-        "en-US": "Turn screen off"
-      }
+        "zh-CN": "关闭屏幕显示",
+        "en-US": "Screen off of power"
+      },
+      "group": "control",
+      "description": "Screen off of power"
     },
     {
       "name": "idle_time",
       "symbol": "hap_power_idle_time",
       "params": [],
       "returns": {
-        "type": "f64",
+        "type": "number",
         "descs": {
           "zh-CN": "空闲秒数",
           "en-US": "Idle seconds"
@@ -130,9 +143,11 @@
       },
       "bridge_path": "power.idleTime",
       "descriptions": {
-        "zh-CN": "获取空闲时间",
-        "en-US": "Get idle time"
-      }
+        "zh-CN": "获取系统空闲时间（秒）",
+        "en-US": "Idle time of power"
+      },
+      "group": "info",
+      "description": "Idle time of power"
     },
     {
       "name": "on_power_change",
@@ -148,7 +163,7 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "PowerWatcher",
         "descs": {
           "zh-CN": "监视器 ID",
           "en-US": "Watcher ID"
@@ -156,9 +171,11 @@
       },
       "bridge_path": "power.onPowerChange",
       "descriptions": {
-        "zh-CN": "监视电源变化变化",
-        "en-US": "Watch power changes"
-      }
+        "zh-CN": "监听电源状态变化事件",
+        "en-US": "Listen for power change event on power"
+      },
+      "group": "event",
+      "description": "Listen for power change event on power"
     },
     {
       "name": "off_power_change",
@@ -174,17 +191,20 @@
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "power.offPowerChange",
       "descriptions": {
-        "zh-CN": "停止监视",
-        "en-US": "Stop watching"
-      }
+        "zh-CN": "取消监听电源状态变化事件",
+        "en-US": "Stop listening for power change event on power"
+      },
+      "group": "event",
+      "description": "Stop listening for power change event on power"
     },
     {
       "name": "list_locks",
@@ -199,13 +219,112 @@
       },
       "bridge_path": "power.listLocks",
       "descriptions": {
-        "zh-CN": "列出休眠锁",
-        "en-US": "List sleep locks"
-      }
+        "zh-CN": "列出所有活跃的休眠锁定",
+        "en-US": "List locks of power"
+      },
+      "group": "info",
+      "description": "List locks of power"
     }
   ],
   "overviews": {
     "zh-CN": "提供电源管理能力，包括获取电池状态、充电信息、电源类型检测、系统休眠/唤醒控制、电源事件监听、节能模式管理等功能。",
     "en-US": "Power management including battery status, charging info, power source detection, sleep/wake control, power event monitoring, and energy saver management."
-  }
+  },
+  "events": [
+    {
+      "name": "power_change",
+      "descriptions": {
+        "zh-CN": "电源状态变更",
+        "en-US": "Power state changed"
+      },
+      "payload": [
+        {
+          "name": "is_on_battery",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否使用电池",
+            "en-US": "Is on battery"
+          }
+        },
+        {
+          "name": "level",
+          "type": "number",
+          "descs": {
+            "zh-CN": "电量百分比",
+            "en-US": "Battery level %"
+          }
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "BatteryStatus",
+      "descriptions": {
+        "zh-CN": "电池状态",
+        "en-US": "Battery status"
+      },
+      "fields": [
+        {
+          "name": "level",
+          "type": "number",
+          "descs": {
+            "zh-CN": "电量(%)",
+            "en-US": "Level(%)"
+          }
+        },
+        {
+          "name": "charging",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否充电",
+            "en-US": "Is charging"
+          }
+        },
+        {
+          "name": "time_remaining",
+          "type": "number",
+          "optional": true,
+          "descs": {
+            "zh-CN": "剩余分钟",
+            "en-US": "Minutes remaining"
+          }
+        }
+      ]
+    },
+    {
+      "name": "SleepLock",
+      "descriptions": {
+        "zh-CN": "休眠锁",
+        "en-US": "Sleep lock"
+      },
+      "fields": [
+        {
+          "name": "lock_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "锁ID",
+            "en-US": "Lock ID"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PowerWatcher",
+      "descriptions": {
+        "zh-CN": "电源变化监听器",
+        "en-US": "Power change watcher"
+      },
+      "fields": [
+        {
+          "name": "watcher_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监视器ID",
+            "en-US": "Watcher ID"
+          }
+        }
+      ]
+    }
+  ]
 }

@@ -19,51 +19,60 @@
       "symbol": "hap_system_os_info",
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "OsInfo",
         "descs": {
-          "zh-CN": "OS 信息",
-          "en-US": "OS info"
-        }
+          "zh-CN": "操作系统信息对象",
+          "en-US": "OS info object"
+        },
+        "desc": "OS info object"
       },
       "bridge_path": "system.osInfo",
       "descriptions": {
-        "zh-CN": "OS 信息",
-        "en-US": "OS info"
-      }
+        "zh-CN": "获取操作系统的详细信息（名称、版本、架构等）",
+        "en-US": "Get OS details (name, version, architecture)"
+      },
+      "group": "os",
+      "description": "Get OS details (name, version, architecture)"
     },
     {
       "name": "cpu_info",
       "symbol": "hap_system_cpu_info",
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "CpuInfo",
         "descs": {
-          "zh-CN": "CPU 信息",
-          "en-US": "CPU info"
-        }
+          "zh-CN": "CPU信息对象",
+          "en-US": "CPU info object"
+        },
+        "desc": "CPU info object"
       },
       "bridge_path": "system.cpuInfo",
       "descriptions": {
-        "zh-CN": "CPU 信息",
-        "en-US": "CPU info"
-      }
+        "zh-CN": "获取CPU的硬件信息（型号、核心数、频率等）",
+        "en-US": "Get CPU hardware info (model, cores, frequency)"
+      },
+      "group": "hardware",
+      "description": "Get CPU hardware info (model, cores, frequency)"
     },
     {
       "name": "memory_info",
       "symbol": "hap_system_memory_info",
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "MemoryInfo",
         "descs": {
-          "zh-CN": "内存信息",
-          "en-US": "Memory info"
-        }
+          "zh-CN": "内存信息对象",
+          "en-US": "Memory info object"
+        },
+        "desc": "Memory info object"
       },
       "bridge_path": "system.memoryInfo",
       "descriptions": {
-        "zh-CN": "内存信息",
-        "en-US": "Memory info"
-      }
+        "zh-CN": "获取系统内存使用情况（总量、已用、可用）",
+        "en-US": "Get memory usage (total, used, available)"
+      },
+      "group": "hardware",
+      "description": "Get memory usage (total, used, available)"
     },
     {
       "name": "disk_info",
@@ -72,22 +81,25 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "磁盘",
-          "en-US": "Disks"
-        }
+          "zh-CN": "磁盘分区信息数组",
+          "en-US": "Array of disk partition info"
+        },
+        "desc": "Array of disk partition info"
       },
       "bridge_path": "system.diskInfo",
       "descriptions": {
-        "zh-CN": "磁盘信息",
-        "en-US": "Disk info"
-      }
+        "zh-CN": "获取所有磁盘分区的容量和使用情况",
+        "en-US": "Get capacity and usage for all disk partitions"
+      },
+      "group": "hardware",
+      "description": "Get capacity and usage for all disk partitions"
     },
     {
       "name": "gpu_info",
       "symbol": "hap_system_gpu_info",
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "GpuInfo",
         "descs": {
           "zh-CN": "GPU 信息",
           "en-US": "GPU info"
@@ -95,9 +107,11 @@
       },
       "bridge_path": "system.gpuInfo",
       "descriptions": {
-        "zh-CN": "GPU 信息",
-        "en-US": "GPU info"
-      }
+        "zh-CN": "获取 GPU 显卡信息",
+        "en-US": "Gpu info of system"
+      },
+      "group": "hardware",
+      "description": "Gpu info of system"
     },
     {
       "name": "hostname",
@@ -106,15 +120,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "主机名",
-          "en-US": "Hostname"
-        }
+          "zh-CN": "主机名字符串",
+          "en-US": "Hostname string"
+        },
+        "desc": "Hostname string"
       },
       "bridge_path": "system.hostname",
       "descriptions": {
-        "zh-CN": "主机名",
-        "en-US": "Hostname"
-      }
+        "zh-CN": "获取当前计算机的主机名",
+        "en-US": "Get current computer hostname"
+      },
+      "group": "os",
+      "description": "Get current computer hostname"
     },
     {
       "name": "username",
@@ -123,15 +140,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "获取用户名",
-          "en-US": "Username"
-        }
+          "zh-CN": "用户名字符串",
+          "en-US": "Username string"
+        },
+        "desc": "Username string"
       },
       "bridge_path": "system.username",
       "descriptions": {
-        "zh-CN": "获取用户名",
-        "en-US": "Username"
-      }
+        "zh-CN": "获取当前登录用户的用户名",
+        "en-US": "Get current logged-in username"
+      },
+      "group": "os",
+      "description": "Get current logged-in username"
     },
     {
       "name": "home_dir",
@@ -140,32 +160,38 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "路径",
-          "en-US": "Path"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "system.homeDir",
       "descriptions": {
-        "zh-CN": "用户主目录",
-        "en-US": "Home dir"
-      }
+        "zh-CN": "获取用户主目录路径",
+        "en-US": "Home dir of system"
+      },
+      "group": "os",
+      "description": "Home dir of system"
     },
     {
       "name": "uptime",
       "symbol": "hap_system_uptime",
       "params": [],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "秒",
-          "en-US": "Seconds"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "system.uptime",
       "descriptions": {
-        "zh-CN": "系统运行时间",
-        "en-US": "Uptime"
-      }
+        "zh-CN": "uptime系统信息",
+        "en-US": "Uptime system"
+      },
+      "group": "runtime",
+      "description": "Uptime system"
     },
     {
       "name": "locale",
@@ -180,9 +206,11 @@
       },
       "bridge_path": "system.locale",
       "descriptions": {
-        "zh-CN": "区域设置",
-        "en-US": "Locale"
-      }
+        "zh-CN": "locale系统信息",
+        "en-US": "Locale system"
+      },
+      "group": "os",
+      "description": "Locale system"
     },
     {
       "name": "theme",
@@ -191,32 +219,38 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "主题",
-          "en-US": "Theme"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "system.theme",
       "descriptions": {
-        "zh-CN": "主题",
-        "en-US": "Theme"
-      }
+        "zh-CN": "获取当前系统主题模式（浅色/深色）",
+        "en-US": "Get current system theme mode (light/dark)"
+      },
+      "group": "os",
+      "description": "Get current system theme mode (light/dark)"
     },
     {
       "name": "is_elevated",
       "symbol": "hap_system_is_elevated",
       "params": [],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "已提权",
-          "en-US": "Elevated"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "system.isElevated",
       "descriptions": {
-        "zh-CN": "是否管理员权限",
-        "en-US": "Is elevated"
-      }
+        "zh-CN": "检查是否system elevated",
+        "en-US": "Check if system elevated"
+      },
+      "group": "os",
+      "description": "Check if system elevated"
     },
     {
       "name": "shell_version",
@@ -225,32 +259,38 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "版本",
-          "en-US": "Version"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "system.shellVersion",
       "descriptions": {
-        "zh-CN": "Shell 版本",
-        "en-US": "Shell version"
-      }
+        "zh-CN": "获取 Shell 版本号",
+        "en-US": "Shell version of system"
+      },
+      "group": "os",
+      "description": "Shell version of system"
     },
     {
       "name": "get_proxy",
       "symbol": "hap_system_get_proxy",
       "params": [],
       "returns": {
-        "type": "object",
+        "type": "ProxyConfig",
         "descs": {
-          "zh-CN": "代理",
-          "en-US": "Proxy"
-        }
+          "zh-CN": "ProxyConfig类型的结果对象",
+          "en-US": "Result object of type ProxyConfig"
+        },
+        "desc": "Result object of type ProxyConfig"
       },
       "bridge_path": "system.getProxy",
       "descriptions": {
-        "zh-CN": "获取代理",
-        "en-US": "Get proxy"
-      }
+        "zh-CN": "获取proxy信息",
+        "en-US": "Get proxy info of system"
+      },
+      "group": "os",
+      "description": "Get proxy info of system"
     },
     {
       "name": "open_settings",
@@ -260,24 +300,28 @@
           "name": "section",
           "type": "string",
           "descs": {
-            "zh-CN": "设置项",
-            "en-US": "Settings section"
+            "zh-CN": "设置面板名称（如wifi/bluetooth/display）",
+            "en-US": "Settings panel name (e.g. wifi/bluetooth/display)"
           },
-          "optional": true
+          "optional": true,
+          "desc": "Settings panel name (e.g. wifi/bluetooth/display)"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "system.openSettings",
       "descriptions": {
-        "zh-CN": "打开设置",
-        "en-US": "Open settings"
-      }
+        "zh-CN": "打开settings",
+        "en-US": "Open settings of system"
+      },
+      "group": "app",
+      "description": "Open settings of system"
     },
     {
       "name": "app_data_dir",
@@ -296,49 +340,58 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "路径",
-          "en-US": "Path"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "system.appDataDir",
       "descriptions": {
-        "zh-CN": "应用数据目录",
-        "en-US": "App data dir"
-      }
+        "zh-CN": "获取应用数据目录路径",
+        "en-US": "App data dir of system"
+      },
+      "group": "app",
+      "description": "App data dir of system"
     },
     {
       "name": "total_memory_mb",
       "symbol": "hap_system_total_memory_mb",
       "params": [],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "MB",
-          "en-US": "MB"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "system.totalMemoryMb",
       "descriptions": {
-        "zh-CN": "总计内存 MB",
-        "en-US": "Total memory MB"
-      }
+        "zh-CN": "获取系统总内存（MB）",
+        "en-US": "Total memory mb of system"
+      },
+      "group": "hardware",
+      "description": "Total memory mb of system"
     },
     {
       "name": "free_memory_mb",
       "symbol": "hap_system_free_memory_mb",
       "params": [],
       "returns": {
-        "type": "i64",
+        "type": "number",
         "descs": {
-          "zh-CN": "MB",
-          "en-US": "MB"
-        }
+          "zh-CN": "i64类型的结果对象",
+          "en-US": "Result object of type i64"
+        },
+        "desc": "Result object of type i64"
       },
       "bridge_path": "system.freeMemoryMb",
       "descriptions": {
-        "zh-CN": "可用内存(MB)",
-        "en-US": "Free memory MB"
-      }
+        "zh-CN": "获取系统空闲内存（MB）",
+        "en-US": "Free memory mb of system"
+      },
+      "group": "hardware",
+      "description": "Free memory mb of system"
     },
     {
       "name": "machine_id",
@@ -347,15 +400,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "ID",
-          "en-US": "ID"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "system.machineId",
       "descriptions": {
-        "zh-CN": "机器 ID",
-        "en-US": "Machine ID"
-      }
+        "zh-CN": "获取设备唯一标识符",
+        "en-US": "Machine id of system"
+      },
+      "group": "os",
+      "description": "Machine id of system"
     },
     {
       "name": "default_browser",
@@ -364,15 +420,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "浏览器",
-          "en-US": "Browser"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "system.defaultBrowser",
       "descriptions": {
-        "zh-CN": "默认浏览器",
-        "en-US": "Default browser"
-      }
+        "zh-CN": "获取系统默认浏览器",
+        "en-US": "Default browser of system"
+      },
+      "group": "os",
+      "description": "Default browser of system"
     },
     {
       "name": "monitors",
@@ -381,15 +440,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "监控器",
-          "en-US": "Monitors"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "system.monitors",
       "descriptions": {
-        "zh-CN": "列出监控器",
-        "en-US": "List monitors"
-      }
+        "zh-CN": "monitors系统信息",
+        "en-US": "Monitors system"
+      },
+      "group": "hardware",
+      "description": "Monitors system"
     },
     {
       "name": "cpu_usage",
@@ -397,7 +459,7 @@
       "params": [
         {
           "name": "interval_ms",
-          "type": "u32",
+          "type": "number",
           "descs": {
             "zh-CN": "间隔(毫秒)",
             "en-US": "Interval in ms"
@@ -407,17 +469,20 @@
         }
       ],
       "returns": {
-        "type": "f64",
+        "type": "number",
         "descs": {
-          "zh-CN": "百分比",
-          "en-US": "Percent"
-        }
+          "zh-CN": "f64类型的结果对象",
+          "en-US": "Result object of type f64"
+        },
+        "desc": "Result object of type f64"
       },
       "bridge_path": "system.cpuUsage",
       "descriptions": {
-        "zh-CN": "CPU 使用情况",
-        "en-US": "CPU usage"
-      }
+        "zh-CN": "获取当前 CPU 使用率",
+        "en-US": "Cpu usage of system"
+      },
+      "group": "hardware",
+      "description": "Cpu usage of system"
     },
     {
       "name": "on_theme_change",
@@ -427,23 +492,27 @@
           "name": "callback_id",
           "type": "string",
           "descs": {
-            "zh-CN": "回调",
-            "en-US": "Callback"
-          }
+            "zh-CN": "异步回调标识符",
+            "en-US": "Async callback identifier"
+          },
+          "desc": "Async callback identifier"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "ThemeWatcher",
         "descs": {
-          "zh-CN": "监视器",
-          "en-US": "Watcher"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "system.onThemeChange",
       "descriptions": {
-        "zh-CN": "监视主题",
-        "en-US": "Watch theme"
-      }
+        "zh-CN": "监听系统主题切换事件",
+        "en-US": "Listen for theme change event on system"
+      },
+      "group": "event",
+      "description": "Listen for theme change event on system"
     },
     {
       "name": "off_theme_change",
@@ -453,23 +522,27 @@
           "name": "watcher_id",
           "type": "string",
           "descs": {
-            "zh-CN": "监视器",
-            "en-US": "Watcher"
-          }
+            "zh-CN": "watcher_id参数",
+            "en-US": "watcher_id parameter"
+          },
+          "desc": "watcher_id parameter"
         }
       ],
       "returns": {
-        "type": "bool",
+        "type": "boolean",
         "descs": {
-          "zh-CN": "成功",
-          "en-US": "Success"
-        }
+          "zh-CN": "是否成功",
+          "en-US": "Whether successful"
+        },
+        "desc": "Whether successful"
       },
       "bridge_path": "system.offThemeChange",
       "descriptions": {
-        "zh-CN": "停止监视主题",
-        "en-US": "Stop watching theme"
-      }
+        "zh-CN": "停止listening for theme change event on system",
+        "en-US": "Stop listening for theme change event on system"
+      },
+      "group": "event",
+      "description": "Stop listening for theme change event on system"
     },
     {
       "name": "accent_color",
@@ -478,15 +551,18 @@
       "returns": {
         "type": "string",
         "descs": {
-          "zh-CN": "颜色",
-          "en-US": "Color"
-        }
+          "zh-CN": "返回的字符串结果",
+          "en-US": "Returned string result"
+        },
+        "desc": "Returned string result"
       },
       "bridge_path": "system.accentColor",
       "descriptions": {
-        "zh-CN": "系统强调色",
-        "en-US": "Accent color"
-      }
+        "zh-CN": "获取系统强调色",
+        "en-US": "Accent color of system"
+      },
+      "group": "os",
+      "description": "Accent color of system"
     },
     {
       "name": "list_fonts",
@@ -495,19 +571,237 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "字体",
-          "en-US": "Fonts"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "system.listFonts",
       "descriptions": {
-        "zh-CN": "列出字体",
-        "en-US": "List fonts"
-      }
+        "zh-CN": "列出fonts",
+        "en-US": "List fonts of system"
+      },
+      "group": "hardware",
+      "description": "List fonts of system"
     }
   ],
   "overviews": {
     "zh-CN": "提供系统信息查询与控制能力，包括 CPU/内存/磁盘信息、操作系统信息、网络状态、系统时间、环境变量、用户信息等功能。",
     "en-US": "System information and control including CPU/memory/disk info, OS details, network status, system time, environment variables, and user information."
-  }
+  },
+  "events": [
+    {
+      "name": "theme_change",
+      "descriptions": {
+        "zh-CN": "系统主题变更",
+        "en-US": "System theme changed"
+      },
+      "payload": [
+        {
+          "name": "theme",
+          "type": "string",
+          "descs": {
+            "zh-CN": "新主题(light/dark)",
+            "en-US": "New theme(light/dark)"
+          }
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "OsInfo",
+      "descriptions": {
+        "zh-CN": "操作系统信息",
+        "en-US": "OS info"
+      },
+      "fields": [
+        {
+          "name": "os",
+          "type": "string",
+          "descs": {
+            "zh-CN": "系统名",
+            "en-US": "OS name"
+          }
+        },
+        {
+          "name": "version",
+          "type": "string",
+          "descs": {
+            "zh-CN": "版本号",
+            "en-US": "Version"
+          }
+        },
+        {
+          "name": "arch",
+          "type": "string",
+          "descs": {
+            "zh-CN": "架构",
+            "en-US": "Architecture"
+          }
+        },
+        {
+          "name": "kernel",
+          "type": "string",
+          "descs": {
+            "zh-CN": "内核版本",
+            "en-US": "Kernel version"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CpuInfo",
+      "descriptions": {
+        "zh-CN": "CPU信息",
+        "en-US": "CPU info"
+      },
+      "fields": [
+        {
+          "name": "model",
+          "type": "string",
+          "descs": {
+            "zh-CN": "型号",
+            "en-US": "Model"
+          }
+        },
+        {
+          "name": "cores",
+          "type": "number",
+          "descs": {
+            "zh-CN": "核心数",
+            "en-US": "Cores"
+          }
+        },
+        {
+          "name": "frequency",
+          "type": "number",
+          "descs": {
+            "zh-CN": "频率(MHz)",
+            "en-US": "Frequency(MHz)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "MemoryInfo",
+      "descriptions": {
+        "zh-CN": "内存信息",
+        "en-US": "Memory info"
+      },
+      "fields": [
+        {
+          "name": "total",
+          "type": "number",
+          "descs": {
+            "zh-CN": "总内存(MB)",
+            "en-US": "Total(MB)"
+          }
+        },
+        {
+          "name": "free",
+          "type": "number",
+          "descs": {
+            "zh-CN": "可用(MB)",
+            "en-US": "Free(MB)"
+          }
+        },
+        {
+          "name": "used",
+          "type": "number",
+          "descs": {
+            "zh-CN": "已用(MB)",
+            "en-US": "Used(MB)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "GpuInfo",
+      "descriptions": {
+        "zh-CN": "GPU信息",
+        "en-US": "GPU info"
+      },
+      "fields": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "名称",
+            "en-US": "Name"
+          }
+        },
+        {
+          "name": "vendor",
+          "type": "string",
+          "descs": {
+            "zh-CN": "厂商",
+            "en-US": "Vendor"
+          }
+        },
+        {
+          "name": "memory",
+          "type": "number",
+          "optional": true,
+          "descs": {
+            "zh-CN": "显存(MB)",
+            "en-US": "VRAM(MB)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ProxyConfig",
+      "descriptions": {
+        "zh-CN": "代理配置",
+        "en-US": "Proxy config"
+      },
+      "fields": [
+        {
+          "name": "http",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "HTTP代理",
+            "en-US": "HTTP proxy"
+          }
+        },
+        {
+          "name": "https",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "HTTPS代理",
+            "en-US": "HTTPS proxy"
+          }
+        },
+        {
+          "name": "no_proxy",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "不代理列表",
+            "en-US": "No proxy list"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ThemeWatcher",
+      "descriptions": {
+        "zh-CN": "主题变化监听器",
+        "en-US": "Theme change watcher"
+      },
+      "fields": [
+        {
+          "name": "watcher_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监听器ID",
+            "en-US": "Watcher ID"
+          }
+        }
+      ]
+    }
+  ]
 }

@@ -28,17 +28,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "CsvData",
         "descs": {
-          "zh-CN": "已解析",
-          "en-US": "Parsed"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "csv.parse",
       "descriptions": {
-        "zh-CN": "解析 CSV",
-        "en-US": "Parse CSV"
-      }
+        "zh-CN": "解析CSV格式字符串或文件为结构化数据",
+        "en-US": "Parse CSV string or file into structured data"
+      },
+      "group": "read",
+      "description": "Parse CSV string or file into structured data"
     },
     {
       "name": "stringify",
@@ -48,9 +51,10 @@
           "name": "rows",
           "type": "array",
           "descs": {
-            "zh-CN": "行",
-            "en-US": "Rows"
-          }
+            "zh-CN": "要转换为CSV的二维数组数据",
+            "en-US": "2D array data to convert to CSV"
+          },
+          "desc": "2D array data to convert to CSV"
         }
       ],
       "returns": {
@@ -62,9 +66,11 @@
       },
       "bridge_path": "csv.stringify",
       "descriptions": {
-        "zh-CN": "序列化为字符串",
-        "en-US": "Stringify"
-      }
+        "zh-CN": "stringifyCSV",
+        "en-US": "Stringify CSV"
+      },
+      "group": "write",
+      "description": "Stringify CSV"
     },
     {
       "name": "read_file",
@@ -80,17 +86,20 @@
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "CsvData",
         "descs": {
-          "zh-CN": "数据",
-          "en-US": "Data"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "csv.readFile",
       "descriptions": {
-        "zh-CN": "读取 CSV 文件",
-        "en-US": "Read CSV file"
-      }
+        "zh-CN": "读取CSV的file",
+        "en-US": "Read file of CSV"
+      },
+      "group": "read",
+      "description": "Read file of CSV"
     },
     {
       "name": "write_file",
@@ -108,23 +117,27 @@
           "name": "rows",
           "type": "array",
           "descs": {
-            "zh-CN": "行",
-            "en-US": "Rows"
-          }
+            "zh-CN": "要写入的二维数组数据",
+            "en-US": "2D array data to write"
+          },
+          "desc": "2D array data to write"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "WriteResult",
         "descs": {
-          "zh-CN": "结果",
-          "en-US": "Result"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "csv.writeFile",
       "descriptions": {
-        "zh-CN": "写入 CSV 文件",
-        "en-US": "Write CSV file"
-      }
+        "zh-CN": "写入CSV的file",
+        "en-US": "Write file of CSV"
+      },
+      "group": "write",
+      "description": "Write file of CSV"
     },
     {
       "name": "count_rows",
@@ -140,17 +153,20 @@
         }
       ],
       "returns": {
-        "type": "i32",
+        "type": "number",
         "descs": {
-          "zh-CN": "数量",
-          "en-US": "Count"
-        }
+          "zh-CN": "i32类型的结果对象",
+          "en-US": "Result object of type i32"
+        },
+        "desc": "Result object of type i32"
       },
       "bridge_path": "csv.countRows",
       "descriptions": {
-        "zh-CN": "计数行",
-        "en-US": "Count rows"
-      }
+        "zh-CN": "计算CSV文件的总行数（不含表头）",
+        "en-US": "Count total rows in CSV file (excluding header)"
+      },
+      "group": "read",
+      "description": "Count total rows in CSV file (excluding header)"
     },
     {
       "name": "get_headers",
@@ -168,15 +184,18 @@
       "returns": {
         "type": "array",
         "descs": {
-          "zh-CN": "头部",
-          "en-US": "Headers"
-        }
+          "zh-CN": "结果数组",
+          "en-US": "Result array"
+        },
+        "desc": "Result array"
       },
       "bridge_path": "csv.getHeaders",
       "descriptions": {
-        "zh-CN": "获取头部",
-        "en-US": "Get headers"
-      }
+        "zh-CN": "获取CSV的headers信息",
+        "en-US": "Get headers info of CSV"
+      },
+      "group": "read",
+      "description": "Get headers info of CSV"
     },
     {
       "name": "read_stream",
@@ -192,37 +211,152 @@
         },
         {
           "name": "offset",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "偏移",
-            "en-US": "Offset"
-          }
+            "zh-CN": "起始偏移量",
+            "en-US": "Starting offset"
+          },
+          "desc": "Starting offset"
         },
         {
           "name": "limit",
-          "type": "i32",
+          "type": "number",
           "descs": {
-            "zh-CN": "限制",
-            "en-US": "Limit"
-          }
+            "zh-CN": "最大数量限制",
+            "en-US": "Maximum count limit"
+          },
+          "desc": "Maximum count limit"
         }
       ],
       "returns": {
-        "type": "object",
+        "type": "StreamReader",
         "descs": {
-          "zh-CN": "页",
-          "en-US": "Page"
-        }
+          "zh-CN": "操作结果",
+          "en-US": "Operation result"
+        },
+        "desc": "Operation result"
       },
       "bridge_path": "csv.readStream",
       "descriptions": {
-        "zh-CN": "读取流",
-        "en-US": "Read stream"
-      }
+        "zh-CN": "以流式方式逐行读取大型CSV文件",
+        "en-US": "Read large CSV file line by line in streaming mode"
+      },
+      "group": "read",
+      "description": "Read large CSV file line by line in streaming mode"
     }
   ],
   "overviews": {
     "zh-CN": "提供 CSV 文件的读取、写入、追加、查询和转换能力。支持自定义分隔符、引号字符、编码格式，可将 CSV 转换为 JSON 或其他格式。",
     "en-US": "Read, write, append, query, and convert CSV files. Supports custom delimiters, quote characters, encodings, and CSV-to-JSON conversion."
-  }
+  },
+  "types": [
+    {
+      "name": "CsvOptions",
+      "descriptions": {
+        "zh-CN": "CSV 解析/生成配置选项",
+        "en-US": "CSV parsing/generation options"
+      },
+      "fields": [
+        {
+          "name": "delimiter",
+          "type": "string",
+          "descs": {
+            "zh-CN": "分隔符，默认逗号",
+            "en-US": "Delimiter, default comma"
+          }
+        },
+        {
+          "name": "has_header",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "首行是否为表头",
+            "en-US": "Whether first row is header"
+          }
+        },
+        {
+          "name": "encoding",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件编码（utf-8/gbk等）",
+            "en-US": "File encoding"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CsvData",
+      "descriptions": {
+        "zh-CN": "CSV解析结果数据",
+        "en-US": "CSV parsed data"
+      },
+      "fields": [
+        {
+          "name": "headers",
+          "type": "array",
+          "descs": {
+            "zh-CN": "列标题数组",
+            "en-US": "Column headers array"
+          }
+        },
+        {
+          "name": "rows",
+          "type": "array",
+          "descs": {
+            "zh-CN": "行数据二维数组",
+            "en-US": "Row data 2D array"
+          }
+        },
+        {
+          "name": "row_count",
+          "type": "number",
+          "descs": {
+            "zh-CN": "行数",
+            "en-US": "Row count"
+          }
+        }
+      ]
+    },
+    {
+      "name": "WriteResult",
+      "descriptions": {
+        "zh-CN": "写入操作结果",
+        "en-US": "Write operation result"
+      },
+      "fields": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否成功",
+            "en-US": "Whether succeeded"
+          }
+        },
+        {
+          "name": "rows_written",
+          "type": "number",
+          "descs": {
+            "zh-CN": "写入行数",
+            "en-US": "Rows written"
+          }
+        }
+      ]
+    },
+    {
+      "name": "StreamReader",
+      "descriptions": {
+        "zh-CN": "流式读取器句柄",
+        "en-US": "Stream reader handle"
+      },
+      "fields": [
+        {
+          "name": "reader_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "读取器ID",
+            "en-US": "Reader ID"
+          }
+        }
+      ]
+    }
+  ]
 }
