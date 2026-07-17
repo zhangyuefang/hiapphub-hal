@@ -1,0 +1,397 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000030",
+  "name": "keychain",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🔑",
+  "min_shell_version": "0.1.0",
+  "category": "security",
+  "descriptions": {
+    "zh-CN": "密钥/凭据管理模块",
+    "en-US": "Keychain credential management module"
+  },
+  "permission": "keychain",
+  "functions": [
+    {
+      "name": "store",
+      "symbol": "hap_keychain_store",
+      "params": [
+        {
+          "name": "service",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务名称",
+            "en-US": "Service name"
+          }
+        },
+        {
+          "name": "account",
+          "type": "string",
+          "descs": {
+            "zh-CN": "账户",
+            "en-US": "Account"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          }
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标签",
+            "en-US": "Label"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "keychain.store",
+      "descriptions": {
+        "zh-CN": "存储凭据",
+        "en-US": "Store credential"
+      }
+    },
+    {
+      "name": "retrieve",
+      "symbol": "hap_keychain_retrieve",
+      "params": [
+        {
+          "name": "service",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务名称",
+            "en-US": "Service name"
+          }
+        },
+        {
+          "name": "account",
+          "type": "string",
+          "descs": {
+            "zh-CN": "账户",
+            "en-US": "Account"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "密码",
+          "en-US": "Password"
+        }
+      },
+      "bridge_path": "keychain.retrieve",
+      "descriptions": {
+        "zh-CN": "读取凭据",
+        "en-US": "Retrieve credential"
+      }
+    },
+    {
+      "name": "delete",
+      "symbol": "hap_keychain_delete",
+      "params": [
+        {
+          "name": "service",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务名称",
+            "en-US": "Service name"
+          }
+        },
+        {
+          "name": "account",
+          "type": "string",
+          "descs": {
+            "zh-CN": "账户",
+            "en-US": "Account"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "keychain.delete",
+      "descriptions": {
+        "zh-CN": "删除凭据",
+        "en-US": "Delete credential"
+      }
+    },
+    {
+      "name": "has",
+      "symbol": "hap_keychain_has",
+      "params": [
+        {
+          "name": "service",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务名称",
+            "en-US": "Service name"
+          }
+        },
+        {
+          "name": "account",
+          "type": "string",
+          "descs": {
+            "zh-CN": "账户",
+            "en-US": "Account"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否存在",
+          "en-US": "Exists"
+        }
+      },
+      "bridge_path": "keychain.has",
+      "descriptions": {
+        "zh-CN": "检查如果是否存在",
+        "en-US": "Check if exists"
+      }
+    },
+    {
+      "name": "list",
+      "symbol": "hap_keychain_list",
+      "params": [
+        {
+          "name": "service",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务过滤器",
+            "en-US": "Service filter"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "凭据列表",
+          "en-US": "Credential list"
+        }
+      },
+      "bridge_path": "keychain.list",
+      "descriptions": {
+        "zh-CN": "列出凭据",
+        "en-US": "List credentials"
+      }
+    },
+    {
+      "name": "update",
+      "symbol": "hap_keychain_update",
+      "params": [
+        {
+          "name": "service",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务名称",
+            "en-US": "Service name"
+          }
+        },
+        {
+          "name": "account",
+          "type": "string",
+          "descs": {
+            "zh-CN": "账户",
+            "en-US": "Account"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "新密码",
+            "en-US": "New password"
+          }
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标签",
+            "en-US": "Label"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "keychain.update",
+      "descriptions": {
+        "zh-CN": "更新凭据",
+        "en-US": "Update credential"
+      }
+    },
+    {
+      "name": "store_binary",
+      "symbol": "hap_keychain_store_binary",
+      "params": [
+        {
+          "name": "service",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务",
+            "en-US": "Service"
+          }
+        },
+        {
+          "name": "account",
+          "type": "string",
+          "descs": {
+            "zh-CN": "账户",
+            "en-US": "Account"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base64 数据",
+            "en-US": "Base64 data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "keychain.storeBinary",
+      "descriptions": {
+        "zh-CN": "存储二进制数据",
+        "en-US": "Store binary data"
+      }
+    },
+    {
+      "name": "retrieve_binary",
+      "symbol": "hap_keychain_retrieve_binary",
+      "params": [
+        {
+          "name": "service",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务",
+            "en-US": "Service"
+          }
+        },
+        {
+          "name": "account",
+          "type": "string",
+          "descs": {
+            "zh-CN": "账户",
+            "en-US": "Account"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "Base64 数据",
+          "en-US": "Base64 data"
+        }
+      },
+      "bridge_path": "keychain.retrieveBinary",
+      "descriptions": {
+        "zh-CN": "读取二进制数据",
+        "en-US": "Retrieve binary"
+      }
+    },
+    {
+      "name": "clear",
+      "symbol": "hap_keychain_clear",
+      "params": [
+        {
+          "name": "service",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务过滤器",
+            "en-US": "Service filter"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "keychain.clear",
+      "descriptions": {
+        "zh-CN": "清除全部凭据",
+        "en-US": "Clear all credentials"
+      }
+    },
+    {
+      "name": "biometric_available",
+      "symbol": "hap_keychain_biometric_available",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "生物识别信息",
+          "en-US": "Biometric info"
+        }
+      },
+      "bridge_path": "keychain.biometricAvailable",
+      "descriptions": {
+        "zh-CN": "检查生物识别",
+        "en-US": "Check biometric"
+      }
+    },
+    {
+      "name": "biometric_authenticate",
+      "symbol": "hap_keychain_biometric_authenticate",
+      "params": [
+        {
+          "name": "reason",
+          "type": "string",
+          "descs": {
+            "zh-CN": "认证原因",
+            "en-US": "Auth reason"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "已认证",
+          "en-US": "Authenticated"
+        }
+      },
+      "bridge_path": "keychain.biometricAuthenticate",
+      "descriptions": {
+        "zh-CN": "生物识别认证",
+        "en-US": "Biometric auth"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供操作系统安全凭据存储（macOS Keychain / Windows Credential Manager / Linux Secret Service）的读写能力，用于安全地存储密码、令牌等敏感信息。",
+    "en-US": "Secure credential storage using OS keychain (macOS Keychain / Windows Credential Manager / Linux Secret Service) for passwords, tokens, and other sensitive data."
+  }
+}

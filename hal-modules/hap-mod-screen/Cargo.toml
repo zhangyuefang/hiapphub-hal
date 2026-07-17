@@ -1,0 +1,16 @@
+[package]
+name = "hap-mod-screen"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+hap-common = { path = "../common" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+libc = { workspace = true }
+xcap = "0.9"
+base64 = "0.22"
+image = "0.25"

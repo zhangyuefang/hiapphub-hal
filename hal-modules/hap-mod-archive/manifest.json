@@ -1,0 +1,694 @@
+{
+  "uuid": "a1b2c3d4-5000-4000-8000-000000000005",
+  "name": "archive",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "📦",
+  "min_shell_version": "0.1.0",
+  "category": "files",
+  "descriptions": {
+    "zh-CN": "压缩/解压模块",
+    "en-US": "Archive compress/decompress module"
+  },
+  "permission": "archive",
+  "functions": [
+    {
+      "name": "zip",
+      "symbol": "hap_archive_zip",
+      "params": [
+        {
+          "name": "source_paths",
+          "type": "array",
+          "descs": {
+            "zh-CN": "源",
+            "en-US": "Sources"
+          }
+        },
+        {
+          "name": "dest_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目标",
+            "en-US": "Dest"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          },
+          "optional": true
+        },
+        {
+          "name": "encryption",
+          "type": "string",
+          "descs": {
+            "zh-CN": "加密方式",
+            "en-US": "Encryption method"
+          },
+          "optional": true
+        },
+        {
+          "name": "compression_level",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "压缩级别",
+            "en-US": "Compression level"
+          },
+          "optional": true,
+          "default_value": "6"
+        },
+        {
+          "name": "method",
+          "type": "string",
+          "descs": {
+            "zh-CN": "压缩方法",
+            "en-US": "Compression method"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "archive.zip",
+      "descriptions": {
+        "zh-CN": "创建压缩包",
+        "en-US": "Create ZIP"
+      }
+    },
+    {
+      "name": "unzip",
+      "symbol": "hap_archive_unzip",
+      "params": [
+        {
+          "name": "archive_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "归档",
+            "en-US": "Archive"
+          }
+        },
+        {
+          "name": "dest_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目录",
+            "en-US": "Dir"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          },
+          "optional": true
+        },
+        {
+          "name": "overwrite",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "是否覆盖已有文件",
+            "en-US": "Overwrite existing"
+          },
+          "optional": true,
+          "default_value": "true"
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "archive.unzip",
+      "descriptions": {
+        "zh-CN": "提取压缩包",
+        "en-US": "Extract ZIP"
+      }
+    },
+    {
+      "name": "list_entries",
+      "symbol": "hap_archive_list_entries",
+      "params": [
+        {
+          "name": "archive_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "归档",
+            "en-US": "Archive"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "条目",
+          "en-US": "Entries"
+        }
+      },
+      "bridge_path": "archive.listEntries",
+      "descriptions": {
+        "zh-CN": "列出条目",
+        "en-US": "List entries"
+      }
+    },
+    {
+      "name": "extract_entry",
+      "symbol": "hap_archive_extract_entry",
+      "params": [
+        {
+          "name": "archive_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "归档",
+            "en-US": "Archive"
+          }
+        },
+        {
+          "name": "entry_name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "条目",
+            "en-US": "Entry"
+          }
+        },
+        {
+          "name": "dest_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目标路径",
+            "en-US": "Dest Path"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          },
+          "optional": true
+        },
+        {
+          "name": "overwrite",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "是否覆盖已有文件",
+            "en-US": "Overwrite existing"
+          },
+          "optional": true,
+          "default_value": "true"
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "路径",
+          "en-US": "Path"
+        }
+      },
+      "bridge_path": "archive.extractEntry",
+      "descriptions": {
+        "zh-CN": "提取条目",
+        "en-US": "Extract entry"
+      }
+    },
+    {
+      "name": "tar",
+      "symbol": "hap_archive_tar",
+      "params": [
+        {
+          "name": "source_paths",
+          "type": "array",
+          "descs": {
+            "zh-CN": "源",
+            "en-US": "Sources"
+          }
+        },
+        {
+          "name": "dest_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目标",
+            "en-US": "Dest"
+          }
+        },
+        {
+          "name": "compress",
+          "type": "string",
+          "descs": {
+            "zh-CN": "压缩算法",
+            "en-US": "Compression algorithm"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "archive.tar",
+      "descriptions": {
+        "zh-CN": "创建 TAR",
+        "en-US": "Create TAR"
+      }
+    },
+    {
+      "name": "untar",
+      "symbol": "hap_archive_untar",
+      "params": [
+        {
+          "name": "archive_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "归档",
+            "en-US": "Archive"
+          }
+        },
+        {
+          "name": "dest_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目录",
+            "en-US": "Dir"
+          }
+        },
+        {
+          "name": "overwrite",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "是否覆盖已有文件",
+            "en-US": "Overwrite existing"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "archive.untar",
+      "descriptions": {
+        "zh-CN": "提取 TAR",
+        "en-US": "Extract TAR"
+      }
+    },
+    {
+      "name": "compress_bytes",
+      "symbol": "hap_archive_compress_bytes",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        },
+        {
+          "name": "algorithm",
+          "type": "string",
+          "descs": {
+            "zh-CN": "算法",
+            "en-US": "Algorithm"
+          }
+        },
+        {
+          "name": "level",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "压缩级别",
+            "en-US": "Compression level"
+          },
+          "optional": true,
+          "default_value": "3"
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已压缩",
+          "en-US": "Compressed"
+        }
+      },
+      "bridge_path": "archive.compressBytes",
+      "descriptions": {
+        "zh-CN": "压缩字节",
+        "en-US": "Compress bytes"
+      }
+    },
+    {
+      "name": "decompress_bytes",
+      "symbol": "hap_archive_decompress_bytes",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        },
+        {
+          "name": "algorithm",
+          "type": "string",
+          "descs": {
+            "zh-CN": "算法",
+            "en-US": "Algorithm"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已解压",
+          "en-US": "Decompressed"
+        }
+      },
+      "bridge_path": "archive.decompressBytes",
+      "descriptions": {
+        "zh-CN": "解压字节",
+        "en-US": "Decompress bytes"
+      }
+    },
+    {
+      "name": "is_archive",
+      "symbol": "hap_archive_is_archive",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "archive.isArchive",
+      "descriptions": {
+        "zh-CN": "是否归档",
+        "en-US": "Is archive"
+      }
+    },
+    {
+      "name": "test_archive",
+      "symbol": "hap_archive_test_archive",
+      "params": [
+        {
+          "name": "archive_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "归档",
+            "en-US": "Archive"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "archive.testArchive",
+      "descriptions": {
+        "zh-CN": "测试归档",
+        "en-US": "Test archive"
+      }
+    },
+    {
+      "name": "add_to_zip",
+      "symbol": "hap_archive_add_to_zip",
+      "params": [
+        {
+          "name": "archive_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "归档",
+            "en-US": "Archive"
+          }
+        },
+        {
+          "name": "file_paths",
+          "type": "array",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File Paths"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "archive.addToZip",
+      "descriptions": {
+        "zh-CN": "添加到压缩包",
+        "en-US": "Add to ZIP"
+      }
+    },
+    {
+      "name": "remove_from_zip",
+      "symbol": "hap_archive_remove_from_zip",
+      "params": [
+        {
+          "name": "archive_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "归档",
+            "en-US": "Archive"
+          }
+        },
+        {
+          "name": "entry_name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "条目",
+            "en-US": "Entry"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "archive.removeFromZip",
+      "descriptions": {
+        "zh-CN": "删除从压缩包",
+        "en-US": "Remove from ZIP"
+      }
+    },
+    {
+      "name": "extract_auto",
+      "symbol": "hap_archive_extract_auto",
+      "params": [
+        {
+          "name": "archive_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "归档",
+            "en-US": "Archive"
+          }
+        },
+        {
+          "name": "dest_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目录",
+            "en-US": "Dir"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          },
+          "optional": true
+        },
+        {
+          "name": "overwrite",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "是否覆盖已有文件",
+            "en-US": "Overwrite existing"
+          },
+          "optional": true,
+          "default_value": "true"
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "archive.extractAuto",
+      "descriptions": {
+        "zh-CN": "自动解压",
+        "en-US": "Auto extract"
+      }
+    },
+    {
+      "name": "read_entry_bytes",
+      "symbol": "hap_archive_read_entry_bytes",
+      "params": [
+        {
+          "name": "archive_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "归档",
+            "en-US": "Archive"
+          }
+        },
+        {
+          "name": "entry_name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "条目",
+            "en-US": "Entry"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "Base64",
+          "en-US": "Base64"
+        }
+      },
+      "bridge_path": "archive.readEntryBytes",
+      "descriptions": {
+        "zh-CN": "读取条目",
+        "en-US": "Read entry"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供 ZIP/TAR/GZ/BZ2/XZ 等常见归档格式的创建、解压、列表及流式处理能力。支持密码保护 ZIP、多文件批量操作、归档信息查询等功能。",
+    "en-US": "Create, extract, list, and stream common archive formats (ZIP/TAR/GZ/BZ2/XZ). Supports password-protected ZIP, batch operations, and archive metadata queries."
+  }
+}

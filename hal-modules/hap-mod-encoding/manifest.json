@@ -1,0 +1,552 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000012",
+  "name": "encoding",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🔤",
+  "min_shell_version": "0.1.0",
+  "category": "files",
+  "descriptions": {
+    "zh-CN": "编码转换模块",
+    "en-US": "Encoding conversion module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "base64_encode",
+      "symbol": "hap_encoding_base64_encode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已编码",
+          "en-US": "Encoded"
+        }
+      },
+      "bridge_path": "encoding.base64Encode",
+      "descriptions": {
+        "zh-CN": "Base64 编码",
+        "en-US": "Base64 encode"
+      }
+    },
+    {
+      "name": "base64_decode",
+      "symbol": "hap_encoding_base64_decode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base64",
+            "en-US": "Base64"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已解码",
+          "en-US": "Decoded"
+        }
+      },
+      "bridge_path": "encoding.base64Decode",
+      "descriptions": {
+        "zh-CN": "Base64 解码",
+        "en-US": "Base64 decode"
+      }
+    },
+    {
+      "name": "base64url_encode",
+      "symbol": "hap_encoding_base64url_encode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已编码",
+          "en-US": "Encoded"
+        }
+      },
+      "bridge_path": "encoding.base64urlEncode",
+      "descriptions": {
+        "zh-CN": "Base64URL 编码",
+        "en-US": "Base64URL encode"
+      }
+    },
+    {
+      "name": "base64url_decode",
+      "symbol": "hap_encoding_base64url_decode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base64URL",
+            "en-US": "Base64URL"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已解码",
+          "en-US": "Decoded"
+        }
+      },
+      "bridge_path": "encoding.base64urlDecode",
+      "descriptions": {
+        "zh-CN": "Base64URL 解码",
+        "en-US": "Base64URL decode"
+      }
+    },
+    {
+      "name": "base32_encode",
+      "symbol": "hap_encoding_base32_encode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        },
+        {
+          "name": "padding",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "填充",
+            "en-US": "Pad"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已编码",
+          "en-US": "Encoded"
+        }
+      },
+      "bridge_path": "encoding.base32Encode",
+      "descriptions": {
+        "zh-CN": "Base32 编码",
+        "en-US": "Base32 encode"
+      }
+    },
+    {
+      "name": "base32_decode",
+      "symbol": "hap_encoding_base32_decode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base32",
+            "en-US": "Base32"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已解码",
+          "en-US": "Decoded"
+        }
+      },
+      "bridge_path": "encoding.base32Decode",
+      "descriptions": {
+        "zh-CN": "Base32 解码",
+        "en-US": "Base32 decode"
+      }
+    },
+    {
+      "name": "hex_encode",
+      "symbol": "hap_encoding_hex_encode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "十六进制",
+          "en-US": "Hex"
+        }
+      },
+      "bridge_path": "encoding.hexEncode",
+      "descriptions": {
+        "zh-CN": "十六进制编码",
+        "en-US": "Hex encode"
+      }
+    },
+    {
+      "name": "hex_decode",
+      "symbol": "hap_encoding_hex_decode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "十六进制",
+            "en-US": "Hex"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已解码",
+          "en-US": "Decoded"
+        }
+      },
+      "bridge_path": "encoding.hexDecode",
+      "descriptions": {
+        "zh-CN": "十六进制解码",
+        "en-US": "Hex decode"
+      }
+    },
+    {
+      "name": "url_encode",
+      "symbol": "hap_encoding_url_encode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        },
+        {
+          "name": "component",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "组件",
+            "en-US": "Component"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已编码",
+          "en-US": "Encoded"
+        }
+      },
+      "bridge_path": "encoding.urlEncode",
+      "descriptions": {
+        "zh-CN": "URL 编码",
+        "en-US": "URL encode"
+      }
+    },
+    {
+      "name": "url_decode",
+      "symbol": "hap_encoding_url_decode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL 编码d",
+            "en-US": "URL encoded"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已解码",
+          "en-US": "Decoded"
+        }
+      },
+      "bridge_path": "encoding.urlDecode",
+      "descriptions": {
+        "zh-CN": "URL 解码",
+        "en-US": "URL decode"
+      }
+    },
+    {
+      "name": "html_encode",
+      "symbol": "hap_encoding_html_encode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "HTML",
+            "en-US": "HTML"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已编码",
+          "en-US": "Encoded"
+        }
+      },
+      "bridge_path": "encoding.htmlEncode",
+      "descriptions": {
+        "zh-CN": "HTML 编码",
+        "en-US": "HTML encode"
+      }
+    },
+    {
+      "name": "html_decode",
+      "symbol": "hap_encoding_html_decode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "HTML 实体",
+            "en-US": "HTML 实体"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已解码",
+          "en-US": "Decoded"
+        }
+      },
+      "bridge_path": "encoding.htmlDecode",
+      "descriptions": {
+        "zh-CN": "HTML 解码",
+        "en-US": "HTML decode"
+      }
+    },
+    {
+      "name": "text_convert",
+      "symbol": "hap_encoding_text_convert",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文本",
+            "en-US": "Text"
+          }
+        },
+        {
+          "name": "from",
+          "type": "string",
+          "descs": {
+            "zh-CN": "源",
+            "en-US": "Source"
+          }
+        },
+        {
+          "name": "to",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目标",
+            "en-US": "Target"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已转换",
+          "en-US": "Converted"
+        }
+      },
+      "bridge_path": "encoding.textConvert",
+      "descriptions": {
+        "zh-CN": "转换编码",
+        "en-US": "Convert encoding"
+      }
+    },
+    {
+      "name": "detect_encoding",
+      "symbol": "hap_encoding_detect_encoding",
+      "params": [
+        {
+          "name": "file_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        },
+        {
+          "name": "sample_size",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "采样大小",
+            "en-US": "Sample size"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "encoding.detectEncoding",
+      "descriptions": {
+        "zh-CN": "检测编码",
+        "en-US": "Detect encoding"
+      }
+    },
+    {
+      "name": "convert_file",
+      "symbol": "hap_encoding_convert_file",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入",
+            "en-US": "Input"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        },
+        {
+          "name": "from",
+          "type": "string",
+          "descs": {
+            "zh-CN": "源",
+            "en-US": "Source"
+          }
+        },
+        {
+          "name": "to",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目标",
+            "en-US": "Target"
+          }
+        },
+        {
+          "name": "bom",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "BOM",
+            "en-US": "BOM"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "encoding.convertFile",
+      "descriptions": {
+        "zh-CN": "转换文件",
+        "en-US": "Convert file"
+      }
+    },
+    {
+      "name": "base58_encode",
+      "symbol": "hap_encoding_base58_encode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        },
+        {
+          "name": "alphabet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "字母表",
+            "en-US": "Alphabet"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已编码",
+          "en-US": "Encoded"
+        }
+      },
+      "bridge_path": "encoding.base58Encode",
+      "descriptions": {
+        "zh-CN": "Base58 编码",
+        "en-US": "Base58 encode"
+      }
+    },
+    {
+      "name": "base58_decode",
+      "symbol": "hap_encoding_base58_decode",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base58",
+            "en-US": "Base58"
+          }
+        },
+        {
+          "name": "alphabet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "字母表",
+            "en-US": "Alphabet"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已解码",
+          "en-US": "Decoded"
+        }
+      },
+      "bridge_path": "encoding.base58Decode",
+      "descriptions": {
+        "zh-CN": "Base58 解码",
+        "en-US": "Base58 decode"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供字符编码转换、Base64/Hex 编解码、URL 编解码、HTML 实体转义、Unicode 处理等能力。支持 UTF-8/GBK/GB2312/Shift_JIS/EUC-KR 等多种字符集。",
+    "en-US": "Character encoding conversion, Base64/Hex encoding, URL encoding, HTML entity escaping, and Unicode handling. Supports UTF-8/GBK/GB2312/Shift_JIS/EUC-KR and more character sets."
+  }
+}

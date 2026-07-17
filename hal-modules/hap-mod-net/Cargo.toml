@@ -1,0 +1,18 @@
+[package]
+name = "hap-mod-net"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+hap-common = { path = "../common" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+libc = { workspace = true }
+ureq = "2"
+base64 = "0.22"
+native-tls = "0.2"
+dns-lookup = "2"
+if-addrs = "0.13"

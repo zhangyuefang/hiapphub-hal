@@ -1,0 +1,1143 @@
+{
+  "uuid": "a1b2c3d4-6000-4000-8000-000000000006",
+  "name": "sqlite",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🗄️",
+  "min_shell_version": "0.1.0",
+  "category": "database",
+  "descriptions": {
+    "zh-CN": "SQLite数据库模块",
+    "en-US": "SQLite database module"
+  },
+  "permission": "database",
+  "functions": [
+    {
+      "name": "open",
+      "symbol": "hap_sqlite_open",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库路径",
+            "en-US": "DB path"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          },
+          "optional": true
+        },
+        {
+          "name": "readonly",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "只读模式",
+            "en-US": "Read only mode"
+          },
+          "optional": true,
+          "default_value": "false"
+        },
+        {
+          "name": "create",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "不存在时创建",
+            "en-US": "Create if not exists"
+          },
+          "optional": true,
+          "default_value": "true"
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "DB 信息",
+          "en-US": "DB info"
+        }
+      },
+      "bridge_path": "sqlite.open",
+      "descriptions": {
+        "zh-CN": "打开数据库",
+        "en-US": "Open database"
+      }
+    },
+    {
+      "name": "close",
+      "symbol": "hap_sqlite_close",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "sqlite.close",
+      "descriptions": {
+        "zh-CN": "关闭数据库",
+        "en-US": "Close database"
+      }
+    },
+    {
+      "name": "execute",
+      "symbol": "hap_sqlite_execute",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "sql",
+          "type": "string",
+          "descs": {
+            "zh-CN": "SQL",
+            "en-US": "SQL"
+          }
+        },
+        {
+          "name": "params",
+          "type": "string",
+          "descs": {
+            "zh-CN": "绑定参数",
+            "en-US": "Bind parameters"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "sqlite.execute",
+      "descriptions": {
+        "zh-CN": "执行 SQL",
+        "en-US": "Execute SQL"
+      }
+    },
+    {
+      "name": "batch_execute",
+      "symbol": "hap_sqlite_batch_execute",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "statements",
+          "type": "array",
+          "descs": {
+            "zh-CN": "SQL 语句",
+            "en-US": "SQL 语句"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "sqlite.batchExecute",
+      "descriptions": {
+        "zh-CN": "批量执行",
+        "en-US": "Batch execute"
+      }
+    },
+    {
+      "name": "query",
+      "symbol": "hap_sqlite_query",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "sql",
+          "type": "string",
+          "descs": {
+            "zh-CN": "SQL",
+            "en-US": "SQL"
+          }
+        },
+        {
+          "name": "params",
+          "type": "string",
+          "descs": {
+            "zh-CN": "绑定参数",
+            "en-US": "Bind parameters"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "行",
+          "en-US": "Rows"
+        }
+      },
+      "bridge_path": "sqlite.query",
+      "descriptions": {
+        "zh-CN": "查询",
+        "en-US": "Query"
+      }
+    },
+    {
+      "name": "query_one",
+      "symbol": "hap_sqlite_query_one",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "sql",
+          "type": "string",
+          "descs": {
+            "zh-CN": "SQL",
+            "en-US": "SQL"
+          }
+        },
+        {
+          "name": "params",
+          "type": "string",
+          "descs": {
+            "zh-CN": "绑定参数",
+            "en-US": "Bind parameters"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "行",
+          "en-US": "Row"
+        }
+      },
+      "bridge_path": "sqlite.queryOne",
+      "descriptions": {
+        "zh-CN": "查询单行",
+        "en-US": "Query one"
+      }
+    },
+    {
+      "name": "query_objects",
+      "symbol": "hap_sqlite_query_objects",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "sql",
+          "type": "string",
+          "descs": {
+            "zh-CN": "SQL",
+            "en-US": "SQL"
+          }
+        },
+        {
+          "name": "params",
+          "type": "string",
+          "descs": {
+            "zh-CN": "绑定参数",
+            "en-US": "Bind parameters"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "对象",
+          "en-US": "Objects"
+        }
+      },
+      "bridge_path": "sqlite.queryObjects",
+      "descriptions": {
+        "zh-CN": "查询对象",
+        "en-US": "Query objects"
+      }
+    },
+    {
+      "name": "begin",
+      "symbol": "hap_sqlite_begin",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "tx_type",
+          "type": "string",
+          "descs": {
+            "zh-CN": "事务类型",
+            "en-US": "Transaction type"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "sqlite.begin",
+      "descriptions": {
+        "zh-CN": "开始事务",
+        "en-US": "Begin transaction"
+      }
+    },
+    {
+      "name": "commit",
+      "symbol": "hap_sqlite_commit",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "sqlite.commit",
+      "descriptions": {
+        "zh-CN": "提交事务",
+        "en-US": "Commit"
+      }
+    },
+    {
+      "name": "rollback",
+      "symbol": "hap_sqlite_rollback",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "sqlite.rollback",
+      "descriptions": {
+        "zh-CN": "回滚事务",
+        "en-US": "Rollback"
+      }
+    },
+    {
+      "name": "vacuum",
+      "symbol": "hap_sqlite_vacuum",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "sqlite.vacuum",
+      "descriptions": {
+        "zh-CN": "压缩",
+        "en-US": "Vacuum"
+      }
+    },
+    {
+      "name": "backup",
+      "symbol": "hap_sqlite_backup",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "dest_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "sqlite.backup",
+      "descriptions": {
+        "zh-CN": "备份",
+        "en-US": "Backup"
+      }
+    },
+    {
+      "name": "table_list",
+      "symbol": "hap_sqlite_table_list",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "表",
+          "en-US": "Tables"
+        }
+      },
+      "bridge_path": "sqlite.tableList",
+      "descriptions": {
+        "zh-CN": "列出表",
+        "en-US": "List tables"
+      }
+    },
+    {
+      "name": "table_info",
+      "symbol": "hap_sqlite_table_info",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "table_name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "表",
+            "en-US": "Table"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "列",
+          "en-US": "Columns"
+        }
+      },
+      "bridge_path": "sqlite.tableInfo",
+      "descriptions": {
+        "zh-CN": "表信息",
+        "en-US": "Table info"
+      }
+    },
+    {
+      "name": "pragma",
+      "symbol": "hap_sqlite_pragma",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "名称",
+            "en-US": "Name"
+          }
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "值",
+            "en-US": "Value"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "值",
+          "en-US": "Value"
+        }
+      },
+      "bridge_path": "sqlite.pragma",
+      "descriptions": {
+        "zh-CN": "PRAGMA 操作",
+        "en-US": "Pragma"
+      }
+    },
+    {
+      "name": "is_open",
+      "symbol": "hap_sqlite_is_open",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "已打开的",
+          "en-US": "Open"
+        }
+      },
+      "bridge_path": "sqlite.isOpen",
+      "descriptions": {
+        "zh-CN": "是否已打开的",
+        "en-US": "Is open"
+      }
+    },
+    {
+      "name": "db_size",
+      "symbol": "hap_sqlite_db_size",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "字节",
+          "en-US": "Bytes"
+        }
+      },
+      "bridge_path": "sqlite.dbSize",
+      "descriptions": {
+        "zh-CN": "DB 大小",
+        "en-US": "DB size"
+      }
+    },
+    {
+      "name": "count",
+      "symbol": "hap_sqlite_count",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "table_name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "表",
+            "en-US": "Table"
+          }
+        },
+        {
+          "name": "where_clause",
+          "type": "string",
+          "descs": {
+            "zh-CN": "条件子句",
+            "en-US": "条件子句"
+          },
+          "optional": true
+        },
+        {
+          "name": "params",
+          "type": "string",
+          "descs": {
+            "zh-CN": "绑定参数",
+            "en-US": "Bind parameters"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "数量",
+          "en-US": "Count"
+        }
+      },
+      "bridge_path": "sqlite.count",
+      "descriptions": {
+        "zh-CN": "计数行",
+        "en-US": "Count rows"
+      }
+    },
+    {
+      "name": "index_list",
+      "symbol": "hap_sqlite_index_list",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "table_name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "表",
+            "en-US": "Table"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "索引",
+          "en-US": "Indexes"
+        }
+      },
+      "bridge_path": "sqlite.indexList",
+      "descriptions": {
+        "zh-CN": "列出索引",
+        "en-US": "List indexes"
+      }
+    },
+    {
+      "name": "export_csv",
+      "symbol": "hap_sqlite_export_csv",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "table_or_query",
+          "type": "string",
+          "descs": {
+            "zh-CN": "表/SQL",
+            "en-US": "Table/SQL"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "delimiter",
+          "type": "string",
+          "descs": {
+            "zh-CN": "分隔符",
+            "en-US": "Delimiter character"
+          },
+          "optional": true
+        },
+        {
+          "name": "with_header",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "是否包含表头",
+            "en-US": "Include header"
+          },
+          "optional": true,
+          "default_value": "true"
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "sqlite.exportCsv",
+      "descriptions": {
+        "zh-CN": "导出 CSV",
+        "en-US": "Export CSV"
+      }
+    },
+    {
+      "name": "import_csv",
+      "symbol": "hap_sqlite_import_csv",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "table_name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "表",
+            "en-US": "Table"
+          }
+        },
+        {
+          "name": "csv_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "delimiter",
+          "type": "string",
+          "descs": {
+            "zh-CN": "分隔符",
+            "en-US": "Delimiter character"
+          },
+          "optional": true
+        },
+        {
+          "name": "has_header",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "是否有表头",
+            "en-US": "Has header row"
+          },
+          "optional": true,
+          "default_value": "true"
+        },
+        {
+          "name": "on_conflict",
+          "type": "string",
+          "descs": {
+            "zh-CN": "冲突处理",
+            "en-US": "On conflict action"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "sqlite.importCsv",
+      "descriptions": {
+        "zh-CN": "导入 CSV",
+        "en-US": "Import CSV"
+      }
+    },
+    {
+      "name": "wal_checkpoint",
+      "symbol": "hap_sqlite_wal_checkpoint",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "mode",
+          "type": "string",
+          "descs": {
+            "zh-CN": "模式",
+            "en-US": "Mode"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "sqlite.walCheckpoint",
+      "descriptions": {
+        "zh-CN": "WAL 检查点",
+        "en-US": "WAL checkpoint"
+      }
+    },
+    {
+      "name": "attach",
+      "symbol": "hap_sqlite_attach",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "alias",
+          "type": "string",
+          "descs": {
+            "zh-CN": "别名",
+            "en-US": "Alias"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "sqlite.attach",
+      "descriptions": {
+        "zh-CN": "附加数据库",
+        "en-US": "Attach DB"
+      }
+    },
+    {
+      "name": "detach",
+      "symbol": "hap_sqlite_detach",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "alias",
+          "type": "string",
+          "descs": {
+            "zh-CN": "别名",
+            "en-US": "Alias"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "sqlite.detach",
+      "descriptions": {
+        "zh-CN": "分离数据库",
+        "en-US": "Detach DB"
+      }
+    },
+    {
+      "name": "set_busy_timeout",
+      "symbol": "hap_sqlite_set_busy_timeout",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "ms",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "超时(毫秒)",
+            "en-US": "Timeout ms"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "sqlite.setBusyTimeout",
+      "descriptions": {
+        "zh-CN": "设置超时",
+        "en-US": "Set timeout"
+      }
+    },
+    {
+      "name": "interrupt",
+      "symbol": "hap_sqlite_interrupt",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "sqlite.interrupt",
+      "descriptions": {
+        "zh-CN": "中断操作",
+        "en-US": "Interrupt"
+      }
+    },
+    {
+      "name": "change_password",
+      "symbol": "hap_sqlite_change_password",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "new_password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "新密码",
+            "en-US": "New Password"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "sqlite.changePassword",
+      "descriptions": {
+        "zh-CN": "修改密码",
+        "en-US": "Change password"
+      }
+    },
+    {
+      "name": "create_function",
+      "symbol": "hap_sqlite_create_function",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "名称",
+            "en-US": "Name"
+          }
+        },
+        {
+          "name": "num_args",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "参数数量",
+            "en-US": "参数数量"
+          }
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "sqlite.createFunction",
+      "descriptions": {
+        "zh-CN": "创建函数",
+        "en-US": "Create function"
+      }
+    },
+    {
+      "name": "remove_function",
+      "symbol": "hap_sqlite_remove_function",
+      "params": [
+        {
+          "name": "db_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据库 ID",
+            "en-US": "DB ID"
+          }
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "名称",
+            "en-US": "Name"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "sqlite.removeFunction",
+      "descriptions": {
+        "zh-CN": "删除函数",
+        "en-US": "Remove function"
+      }
+    },
+    {
+      "name": "list_open",
+      "symbol": "hap_sqlite_list_open",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "数据库",
+          "en-US": "DBs"
+        }
+      },
+      "bridge_path": "sqlite.listOpen",
+      "descriptions": {
+        "zh-CN": "列出已打开的数据库",
+        "en-US": "List open DBs"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供 SQLite 数据库的完整操作能力，包括数据库打开/关闭、SQL 执行、预编译语句、事务管理、表操作、数据导入导出、备份恢复、PRAGMA 管理等功能。",
+    "en-US": "Full SQLite database operations including open/close, SQL execution, prepared statements, transactions, table management, import/export, backup/restore, and PRAGMA management."
+  }
+}

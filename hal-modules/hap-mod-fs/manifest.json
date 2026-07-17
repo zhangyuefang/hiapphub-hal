@@ -1,0 +1,1319 @@
+{
+  "uuid": "a1b2c3d4-4000-4000-8000-000000000004",
+  "name": "fs",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "📁",
+  "min_shell_version": "0.1.0",
+  "category": "files",
+  "descriptions": {
+    "zh-CN": "文件系统模块",
+    "en-US": "File system module"
+  },
+  "permission": "fs",
+  "functions": [
+    {
+      "name": "read_text_file",
+      "symbol": "hap_fs_read_text_file",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "内容",
+          "en-US": "Content"
+        }
+      },
+      "bridge_path": "fs.readTextFile",
+      "descriptions": {
+        "zh-CN": "读取文本",
+        "en-US": "Read text"
+      }
+    },
+    {
+      "name": "write_text_file",
+      "symbol": "hap_fs_write_text_file",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "descs": {
+            "zh-CN": "内容",
+            "en-US": "Content"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.writeTextFile",
+      "descriptions": {
+        "zh-CN": "写入文本",
+        "en-US": "Write text"
+      }
+    },
+    {
+      "name": "append_text_file",
+      "symbol": "hap_fs_append_text_file",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "descs": {
+            "zh-CN": "内容",
+            "en-US": "Content"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.appendTextFile",
+      "descriptions": {
+        "zh-CN": "追加文本",
+        "en-US": "Append text"
+      }
+    },
+    {
+      "name": "read_binary",
+      "symbol": "hap_fs_read_binary",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "Base64",
+          "en-US": "Base64"
+        }
+      },
+      "bridge_path": "fs.readBinary",
+      "descriptions": {
+        "zh-CN": "读取二进制",
+        "en-US": "Read binary"
+      }
+    },
+    {
+      "name": "write_binary",
+      "symbol": "hap_fs_write_binary",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base64",
+            "en-US": "Base64"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.writeBinary",
+      "descriptions": {
+        "zh-CN": "写入二进制",
+        "en-US": "Write binary"
+      }
+    },
+    {
+      "name": "exists",
+      "symbol": "hap_fs_exists",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否存在",
+          "en-US": "Exists"
+        }
+      },
+      "bridge_path": "fs.exists",
+      "descriptions": {
+        "zh-CN": "检查是否存在",
+        "en-US": "Check exists"
+      }
+    },
+    {
+      "name": "stat",
+      "symbol": "hap_fs_stat",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "状态",
+          "en-US": "Stat"
+        }
+      },
+      "bridge_path": "fs.stat",
+      "descriptions": {
+        "zh-CN": "获取文件状态",
+        "en-US": "File stat"
+      }
+    },
+    {
+      "name": "list_dir",
+      "symbol": "hap_fs_list_dir",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "条目",
+          "en-US": "Entries"
+        }
+      },
+      "bridge_path": "fs.listDir",
+      "descriptions": {
+        "zh-CN": "列出目录内容",
+        "en-US": "List directory"
+      }
+    },
+    {
+      "name": "glob",
+      "symbol": "hap_fs_glob",
+      "params": [
+        {
+          "name": "pattern",
+          "type": "string",
+          "descs": {
+            "zh-CN": "模式",
+            "en-US": "Pattern"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "路径",
+          "en-US": "Paths"
+        }
+      },
+      "bridge_path": "fs.glob",
+      "descriptions": {
+        "zh-CN": "通配搜索",
+        "en-US": "Glob search"
+      }
+    },
+    {
+      "name": "mkdir",
+      "symbol": "hap_fs_mkdir",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.mkdir",
+      "descriptions": {
+        "zh-CN": "创建目录",
+        "en-US": "Create directory"
+      }
+    },
+    {
+      "name": "copy",
+      "symbol": "hap_fs_copy",
+      "params": [
+        {
+          "name": "source",
+          "type": "string",
+          "descs": {
+            "zh-CN": "源",
+            "en-US": "Source"
+          }
+        },
+        {
+          "name": "dest",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目标",
+            "en-US": "Dest"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.copy",
+      "descriptions": {
+        "zh-CN": "复制文件",
+        "en-US": "Copy file"
+      }
+    },
+    {
+      "name": "copy_dir",
+      "symbol": "hap_fs_copy_dir",
+      "params": [
+        {
+          "name": "source",
+          "type": "string",
+          "descs": {
+            "zh-CN": "源",
+            "en-US": "Source"
+          }
+        },
+        {
+          "name": "dest",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目标",
+            "en-US": "Dest"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.copyDir",
+      "descriptions": {
+        "zh-CN": "复制目录",
+        "en-US": "Copy directory"
+      }
+    },
+    {
+      "name": "move",
+      "symbol": "hap_fs_move",
+      "params": [
+        {
+          "name": "source",
+          "type": "string",
+          "descs": {
+            "zh-CN": "源",
+            "en-US": "Source"
+          }
+        },
+        {
+          "name": "dest",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目标",
+            "en-US": "Dest"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.move",
+      "descriptions": {
+        "zh-CN": "移动文件",
+        "en-US": "Move file"
+      }
+    },
+    {
+      "name": "remove",
+      "symbol": "hap_fs_remove",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.remove",
+      "descriptions": {
+        "zh-CN": "删除",
+        "en-US": "Remove"
+      }
+    },
+    {
+      "name": "symlink",
+      "symbol": "hap_fs_symlink",
+      "params": [
+        {
+          "name": "target",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目标",
+            "en-US": "Target"
+          }
+        },
+        {
+          "name": "link",
+          "type": "string",
+          "descs": {
+            "zh-CN": "链接",
+            "en-US": "Link"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.symlink",
+      "descriptions": {
+        "zh-CN": "创建符号链接",
+        "en-US": "Create symlink"
+      }
+    },
+    {
+      "name": "read_link",
+      "symbol": "hap_fs_read_link",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "目标",
+          "en-US": "Target"
+        }
+      },
+      "bridge_path": "fs.readLink",
+      "descriptions": {
+        "zh-CN": "读取符号链接",
+        "en-US": "Read symlink"
+      }
+    },
+    {
+      "name": "set_permissions",
+      "symbol": "hap_fs_set_permissions",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.setPermissions",
+      "descriptions": {
+        "zh-CN": "设置文件权限",
+        "en-US": "Set perms"
+      }
+    },
+    {
+      "name": "temp_file",
+      "symbol": "hap_fs_temp_file",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "路径",
+          "en-US": "Path"
+        }
+      },
+      "bridge_path": "fs.tempFile",
+      "descriptions": {
+        "zh-CN": "创建临时文件",
+        "en-US": "Temp file"
+      }
+    },
+    {
+      "name": "temp_dir",
+      "symbol": "hap_fs_temp_dir",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "路径",
+          "en-US": "Path"
+        }
+      },
+      "bridge_path": "fs.tempDir",
+      "descriptions": {
+        "zh-CN": "创建临时目录",
+        "en-US": "Temp dir"
+      }
+    },
+    {
+      "name": "watch",
+      "symbol": "hap_fs_watch",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "监视器",
+          "en-US": "Watcher"
+        }
+      },
+      "bridge_path": "fs.watch",
+      "descriptions": {
+        "zh-CN": "监视路径",
+        "en-US": "Watch path"
+      }
+    },
+    {
+      "name": "unwatch",
+      "symbol": "hap_fs_unwatch",
+      "params": [
+        {
+          "name": "watcher_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "ID",
+            "en-US": "ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.unwatch",
+      "descriptions": {
+        "zh-CN": "取消监视",
+        "en-US": "Unwatch"
+      }
+    },
+    {
+      "name": "list_watchers",
+      "symbol": "hap_fs_list_watchers",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "监视器",
+          "en-US": "Watchers"
+        }
+      },
+      "bridge_path": "fs.listWatchers",
+      "descriptions": {
+        "zh-CN": "列出监视器",
+        "en-US": "List watchers"
+      }
+    },
+    {
+      "name": "disk_usage",
+      "symbol": "hap_fs_disk_usage",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "使用情况",
+          "en-US": "Usage"
+        }
+      },
+      "bridge_path": "fs.diskUsage",
+      "descriptions": {
+        "zh-CN": "磁盘使用情况",
+        "en-US": "Disk usage"
+      }
+    },
+    {
+      "name": "is_dir",
+      "symbol": "hap_fs_is_dir",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "目录",
+          "en-US": "Dir"
+        }
+      },
+      "bridge_path": "fs.isDir",
+      "descriptions": {
+        "zh-CN": "是否目录",
+        "en-US": "Is directory"
+      }
+    },
+    {
+      "name": "is_file",
+      "symbol": "hap_fs_is_file",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "文件",
+          "en-US": "File"
+        }
+      },
+      "bridge_path": "fs.isFile",
+      "descriptions": {
+        "zh-CN": "是否文件",
+        "en-US": "Is file"
+      }
+    },
+    {
+      "name": "file_size",
+      "symbol": "hap_fs_file_size",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "字节",
+          "en-US": "Bytes"
+        }
+      },
+      "bridge_path": "fs.fileSize",
+      "descriptions": {
+        "zh-CN": "文件大小",
+        "en-US": "File size"
+      }
+    },
+    {
+      "name": "real_path",
+      "symbol": "hap_fs_real_path",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已解析",
+          "en-US": "Resolved"
+        }
+      },
+      "bridge_path": "fs.realPath",
+      "descriptions": {
+        "zh-CN": "真实路径",
+        "en-US": "Real path"
+      }
+    },
+    {
+      "name": "join_path",
+      "symbol": "hap_fs_join_path",
+      "params": [
+        {
+          "name": "parts",
+          "type": "array",
+          "descs": {
+            "zh-CN": "路径部分",
+            "en-US": "Parts"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已拼接",
+          "en-US": "Joined"
+        }
+      },
+      "bridge_path": "fs.joinPath",
+      "descriptions": {
+        "zh-CN": "拼接路径s",
+        "en-US": "Join paths"
+      }
+    },
+    {
+      "name": "parent_path",
+      "symbol": "hap_fs_parent_path",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "父级",
+          "en-US": "Parent"
+        }
+      },
+      "bridge_path": "fs.parentPath",
+      "descriptions": {
+        "zh-CN": "父级路径",
+        "en-US": "Parent path"
+      }
+    },
+    {
+      "name": "file_name",
+      "symbol": "hap_fs_file_name",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "名称",
+          "en-US": "Name"
+        }
+      },
+      "bridge_path": "fs.fileName",
+      "descriptions": {
+        "zh-CN": "文件名",
+        "en-US": "File name"
+      }
+    },
+    {
+      "name": "extension",
+      "symbol": "hap_fs_extension",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "扩展名",
+          "en-US": "Ext"
+        }
+      },
+      "bridge_path": "fs.extension",
+      "descriptions": {
+        "zh-CN": "扩展名",
+        "en-US": "Extension"
+      }
+    },
+    {
+      "name": "touch",
+      "symbol": "hap_fs_touch",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.touch",
+      "descriptions": {
+        "zh-CN": "更新文件时间",
+        "en-US": "Touch file"
+      }
+    },
+    {
+      "name": "read_binary_range",
+      "symbol": "hap_fs_read_binary_range",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "offset",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "偏移",
+            "en-US": "Offset"
+          }
+        },
+        {
+          "name": "length",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "长度",
+            "en-US": "Length"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "Base64",
+          "en-US": "Base64"
+        }
+      },
+      "bridge_path": "fs.readBinaryRange",
+      "descriptions": {
+        "zh-CN": "读取范围",
+        "en-US": "Read range"
+      }
+    },
+    {
+      "name": "checksum",
+      "symbol": "hap_fs_checksum",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "algorithm",
+          "type": "string",
+          "descs": {
+            "zh-CN": "算法",
+            "en-US": "Algorithm"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "哈希",
+          "en-US": "Hash"
+        }
+      },
+      "bridge_path": "fs.checksum",
+      "descriptions": {
+        "zh-CN": "校验和",
+        "en-US": "Checksum"
+      }
+    },
+    {
+      "name": "read_text_lines",
+      "symbol": "hap_fs_read_text_lines",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "行",
+          "en-US": "Lines"
+        }
+      },
+      "bridge_path": "fs.readTextLines",
+      "descriptions": {
+        "zh-CN": "读取行",
+        "en-US": "Read lines"
+      }
+    },
+    {
+      "name": "write_atomic",
+      "symbol": "hap_fs_write_atomic",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "descs": {
+            "zh-CN": "内容",
+            "en-US": "Content"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.writeAtomic",
+      "descriptions": {
+        "zh-CN": "原子写入",
+        "en-US": "Atomic write"
+      }
+    },
+    {
+      "name": "hard_link",
+      "symbol": "hap_fs_hard_link",
+      "params": [
+        {
+          "name": "source",
+          "type": "string",
+          "descs": {
+            "zh-CN": "源",
+            "en-US": "Source"
+          }
+        },
+        {
+          "name": "link",
+          "type": "string",
+          "descs": {
+            "zh-CN": "链接",
+            "en-US": "Link"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.hardLink",
+      "descriptions": {
+        "zh-CN": "硬链接",
+        "en-US": "Hard link"
+      }
+    },
+    {
+      "name": "line_count",
+      "symbol": "hap_fs_line_count",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "行",
+          "en-US": "Lines"
+        }
+      },
+      "bridge_path": "fs.lineCount",
+      "descriptions": {
+        "zh-CN": "行数量",
+        "en-US": "Line count"
+      }
+    },
+    {
+      "name": "file_type",
+      "symbol": "hap_fs_file_type",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "类型",
+          "en-US": "Type"
+        }
+      },
+      "bridge_path": "fs.fileType",
+      "descriptions": {
+        "zh-CN": "文件类型",
+        "en-US": "File type"
+      }
+    },
+    {
+      "name": "search_content",
+      "symbol": "hap_fs_search_content",
+      "params": [
+        {
+          "name": "dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目录",
+            "en-US": "Dir"
+          }
+        },
+        {
+          "name": "pattern",
+          "type": "string",
+          "descs": {
+            "zh-CN": "模式",
+            "en-US": "Pattern"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "匹配项",
+          "en-US": "Matches"
+        }
+      },
+      "bridge_path": "fs.searchContent",
+      "descriptions": {
+        "zh-CN": "搜索内容",
+        "en-US": "Search content"
+      }
+    },
+    {
+      "name": "normalize_path",
+      "symbol": "hap_fs_normalize_path",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已规范化",
+          "en-US": "Normalized"
+        }
+      },
+      "bridge_path": "fs.normalizePath",
+      "descriptions": {
+        "zh-CN": "规范化",
+        "en-US": "Normalize"
+      }
+    },
+    {
+      "name": "truncate",
+      "symbol": "hap_fs_truncate",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "size",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "大小",
+            "en-US": "Size"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.truncate",
+      "descriptions": {
+        "zh-CN": "截断文件",
+        "en-US": "Truncate"
+      }
+    },
+    {
+      "name": "lock_file",
+      "symbol": "hap_fs_lock_file",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "锁定",
+          "en-US": "Lock"
+        }
+      },
+      "bridge_path": "fs.lockFile",
+      "descriptions": {
+        "zh-CN": "锁定文件",
+        "en-US": "Lock file"
+      }
+    },
+    {
+      "name": "unlock_file",
+      "symbol": "hap_fs_unlock_file",
+      "params": [
+        {
+          "name": "lock_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "锁定 ID",
+            "en-US": "Lock ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "fs.unlockFile",
+      "descriptions": {
+        "zh-CN": "解锁",
+        "en-US": "Unlock"
+      }
+    },
+    {
+      "name": "dir_size",
+      "symbol": "hap_fs_dir_size",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "字节",
+          "en-US": "Bytes"
+        }
+      },
+      "bridge_path": "fs.dirSize",
+      "descriptions": {
+        "zh-CN": "目录大小",
+        "en-US": "Dir size"
+      }
+    },
+    {
+      "name": "compare",
+      "symbol": "hap_fs_compare",
+      "params": [
+        {
+          "name": "path_a",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径 A",
+            "en-US": "Path A"
+          }
+        },
+        {
+          "name": "path_b",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径 B",
+            "en-US": "Path B"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "fs.compare",
+      "descriptions": {
+        "zh-CN": "比较文件",
+        "en-US": "Compare files"
+      }
+    },
+    {
+      "name": "list_locks",
+      "symbol": "hap_fs_list_locks",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "锁",
+          "en-US": "Locks"
+        }
+      },
+      "bridge_path": "fs.listLocks",
+      "descriptions": {
+        "zh-CN": "列出锁",
+        "en-US": "List locks"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供文件系统操作能力，包括文件/目录的创建、读写、复制、移动、删除、权限管理、监控变化、临时文件管理等。支持文本和二进制文件操作、文件锁、符号链接等。",
+    "en-US": "File system operations including create, read, write, copy, move, delete, permissions, change monitoring, and temp file management. Supports text/binary files, file locks, and symlinks."
+  }
+}

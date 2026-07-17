@@ -1,0 +1,519 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000025",
+  "name": "process",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "⚙️",
+  "min_shell_version": "0.1.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "进程管理模块",
+    "en-US": "Process management module"
+  },
+  "permission": "process",
+  "functions": [
+    {
+      "name": "exec",
+      "symbol": "hap_process_exec",
+      "params": [
+        {
+          "name": "command",
+          "type": "string",
+          "descs": {
+            "zh-CN": "命令",
+            "en-US": "Command"
+          }
+        },
+        {
+          "name": "args",
+          "type": "array",
+          "descs": {
+            "zh-CN": "参数",
+            "en-US": "Arguments"
+          },
+          "optional": true
+        },
+        {
+          "name": "cwd",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作目录",
+            "en-US": "Cwd"
+          },
+          "optional": true
+        },
+        {
+          "name": "env",
+          "type": "string",
+          "descs": {
+            "zh-CN": "环境变量",
+            "en-US": "Env"
+          },
+          "optional": true
+        },
+        {
+          "name": "timeout_ms",
+          "type": "u32",
+          "descs": {
+            "zh-CN": "超时(毫秒)",
+            "en-US": "Timeout in ms"
+          },
+          "optional": true
+        },
+        {
+          "name": "stdin",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标准输入",
+            "en-US": "Standard input"
+          },
+          "optional": true
+        },
+        {
+          "name": "encoding",
+          "type": "string",
+          "descs": {
+            "zh-CN": "编码",
+            "en-US": "Encoding"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "process.exec",
+      "descriptions": {
+        "zh-CN": "执行命令",
+        "en-US": "Execute command"
+      }
+    },
+    {
+      "name": "spawn",
+      "symbol": "hap_process_spawn",
+      "params": [
+        {
+          "name": "command",
+          "type": "string",
+          "descs": {
+            "zh-CN": "命令",
+            "en-US": "Command"
+          }
+        },
+        {
+          "name": "args",
+          "type": "array",
+          "descs": {
+            "zh-CN": "启动参数",
+            "en-US": "Launch arguments"
+          },
+          "optional": true
+        },
+        {
+          "name": "cwd",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作目录",
+            "en-US": "Cwd"
+          },
+          "optional": true
+        },
+        {
+          "name": "env",
+          "type": "string",
+          "descs": {
+            "zh-CN": "环境变量",
+            "en-US": "Env"
+          },
+          "optional": true
+        },
+        {
+          "name": "encoding",
+          "type": "string",
+          "descs": {
+            "zh-CN": "编码",
+            "en-US": "Encoding"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "进程",
+          "en-US": "Process"
+        }
+      },
+      "bridge_path": "process.spawn",
+      "descriptions": {
+        "zh-CN": "启动进程",
+        "en-US": "Spawn process"
+      }
+    },
+    {
+      "name": "kill",
+      "symbol": "hap_process_kill",
+      "params": [
+        {
+          "name": "pid",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "PID",
+            "en-US": "PID"
+          }
+        },
+        {
+          "name": "signal",
+          "type": "string",
+          "descs": {
+            "zh-CN": "信号编号",
+            "en-US": "Signal number"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "process.kill",
+      "descriptions": {
+        "zh-CN": "终止进程",
+        "en-US": "Kill process"
+      }
+    },
+    {
+      "name": "is_running",
+      "symbol": "hap_process_is_running",
+      "params": [
+        {
+          "name": "pid",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "PID",
+            "en-US": "PID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "运行中的",
+          "en-US": "Running"
+        }
+      },
+      "bridge_path": "process.isRunning",
+      "descriptions": {
+        "zh-CN": "检查运行中的",
+        "en-US": "Check running"
+      }
+    },
+    {
+      "name": "wait",
+      "symbol": "hap_process_wait",
+      "params": [
+        {
+          "name": "pid",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "PID",
+            "en-US": "PID"
+          }
+        },
+        {
+          "name": "timeout_ms",
+          "type": "u32",
+          "descs": {
+            "zh-CN": "超时(毫秒)",
+            "en-US": "Timeout in ms"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "process.wait",
+      "descriptions": {
+        "zh-CN": "等待进程",
+        "en-US": "Wait process"
+      }
+    },
+    {
+      "name": "list",
+      "symbol": "hap_process_list",
+      "params": [
+        {
+          "name": "sort_by",
+          "type": "string",
+          "descs": {
+            "zh-CN": "排序按",
+            "en-US": "Sort By"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "进程",
+          "en-US": "Processes"
+        }
+      },
+      "bridge_path": "process.list",
+      "descriptions": {
+        "zh-CN": "列出进程",
+        "en-US": "List processes"
+      }
+    },
+    {
+      "name": "find_by_name",
+      "symbol": "hap_process_find_by_name",
+      "params": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "名称",
+            "en-US": "Name"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "进程",
+          "en-US": "Processes"
+        }
+      },
+      "bridge_path": "process.findByName",
+      "descriptions": {
+        "zh-CN": "查找按名称",
+        "en-US": "Find by name"
+      }
+    },
+    {
+      "name": "current_pid",
+      "symbol": "hap_process_current_pid",
+      "params": [],
+      "returns": {
+        "type": "i32",
+        "descs": {
+          "zh-CN": "PID",
+          "en-US": "PID"
+        }
+      },
+      "bridge_path": "process.currentPid",
+      "descriptions": {
+        "zh-CN": "当前 PID",
+        "en-US": "Current PID"
+      }
+    },
+    {
+      "name": "env_var",
+      "symbol": "hap_process_env_var",
+      "params": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "名称",
+            "en-US": "Name"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "值",
+          "en-US": "Value"
+        }
+      },
+      "bridge_path": "process.envVar",
+      "descriptions": {
+        "zh-CN": "获取环境变量",
+        "en-US": "Get env var"
+      }
+    },
+    {
+      "name": "env_vars",
+      "symbol": "hap_process_env_vars",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "变量",
+          "en-US": "Vars"
+        }
+      },
+      "bridge_path": "process.envVars",
+      "descriptions": {
+        "zh-CN": "所有环境变量",
+        "en-US": "All env vars"
+      }
+    },
+    {
+      "name": "which",
+      "symbol": "hap_process_which",
+      "params": [
+        {
+          "name": "command",
+          "type": "string",
+          "descs": {
+            "zh-CN": "命令",
+            "en-US": "Command"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "路径",
+          "en-US": "Path"
+        }
+      },
+      "bridge_path": "process.which",
+      "descriptions": {
+        "zh-CN": "查找可执行",
+        "en-US": "Find executable"
+      }
+    },
+    {
+      "name": "self_usage",
+      "symbol": "hap_process_self_usage",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "使用情况",
+          "en-US": "Usage"
+        }
+      },
+      "bridge_path": "process.selfUsage",
+      "descriptions": {
+        "zh-CN": "自身资源占用",
+        "en-US": "Self usage"
+      }
+    },
+    {
+      "name": "write_stdin",
+      "symbol": "hap_process_write_stdin",
+      "params": [
+        {
+          "name": "pid",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "PID",
+            "en-US": "PID"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "process.writeStdin",
+      "descriptions": {
+        "zh-CN": "写入标准输入",
+        "en-US": "Write stdin"
+      }
+    },
+    {
+      "name": "close_stdin",
+      "symbol": "hap_process_close_stdin",
+      "params": [
+        {
+          "name": "pid",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "PID",
+            "en-US": "PID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "process.closeStdin",
+      "descriptions": {
+        "zh-CN": "关闭标准输入",
+        "en-US": "Close stdin"
+      }
+    },
+    {
+      "name": "set_priority",
+      "symbol": "hap_process_set_priority",
+      "params": [
+        {
+          "name": "pid",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "PID",
+            "en-US": "PID"
+          }
+        },
+        {
+          "name": "priority",
+          "type": "string",
+          "descs": {
+            "zh-CN": "优先级",
+            "en-US": "Priority"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "process.setPriority",
+      "descriptions": {
+        "zh-CN": "设置优先级",
+        "en-US": "Set priority"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供进程管理能力，包括启动/终止进程、获取进程列表、监控进程状态、执行系统命令、管理子进程的标准输入/输出/错误流等功能。",
+    "en-US": "Process management including start/kill processes, process listing, status monitoring, system command execution, and child process stdin/stdout/stderr management."
+  }
+}

@@ -1,0 +1,612 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000009",
+  "name": "datetime",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "📅",
+  "min_shell_version": "0.1.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "日期时间模块",
+    "en-US": "Date and time module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "now",
+      "symbol": "hap_datetime_now",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "当前",
+          "en-US": "Now"
+        }
+      },
+      "bridge_path": "datetime.now",
+      "descriptions": {
+        "zh-CN": "当前时间",
+        "en-US": "Current time"
+      }
+    },
+    {
+      "name": "format",
+      "symbol": "hap_datetime_format",
+      "params": [
+        {
+          "name": "unix_ms",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "时间戳",
+            "en-US": "Timestamp"
+          }
+        },
+        {
+          "name": "pattern",
+          "type": "string",
+          "descs": {
+            "zh-CN": "格式化模式",
+            "en-US": "Format pattern"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已格式化",
+          "en-US": "Formatted"
+        }
+      },
+      "bridge_path": "datetime.format",
+      "descriptions": {
+        "zh-CN": "格式化日期时间",
+        "en-US": "Format datetime"
+      }
+    },
+    {
+      "name": "parse",
+      "symbol": "hap_datetime_parse",
+      "params": [
+        {
+          "name": "date_string",
+          "type": "string",
+          "descs": {
+            "zh-CN": "日期字符串",
+            "en-US": "Date string"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "已解析",
+          "en-US": "Parsed"
+        }
+      },
+      "bridge_path": "datetime.parse",
+      "descriptions": {
+        "zh-CN": "解析日期时间",
+        "en-US": "Parse datetime"
+      }
+    },
+    {
+      "name": "diff",
+      "symbol": "hap_datetime_diff",
+      "params": [
+        {
+          "name": "unix_ms_1",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "时间 1",
+            "en-US": "Time 1"
+          }
+        },
+        {
+          "name": "unix_ms_2",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "时间 2",
+            "en-US": "Time 2"
+          }
+        },
+        {
+          "name": "unit",
+          "type": "string",
+          "descs": {
+            "zh-CN": "单位",
+            "en-US": "Unit"
+          }
+        }
+      ],
+      "returns": {
+        "type": "f64",
+        "descs": {
+          "zh-CN": "差值",
+          "en-US": "Difference"
+        }
+      },
+      "bridge_path": "datetime.diff",
+      "descriptions": {
+        "zh-CN": "时间差值",
+        "en-US": "Time diff"
+      }
+    },
+    {
+      "name": "add",
+      "symbol": "hap_datetime_add",
+      "params": [
+        {
+          "name": "unix_ms",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "时间戳",
+            "en-US": "Timestamp"
+          }
+        },
+        {
+          "name": "amount",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "数量",
+            "en-US": "Amount"
+          }
+        },
+        {
+          "name": "unit",
+          "type": "string",
+          "descs": {
+            "zh-CN": "单位",
+            "en-US": "Unit"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "新时间戳",
+          "en-US": "New timestamp"
+        }
+      },
+      "bridge_path": "datetime.add",
+      "descriptions": {
+        "zh-CN": "添加时间",
+        "en-US": "Add time"
+      }
+    },
+    {
+      "name": "start_of",
+      "symbol": "hap_datetime_start_of",
+      "params": [
+        {
+          "name": "unix_ms",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "时间戳",
+            "en-US": "Timestamp"
+          }
+        },
+        {
+          "name": "unit",
+          "type": "string",
+          "descs": {
+            "zh-CN": "单位",
+            "en-US": "Unit"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "启动",
+          "en-US": "Start"
+        }
+      },
+      "bridge_path": "datetime.startOf",
+      "descriptions": {
+        "zh-CN": "启动的周期",
+        "en-US": "Start of period"
+      }
+    },
+    {
+      "name": "end_of",
+      "symbol": "hap_datetime_end_of",
+      "params": [
+        {
+          "name": "unix_ms",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "时间戳",
+            "en-US": "Timestamp"
+          }
+        },
+        {
+          "name": "unit",
+          "type": "string",
+          "descs": {
+            "zh-CN": "单位",
+            "en-US": "Unit"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "结束",
+          "en-US": "End"
+        }
+      },
+      "bridge_path": "datetime.endOf",
+      "descriptions": {
+        "zh-CN": "结束的周期",
+        "en-US": "End of period"
+      }
+    },
+    {
+      "name": "timezone_list",
+      "symbol": "hap_datetime_timezone_list",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "时区",
+          "en-US": "Timezones"
+        }
+      },
+      "bridge_path": "datetime.timezoneList",
+      "descriptions": {
+        "zh-CN": "列出时区",
+        "en-US": "List timezones"
+      }
+    },
+    {
+      "name": "timezone_offset",
+      "symbol": "hap_datetime_timezone_offset",
+      "params": [
+        {
+          "name": "timezone",
+          "type": "string",
+          "descs": {
+            "zh-CN": "时区",
+            "en-US": "Timezone"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i32",
+        "descs": {
+          "zh-CN": "偏移(分钟)",
+          "en-US": "Offset min"
+        }
+      },
+      "bridge_path": "datetime.timezoneOffset",
+      "descriptions": {
+        "zh-CN": "TZ 偏移",
+        "en-US": "TZ offset"
+      }
+    },
+    {
+      "name": "to_unix",
+      "symbol": "hap_datetime_to_unix",
+      "params": [
+        {
+          "name": "iso_string",
+          "type": "string",
+          "descs": {
+            "zh-CN": "ISO 字符串",
+            "en-US": "ISO string"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "Unix 毫秒",
+          "en-US": "Unix 毫秒"
+        }
+      },
+      "bridge_path": "datetime.toUnix",
+      "descriptions": {
+        "zh-CN": "转 Unix",
+        "en-US": "To unix"
+      }
+    },
+    {
+      "name": "from_unix",
+      "symbol": "hap_datetime_from_unix",
+      "params": [
+        {
+          "name": "unix_ms",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "Unix 毫秒",
+            "en-US": "Unix 毫秒"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "ISO 字符串",
+          "en-US": "ISO string"
+        }
+      },
+      "bridge_path": "datetime.fromUnix",
+      "descriptions": {
+        "zh-CN": "从 Unix",
+        "en-US": "From unix"
+      }
+    },
+    {
+      "name": "is_leap_year",
+      "symbol": "hap_datetime_is_leap_year",
+      "params": [
+        {
+          "name": "year",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "年",
+            "en-US": "Year"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "闰年",
+          "en-US": "Leap"
+        }
+      },
+      "bridge_path": "datetime.isLeapYear",
+      "descriptions": {
+        "zh-CN": "是否闰年",
+        "en-US": "Is leap year"
+      }
+    },
+    {
+      "name": "days_in_month",
+      "symbol": "hap_datetime_days_in_month",
+      "params": [
+        {
+          "name": "year",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "年",
+            "en-US": "Year"
+          }
+        },
+        {
+          "name": "month",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "月",
+            "en-US": "Month"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i32",
+        "descs": {
+          "zh-CN": "日",
+          "en-US": "Days"
+        }
+      },
+      "bridge_path": "datetime.daysInMonth",
+      "descriptions": {
+        "zh-CN": "月份天数",
+        "en-US": "Days in month"
+      }
+    },
+    {
+      "name": "day_of_week",
+      "symbol": "hap_datetime_day_of_week",
+      "params": [
+        {
+          "name": "unix_ms",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "时间戳",
+            "en-US": "Timestamp"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i32",
+        "descs": {
+          "zh-CN": "星期",
+          "en-US": "Weekday"
+        }
+      },
+      "bridge_path": "datetime.dayOfWeek",
+      "descriptions": {
+        "zh-CN": "日的周",
+        "en-US": "Day of week"
+      }
+    },
+    {
+      "name": "is_between",
+      "symbol": "hap_datetime_is_between",
+      "params": [
+        {
+          "name": "unix_ms",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "时间戳",
+            "en-US": "Timestamp"
+          }
+        },
+        {
+          "name": "start_ms",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "启动",
+            "en-US": "Start"
+          }
+        },
+        {
+          "name": "end_ms",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "结束",
+            "en-US": "End"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "之间",
+          "en-US": "Between"
+        }
+      },
+      "bridge_path": "datetime.isBetween",
+      "descriptions": {
+        "zh-CN": "是否之间",
+        "en-US": "Is between"
+      }
+    },
+    {
+      "name": "relative",
+      "symbol": "hap_datetime_relative",
+      "params": [
+        {
+          "name": "unix_ms",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "时间戳",
+            "en-US": "Timestamp"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "相对",
+          "en-US": "Relative"
+        }
+      },
+      "bridge_path": "datetime.relative",
+      "descriptions": {
+        "zh-CN": "相对时间",
+        "en-US": "Relative time"
+      }
+    },
+    {
+      "name": "is_weekend",
+      "symbol": "hap_datetime_is_weekend",
+      "params": [
+        {
+          "name": "unix_ms",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "时间戳",
+            "en-US": "Timestamp"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "周末",
+          "en-US": "Weekend"
+        }
+      },
+      "bridge_path": "datetime.isWeekend",
+      "descriptions": {
+        "zh-CN": "是否周末",
+        "en-US": "Is weekend"
+      }
+    },
+    {
+      "name": "week_of_year",
+      "symbol": "hap_datetime_week_of_year",
+      "params": [
+        {
+          "name": "unix_ms",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "时间戳",
+            "en-US": "Timestamp"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i32",
+        "descs": {
+          "zh-CN": "周",
+          "en-US": "Week"
+        }
+      },
+      "bridge_path": "datetime.weekOfYear",
+      "descriptions": {
+        "zh-CN": "周的年",
+        "en-US": "Week of year"
+      }
+    },
+    {
+      "name": "calendar",
+      "symbol": "hap_datetime_calendar",
+      "params": [
+        {
+          "name": "year",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "年",
+            "en-US": "Year"
+          }
+        },
+        {
+          "name": "month",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "月",
+            "en-US": "Month"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "日历",
+          "en-US": "Calendar"
+        }
+      },
+      "bridge_path": "datetime.calendar",
+      "descriptions": {
+        "zh-CN": "日历",
+        "en-US": "Calendar"
+      }
+    },
+    {
+      "name": "is_valid",
+      "symbol": "hap_datetime_is_valid",
+      "params": [
+        {
+          "name": "date_string",
+          "type": "string",
+          "descs": {
+            "zh-CN": "日期字符串",
+            "en-US": "Date string"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "有效",
+          "en-US": "Valid"
+        }
+      },
+      "bridge_path": "datetime.isValid",
+      "descriptions": {
+        "zh-CN": "验证日期",
+        "en-US": "Validate date"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供日期时间的获取、格式化、解析、计算、时区转换等能力。支持时间戳与字符串互转、日期差计算、日历操作、定时器管理等功能。",
+    "en-US": "Date/time retrieval, formatting, parsing, arithmetic, and timezone conversion. Supports timestamp/string conversion, date difference calculation, calendar operations, and timer management."
+  }
+}

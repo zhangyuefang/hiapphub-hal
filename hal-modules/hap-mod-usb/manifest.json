@@ -1,0 +1,361 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000033",
+  "name": "usb",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🔌",
+  "min_shell_version": "0.1.0",
+  "category": "hardware",
+  "descriptions": {
+    "zh-CN": "USB设备通信模块",
+    "en-US": "USB device communication module"
+  },
+  "overviews": {
+    "zh-CN": "提供USB设备通信能力，支持设备枚举、HID读写、批量传输、设备信息查询等功能。",
+    "en-US": "Provides USB device communication including device enumeration, HID read/write, bulk transfer, and device info queries."
+  },
+  "permission": "usb",
+  "functions": [
+    {
+      "name": "list_devices",
+      "symbol": "hap_usb_list_devices",
+      "descriptions": {
+        "zh-CN": "列出USB设备",
+        "en-US": "List USB devices"
+      },
+      "params": [
+        {
+          "name": "vendor_id",
+          "type": "number",
+          "optional": true,
+          "descs": {
+            "zh-CN": "厂商ID过滤",
+            "en-US": "Vendor ID filter"
+          }
+        },
+        {
+          "name": "product_id",
+          "type": "number",
+          "optional": true,
+          "descs": {
+            "zh-CN": "产品ID过滤",
+            "en-US": "Product ID filter"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "设备列表",
+          "en-US": "Device list"
+        }
+      },
+      "bridge_path": "usb.listDevices"
+    },
+    {
+      "name": "open",
+      "symbol": "hap_usb_open",
+      "descriptions": {
+        "zh-CN": "打开USB设备",
+        "en-US": "Open USB device"
+      },
+      "params": [
+        {
+          "name": "vendor_id",
+          "type": "number",
+          "descs": {
+            "zh-CN": "厂商ID",
+            "en-US": "Vendor ID"
+          }
+        },
+        {
+          "name": "product_id",
+          "type": "number",
+          "descs": {
+            "zh-CN": "产品ID",
+            "en-US": "Product ID"
+          }
+        },
+        {
+          "name": "interface_number",
+          "type": "number",
+          "optional": true,
+          "default_value": "0",
+          "descs": {
+            "zh-CN": "接口号",
+            "en-US": "Interface number"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "设备句柄信息",
+          "en-US": "Device handle info"
+        }
+      },
+      "bridge_path": "usb.open"
+    },
+    {
+      "name": "close",
+      "symbol": "hap_usb_close",
+      "descriptions": {
+        "zh-CN": "关闭USB设备",
+        "en-US": "Close USB device"
+      },
+      "params": [
+        {
+          "name": "handle_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备句柄ID",
+            "en-US": "Device handle ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "usb.close"
+    },
+    {
+      "name": "bulk_transfer_out",
+      "symbol": "hap_usb_bulk_transfer_out",
+      "descriptions": {
+        "zh-CN": "批量传输(写)",
+        "en-US": "Bulk transfer out"
+      },
+      "params": [
+        {
+          "name": "handle_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备句柄ID",
+            "en-US": "Handle ID"
+          }
+        },
+        {
+          "name": "endpoint",
+          "type": "number",
+          "descs": {
+            "zh-CN": "端点号",
+            "en-US": "Endpoint"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据(hex编码)",
+            "en-US": "Data (hex encoded)"
+          }
+        },
+        {
+          "name": "timeout_ms",
+          "type": "number",
+          "optional": true,
+          "default_value": "5000",
+          "descs": {
+            "zh-CN": "超时(毫秒)",
+            "en-US": "Timeout (ms)"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "传输结果",
+          "en-US": "Transfer result"
+        }
+      },
+      "bridge_path": "usb.bulkTransferOut"
+    },
+    {
+      "name": "bulk_transfer_in",
+      "symbol": "hap_usb_bulk_transfer_in",
+      "descriptions": {
+        "zh-CN": "批量传输(读)",
+        "en-US": "Bulk transfer in"
+      },
+      "params": [
+        {
+          "name": "handle_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备句柄ID",
+            "en-US": "Handle ID"
+          }
+        },
+        {
+          "name": "endpoint",
+          "type": "number",
+          "descs": {
+            "zh-CN": "端点号",
+            "en-US": "Endpoint"
+          }
+        },
+        {
+          "name": "length",
+          "type": "number",
+          "descs": {
+            "zh-CN": "读取长度",
+            "en-US": "Read length"
+          }
+        },
+        {
+          "name": "timeout_ms",
+          "type": "number",
+          "optional": true,
+          "default_value": "5000",
+          "descs": {
+            "zh-CN": "超时(毫秒)",
+            "en-US": "Timeout (ms)"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "读取数据",
+          "en-US": "Read data"
+        }
+      },
+      "bridge_path": "usb.bulkTransferIn"
+    },
+    {
+      "name": "control_transfer",
+      "symbol": "hap_usb_control_transfer",
+      "descriptions": {
+        "zh-CN": "控制传输",
+        "en-US": "Control transfer"
+      },
+      "params": [
+        {
+          "name": "handle_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备句柄ID",
+            "en-US": "Handle ID"
+          }
+        },
+        {
+          "name": "request_type",
+          "type": "number",
+          "descs": {
+            "zh-CN": "请求类型",
+            "en-US": "Request type"
+          }
+        },
+        {
+          "name": "request",
+          "type": "number",
+          "descs": {
+            "zh-CN": "请求码",
+            "en-US": "Request"
+          }
+        },
+        {
+          "name": "value",
+          "type": "number",
+          "descs": {
+            "zh-CN": "值",
+            "en-US": "Value"
+          }
+        },
+        {
+          "name": "index",
+          "type": "number",
+          "descs": {
+            "zh-CN": "索引",
+            "en-US": "Index"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "数据(hex)",
+            "en-US": "Data (hex)"
+          }
+        },
+        {
+          "name": "timeout_ms",
+          "type": "number",
+          "optional": true,
+          "default_value": "5000",
+          "descs": {
+            "zh-CN": "超时",
+            "en-US": "Timeout"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "传输结果",
+          "en-US": "Transfer result"
+        }
+      },
+      "bridge_path": "usb.controlTransfer"
+    },
+    {
+      "name": "get_device_info",
+      "symbol": "hap_usb_get_device_info",
+      "descriptions": {
+        "zh-CN": "获取设备详情",
+        "en-US": "Get device info"
+      },
+      "params": [
+        {
+          "name": "handle_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备句柄ID",
+            "en-US": "Handle ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "设备详情",
+          "en-US": "Device details"
+        }
+      },
+      "bridge_path": "usb.getDeviceInfo"
+    },
+    {
+      "name": "reset_device",
+      "symbol": "hap_usb_reset_device",
+      "descriptions": {
+        "zh-CN": "重置设备",
+        "en-US": "Reset device"
+      },
+      "params": [
+        {
+          "name": "handle_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备句柄ID",
+            "en-US": "Handle ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "usb.resetDevice"
+    }
+  ]
+}

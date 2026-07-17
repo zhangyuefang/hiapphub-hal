@@ -1,0 +1,1562 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000021",
+  "name": "image",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🖼️",
+  "min_shell_version": "0.1.0",
+  "category": "media",
+  "descriptions": {
+    "zh-CN": "图像处理模块",
+    "en-US": "Image processing module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "info",
+      "symbol": "hap_image_info",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "信息",
+          "en-US": "Info"
+        }
+      },
+      "bridge_path": "image.info",
+      "descriptions": {
+        "zh-CN": "图像信息",
+        "en-US": "Image info"
+      }
+    },
+    {
+      "name": "resize",
+      "symbol": "hap_image_resize",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "width",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "宽度",
+            "en-US": "Width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "高度",
+            "en-US": "Height"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.resize",
+      "descriptions": {
+        "zh-CN": "调整大小",
+        "en-US": "Resize"
+      }
+    },
+    {
+      "name": "crop",
+      "symbol": "hap_image_crop",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "x",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "X",
+            "en-US": "X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "Y",
+            "en-US": "Y"
+          }
+        },
+        {
+          "name": "w",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "W",
+            "en-US": "W"
+          }
+        },
+        {
+          "name": "h",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "H",
+            "en-US": "H"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.crop",
+      "descriptions": {
+        "zh-CN": "裁剪",
+        "en-US": "Crop"
+      }
+    },
+    {
+      "name": "rotate",
+      "symbol": "hap_image_rotate",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "degrees",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "角度",
+            "en-US": "Degrees"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.rotate",
+      "descriptions": {
+        "zh-CN": "旋转",
+        "en-US": "Rotate"
+      }
+    },
+    {
+      "name": "flip",
+      "symbol": "hap_image_flip",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "direction",
+          "type": "string",
+          "descs": {
+            "zh-CN": "h/v",
+            "en-US": "h/v"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.flip",
+      "descriptions": {
+        "zh-CN": "翻转",
+        "en-US": "Flip"
+      }
+    },
+    {
+      "name": "convert",
+      "symbol": "hap_image_convert",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.convert",
+      "descriptions": {
+        "zh-CN": "转换格式",
+        "en-US": "Convert format"
+      }
+    },
+    {
+      "name": "compress",
+      "symbol": "hap_image_compress",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "quality",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "质量",
+            "en-US": "Quality"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.compress",
+      "descriptions": {
+        "zh-CN": "压缩",
+        "en-US": "Compress"
+      }
+    },
+    {
+      "name": "thumbnail",
+      "symbol": "hap_image_thumbnail",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "size",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "大小",
+            "en-US": "Size"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.thumbnail",
+      "descriptions": {
+        "zh-CN": "缩略图",
+        "en-US": "Thumbnail"
+      }
+    },
+    {
+      "name": "watermark_text",
+      "symbol": "hap_image_watermark_text",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文本",
+            "en-US": "Text"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.watermarkText",
+      "descriptions": {
+        "zh-CN": "文本水印",
+        "en-US": "Text watermark"
+      }
+    },
+    {
+      "name": "watermark_image",
+      "symbol": "hap_image_watermark_image",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "watermark",
+          "type": "string",
+          "descs": {
+            "zh-CN": "水印",
+            "en-US": "Watermark"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.watermarkImage",
+      "descriptions": {
+        "zh-CN": "图像水印",
+        "en-US": "Image watermark"
+      }
+    },
+    {
+      "name": "blur",
+      "symbol": "hap_image_blur",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "radius",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "半径",
+            "en-US": "Radius"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.blur",
+      "descriptions": {
+        "zh-CN": "模糊",
+        "en-US": "Blur"
+      }
+    },
+    {
+      "name": "sharpen",
+      "symbol": "hap_image_sharpen",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "amount",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "数量",
+            "en-US": "Amount"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.sharpen",
+      "descriptions": {
+        "zh-CN": "锐化",
+        "en-US": "Sharpen"
+      }
+    },
+    {
+      "name": "grayscale",
+      "symbol": "hap_image_grayscale",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.grayscale",
+      "descriptions": {
+        "zh-CN": "灰度",
+        "en-US": "Grayscale"
+      }
+    },
+    {
+      "name": "adjust",
+      "symbol": "hap_image_adjust",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.adjust",
+      "descriptions": {
+        "zh-CN": "调整图像参数",
+        "en-US": "Adjust"
+      }
+    },
+    {
+      "name": "overlay",
+      "symbol": "hap_image_overlay",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "overlay",
+          "type": "string",
+          "descs": {
+            "zh-CN": "叠加",
+            "en-US": "Overlay"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.overlay",
+      "descriptions": {
+        "zh-CN": "叠加",
+        "en-US": "Overlay"
+      }
+    },
+    {
+      "name": "to_base64",
+      "symbol": "hap_image_to_base64",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "Base64",
+          "en-US": "Base64"
+        }
+      },
+      "bridge_path": "image.toBase64",
+      "descriptions": {
+        "zh-CN": "转换为 Base64",
+        "en-US": "To base64"
+      }
+    },
+    {
+      "name": "from_base64",
+      "symbol": "hap_image_from_base64",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base64",
+            "en-US": "Base64"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.fromBase64",
+      "descriptions": {
+        "zh-CN": "从 Base64 转换",
+        "en-US": "From base64"
+      }
+    },
+    {
+      "name": "exif",
+      "symbol": "hap_image_exif",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "EXIF",
+          "en-US": "EXIF"
+        }
+      },
+      "bridge_path": "image.exif",
+      "descriptions": {
+        "zh-CN": "获取 EXIF",
+        "en-US": "Get EXIF"
+      }
+    },
+    {
+      "name": "strip_exif",
+      "symbol": "hap_image_strip_exif",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.stripExif",
+      "descriptions": {
+        "zh-CN": "清除 EXIF",
+        "en-US": "Strip EXIF"
+      }
+    },
+    {
+      "name": "create_blank",
+      "symbol": "hap_image_create_blank",
+      "params": [
+        {
+          "name": "width",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "宽度",
+            "en-US": "Width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "高度",
+            "en-US": "Height"
+          }
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "descs": {
+            "zh-CN": "颜色",
+            "en-US": "Color"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.createBlank",
+      "descriptions": {
+        "zh-CN": "创建空白图像",
+        "en-US": "Create blank"
+      }
+    },
+    {
+      "name": "text",
+      "symbol": "hap_image_text",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文本",
+            "en-US": "Text"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.text",
+      "descriptions": {
+        "zh-CN": "绘制文本",
+        "en-US": "Draw text"
+      }
+    },
+    {
+      "name": "extract_colors",
+      "symbol": "hap_image_extract_colors",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "颜色",
+          "en-US": "Colors"
+        }
+      },
+      "bridge_path": "image.extractColors",
+      "descriptions": {
+        "zh-CN": "提取颜色",
+        "en-US": "Extract colors"
+      }
+    },
+    {
+      "name": "compare",
+      "symbol": "hap_image_compare",
+      "params": [
+        {
+          "name": "path_a",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径 A",
+            "en-US": "Path A"
+          }
+        },
+        {
+          "name": "path_b",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径 B",
+            "en-US": "Path B"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "image.compare",
+      "descriptions": {
+        "zh-CN": "比较",
+        "en-US": "Compare"
+      }
+    },
+    {
+      "name": "pad",
+      "symbol": "hap_image_pad",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.pad",
+      "descriptions": {
+        "zh-CN": "填充",
+        "en-US": "Pad"
+      }
+    },
+    {
+      "name": "concat",
+      "symbol": "hap_image_concat",
+      "params": [
+        {
+          "name": "paths",
+          "type": "array",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Paths"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.concat",
+      "descriptions": {
+        "zh-CN": "拼接",
+        "en-US": "Concat"
+      }
+    },
+    {
+      "name": "invert",
+      "symbol": "hap_image_invert",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.invert",
+      "descriptions": {
+        "zh-CN": "反色",
+        "en-US": "Invert"
+      }
+    },
+    {
+      "name": "sepia",
+      "symbol": "hap_image_sepia",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.sepia",
+      "descriptions": {
+        "zh-CN": "棕褐色",
+        "en-US": "Sepia"
+      }
+    },
+    {
+      "name": "opacity",
+      "symbol": "hap_image_opacity",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.opacity",
+      "descriptions": {
+        "zh-CN": "设置透明度",
+        "en-US": "Set opacity"
+      }
+    },
+    {
+      "name": "trim",
+      "symbol": "hap_image_trim",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.trim",
+      "descriptions": {
+        "zh-CN": "修剪",
+        "en-US": "Trim"
+      }
+    },
+    {
+      "name": "pixelate",
+      "symbol": "hap_image_pixelate",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.pixelate",
+      "descriptions": {
+        "zh-CN": "马赛克化",
+        "en-US": "Pixelate"
+      }
+    },
+    {
+      "name": "mask",
+      "symbol": "hap_image_mask",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "mask",
+          "type": "string",
+          "descs": {
+            "zh-CN": "蒙版",
+            "en-US": "Mask"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.mask",
+      "descriptions": {
+        "zh-CN": "应用蒙版",
+        "en-US": "Apply mask"
+      }
+    },
+    {
+      "name": "draw_rect",
+      "symbol": "hap_image_draw_rect",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.drawRect",
+      "descriptions": {
+        "zh-CN": "绘制矩形",
+        "en-US": "Draw rect"
+      }
+    },
+    {
+      "name": "draw_circle",
+      "symbol": "hap_image_draw_circle",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.drawCircle",
+      "descriptions": {
+        "zh-CN": "绘制圆形",
+        "en-US": "Draw circle"
+      }
+    },
+    {
+      "name": "draw_line",
+      "symbol": "hap_image_draw_line",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.drawLine",
+      "descriptions": {
+        "zh-CN": "绘制线条",
+        "en-US": "Draw line"
+      }
+    },
+    {
+      "name": "draw_arrow",
+      "symbol": "hap_image_draw_arrow",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.drawArrow",
+      "descriptions": {
+        "zh-CN": "绘制箭头",
+        "en-US": "Draw arrow"
+      }
+    },
+    {
+      "name": "get_pixel",
+      "symbol": "hap_image_get_pixel",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "x",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "X",
+            "en-US": "X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "Y",
+            "en-US": "Y"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "颜色",
+          "en-US": "Color"
+        }
+      },
+      "bridge_path": "image.getPixel",
+      "descriptions": {
+        "zh-CN": "获取像素",
+        "en-US": "Get pixel"
+      }
+    },
+    {
+      "name": "histogram",
+      "symbol": "hap_image_histogram",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "获取直方图",
+          "en-US": "Histogram"
+        }
+      },
+      "bridge_path": "image.histogram",
+      "descriptions": {
+        "zh-CN": "获取直方图",
+        "en-US": "Histogram"
+      }
+    },
+    {
+      "name": "round_corners",
+      "symbol": "hap_image_round_corners",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.roundCorners",
+      "descriptions": {
+        "zh-CN": "圆角处理",
+        "en-US": "Round corners"
+      }
+    },
+    {
+      "name": "gif_from_frames",
+      "symbol": "hap_image_gif_from_frames",
+      "params": [
+        {
+          "name": "paths",
+          "type": "array",
+          "descs": {
+            "zh-CN": "帧",
+            "en-US": "Frames"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.gifFromFrames",
+      "descriptions": {
+        "zh-CN": "从帧合成 GIF",
+        "en-US": "GIF from frames"
+      }
+    },
+    {
+      "name": "split_gif",
+      "symbol": "hap_image_split_gif",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目录",
+            "en-US": "Dir"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "帧",
+          "en-US": "Frames"
+        }
+      },
+      "bridge_path": "image.splitGif",
+      "descriptions": {
+        "zh-CN": "拆分 GIF",
+        "en-US": "Split GIF"
+      }
+    },
+    {
+      "name": "gif_info",
+      "symbol": "hap_image_gif_info",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "信息",
+          "en-US": "Info"
+        }
+      },
+      "bridge_path": "image.gifInfo",
+      "descriptions": {
+        "zh-CN": "GIF 信息",
+        "en-US": "GIF info"
+      }
+    },
+    {
+      "name": "auto_orient",
+      "symbol": "hap_image_auto_orient",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "image.autoOrient",
+      "descriptions": {
+        "zh-CN": "自动校正方向",
+        "en-US": "Auto orient"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供图像处理能力，包括格式转换、缩放、裁剪、旋转、翻转、滤镜效果、水印添加、EXIF 读写、颜色空间转换、批量处理等功能。支持 PNG/JPEG/GIF/BMP/WebP/TIFF 等格式。",
+    "en-US": "Image processing including format conversion, resize, crop, rotate, flip, filters, watermarks, EXIF read/write, color space conversion, and batch processing. Supports PNG/JPEG/GIF/BMP/WebP/TIFF."
+  }
+}

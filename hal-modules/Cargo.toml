@@ -1,0 +1,54 @@
+[workspace]
+resolver = "2"
+members = [
+    "common",
+    "hap-mod-encoding",
+    "hap-mod-datetime",
+    "hap-mod-log",
+    "hap-mod-csv",
+    "hap-mod-xml",
+    "hap-mod-crypto",
+    "hap-mod-system",
+    "hap-mod-storage",
+    "hap-mod-fs",
+    "hap-mod-archive",
+    "hap-mod-sqlite",
+    "hap-mod-http",
+    "hap-mod-websocket",
+    "hap-mod-net",
+    "hap-mod-clipboard",
+    "hap-mod-dialog",
+    "hap-mod-notification",
+    "hap-mod-shortcut",
+    "hap-mod-tray",
+    "hap-mod-shell-ext",
+    "hap-mod-image",
+    "hap-mod-barcode",
+    "hap-mod-audio",
+    "hap-mod-pdf",
+    "hap-mod-excel",
+    "hap-mod-process",
+    "hap-mod-screen",
+    "hap-mod-serial",
+    "hap-mod-power",
+    "hap-mod-keychain",
+    "hap-mod-browser",
+    "hap-mod-bluetooth",
+    "hap-mod-usb",
+    "hap-mod-email",
+    "hap-mod-scheduler",
+    "hap-mod-ocr",
+    "hap-mod-input",
+    "hap-mod-window",
+]
+
+[profile.release]
+lto = true
+strip = true
+codegen-units = 1
+opt-level = "s"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+libc = "0.2"

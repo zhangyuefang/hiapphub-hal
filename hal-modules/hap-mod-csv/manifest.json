@@ -1,0 +1,228 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000028",
+  "name": "csv",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "📋",
+  "min_shell_version": "0.1.0",
+  "category": "files",
+  "descriptions": {
+    "zh-CN": "CSV读写模块",
+    "en-US": "CSV read/write module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "parse",
+      "symbol": "hap_csv_parse",
+      "params": [
+        {
+          "name": "content",
+          "type": "string",
+          "descs": {
+            "zh-CN": "CSV 内容",
+            "en-US": "CSV content"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "已解析",
+          "en-US": "Parsed"
+        }
+      },
+      "bridge_path": "csv.parse",
+      "descriptions": {
+        "zh-CN": "解析 CSV",
+        "en-US": "Parse CSV"
+      }
+    },
+    {
+      "name": "stringify",
+      "symbol": "hap_csv_stringify",
+      "params": [
+        {
+          "name": "rows",
+          "type": "array",
+          "descs": {
+            "zh-CN": "行",
+            "en-US": "Rows"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "CSV 字符串",
+          "en-US": "CSV string"
+        }
+      },
+      "bridge_path": "csv.stringify",
+      "descriptions": {
+        "zh-CN": "序列化为字符串",
+        "en-US": "Stringify"
+      }
+    },
+    {
+      "name": "read_file",
+      "symbol": "hap_csv_read_file",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "数据",
+          "en-US": "Data"
+        }
+      },
+      "bridge_path": "csv.readFile",
+      "descriptions": {
+        "zh-CN": "读取 CSV 文件",
+        "en-US": "Read CSV file"
+      }
+    },
+    {
+      "name": "write_file",
+      "symbol": "hap_csv_write_file",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        },
+        {
+          "name": "rows",
+          "type": "array",
+          "descs": {
+            "zh-CN": "行",
+            "en-US": "Rows"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "csv.writeFile",
+      "descriptions": {
+        "zh-CN": "写入 CSV 文件",
+        "en-US": "Write CSV file"
+      }
+    },
+    {
+      "name": "count_rows",
+      "symbol": "hap_csv_count_rows",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i32",
+        "descs": {
+          "zh-CN": "数量",
+          "en-US": "Count"
+        }
+      },
+      "bridge_path": "csv.countRows",
+      "descriptions": {
+        "zh-CN": "计数行",
+        "en-US": "Count rows"
+      }
+    },
+    {
+      "name": "get_headers",
+      "symbol": "hap_csv_get_headers",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "头部",
+          "en-US": "Headers"
+        }
+      },
+      "bridge_path": "csv.getHeaders",
+      "descriptions": {
+        "zh-CN": "获取头部",
+        "en-US": "Get headers"
+      }
+    },
+    {
+      "name": "read_stream",
+      "symbol": "hap_csv_read_stream",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        },
+        {
+          "name": "offset",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "偏移",
+            "en-US": "Offset"
+          }
+        },
+        {
+          "name": "limit",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "限制",
+            "en-US": "Limit"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "页",
+          "en-US": "Page"
+        }
+      },
+      "bridge_path": "csv.readStream",
+      "descriptions": {
+        "zh-CN": "读取流",
+        "en-US": "Read stream"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供 CSV 文件的读取、写入、追加、查询和转换能力。支持自定义分隔符、引号字符、编码格式，可将 CSV 转换为 JSON 或其他格式。",
+    "en-US": "Read, write, append, query, and convert CSV files. Supports custom delimiters, quote characters, encodings, and CSV-to-JSON conversion."
+  }
+}

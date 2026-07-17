@@ -1,0 +1,1000 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000001",
+  "name": "crypto",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🔐",
+  "min_shell_version": "0.1.0",
+  "category": "security",
+  "descriptions": {
+    "zh-CN": "加密/哈希/随机数能力模块",
+    "en-US": "Cryptography, hashing and random number module"
+  },
+  "permission": "crypto",
+  "functions": [
+    {
+      "name": "hash",
+      "symbol": "hap_crypto_hash",
+      "params": [
+        {
+          "name": "algorithm",
+          "type": "string",
+          "descs": {
+            "zh-CN": "算法",
+            "en-US": "Algorithm"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "十六进制哈希",
+          "en-US": "Hex hash"
+        }
+      },
+      "bridge_path": "crypto.hash",
+      "descriptions": {
+        "zh-CN": "计算数据哈希",
+        "en-US": "Hash data"
+      }
+    },
+    {
+      "name": "hash_file",
+      "symbol": "hap_crypto_hash_file",
+      "params": [
+        {
+          "name": "algorithm",
+          "type": "string",
+          "descs": {
+            "zh-CN": "算法",
+            "en-US": "Algorithm"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "十六进制哈希",
+          "en-US": "Hex hash"
+        }
+      },
+      "bridge_path": "crypto.hashFile",
+      "descriptions": {
+        "zh-CN": "计算文件哈希",
+        "en-US": "Hash file"
+      }
+    },
+    {
+      "name": "hmac",
+      "symbol": "hap_crypto_hmac",
+      "params": [
+        {
+          "name": "algorithm",
+          "type": "string",
+          "descs": {
+            "zh-CN": "算法",
+            "en-US": "Algorithm"
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "十六进制 HMAC",
+          "en-US": "Hex HMAC"
+        }
+      },
+      "bridge_path": "crypto.hmac",
+      "descriptions": {
+        "zh-CN": "HMAC",
+        "en-US": "HMAC"
+      }
+    },
+    {
+      "name": "random_bytes",
+      "symbol": "hap_crypto_random_bytes",
+      "params": [
+        {
+          "name": "length",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "长度",
+            "en-US": "Length"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "十六进制字节",
+          "en-US": "Hex bytes"
+        }
+      },
+      "bridge_path": "crypto.randomBytes",
+      "descriptions": {
+        "zh-CN": "随机字节",
+        "en-US": "Random bytes"
+      }
+    },
+    {
+      "name": "generate_uuid",
+      "symbol": "hap_crypto_generate_uuid",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "UUID",
+          "en-US": "UUID"
+        }
+      },
+      "bridge_path": "crypto.generateUuid",
+      "descriptions": {
+        "zh-CN": "生成 UUID",
+        "en-US": "Generate UUID"
+      }
+    },
+    {
+      "name": "generate_key",
+      "symbol": "hap_crypto_generate_key",
+      "params": [
+        {
+          "name": "bits",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "位数",
+            "en-US": "Bits"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "键",
+          "en-US": "Key"
+        }
+      },
+      "bridge_path": "crypto.generateKey",
+      "descriptions": {
+        "zh-CN": "生成键",
+        "en-US": "Generate key"
+      }
+    },
+    {
+      "name": "derive_key",
+      "symbol": "hap_crypto_derive_key",
+      "params": [
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          }
+        },
+        {
+          "name": "salt",
+          "type": "string",
+          "descs": {
+            "zh-CN": "盐值",
+            "en-US": "Salt"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "派生密钥",
+          "en-US": "Derived key"
+        }
+      },
+      "bridge_path": "crypto.deriveKey",
+      "descriptions": {
+        "zh-CN": "派生密钥",
+        "en-US": "Derive key"
+      }
+    },
+    {
+      "name": "encrypt",
+      "symbol": "hap_crypto_encrypt",
+      "params": [
+        {
+          "name": "algorithm",
+          "type": "string",
+          "descs": {
+            "zh-CN": "算法",
+            "en-US": "Algorithm"
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "密文",
+          "en-US": "Ciphertext"
+        }
+      },
+      "bridge_path": "crypto.encrypt",
+      "descriptions": {
+        "zh-CN": "加密",
+        "en-US": "Encrypt"
+      }
+    },
+    {
+      "name": "decrypt",
+      "symbol": "hap_crypto_decrypt",
+      "params": [
+        {
+          "name": "algorithm",
+          "type": "string",
+          "descs": {
+            "zh-CN": "算法",
+            "en-US": "Algorithm"
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密文",
+            "en-US": "Ciphertext"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "明文",
+          "en-US": "Plaintext"
+        }
+      },
+      "bridge_path": "crypto.decrypt",
+      "descriptions": {
+        "zh-CN": "解密",
+        "en-US": "Decrypt"
+      }
+    },
+    {
+      "name": "sign",
+      "symbol": "hap_crypto_sign",
+      "params": [
+        {
+          "name": "algorithm",
+          "type": "string",
+          "descs": {
+            "zh-CN": "算法",
+            "en-US": "Algorithm"
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "签名",
+          "en-US": "Signature"
+        }
+      },
+      "bridge_path": "crypto.sign",
+      "descriptions": {
+        "zh-CN": "签名",
+        "en-US": "Sign"
+      }
+    },
+    {
+      "name": "verify",
+      "symbol": "hap_crypto_verify",
+      "params": [
+        {
+          "name": "algorithm",
+          "type": "string",
+          "descs": {
+            "zh-CN": "算法",
+            "en-US": "Algorithm"
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        },
+        {
+          "name": "signature",
+          "type": "string",
+          "descs": {
+            "zh-CN": "签名",
+            "en-US": "Signature"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "有效",
+          "en-US": "Valid"
+        }
+      },
+      "bridge_path": "crypto.verify",
+      "descriptions": {
+        "zh-CN": "验证",
+        "en-US": "Verify"
+      }
+    },
+    {
+      "name": "constant_time_eq",
+      "symbol": "hap_crypto_constant_time_eq",
+      "params": [
+        {
+          "name": "a",
+          "type": "string",
+          "descs": {
+            "zh-CN": "A",
+            "en-US": "A"
+          }
+        },
+        {
+          "name": "b",
+          "type": "string",
+          "descs": {
+            "zh-CN": "B",
+            "en-US": "B"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "相等",
+          "en-US": "Equal"
+        }
+      },
+      "bridge_path": "crypto.constantTimeEq",
+      "descriptions": {
+        "zh-CN": "常量时间比较",
+        "en-US": "Constant time compare"
+      }
+    },
+    {
+      "name": "generate_keypair",
+      "symbol": "hap_crypto_generate_keypair",
+      "params": [
+        {
+          "name": "algorithm",
+          "type": "string",
+          "descs": {
+            "zh-CN": "算法",
+            "en-US": "Algorithm"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "密钥对",
+          "en-US": "Keypair"
+        }
+      },
+      "bridge_path": "crypto.generateKeypair",
+      "descriptions": {
+        "zh-CN": "生成密钥对",
+        "en-US": "Generate keypair"
+      }
+    },
+    {
+      "name": "bcrypt_hash",
+      "symbol": "hap_crypto_bcrypt_hash",
+      "params": [
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "Bcrypt 哈希",
+          "en-US": "Bcrypt hash"
+        }
+      },
+      "bridge_path": "crypto.bcryptHash",
+      "descriptions": {
+        "zh-CN": "Bcrypt 哈希",
+        "en-US": "Bcrypt hash"
+      }
+    },
+    {
+      "name": "bcrypt_verify",
+      "symbol": "hap_crypto_bcrypt_verify",
+      "params": [
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          }
+        },
+        {
+          "name": "hash",
+          "type": "string",
+          "descs": {
+            "zh-CN": "哈希",
+            "en-US": "Hash"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "匹配",
+          "en-US": "Match"
+        }
+      },
+      "bridge_path": "crypto.bcryptVerify",
+      "descriptions": {
+        "zh-CN": "Bcrypt 验证",
+        "en-US": "Bcrypt verify"
+      }
+    },
+    {
+      "name": "encrypt_with_password",
+      "symbol": "hap_crypto_encrypt_with_password",
+      "params": [
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "密文",
+          "en-US": "Ciphertext"
+        }
+      },
+      "bridge_path": "crypto.encryptWithPassword",
+      "descriptions": {
+        "zh-CN": "加密带密码",
+        "en-US": "Encrypt with password"
+      }
+    },
+    {
+      "name": "decrypt_with_password",
+      "symbol": "hap_crypto_decrypt_with_password",
+      "params": [
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密文",
+            "en-US": "Ciphertext"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "明文",
+          "en-US": "Plaintext"
+        }
+      },
+      "bridge_path": "crypto.decryptWithPassword",
+      "descriptions": {
+        "zh-CN": "解密带密码",
+        "en-US": "Decrypt with password"
+      }
+    },
+    {
+      "name": "rsa_encrypt",
+      "symbol": "hap_crypto_rsa_encrypt",
+      "params": [
+        {
+          "name": "public_key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "公钥",
+            "en-US": "Public key"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "密文",
+          "en-US": "Ciphertext"
+        }
+      },
+      "bridge_path": "crypto.rsaEncrypt",
+      "descriptions": {
+        "zh-CN": "RSA 加密",
+        "en-US": "RSA encrypt"
+      }
+    },
+    {
+      "name": "rsa_decrypt",
+      "symbol": "hap_crypto_rsa_decrypt",
+      "params": [
+        {
+          "name": "private_key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "私钥",
+            "en-US": "Private key"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密文",
+            "en-US": "Ciphertext"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "明文",
+          "en-US": "Plaintext"
+        }
+      },
+      "bridge_path": "crypto.rsaDecrypt",
+      "descriptions": {
+        "zh-CN": "RSA 解密",
+        "en-US": "RSA decrypt"
+      }
+    },
+    {
+      "name": "generate_totp",
+      "symbol": "hap_crypto_generate_totp",
+      "params": [
+        {
+          "name": "secret",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密钥",
+            "en-US": "Secret"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "TOTP",
+          "en-US": "TOTP"
+        }
+      },
+      "bridge_path": "crypto.generateTotp",
+      "descriptions": {
+        "zh-CN": "生成 TOTP",
+        "en-US": "Generate TOTP"
+      }
+    },
+    {
+      "name": "verify_totp",
+      "symbol": "hap_crypto_verify_totp",
+      "params": [
+        {
+          "name": "secret",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密钥",
+            "en-US": "Secret"
+          }
+        },
+        {
+          "name": "code",
+          "type": "string",
+          "descs": {
+            "zh-CN": "代码",
+            "en-US": "Code"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "有效",
+          "en-US": "Valid"
+        }
+      },
+      "bridge_path": "crypto.verifyTotp",
+      "descriptions": {
+        "zh-CN": "验证 TOTP",
+        "en-US": "Verify TOTP"
+      }
+    },
+    {
+      "name": "generate_totp_secret",
+      "symbol": "hap_crypto_generate_totp_secret",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "密钥和 URI",
+          "en-US": "Secret and URI"
+        }
+      },
+      "bridge_path": "crypto.generateTotpSecret",
+      "descriptions": {
+        "zh-CN": "生成 TOTP 密钥",
+        "en-US": "Generate TOTP secret"
+      }
+    },
+    {
+      "name": "crc32",
+      "symbol": "hap_crypto_crc32",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "CRC32",
+          "en-US": "CRC32"
+        }
+      },
+      "bridge_path": "crypto.crc32",
+      "descriptions": {
+        "zh-CN": "CRC32",
+        "en-US": "CRC32"
+      }
+    },
+    {
+      "name": "generate_password",
+      "symbol": "hap_crypto_generate_password",
+      "params": [
+        {
+          "name": "length",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "长度",
+            "en-US": "Length"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "密码",
+          "en-US": "Password"
+        }
+      },
+      "bridge_path": "crypto.generatePassword",
+      "descriptions": {
+        "zh-CN": "生成密码",
+        "en-US": "Generate password"
+      }
+    },
+    {
+      "name": "x509_info",
+      "symbol": "hap_crypto_x509_info",
+      "params": [
+        {
+          "name": "pem",
+          "type": "string",
+          "descs": {
+            "zh-CN": "PEM",
+            "en-US": "PEM"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "证书信息",
+          "en-US": "Cert info"
+        }
+      },
+      "bridge_path": "crypto.x509Info",
+      "descriptions": {
+        "zh-CN": "X509 信息",
+        "en-US": "X509 info"
+      }
+    },
+    {
+      "name": "random_string",
+      "symbol": "hap_crypto_random_string",
+      "params": [
+        {
+          "name": "length",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "长度",
+            "en-US": "Length"
+          }
+        },
+        {
+          "name": "charset",
+          "type": "string",
+          "descs": {
+            "zh-CN": "字符集",
+            "en-US": "Charset"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "字符串",
+          "en-US": "String"
+        }
+      },
+      "bridge_path": "crypto.randomString",
+      "descriptions": {
+        "zh-CN": "随机字符串",
+        "en-US": "Random string"
+      }
+    },
+    {
+      "name": "pem_to_der",
+      "symbol": "hap_crypto_pem_to_der",
+      "params": [
+        {
+          "name": "pem",
+          "type": "string",
+          "descs": {
+            "zh-CN": "PEM",
+            "en-US": "PEM"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "DER base64",
+          "en-US": "DER base64"
+        }
+      },
+      "bridge_path": "crypto.pemToDer",
+      "descriptions": {
+        "zh-CN": "PEM 到 DER",
+        "en-US": "PEM to DER"
+      }
+    },
+    {
+      "name": "der_to_pem",
+      "symbol": "hap_crypto_der_to_pem",
+      "params": [
+        {
+          "name": "der",
+          "type": "string",
+          "descs": {
+            "zh-CN": "DER base64",
+            "en-US": "DER base64"
+          }
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标签",
+            "en-US": "Label"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "PEM",
+          "en-US": "PEM"
+        }
+      },
+      "bridge_path": "crypto.derToPem",
+      "descriptions": {
+        "zh-CN": "DER 到 PEM",
+        "en-US": "DER to PEM"
+      }
+    },
+    {
+      "name": "encrypt_file",
+      "symbol": "hap_crypto_encrypt_file",
+      "params": [
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入",
+            "en-US": "Input"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "crypto.encryptFile",
+      "descriptions": {
+        "zh-CN": "加密文件",
+        "en-US": "Encrypt file"
+      }
+    },
+    {
+      "name": "decrypt_file",
+      "symbol": "hap_crypto_decrypt_file",
+      "params": [
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入",
+            "en-US": "Input"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "crypto.decryptFile",
+      "descriptions": {
+        "zh-CN": "解密文件",
+        "en-US": "Decrypt file"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供对称/非对称加密、哈希摘要、HMAC、随机数生成、Base64/Hex 编解码等密码学能力。支持 AES-128/256-CBC/GCM、RSA-2048/4096、SHA-256/512、MD5 等算法。",
+    "en-US": "Symmetric/asymmetric encryption, hash digests, HMAC, random number generation, and Base64/Hex encoding. Supports AES-128/256-CBC/GCM, RSA-2048/4096, SHA-256/512, MD5 and more."
+  }
+}

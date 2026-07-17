@@ -1,0 +1,628 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000020",
+  "name": "screen",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🖥️",
+  "min_shell_version": "0.1.0",
+  "category": "media",
+  "descriptions": {
+    "zh-CN": "屏幕截图/信息模块",
+    "en-US": "Screen capture and info module"
+  },
+  "permission": "screen",
+  "functions": [
+    {
+      "name": "capture_full",
+      "symbol": "hap_screen_capture_full",
+      "params": [
+        {
+          "name": "display_id",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "显示器 ID",
+            "en-US": "Display ID"
+          },
+          "optional": true,
+          "default_value": "0"
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出格式",
+            "en-US": "Output format"
+          },
+          "optional": true
+        },
+        {
+          "name": "quality",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "图像质量",
+            "en-US": "Image quality"
+          },
+          "optional": true,
+          "default_value": "90"
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "捕获",
+          "en-US": "Capture"
+        }
+      },
+      "bridge_path": "screen.captureFull",
+      "descriptions": {
+        "zh-CN": "全屏截图",
+        "en-US": "Capture full"
+      }
+    },
+    {
+      "name": "capture_region",
+      "symbol": "hap_screen_capture_region",
+      "params": [
+        {
+          "name": "x",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "X",
+            "en-US": "X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "Y",
+            "en-US": "Y"
+          }
+        },
+        {
+          "name": "w",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "W",
+            "en-US": "W"
+          }
+        },
+        {
+          "name": "h",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "H",
+            "en-US": "H"
+          }
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出格式",
+            "en-US": "Output format"
+          },
+          "optional": true
+        },
+        {
+          "name": "quality",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "图像质量",
+            "en-US": "Image quality"
+          },
+          "optional": true,
+          "default_value": "90"
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "捕获",
+          "en-US": "Capture"
+        }
+      },
+      "bridge_path": "screen.captureRegion",
+      "descriptions": {
+        "zh-CN": "捕获区域",
+        "en-US": "Capture region"
+      }
+    },
+    {
+      "name": "save_capture",
+      "symbol": "hap_screen_save_capture",
+      "params": [
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output Path"
+          }
+        },
+        {
+          "name": "display_id",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "显示器 ID",
+            "en-US": "Display ID"
+          },
+          "optional": true,
+          "default_value": "0"
+        },
+        {
+          "name": "region",
+          "type": "object",
+          "descs": {
+            "zh-CN": "区域",
+            "en-US": "Region"
+          },
+          "optional": true
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出格式",
+            "en-US": "Output format"
+          },
+          "optional": true
+        },
+        {
+          "name": "quality",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "图像质量",
+            "en-US": "Image quality"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "screen.saveCapture",
+      "descriptions": {
+        "zh-CN": "保存截图",
+        "en-US": "Save capture"
+      }
+    },
+    {
+      "name": "list_displays",
+      "symbol": "hap_screen_list_displays",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "显示器",
+          "en-US": "Displays"
+        }
+      },
+      "bridge_path": "screen.listDisplays",
+      "descriptions": {
+        "zh-CN": "列出显示器",
+        "en-US": "List displays"
+      }
+    },
+    {
+      "name": "get_primary",
+      "symbol": "hap_screen_get_primary",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "显示器",
+          "en-US": "Display"
+        }
+      },
+      "bridge_path": "screen.getPrimary",
+      "descriptions": {
+        "zh-CN": "主显示器",
+        "en-US": "Primary display"
+      }
+    },
+    {
+      "name": "get_cursor_pos",
+      "symbol": "hap_screen_get_cursor_pos",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "位置",
+          "en-US": "Position"
+        }
+      },
+      "bridge_path": "screen.getCursorPos",
+      "descriptions": {
+        "zh-CN": "游标位置",
+        "en-US": "Cursor position"
+      }
+    },
+    {
+      "name": "color_at",
+      "symbol": "hap_screen_color_at",
+      "params": [
+        {
+          "name": "x",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "X",
+            "en-US": "X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "Y",
+            "en-US": "Y"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "颜色",
+          "en-US": "Color"
+        }
+      },
+      "bridge_path": "screen.colorAt",
+      "descriptions": {
+        "zh-CN": "获取像素颜色",
+        "en-US": "Color at pixel"
+      }
+    },
+    {
+      "name": "capture_window",
+      "symbol": "hap_screen_capture_window",
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口",
+            "en-US": "Window"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "捕获",
+          "en-US": "Capture"
+        }
+      },
+      "bridge_path": "screen.captureWindow",
+      "descriptions": {
+        "zh-CN": "捕获窗口",
+        "en-US": "Capture window"
+      }
+    },
+    {
+      "name": "list_windows",
+      "symbol": "hap_screen_list_windows",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "窗口",
+          "en-US": "Windows"
+        }
+      },
+      "bridge_path": "screen.listWindows",
+      "descriptions": {
+        "zh-CN": "列出窗口",
+        "en-US": "List windows"
+      }
+    },
+    {
+      "name": "focus_window",
+      "symbol": "hap_screen_focus_window",
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口",
+            "en-US": "Window"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "screen.focusWindow",
+      "descriptions": {
+        "zh-CN": "聚焦窗口",
+        "en-US": "Focus window"
+      }
+    },
+    {
+      "name": "set_window_bounds",
+      "symbol": "hap_screen_set_window_bounds",
+      "params": [
+        {
+          "name": "window_title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口标题",
+            "en-US": "Window Title"
+          }
+        },
+        {
+          "name": "x",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "X",
+            "en-US": "X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "Y",
+            "en-US": "Y"
+          }
+        },
+        {
+          "name": "width",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "宽度(像素)",
+            "en-US": "Width px"
+          }
+        },
+        {
+          "name": "height",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "高度(像素)",
+            "en-US": "Height px"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "screen.setWindowBounds",
+      "descriptions": {
+        "zh-CN": "设置边界",
+        "en-US": "Set bounds"
+      }
+    },
+    {
+      "name": "minimize_window",
+      "symbol": "hap_screen_minimize_window",
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口",
+            "en-US": "Window"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "screen.minimizeWindow",
+      "descriptions": {
+        "zh-CN": "最小化窗口",
+        "en-US": "Minimize"
+      }
+    },
+    {
+      "name": "restore_window",
+      "symbol": "hap_screen_restore_window",
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口",
+            "en-US": "Window"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "screen.restoreWindow",
+      "descriptions": {
+        "zh-CN": "恢复",
+        "en-US": "Restore"
+      }
+    },
+    {
+      "name": "maximize_window",
+      "symbol": "hap_screen_maximize_window",
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口",
+            "en-US": "Window"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "screen.maximizeWindow",
+      "descriptions": {
+        "zh-CN": "最大化窗口",
+        "en-US": "Maximize"
+      }
+    },
+    {
+      "name": "close_window",
+      "symbol": "hap_screen_close_window",
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口",
+            "en-US": "Window"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "screen.closeWindow",
+      "descriptions": {
+        "zh-CN": "关闭窗口",
+        "en-US": "Close window"
+      }
+    },
+    {
+      "name": "is_window_visible",
+      "symbol": "hap_screen_is_window_visible",
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口",
+            "en-US": "Window"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "可见",
+          "en-US": "Visible"
+        }
+      },
+      "bridge_path": "screen.isWindowVisible",
+      "descriptions": {
+        "zh-CN": "检查可见",
+        "en-US": "Check visible"
+      }
+    },
+    {
+      "name": "active_window",
+      "symbol": "hap_screen_active_window",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "窗口",
+          "en-US": "Window"
+        }
+      },
+      "bridge_path": "screen.activeWindow",
+      "descriptions": {
+        "zh-CN": "活跃的窗口",
+        "en-US": "Active window"
+      }
+    },
+    {
+      "name": "set_always_on_top",
+      "symbol": "hap_screen_set_always_on_top",
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口",
+            "en-US": "Window"
+          }
+        },
+        {
+          "name": "on_top",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "置顶",
+            "en-US": "On top"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "screen.setAlwaysOnTop",
+      "descriptions": {
+        "zh-CN": "置顶窗口",
+        "en-US": "Always on top"
+      }
+    },
+    {
+      "name": "set_window_opacity",
+      "symbol": "hap_screen_set_window_opacity",
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口",
+            "en-US": "Window"
+          }
+        },
+        {
+          "name": "opacity",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "透明度",
+            "en-US": "Opacity"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "screen.setWindowOpacity",
+      "descriptions": {
+        "zh-CN": "设置透明度",
+        "en-US": "Set opacity"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供屏幕操作能力，包括截屏、录屏、获取屏幕信息、多显示器管理、屏幕亮度控制、分辨率查询/设置、鼠标位置追踪等功能。",
+    "en-US": "Screen operations including screenshots, screen recording, display info, multi-monitor management, brightness control, resolution query/set, and mouse position tracking."
+  }
+}

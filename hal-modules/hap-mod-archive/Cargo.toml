@@ -1,0 +1,18 @@
+[package]
+name = "hap-mod-archive"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+hap-common = { path = "../common" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+zip = { version = "2", features = ["aes-crypto", "deflate", "bzip2", "zstd"] }
+tar = "0.4"
+flate2 = "1"
+zstd = "0.13"
+base64 = "0.22"
+infer = "0.19"

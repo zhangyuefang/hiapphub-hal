@@ -1,0 +1,374 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000032",
+  "name": "bluetooth",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "📶",
+  "min_shell_version": "0.1.0",
+  "category": "hardware",
+  "descriptions": {
+    "zh-CN": "蓝牙BLE通信模块",
+    "en-US": "Bluetooth BLE communication module"
+  },
+  "overviews": {
+    "zh-CN": "提供蓝牙低功耗(BLE)通信能力，支持设备扫描、连接、服务发现、特征值读写、通知订阅等功能。",
+    "en-US": "Provides Bluetooth Low Energy (BLE) communication including device scanning, connection, service discovery, characteristic read/write, and notification subscription."
+  },
+  "permission": "bluetooth",
+  "functions": [
+    {
+      "name": "scan_start",
+      "symbol": "hap_bluetooth_scan_start",
+      "descriptions": {
+        "zh-CN": "开始扫描BLE设备",
+        "en-US": "Start scanning BLE devices"
+      },
+      "params": [
+        {
+          "name": "duration_ms",
+          "type": "number",
+          "optional": true,
+          "default_value": "10000",
+          "descs": {
+            "zh-CN": "扫描时长(毫秒)",
+            "en-US": "Scan duration (ms)"
+          }
+        },
+        {
+          "name": "filter_name",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "按名称过滤",
+            "en-US": "Filter by name"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "设备列表",
+          "en-US": "Device list"
+        }
+      },
+      "bridge_path": "bluetooth.scanStart"
+    },
+    {
+      "name": "scan_stop",
+      "symbol": "hap_bluetooth_scan_stop",
+      "descriptions": {
+        "zh-CN": "停止扫描",
+        "en-US": "Stop scanning"
+      },
+      "params": [],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "bluetooth.scanStop"
+    },
+    {
+      "name": "connect",
+      "symbol": "hap_bluetooth_connect",
+      "descriptions": {
+        "zh-CN": "连接BLE设备",
+        "en-US": "Connect to BLE device"
+      },
+      "params": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID/地址",
+            "en-US": "Device ID/address"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "连接信息",
+          "en-US": "Connection info"
+        }
+      },
+      "bridge_path": "bluetooth.connect"
+    },
+    {
+      "name": "disconnect",
+      "symbol": "hap_bluetooth_disconnect",
+      "descriptions": {
+        "zh-CN": "断开BLE连接",
+        "en-US": "Disconnect BLE device"
+      },
+      "params": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID",
+            "en-US": "Device ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "bluetooth.disconnect"
+    },
+    {
+      "name": "discover_services",
+      "symbol": "hap_bluetooth_discover_services",
+      "descriptions": {
+        "zh-CN": "发现设备服务",
+        "en-US": "Discover device services"
+      },
+      "params": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID",
+            "en-US": "Device ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "服务列表",
+          "en-US": "Service list"
+        }
+      },
+      "bridge_path": "bluetooth.discoverServices"
+    },
+    {
+      "name": "read_characteristic",
+      "symbol": "hap_bluetooth_read_characteristic",
+      "descriptions": {
+        "zh-CN": "读取特征值",
+        "en-US": "Read characteristic value"
+      },
+      "params": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID",
+            "en-US": "Device ID"
+          }
+        },
+        {
+          "name": "service_uuid",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务UUID",
+            "en-US": "Service UUID"
+          }
+        },
+        {
+          "name": "characteristic_uuid",
+          "type": "string",
+          "descs": {
+            "zh-CN": "特征UUID",
+            "en-US": "Characteristic UUID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "特征值数据",
+          "en-US": "Characteristic data"
+        }
+      },
+      "bridge_path": "bluetooth.readCharacteristic"
+    },
+    {
+      "name": "write_characteristic",
+      "symbol": "hap_bluetooth_write_characteristic",
+      "descriptions": {
+        "zh-CN": "写入特征值",
+        "en-US": "Write characteristic value"
+      },
+      "params": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID",
+            "en-US": "Device ID"
+          }
+        },
+        {
+          "name": "service_uuid",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务UUID",
+            "en-US": "Service UUID"
+          }
+        },
+        {
+          "name": "characteristic_uuid",
+          "type": "string",
+          "descs": {
+            "zh-CN": "特征UUID",
+            "en-US": "Characteristic UUID"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据(hex编码)",
+            "en-US": "Data (hex encoded)"
+          }
+        },
+        {
+          "name": "with_response",
+          "type": "boolean",
+          "optional": true,
+          "default_value": "true",
+          "descs": {
+            "zh-CN": "是否需要响应",
+            "en-US": "With response"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "bluetooth.writeCharacteristic"
+    },
+    {
+      "name": "subscribe",
+      "symbol": "hap_bluetooth_subscribe",
+      "descriptions": {
+        "zh-CN": "订阅特征通知",
+        "en-US": "Subscribe to notifications"
+      },
+      "params": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID",
+            "en-US": "Device ID"
+          }
+        },
+        {
+          "name": "service_uuid",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务UUID",
+            "en-US": "Service UUID"
+          }
+        },
+        {
+          "name": "characteristic_uuid",
+          "type": "string",
+          "descs": {
+            "zh-CN": "特征UUID",
+            "en-US": "Characteristic UUID"
+          }
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调ID",
+            "en-US": "Callback ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "bluetooth.subscribe"
+    },
+    {
+      "name": "unsubscribe",
+      "symbol": "hap_bluetooth_unsubscribe",
+      "descriptions": {
+        "zh-CN": "取消订阅",
+        "en-US": "Unsubscribe notifications"
+      },
+      "params": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID",
+            "en-US": "Device ID"
+          }
+        },
+        {
+          "name": "service_uuid",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务UUID",
+            "en-US": "Service UUID"
+          }
+        },
+        {
+          "name": "characteristic_uuid",
+          "type": "string",
+          "descs": {
+            "zh-CN": "特征UUID",
+            "en-US": "Characteristic UUID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "bluetooth.unsubscribe"
+    },
+    {
+      "name": "is_connected",
+      "symbol": "hap_bluetooth_is_connected",
+      "descriptions": {
+        "zh-CN": "检查设备连接状态",
+        "en-US": "Check connection state"
+      },
+      "params": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备ID",
+            "en-US": "Device ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否已连接",
+          "en-US": "Connected"
+        }
+      },
+      "bridge_path": "bluetooth.isConnected"
+    }
+  ]
+}

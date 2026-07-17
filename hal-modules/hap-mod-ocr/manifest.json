@@ -1,0 +1,235 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000036",
+  "name": "ocr",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "👁️",
+  "min_shell_version": "0.1.0",
+  "category": "media",
+  "descriptions": {
+    "zh-CN": "文字识别(OCR)模块",
+    "en-US": "Optical Character Recognition module"
+  },
+  "overviews": {
+    "zh-CN": "提供本地OCR文字识别能力，支持图片文字提取、区域识别、多语言识别、表格识别等功能。调用系统原生OCR引擎（macOS Vision/Windows OCR/Linux Tesseract）。",
+    "en-US": "Local OCR text recognition using native engines (macOS Vision/Windows OCR/Linux Tesseract). Supports image text extraction, region recognition, multi-language, and table recognition."
+  },
+  "permission": "ocr",
+  "functions": [
+    {
+      "name": "recognize",
+      "symbol": "hap_ocr_recognize",
+      "descriptions": {
+        "zh-CN": "识别图片中的文字",
+        "en-US": "Recognize text in image"
+      },
+      "params": [
+        {
+          "name": "image_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图片路径",
+            "en-US": "Image path"
+          }
+        },
+        {
+          "name": "languages",
+          "type": "array",
+          "optional": true,
+          "descs": {
+            "zh-CN": "语言列表(如[\"zh-CN\",\"en\"])",
+            "en-US": "Languages (e.g. [\"zh-CN\",\"en\"])"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "识别结果",
+          "en-US": "Recognition result"
+        }
+      },
+      "bridge_path": "ocr.recognize"
+    },
+    {
+      "name": "recognize_region",
+      "symbol": "hap_ocr_recognize_region",
+      "descriptions": {
+        "zh-CN": "识别图片指定区域的文字",
+        "en-US": "Recognize text in image region"
+      },
+      "params": [
+        {
+          "name": "image_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图片路径",
+            "en-US": "Image path"
+          }
+        },
+        {
+          "name": "x",
+          "type": "number",
+          "descs": {
+            "zh-CN": "区域左上角X",
+            "en-US": "Region top-left X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "区域左上角Y",
+            "en-US": "Region top-left Y"
+          }
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "区域宽度",
+            "en-US": "Region width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "区域高度",
+            "en-US": "Region height"
+          }
+        },
+        {
+          "name": "languages",
+          "type": "array",
+          "optional": true,
+          "descs": {
+            "zh-CN": "语言列表",
+            "en-US": "Languages"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "识别结果",
+          "en-US": "Recognition result"
+        }
+      },
+      "bridge_path": "ocr.recognizeRegion"
+    },
+    {
+      "name": "recognize_base64",
+      "symbol": "hap_ocr_recognize_base64",
+      "descriptions": {
+        "zh-CN": "识别Base64图片数据中的文字",
+        "en-US": "Recognize text from base64 image"
+      },
+      "params": [
+        {
+          "name": "base64_data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base64图片数据",
+            "en-US": "Base64 image data"
+          }
+        },
+        {
+          "name": "languages",
+          "type": "array",
+          "optional": true,
+          "descs": {
+            "zh-CN": "语言列表",
+            "en-US": "Languages"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "识别结果",
+          "en-US": "Recognition result"
+        }
+      },
+      "bridge_path": "ocr.recognizeBase64"
+    },
+    {
+      "name": "get_supported_languages",
+      "symbol": "hap_ocr_get_supported_languages",
+      "descriptions": {
+        "zh-CN": "获取支持的语言列表",
+        "en-US": "Get supported languages"
+      },
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "语言列表",
+          "en-US": "Language list"
+        }
+      },
+      "bridge_path": "ocr.getSupportedLanguages"
+    },
+    {
+      "name": "recognize_screen_region",
+      "symbol": "hap_ocr_recognize_screen_region",
+      "descriptions": {
+        "zh-CN": "截取屏幕区域并识别文字",
+        "en-US": "Capture screen region and recognize text"
+      },
+      "params": [
+        {
+          "name": "x",
+          "type": "number",
+          "descs": {
+            "zh-CN": "屏幕区域X",
+            "en-US": "Screen region X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "屏幕区域Y",
+            "en-US": "Screen region Y"
+          }
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "宽度",
+            "en-US": "Width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "高度",
+            "en-US": "Height"
+          }
+        },
+        {
+          "name": "languages",
+          "type": "array",
+          "optional": true,
+          "descs": {
+            "zh-CN": "语言列表",
+            "en-US": "Languages"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "识别结果",
+          "en-US": "Recognition result"
+        }
+      },
+      "bridge_path": "ocr.recognizeScreenRegion"
+    }
+  ]
+}

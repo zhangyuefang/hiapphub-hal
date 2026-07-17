@@ -1,0 +1,279 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000035",
+  "name": "scheduler",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "⏰",
+  "min_shell_version": "0.1.0",
+  "category": "utility",
+  "descriptions": {
+    "zh-CN": "定时任务模块",
+    "en-US": "Task scheduler module"
+  },
+  "overviews": {
+    "zh-CN": "提供定时任务调度能力，支持Cron表达式、一次性延时任务、周期性任务、任务管理等功能。",
+    "en-US": "Task scheduling with cron expressions, one-shot delayed tasks, periodic tasks, and task management."
+  },
+  "permission": "scheduler",
+  "functions": [
+    {
+      "name": "create_cron",
+      "symbol": "hap_scheduler_create_cron",
+      "descriptions": {
+        "zh-CN": "创建Cron定时任务",
+        "en-US": "Create cron job"
+      },
+      "params": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "任务名称",
+            "en-US": "Task name"
+          }
+        },
+        {
+          "name": "cron_expression",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Cron表达式",
+            "en-US": "Cron expression"
+          }
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "触发时回调ID",
+            "en-US": "Trigger callback ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "任务信息",
+          "en-US": "Task info"
+        }
+      },
+      "bridge_path": "scheduler.createCron"
+    },
+    {
+      "name": "create_interval",
+      "symbol": "hap_scheduler_create_interval",
+      "descriptions": {
+        "zh-CN": "创建周期性任务",
+        "en-US": "Create interval task"
+      },
+      "params": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "任务名称",
+            "en-US": "Task name"
+          }
+        },
+        {
+          "name": "interval_ms",
+          "type": "number",
+          "descs": {
+            "zh-CN": "间隔(毫秒)",
+            "en-US": "Interval (ms)"
+          }
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调ID",
+            "en-US": "Callback ID"
+          }
+        },
+        {
+          "name": "repeat_count",
+          "type": "number",
+          "optional": true,
+          "default_value": "0",
+          "descs": {
+            "zh-CN": "重复次数(0=无限)",
+            "en-US": "Repeat count (0=infinite)"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "任务信息",
+          "en-US": "Task info"
+        }
+      },
+      "bridge_path": "scheduler.createInterval"
+    },
+    {
+      "name": "create_timeout",
+      "symbol": "hap_scheduler_create_timeout",
+      "descriptions": {
+        "zh-CN": "创建一次性延时任务",
+        "en-US": "Create timeout task"
+      },
+      "params": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "任务名称",
+            "en-US": "Task name"
+          }
+        },
+        {
+          "name": "delay_ms",
+          "type": "number",
+          "descs": {
+            "zh-CN": "延迟(毫秒)",
+            "en-US": "Delay (ms)"
+          }
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调ID",
+            "en-US": "Callback ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "任务信息",
+          "en-US": "Task info"
+        }
+      },
+      "bridge_path": "scheduler.createTimeout"
+    },
+    {
+      "name": "cancel",
+      "symbol": "hap_scheduler_cancel",
+      "descriptions": {
+        "zh-CN": "取消任务",
+        "en-US": "Cancel task"
+      },
+      "params": [
+        {
+          "name": "task_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "任务ID",
+            "en-US": "Task ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "scheduler.cancel"
+    },
+    {
+      "name": "pause",
+      "symbol": "hap_scheduler_pause",
+      "descriptions": {
+        "zh-CN": "暂停任务",
+        "en-US": "Pause task"
+      },
+      "params": [
+        {
+          "name": "task_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "任务ID",
+            "en-US": "Task ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "scheduler.pause"
+    },
+    {
+      "name": "resume",
+      "symbol": "hap_scheduler_resume",
+      "descriptions": {
+        "zh-CN": "恢复任务",
+        "en-US": "Resume task"
+      },
+      "params": [
+        {
+          "name": "task_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "任务ID",
+            "en-US": "Task ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "scheduler.resume"
+    },
+    {
+      "name": "list",
+      "symbol": "hap_scheduler_list",
+      "descriptions": {
+        "zh-CN": "列出所有任务",
+        "en-US": "List all tasks"
+      },
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "任务列表",
+          "en-US": "Task list"
+        }
+      },
+      "bridge_path": "scheduler.list"
+    },
+    {
+      "name": "get_next_run",
+      "symbol": "hap_scheduler_get_next_run",
+      "descriptions": {
+        "zh-CN": "获取下次执行时间",
+        "en-US": "Get next run time"
+      },
+      "params": [
+        {
+          "name": "task_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "任务ID",
+            "en-US": "Task ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "下次执行时间",
+          "en-US": "Next run time"
+        }
+      },
+      "bridge_path": "scheduler.getNextRun"
+    }
+  ]
+}

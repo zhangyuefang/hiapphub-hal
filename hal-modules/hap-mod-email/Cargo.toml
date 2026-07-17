@@ -1,0 +1,16 @@
+[package]
+name = "hap-mod-email"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+hap-common = { path = "../common" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+libc = { workspace = true }
+lettre = { version = "0.11", default-features = false, features = ["smtp-transport", "rustls-tls", "builder", "hostname"] }
+mail-parser = "0.9"
+tokio = { version = "1", features = ["rt-multi-thread"] }

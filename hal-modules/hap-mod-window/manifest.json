@@ -1,0 +1,376 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000038",
+  "name": "window",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🪟",
+  "min_shell_version": "0.1.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "窗口管理模块",
+    "en-US": "Window management module"
+  },
+  "overviews": {
+    "zh-CN": "提供系统窗口管理能力，支持枚举窗口、置顶/移动/调整大小、最小化/最大化、获取窗口截图、焦点切换等功能。",
+    "en-US": "System window management including window enumeration, topmost/move/resize, minimize/maximize, window screenshot, and focus switching."
+  },
+  "permission": "window",
+  "functions": [
+    {
+      "name": "list",
+      "symbol": "hap_window_list",
+      "descriptions": {
+        "zh-CN": "列出所有窗口",
+        "en-US": "List all windows"
+      },
+      "params": [
+        {
+          "name": "visible_only",
+          "type": "boolean",
+          "optional": true,
+          "default_value": "true",
+          "descs": {
+            "zh-CN": "仅可见窗口",
+            "en-US": "Visible only"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "窗口列表",
+          "en-US": "Window list"
+        }
+      },
+      "bridge_path": "window.list"
+    },
+    {
+      "name": "get_active",
+      "symbol": "hap_window_get_active",
+      "descriptions": {
+        "zh-CN": "获取当前活动窗口",
+        "en-US": "Get active window"
+      },
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "窗口信息",
+          "en-US": "Window info"
+        }
+      },
+      "bridge_path": "window.getActive"
+    },
+    {
+      "name": "focus",
+      "symbol": "hap_window_focus",
+      "descriptions": {
+        "zh-CN": "聚焦窗口",
+        "en-US": "Focus window"
+      },
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口ID",
+            "en-US": "Window ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "window.focus"
+    },
+    {
+      "name": "move_to",
+      "symbol": "hap_window_move_to",
+      "descriptions": {
+        "zh-CN": "移动窗口",
+        "en-US": "Move window"
+      },
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口ID",
+            "en-US": "Window ID"
+          }
+        },
+        {
+          "name": "x",
+          "type": "number",
+          "descs": {
+            "zh-CN": "目标X",
+            "en-US": "Target X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "目标Y",
+            "en-US": "Target Y"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "window.moveTo"
+    },
+    {
+      "name": "resize",
+      "symbol": "hap_window_resize",
+      "descriptions": {
+        "zh-CN": "调整窗口大小",
+        "en-US": "Resize window"
+      },
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口ID",
+            "en-US": "Window ID"
+          }
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "descs": {
+            "zh-CN": "宽度",
+            "en-US": "Width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "descs": {
+            "zh-CN": "高度",
+            "en-US": "Height"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "window.resize"
+    },
+    {
+      "name": "minimize",
+      "symbol": "hap_window_minimize",
+      "descriptions": {
+        "zh-CN": "最小化窗口",
+        "en-US": "Minimize window"
+      },
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口ID",
+            "en-US": "Window ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "window.minimize"
+    },
+    {
+      "name": "maximize",
+      "symbol": "hap_window_maximize",
+      "descriptions": {
+        "zh-CN": "最大化窗口",
+        "en-US": "Maximize window"
+      },
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口ID",
+            "en-US": "Window ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "window.maximize"
+    },
+    {
+      "name": "restore",
+      "symbol": "hap_window_restore",
+      "descriptions": {
+        "zh-CN": "恢复窗口",
+        "en-US": "Restore window"
+      },
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口ID",
+            "en-US": "Window ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "window.restore"
+    },
+    {
+      "name": "set_topmost",
+      "symbol": "hap_window_set_topmost",
+      "descriptions": {
+        "zh-CN": "设置置顶",
+        "en-US": "Set topmost"
+      },
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口ID",
+            "en-US": "Window ID"
+          }
+        },
+        {
+          "name": "topmost",
+          "type": "boolean",
+          "descs": {
+            "zh-CN": "是否置顶",
+            "en-US": "Topmost"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "window.setTopmost"
+    },
+    {
+      "name": "close",
+      "symbol": "hap_window_close",
+      "descriptions": {
+        "zh-CN": "关闭窗口",
+        "en-US": "Close window"
+      },
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口ID",
+            "en-US": "Window ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "window.close"
+    },
+    {
+      "name": "screenshot",
+      "symbol": "hap_window_screenshot",
+      "descriptions": {
+        "zh-CN": "窗口截图",
+        "en-US": "Window screenshot"
+      },
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口ID",
+            "en-US": "Window ID"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "optional": true,
+          "descs": {
+            "zh-CN": "保存路径",
+            "en-US": "Save path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "截图结果",
+          "en-US": "Screenshot result"
+        }
+      },
+      "bridge_path": "window.screenshot"
+    },
+    {
+      "name": "get_bounds",
+      "symbol": "hap_window_get_bounds",
+      "descriptions": {
+        "zh-CN": "获取窗口位置和大小",
+        "en-US": "Get window bounds"
+      },
+      "params": [
+        {
+          "name": "window_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "窗口ID",
+            "en-US": "Window ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "位置和大小{x,y,width,height}",
+          "en-US": "Bounds {x,y,width,height}"
+        }
+      },
+      "bridge_path": "window.getBounds"
+    }
+  ]
+}

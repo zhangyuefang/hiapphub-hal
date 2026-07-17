@@ -1,0 +1,993 @@
+{
+  "uuid": "a1b2c3d4-3000-4000-8000-000000000003",
+  "name": "storage",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "💾",
+  "min_shell_version": "0.1.0",
+  "category": "database",
+  "descriptions": {
+    "zh-CN": "本地键值存储模块",
+    "en-US": "Local key-value storage module"
+  },
+  "permission": "storage",
+  "functions": [
+    {
+      "name": "get",
+      "symbol": "hap_storage_get",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "default_value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "默认值",
+            "en-US": "Default value"
+          },
+          "optional": true
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "值",
+          "en-US": "Value"
+        }
+      },
+      "bridge_path": "storage.get",
+      "descriptions": {
+        "zh-CN": "获取值",
+        "en-US": "Get value"
+      }
+    },
+    {
+      "name": "set",
+      "symbol": "hap_storage_set",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "值",
+            "en-US": "Value"
+          }
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "storage.set",
+      "descriptions": {
+        "zh-CN": "设置值",
+        "en-US": "Set value"
+      }
+    },
+    {
+      "name": "delete",
+      "symbol": "hap_storage_delete",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "storage.delete",
+      "descriptions": {
+        "zh-CN": "删除键",
+        "en-US": "Delete key"
+      }
+    },
+    {
+      "name": "has",
+      "symbol": "hap_storage_has",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否存在",
+          "en-US": "Exists"
+        }
+      },
+      "bridge_path": "storage.has",
+      "descriptions": {
+        "zh-CN": "是否有键",
+        "en-US": "Has key"
+      }
+    },
+    {
+      "name": "keys",
+      "symbol": "hap_storage_keys",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "prefix",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键前缀过滤",
+            "en-US": "Key prefix filter"
+          },
+          "optional": true
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "键",
+          "en-US": "Keys"
+        }
+      },
+      "bridge_path": "storage.keys",
+      "descriptions": {
+        "zh-CN": "列出键",
+        "en-US": "List keys"
+      }
+    },
+    {
+      "name": "get_many",
+      "symbol": "hap_storage_get_many",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "keys",
+          "type": "array",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Keys"
+          }
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "值",
+          "en-US": "Values"
+        }
+      },
+      "bridge_path": "storage.getMany",
+      "descriptions": {
+        "zh-CN": "获取多个",
+        "en-US": "Get many"
+      }
+    },
+    {
+      "name": "set_many",
+      "symbol": "hap_storage_set_many",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "entries",
+          "type": "object",
+          "descs": {
+            "zh-CN": "条目",
+            "en-US": "Entries"
+          }
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "storage.setMany",
+      "descriptions": {
+        "zh-CN": "设置多个",
+        "en-US": "Set many"
+      }
+    },
+    {
+      "name": "clear",
+      "symbol": "hap_storage_clear",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "已删除",
+          "en-US": "Deleted"
+        }
+      },
+      "bridge_path": "storage.clear",
+      "descriptions": {
+        "zh-CN": "清除命名空间",
+        "en-US": "Clear namespace"
+      }
+    },
+    {
+      "name": "count",
+      "symbol": "hap_storage_count",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "prefix",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键前缀过滤",
+            "en-US": "Key prefix filter"
+          },
+          "optional": true
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "数量",
+          "en-US": "Count"
+        }
+      },
+      "bridge_path": "storage.count",
+      "descriptions": {
+        "zh-CN": "计数键",
+        "en-US": "Count keys"
+      }
+    },
+    {
+      "name": "namespaces",
+      "symbol": "hap_storage_namespaces",
+      "params": [
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "命名空间",
+          "en-US": "命名空间"
+        }
+      },
+      "bridge_path": "storage.namespaces",
+      "descriptions": {
+        "zh-CN": "列出命名空间",
+        "en-US": "List namespaces"
+      }
+    },
+    {
+      "name": "size",
+      "symbol": "hap_storage_size",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "命名空间",
+            "en-US": "Namespace"
+          }
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "字节",
+          "en-US": "Bytes"
+        }
+      },
+      "bridge_path": "storage.size",
+      "descriptions": {
+        "zh-CN": "存储大小",
+        "en-US": "Storage size"
+      }
+    },
+    {
+      "name": "set_with_ttl",
+      "symbol": "hap_storage_set_with_ttl",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "值",
+            "en-US": "Value"
+          }
+        },
+        {
+          "name": "ttl_ms",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "TTL ms",
+            "en-US": "TTL ms"
+          }
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "storage.setWithTtl",
+      "descriptions": {
+        "zh-CN": "设置带 TTL",
+        "en-US": "Set with TTL"
+      }
+    },
+    {
+      "name": "export",
+      "symbol": "hap_storage_export",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "storage.export",
+      "descriptions": {
+        "zh-CN": "导出",
+        "en-US": "Export"
+      }
+    },
+    {
+      "name": "import",
+      "symbol": "hap_storage_import",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "overwrite",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "是否覆盖已有文件",
+            "en-US": "Overwrite existing"
+          },
+          "optional": true,
+          "default_value": "false"
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "storage.import",
+      "descriptions": {
+        "zh-CN": "导入",
+        "en-US": "Import"
+      }
+    },
+    {
+      "name": "increment",
+      "symbol": "hap_storage_increment",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "delta",
+          "type": "i64",
+          "descs": {
+            "zh-CN": "递增量",
+            "en-US": "Increment delta"
+          },
+          "optional": true,
+          "default_value": "1"
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "新值",
+          "en-US": "New value"
+        }
+      },
+      "bridge_path": "storage.increment",
+      "descriptions": {
+        "zh-CN": "递增",
+        "en-US": "Increment"
+      }
+    },
+    {
+      "name": "delete_many",
+      "symbol": "hap_storage_delete_many",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "keys",
+          "type": "array",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Keys"
+          }
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "已删除",
+          "en-US": "Deleted"
+        }
+      },
+      "bridge_path": "storage.deleteMany",
+      "descriptions": {
+        "zh-CN": "删除多个",
+        "en-US": "Delete many"
+      }
+    },
+    {
+      "name": "values",
+      "symbol": "hap_storage_values",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "prefix",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键前缀过滤",
+            "en-US": "Key prefix filter"
+          },
+          "optional": true
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "值",
+          "en-US": "Values"
+        }
+      },
+      "bridge_path": "storage.values",
+      "descriptions": {
+        "zh-CN": "列出值",
+        "en-US": "List values"
+      }
+    },
+    {
+      "name": "entries",
+      "symbol": "hap_storage_entries",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "prefix",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键前缀过滤",
+            "en-US": "Key prefix filter"
+          },
+          "optional": true
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "条目",
+          "en-US": "Entries"
+        }
+      },
+      "bridge_path": "storage.entries",
+      "descriptions": {
+        "zh-CN": "列出条目",
+        "en-US": "List entries"
+      }
+    },
+    {
+      "name": "get_json",
+      "symbol": "hap_storage_get_json",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "值",
+          "en-US": "Value"
+        }
+      },
+      "bridge_path": "storage.getJson",
+      "descriptions": {
+        "zh-CN": "获取 JSON",
+        "en-US": "Get JSON"
+      }
+    },
+    {
+      "name": "set_json",
+      "symbol": "hap_storage_set_json",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键",
+            "en-US": "Key"
+          }
+        },
+        {
+          "name": "value",
+          "type": "object",
+          "descs": {
+            "zh-CN": "值",
+            "en-US": "Value"
+          }
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "storage.setJson",
+      "descriptions": {
+        "zh-CN": "设置 JSON",
+        "en-US": "Set JSON"
+      }
+    },
+    {
+      "name": "on_change",
+      "symbol": "hap_storage_on_change",
+      "params": [
+        {
+          "name": "namespace",
+          "type": "string",
+          "descs": {
+            "zh-CN": "NS",
+            "en-US": "NS"
+          }
+        },
+        {
+          "name": "key_prefix",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键前缀",
+            "en-US": "Key Prefix"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调",
+            "en-US": "Callback"
+          }
+        },
+        {
+          "name": "storage_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "存储目录",
+            "en-US": "Storage directory"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "监视器",
+          "en-US": "Watcher"
+        }
+      },
+      "bridge_path": "storage.onChange",
+      "descriptions": {
+        "zh-CN": "监视变化",
+        "en-US": "Watch changes"
+      }
+    },
+    {
+      "name": "off_change",
+      "symbol": "hap_storage_off_change",
+      "params": [
+        {
+          "name": "watcher_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监视器",
+            "en-US": "Watcher"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "storage.offChange",
+      "descriptions": {
+        "zh-CN": "停止监视",
+        "en-US": "Stop watching"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供本地键值存储能力，支持按命名空间隔离的数据存取、批量操作、TTL 过期、数据导入导出、存储空间统计等功能。适用于应用配置和轻量数据持久化。",
+    "en-US": "Local key-value storage with namespace isolation, batch operations, TTL expiry, import/export, and storage statistics. Suitable for app configuration and lightweight data persistence."
+  }
+}

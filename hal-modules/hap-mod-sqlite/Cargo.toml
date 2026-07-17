@@ -1,0 +1,16 @@
+[package]
+name = "hap-mod-sqlite"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+hap-common = { path = "../common" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+rusqlite = { version = "0.33", features = ["bundled", "backup"] }
+base64 = "0.22"
+dirs = "6"
+csv = "1"

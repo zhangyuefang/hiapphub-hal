@@ -1,0 +1,142 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000017",
+  "name": "shortcut",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "⌨️",
+  "min_shell_version": "0.1.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "全局快捷键模块",
+    "en-US": "Global shortcut module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "register",
+      "symbol": "hap_shortcut_register",
+      "params": [
+        {
+          "name": "accelerator",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键组合",
+            "en-US": "Key combination"
+          }
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "快捷方式信息",
+          "en-US": "Shortcut info"
+        }
+      },
+      "bridge_path": "shortcut.register",
+      "descriptions": {
+        "zh-CN": "注册全局快捷键",
+        "en-US": "Register global shortcut"
+      }
+    },
+    {
+      "name": "unregister",
+      "symbol": "hap_shortcut_unregister",
+      "params": [
+        {
+          "name": "shortcut_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "快捷方式 ID",
+            "en-US": "Shortcut ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "shortcut.unregister",
+      "descriptions": {
+        "zh-CN": "注销快捷方式",
+        "en-US": "Unregister shortcut"
+      }
+    },
+    {
+      "name": "unregister_all",
+      "symbol": "hap_shortcut_unregister_all",
+      "params": [],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "shortcut.unregisterAll",
+      "descriptions": {
+        "zh-CN": "注销所有",
+        "en-US": "Unregister all"
+      }
+    },
+    {
+      "name": "is_registered",
+      "symbol": "hap_shortcut_is_registered",
+      "params": [
+        {
+          "name": "accelerator",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键组合",
+            "en-US": "Key combination"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否已注册",
+          "en-US": "Is registered"
+        }
+      },
+      "bridge_path": "shortcut.isRegistered",
+      "descriptions": {
+        "zh-CN": "检查是否已注册",
+        "en-US": "Check if registered"
+      }
+    },
+    {
+      "name": "list",
+      "symbol": "hap_shortcut_list",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "快捷方式列表",
+          "en-US": "Shortcut list"
+        }
+      },
+      "bridge_path": "shortcut.list",
+      "descriptions": {
+        "zh-CN": "列出所有快捷方式",
+        "en-US": "List all shortcuts"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供桌面快捷方式管理能力，包括创建、删除、查询快捷方式，支持自定义图标、启动参数等。适配 macOS/Windows/Linux 三平台。",
+    "en-US": "Desktop shortcut management including create, delete, and query shortcuts with custom icons and launch parameters. Supports macOS/Windows/Linux."
+  }
+}

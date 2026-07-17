@@ -1,0 +1,19 @@
+[package]
+name = "hap-mod-encoding"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+hap-common = { path = "../common" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+base64 = "0.22"
+data-encoding = "2"
+percent-encoding = "2"
+encoding_rs = "0.8"
+chardetng = "0.1"
+bs58 = "0.5"
+htmlize = { version = "1", features = ["unescape"] }

@@ -1,0 +1,1259 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000022",
+  "name": "audio",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🎵",
+  "min_shell_version": "0.1.0",
+  "category": "media",
+  "descriptions": {
+    "zh-CN": "音频播放录制模块",
+    "en-US": "Audio playback and recording module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "play",
+      "symbol": "hap_audio_play",
+      "params": [
+        {
+          "name": "source",
+          "type": "string",
+          "descs": {
+            "zh-CN": "源",
+            "en-US": "Source"
+          }
+        },
+        {
+          "name": "volume",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "音量 0-1",
+            "en-US": "Volume 0-1"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "播放器信息",
+          "en-US": "Player info"
+        }
+      },
+      "bridge_path": "audio.play",
+      "descriptions": {
+        "zh-CN": "播放音频文件",
+        "en-US": "Play audio file"
+      }
+    },
+    {
+      "name": "play_url",
+      "symbol": "hap_audio_play_url",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "音频 URL",
+            "en-US": "Audio URL"
+          }
+        },
+        {
+          "name": "volume",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "音量 0-1",
+            "en-US": "Volume 0-1"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "播放器信息",
+          "en-US": "Player info"
+        }
+      },
+      "bridge_path": "audio.playUrl",
+      "descriptions": {
+        "zh-CN": "播放音频 URL",
+        "en-US": "Play audio URL"
+      }
+    },
+    {
+      "name": "pause",
+      "symbol": "hap_audio_pause",
+      "params": [
+        {
+          "name": "player_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "播放器 ID",
+            "en-US": "Player ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.pause",
+      "descriptions": {
+        "zh-CN": "暂停",
+        "en-US": "Pause"
+      }
+    },
+    {
+      "name": "resume",
+      "symbol": "hap_audio_resume",
+      "params": [
+        {
+          "name": "player_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "播放器 ID",
+            "en-US": "Player ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.resume",
+      "descriptions": {
+        "zh-CN": "恢复",
+        "en-US": "Resume"
+      }
+    },
+    {
+      "name": "stop",
+      "symbol": "hap_audio_stop",
+      "params": [
+        {
+          "name": "player_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "播放器 ID",
+            "en-US": "Player ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.stop",
+      "descriptions": {
+        "zh-CN": "停止",
+        "en-US": "Stop"
+      }
+    },
+    {
+      "name": "stop_all",
+      "symbol": "hap_audio_stop_all",
+      "params": [],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.stopAll",
+      "descriptions": {
+        "zh-CN": "停止所有",
+        "en-US": "Stop all"
+      }
+    },
+    {
+      "name": "set_volume",
+      "symbol": "hap_audio_set_volume",
+      "params": [
+        {
+          "name": "player_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "播放器 ID",
+            "en-US": "Player ID"
+          }
+        },
+        {
+          "name": "volume",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "0-1",
+            "en-US": "0-1"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.setVolume",
+      "descriptions": {
+        "zh-CN": "设置音量",
+        "en-US": "Set volume"
+      }
+    },
+    {
+      "name": "set_speed",
+      "symbol": "hap_audio_set_speed",
+      "params": [
+        {
+          "name": "player_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "播放器 ID",
+            "en-US": "Player ID"
+          }
+        },
+        {
+          "name": "speed",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "速度",
+            "en-US": "Speed"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.setSpeed",
+      "descriptions": {
+        "zh-CN": "设置速度",
+        "en-US": "Set speed"
+      }
+    },
+    {
+      "name": "get_position",
+      "symbol": "hap_audio_get_position",
+      "params": [
+        {
+          "name": "player_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "播放器 ID",
+            "en-US": "Player ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "f64",
+        "descs": {
+          "zh-CN": "ms",
+          "en-US": "ms"
+        }
+      },
+      "bridge_path": "audio.getPosition",
+      "descriptions": {
+        "zh-CN": "获取位置",
+        "en-US": "Get position"
+      }
+    },
+    {
+      "name": "get_duration",
+      "symbol": "hap_audio_get_duration",
+      "params": [
+        {
+          "name": "player_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "播放器 ID",
+            "en-US": "Player ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "f64",
+        "descs": {
+          "zh-CN": "ms",
+          "en-US": "ms"
+        }
+      },
+      "bridge_path": "audio.getDuration",
+      "descriptions": {
+        "zh-CN": "获取时长",
+        "en-US": "Get duration"
+      }
+    },
+    {
+      "name": "seek",
+      "symbol": "hap_audio_seek",
+      "params": [
+        {
+          "name": "player_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "播放器 ID",
+            "en-US": "Player ID"
+          }
+        },
+        {
+          "name": "position_ms",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "ms",
+            "en-US": "ms"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.seek",
+      "descriptions": {
+        "zh-CN": "定位",
+        "en-US": "Seek"
+      }
+    },
+    {
+      "name": "is_playing",
+      "symbol": "hap_audio_is_playing",
+      "params": [
+        {
+          "name": "player_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "播放器 ID",
+            "en-US": "Player ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "播放中",
+          "en-US": "Playing"
+        }
+      },
+      "bridge_path": "audio.isPlaying",
+      "descriptions": {
+        "zh-CN": "检查播放中",
+        "en-US": "Check playing"
+      }
+    },
+    {
+      "name": "get_state",
+      "symbol": "hap_audio_get_state",
+      "params": [
+        {
+          "name": "player_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "播放器 ID",
+            "en-US": "Player ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "状态",
+          "en-US": "State"
+        }
+      },
+      "bridge_path": "audio.getState",
+      "descriptions": {
+        "zh-CN": "获取状态",
+        "en-US": "Get state"
+      }
+    },
+    {
+      "name": "list_devices",
+      "symbol": "hap_audio_list_devices",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "设备",
+          "en-US": "Devices"
+        }
+      },
+      "bridge_path": "audio.listDevices",
+      "descriptions": {
+        "zh-CN": "列出设备",
+        "en-US": "List devices"
+      }
+    },
+    {
+      "name": "set_device",
+      "symbol": "hap_audio_set_device",
+      "params": [
+        {
+          "name": "player_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "播放器 ID",
+            "en-US": "播放器 ID"
+          }
+        },
+        {
+          "name": "device_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备 ID",
+            "en-US": "Device ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.setDevice",
+      "descriptions": {
+        "zh-CN": "设置设备",
+        "en-US": "Set device"
+      }
+    },
+    {
+      "name": "beep",
+      "symbol": "hap_audio_beep",
+      "params": [
+        {
+          "name": "frequency",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "Hz",
+            "en-US": "Hz"
+          },
+          "optional": true,
+          "default_value": "440"
+        },
+        {
+          "name": "duration_ms",
+          "type": "u32",
+          "descs": {
+            "zh-CN": "ms",
+            "en-US": "ms"
+          },
+          "optional": true,
+          "default_value": "200"
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.beep",
+      "descriptions": {
+        "zh-CN": "蜂鸣",
+        "en-US": "Beep"
+      }
+    },
+    {
+      "name": "record_start",
+      "symbol": "hap_audio_record_start",
+      "params": [
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output Path"
+          }
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "descs": {
+            "zh-CN": "wav/mp3",
+            "en-US": "wav/mp3"
+          },
+          "optional": true
+        },
+        {
+          "name": "sample_rate",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "采样率(Hz)",
+            "en-US": "Sample rate Hz"
+          },
+          "optional": true
+        },
+        {
+          "name": "channels",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "声道数",
+            "en-US": "Number of channels"
+          },
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设备 Id",
+            "en-US": "Device Id"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "录音器",
+          "en-US": "录音器"
+        }
+      },
+      "bridge_path": "audio.recordStart",
+      "descriptions": {
+        "zh-CN": "开始录音",
+        "en-US": "Start recording"
+      }
+    },
+    {
+      "name": "record_pause",
+      "symbol": "hap_audio_record_pause",
+      "params": [
+        {
+          "name": "recorder_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "ID",
+            "en-US": "ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.recordPause",
+      "descriptions": {
+        "zh-CN": "暂停录音",
+        "en-US": "Pause recording"
+      }
+    },
+    {
+      "name": "record_resume",
+      "symbol": "hap_audio_record_resume",
+      "params": [
+        {
+          "name": "recorder_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "ID",
+            "en-US": "ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.recordResume",
+      "descriptions": {
+        "zh-CN": "恢复录音",
+        "en-US": "Resume recording"
+      }
+    },
+    {
+      "name": "record_stop",
+      "symbol": "hap_audio_record_stop",
+      "params": [
+        {
+          "name": "recorder_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "ID",
+            "en-US": "ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "audio.recordStop",
+      "descriptions": {
+        "zh-CN": "停止录音",
+        "en-US": "Stop recording"
+      }
+    },
+    {
+      "name": "get_system_volume",
+      "symbol": "hap_audio_get_system_volume",
+      "params": [],
+      "returns": {
+        "type": "f64",
+        "descs": {
+          "zh-CN": "0-100",
+          "en-US": "0-100"
+        }
+      },
+      "bridge_path": "audio.getSystemVolume",
+      "descriptions": {
+        "zh-CN": "获取系统音量",
+        "en-US": "Get system volume"
+      }
+    },
+    {
+      "name": "set_system_volume",
+      "symbol": "hap_audio_set_system_volume",
+      "params": [
+        {
+          "name": "volume",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "0-100",
+            "en-US": "0-100"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.setSystemVolume",
+      "descriptions": {
+        "zh-CN": "设置系统音量",
+        "en-US": "Set system volume"
+      }
+    },
+    {
+      "name": "is_muted",
+      "symbol": "hap_audio_is_muted",
+      "params": [],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "静音",
+          "en-US": "Muted"
+        }
+      },
+      "bridge_path": "audio.isMuted",
+      "descriptions": {
+        "zh-CN": "检查静音",
+        "en-US": "Check muted"
+      }
+    },
+    {
+      "name": "set_muted",
+      "symbol": "hap_audio_set_muted",
+      "params": [
+        {
+          "name": "muted",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "静音",
+            "en-US": "Mute"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.setMuted",
+      "descriptions": {
+        "zh-CN": "设置静音",
+        "en-US": "Set muted"
+      }
+    },
+    {
+      "name": "list_players",
+      "symbol": "hap_audio_list_players",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "播放器",
+          "en-US": "Players"
+        }
+      },
+      "bridge_path": "audio.listPlayers",
+      "descriptions": {
+        "zh-CN": "列出播放器",
+        "en-US": "List players"
+      }
+    },
+    {
+      "name": "file_info",
+      "symbol": "hap_audio_file_info",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "信息",
+          "en-US": "Info"
+        }
+      },
+      "bridge_path": "audio.fileInfo",
+      "descriptions": {
+        "zh-CN": "文件信息",
+        "en-US": "File info"
+      }
+    },
+    {
+      "name": "convert",
+      "symbol": "hap_audio_convert",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入",
+            "en-US": "Input"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "audio.convert",
+      "descriptions": {
+        "zh-CN": "转换格式",
+        "en-US": "Convert format"
+      }
+    },
+    {
+      "name": "trim",
+      "symbol": "hap_audio_trim",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入",
+            "en-US": "Input"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        },
+        {
+          "name": "start_ms",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "启动",
+            "en-US": "Start"
+          }
+        },
+        {
+          "name": "end_ms",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "结束",
+            "en-US": "End"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "audio.trim",
+      "descriptions": {
+        "zh-CN": "修剪音频",
+        "en-US": "Trim audio"
+      }
+    },
+    {
+      "name": "concat",
+      "symbol": "hap_audio_concat",
+      "params": [
+        {
+          "name": "input_paths",
+          "type": "array",
+          "descs": {
+            "zh-CN": "输入",
+            "en-US": "Inputs"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "audio.concat",
+      "descriptions": {
+        "zh-CN": "拼接音频",
+        "en-US": "Concat audio"
+      }
+    },
+    {
+      "name": "get_metadata",
+      "symbol": "hap_audio_get_metadata",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "元数据",
+          "en-US": "Metadata"
+        }
+      },
+      "bridge_path": "audio.getMetadata",
+      "descriptions": {
+        "zh-CN": "获取元数据",
+        "en-US": "Get metadata"
+      }
+    },
+    {
+      "name": "set_metadata",
+      "symbol": "hap_audio_set_metadata",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "metadata",
+          "type": "object",
+          "descs": {
+            "zh-CN": "元数据标签",
+            "en-US": "Metadata tags"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.setMetadata",
+      "descriptions": {
+        "zh-CN": "设置元数据",
+        "en-US": "Set metadata"
+      }
+    },
+    {
+      "name": "set_album_art",
+      "symbol": "hap_audio_set_album_art",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "音频",
+            "en-US": "Audio"
+          }
+        },
+        {
+          "name": "image_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图像",
+            "en-US": "Image"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.setAlbumArt",
+      "descriptions": {
+        "zh-CN": "设置专辑封面",
+        "en-US": "Set album art"
+      }
+    },
+    {
+      "name": "normalize",
+      "symbol": "hap_audio_normalize",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入",
+            "en-US": "Input"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.normalize",
+      "descriptions": {
+        "zh-CN": "规范化",
+        "en-US": "Normalize"
+      }
+    },
+    {
+      "name": "get_waveform",
+      "symbol": "hap_audio_get_waveform",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "samples",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "数量",
+            "en-US": "Count"
+          },
+          "optional": true,
+          "default_value": "200"
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "采样数据",
+          "en-US": "采样数据"
+        }
+      },
+      "bridge_path": "audio.getWaveform",
+      "descriptions": {
+        "zh-CN": "获取波形",
+        "en-US": "Get waveform"
+      }
+    },
+    {
+      "name": "split",
+      "symbol": "hap_audio_split",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入",
+            "en-US": "Input"
+          }
+        },
+        {
+          "name": "output_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目录",
+            "en-US": "Dir"
+          }
+        },
+        {
+          "name": "points_ms",
+          "type": "array",
+          "descs": {
+            "zh-CN": "点",
+            "en-US": "Points"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "路径",
+          "en-US": "Paths"
+        }
+      },
+      "bridge_path": "audio.split",
+      "descriptions": {
+        "zh-CN": "拆分",
+        "en-US": "Split"
+      }
+    },
+    {
+      "name": "fade",
+      "symbol": "hap_audio_fade",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入",
+            "en-US": "Input"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        },
+        {
+          "name": "fade_in_ms",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "在",
+            "en-US": "In"
+          },
+          "optional": true,
+          "default_value": "0.0"
+        },
+        {
+          "name": "fade_out_ms",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Out"
+          },
+          "optional": true,
+          "default_value": "0.0"
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.fade",
+      "descriptions": {
+        "zh-CN": "淡入淡出",
+        "en-US": "Fade"
+      }
+    },
+    {
+      "name": "mix",
+      "symbol": "hap_audio_mix",
+      "params": [
+        {
+          "name": "paths",
+          "type": "array",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Paths"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.mix",
+      "descriptions": {
+        "zh-CN": "混音",
+        "en-US": "Mix"
+      }
+    },
+    {
+      "name": "list_recorders",
+      "symbol": "hap_audio_list_recorders",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "录音器列表",
+          "en-US": "Recorders"
+        }
+      },
+      "bridge_path": "audio.listRecorders",
+      "descriptions": {
+        "zh-CN": "列出录音器",
+        "en-US": "List recorders"
+      }
+    },
+    {
+      "name": "on_device_change",
+      "symbol": "hap_audio_on_device_change",
+      "params": [
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调",
+            "en-US": "Callback"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "监视器",
+          "en-US": "Watcher"
+        }
+      },
+      "bridge_path": "audio.onDeviceChange",
+      "descriptions": {
+        "zh-CN": "监视设备",
+        "en-US": "Watch devices"
+      }
+    },
+    {
+      "name": "off_device_change",
+      "symbol": "hap_audio_off_device_change",
+      "params": [
+        {
+          "name": "watcher_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监视器",
+            "en-US": "Watcher"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "audio.offDeviceChange",
+      "descriptions": {
+        "zh-CN": "停止监视",
+        "en-US": "Stop watching"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供音频录制、播放、格式转换、元数据读写、波形分析、音量控制等能力。支持 MP3/WAV/OGG/FLAC/AAC 等格式，以及混音、剪辑、效果器等高级操作。",
+    "en-US": "Audio recording, playback, format conversion, metadata read/write, waveform analysis, and volume control. Supports MP3/WAV/OGG/FLAC/AAC formats, plus mixing, trimming, and effects."
+  }
+}

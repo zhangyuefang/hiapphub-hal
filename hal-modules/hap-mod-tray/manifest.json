@@ -1,0 +1,448 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000018",
+  "name": "tray",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🖥️",
+  "min_shell_version": "0.1.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "系统托盘模块",
+    "en-US": "System tray module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "create",
+      "symbol": "hap_tray_create",
+      "params": [
+        {
+          "name": "icon_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图标路径",
+            "en-US": "Icon Path"
+          }
+        },
+        {
+          "name": "tooltip",
+          "type": "string",
+          "descs": {
+            "zh-CN": "提示文本",
+            "en-US": "Tooltip text"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "点击回调",
+            "en-US": "Click callback"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "托盘 ID",
+          "en-US": "Tray ID"
+        }
+      },
+      "bridge_path": "tray.create",
+      "descriptions": {
+        "zh-CN": "创建托盘图标图标",
+        "en-US": "Create tray icon"
+      }
+    },
+    {
+      "name": "set_icon",
+      "symbol": "hap_tray_set_icon",
+      "params": [
+        {
+          "name": "tray_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "托盘 ID",
+            "en-US": "Tray ID"
+          }
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图标路径",
+            "en-US": "Icon path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "tray.setIcon",
+      "descriptions": {
+        "zh-CN": "设置托盘图标",
+        "en-US": "Set tray icon"
+      }
+    },
+    {
+      "name": "set_tooltip",
+      "symbol": "hap_tray_set_tooltip",
+      "params": [
+        {
+          "name": "tray_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "托盘 ID",
+            "en-US": "Tray ID"
+          }
+        },
+        {
+          "name": "tooltip",
+          "type": "string",
+          "descs": {
+            "zh-CN": "提示文本",
+            "en-US": "Tooltip"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "tray.setTooltip",
+      "descriptions": {
+        "zh-CN": "设置提示文本",
+        "en-US": "Set tooltip"
+      }
+    },
+    {
+      "name": "set_menu",
+      "symbol": "hap_tray_set_menu",
+      "params": [
+        {
+          "name": "tray_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "托盘 ID",
+            "en-US": "Tray ID"
+          }
+        },
+        {
+          "name": "items",
+          "type": "array",
+          "descs": {
+            "zh-CN": "菜单项",
+            "en-US": "Menu items"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "tray.setMenu",
+      "descriptions": {
+        "zh-CN": "设置右键菜单",
+        "en-US": "Set context menu"
+      }
+    },
+    {
+      "name": "update_menu_item",
+      "symbol": "hap_tray_update_menu_item",
+      "params": [
+        {
+          "name": "tray_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "托盘 ID",
+            "en-US": "Tray ID"
+          }
+        },
+        {
+          "name": "item_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "项 ID",
+            "en-US": "项 ID"
+          }
+        },
+        {
+          "name": "props",
+          "type": "object",
+          "descs": {
+            "zh-CN": "属性",
+            "en-US": "Properties"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "tray.updateMenuItem",
+      "descriptions": {
+        "zh-CN": "更新菜单项",
+        "en-US": "Update menu item"
+      }
+    },
+    {
+      "name": "destroy",
+      "symbol": "hap_tray_destroy",
+      "params": [
+        {
+          "name": "tray_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "托盘 ID",
+            "en-US": "Tray ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "tray.destroy",
+      "descriptions": {
+        "zh-CN": "销毁托盘",
+        "en-US": "Destroy tray"
+      }
+    },
+    {
+      "name": "show_balloon",
+      "symbol": "hap_tray_show_balloon",
+      "params": [
+        {
+          "name": "tray_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "托盘 ID",
+            "en-US": "Tray ID"
+          }
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          }
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息",
+            "en-US": "Message"
+          }
+        },
+        {
+          "name": "icon_type",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图标类型",
+            "en-US": "Icon Type"
+          },
+          "optional": true
+        },
+        {
+          "name": "timeout_ms",
+          "type": "u32",
+          "descs": {
+            "zh-CN": "超时(毫秒)",
+            "en-US": "Timeout in ms"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "tray.showBalloon",
+      "descriptions": {
+        "zh-CN": "显示气泡通知",
+        "en-US": "Show balloon tip"
+      }
+    },
+    {
+      "name": "set_title",
+      "symbol": "hap_tray_set_title",
+      "params": [
+        {
+          "name": "tray_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "托盘 ID",
+            "en-US": "Tray ID"
+          }
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "tray.setTitle",
+      "descriptions": {
+        "zh-CN": "设置标题",
+        "en-US": "Set title"
+      }
+    },
+    {
+      "name": "set_visible",
+      "symbol": "hap_tray_set_visible",
+      "params": [
+        {
+          "name": "tray_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "托盘 ID",
+            "en-US": "Tray ID"
+          }
+        },
+        {
+          "name": "visible",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "可见",
+            "en-US": "Visible"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "tray.setVisible",
+      "descriptions": {
+        "zh-CN": "设置可见性",
+        "en-US": "Set visibility"
+      }
+    },
+    {
+      "name": "set_blink",
+      "symbol": "hap_tray_set_blink",
+      "params": [
+        {
+          "name": "tray_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "托盘 ID",
+            "en-US": "Tray ID"
+          }
+        },
+        {
+          "name": "enabled",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "启用闪烁",
+            "en-US": "Enable blink"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "tray.setBlink",
+      "descriptions": {
+        "zh-CN": "设置闪烁",
+        "en-US": "Set blink"
+      }
+    },
+    {
+      "name": "set_badge",
+      "symbol": "hap_tray_set_badge",
+      "params": [
+        {
+          "name": "tray_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "托盘 ID",
+            "en-US": "Tray ID"
+          }
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "角标文本",
+            "en-US": "Badge text"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "tray.setBadge",
+      "descriptions": {
+        "zh-CN": "设置角标",
+        "en-US": "Set badge"
+      }
+    },
+    {
+      "name": "list",
+      "symbol": "hap_tray_list",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "托盘列表",
+          "en-US": "Tray list"
+        }
+      },
+      "bridge_path": "tray.list",
+      "descriptions": {
+        "zh-CN": "列出托盘图标",
+        "en-US": "List tray icons"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供系统托盘图标管理能力，包括托盘图标的创建/更新/删除、菜单管理、气泡通知、点击事件处理等功能。",
+    "en-US": "System tray icon management including create/update/delete tray icons, menu management, balloon notifications, and click event handling."
+  }
+}

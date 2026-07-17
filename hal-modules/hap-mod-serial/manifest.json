@@ -1,0 +1,581 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000019",
+  "name": "serial",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🔗",
+  "min_shell_version": "0.1.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "串口通信模块",
+    "en-US": "Serial port communication module"
+  },
+  "permission": "serial",
+  "functions": [
+    {
+      "name": "list_ports",
+      "symbol": "hap_serial_list_ports",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "端口",
+          "en-US": "Ports"
+        }
+      },
+      "bridge_path": "serial.listPorts",
+      "descriptions": {
+        "zh-CN": "列出端口",
+        "en-US": "List ports"
+      }
+    },
+    {
+      "name": "open",
+      "symbol": "hap_serial_open",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "baud_rate",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "波特率",
+            "en-US": "Baud rate"
+          },
+          "optional": true,
+          "default_value": "9600"
+        },
+        {
+          "name": "data_bits",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "数据位",
+            "en-US": "Data bits"
+          },
+          "optional": true,
+          "default_value": "8"
+        },
+        {
+          "name": "stop_bits",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "停止位",
+            "en-US": "Stop bits"
+          },
+          "optional": true,
+          "default_value": "1"
+        },
+        {
+          "name": "parity",
+          "type": "string",
+          "descs": {
+            "zh-CN": "校验位",
+            "en-US": "Parity"
+          },
+          "optional": true
+        },
+        {
+          "name": "timeout_ms",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "超时(毫秒)",
+            "en-US": "Timeout in ms"
+          },
+          "optional": true,
+          "default_value": "1000"
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "端口",
+          "en-US": "Port"
+        }
+      },
+      "bridge_path": "serial.open",
+      "descriptions": {
+        "zh-CN": "打开端口",
+        "en-US": "Open port"
+      }
+    },
+    {
+      "name": "close",
+      "symbol": "hap_serial_close",
+      "params": [
+        {
+          "name": "port_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "端口 ID",
+            "en-US": "Port ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "serial.close",
+      "descriptions": {
+        "zh-CN": "关闭端口",
+        "en-US": "Close port"
+      }
+    },
+    {
+      "name": "write",
+      "symbol": "hap_serial_write",
+      "params": [
+        {
+          "name": "port_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "端口 ID",
+            "en-US": "Port ID"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        },
+        {
+          "name": "encoding",
+          "type": "string",
+          "descs": {
+            "zh-CN": "编码",
+            "en-US": "Encoding"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "i32",
+        "descs": {
+          "zh-CN": "字节",
+          "en-US": "Bytes"
+        }
+      },
+      "bridge_path": "serial.write",
+      "descriptions": {
+        "zh-CN": "写入数据",
+        "en-US": "Write data"
+      }
+    },
+    {
+      "name": "read",
+      "symbol": "hap_serial_read",
+      "params": [
+        {
+          "name": "port_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "端口 ID",
+            "en-US": "Port ID"
+          }
+        },
+        {
+          "name": "size",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "图像尺寸(像素)",
+            "en-US": "Image size px"
+          },
+          "optional": true,
+          "default_value": "1024"
+        },
+        {
+          "name": "timeout_ms",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "超时(毫秒)",
+            "en-US": "Timeout in ms"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "数据",
+          "en-US": "Data"
+        }
+      },
+      "bridge_path": "serial.read",
+      "descriptions": {
+        "zh-CN": "读取数据",
+        "en-US": "Read data"
+      }
+    },
+    {
+      "name": "read_line",
+      "symbol": "hap_serial_read_line",
+      "params": [
+        {
+          "name": "port_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "端口 ID",
+            "en-US": "Port ID"
+          }
+        },
+        {
+          "name": "timeout_ms",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "超时(毫秒)",
+            "en-US": "Timeout in ms"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "行",
+          "en-US": "Line"
+        }
+      },
+      "bridge_path": "serial.readLine",
+      "descriptions": {
+        "zh-CN": "读取行",
+        "en-US": "Read line"
+      }
+    },
+    {
+      "name": "read_until",
+      "symbol": "hap_serial_read_until",
+      "params": [
+        {
+          "name": "port_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "端口 ID",
+            "en-US": "Port ID"
+          }
+        },
+        {
+          "name": "delimiter",
+          "type": "string",
+          "descs": {
+            "zh-CN": "分隔符",
+            "en-US": "Delimiter"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "数据",
+          "en-US": "Data"
+        }
+      },
+      "bridge_path": "serial.readUntil",
+      "descriptions": {
+        "zh-CN": "读取直到",
+        "en-US": "Read until"
+      }
+    },
+    {
+      "name": "available",
+      "symbol": "hap_serial_available",
+      "params": [
+        {
+          "name": "port_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "端口 ID",
+            "en-US": "Port ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i32",
+        "descs": {
+          "zh-CN": "字节",
+          "en-US": "Bytes"
+        }
+      },
+      "bridge_path": "serial.available",
+      "descriptions": {
+        "zh-CN": "字节可用的",
+        "en-US": "Bytes available"
+      }
+    },
+    {
+      "name": "set_baud_rate",
+      "symbol": "hap_serial_set_baud_rate",
+      "params": [
+        {
+          "name": "port_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "端口 ID",
+            "en-US": "Port ID"
+          }
+        },
+        {
+          "name": "baud_rate",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "速率",
+            "en-US": "Rate"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "serial.setBaudRate",
+      "descriptions": {
+        "zh-CN": "设置波特率",
+        "en-US": "Set baud rate"
+      }
+    },
+    {
+      "name": "set_dtr",
+      "symbol": "hap_serial_set_dtr",
+      "params": [
+        {
+          "name": "port_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "端口 ID",
+            "en-US": "Port ID"
+          }
+        },
+        {
+          "name": "level",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "级别",
+            "en-US": "Level"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "serial.setDtr",
+      "descriptions": {
+        "zh-CN": "设置 DTR",
+        "en-US": "Set DTR"
+      }
+    },
+    {
+      "name": "set_rts",
+      "symbol": "hap_serial_set_rts",
+      "params": [
+        {
+          "name": "port_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "端口 ID",
+            "en-US": "Port ID"
+          }
+        },
+        {
+          "name": "level",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "级别",
+            "en-US": "Level"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "serial.setRts",
+      "descriptions": {
+        "zh-CN": "设置 RTS",
+        "en-US": "Set RTS"
+      }
+    },
+    {
+      "name": "flush",
+      "symbol": "hap_serial_flush",
+      "params": [
+        {
+          "name": "port_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "端口 ID",
+            "en-US": "Port ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "serial.flush",
+      "descriptions": {
+        "zh-CN": "刷新",
+        "en-US": "Flush"
+      }
+    },
+    {
+      "name": "clear_buffer",
+      "symbol": "hap_serial_clear_buffer",
+      "params": [
+        {
+          "name": "port_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "端口 ID",
+            "en-US": "Port ID"
+          }
+        },
+        {
+          "name": "buffer_type",
+          "type": "string",
+          "descs": {
+            "zh-CN": "缓冲区类型",
+            "en-US": "Buffer type"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "serial.clearBuffer",
+      "descriptions": {
+        "zh-CN": "清除缓冲区",
+        "en-US": "Clear buffer"
+      }
+    },
+    {
+      "name": "on_port_change",
+      "symbol": "hap_serial_on_port_change",
+      "params": [
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调",
+            "en-US": "Callback"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "监视器",
+          "en-US": "Watcher"
+        }
+      },
+      "bridge_path": "serial.onPortChange",
+      "descriptions": {
+        "zh-CN": "监视端口",
+        "en-US": "Watch ports"
+      }
+    },
+    {
+      "name": "off_port_change",
+      "symbol": "hap_serial_off_port_change",
+      "params": [
+        {
+          "name": "watcher_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监视器",
+            "en-US": "Watcher"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "serial.offPortChange",
+      "descriptions": {
+        "zh-CN": "停止监视",
+        "en-US": "Stop watching"
+      }
+    },
+    {
+      "name": "is_open",
+      "symbol": "hap_serial_is_open",
+      "params": [
+        {
+          "name": "port_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "端口 ID",
+            "en-US": "Port ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "已打开的",
+          "en-US": "Open"
+        }
+      },
+      "bridge_path": "serial.isOpen",
+      "descriptions": {
+        "zh-CN": "检查已打开的",
+        "en-US": "Check open"
+      }
+    },
+    {
+      "name": "list_open",
+      "symbol": "hap_serial_list_open",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "端口",
+          "en-US": "Ports"
+        }
+      },
+      "bridge_path": "serial.listOpen",
+      "descriptions": {
+        "zh-CN": "列出已打开的",
+        "en-US": "List open"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供串口通信能力，包括串口的打开/关闭、数据读写、波特率设置、流控制、串口列表枚举、事件监听等功能。适用于硬件设备通信。",
+    "en-US": "Serial port communication including open/close, data read/write, baud rate configuration, flow control, port enumeration, and event monitoring. For hardware device communication."
+  }
+}

@@ -1,0 +1,450 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000037",
+  "name": "input",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "⌨️",
+  "min_shell_version": "0.1.0",
+  "category": "automation",
+  "descriptions": {
+    "zh-CN": "模拟输入模块",
+    "en-US": "Input simulation module"
+  },
+  "overviews": {
+    "zh-CN": "提供键盘和鼠标模拟输入能力，支持按键模拟、文本输入、鼠标移动/点击/拖拽、组合键、滚轮操作等自动化功能。",
+    "en-US": "Keyboard and mouse input simulation including key press, text input, mouse move/click/drag, key combinations, and scroll operations."
+  },
+  "permission": "input",
+  "functions": [
+    {
+      "name": "key_press",
+      "symbol": "hap_input_key_press",
+      "descriptions": {
+        "zh-CN": "按下并释放按键",
+        "en-US": "Press and release key"
+      },
+      "params": [
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键名(如enter/tab/escape/a/1)",
+            "en-US": "Key name (e.g. enter/tab/escape/a/1)"
+          }
+        },
+        {
+          "name": "modifiers",
+          "type": "array",
+          "optional": true,
+          "descs": {
+            "zh-CN": "修饰键列表[ctrl/alt/shift/meta]",
+            "en-US": "Modifiers [ctrl/alt/shift/meta]"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "input.keyPress"
+    },
+    {
+      "name": "key_down",
+      "symbol": "hap_input_key_down",
+      "descriptions": {
+        "zh-CN": "按下按键(不释放)",
+        "en-US": "Press key down (no release)"
+      },
+      "params": [
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键名",
+            "en-US": "Key name"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "input.keyDown"
+    },
+    {
+      "name": "key_up",
+      "symbol": "hap_input_key_up",
+      "descriptions": {
+        "zh-CN": "释放按键",
+        "en-US": "Release key"
+      },
+      "params": [
+        {
+          "name": "key",
+          "type": "string",
+          "descs": {
+            "zh-CN": "键名",
+            "en-US": "Key name"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "input.keyUp"
+    },
+    {
+      "name": "type_text",
+      "symbol": "hap_input_type_text",
+      "descriptions": {
+        "zh-CN": "输入文本",
+        "en-US": "Type text"
+      },
+      "params": [
+        {
+          "name": "text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文本内容",
+            "en-US": "Text content"
+          }
+        },
+        {
+          "name": "delay_ms",
+          "type": "number",
+          "optional": true,
+          "default_value": "0",
+          "descs": {
+            "zh-CN": "字符间延迟(毫秒)",
+            "en-US": "Delay between chars (ms)"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "input.typeText"
+    },
+    {
+      "name": "mouse_move",
+      "symbol": "hap_input_mouse_move",
+      "descriptions": {
+        "zh-CN": "移动鼠标",
+        "en-US": "Move mouse"
+      },
+      "params": [
+        {
+          "name": "x",
+          "type": "number",
+          "descs": {
+            "zh-CN": "目标X坐标",
+            "en-US": "Target X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "目标Y坐标",
+            "en-US": "Target Y"
+          }
+        },
+        {
+          "name": "smooth",
+          "type": "boolean",
+          "optional": true,
+          "default_value": "false",
+          "descs": {
+            "zh-CN": "是否平滑移动",
+            "en-US": "Smooth movement"
+          }
+        },
+        {
+          "name": "duration_ms",
+          "type": "number",
+          "optional": true,
+          "default_value": "0",
+          "descs": {
+            "zh-CN": "移动耗时(毫秒)",
+            "en-US": "Duration (ms)"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "input.mouseMove"
+    },
+    {
+      "name": "mouse_click",
+      "symbol": "hap_input_mouse_click",
+      "descriptions": {
+        "zh-CN": "鼠标点击",
+        "en-US": "Mouse click"
+      },
+      "params": [
+        {
+          "name": "x",
+          "type": "number",
+          "optional": true,
+          "descs": {
+            "zh-CN": "X坐标(省略则当前位置)",
+            "en-US": "X (current if omitted)"
+          }
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "optional": true,
+          "descs": {
+            "zh-CN": "Y坐标(省略则当前位置)",
+            "en-US": "Y (current if omitted)"
+          }
+        },
+        {
+          "name": "button",
+          "type": "string",
+          "optional": true,
+          "default_value": "\"left\"",
+          "descs": {
+            "zh-CN": "按钮: left/right/middle",
+            "en-US": "Button: left/right/middle"
+          }
+        },
+        {
+          "name": "clicks",
+          "type": "number",
+          "optional": true,
+          "default_value": "1",
+          "descs": {
+            "zh-CN": "点击次数",
+            "en-US": "Click count"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "input.mouseClick"
+    },
+    {
+      "name": "mouse_down",
+      "symbol": "hap_input_mouse_down",
+      "descriptions": {
+        "zh-CN": "鼠标按下",
+        "en-US": "Mouse button down"
+      },
+      "params": [
+        {
+          "name": "button",
+          "type": "string",
+          "optional": true,
+          "default_value": "\"left\"",
+          "descs": {
+            "zh-CN": "按钮",
+            "en-US": "Button"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "input.mouseDown"
+    },
+    {
+      "name": "mouse_up",
+      "symbol": "hap_input_mouse_up",
+      "descriptions": {
+        "zh-CN": "鼠标释放",
+        "en-US": "Mouse button up"
+      },
+      "params": [
+        {
+          "name": "button",
+          "type": "string",
+          "optional": true,
+          "default_value": "\"left\"",
+          "descs": {
+            "zh-CN": "按钮",
+            "en-US": "Button"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "input.mouseUp"
+    },
+    {
+      "name": "mouse_drag",
+      "symbol": "hap_input_mouse_drag",
+      "descriptions": {
+        "zh-CN": "鼠标拖拽",
+        "en-US": "Mouse drag"
+      },
+      "params": [
+        {
+          "name": "from_x",
+          "type": "number",
+          "descs": {
+            "zh-CN": "起点X",
+            "en-US": "From X"
+          }
+        },
+        {
+          "name": "from_y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "起点Y",
+            "en-US": "From Y"
+          }
+        },
+        {
+          "name": "to_x",
+          "type": "number",
+          "descs": {
+            "zh-CN": "终点X",
+            "en-US": "To X"
+          }
+        },
+        {
+          "name": "to_y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "终点Y",
+            "en-US": "To Y"
+          }
+        },
+        {
+          "name": "duration_ms",
+          "type": "number",
+          "optional": true,
+          "default_value": "300",
+          "descs": {
+            "zh-CN": "拖拽耗时(毫秒)",
+            "en-US": "Drag duration (ms)"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "input.mouseDrag"
+    },
+    {
+      "name": "scroll",
+      "symbol": "hap_input_scroll",
+      "descriptions": {
+        "zh-CN": "滚轮滚动",
+        "en-US": "Scroll"
+      },
+      "params": [
+        {
+          "name": "delta_x",
+          "type": "number",
+          "optional": true,
+          "default_value": "0",
+          "descs": {
+            "zh-CN": "水平滚动量",
+            "en-US": "Horizontal delta"
+          }
+        },
+        {
+          "name": "delta_y",
+          "type": "number",
+          "descs": {
+            "zh-CN": "垂直滚动量(正=上，负=下)",
+            "en-US": "Vertical delta (pos=up, neg=down)"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "input.scroll"
+    },
+    {
+      "name": "get_mouse_position",
+      "symbol": "hap_input_get_mouse_position",
+      "descriptions": {
+        "zh-CN": "获取鼠标位置",
+        "en-US": "Get mouse position"
+      },
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "坐标{x,y}",
+          "en-US": "Position {x,y}"
+        }
+      },
+      "bridge_path": "input.getMousePosition"
+    },
+    {
+      "name": "hotkey",
+      "symbol": "hap_input_hotkey",
+      "descriptions": {
+        "zh-CN": "执行组合快捷键",
+        "en-US": "Execute hotkey combination"
+      },
+      "params": [
+        {
+          "name": "keys",
+          "type": "array",
+          "descs": {
+            "zh-CN": "键名列表(如[\"ctrl\",\"c\"])",
+            "en-US": "Key names (e.g. [\"ctrl\",\"c\"])"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "input.hotkey"
+    }
+  ]
+}

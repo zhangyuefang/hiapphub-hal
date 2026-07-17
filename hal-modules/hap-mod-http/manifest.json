@@ -1,0 +1,827 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000007",
+  "name": "http",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🌐",
+  "min_shell_version": "0.1.0",
+  "category": "network",
+  "descriptions": {
+    "zh-CN": "HTTP客户端模块",
+    "en-US": "HTTP client module"
+  },
+  "permission": "network",
+  "functions": [
+    {
+      "name": "request",
+      "symbol": "hap_http_request",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        },
+        {
+          "name": "method",
+          "type": "string",
+          "descs": {
+            "zh-CN": "方法",
+            "en-US": "Method"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "响应",
+          "en-US": "Response"
+        }
+      },
+      "bridge_path": "http.request",
+      "descriptions": {
+        "zh-CN": "发送 HTTP 请求",
+        "en-US": "Send HTTP request"
+      }
+    },
+    {
+      "name": "get",
+      "symbol": "hap_http_get",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "响应",
+          "en-US": "Response"
+        }
+      },
+      "bridge_path": "http.get",
+      "descriptions": {
+        "zh-CN": "GET 请求",
+        "en-US": "GET request"
+      }
+    },
+    {
+      "name": "post",
+      "symbol": "hap_http_post",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主体",
+            "en-US": "Body"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "响应",
+          "en-US": "Response"
+        }
+      },
+      "bridge_path": "http.post",
+      "descriptions": {
+        "zh-CN": "POST 请求",
+        "en-US": "POST request"
+      }
+    },
+    {
+      "name": "put",
+      "symbol": "hap_http_put",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主体",
+            "en-US": "Body"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "响应",
+          "en-US": "Response"
+        }
+      },
+      "bridge_path": "http.put",
+      "descriptions": {
+        "zh-CN": "PUT 请求",
+        "en-US": "PUT request"
+      }
+    },
+    {
+      "name": "patch",
+      "symbol": "hap_http_patch",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主体",
+            "en-US": "Body"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "响应",
+          "en-US": "Response"
+        }
+      },
+      "bridge_path": "http.patch",
+      "descriptions": {
+        "zh-CN": "PATCH 请求",
+        "en-US": "PATCH request"
+      }
+    },
+    {
+      "name": "delete",
+      "symbol": "hap_http_delete",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "响应",
+          "en-US": "Response"
+        }
+      },
+      "bridge_path": "http.delete",
+      "descriptions": {
+        "zh-CN": "DELETE 请求",
+        "en-US": "DELETE request"
+      }
+    },
+    {
+      "name": "head",
+      "symbol": "hap_http_head",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "响应",
+          "en-US": "Response"
+        }
+      },
+      "bridge_path": "http.head",
+      "descriptions": {
+        "zh-CN": "HEAD 请求",
+        "en-US": "HEAD request"
+      }
+    },
+    {
+      "name": "download",
+      "symbol": "hap_http_download",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "保存路径",
+            "en-US": "Save path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "http.download",
+      "descriptions": {
+        "zh-CN": "下载文件",
+        "en-US": "Download file"
+      }
+    },
+    {
+      "name": "upload",
+      "symbol": "hap_http_upload",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "响应",
+          "en-US": "Response"
+        }
+      },
+      "bridge_path": "http.upload",
+      "descriptions": {
+        "zh-CN": "上传文件",
+        "en-US": "Upload file"
+      }
+    },
+    {
+      "name": "post_form",
+      "symbol": "hap_http_post_form",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        },
+        {
+          "name": "fields",
+          "type": "object",
+          "descs": {
+            "zh-CN": "字段",
+            "en-US": "Fields"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "响应",
+          "en-US": "Response"
+        }
+      },
+      "bridge_path": "http.postForm",
+      "descriptions": {
+        "zh-CN": "POST 表单提交",
+        "en-US": "POST form"
+      }
+    },
+    {
+      "name": "set_proxy",
+      "symbol": "hap_http_set_proxy",
+      "params": [
+        {
+          "name": "proxy_url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "代理 URL",
+            "en-US": "Proxy URL"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "http.setProxy",
+      "descriptions": {
+        "zh-CN": "设置代理",
+        "en-US": "Set proxy"
+      }
+    },
+    {
+      "name": "set_default_headers",
+      "symbol": "hap_http_set_default_headers",
+      "params": [
+        {
+          "name": "headers",
+          "type": "object",
+          "descs": {
+            "zh-CN": "头部",
+            "en-US": "Headers"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "http.setDefaultHeaders",
+      "descriptions": {
+        "zh-CN": "设置默认头部",
+        "en-US": "Set default headers"
+      }
+    },
+    {
+      "name": "set_default_timeout",
+      "symbol": "hap_http_set_default_timeout",
+      "params": [
+        {
+          "name": "timeout_ms",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "超时(毫秒)",
+            "en-US": "Timeout ms"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "http.setDefaultTimeout",
+      "descriptions": {
+        "zh-CN": "设置超时",
+        "en-US": "Set timeout"
+      }
+    },
+    {
+      "name": "post_json",
+      "symbol": "hap_http_post_json",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "descs": {
+            "zh-CN": "JSON 数据",
+            "en-US": "JSON data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "响应",
+          "en-US": "Response"
+        }
+      },
+      "bridge_path": "http.postJson",
+      "descriptions": {
+        "zh-CN": "POST JSON",
+        "en-US": "POST JSON"
+      }
+    },
+    {
+      "name": "get_json",
+      "symbol": "hap_http_get_json",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "响应",
+          "en-US": "Response"
+        }
+      },
+      "bridge_path": "http.getJson",
+      "descriptions": {
+        "zh-CN": "GET JSON",
+        "en-US": "GET JSON"
+      }
+    },
+    {
+      "name": "put_json",
+      "symbol": "hap_http_put_json",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "descs": {
+            "zh-CN": "JSON 数据",
+            "en-US": "JSON data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "响应",
+          "en-US": "Response"
+        }
+      },
+      "bridge_path": "http.putJson",
+      "descriptions": {
+        "zh-CN": "PUT JSON",
+        "en-US": "PUT JSON"
+      }
+    },
+    {
+      "name": "patch_json",
+      "symbol": "hap_http_patch_json",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "descs": {
+            "zh-CN": "JSON 数据",
+            "en-US": "JSON data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "响应",
+          "en-US": "Response"
+        }
+      },
+      "bridge_path": "http.patchJson",
+      "descriptions": {
+        "zh-CN": "PATCH JSON",
+        "en-US": "PATCH JSON"
+      }
+    },
+    {
+      "name": "sse_connect",
+      "symbol": "hap_http_sse_connect",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "连接",
+          "en-US": "Connection"
+        }
+      },
+      "bridge_path": "http.sseConnect",
+      "descriptions": {
+        "zh-CN": "连接 SSE",
+        "en-US": "Connect SSE"
+      }
+    },
+    {
+      "name": "sse_close",
+      "symbol": "hap_http_sse_close",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "http.sseClose",
+      "descriptions": {
+        "zh-CN": "关闭 SSE",
+        "en-US": "Close SSE"
+      }
+    },
+    {
+      "name": "list_sse",
+      "symbol": "hap_http_list_sse",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "连接",
+          "en-US": "Connections"
+        }
+      },
+      "bridge_path": "http.listSse",
+      "descriptions": {
+        "zh-CN": "列出 SSE 连接",
+        "en-US": "List SSE connections"
+      }
+    },
+    {
+      "name": "set_cookie",
+      "symbol": "hap_http_set_cookie",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "名称",
+            "en-US": "Name"
+          }
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "值",
+            "en-US": "Value"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "http.setCookie",
+      "descriptions": {
+        "zh-CN": "设置 Cookie",
+        "en-US": "Set cookie"
+      }
+    },
+    {
+      "name": "get_cookies",
+      "symbol": "hap_http_get_cookies",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "Cookie",
+          "en-US": "Cookies"
+        }
+      },
+      "bridge_path": "http.getCookies",
+      "descriptions": {
+        "zh-CN": "获取 Cookie",
+        "en-US": "Get cookies"
+      }
+    },
+    {
+      "name": "clear_cookies",
+      "symbol": "hap_http_clear_cookies",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "http.clearCookies",
+      "descriptions": {
+        "zh-CN": "清除 Cookie",
+        "en-US": "Clear cookies"
+      }
+    },
+    {
+      "name": "set_basic_auth",
+      "symbol": "hap_http_set_basic_auth",
+      "params": [
+        {
+          "name": "username",
+          "type": "string",
+          "descs": {
+            "zh-CN": "获取用户名",
+            "en-US": "Username"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "http.setBasicAuth",
+      "descriptions": {
+        "zh-CN": "设置 Basic 认证",
+        "en-US": "Set basic auth"
+      }
+    },
+    {
+      "name": "download_resume",
+      "symbol": "hap_http_download_resume",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "http.downloadResume",
+      "descriptions": {
+        "zh-CN": "断点续传下载",
+        "en-US": "Resume download"
+      }
+    },
+    {
+      "name": "cancel",
+      "symbol": "hap_http_cancel",
+      "params": [
+        {
+          "name": "request_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "请求 ID",
+            "en-US": "Request ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "http.cancel",
+      "descriptions": {
+        "zh-CN": "取消请求",
+        "en-US": "Cancel request"
+      }
+    },
+    {
+      "name": "sse_poll",
+      "symbol": "hap_http_sse_poll",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "事件",
+          "en-US": "Events"
+        }
+      },
+      "bridge_path": "http.ssePoll",
+      "descriptions": {
+        "zh-CN": "轮询 SSE 事件",
+        "en-US": "Poll SSE events"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供 HTTP/HTTPS 客户端能力，支持 GET/POST/PUT/DELETE 等方法、文件上传下载、Cookie 管理、代理设置、超时控制、请求拦截等功能。",
+    "en-US": "HTTP/HTTPS client supporting GET/POST/PUT/DELETE methods, file upload/download, cookie management, proxy settings, timeout control, and request interception."
+  }
+}

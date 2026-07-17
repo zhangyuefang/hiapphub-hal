@@ -1,0 +1,896 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000013",
+  "name": "net",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🔌",
+  "min_shell_version": "0.1.0",
+  "category": "network",
+  "descriptions": {
+    "zh-CN": "低级网络模块",
+    "en-US": "Low-level network module"
+  },
+  "permission": "network",
+  "functions": [
+    {
+      "name": "tcp_connect",
+      "symbol": "hap_net_tcp_connect",
+      "params": [
+        {
+          "name": "host",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主机",
+            "en-US": "Host"
+          }
+        },
+        {
+          "name": "port",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "端口",
+            "en-US": "Port"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "连接",
+          "en-US": "Connection"
+        }
+      },
+      "bridge_path": "net.tcpConnect",
+      "descriptions": {
+        "zh-CN": "TCP 连接",
+        "en-US": "TCP connect"
+      }
+    },
+    {
+      "name": "tcp_send",
+      "symbol": "hap_net_tcp_send",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i32",
+        "descs": {
+          "zh-CN": "已发送字节",
+          "en-US": "Bytes sent"
+        }
+      },
+      "bridge_path": "net.tcpSend",
+      "descriptions": {
+        "zh-CN": "TCP 发送",
+        "en-US": "TCP send"
+      }
+    },
+    {
+      "name": "tcp_recv",
+      "symbol": "hap_net_tcp_recv",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "数据",
+          "en-US": "Data"
+        }
+      },
+      "bridge_path": "net.tcpRecv",
+      "descriptions": {
+        "zh-CN": "TCP 接收",
+        "en-US": "TCP receive"
+      }
+    },
+    {
+      "name": "tcp_close",
+      "symbol": "hap_net_tcp_close",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "net.tcpClose",
+      "descriptions": {
+        "zh-CN": "TCP 关闭",
+        "en-US": "TCP close"
+      }
+    },
+    {
+      "name": "tcp_is_connected",
+      "symbol": "hap_net_tcp_is_connected",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "已连接的",
+          "en-US": "Connected"
+        }
+      },
+      "bridge_path": "net.tcpIsConnected",
+      "descriptions": {
+        "zh-CN": "检查 TCP",
+        "en-US": "Check TCP"
+      }
+    },
+    {
+      "name": "tcp_set_keepalive",
+      "symbol": "hap_net_tcp_set_keepalive",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        },
+        {
+          "name": "enable",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "启用",
+            "en-US": "Enable"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "net.tcpSetKeepalive",
+      "descriptions": {
+        "zh-CN": "设置 Keep-Alive",
+        "en-US": "Set keepalive"
+      }
+    },
+    {
+      "name": "tcp_set_nodelay",
+      "symbol": "hap_net_tcp_set_nodelay",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        },
+        {
+          "name": "enable",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "启用",
+            "en-US": "Enable"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "net.tcpSetNodelay",
+      "descriptions": {
+        "zh-CN": "设置无延迟",
+        "en-US": "Set nodelay"
+      }
+    },
+    {
+      "name": "tcp_listen",
+      "symbol": "hap_net_tcp_listen",
+      "params": [
+        {
+          "name": "host",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主机",
+            "en-US": "Host"
+          }
+        },
+        {
+          "name": "port",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "端口",
+            "en-US": "Port"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "服务器",
+          "en-US": "Server"
+        }
+      },
+      "bridge_path": "net.tcpListen",
+      "descriptions": {
+        "zh-CN": "TCP 监听",
+        "en-US": "TCP listen"
+      }
+    },
+    {
+      "name": "tcp_accept",
+      "symbol": "hap_net_tcp_accept",
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器 ID",
+            "en-US": "Server ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "连接",
+          "en-US": "Connection"
+        }
+      },
+      "bridge_path": "net.tcpAccept",
+      "descriptions": {
+        "zh-CN": "TCP 接受连接",
+        "en-US": "TCP accept"
+      }
+    },
+    {
+      "name": "tcp_stop",
+      "symbol": "hap_net_tcp_stop",
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "服务器 ID",
+            "en-US": "Server ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "net.tcpStop",
+      "descriptions": {
+        "zh-CN": "停止 TCP 服务器",
+        "en-US": "Stop TCP server"
+      }
+    },
+    {
+      "name": "udp_bind",
+      "symbol": "hap_net_udp_bind",
+      "params": [
+        {
+          "name": "host",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主机",
+            "en-US": "Host"
+          }
+        },
+        {
+          "name": "port",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "端口",
+            "en-US": "Port"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "套接字",
+          "en-US": "Socket"
+        }
+      },
+      "bridge_path": "net.udpBind",
+      "descriptions": {
+        "zh-CN": "UDP 绑定",
+        "en-US": "UDP bind"
+      }
+    },
+    {
+      "name": "udp_send",
+      "symbol": "hap_net_udp_send",
+      "params": [
+        {
+          "name": "socket_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "套接字 ID",
+            "en-US": "Socket ID"
+          }
+        },
+        {
+          "name": "host",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主机",
+            "en-US": "Host"
+          }
+        },
+        {
+          "name": "port",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "端口",
+            "en-US": "Port"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i32",
+        "descs": {
+          "zh-CN": "已发送字节",
+          "en-US": "Bytes sent"
+        }
+      },
+      "bridge_path": "net.udpSend",
+      "descriptions": {
+        "zh-CN": "UDP 发送",
+        "en-US": "UDP send"
+      }
+    },
+    {
+      "name": "udp_recv",
+      "symbol": "hap_net_udp_recv",
+      "params": [
+        {
+          "name": "socket_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "套接字 ID",
+            "en-US": "Socket ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "数据报",
+          "en-US": "Datagram"
+        }
+      },
+      "bridge_path": "net.udpRecv",
+      "descriptions": {
+        "zh-CN": "UDP 接收",
+        "en-US": "UDP receive"
+      }
+    },
+    {
+      "name": "udp_close",
+      "symbol": "hap_net_udp_close",
+      "params": [
+        {
+          "name": "socket_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "套接字 ID",
+            "en-US": "Socket ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "net.udpClose",
+      "descriptions": {
+        "zh-CN": "UDP 关闭",
+        "en-US": "UDP close"
+      }
+    },
+    {
+      "name": "udp_set_broadcast",
+      "symbol": "hap_net_udp_set_broadcast",
+      "params": [
+        {
+          "name": "socket_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "套接字 ID",
+            "en-US": "Socket ID"
+          }
+        },
+        {
+          "name": "enable",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "启用",
+            "en-US": "Enable"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "net.udpSetBroadcast",
+      "descriptions": {
+        "zh-CN": "设置广播",
+        "en-US": "Set broadcast"
+      }
+    },
+    {
+      "name": "dns_lookup",
+      "symbol": "hap_net_dns_lookup",
+      "params": [
+        {
+          "name": "hostname",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主机名",
+            "en-US": "Hostname"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "IP",
+          "en-US": "IPs"
+        }
+      },
+      "bridge_path": "net.dnsLookup",
+      "descriptions": {
+        "zh-CN": "DNS 查询",
+        "en-US": "DNS lookup"
+      }
+    },
+    {
+      "name": "ping",
+      "symbol": "hap_net_ping",
+      "params": [
+        {
+          "name": "host",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主机",
+            "en-US": "Host"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "net.ping",
+      "descriptions": {
+        "zh-CN": "Ping 主机",
+        "en-US": "Ping host"
+      }
+    },
+    {
+      "name": "local_ip",
+      "symbol": "hap_net_local_ip",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "IP",
+          "en-US": "IP"
+        }
+      },
+      "bridge_path": "net.localIp",
+      "descriptions": {
+        "zh-CN": "获取本地 IP",
+        "en-US": "Get local IP"
+      }
+    },
+    {
+      "name": "interfaces",
+      "symbol": "hap_net_interfaces",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "接口",
+          "en-US": "Interfaces"
+        }
+      },
+      "bridge_path": "net.interfaces",
+      "descriptions": {
+        "zh-CN": "列出接口",
+        "en-US": "List interfaces"
+      }
+    },
+    {
+      "name": "is_online",
+      "symbol": "hap_net_is_online",
+      "params": [],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "在线",
+          "en-US": "Online"
+        }
+      },
+      "bridge_path": "net.isOnline",
+      "descriptions": {
+        "zh-CN": "检查是否在线",
+        "en-US": "Check online"
+      }
+    },
+    {
+      "name": "port_available",
+      "symbol": "hap_net_port_available",
+      "params": [
+        {
+          "name": "port",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "端口",
+            "en-US": "Port"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "可用的",
+          "en-US": "Available"
+        }
+      },
+      "bridge_path": "net.portAvailable",
+      "descriptions": {
+        "zh-CN": "检查端口",
+        "en-US": "Check port"
+      }
+    },
+    {
+      "name": "public_ip",
+      "symbol": "hap_net_public_ip",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "IP",
+          "en-US": "IP"
+        }
+      },
+      "bridge_path": "net.publicIp",
+      "descriptions": {
+        "zh-CN": "获取公网 IP",
+        "en-US": "Get public IP"
+      }
+    },
+    {
+      "name": "mac_address",
+      "symbol": "hap_net_mac_address",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "MAC",
+          "en-US": "MAC"
+        }
+      },
+      "bridge_path": "net.macAddress",
+      "descriptions": {
+        "zh-CN": "获取 MAC",
+        "en-US": "Get MAC"
+      }
+    },
+    {
+      "name": "wifi_info",
+      "symbol": "hap_net_wifi_info",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "获取 WiFi 信息",
+          "en-US": "WiFi info"
+        }
+      },
+      "bridge_path": "net.wifiInfo",
+      "descriptions": {
+        "zh-CN": "获取 WiFi 信息",
+        "en-US": "Get WiFi info"
+      }
+    },
+    {
+      "name": "ssl_info",
+      "symbol": "hap_net_ssl_info",
+      "params": [
+        {
+          "name": "host",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主机",
+            "en-US": "Host"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "SSL 信息",
+          "en-US": "SSL info"
+        }
+      },
+      "bridge_path": "net.sslInfo",
+      "descriptions": {
+        "zh-CN": "获取 SSL 信息",
+        "en-US": "Get SSL info"
+      }
+    },
+    {
+      "name": "speed_test",
+      "symbol": "hap_net_speed_test",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "速度",
+          "en-US": "Speed"
+        }
+      },
+      "bridge_path": "net.speedTest",
+      "descriptions": {
+        "zh-CN": "速度测试",
+        "en-US": "Speed test"
+      }
+    },
+    {
+      "name": "traceroute",
+      "symbol": "hap_net_traceroute",
+      "params": [
+        {
+          "name": "host",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主机",
+            "en-US": "Host"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "跳数",
+          "en-US": "Hops"
+        }
+      },
+      "bridge_path": "net.traceroute",
+      "descriptions": {
+        "zh-CN": "路由追踪",
+        "en-US": "Traceroute"
+      }
+    },
+    {
+      "name": "wake_on_lan",
+      "symbol": "hap_net_wake_on_lan",
+      "params": [
+        {
+          "name": "mac_address",
+          "type": "string",
+          "descs": {
+            "zh-CN": "MAC",
+            "en-US": "MAC"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "net.wakeOnLan",
+      "descriptions": {
+        "zh-CN": "唤醒在 LAN",
+        "en-US": "Wake on LAN"
+      }
+    },
+    {
+      "name": "find_available_port",
+      "symbol": "hap_net_find_available_port",
+      "params": [
+        {
+          "name": "start_port",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "启动",
+            "en-US": "Start"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i32",
+        "descs": {
+          "zh-CN": "端口",
+          "en-US": "Port"
+        }
+      },
+      "bridge_path": "net.findAvailablePort",
+      "descriptions": {
+        "zh-CN": "查找空闲端口",
+        "en-US": "Find free port"
+      }
+    },
+    {
+      "name": "on_network_change",
+      "symbol": "hap_net_on_network_change",
+      "params": [
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调",
+            "en-US": "Callback"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "监视器",
+          "en-US": "Watcher"
+        }
+      },
+      "bridge_path": "net.onNetworkChange",
+      "descriptions": {
+        "zh-CN": "监视网络变化",
+        "en-US": "Watch network"
+      }
+    },
+    {
+      "name": "off_network_change",
+      "symbol": "hap_net_off_network_change",
+      "params": [
+        {
+          "name": "watcher_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监视器",
+            "en-US": "Watcher"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "net.offNetworkChange",
+      "descriptions": {
+        "zh-CN": "停止监视",
+        "en-US": "Stop watching"
+      }
+    },
+    {
+      "name": "list_tcp_connections",
+      "symbol": "hap_net_list_tcp_connections",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "连接",
+          "en-US": "Connections"
+        }
+      },
+      "bridge_path": "net.listTcpConnections",
+      "descriptions": {
+        "zh-CN": "列出 TCP 连接",
+        "en-US": "List TCP conns"
+      }
+    },
+    {
+      "name": "list_tcp_servers",
+      "symbol": "hap_net_list_tcp_servers",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "服务器",
+          "en-US": "Servers"
+        }
+      },
+      "bridge_path": "net.listTcpServers",
+      "descriptions": {
+        "zh-CN": "列出 TCP 服务器",
+        "en-US": "List TCP servers"
+      }
+    },
+    {
+      "name": "list_udp_sockets",
+      "symbol": "hap_net_list_udp_sockets",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "套接字",
+          "en-US": "Sockets"
+        }
+      },
+      "bridge_path": "net.listUdpSockets",
+      "descriptions": {
+        "zh-CN": "列出 UDP 套接字",
+        "en-US": "List UDP sockets"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供网络工具能力，包括 TCP/UDP 通信、DNS 查询、端口扫描、Ping 检测、网络接口信息、IP 地址处理、traceroute、带宽测试等功能。",
+    "en-US": "Network utilities including TCP/UDP communication, DNS lookup, port scanning, ping, network interface info, IP address handling, traceroute, and bandwidth testing."
+  }
+}

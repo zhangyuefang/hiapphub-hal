@@ -1,0 +1,1730 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000026",
+  "name": "excel",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "📊",
+  "min_shell_version": "0.1.0",
+  "category": "files",
+  "descriptions": {
+    "zh-CN": "Excel读写模块",
+    "en-US": "Excel read/write module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "read",
+      "symbol": "hap_excel_read",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "object",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          },
+          "optional": true
+        },
+        {
+          "name": "range",
+          "type": "string",
+          "descs": {
+            "zh-CN": "范围",
+            "en-US": "Range"
+          },
+          "optional": true
+        },
+        {
+          "name": "header_row",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "头部行",
+            "en-US": "Header Row"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "数据",
+          "en-US": "Data"
+        }
+      },
+      "bridge_path": "excel.read",
+      "descriptions": {
+        "zh-CN": "读取 Excel",
+        "en-US": "Read Excel"
+      }
+    },
+    {
+      "name": "write",
+      "symbol": "hap_excel_write",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "rows",
+          "type": "array",
+          "descs": {
+            "zh-CN": "行",
+            "en-US": "Rows"
+          }
+        },
+        {
+          "name": "headers",
+          "type": "array",
+          "descs": {
+            "zh-CN": "头部",
+            "en-US": "Headers"
+          },
+          "optional": true
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "excel.write",
+      "descriptions": {
+        "zh-CN": "写入 Excel",
+        "en-US": "Write Excel"
+      }
+    },
+    {
+      "name": "open",
+      "symbol": "hap_excel_open",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "工作簿",
+          "en-US": "Book"
+        }
+      },
+      "bridge_path": "excel.open",
+      "descriptions": {
+        "zh-CN": "打开工作簿",
+        "en-US": "Open workbook"
+      }
+    },
+    {
+      "name": "create",
+      "symbol": "hap_excel_create",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "工作簿",
+          "en-US": "Book"
+        }
+      },
+      "bridge_path": "excel.create",
+      "descriptions": {
+        "zh-CN": "创建工作簿",
+        "en-US": "Create workbook"
+      }
+    },
+    {
+      "name": "add_sheet",
+      "symbol": "hap_excel_add_sheet",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "名称",
+            "en-US": "Name"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.addSheet",
+      "descriptions": {
+        "zh-CN": "添加工作表",
+        "en-US": "Add sheet"
+      }
+    },
+    {
+      "name": "delete_sheet",
+      "symbol": "hap_excel_delete_sheet",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "名称",
+            "en-US": "Name"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.deleteSheet",
+      "descriptions": {
+        "zh-CN": "删除工作表",
+        "en-US": "Delete sheet"
+      }
+    },
+    {
+      "name": "rename_sheet",
+      "symbol": "hap_excel_rename_sheet",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "old_name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "旧名称",
+            "en-US": "Old Name"
+          }
+        },
+        {
+          "name": "new_name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "新名称",
+            "en-US": "New Name"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.renameSheet",
+      "descriptions": {
+        "zh-CN": "重命名工作表",
+        "en-US": "Rename sheet"
+      }
+    },
+    {
+      "name": "get_cell",
+      "symbol": "hap_excel_get_cell",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "cell",
+          "type": "string",
+          "descs": {
+            "zh-CN": "单元格引用",
+            "en-US": "Cell ref"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "值",
+          "en-US": "Value"
+        }
+      },
+      "bridge_path": "excel.getCell",
+      "descriptions": {
+        "zh-CN": "获取单元格",
+        "en-US": "Get cell"
+      }
+    },
+    {
+      "name": "set_cell",
+      "symbol": "hap_excel_set_cell",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "cell",
+          "type": "string",
+          "descs": {
+            "zh-CN": "单元格引用",
+            "en-US": "Cell ref"
+          }
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "值",
+            "en-US": "Value"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.setCell",
+      "descriptions": {
+        "zh-CN": "设置单元格",
+        "en-US": "Set cell"
+      }
+    },
+    {
+      "name": "get_range",
+      "symbol": "hap_excel_get_range",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "range",
+          "type": "string",
+          "descs": {
+            "zh-CN": "范围",
+            "en-US": "Range"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "值",
+          "en-US": "Values"
+        }
+      },
+      "bridge_path": "excel.getRange",
+      "descriptions": {
+        "zh-CN": "获取范围",
+        "en-US": "Get range"
+      }
+    },
+    {
+      "name": "set_range",
+      "symbol": "hap_excel_set_range",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "start_cell",
+          "type": "string",
+          "descs": {
+            "zh-CN": "启动",
+            "en-US": "Start"
+          }
+        },
+        {
+          "name": "values",
+          "type": "array",
+          "descs": {
+            "zh-CN": "值",
+            "en-US": "Values"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "excel.setRange",
+      "descriptions": {
+        "zh-CN": "设置范围",
+        "en-US": "Set range"
+      }
+    },
+    {
+      "name": "set_style",
+      "symbol": "hap_excel_set_style",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "range",
+          "type": "string",
+          "descs": {
+            "zh-CN": "范围",
+            "en-US": "Range"
+          }
+        },
+        {
+          "name": "style",
+          "type": "object",
+          "descs": {
+            "zh-CN": "样式对象",
+            "en-US": "Style object"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.setStyle",
+      "descriptions": {
+        "zh-CN": "设置样式",
+        "en-US": "Set style"
+      }
+    },
+    {
+      "name": "merge_cells",
+      "symbol": "hap_excel_merge_cells",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "range",
+          "type": "string",
+          "descs": {
+            "zh-CN": "范围",
+            "en-US": "Range"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.mergeCells",
+      "descriptions": {
+        "zh-CN": "合并单元格",
+        "en-US": "Merge cells"
+      }
+    },
+    {
+      "name": "unmerge_cells",
+      "symbol": "hap_excel_unmerge_cells",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "range",
+          "type": "string",
+          "descs": {
+            "zh-CN": "范围",
+            "en-US": "Range"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.unmergeCells",
+      "descriptions": {
+        "zh-CN": "取消合并单元格",
+        "en-US": "Unmerge cells"
+      }
+    },
+    {
+      "name": "set_column_width",
+      "symbol": "hap_excel_set_column_width",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "column",
+          "type": "string",
+          "descs": {
+            "zh-CN": "列",
+            "en-US": "Column"
+          }
+        },
+        {
+          "name": "width",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "宽度",
+            "en-US": "Width"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.setColumnWidth",
+      "descriptions": {
+        "zh-CN": "设置列宽",
+        "en-US": "Set column width"
+      }
+    },
+    {
+      "name": "set_row_height",
+      "symbol": "hap_excel_set_row_height",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "row",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "行",
+            "en-US": "Row"
+          }
+        },
+        {
+          "name": "height",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "高度",
+            "en-US": "Height"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.setRowHeight",
+      "descriptions": {
+        "zh-CN": "设置行高",
+        "en-US": "Set row height"
+      }
+    },
+    {
+      "name": "save",
+      "symbol": "hap_excel_save",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.save",
+      "descriptions": {
+        "zh-CN": "保存",
+        "en-US": "Save"
+      }
+    },
+    {
+      "name": "save_as",
+      "symbol": "hap_excel_save_as",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.saveAs",
+      "descriptions": {
+        "zh-CN": "保存作为",
+        "en-US": "Save as"
+      }
+    },
+    {
+      "name": "close",
+      "symbol": "hap_excel_close",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.close",
+      "descriptions": {
+        "zh-CN": "关闭",
+        "en-US": "Close"
+      }
+    },
+    {
+      "name": "list_sheets",
+      "symbol": "hap_excel_list_sheets",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "工作表",
+          "en-US": "Sheets"
+        }
+      },
+      "bridge_path": "excel.listSheets",
+      "descriptions": {
+        "zh-CN": "列出工作表",
+        "en-US": "List sheets"
+      }
+    },
+    {
+      "name": "to_csv",
+      "symbol": "hap_excel_to_csv",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "object",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          },
+          "optional": true
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        },
+        {
+          "name": "delimiter",
+          "type": "string",
+          "descs": {
+            "zh-CN": "分隔符",
+            "en-US": "Delimiter character"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.toCsv",
+      "descriptions": {
+        "zh-CN": "到 CSV",
+        "en-US": "To CSV"
+      }
+    },
+    {
+      "name": "to_json",
+      "symbol": "hap_excel_to_json",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "object",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          },
+          "optional": true
+        },
+        {
+          "name": "header_row",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "头部行",
+            "en-US": "Header Row"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "数据",
+          "en-US": "Data"
+        }
+      },
+      "bridge_path": "excel.toJson",
+      "descriptions": {
+        "zh-CN": "转换为 JSON",
+        "en-US": "To JSON"
+      }
+    },
+    {
+      "name": "from_csv",
+      "symbol": "hap_excel_from_csv",
+      "params": [
+        {
+          "name": "csv_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "CSV",
+            "en-US": "CSV"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        },
+        {
+          "name": "sheet_name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表名称",
+            "en-US": "Sheet Name"
+          },
+          "optional": true
+        },
+        {
+          "name": "delimiter",
+          "type": "string",
+          "descs": {
+            "zh-CN": "分隔符",
+            "en-US": "Delimiter character"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.fromCsv",
+      "descriptions": {
+        "zh-CN": "从 CSV",
+        "en-US": "From CSV"
+      }
+    },
+    {
+      "name": "auto_filter",
+      "symbol": "hap_excel_auto_filter",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "range",
+          "type": "string",
+          "descs": {
+            "zh-CN": "范围",
+            "en-US": "Range"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.autoFilter",
+      "descriptions": {
+        "zh-CN": "自动过滤器",
+        "en-US": "Auto filter"
+      }
+    },
+    {
+      "name": "freeze_panes",
+      "symbol": "hap_excel_freeze_panes",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "row",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "行",
+            "en-US": "Row"
+          }
+        },
+        {
+          "name": "col",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "列",
+            "en-US": "Col"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.freezePanes",
+      "descriptions": {
+        "zh-CN": "冻结窗格",
+        "en-US": "Freeze panes"
+      }
+    },
+    {
+      "name": "protect_sheet",
+      "symbol": "hap_excel_protect_sheet",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.protectSheet",
+      "descriptions": {
+        "zh-CN": "保护工作表",
+        "en-US": "Protect sheet"
+      }
+    },
+    {
+      "name": "unprotect_sheet",
+      "symbol": "hap_excel_unprotect_sheet",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.unprotectSheet",
+      "descriptions": {
+        "zh-CN": "取消保护",
+        "en-US": "Unprotect"
+      }
+    },
+    {
+      "name": "set_formula",
+      "symbol": "hap_excel_set_formula",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "cell",
+          "type": "string",
+          "descs": {
+            "zh-CN": "单元格",
+            "en-US": "Cell"
+          }
+        },
+        {
+          "name": "formula",
+          "type": "string",
+          "descs": {
+            "zh-CN": "公式",
+            "en-US": "Formula"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.setFormula",
+      "descriptions": {
+        "zh-CN": "设置公式",
+        "en-US": "Set formula"
+      }
+    },
+    {
+      "name": "add_image",
+      "symbol": "hap_excel_add_image",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "image_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图像路径",
+            "en-US": "Image Path"
+          }
+        },
+        {
+          "name": "cell",
+          "type": "string",
+          "descs": {
+            "zh-CN": "单元格",
+            "en-US": "Cell"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.addImage",
+      "descriptions": {
+        "zh-CN": "插入图片",
+        "en-US": "Add image"
+      }
+    },
+    {
+      "name": "copy_sheet",
+      "symbol": "hap_excel_copy_sheet",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "source_sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "源工作表",
+            "en-US": "Source Sheet"
+          }
+        },
+        {
+          "name": "new_name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "新名称",
+            "en-US": "New Name"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.copySheet",
+      "descriptions": {
+        "zh-CN": "复制工作表",
+        "en-US": "Copy sheet"
+      }
+    },
+    {
+      "name": "auto_fit_columns",
+      "symbol": "hap_excel_auto_fit_columns",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.autoFitColumns",
+      "descriptions": {
+        "zh-CN": "自适应宽度",
+        "en-US": "Auto fit"
+      }
+    },
+    {
+      "name": "insert_row",
+      "symbol": "hap_excel_insert_row",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "row",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "行",
+            "en-US": "Row"
+          }
+        },
+        {
+          "name": "count",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "数量",
+            "en-US": "Count"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.insertRow",
+      "descriptions": {
+        "zh-CN": "插入行",
+        "en-US": "Insert row"
+      }
+    },
+    {
+      "name": "insert_column",
+      "symbol": "hap_excel_insert_column",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "column",
+          "type": "string",
+          "descs": {
+            "zh-CN": "列",
+            "en-US": "Column"
+          }
+        },
+        {
+          "name": "count",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "数量",
+            "en-US": "Count"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.insertColumn",
+      "descriptions": {
+        "zh-CN": "插入列",
+        "en-US": "Insert column"
+      }
+    },
+    {
+      "name": "delete_row",
+      "symbol": "hap_excel_delete_row",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "row",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "行",
+            "en-US": "Row"
+          }
+        },
+        {
+          "name": "count",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "数量",
+            "en-US": "Count"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.deleteRow",
+      "descriptions": {
+        "zh-CN": "删除行",
+        "en-US": "Delete row"
+      }
+    },
+    {
+      "name": "delete_column",
+      "symbol": "hap_excel_delete_column",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "column",
+          "type": "string",
+          "descs": {
+            "zh-CN": "列",
+            "en-US": "Column"
+          }
+        },
+        {
+          "name": "count",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "数量",
+            "en-US": "Count"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.deleteColumn",
+      "descriptions": {
+        "zh-CN": "删除列",
+        "en-US": "Delete column"
+      }
+    },
+    {
+      "name": "add_chart",
+      "symbol": "hap_excel_add_chart",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "data_range",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据范围",
+            "en-US": "Data Range"
+          }
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "对话框标题",
+            "en-US": "Dialog title"
+          },
+          "optional": true
+        },
+        {
+          "name": "position",
+          "type": "string",
+          "descs": {
+            "zh-CN": "位置",
+            "en-US": "Position"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.addChart",
+      "descriptions": {
+        "zh-CN": "添加图表",
+        "en-US": "Add chart"
+      }
+    },
+    {
+      "name": "set_conditional_format",
+      "symbol": "hap_excel_set_conditional_format",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "range",
+          "type": "string",
+          "descs": {
+            "zh-CN": "范围",
+            "en-US": "Range"
+          }
+        },
+        {
+          "name": "rule",
+          "type": "object",
+          "descs": {
+            "zh-CN": "条件规则",
+            "en-US": "Condition rule"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.setConditionalFormat",
+      "descriptions": {
+        "zh-CN": "条件格式",
+        "en-US": "Conditional format"
+      }
+    },
+    {
+      "name": "add_data_validation",
+      "symbol": "hap_excel_add_data_validation",
+      "params": [
+        {
+          "name": "book_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作簿 ID",
+            "en-US": "工作簿 ID"
+          }
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作表",
+            "en-US": "Sheet"
+          }
+        },
+        {
+          "name": "range",
+          "type": "string",
+          "descs": {
+            "zh-CN": "范围",
+            "en-US": "Range"
+          }
+        },
+        {
+          "name": "values",
+          "type": "array",
+          "descs": {
+            "zh-CN": "有效值",
+            "en-US": "Valid values"
+          },
+          "optional": true
+        },
+        {
+          "name": "min",
+          "type": "object",
+          "descs": {
+            "zh-CN": "最小值",
+            "en-US": "Minimum value"
+          },
+          "optional": true
+        },
+        {
+          "name": "max",
+          "type": "object",
+          "descs": {
+            "zh-CN": "最大值",
+            "en-US": "Maximum value"
+          },
+          "optional": true
+        },
+        {
+          "name": "error_message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "错误消息",
+            "en-US": "Error Message"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "excel.addDataValidation",
+      "descriptions": {
+        "zh-CN": "数据验证",
+        "en-US": "Data validation"
+      }
+    },
+    {
+      "name": "list_open",
+      "symbol": "hap_excel_list_open",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "工作簿",
+          "en-US": "Books"
+        }
+      },
+      "bridge_path": "excel.listOpen",
+      "descriptions": {
+        "zh-CN": "列出已打开的",
+        "en-US": "List open"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供 Excel（XLSX/XLS）文件的创建、读写、编辑能力。支持工作表管理、单元格操作、样式设置、公式、图表、数据验证、合并单元格、冻结窗格等功能。",
+    "en-US": "Create, read, write, and edit Excel (XLSX/XLS) files. Supports worksheet management, cell operations, styling, formulas, charts, data validation, cell merging, and freeze panes."
+  }
+}

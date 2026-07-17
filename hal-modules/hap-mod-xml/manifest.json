@@ -1,0 +1,228 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000023",
+  "name": "xml",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "📰",
+  "min_shell_version": "0.1.0",
+  "category": "files",
+  "descriptions": {
+    "zh-CN": "XML处理模块",
+    "en-US": "XML processing module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "parse",
+      "symbol": "hap_xml_parse",
+      "params": [
+        {
+          "name": "xml_string",
+          "type": "string",
+          "descs": {
+            "zh-CN": "XML 字符串",
+            "en-US": "XML string"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "JSON 树",
+          "en-US": "JSON 树"
+        }
+      },
+      "bridge_path": "xml.parse",
+      "descriptions": {
+        "zh-CN": "解析 XML",
+        "en-US": "Parse XML"
+      }
+    },
+    {
+      "name": "stringify",
+      "symbol": "hap_xml_stringify",
+      "params": [
+        {
+          "name": "object",
+          "type": "object",
+          "descs": {
+            "zh-CN": "JSON 对象",
+            "en-US": "JSON object"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "XML 字符串",
+          "en-US": "XML string"
+        }
+      },
+      "bridge_path": "xml.stringify",
+      "descriptions": {
+        "zh-CN": "序列化为字符串到 XML",
+        "en-US": "Stringify to XML"
+      }
+    },
+    {
+      "name": "query_xpath",
+      "symbol": "hap_xml_query_xpath",
+      "params": [
+        {
+          "name": "xml_string",
+          "type": "string",
+          "descs": {
+            "zh-CN": "XML 字符串",
+            "en-US": "XML string"
+          }
+        },
+        {
+          "name": "xpath",
+          "type": "string",
+          "descs": {
+            "zh-CN": "XPath",
+            "en-US": "XPath"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "匹配项",
+          "en-US": "Matches"
+        }
+      },
+      "bridge_path": "xml.queryXpath",
+      "descriptions": {
+        "zh-CN": "XPath 查询",
+        "en-US": "XPath query"
+      }
+    },
+    {
+      "name": "validate",
+      "symbol": "hap_xml_validate",
+      "params": [
+        {
+          "name": "xml_string",
+          "type": "string",
+          "descs": {
+            "zh-CN": "XML 字符串",
+            "en-US": "XML string"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "xml.validate",
+      "descriptions": {
+        "zh-CN": "验证 XML",
+        "en-US": "Validate XML"
+      }
+    },
+    {
+      "name": "read_file",
+      "symbol": "hap_xml_read_file",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "JSON 树",
+          "en-US": "JSON 树"
+        }
+      },
+      "bridge_path": "xml.readFile",
+      "descriptions": {
+        "zh-CN": "读取 XML 文件",
+        "en-US": "Read XML file"
+      }
+    },
+    {
+      "name": "write_file",
+      "symbol": "hap_xml_write_file",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        },
+        {
+          "name": "object",
+          "type": "object",
+          "descs": {
+            "zh-CN": "JSON 对象",
+            "en-US": "JSON object"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "xml.writeFile",
+      "descriptions": {
+        "zh-CN": "写入 XML 文件",
+        "en-US": "Write XML file"
+      }
+    },
+    {
+      "name": "transform_xslt",
+      "symbol": "hap_xml_transform_xslt",
+      "params": [
+        {
+          "name": "xml_string",
+          "type": "string",
+          "descs": {
+            "zh-CN": "XML 字符串",
+            "en-US": "XML string"
+          }
+        },
+        {
+          "name": "xslt_string",
+          "type": "string",
+          "descs": {
+            "zh-CN": "XSLT 样式表",
+            "en-US": "XSLT 样式表"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "xml.transformXslt",
+      "descriptions": {
+        "zh-CN": "XSLT 转换",
+        "en-US": "XSLT transform"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供 XML 文件的解析、生成、查询（XPath）和转换（XSLT）能力。支持 DOM 和 SAX 解析模式、命名空间处理、DTD/Schema 验证等功能。",
+    "en-US": "XML parsing, generation, XPath queries, and XSLT transformation. Supports DOM and SAX parsing, namespace handling, and DTD/Schema validation."
+  }
+}

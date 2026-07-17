@@ -1,0 +1,702 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000010",
+  "name": "shell-ext",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🔧",
+  "min_shell_version": "0.1.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "Shell扩展模块",
+    "en-US": "Shell extension module"
+  },
+  "permission": "shell-ext",
+  "functions": [
+    {
+      "name": "open_url",
+      "symbol": "hap_shell_ext_open_url",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "URL"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "shellExt.openUrl",
+      "descriptions": {
+        "zh-CN": "打开 URL 在浏览器",
+        "en-US": "Open URL in browser"
+      }
+    },
+    {
+      "name": "open_path",
+      "symbol": "hap_shell_ext_open_path",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "shellExt.openPath",
+      "descriptions": {
+        "zh-CN": "打开文件/文件夹",
+        "en-US": "Open file/folder"
+      }
+    },
+    {
+      "name": "open_with",
+      "symbol": "hap_shell_ext_open_with",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        },
+        {
+          "name": "app",
+          "type": "string",
+          "descs": {
+            "zh-CN": "应用路径",
+            "en-US": "App path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "shellExt.openWith",
+      "descriptions": {
+        "zh-CN": "使用指定应用打开",
+        "en-US": "Open with app"
+      }
+    },
+    {
+      "name": "show_in_explorer",
+      "symbol": "hap_shell_ext_show_in_explorer",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "shellExt.showInExplorer",
+      "descriptions": {
+        "zh-CN": "在 Finder 中显示",
+        "en-US": "Show in Finder"
+      }
+    },
+    {
+      "name": "trash",
+      "symbol": "hap_shell_ext_trash",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "shellExt.trash",
+      "descriptions": {
+        "zh-CN": "移到废纸篓",
+        "en-US": "Move to trash"
+      }
+    },
+    {
+      "name": "run_detached",
+      "symbol": "hap_shell_ext_run_detached",
+      "params": [
+        {
+          "name": "command",
+          "type": "string",
+          "descs": {
+            "zh-CN": "命令",
+            "en-US": "Command"
+          }
+        },
+        {
+          "name": "args",
+          "type": "array",
+          "descs": {
+            "zh-CN": "参数",
+            "en-US": "Arguments"
+          },
+          "optional": true
+        },
+        {
+          "name": "cwd",
+          "type": "string",
+          "descs": {
+            "zh-CN": "工作目录",
+            "en-US": "Cwd"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "进程信息",
+          "en-US": "Process info"
+        }
+      },
+      "bridge_path": "shellExt.runDetached",
+      "descriptions": {
+        "zh-CN": "后台运行进程",
+        "en-US": "Run detached process"
+      }
+    },
+    {
+      "name": "get_special_dir",
+      "symbol": "hap_shell_ext_get_special_dir",
+      "params": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目录名称: home/desktop/文档/downloads/temp/config/data/cache",
+            "en-US": "Dir name: home/desktop/documents/downloads/temp/config/data/cache"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "路径",
+          "en-US": "Path"
+        }
+      },
+      "bridge_path": "shellExt.getSpecialDir",
+      "descriptions": {
+        "zh-CN": "获取特殊目录",
+        "en-US": "Get special directory"
+      }
+    },
+    {
+      "name": "get_env",
+      "symbol": "hap_shell_ext_get_env",
+      "params": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "变量名",
+            "en-US": "Variable name"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "值",
+          "en-US": "Value"
+        }
+      },
+      "bridge_path": "shellExt.getEnv",
+      "descriptions": {
+        "zh-CN": "获取环境变量",
+        "en-US": "Get env variable"
+      }
+    },
+    {
+      "name": "set_env",
+      "symbol": "hap_shell_ext_set_env",
+      "params": [
+        {
+          "name": "name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "变量名",
+            "en-US": "Variable name"
+          }
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "值",
+            "en-US": "Value"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "shellExt.setEnv",
+      "descriptions": {
+        "zh-CN": "设置环境变量变量",
+        "en-US": "Set env variable"
+      }
+    },
+    {
+      "name": "get_file_icon",
+      "symbol": "hap_shell_ext_get_file_icon",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        },
+        {
+          "name": "size",
+          "type": "string",
+          "descs": {
+            "zh-CN": "小/中/大",
+            "en-US": "小/中/大"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "数据 URI PNG",
+          "en-US": "Data URI PNG"
+        }
+      },
+      "bridge_path": "shellExt.getFileIcon",
+      "descriptions": {
+        "zh-CN": "获取文件图标",
+        "en-US": "Get file icon"
+      }
+    },
+    {
+      "name": "get_mime_type",
+      "symbol": "hap_shell_ext_get_mime_type",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "MIME 类型",
+          "en-US": "MIME type"
+        }
+      },
+      "bridge_path": "shellExt.getMimeType",
+      "descriptions": {
+        "zh-CN": "获取 MIME 类型",
+        "en-US": "Get MIME type"
+      }
+    },
+    {
+      "name": "get_default_app",
+      "symbol": "hap_shell_ext_get_default_app",
+      "params": [
+        {
+          "name": "extension",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件扩展名",
+            "en-US": "File extension"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "应用信息",
+          "en-US": "App info"
+        }
+      },
+      "bridge_path": "shellExt.getDefaultApp",
+      "descriptions": {
+        "zh-CN": "获取默认应用",
+        "en-US": "Get default app"
+      }
+    },
+    {
+      "name": "create_shortcut",
+      "symbol": "hap_shell_ext_create_shortcut",
+      "params": [
+        {
+          "name": "target_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目标路径",
+            "en-US": "Target path"
+          }
+        },
+        {
+          "name": "shortcut_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "快捷方式路径",
+            "en-US": "Shortcut path"
+          }
+        },
+        {
+          "name": "icon_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图标路径",
+            "en-US": "Icon Path"
+          },
+          "optional": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "descs": {
+            "zh-CN": "描述",
+            "en-US": "Description"
+          },
+          "optional": true
+        },
+        {
+          "name": "args",
+          "type": "string",
+          "descs": {
+            "zh-CN": "启动参数",
+            "en-US": "Launch arguments"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "shellExt.createShortcut",
+      "descriptions": {
+        "zh-CN": "创建快捷方式",
+        "en-US": "Create shortcut"
+      }
+    },
+    {
+      "name": "remove_shortcut",
+      "symbol": "hap_shell_ext_remove_shortcut",
+      "params": [
+        {
+          "name": "shortcut_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "快捷方式路径",
+            "en-US": "Shortcut path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "shellExt.removeShortcut",
+      "descriptions": {
+        "zh-CN": "删除快捷方式",
+        "en-US": "Remove shortcut"
+      }
+    },
+    {
+      "name": "shortcut_exists",
+      "symbol": "hap_shell_ext_shortcut_exists",
+      "params": [
+        {
+          "name": "shortcut_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "快捷方式路径",
+            "en-US": "Shortcut path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否存在",
+          "en-US": "Exists"
+        }
+      },
+      "bridge_path": "shellExt.shortcutExists",
+      "descriptions": {
+        "zh-CN": "检查快捷方式",
+        "en-US": "Check shortcut"
+      }
+    },
+    {
+      "name": "is_autostart",
+      "symbol": "hap_shell_ext_is_autostart",
+      "params": [
+        {
+          "name": "app_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "应用 ID",
+            "en-US": "Application ID"
+          }
+        },
+        {
+          "name": "enabled",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "启用/禁用",
+            "en-US": "Enable/disable"
+          },
+          "optional": true
+        },
+        {
+          "name": "args",
+          "type": "array",
+          "descs": {
+            "zh-CN": "启动参数",
+            "en-US": "Launch arguments"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否自启动",
+          "en-US": "Is autostart"
+        }
+      },
+      "bridge_path": "shellExt.isAutostart",
+      "descriptions": {
+        "zh-CN": "检查自启动",
+        "en-US": "Check autostart"
+      }
+    },
+    {
+      "name": "set_autostart",
+      "symbol": "hap_shell_ext_set_autostart",
+      "params": [
+        {
+          "name": "app_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "应用 ID",
+            "en-US": "Application ID"
+          }
+        },
+        {
+          "name": "enabled",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "启用",
+            "en-US": "Enable"
+          },
+          "optional": true,
+          "default_value": "true"
+        },
+        {
+          "name": "args",
+          "type": "array",
+          "descs": {
+            "zh-CN": "启动参数",
+            "en-US": "Launch arguments"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "shellExt.setAutostart",
+      "descriptions": {
+        "zh-CN": "设置自启动",
+        "en-US": "Set autostart"
+      }
+    },
+    {
+      "name": "list_printers",
+      "symbol": "hap_shell_ext_list_printers",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "打印机列表",
+          "en-US": "Printer list"
+        }
+      },
+      "bridge_path": "shellExt.listPrinters",
+      "descriptions": {
+        "zh-CN": "列出打印机",
+        "en-US": "List printers"
+      }
+    },
+    {
+      "name": "get_default_printer",
+      "symbol": "hap_shell_ext_get_default_printer",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "打印机名称",
+          "en-US": "Printer name"
+        }
+      },
+      "bridge_path": "shellExt.getDefaultPrinter",
+      "descriptions": {
+        "zh-CN": "获取默认打印机",
+        "en-US": "Get default printer"
+      }
+    },
+    {
+      "name": "print_file",
+      "symbol": "hap_shell_ext_print_file",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        },
+        {
+          "name": "printer",
+          "type": "string",
+          "descs": {
+            "zh-CN": "打印机名称",
+            "en-US": "Printer name"
+          },
+          "optional": true
+        },
+        {
+          "name": "copies",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "打印份数",
+            "en-US": "Number of copies"
+          },
+          "optional": true
+        },
+        {
+          "name": "range",
+          "type": "string",
+          "descs": {
+            "zh-CN": "范围",
+            "en-US": "Range"
+          },
+          "optional": true
+        },
+        {
+          "name": "duplex",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "双面打印",
+            "en-US": "Duplex printing"
+          },
+          "optional": true
+        },
+        {
+          "name": "orientation",
+          "type": "string",
+          "descs": {
+            "zh-CN": "方向",
+            "en-US": "Orientation"
+          },
+          "optional": true
+        },
+        {
+          "name": "paper_size",
+          "type": "string",
+          "descs": {
+            "zh-CN": "纸张大小",
+            "en-US": "Paper Size"
+          },
+          "optional": true
+        },
+        {
+          "name": "silent",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "静默",
+            "en-US": "Silent"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "shellExt.printFile",
+      "descriptions": {
+        "zh-CN": "打印文件",
+        "en-US": "Print file"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供操作系统 Shell 扩展能力，包括在 Finder/Explorer 中显示文件、打开外部 URL、获取文件图标、读取系统环境变量、执行系统级操作等功能。",
+    "en-US": "OS shell extensions including reveal in Finder/Explorer, open external URLs, get file icons, read system environment variables, and perform system-level operations."
+  }
+}

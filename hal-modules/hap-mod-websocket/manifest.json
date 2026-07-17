@@ -1,0 +1,334 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000011",
+  "name": "websocket",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🔌",
+  "min_shell_version": "0.1.0",
+  "category": "network",
+  "descriptions": {
+    "zh-CN": "WebSocket客户端模块",
+    "en-US": "WebSocket client module"
+  },
+  "permission": "network",
+  "functions": [
+    {
+      "name": "connect",
+      "symbol": "hap_ws_connect",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "WebSocket URL",
+            "en-US": "WebSocket URL"
+          }
+        },
+        {
+          "name": "headers",
+          "type": "object",
+          "descs": {
+            "zh-CN": "自定义头部",
+            "en-US": "Custom headers"
+          },
+          "optional": true
+        },
+        {
+          "name": "protocols",
+          "type": "array",
+          "descs": {
+            "zh-CN": "协议s",
+            "en-US": "Protocols"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "事件回调",
+            "en-US": "Event callback"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "连接信息",
+          "en-US": "Connection info"
+        }
+      },
+      "bridge_path": "websocket.connect",
+      "descriptions": {
+        "zh-CN": "连接到 WebSocket 服务器",
+        "en-US": "Connect to WebSocket server"
+      }
+    },
+    {
+      "name": "send",
+      "symbol": "hap_ws_send",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文本数据",
+            "en-US": "Text data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "websocket.send",
+      "descriptions": {
+        "zh-CN": "发送文本消息",
+        "en-US": "Send text message"
+      }
+    },
+    {
+      "name": "send_binary",
+      "symbol": "hap_ws_send_binary",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base64 数据",
+            "en-US": "Base64 data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "websocket.sendBinary",
+      "descriptions": {
+        "zh-CN": "发送二进制数据消息",
+        "en-US": "Send binary message"
+      }
+    },
+    {
+      "name": "close",
+      "symbol": "hap_ws_close",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        },
+        {
+          "name": "code",
+          "type": "u32",
+          "descs": {
+            "zh-CN": "关闭码",
+            "en-US": "Close code"
+          },
+          "optional": true,
+          "default_value": "1000"
+        },
+        {
+          "name": "reason",
+          "type": "string",
+          "descs": {
+            "zh-CN": "关闭原因",
+            "en-US": "Close reason"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "websocket.close",
+      "descriptions": {
+        "zh-CN": "关闭连接",
+        "en-US": "Close connection"
+      }
+    },
+    {
+      "name": "state",
+      "symbol": "hap_ws_state",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "状态",
+          "en-US": "State"
+        }
+      },
+      "bridge_path": "websocket.state",
+      "descriptions": {
+        "zh-CN": "获取连接状态",
+        "en-US": "Get connection state"
+      }
+    },
+    {
+      "name": "set_auto_reconnect",
+      "symbol": "hap_ws_set_auto_reconnect",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        },
+        {
+          "name": "enabled",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "启用",
+            "en-US": "Enable"
+          }
+        },
+        {
+          "name": "interval_ms",
+          "type": "u32",
+          "descs": {
+            "zh-CN": "间隔(毫秒)",
+            "en-US": "Interval ms"
+          },
+          "optional": true
+        },
+        {
+          "name": "max_retries",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "最大重试",
+            "en-US": "最大重试"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "websocket.setAutoReconnect",
+      "descriptions": {
+        "zh-CN": "设置自动重连",
+        "en-US": "Set auto-reconnect"
+      }
+    },
+    {
+      "name": "ping",
+      "symbol": "hap_ws_ping",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "websocket.ping",
+      "descriptions": {
+        "zh-CN": "发送 Ping",
+        "en-US": "Send ping"
+      }
+    },
+    {
+      "name": "buffered_amount",
+      "symbol": "hap_ws_buffered_amount",
+      "params": [
+        {
+          "name": "conn_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "连接 ID",
+            "en-US": "Connection ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "i32",
+        "descs": {
+          "zh-CN": "已缓冲字节",
+          "en-US": "Bytes buffered"
+        }
+      },
+      "bridge_path": "websocket.bufferedAmount",
+      "descriptions": {
+        "zh-CN": "获取缓冲区大小",
+        "en-US": "Get buffered amount"
+      }
+    },
+    {
+      "name": "list_connections",
+      "symbol": "hap_ws_list_connections",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "连接列表",
+          "en-US": "Connection list"
+        }
+      },
+      "bridge_path": "websocket.listConnections",
+      "descriptions": {
+        "zh-CN": "列出连接",
+        "en-US": "List connections"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供 WebSocket 客户端能力，支持连接/断开、消息收发、二进制数据传输、自动重连、心跳检测、子协议协商等功能。",
+    "en-US": "WebSocket client supporting connect/disconnect, message send/receive, binary data transfer, auto-reconnect, heartbeat, and subprotocol negotiation."
+  }
+}

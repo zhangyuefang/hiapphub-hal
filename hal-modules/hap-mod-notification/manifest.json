@@ -1,0 +1,308 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000008",
+  "name": "notification",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🔔",
+  "min_shell_version": "0.1.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "系统通知模块",
+    "en-US": "System notification module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "send",
+      "symbol": "hap_notification_send",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          }
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主体",
+            "en-US": "Body"
+          }
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图标路径",
+            "en-US": "Icon path"
+          },
+          "optional": true
+        },
+        {
+          "name": "actions",
+          "type": "string",
+          "descs": {
+            "zh-CN": "动作",
+            "en-US": "Actions"
+          },
+          "optional": true
+        },
+        {
+          "name": "sound",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "播放声音",
+            "en-US": "Play sound"
+          },
+          "optional": true
+        },
+        {
+          "name": "silent",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "静默",
+            "en-US": "Silent"
+          },
+          "optional": true
+        },
+        {
+          "name": "timeout_ms",
+          "type": "u32",
+          "descs": {
+            "zh-CN": "超时(毫秒)",
+            "en-US": "Timeout in ms"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "通知 ID",
+          "en-US": "Notification ID"
+        }
+      },
+      "bridge_path": "notification.send",
+      "descriptions": {
+        "zh-CN": "发送通知",
+        "en-US": "Send notification"
+      }
+    },
+    {
+      "name": "close",
+      "symbol": "hap_notification_close",
+      "params": [
+        {
+          "name": "notification_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "通知 ID",
+            "en-US": "Notification ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "notification.close",
+      "descriptions": {
+        "zh-CN": "关闭通知",
+        "en-US": "Close notification"
+      }
+    },
+    {
+      "name": "close_all",
+      "symbol": "hap_notification_close_all",
+      "params": [],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "notification.closeAll",
+      "descriptions": {
+        "zh-CN": "关闭所有通知",
+        "en-US": "Close all notifications"
+      }
+    },
+    {
+      "name": "request_permission",
+      "symbol": "hap_notification_request_permission",
+      "params": [],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "已授权",
+          "en-US": "Granted"
+        }
+      },
+      "bridge_path": "notification.requestPermission",
+      "descriptions": {
+        "zh-CN": "请求权限",
+        "en-US": "Request permission"
+      }
+    },
+    {
+      "name": "is_permitted",
+      "symbol": "hap_notification_is_permitted",
+      "params": [],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "已允许",
+          "en-US": "Permitted"
+        }
+      },
+      "bridge_path": "notification.isPermitted",
+      "descriptions": {
+        "zh-CN": "检查权限",
+        "en-US": "Check permission"
+      }
+    },
+    {
+      "name": "set_badge",
+      "symbol": "hap_notification_set_badge",
+      "params": [
+        {
+          "name": "count",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "角标数量",
+            "en-US": "Badge count"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "notification.setBadge",
+      "descriptions": {
+        "zh-CN": "设置角标数",
+        "en-US": "Set badge count"
+      }
+    },
+    {
+      "name": "schedule",
+      "symbol": "hap_notification_schedule",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          }
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "descs": {
+            "zh-CN": "主体",
+            "en-US": "Body"
+          }
+        },
+        {
+          "name": "delay_ms",
+          "type": "u32",
+          "descs": {
+            "zh-CN": "延迟(毫秒)",
+            "en-US": "Delay ms"
+          }
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图标",
+            "en-US": "Icon"
+          },
+          "optional": true
+        },
+        {
+          "name": "repeat",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "重复",
+            "en-US": "Repeat"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "定时发送 ID",
+          "en-US": "Schedule ID"
+        }
+      },
+      "bridge_path": "notification.schedule",
+      "descriptions": {
+        "zh-CN": "定时通知",
+        "en-US": "Schedule notification"
+      }
+    },
+    {
+      "name": "cancel_schedule",
+      "symbol": "hap_notification_cancel_schedule",
+      "params": [
+        {
+          "name": "schedule_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "定时发送 ID",
+            "en-US": "Schedule ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "notification.cancelSchedule",
+      "descriptions": {
+        "zh-CN": "取消已计划的",
+        "en-US": "Cancel scheduled"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供系统通知能力，支持发送通知、设置图标/声音/动作按钮、管理通知权限、清除通知等。适配各操作系统的通知中心。",
+    "en-US": "System notifications with custom icons, sounds, action buttons, permission management, and notification clearing. Adapted for each OS notification center."
+  }
+}

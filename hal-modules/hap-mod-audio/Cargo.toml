@@ -1,0 +1,16 @@
+[package]
+name = "hap-mod-audio"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+hap-common = { path = "../common" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+libc = { workspace = true }
+rodio = "0.20"
+lofty = "0.22"
+hound = "3.5"

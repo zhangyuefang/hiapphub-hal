@@ -1,0 +1,16 @@
+[package]
+name = "hap-mod-http"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+hap-common = { path = "../common" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+libc = { workspace = true }
+ureq = { version = "2", features = ["tls", "cookies", "json"] }
+url = "2"
+base64 = "0.22"

@@ -1,0 +1,352 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000024",
+  "name": "log",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "📝",
+  "min_shell_version": "0.1.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "日志模块",
+    "en-US": "Logging module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "debug",
+      "symbol": "hap_log_debug",
+      "params": [
+        {
+          "name": "tag",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标签",
+            "en-US": "Tag"
+          }
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息",
+            "en-US": "Message"
+          }
+        }
+      ],
+      "returns": {
+        "type": "null",
+        "desc": ""
+      },
+      "bridge_path": "log.debug",
+      "descriptions": {
+        "zh-CN": "Debug 日志",
+        "en-US": "Debug log"
+      }
+    },
+    {
+      "name": "info",
+      "symbol": "hap_log_info",
+      "params": [
+        {
+          "name": "tag",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标签",
+            "en-US": "Tag"
+          }
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息",
+            "en-US": "Message"
+          }
+        }
+      ],
+      "returns": {
+        "type": "null",
+        "desc": ""
+      },
+      "bridge_path": "log.info",
+      "descriptions": {
+        "zh-CN": "信息日志",
+        "en-US": "Info log"
+      }
+    },
+    {
+      "name": "warn",
+      "symbol": "hap_log_warn",
+      "params": [
+        {
+          "name": "tag",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标签",
+            "en-US": "Tag"
+          }
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息",
+            "en-US": "Message"
+          }
+        }
+      ],
+      "returns": {
+        "type": "null",
+        "desc": ""
+      },
+      "bridge_path": "log.warn",
+      "descriptions": {
+        "zh-CN": "警告日志",
+        "en-US": "Warn log"
+      }
+    },
+    {
+      "name": "error",
+      "symbol": "hap_log_error",
+      "params": [
+        {
+          "name": "tag",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标签",
+            "en-US": "Tag"
+          }
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息",
+            "en-US": "Message"
+          }
+        }
+      ],
+      "returns": {
+        "type": "null",
+        "desc": ""
+      },
+      "bridge_path": "log.error",
+      "descriptions": {
+        "zh-CN": "错误日志",
+        "en-US": "Error log"
+      }
+    },
+    {
+      "name": "trace",
+      "symbol": "hap_log_trace",
+      "params": [
+        {
+          "name": "tag",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标签",
+            "en-US": "Tag"
+          }
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息",
+            "en-US": "Message"
+          }
+        }
+      ],
+      "returns": {
+        "type": "null",
+        "desc": ""
+      },
+      "bridge_path": "log.trace",
+      "descriptions": {
+        "zh-CN": "Trace 日志",
+        "en-US": "Trace log"
+      }
+    },
+    {
+      "name": "set_level",
+      "symbol": "hap_log_set_level",
+      "params": [
+        {
+          "name": "level",
+          "type": "string",
+          "descs": {
+            "zh-CN": "级别",
+            "en-US": "Level"
+          }
+        }
+      ],
+      "returns": {
+        "type": "null",
+        "desc": ""
+      },
+      "bridge_path": "log.setLevel",
+      "descriptions": {
+        "zh-CN": "设置级别",
+        "en-US": "Set level"
+      }
+    },
+    {
+      "name": "set_file",
+      "symbol": "hap_log_set_file",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "log.setFile",
+      "descriptions": {
+        "zh-CN": "设置日志文件",
+        "en-US": "Set log file"
+      }
+    },
+    {
+      "name": "flush",
+      "symbol": "hap_log_flush",
+      "params": [],
+      "returns": {
+        "type": "null",
+        "desc": ""
+      },
+      "bridge_path": "log.flush",
+      "descriptions": {
+        "zh-CN": "刷新",
+        "en-US": "Flush"
+      }
+    },
+    {
+      "name": "read_lines",
+      "symbol": "hap_log_read_lines",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "行",
+          "en-US": "Lines"
+        }
+      },
+      "bridge_path": "log.readLines",
+      "descriptions": {
+        "zh-CN": "读取行",
+        "en-US": "Read lines"
+      }
+    },
+    {
+      "name": "clear",
+      "symbol": "hap_log_clear",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "log.clear",
+      "descriptions": {
+        "zh-CN": "清除日志",
+        "en-US": "Clear log"
+      }
+    },
+    {
+      "name": "search",
+      "symbol": "hap_log_search",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        },
+        {
+          "name": "pattern",
+          "type": "string",
+          "descs": {
+            "zh-CN": "正则模式",
+            "en-US": "Regex pattern"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Results"
+        }
+      },
+      "bridge_path": "log.search",
+      "descriptions": {
+        "zh-CN": "搜索日志",
+        "en-US": "Search log"
+      }
+    },
+    {
+      "name": "rotate",
+      "symbol": "hap_log_rotate",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文件路径",
+            "en-US": "File path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "log.rotate",
+      "descriptions": {
+        "zh-CN": "轮转日志",
+        "en-US": "Rotate log"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供结构化日志记录能力，支持多级别日志（trace/debug/info/warn/error）、文件输出、日志轮转、格式自定义、运行时级别动态调整等功能。",
+    "en-US": "Structured logging with multi-level support (trace/debug/info/warn/error), file output, log rotation, custom formatting, and runtime level adjustment."
+  }
+}

@@ -1,0 +1,781 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000015",
+  "name": "dialog",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "💬",
+  "min_shell_version": "0.1.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "原生对话框模块",
+    "en-US": "Native dialog module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "open_file",
+      "symbol": "hap_dialog_open_file",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "对话框标题",
+            "en-US": "Dialog title"
+          },
+          "optional": true
+        },
+        {
+          "name": "filters",
+          "type": "array",
+          "descs": {
+            "zh-CN": "文件过滤器",
+            "en-US": "File filters"
+          },
+          "optional": true
+        },
+        {
+          "name": "multiple",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "允许多个",
+            "en-US": "Allow multiple"
+          },
+          "optional": true,
+          "default_value": "false"
+        },
+        {
+          "name": "default_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "默认路径",
+            "en-US": "Default path"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "已选择文件路径",
+          "en-US": "Selected file paths"
+        }
+      },
+      "bridge_path": "dialog.openFile",
+      "descriptions": {
+        "zh-CN": "打开文件选择对话框",
+        "en-US": "打开文件选择对话框"
+      }
+    },
+    {
+      "name": "save_file",
+      "symbol": "hap_dialog_save_file",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "对话框标题",
+            "en-US": "Dialog title"
+          },
+          "optional": true
+        },
+        {
+          "name": "filters",
+          "type": "array",
+          "descs": {
+            "zh-CN": "文件过滤器",
+            "en-US": "File filters"
+          },
+          "optional": true
+        },
+        {
+          "name": "default_name",
+          "type": "string",
+          "descs": {
+            "zh-CN": "默认名称",
+            "en-US": "Default name"
+          },
+          "optional": true
+        },
+        {
+          "name": "default_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "默认路径",
+            "en-US": "Default Path"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "保存路径",
+          "en-US": "Save path"
+        }
+      },
+      "bridge_path": "dialog.saveFile",
+      "descriptions": {
+        "zh-CN": "打开保存文件对话框",
+        "en-US": "打开保存文件对话框"
+      }
+    },
+    {
+      "name": "open_directory",
+      "symbol": "hap_dialog_open_directory",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "对话框标题",
+            "en-US": "Dialog title"
+          },
+          "optional": true
+        },
+        {
+          "name": "default_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "默认路径",
+            "en-US": "Default path"
+          },
+          "optional": true
+        },
+        {
+          "name": "multiple",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "允许多个",
+            "en-US": "Allow multiple"
+          },
+          "optional": true,
+          "default_value": "false"
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "已选择的目录",
+          "en-US": "Selected directories"
+        }
+      },
+      "bridge_path": "dialog.openDirectory",
+      "descriptions": {
+        "zh-CN": "打开目录选择对话框",
+        "en-US": "打开目录选择对话框"
+      }
+    },
+    {
+      "name": "message_box",
+      "symbol": "hap_dialog_message_box",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          }
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息",
+            "en-US": "Message"
+          }
+        },
+        {
+          "name": "buttons",
+          "type": "array",
+          "descs": {
+            "zh-CN": "按钮标签",
+            "en-US": "Button labels"
+          },
+          "optional": true
+        },
+        {
+          "name": "default_button",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "默认按钮",
+            "en-US": "Default Button"
+          },
+          "optional": true
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图标",
+            "en-US": "Icon"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "按钮结果",
+          "en-US": "Button result"
+        }
+      },
+      "bridge_path": "dialog.messageBox",
+      "descriptions": {
+        "zh-CN": "显示消息对话框",
+        "en-US": "显示消息对话框"
+      }
+    },
+    {
+      "name": "input_box",
+      "symbol": "hap_dialog_input_box",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          }
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "提示",
+            "en-US": "Prompt"
+          },
+          "optional": true
+        },
+        {
+          "name": "default_value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "默认值",
+            "en-US": "Default value"
+          },
+          "optional": true
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "descs": {
+            "zh-CN": "占位符",
+            "en-US": "Placeholder"
+          },
+          "optional": true
+        },
+        {
+          "name": "password",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "密码模式",
+            "en-US": "Password mode"
+          },
+          "optional": true,
+          "default_value": "false"
+        },
+        {
+          "name": "multiline",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "多行",
+            "en-US": "Multiline"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "输入结果",
+          "en-US": "Input result"
+        }
+      },
+      "bridge_path": "dialog.inputBox",
+      "descriptions": {
+        "zh-CN": "显示输入对话框",
+        "en-US": "显示输入对话框"
+      }
+    },
+    {
+      "name": "color_picker",
+      "symbol": "hap_dialog_color_picker",
+      "params": [
+        {
+          "name": "default_color",
+          "type": "string",
+          "descs": {
+            "zh-CN": "默认颜色十六进制",
+            "en-US": "Default color hex"
+          },
+          "optional": true
+        },
+        {
+          "name": "show_alpha",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "显示透明度",
+            "en-US": "Show Alpha"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已选择颜色十六进制",
+          "en-US": "Selected color hex"
+        }
+      },
+      "bridge_path": "dialog.colorPicker",
+      "descriptions": {
+        "zh-CN": "打开颜色选择器",
+        "en-US": "打开颜色选择器"
+      }
+    },
+    {
+      "name": "progress",
+      "symbol": "hap_dialog_progress",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          }
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息",
+            "en-US": "Message"
+          },
+          "optional": true
+        },
+        {
+          "name": "cancellable",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "允许取消",
+            "en-US": "允许取消"
+          },
+          "optional": true,
+          "default_value": "false"
+        },
+        {
+          "name": "indeterminate",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "不确定模式",
+            "en-US": "Indeterminate mode"
+          },
+          "optional": true,
+          "default_value": "false"
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "对话框 ID",
+          "en-US": "Dialog ID"
+        }
+      },
+      "bridge_path": "dialog.progress",
+      "descriptions": {
+        "zh-CN": "创建进度对话框",
+        "en-US": "创建进度对话框"
+      }
+    },
+    {
+      "name": "progress_update",
+      "symbol": "hap_dialog_progress_update",
+      "params": [
+        {
+          "name": "dialog_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "对话框 ID",
+            "en-US": "Dialog ID"
+          }
+        },
+        {
+          "name": "value",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "进度 0-1",
+            "en-US": "进度 0-1"
+          }
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息",
+            "en-US": "Message"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "状态",
+          "en-US": "Status"
+        }
+      },
+      "bridge_path": "dialog.progressUpdate",
+      "descriptions": {
+        "zh-CN": "更新进度",
+        "en-US": "更新进度"
+      }
+    },
+    {
+      "name": "progress_close",
+      "symbol": "hap_dialog_progress_close",
+      "params": [
+        {
+          "name": "dialog_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "对话框 ID",
+            "en-US": "Dialog ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "dialog.progressClose",
+      "descriptions": {
+        "zh-CN": "关闭进度对话框",
+        "en-US": "关闭进度对话框"
+      }
+    },
+    {
+      "name": "date_picker",
+      "symbol": "hap_dialog_date_picker",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          },
+          "optional": true
+        },
+        {
+          "name": "default_date",
+          "type": "string",
+          "descs": {
+            "zh-CN": "默认日期 YYYY-MM-DD",
+            "en-US": "Default date YYYY-MM-DD"
+          },
+          "optional": true
+        },
+        {
+          "name": "min_date",
+          "type": "string",
+          "descs": {
+            "zh-CN": "最小日期",
+            "en-US": "Min Date"
+          },
+          "optional": true
+        },
+        {
+          "name": "max_date",
+          "type": "string",
+          "descs": {
+            "zh-CN": "最大日期",
+            "en-US": "Max Date"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已选择日期",
+          "en-US": "Selected date"
+        }
+      },
+      "bridge_path": "dialog.datePicker",
+      "descriptions": {
+        "zh-CN": "日期选择器",
+        "en-US": "日期选择器"
+      }
+    },
+    {
+      "name": "list_select",
+      "symbol": "hap_dialog_list_select",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          }
+        },
+        {
+          "name": "items",
+          "type": "array",
+          "descs": {
+            "zh-CN": "可选项列表",
+            "en-US": "Items to select from"
+          }
+        },
+        {
+          "name": "multiple",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "允许多个",
+            "en-US": "Allow multiple"
+          },
+          "optional": true,
+          "default_value": "false"
+        },
+        {
+          "name": "search",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "搜索",
+            "en-US": "Search"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "已选择项目",
+          "en-US": "Selected items"
+        }
+      },
+      "bridge_path": "dialog.listSelect",
+      "descriptions": {
+        "zh-CN": "列表选择对话框",
+        "en-US": "列表选择对话框"
+      }
+    },
+    {
+      "name": "confirm",
+      "symbol": "hap_dialog_confirm",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          }
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息",
+            "en-US": "Message"
+          }
+        },
+        {
+          "name": "ok_label",
+          "type": "string",
+          "descs": {
+            "zh-CN": "OK 按钮标签",
+            "en-US": "OK button label"
+          },
+          "optional": true
+        },
+        {
+          "name": "cancel_label",
+          "type": "string",
+          "descs": {
+            "zh-CN": "取消按钮标签",
+            "en-US": "Cancel button label"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "已确认",
+          "en-US": "Confirmed"
+        }
+      },
+      "bridge_path": "dialog.confirm",
+      "descriptions": {
+        "zh-CN": "确认对话框",
+        "en-US": "确认对话框"
+      }
+    },
+    {
+      "name": "notify",
+      "symbol": "hap_dialog_notify",
+      "params": [
+        {
+          "name": "message",
+          "type": "string",
+          "descs": {
+            "zh-CN": "消息",
+            "en-US": "Message"
+          }
+        },
+        {
+          "name": "duration_ms",
+          "type": "u32",
+          "descs": {
+            "zh-CN": "持续时间(毫秒)",
+            "en-US": "Duration ms"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "null",
+        "descs": {
+          "zh-CN": "无",
+          "en-US": "void"
+        }
+      },
+      "bridge_path": "dialog.notify",
+      "descriptions": {
+        "zh-CN": "显示通知",
+        "en-US": "显示通知"
+      }
+    },
+    {
+      "name": "time_picker",
+      "symbol": "hap_dialog_time_picker",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          },
+          "optional": true
+        },
+        {
+          "name": "default_time",
+          "type": "string",
+          "descs": {
+            "zh-CN": "默认时间 HH:MM",
+            "en-US": "Default time HH:MM"
+          },
+          "optional": true
+        },
+        {
+          "name": "is_24h",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "24-小时格式",
+            "en-US": "24-hour format"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已选择时间",
+          "en-US": "Selected time"
+        }
+      },
+      "bridge_path": "dialog.timePicker",
+      "descriptions": {
+        "zh-CN": "时间选择器",
+        "en-US": "时间选择器"
+      }
+    },
+    {
+      "name": "datetime_picker",
+      "symbol": "hap_dialog_datetime_picker",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "标题",
+            "en-US": "Title"
+          },
+          "optional": true
+        },
+        {
+          "name": "default_value",
+          "type": "string",
+          "descs": {
+            "zh-CN": "默认 YYYY-MM-DD HH:MM",
+            "en-US": "Default YYYY-MM-DD HH:MM"
+          },
+          "optional": true
+        },
+        {
+          "name": "min",
+          "type": "string",
+          "descs": {
+            "zh-CN": "最小值",
+            "en-US": "Minimum value"
+          },
+          "optional": true
+        },
+        {
+          "name": "max",
+          "type": "string",
+          "descs": {
+            "zh-CN": "最大值",
+            "en-US": "Maximum value"
+          },
+          "optional": true
+        },
+        {
+          "name": "is_24h",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "是否 24H",
+            "en-US": "Is 24H"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "已选择的日期时间",
+          "en-US": "Selected datetime"
+        }
+      },
+      "bridge_path": "dialog.datetimePicker",
+      "descriptions": {
+        "zh-CN": "日期时间选择器",
+        "en-US": "日期时间选择器"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供系统原生对话框能力，包括消息提示、确认框、输入框、文件/目录选择器、保存对话框、日期/时间选择器、颜色选择器等。所有对话框均使用操作系统原生 UI。",
+    "en-US": "System native dialogs including message alerts, confirmation, input, file/directory pickers, save dialogs, date/time pickers, and color pickers. All dialogs use the OS native UI."
+  }
+}

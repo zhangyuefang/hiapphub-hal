@@ -1,0 +1,1876 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000016",
+  "name": "pdf",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "📄",
+  "min_shell_version": "0.1.0",
+  "category": "media",
+  "descriptions": {
+    "zh-CN": "PDF处理模块",
+    "en-US": "PDF processing module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "info",
+      "symbol": "hap_pdf_info",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "信息",
+          "en-US": "Info"
+        }
+      },
+      "bridge_path": "pdf.info",
+      "descriptions": {
+        "zh-CN": "获取 PDF 信息",
+        "en-US": "Get PDF info"
+      }
+    },
+    {
+      "name": "open",
+      "symbol": "hap_pdf_open",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "文档",
+          "en-US": "Doc"
+        }
+      },
+      "bridge_path": "pdf.open",
+      "descriptions": {
+        "zh-CN": "打开 PDF",
+        "en-US": "Open PDF"
+      }
+    },
+    {
+      "name": "create",
+      "symbol": "hap_pdf_create",
+      "params": [
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "对话框标题",
+            "en-US": "Dialog title"
+          },
+          "optional": true
+        },
+        {
+          "name": "author",
+          "type": "string",
+          "descs": {
+            "zh-CN": "作者",
+            "en-US": "Author"
+          },
+          "optional": true
+        },
+        {
+          "name": "page_size",
+          "type": "object",
+          "descs": {
+            "zh-CN": "页大小",
+            "en-US": "Page Size"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "文档",
+          "en-US": "Doc"
+        }
+      },
+      "bridge_path": "pdf.create",
+      "descriptions": {
+        "zh-CN": "创建 PDF",
+        "en-US": "Create PDF"
+      }
+    },
+    {
+      "name": "add_page",
+      "symbol": "hap_pdf_add_page",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "width_mm",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "宽度(毫米)",
+            "en-US": "Width in mm"
+          },
+          "optional": true,
+          "default_value": "210.0"
+        },
+        {
+          "name": "height_mm",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "高度(毫米)",
+            "en-US": "Height in mm"
+          },
+          "optional": true,
+          "default_value": "297.0"
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "页",
+          "en-US": "Page"
+        }
+      },
+      "bridge_path": "pdf.addPage",
+      "descriptions": {
+        "zh-CN": "添加页面",
+        "en-US": "Add page"
+      }
+    },
+    {
+      "name": "add_text",
+      "symbol": "hap_pdf_add_text",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "page_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "页",
+            "en-US": "Page"
+          }
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文本",
+            "en-US": "Text"
+          }
+        },
+        {
+          "name": "x",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "X",
+            "en-US": "X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "Y",
+            "en-US": "Y"
+          }
+        },
+        {
+          "name": "font_size",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "字号(磅)",
+            "en-US": "Font size pt"
+          },
+          "optional": true,
+          "default_value": "12.0"
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.addText",
+      "descriptions": {
+        "zh-CN": "添加文本",
+        "en-US": "Add text"
+      }
+    },
+    {
+      "name": "add_image",
+      "symbol": "hap_pdf_add_image",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "page_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "页",
+            "en-US": "Page"
+          }
+        },
+        {
+          "name": "image_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图像路径",
+            "en-US": "Image Path"
+          }
+        },
+        {
+          "name": "x",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "X",
+            "en-US": "X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "Y",
+            "en-US": "Y"
+          }
+        },
+        {
+          "name": "width",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "宽度(像素)",
+            "en-US": "Width px"
+          }
+        },
+        {
+          "name": "height",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "高度(像素)",
+            "en-US": "Height px"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.addImage",
+      "descriptions": {
+        "zh-CN": "插入图片",
+        "en-US": "Add image"
+      }
+    },
+    {
+      "name": "add_line",
+      "symbol": "hap_pdf_add_line",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "page_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "页",
+            "en-US": "Page"
+          }
+        },
+        {
+          "name": "x1",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "X1",
+            "en-US": "X1"
+          }
+        },
+        {
+          "name": "y1",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "Y1",
+            "en-US": "Y1"
+          }
+        },
+        {
+          "name": "x2",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "X2",
+            "en-US": "X2"
+          }
+        },
+        {
+          "name": "y2",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "Y2",
+            "en-US": "Y2"
+          }
+        },
+        {
+          "name": "line_width",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "线宽",
+            "en-US": "Line width"
+          },
+          "optional": true,
+          "default_value": "1.0"
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.addLine",
+      "descriptions": {
+        "zh-CN": "添加行",
+        "en-US": "Add line"
+      }
+    },
+    {
+      "name": "add_rect",
+      "symbol": "hap_pdf_add_rect",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "page_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "页",
+            "en-US": "Page"
+          }
+        },
+        {
+          "name": "x",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "X",
+            "en-US": "X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "Y",
+            "en-US": "Y"
+          }
+        },
+        {
+          "name": "w",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "W",
+            "en-US": "W"
+          }
+        },
+        {
+          "name": "h",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "H",
+            "en-US": "H"
+          }
+        },
+        {
+          "name": "fill",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "填充颜色",
+            "en-US": "Fill color"
+          },
+          "optional": true,
+          "default_value": "false"
+        },
+        {
+          "name": "line_width",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "线宽",
+            "en-US": "Line width"
+          },
+          "optional": true,
+          "default_value": "1.0"
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.addRect",
+      "descriptions": {
+        "zh-CN": "添加矩形",
+        "en-US": "Add rectangle"
+      }
+    },
+    {
+      "name": "add_table",
+      "symbol": "hap_pdf_add_table",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "page_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "页",
+            "en-US": "Page"
+          }
+        },
+        {
+          "name": "x",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "X",
+            "en-US": "X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "Y",
+            "en-US": "Y"
+          }
+        },
+        {
+          "name": "headers",
+          "type": "array",
+          "descs": {
+            "zh-CN": "头部",
+            "en-US": "Headers"
+          }
+        },
+        {
+          "name": "rows",
+          "type": "string",
+          "descs": {
+            "zh-CN": "行",
+            "en-US": "Rows"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.addTable",
+      "descriptions": {
+        "zh-CN": "添加表",
+        "en-US": "Add table"
+      }
+    },
+    {
+      "name": "save",
+      "symbol": "hap_pdf_save",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "pdf.save",
+      "descriptions": {
+        "zh-CN": "保存 PDF",
+        "en-US": "Save PDF"
+      }
+    },
+    {
+      "name": "close",
+      "symbol": "hap_pdf_close",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.close",
+      "descriptions": {
+        "zh-CN": "关闭 PDF",
+        "en-US": "Close PDF"
+      }
+    },
+    {
+      "name": "register_font",
+      "symbol": "hap_pdf_register_font",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "font_family",
+          "type": "string",
+          "descs": {
+            "zh-CN": "字体族",
+            "en-US": "Font Family"
+          }
+        },
+        {
+          "name": "font_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "字体路径",
+            "en-US": "Font Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "字体 ID",
+          "en-US": "Font ID"
+        }
+      },
+      "bridge_path": "pdf.registerFont",
+      "descriptions": {
+        "zh-CN": "注册字体",
+        "en-US": "Register font"
+      }
+    },
+    {
+      "name": "merge",
+      "symbol": "hap_pdf_merge",
+      "params": [
+        {
+          "name": "input_paths",
+          "type": "array",
+          "descs": {
+            "zh-CN": "输入",
+            "en-US": "Inputs"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "pdf.merge",
+      "descriptions": {
+        "zh-CN": "合并 PDF",
+        "en-US": "Merge PDFs"
+      }
+    },
+    {
+      "name": "split",
+      "symbol": "hap_pdf_split",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入路径",
+            "en-US": "Input Path"
+          }
+        },
+        {
+          "name": "output_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目录",
+            "en-US": "Dir"
+          }
+        },
+        {
+          "name": "pages_per_file",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "每文件页数",
+            "en-US": "Pages per file"
+          },
+          "optional": true,
+          "default_value": "1"
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "路径",
+          "en-US": "Paths"
+        }
+      },
+      "bridge_path": "pdf.split",
+      "descriptions": {
+        "zh-CN": "拆分 PDF",
+        "en-US": "Split PDF"
+      }
+    },
+    {
+      "name": "extract_text",
+      "symbol": "hap_pdf_extract_text",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "page_start",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "起始页",
+            "en-US": "Start page"
+          },
+          "optional": true,
+          "default_value": "0"
+        },
+        {
+          "name": "page_end",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "结束页",
+            "en-US": "End page"
+          },
+          "optional": true
+        },
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "文本",
+          "en-US": "Text"
+        }
+      },
+      "bridge_path": "pdf.extractText",
+      "descriptions": {
+        "zh-CN": "提取文本",
+        "en-US": "Extract text"
+      }
+    },
+    {
+      "name": "to_images",
+      "symbol": "hap_pdf_to_images",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目录",
+            "en-US": "Dir"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "路径",
+          "en-US": "Paths"
+        }
+      },
+      "bridge_path": "pdf.toImages",
+      "descriptions": {
+        "zh-CN": "PDF 到图像",
+        "en-US": "PDF to images"
+      }
+    },
+    {
+      "name": "add_watermark",
+      "symbol": "hap_pdf_add_watermark",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入路径",
+            "en-US": "Input Path"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output Path"
+          }
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文本",
+            "en-US": "Text"
+          }
+        },
+        {
+          "name": "font_size",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "字号(磅)",
+            "en-US": "Font size pt"
+          },
+          "optional": true,
+          "default_value": "48.0"
+        },
+        {
+          "name": "opacity",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "透明度 0-1",
+            "en-US": "Opacity 0-1"
+          },
+          "optional": true,
+          "default_value": "0.3"
+        },
+        {
+          "name": "rotation",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "旋转角度",
+            "en-US": "Rotation degrees"
+          },
+          "optional": true,
+          "default_value": "45.0"
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.addWatermark",
+      "descriptions": {
+        "zh-CN": "添加水印",
+        "en-US": "Add watermark"
+      }
+    },
+    {
+      "name": "add_link",
+      "symbol": "hap_pdf_add_link",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "page_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "页码索引",
+            "en-US": "Page index"
+          }
+        },
+        {
+          "name": "x",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "X",
+            "en-US": "X"
+          }
+        },
+        {
+          "name": "y",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "Y",
+            "en-US": "Y"
+          }
+        },
+        {
+          "name": "w",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "W",
+            "en-US": "W"
+          }
+        },
+        {
+          "name": "h",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "H",
+            "en-US": "H"
+          }
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "descs": {
+            "zh-CN": "URL",
+            "en-US": "Url"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.addLink",
+      "descriptions": {
+        "zh-CN": "添加链接",
+        "en-US": "Add link"
+      }
+    },
+    {
+      "name": "get_bookmarks",
+      "symbol": "hap_pdf_get_bookmarks",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "书签",
+          "en-US": "Bookmarks"
+        }
+      },
+      "bridge_path": "pdf.getBookmarks",
+      "descriptions": {
+        "zh-CN": "获取书签列表",
+        "en-US": "Get bookmarks"
+      }
+    },
+    {
+      "name": "add_bookmark",
+      "symbol": "hap_pdf_add_bookmark",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "descs": {
+            "zh-CN": "对话框标题",
+            "en-US": "Dialog title"
+          }
+        },
+        {
+          "name": "page_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "页码索引",
+            "en-US": "Page index"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.addBookmark",
+      "descriptions": {
+        "zh-CN": "添加书签",
+        "en-US": "Add bookmark"
+      }
+    },
+    {
+      "name": "rotate_page",
+      "symbol": "hap_pdf_rotate_page",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入路径",
+            "en-US": "Input Path"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output Path"
+          }
+        },
+        {
+          "name": "page_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "页",
+            "en-US": "Page"
+          }
+        },
+        {
+          "name": "degrees",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "角度",
+            "en-US": "Degrees"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.rotatePage",
+      "descriptions": {
+        "zh-CN": "旋转页面",
+        "en-US": "Rotate page"
+      }
+    },
+    {
+      "name": "page_dimensions",
+      "symbol": "hap_pdf_page_dimensions",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "page_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "页码索引",
+            "en-US": "Page index"
+          },
+          "optional": true,
+          "default_value": "0"
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "尺寸",
+          "en-US": "Dimensions"
+        }
+      },
+      "bridge_path": "pdf.pageDimensions",
+      "descriptions": {
+        "zh-CN": "页面尺寸",
+        "en-US": "Page dimensions"
+      }
+    },
+    {
+      "name": "set_password",
+      "symbol": "hap_pdf_set_password",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入路径",
+            "en-US": "Input Path"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output Path"
+          }
+        },
+        {
+          "name": "user_password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "用户密码",
+            "en-US": "User Password"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.setPassword",
+      "descriptions": {
+        "zh-CN": "设置密码",
+        "en-US": "Set password"
+      }
+    },
+    {
+      "name": "remove_password",
+      "symbol": "hap_pdf_remove_password",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入路径",
+            "en-US": "Input Path"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output Path"
+          }
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "descs": {
+            "zh-CN": "密码",
+            "en-US": "Password"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.removePassword",
+      "descriptions": {
+        "zh-CN": "删除密码",
+        "en-US": "Remove password"
+      }
+    },
+    {
+      "name": "html_to_pdf",
+      "symbol": "hap_pdf_html_to_pdf",
+      "params": [
+        {
+          "name": "html",
+          "type": "string",
+          "descs": {
+            "zh-CN": "HTML",
+            "en-US": "HTML"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出",
+            "en-US": "Output"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "结果",
+          "en-US": "Result"
+        }
+      },
+      "bridge_path": "pdf.htmlToPdf",
+      "descriptions": {
+        "zh-CN": "HTML 到 PDF",
+        "en-US": "HTML to PDF"
+      }
+    },
+    {
+      "name": "add_page_numbers",
+      "symbol": "hap_pdf_add_page_numbers",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入路径",
+            "en-US": "Input Path"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output Path"
+          }
+        },
+        {
+          "name": "position",
+          "type": "string",
+          "descs": {
+            "zh-CN": "位置",
+            "en-US": "Position"
+          },
+          "optional": true
+        },
+        {
+          "name": "font_size",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "字号(磅)",
+            "en-US": "Font size pt"
+          },
+          "optional": true,
+          "default_value": "10.0"
+        },
+        {
+          "name": "start_number",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "起始页码",
+            "en-US": "Start page number"
+          },
+          "optional": true,
+          "default_value": "1"
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.addPageNumbers",
+      "descriptions": {
+        "zh-CN": "添加页面数字",
+        "en-US": "Add page numbers"
+      }
+    },
+    {
+      "name": "add_header",
+      "symbol": "hap_pdf_add_header",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文本",
+            "en-US": "Text"
+          }
+        },
+        {
+          "name": "font_size",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "字号(磅)",
+            "en-US": "Font size pt"
+          },
+          "optional": true,
+          "default_value": "10.0"
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.addHeader",
+      "descriptions": {
+        "zh-CN": "添加头部",
+        "en-US": "Add header"
+      }
+    },
+    {
+      "name": "add_footer",
+      "symbol": "hap_pdf_add_footer",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文本",
+            "en-US": "Text"
+          }
+        },
+        {
+          "name": "font_size",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "字号(磅)",
+            "en-US": "Font size pt"
+          },
+          "optional": true,
+          "default_value": "10.0"
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.addFooter",
+      "descriptions": {
+        "zh-CN": "添加尾部",
+        "en-US": "Add footer"
+      }
+    },
+    {
+      "name": "flatten",
+      "symbol": "hap_pdf_flatten",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入路径",
+            "en-US": "Input Path"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.flatten",
+      "descriptions": {
+        "zh-CN": "扁平化",
+        "en-US": "Flatten"
+      }
+    },
+    {
+      "name": "insert_page",
+      "symbol": "hap_pdf_insert_page",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入路径",
+            "en-US": "Input Path"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output Path"
+          }
+        },
+        {
+          "name": "insert_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "插入路径",
+            "en-US": "Insert Path"
+          }
+        },
+        {
+          "name": "position",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "位置",
+            "en-US": "Position"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.insertPage",
+      "descriptions": {
+        "zh-CN": "插入页",
+        "en-US": "Insert page"
+      }
+    },
+    {
+      "name": "delete_page",
+      "symbol": "hap_pdf_delete_page",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入路径",
+            "en-US": "Input Path"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output Path"
+          }
+        },
+        {
+          "name": "page_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "页",
+            "en-US": "Page"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.deletePage",
+      "descriptions": {
+        "zh-CN": "删除页",
+        "en-US": "Delete page"
+      }
+    },
+    {
+      "name": "reorder_pages",
+      "symbol": "hap_pdf_reorder_pages",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入路径",
+            "en-US": "Input Path"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output Path"
+          }
+        },
+        {
+          "name": "page_order",
+          "type": "string",
+          "descs": {
+            "zh-CN": "页面顺序",
+            "en-US": "Page Order"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.reorderPages",
+      "descriptions": {
+        "zh-CN": "重排页面",
+        "en-US": "Reorder pages"
+      }
+    },
+    {
+      "name": "get_form_fields",
+      "symbol": "hap_pdf_get_form_fields",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "字段",
+          "en-US": "Fields"
+        }
+      },
+      "bridge_path": "pdf.getFormFields",
+      "descriptions": {
+        "zh-CN": "获取表单字段",
+        "en-US": "Get form fields"
+      }
+    },
+    {
+      "name": "fill_form",
+      "symbol": "hap_pdf_fill_form",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入路径",
+            "en-US": "Input Path"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output Path"
+          }
+        },
+        {
+          "name": "fields",
+          "type": "object",
+          "descs": {
+            "zh-CN": "字段",
+            "en-US": "Fields"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.fillForm",
+      "descriptions": {
+        "zh-CN": "填写表单",
+        "en-US": "Fill form"
+      }
+    },
+    {
+      "name": "get_annotations",
+      "symbol": "hap_pdf_get_annotations",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "page_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "页码索引",
+            "en-US": "Page index"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "注释s",
+          "en-US": "Annotations"
+        }
+      },
+      "bridge_path": "pdf.getAnnotations",
+      "descriptions": {
+        "zh-CN": "获取注释列表",
+        "en-US": "Get annotations"
+      }
+    },
+    {
+      "name": "add_annotation",
+      "symbol": "hap_pdf_add_annotation",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "page_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "页码索引",
+            "en-US": "Page index"
+          }
+        },
+        {
+          "name": "rect",
+          "type": "object",
+          "descs": {
+            "zh-CN": "矩形",
+            "en-US": "Rect"
+          }
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "descs": {
+            "zh-CN": "内容",
+            "en-US": "Content"
+          },
+          "optional": true
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "descs": {
+            "zh-CN": "颜色",
+            "en-US": "Color"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.addAnnotation",
+      "descriptions": {
+        "zh-CN": "添加注释",
+        "en-US": "Add annotation"
+      }
+    },
+    {
+      "name": "remove_annotation",
+      "symbol": "hap_pdf_remove_annotation",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "文档 ID",
+            "en-US": "文档 ID"
+          }
+        },
+        {
+          "name": "page_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "页码索引",
+            "en-US": "Page index"
+          }
+        },
+        {
+          "name": "annotation_index",
+          "type": "i32",
+          "descs": {
+            "zh-CN": "注释索引",
+            "en-US": "Annotation Index"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.removeAnnotation",
+      "descriptions": {
+        "zh-CN": "删除注释",
+        "en-US": "Remove annotation"
+      }
+    },
+    {
+      "name": "stamp_image",
+      "symbol": "hap_pdf_stamp_image",
+      "params": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输入路径",
+            "en-US": "Input Path"
+          }
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出路径",
+            "en-US": "Output Path"
+          }
+        },
+        {
+          "name": "image_path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "图像路径",
+            "en-US": "Image Path"
+          }
+        },
+        {
+          "name": "opacity",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "透明度 0-1",
+            "en-US": "Opacity 0-1"
+          },
+          "optional": true,
+          "default_value": "0.3"
+        },
+        {
+          "name": "scale",
+          "type": "f64",
+          "descs": {
+            "zh-CN": "缩放比例",
+            "en-US": "Scale factor"
+          },
+          "optional": true,
+          "default_value": "0.15"
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "pdf.stampImage",
+      "descriptions": {
+        "zh-CN": "盖印图像",
+        "en-US": "Stamp image"
+      }
+    },
+    {
+      "name": "extract_images",
+      "symbol": "hap_pdf_extract_images",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "路径",
+            "en-US": "Path"
+          }
+        },
+        {
+          "name": "output_dir",
+          "type": "string",
+          "descs": {
+            "zh-CN": "目录",
+            "en-US": "Dir"
+          }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "路径",
+          "en-US": "Paths"
+        }
+      },
+      "bridge_path": "pdf.extractImages",
+      "descriptions": {
+        "zh-CN": "提取图像",
+        "en-US": "Extract images"
+      }
+    },
+    {
+      "name": "list_open",
+      "symbol": "hap_pdf_list_open",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "文档",
+          "en-US": "Docs"
+        }
+      },
+      "bridge_path": "pdf.listOpen",
+      "descriptions": {
+        "zh-CN": "列出已打开的文档",
+        "en-US": "List open docs"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供 PDF 文件的创建、读取、编辑、合并、拆分、加密、水印等能力。支持文本提取、页面操作、表单填写、书签管理、图片插入等功能。",
+    "en-US": "Create, read, edit, merge, split, encrypt, and watermark PDF files. Supports text extraction, page operations, form filling, bookmarks, and image insertion."
+  }
+}

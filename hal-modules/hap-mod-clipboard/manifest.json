@@ -1,0 +1,480 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000014",
+  "name": "clipboard",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "📋",
+  "min_shell_version": "0.1.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "剪贴板模块",
+    "en-US": "Clipboard module"
+  },
+  "permission": "",
+  "functions": [
+    {
+      "name": "read_text",
+      "symbol": "hap_clipboard_read_text",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "剪贴板文本",
+          "en-US": "Clipboard text"
+        }
+      },
+      "bridge_path": "clipboard.readText",
+      "descriptions": {
+        "zh-CN": "读取文本",
+        "en-US": "Read text"
+      }
+    },
+    {
+      "name": "write_text",
+      "symbol": "hap_clipboard_write_text",
+      "params": [
+        {
+          "name": "text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "待写入文本",
+            "en-US": "Text to write"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "clipboard.writeText",
+      "descriptions": {
+        "zh-CN": "写入文本",
+        "en-US": "Write text"
+      }
+    },
+    {
+      "name": "has_text",
+      "symbol": "hap_clipboard_has_text",
+      "params": [],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否有文本",
+          "en-US": "Has text"
+        }
+      },
+      "bridge_path": "clipboard.hasText",
+      "descriptions": {
+        "zh-CN": "检查文本",
+        "en-US": "Check text"
+      }
+    },
+    {
+      "name": "read_image",
+      "symbol": "hap_clipboard_read_image",
+      "params": [
+        {
+          "name": "format",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出格式",
+            "en-US": "Output format"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "图像数据",
+          "en-US": "Image data"
+        }
+      },
+      "bridge_path": "clipboard.readImage",
+      "descriptions": {
+        "zh-CN": "读取图像",
+        "en-US": "Read image"
+      }
+    },
+    {
+      "name": "write_image",
+      "symbol": "hap_clipboard_write_image",
+      "params": [
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "Base64 图像数据",
+            "en-US": "Base64 image data"
+          }
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出格式",
+            "en-US": "Output format"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "clipboard.writeImage",
+      "descriptions": {
+        "zh-CN": "写入图像",
+        "en-US": "Write image"
+      }
+    },
+    {
+      "name": "has_image",
+      "symbol": "hap_clipboard_has_image",
+      "params": [],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "是否有图像",
+          "en-US": "Has image"
+        }
+      },
+      "bridge_path": "clipboard.hasImage",
+      "descriptions": {
+        "zh-CN": "检查图像",
+        "en-US": "Check image"
+      }
+    },
+    {
+      "name": "read_html",
+      "symbol": "hap_clipboard_read_html",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "HTML 内容",
+          "en-US": "HTML content"
+        }
+      },
+      "bridge_path": "clipboard.readHtml",
+      "descriptions": {
+        "zh-CN": "读取 HTML",
+        "en-US": "Read HTML"
+      }
+    },
+    {
+      "name": "write_html",
+      "symbol": "hap_clipboard_write_html",
+      "params": [
+        {
+          "name": "html",
+          "type": "string",
+          "descs": {
+            "zh-CN": "HTML 内容",
+            "en-US": "HTML content"
+          }
+        },
+        {
+          "name": "plain_text",
+          "type": "string",
+          "descs": {
+            "zh-CN": "备选文本",
+            "en-US": "Fallback text"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "clipboard.writeHtml",
+      "descriptions": {
+        "zh-CN": "写入 HTML",
+        "en-US": "Write HTML"
+      }
+    },
+    {
+      "name": "read_files",
+      "symbol": "hap_clipboard_read_files",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "文件路径s",
+          "en-US": "File paths"
+        }
+      },
+      "bridge_path": "clipboard.readFiles",
+      "descriptions": {
+        "zh-CN": "读取文件路径",
+        "en-US": "Read file paths"
+      }
+    },
+    {
+      "name": "write_files",
+      "symbol": "hap_clipboard_write_files",
+      "params": [
+        {
+          "name": "paths",
+          "type": "array",
+          "descs": {
+            "zh-CN": "文件路径s",
+            "en-US": "File paths"
+          }
+        },
+        {
+          "name": "cut",
+          "type": "bool",
+          "descs": {
+            "zh-CN": "剪切",
+            "en-US": "Cut"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "clipboard.writeFiles",
+      "descriptions": {
+        "zh-CN": "写入文件路径",
+        "en-US": "Write file paths"
+      }
+    },
+    {
+      "name": "available_formats",
+      "symbol": "hap_clipboard_available_formats",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "可用的格式",
+          "en-US": "Available formats"
+        }
+      },
+      "bridge_path": "clipboard.availableFormats",
+      "descriptions": {
+        "zh-CN": "列出格式",
+        "en-US": "List formats"
+      }
+    },
+    {
+      "name": "clear",
+      "symbol": "hap_clipboard_clear",
+      "params": [],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "clipboard.clear",
+      "descriptions": {
+        "zh-CN": "清除剪贴板",
+        "en-US": "Clear clipboard"
+      }
+    },
+    {
+      "name": "on_change",
+      "symbol": "hap_clipboard_on_change",
+      "params": [
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调 ID",
+            "en-US": "Callback ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "监视器 ID",
+          "en-US": "Watcher ID"
+        }
+      },
+      "bridge_path": "clipboard.onChange",
+      "descriptions": {
+        "zh-CN": "监视变化",
+        "en-US": "Watch changes"
+      }
+    },
+    {
+      "name": "off_change",
+      "symbol": "hap_clipboard_off_change",
+      "params": [
+        {
+          "name": "watcher_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监视器 ID",
+            "en-US": "Watcher ID"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "clipboard.offChange",
+      "descriptions": {
+        "zh-CN": "停止监视",
+        "en-US": "Stop watching"
+      }
+    },
+    {
+      "name": "read_rtf",
+      "symbol": "hap_clipboard_read_rtf",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "RTF 内容",
+          "en-US": "RTF content"
+        }
+      },
+      "bridge_path": "clipboard.readRtf",
+      "descriptions": {
+        "zh-CN": "读取 RTF",
+        "en-US": "Read RTF"
+      }
+    },
+    {
+      "name": "write_rtf",
+      "symbol": "hap_clipboard_write_rtf",
+      "params": [
+        {
+          "name": "rtf",
+          "type": "string",
+          "descs": {
+            "zh-CN": "RTF 内容",
+            "en-US": "RTF content"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "clipboard.writeRtf",
+      "descriptions": {
+        "zh-CN": "写入 RTF",
+        "en-US": "Write RTF"
+      }
+    },
+    {
+      "name": "read_custom",
+      "symbol": "hap_clipboard_read_custom",
+      "params": [
+        {
+          "name": "format",
+          "type": "string",
+          "descs": {
+            "zh-CN": "格式化名称",
+            "en-US": "Format name"
+          }
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "数据",
+          "en-US": "Data"
+        }
+      },
+      "bridge_path": "clipboard.readCustom",
+      "descriptions": {
+        "zh-CN": "读取自定义格式",
+        "en-US": "Read custom format"
+      }
+    },
+    {
+      "name": "write_custom",
+      "symbol": "hap_clipboard_write_custom",
+      "params": [
+        {
+          "name": "format",
+          "type": "string",
+          "descs": {
+            "zh-CN": "格式化名称",
+            "en-US": "Format name"
+          }
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "descs": {
+            "zh-CN": "数据",
+            "en-US": "Data"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "clipboard.writeCustom",
+      "descriptions": {
+        "zh-CN": "写入自定义格式",
+        "en-US": "Write custom format"
+      }
+    },
+    {
+      "name": "write_multi",
+      "symbol": "hap_clipboard_write_multi",
+      "params": [
+        {
+          "name": "items",
+          "type": "object",
+          "descs": {
+            "zh-CN": "格式-数据对",
+            "en-US": "Format-data pairs"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "clipboard.writeMulti",
+      "descriptions": {
+        "zh-CN": "写入多种格式",
+        "en-US": "Write multiple formats"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供系统剪贴板的读写操作，支持纯文本、富文本（HTML）、图片等格式。可监听剪贴板变化、获取剪贴板历史、管理多条目剪贴板数据。",
+    "en-US": "Read/write system clipboard supporting plain text, rich text (HTML), and images. Monitor clipboard changes, access clipboard history, and manage multiple clipboard entries."
+  }
+}

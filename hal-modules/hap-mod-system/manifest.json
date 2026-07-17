@@ -1,0 +1,513 @@
+{
+  "uuid": "a1b2c3d4-2000-4000-8000-000000000002",
+  "name": "system",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "💻",
+  "min_shell_version": "0.1.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "系统信息模块",
+    "en-US": "System information module"
+  },
+  "permission": "system",
+  "functions": [
+    {
+      "name": "os_info",
+      "symbol": "hap_system_os_info",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "OS 信息",
+          "en-US": "OS info"
+        }
+      },
+      "bridge_path": "system.osInfo",
+      "descriptions": {
+        "zh-CN": "OS 信息",
+        "en-US": "OS info"
+      }
+    },
+    {
+      "name": "cpu_info",
+      "symbol": "hap_system_cpu_info",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "CPU 信息",
+          "en-US": "CPU info"
+        }
+      },
+      "bridge_path": "system.cpuInfo",
+      "descriptions": {
+        "zh-CN": "CPU 信息",
+        "en-US": "CPU info"
+      }
+    },
+    {
+      "name": "memory_info",
+      "symbol": "hap_system_memory_info",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "内存信息",
+          "en-US": "Memory info"
+        }
+      },
+      "bridge_path": "system.memoryInfo",
+      "descriptions": {
+        "zh-CN": "内存信息",
+        "en-US": "Memory info"
+      }
+    },
+    {
+      "name": "disk_info",
+      "symbol": "hap_system_disk_info",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "磁盘",
+          "en-US": "Disks"
+        }
+      },
+      "bridge_path": "system.diskInfo",
+      "descriptions": {
+        "zh-CN": "磁盘信息",
+        "en-US": "Disk info"
+      }
+    },
+    {
+      "name": "gpu_info",
+      "symbol": "hap_system_gpu_info",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "GPU 信息",
+          "en-US": "GPU info"
+        }
+      },
+      "bridge_path": "system.gpuInfo",
+      "descriptions": {
+        "zh-CN": "GPU 信息",
+        "en-US": "GPU info"
+      }
+    },
+    {
+      "name": "hostname",
+      "symbol": "hap_system_hostname",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "主机名",
+          "en-US": "Hostname"
+        }
+      },
+      "bridge_path": "system.hostname",
+      "descriptions": {
+        "zh-CN": "主机名",
+        "en-US": "Hostname"
+      }
+    },
+    {
+      "name": "username",
+      "symbol": "hap_system_username",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "获取用户名",
+          "en-US": "Username"
+        }
+      },
+      "bridge_path": "system.username",
+      "descriptions": {
+        "zh-CN": "获取用户名",
+        "en-US": "Username"
+      }
+    },
+    {
+      "name": "home_dir",
+      "symbol": "hap_system_home_dir",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "路径",
+          "en-US": "Path"
+        }
+      },
+      "bridge_path": "system.homeDir",
+      "descriptions": {
+        "zh-CN": "用户主目录",
+        "en-US": "Home dir"
+      }
+    },
+    {
+      "name": "uptime",
+      "symbol": "hap_system_uptime",
+      "params": [],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "秒",
+          "en-US": "Seconds"
+        }
+      },
+      "bridge_path": "system.uptime",
+      "descriptions": {
+        "zh-CN": "系统运行时间",
+        "en-US": "Uptime"
+      }
+    },
+    {
+      "name": "locale",
+      "symbol": "hap_system_locale",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "区域设置",
+          "en-US": "Locale"
+        }
+      },
+      "bridge_path": "system.locale",
+      "descriptions": {
+        "zh-CN": "区域设置",
+        "en-US": "Locale"
+      }
+    },
+    {
+      "name": "theme",
+      "symbol": "hap_system_theme",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "主题",
+          "en-US": "Theme"
+        }
+      },
+      "bridge_path": "system.theme",
+      "descriptions": {
+        "zh-CN": "主题",
+        "en-US": "Theme"
+      }
+    },
+    {
+      "name": "is_elevated",
+      "symbol": "hap_system_is_elevated",
+      "params": [],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "已提权",
+          "en-US": "Elevated"
+        }
+      },
+      "bridge_path": "system.isElevated",
+      "descriptions": {
+        "zh-CN": "是否管理员权限",
+        "en-US": "Is elevated"
+      }
+    },
+    {
+      "name": "shell_version",
+      "symbol": "hap_system_shell_version",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "版本",
+          "en-US": "Version"
+        }
+      },
+      "bridge_path": "system.shellVersion",
+      "descriptions": {
+        "zh-CN": "Shell 版本",
+        "en-US": "Shell version"
+      }
+    },
+    {
+      "name": "get_proxy",
+      "symbol": "hap_system_get_proxy",
+      "params": [],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "代理",
+          "en-US": "Proxy"
+        }
+      },
+      "bridge_path": "system.getProxy",
+      "descriptions": {
+        "zh-CN": "获取代理",
+        "en-US": "Get proxy"
+      }
+    },
+    {
+      "name": "open_settings",
+      "symbol": "hap_system_open_settings",
+      "params": [
+        {
+          "name": "section",
+          "type": "string",
+          "descs": {
+            "zh-CN": "设置项",
+            "en-US": "Settings section"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "system.openSettings",
+      "descriptions": {
+        "zh-CN": "打开设置",
+        "en-US": "Open settings"
+      }
+    },
+    {
+      "name": "app_data_dir",
+      "symbol": "hap_system_app_data_dir",
+      "params": [
+        {
+          "name": "app_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "应用 ID",
+            "en-US": "Application ID"
+          },
+          "optional": true
+        }
+      ],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "路径",
+          "en-US": "Path"
+        }
+      },
+      "bridge_path": "system.appDataDir",
+      "descriptions": {
+        "zh-CN": "应用数据目录",
+        "en-US": "App data dir"
+      }
+    },
+    {
+      "name": "total_memory_mb",
+      "symbol": "hap_system_total_memory_mb",
+      "params": [],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "MB",
+          "en-US": "MB"
+        }
+      },
+      "bridge_path": "system.totalMemoryMb",
+      "descriptions": {
+        "zh-CN": "总计内存 MB",
+        "en-US": "Total memory MB"
+      }
+    },
+    {
+      "name": "free_memory_mb",
+      "symbol": "hap_system_free_memory_mb",
+      "params": [],
+      "returns": {
+        "type": "i64",
+        "descs": {
+          "zh-CN": "MB",
+          "en-US": "MB"
+        }
+      },
+      "bridge_path": "system.freeMemoryMb",
+      "descriptions": {
+        "zh-CN": "可用内存(MB)",
+        "en-US": "Free memory MB"
+      }
+    },
+    {
+      "name": "machine_id",
+      "symbol": "hap_system_machine_id",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "ID",
+          "en-US": "ID"
+        }
+      },
+      "bridge_path": "system.machineId",
+      "descriptions": {
+        "zh-CN": "机器 ID",
+        "en-US": "Machine ID"
+      }
+    },
+    {
+      "name": "default_browser",
+      "symbol": "hap_system_default_browser",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "浏览器",
+          "en-US": "Browser"
+        }
+      },
+      "bridge_path": "system.defaultBrowser",
+      "descriptions": {
+        "zh-CN": "默认浏览器",
+        "en-US": "Default browser"
+      }
+    },
+    {
+      "name": "monitors",
+      "symbol": "hap_system_monitors",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "监控器",
+          "en-US": "Monitors"
+        }
+      },
+      "bridge_path": "system.monitors",
+      "descriptions": {
+        "zh-CN": "列出监控器",
+        "en-US": "List monitors"
+      }
+    },
+    {
+      "name": "cpu_usage",
+      "symbol": "hap_system_cpu_usage",
+      "params": [
+        {
+          "name": "interval_ms",
+          "type": "u32",
+          "descs": {
+            "zh-CN": "间隔(毫秒)",
+            "en-US": "Interval in ms"
+          },
+          "optional": true,
+          "default_value": "1000"
+        }
+      ],
+      "returns": {
+        "type": "f64",
+        "descs": {
+          "zh-CN": "百分比",
+          "en-US": "Percent"
+        }
+      },
+      "bridge_path": "system.cpuUsage",
+      "descriptions": {
+        "zh-CN": "CPU 使用情况",
+        "en-US": "CPU usage"
+      }
+    },
+    {
+      "name": "on_theme_change",
+      "symbol": "hap_system_on_theme_change",
+      "params": [
+        {
+          "name": "callback_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "回调",
+            "en-US": "Callback"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "监视器",
+          "en-US": "Watcher"
+        }
+      },
+      "bridge_path": "system.onThemeChange",
+      "descriptions": {
+        "zh-CN": "监视主题",
+        "en-US": "Watch theme"
+      }
+    },
+    {
+      "name": "off_theme_change",
+      "symbol": "hap_system_off_theme_change",
+      "params": [
+        {
+          "name": "watcher_id",
+          "type": "string",
+          "descs": {
+            "zh-CN": "监视器",
+            "en-US": "Watcher"
+          }
+        }
+      ],
+      "returns": {
+        "type": "bool",
+        "descs": {
+          "zh-CN": "成功",
+          "en-US": "Success"
+        }
+      },
+      "bridge_path": "system.offThemeChange",
+      "descriptions": {
+        "zh-CN": "停止监视主题",
+        "en-US": "Stop watching theme"
+      }
+    },
+    {
+      "name": "accent_color",
+      "symbol": "hap_system_accent_color",
+      "params": [],
+      "returns": {
+        "type": "string",
+        "descs": {
+          "zh-CN": "颜色",
+          "en-US": "Color"
+        }
+      },
+      "bridge_path": "system.accentColor",
+      "descriptions": {
+        "zh-CN": "系统强调色",
+        "en-US": "Accent color"
+      }
+    },
+    {
+      "name": "list_fonts",
+      "symbol": "hap_system_list_fonts",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "字体",
+          "en-US": "Fonts"
+        }
+      },
+      "bridge_path": "system.listFonts",
+      "descriptions": {
+        "zh-CN": "列出字体",
+        "en-US": "List fonts"
+      }
+    }
+  ],
+  "overviews": {
+    "zh-CN": "提供系统信息查询与控制能力，包括 CPU/内存/磁盘信息、操作系统信息、网络状态、系统时间、环境变量、用户信息等功能。",
+    "en-US": "System information and control including CPU/memory/disk info, OS details, network status, system time, environment variables, and user information."
+  }
+}
