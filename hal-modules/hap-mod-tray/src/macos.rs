@@ -8,6 +8,14 @@ use cocoa::appkit::{NSMenu, NSMenuItem, NSVariableStatusItemLength};
 use hap_common::HapError;
 use objc::declare::ClassDecl;
 use objc::runtime::{Class, Object, Sel};
+
+extern "C" {
+    fn object_setClass(obj: *mut Object, cls: *const Class) -> *const Class;
+    fn object_getClass(obj: *const Object) -> *const Class;
+}
+
+use std::sync::atomic::{AtomicUsize, Ordering};
+static BTN_CLASS_COUNTER: AtomicUsize = AtomicUsize::new(0);
 use objc::{msg_send, sel, sel_impl, class};
 use serde_json::Value;
 use std::sync::Once;
@@ -16,6 +24,18 @@ use crate::funcs::push_menu_event;
 
 static REGISTER_DELEGATE: Once = Once::new();
 const DELEGATE_CLASS_NAME: &str = "HapTrayMenuDelegate";
+use std::sync::LazyLock;
+use std::collections::HashMap;
+use std::sync::Mutex;
+
+#[derive(Copy, Clone)]
+struct SendId(id);
+unsafe impl Send for SendId {}
+unsafe impl Sync for SendId {}
+
+static STORED_MENUS: LazyLock<Mutex<HashMap<usize, SendId>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
+static STORED_ITEMS: LazyLock<Mutex<HashMap<usize, SendId>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
+static ACTIVE_MENU_ITEM: AtomicUsize = AtomicUsize::new(0);
 
 fn ensure_delegate_class() {
     REGISTER_DELEGATE.call_once(|| {
@@ -36,7 +56,97 @@ fn ensure_delegate_class() {
 }
 
 extern "C" fn tray_button_clicked(_this: &Object, _sel: Sel, _sender: id) {
-    push_menu_event("__left_click__".to_string());
+    let json = r#"{"type":"tray_click","button":"left"}"#;
+    crate::funcs::emit_tray_event(json);
+    push_menu_event(json.to_string());
+}
+
+extern "C" fn button_right_mouse_down(_this: &Object, _sel: Sel, _event: id) {
+    let item_ptr = resolve_item_from_button(_this);
+    ACTIVE_MENU_ITEM.store(item_ptr, Ordering::Relaxed);
+    let menus = STORED_MENUS.lock().unwrap();
+    let items = STORED_ITEMS.lock().unwrap();
+    if item_ptr != 0 {
+        if let Some(&SendId(menu)) = menus.get(&item_ptr) {
+            if let Some(&SendId(item)) = items.get(&item_ptr) {
+                unsafe {
+                    let _: () = msg_send![item, popUpStatusItemMenu: menu];
+                    let _: () = msg_send![item, setMenu: nil];
+                }
+                return;
+            }
+        }
+    }
+    if let Some((&key, &SendId(menu))) = menus.iter().next() {
+        if let Some(&SendId(item)) = items.get(&key) {
+            unsafe {
+                let _: () = msg_send![item, popUpStatusItemMenu: menu];
+                let _: () = msg_send![item, setMenu: nil];
+            }
+            return;
+        }
+    }
+    let json = r#"{"type":"tray_click","button":"right"}"#;
+    crate::funcs::emit_tray_event_for(item_ptr, json);
+    push_menu_event(json.to_string());
+}
+
+fn resolve_item_from_button(button: &Object) -> usize {
+    let items = STORED_ITEMS.lock().unwrap();
+    for (&key, &SendId(item)) in items.iter() {
+        unsafe {
+            let btn: id = msg_send![item, button];
+            if btn as *const Object == button as *const Object {
+                return key;
+            }
+        }
+    }
+    0
+}
+
+extern "C" fn button_mouse_down(_this: &Object, _sel: Sel, _event: id) {
+    let item_ptr = resolve_item_from_button(_this);
+    unsafe {
+        let app: id = msg_send![class!(NSApplication), sharedApplication];
+        let _: () = msg_send![app, activateIgnoringOtherApps: YES];
+        let windows: id = msg_send![app, windows];
+        let count: usize = msg_send![windows, count];
+        for i in 0..count {
+            let win: id = msg_send![windows, objectAtIndex: i];
+            let is_mini: bool = msg_send![win, isMiniaturized];
+            if is_mini {
+                let _: () = msg_send![win, deminiaturize: nil];
+            }
+            let is_visible: bool = msg_send![win, isVisible];
+            if is_visible || is_mini {
+                let _: () = msg_send![win, makeKeyAndOrderFront: nil];
+                break;
+            }
+        }
+    }
+    let json = r#"{"type":"tray_click","button":"left"}"#;
+    crate::funcs::emit_tray_event_for(item_ptr, json);
+    push_menu_event(json.to_string());
+}
+
+unsafe fn swizzle_button(button: id) {
+    let actual_class = object_getClass(button as *const Object);
+    let n = BTN_CLASS_COUNTER.fetch_add(1, Ordering::Relaxed);
+    let class_name = format!("HapBtn_{}", n);
+    let mut decl = ClassDecl::new(
+        &class_name,
+        &*actual_class
+    ).expect("failed to create button subclass");
+    decl.add_method(
+        sel!(rightMouseDown:),
+        button_right_mouse_down as extern "C" fn(&Object, Sel, id),
+    );
+    decl.add_method(
+        sel!(mouseDown:),
+        button_mouse_down as extern "C" fn(&Object, Sel, id),
+    );
+    let new_class = decl.register();
+    object_setClass(button as *mut Object, new_class);
 }
 
 extern "C" fn menu_item_clicked(_this: &Object, _sel: Sel, sender: id) {
@@ -50,6 +160,9 @@ extern "C" fn menu_item_clicked(_this: &Object, _sel: Sel, sender: id) {
                 std::ffi::CStr::from_ptr(bytes).to_string_lossy().to_string()
             } else { item_id }
         } else { item_id };
+        let json = serde_json::json!({"type": "menu_click", "id": id_str}).to_string();
+        let active = ACTIVE_MENU_ITEM.load(Ordering::Relaxed);
+        crate::funcs::emit_tray_event_for(active, &json);
         push_menu_event(id_str);
     }
 }
@@ -79,6 +192,10 @@ pub fn create_status_item(icon_path: &str, tooltip: &str) -> Result<*mut Object,
         let button: id = msg_send![item, button];
         let _: () = msg_send![button, setTarget: delegate];
         let _: () = msg_send![button, setAction: sel!(trayButtonClicked:)];
+
+        swizzle_button(button);
+
+        STORED_ITEMS.lock().unwrap().insert(item as usize, SendId(item));
 
         Ok(item as *mut Object)
     }
@@ -195,11 +312,17 @@ pub fn set_menu(item: *mut Object, items: &[Value]) {
                 let _: () = msg_send![menu, addItem: mi];
             }
         }
-        let _: () = msg_send![item as id, setMenu: menu];
+        let _: () = msg_send![menu, retain];
+        let key = item as usize;
+        STORED_MENUS.lock().unwrap().insert(key, SendId(menu));
+        STORED_ITEMS.lock().unwrap().insert(key, SendId(item as id));
     }
 }
 
 pub fn remove_status_item(item: *mut Object) {
+    let key = item as usize;
+    STORED_MENUS.lock().unwrap().remove(&key);
+    STORED_ITEMS.lock().unwrap().remove(&key);
     unsafe {
         let status_bar: id = msg_send![class!(NSStatusBar), systemStatusBar];
         let _: () = msg_send![status_bar, removeStatusItem: item as id];

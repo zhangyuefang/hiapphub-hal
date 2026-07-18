@@ -12,6 +12,7 @@ use crate::macos;
 static TRAYS: LazyLock<Mutex<HashMap<String, TrayState>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
 static TRAY_COUNTER: LazyLock<Mutex<u64>> = LazyLock::new(|| Mutex::new(0));
 static MENU_EVENTS: LazyLock<Mutex<Vec<String>>> = LazyLock::new(|| Mutex::new(Vec::new()));
+static TRAY_CALLERS: LazyLock<Mutex<HashMap<String, String>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
 
 struct TrayState {
     #[cfg(target_os = "macos")]
@@ -26,7 +27,13 @@ fn next_tid() -> String {
 }
 
 #[derive(Deserialize)]
-pub struct CreateParams { pub icon_path: Option<String>, pub tooltip: Option<String>, pub callback_id: Option<String> }
+pub struct CreateParams {
+    pub icon_path: Option<String>,
+    pub tooltip: Option<String>,
+    pub callback_id: Option<String>,
+    #[serde(rename = "_caller")]
+    pub caller: Option<String>,
+}
 hap_fn!(hap_tray_create, CreateParams, |p| {
     #[cfg(target_os = "macos")]
     {
@@ -36,6 +43,9 @@ hap_fn!(hap_tray_create, CreateParams, |p| {
         )?;
         let tid = next_tid();
         TRAYS.lock().unwrap().insert(tid.clone(), TrayState { item });
+        if let Some(ref caller) = p.caller {
+            TRAY_CALLERS.lock().unwrap().insert(tid.clone(), caller.clone());
+        }
         Ok(json!({"tray_id": tid}))
     }
     #[cfg(not(target_os = "macos"))]
@@ -114,6 +124,7 @@ hap_fn!(hap_tray_destroy, DestroyParams, |p| {
     }
     #[cfg(not(target_os = "macos"))]
     { let _ = p; }
+    TRAY_CALLERS.lock().unwrap().remove(&p.tray_id);
     Ok(json!(true))
 });
 
@@ -187,4 +198,35 @@ hap_fn!(hap_tray_poll_events, Value, |_p| {
 
 pub fn push_menu_event(item_id: String) {
     MENU_EVENTS.lock().unwrap().push(item_id);
+}
+
+pub fn get_caller_for_item(item_ptr: usize) -> Option<String> {
+    let trays = TRAYS.lock().unwrap();
+    let callers = TRAY_CALLERS.lock().unwrap();
+    for (tid, state) in trays.iter() {
+        #[cfg(target_os = "macos")]
+        if state.item as usize == item_ptr {
+            return callers.get(tid).cloned();
+        }
+    }
+    callers.values().next().cloned()
+}
+
+pub fn emit_tray_event_for(item_ptr: usize, json: &str) {
+    if let Some(caller) = get_caller_for_item(item_ptr) {
+        let target = format!("tray-event@{}", caller);
+        hap_common::context::emit_callback(&target, json);
+    } else {
+        hap_common::context::emit_callback("tray-event", json);
+    }
+}
+
+pub fn emit_tray_event(json: &str) {
+    let caller = TRAY_CALLERS.lock().unwrap().values().next().cloned();
+    if let Some(caller) = caller {
+        let target = format!("tray-event@{}", caller);
+        hap_common::context::emit_callback(&target, json);
+    } else {
+        hap_common::context::emit_callback("tray-event", json);
+    }
 }
