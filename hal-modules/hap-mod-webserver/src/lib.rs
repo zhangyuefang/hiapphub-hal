@@ -165,4 +165,5 @@ mod tests {
         unsafe { free_c_string(result2 as *mut _) };
         assert_eq!(s2, "true");
     }
+
 }
