@@ -26,9 +26,17 @@ fn ensure_delegate_class() {
                 sel!(menuItemClicked:),
                 menu_item_clicked as extern "C" fn(&Object, Sel, id),
             );
+            decl.add_method(
+                sel!(trayButtonClicked:),
+                tray_button_clicked as extern "C" fn(&Object, Sel, id),
+            );
         }
         decl.register();
     });
+}
+
+extern "C" fn tray_button_clicked(_this: &Object, _sel: Sel, _sender: id) {
+    push_menu_event("__left_click__".to_string());
 }
 
 extern "C" fn menu_item_clicked(_this: &Object, _sel: Sel, sender: id) {
@@ -47,6 +55,7 @@ extern "C" fn menu_item_clicked(_this: &Object, _sel: Sel, sender: id) {
 }
 
 pub fn create_status_item(icon_path: &str, tooltip: &str) -> Result<*mut Object, HapError> {
+    ensure_delegate_class();
     unsafe {
         let _pool = NSAutoreleasePool::new(nil);
         let status_bar: id = msg_send![class!(NSStatusBar), systemStatusBar];
@@ -63,6 +72,13 @@ pub fn create_status_item(icon_path: &str, tooltip: &str) -> Result<*mut Object,
             let ns_tip = NSString::alloc(nil).init_str(tooltip);
             let _: () = msg_send![item, setToolTip: ns_tip];
         }
+
+        let delegate_class = Class::get(DELEGATE_CLASS_NAME).unwrap();
+        let delegate: id = msg_send![delegate_class, alloc];
+        let delegate: id = msg_send![delegate, init];
+        let button: id = msg_send![item, button];
+        let _: () = msg_send![button, setTarget: delegate];
+        let _: () = msg_send![button, setAction: sel!(trayButtonClicked:)];
 
         Ok(item as *mut Object)
     }
