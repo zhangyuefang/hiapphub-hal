@@ -22,7 +22,7 @@
     "ar": "وحدة Excel",
     "hi": "Excel मॉड्यूल"
   },
-  "permission": "",
+  "permission": "excel",
   "functions": [
     {
       "name": "read",
@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -42,7 +52,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "optional": true,
           "desc": "Worksheet name or index"
@@ -52,7 +72,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "单元格范围（如A1:D10）",
-            "en-US": "Cell range (e.g. A1:D10)"
+            "en-US": "Cell range (e.g. A1:D10)",
+            "zh-TW": "單元格範圍（如A1:D10）",
+            "ja": "セル範囲（例: A1:D10）",
+            "ko": "셀 범위 (예: A1:D10)",
+            "es": "Rango de celdas (ej. A1:D10)",
+            "fr": "Plage de cellules (ex. A1:D10)",
+            "de": "Zellbereich (z.B. A1:D10)",
+            "pt-BR": "Intervalo de células (ex. A1:D10)",
+            "ru": "Диапазон ячеек (напр. A1:D10)",
+            "ar": "نطاق الخلايا (مثل A1:D10)",
+            "hi": "सेल रेंज (जैसे A1:D10)"
           },
           "optional": true,
           "desc": "Cell range (e.g. A1:D10)"
@@ -62,7 +92,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "header_row参数",
-            "en-US": "header_row parameter"
+            "en-US": "header_row parameter",
+            "zh-TW": "header_row參數",
+            "ja": "header_rowパラメータ",
+            "ko": "header_row매개변수",
+            "es": "Parámetro de header_row",
+            "fr": "Paramètre de header_row",
+            "de": "header_row-Parameter",
+            "pt-BR": "Parâmetro de header_row",
+            "ru": "Параметр header_row",
+            "ar": "معلمة header_row",
+            "hi": "header_row पैरामीटर"
           },
           "optional": true,
           "desc": "header_row parameter"
@@ -72,14 +112,34 @@
         "type": "CellData",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "excel.read",
       "descriptions": {
         "zh-CN": "从 Excel 读取单元格或区域数据",
-        "en-US": "Read data from Excel cell or specified range"
+        "en-US": "Read data from Excel cell or specified range",
+        "zh-TW": "從 Excel 讀取單元格或區域數據",
+        "ja": "Excelセルまたは指定範囲からデータを読み取り",
+        "ko": "Excel 셀 또는 지정 범위에서 데이터 읽기",
+        "es": "Leer datos de celda o rango de Excel",
+        "fr": "Lire les données de la cellule ou plage Excel",
+        "de": "Daten aus Excel-Zelle oder Bereich lesen",
+        "pt-BR": "Ler dados da célula ou intervalo do Excel",
+        "ru": "Прочитать данные из ячейки или диапазона Excel",
+        "ar": "قراءة بيانات من خلية أو نطاق Excel",
+        "hi": "Excel सेल या निर्दिष्ट रेंज से डेटा पढ़ें"
       },
       "group": "file",
       "description": "Read data from Excel cell or specified range"
@@ -93,7 +153,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -102,7 +172,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "要写入的行数据（二维数组）",
-            "en-US": "Row data to write (2D array)"
+            "en-US": "Row data to write (2D array)",
+            "zh-TW": "要寫入的行數據（二維陣列）",
+            "ja": "書き込む行データ（2D配列）",
+            "ko": "쓸 행 데이터 (2차원 배열)",
+            "es": "Datos de fila a escribir (matriz 2D)",
+            "fr": "Données de ligne à écrire (tableau 2D)",
+            "de": "Zeilendaten zum Schreiben (2D-Array)",
+            "pt-BR": "Dados de linha a escrever (array 2D)",
+            "ru": "Данные строк для записи (2D-массив)",
+            "ar": "بيانات الصفوف للكتابة (مصفوفة ثنائية)",
+            "hi": "लिखने के लिए पंक्ति डेटा (2D ऐरे)"
           },
           "desc": "Row data to write (2D array)"
         },
@@ -111,7 +191,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "HTTP请求头",
-            "en-US": "HTTP headers"
+            "en-US": "HTTP headers",
+            "zh-TW": "HTTP請求頭",
+            "ja": "HTTPリクエスト头",
+            "ko": "HTTP 헤더",
+            "es": "Encabezados HTTP",
+            "fr": "En-têtes HTTP",
+            "de": "HTTP-Header",
+            "pt-BR": "Cabeçalhos HTTP",
+            "ru": "HTTP-заголовки",
+            "ar": "رؤوس HTTP",
+            "hi": "HTTP हेडर"
           },
           "optional": true,
           "desc": "HTTP headers"
@@ -121,7 +211,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "optional": true,
           "desc": "Worksheet name or index"
@@ -131,14 +231,34 @@
         "type": "WriteResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "excel.write",
       "descriptions": {
         "zh-CN": "写入数据到 Excel 单元格或区域",
-        "en-US": "Write data to Excel cell or range"
+        "en-US": "Write data to Excel cell or range",
+        "zh-TW": "寫入數據到 Excel 單元格或區域",
+        "ja": "Excelセルまたは範囲にデータを書き込み",
+        "ko": "Excel 셀 또는 범위에 데이터 쓰기",
+        "es": "Escribir datos en celda o rango de Excel",
+        "fr": "Écrire des données dans la cellule ou plage",
+        "de": "Daten in Excel-Zelle oder Bereich schreiben",
+        "pt-BR": "Escrever dados na célula ou intervalo",
+        "ru": "Записать данные в ячейку или диапазон Excel",
+        "ar": "كتابة بيانات في خلية أو نطاق Excel",
+        "hi": "Excel सेल या रेंज में डेटा लिखें"
       },
       "group": "file",
       "description": "Write data to Excel cell or range"
@@ -152,7 +272,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Excel文件路径",
-            "en-US": "Excel file path"
+            "en-US": "Excel file path",
+            "zh-TW": "Excel檔案路徑",
+            "ja": "Excelファイルパス",
+            "ko": "Excel파일경로",
+            "es": "Ruta del archivo Excel",
+            "fr": "Chemin du fichier Excel",
+            "de": "Excel-Dateipfad",
+            "pt-BR": "Caminho do arquivo Excel",
+            "ru": "Путь к файлу Excel",
+            "ar": "مسار ملف Excel",
+            "hi": "Excel फ़ाइल पथ"
           },
           "desc": "Excel file path"
         }
@@ -161,14 +291,34 @@
         "type": "WorkbookHandle",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "excel.open",
       "descriptions": {
         "zh-CN": "打开 Excel 文件",
-        "en-US": "Open Excel file (.xlsx/.xls) and get workbook handle"
+        "en-US": "Open Excel file (.xlsx/.xls) and get workbook handle",
+        "zh-TW": "打開 Excel 檔案",
+        "ja": "開く Excel ファイル",
+        "ko": "열기 Excel 파일",
+        "es": "Abrir archivo Excel y obtener manejador",
+        "fr": "Ouvrir le fichier Excel et obtenir le handle",
+        "de": "Excel-Datei öffnen und Handle erhalten",
+        "pt-BR": "Abrir arquivo Excel e obter handle",
+        "ru": "Открыть файл Excel и получить дескриптор",
+        "ar": "فتح ملف Excel والحصول على المعرف",
+        "hi": "Excel फ़ाइल खोलें और वर्कबुक हैंडल प्राप्त करें"
       },
       "group": "file",
       "description": "Open Excel file (.xlsx/.xls) and get workbook handle"
@@ -182,7 +332,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "新文件的保存路径",
-            "en-US": "Path for new file"
+            "en-US": "Path for new file",
+            "zh-TW": "新檔案的保存路徑",
+            "ja": "新ファイルの保存するパス",
+            "ko": "새 파일 경로",
+            "es": "Ruta del nuevo archivo",
+            "fr": "Chemin du nouveau fichier",
+            "de": "Pfad für neue Datei",
+            "pt-BR": "Caminho do novo arquivo",
+            "ru": "Путь для нового файла",
+            "ar": "مسار الملف الجديد",
+            "hi": "नई फ़ाइल का पथ"
           },
           "desc": "Path for new file"
         }
@@ -191,14 +351,34 @@
         "type": "WorkbookHandle",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "excel.create",
       "descriptions": {
         "zh-CN": "创建新的 Excel 工作簿",
-        "en-US": "Create a new empty Excel workbook"
+        "en-US": "Create a new empty Excel workbook",
+        "zh-TW": "建立新的 Excel 工作簿",
+        "ja": "作成する新の Excel 工作簿",
+        "ko": "새 빈 Excel 워크북 생성",
+        "es": "Crear nuevo libro Excel vacío",
+        "fr": "Créer un classeur Excel vide",
+        "de": "Neue leere Excel-Arbeitsmappe erstellen",
+        "pt-BR": "Criar nova pasta Excel vazia",
+        "ru": "Создать новую пустую книгу Excel",
+        "ar": "إنشاء مصنف Excel فارغ جديد",
+        "hi": "नई खाली Excel वर्कबुक बनाएं"
       },
       "group": "file",
       "description": "Create a new empty Excel workbook"
@@ -212,7 +392,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -220,7 +410,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "名称标识",
-            "en-US": "Name identifier"
+            "en-US": "Name identifier",
+            "zh-TW": "名稱標識",
+            "ja": "名前識別子",
+            "ko": "이름 식별자",
+            "es": "Identificador de nombre",
+            "fr": "Identifiant de nom",
+            "de": "Namenskennung",
+            "pt-BR": "Identificador de nome",
+            "ru": "Идентификатор имени",
+            "ar": "معرف الاسم",
+            "hi": "नाम पहचानकर्ता"
           },
           "desc": "Name identifier"
         }
@@ -229,14 +429,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.addSheet",
       "descriptions": {
         "zh-CN": "添加新工作表",
-        "en-US": "Add sheet of Excel"
+        "en-US": "Add sheet of Excel",
+        "zh-TW": "添加新工作表",
+        "ja": "Excelシートを追加",
+        "ko": "Excel 시트 추가",
+        "es": "Agregar hoja de Excel",
+        "fr": "Ajouter une feuille Excel",
+        "de": "Excel-Blatt hinzufügen",
+        "pt-BR": "Adicionar planilha Excel",
+        "ru": "Добавить лист Excel",
+        "ar": "إضافة ورقة Excel",
+        "hi": "Excel शीट जोड़ें"
       },
       "group": "sheet",
       "description": "Add sheet of Excel"
@@ -250,7 +470,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -258,7 +488,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "名称标识",
-            "en-US": "Name identifier"
+            "en-US": "Name identifier",
+            "zh-TW": "名稱標識",
+            "ja": "名前識別子",
+            "ko": "이름 식별자",
+            "es": "Identificador de nombre",
+            "fr": "Identifiant de nom",
+            "de": "Namenskennung",
+            "pt-BR": "Identificador de nome",
+            "ru": "Идентификатор имени",
+            "ar": "معرف الاسم",
+            "hi": "नाम पहचानकर्ता"
           },
           "desc": "Name identifier"
         }
@@ -267,14 +507,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.deleteSheet",
       "descriptions": {
         "zh-CN": "删除工作表",
-        "en-US": "Delete sheet of Excel"
+        "en-US": "Delete sheet of Excel",
+        "zh-TW": "刪除工作表",
+        "ja": "削除する工作表",
+        "ko": "Excel 시트 삭제",
+        "es": "Eliminar hoja de Excel",
+        "fr": "Supprimer une feuille Excel",
+        "de": "Excel-Blatt löschen",
+        "pt-BR": "Excluir planilha Excel",
+        "ru": "Удалить лист Excel",
+        "ar": "حذف ورقة Excel",
+        "hi": "Excel शीट हटाएं"
       },
       "group": "sheet",
       "description": "Delete sheet of Excel"
@@ -288,7 +548,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -296,7 +566,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "old_name参数",
-            "en-US": "old_name parameter"
+            "en-US": "old_name parameter",
+            "zh-TW": "old_name參數",
+            "ja": "old_nameパラメータ",
+            "ko": "old_name매개변수",
+            "es": "Parámetro de old_name",
+            "fr": "Paramètre de old_name",
+            "de": "old_name-Parameter",
+            "pt-BR": "Parâmetro de old_name",
+            "ru": "Параметр old_name",
+            "ar": "معلمة old_name",
+            "hi": "old_name पैरामीटर"
           },
           "desc": "old_name parameter"
         },
@@ -305,7 +585,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "new_name参数",
-            "en-US": "new_name parameter"
+            "en-US": "new_name parameter",
+            "zh-TW": "new_name參數",
+            "ja": "new_nameパラメータ",
+            "ko": "new_name매개변수",
+            "es": "Parámetro de new_name",
+            "fr": "Paramètre de new_name",
+            "de": "new_name-Parameter",
+            "pt-BR": "Parâmetro de new_name",
+            "ru": "Параметр new_name",
+            "ar": "معلمة new_name",
+            "hi": "new_name पैरामीटर"
           },
           "desc": "new_name parameter"
         }
@@ -314,14 +604,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.renameSheet",
       "descriptions": {
         "zh-CN": "重命名工作表",
-        "en-US": "Rename sheet of Excel"
+        "en-US": "Rename sheet of Excel",
+        "zh-TW": "重命名工作表",
+        "ja": "名前変更する工作表",
+        "ko": "Excel 시트 이름 변경",
+        "es": "Renombrar hoja de Excel",
+        "fr": "Renommer la feuille Excel",
+        "de": "Excel-Blatt umbenennen",
+        "pt-BR": "Renomear planilha Excel",
+        "ru": "Переименовать лист Excel",
+        "ar": "إعادة تسمية ورقة Excel",
+        "hi": "Excel शीट का नाम बदलें"
       },
       "group": "sheet",
       "description": "Rename sheet of Excel"
@@ -335,7 +645,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -343,7 +663,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -353,7 +683,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "单元格引用",
-            "en-US": "Cell ref"
+            "en-US": "Cell ref",
+            "zh-TW": "單元格引用",
+            "ja": "セル参照",
+            "ko": "셀 참조",
+            "es": "Referencia de celda",
+            "fr": "Référence de cellule",
+            "de": "Zellreferenz",
+            "pt-BR": "Referência de célula",
+            "ru": "Ссылка на ячейку",
+            "ar": "مرجع الخلية",
+            "hi": "सेल संदर्भ"
           }
         }
       ],
@@ -361,14 +701,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "excel.getCell",
       "descriptions": {
         "zh-CN": "获取单元格属性信息",
-        "en-US": "Get cell info of Excel"
+        "en-US": "Get cell info of Excel",
+        "zh-TW": "取得單元格屬性資訊",
+        "ja": "Excelのセル情報を取得",
+        "ko": "Excel 셀 정보 가져오기",
+        "es": "Obtener información de celda de Excel",
+        "fr": "Obtenir les informations de cellule Excel",
+        "de": "Excel-Zellinformationen abrufen",
+        "pt-BR": "Obter informações da célula Excel",
+        "ru": "Получить информацию о ячейке Excel",
+        "ar": "الحصول على معلومات خلية Excel",
+        "hi": "Excel सेल जानकारी प्राप्त करें"
       },
       "group": "cell",
       "description": "Get cell info of Excel"
@@ -382,7 +742,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -390,7 +760,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -400,7 +780,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "单元格引用",
-            "en-US": "Cell ref"
+            "en-US": "Cell ref",
+            "zh-TW": "單元格引用",
+            "ja": "セル参照",
+            "ko": "셀 참조",
+            "es": "Referencia de celda",
+            "fr": "Référence de cellule",
+            "de": "Zellreferenz",
+            "pt-BR": "Referência de célula",
+            "ru": "Ссылка на ячейку",
+            "ar": "مرجع الخلية",
+            "hi": "सेल संदर्भ"
           }
         },
         {
@@ -408,7 +798,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要设置的值",
-            "en-US": "Value to set"
+            "en-US": "Value to set",
+            "zh-TW": "要設定的值",
+            "ja": "設定する値",
+            "ko": "설정할 값",
+            "es": "Valor a establecer",
+            "fr": "Valeur à définir",
+            "de": "Zu setzender Wert",
+            "pt-BR": "Valor a definir",
+            "ru": "Устанавливаемое значение",
+            "ar": "القيمة المراد تعيينها",
+            "hi": "सेट करने का मान"
           },
           "desc": "Value to set"
         }
@@ -417,14 +817,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.setCell",
       "descriptions": {
         "zh-CN": "设置单元格属性",
-        "en-US": "Set cell property of Excel"
+        "en-US": "Set cell property of Excel",
+        "zh-TW": "設定單元格屬性",
+        "ja": "Excelのセルプロパティを設定",
+        "ko": "Excel 셀 속성 설정",
+        "es": "Establecer propiedad de celda de Excel",
+        "fr": "Définir la propriété de cellule Excel",
+        "de": "Excel-Zelleigenschaft setzen",
+        "pt-BR": "Definir propriedade da célula Excel",
+        "ru": "Установить свойство ячейки Excel",
+        "ar": "تعيين خاصية خلية Excel",
+        "hi": "Excel सेल प्रॉपर्टी सेट करें"
       },
       "group": "cell",
       "description": "Set cell property of Excel"
@@ -438,7 +858,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -446,7 +876,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -456,7 +896,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "单元格范围（如A1:D10）",
-            "en-US": "Cell range (e.g. A1:D10)"
+            "en-US": "Cell range (e.g. A1:D10)",
+            "zh-TW": "單元格範圍（如A1:D10）",
+            "ja": "セル範囲（例: A1:D10）",
+            "ko": "셀 범위 (예: A1:D10)",
+            "es": "Rango de celdas (ej. A1:D10)",
+            "fr": "Plage de cellules (ex. A1:D10)",
+            "de": "Zellbereich (z.B. A1:D10)",
+            "pt-BR": "Intervalo de células (ex. A1:D10)",
+            "ru": "Диапазон ячеек (напр. A1:D10)",
+            "ar": "نطاق الخلايا (مثل A1:D10)",
+            "hi": "सेल रेंज (जैसे A1:D10)"
           },
           "desc": "Cell range (e.g. A1:D10)",
           "optional": true
@@ -466,14 +916,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "excel.getRange",
       "descriptions": {
         "zh-CN": "获取区域属性信息",
-        "en-US": "Get range info of Excel"
+        "en-US": "Get range info of Excel",
+        "zh-TW": "取得區域屬性資訊",
+        "ja": "Excelの範囲情報を取得",
+        "ko": "Excel 범위 정보 가져오기",
+        "es": "Obtener información de rango de Excel",
+        "fr": "Obtenir les informations de plage Excel",
+        "de": "Excel-Bereichsinformationen abrufen",
+        "pt-BR": "Obter informações do intervalo Excel",
+        "ru": "Получить информацию о диапазоне Excel",
+        "ar": "الحصول على معلومات نطاق Excel",
+        "hi": "Excel रेंज जानकारी प्राप्त करें"
       },
       "group": "cell",
       "description": "Get range info of Excel"
@@ -487,7 +957,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -495,7 +975,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -505,7 +995,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "start_cell参数",
-            "en-US": "start_cell parameter"
+            "en-US": "start_cell parameter",
+            "zh-TW": "start_cell參數",
+            "ja": "start_cellパラメータ",
+            "ko": "start_cell매개변수",
+            "es": "Parámetro de start_cell",
+            "fr": "Paramètre de start_cell",
+            "de": "start_cell-Parameter",
+            "pt-BR": "Parâmetro de start_cell",
+            "ru": "Параметр start_cell",
+            "ar": "معلمة start_cell",
+            "hi": "start_cell पैरामीटर"
           },
           "desc": "start_cell parameter"
         },
@@ -514,7 +1014,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "要写入的值（二维数组）",
-            "en-US": "Values to write (2D array)"
+            "en-US": "Values to write (2D array)",
+            "zh-TW": "要寫入的值（二維陣列）",
+            "ja": "書き込む値（2D配列）",
+            "ko": "쓸 값 (2차원 배열)",
+            "es": "Valores a escribir (matriz 2D)",
+            "fr": "Valeurs à écrire (tableau 2D)",
+            "de": "Zu schreibende Werte (2D-Array)",
+            "pt-BR": "Valores a escrever (array 2D)",
+            "ru": "Значения для записи (2D-массив)",
+            "ar": "القيم للكتابة (مصفوفة ثنائية)",
+            "hi": "लिखने के लिए मान (2D ऐरे)"
           },
           "desc": "Values to write (2D array)",
           "optional": true,
@@ -525,14 +1035,34 @@
         "type": "WriteResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "excel.setRange",
       "descriptions": {
         "zh-CN": "批量设置区域属性",
-        "en-US": "Set range property of Excel"
+        "en-US": "Set range property of Excel",
+        "zh-TW": "批量設定區域屬性",
+        "ja": "Excelの範囲属性を設定",
+        "ko": "Excel 범위 속성 설정",
+        "es": "Establecer propiedad de rango de Excel",
+        "fr": "Définir la propriété de plage Excel",
+        "de": "Excel-Bereichseigenschaft setzen",
+        "pt-BR": "Definir propriedade do intervalo Excel",
+        "ru": "Установить свойство диапазона Excel",
+        "ar": "تعيين خاصية نطاق Excel",
+        "hi": "Excel रेंज प्रॉपर्टी सेट करें"
       },
       "group": "cell",
       "description": "Set range property of Excel"
@@ -546,7 +1076,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -554,7 +1094,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -564,7 +1114,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要设置样式的单元格范围",
-            "en-US": "Cell range to apply style"
+            "en-US": "Cell range to apply style",
+            "zh-TW": "要設定样式的單元格範圍",
+            "ja": "スタイルを適用するセル範囲",
+            "ko": "스타일을 적용할 셀 범위",
+            "es": "Rango de celdas para aplicar estilo",
+            "fr": "Plage de cellules pour appliquer le style",
+            "de": "Zellbereich für Stil",
+            "pt-BR": "Intervalo de células para aplicar estilo",
+            "ru": "Диапазон ячеек для применения стиля",
+            "ar": "نطاق الخلايا لتطبيق النمط",
+            "hi": "स्टाइल लागू करने के लिए सेल रेंज"
           },
           "desc": "Cell range to apply style",
           "optional": true
@@ -574,7 +1134,17 @@
           "type": "CellStyle",
           "descs": {
             "zh-CN": "样式对象",
-            "en-US": "Style object"
+            "en-US": "Style object",
+            "zh-TW": "样式物件",
+            "ja": "スタイルオブジェクト",
+            "ko": "스타일 객체",
+            "es": "Objeto de estilo",
+            "fr": "Objet de style",
+            "de": "Stilobjekt",
+            "pt-BR": "Objeto de estilo",
+            "ru": "Объект стиля",
+            "ar": "كائن النمط",
+            "hi": "स्टाइल ऑब्जेक्ट"
           }
         }
       ],
@@ -582,14 +1152,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.setStyle",
       "descriptions": {
         "zh-CN": "设置单元格样式",
-        "en-US": "Set style property of Excel"
+        "en-US": "Set style property of Excel",
+        "zh-TW": "設定單元格样式",
+        "ja": "Excelのスタイルプロパティを設定",
+        "ko": "Excel 스타일 속성 설정",
+        "es": "Establecer estilo de Excel",
+        "fr": "Définir le style Excel",
+        "de": "Excel-Stil setzen",
+        "pt-BR": "Definir estilo do Excel",
+        "ru": "Установить стиль Excel",
+        "ar": "تعيين نمط Excel",
+        "hi": "Excel स्टाइल सेट करें"
       },
       "group": "format",
       "description": "Set style property of Excel"
@@ -603,7 +1193,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -611,7 +1211,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -621,7 +1231,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要合并的单元格范围（如A1:C3）",
-            "en-US": "Cell range to merge (e.g. A1:C3)"
+            "en-US": "Cell range to merge (e.g. A1:C3)",
+            "zh-TW": "要合並的單元格範圍（如A1:C3）",
+            "ja": "結合するセル範囲（例: A1:C3）",
+            "ko": "병합할 셀 범위 (예: A1:C3)",
+            "es": "Rango de celdas a fusionar (ej. A1:C3)",
+            "fr": "Plage de cellules à fusionner (ex. A1:C3)",
+            "de": "Zellbereich zum Zusammenführen (z.B. A1:C3)",
+            "pt-BR": "Intervalo de células para mesclar (ex. A1:C3)",
+            "ru": "Диапазон ячеек для объединения (напр. A1:C3)",
+            "ar": "نطاق الخلايا للدمج (مثل A1:C3)",
+            "hi": "मर्ज करने के लिए सेल रेंज (जैसे A1:C3)"
           },
           "desc": "Cell range to merge (e.g. A1:C3)",
           "optional": true
@@ -631,14 +1251,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.mergeCells",
       "descriptions": {
         "zh-CN": "合并单元格",
-        "en-US": "Merge cells of Excel"
+        "en-US": "Merge cells of Excel",
+        "zh-TW": "合並單元格",
+        "ja": "Excelのセルを結合",
+        "ko": "Excel 셀 병합",
+        "es": "Fusionar celdas de Excel",
+        "fr": "Fusionner les cellules Excel",
+        "de": "Excel-Zellen zusammenführen",
+        "pt-BR": "Mesclar células do Excel",
+        "ru": "Объединить ячейки Excel",
+        "ar": "دمج خلايا Excel",
+        "hi": "Excel सेल मर्ज करें"
       },
       "group": "format",
       "description": "Merge cells of Excel"
@@ -652,7 +1292,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -660,7 +1310,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -670,7 +1330,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要取消合并的单元格范围",
-            "en-US": "Cell range to unmerge"
+            "en-US": "Cell range to unmerge",
+            "zh-TW": "要取消合並的單元格範圍",
+            "ja": "結合解除するセル範囲",
+            "ko": "병합 해제할 셀 범위",
+            "es": "Rango de celdas a separar",
+            "fr": "Plage de cellules à séparer",
+            "de": "Zellbereich zum Aufteilen",
+            "pt-BR": "Intervalo de células para separar",
+            "ru": "Диапазон ячеек для разъединения",
+            "ar": "نطاق الخلايا لإلغاء الدمج",
+            "hi": "अनमर्ज करने के लिए सेल रेंज"
           },
           "desc": "Cell range to unmerge",
           "optional": true
@@ -680,14 +1350,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.unmergeCells",
       "descriptions": {
         "zh-CN": "取消合并单元格",
-        "en-US": "Unmerge cells of Excel"
+        "en-US": "Unmerge cells of Excel",
+        "zh-TW": "取消合並單元格",
+        "ja": "Excelのセル結合を解除",
+        "ko": "Excel 셀 병합 해제",
+        "es": "Separar celdas de Excel",
+        "fr": "Annuler la fusion des cellules",
+        "de": "Excel-Zellen aufteilen",
+        "pt-BR": "Separar células do Excel",
+        "ru": "Разъединить ячейки Excel",
+        "ar": "إلغاء دمج خلايا Excel",
+        "hi": "Excel सेल अनमर्ज करें"
       },
       "group": "format",
       "description": "Unmerge cells of Excel"
@@ -701,7 +1391,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -709,7 +1409,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -719,7 +1429,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "列标识（如A/B/C）",
-            "en-US": "Column identifier (e.g. A/B/C)"
+            "en-US": "Column identifier (e.g. A/B/C)",
+            "zh-TW": "列標識（如A/B/C）",
+            "ja": "列識別子（例: A/B/C）",
+            "ko": "열 식별자 (예: A/B/C)",
+            "es": "Identificador de columna (ej. A/B/C)",
+            "fr": "Identifiant de colonne (ex. A/B/C)",
+            "de": "Spaltenkennung (z.B. A/B/C)",
+            "pt-BR": "Identificador de coluna (ex. A/B/C)",
+            "ru": "Идентификатор столбца (напр. A/B/C)",
+            "ar": "معرف العمود (مثل A/B/C)",
+            "hi": "कॉलम पहचानकर्ता (जैसे A/B/C)"
           },
           "desc": "Column identifier (e.g. A/B/C)"
         },
@@ -728,7 +1448,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度（像素）",
-            "en-US": "Width in pixels"
+            "en-US": "Width in pixels",
+            "zh-TW": "寬度（像素）",
+            "ja": "幅（ピクセル）",
+            "ko": "너비 (픽셀)",
+            "es": "Ancho en píxeles",
+            "fr": "Largeur en pixels",
+            "de": "Breite in Pixel",
+            "pt-BR": "Largura em pixels",
+            "ru": "Ширина в пикселях",
+            "ar": "العرض بالبكسل",
+            "hi": "चौड़ाई पिक्सेल में"
           },
           "desc": "Width in pixels"
         }
@@ -737,14 +1467,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.setColumnWidth",
       "descriptions": {
         "zh-CN": "设置列宽度",
-        "en-US": "Set column width property of Excel"
+        "en-US": "Set column width property of Excel",
+        "zh-TW": "設定列寬度",
+        "ja": "設定する列幅",
+        "ko": "Excel 열 너비 속성 설정",
+        "es": "Establecer ancho de columna de Excel",
+        "fr": "Définir la largeur de colonne Excel",
+        "de": "Excel-Spaltenbreite setzen",
+        "pt-BR": "Definir largura da coluna Excel",
+        "ru": "Установить ширину столбца Excel",
+        "ar": "تعيين عرض عمود Excel",
+        "hi": "Excel कॉलम चौड़ाई सेट करें"
       },
       "group": "format",
       "description": "Set column width property of Excel"
@@ -758,7 +1508,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -766,7 +1526,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -776,7 +1546,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "行号（从1开始）",
-            "en-US": "Row number (1-based)"
+            "en-US": "Row number (1-based)",
+            "zh-TW": "行號（從1開始）",
+            "ja": "行号（から1开始）",
+            "ko": "행 번호 (1부터 시작)",
+            "es": "Número de fila (base 1)",
+            "fr": "Numéro de ligne (base 1)",
+            "de": "Zeilennummer (1-basiert)",
+            "pt-BR": "Número da linha (base 1)",
+            "ru": "Номер строки (начиная с 1)",
+            "ar": "رقم الصف (يبدأ من 1)",
+            "hi": "पंक्ति संख्या (1-आधारित)"
           },
           "desc": "Row number (1-based)"
         },
@@ -785,7 +1565,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度（像素）",
-            "en-US": "Height in pixels"
+            "en-US": "Height in pixels",
+            "zh-TW": "高度（像素）",
+            "ja": "高さ（ピクセル）",
+            "ko": "높이 (픽셀)",
+            "es": "Alto en píxeles",
+            "fr": "Hauteur en pixels",
+            "de": "Höhe in Pixel",
+            "pt-BR": "Altura em pixels",
+            "ru": "Высота в пикселях",
+            "ar": "الارتفاع بالبكسل",
+            "hi": "ऊँचाई पिक्सेल में"
           },
           "desc": "Height in pixels"
         }
@@ -794,14 +1584,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.setRowHeight",
       "descriptions": {
         "zh-CN": "设置行高度",
-        "en-US": "Set row height property of Excel"
+        "en-US": "Set row height property of Excel",
+        "zh-TW": "設定行高度",
+        "ja": "設定する行高さ",
+        "ko": "Excel 행 높이 속성 설정",
+        "es": "Establecer alto de fila de Excel",
+        "fr": "Définir la hauteur de ligne Excel",
+        "de": "Excel-Zeilenhöhe setzen",
+        "pt-BR": "Definir altura da linha Excel",
+        "ru": "Установить высоту строки Excel",
+        "ar": "تعيين ارتفاع صف Excel",
+        "hi": "Excel पंक्ति ऊंचाई सेट करें"
       },
       "group": "format",
       "description": "Set row height property of Excel"
@@ -815,7 +1625,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         }
       ],
@@ -823,14 +1643,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.save",
       "descriptions": {
         "zh-CN": "保存对工作簿的所有修改到磁盘",
-        "en-US": "Save all workbook changes to disk"
+        "en-US": "Save all workbook changes to disk",
+        "zh-TW": "保存對工作簿的所有修改到磁盤",
+        "ja": "全ワークブックの変更をディスクに保存",
+        "ko": "모든 워크북 변경 사항을 디스크에 저장",
+        "es": "Guardar todos los cambios del libro",
+        "fr": "Enregistrer toutes les modifications",
+        "de": "Alle Änderungen speichern",
+        "pt-BR": "Salvar todas as alterações",
+        "ru": "Сохранить все изменения на диск",
+        "ar": "حفظ جميع التغييرات على القرص",
+        "hi": "सभी वर्कबुक परिवर्तन डिस्क में सहेजें"
       },
       "group": "file",
       "description": "Save all workbook changes to disk"
@@ -844,7 +1684,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -852,7 +1702,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -861,14 +1721,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.saveAs",
       "descriptions": {
         "zh-CN": "将工作簿另存为指定路径",
-        "en-US": "Save as of Excel"
+        "en-US": "Save as of Excel",
+        "zh-TW": "將工作簿另存為指定路徑",
+        "ja": "Excelを名前を付けて保存",
+        "ko": "Excel 다른 이름으로 저장",
+        "es": "Guardar como de Excel",
+        "fr": "Enregistrer sous Excel",
+        "de": "Excel speichern unter",
+        "pt-BR": "Salvar como do Excel",
+        "ru": "Сохранить как Excel",
+        "ar": "حفظ Excel باسم",
+        "hi": "Excel को इस रूप में सहेजें"
       },
       "group": "file",
       "description": "Save as of Excel"
@@ -882,7 +1762,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         }
       ],
@@ -890,14 +1780,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.close",
       "descriptions": {
         "zh-CN": "关闭工作簿并释放资源（未保存的修改将丢失）",
-        "en-US": "Close workbook and release resources (unsaved changes lost)"
+        "en-US": "Close workbook and release resources (unsaved changes lost)",
+        "zh-TW": "關閉工作簿並釋放資源（未保存的修改將丢失）",
+        "ja": "ワークブックを閉じてリソースを解放（未保存の変更は消失）",
+        "ko": "워크북 닫기 및 리소스 해제 (저장하지 않은 변경 사항 손실)",
+        "es": "Cerrar libro y liberar recursos (cambios no guardados se pierden)",
+        "fr": "Fermer le classeur et libérer les ressources",
+        "de": "Arbeitsmappe schließen (ungespeicherte Änderungen gehen verloren)",
+        "pt-BR": "Fechar pasta e liberar recursos (alterações não salvas serão perdidas)",
+        "ru": "Закрыть книгу и освободить ресурсы (несохранённые изменения будут потеряны)",
+        "ar": "إغلاق المصنف وتحرير الموارد (التغييرات غير المحفوظة ستُفقد)",
+        "hi": "वर्कबुक बंद करें (असहेजित परिवर्तन खो जाएंगे)"
       },
       "group": "file",
       "description": "Close workbook and release resources (unsaved changes lost)"
@@ -911,7 +1821,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -920,14 +1840,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "excel.listSheets",
       "descriptions": {
         "zh-CN": "列出所有工作表名称",
-        "en-US": "List sheets of Excel"
+        "en-US": "List sheets of Excel",
+        "zh-TW": "列出所有工作表名稱",
+        "ja": "列出すべて工作表名称",
+        "ko": "Excel 시트 목록",
+        "es": "Listar hojas de Excel",
+        "fr": "Lister les feuilles Excel",
+        "de": "Excel-Blätter auflisten",
+        "pt-BR": "Listar planilhas Excel",
+        "ru": "Список листов Excel",
+        "ar": "قائمة أوراق Excel",
+        "hi": "Excel शीट सूचीबद्ध करें"
       },
       "group": "sheet",
       "description": "List sheets of Excel"
@@ -941,7 +1881,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -950,7 +1900,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "optional": true,
           "desc": "Worksheet name or index"
@@ -960,7 +1920,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         },
@@ -969,7 +1939,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "分隔符字符",
-            "en-US": "Delimiter character"
+            "en-US": "Delimiter character",
+            "zh-TW": "分隔符字元",
+            "ja": "分隔符文字",
+            "ko": "구분 문자",
+            "es": "Carácter delimitador",
+            "fr": "Caractère délimiteur",
+            "de": "Trennzeichen",
+            "pt-BR": "Caractere delimitador",
+            "ru": "Символ-разделитель",
+            "ar": "حرف الفاصل",
+            "hi": "डिलिमिटर कैरेक्टर"
           },
           "optional": true,
           "desc": "Delimiter character"
@@ -979,14 +1959,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.toCsv",
       "descriptions": {
         "zh-CN": "将工作表导出为 CSV 文件",
-        "en-US": "To csv of Excel"
+        "en-US": "To csv of Excel",
+        "zh-TW": "將工作表匯出為 CSV 檔案",
+        "ja": "ExcelをCSVに変換",
+        "ko": "Excel을 CSV로 변환",
+        "es": "Convertir Excel a CSV",
+        "fr": "Convertir Excel en CSV",
+        "de": "Excel in CSV konvertieren",
+        "pt-BR": "Converter Excel para CSV",
+        "ru": "Конвертировать Excel в CSV",
+        "ar": "تحويل Excel إلى CSV",
+        "hi": "Excel को CSV में बदलें"
       },
       "group": "file",
       "description": "To csv of Excel"
@@ -1000,7 +2000,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1009,7 +2019,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "optional": true,
           "desc": "Worksheet name or index"
@@ -1019,7 +2039,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "header_row参数",
-            "en-US": "header_row parameter"
+            "en-US": "header_row parameter",
+            "zh-TW": "header_row參數",
+            "ja": "header_rowパラメータ",
+            "ko": "header_row매개변수",
+            "es": "Parámetro de header_row",
+            "fr": "Paramètre de header_row",
+            "de": "header_row-Parameter",
+            "pt-BR": "Parâmetro de header_row",
+            "ru": "Параметр header_row",
+            "ar": "معلمة header_row",
+            "hi": "header_row पैरामीटर"
           },
           "optional": true,
           "desc": "header_row parameter"
@@ -1029,14 +2059,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "excel.toJson",
       "descriptions": {
         "zh-CN": "将工作表导出为 JSON 数据",
-        "en-US": "To json of Excel"
+        "en-US": "To json of Excel",
+        "zh-TW": "將工作表匯出為 JSON 數據",
+        "ja": "ExcelをJSONに変換",
+        "ko": "Excel을 JSON으로 변환",
+        "es": "Convertir Excel a JSON",
+        "fr": "Convertir Excel en JSON",
+        "de": "Excel in JSON konvertieren",
+        "pt-BR": "Converter Excel para JSON",
+        "ru": "Конвертировать Excel в JSON",
+        "ar": "تحويل Excel إلى JSON",
+        "hi": "Excel को JSON में बदलें"
       },
       "group": "file",
       "description": "To json of Excel"
@@ -1050,7 +2100,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "csv_path参数",
-            "en-US": "csv_path parameter"
+            "en-US": "csv_path parameter",
+            "zh-TW": "csv_path參數",
+            "ja": "csv_pathパラメータ",
+            "ko": "csv_path매개변수",
+            "es": "Parámetro de csv_path",
+            "fr": "Paramètre de csv_path",
+            "de": "csv_path-Parameter",
+            "pt-BR": "Parâmetro de csv_path",
+            "ru": "Параметр csv_path",
+            "ar": "معلمة csv_path",
+            "hi": "csv_path पैरामीटर"
           },
           "desc": "csv_path parameter"
         },
@@ -1059,7 +2119,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         },
@@ -1068,7 +2138,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称",
-            "en-US": "Sheet Name"
+            "en-US": "Sheet Name",
+            "zh-TW": "工作表名稱",
+            "ja": "シート名",
+            "ko": "시트 이름",
+            "es": "Nombre de hoja",
+            "fr": "Nom de feuille",
+            "de": "Blattname",
+            "pt-BR": "Nome da planilha",
+            "ru": "Имя листа",
+            "ar": "اسم الورقة",
+            "hi": "शीट नाम"
           },
           "optional": true
         },
@@ -1077,7 +2157,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "分隔符字符",
-            "en-US": "Delimiter character"
+            "en-US": "Delimiter character",
+            "zh-TW": "分隔符字元",
+            "ja": "分隔符文字",
+            "ko": "구분 문자",
+            "es": "Carácter delimitador",
+            "fr": "Caractère délimiteur",
+            "de": "Trennzeichen",
+            "pt-BR": "Caractere delimitador",
+            "ru": "Символ-разделитель",
+            "ar": "حرف الفاصل",
+            "hi": "डिलिमिटर कैरेक्टर"
           },
           "optional": true,
           "desc": "Delimiter character"
@@ -1087,14 +2177,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.fromCsv",
       "descriptions": {
         "zh-CN": "从 CSV 文件导入数据到工作表",
-        "en-US": "From csv of Excel"
+        "en-US": "From csv of Excel",
+        "zh-TW": "從 CSV 檔案匯入數據到工作表",
+        "ja": "から CSV ファイルインポートするデータへ工作表",
+        "ko": "CSV에서 Excel로 변환",
+        "es": "Crear Excel desde CSV",
+        "fr": "Créer Excel depuis CSV",
+        "de": "Excel aus CSV erstellen",
+        "pt-BR": "Criar Excel de CSV",
+        "ru": "Создать Excel из CSV",
+        "ar": "إنشاء Excel من CSV",
+        "hi": "CSV से Excel बनाएं"
       },
       "group": "file",
       "description": "From csv of Excel"
@@ -1108,7 +2218,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1116,7 +2236,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -1126,7 +2256,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "自动筛选的数据范围",
-            "en-US": "Data range for auto filter"
+            "en-US": "Data range for auto filter",
+            "zh-TW": "自動筛選的數據範圍",
+            "ja": "自動フィルターのデータ範囲",
+            "ko": "자동 필터 데이터 범위",
+            "es": "Rango de datos para filtro automático",
+            "fr": "Plage de données pour le filtre automatique",
+            "de": "Datenbereich für Autofilter",
+            "pt-BR": "Intervalo de dados para filtro automático",
+            "ru": "Диапазон данных для автофильтра",
+            "ar": "نطاق البيانات للتصفية التلقائية",
+            "hi": "ऑटो फ़िल्टर के लिए डेटा रेंज"
           },
           "desc": "Data range for auto filter",
           "optional": true
@@ -1136,14 +2276,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.autoFilter",
       "descriptions": {
         "zh-CN": "设置自动筛选",
-        "en-US": "Auto filter of Excel"
+        "en-US": "Auto filter of Excel",
+        "zh-TW": "設定自動筛選",
+        "ja": "Excelの自動フィルター",
+        "ko": "Excel 자동 필터",
+        "es": "Filtro automático de Excel",
+        "fr": "Filtre automatique d'Excel",
+        "de": "Excel-Autofilter",
+        "pt-BR": "Filtro automático do Excel",
+        "ru": "Автофильтр Excel",
+        "ar": "التصفية التلقائية لـ Excel",
+        "hi": "Excel ऑटो फ़िल्टर"
       },
       "group": "format",
       "description": "Auto filter of Excel"
@@ -1157,7 +2317,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1165,7 +2335,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -1175,7 +2355,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "冻结起始行号",
-            "en-US": "Freeze pane start row"
+            "en-US": "Freeze pane start row",
+            "zh-TW": "凍結起始行號",
+            "ja": "固定ペイン開始行",
+            "ko": "틀 고정 시작 행",
+            "es": "Fila de inicio de paneles",
+            "fr": "Ligne de début de volet",
+            "de": "Startzeile des fixierten Bereichs",
+            "pt-BR": "Linha inicial do painel",
+            "ru": "Начальная строка закрепления",
+            "ar": "صف بداية التجميد",
+            "hi": "फ़्रीज़ पेन शुरुआत पंक्ति"
           },
           "desc": "Freeze pane start row"
         },
@@ -1184,7 +2374,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "冻结起始列号",
-            "en-US": "Freeze pane start column"
+            "en-US": "Freeze pane start column",
+            "zh-TW": "凍結起始列號",
+            "ja": "固定ペイン開始列",
+            "ko": "틀 고정 시작 열",
+            "es": "Columna de inicio de paneles",
+            "fr": "Colonne de début de volet",
+            "de": "Startspalte des fixierten Bereichs",
+            "pt-BR": "Coluna inicial do painel",
+            "ru": "Начальный столбец закрепления",
+            "ar": "عمود بداية التجميد",
+            "hi": "फ़्रीज़ पेन शुरुआत कॉलम"
           },
           "desc": "Freeze pane start column"
         }
@@ -1193,14 +2393,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.freezePanes",
       "descriptions": {
         "zh-CN": "冻结窗格",
-        "en-US": "Freeze panes of Excel"
+        "en-US": "Freeze panes of Excel",
+        "zh-TW": "凍結窗格",
+        "ja": "Excelのペイン固定",
+        "ko": "Excel 틀 고정",
+        "es": "Congelar paneles de Excel",
+        "fr": "Figer les volets Excel",
+        "de": "Excel-Bereiche fixieren",
+        "pt-BR": "Congelar painéis do Excel",
+        "ru": "Закрепить области Excel",
+        "ar": "تجميد أجزاء Excel",
+        "hi": "Excel पेन फ़्रीज़"
       },
       "group": "format",
       "description": "Freeze panes of Excel"
@@ -1214,7 +2434,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1222,7 +2452,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要保护的工作表名称",
-            "en-US": "Worksheet name to protect"
+            "en-US": "Worksheet name to protect",
+            "zh-TW": "要保護的工作表名稱",
+            "ja": "保護するワークシート名",
+            "ko": "보호할 워크시트 이름",
+            "es": "Nombre de hoja a proteger",
+            "fr": "Nom de la feuille à protéger",
+            "de": "Name des zu schützenden Blatts",
+            "pt-BR": "Nome da planilha a proteger",
+            "ru": "Имя листа для защиты",
+            "ar": "اسم ورقة العمل للحماية",
+            "hi": "सुरक्षित करने के लिए वर्कशीट नाम"
           },
           "desc": "Worksheet name to protect",
           "optional": true
@@ -1232,7 +2472,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "optional": true,
           "desc": "Password string"
@@ -1242,14 +2492,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.protectSheet",
       "descriptions": {
         "zh-CN": "保护工作表（设置密码）",
-        "en-US": "Protect sheet of Excel"
+        "en-US": "Protect sheet of Excel",
+        "zh-TW": "保護工作表（設定密碼）",
+        "ja": "Excelシートを保護",
+        "ko": "Excel 시트 보호",
+        "es": "Proteger hoja de Excel",
+        "fr": "Protéger la feuille Excel",
+        "de": "Excel-Blatt schützen",
+        "pt-BR": "Proteger planilha Excel",
+        "ru": "Защитить лист Excel",
+        "ar": "حماية ورقة Excel",
+        "hi": "Excel शीट सुरक्षित करें"
       },
       "group": "sheet",
       "description": "Protect sheet of Excel"
@@ -1263,7 +2533,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1271,7 +2551,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要取消保护的工作表名称",
-            "en-US": "Worksheet name to unprotect"
+            "en-US": "Worksheet name to unprotect",
+            "zh-TW": "要取消保護的工作表名稱",
+            "ja": "保護解除するワークシート名",
+            "ko": "보호 해제할 워크시트 이름",
+            "es": "Nombre de hoja a desproteger",
+            "fr": "Nom de la feuille à déprotéger",
+            "de": "Name des zu entsperrenden Blatts",
+            "pt-BR": "Nome da planilha a desproteger",
+            "ru": "Имя листа для снятия защиты",
+            "ar": "اسم ورقة العمل لإلغاء الحماية",
+            "hi": "सुरक्षा हटाने के लिए वर्कशीट नाम"
           },
           "desc": "Worksheet name to unprotect",
           "optional": true
@@ -1281,7 +2571,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "optional": true,
           "desc": "Password string"
@@ -1291,14 +2591,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.unprotectSheet",
       "descriptions": {
         "zh-CN": "取消工作表保护",
-        "en-US": "Unprotect sheet of Excel"
+        "en-US": "Unprotect sheet of Excel",
+        "zh-TW": "取消工作表保護",
+        "ja": "Excelシートの保護を解除",
+        "ko": "Excel 시트 보호 해제",
+        "es": "Desproteger hoja de Excel",
+        "fr": "Déprotéger la feuille Excel",
+        "de": "Excel-Blattschutz aufheben",
+        "pt-BR": "Desproteger planilha Excel",
+        "ru": "Снять защиту листа Excel",
+        "ar": "إلغاء حماية ورقة Excel",
+        "hi": "Excel शीट सुरक्षा हटाएं"
       },
       "group": "sheet",
       "description": "Unprotect sheet of Excel"
@@ -1312,7 +2632,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1320,7 +2650,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -1330,7 +2670,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "单元格地址（如A1）",
-            "en-US": "Cell address (e.g. A1)"
+            "en-US": "Cell address (e.g. A1)",
+            "zh-TW": "單元格地址（如A1）",
+            "ja": "セルアドレス（例: A1）",
+            "ko": "셀 주소 (예: A1)",
+            "es": "Dirección de celda (ej. A1)",
+            "fr": "Adresse de cellule (ex. A1)",
+            "de": "Zelladresse (z.B. A1)",
+            "pt-BR": "Endereço da célula (ex. A1)",
+            "ru": "Адрес ячейки (напр. A1)",
+            "ar": "عنوان الخلية (مثل A1)",
+            "hi": "सेल पता (जैसे A1)"
           },
           "desc": "Cell address (e.g. A1)"
         },
@@ -1339,7 +2689,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Excel公式（如=SUM(A1:A10)）",
-            "en-US": "Excel formula (e.g. =SUM(A1:A10))"
+            "en-US": "Excel formula (e.g. =SUM(A1:A10))",
+            "zh-TW": "Excel公式（如=SUM(A1:A10)）",
+            "ja": "Excel数式（例: =SUM(A1:A10)）",
+            "ko": "Excel 수식 (예: =SUM(A1:A10))",
+            "es": "Fórmula Excel (ej. =SUM(A1:A10))",
+            "fr": "Formule Excel (ex. =SUM(A1:A10))",
+            "de": "Excel-Formel (z.B. =SUM(A1:A10))",
+            "pt-BR": "Fórmula Excel (ex. =SUM(A1:A10))",
+            "ru": "Формула Excel (напр. =SUM(A1:A10))",
+            "ar": "صيغة Excel (مثل =SUM(A1:A10))",
+            "hi": "Excel फ़ॉर्मूला (जैसे =SUM(A1:A10))"
           },
           "desc": "Excel formula (e.g. =SUM(A1:A10))"
         }
@@ -1348,14 +2708,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.setFormula",
       "descriptions": {
         "zh-CN": "设置formula property",
-        "en-US": "Set formula property of Excel"
+        "en-US": "Set formula property of Excel",
+        "zh-TW": "設定formula property",
+        "ja": "設定するformula property",
+        "ko": "설정formula property",
+        "es": "Establecer fórmula de Excel",
+        "fr": "Définir la formule Excel",
+        "de": "Excel-Formel setzen",
+        "pt-BR": "Definir fórmula do Excel",
+        "ru": "Установить формулу Excel",
+        "ar": "تعيين صيغة Excel",
+        "hi": "Excel फ़ॉर्मूला सेट करें"
       },
       "group": "cell",
       "description": "Set formula property of Excel"
@@ -1369,7 +2749,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1377,7 +2767,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -1387,7 +2787,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图像路径",
-            "en-US": "Image Path"
+            "en-US": "Image Path",
+            "zh-TW": "圖像路徑",
+            "ja": "画像パス",
+            "ko": "이미지 경로",
+            "es": "Ruta de imagen",
+            "fr": "Chemin de l'image",
+            "de": "Bildpfad",
+            "pt-BR": "Caminho da imagem",
+            "ru": "Путь к изображению",
+            "ar": "مسار الصورة",
+            "hi": "इमेज पथ"
           }
         },
         {
@@ -1395,7 +2805,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图片插入位置的单元格（如B2）",
-            "en-US": "Cell position to insert image (e.g. B2)"
+            "en-US": "Cell position to insert image (e.g. B2)",
+            "zh-TW": "圖片插入位置的單元格（如B2）",
+            "ja": "画像挿入位置のセル（例: B2）",
+            "ko": "이미지 삽입 위치 셀 (예: B2)",
+            "es": "Posición de celda para imagen (ej. B2)",
+            "fr": "Position de cellule pour l'image (ex. B2)",
+            "de": "Zellposition für Bild (z.B. B2)",
+            "pt-BR": "Posição da célula para imagem (ex. B2)",
+            "ru": "Позиция ячейки для изображения (напр. B2)",
+            "ar": "موضع الخلية لإدراج الصورة (مثل B2)",
+            "hi": "इमेज सम्मिलित करने की सेल स्थिति (जैसे B2)"
           },
           "desc": "Cell position to insert image (e.g. B2)"
         }
@@ -1404,14 +2824,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.addImage",
       "descriptions": {
         "zh-CN": "在工作表中插入图片",
-        "en-US": "Add image of Excel"
+        "en-US": "Add image of Excel",
+        "zh-TW": "在工作表中插入圖片",
+        "ja": "で工作表中插入画像",
+        "ko": "Excel 워크시트에 이미지 삽입",
+        "es": "Agregar imagen a Excel",
+        "fr": "Ajouter une image à Excel",
+        "de": "Excel-Bild hinzufügen",
+        "pt-BR": "Adicionar imagem ao Excel",
+        "ru": "Добавить изображение в Excel",
+        "ar": "إضافة صورة إلى Excel",
+        "hi": "Excel में इमेज जोड़ें"
       },
       "group": "content",
       "description": "Add image of Excel"
@@ -1425,7 +2865,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1433,7 +2883,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "源工作表",
-            "en-US": "Source Sheet"
+            "en-US": "Source Sheet",
+            "zh-TW": "源工作表",
+            "ja": "ソースシート",
+            "ko": "소스 시트",
+            "es": "Hoja de origen",
+            "fr": "Feuille source",
+            "de": "Quellblatt",
+            "pt-BR": "Planilha de origem",
+            "ru": "Исходный лист",
+            "ar": "ورقة المصدر",
+            "hi": "स्रोत शीट"
           }
         },
         {
@@ -1441,7 +2901,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "new_name参数",
-            "en-US": "new_name parameter"
+            "en-US": "new_name parameter",
+            "zh-TW": "new_name參數",
+            "ja": "new_nameパラメータ",
+            "ko": "new_name매개변수",
+            "es": "Parámetro de new_name",
+            "fr": "Paramètre de new_name",
+            "de": "new_name-Parameter",
+            "pt-BR": "Parâmetro de new_name",
+            "ru": "Параметр new_name",
+            "ar": "معلمة new_name",
+            "hi": "new_name पैरामीटर"
           },
           "desc": "new_name parameter"
         }
@@ -1450,14 +2920,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.copySheet",
       "descriptions": {
         "zh-CN": "复制工作表",
-        "en-US": "Copy sheet of Excel"
+        "en-US": "Copy sheet of Excel",
+        "zh-TW": "複製工作表",
+        "ja": "コピーする工作表",
+        "ko": "Excel 시트 복사",
+        "es": "Copiar hoja de Excel",
+        "fr": "Copier la feuille Excel",
+        "de": "Excel-Blatt kopieren",
+        "pt-BR": "Copiar planilha Excel",
+        "ru": "Копировать лист Excel",
+        "ar": "نسخ ورقة Excel",
+        "hi": "Excel शीट कॉपी"
       },
       "group": "sheet",
       "description": "Copy sheet of Excel"
@@ -1471,7 +2961,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1479,7 +2979,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -1489,14 +2999,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.autoFitColumns",
       "descriptions": {
         "zh-CN": "自动调整列宽以适应内容",
-        "en-US": "Auto fit columns of Excel"
+        "en-US": "Auto fit columns of Excel",
+        "zh-TW": "自動調整列寬以適應內容",
+        "ja": "Excelの列幅を自動調整",
+        "ko": "Excel 열 너비 자동 맞춤",
+        "es": "Ajustar automáticamente columnas de Excel",
+        "fr": "Ajuster automatiquement les colonnes",
+        "de": "Excel-Spalten automatisch anpassen",
+        "pt-BR": "Ajustar colunas automaticamente",
+        "ru": "Автоподбор ширины столбцов Excel",
+        "ar": "ملاءمة تلقائية لأعمدة Excel",
+        "hi": "Excel कॉलम ऑटो फ़िट"
       },
       "group": "format",
       "description": "Auto fit columns of Excel"
@@ -1510,7 +3040,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1518,7 +3058,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -1528,7 +3078,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "插入位置的行号",
-            "en-US": "Row number for insertion position"
+            "en-US": "Row number for insertion position",
+            "zh-TW": "插入位置的行號",
+            "ja": "插入位置の行号",
+            "ko": "삽입 위치 행 번호",
+            "es": "Número de fila para inserción",
+            "fr": "Numéro de ligne pour l'insertion",
+            "de": "Zeilennummer für Einfügeposition",
+            "pt-BR": "Número da linha para inserção",
+            "ru": "Номер строки для вставки",
+            "ar": "رقم الصف لموضع الإدراج",
+            "hi": "सम्मिलन स्थिति की पंक्ति संख्या"
           },
           "desc": "Row number for insertion position"
         },
@@ -1537,7 +3097,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "插入的行数",
-            "en-US": "Number of rows to insert"
+            "en-US": "Number of rows to insert",
+            "zh-TW": "插入的行數",
+            "ja": "挿入する行数",
+            "ko": "삽입할 행 수",
+            "es": "Número de filas a insertar",
+            "fr": "Nombre de lignes à insérer",
+            "de": "Anzahl einzufügender Zeilen",
+            "pt-BR": "Número de linhas a inserir",
+            "ru": "Количество строк для вставки",
+            "ar": "عدد الصفوف للإدراج",
+            "hi": "सम्मिलित करने के लिए पंक्तियों की संख्या"
           },
           "optional": true,
           "desc": "Number of rows to insert"
@@ -1547,14 +3117,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.insertRow",
       "descriptions": {
         "zh-CN": "在指定位置插入行",
-        "en-US": "Insert row of Excel"
+        "en-US": "Insert row of Excel",
+        "zh-TW": "在指定位置插入行",
+        "ja": "で指定位置插入行",
+        "ko": "Excel 행 삽입",
+        "es": "Insertar fila en Excel",
+        "fr": "Insérer une ligne Excel",
+        "de": "Excel-Zeile einfügen",
+        "pt-BR": "Inserir linha no Excel",
+        "ru": "Вставить строку в Excel",
+        "ar": "إدراج صف في Excel",
+        "hi": "Excel में पंक्ति सम्मिलित करें"
       },
       "group": "cell",
       "description": "Insert row of Excel"
@@ -1568,7 +3158,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1576,7 +3176,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -1586,7 +3196,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "插入位置的列标识",
-            "en-US": "Column identifier for insertion"
+            "en-US": "Column identifier for insertion",
+            "zh-TW": "插入位置的列標識",
+            "ja": "挿入用の列識別子",
+            "ko": "삽입용 열 식별자",
+            "es": "Identificador de columna para inserción",
+            "fr": "Identifiant de colonne pour l'insertion",
+            "de": "Spaltenkennung für Einfügung",
+            "pt-BR": "Identificador de coluna para inserção",
+            "ru": "Идентификатор столбца для вставки",
+            "ar": "معرف العمود للإدراج",
+            "hi": "सम्मिलन के लिए कॉलम पहचानकर्ता"
           },
           "desc": "Column identifier for insertion"
         },
@@ -1595,7 +3215,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "插入的列数",
-            "en-US": "Number of columns to insert"
+            "en-US": "Number of columns to insert",
+            "zh-TW": "插入的列數",
+            "ja": "挿入する列数",
+            "ko": "삽입할 열 수",
+            "es": "Número de columnas a insertar",
+            "fr": "Nombre de colonnes à insérer",
+            "de": "Anzahl einzufügender Spalten",
+            "pt-BR": "Número de colunas a inserir",
+            "ru": "Количество столбцов для вставки",
+            "ar": "عدد الأعمدة للإدراج",
+            "hi": "सम्मिलित करने के लिए कॉलम की संख्या"
           },
           "optional": true,
           "desc": "Number of columns to insert"
@@ -1605,14 +3235,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.insertColumn",
       "descriptions": {
         "zh-CN": "在指定位置插入列",
-        "en-US": "Insert column of Excel"
+        "en-US": "Insert column of Excel",
+        "zh-TW": "在指定位置插入列",
+        "ja": "で指定位置插入列",
+        "ko": "Excel 열 삽입",
+        "es": "Insertar columna en Excel",
+        "fr": "Insérer une colonne Excel",
+        "de": "Excel-Spalte einfügen",
+        "pt-BR": "Inserir coluna no Excel",
+        "ru": "Вставить столбец в Excel",
+        "ar": "إدراج عمود في Excel",
+        "hi": "Excel में कॉलम सम्मिलित करें"
       },
       "group": "cell",
       "description": "Insert column of Excel"
@@ -1626,7 +3276,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1634,7 +3294,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -1644,7 +3314,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "要删除的起始行号",
-            "en-US": "Starting row number to delete"
+            "en-US": "Starting row number to delete",
+            "zh-TW": "要刪除的起始行號",
+            "ja": "要削除するの起始行号",
+            "ko": "삭제할 시작 행 번호",
+            "es": "Número de fila inicial a eliminar",
+            "fr": "Numéro de ligne de début à supprimer",
+            "de": "Start-Zeilennummer zum Löschen",
+            "pt-BR": "Número da linha inicial a excluir",
+            "ru": "Начальный номер строки для удаления",
+            "ar": "رقم الصف الأول للحذف",
+            "hi": "हटाने के लिए प्रारंभ पंक्ति संख्या"
           },
           "desc": "Starting row number to delete"
         },
@@ -1653,7 +3333,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "删除的行数",
-            "en-US": "Number of rows to delete"
+            "en-US": "Number of rows to delete",
+            "zh-TW": "刪除的行數",
+            "ja": "削除する行数",
+            "ko": "삭제할 행 수",
+            "es": "Número de filas a eliminar",
+            "fr": "Nombre de lignes à supprimer",
+            "de": "Anzahl zu löschender Zeilen",
+            "pt-BR": "Número de linhas a excluir",
+            "ru": "Количество строк для удаления",
+            "ar": "عدد الصفوف للحذف",
+            "hi": "हटाने के लिए पंक्तियों की संख्या"
           },
           "optional": true,
           "desc": "Number of rows to delete"
@@ -1663,14 +3353,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.deleteRow",
       "descriptions": {
         "zh-CN": "删除指定行",
-        "en-US": "Delete row of Excel"
+        "en-US": "Delete row of Excel",
+        "zh-TW": "刪除指定行",
+        "ja": "削除する指定行",
+        "ko": "Excel 행 삭제",
+        "es": "Eliminar fila de Excel",
+        "fr": "Supprimer une ligne Excel",
+        "de": "Excel-Zeile löschen",
+        "pt-BR": "Excluir linha do Excel",
+        "ru": "Удалить строку Excel",
+        "ar": "حذف صف من Excel",
+        "hi": "Excel पंक्ति हटाएं"
       },
       "group": "cell",
       "description": "Delete row of Excel"
@@ -1684,7 +3394,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1692,7 +3412,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -1702,7 +3432,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要删除的起始列标识",
-            "en-US": "Starting column to delete"
+            "en-US": "Starting column to delete",
+            "zh-TW": "要刪除的起始列標識",
+            "ja": "削除する開始列",
+            "ko": "삭제할 시작 열",
+            "es": "Columna inicial a eliminar",
+            "fr": "Colonne de début à supprimer",
+            "de": "Startspalte zum Löschen",
+            "pt-BR": "Coluna inicial a excluir",
+            "ru": "Начальный столбец для удаления",
+            "ar": "العمود الأول للحذف",
+            "hi": "हटाने के लिए प्रारंभ कॉलम"
           },
           "desc": "Starting column to delete"
         },
@@ -1711,7 +3451,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "删除的列数",
-            "en-US": "Number of columns to delete"
+            "en-US": "Number of columns to delete",
+            "zh-TW": "刪除的列數",
+            "ja": "削除する列数",
+            "ko": "삭제할 열 수",
+            "es": "Número de columnas a eliminar",
+            "fr": "Nombre de colonnes à supprimer",
+            "de": "Anzahl zu löschender Spalten",
+            "pt-BR": "Número de colunas a excluir",
+            "ru": "Количество столбцов для удаления",
+            "ar": "عدد الأعمدة للحذف",
+            "hi": "हटाने के लिए कॉलम की संख्या"
           },
           "optional": true,
           "desc": "Number of columns to delete"
@@ -1721,14 +3471,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.deleteColumn",
       "descriptions": {
         "zh-CN": "删除column",
-        "en-US": "Delete column of Excel"
+        "en-US": "Delete column of Excel",
+        "zh-TW": "刪除column",
+        "ja": "削除するcolumn",
+        "ko": "삭제column",
+        "es": "Eliminar columna de Excel",
+        "fr": "Supprimer une colonne Excel",
+        "de": "Excel-Spalte löschen",
+        "pt-BR": "Excluir coluna do Excel",
+        "ru": "Удалить столбец Excel",
+        "ar": "حذف عمود من Excel",
+        "hi": "Excel कॉलम हटाएं"
       },
       "group": "cell",
       "description": "Delete column of Excel"
@@ -1742,7 +3512,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1750,7 +3530,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图表所在的工作表名称",
-            "en-US": "Worksheet name for chart"
+            "en-US": "Worksheet name for chart",
+            "zh-TW": "圖表所在的工作表名稱",
+            "ja": "チャート用のワークシート名",
+            "ko": "차트용 워크시트 이름",
+            "es": "Nombre de hoja para gráfico",
+            "fr": "Nom de feuille pour le graphique",
+            "de": "Blattname für Diagramm",
+            "pt-BR": "Nome da planilha para gráfico",
+            "ru": "Имя листа для диаграммы",
+            "ar": "اسم ورقة العمل للمخطط",
+            "hi": "चार्ट के लिए वर्कशीट नाम"
           },
           "desc": "Worksheet name for chart",
           "optional": true
@@ -1760,7 +3550,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据范围",
-            "en-US": "Data Range"
+            "en-US": "Data Range",
+            "zh-TW": "數據範圍",
+            "ja": "データ範囲",
+            "ko": "데이터 범위",
+            "es": "Rango de datos",
+            "fr": "Plage de données",
+            "de": "Datenbereich",
+            "pt-BR": "Intervalo de dados",
+            "ru": "Диапазон данных",
+            "ar": "نطاق البيانات",
+            "hi": "डेटा रेंज"
           }
         },
         {
@@ -1768,7 +3568,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "对话框标题",
-            "en-US": "Dialog title"
+            "en-US": "Dialog title",
+            "zh-TW": "對話框標題",
+            "ja": "ダイアログタイトル",
+            "ko": "대화상자제목",
+            "es": "Título del diálogo",
+            "fr": "Titre du dialogue",
+            "de": "Dialogtitel",
+            "pt-BR": "Título do diálogo",
+            "ru": "Заголовок диалога",
+            "ar": "عنوان الحوار",
+            "hi": "डायलॉग शीर्षक"
           },
           "optional": true
         },
@@ -1777,7 +3587,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "position参数",
-            "en-US": "position parameter"
+            "en-US": "position parameter",
+            "zh-TW": "position參數",
+            "ja": "positionパラメータ",
+            "ko": "position매개변수",
+            "es": "Parámetro de position",
+            "fr": "Paramètre de position",
+            "de": "position-Parameter",
+            "pt-BR": "Parâmetro de position",
+            "ru": "Параметр position",
+            "ar": "معلمة position",
+            "hi": "position पैरामीटर"
           },
           "optional": true,
           "desc": "position parameter"
@@ -1787,14 +3607,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.addChart",
       "descriptions": {
         "zh-CN": "添加图表",
-        "en-US": "Add chart of Excel"
+        "en-US": "Add chart of Excel",
+        "zh-TW": "添加圖表",
+        "ja": "Excelにチャートを追加",
+        "ko": "Excel 차트 추가",
+        "es": "Agregar gráfico de Excel",
+        "fr": "Ajouter un graphique Excel",
+        "de": "Excel-Diagramm hinzufügen",
+        "pt-BR": "Adicionar gráfico do Excel",
+        "ru": "Добавить диаграмму Excel",
+        "ar": "إضافة مخطط Excel",
+        "hi": "Excel चार्ट जोड़ें"
       },
       "group": "content",
       "description": "Add chart of Excel"
@@ -1808,7 +3648,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1816,7 +3666,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -1826,7 +3686,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "条件格式应用的单元格范围",
-            "en-US": "Cell range for conditional format"
+            "en-US": "Cell range for conditional format",
+            "zh-TW": "條件格式應用的單元格範圍",
+            "ja": "条件付き書式のセル範囲",
+            "ko": "조건부 서식 셀 범위",
+            "es": "Rango de celdas para formato condicional",
+            "fr": "Plage de cellules pour format conditionnel",
+            "de": "Zellbereich für bedingte Formatierung",
+            "pt-BR": "Intervalo de células para formatação condicional",
+            "ru": "Диапазон ячеек для условного формата",
+            "ar": "نطاق الخلايا للتنسيق الشرطي",
+            "hi": "कंडीशनल फ़ॉर्मैट के लिए सेल रेंज"
           },
           "desc": "Cell range for conditional format",
           "optional": true
@@ -1836,7 +3706,17 @@
           "type": "ConditionalRule",
           "descs": {
             "zh-CN": "条件规则",
-            "en-US": "Condition rule"
+            "en-US": "Condition rule",
+            "zh-TW": "條件規則",
+            "ja": "条件ルール",
+            "ko": "조건 규칙",
+            "es": "Regla de condición",
+            "fr": "Règle de condition",
+            "de": "Bedingungsregel",
+            "pt-BR": "Regra de condição",
+            "ru": "Правило условия",
+            "ar": "قاعدة الشرط",
+            "hi": "शर्त नियम"
           }
         }
       ],
@@ -1844,14 +3724,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.setConditionalFormat",
       "descriptions": {
         "zh-CN": "设置conditional format property",
-        "en-US": "Set conditional format property of Excel"
+        "en-US": "Set conditional format property of Excel",
+        "zh-TW": "設定conditional format property",
+        "ja": "設定するconditional format property",
+        "ko": "설정conditional format property",
+        "es": "Establecer formato condicional de Excel",
+        "fr": "Définir le format conditionnel Excel",
+        "de": "Bedingte Formatierung setzen",
+        "pt-BR": "Definir formatação condicional do Excel",
+        "ru": "Установить условное форматирование Excel",
+        "ar": "تعيين التنسيق الشرطي لـ Excel",
+        "hi": "Excel कंडीशनल फ़ॉर्मैट सेट करें"
       },
       "group": "format",
       "description": "Set conditional format property of Excel"
@@ -1865,7 +3765,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿 ID",
-            "en-US": "工作簿 ID"
+            "en-US": "工作簿 ID",
+            "zh-TW": "工作簿 ID",
+            "ja": "ワークブックID",
+            "ko": "워크북 ID",
+            "es": "ID del libro",
+            "fr": "ID du classeur",
+            "de": "Arbeitsmappen-ID",
+            "pt-BR": "ID da pasta",
+            "ru": "ID книги",
+            "ar": "معرف المصنف",
+            "hi": "वर्कबुक ID"
           }
         },
         {
@@ -1873,7 +3783,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称或索引",
-            "en-US": "Worksheet name or index"
+            "en-US": "Worksheet name or index",
+            "zh-TW": "工作表名稱或索引",
+            "ja": "工作表名称またはインデックス",
+            "ko": "워크시트 이름 또는 인덱스",
+            "es": "Nombre o índice de hoja",
+            "fr": "Nom ou index de feuille",
+            "de": "Blattname oder Index",
+            "pt-BR": "Nome ou índice da planilha",
+            "ru": "Имя или индекс листа",
+            "ar": "اسم أو فهرس ورقة العمل",
+            "hi": "वर्कशीट नाम या इंडेक्स"
           },
           "desc": "Worksheet name or index",
           "optional": true
@@ -1883,7 +3803,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据验证的单元格范围",
-            "en-US": "Cell range for data validation"
+            "en-US": "Cell range for data validation",
+            "zh-TW": "數據驗證的單元格範圍",
+            "ja": "データ検証のセル範囲",
+            "ko": "데이터 유효성 검사 셀 범위",
+            "es": "Rango de celdas para validación",
+            "fr": "Plage de cellules pour validation",
+            "de": "Zellbereich für Datenvalidierung",
+            "pt-BR": "Intervalo de células para validação",
+            "ru": "Диапазон ячеек для валидации данных",
+            "ar": "نطاق الخلايا للتحقق من البيانات",
+            "hi": "डेटा सत्यापन के लिए सेल रेंज"
           },
           "desc": "Cell range for data validation",
           "optional": true
@@ -1893,7 +3823,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "有效值列表（下拉选项）",
-            "en-US": "Valid values list (dropdown options)"
+            "en-US": "Valid values list (dropdown options)",
+            "zh-TW": "有效值列表（下拉選項）",
+            "ja": "有効な値リスト（ドロップダウンオプション）",
+            "ko": "유효한 값 목록 (드롭다운 옵션)",
+            "es": "Lista de valores válidos (opciones)",
+            "fr": "Liste de valeurs valides (options)",
+            "de": "Gültige Werte (Dropdown-Optionen)",
+            "pt-BR": "Lista de valores válidos (opções)",
+            "ru": "Список допустимых значений (опции)",
+            "ar": "قائمة القيم الصالحة (خيارات)",
+            "hi": "मान्य मान सूची (ड्रॉपडाउन)"
           },
           "optional": true,
           "desc": "Valid values list (dropdown options)",
@@ -1904,7 +3844,17 @@
           "type": "any",
           "descs": {
             "zh-CN": "验证规则的最小值",
-            "en-US": "Minimum value for validation rule"
+            "en-US": "Minimum value for validation rule",
+            "zh-TW": "驗證規則的最小值",
+            "ja": "検証ルールの最小値",
+            "ko": "유효성 규칙의 최소값",
+            "es": "Valor mínimo de validación",
+            "fr": "Valeur minimale de validation",
+            "de": "Mindestwert für Validierungsregel",
+            "pt-BR": "Valor mínimo para validação",
+            "ru": "Минимальное значение правила",
+            "ar": "الحد الأدنى لقاعدة التحقق",
+            "hi": "सत्यापन नियम का न्यूनतम मान"
           },
           "optional": true,
           "desc": "Minimum value for validation rule"
@@ -1914,7 +3864,17 @@
           "type": "any",
           "descs": {
             "zh-CN": "验证规则的最大值",
-            "en-US": "Maximum value for validation rule"
+            "en-US": "Maximum value for validation rule",
+            "zh-TW": "驗證規則的最大值",
+            "ja": "検証ルールの最大値",
+            "ko": "유효성 규칙의 최대값",
+            "es": "Valor máximo de validación",
+            "fr": "Valeur maximale de validation",
+            "de": "Höchstwert für Validierungsregel",
+            "pt-BR": "Valor máximo para validação",
+            "ru": "Максимальное значение правила",
+            "ar": "الحد الأقصى لقاعدة التحقق",
+            "hi": "सत्यापन नियम का अधिकतम मान"
           },
           "optional": true,
           "desc": "Maximum value for validation rule"
@@ -1924,7 +3884,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "错误消息",
-            "en-US": "Error Message"
+            "en-US": "Error Message",
+            "zh-TW": "錯誤消息",
+            "ja": "エラーメッセージ",
+            "ko": "오류메시지",
+            "es": "Mensaje de error",
+            "fr": "Message d'erreur",
+            "de": "Fehlermeldung",
+            "pt-BR": "Mensagem de erro",
+            "ru": "Сообщение об ошибке",
+            "ar": "رسالة الخطأ",
+            "hi": "त्रुटि संदेश"
           },
           "optional": true
         }
@@ -1933,14 +3903,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "excel.addDataValidation",
       "descriptions": {
         "zh-CN": "添加data validation",
-        "en-US": "Add data validation of Excel"
+        "en-US": "Add data validation of Excel",
+        "zh-TW": "添加data validation",
+        "ja": "Excelデータ検証を追加",
+        "ko": "Excel 데이터 유효성 추가",
+        "es": "Agregar validación de datos",
+        "fr": "Ajouter une validation",
+        "de": "Datenvalidierung hinzufügen",
+        "pt-BR": "Adicionar validação de dados",
+        "ru": "Добавить валидацию данных",
+        "ar": "إضافة التحقق من البيانات",
+        "hi": "डेटा सत्यापन जोड़ें"
       },
       "group": "format",
       "description": "Add data validation of Excel"
@@ -1953,14 +3943,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "excel.listOpen",
       "descriptions": {
         "zh-CN": "列出open",
-        "en-US": "List open of Excel"
+        "en-US": "List open of Excel",
+        "zh-TW": "列出open",
+        "ja": "開いているExcel一覧",
+        "ko": "열린 Excel 목록",
+        "es": "Listar archivos Excel abiertos",
+        "fr": "Lister les fichiers Excel ouverts",
+        "de": "Geöffnete Excel-Dateien auflisten",
+        "pt-BR": "Listar arquivos Excel abertos",
+        "ru": "Список открытых Excel",
+        "ar": "قائمة ملفات Excel المفتوحة",
+        "hi": "खुली Excel सूची"
       },
       "group": "file",
       "description": "List open of Excel"
@@ -1968,14 +3978,34 @@
   ],
   "overviews": {
     "zh-CN": "提供 Excel（XLSX/XLS）文件的创建、读写、编辑能力。支持工作表管理、单元格操作、样式设置、公式、图表、数据验证、合并单元格、冻结窗格等功能。",
-    "en-US": "Create, read, write, and edit Excel (XLSX/XLS) files. Supports worksheet management, cell operations, styling, formulas, charts, data validation, cell merging, and freeze panes."
+    "en-US": "Create, read, write, and edit Excel (XLSX/XLS) files. Supports worksheet management, cell operations, styling, formulas, charts, data validation, cell merging, and freeze panes.",
+    "zh-TW": "提供 Excel（XLSX/XLS）檔案的建立、读写、編輯能力。支援工作表管理、單元格操作、樣式設置、公式、图表、數據驗證、合並單元格、凍结窗格等功能。",
+    "ja": "Excel(XLSX/XLS)の作成・読取・書込・編集。ワークシート・セル操作・スタイル・数式・チャート・データ検証・セル結合・ウィンドウ枠固定。",
+    "ko": "Excel(XLSX/XLS) 생성, 읽기, 쓰기, 편집. 워크시트, 셀, 스타일, 수식, 차트, 유효성 검사, 셀 병합, 틀 고정.",
+    "es": "Crear, leer, escribir y editar Excel (XLSX/XLS). Hojas, celdas, estilos, fórmulas, gráficos, validación, celdas combinadas y paneles.",
+    "fr": "Créer, lire, écrire et éditer Excel (XLSX/XLS). Feuilles, cellules, styles, formules, graphiques, validation, fusion et volets.",
+    "de": "Excel (XLSX/XLS) erstellen, lesen, schreiben, bearbeiten. Blätter, Zellen, Stile, Formeln, Diagramme, Validierung, Zusammenführen, Fixieren.",
+    "pt-BR": "Criar, ler, escrever e editar Excel (XLSX/XLS). Planilhas, células, estilos, fórmulas, gráficos, validação, mesclagem e painéis.",
+    "ru": "Создание, чтение, запись и редактирование Excel (XLSX/XLS). Листы, ячейки, стили, формулы, диаграммы, валидация, объединение и закрепление.",
+    "ar": "إنشاء وقراءة وكتابة وتحرير Excel (XLSX/XLS). أوراق وخلايا وأنماط وصيغ ومخططات وتحقق ودمج وتجميد.",
+    "hi": "Excel (XLSX/XLS) बनाना, पढ़ना, लिखना, संपादित। शीट, सेल, स्टाइल, फॉर्मूला, चार्ट, वैलिडेशन, मर्ज, फ्रीज।"
   },
   "types": [
     {
       "name": "CellValue",
       "descriptions": {
         "zh-CN": "单元格的值及其类型信息",
-        "en-US": "Cell value and type info"
+        "en-US": "Cell value and type info",
+        "zh-TW": "單元格的值及其類型資訊",
+        "ja": "セル値と型情報",
+        "ko": "셀 값 및 타입 정보",
+        "es": "Información de valor y tipo de celda",
+        "fr": "Informations sur la valeur et le type de cellule",
+        "de": "Zellenwert- und Typinformationen",
+        "pt-BR": "Informações de valor e tipo da célula",
+        "ru": "Информация о значении и типе ячейки",
+        "ar": "معلومات قيمة ونوع الخلية",
+        "hi": "सेल मान और प्रकार जानकारी"
       },
       "fields": [
         {
@@ -1983,7 +4013,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "单元格显示值",
-            "en-US": "Cell display value"
+            "en-US": "Cell display value",
+            "zh-TW": "單元格顯示值",
+            "ja": "セル表示値",
+            "ko": "셀 표시 값",
+            "es": "Valor de visualización de celda",
+            "fr": "Valeur d'affichage de cellule",
+            "de": "Zellen-Anzeigewert",
+            "pt-BR": "Valor de exibição da célula",
+            "ru": "Отображаемое значение ячейки",
+            "ar": "قيمة عرض الخلية",
+            "hi": "सेल प्रदर्शन मान"
           }
         },
         {
@@ -1991,7 +4031,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "值类型（string/number/boolean/date/formula）",
-            "en-US": "Value type"
+            "en-US": "Value type",
+            "zh-TW": "值類型（string/number/boolean/date/formula）",
+            "ja": "値の型",
+            "ko": "값 유형",
+            "es": "Tipo de valor",
+            "fr": "Type de valeur",
+            "de": "Werttyp",
+            "pt-BR": "Tipo de valor",
+            "ru": "Тип значения",
+            "ar": "نوع القيمة",
+            "hi": "मान प्रकार"
           }
         },
         {
@@ -1999,7 +4049,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "公式（如有）",
-            "en-US": "Formula if any"
+            "en-US": "Formula if any",
+            "zh-TW": "公式（如有）",
+            "ja": "数式（ある場合）",
+            "ko": "수식(있는 경우)",
+            "es": "Fórmula si existe",
+            "fr": "Formule le cas échéant",
+            "de": "Formel falls vorhanden",
+            "pt-BR": "Fórmula se houver",
+            "ru": "Формула при наличии",
+            "ar": "الصيغة إن وُجدت",
+            "hi": "सूत्र यदि कोई हो"
           },
           "optional": true
         }
@@ -2009,7 +4069,17 @@
       "name": "SheetInfo",
       "descriptions": {
         "zh-CN": "工作表基本信息",
-        "en-US": "Worksheet basic info"
+        "en-US": "Worksheet basic info",
+        "zh-TW": "工作表基本資訊",
+        "ja": "ワークシート基本情報",
+        "ko": "워크시트 기본 정보",
+        "es": "Información básica de la hoja de trabajo",
+        "fr": "Informations de base de la feuille de calcul",
+        "de": "Arbeitsblatt-Grundinformationen",
+        "pt-BR": "Informações básicas da planilha",
+        "ru": "Основная информация о листе",
+        "ar": "المعلومات الأساسية لورقة العمل",
+        "hi": "वर्कशीट बुनियादी जानकारी"
       },
       "fields": [
         {
@@ -2017,7 +4087,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作表名称",
-            "en-US": "Sheet name"
+            "en-US": "Sheet name",
+            "zh-TW": "工作表名稱",
+            "ja": "シート名",
+            "ko": "시트 이름",
+            "es": "Nombre de la hoja",
+            "fr": "Nom de la feuille",
+            "de": "Blattname",
+            "pt-BR": "Nome da planilha",
+            "ru": "Имя листа",
+            "ar": "اسم الورقة",
+            "hi": "शीट नाम"
           }
         },
         {
@@ -2025,7 +4105,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "工作表索引（从0开始）",
-            "en-US": "Sheet index (0-based)"
+            "en-US": "Sheet index (0-based)",
+            "zh-TW": "工作表索引（從0开始）",
+            "ja": "シートインデックス（0始まり）",
+            "ko": "시트 인덱스(0부터)",
+            "es": "Índice de hoja (basado en 0)",
+            "fr": "Index de feuille (base 0)",
+            "de": "Blattindex (0-basiert)",
+            "pt-BR": "Índice da planilha (base 0)",
+            "ru": "Индекс листа (с 0)",
+            "ar": "فهرس الورقة (يبدأ من 0)",
+            "hi": "शीट इंडेक्स (0-आधारित)"
           }
         },
         {
@@ -2033,7 +4123,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "行数",
-            "en-US": "Row count"
+            "en-US": "Row count",
+            "zh-TW": "行数",
+            "ja": "行数",
+            "ko": "행 수",
+            "es": "Cantidad de filas",
+            "fr": "Nombre de lignes",
+            "de": "Zeilenanzahl",
+            "pt-BR": "Contagem de linhas",
+            "ru": "Количество строк",
+            "ar": "عدد الصفوف",
+            "hi": "पंक्ति संख्या"
           }
         },
         {
@@ -2041,7 +4141,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "列数",
-            "en-US": "Column count"
+            "en-US": "Column count",
+            "zh-TW": "列数",
+            "ja": "列数",
+            "ko": "열 수",
+            "es": "Cantidad de columnas",
+            "fr": "Nombre de colonnes",
+            "de": "Spaltenanzahl",
+            "pt-BR": "Contagem de colunas",
+            "ru": "Количество столбцов",
+            "ar": "عدد الأعمدة",
+            "hi": "कॉलम संख्या"
           }
         }
       ]
@@ -2050,7 +4160,17 @@
       "name": "CellData",
       "descriptions": {
         "zh-CN": "单元格数据",
-        "en-US": "Cell data"
+        "en-US": "Cell data",
+        "zh-TW": "單元格數據",
+        "ja": "セルデータ",
+        "ko": "셀 데이터",
+        "es": "Datos de celda",
+        "fr": "Données de cellule",
+        "de": "Zelldaten",
+        "pt-BR": "Dados da célula",
+        "ru": "Данные ячейки",
+        "ar": "بيانات الخلية",
+        "hi": "सेल डेटा"
       },
       "fields": [
         {
@@ -2058,7 +4178,17 @@
           "type": "any",
           "descs": {
             "zh-CN": "单元格值",
-            "en-US": "Cell value"
+            "en-US": "Cell value",
+            "zh-TW": "單元格值",
+            "ja": "セル値",
+            "ko": "셀 값",
+            "es": "Valor de celda",
+            "fr": "Valeur de cellule",
+            "de": "Zellenwert",
+            "pt-BR": "Valor da célula",
+            "ru": "Значение ячейки",
+            "ar": "قيمة الخلية",
+            "hi": "सेल मान"
           }
         },
         {
@@ -2066,7 +4196,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "值类型(string/number/boolean)",
-            "en-US": "Value type"
+            "en-US": "Value type",
+            "zh-TW": "值類型(string/number/boolean)",
+            "ja": "値の型",
+            "ko": "값 유형",
+            "es": "Tipo de valor",
+            "fr": "Type de valeur",
+            "de": "Werttyp",
+            "pt-BR": "Tipo de valor",
+            "ru": "Тип значения",
+            "ar": "نوع القيمة",
+            "hi": "मान प्रकार"
           }
         },
         {
@@ -2074,7 +4214,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "公式(如有)",
-            "en-US": "Formula if any"
+            "en-US": "Formula if any",
+            "zh-TW": "公式(如有)",
+            "ja": "数式（ある場合）",
+            "ko": "수식(있는 경우)",
+            "es": "Fórmula si existe",
+            "fr": "Formule le cas échéant",
+            "de": "Formel falls vorhanden",
+            "pt-BR": "Fórmula se houver",
+            "ru": "Формула при наличии",
+            "ar": "الصيغة إن وُجدت",
+            "hi": "सूत्र यदि कोई हो"
           }
         }
       ]
@@ -2083,7 +4233,17 @@
       "name": "WorkbookHandle",
       "descriptions": {
         "zh-CN": "工作簿操作句柄",
-        "en-US": "Workbook handle"
+        "en-US": "Workbook handle",
+        "zh-TW": "工作簿操作句柄",
+        "ja": "ワークブックハンドル",
+        "ko": "워크북 핸들",
+        "es": "Manejador del libro de trabajo",
+        "fr": "Handle du classeur",
+        "de": "Arbeitsmappen-Handle",
+        "pt-BR": "Handle da pasta de trabalho",
+        "ru": "Дескриптор книги",
+        "ar": "مقبض المصنف",
+        "hi": "वर्कबुक हैंडल"
       },
       "fields": [
         {
@@ -2091,7 +4251,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作簿句柄ID",
-            "en-US": "Workbook handle ID"
+            "en-US": "Workbook handle ID",
+            "zh-TW": "工作簿句柄ID",
+            "ja": "ワークブックハンドルID",
+            "ko": "워크북 핸들 ID",
+            "es": "ID del manejador del libro de trabajo",
+            "fr": "ID du handle du classeur",
+            "de": "Arbeitsmappen-Handle-ID",
+            "pt-BR": "ID do handle da pasta de trabalho",
+            "ru": "ID дескриптора книги",
+            "ar": "معرّف مقبض المصنف",
+            "hi": "वर्कबुक हैंडल ID"
           }
         },
         {
@@ -2099,7 +4269,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "工作表名称列表",
-            "en-US": "Sheet name list"
+            "en-US": "Sheet name list",
+            "zh-TW": "工作表名稱列表",
+            "ja": "シート名一覧",
+            "ko": "시트 이름 목록",
+            "es": "Lista de nombres de hojas",
+            "fr": "Liste de noms de feuilles",
+            "de": "Blattnamenliste",
+            "pt-BR": "Lista de nomes de planilhas",
+            "ru": "Список имён листов",
+            "ar": "قائمة أسماء الأوراق",
+            "hi": "शीट नाम सूची"
           }
         }
       ]
@@ -2108,7 +4288,17 @@
       "name": "WriteResult",
       "descriptions": {
         "zh-CN": "写入操作结果",
-        "en-US": "Write operation result"
+        "en-US": "Write operation result",
+        "zh-TW": "寫入操作结果",
+        "ja": "書き込み操作結果",
+        "ko": "쓰기 작업 결과",
+        "es": "Resultado de la operación de escritura",
+        "fr": "Résultat de l'opération d'écriture",
+        "de": "Schreiboperationsergebnis",
+        "pt-BR": "Resultado da operação de escrita",
+        "ru": "Результат операции записи",
+        "ar": "نتيجة عملية الكتابة",
+        "hi": "लिखने का ऑपरेशन परिणाम"
       },
       "fields": [
         {
@@ -2116,7 +4306,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否成功",
-            "en-US": "Whether succeeded"
+            "en-US": "Whether succeeded",
+            "zh-TW": "是否成功",
+            "ja": "成功したかどうか",
+            "ko": "성공 여부",
+            "es": "Si tuvo éxito",
+            "fr": "Si réussi",
+            "de": "Ob erfolgreich",
+            "pt-BR": "Se teve sucesso",
+            "ru": "Успешно или нет",
+            "ar": "ما إذا نجح",
+            "hi": "सफल हुआ या नहीं"
           }
         },
         {
@@ -2124,7 +4324,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "写入的单元格数",
-            "en-US": "Cells written"
+            "en-US": "Cells written",
+            "zh-TW": "寫入的單元格数",
+            "ja": "書き込まれたセル数",
+            "ko": "기록된 셀 수",
+            "es": "Celdas escritas",
+            "fr": "Cellules écrites",
+            "de": "Geschriebene Zellen",
+            "pt-BR": "Células escritas",
+            "ru": "Записанные ячейки",
+            "ar": "الخلايا المكتوبة",
+            "hi": "लिखे गए सेल"
           }
         }
       ]
@@ -2133,7 +4343,17 @@
       "name": "CellStyle",
       "descriptions": {
         "zh-CN": "单元格样式",
-        "en-US": "Cell style"
+        "en-US": "Cell style",
+        "zh-TW": "單元格樣式",
+        "ja": "セルスタイル",
+        "ko": "셀 스타일",
+        "es": "Estilo de celda",
+        "fr": "Style de cellule",
+        "de": "Zellenstil",
+        "pt-BR": "Estilo da célula",
+        "ru": "Стиль ячейки",
+        "ar": "نمط الخلية",
+        "hi": "सेल शैली"
       },
       "fields": [
         {
@@ -2141,7 +4361,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否加粗",
-            "en-US": "Whether bold"
+            "en-US": "Whether bold",
+            "zh-TW": "是否加粗",
+            "ja": "太字かどうか",
+            "ko": "굵게 여부",
+            "es": "Si es negrita",
+            "fr": "Si gras",
+            "de": "Ob fett",
+            "pt-BR": "Se negrito",
+            "ru": "Жирный или нет",
+            "ar": "ما إذا كان غامقاً",
+            "hi": "बोल्ड है या नहीं"
           },
           "optional": true
         },
@@ -2150,7 +4380,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否斜体",
-            "en-US": "Whether italic"
+            "en-US": "Whether italic",
+            "zh-TW": "是否斜體",
+            "ja": "斜体かどうか",
+            "ko": "기울임꼴 여부",
+            "es": "Si es cursiva",
+            "fr": "Si italique",
+            "de": "Ob kursiv",
+            "pt-BR": "Se itálico",
+            "ru": "Курсив или нет",
+            "ar": "ما إذا كان مائلاً",
+            "hi": "इटैलिक है या नहीं"
           },
           "optional": true
         },
@@ -2159,7 +4399,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "字体大小",
-            "en-US": "Font size"
+            "en-US": "Font size",
+            "zh-TW": "字體大小",
+            "ja": "フォントサイズ",
+            "ko": "글꼴 크기",
+            "es": "Tamaño de fuente",
+            "fr": "Taille de police",
+            "de": "Schriftgröße",
+            "pt-BR": "Tamanho da fonte",
+            "ru": "Размер шрифта",
+            "ar": "حجم الخط",
+            "hi": "फ़ॉन्ट आकार"
           },
           "optional": true
         },
@@ -2168,7 +4418,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "字体颜色(十六进制)",
-            "en-US": "Font color (hex)"
+            "en-US": "Font color (hex)",
+            "zh-TW": "字體颜色(十六進制)",
+            "ja": "フォント色（16進数）",
+            "ko": "글꼴 색상(16진수)",
+            "es": "Color de fuente (hex)",
+            "fr": "Couleur de police (hex)",
+            "de": "Schriftfarbe (hex)",
+            "pt-BR": "Cor da fonte (hex)",
+            "ru": "Цвет шрифта (hex)",
+            "ar": "لون الخط (ست عشري)",
+            "hi": "फ़ॉन्ट रंग (हेक्स)"
           },
           "optional": true
         },
@@ -2177,7 +4437,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "背景颜色(十六进制)",
-            "en-US": "Background color (hex)"
+            "en-US": "Background color (hex)",
+            "zh-TW": "背景颜色(十六進制)",
+            "ja": "背景色（16進数）",
+            "ko": "배경색(16진수)",
+            "es": "Color de fondo (hex)",
+            "fr": "Couleur d'arrière-plan (hex)",
+            "de": "Hintergrundfarbe (hex)",
+            "pt-BR": "Cor de fundo (hex)",
+            "ru": "Цвет фона (hex)",
+            "ar": "لون الخلفية (ست عشري)",
+            "hi": "पृष्ठभूमि रंग (हेक्स)"
           },
           "optional": true
         },
@@ -2186,7 +4456,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "对齐方式(left/center/right)",
-            "en-US": "Alignment (left/center/right)"
+            "en-US": "Alignment (left/center/right)",
+            "zh-TW": "對齐方式(left/center/right)",
+            "ja": "配置（左/中央/右）",
+            "ko": "정렬(왼쪽/가운데/오른쪽)",
+            "es": "Alineación (izquierda/centro/derecha)",
+            "fr": "Alignement (gauche/centre/droite)",
+            "de": "Ausrichtung (links/mitte/rechts)",
+            "pt-BR": "Alinhamento (esquerda/centro/direita)",
+            "ru": "Выравнивание (лево/центр/право)",
+            "ar": "المحاذاة (يسار/وسط/يمين)",
+            "hi": "संरेखण (बाएँ/केंद्र/दाएँ)"
           },
           "optional": true
         }
@@ -2196,7 +4476,17 @@
       "name": "ConditionalRule",
       "descriptions": {
         "zh-CN": "条件格式规则",
-        "en-US": "Conditional format rule"
+        "en-US": "Conditional format rule",
+        "zh-TW": "条件格式規則",
+        "ja": "条件付き書式ルール",
+        "ko": "조건부 서식 규칙",
+        "es": "Regla de formato condicional",
+        "fr": "Règle de format conditionnel",
+        "de": "Bedingte Formatierungsregel",
+        "pt-BR": "Regra de formatação condicional",
+        "ru": "Правило условного форматирования",
+        "ar": "قاعدة التنسيق الشرطي",
+        "hi": "सशर्त प्रारूप नियम"
       },
       "fields": [
         {
@@ -2204,7 +4494,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "规则类型(cell_value/formula)",
-            "en-US": "Rule type (cell_value/formula)"
+            "en-US": "Rule type (cell_value/formula)",
+            "zh-TW": "規則類型(cell_value/formula)",
+            "ja": "ルールタイプ（cell_value/formula）",
+            "ko": "규칙 유형(cell_value/formula)",
+            "es": "Tipo de regla (cell_value/formula)",
+            "fr": "Type de règle (cell_value/formula)",
+            "de": "Regeltyp (cell_value/formula)",
+            "pt-BR": "Tipo de regra (cell_value/formula)",
+            "ru": "Тип правила (cell_value/formula)",
+            "ar": "نوع القاعدة (cell_value/formula)",
+            "hi": "नियम प्रकार (cell_value/formula)"
           }
         },
         {
@@ -2212,7 +4512,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "操作符(>/</==/between)",
-            "en-US": "Operator (>/</==/between)"
+            "en-US": "Operator (>/</==/between)",
+            "zh-TW": "操作符(>/</==/between)",
+            "ja": "演算子（>/</==/between）",
+            "ko": "연산자(>/</==/between)",
+            "es": "Operador (>/</==/between)",
+            "fr": "Opérateur (>/</==/between)",
+            "de": "Operator (>/</==/between)",
+            "pt-BR": "Operador (>/</==/between)",
+            "ru": "Оператор (>/</==/between)",
+            "ar": "عامل التشغيل (>/</==/between)",
+            "hi": "ऑपरेटर (>/</==/between)"
           }
         },
         {
@@ -2220,7 +4530,17 @@
           "type": "any",
           "descs": {
             "zh-CN": "比较值",
-            "en-US": "Comparison value"
+            "en-US": "Comparison value",
+            "zh-TW": "比較值",
+            "ja": "比較値",
+            "ko": "비교 값",
+            "es": "Valor de comparación",
+            "fr": "Valeur de comparaison",
+            "de": "Vergleichswert",
+            "pt-BR": "Valor de comparação",
+            "ru": "Значение сравнения",
+            "ar": "قيمة المقارنة",
+            "hi": "तुलना मान"
           }
         },
         {
@@ -2228,7 +4548,17 @@
           "type": "CellStyle",
           "descs": {
             "zh-CN": "匹配时应用的样式",
-            "en-US": "Style when matched"
+            "en-US": "Style when matched",
+            "zh-TW": "匹配時應用的樣式",
+            "ja": "一致時のスタイル",
+            "ko": "일치 시 스타일",
+            "es": "Estilo cuando coincide",
+            "fr": "Style en cas de correspondance",
+            "de": "Stil bei Übereinstimmung",
+            "pt-BR": "Estilo quando correspondido",
+            "ru": "Стиль при совпадении",
+            "ar": "النمط عند المطابقة",
+            "hi": "मिलान होने पर शैली"
           }
         }
       ]
@@ -2241,7 +4571,17 @@
       "type": "string",
       "descs": {
         "zh-CN": "字符串类型",
-        "en-US": "String type"
+        "en-US": "String type",
+        "zh-TW": "字符串類型",
+        "ja": "文字列型",
+        "ko": "문자열 유형",
+        "es": "Tipo de cadena",
+        "fr": "Type de chaîne",
+        "de": "Zeichenkettentyp",
+        "pt-BR": "Tipo de string",
+        "ru": "Строковый тип",
+        "ar": "نوع نصي",
+        "hi": "स्ट्रिंग प्रकार"
       }
     },
     {
@@ -2250,7 +4590,17 @@
       "type": "string",
       "descs": {
         "zh-CN": "数字类型",
-        "en-US": "Number type"
+        "en-US": "Number type",
+        "zh-TW": "数字類型",
+        "ja": "数値型",
+        "ko": "숫자 유형",
+        "es": "Tipo numérico",
+        "fr": "Type numérique",
+        "de": "Zahlentyp",
+        "pt-BR": "Tipo numérico",
+        "ru": "Числовой тип",
+        "ar": "نوع رقمي",
+        "hi": "संख्या प्रकार"
       }
     },
     {
@@ -2259,7 +4609,17 @@
       "type": "string",
       "descs": {
         "zh-CN": "布尔类型",
-        "en-US": "Boolean type"
+        "en-US": "Boolean type",
+        "zh-TW": "布尔類型",
+        "ja": "ブール型",
+        "ko": "불리언 타입",
+        "es": "Tipo booleano",
+        "fr": "Type booléen",
+        "de": "Boolescher Typ",
+        "pt-BR": "Tipo booleano",
+        "ru": "Логический тип",
+        "ar": "نوع منطقي",
+        "hi": "बूलियन प्रकार"
       }
     },
     {
@@ -2268,7 +4628,17 @@
       "type": "string",
       "descs": {
         "zh-CN": "日期类型",
-        "en-US": "Date type"
+        "en-US": "Date type",
+        "zh-TW": "日期類型",
+        "ja": "日付型",
+        "ko": "날짜 유형",
+        "es": "Tipo de fecha",
+        "fr": "Type de date",
+        "de": "Datumstyp",
+        "pt-BR": "Tipo de data",
+        "ru": "Тип даты",
+        "ar": "نوع التاريخ",
+        "hi": "दिनांक प्रकार"
       }
     },
     {
@@ -2277,7 +4647,17 @@
       "type": "string",
       "descs": {
         "zh-CN": "公式类型",
-        "en-US": "Formula type"
+        "en-US": "Formula type",
+        "zh-TW": "公式類型",
+        "ja": "数式型",
+        "ko": "수식 유형",
+        "es": "Tipo de fórmula",
+        "fr": "Type de formule",
+        "de": "Formeltyp",
+        "pt-BR": "Tipo de fórmula",
+        "ru": "Тип формулы",
+        "ar": "نوع الصيغة",
+        "hi": "सूत्र प्रकार"
       }
     }
   ]

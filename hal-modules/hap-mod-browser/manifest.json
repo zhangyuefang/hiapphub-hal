@@ -24,7 +24,17 @@
   },
   "overviews": {
     "zh-CN": "通过Chrome DevTools Protocol控制外部浏览器，支持页面导航、元素操作、截图、Cookie管理、JavaScript执行、网络拦截等自动化能力。",
-    "en-US": "Control external browsers via Chrome DevTools Protocol. Supports page navigation, element interaction, screenshots, cookie management, JavaScript execution, and network interception."
+    "en-US": "Control external browsers via Chrome DevTools Protocol. Supports page navigation, element interaction, screenshots, cookie management, JavaScript execution, and network interception.",
+    "zh-TW": "通过Chrome DevTools Protocol控制外部瀏覽器，支援页面导航、元素操作、截圖、Cookie管理、JavaScript執行、網路攔截等自動化能力。",
+    "ja": "Chrome DevTools Protocolで外部ブラウザ制御。ページナビゲーション・要素操作・スクリーンショット・Cookie・JavaScript・ネットワークインターセプト。",
+    "ko": "Chrome DevTools Protocol로 외부 브라우저 제어. 페이지 탐색, 요소 상호작용, 스크린샷, 쿠키, JavaScript, 네트워크 인터셉트.",
+    "es": "Control de navegadores vía Chrome DevTools Protocol. Navegación, elementos, capturas, cookies, JavaScript e intercepción de red.",
+    "fr": "Contrôle de navigateurs via Chrome DevTools Protocol. Navigation, éléments, captures, cookies, JavaScript et interception réseau.",
+    "de": "Browsersteuerung über Chrome DevTools Protocol. Navigation, Elemente, Screenshots, Cookies, JavaScript und Netzwerk-Interception.",
+    "pt-BR": "Controle de navegadores via Chrome DevTools Protocol. Navegação, elementos, capturas, cookies, JavaScript e interceptação de rede.",
+    "ru": "Управление браузерами через Chrome DevTools Protocol. Навигация, элементы, скриншоты, cookies, JavaScript и перехват сети.",
+    "ar": "التحكم في المتصفحات عبر Chrome DevTools Protocol. تنقل وعناصر ولقطات وكوكيز وJavaScript واعتراض الشبكة.",
+    "hi": "Chrome DevTools Protocol से ब्राउज़र नियंत्रण। नेविगेशन, एलिमेंट, स्क्रीनशॉट, कुकीज़, JavaScript और नेटवर्क इंटरसेप्शन।"
   },
   "permission": "browser",
   "functions": [
@@ -33,7 +43,17 @@
       "symbol": "hap_browser_launch",
       "descriptions": {
         "zh-CN": "启动一个新的浏览器实例（Chrome/Edge），可指定有头或无头模式",
-        "en-US": "Launch new browser instance (Chrome/Edge), supports headless mode"
+        "en-US": "Launch new browser instance (Chrome/Edge), supports headless mode",
+        "zh-TW": "啟動一個新的瀏覽器實例（Chrome/Edge），可指定有頭或無頭模式",
+        "ja": "新しいブラウザインスタンスを起動（Chrome/Edge）、ヘッドレスモード対応",
+        "ko": "새 브라우저 인스턴스 시작 (Chrome/Edge), 헤드리스 모드 지원",
+        "es": "Iniciar nueva instancia del navegador (Chrome/Edge, modo headless)",
+        "fr": "Lancer une nouvelle instance (Chrome/Edge, mode headless)",
+        "de": "Neue Browser-Instanz starten (Chrome/Edge, Headless)",
+        "pt-BR": "Iniciar nova instância do navegador (Chrome/Edge, headless)",
+        "ru": "Запустить новый экземпляр браузера (Chrome/Edge, headless)",
+        "ar": "تشغيل نسخة متصفح جديدة (Chrome/Edge, وضع بدون رأس)",
+        "hi": "नया ब्राउज़र इंस्टेंस लॉन्च करें (Chrome/Edge, हेडलेस)"
       },
       "params": [
         {
@@ -42,7 +62,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "浏览器可执行文件路径（自动检测）",
-            "en-US": "Browser executable path (auto-detect)"
+            "en-US": "Browser executable path (auto-detect)",
+            "zh-TW": "瀏覽器可執行檔案路徑（自動檢測）",
+            "ja": "ブラウザ可実行するファイルパス（自動検出する）",
+            "ko": "브라우저 실행 파일 경로 (자동 감지)",
+            "es": "Ruta del ejecutable del navegador (auto)",
+            "fr": "Chemin de l'exécutable du navigateur (auto)",
+            "de": "Browser-Pfad (automatische Erkennung)",
+            "pt-BR": "Caminho do executável do navegador (auto)",
+            "ru": "Путь к браузеру (автоопределение)",
+            "ar": "مسار ملف المتصفح (كشف تلقائي)",
+            "hi": "ब्राउज़र एक्जीक्यूटेबल पथ (ऑटो-डिटेक्ट)"
           }
         },
         {
@@ -52,7 +82,17 @@
           "default_value": "false",
           "descs": {
             "zh-CN": "是否无头模式",
-            "en-US": "Headless mode"
+            "en-US": "Headless mode",
+            "zh-TW": "是否無頭模式",
+            "ja": "かどうか无头モード",
+            "ko": "헤드리스 모드",
+            "es": "Modo headless",
+            "fr": "Mode headless",
+            "de": "Headless-Modus",
+            "pt-BR": "Modo headless",
+            "ru": "Режим headless",
+            "ar": "وضع بدون رأس",
+            "hi": "हेडलेस मोड"
           }
         },
         {
@@ -61,7 +101,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "用户数据目录",
-            "en-US": "User data directory"
+            "en-US": "User data directory",
+            "zh-TW": "用戶數據目錄",
+            "ja": "ユーザーデータディレクトリ",
+            "ko": "사용자데이터디렉토리",
+            "es": "Directorio de datos de usuario",
+            "fr": "Répertoire de données utilisateur",
+            "de": "Benutzerdatenverzeichnis",
+            "pt-BR": "Diretório de dados do usuário",
+            "ru": "Каталог данных пользователя",
+            "ar": "مجلد بيانات المستخدم",
+            "hi": "उपयोगकर्ता डेटा डायरेक्टरी"
           }
         },
         {
@@ -70,7 +120,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "浏览器额外的命令行启动参数列表",
-            "en-US": "Additional browser command-line launch arguments"
+            "en-US": "Additional browser command-line launch arguments",
+            "zh-TW": "瀏覽器额外的命令行啟動參數列表",
+            "ja": "ブラウザ额外の命令行起動するパラメータリスト",
+            "ko": "추가 브라우저 명령줄 시작 인수",
+            "es": "Argumentos adicionales de línea de comandos del navegador",
+            "fr": "Arguments supplémentaires de lancement du navigateur",
+            "de": "Zusätzliche Browser-Startargumente",
+            "pt-BR": "Argumentos adicionais de linha de comando do navegador",
+            "ru": "Дополнительные аргументы запуска браузера",
+            "ar": "وسائط إضافية لتشغيل المتصفح",
+            "hi": "अतिरिक्त ब्राउज़र कमांड-लाइन तर्क"
           },
           "desc": "Additional browser command-line launch arguments"
         }
@@ -79,7 +139,17 @@
         "type": "BrowserInstance",
         "descs": {
           "zh-CN": "浏览器实例信息",
-          "en-US": "Browser instance info"
+          "en-US": "Browser instance info",
+          "zh-TW": "瀏覽器實例資訊",
+          "ja": "ブラウザインスタンス情報",
+          "ko": "브라우저 인스턴스 정보",
+          "es": "Información de instancia del navegador",
+          "fr": "Informations d'instance du navigateur",
+          "de": "Browser-Instanz-Informationen",
+          "pt-BR": "Informações da instância do navegador",
+          "ru": "Информация об экземпляре браузера",
+          "ar": "معلومات نسخة المتصفح",
+          "hi": "ब्राउज़र इंस्टेंस जानकारी"
         }
       },
       "bridge_path": "browser.launch",
@@ -92,7 +162,17 @@
       "symbol": "hap_browser_connect",
       "descriptions": {
         "zh-CN": "通过 WebSocket URL 连接到已运行的浏览器实例的调试端口",
-        "en-US": "Connect to running browser instance via WebSocket debug URL"
+        "en-US": "Connect to running browser instance via WebSocket debug URL",
+        "zh-TW": "通過 WebSocket URL 連接到已運行的瀏覽器實例的調試埠",
+        "ja": "WebSocketデバッグURLで実行中のブラウザインスタンスに接続",
+        "ko": "WebSocket 디버그 URL로 실행 중인 브라우저 인스턴스에 연결",
+        "es": "Conectar al navegador via WebSocket",
+        "fr": "Se connecter au navigateur via WebSocket",
+        "de": "Über WebSocket-Debug-URL verbinden",
+        "pt-BR": "Conectar ao navegador via WebSocket",
+        "ru": "Подключиться к браузеру через WebSocket",
+        "ar": "الاتصال بالمتصفح عبر WebSocket",
+        "hi": "WebSocket डीबग URL से ब्राउज़र से कनेक्ट करें"
       },
       "params": [
         {
@@ -100,7 +180,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "WebSocket调试地址",
-            "en-US": "WebSocket debug URL"
+            "en-US": "WebSocket debug URL",
+            "zh-TW": "WebSocket調試地址",
+            "ja": "WebSocketデバッグURL",
+            "ko": "WebSocket 디버그 URL",
+            "es": "URL de depuración WebSocket",
+            "fr": "URL de débogage WebSocket",
+            "de": "WebSocket-Debug-URL",
+            "pt-BR": "URL de depuração WebSocket",
+            "ru": "URL отладки WebSocket",
+            "ar": "URL تصحيح WebSocket",
+            "hi": "WebSocket डीबग URL"
           }
         }
       ],
@@ -108,7 +198,17 @@
         "type": "BrowserInstance",
         "descs": {
           "zh-CN": "浏览器实例信息",
-          "en-US": "Browser instance info"
+          "en-US": "Browser instance info",
+          "zh-TW": "瀏覽器實例資訊",
+          "ja": "ブラウザインスタンス情報",
+          "ko": "브라우저 인스턴스 정보",
+          "es": "Información de instancia del navegador",
+          "fr": "Informations d'instance du navigateur",
+          "de": "Browser-Instanz-Informationen",
+          "pt-BR": "Informações da instância do navegador",
+          "ru": "Информация об экземпляре браузера",
+          "ar": "معلومات نسخة المتصفح",
+          "hi": "ब्राउज़र इंस्टेंस जानकारी"
         }
       },
       "bridge_path": "browser.connect",
@@ -121,7 +221,17 @@
       "symbol": "hap_browser_close",
       "descriptions": {
         "zh-CN": "安全关闭浏览器实例并释放所有相关资源和页面连接",
-        "en-US": "Safely close browser instance and release all resources"
+        "en-US": "Safely close browser instance and release all resources",
+        "zh-TW": "安全關閉瀏覽器實例並釋放所有相關資源和頁面連接",
+        "ja": "ブラウザインスタンスを安全に閉じてすべてのリソースを解放",
+        "ko": "브라우저 인스턴스를 안전하게 닫고 모든 리소스 해제",
+        "es": "Cerrar navegador de forma segura y liberar recursos",
+        "fr": "Fermer le navigateur et libérer les ressources",
+        "de": "Browser sicher schließen und Ressourcen freigeben",
+        "pt-BR": "Fechar navegador com segurança e liberar recursos",
+        "ru": "Безопасно закрыть браузер и освободить ресурсы",
+        "ar": "إغلاق المتصفح بأمان وتحرير جميع الموارد",
+        "hi": "ब्राउज़र को सुरक्षित रूप से बंद करें"
       },
       "params": [
         {
@@ -129,7 +239,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "浏览器实例ID",
-            "en-US": "Browser instance ID"
+            "en-US": "Browser instance ID",
+            "zh-TW": "瀏覽器實例ID",
+            "ja": "ブラウザインスタンスID",
+            "ko": "브라우저 인스턴스 ID",
+            "es": "ID de instancia del navegador",
+            "fr": "ID d'instance du navigateur",
+            "de": "Browser-Instanz-ID",
+            "pt-BR": "ID da instância do navegador",
+            "ru": "ID экземпляра браузера",
+            "ar": "معرف نسخة المتصفح",
+            "hi": "ब्राउज़र इंस्टेंस ID"
           }
         }
       ],
@@ -137,7 +257,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "browser.close",
@@ -149,7 +279,17 @@
       "symbol": "hap_browser_new_page",
       "descriptions": {
         "zh-CN": "在浏览器中创建一个新标签页并可选导航到指定URL",
-        "en-US": "Create new browser tab with optional URL navigation"
+        "en-US": "Create new browser tab with optional URL navigation",
+        "zh-TW": "在瀏覽器中建立一個新標籤頁並可選導航到指定URL",
+        "ja": "オプションのURL遷移付きで新しいブラウザタブを作成",
+        "ko": "선택적 URL 탐색과 함께 새 브라우저 탭 생성",
+        "es": "Crear nueva pestaña con URL opcional",
+        "fr": "Créer un nouvel onglet avec URL optionnel",
+        "de": "Neuen Browser-Tab mit optionaler URL erstellen",
+        "pt-BR": "Criar nova aba com URL opcional",
+        "ru": "Создать новую вкладку с URL",
+        "ar": "إنشاء علامة تبويب جديدة مع URL اختياري",
+        "hi": "ऑप्शनल URL के साथ नया ब्राउज़र टैब बनाएं"
       },
       "params": [
         {
@@ -157,7 +297,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "浏览器实例ID",
-            "en-US": "Browser instance ID"
+            "en-US": "Browser instance ID",
+            "zh-TW": "瀏覽器實例ID",
+            "ja": "ブラウザインスタンスID",
+            "ko": "브라우저 인스턴스 ID",
+            "es": "ID de instancia del navegador",
+            "fr": "ID d'instance du navigateur",
+            "de": "Browser-Instanz-ID",
+            "pt-BR": "ID da instância do navegador",
+            "ru": "ID экземпляра браузера",
+            "ar": "معرف نسخة المتصفح",
+            "hi": "ब्राउज़र इंस्टेंस ID"
           }
         },
         {
@@ -166,7 +316,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "初始URL",
-            "en-US": "Initial URL"
+            "en-US": "Initial URL",
+            "zh-TW": "初始URL",
+            "ja": "初期URL",
+            "ko": "초기 URL",
+            "es": "URL inicial",
+            "fr": "URL initiale",
+            "de": "Anfangs-URL",
+            "pt-BR": "URL inicial",
+            "ru": "Начальный URL",
+            "ar": "URL الأولي",
+            "hi": "प्रारंभिक URL"
           }
         }
       ],
@@ -174,7 +334,17 @@
         "type": "PageInfo",
         "descs": {
           "zh-CN": "页面信息",
-          "en-US": "Page info"
+          "en-US": "Page info",
+          "zh-TW": "頁面資訊",
+          "ja": "ページ情報",
+          "ko": "페이지정보",
+          "es": "Información de la página",
+          "fr": "Informations de la page",
+          "de": "Seiteninformationen",
+          "pt-BR": "Informações da página",
+          "ru": "Информация о странице",
+          "ar": "معلومات الصفحة",
+          "hi": "पेज जानकारी"
         }
       },
       "bridge_path": "browser.newPage",
@@ -186,7 +356,17 @@
       "symbol": "hap_browser_navigate",
       "descriptions": {
         "zh-CN": "导航页面到指定 URL 并等待页面加载完成",
-        "en-US": "Navigate page to URL and wait for load completion"
+        "en-US": "Navigate page to URL and wait for load completion",
+        "zh-TW": "導航頁面到指定 URL 並等待頁面載入完成",
+        "ja": "ページをURLに遷移して読み込み完了を待つ",
+        "ko": "페이지를 URL로 이동하고 로드 완료 대기",
+        "es": "Navegar a URL y esperar carga completa",
+        "fr": "Naviguer vers l'URL et attendre le chargement",
+        "de": "Zur URL navigieren und auf Laden warten",
+        "pt-BR": "Navegar para URL e aguardar carregamento",
+        "ru": "Перейти на URL и дождаться загрузки",
+        "ar": "الانتقال إلى URL وانتظار اكتمال التحميل",
+        "hi": "URL पर नेविगेट करें और लोड की प्रतीक्षा करें"
       },
       "params": [
         {
@@ -194,7 +374,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "頁面ID",
+            "ja": "ページID",
+            "ko": "페이지ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرف الصفحة",
+            "hi": "पेज ID"
           }
         },
         {
@@ -202,7 +392,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "目标URL",
-            "en-US": "Target URL"
+            "en-US": "Target URL",
+            "zh-TW": "目標URL",
+            "ja": "ターゲットURL",
+            "ko": "대상 URL",
+            "es": "URL de destino",
+            "fr": "URL cible",
+            "de": "Ziel-URL",
+            "pt-BR": "URL de destino",
+            "ru": "Целевой URL",
+            "ar": "URL الهدف",
+            "hi": "लक्ष्य URL"
           }
         },
         {
@@ -212,7 +412,17 @@
           "default_value": "\"load\"",
           "descs": {
             "zh-CN": "等待事件: load/domcontentloaded/networkidle",
-            "en-US": "Wait event: load/domcontentloaded/networkidle"
+            "en-US": "Wait event: load/domcontentloaded/networkidle",
+            "zh-TW": "等待事件: load/domcontentloaded/networkidle",
+            "ja": "等待イベント: load/domcontentloaded/networkidle",
+            "ko": "대기 이벤트: load/domcontentloaded/networkidle",
+            "es": "Evento de espera: load/domcontentloaded/networkidle",
+            "fr": "Événement d'attente: load/domcontentloaded/networkidle",
+            "de": "Warteereignis: load/domcontentloaded/networkidle",
+            "pt-BR": "Evento de espera: load/domcontentloaded/networkidle",
+            "ru": "Событие ожидания: load/domcontentloaded/networkidle",
+            "ar": "حدث الانتظار: load/domcontentloaded/networkidle",
+            "hi": "प्रतीक्षा इवेंट: load/domcontentloaded/networkidle"
           }
         }
       ],
@@ -220,7 +430,17 @@
         "type": "PageInfo",
         "descs": {
           "zh-CN": "导航结果",
-          "en-US": "Navigation result"
+          "en-US": "Navigation result",
+          "zh-TW": "導航結果",
+          "ja": "ナビゲーション結果",
+          "ko": "네비게이션 결과",
+          "es": "Resultado de navegación",
+          "fr": "Résultat de navigation",
+          "de": "Navigationsergebnis",
+          "pt-BR": "Resultado da navegação",
+          "ru": "Результат навигации",
+          "ar": "نتيجة التنقل",
+          "hi": "नेविगेशन परिणाम"
         }
       },
       "bridge_path": "browser.navigate",
@@ -233,7 +453,17 @@
       "symbol": "hap_browser_evaluate",
       "descriptions": {
         "zh-CN": "在页面中执行 JavaScript 表达式并返回计算结果",
-        "en-US": "Execute JavaScript expression in page and return result"
+        "en-US": "Execute JavaScript expression in page and return result",
+        "zh-TW": "在頁面中執行 JavaScript 表達式並返回計算結果",
+        "ja": "ページ内でJavaScript式を実行して結果を返す",
+        "ko": "페이지에서 JavaScript 표현식 실행 및 결과 반환",
+        "es": "Ejecutar expresión JavaScript y devolver resultado",
+        "fr": "Exécuter une expression JavaScript et retourner le résultat",
+        "de": "JavaScript-Ausdruck ausführen und Ergebnis zurückgeben",
+        "pt-BR": "Executar expressão JavaScript e retornar resultado",
+        "ru": "Выполнить JavaScript и вернуть результат",
+        "ar": "تنفيذ تعبير JavaScript وإرجاع النتيجة",
+        "hi": "पेज में JavaScript एक्सप्रेशन निष्पादित करें"
       },
       "params": [
         {
@@ -241,7 +471,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "頁面ID",
+            "ja": "ページID",
+            "ko": "페이지ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرف الصفحة",
+            "hi": "पेज ID"
           }
         },
         {
@@ -249,7 +489,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "JS表达式",
-            "en-US": "JS expression"
+            "en-US": "JS expression",
+            "zh-TW": "JS表達式",
+            "ja": "JS式",
+            "ko": "JS 표현식",
+            "es": "Expresión JS",
+            "fr": "Expression JS",
+            "de": "JS-Ausdruck",
+            "pt-BR": "Expressão JS",
+            "ru": "JS-выражение",
+            "ar": "تعبير JS",
+            "hi": "JS एक्सप्रेशन"
           }
         }
       ],
@@ -257,7 +507,17 @@
         "type": "any",
         "descs": {
           "zh-CN": "执行结果",
-          "en-US": "Execution result"
+          "en-US": "Execution result",
+          "zh-TW": "執行結果",
+          "ja": "実行する結果",
+          "ko": "실행결과",
+          "es": "Resultado de ejecución",
+          "fr": "Résultat d'exécution",
+          "de": "Ausführungsergebnis",
+          "pt-BR": "Resultado da execução",
+          "ru": "Результат выполнения",
+          "ar": "نتيجة التنفيذ",
+          "hi": "निष्पादन परिणाम"
         }
       },
       "bridge_path": "browser.evaluate",
@@ -270,7 +530,17 @@
       "symbol": "hap_browser_click",
       "descriptions": {
         "zh-CN": "通过 CSS 选择器定位元素并模拟鼠标点击操作",
-        "en-US": "Locate element by CSS selector and simulate mouse click"
+        "en-US": "Locate element by CSS selector and simulate mouse click",
+        "zh-TW": "通過 CSS 選擇器定位元素並模擬鼠標點击操作",
+        "ja": "CSSセレクターで要素を検索してマウスクリックをシミュレート",
+        "ko": "CSS 선택자로 요소를 찾아 마우스 클릭 시뮬레이션",
+        "es": "Localizar elemento por CSS y simular clic",
+        "fr": "Localiser l'élément par CSS et simuler un clic",
+        "de": "Element per CSS finden und Klick simulieren",
+        "pt-BR": "Localizar elemento por CSS e simular clique",
+        "ru": "Найти элемент по CSS и имитировать клик",
+        "ar": "تحديد العنصر بمحدد CSS ومحاكاة النقر",
+        "hi": "CSS सिलेक्टर से एलिमेंट खोजें और क्लिक करें"
       },
       "params": [
         {
@@ -278,7 +548,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "頁面ID",
+            "ja": "ページID",
+            "ko": "페이지ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرف الصفحة",
+            "hi": "पेज ID"
           }
         },
         {
@@ -286,7 +566,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "CSS选择器",
-            "en-US": "CSS selector"
+            "en-US": "CSS selector",
+            "zh-TW": "CSS選擇器",
+            "ja": "CSSセレクタ",
+            "ko": "CSS 선택자",
+            "es": "Selector CSS",
+            "fr": "Sélecteur CSS",
+            "de": "CSS-Selektor",
+            "pt-BR": "Seletor CSS",
+            "ru": "CSS-селектор",
+            "ar": "محدد CSS",
+            "hi": "CSS सेलेक्टर"
           }
         }
       ],
@@ -294,7 +584,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "browser.click",
@@ -307,7 +607,17 @@
       "symbol": "hap_browser_type_text",
       "descriptions": {
         "zh-CN": "在指定输入元素中逐字输入文本内容",
-        "en-US": "Type text character by character into specified input element"
+        "en-US": "Type text character by character into specified input element",
+        "zh-TW": "在指定輸入元素中逐字輸入文字內容",
+        "ja": "で指定入力元素中逐字入力テキストコンテンツ",
+        "ko": "지정된 입력 요소에 문자별로 텍스트 입력",
+        "es": "Escribir texto carácter a carácter en el elemento",
+        "fr": "Taper le texte caractère par caractère",
+        "de": "Text zeichenweise in Element eingeben",
+        "pt-BR": "Digitar texto caractere a caractere no elemento",
+        "ru": "Ввести текст посимвольно в элемент",
+        "ar": "كتابة النص حرفاً بحرف في عنصر الإدخال",
+        "hi": "निर्दिष्ट इनपुट में अक्षर-दर-अक्षर टेक्स्ट टाइप करें"
       },
       "params": [
         {
@@ -315,7 +625,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "頁面ID",
+            "ja": "ページID",
+            "ko": "페이지ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرف الصفحة",
+            "hi": "पेज ID"
           }
         },
         {
@@ -323,7 +643,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "CSS选择器",
-            "en-US": "CSS selector"
+            "en-US": "CSS selector",
+            "zh-TW": "CSS選擇器",
+            "ja": "CSSセレクタ",
+            "ko": "CSS 선택자",
+            "es": "Selector CSS",
+            "fr": "Sélecteur CSS",
+            "de": "CSS-Selektor",
+            "pt-BR": "Seletor CSS",
+            "ru": "CSS-селектор",
+            "ar": "محدد CSS",
+            "hi": "CSS सेलेक्टर"
           }
         },
         {
@@ -331,7 +661,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入文本",
-            "en-US": "Text to type"
+            "en-US": "Text to type",
+            "zh-TW": "輸入文字",
+            "ja": "入力テキスト",
+            "ko": "입력텍스트",
+            "es": "Texto a escribir",
+            "fr": "Texte à taper",
+            "de": "Einzugebender Text",
+            "pt-BR": "Texto a digitar",
+            "ru": "Текст для ввода",
+            "ar": "النص المراد كتابته",
+            "hi": "टाइप करने के लिए टेक्स्ट"
           }
         },
         {
@@ -341,7 +681,17 @@
           "default_value": "0",
           "descs": {
             "zh-CN": "每字符延迟(毫秒)",
-            "en-US": "Delay per character (ms)"
+            "en-US": "Delay per character (ms)",
+            "zh-TW": "每字元延迟(毫秒)",
+            "ja": "每文字遅延(毫秒)",
+            "ko": "문자당 지연 (ms)",
+            "es": "Retraso por carácter (ms)",
+            "fr": "Délai par caractère (ms)",
+            "de": "Verzögerung pro Zeichen (ms)",
+            "pt-BR": "Atraso por caractere (ms)",
+            "ru": "Задержка на символ (мс)",
+            "ar": "التأخير لكل حرف (مللي ثانية)",
+            "hi": "प्रति अक्षर विलंब (ms)"
           }
         }
       ],
@@ -349,7 +699,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "browser.typeText",
@@ -362,7 +722,17 @@
       "symbol": "hap_browser_screenshot",
       "descriptions": {
         "zh-CN": "截取当前页面的屏幕截图，可保存为文件或返回 Base64",
-        "en-US": "Capture page screenshot, save to file or return as Base64"
+        "en-US": "Capture page screenshot, save to file or return as Base64",
+        "zh-TW": "截取當前頁面的屏幕截圖，可保存為檔案或返回 Base64",
+        "ja": "ページのスクリーンショットを取得し、ファイルに保存またはBase64で返す",
+        "ko": "페이지 스크린샷 캡처, 파일 저장 또는 Base64로 반환",
+        "es": "Capturar página, guardar o devolver Base64",
+        "fr": "Capturer la page, enregistrer ou retourner en Base64",
+        "de": "Seitenscreenshot erfassen, speichern oder als Base64",
+        "pt-BR": "Capturar página, salvar ou retornar Base64",
+        "ru": "Скриншот страницы, сохранить или вернуть Base64",
+        "ar": "التقاط صفحة وحفظها أو إرجاعها كـ Base64",
+        "hi": "पेज स्क्रीनशॉट कैप्चर करें, फ़ाइल या Base64"
       },
       "params": [
         {
@@ -370,7 +740,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "頁面ID",
+            "ja": "ページID",
+            "ko": "페이지ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرف الصفحة",
+            "hi": "पेज ID"
           }
         },
         {
@@ -379,7 +759,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "保存路径",
-            "en-US": "Save path"
+            "en-US": "Save path",
+            "zh-TW": "保存路徑",
+            "ja": "保存するパス",
+            "ko": "저장경로",
+            "es": "Ruta de guardado",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения",
+            "ar": "مسار الحفظ",
+            "hi": "सहेजने का पथ"
           }
         },
         {
@@ -389,7 +779,17 @@
           "default_value": "false",
           "descs": {
             "zh-CN": "是否全页截图",
-            "en-US": "Full page screenshot"
+            "en-US": "Full page screenshot",
+            "zh-TW": "是否全頁截圖",
+            "ja": "ページ全体のスクリーンショット",
+            "ko": "전체 페이지 스크린샷",
+            "es": "Captura de página completa",
+            "fr": "Capture de page entière",
+            "de": "Ganzseitiger Screenshot",
+            "pt-BR": "Captura de página inteira",
+            "ru": "Скриншот всей страницы",
+            "ar": "لقطة شاشة كاملة للصفحة",
+            "hi": "पूर्ण पेज स्क्रीनशॉट"
           }
         },
         {
@@ -399,7 +799,17 @@
           "default_value": "\"png\"",
           "descs": {
             "zh-CN": "格式: png/jpeg",
-            "en-US": "Format: png/jpeg"
+            "en-US": "Format: png/jpeg",
+            "zh-TW": "格式: png/jpeg",
+            "ja": "フォーマット: png/jpeg",
+            "ko": "형식: png/jpeg",
+            "es": "Formato: png/jpeg",
+            "fr": "Format: png/jpeg",
+            "de": "Format: png/jpeg",
+            "pt-BR": "Formato: png/jpeg",
+            "ru": "Формат: png/jpeg",
+            "ar": "التنسيق: png/jpeg",
+            "hi": "फ़ॉर्मैट: png/jpeg"
           }
         }
       ],
@@ -407,7 +817,17 @@
         "type": "ScreenshotResult",
         "descs": {
           "zh-CN": "截图结果(含base64数据)",
-          "en-US": "Screenshot result (with base64 data)"
+          "en-US": "Screenshot result (with base64 data)",
+          "zh-TW": "截圖結果(含base64數據)",
+          "ja": "スクリーンショット結果（base64データ付き）",
+          "ko": "스크린샷 결과 (base64 데이터 포함)",
+          "es": "Resultado de captura (con datos Base64)",
+          "fr": "Résultat de capture (avec données Base64)",
+          "de": "Screenshot-Ergebnis (mit Base64-Daten)",
+          "pt-BR": "Resultado da captura (com dados Base64)",
+          "ru": "Результат скриншота (с данными Base64)",
+          "ar": "نتيجة لقطة الشاشة (مع بيانات Base64)",
+          "hi": "स्क्रीनशॉट परिणाम (Base64 डेटा के साथ)"
         }
       },
       "bridge_path": "browser.screenshot",
@@ -420,7 +840,17 @@
       "symbol": "hap_browser_get_html",
       "descriptions": {
         "zh-CN": "获取页面或指定元素的 HTML 源代码",
-        "en-US": "Get HTML source of page or specified element"
+        "en-US": "Get HTML source of page or specified element",
+        "zh-TW": "取得頁面或指定元素的 HTML 源代碼",
+        "ja": "ページまたは指定要素のHTMLソースを取得",
+        "ko": "페이지 또는 지정된 요소의 HTML 소스 가져오기",
+        "es": "Obtener código HTML de la página o elemento",
+        "fr": "Obtenir le code HTML de la page ou de l'élément",
+        "de": "HTML-Quelltext der Seite oder des Elements",
+        "pt-BR": "Obter código HTML da página ou elemento",
+        "ru": "Получить HTML-код страницы или элемента",
+        "ar": "الحصول على كود HTML للصفحة أو العنصر",
+        "hi": "पेज या निर्दिष्ट एलिमेंट का HTML स्रोत प्राप्त करें"
       },
       "params": [
         {
@@ -428,7 +858,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "頁面ID",
+            "ja": "ページID",
+            "ko": "페이지ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرف الصفحة",
+            "hi": "पेज ID"
           }
         },
         {
@@ -437,7 +877,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "CSS选择器（空则返回整页）",
-            "en-US": "CSS selector (empty for full page)"
+            "en-US": "CSS selector (empty for full page)",
+            "zh-TW": "CSS選擇器（空則返回整頁）",
+            "ja": "CSSセレクター（空の場合はページ全体）",
+            "ko": "CSS 선택자 (비어있으면 전체 페이지)",
+            "es": "Selector CSS (vacío para página completa)",
+            "fr": "Sélecteur CSS (vide pour page entière)",
+            "de": "CSS-Selektor (leer für ganze Seite)",
+            "pt-BR": "Seletor CSS (vazio para página inteira)",
+            "ru": "CSS-селектор (пусто для всей страницы)",
+            "ar": "محدد CSS (فارغ للصفحة كاملة)",
+            "hi": "CSS सिलेक्टर (पूरे पेज के लिए खाली)"
           }
         }
       ],
@@ -445,7 +895,17 @@
         "type": "string",
         "descs": {
           "zh-CN": "HTML内容",
-          "en-US": "HTML content"
+          "en-US": "HTML content",
+          "zh-TW": "HTML內容",
+          "ja": "HTMLコンテンツ",
+          "ko": "HTML콘텐츠",
+          "es": "Contenido HTML",
+          "fr": "Contenu HTML",
+          "de": "HTML-Inhalt",
+          "pt-BR": "Conteúdo HTML",
+          "ru": "HTML-содержимое",
+          "ar": "محتوى HTML",
+          "hi": "HTML सामग्री"
         }
       },
       "bridge_path": "browser.getHtml",
@@ -457,7 +917,17 @@
       "symbol": "hap_browser_wait_for_selector",
       "descriptions": {
         "zh-CN": "等待指定 CSS 选择器的元素出现在页面 DOM 中",
-        "en-US": "Wait for element matching CSS selector to appear in DOM"
+        "en-US": "Wait for element matching CSS selector to appear in DOM",
+        "zh-TW": "等待指定 CSS 選擇器的元素出現在頁面 DOM 中",
+        "ja": "CSSセレクターに一致する要素がDOMに表示されるのを待つ",
+        "ko": "CSS 선택자와 일치하는 요소가 DOM에 나타날 때까지 대기",
+        "es": "Esperar a que aparezca el elemento en el DOM",
+        "fr": "Attendre l'apparition de l'élément dans le DOM",
+        "de": "Auf Element im DOM warten",
+        "pt-BR": "Aguardar elemento aparecer no DOM",
+        "ru": "Дождаться появления элемента в DOM",
+        "ar": "انتظار ظهور العنصر في DOM",
+        "hi": "DOM में CSS एलिमेंट दिखने की प्रतीक्षा करें"
       },
       "params": [
         {
@@ -465,7 +935,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "頁面ID",
+            "ja": "ページID",
+            "ko": "페이지ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرف الصفحة",
+            "hi": "पेज ID"
           }
         },
         {
@@ -473,7 +953,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "CSS选择器",
-            "en-US": "CSS selector"
+            "en-US": "CSS selector",
+            "zh-TW": "CSS選擇器",
+            "ja": "CSSセレクタ",
+            "ko": "CSS 선택자",
+            "es": "Selector CSS",
+            "fr": "Sélecteur CSS",
+            "de": "CSS-Selektor",
+            "pt-BR": "Seletor CSS",
+            "ru": "CSS-селектор",
+            "ar": "محدد CSS",
+            "hi": "CSS सेलेक्टर"
           }
         },
         {
@@ -483,7 +973,17 @@
           "default_value": "30000",
           "descs": {
             "zh-CN": "超时(毫秒)",
-            "en-US": "Timeout (ms)"
+            "en-US": "Timeout (ms)",
+            "zh-TW": "超時(毫秒)",
+            "ja": "タイムアウト(毫秒)",
+            "ko": "타임아웃 (ms)",
+            "es": "Tiempo de espera (ms)",
+            "fr": "Délai d'attente (ms)",
+            "de": "Zeitlimit (ms)",
+            "pt-BR": "Tempo limite (ms)",
+            "ru": "Таймаут (мс)",
+            "ar": "مهلة الانتظار (مللي ثانية)",
+            "hi": "टाइमआउट (ms)"
           }
         }
       ],
@@ -491,7 +991,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否找到",
-          "en-US": "Found"
+          "en-US": "Found",
+          "zh-TW": "是否找到",
+          "ja": "かどうか找へ",
+          "ko": "발견됨",
+          "es": "Encontrado",
+          "fr": "Trouvé",
+          "de": "Gefunden",
+          "pt-BR": "Encontrado",
+          "ru": "Найден",
+          "ar": "تم العثور عليه",
+          "hi": "मिला"
         }
       },
       "bridge_path": "browser.waitForSelector",
@@ -504,7 +1014,17 @@
       "symbol": "hap_browser_get_cookies",
       "descriptions": {
         "zh-CN": "获取当前页面的所有 Cookie 信息",
-        "en-US": "Get all cookies for the current page"
+        "en-US": "Get all cookies for the current page",
+        "zh-TW": "取得當前頁面的所有 Cookie 資訊",
+        "ja": "取得する現でページのすべて Cookie 情報",
+        "ko": "가져오기현재페이지의모든 Cookie 정보",
+        "es": "Obtener todas las cookies de la página",
+        "fr": "Obtenir tous les cookies de la page",
+        "de": "Alle Cookies der Seite abrufen",
+        "pt-BR": "Obter todos os cookies da página",
+        "ru": "Получить все куки текущей страницы",
+        "ar": "الحصول على جميع ملفات تعريف الارتباط",
+        "hi": "वर्तमान पेज के सभी कुकीज़ प्राप्त करें"
       },
       "params": [
         {
@@ -512,7 +1032,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "頁面ID",
+            "ja": "ページID",
+            "ko": "페이지ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرف الصفحة",
+            "hi": "पेज ID"
           }
         }
       ],
@@ -520,7 +1050,17 @@
         "type": "array",
         "descs": {
           "zh-CN": "Cookie列表",
-          "en-US": "Cookie list"
+          "en-US": "Cookie list",
+          "zh-TW": "Cookie列表",
+          "ja": "Cookieリスト",
+          "ko": "Cookie목록",
+          "es": "Lista de cookies",
+          "fr": "Liste des cookies",
+          "de": "Cookie-Liste",
+          "pt-BR": "Lista de cookies",
+          "ru": "Список куки",
+          "ar": "قائمة ملفات تعريف الارتباط",
+          "hi": "कुकी सूची"
         }
       },
       "bridge_path": "browser.getCookies",
@@ -532,7 +1072,17 @@
       "symbol": "hap_browser_set_cookies",
       "descriptions": {
         "zh-CN": "批量设置页面的 Cookie",
-        "en-US": "Set multiple cookies for the page"
+        "en-US": "Set multiple cookies for the page",
+        "zh-TW": "批量設定頁面的 Cookie",
+        "ja": "批量設定するページの Cookie",
+        "ko": "페이지에 여러 쿠키 설정",
+        "es": "Establecer múltiples cookies para la página",
+        "fr": "Définir plusieurs cookies pour la page",
+        "de": "Mehrere Cookies für die Seite setzen",
+        "pt-BR": "Definir múltiplos cookies para a página",
+        "ru": "Установить несколько куки для страницы",
+        "ar": "تعيين عدة ملفات تعريف ارتباط",
+        "hi": "पेज के लिए कई कुकीज़ सेट करें"
       },
       "params": [
         {
@@ -540,7 +1090,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "頁面ID",
+            "ja": "ページID",
+            "ko": "페이지ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرف الصفحة",
+            "hi": "पेज ID"
           }
         },
         {
@@ -548,7 +1108,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "Cookie数组",
-            "en-US": "Cookie array"
+            "en-US": "Cookie array",
+            "zh-TW": "Cookie陣列",
+            "ja": "Cookie配列",
+            "ko": "Cookie배열",
+            "es": "Matriz de cookies",
+            "fr": "Tableau de cookies",
+            "de": "Cookie-Array",
+            "pt-BR": "Array de cookies",
+            "ru": "Массив куки",
+            "ar": "مصفوفة ملفات تعريف الارتباط",
+            "hi": "कुकी सरणी"
           }
         }
       ],
@@ -556,7 +1126,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "browser.setCookies",
@@ -568,7 +1148,17 @@
       "symbol": "hap_browser_pdf",
       "descriptions": {
         "zh-CN": "将当前页面导出为 PDF 文件",
-        "en-US": "Export current page as PDF file"
+        "en-US": "Export current page as PDF file",
+        "zh-TW": "將當前頁面匯出為 PDF 檔案",
+        "ja": "現在のページをPDFファイルとしてエクスポート",
+        "ko": "현재 페이지를 PDF 파일로 내보내기",
+        "es": "Exportar página actual como PDF",
+        "fr": "Exporter la page en PDF",
+        "de": "Aktuelle Seite als PDF exportieren",
+        "pt-BR": "Exportar página atual como PDF",
+        "ru": "Экспортировать страницу в PDF",
+        "ar": "تصدير الصفحة الحالية كملف PDF",
+        "hi": "वर्तमान पेज को PDF के रूप में एक्सपोर्ट करें"
       },
       "params": [
         {
@@ -576,7 +1166,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "頁面ID",
+            "ja": "ページID",
+            "ko": "페이지ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرف الصفحة",
+            "hi": "पेज ID"
           }
         },
         {
@@ -584,7 +1184,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "保存路径",
-            "en-US": "Save path"
+            "en-US": "Save path",
+            "zh-TW": "保存路徑",
+            "ja": "保存するパス",
+            "ko": "저장경로",
+            "es": "Ruta de guardado",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения",
+            "ar": "مسار الحفظ",
+            "hi": "सहेजने का पथ"
           }
         },
         {
@@ -594,7 +1204,17 @@
           "default_value": "false",
           "descs": {
             "zh-CN": "landscape参数",
-            "en-US": "landscape parameter"
+            "en-US": "landscape parameter",
+            "zh-TW": "landscape參數",
+            "ja": "landscapeパラメータ",
+            "ko": "landscape매개변수",
+            "es": "Parámetro de orientación horizontal",
+            "fr": "Paramètre paysage",
+            "de": "Querformat-Parameter",
+            "pt-BR": "Parâmetro de paisagem",
+            "ru": "Параметр альбомной ориентации",
+            "ar": "معلمة الاتجاه الأفقي",
+            "hi": "लैंडस्केप पैरामीटर"
           },
           "desc": "landscape parameter"
         }
@@ -603,7 +1223,17 @@
         "type": "ScreenshotResult",
         "descs": {
           "zh-CN": "导出结果",
-          "en-US": "Export result"
+          "en-US": "Export result",
+          "zh-TW": "匯出結果",
+          "ja": "エクスポートする結果",
+          "ko": "내보내기결과",
+          "es": "Resultado de exportación",
+          "fr": "Résultat d'exportation",
+          "de": "Exportergebnis",
+          "pt-BR": "Resultado da exportação",
+          "ru": "Результат экспорта",
+          "ar": "نتيجة التصدير",
+          "hi": "एक्सपोर्ट परिणाम"
         }
       },
       "bridge_path": "browser.pdf",
@@ -616,7 +1246,17 @@
       "symbol": "hap_browser_list_pages",
       "descriptions": {
         "zh-CN": "列出浏览器实例中所有打开的标签页",
-        "en-US": "List all open tabs in the browser instance"
+        "en-US": "List all open tabs in the browser instance",
+        "zh-TW": "列出瀏覽器實例中所有打開的標籤頁",
+        "ja": "ブラウザインスタンスのすべてのオープンタブを一覧表示",
+        "ko": "브라우저 인스턴스의 모든 열린 탭 나열",
+        "es": "Listar todas las pestañas abiertas",
+        "fr": "Lister tous les onglets ouverts",
+        "de": "Alle offenen Tabs auflisten",
+        "pt-BR": "Listar todas as abas abertas",
+        "ru": "Список всех открытых вкладок",
+        "ar": "سرد جميع علامات التبويب المفتوحة",
+        "hi": "ब्राउज़र के सभी खुले टैब सूचीबद्ध करें"
       },
       "params": [
         {
@@ -624,7 +1264,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "浏览器实例ID",
-            "en-US": "Browser instance ID"
+            "en-US": "Browser instance ID",
+            "zh-TW": "瀏覽器實例ID",
+            "ja": "ブラウザインスタンスID",
+            "ko": "브라우저 인스턴스 ID",
+            "es": "ID de instancia del navegador",
+            "fr": "ID d'instance du navigateur",
+            "de": "Browser-Instanz-ID",
+            "pt-BR": "ID da instância do navegador",
+            "ru": "ID экземпляра браузера",
+            "ar": "معرف نسخة المتصفح",
+            "hi": "ब्राउज़र इंस्टेंस ID"
           }
         }
       ],
@@ -632,7 +1282,17 @@
         "type": "array",
         "descs": {
           "zh-CN": "页面列表",
-          "en-US": "Page list"
+          "en-US": "Page list",
+          "zh-TW": "頁面列表",
+          "ja": "ページリスト",
+          "ko": "페이지목록",
+          "es": "Lista de páginas",
+          "fr": "Liste des pages",
+          "de": "Seitenliste",
+          "pt-BR": "Lista de páginas",
+          "ru": "Список страниц",
+          "ar": "قائمة الصفحات",
+          "hi": "पेज सूची"
         }
       },
       "bridge_path": "browser.listPages",
@@ -644,7 +1304,17 @@
       "symbol": "hap_browser_close_page",
       "descriptions": {
         "zh-CN": "关闭指定的浏览器标签页",
-        "en-US": "Close specified browser tab"
+        "en-US": "Close specified browser tab",
+        "zh-TW": "關閉指定的瀏覽器標籤頁",
+        "ja": "指定ブラウザタブを閉じる",
+        "ko": "지정된 브라우저 탭 닫기",
+        "es": "Cerrar pestaña del navegador",
+        "fr": "Fermer l'onglet du navigateur",
+        "de": "Browser-Tab schließen",
+        "pt-BR": "Fechar aba do navegador",
+        "ru": "Закрыть вкладку браузера",
+        "ar": "إغلاق علامة تبويب المتصفح",
+        "hi": "निर्दिष्ट ब्राउज़र टैब बंद करें"
       },
       "params": [
         {
@@ -652,7 +1322,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "頁面ID",
+            "ja": "ページID",
+            "ko": "페이지ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرف الصفحة",
+            "hi": "पेज ID"
           }
         }
       ],
@@ -660,7 +1340,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "browser.closePage",
@@ -672,7 +1362,17 @@
       "symbol": "hap_browser_select",
       "descriptions": {
         "zh-CN": "在下拉选择框中选择指定的选项值",
-        "en-US": "Select specified option value in dropdown"
+        "en-US": "Select specified option value in dropdown",
+        "zh-TW": "在下拉選擇框中選擇指定的選項值",
+        "ja": "ドロップダウンで指定オプション値を選択",
+        "ko": "드롭다운에서 지정 옵션 값 선택",
+        "es": "Seleccionar valor en lista desplegable",
+        "fr": "Sélectionner la valeur dans le menu déroulant",
+        "de": "Wert in Dropdown auswählen",
+        "pt-BR": "Selecionar valor na lista suspensa",
+        "ru": "Выбрать значение в выпадающем списке",
+        "ar": "تحديد القيمة في القائمة المنسدلة",
+        "hi": "ड्रॉपडाउन में निर्दिष्ट विकल्प चुनें"
       },
       "params": [
         {
@@ -680,7 +1380,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "頁面ID",
+            "ja": "ページID",
+            "ko": "페이지ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرف الصفحة",
+            "hi": "पेज ID"
           }
         },
         {
@@ -688,7 +1398,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "CSS选择器",
-            "en-US": "CSS selector"
+            "en-US": "CSS selector",
+            "zh-TW": "CSS選擇器",
+            "ja": "CSSセレクタ",
+            "ko": "CSS 선택자",
+            "es": "Selector CSS",
+            "fr": "Sélecteur CSS",
+            "de": "CSS-Selektor",
+            "pt-BR": "Seletor CSS",
+            "ru": "CSS-селектор",
+            "ar": "محدد CSS",
+            "hi": "CSS सेलेक्टर"
           }
         },
         {
@@ -696,7 +1416,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要设置的值",
-            "en-US": "Value to set"
+            "en-US": "Value to set",
+            "zh-TW": "要設定的值",
+            "ja": "設定する値",
+            "ko": "설정할 값",
+            "es": "Valor a establecer",
+            "fr": "Valeur à définir",
+            "de": "Zu setzender Wert",
+            "pt-BR": "Valor a definir",
+            "ru": "Устанавливаемое значение",
+            "ar": "القيمة المراد تعيينها",
+            "hi": "सेट करने का मान"
           },
           "desc": "Value to set"
         }
@@ -705,7 +1435,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "browser.select",
@@ -717,7 +1457,17 @@
       "symbol": "hap_browser_query_selector",
       "descriptions": {
         "zh-CN": "查询页面中匹配 CSS 选择器的元素属性信息",
-        "en-US": "Query element attributes matching CSS selector"
+        "en-US": "Query element attributes matching CSS selector",
+        "zh-TW": "查询頁面中匹配 CSS 選擇器的元素屬性資訊",
+        "ja": "CSSセレクターに一致する要素の属性を取得",
+        "ko": "CSS 선택자와 일치하는 요소 속성 쿼리",
+        "es": "Consultar atributos del elemento por CSS",
+        "fr": "Interroger les attributs de l'élément par CSS",
+        "de": "Elementattribute per CSS abfragen",
+        "pt-BR": "Consultar atributos do elemento por CSS",
+        "ru": "Запросить атрибуты элемента по CSS",
+        "ar": "استعلام سمات العنصر بمحدد CSS",
+        "hi": "CSS सिलेक्टर से एलिमेंट एट्रिब्यूट क्वेरी करें"
       },
       "params": [
         {
@@ -725,7 +1475,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "頁面ID",
+            "ja": "ページID",
+            "ko": "페이지ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرف الصفحة",
+            "hi": "पेज ID"
           }
         },
         {
@@ -733,7 +1493,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "CSS选择器",
-            "en-US": "CSS selector"
+            "en-US": "CSS selector",
+            "zh-TW": "CSS選擇器",
+            "ja": "CSSセレクタ",
+            "ko": "CSS 선택자",
+            "es": "Selector CSS",
+            "fr": "Sélecteur CSS",
+            "de": "CSS-Selektor",
+            "pt-BR": "Seletor CSS",
+            "ru": "CSS-селектор",
+            "ar": "محدد CSS",
+            "hi": "CSS सेलेक्टर"
           }
         },
         {
@@ -742,7 +1512,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "属性名（空则返回所有属性）",
-            "en-US": "Attribute name (empty for all)"
+            "en-US": "Attribute name (empty for all)",
+            "zh-TW": "屬性名（空則返回所有屬性）",
+            "ja": "属性名（空の場合はすべて）",
+            "ko": "속성 이름 (비어있으면 모두)",
+            "es": "Nombre del atributo (vacío para todos)",
+            "fr": "Nom de l'attribut (vide pour tous)",
+            "de": "Attributname (leer für alle)",
+            "pt-BR": "Nome do atributo (vazio para todos)",
+            "ru": "Имя атрибута (пусто для всех)",
+            "ar": "اسم السمة (فارغ للكل)",
+            "hi": "एट्रिब्यूट नाम (सभी के लिए खाली)"
           }
         }
       ],
@@ -750,7 +1530,17 @@
         "type": "ElementInfo",
         "descs": {
           "zh-CN": "元素信息",
-          "en-US": "Element info"
+          "en-US": "Element info",
+          "zh-TW": "元素資訊",
+          "ja": "元素情報",
+          "ko": "요소 정보",
+          "es": "Información del elemento",
+          "fr": "Informations de l'élément",
+          "de": "Elementinformationen",
+          "pt-BR": "Informações do elemento",
+          "ru": "Информация об элементе",
+          "ar": "معلومات العنصر",
+          "hi": "एलिमेंट जानकारी"
         }
       },
       "bridge_path": "browser.querySelector",
@@ -763,7 +1553,17 @@
       "name": "Cookie",
       "descriptions": {
         "zh-CN": "Cookie结构",
-        "en-US": "Cookie structure"
+        "en-US": "Cookie structure",
+        "zh-TW": "Cookie结構",
+        "ja": "Cookie構造",
+        "ko": "쿠키 구조",
+        "es": "Estructura de cookie",
+        "fr": "Structure de cookie",
+        "de": "Cookie-Struktur",
+        "pt-BR": "Estrutura de cookie",
+        "ru": "Структура cookie",
+        "ar": "هيكل الكوكي",
+        "hi": "कुकी संरचना"
       },
       "fields": [
         {
@@ -771,7 +1571,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "名称",
-            "en-US": "Name"
+            "en-US": "Name",
+            "zh-TW": "名稱",
+            "ja": "名前",
+            "ko": "이름",
+            "es": "Nombre",
+            "fr": "Nom",
+            "de": "Name",
+            "pt-BR": "Nome",
+            "ru": "Имя",
+            "ar": "الاسم",
+            "hi": "नाम"
           }
         },
         {
@@ -779,7 +1589,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "值",
-            "en-US": "Value"
+            "en-US": "Value",
+            "zh-TW": "值",
+            "ja": "値",
+            "ko": "값",
+            "es": "Valor",
+            "fr": "Valeur",
+            "de": "Wert",
+            "pt-BR": "Valor",
+            "ru": "Значение",
+            "ar": "القيمة",
+            "hi": "मान"
           }
         },
         {
@@ -788,7 +1608,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "域名",
-            "en-US": "Domain"
+            "en-US": "Domain",
+            "zh-TW": "域名",
+            "ja": "ドメイン",
+            "ko": "도메인",
+            "es": "Dominio",
+            "fr": "Domaine",
+            "de": "Domäne",
+            "pt-BR": "Domínio",
+            "ru": "Домен",
+            "ar": "النطاق",
+            "hi": "डोमेन"
           }
         },
         {
@@ -797,7 +1627,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "路径",
-            "en-US": "Path"
+            "en-US": "Path",
+            "zh-TW": "路徑",
+            "ja": "パス",
+            "ko": "경로",
+            "es": "Ruta",
+            "fr": "Chemin",
+            "de": "Pfad",
+            "pt-BR": "Caminho",
+            "ru": "Путь",
+            "ar": "المسار",
+            "hi": "पथ"
           }
         },
         {
@@ -806,7 +1646,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "过期时间戳",
-            "en-US": "Expiry timestamp"
+            "en-US": "Expiry timestamp",
+            "zh-TW": "过期時间戳",
+            "ja": "有効期限タイムスタンプ",
+            "ko": "만료 타임스탬프",
+            "es": "Marca de tiempo de vencimiento",
+            "fr": "Horodatage d'expiration",
+            "de": "Ablauf-Zeitstempel",
+            "pt-BR": "Timestamp de validade",
+            "ru": "Временная метка истечения срока",
+            "ar": "طابع وقت انتهاء الصلاحية",
+            "hi": "समाप्ति टाइमस्टैम्प"
           }
         }
       ]
@@ -815,7 +1665,17 @@
       "name": "BrowserInstance",
       "descriptions": {
         "zh-CN": "浏览器实例",
-        "en-US": "Browser instance"
+        "en-US": "Browser instance",
+        "zh-TW": "瀏覽器實例",
+        "ja": "ブラウザインスタンス",
+        "ko": "브라우저 인스턴스",
+        "es": "Instancia del navegador",
+        "fr": "Instance du navigateur",
+        "de": "Browser-Instanz",
+        "pt-BR": "Instância do navegador",
+        "ru": "Экземпляр браузера",
+        "ar": "مثيل المتصفح",
+        "hi": "ब्राउज़र इंस्टेंस"
       },
       "fields": [
         {
@@ -823,7 +1683,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "浏览器ID",
-            "en-US": "Browser ID"
+            "en-US": "Browser ID",
+            "zh-TW": "瀏覽器ID",
+            "ja": "ブラウザID",
+            "ko": "브라우저 ID",
+            "es": "ID del navegador",
+            "fr": "ID du navigateur",
+            "de": "Browser-ID",
+            "pt-BR": "ID do navegador",
+            "ru": "ID браузера",
+            "ar": "معرّف المتصفح",
+            "hi": "ब्राउज़र ID"
           }
         },
         {
@@ -831,7 +1701,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "WebSocket调试地址",
-            "en-US": "WebSocket debug URL"
+            "en-US": "WebSocket debug URL",
+            "zh-TW": "WebSocket偵錯地址",
+            "ja": "WebSocketデバッグURL",
+            "ko": "WebSocket 디버그 URL",
+            "es": "URL de depuración WebSocket",
+            "fr": "URL de débogage WebSocket",
+            "de": "WebSocket-Debug-URL",
+            "pt-BR": "URL de depuração WebSocket",
+            "ru": "URL отладки WebSocket",
+            "ar": "عنوان URL لتصحيح WebSocket",
+            "hi": "WebSocket डीबग URL"
           }
         }
       ]
@@ -840,7 +1720,17 @@
       "name": "PageInfo",
       "descriptions": {
         "zh-CN": "页面信息",
-        "en-US": "Page info"
+        "en-US": "Page info",
+        "zh-TW": "页面資訊",
+        "ja": "ページ情報",
+        "ko": "페이지 정보",
+        "es": "Información de página",
+        "fr": "Informations de page",
+        "de": "Seiteninformationen",
+        "pt-BR": "Informações da página",
+        "ru": "Информация о странице",
+        "ar": "معلومات الصفحة",
+        "hi": "पेज जानकारी"
       },
       "fields": [
         {
@@ -848,7 +1738,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面ID",
-            "en-US": "Page ID"
+            "en-US": "Page ID",
+            "zh-TW": "页面ID",
+            "ja": "ページID",
+            "ko": "페이지 ID",
+            "es": "ID de página",
+            "fr": "ID de page",
+            "de": "Seiten-ID",
+            "pt-BR": "ID da página",
+            "ru": "ID страницы",
+            "ar": "معرّف الصفحة",
+            "hi": "पेज ID"
           }
         },
         {
@@ -856,7 +1756,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面URL",
-            "en-US": "Page URL"
+            "en-US": "Page URL",
+            "zh-TW": "页面URL",
+            "ja": "ページURL",
+            "ko": "페이지 URL",
+            "es": "URL de la página",
+            "fr": "URL de la page",
+            "de": "Seiten-URL",
+            "pt-BR": "URL da página",
+            "ru": "URL страницы",
+            "ar": "عنوان URL للصفحة",
+            "hi": "पेज URL"
           }
         },
         {
@@ -864,7 +1774,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面标题",
-            "en-US": "Page title"
+            "en-US": "Page title",
+            "zh-TW": "页面標题",
+            "ja": "ページタイトル",
+            "ko": "페이지 제목",
+            "es": "Título de la página",
+            "fr": "Titre de la page",
+            "de": "Seitentitel",
+            "pt-BR": "Título da página",
+            "ru": "Заголовок страницы",
+            "ar": "عنوان الصفحة",
+            "hi": "पेज शीर्षक"
           }
         }
       ]
@@ -873,7 +1793,17 @@
       "name": "ScreenshotResult",
       "descriptions": {
         "zh-CN": "截图结果",
-        "en-US": "Screenshot result"
+        "en-US": "Screenshot result",
+        "zh-TW": "截圖结果",
+        "ja": "スクリーンショット結果",
+        "ko": "스크린샷 결과",
+        "es": "Resultado de la captura de pantalla",
+        "fr": "Résultat de la capture d'écran",
+        "de": "Screenshot-Ergebnis",
+        "pt-BR": "Resultado da captura de tela",
+        "ru": "Результат снимка экрана",
+        "ar": "نتيجة لقطة الشاشة",
+        "hi": "स्क्रीनशॉट परिणाम"
       },
       "fields": [
         {
@@ -881,7 +1811,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64图片数据",
-            "en-US": "Base64 image data"
+            "en-US": "Base64 image data",
+            "zh-TW": "Base64图片數據",
+            "ja": "Base64画像データ",
+            "ko": "Base64 이미지 데이터",
+            "es": "Datos de imagen Base64",
+            "fr": "Données d'image Base64",
+            "de": "Base64-Bilddaten",
+            "pt-BR": "Dados de imagem Base64",
+            "ru": "Данные изображения Base64",
+            "ar": "بيانات صورة Base64",
+            "hi": "Base64 छवि डेटा"
           }
         },
         {
@@ -889,7 +1829,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图片格式(png)",
-            "en-US": "Image format"
+            "en-US": "Image format",
+            "zh-TW": "图片格式(png)",
+            "ja": "画像形式",
+            "ko": "이미지 형식",
+            "es": "Formato de imagen",
+            "fr": "Format d'image",
+            "de": "Bildformat",
+            "pt-BR": "Formato de imagem",
+            "ru": "Формат изображения",
+            "ar": "تنسيق الصورة",
+            "hi": "छवि प्रारूप"
           }
         }
       ]
@@ -898,7 +1848,17 @@
       "name": "ElementInfo",
       "descriptions": {
         "zh-CN": "DOM元素信息",
-        "en-US": "DOM element info"
+        "en-US": "DOM element info",
+        "zh-TW": "DOM元素資訊",
+        "ja": "DOM要素情報",
+        "ko": "DOM 요소 정보",
+        "es": "Información del elemento DOM",
+        "fr": "Informations sur l'élément DOM",
+        "de": "DOM-Elementinformationen",
+        "pt-BR": "Informações do elemento DOM",
+        "ru": "Информация об элементе DOM",
+        "ar": "معلومات عنصر DOM",
+        "hi": "DOM तत्व जानकारी"
       },
       "fields": [
         {
@@ -906,7 +1866,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标签名",
-            "en-US": "Tag name"
+            "en-US": "Tag name",
+            "zh-TW": "標簽名",
+            "ja": "タグ名",
+            "ko": "태그 이름",
+            "es": "Nombre de etiqueta",
+            "fr": "Nom de balise",
+            "de": "Tag-Name",
+            "pt-BR": "Nome da tag",
+            "ru": "Имя тега",
+            "ar": "اسم الوسم",
+            "hi": "टैग नाम"
           }
         },
         {
@@ -914,7 +1884,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文本内容",
-            "en-US": "Text content"
+            "en-US": "Text content",
+            "zh-TW": "文本內容",
+            "ja": "テキスト内容",
+            "ko": "텍스트 내용",
+            "es": "Contenido de texto",
+            "fr": "Contenu textuel",
+            "de": "Textinhalt",
+            "pt-BR": "Conteúdo de texto",
+            "ru": "Текстовое содержимое",
+            "ar": "محتوى النص",
+            "hi": "टेक्स्ट सामग्री"
           }
         },
         {
@@ -922,7 +1902,17 @@
           "type": "object",
           "descs": {
             "zh-CN": "属性映射",
-            "en-US": "Attributes"
+            "en-US": "Attributes",
+            "zh-TW": "屬性映射",
+            "ja": "属性",
+            "ko": "속성",
+            "es": "Atributos",
+            "fr": "Attributs",
+            "de": "Attribute",
+            "pt-BR": "Atributos",
+            "ru": "Атрибуты",
+            "ar": "السمات",
+            "hi": "विशेषताएँ"
           }
         }
       ]

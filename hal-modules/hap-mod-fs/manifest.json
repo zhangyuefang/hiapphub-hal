@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要读取的文本文件路径",
-            "en-US": "Path to the text file to read"
+            "en-US": "Path to the text file to read",
+            "zh-TW": "要讀取的文字檔案路徑",
+            "ja": "要読み取るのテキストファイルパス",
+            "ko": "읽을 텍스트 파일 경로",
+            "es": "Ruta del archivo de texto a leer",
+            "fr": "Chemin du fichier texte à lire",
+            "de": "Pfad der zu lesenden Textdatei",
+            "pt-BR": "Caminho do arquivo de texto a ler",
+            "ru": "Путь к текстовому файлу",
+            "ar": "مسار الملف النصي للقراءة",
+            "hi": "पढ़ने के लिए टेक्स्ट फ़ाइल का पथ"
           },
           "desc": "Path to the text file to read",
           "optional": true
@@ -43,14 +53,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "文件的完整文本内容",
-          "en-US": "Complete text content of the file"
+          "en-US": "Complete text content of the file",
+          "zh-TW": "檔案的完整文字內容",
+          "ja": "ファイルの完整テキストコンテンツ",
+          "ko": "파일의 전체 텍스트 내용",
+          "es": "Contenido de texto completo del archivo",
+          "fr": "Contenu textuel complet du fichier",
+          "de": "Vollständiger Textinhalt der Datei",
+          "pt-BR": "Conteúdo de texto completo do arquivo",
+          "ru": "Полное текстовое содержимое файла",
+          "ar": "المحتوى النصي الكامل للملف",
+          "hi": "फ़ाइल की पूर्ण टेक्स्ट सामग्री"
         },
         "desc": "Complete text content of the file"
       },
       "bridge_path": "fs.readTextFile",
       "descriptions": {
         "zh-CN": "读取文本文件的完整内容并返回字符串",
-        "en-US": "Read complete text file content and return as string"
+        "en-US": "Read complete text file content and return as string",
+        "zh-TW": "讀取文字檔案的完整內容並返回字串",
+        "ja": "テキストファイルの全内容を読み取り文字列として返す",
+        "ko": "텍스트 파일의 전체 내용을 읽고 문자열로 반환",
+        "es": "Leer archivo de texto completo y devolver como cadena",
+        "fr": "Lire le fichier texte et retourner comme chaîne",
+        "de": "Textdatei vollständig lesen und als String zurückgeben",
+        "pt-BR": "Ler arquivo de texto completo e retornar como string",
+        "ru": "Прочитать весь текстовый файл и вернуть как строку",
+        "ar": "قراءة محتوى الملف النصي كاملاً وإرجاعه كسلسلة",
+        "hi": "पूर्ण टेक्स्ट फ़ाइल पढ़ें और स्ट्रिंग के रूप में लौटाएं"
       },
       "group": "file",
       "description": "Read complete text file content and return as string"
@@ -64,7 +94,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要写入的目标文件路径",
-            "en-US": "Target file path to write"
+            "en-US": "Target file path to write",
+            "zh-TW": "要寫入的目標檔案路徑",
+            "ja": "書き込み先のファイルパス",
+            "ko": "쓸 대상 파일 경로",
+            "es": "Ruta del archivo a escribir",
+            "fr": "Chemin du fichier cible",
+            "de": "Zieldateipfad zum Schreiben",
+            "pt-BR": "Caminho do arquivo para escrever",
+            "ru": "Путь целевого файла",
+            "ar": "مسار الملف الهدف للكتابة",
+            "hi": "लिखने के लिए लक्ष्य फ़ाइल पथ"
           },
           "desc": "Target file path to write",
           "optional": true
@@ -74,7 +114,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要写入的文本内容",
-            "en-US": "Text content to write"
+            "en-US": "Text content to write",
+            "zh-TW": "要寫入的文字內容",
+            "ja": "要書き込むのテキストコンテンツ",
+            "ko": "쓸 텍스트 내용",
+            "es": "Contenido de texto a escribir",
+            "fr": "Contenu texte à écrire",
+            "de": "Zu schreibender Textinhalt",
+            "pt-BR": "Conteúdo de texto a escrever",
+            "ru": "Текстовое содержимое для записи",
+            "ar": "المحتوى النصي للكتابة",
+            "hi": "लिखने के लिए टेक्स्ट सामग्री"
           },
           "desc": "Text content to write"
         }
@@ -83,14 +133,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "写入是否成功",
-          "en-US": "Whether write succeeded"
+          "en-US": "Whether write succeeded",
+          "zh-TW": "寫入是否成功",
+          "ja": "書き込む成功したかどうか",
+          "ko": "쓰기성공 여부",
+          "es": "Si la escritura fue exitosa",
+          "fr": "Si l'écriture a réussi",
+          "de": "Ob das Schreiben erfolgreich war",
+          "pt-BR": "Se a escrita foi bem-sucedida",
+          "ru": "Успешна ли запись",
+          "ar": "هل نجحت الكتابة",
+          "hi": "लेखन सफल हुआ क्या"
         },
         "desc": "Whether write succeeded"
       },
       "bridge_path": "fs.writeTextFile",
       "descriptions": {
         "zh-CN": "将文本内容写入文件，如果文件已存在则覆盖",
-        "en-US": "Write text content to file, overwriting if exists"
+        "en-US": "Write text content to file, overwriting if exists",
+        "zh-TW": "將文字內容寫入檔案，如果檔案已存在則覆蓋",
+        "ja": "テキスト内容をファイルに書き込み（存在する場合は上書き）",
+        "ko": "텍스트 내용을 파일에 쓰기 (존재 시 덮어쓰기)",
+        "es": "Escribir texto en archivo (sobrescribir si existe)",
+        "fr": "Écrire le texte dans le fichier (écraser si existant)",
+        "de": "Text in Datei schreiben (überschreiben)",
+        "pt-BR": "Escrever texto no arquivo (sobrescrever se existir)",
+        "ru": "Записать текст в файл (перезаписать)",
+        "ar": "كتابة نص في ملف (الكتابة فوق الموجود)",
+        "hi": "फ़ाइल में टेक्स्ट लिखें (मौजूद हो तो ओवरराइट)"
       },
       "group": "file",
       "description": "Write text content to file, overwriting if exists"
@@ -104,7 +174,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要追加内容的文件路径",
-            "en-US": "File path to append to"
+            "en-US": "File path to append to",
+            "zh-TW": "要追加內容的檔案路徑",
+            "ja": "要追加コンテンツのファイルパス",
+            "ko": "추가할 파일 경로",
+            "es": "Ruta del archivo para agregar",
+            "fr": "Chemin du fichier pour ajout",
+            "de": "Dateipfad zum Anhängen",
+            "pt-BR": "Caminho do arquivo para adicionar",
+            "ru": "Путь файла для добавления",
+            "ar": "مسار الملف للإضافة",
+            "hi": "जोड़ने के लिए फ़ाइल पथ"
           },
           "desc": "File path to append to",
           "optional": true
@@ -114,7 +194,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要追加的文本内容",
-            "en-US": "Text content to append"
+            "en-US": "Text content to append",
+            "zh-TW": "要追加的文字內容",
+            "ja": "要追加のテキストコンテンツ",
+            "ko": "추가할 텍스트 내용",
+            "es": "Contenido de texto a agregar",
+            "fr": "Contenu texte à ajouter",
+            "de": "Anzuhängender Textinhalt",
+            "pt-BR": "Conteúdo de texto a adicionar",
+            "ru": "Текстовое содержимое для добавления",
+            "ar": "المحتوى النصي للإضافة",
+            "hi": "जोड़ने के लिए टेक्स्ट सामग्री"
           },
           "desc": "Text content to append"
         }
@@ -123,14 +213,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "追加是否成功",
-          "en-US": "Whether append succeeded"
+          "en-US": "Whether append succeeded",
+          "zh-TW": "追加是否成功",
+          "ja": "追加成功したかどうか",
+          "ko": "추가 성공 여부",
+          "es": "Si la adición fue exitosa",
+          "fr": "Si l'ajout a réussi",
+          "de": "Ob das Anhängen erfolgreich war",
+          "pt-BR": "Se a adição foi bem-sucedida",
+          "ru": "Успешно ли добавление",
+          "ar": "هل نجحت الإضافة",
+          "hi": "जोड़ना सफल हुआ क्या"
         },
         "desc": "Whether append succeeded"
       },
       "bridge_path": "fs.appendTextFile",
       "descriptions": {
         "zh-CN": "在文件末尾追加文本内容，不覆盖已有内容",
-        "en-US": "Append text content to end of file without overwriting"
+        "en-US": "Append text content to end of file without overwriting",
+        "zh-TW": "在檔案末尾追加文字內容，不覆蓋已有內容",
+        "ja": "既存の内容を上書きせずにファイル末尾にテキストを追加",
+        "ko": "기존 내용을 덮어쓰지 않고 파일 끝에 텍스트 내용 추가",
+        "es": "Agregar texto al final del archivo sin sobrescribir",
+        "fr": "Ajouter du texte à la fin du fichier sans écraser",
+        "de": "Text am Dateiende anfügen ohne Überschreiben",
+        "pt-BR": "Adicionar texto ao final do arquivo sem sobrescrever",
+        "ru": "Добавить текст в конец файла без перезаписи",
+        "ar": "إضافة نص إلى نهاية الملف بدون الكتابة فوقه",
+        "hi": "फ़ाइल के अंत में टेक्स्ट जोड़ें (ओवरराइट नहीं)"
       },
       "group": "file",
       "description": "Append text content to end of file without overwriting"
@@ -144,7 +254,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要读取的二进制文件路径",
-            "en-US": "Path to binary file to read"
+            "en-US": "Path to binary file to read",
+            "zh-TW": "要讀取的二進製檔案路徑",
+            "ja": "読み取るバイナリファイルのパス",
+            "ko": "읽을 바이너리 파일 경로",
+            "es": "Ruta del archivo binario a leer",
+            "fr": "Chemin du fichier binaire à lire",
+            "de": "Pfad der zu lesenden Binärdatei",
+            "pt-BR": "Caminho do arquivo binário a ler",
+            "ru": "Путь к бинарному файлу",
+            "ar": "مسار الملف الثنائي للقراءة",
+            "hi": "पढ़ने के लिए बाइनरी फ़ाइल पथ"
           },
           "desc": "Path to binary file to read",
           "optional": true
@@ -154,14 +274,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "文件内容的 Base64 编码字符串",
-          "en-US": "Base64 encoded string of file content"
+          "en-US": "Base64 encoded string of file content",
+          "zh-TW": "檔案內容的 Base64 編碼字串",
+          "ja": "ファイルコンテンツの Base64 エンコーディング文字列",
+          "ko": "파일콘텐츠의 Base64 인코딩문자열",
+          "es": "Cadena Base64 del contenido del archivo",
+          "fr": "Chaîne Base64 du contenu du fichier",
+          "de": "Base64-kodierter Dateiinhalt",
+          "pt-BR": "String Base64 do conteúdo do arquivo",
+          "ru": "Строка Base64 содержимого файла",
+          "ar": "سلسلة Base64 لمحتوى الملف",
+          "hi": "फ़ाइल सामग्री की Base64 एनकोडेड स्ट्रिंग"
         },
         "desc": "Base64 encoded string of file content"
       },
       "bridge_path": "fs.readBinary",
       "descriptions": {
         "zh-CN": "以二进制模式读取文件，返回 Base64 编码的内容",
-        "en-US": "Read file in binary mode, returns Base64 encoded content"
+        "en-US": "Read file in binary mode, returns Base64 encoded content",
+        "zh-TW": "以二進製模式讀取檔案，返回 Base64 編碼的內容",
+        "ja": "バイナリモードでファイルを読み取り、Base64エンコードされた内容を返す",
+        "ko": "바이너리 모드로 파일 읽기, Base64 인코딩 내용 반환",
+        "es": "Leer archivo en modo binario, devolver Base64",
+        "fr": "Lire le fichier en binaire, retourner en Base64",
+        "de": "Datei binär lesen, Base64-kodiert zurückgeben",
+        "pt-BR": "Ler arquivo em modo binário, retornar Base64",
+        "ru": "Прочитать файл в бинарном режиме, вернуть Base64",
+        "ar": "قراءة الملف بالوضع الثنائي وإرجاع Base64",
+        "hi": "बाइनरी मोड में फ़ाइल पढ़ें, Base64 लौटाएं"
       },
       "group": "file",
       "description": "Read file in binary mode, returns Base64 encoded content"
@@ -175,7 +315,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要写入的目标文件路径",
-            "en-US": "Target file path"
+            "en-US": "Target file path",
+            "zh-TW": "要寫入的目標檔案路徑",
+            "ja": "ターゲットファイルパス",
+            "ko": "대상 파일 경로",
+            "es": "Ruta del archivo destino",
+            "fr": "Chemin du fichier cible",
+            "de": "Zieldateipfad",
+            "pt-BR": "Caminho do arquivo destino",
+            "ru": "Путь целевого файла",
+            "ar": "مسار الملف الهدف",
+            "hi": "लक्ष्य फ़ाइल पथ"
           },
           "desc": "Target file path",
           "optional": true
@@ -185,7 +335,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64 编码的二进制数据",
-            "en-US": "Base64 encoded binary data"
+            "en-US": "Base64 encoded binary data",
+            "zh-TW": "Base64 編碼的二進製數據",
+            "ja": "Base64エンコードされたバイナリデータ",
+            "ko": "Base64 인코딩된 바이너리 데이터",
+            "es": "Datos binarios codificados en Base64",
+            "fr": "Données binaires encodées en Base64",
+            "de": "Base64-kodierte Binärdaten",
+            "pt-BR": "Dados binários codificados em Base64",
+            "ru": "Двоичные данные в Base64",
+            "ar": "بيانات ثنائية مشفرة بـ Base64",
+            "hi": "Base64 एनकोडेड बाइनरी डेटा"
           },
           "desc": "Base64 encoded binary data"
         }
@@ -194,14 +354,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "写入是否成功",
-          "en-US": "Whether write succeeded"
+          "en-US": "Whether write succeeded",
+          "zh-TW": "寫入是否成功",
+          "ja": "書き込む成功したかどうか",
+          "ko": "쓰기성공 여부",
+          "es": "Si la escritura fue exitosa",
+          "fr": "Si l'écriture a réussi",
+          "de": "Ob das Schreiben erfolgreich war",
+          "pt-BR": "Se a escrita foi bem-sucedida",
+          "ru": "Успешна ли запись",
+          "ar": "هل نجحت الكتابة",
+          "hi": "लेखन सफल हुआ क्या"
         },
         "desc": "Whether write succeeded"
       },
       "bridge_path": "fs.writeBinary",
       "descriptions": {
         "zh-CN": "将 Base64 编码的数据解码后写入二进制文件",
-        "en-US": "Decode Base64 data and write to binary file"
+        "en-US": "Decode Base64 data and write to binary file",
+        "zh-TW": "將 Base64 編碼的數據解碼后寫入二進製檔案",
+        "ja": "Base64データをデコードしてバイナリファイルに書き込み",
+        "ko": "Base64 데이터를 디코딩하여 바이너리 파일로 저장",
+        "es": "Decodificar Base64 y escribir archivo binario",
+        "fr": "Décoder Base64 et écrire un fichier binaire",
+        "de": "Base64 dekodieren und in Binärdatei schreiben",
+        "pt-BR": "Decodificar Base64 e escrever arquivo binário",
+        "ru": "Декодировать Base64 и записать в файл",
+        "ar": "فك تشفير Base64 وكتابة ملف ثنائي",
+        "hi": "Base64 डीकोड और बाइनरी फ़ाइल में लिखें"
       },
       "group": "file",
       "description": "Decode Base64 data and write to binary file"
@@ -215,7 +395,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要检查的文件或目录路径",
-            "en-US": "Path to check"
+            "en-US": "Path to check",
+            "zh-TW": "要檢查的檔案或目錄路徑",
+            "ja": "要チェックするのファイルまたはディレクトリパス",
+            "ko": "확인할 경로",
+            "es": "Ruta a verificar",
+            "fr": "Chemin à vérifier",
+            "de": "Zu prüfender Pfad",
+            "pt-BR": "Caminho a verificar",
+            "ru": "Путь для проверки",
+            "ar": "المسار للتحقق",
+            "hi": "जांचने के लिए पथ"
           },
           "desc": "Path to check",
           "optional": true
@@ -225,14 +415,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "路径是否存在（true/false）",
-          "en-US": "Whether path exists"
+          "en-US": "Whether path exists",
+          "zh-TW": "路徑是否存在（true/false）",
+          "ja": "パス存でするかどうか（true/false）",
+          "ko": "경로존재 여부（true/false）",
+          "es": "Si la ruta existe",
+          "fr": "Si le chemin existe",
+          "de": "Ob der Pfad existiert",
+          "pt-BR": "Se o caminho existe",
+          "ru": "Существует ли путь",
+          "ar": "هل يوجد المسار",
+          "hi": "पथ मौजूद है क्या"
         },
         "desc": "Whether path exists"
       },
       "bridge_path": "fs.exists",
       "descriptions": {
         "zh-CN": "检查文件或目录在指定路径是否存在",
-        "en-US": "Check if file or directory exists at path"
+        "en-US": "Check if file or directory exists at path",
+        "zh-TW": "檢查檔案或目錄在指定路徑是否存在",
+        "ja": "チェックするファイルまたはディレクトリで指定パス存でするかどうか",
+        "ko": "경로에 파일 또는 디렉토리가 존재하는지 확인",
+        "es": "Verificar si existe archivo o directorio",
+        "fr": "Vérifier si fichier ou répertoire existe",
+        "de": "Prüfen ob Datei/Verzeichnis existiert",
+        "pt-BR": "Verificar se arquivo ou diretório existe",
+        "ru": "Проверить существование файла или каталога",
+        "ar": "التحقق من وجود ملف أو مجلد",
+        "hi": "पथ पर फ़ाइल/डायरेक्टरी मौजूद है जांचें"
       },
       "group": "info",
       "description": "Check if file or directory exists at path"
@@ -246,7 +456,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要查询的文件或目录路径",
-            "en-US": "Path to query"
+            "en-US": "Path to query",
+            "zh-TW": "要查询的檔案或目錄路徑",
+            "ja": "要クエリするのファイルまたはディレクトリパス",
+            "ko": "조회할 경로",
+            "es": "Ruta a consultar",
+            "fr": "Chemin à interroger",
+            "de": "Abzufragender Pfad",
+            "pt-BR": "Caminho a consultar",
+            "ru": "Путь для запроса",
+            "ar": "المسار للاستعلام",
+            "hi": "क्वेरी करने के लिए पथ"
           },
           "desc": "Path to query",
           "optional": true
@@ -256,14 +476,34 @@
         "type": "FileStat",
         "descs": {
           "zh-CN": "FileStat类型的结果对象",
-          "en-US": "Result object of type FileStat"
+          "en-US": "Result object of type FileStat",
+          "zh-TW": "FileStat類型的結果物件",
+          "ja": "FileStatタイプの結果オブジェクト",
+          "ko": "FileStat유형의결과객체",
+          "es": "Objeto resultado de tipo FileStat",
+          "fr": "Objet résultat de type FileStat",
+          "de": "Ergebnisobjekt vom Typ FileStat",
+          "pt-BR": "Objeto resultado do tipo FileStat",
+          "ru": "Объект результата типа FileStat",
+          "ar": "كائن نتيجة من نوع FileStat",
+          "hi": "FileStat प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type FileStat"
       },
       "bridge_path": "fs.stat",
       "descriptions": {
         "zh-CN": "获取文件或目录的详细元信息（大小、创建时间、修改时间、权限等）",
-        "en-US": "Get detailed file/directory metadata (size, times, permissions)"
+        "en-US": "Get detailed file/directory metadata (size, times, permissions)",
+        "zh-TW": "取得檔案或目錄的詳細元資訊（大小、建立時間、修改時間、權限等）",
+        "ja": "ファイル/ディレクトリの詳細メタデータを取得（サイズ、日時、権限）",
+        "ko": "파일/디렉토리 상세 메타데이터 가져오기 (크기, 시간, 권한)",
+        "es": "Obtener metadatos detallados (tamaño, fechas, permisos)",
+        "fr": "Obtenir les métadonnées détaillées (taille, dates, permissions)",
+        "de": "Detaillierte Metadaten abrufen (Größe, Zeiten, Berechtigungen)",
+        "pt-BR": "Obter metadados detalhados (tamanho, datas, permissões)",
+        "ru": "Получить подробные метаданные (размер, время, разрешения)",
+        "ar": "الحصول على بيانات وصفية مفصلة (الحجم, الأوقات, الصلاحيات)",
+        "hi": "विस्तृत फ़ाइल/डायरेक्टरी मेटाडेटा प्राप्त करें"
       },
       "group": "info",
       "description": "Get detailed file/directory metadata (size, times, permissions)"
@@ -277,7 +517,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要列出内容的目录路径",
-            "en-US": "Directory path to list"
+            "en-US": "Directory path to list",
+            "zh-TW": "要列出內容的目錄路徑",
+            "ja": "要列出コンテンツのディレクトリパス",
+            "ko": "나열할 디렉토리 경로",
+            "es": "Ruta del directorio a listar",
+            "fr": "Chemin du répertoire à lister",
+            "de": "Aufzulistender Verzeichnispfad",
+            "pt-BR": "Caminho do diretório a listar",
+            "ru": "Путь каталога для списка",
+            "ar": "مسار المجلد للعرض",
+            "hi": "सूची दिखाने के लिए डायरेक्टरी पथ"
           },
           "desc": "Directory path to list",
           "optional": true
@@ -287,14 +537,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "fs.listDir",
       "descriptions": {
         "zh-CN": "列出指定目录下的所有文件和子目录名称",
-        "en-US": "List all files and subdirectories in a directory"
+        "en-US": "List all files and subdirectories in a directory",
+        "zh-TW": "列出指定目錄下的所有檔案和子目錄名稱",
+        "ja": "列出指定ディレクトリ下のすべてファイルと子ディレクトリ名称",
+        "ko": "디렉토리의 모든 파일 및 하위 디렉토리 나열",
+        "es": "Listar todos los archivos y subdirectorios",
+        "fr": "Lister tous les fichiers et sous-répertoires",
+        "de": "Alle Dateien und Unterverzeichnisse auflisten",
+        "pt-BR": "Listar todos os arquivos e subdiretórios",
+        "ru": "Список всех файлов и подкаталогов",
+        "ar": "سرد جميع الملفات والمجلدات الفرعية",
+        "hi": "डायरेक्टरी में सभी फ़ाइलें और उपडायरेक्टरी सूचीबद्ध करें"
       },
       "group": "dir",
       "description": "List all files and subdirectories in a directory"
@@ -308,7 +578,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "匹配模式",
-            "en-US": "Match pattern"
+            "en-US": "Match pattern",
+            "zh-TW": "匹配模式",
+            "ja": "マッチパターン",
+            "ko": "매치 패턴",
+            "es": "Patrón de coincidencia",
+            "fr": "Motif de correspondance",
+            "de": "Übereinstimmungsmuster",
+            "pt-BR": "Padrão de correspondência",
+            "ru": "Шаблон совпадения",
+            "ar": "نمط المطابقة",
+            "hi": "मैच पैटर्न"
           },
           "desc": "Match pattern"
         }
@@ -317,14 +597,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "fs.glob",
       "descriptions": {
         "zh-CN": "使用通配符模式匹配搜索文件路径",
-        "en-US": "Search file paths using glob wildcard pattern"
+        "en-US": "Search file paths using glob wildcard pattern",
+        "zh-TW": "使用通配符模式匹配搜尋檔案路徑",
+        "ja": "globワイルドカードパターンでファイルパスを検索",
+        "ko": "glob 와일드카드 패턴으로 파일 경로 검색",
+        "es": "Buscar rutas de archivos con patrón glob",
+        "fr": "Rechercher des fichiers par motif glob",
+        "de": "Dateipfade mit Glob-Muster suchen",
+        "pt-BR": "Buscar caminhos de arquivos com padrão glob",
+        "ru": "Поиск файлов по шаблону glob",
+        "ar": "البحث عن مسارات الملفات باستخدام نمط glob",
+        "hi": "glob वाइल्डकार्ड पैटर्न से फ़ाइल पथ खोजें"
       },
       "group": "dir",
       "description": "Search file paths using glob wildcard pattern"
@@ -338,7 +638,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要创建的目录路径",
-            "en-US": "Directory path to create"
+            "en-US": "Directory path to create",
+            "zh-TW": "要建立的目錄路徑",
+            "ja": "要作成するのディレクトリパス",
+            "ko": "생성할 디렉토리 경로",
+            "es": "Ruta del directorio a crear",
+            "fr": "Chemin du répertoire à créer",
+            "de": "Zu erstellender Verzeichnispfad",
+            "pt-BR": "Caminho do diretório a criar",
+            "ru": "Путь создаваемого каталога",
+            "ar": "مسار المجلد المراد إنشاؤه",
+            "hi": "बनाने के लिए डायरेक्टरी पथ"
           },
           "desc": "Directory path to create",
           "optional": true
@@ -348,14 +658,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.mkdir",
       "descriptions": {
         "zh-CN": "创建目录，如果父目录不存在则递归创建整个路径",
-        "en-US": "Create directory, recursively creating parent dirs if needed"
+        "en-US": "Create directory, recursively creating parent dirs if needed",
+        "zh-TW": "建立目錄，如果父目錄不存在則遞歸建立整個路徑",
+        "ja": "ディレクトリを作成（必要に応じて親ディレクトリも再帰的に作成）",
+        "ko": "디렉토리 생성 (필요시 상위 디렉토리 재귀적 생성)",
+        "es": "Crear directorio recursivamente",
+        "fr": "Créer le répertoire récursivement",
+        "de": "Verzeichnis rekursiv erstellen",
+        "pt-BR": "Criar diretório recursivamente",
+        "ru": "Создать каталог рекурсивно",
+        "ar": "إنشاء مجلد بشكل متكرر",
+        "hi": "डायरेक्टरी बनाएं (पैरेंट भी)"
       },
       "group": "dir",
       "description": "Create directory, recursively creating parent dirs if needed"
@@ -369,7 +699,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "源文件路径",
-            "en-US": "Source file path"
+            "en-US": "Source file path",
+            "zh-TW": "源檔案路徑",
+            "ja": "源ファイルパス",
+            "ko": "원본 파일 경로",
+            "es": "Ruta del archivo fuente",
+            "fr": "Chemin du fichier source",
+            "de": "Quelldateipfad",
+            "pt-BR": "Caminho do arquivo fonte",
+            "ru": "Путь исходного файла",
+            "ar": "مسار الملف المصدر",
+            "hi": "स्रोत फ़ाइल पथ"
           },
           "desc": "Source file path"
         },
@@ -378,7 +718,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "目标路径",
-            "en-US": "Destination path"
+            "en-US": "Destination path",
+            "zh-TW": "目標路徑",
+            "ja": "宛先パス",
+            "ko": "대상 경로",
+            "es": "Ruta de destino",
+            "fr": "Chemin de destination",
+            "de": "Zielpfad",
+            "pt-BR": "Caminho de destino",
+            "ru": "Путь назначения",
+            "ar": "مسار الوجهة",
+            "hi": "गंतव्य पथ"
           },
           "desc": "Destination path"
         }
@@ -387,14 +737,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.copy",
       "descriptions": {
         "zh-CN": "复制文件或目录到目标路径（支持递归复制目录）",
-        "en-US": "Copy file or directory to target path (recursive for dirs)"
+        "en-US": "Copy file or directory to target path (recursive for dirs)",
+        "zh-TW": "複製檔案或目錄到目標路徑（支持遞歸複製目錄）",
+        "ja": "ファイルまたはディレクトリをターゲットパスにコピー（ディレクトリは再帰的）",
+        "ko": "파일 또는 디렉토리를 대상 경로로 복사 (디렉토리는 재귀적)",
+        "es": "Copiar archivo o directorio al destino",
+        "fr": "Copier fichier ou répertoire vers la cible",
+        "de": "Datei/Verzeichnis zum Zielpfad kopieren",
+        "pt-BR": "Copiar arquivo ou diretório para o destino",
+        "ru": "Копировать файл или каталог в целевой путь",
+        "ar": "نسخ ملف أو مجلد إلى المسار الهدف",
+        "hi": "फ़ाइल या डायरेक्टरी लक्ष्य पथ पर कॉपी करें"
       },
       "group": "operate",
       "description": "Copy file or directory to target path (recursive for dirs)"
@@ -408,7 +778,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "源文件路径",
-            "en-US": "Source file path"
+            "en-US": "Source file path",
+            "zh-TW": "源檔案路徑",
+            "ja": "源ファイルパス",
+            "ko": "원본 파일 경로",
+            "es": "Ruta del archivo fuente",
+            "fr": "Chemin du fichier source",
+            "de": "Quelldateipfad",
+            "pt-BR": "Caminho do arquivo fonte",
+            "ru": "Путь исходного файла",
+            "ar": "مسار الملف المصدر",
+            "hi": "स्रोत फ़ाइल पथ"
           },
           "desc": "Source file path"
         },
@@ -417,7 +797,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "目标路径",
-            "en-US": "Destination path"
+            "en-US": "Destination path",
+            "zh-TW": "目標路徑",
+            "ja": "宛先パス",
+            "ko": "대상 경로",
+            "es": "Ruta de destino",
+            "fr": "Chemin de destination",
+            "de": "Zielpfad",
+            "pt-BR": "Caminho de destino",
+            "ru": "Путь назначения",
+            "ar": "مسار الوجهة",
+            "hi": "गंतव्य पथ"
           },
           "desc": "Destination path"
         }
@@ -426,14 +816,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.copyDir",
       "descriptions": {
         "zh-CN": "递归复制整个目录",
-        "en-US": "Copy dir of filesystem"
+        "en-US": "Copy dir of filesystem",
+        "zh-TW": "遞歸複製整個目錄",
+        "ja": "ファイルシステムのディレクトリをコピー",
+        "ko": "파일 시스템 디렉토리 복사",
+        "es": "Copiar directorio del sistema de archivos",
+        "fr": "Copier le répertoire",
+        "de": "Verzeichnis kopieren",
+        "pt-BR": "Copiar diretório do sistema de arquivos",
+        "ru": "Копировать каталог",
+        "ar": "نسخ مجلد نظام الملفات",
+        "hi": "फ़ाइल सिस्टम डायरेक्टरी कॉपी"
       },
       "group": "operate",
       "description": "Copy dir of filesystem"
@@ -447,7 +857,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "源文件路径",
-            "en-US": "Source file path"
+            "en-US": "Source file path",
+            "zh-TW": "源檔案路徑",
+            "ja": "源ファイルパス",
+            "ko": "원본 파일 경로",
+            "es": "Ruta del archivo fuente",
+            "fr": "Chemin du fichier source",
+            "de": "Quelldateipfad",
+            "pt-BR": "Caminho do arquivo fonte",
+            "ru": "Путь исходного файла",
+            "ar": "مسار الملف المصدر",
+            "hi": "स्रोत फ़ाइल पथ"
           },
           "desc": "Source file path"
         },
@@ -456,7 +876,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "目标路径",
-            "en-US": "Destination path"
+            "en-US": "Destination path",
+            "zh-TW": "目標路徑",
+            "ja": "宛先パス",
+            "ko": "대상 경로",
+            "es": "Ruta de destino",
+            "fr": "Chemin de destination",
+            "de": "Zielpfad",
+            "pt-BR": "Caminho de destino",
+            "ru": "Путь назначения",
+            "ar": "مسار الوجهة",
+            "hi": "गंतव्य पथ"
           },
           "desc": "Destination path"
         }
@@ -465,14 +895,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.move",
       "descriptions": {
         "zh-CN": "移动文件或目录到新的路径位置",
-        "en-US": "Move file or directory to new path location"
+        "en-US": "Move file or directory to new path location",
+        "zh-TW": "移動檔案或目錄到新的路徑位置",
+        "ja": "移動するファイルまたはディレクトリへ新のパス位置",
+        "ko": "파일 또는 디렉토리를 새 경로로 이동",
+        "es": "Mover archivo o directorio a nueva ruta",
+        "fr": "Déplacer le fichier ou répertoire",
+        "de": "Datei/Verzeichnis an neuen Pfad verschieben",
+        "pt-BR": "Mover arquivo ou diretório para novo caminho",
+        "ru": "Переместить файл или каталог",
+        "ar": "نقل ملف أو مجلد إلى مسار جديد",
+        "hi": "फ़ाइल या डायरेक्टरी नए पथ पर ले जाएं"
       },
       "group": "operate",
       "description": "Move file or directory to new path location"
@@ -486,7 +936,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -496,14 +956,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.remove",
       "descriptions": {
         "zh-CN": "删除文件或目录（目录支持递归删除）",
-        "en-US": "Remove file or directory (recursive for directories)"
+        "en-US": "Remove file or directory (recursive for directories)",
+        "zh-TW": "刪除檔案或目錄（目錄支持遞歸刪除）",
+        "ja": "ファイルまたはディレクトリを削除（ディレクトリは再帰的）",
+        "ko": "파일 또는 디렉토리 삭제 (디렉토리는 재귀적)",
+        "es": "Eliminar archivo o directorio (recursivo)",
+        "fr": "Supprimer le fichier ou répertoire (récursif)",
+        "de": "Datei/Verzeichnis löschen (rekursiv)",
+        "pt-BR": "Remover arquivo ou diretório (recursivo)",
+        "ru": "Удалить файл или каталог (рекурсивно)",
+        "ar": "إزالة ملف أو مجلد (تكراري)",
+        "hi": "फ़ाइल या डायरेक्टरी हटाएं (रिकर्सिव)"
       },
       "group": "operate",
       "description": "Remove file or directory (recursive for directories)"
@@ -517,7 +997,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "目标路径或地址",
-            "en-US": "Target path or address"
+            "en-US": "Target path or address",
+            "zh-TW": "目標路徑或地址",
+            "ja": "ターゲットパスまたはアドレス",
+            "ko": "대상 경로 또는 주소",
+            "es": "Ruta o dirección de destino",
+            "fr": "Chemin ou adresse cible",
+            "de": "Zielpfad oder Adresse",
+            "pt-BR": "Caminho ou endereço de destino",
+            "ru": "Целевой путь или адрес",
+            "ar": "المسار أو العنوان الهدف",
+            "hi": "लक्ष्य पथ या पता"
           },
           "desc": "Target path or address"
         },
@@ -526,7 +1016,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "符号链接的创建路径",
-            "en-US": "Path to create symbolic link"
+            "en-US": "Path to create symbolic link",
+            "zh-TW": "符號鏈接的建立路徑",
+            "ja": "符号リンクの作成するパス",
+            "ko": "심볼릭 링크를 생성할 경로",
+            "es": "Ruta para crear enlace simbólico",
+            "fr": "Chemin pour créer le lien symbolique",
+            "de": "Pfad für symbolischen Link",
+            "pt-BR": "Caminho para criar link simbólico",
+            "ru": "Путь для создания символической ссылки",
+            "ar": "المسار لإنشاء الارتباط الرمزي",
+            "hi": "सिमलिंक बनाने का पथ"
           },
           "desc": "Path to create symbolic link"
         }
@@ -535,14 +1035,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.symlink",
       "descriptions": {
         "zh-CN": "创建符号链接",
-        "en-US": "Symlink filesystem"
+        "en-US": "Symlink filesystem",
+        "zh-TW": "建立符號鏈接",
+        "ja": "作成する符号リンク",
+        "ko": "파일 시스템 심볼릭 링크",
+        "es": "Enlace simbólico del sistema de archivos",
+        "fr": "Lien symbolique du système de fichiers",
+        "de": "Dateisystem-Symlink",
+        "pt-BR": "Link simbólico do sistema de arquivos",
+        "ru": "Символическая ссылка",
+        "ar": "ارتباط رمزي لنظام الملفات",
+        "hi": "फ़ाइल सिस्टम सिमलिंक"
       },
       "group": "operate",
       "description": "Symlink filesystem"
@@ -556,7 +1076,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -566,14 +1096,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "fs.readLink",
       "descriptions": {
         "zh-CN": "读取符号链接目标",
-        "en-US": "Read link of filesystem"
+        "en-US": "Read link of filesystem",
+        "zh-TW": "讀取符號鏈接目標",
+        "ja": "ファイルシステムのリンク先を読み取り",
+        "ko": "파일 시스템 링크 대상 읽기",
+        "es": "Leer enlace del sistema de archivos",
+        "fr": "Lire le lien du système de fichiers",
+        "de": "Dateisystem-Link lesen",
+        "pt-BR": "Ler link do sistema de arquivos",
+        "ru": "Прочитать ссылку файловой системы",
+        "ar": "قراءة ارتباط نظام الملفات",
+        "hi": "फ़ाइल सिस्टम लिंक पढ़ें"
       },
       "group": "operate",
       "description": "Read link of filesystem"
@@ -587,7 +1137,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -597,14 +1157,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.setPermissions",
       "descriptions": {
         "zh-CN": "设置文件权限",
-        "en-US": "Set permissions property of filesystem"
+        "en-US": "Set permissions property of filesystem",
+        "zh-TW": "設定檔案權限",
+        "ja": "ファイルシステムの権限属性を設定",
+        "ko": "설정파일권한",
+        "es": "Establecer permisos del sistema de archivos",
+        "fr": "Définir les permissions du système de fichiers",
+        "de": "Dateisystem-Berechtigungen setzen",
+        "pt-BR": "Definir permissões do sistema de arquivos",
+        "ru": "Установить права доступа",
+        "ar": "تعيين صلاحيات نظام الملفات",
+        "hi": "फ़ाइल सिस्टम अनुमतियां सेट करें"
       },
       "group": "operate",
       "description": "Set permissions property of filesystem"
@@ -617,14 +1197,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "fs.tempFile",
       "descriptions": {
         "zh-CN": "创建临时文件",
-        "en-US": "Temp file of filesystem"
+        "en-US": "Temp file of filesystem",
+        "zh-TW": "建立临時檔案",
+        "ja": "作成する一時ファイル",
+        "ko": "파일 시스템 임시 파일",
+        "es": "Archivo temporal del sistema de archivos",
+        "fr": "Fichier temporaire du système de fichiers",
+        "de": "Temporäre Datei des Dateisystems",
+        "pt-BR": "Arquivo temporário do sistema de arquivos",
+        "ru": "Временный файл файловой системы",
+        "ar": "ملف مؤقت لنظام الملفات",
+        "hi": "फ़ाइल सिस्टम अस्थायी फ़ाइल"
       },
       "group": "operate",
       "description": "Temp file of filesystem"
@@ -637,14 +1237,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "fs.tempDir",
       "descriptions": {
         "zh-CN": "获取临时目录路径",
-        "en-US": "Temp dir of filesystem"
+        "en-US": "Temp dir of filesystem",
+        "zh-TW": "取得临時目錄路徑",
+        "ja": "取得する一時ディレクトリパス",
+        "ko": "파일 시스템 임시 디렉토리",
+        "es": "Directorio temporal del sistema de archivos",
+        "fr": "Répertoire temporaire du système de fichiers",
+        "de": "Temporäres Verzeichnis des Dateisystems",
+        "pt-BR": "Diretório temporário do sistema de arquivos",
+        "ru": "Временный каталог файловой системы",
+        "ar": "مجلد مؤقت لنظام الملفات",
+        "hi": "फ़ाइल सिस्टम अस्थायी डायरेक्टरी"
       },
       "group": "operate",
       "description": "Temp dir of filesystem"
@@ -658,7 +1278,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -668,14 +1298,34 @@
         "type": "WatchHandle",
         "descs": {
           "zh-CN": "WatchHandle类型的结果对象",
-          "en-US": "Result object of type WatchHandle"
+          "en-US": "Result object of type WatchHandle",
+          "zh-TW": "WatchHandle類型的結果物件",
+          "ja": "WatchHandleタイプの結果オブジェクト",
+          "ko": "WatchHandle유형의결과객체",
+          "es": "Objeto resultado de tipo WatchHandle",
+          "fr": "Objet résultat de type WatchHandle",
+          "de": "Ergebnisobjekt vom Typ WatchHandle",
+          "pt-BR": "Objeto resultado do tipo WatchHandle",
+          "ru": "Объект результата типа WatchHandle",
+          "ar": "كائن نتيجة من نوع WatchHandle",
+          "hi": "WatchHandle प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type WatchHandle"
       },
       "bridge_path": "fs.watch",
       "descriptions": {
         "zh-CN": "监视文件或目录的变化（创建/修改/删除）",
-        "en-US": "Watch file or directory for changes (create/modify/delete)"
+        "en-US": "Watch file or directory for changes (create/modify/delete)",
+        "zh-TW": "監視檔案或目錄的變化（建立/修改/刪除）",
+        "ja": "ファイルまたはディレクトリの変更を監視（作成/変更/削除）",
+        "ko": "파일 또는 디렉토리 변경 감시 (생성/수정/삭제)",
+        "es": "Vigilar cambios en archivo/directorio",
+        "fr": "Surveiller les modifications de fichier/répertoire",
+        "de": "Datei/Verzeichnis auf Änderungen überwachen",
+        "pt-BR": "Monitorar alterações em arquivo/diretório",
+        "ru": "Отслеживать изменения файла/каталога",
+        "ar": "مراقبة تغييرات الملف/المجلد",
+        "hi": "फ़ाइल/डायरेक्टरी में बदलाव की निगरानी करें"
       },
       "group": "watch",
       "description": "Watch file or directory for changes (create/modify/delete)"
@@ -689,7 +1339,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "watcher_id参数",
-            "en-US": "watcher_id parameter"
+            "en-US": "watcher_id parameter",
+            "zh-TW": "watcher_id參數",
+            "ja": "watcher_idパラメータ",
+            "ko": "watcher_id매개변수",
+            "es": "Parámetro de ID del observador",
+            "fr": "Paramètre d'ID d'observateur",
+            "de": "Watcher-ID-Parameter",
+            "pt-BR": "Parâmetro de ID do observador",
+            "ru": "Параметр ID наблюдателя",
+            "ar": "معلمة معرف المراقب",
+            "hi": "वॉचर ID पैरामीटर"
           },
           "desc": "watcher_id parameter"
         }
@@ -698,14 +1358,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.unwatch",
       "descriptions": {
         "zh-CN": "unwatch文件系统",
-        "en-US": "Unwatch filesystem"
+        "en-US": "Unwatch filesystem",
+        "zh-TW": "unwatch檔案系統",
+        "ja": "unwatchファイルシステム",
+        "ko": "unwatch파일시스템",
+        "es": "Dejar de vigilar sistema de archivos",
+        "fr": "Arrêter la surveillance",
+        "de": "Dateisystem-Überwachung beenden",
+        "pt-BR": "Parar de monitorar sistema de arquivos",
+        "ru": "Прекратить отслеживание",
+        "ar": "إلغاء مراقبة نظام الملفات",
+        "hi": "फ़ाइल सिस्टम निगरानी बंद करें"
       },
       "group": "watch",
       "description": "Unwatch filesystem"
@@ -718,14 +1398,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "fs.listWatchers",
       "descriptions": {
         "zh-CN": "列出watchers",
-        "en-US": "List watchers of filesystem"
+        "en-US": "List watchers of filesystem",
+        "zh-TW": "列出watchers",
+        "ja": "ファイルシステムウォッチャー一覧",
+        "ko": "파일 시스템 감시자 목록",
+        "es": "Listar observadores del sistema de archivos",
+        "fr": "Lister les observateurs",
+        "de": "Dateisystem-Watcher auflisten",
+        "pt-BR": "Listar observadores do sistema de arquivos",
+        "ru": "Список наблюдателей файловой системы",
+        "ar": "قائمة مراقبي نظام الملفات",
+        "hi": "फ़ाइल सिस्टम वॉचर सूची"
       },
       "group": "watch",
       "description": "List watchers of filesystem"
@@ -738,13 +1438,33 @@
         "type": "DiskUsage",
         "descs": {
           "zh-CN": "使用情况",
-          "en-US": "Usage"
+          "en-US": "Usage",
+          "zh-TW": "使用情況",
+          "ja": "使用方法",
+          "ko": "사용법",
+          "es": "Uso",
+          "fr": "Utilisation",
+          "de": "Verwendung",
+          "pt-BR": "Uso",
+          "ru": "Использование",
+          "ar": "الاستخدام",
+          "hi": "उपयोग"
         }
       },
       "bridge_path": "fs.diskUsage",
       "descriptions": {
         "zh-CN": "获取磁盘使用情况",
-        "en-US": "Disk usage of filesystem"
+        "en-US": "Disk usage of filesystem",
+        "zh-TW": "取得磁盤使用情況",
+        "ja": "ファイルシステムのディスク使用量",
+        "ko": "파일 시스템 디스크 사용량",
+        "es": "Uso de disco del sistema de archivos",
+        "fr": "Utilisation disque du système de fichiers",
+        "de": "Festplattennutzung des Dateisystems",
+        "pt-BR": "Uso de disco do sistema de arquivos",
+        "ru": "Использование диска",
+        "ar": "استخدام القرص لنظام الملفات",
+        "hi": "फ़ाइल सिस्टम डिस्क उपयोग"
       },
       "group": "system",
       "description": "Disk usage of filesystem"
@@ -758,7 +1478,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -768,14 +1498,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.isDir",
       "descriptions": {
         "zh-CN": "检查路径是否为目录",
-        "en-US": "Check if filesystem dir"
+        "en-US": "Check if filesystem dir",
+        "zh-TW": "檢查路徑是否為目錄",
+        "ja": "ディレクトリかどうかを確認",
+        "ko": "디렉토리인지 확인",
+        "es": "Verificar si es directorio",
+        "fr": "Vérifier si c'est un répertoire",
+        "de": "Prüfen ob Verzeichnis",
+        "pt-BR": "Verificar se é diretório",
+        "ru": "Проверить является ли каталогом",
+        "ar": "التحقق مما إذا كان مجلداً",
+        "hi": "डायरेक्टरी है जांचें"
       },
       "group": "info",
       "description": "Check if filesystem dir"
@@ -789,7 +1539,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -799,14 +1559,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.isFile",
       "descriptions": {
         "zh-CN": "检查路径是否为文件",
-        "en-US": "Check if filesystem file"
+        "en-US": "Check if filesystem file",
+        "zh-TW": "檢查路徑是否為檔案",
+        "ja": "ファイルかどうかを確認",
+        "ko": "파일인지 확인",
+        "es": "Verificar si es archivo",
+        "fr": "Vérifier si c'est un fichier",
+        "de": "Prüfen ob Datei",
+        "pt-BR": "Verificar se é arquivo",
+        "ru": "Проверить является ли файлом",
+        "ar": "التحقق مما إذا كان ملفاً",
+        "hi": "फ़ाइल है जांचें"
       },
       "group": "info",
       "description": "Check if filesystem file"
@@ -820,7 +1600,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -830,14 +1620,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "fs.fileSize",
       "descriptions": {
         "zh-CN": "获取文件大小（字节）",
-        "en-US": "File size of filesystem"
+        "en-US": "File size of filesystem",
+        "zh-TW": "取得檔案大小（位元組）",
+        "ja": "取得するファイルサイズ（バイト）",
+        "ko": "파일 시스템 파일 크기",
+        "es": "Tamaño de archivo del sistema de archivos",
+        "fr": "Taille du fichier",
+        "de": "Dateigröße des Dateisystems",
+        "pt-BR": "Tamanho do arquivo",
+        "ru": "Размер файла файловой системы",
+        "ar": "حجم الملف",
+        "hi": "फ़ाइल सिस्टम फ़ाइल आकार"
       },
       "group": "info",
       "description": "File size of filesystem"
@@ -851,7 +1661,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -861,14 +1681,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "fs.realPath",
       "descriptions": {
         "zh-CN": "获取文件真实绝对路径",
-        "en-US": "Real path of filesystem"
+        "en-US": "Real path of filesystem",
+        "zh-TW": "取得檔案真實絕對路徑",
+        "ja": "ファイルシステムの実際のパス",
+        "ko": "파일 시스템 실제 경로",
+        "es": "Ruta real del sistema de archivos",
+        "fr": "Chemin réel du système de fichiers",
+        "de": "Realer Pfad des Dateisystems",
+        "pt-BR": "Caminho real do sistema de arquivos",
+        "ru": "Реальный путь файловой системы",
+        "ar": "المسار الحقيقي لنظام الملفات",
+        "hi": "फ़ाइल सिस्टम वास्तविक पथ"
       },
       "group": "info",
       "description": "Real path of filesystem"
@@ -882,7 +1722,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "路径部分",
-            "en-US": "Parts"
+            "en-US": "Parts",
+            "zh-TW": "路徑部分",
+            "ja": "パス部分",
+            "ko": "부분",
+            "es": "Partes",
+            "fr": "Parties",
+            "de": "Teile",
+            "pt-BR": "Partes",
+            "ru": "Части",
+            "ar": "أجزاء",
+            "hi": "भाग"
           }
         }
       ],
@@ -890,14 +1740,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "fs.joinPath",
       "descriptions": {
         "zh-CN": "拼接路径片段",
-        "en-US": "Join path of filesystem"
+        "en-US": "Join path of filesystem",
+        "zh-TW": "拼接路徑片段",
+        "ja": "ファイルシステムのパス結合",
+        "ko": "파일 시스템 경로 결합",
+        "es": "Unir rutas del sistema de archivos",
+        "fr": "Joindre les chemins",
+        "de": "Dateisystem-Pfade verbinden",
+        "pt-BR": "Unir caminhos do sistema de arquivos",
+        "ru": "Объединить пути файловой системы",
+        "ar": "ربط مسارات نظام الملفات",
+        "hi": "फ़ाइल सिस्टम पथ जोड़ें"
       },
       "group": "info",
       "description": "Join path of filesystem"
@@ -911,7 +1781,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -921,14 +1801,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "fs.parentPath",
       "descriptions": {
         "zh-CN": "获取上级目录路径",
-        "en-US": "Parent path of filesystem"
+        "en-US": "Parent path of filesystem",
+        "zh-TW": "取得上级目錄路徑",
+        "ja": "ファイルシステムの親パス",
+        "ko": "파일 시스템 상위 경로",
+        "es": "Ruta padre del sistema de archivos",
+        "fr": "Chemin parent du système de fichiers",
+        "de": "Übergeordneter Pfad des Dateisystems",
+        "pt-BR": "Caminho pai do sistema de arquivos",
+        "ru": "Родительский путь файловой системы",
+        "ar": "المسار الأصلي لنظام الملفات",
+        "hi": "फ़ाइल सिस्टम पैरेंट पथ"
       },
       "group": "info",
       "description": "Parent path of filesystem"
@@ -942,7 +1842,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -952,14 +1862,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "fs.fileName",
       "descriptions": {
         "zh-CN": "获取路径中的文件名部分",
-        "en-US": "File name of filesystem"
+        "en-US": "File name of filesystem",
+        "zh-TW": "取得路徑中的檔案名部分",
+        "ja": "取得するパス中のファイル名部分",
+        "ko": "파일 시스템 파일 이름",
+        "es": "Nombre de archivo del sistema de archivos",
+        "fr": "Nom du fichier",
+        "de": "Dateiname des Dateisystems",
+        "pt-BR": "Nome do arquivo",
+        "ru": "Имя файла файловой системы",
+        "ar": "اسم الملف",
+        "hi": "फ़ाइल सिस्टम फ़ाइल नाम"
       },
       "group": "info",
       "description": "File name of filesystem"
@@ -973,7 +1903,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -983,14 +1923,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "fs.extension",
       "descriptions": {
         "zh-CN": "extension文件系统",
-        "en-US": "Extension filesystem"
+        "en-US": "Extension filesystem",
+        "zh-TW": "extension檔案系統",
+        "ja": "extensionファイルシステム",
+        "ko": "extension파일시스템",
+        "es": "Extensión del sistema de archivos",
+        "fr": "Extension du système de fichiers",
+        "de": "Dateisystem-Erweiterung",
+        "pt-BR": "Extensão do sistema de arquivos",
+        "ru": "Расширение файловой системы",
+        "ar": "امتداد نظام الملفات",
+        "hi": "फ़ाइल सिस्टम एक्सटेंशन"
       },
       "group": "info",
       "description": "Extension filesystem"
@@ -1004,7 +1964,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -1014,14 +1984,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.touch",
       "descriptions": {
         "zh-CN": "创建空文件或更新已有文件的修改时间",
-        "en-US": "Create empty file or update modification time"
+        "en-US": "Create empty file or update modification time",
+        "zh-TW": "建立空檔案或更新已有檔案的修改時間",
+        "ja": "作成する空ファイルまたは更新する既存のファイルの修改时间",
+        "ko": "빈 파일 생성 또는 수정 시간 업데이트",
+        "es": "Crear archivo vacío o actualizar fecha",
+        "fr": "Créer un fichier vide ou mettre à jour la date",
+        "de": "Leere Datei erstellen oder Zeitstempel aktualisieren",
+        "pt-BR": "Criar arquivo vazio ou atualizar data",
+        "ru": "Создать пустой файл или обновить время",
+        "ar": "إنشاء ملف فارغ أو تحديث وقت التعديل",
+        "hi": "खाली फ़ाइल बनाएं या संशोधन समय अपडेट करें"
       },
       "group": "operate",
       "description": "Create empty file or update modification time"
@@ -1035,7 +2025,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -1045,7 +2045,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "起始偏移量",
-            "en-US": "Starting offset"
+            "en-US": "Starting offset",
+            "zh-TW": "起始偏移量",
+            "ja": "開始オフセット",
+            "ko": "시작 오프셋",
+            "es": "Desplazamiento inicial",
+            "fr": "Décalage de départ",
+            "de": "Startversatz",
+            "pt-BR": "Offset inicial",
+            "ru": "Начальное смещение",
+            "ar": "إزاحة البداية",
+            "hi": "प्रारंभिक ऑफ़सेट"
           },
           "desc": "Starting offset"
         },
@@ -1054,7 +2064,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "读取的字节长度",
-            "en-US": "Number of bytes to read"
+            "en-US": "Number of bytes to read",
+            "zh-TW": "讀取的位元組長度",
+            "ja": "読み取るのバイト長さ",
+            "ko": "읽을 바이트 수",
+            "es": "Número de bytes a leer",
+            "fr": "Nombre d'octets à lire",
+            "de": "Anzahl zu lesender Bytes",
+            "pt-BR": "Número de bytes a ler",
+            "ru": "Количество байт для чтения",
+            "ar": "عدد البايتات للقراءة",
+            "hi": "पढ़ने के लिए बाइट की संख्या"
           },
           "desc": "Number of bytes to read"
         }
@@ -1063,13 +2083,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "Base64",
-          "en-US": "Base64"
+          "en-US": "Base64",
+          "zh-TW": "Base64",
+          "ja": "Base64",
+          "ko": "Base64",
+          "es": "Base64",
+          "fr": "Base64",
+          "de": "Base64",
+          "pt-BR": "Base64",
+          "ru": "Base64",
+          "ar": "Base64",
+          "hi": "Base64"
         }
       },
       "bridge_path": "fs.readBinaryRange",
       "descriptions": {
         "zh-CN": "读取binary range数据",
-        "en-US": "Read binary range of filesystem"
+        "en-US": "Read binary range of filesystem",
+        "zh-TW": "讀取binary range數據",
+        "ja": "読み取るbinary rangeデータ",
+        "ko": "읽기binary range데이터",
+        "es": "Leer rango binario del sistema de archivos",
+        "fr": "Lire la plage binaire du système de fichiers",
+        "de": "Binären Bereich des Dateisystems lesen",
+        "pt-BR": "Ler intervalo binário do sistema de arquivos",
+        "ru": "Прочитать бинарный диапазон",
+        "ar": "قراءة نطاق ثنائي من نظام الملفات",
+        "hi": "फ़ाइल सिस्टम बाइनरी रेंज पढ़ें"
       },
       "group": "file",
       "description": "Read binary range of filesystem"
@@ -1083,7 +2123,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -1093,7 +2143,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "算法名称",
-            "en-US": "Algorithm name"
+            "en-US": "Algorithm name",
+            "zh-TW": "算法名稱",
+            "ja": "アルゴリズム名称",
+            "ko": "알고리즘 이름",
+            "es": "Nombre del algoritmo",
+            "fr": "Nom de l'algorithme",
+            "de": "Algorithmusname",
+            "pt-BR": "Nome do algoritmo",
+            "ru": "Название алгоритма",
+            "ar": "اسم الخوارزمية",
+            "hi": "एल्गोरिथ्म नाम"
           },
           "desc": "Algorithm name",
           "optional": true
@@ -1103,14 +2163,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "fs.checksum",
       "descriptions": {
         "zh-CN": "checksum文件系统",
-        "en-US": "Checksum filesystem"
+        "en-US": "Checksum filesystem",
+        "zh-TW": "checksum檔案系統",
+        "ja": "checksumファイルシステム",
+        "ko": "checksum파일시스템",
+        "es": "Suma de verificación del sistema de archivos",
+        "fr": "Somme de contrôle du système de fichiers",
+        "de": "Dateisystem-Prüfsumme",
+        "pt-BR": "Checksum do sistema de arquivos",
+        "ru": "Контрольная сумма файловой системы",
+        "ar": "المجموع الاختباري لنظام الملفات",
+        "hi": "फ़ाइल सिस्टम चेकसम"
       },
       "group": "info",
       "description": "Checksum filesystem"
@@ -1124,7 +2204,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -1134,14 +2224,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "fs.readTextLines",
       "descriptions": {
         "zh-CN": "读取text lines数据",
-        "en-US": "Read text lines of filesystem"
+        "en-US": "Read text lines of filesystem",
+        "zh-TW": "讀取text lines數據",
+        "ja": "読み取るtext linesデータ",
+        "ko": "읽기text lines데이터",
+        "es": "Leer líneas de texto del sistema de archivos",
+        "fr": "Lire les lignes de texte",
+        "de": "Textzeilen des Dateisystems lesen",
+        "pt-BR": "Ler linhas de texto do sistema de arquivos",
+        "ru": "Прочитать текстовые строки",
+        "ar": "قراءة سطور نصية من نظام الملفات",
+        "hi": "फ़ाइल सिस्टम टेक्स्ट पंक्तियां पढ़ें"
       },
       "group": "file",
       "description": "Read text lines of filesystem"
@@ -1155,7 +2265,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -1165,7 +2285,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文本内容",
-            "en-US": "Text content"
+            "en-US": "Text content",
+            "zh-TW": "文字內容",
+            "ja": "テキストコンテンツ",
+            "ko": "텍스트콘텐츠",
+            "es": "Contenido de texto",
+            "fr": "Contenu du texte",
+            "de": "Textinhalt",
+            "pt-BR": "Conteúdo de texto",
+            "ru": "Текстовое содержимое",
+            "ar": "محتوى نصي",
+            "hi": "टेक्स्ट सामग्री"
           },
           "desc": "Text content"
         }
@@ -1174,14 +2304,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.writeAtomic",
       "descriptions": {
         "zh-CN": "写入atomic数据",
-        "en-US": "Write atomic of filesystem"
+        "en-US": "Write atomic of filesystem",
+        "zh-TW": "寫入atomic數據",
+        "ja": "書き込むatomicデータ",
+        "ko": "쓰기atomic데이터",
+        "es": "Escritura atómica del sistema de archivos",
+        "fr": "Écriture atomique du système de fichiers",
+        "de": "Atomisches Schreiben des Dateisystems",
+        "pt-BR": "Escrita atômica do sistema de arquivos",
+        "ru": "Атомарная запись файловой системы",
+        "ar": "كتابة ذرية لنظام الملفات",
+        "hi": "फ़ाइल सिस्टम एटॉमिक राइट"
       },
       "group": "file",
       "description": "Write atomic of filesystem"
@@ -1195,7 +2345,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "源文件路径",
-            "en-US": "Source file path"
+            "en-US": "Source file path",
+            "zh-TW": "源檔案路徑",
+            "ja": "源ファイルパス",
+            "ko": "원본 파일 경로",
+            "es": "Ruta del archivo fuente",
+            "fr": "Chemin du fichier source",
+            "de": "Quelldateipfad",
+            "pt-BR": "Caminho do arquivo fonte",
+            "ru": "Путь исходного файла",
+            "ar": "مسار الملف المصدر",
+            "hi": "स्रोत फ़ाइल पथ"
           },
           "desc": "Source file path"
         },
@@ -1204,7 +2364,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "硬链接的创建路径",
-            "en-US": "Path to create hard link"
+            "en-US": "Path to create hard link",
+            "zh-TW": "硬鏈接的建立路徑",
+            "ja": "硬リンクの作成するパス",
+            "ko": "하드 링크를 생성할 경로",
+            "es": "Ruta para crear enlace duro",
+            "fr": "Chemin pour créer le lien physique",
+            "de": "Pfad für harten Link",
+            "pt-BR": "Caminho para criar link físico",
+            "ru": "Путь для создания жёсткой ссылки",
+            "ar": "المسار لإنشاء الارتباط الصلب",
+            "hi": "हार्ड लिंक बनाने का पथ"
           },
           "desc": "Path to create hard link"
         }
@@ -1213,14 +2383,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.hardLink",
       "descriptions": {
         "zh-CN": "创建硬链接",
-        "en-US": "Hard link of filesystem"
+        "en-US": "Hard link of filesystem",
+        "zh-TW": "建立硬鏈接",
+        "ja": "作成する硬リンク",
+        "ko": "파일 시스템 하드 링크",
+        "es": "Enlace duro del sistema de archivos",
+        "fr": "Lien physique du système de fichiers",
+        "de": "Harter Link des Dateisystems",
+        "pt-BR": "Link físico do sistema de arquivos",
+        "ru": "Жёсткая ссылка файловой системы",
+        "ar": "ارتباط صلب لنظام الملفات",
+        "hi": "फ़ाइल सिस्टम हार्ड लिंक"
       },
       "group": "operate",
       "description": "Hard link of filesystem"
@@ -1234,7 +2424,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -1244,14 +2444,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "fs.lineCount",
       "descriptions": {
         "zh-CN": "统计文件行数",
-        "en-US": "Line count of filesystem"
+        "en-US": "Line count of filesystem",
+        "zh-TW": "統計檔案行數",
+        "ja": "ファイルシステムの行数",
+        "ko": "파일 시스템 줄 수",
+        "es": "Conteo de líneas del sistema de archivos",
+        "fr": "Nombre de lignes du système de fichiers",
+        "de": "Zeilenanzahl des Dateisystems",
+        "pt-BR": "Contagem de linhas do sistema de arquivos",
+        "ru": "Количество строк файловой системы",
+        "ar": "عدد الأسطر في نظام الملفات",
+        "hi": "फ़ाइल सिस्टम लाइन काउंट"
       },
       "group": "info",
       "description": "Line count of filesystem"
@@ -1265,7 +2485,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -1275,14 +2505,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "fs.fileType",
       "descriptions": {
         "zh-CN": "获取文件的 MIME 类型",
-        "en-US": "File type of filesystem"
+        "en-US": "File type of filesystem",
+        "zh-TW": "取得檔案的 MIME 類型",
+        "ja": "取得するファイルの MIME タイプ",
+        "ko": "가져오기파일의 MIME 유형",
+        "es": "Tipo de archivo del sistema de archivos",
+        "fr": "Type de fichier du système de fichiers",
+        "de": "Dateityp des Dateisystems",
+        "pt-BR": "Tipo de arquivo do sistema de arquivos",
+        "ru": "Тип файла файловой системы",
+        "ar": "نوع الملف في نظام الملفات",
+        "hi": "फ़ाइल सिस्टम फ़ाइल प्रकार"
       },
       "group": "info",
       "description": "File type of filesystem"
@@ -1296,7 +2546,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "目录路径",
-            "en-US": "Directory path"
+            "en-US": "Directory path",
+            "zh-TW": "目錄路徑",
+            "ja": "ディレクトリパス",
+            "ko": "디렉토리경로",
+            "es": "Ruta del directorio",
+            "fr": "Chemin du répertoire",
+            "de": "Verzeichnispfad",
+            "pt-BR": "Caminho do diretório",
+            "ru": "Путь к каталогу",
+            "ar": "مسار المجلد",
+            "hi": "डायरेक्टरी पथ"
           },
           "desc": "Directory path"
         },
@@ -1305,7 +2565,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "匹配模式",
-            "en-US": "Match pattern"
+            "en-US": "Match pattern",
+            "zh-TW": "匹配模式",
+            "ja": "マッチパターン",
+            "ko": "매치 패턴",
+            "es": "Patrón de coincidencia",
+            "fr": "Motif de correspondance",
+            "de": "Übereinstimmungsmuster",
+            "pt-BR": "Padrão de correspondência",
+            "ru": "Шаблон совпадения",
+            "ar": "نمط المطابقة",
+            "hi": "मैच पैटर्न"
           },
           "desc": "Match pattern"
         }
@@ -1314,14 +2584,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "fs.searchContent",
       "descriptions": {
         "zh-CN": "在文件内容中搜索匹配文本",
-        "en-US": "Search content of filesystem"
+        "en-US": "Search content of filesystem",
+        "zh-TW": "在檔案內容中搜尋匹配文字",
+        "ja": "ファイルシステムの内容を検索",
+        "ko": "파일 시스템 내용 검색",
+        "es": "Buscar contenido del sistema de archivos",
+        "fr": "Rechercher le contenu du système de fichiers",
+        "de": "Dateisystem-Inhalt durchsuchen",
+        "pt-BR": "Pesquisar conteúdo do sistema de arquivos",
+        "ru": "Поиск содержимого файловой системы",
+        "ar": "البحث في محتوى نظام الملفات",
+        "hi": "फ़ाइल सिस्टम सामग्री खोजें"
       },
       "group": "search",
       "description": "Search content of filesystem"
@@ -1335,7 +2625,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -1345,13 +2645,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "已规范化",
-          "en-US": "Normalized"
+          "en-US": "Normalized",
+          "zh-TW": "已規範化",
+          "ja": "正規化済み",
+          "ko": "정규화됨",
+          "es": "Normalizado",
+          "fr": "Normalisé",
+          "de": "Normalisiert",
+          "pt-BR": "Normalizado",
+          "ru": "Нормализованный",
+          "ar": "مُطبَّع",
+          "hi": "सामान्यीकृत"
         }
       },
       "bridge_path": "fs.normalizePath",
       "descriptions": {
         "zh-CN": "规范化路径（解析 .. 和 .）",
-        "en-US": "Normalize path of filesystem"
+        "en-US": "Normalize path of filesystem",
+        "zh-TW": "規範化路徑（解析 .. 和 .）",
+        "ja": "ファイルシステムのパスを正規化",
+        "ko": "파일 시스템 경로 정규화",
+        "es": "Normalizar ruta del sistema de archivos",
+        "fr": "Normaliser le chemin du système de fichiers",
+        "de": "Dateisystem-Pfad normalisieren",
+        "pt-BR": "Normalizar caminho do sistema de arquivos",
+        "ru": "Нормализовать путь файловой системы",
+        "ar": "تطبيع مسار نظام الملفات",
+        "hi": "फ़ाइल सिस्टम पथ सामान्यीकृत करें"
       },
       "group": "info",
       "description": "Normalize path of filesystem"
@@ -1365,7 +2685,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -1375,7 +2705,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "大小数值",
-            "en-US": "Size value"
+            "en-US": "Size value",
+            "zh-TW": "大小數值",
+            "ja": "サイズ値",
+            "ko": "크기 값",
+            "es": "Valor de tamaño",
+            "fr": "Valeur de taille",
+            "de": "Größenwert",
+            "pt-BR": "Valor de tamanho",
+            "ru": "Значение размера",
+            "ar": "قيمة الحجم",
+            "hi": "आकार मान"
           },
           "desc": "Size value"
         }
@@ -1384,14 +2724,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.truncate",
       "descriptions": {
         "zh-CN": "truncate文件系统",
-        "en-US": "Truncate filesystem"
+        "en-US": "Truncate filesystem",
+        "zh-TW": "truncate檔案系統",
+        "ja": "truncateファイルシステム",
+        "ko": "truncate파일시스템",
+        "es": "Truncar sistema de archivos",
+        "fr": "Tronquer le système de fichiers",
+        "de": "Dateisystem abschneiden",
+        "pt-BR": "Truncar sistema de arquivos",
+        "ru": "Обрезать файл",
+        "ar": "اقتطاع نظام الملفات",
+        "hi": "फ़ाइल सिस्टम ट्रंकेट करें"
       },
       "group": "file",
       "description": "Truncate filesystem"
@@ -1405,7 +2765,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -1415,14 +2785,34 @@
         "type": "LockHandle",
         "descs": {
           "zh-CN": "LockHandle类型的结果对象",
-          "en-US": "Result object of type LockHandle"
+          "en-US": "Result object of type LockHandle",
+          "zh-TW": "LockHandle類型的結果物件",
+          "ja": "LockHandleタイプの結果オブジェクト",
+          "ko": "LockHandle유형의결과객체",
+          "es": "Objeto resultado de tipo LockHandle",
+          "fr": "Objet résultat de type LockHandle",
+          "de": "Ergebnisobjekt vom Typ LockHandle",
+          "pt-BR": "Objeto resultado do tipo LockHandle",
+          "ru": "Объект результата типа LockHandle",
+          "ar": "كائن نتيجة من نوع LockHandle",
+          "hi": "LockHandle प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type LockHandle"
       },
       "bridge_path": "fs.lockFile",
       "descriptions": {
         "zh-CN": "锁定文件（防止并发写入）",
-        "en-US": "Lock file of filesystem"
+        "en-US": "Lock file of filesystem",
+        "zh-TW": "鎖定檔案（防止並發寫入）",
+        "ja": "ファイルシステムのファイルをロック",
+        "ko": "파일 시스템 파일 잠금",
+        "es": "Bloquear archivo del sistema de archivos",
+        "fr": "Verrouiller le fichier",
+        "de": "Datei des Dateisystems sperren",
+        "pt-BR": "Bloquear arquivo do sistema de arquivos",
+        "ru": "Заблокировать файл",
+        "ar": "قفل ملف نظام الملفات",
+        "hi": "फ़ाइल सिस्टम फ़ाइल लॉक करें"
       },
       "group": "lock",
       "description": "Lock file of filesystem"
@@ -1436,7 +2826,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "锁定 ID",
-            "en-US": "Lock ID"
+            "en-US": "Lock ID",
+            "zh-TW": "鎖定 ID",
+            "ja": "ロックID",
+            "ko": "잠금 ID",
+            "es": "ID de bloqueo",
+            "fr": "ID de verrouillage",
+            "de": "Sperr-ID",
+            "pt-BR": "ID do bloqueio",
+            "ru": "ID блокировки",
+            "ar": "معرف القفل",
+            "hi": "लॉक ID"
           }
         }
       ],
@@ -1444,14 +2844,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "fs.unlockFile",
       "descriptions": {
         "zh-CN": "解锁文件",
-        "en-US": "Unlock file of filesystem"
+        "en-US": "Unlock file of filesystem",
+        "zh-TW": "解鎖檔案",
+        "ja": "ファイルシステムのファイルロックを解除",
+        "ko": "파일 시스템 파일 잠금 해제",
+        "es": "Desbloquear archivo del sistema de archivos",
+        "fr": "Déverrouiller le fichier",
+        "de": "Dateisperre aufheben",
+        "pt-BR": "Desbloquear arquivo do sistema de arquivos",
+        "ru": "Разблокировать файл",
+        "ar": "إلغاء قفل ملف نظام الملفات",
+        "hi": "फ़ाइल सिस्टम फ़ाइल अनलॉक करें"
       },
       "group": "lock",
       "description": "Unlock file of filesystem"
@@ -1465,7 +2885,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -1475,14 +2905,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "fs.dirSize",
       "descriptions": {
         "zh-CN": "计算目录总大小",
-        "en-US": "Dir size of filesystem"
+        "en-US": "Dir size of filesystem",
+        "zh-TW": "計算目錄總大小",
+        "ja": "ファイルシステムのディレクトリサイズ",
+        "ko": "파일 시스템 디렉토리 크기",
+        "es": "Tamaño del directorio",
+        "fr": "Taille du répertoire",
+        "de": "Verzeichnisgröße",
+        "pt-BR": "Tamanho do diretório",
+        "ru": "Размер каталога",
+        "ar": "حجم المجلد",
+        "hi": "डायरेक्टरी आकार"
       },
       "group": "info",
       "description": "Dir size of filesystem"
@@ -1496,7 +2946,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "路径 A",
-            "en-US": "Path A"
+            "en-US": "Path A",
+            "zh-TW": "路徑 A",
+            "ja": "パス A",
+            "ko": "경로 A",
+            "es": "Ruta A",
+            "fr": "Chemin A",
+            "de": "Pfad A",
+            "pt-BR": "Caminho A",
+            "ru": "Путь A",
+            "ar": "المسار A",
+            "hi": "पथ A"
           }
         },
         {
@@ -1504,7 +2964,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "路径 B",
-            "en-US": "Path B"
+            "en-US": "Path B",
+            "zh-TW": "路徑 B",
+            "ja": "パス B",
+            "ko": "경로 B",
+            "es": "Ruta B",
+            "fr": "Chemin B",
+            "de": "Pfad B",
+            "pt-BR": "Caminho B",
+            "ru": "Путь B",
+            "ar": "المسار B",
+            "hi": "पथ B"
           }
         }
       ],
@@ -1512,14 +2982,34 @@
         "type": "CompareResult",
         "descs": {
           "zh-CN": "CompareResult类型的结果对象",
-          "en-US": "Result object of type CompareResult"
+          "en-US": "Result object of type CompareResult",
+          "zh-TW": "CompareResult類型的結果物件",
+          "ja": "CompareResultタイプの結果オブジェクト",
+          "ko": "CompareResult유형의결과객체",
+          "es": "Objeto resultado de tipo CompareResult",
+          "fr": "Objet résultat de type CompareResult",
+          "de": "Ergebnisobjekt vom Typ CompareResult",
+          "pt-BR": "Objeto resultado do tipo CompareResult",
+          "ru": "Объект результата типа CompareResult",
+          "ar": "كائن نتيجة من نوع CompareResult",
+          "hi": "CompareResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type CompareResult"
       },
       "bridge_path": "fs.compare",
       "descriptions": {
         "zh-CN": "compare文件系统",
-        "en-US": "Compare filesystem"
+        "en-US": "Compare filesystem",
+        "zh-TW": "compare檔案系統",
+        "ja": "compareファイルシステム",
+        "ko": "compare파일시스템",
+        "es": "Comparar sistema de archivos",
+        "fr": "Comparer le système de fichiers",
+        "de": "Dateisystem vergleichen",
+        "pt-BR": "Comparar sistema de arquivos",
+        "ru": "Сравнить файловую систему",
+        "ar": "مقارنة نظام الملفات",
+        "hi": "फ़ाइल सिस्टम तुलना"
       },
       "group": "info",
       "description": "Compare filesystem"
@@ -1532,14 +3022,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "fs.listLocks",
       "descriptions": {
         "zh-CN": "列出locks",
-        "en-US": "List locks of filesystem"
+        "en-US": "List locks of filesystem",
+        "zh-TW": "列出locks",
+        "ja": "ファイルシステムロック一覧",
+        "ko": "파일 시스템 잠금 목록",
+        "es": "Listar bloqueos del sistema de archivos",
+        "fr": "Lister les verrous du système de fichiers",
+        "de": "Dateisystem-Sperren auflisten",
+        "pt-BR": "Listar bloqueios do sistema de arquivos",
+        "ru": "Список блокировок файловой системы",
+        "ar": "قائمة أقفال نظام الملفات",
+        "hi": "फ़ाइल सिस्टम लॉक सूची"
       },
       "group": "lock",
       "description": "List locks of filesystem"
@@ -1547,14 +3057,34 @@
   ],
   "overviews": {
     "zh-CN": "提供文件系统操作能力，包括文件/目录的创建、读写、复制、移动、删除、权限管理、监控变化、临时文件管理等。支持文本和二进制文件操作、文件锁、符号链接等。",
-    "en-US": "File system operations including create, read, write, copy, move, delete, permissions, change monitoring, and temp file management. Supports text/binary files, file locks, and symlinks."
+    "en-US": "File system operations including create, read, write, copy, move, delete, permissions, change monitoring, and temp file management. Supports text/binary files, file locks, and symlinks.",
+    "zh-TW": "提供檔案系統操作能力，包括檔案/目錄的建立、读写、复制、移動、刪除、權限管理、監控變化、臨時檔案管理等。支援文本和二進制檔案操作、檔案鎖、符號链接等。",
+    "ja": "ファイルシステム操作：作成・読取・書込・コピー・移動・削除・権限・変更監視・一時ファイル。テキスト/バイナリ・ファイルロック・シンボリックリンク対応。",
+    "ko": "파일 시스템: 생성, 읽기, 쓰기, 복사, 이동, 삭제, 권한, 변경 감시, 임시 파일. 텍스트/바이너리, 파일 잠금, 심볼릭 링크.",
+    "es": "Sistema de archivos: crear, leer, escribir, copiar, mover, eliminar, permisos, monitoreo y temporales. Texto/binario, bloqueos y enlaces.",
+    "fr": "Système de fichiers : créer, lire, écrire, copier, déplacer, supprimer, permissions, surveillance et temporaires. Texte/binaire, verrous et liens.",
+    "de": "Dateisystem: Erstellen, Lesen, Schreiben, Kopieren, Verschieben, Löschen, Berechtigungen, Überwachung und Temp-Dateien. Text/Binär, Sperren, Symlinks.",
+    "pt-BR": "Sistema de arquivos: criar, ler, escrever, copiar, mover, excluir, permissões, monitoramento e temporários. Texto/binário, bloqueios e links.",
+    "ru": "Файловая система: создание, чтение, запись, копирование, перемещение, удаление, права, мониторинг и временные файлы. Текст/бинарные, блокировки, симлинки.",
+    "ar": "نظام الملفات: إنشاء وقراءة وكتابة ونسخ ونقل وحذف وأذونات ومراقبة ومؤقتة. نص/ثنائي وأقفال وروابط.",
+    "hi": "फाइल सिस्टम: बनाना, पढ़ना, लिखना, कॉपी, मूव, डिलीट, अनुमति, मॉनिटरिंग और टेम्प। टेक्स्ट/बाइनरी, लॉक, सिमलिंक।"
   },
   "types": [
     {
       "name": "FileStat",
       "descriptions": {
         "zh-CN": "文件状态信息",
-        "en-US": "File status info"
+        "en-US": "File status info",
+        "zh-TW": "檔案狀態資訊",
+        "ja": "ファイル状態情報",
+        "ko": "파일 상태 정보",
+        "es": "Información de estado del archivo",
+        "fr": "Informations d'état du fichier",
+        "de": "Dateistatusinformationen",
+        "pt-BR": "Informações de status do arquivo",
+        "ru": "Информация о состоянии файла",
+        "ar": "معلومات حالة الملف",
+        "hi": "फ़ाइल स्थिति जानकारी"
       },
       "fields": [
         {
@@ -1562,7 +3092,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "文件大小(字节)",
-            "en-US": "File size(bytes)"
+            "en-US": "File size(bytes)",
+            "zh-TW": "檔案大小(字節)",
+            "ja": "ファイルサイズ(バイト)",
+            "ko": "파일 크기(바이트)",
+            "es": "Tamaño de archivo(bytes)",
+            "fr": "Taille du fichier(octets)",
+            "de": "Dateigröße(Bytes)",
+            "pt-BR": "Tamanho do arquivo(bytes)",
+            "ru": "Размер файла(байт)",
+            "ar": "حجم الملف(بايت)",
+            "hi": "फ़ाइल आकार(बाइट)"
           }
         },
         {
@@ -1570,7 +3110,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否目录",
-            "en-US": "Is directory"
+            "en-US": "Is directory",
+            "zh-TW": "是否目錄",
+            "ja": "ディレクトリかどうか",
+            "ko": "디렉토리 여부",
+            "es": "Es directorio",
+            "fr": "Est un répertoire",
+            "de": "Ist Verzeichnis",
+            "pt-BR": "É diretório",
+            "ru": "Является каталогом",
+            "ar": "هل هو مجلد",
+            "hi": "डायरेक्टरी है"
           }
         },
         {
@@ -1578,7 +3128,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否文件",
-            "en-US": "Is file"
+            "en-US": "Is file",
+            "zh-TW": "是否檔案",
+            "ja": "ファイルかどうか",
+            "ko": "파일 여부",
+            "es": "Es archivo",
+            "fr": "Est un fichier",
+            "de": "Ist Datei",
+            "pt-BR": "É arquivo",
+            "ru": "Является файлом",
+            "ar": "هل هو ملف",
+            "hi": "फ़ाइल है"
           }
         },
         {
@@ -1586,7 +3146,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "创建时间戳(ms)",
-            "en-US": "Created timestamp(ms)"
+            "en-US": "Created timestamp(ms)",
+            "zh-TW": "建立時间戳(ms)",
+            "ja": "作成タイムスタンプ(ms)",
+            "ko": "생성 타임스탬프(ms)",
+            "es": "Marca de tiempo de creación(ms)",
+            "fr": "Horodatage de création(ms)",
+            "de": "Erstellungszeitstempel(ms)",
+            "pt-BR": "Timestamp de criação(ms)",
+            "ru": "Временная метка создания(мс)",
+            "ar": "طابع وقت الإنشاء(مللي ثانية)",
+            "hi": "निर्माण टाइमस्टैम्प(ms)"
           }
         },
         {
@@ -1594,7 +3164,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "修改时间戳(ms)",
-            "en-US": "Modified timestamp(ms)"
+            "en-US": "Modified timestamp(ms)",
+            "zh-TW": "修改時间戳(ms)",
+            "ja": "更新タイムスタンプ(ms)",
+            "ko": "수정 타임스탬프(ms)",
+            "es": "Marca de tiempo de modificación(ms)",
+            "fr": "Horodatage de modification(ms)",
+            "de": "Änderungszeitstempel(ms)",
+            "pt-BR": "Timestamp de modificação(ms)",
+            "ru": "Временная метка изменения(мс)",
+            "ar": "طابع وقت التعديل(مللي ثانية)",
+            "hi": "संशोधन टाइमस्टैम्प(ms)"
           }
         },
         {
@@ -1602,7 +3182,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否只读",
-            "en-US": "Is readonly"
+            "en-US": "Is readonly",
+            "zh-TW": "是否只读",
+            "ja": "読み取り専用かどうか",
+            "ko": "읽기 전용 여부",
+            "es": "Es solo lectura",
+            "fr": "Est en lecture seule",
+            "de": "Ist schreibgeschützt",
+            "pt-BR": "É somente leitura",
+            "ru": "Только для чтения",
+            "ar": "للقراءة فقط",
+            "hi": "केवल-पठन है"
           }
         }
       ]
@@ -1611,7 +3201,17 @@
       "name": "WatchEvent",
       "descriptions": {
         "zh-CN": "文件监听事件",
-        "en-US": "File watch event"
+        "en-US": "File watch event",
+        "zh-TW": "檔案監听事件",
+        "ja": "ファイル監視イベント",
+        "ko": "파일 감시 이벤트",
+        "es": "Evento de vigilancia de archivo",
+        "fr": "Événement de surveillance de fichier",
+        "de": "Dateiüberwachungsereignis",
+        "pt-BR": "Evento de monitoramento de arquivo",
+        "ru": "Событие наблюдения за файлом",
+        "ar": "حدث مراقبة الملف",
+        "hi": "फ़ाइल वॉच इवेंट"
       },
       "fields": [
         {
@@ -1619,7 +3219,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "变更文件路径",
-            "en-US": "Changed file path"
+            "en-US": "Changed file path",
+            "zh-TW": "變更檔案路徑",
+            "ja": "変更されたファイルパス",
+            "ko": "변경된 파일 경로",
+            "es": "Ruta del archivo modificado",
+            "fr": "Chemin du fichier modifié",
+            "de": "Geänderter Dateipfad",
+            "pt-BR": "Caminho do arquivo alterado",
+            "ru": "Путь к изменённому файлу",
+            "ar": "مسار الملف المتغيّر",
+            "hi": "बदली गई फ़ाइल पथ"
           }
         },
         {
@@ -1627,7 +3237,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "事件类型(create/modify/delete/rename)",
-            "en-US": "Event type"
+            "en-US": "Event type",
+            "zh-TW": "事件類型(create/modify/delete/rename)",
+            "ja": "イベントタイプ",
+            "ko": "이벤트 유형",
+            "es": "Tipo de evento",
+            "fr": "Type d'événement",
+            "de": "Ereignistyp",
+            "pt-BR": "Tipo de evento",
+            "ru": "Тип события",
+            "ar": "نوع الحدث",
+            "hi": "इवेंट प्रकार"
           }
         },
         {
@@ -1635,7 +3255,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "时间戳(ms)",
-            "en-US": "Timestamp(ms)"
+            "en-US": "Timestamp(ms)",
+            "zh-TW": "時间戳(ms)",
+            "ja": "タイムスタンプ(ms)",
+            "ko": "타임스탬프(ms)",
+            "es": "Marca de tiempo(ms)",
+            "fr": "Horodatage(ms)",
+            "de": "Zeitstempel(ms)",
+            "pt-BR": "Timestamp(ms)",
+            "ru": "Временная метка(мс)",
+            "ar": "طابع الوقت(مللي ثانية)",
+            "hi": "टाइमस्टैम्प(ms)"
           }
         }
       ]
@@ -1644,7 +3274,17 @@
       "name": "WatchHandle",
       "descriptions": {
         "zh-CN": "文件监听句柄",
-        "en-US": "Watch handle"
+        "en-US": "Watch handle",
+        "zh-TW": "檔案監听句柄",
+        "ja": "監視ハンドル",
+        "ko": "감시 핸들",
+        "es": "Manejador de vigilancia",
+        "fr": "Handle de surveillance",
+        "de": "Überwachungs-Handle",
+        "pt-BR": "Handle de monitoramento",
+        "ru": "Дескриптор наблюдения",
+        "ar": "مقبض المراقبة",
+        "hi": "वॉच हैंडल"
       },
       "fields": [
         {
@@ -1652,7 +3292,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "监听ID",
-            "en-US": "Watch ID"
+            "en-US": "Watch ID",
+            "zh-TW": "監听ID",
+            "ja": "監視ID",
+            "ko": "감시 ID",
+            "es": "ID de vigilancia",
+            "fr": "ID de surveillance",
+            "de": "Überwachungs-ID",
+            "pt-BR": "ID de monitoramento",
+            "ru": "ID наблюдения",
+            "ar": "معرّف المراقبة",
+            "hi": "वॉच ID"
           }
         },
         {
@@ -1660,7 +3310,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "监听路径",
-            "en-US": "Watched path"
+            "en-US": "Watched path",
+            "zh-TW": "監听路徑",
+            "ja": "監視対象パス",
+            "ko": "감시 경로",
+            "es": "Ruta vigilada",
+            "fr": "Chemin surveillé",
+            "de": "Überwachter Pfad",
+            "pt-BR": "Caminho monitorado",
+            "ru": "Отслеживаемый путь",
+            "ar": "المسار المراقَب",
+            "hi": "वॉच किया गया पथ"
           }
         }
       ]
@@ -1669,7 +3329,17 @@
       "name": "DiskUsage",
       "descriptions": {
         "zh-CN": "磁盘使用情况",
-        "en-US": "Disk usage"
+        "en-US": "Disk usage",
+        "zh-TW": "磁碟使用情況",
+        "ja": "ディスク使用量",
+        "ko": "디스크 사용량",
+        "es": "Uso de disco",
+        "fr": "Utilisation du disque",
+        "de": "Festplattenauslastung",
+        "pt-BR": "Uso de disco",
+        "ru": "Использование диска",
+        "ar": "استخدام القرص",
+        "hi": "डिस्क उपयोग"
       },
       "fields": [
         {
@@ -1677,7 +3347,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "总空间(字节)",
-            "en-US": "Total(bytes)"
+            "en-US": "Total(bytes)",
+            "zh-TW": "總空间(字節)",
+            "ja": "合計(バイト)",
+            "ko": "총 용량(바이트)",
+            "es": "Total(bytes)",
+            "fr": "Total(octets)",
+            "de": "Gesamt(Bytes)",
+            "pt-BR": "Total(bytes)",
+            "ru": "Всего(байт)",
+            "ar": "الإجمالي(بايت)",
+            "hi": "कुल(बाइट)"
           }
         },
         {
@@ -1685,7 +3365,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "已用空间",
-            "en-US": "Used(bytes)"
+            "en-US": "Used(bytes)",
+            "zh-TW": "已用空间",
+            "ja": "使用中(バイト)",
+            "ko": "사용 중(바이트)",
+            "es": "Usado(bytes)",
+            "fr": "Utilisé(octets)",
+            "de": "Verwendet(Bytes)",
+            "pt-BR": "Usado(bytes)",
+            "ru": "Использовано(байт)",
+            "ar": "مستخدم(بايت)",
+            "hi": "प्रयुक्त(बाइट)"
           }
         },
         {
@@ -1693,7 +3383,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "可用空间",
-            "en-US": "Free(bytes)"
+            "en-US": "Free(bytes)",
+            "zh-TW": "可用空间",
+            "ja": "空き容量(バイト)",
+            "ko": "여유 공간(바이트)",
+            "es": "Libre(bytes)",
+            "fr": "Libre(octets)",
+            "de": "Frei(Bytes)",
+            "pt-BR": "Livre(bytes)",
+            "ru": "Свободно(байт)",
+            "ar": "حر(بايت)",
+            "hi": "खाली(बाइट)"
           }
         }
       ]
@@ -1702,7 +3402,17 @@
       "name": "LockHandle",
       "descriptions": {
         "zh-CN": "文件锁句柄",
-        "en-US": "File lock handle"
+        "en-US": "File lock handle",
+        "zh-TW": "檔案鎖句柄",
+        "ja": "ファイルロックハンドル",
+        "ko": "파일 잠금 핸들",
+        "es": "Manejador de bloqueo de archivo",
+        "fr": "Handle de verrouillage de fichier",
+        "de": "Dateisperr-Handle",
+        "pt-BR": "Handle de bloqueio de arquivo",
+        "ru": "Дескриптор блокировки файла",
+        "ar": "مقبض قفل الملف",
+        "hi": "फ़ाइल लॉक हैंडल"
       },
       "fields": [
         {
@@ -1710,7 +3420,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "锁ID",
-            "en-US": "Lock ID"
+            "en-US": "Lock ID",
+            "zh-TW": "鎖ID",
+            "ja": "ロックID",
+            "ko": "잠금 ID",
+            "es": "ID de bloqueo",
+            "fr": "ID de verrouillage",
+            "de": "Sperr-ID",
+            "pt-BR": "ID de bloqueio",
+            "ru": "ID блокировки",
+            "ar": "معرّف القفل",
+            "hi": "लॉक ID"
           }
         },
         {
@@ -1718,7 +3438,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "锁定路径",
-            "en-US": "Locked path"
+            "en-US": "Locked path",
+            "zh-TW": "鎖定路徑",
+            "ja": "ロックされたパス",
+            "ko": "잠긴 경로",
+            "es": "Ruta bloqueada",
+            "fr": "Chemin verrouillé",
+            "de": "Gesperrter Pfad",
+            "pt-BR": "Caminho bloqueado",
+            "ru": "Заблокированный путь",
+            "ar": "المسار المقفل",
+            "hi": "लॉक किया गया पथ"
           }
         }
       ]
@@ -1727,7 +3457,17 @@
       "name": "CompareResult",
       "descriptions": {
         "zh-CN": "文件比较结果",
-        "en-US": "File compare result"
+        "en-US": "File compare result",
+        "zh-TW": "檔案比較结果",
+        "ja": "ファイル比較結果",
+        "ko": "파일 비교 결과",
+        "es": "Resultado de comparación de archivos",
+        "fr": "Résultat de comparaison de fichiers",
+        "de": "Dateivergleichsergebnis",
+        "pt-BR": "Resultado da comparação de arquivos",
+        "ru": "Результат сравнения файлов",
+        "ar": "نتيجة مقارنة الملفات",
+        "hi": "फ़ाइल तुलना परिणाम"
       },
       "fields": [
         {
@@ -1735,7 +3475,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否相同",
-            "en-US": "Is identical"
+            "en-US": "Is identical",
+            "zh-TW": "是否相同",
+            "ja": "同一かどうか",
+            "ko": "동일 여부",
+            "es": "Es idéntico",
+            "fr": "Est identique",
+            "de": "Ist identisch",
+            "pt-BR": "É idêntico",
+            "ru": "Идентичен",
+            "ar": "متطابق",
+            "hi": "समान है"
           }
         },
         {
@@ -1743,7 +3493,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "大小差异",
-            "en-US": "Size difference"
+            "en-US": "Size difference",
+            "zh-TW": "大小差异",
+            "ja": "サイズの差",
+            "ko": "크기 차이",
+            "es": "Diferencia de tamaño",
+            "fr": "Différence de taille",
+            "de": "Größenunterschied",
+            "pt-BR": "Diferença de tamanho",
+            "ru": "Разница в размере",
+            "ar": "فرق الحجم",
+            "hi": "आकार अंतर"
           }
         }
       ]
@@ -1754,7 +3514,17 @@
       "name": "change",
       "descriptions": {
         "zh-CN": "文件变更事件",
-        "en-US": "File change event"
+        "en-US": "File change event",
+        "zh-TW": "檔案變更事件",
+        "ja": "ファイル変更イベント",
+        "ko": "파일 변경 이벤트",
+        "es": "Evento de cambio de archivo",
+        "fr": "Événement de modification de fichier",
+        "de": "Dateiänderungsereignis",
+        "pt-BR": "Evento de alteração de arquivo",
+        "ru": "Событие изменения файла",
+        "ar": "حدث تغيير الملف",
+        "hi": "फ़ाइल परिवर्तन इवेंट"
       },
       "payload": [
         {
@@ -1762,7 +3532,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "变更路径",
-            "en-US": "Changed path"
+            "en-US": "Changed path",
+            "zh-TW": "變更路徑",
+            "ja": "変更パス",
+            "ko": "변경된 경로",
+            "es": "Ruta modificada",
+            "fr": "Chemin modifié",
+            "de": "Geänderter Pfad",
+            "pt-BR": "Caminho alterado",
+            "ru": "Изменённый путь",
+            "ar": "المسار المتغير",
+            "hi": "बदला हुआ पथ"
           }
         },
         {
@@ -1770,7 +3550,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "事件类型(create/modify/delete/rename)",
-            "en-US": "Event type"
+            "en-US": "Event type",
+            "zh-TW": "事件類型(create/modify/delete/rename)",
+            "ja": "イベントタイプ",
+            "ko": "이벤트 유형",
+            "es": "Tipo de evento",
+            "fr": "Type d'événement",
+            "de": "Ereignistyp",
+            "pt-BR": "Tipo de evento",
+            "ru": "Тип события",
+            "ar": "نوع الحدث",
+            "hi": "इवेंट प्रकार"
           }
         }
       ]
@@ -1779,7 +3569,17 @@
       "name": "file_change",
       "descriptions": {
         "zh-CN": "文件/目录变化事件",
-        "en-US": "File/directory change event"
+        "en-US": "File/directory change event",
+        "zh-TW": "檔案/目錄變化事件",
+        "ja": "ファイル/ディレクトリ変更イベント",
+        "ko": "파일/디렉토리 변경 이벤트",
+        "es": "Evento de cambio de archivo/directorio",
+        "fr": "Événement de modification de fichier/répertoire",
+        "de": "Datei-/Verzeichnisänderungsereignis",
+        "pt-BR": "Evento de alteração de arquivo/diretório",
+        "ru": "Событие изменения файла/каталога",
+        "ar": "حدث تغيير الملف/المجلد",
+        "hi": "फ़ाइल/डायरेक्टरी परिवर्तन इवेंट"
       },
       "payload": [
         {
@@ -1787,7 +3587,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "变化的文件路径",
-            "en-US": "Changed file path"
+            "en-US": "Changed file path",
+            "zh-TW": "變化的檔案路徑",
+            "ja": "変更されたファイルパス",
+            "ko": "변경된 파일 경로",
+            "es": "Ruta del archivo modificado",
+            "fr": "Chemin du fichier modifié",
+            "de": "Geänderter Dateipfad",
+            "pt-BR": "Caminho do arquivo alterado",
+            "ru": "Путь к изменённому файлу",
+            "ar": "مسار الملف المتغير",
+            "hi": "बदली हुई फ़ाइल पथ"
           }
         },
         {
@@ -1795,7 +3605,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "事件类型(create/modify/delete/rename)",
-            "en-US": "Event type (create/modify/delete/rename)"
+            "en-US": "Event type (create/modify/delete/rename)",
+            "zh-TW": "事件類型(create/modify/delete/rename)",
+            "ja": "イベントタイプ(create/modify/delete/rename)",
+            "ko": "이벤트 유형(create/modify/delete/rename)",
+            "es": "Tipo de evento (create/modify/delete/rename)",
+            "fr": "Type d'événement (create/modify/delete/rename)",
+            "de": "Ereignistyp (create/modify/delete/rename)",
+            "pt-BR": "Tipo de evento (create/modify/delete/rename)",
+            "ru": "Тип события (create/modify/delete/rename)",
+            "ar": "نوع الحدث (create/modify/delete/rename)",
+            "hi": "इवेंट प्रकार (create/modify/delete/rename)"
           }
         }
       ]

@@ -22,7 +22,7 @@
     "ar": "وحدة علبة النظام",
     "hi": "सिस्टम ट्रे मॉड्यूल"
   },
-  "permission": "",
+  "permission": "tray",
   "functions": [
     {
       "name": "create",
@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图标路径",
-            "en-US": "Icon Path"
+            "en-US": "Icon Path",
+            "zh-TW": "圖標路徑",
+            "ja": "アイコンパス",
+            "ko": "아이콘 경로",
+            "es": "Ruta del icono",
+            "fr": "Chemin de l'icône",
+            "de": "Symbolpfad",
+            "pt-BR": "Caminho do ícone",
+            "ru": "Путь к значку",
+            "ar": "مسار الأيقونة",
+            "hi": "आइकन पथ"
           }
         },
         {
@@ -41,7 +51,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "提示文本",
-            "en-US": "Tooltip text"
+            "en-US": "Tooltip text",
+            "zh-TW": "提示文字",
+            "ja": "プロンプトテキスト",
+            "ko": "툴팁 텍스트",
+            "es": "Texto de información emergente",
+            "fr": "Texte d'info-bulle",
+            "de": "Tooltip-Text",
+            "pt-BR": "Texto de dica",
+            "ru": "Текст подсказки",
+            "ar": "نص التلميح",
+            "hi": "टूलटिप टेक्स्ट"
           },
           "optional": true
         },
@@ -50,7 +70,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "点击回调",
-            "en-US": "Click callback"
+            "en-US": "Click callback",
+            "zh-TW": "點击回調",
+            "ja": "点击コールバック",
+            "ko": "클릭 콜백",
+            "es": "Callback de clic",
+            "fr": "Rappel de clic",
+            "de": "Klick-Callback",
+            "pt-BR": "Callback de clique",
+            "ru": "Обратный вызов клика",
+            "ar": "رد اتصال النقر",
+            "hi": "क्लिक कॉलबैक"
           }
         }
       ],
@@ -58,13 +88,33 @@
         "type": "TrayHandle",
         "descs": {
           "zh-CN": "托盘 ID",
-          "en-US": "Tray ID"
+          "en-US": "Tray ID",
+          "zh-TW": "托盤 ID",
+          "ja": "トレイID",
+          "ko": "트레이 ID",
+          "es": "ID de bandeja",
+          "fr": "ID du plateau",
+          "de": "Tray-ID",
+          "pt-BR": "ID da bandeja",
+          "ru": "ID трея",
+          "ar": "معرف الدرج",
+          "hi": "ट्रे ID"
         }
       },
       "bridge_path": "tray.create",
       "descriptions": {
         "zh-CN": "创建一个新的系统托盘图标实例",
-        "en-US": "Create a new system tray icon instance"
+        "en-US": "Create a new system tray icon instance",
+        "zh-TW": "建立一個新的系統托盤圖標實例",
+        "ja": "新しいシステムトレイアイコンインスタンスを作成",
+        "ko": "새 시스템 트레이 아이콘 인스턴스 생성",
+        "es": "Crear nuevo icono de bandeja del sistema",
+        "fr": "Créer une icône de barre système",
+        "de": "Neues Systemtray-Symbol erstellen",
+        "pt-BR": "Criar novo ícone na bandeja do sistema",
+        "ru": "Создать новый значок в системном трее",
+        "ar": "إنشاء رمز صينية نظام جديد",
+        "hi": "नया सिस्टम ट्रे आइकन बनाएं"
       },
       "group": "create",
       "description": "Create a new system tray icon instance"
@@ -78,7 +128,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "托盘 ID",
-            "en-US": "Tray ID"
+            "en-US": "Tray ID",
+            "zh-TW": "托盤 ID",
+            "ja": "トレイID",
+            "ko": "트레이 ID",
+            "es": "ID de bandeja",
+            "fr": "ID du plateau",
+            "de": "Tray-ID",
+            "pt-BR": "ID da bandeja",
+            "ru": "ID трея",
+            "ar": "معرف الدرج",
+            "hi": "ट्रे ID"
           }
         },
         {
@@ -86,7 +146,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图标路径",
-            "en-US": "Icon path"
+            "en-US": "Icon path",
+            "zh-TW": "圖標路徑",
+            "ja": "アイコンパス",
+            "ko": "아이콘 경로",
+            "es": "Ruta del icono",
+            "fr": "Chemin de l'icône",
+            "de": "Symbolpfad",
+            "pt-BR": "Caminho do ícone",
+            "ru": "Путь к значку",
+            "ar": "مسار الأيقونة",
+            "hi": "आइकन पथ"
           }
         }
       ],
@@ -94,14 +164,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "tray.setIcon",
       "descriptions": {
         "zh-CN": "设置图标属性系统托盘",
-        "en-US": "Set icon property of system tray"
+        "en-US": "Set icon property of system tray",
+        "zh-TW": "設定圖標屬性系統托盤",
+        "ja": "システムトレイのアイコンプロパティを設定",
+        "ko": "시스템 트레이 아이콘 속성 설정",
+        "es": "Establecer icono de la bandeja del sistema",
+        "fr": "Définir l'icône de la barre système",
+        "de": "Systemablage-Symbol setzen",
+        "pt-BR": "Definir ícone da bandeja do sistema",
+        "ru": "Установить значок системного трея",
+        "ar": "تعيين أيقونة شريط النظام",
+        "hi": "सिस्टम ट्रे आइकन सेट करें"
       },
       "group": "create",
       "description": "Set icon property of system tray"
@@ -115,7 +205,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "托盘 ID",
-            "en-US": "Tray ID"
+            "en-US": "Tray ID",
+            "zh-TW": "托盤 ID",
+            "ja": "トレイID",
+            "ko": "트레이 ID",
+            "es": "ID de bandeja",
+            "fr": "ID du plateau",
+            "de": "Tray-ID",
+            "pt-BR": "ID da bandeja",
+            "ru": "ID трея",
+            "ar": "معرف الدرج",
+            "hi": "ट्रे ID"
           }
         },
         {
@@ -123,7 +223,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "提示文本",
-            "en-US": "Tooltip"
+            "en-US": "Tooltip",
+            "zh-TW": "提示文字",
+            "ja": "プロンプトテキスト",
+            "ko": "툴팁",
+            "es": "Información emergente",
+            "fr": "Info-bulle",
+            "de": "Tooltip",
+            "pt-BR": "Dica",
+            "ru": "Подсказка",
+            "ar": "تلميح",
+            "hi": "टूलटिप"
           },
           "optional": true
         }
@@ -132,14 +242,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "tray.setTooltip",
       "descriptions": {
         "zh-CN": "设置托盘提示文字",
-        "en-US": "Set tooltip property of system tray"
+        "en-US": "Set tooltip property of system tray",
+        "zh-TW": "設定托盤提示文字",
+        "ja": "システムトレイのツールチップ属性を設定",
+        "ko": "시스템 트레이 툴팁 속성 설정",
+        "es": "Establecer información emergente de la bandeja del sistema",
+        "fr": "Définir l'info-bulle de la barre système",
+        "de": "Systemablage-Tooltip setzen",
+        "pt-BR": "Definir dica da bandeja do sistema",
+        "ru": "Установить подсказку системного трея",
+        "ar": "تعيين تلميح شريط النظام",
+        "hi": "सिस्टम ट्रे टूलटिप सेट करें"
       },
       "group": "create",
       "description": "Set tooltip property of system tray"
@@ -153,7 +283,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "托盘 ID",
-            "en-US": "Tray ID"
+            "en-US": "Tray ID",
+            "zh-TW": "托盤 ID",
+            "ja": "トレイID",
+            "ko": "트레이 ID",
+            "es": "ID de bandeja",
+            "fr": "ID du plateau",
+            "de": "Tray-ID",
+            "pt-BR": "ID da bandeja",
+            "ru": "ID трея",
+            "ar": "معرف الدرج",
+            "hi": "ट्रे ID"
           }
         },
         {
@@ -161,7 +301,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "菜单项数组（含label/action/子菜单）",
-            "en-US": "Menu item array (with label/action/submenu)"
+            "en-US": "Menu item array (with label/action/submenu)",
+            "zh-TW": "選單項陣列（含label/action/子選單）",
+            "ja": "メニュー項目配列（label/action/submenu付き）",
+            "ko": "메뉴 항목 배열 (label/action/submenu 포함)",
+            "es": "Array de elementos de menú (con label/action/submenu)",
+            "fr": "Tableau d'éléments de menu (avec label/action/submenu)",
+            "de": "Menüelement-Array (mit label/action/submenu)",
+            "pt-BR": "Array de itens de menu (com label/action/submenu)",
+            "ru": "Массив пунктов меню (с label/action/submenu)",
+            "ar": "مصفوفة عناصر القائمة (مع label/action/submenu)",
+            "hi": "मेनू आइटम ऐरे (label/action/submenu के साथ)"
           },
           "desc": "Menu item array (with label/action/submenu)"
         }
@@ -170,14 +320,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "tray.setMenu",
       "descriptions": {
         "zh-CN": "设置菜单属性系统托盘",
-        "en-US": "Set menu property of system tray"
+        "en-US": "Set menu property of system tray",
+        "zh-TW": "設定選單屬性系統托盤",
+        "ja": "システムトレイのメニュー属性を設定",
+        "ko": "시스템 트레이 메뉴 속성 설정",
+        "es": "Establecer menú de la bandeja del sistema",
+        "fr": "Définir le menu de la barre système",
+        "de": "Systemablage-Menü setzen",
+        "pt-BR": "Definir menu da bandeja do sistema",
+        "ru": "Установить меню системного трея",
+        "ar": "تعيين قائمة شريط النظام",
+        "hi": "सिस्टम ट्रे मेनू सेट करें"
       },
       "group": "menu",
       "description": "Set menu property of system tray"
@@ -191,7 +361,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "托盘 ID",
-            "en-US": "Tray ID"
+            "en-US": "Tray ID",
+            "zh-TW": "托盤 ID",
+            "ja": "トレイID",
+            "ko": "트레이 ID",
+            "es": "ID de bandeja",
+            "fr": "ID du plateau",
+            "de": "Tray-ID",
+            "pt-BR": "ID da bandeja",
+            "ru": "ID трея",
+            "ar": "معرف الدرج",
+            "hi": "ट्रे ID"
           }
         },
         {
@@ -199,7 +379,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "项 ID",
-            "en-US": "项 ID"
+            "en-US": "项 ID",
+            "zh-TW": "項 ID",
+            "ja": "項目ID",
+            "ko": "항목 ID",
+            "es": "ID del elemento",
+            "fr": "ID de l'élément",
+            "de": "Element-ID",
+            "pt-BR": "ID do item",
+            "ru": "ID элемента",
+            "ar": "معرف العنصر",
+            "hi": "आइटम ID"
           }
         },
         {
@@ -207,7 +397,17 @@
           "type": "MenuItemProps",
           "descs": {
             "zh-CN": "要更新的菜单项属性",
-            "en-US": "Menu item properties to update"
+            "en-US": "Menu item properties to update",
+            "zh-TW": "要更新的選單項屬性",
+            "ja": "更新するメニュー項目のプロパティ",
+            "ko": "업데이트할 메뉴 항목 속성",
+            "es": "Propiedades del elemento de menú a actualizar",
+            "fr": "Propriétés de l'élément de menu à mettre à jour",
+            "de": "Zu aktualisierende Menüelement-Eigenschaften",
+            "pt-BR": "Propriedades do item de menu a atualizar",
+            "ru": "Свойства пункта меню для обновления",
+            "ar": "خصائص عنصر القائمة للتحديث",
+            "hi": "अपडेट करने के लिए मेनू आइटम प्रॉपर्टी"
           },
           "desc": "Menu item properties to update"
         }
@@ -216,14 +416,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "tray.updateMenuItem",
       "descriptions": {
         "zh-CN": "更新托盘菜单中的某一项",
-        "en-US": "Update menu item of system tray"
+        "en-US": "Update menu item of system tray",
+        "zh-TW": "更新托盤選單中的某一項",
+        "ja": "システムトレイのメニュー項目を更新",
+        "ko": "시스템 트레이 메뉴 항목 업데이트",
+        "es": "Actualizar elemento de menú de la bandeja del sistema",
+        "fr": "Mettre à jour l'élément de menu de la barre système",
+        "de": "Systemablage-Menüelement aktualisieren",
+        "pt-BR": "Atualizar item de menu da bandeja do sistema",
+        "ru": "Обновить пункт меню системного трея",
+        "ar": "تحديث عنصر قائمة شريط النظام",
+        "hi": "सिस्टम ट्रे मेनू आइटम अपडेट करें"
       },
       "group": "menu",
       "description": "Update menu item of system tray"
@@ -237,7 +457,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "托盘 ID",
-            "en-US": "Tray ID"
+            "en-US": "Tray ID",
+            "zh-TW": "托盤 ID",
+            "ja": "トレイID",
+            "ko": "트레이 ID",
+            "es": "ID de bandeja",
+            "fr": "ID du plateau",
+            "de": "Tray-ID",
+            "pt-BR": "ID da bandeja",
+            "ru": "ID трея",
+            "ar": "معرف الدرج",
+            "hi": "ट्रे ID"
           }
         }
       ],
@@ -245,14 +475,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "tray.destroy",
       "descriptions": {
         "zh-CN": "destroy系统托盘",
-        "en-US": "Destroy system tray"
+        "en-US": "Destroy system tray",
+        "zh-TW": "destroy系統托盤",
+        "ja": "システムトレイを破棄",
+        "ko": "시스템 트레이 제거",
+        "es": "Destruir bandeja del sistema",
+        "fr": "Détruire la barre système",
+        "de": "Systemtray zerstören",
+        "pt-BR": "Destruir bandeja do sistema",
+        "ru": "Уничтожить системный трей",
+        "ar": "تدمير صينية النظام",
+        "hi": "सिस्टम ट्रे नष्ट करें"
       },
       "group": "create",
       "description": "Destroy system tray"
@@ -266,7 +516,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "托盘 ID",
-            "en-US": "Tray ID"
+            "en-US": "Tray ID",
+            "zh-TW": "托盤 ID",
+            "ja": "トレイID",
+            "ko": "트레이 ID",
+            "es": "ID de bandeja",
+            "fr": "ID du plateau",
+            "de": "Tray-ID",
+            "pt-BR": "ID da bandeja",
+            "ru": "ID трея",
+            "ar": "معرف الدرج",
+            "hi": "ट्रे ID"
           }
         },
         {
@@ -274,7 +534,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标题文本",
-            "en-US": "Title text"
+            "en-US": "Title text",
+            "zh-TW": "標題文字",
+            "ja": "タイトルテキスト",
+            "ko": "제목텍스트",
+            "es": "Texto del título",
+            "fr": "Texte du titre",
+            "de": "Titeltext",
+            "pt-BR": "Texto do título",
+            "ru": "Текст заголовка",
+            "ar": "نص العنوان",
+            "hi": "शीर्षक टेक्स्ट"
           },
           "desc": "Title text"
         },
@@ -283,7 +553,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息内容",
-            "en-US": "Message content"
+            "en-US": "Message content",
+            "zh-TW": "消息內容",
+            "ja": "メッセージコンテンツ",
+            "ko": "메시지콘텐츠",
+            "es": "Contenido del mensaje",
+            "fr": "Contenu du message",
+            "de": "Nachrichteninhalt",
+            "pt-BR": "Conteúdo da mensagem",
+            "ru": "Содержание сообщения",
+            "ar": "محتوى الرسالة",
+            "hi": "संदेश सामग्री"
           },
           "desc": "Message content"
         },
@@ -292,7 +572,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图标类型",
-            "en-US": "Icon Type"
+            "en-US": "Icon Type",
+            "zh-TW": "圖標類型",
+            "ja": "アイコンタイプ",
+            "ko": "아이콘 유형",
+            "es": "Tipo de icono",
+            "fr": "Type d'icône",
+            "de": "Symboltyp",
+            "pt-BR": "Tipo de ícone",
+            "ru": "Тип значка",
+            "ar": "نوع الأيقونة",
+            "hi": "आइकन प्रकार"
           },
           "optional": true
         },
@@ -301,7 +591,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "超时(毫秒)",
-            "en-US": "Timeout in ms"
+            "en-US": "Timeout in ms",
+            "zh-TW": "超時(毫秒)",
+            "ja": "タイムアウト(毫秒)",
+            "ko": "타임아웃 (밀리초)",
+            "es": "Tiempo de espera en ms",
+            "fr": "Délai en ms",
+            "de": "Timeout in ms",
+            "pt-BR": "Timeout em ms",
+            "ru": "Тайм-аут в мс",
+            "ar": "المهلة بالمللي ثانية",
+            "hi": "टाइमआउट मिलीसेकंड में"
           },
           "optional": true
         }
@@ -310,14 +610,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "tray.showBalloon",
       "descriptions": {
         "zh-CN": "显示托盘气泡通知",
-        "en-US": "Show balloon of system tray"
+        "en-US": "Show balloon of system tray",
+        "zh-TW": "顯示托盤氣泡通知",
+        "ja": "システムトレイバルーンを表示",
+        "ko": "시스템 트레이 풍선 표시",
+        "es": "Mostrar globo de bandeja",
+        "fr": "Afficher la bulle du plateau",
+        "de": "Systemtray-Balloon anzeigen",
+        "pt-BR": "Mostrar balão da bandeja",
+        "ru": "Показать всплывающее уведомление",
+        "ar": "عرض فقاعة صينية النظام",
+        "hi": "सिस्टम ट्रे बैलून दिखाएं"
       },
       "group": "display",
       "description": "Show balloon of system tray"
@@ -331,7 +651,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "托盘 ID",
-            "en-US": "Tray ID"
+            "en-US": "Tray ID",
+            "zh-TW": "托盤 ID",
+            "ja": "トレイID",
+            "ko": "트레이 ID",
+            "es": "ID de bandeja",
+            "fr": "ID du plateau",
+            "de": "Tray-ID",
+            "pt-BR": "ID da bandeja",
+            "ru": "ID трея",
+            "ar": "معرف الدرج",
+            "hi": "ट्रे ID"
           }
         },
         {
@@ -339,7 +669,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标题文本",
-            "en-US": "Title text"
+            "en-US": "Title text",
+            "zh-TW": "標題文字",
+            "ja": "タイトルテキスト",
+            "ko": "제목텍스트",
+            "es": "Texto del título",
+            "fr": "Texte du titre",
+            "de": "Titeltext",
+            "pt-BR": "Texto do título",
+            "ru": "Текст заголовка",
+            "ar": "نص العنوان",
+            "hi": "शीर्षक टेक्स्ट"
           },
           "desc": "Title text"
         }
@@ -348,14 +688,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "tray.setTitle",
       "descriptions": {
         "zh-CN": "设置托盘标题文字",
-        "en-US": "Set title property of system tray"
+        "en-US": "Set title property of system tray",
+        "zh-TW": "設定托盤標題文字",
+        "ja": "システムトレイのタイトル属性を設定",
+        "ko": "시스템 트레이 제목 속성 설정",
+        "es": "Establecer título de la bandeja del sistema",
+        "fr": "Définir le titre de la barre système",
+        "de": "Systemablage-Titel setzen",
+        "pt-BR": "Definir título da bandeja do sistema",
+        "ru": "Установить заголовок системного трея",
+        "ar": "تعيين عنوان شريط النظام",
+        "hi": "सिस्टम ट्रे शीर्षक सेट करें"
       },
       "group": "display",
       "description": "Set title property of system tray"
@@ -369,7 +729,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "托盘 ID",
-            "en-US": "Tray ID"
+            "en-US": "Tray ID",
+            "zh-TW": "托盤 ID",
+            "ja": "トレイID",
+            "ko": "트레이 ID",
+            "es": "ID de bandeja",
+            "fr": "ID du plateau",
+            "de": "Tray-ID",
+            "pt-BR": "ID da bandeja",
+            "ru": "ID трея",
+            "ar": "معرف الدرج",
+            "hi": "ट्रे ID"
           }
         },
         {
@@ -377,7 +747,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否可见",
-            "en-US": "Whether visible"
+            "en-US": "Whether visible",
+            "zh-TW": "是否可见",
+            "ja": "かどうか可见",
+            "ko": "표시 여부",
+            "es": "Si es visible",
+            "fr": "Si visible",
+            "de": "Ob sichtbar",
+            "pt-BR": "Se visível",
+            "ru": "Видимо ли",
+            "ar": "هل مرئي",
+            "hi": "दृश्य है क्या"
           },
           "desc": "Whether visible"
         }
@@ -386,14 +766,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "tray.setVisible",
       "descriptions": {
         "zh-CN": "设置托盘图标可见性",
-        "en-US": "Set visible property of system tray"
+        "en-US": "Set visible property of system tray",
+        "zh-TW": "設定托盤圖標可见性",
+        "ja": "システムトレイの表示プロパティを設定",
+        "ko": "시스템 트레이 가시성 속성 설정",
+        "es": "Establecer visibilidad de la bandeja del sistema",
+        "fr": "Définir la visibilité de la barre système",
+        "de": "Systemablage-Sichtbarkeit setzen",
+        "pt-BR": "Definir visibilidade da bandeja do sistema",
+        "ru": "Установить видимость системного трея",
+        "ar": "تعيين خاصية الرؤية لشريط النظام",
+        "hi": "सिस्टम ट्रे दृश्यता सेट करें"
       },
       "group": "display",
       "description": "Set visible property of system tray"
@@ -407,7 +807,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "托盘 ID",
-            "en-US": "Tray ID"
+            "en-US": "Tray ID",
+            "zh-TW": "托盤 ID",
+            "ja": "トレイID",
+            "ko": "트레이 ID",
+            "es": "ID de bandeja",
+            "fr": "ID du plateau",
+            "de": "Tray-ID",
+            "pt-BR": "ID da bandeja",
+            "ru": "ID трея",
+            "ar": "معرف الدرج",
+            "hi": "ट्रे ID"
           }
         },
         {
@@ -415,7 +825,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "启用闪烁",
-            "en-US": "Enable blink"
+            "en-US": "Enable blink",
+            "zh-TW": "啟用閃烁",
+            "ja": "点滅を有効化",
+            "ko": "깜빡임 활성화",
+            "es": "Habilitar parpadeo",
+            "fr": "Activer le clignotement",
+            "de": "Blinken aktivieren",
+            "pt-BR": "Ativar piscamento",
+            "ru": "Включить мигание",
+            "ar": "تفعيل الوميض",
+            "hi": "ब्लिंक सक्षम"
           }
         }
       ],
@@ -423,14 +843,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "tray.setBlink",
       "descriptions": {
         "zh-CN": "设置托盘图标闪烁",
-        "en-US": "Set blink property of system tray"
+        "en-US": "Set blink property of system tray",
+        "zh-TW": "設定托盤圖標閃烁",
+        "ja": "システムトレイの点滅プロパティを設定",
+        "ko": "시스템 트레이 깜빡임 속성 설정",
+        "es": "Establecer parpadeo de la bandeja del sistema",
+        "fr": "Définir le clignotement de la barre système",
+        "de": "Systemablage-Blinken setzen",
+        "pt-BR": "Definir piscamento da bandeja do sistema",
+        "ru": "Установить мигание системного трея",
+        "ar": "تعيين خاصية الوميض لشريط النظام",
+        "hi": "सिस्टम ट्रे ब्लिंक सेट करें"
       },
       "group": "display",
       "description": "Set blink property of system tray"
@@ -444,7 +884,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "托盘 ID",
-            "en-US": "Tray ID"
+            "en-US": "Tray ID",
+            "zh-TW": "托盤 ID",
+            "ja": "トレイID",
+            "ko": "트레이 ID",
+            "es": "ID de bandeja",
+            "fr": "ID du plateau",
+            "de": "Tray-ID",
+            "pt-BR": "ID da bandeja",
+            "ru": "ID трея",
+            "ar": "معرف الدرج",
+            "hi": "ट्रे ID"
           }
         },
         {
@@ -452,7 +902,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "角标文本",
-            "en-US": "Badge text"
+            "en-US": "Badge text",
+            "zh-TW": "角標文字",
+            "ja": "バッジテキスト",
+            "ko": "배지 텍스트",
+            "es": "Texto de la insignia",
+            "fr": "Texte du badge",
+            "de": "Badge-Text",
+            "pt-BR": "Texto do badge",
+            "ru": "Текст значка",
+            "ar": "نص الشارة",
+            "hi": "बैज टेक्स्ट"
           }
         }
       ],
@@ -460,14 +920,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "tray.setBadge",
       "descriptions": {
         "zh-CN": "设置托盘图标角标",
-        "en-US": "Set badge property of system tray"
+        "en-US": "Set badge property of system tray",
+        "zh-TW": "設定托盤圖標角標",
+        "ja": "システムトレイのバッジプロパティを設定",
+        "ko": "시스템 트레이 배지 속성 설정",
+        "es": "Establecer insignia de la bandeja del sistema",
+        "fr": "Définir le badge de la barre système",
+        "de": "Systemablage-Badge setzen",
+        "pt-BR": "Definir badge da bandeja do sistema",
+        "ru": "Установить значок системного трея",
+        "ar": "تعيين شارة شريط النظام",
+        "hi": "सिस्टम ट्रे बैज सेट करें"
       },
       "group": "badge",
       "description": "Set badge property of system tray"
@@ -480,13 +960,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "托盘列表",
-          "en-US": "Tray list"
+          "en-US": "Tray list",
+          "zh-TW": "托盤列表",
+          "ja": "トレイ一覧",
+          "ko": "트레이 목록",
+          "es": "Lista de bandeja",
+          "fr": "Liste de la barre",
+          "de": "Tray-Liste",
+          "pt-BR": "Lista da bandeja",
+          "ru": "Список трея",
+          "ar": "قائمة شريط النظام",
+          "hi": "ट्रे सूची"
         }
       },
       "bridge_path": "tray.list",
       "descriptions": {
         "zh-CN": "列出所有已创建的托盘图标实例",
-        "en-US": "List all created tray icon instances"
+        "en-US": "List all created tray icon instances",
+        "zh-TW": "列出所有已建立的托盤圖標實例",
+        "ja": "作成されたすべてのトレイアイコンインスタンスを一覧表示",
+        "ko": "생성된 모든 트레이 아이콘 인스턴스 나열",
+        "es": "Listar todas las instancias de icono de bandeja creadas",
+        "fr": "Lister toutes les instances d'icône de barre créées",
+        "de": "Alle erstellten Tray-Symbol-Instanzen auflisten",
+        "pt-BR": "Listar todas as instâncias de ícone da bandeja criadas",
+        "ru": "Список всех созданных экземпляров значков трея",
+        "ar": "سرد جميع مثيلات أيقونات شريط النظام",
+        "hi": "सभी बनाए गए ट्रे आइकन इंस्टेंस सूचीबद्ध करें"
       },
       "group": "display",
       "description": "List all created tray icon instances"
@@ -499,13 +999,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "未处理的菜单点击事件ID列表",
-          "en-US": "List of unhandled menu click event IDs"
+          "en-US": "List of unhandled menu click event IDs",
+          "zh-TW": "未處理的選單點击事件ID列表",
+          "ja": "未処理のメニュークリックイベントIDのリスト",
+          "ko": "처리되지 않은 메뉴 클릭 이벤트 ID 목록",
+          "es": "Lista de IDs de eventos de clic no procesados",
+          "fr": "Liste des IDs d'événements de clic non traités",
+          "de": "Liste unbehandelter Menü-Klick-Event-IDs",
+          "pt-BR": "Lista de IDs de eventos de clique não processados",
+          "ru": "Список необработанных ID событий клика",
+          "ar": "قائمة معرفات أحداث النقر غير المعالجة",
+          "hi": "अनहैंडल्ड मेनू क्लिक इवेंट ID की सूची"
         }
       },
       "bridge_path": "tray.poll_events",
       "descriptions": {
         "zh-CN": "轮询获取托盘菜单点击事件",
-        "en-US": "Poll tray menu click events"
+        "en-US": "Poll tray menu click events",
+        "zh-TW": "轮询取得托盤選單點击事件",
+        "ja": "トレイメニュークリックイベントをポーリング",
+        "ko": "트레이 메뉴 클릭 이벤트 폴링",
+        "es": "Sondear eventos de clic del menú de bandeja",
+        "fr": "Interroger les événements de clic du menu de barre",
+        "de": "Tray-Menü-Klickereignisse abfragen",
+        "pt-BR": "Verificar eventos de clique do menu da bandeja",
+        "ru": "Опрос событий клика меню трея",
+        "ar": "استقصاء أحداث نقر قائمة شريط النظام",
+        "hi": "ट्रे मेनू क्लिक इवेंट पोलिंग"
       },
       "group": "event",
       "description": "Poll tray menu click events"
@@ -513,14 +1033,34 @@
   ],
   "overviews": {
     "zh-CN": "提供系统托盘图标管理能力，包括托盘图标的创建/更新/删除、菜单管理、气泡通知、点击事件处理等功能。",
-    "en-US": "System tray icon management including create/update/delete tray icons, menu management, balloon notifications, and click event handling."
+    "en-US": "System tray icon management including create/update/delete tray icons, menu management, balloon notifications, and click event handling.",
+    "zh-TW": "提供系統托盘图標管理能力，包括托盘图標的建立/更新/刪除、菜單管理、氣泡通知、点擊事件處理等功能。",
+    "ja": "システムトレイアイコン管理：作成/更新/削除・メニュー管理・バルーン通知・クリックイベント処理。",
+    "ko": "시스템 트레이 아이콘 관리: 생성/업데이트/삭제, 메뉴, 풍선 알림, 클릭 이벤트 처리.",
+    "es": "Icono de bandeja del sistema: crear/actualizar/eliminar, menú, notificaciones globo y eventos de clic.",
+    "fr": "Icône de barre d'état : créer/modifier/supprimer, menu, bulles de notification et événements de clic.",
+    "de": "Systemtray-Icons: Erstellen/Aktualisieren/Löschen, Menü, Balloon-Benachrichtigungen und Klickereignisse.",
+    "pt-BR": "Ícone da bandeja do sistema: criar/atualizar/excluir, menu, notificações balão e eventos de clique.",
+    "ru": "Иконка в системном трее: создание/обновление/удаление, меню, всплывающие уведомления и обработка кликов.",
+    "ar": "أيقونة علبة النظام: إنشاء/تحديث/حذف وقائمة وإشعارات فقاعية ومعالجة أحداث النقر.",
+    "hi": "सिस्टम ट्रे आइकन: बनाना/अपडेट/हटाना, मेन्यू, बैलून नोटिफिकेशन और क्लिक इवेंट।"
   },
   "types": [
     {
       "name": "TrayMenuItem",
       "descriptions": {
         "zh-CN": "托盘菜单项定义",
-        "en-US": "Tray menu item definition"
+        "en-US": "Tray menu item definition",
+        "zh-TW": "托盘菜單项定義",
+        "ja": "トレイメニュー項目定義",
+        "ko": "트레이 메뉴 항목 정의",
+        "es": "Definición de elemento del menú de la bandeja",
+        "fr": "Définition d'élément du menu du bac",
+        "de": "Tray-Menüelement-Definition",
+        "pt-BR": "Definição de item do menu da bandeja",
+        "ru": "Определение пункта меню лотка",
+        "ar": "تعريف عنصر قائمة العلبة",
+        "hi": "ट्रे मेनू आइटम परिभाषा"
       },
       "fields": [
         {
@@ -528,7 +1068,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "菜单项唯一标识",
-            "en-US": "Menu item unique ID"
+            "en-US": "Menu item unique ID",
+            "zh-TW": "菜單项唯一標識",
+            "ja": "メニュー項目一意ID",
+            "ko": "메뉴 항목 고유 ID",
+            "es": "ID único del elemento de menú",
+            "fr": "ID unique de l'élément de menu",
+            "de": "Eindeutige Menüelement-ID",
+            "pt-BR": "ID único do item de menu",
+            "ru": "Уникальный ID пункта меню",
+            "ar": "المعرّف الفريد لعنصر القائمة",
+            "hi": "मेनू आइटम यूनिक ID"
           }
         },
         {
@@ -536,7 +1086,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "显示文本",
-            "en-US": "Display text"
+            "en-US": "Display text",
+            "zh-TW": "顯示文本",
+            "ja": "表示テキスト",
+            "ko": "표시 텍스트",
+            "es": "Texto de visualización",
+            "fr": "Texte d'affichage",
+            "de": "Anzeigetext",
+            "pt-BR": "Texto de exibição",
+            "ru": "Отображаемый текст",
+            "ar": "نص العرض",
+            "hi": "प्रदर्शन टेक्स्ट"
           }
         },
         {
@@ -544,7 +1104,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否启用",
-            "en-US": "Whether enabled"
+            "en-US": "Whether enabled",
+            "zh-TW": "是否啟用",
+            "ja": "有効かどうか",
+            "ko": "활성화 여부",
+            "es": "Si está habilitado",
+            "fr": "Si activé",
+            "de": "Ob aktiviert",
+            "pt-BR": "Se habilitado",
+            "ru": "Включено или нет",
+            "ar": "ما إذا كان مُفعّلاً",
+            "hi": "सक्षम है या नहीं"
           }
         },
         {
@@ -552,7 +1122,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否选中（复选菜单）",
-            "en-US": "Whether checked"
+            "en-US": "Whether checked",
+            "zh-TW": "是否選中（复選菜單）",
+            "ja": "チェック済みかどうか",
+            "ko": "체크 여부",
+            "es": "Si está marcado",
+            "fr": "Si coché",
+            "de": "Ob aktiviert",
+            "pt-BR": "Se marcado",
+            "ru": "Отмечено или нет",
+            "ar": "ما إذا كان محدداً",
+            "hi": "चेक किया गया है या नहीं"
           },
           "optional": true
         }
@@ -562,7 +1142,17 @@
       "name": "TrayHandle",
       "descriptions": {
         "zh-CN": "托盘图标句柄",
-        "en-US": "Tray icon handle"
+        "en-US": "Tray icon handle",
+        "zh-TW": "托盘图標句柄",
+        "ja": "トレイアイコンハンドル",
+        "ko": "트레이 아이콘 핸들",
+        "es": "Manejador del icono de la bandeja",
+        "fr": "Handle de l'icône du bac",
+        "de": "Tray-Symbol-Handle",
+        "pt-BR": "Handle do ícone da bandeja",
+        "ru": "Дескриптор значка лотка",
+        "ar": "مقبض أيقونة العلبة",
+        "hi": "ट्रे आइकन हैंडल"
       },
       "fields": [
         {
@@ -570,7 +1160,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "托盘ID",
-            "en-US": "Tray ID"
+            "en-US": "Tray ID",
+            "zh-TW": "托盘ID",
+            "ja": "トレイID",
+            "ko": "트레이 ID",
+            "es": "ID de la bandeja",
+            "fr": "ID du bac",
+            "de": "Tray-ID",
+            "pt-BR": "ID da bandeja",
+            "ru": "ID лотка",
+            "ar": "معرّف العلبة",
+            "hi": "ट्रे ID"
           }
         }
       ]
@@ -579,7 +1179,17 @@
       "name": "MenuItemProps",
       "descriptions": {
         "zh-CN": "菜单项属性",
-        "en-US": "Menu item properties"
+        "en-US": "Menu item properties",
+        "zh-TW": "菜單项屬性",
+        "ja": "メニュー項目プロパティ",
+        "ko": "메뉴 항목 속성",
+        "es": "Propiedades del elemento de menú",
+        "fr": "Propriétés de l'élément de menu",
+        "de": "Menüelement-Eigenschaften",
+        "pt-BR": "Propriedades do item de menu",
+        "ru": "Свойства пункта меню",
+        "ar": "خصائص عنصر القائمة",
+        "hi": "मेनू आइटम गुण"
       },
       "fields": [
         {
@@ -587,7 +1197,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "显示文本",
-            "en-US": "Display text"
+            "en-US": "Display text",
+            "zh-TW": "顯示文本",
+            "ja": "表示テキスト",
+            "ko": "표시 텍스트",
+            "es": "Texto de visualización",
+            "fr": "Texte d'affichage",
+            "de": "Anzeigetext",
+            "pt-BR": "Texto de exibição",
+            "ru": "Отображаемый текст",
+            "ar": "نص العرض",
+            "hi": "प्रदर्शन टेक्स्ट"
           },
           "optional": true
         },
@@ -596,7 +1216,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否可用",
-            "en-US": "Whether enabled"
+            "en-US": "Whether enabled",
+            "zh-TW": "是否可用",
+            "ja": "有効かどうか",
+            "ko": "활성화 여부",
+            "es": "Si está habilitado",
+            "fr": "Si activé",
+            "de": "Ob aktiviert",
+            "pt-BR": "Se habilitado",
+            "ru": "Включено или нет",
+            "ar": "ما إذا كان مُفعّلاً",
+            "hi": "सक्षम है या नहीं"
           },
           "optional": true
         },
@@ -605,7 +1235,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否选中",
-            "en-US": "Whether checked"
+            "en-US": "Whether checked",
+            "zh-TW": "是否選中",
+            "ja": "チェック済みかどうか",
+            "ko": "체크 여부",
+            "es": "Si está marcado",
+            "fr": "Si coché",
+            "de": "Ob aktiviert",
+            "pt-BR": "Se marcado",
+            "ru": "Отмечено или нет",
+            "ar": "ما إذا كان محدداً",
+            "hi": "चेक किया गया है या नहीं"
           },
           "optional": true
         },
@@ -614,7 +1254,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图标路径",
-            "en-US": "Icon path"
+            "en-US": "Icon path",
+            "zh-TW": "图標路徑",
+            "ja": "アイコンパス",
+            "ko": "아이콘 경로",
+            "es": "Ruta del icono",
+            "fr": "Chemin de l'icône",
+            "de": "Symbolpfad",
+            "pt-BR": "Caminho do ícone",
+            "ru": "Путь к иконке",
+            "ar": "مسار الأيقونة",
+            "hi": "आइकन पथ"
           },
           "optional": true
         }
@@ -626,7 +1276,17 @@
       "name": "tray_menu_clicked",
       "descriptions": {
         "zh-CN": "托盘菜单项被点击",
-        "en-US": "Tray menu item clicked"
+        "en-US": "Tray menu item clicked",
+        "zh-TW": "托盘菜單项被点擊",
+        "ja": "トレイメニュー項目がクリックされました",
+        "ko": "트레이 메뉴 항목이 클릭됨",
+        "es": "Elemento del menú de la bandeja clicado",
+        "fr": "Élément du menu du bac cliqué",
+        "de": "Tray-Menüelement angeklickt",
+        "pt-BR": "Item do menu da bandeja clicado",
+        "ru": "Пункт меню лотка нажат",
+        "ar": "تم النقر على عنصر قائمة العلبة",
+        "hi": "ट्रे मेनू आइटम क्लिक किया गया"
       },
       "payload": [
         {
@@ -634,7 +1294,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "被点击的菜单项ID",
-            "en-US": "Clicked menu item ID"
+            "en-US": "Clicked menu item ID",
+            "zh-TW": "被點擊的選單項ID",
+            "ja": "クリックされたメニュー項目ID",
+            "ko": "클릭된 메뉴 항목 ID",
+            "es": "ID del elemento de menú clicado",
+            "fr": "ID de l'élément de menu cliqué",
+            "de": "ID des angeklickten Menüeintrags",
+            "pt-BR": "ID do item de menu clicado",
+            "ru": "ID нажатого пункта меню",
+            "ar": "معرف عنصر القائمة المنقور",
+            "hi": "क्लिक किया गया मेनू आइटम ID"
           }
         }
       ]
@@ -643,7 +1313,17 @@
       "name": "tray_clicked",
       "descriptions": {
         "zh-CN": "托盘图标被点击",
-        "en-US": "Tray icon clicked"
+        "en-US": "Tray icon clicked",
+        "zh-TW": "托盘图標被点擊",
+        "ja": "トレイアイコンがクリックされました",
+        "ko": "트레이 아이콘이 클릭됨",
+        "es": "Icono de la bandeja clicado",
+        "fr": "Icône du bac cliquée",
+        "de": "Tray-Symbol angeklickt",
+        "pt-BR": "Ícone da bandeja clicado",
+        "ru": "Значок лотка нажат",
+        "ar": "تم النقر على أيقونة العلبة",
+        "hi": "ट्रे आइकन क्लिक किया गया"
       },
       "payload": [
         {
@@ -651,7 +1331,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "点击位置X坐标",
-            "en-US": "Click X position"
+            "en-US": "Click X position",
+            "zh-TW": "點擊位置X座標",
+            "ja": "クリック位置X座標",
+            "ko": "클릭 X 좌표",
+            "es": "Posición X del clic",
+            "fr": "Position X du clic",
+            "de": "Klick-X-Position",
+            "pt-BR": "Posição X do clique",
+            "ru": "Позиция X клика",
+            "ar": "موضع النقر X",
+            "hi": "क्लिक X स्थिति"
           }
         },
         {
@@ -659,7 +1349,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "点击位置Y坐标",
-            "en-US": "Click Y position"
+            "en-US": "Click Y position",
+            "zh-TW": "點擊位置Y座標",
+            "ja": "クリック位置Y座標",
+            "ko": "클릭 Y 좌표",
+            "es": "Posición Y del clic",
+            "fr": "Position Y du clic",
+            "de": "Klick-Y-Position",
+            "pt-BR": "Posição Y do clique",
+            "ru": "Позиция Y клика",
+            "ar": "موضع النقر Y",
+            "hi": "क्लिक Y स्थिति"
           }
         }
       ]
@@ -668,7 +1368,17 @@
       "name": "tray_click",
       "descriptions": {
         "zh-CN": "托盘图标被点击",
-        "en-US": "Tray icon clicked"
+        "en-US": "Tray icon clicked",
+        "zh-TW": "托盘图標被点擊",
+        "ja": "トレイアイコンがクリックされました",
+        "ko": "트레이 아이콘이 클릭됨",
+        "es": "Icono de la bandeja clicado",
+        "fr": "Icône du bac cliquée",
+        "de": "Tray-Symbol angeklickt",
+        "pt-BR": "Ícone da bandeja clicado",
+        "ru": "Значок лотка нажат",
+        "ar": "تم النقر على أيقونة العلبة",
+        "hi": "ट्रे आइकन क्लिक किया गया"
       },
       "payload": [
         {
@@ -676,7 +1386,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "托盘ID",
-            "en-US": "Tray ID"
+            "en-US": "Tray ID",
+            "zh-TW": "托盤ID",
+            "ja": "トレイID",
+            "ko": "트레이 ID",
+            "es": "ID de bandeja",
+            "fr": "ID du plateau",
+            "de": "Tray-ID",
+            "pt-BR": "ID da bandeja",
+            "ru": "ID трея",
+            "ar": "معرف صينية النظام",
+            "hi": "ट्रे ID"
           }
         },
         {
@@ -684,7 +1404,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "鼠标按键(left/right)",
-            "en-US": "Mouse button (left/right)"
+            "en-US": "Mouse button (left/right)",
+            "zh-TW": "滑鼠按鍵(left/right)",
+            "ja": "マウスボタン(left/right)",
+            "ko": "마우스 버튼(left/right)",
+            "es": "Botón del ratón (left/right)",
+            "fr": "Bouton de souris (left/right)",
+            "de": "Maustaste (left/right)",
+            "pt-BR": "Botão do mouse (left/right)",
+            "ru": "Кнопка мыши (left/right)",
+            "ar": "زر الفأرة (left/right)",
+            "hi": "माउस बटन (left/right)"
           }
         }
       ]
@@ -693,7 +1423,17 @@
       "name": "menu_click",
       "descriptions": {
         "zh-CN": "托盘菜单项被点击",
-        "en-US": "Tray menu item clicked"
+        "en-US": "Tray menu item clicked",
+        "zh-TW": "托盘菜單项被点擊",
+        "ja": "トレイメニュー項目がクリックされました",
+        "ko": "트레이 메뉴 항목이 클릭됨",
+        "es": "Elemento del menú de la bandeja clicado",
+        "fr": "Élément du menu du bac cliqué",
+        "de": "Tray-Menüelement angeklickt",
+        "pt-BR": "Item do menu da bandeja clicado",
+        "ru": "Пункт меню лотка нажат",
+        "ar": "تم النقر على عنصر قائمة العلبة",
+        "hi": "ट्रे मेनू आइटम क्लिक किया गया"
       },
       "payload": [
         {
@@ -701,7 +1441,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "托盘ID",
-            "en-US": "Tray ID"
+            "en-US": "Tray ID",
+            "zh-TW": "托盤ID",
+            "ja": "トレイID",
+            "ko": "트레이 ID",
+            "es": "ID de bandeja",
+            "fr": "ID du plateau",
+            "de": "Tray-ID",
+            "pt-BR": "ID da bandeja",
+            "ru": "ID трея",
+            "ar": "معرف صينية النظام",
+            "hi": "ट्रे ID"
           }
         },
         {
@@ -709,7 +1459,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "菜单项ID",
-            "en-US": "Menu item ID"
+            "en-US": "Menu item ID",
+            "zh-TW": "選單項ID",
+            "ja": "メニュー項目ID",
+            "ko": "메뉴 항목 ID",
+            "es": "ID del elemento de menú",
+            "fr": "ID de l'élément de menu",
+            "de": "Menüeintrag-ID",
+            "pt-BR": "ID do item de menu",
+            "ru": "ID пункта меню",
+            "ar": "معرف عنصر القائمة",
+            "hi": "मेनू आइटम ID"
           }
         }
       ]

@@ -32,13 +32,33 @@
         "type": "BatteryStatus",
         "descs": {
           "zh-CN": "电池信息",
-          "en-US": "Battery info"
+          "en-US": "Battery info",
+          "zh-TW": "電池資訊",
+          "ja": "电池情報",
+          "ko": "배터리 정보",
+          "es": "Información de batería",
+          "fr": "Informations de batterie",
+          "de": "Batterieinformationen",
+          "pt-BR": "Informações da bateria",
+          "ru": "Информация о батарее",
+          "ar": "معلومات البطارية",
+          "hi": "बैटरी जानकारी"
         }
       },
       "bridge_path": "power.batteryStatus",
       "descriptions": {
         "zh-CN": "获取电池电量、充电状态等信息",
-        "en-US": "Battery status of power"
+        "en-US": "Battery status of power",
+        "zh-TW": "取得電池電量、充電狀態等資訊",
+        "ja": "取得する电池电量、充电ステータス等情報",
+        "ko": "전원 배터리 상태",
+        "es": "Estado de batería",
+        "fr": "État de la batterie",
+        "de": "Batteriestatus",
+        "pt-BR": "Status da bateria",
+        "ru": "Состояние батареи",
+        "ar": "حالة البطارية",
+        "hi": "पावर बैटरी स्थिति"
       },
       "group": "info",
       "description": "Battery status of power"
@@ -51,13 +71,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "使用电池",
-          "en-US": "On battery"
+          "en-US": "On battery",
+          "zh-TW": "使用電池",
+          "ja": "バッテリー駆動",
+          "ko": "배터리 사용 중",
+          "es": "Con batería",
+          "fr": "Sur batterie",
+          "de": "Auf Akku",
+          "pt-BR": "Na bateria",
+          "ru": "На батарее",
+          "ar": "على البطارية",
+          "hi": "बैटरी पर"
         }
       },
       "bridge_path": "power.isOnBattery",
       "descriptions": {
         "zh-CN": "检查当前是否使用电池供电",
-        "en-US": "Check if power on battery"
+        "en-US": "Check if power on battery",
+        "zh-TW": "檢查當前是否使用電池供電",
+        "ja": "チェックする現でかどうか使用电池供电",
+        "ko": "배터리 전원인지 확인",
+        "es": "Verificar si usa batería",
+        "fr": "Vérifier si sur batterie",
+        "de": "Akku-Betrieb prüfen",
+        "pt-BR": "Verificar se está na bateria",
+        "ru": "Проверить работу от батареи",
+        "ar": "التحقق من التشغيل بالبطارية",
+        "hi": "बैटरी पर है जांचें"
       },
       "group": "info",
       "description": "Check if power on battery"
@@ -71,7 +111,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "阻止休眠的原因说明",
-            "en-US": "Reason for preventing sleep"
+            "en-US": "Reason for preventing sleep",
+            "zh-TW": "阻止休眠的原因說明",
+            "ja": "スリープ防止の理由",
+            "ko": "절전 모드 방지 이유",
+            "es": "Razón para prevenir suspensión",
+            "fr": "Raison de la prévention de mise en veille",
+            "de": "Grund für Ruhezustand-Verhinderung",
+            "pt-BR": "Motivo para prevenir suspensão",
+            "ru": "Причина предотвращения сна",
+            "ar": "سبب منع السكون",
+            "hi": "स्लीप रोकने का कारण"
           },
           "desc": "Reason for preventing sleep"
         }
@@ -80,13 +130,33 @@
         "type": "SleepLock",
         "descs": {
           "zh-CN": "锁定 ID",
-          "en-US": "Lock ID"
+          "en-US": "Lock ID",
+          "zh-TW": "鎖定 ID",
+          "ja": "ロックID",
+          "ko": "잠금 ID",
+          "es": "ID de bloqueo",
+          "fr": "ID de verrouillage",
+          "de": "Sperr-ID",
+          "pt-BR": "ID do bloqueio",
+          "ru": "ID блокировки",
+          "ar": "معرف القفل",
+          "hi": "लॉक ID"
         }
       },
       "bridge_path": "power.preventSleep",
       "descriptions": {
         "zh-CN": "阻止系统进入休眠状态",
-        "en-US": "Prevent sleep of power"
+        "en-US": "Prevent sleep of power",
+        "zh-TW": "阻止系統進入休眠狀態",
+        "ja": "システムのスリープを防止",
+        "ko": "절전 모드 방지",
+        "es": "Prevenir suspensión del sistema",
+        "fr": "Empêcher la mise en veille",
+        "de": "Ruhezustand verhindern",
+        "pt-BR": "Prevenir suspensão do sistema",
+        "ru": "Предотвратить спящий режим",
+        "ar": "منع وضع السكون",
+        "hi": "स्लीप मोड रोकें"
       },
       "group": "control",
       "description": "Prevent sleep of power"
@@ -100,7 +170,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "锁定 ID",
-            "en-US": "Lock ID"
+            "en-US": "Lock ID",
+            "zh-TW": "鎖定 ID",
+            "ja": "ロックID",
+            "ko": "잠금 ID",
+            "es": "ID de bloqueo",
+            "fr": "ID de verrouillage",
+            "de": "Sperr-ID",
+            "pt-BR": "ID do bloqueio",
+            "ru": "ID блокировки",
+            "ar": "معرف القفل",
+            "hi": "लॉक ID"
           }
         }
       ],
@@ -108,14 +188,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "power.allowSleep",
       "descriptions": {
         "zh-CN": "允许系统恢复休眠（释放锁定）",
-        "en-US": "Allow sleep of power"
+        "en-US": "Allow sleep of power",
+        "zh-TW": "允許系統恢複休眠（釋放鎖定）",
+        "ja": "システムのスリープを許可（ロック解除）",
+        "ko": "전원 절전 허용",
+        "es": "Permitir suspensión",
+        "fr": "Autoriser la mise en veille",
+        "de": "Energiesparmodus zulassen",
+        "pt-BR": "Permitir suspensão",
+        "ru": "Разрешить спящий режим",
+        "ar": "السماح بالسكون",
+        "hi": "स्लीप अनुमति दें"
       },
       "group": "control",
       "description": "Allow sleep of power"
@@ -128,14 +228,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "power.screenOff",
       "descriptions": {
         "zh-CN": "关闭屏幕显示",
-        "en-US": "Screen off of power"
+        "en-US": "Screen off of power",
+        "zh-TW": "關閉屏幕顯示",
+        "ja": "画面をオフにする",
+        "ko": "화면 끄기",
+        "es": "Apagar pantalla",
+        "fr": "Éteindre l'écran",
+        "de": "Bildschirm ausschalten",
+        "pt-BR": "Desligar tela",
+        "ru": "Выключить экран",
+        "ar": "إطفاء الشاشة",
+        "hi": "स्क्रीन बंद करें"
       },
       "group": "control",
       "description": "Screen off of power"
@@ -148,13 +268,33 @@
         "type": "number",
         "descs": {
           "zh-CN": "空闲秒数",
-          "en-US": "Idle seconds"
+          "en-US": "Idle seconds",
+          "zh-TW": "空闲秒數",
+          "ja": "アイドル秒数",
+          "ko": "유휴 시간(초)",
+          "es": "Segundos de inactividad",
+          "fr": "Secondes d'inactivité",
+          "de": "Leerlauf-Sekunden",
+          "pt-BR": "Segundos de inatividade",
+          "ru": "Секунды простоя",
+          "ar": "ثواني الخمول",
+          "hi": "निष्क्रिय सेकंड"
         }
       },
       "bridge_path": "power.idleTime",
       "descriptions": {
         "zh-CN": "获取系统空闲时间（秒）",
-        "en-US": "Idle time of power"
+        "en-US": "Idle time of power",
+        "zh-TW": "取得系統空闲時間（秒）",
+        "ja": "取得するシステム空闲时间（秒）",
+        "ko": "전원 유휴 시간",
+        "es": "Tiempo de inactividad de energía",
+        "fr": "Temps d'inactivité de l'alimentation",
+        "de": "Leerlaufzeit der Stromversorgung",
+        "pt-BR": "Tempo ocioso de energia",
+        "ru": "Время простоя питания",
+        "ar": "وقت الخمول للطاقة",
+        "hi": "पावर आइडल टाइम"
       },
       "group": "info",
       "description": "Idle time of power"
@@ -168,7 +308,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           }
         }
       ],
@@ -176,13 +326,33 @@
         "type": "PowerWatcher",
         "descs": {
           "zh-CN": "监视器 ID",
-          "en-US": "Watcher ID"
+          "en-US": "Watcher ID",
+          "zh-TW": "監視器 ID",
+          "ja": "ウォッチャーID",
+          "ko": "감시자 ID",
+          "es": "ID del observador",
+          "fr": "ID de l'observateur",
+          "de": "Watcher-ID",
+          "pt-BR": "ID do observador",
+          "ru": "ID наблюдателя",
+          "ar": "معرف المراقب",
+          "hi": "वॉचर ID"
         }
       },
       "bridge_path": "power.onPowerChange",
       "descriptions": {
         "zh-CN": "监听电源状态变化事件",
-        "en-US": "Listen for power change event on power"
+        "en-US": "Listen for power change event on power",
+        "zh-TW": "監聽電源狀態變化事件",
+        "ja": "電源変更イベントを監視",
+        "ko": "전원 변경 이벤트 수신 대기",
+        "es": "Escuchar evento de cambio de energía",
+        "fr": "Écouter l'événement de changement d'alimentation",
+        "de": "Energieänderungs-Ereignis überwachen",
+        "pt-BR": "Ouvir evento de mudança de energia",
+        "ru": "Слушать события изменения питания",
+        "ar": "الاستماع لحدث تغيير الطاقة",
+        "hi": "पावर परिवर्तन इवेंट सुनें"
       },
       "group": "event",
       "description": "Listen for power change event on power"
@@ -196,7 +366,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "监视器 ID",
-            "en-US": "Watcher ID"
+            "en-US": "Watcher ID",
+            "zh-TW": "監視器 ID",
+            "ja": "ウォッチャーID",
+            "ko": "감시자 ID",
+            "es": "ID del observador",
+            "fr": "ID de l'observateur",
+            "de": "Watcher-ID",
+            "pt-BR": "ID do observador",
+            "ru": "ID наблюдателя",
+            "ar": "معرف المراقب",
+            "hi": "वॉचर ID"
           }
         }
       ],
@@ -204,14 +384,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "power.offPowerChange",
       "descriptions": {
         "zh-CN": "取消监听电源状态变化事件",
-        "en-US": "Stop listening for power change event on power"
+        "en-US": "Stop listening for power change event on power",
+        "zh-TW": "取消監聽電源狀態變化事件",
+        "ja": "電源変更イベントの監視を停止",
+        "ko": "전원 변경 이벤트 수신 대기 중지",
+        "es": "Dejar de escuchar evento de cambio de energía",
+        "fr": "Arrêter l'écoute de l'événement de changement d'alimentation",
+        "de": "Überwachung der Energieänderung beenden",
+        "pt-BR": "Parar de ouvir evento de mudança de energia",
+        "ru": "Прекратить слушать события изменения питания",
+        "ar": "التوقف عن الاستماع لحدث تغيير الطاقة",
+        "hi": "पावर परिवर्तन इवेंट सुनना बंद करें"
       },
       "group": "event",
       "description": "Stop listening for power change event on power"
@@ -224,13 +424,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "活跃的锁",
-          "en-US": "Active locks"
+          "en-US": "Active locks",
+          "zh-TW": "活躍的鎖",
+          "ja": "アクティブなロック",
+          "ko": "활성 잠금",
+          "es": "Bloqueos activos",
+          "fr": "Verrous actifs",
+          "de": "Aktive Sperren",
+          "pt-BR": "Bloqueios ativos",
+          "ru": "Активные блокировки",
+          "ar": "الأقفال النشطة",
+          "hi": "सक्रिय लॉक"
         }
       },
       "bridge_path": "power.listLocks",
       "descriptions": {
         "zh-CN": "列出所有活跃的休眠锁定",
-        "en-US": "List locks of power"
+        "en-US": "List locks of power",
+        "zh-TW": "列出所有活躍的休眠鎖定",
+        "ja": "電源ロック一覧",
+        "ko": "전원 잠금 목록",
+        "es": "Listar bloqueos de energía",
+        "fr": "Lister les verrous d'alimentation",
+        "de": "Energiesperren auflisten",
+        "pt-BR": "Listar bloqueios de energia",
+        "ru": "Список блокировок питания",
+        "ar": "قائمة أقفال الطاقة",
+        "hi": "पावर लॉक सूचीबद्ध करें"
       },
       "group": "info",
       "description": "List locks of power"
@@ -238,14 +458,34 @@
   ],
   "overviews": {
     "zh-CN": "提供电源管理能力，包括获取电池状态、充电信息、电源类型检测、系统休眠/唤醒控制、电源事件监听、节能模式管理等功能。",
-    "en-US": "Power management including battery status, charging info, power source detection, sleep/wake control, power event monitoring, and energy saver management."
+    "en-US": "Power management including battery status, charging info, power source detection, sleep/wake control, power event monitoring, and energy saver management.",
+    "zh-TW": "提供電源管理能力，包括取得電池狀態、充電資訊、電源類型檢測、系統休眠/喚醒控制、電源事件監听、節能模式管理等功能。",
+    "ja": "電源管理：バッテリー状態・充電情報・電源検出・スリープ/スリープ解除・電源イベント監視・省エネ管理。",
+    "ko": "전원 관리: 배터리 상태, 충전 정보, 전원 감지, 절전/깨우기, 전원 이벤트 모니터링, 절전 관리.",
+    "es": "Gestión de energía: batería, carga, detección de fuente, suspensión/activación, monitoreo y ahorro de energía.",
+    "fr": "Gestion de l'énergie : batterie, charge, source, veille/réveil, surveillance et économie d'énergie.",
+    "de": "Energieverwaltung: Batteriestatus, Ladung, Quellerkennung, Schlaf/Aufwachen, Überwachung und Energiesparen.",
+    "pt-BR": "Gerenciamento de energia: bateria, carregamento, detecção de fonte, suspensão/despertar, monitoramento e economia.",
+    "ru": "Управление питанием: батарея, зарядка, источник, сон/пробуждение, мониторинг событий и энергосбережение.",
+    "ar": "إدارة الطاقة: بطارية وشحن واكتشاف مصدر وسكون/استيقاظ ومراقبة وتوفير طاقة.",
+    "hi": "पावर मैनेजमेंट: बैटरी, चार्जिंग, सोर्स डिटेक्शन, स्लीप/वेक, इवेंट मॉनिटरिंग और एनर्जी सेवर।"
   },
   "events": [
     {
       "name": "power_change",
       "descriptions": {
         "zh-CN": "电源状态变更",
-        "en-US": "Power state changed"
+        "en-US": "Power state changed",
+        "zh-TW": "電源狀態變更",
+        "ja": "電源状態が変更されました",
+        "ko": "전원 상태가 변경됨",
+        "es": "Estado de energía cambiado",
+        "fr": "État d'alimentation modifié",
+        "de": "Energiestatus geändert",
+        "pt-BR": "Estado de energia alterado",
+        "ru": "Состояние питания изменено",
+        "ar": "تم تغيير حالة الطاقة",
+        "hi": "पावर स्थिति बदल गई"
       },
       "payload": [
         {
@@ -253,7 +493,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否使用电池",
-            "en-US": "Is on battery"
+            "en-US": "Is on battery",
+            "zh-TW": "是否使用電池",
+            "ja": "バッテリー駆動かどうか",
+            "ko": "배터리 사용 여부",
+            "es": "Está con batería",
+            "fr": "Sur batterie",
+            "de": "Auf Akku",
+            "pt-BR": "Está na bateria",
+            "ru": "Работает от батареи",
+            "ar": "هل يعمل على البطارية",
+            "hi": "बैटरी पर है"
           }
         },
         {
@@ -261,7 +511,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "电量百分比",
-            "en-US": "Battery level %"
+            "en-US": "Battery level %",
+            "zh-TW": "電量百分比",
+            "ja": "バッテリー残量%",
+            "ko": "배터리 잔량 %",
+            "es": "Nivel de batería %",
+            "fr": "Niveau de batterie %",
+            "de": "Akkustand %",
+            "pt-BR": "Nível de bateria %",
+            "ru": "Уровень заряда %",
+            "ar": "مستوى البطارية %",
+            "hi": "बैटरी स्तर %"
           }
         }
       ]
@@ -272,7 +532,17 @@
       "name": "BatteryStatus",
       "descriptions": {
         "zh-CN": "电池状态",
-        "en-US": "Battery status"
+        "en-US": "Battery status",
+        "zh-TW": "電池狀態",
+        "ja": "バッテリー状態",
+        "ko": "배터리 상태",
+        "es": "Estado de la batería",
+        "fr": "État de la batterie",
+        "de": "Akkustatus",
+        "pt-BR": "Status da bateria",
+        "ru": "Состояние батареи",
+        "ar": "حالة البطارية",
+        "hi": "बैटरी स्थिति"
       },
       "fields": [
         {
@@ -280,7 +550,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "电量(%)",
-            "en-US": "Level(%)"
+            "en-US": "Level(%)",
+            "zh-TW": "電量(%)",
+            "ja": "レベル(%)",
+            "ko": "레벨(%)",
+            "es": "Nivel(%)",
+            "fr": "Niveau(%)",
+            "de": "Niveau(%)",
+            "pt-BR": "Nível(%)",
+            "ru": "Уровень(%)",
+            "ar": "المستوى(%)",
+            "hi": "स्तर(%)"
           }
         },
         {
@@ -288,7 +568,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否充电",
-            "en-US": "Is charging"
+            "en-US": "Is charging",
+            "zh-TW": "是否充電",
+            "ja": "充電中かどうか",
+            "ko": "충전 중 여부",
+            "es": "Está cargando",
+            "fr": "En charge",
+            "de": "Wird geladen",
+            "pt-BR": "Está carregando",
+            "ru": "Заряжается",
+            "ar": "قيد الشحن",
+            "hi": "चार्ज हो रहा है"
           }
         },
         {
@@ -297,7 +587,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "剩余分钟",
-            "en-US": "Minutes remaining"
+            "en-US": "Minutes remaining",
+            "zh-TW": "剩余分钟",
+            "ja": "残り分数",
+            "ko": "남은 분",
+            "es": "Minutos restantes",
+            "fr": "Minutes restantes",
+            "de": "Verbleibende Minuten",
+            "pt-BR": "Minutos restantes",
+            "ru": "Оставшиеся минуты",
+            "ar": "الدقائق المتبقية",
+            "hi": "शेष मिनट"
           }
         }
       ]
@@ -306,7 +606,17 @@
       "name": "SleepLock",
       "descriptions": {
         "zh-CN": "休眠锁",
-        "en-US": "Sleep lock"
+        "en-US": "Sleep lock",
+        "zh-TW": "休眠鎖",
+        "ja": "スリープロック",
+        "ko": "절전 잠금",
+        "es": "Bloqueo de suspensión",
+        "fr": "Verrouillage de veille",
+        "de": "Schlafsperre",
+        "pt-BR": "Bloqueio de suspensão",
+        "ru": "Блокировка сна",
+        "ar": "قفل السكون",
+        "hi": "स्लीप लॉक"
       },
       "fields": [
         {
@@ -314,7 +624,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "锁ID",
-            "en-US": "Lock ID"
+            "en-US": "Lock ID",
+            "zh-TW": "鎖ID",
+            "ja": "ロックID",
+            "ko": "잠금 ID",
+            "es": "ID de bloqueo",
+            "fr": "ID de verrouillage",
+            "de": "Sperr-ID",
+            "pt-BR": "ID de bloqueio",
+            "ru": "ID блокировки",
+            "ar": "معرّف القفل",
+            "hi": "लॉक ID"
           }
         }
       ]
@@ -323,7 +643,17 @@
       "name": "PowerWatcher",
       "descriptions": {
         "zh-CN": "电源变化监听器",
-        "en-US": "Power change watcher"
+        "en-US": "Power change watcher",
+        "zh-TW": "電源變化監听器",
+        "ja": "電源変更監視",
+        "ko": "전원 변경 감시자",
+        "es": "Monitor de cambio de energía",
+        "fr": "Surveillant de changement d'alimentation",
+        "de": "Energieänderungsüberwachung",
+        "pt-BR": "Monitor de mudança de energia",
+        "ru": "Наблюдатель изменений питания",
+        "ar": "مراقب تغيير الطاقة",
+        "hi": "पावर परिवर्तन वॉचर"
       },
       "fields": [
         {
@@ -331,7 +661,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "监视器ID",
-            "en-US": "Watcher ID"
+            "en-US": "Watcher ID",
+            "zh-TW": "監视器ID",
+            "ja": "ウォッチャーID",
+            "ko": "감시자 ID",
+            "es": "ID del vigilante",
+            "fr": "ID du surveillant",
+            "de": "Wächter-ID",
+            "pt-BR": "ID do monitor",
+            "ru": "ID наблюдателя",
+            "ar": "معرّف المراقب",
+            "hi": "वॉचर ID"
           }
         }
       ]

@@ -36,6 +36,11 @@ echo ""
 echo "Deploying to $LIB_DIR..."
 mkdir -p "$LIB_DIR"
 
+# Clean up any legacy underscore-named .hal files to prevent duplicates
+for old in "$LIB_DIR"/hap_mod_*.hal; do
+    [ -f "$old" ] && rm -f "$old" && echo "  Removed legacy: $(basename "$old")"
+done
+
 DEPLOYED=0
 for lib in target/release/libhap_mod_*.$LIB_EXT target/release/hap_mod_*.$LIB_EXT; do
     [ -f "$lib" ] || continue

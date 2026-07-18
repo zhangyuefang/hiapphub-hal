@@ -24,7 +24,17 @@
   },
   "overviews": {
     "zh-CN": "提供定时任务调度能力，支持Cron表达式、一次性延时任务、周期性任务、任务管理等功能。",
-    "en-US": "Task scheduling with cron expressions, one-shot delayed tasks, periodic tasks, and task management."
+    "en-US": "Task scheduling with cron expressions, one-shot delayed tasks, periodic tasks, and task management.",
+    "zh-TW": "提供定時任務調度能力，支援Cron表达式、一次性延時任務、周期性任務、任務管理等功能。",
+    "ja": "cronによるタスクスケジューリング・ワンショット遅延タスク・定期タスク・タスク管理。",
+    "ko": "cron 표현식 기반 작업 스케줄링, 원샷 지연 작업, 주기적 작업, 작업 관리.",
+    "es": "Programación de tareas con cron, tareas únicas retrasadas, periódicas y gestión.",
+    "fr": "Planification de tâches avec cron, tâches ponctuelles, périodiques et gestion.",
+    "de": "Aufgabenplanung mit Cron, einmalige verzögerte Aufgaben, periodische Aufgaben und Verwaltung.",
+    "pt-BR": "Agendamento de tarefas com cron, tarefas únicas, periódicas e gerenciamento.",
+    "ru": "Планирование задач с cron, одноразовые отложенные задачи, периодические задачи и управление.",
+    "ar": "جدولة مهام بتعبيرات cron ومهام لمرة واحدة ودورية وإدارة المهام.",
+    "hi": "cron एक्सप्रेशन, वन-शॉट, पीरियोडिक टास्क और टास्क मैनेजमेंट।"
   },
   "permission": "scheduler",
   "functions": [
@@ -33,7 +43,17 @@
       "symbol": "hap_scheduler_create_cron",
       "descriptions": {
         "zh-CN": "创建基于 Cron 表达式的定时任务（如每天凌晨3点执行）",
-        "en-US": "Create scheduled task based on cron expression"
+        "en-US": "Create scheduled task based on cron expression",
+        "zh-TW": "建立基於 Cron 表達式的定時任務（如每天凌晨3點執行）",
+        "ja": "cron式に基づくスケジュールタスクを作成",
+        "ko": "cron 표현식 기반 예약 작업 생성",
+        "es": "Crear tarea programada con expresión cron",
+        "fr": "Créer une tâche planifiée avec expression cron",
+        "de": "Geplante Aufgabe mit Cron-Ausdruck erstellen",
+        "pt-BR": "Criar tarefa agendada com expressão cron",
+        "ru": "Создать задачу по расписанию cron",
+        "ar": "إنشاء مهمة مجدولة بتعبير cron",
+        "hi": "Cron एक्सप्रेशन पर शेड्यूल्ड कार्य बनाएं"
       },
       "params": [
         {
@@ -41,7 +61,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "任务名称",
-            "en-US": "Task name"
+            "en-US": "Task name",
+            "zh-TW": "任務名稱",
+            "ja": "タスク名",
+            "ko": "태스크 이름",
+            "es": "Nombre de tarea",
+            "fr": "Nom de tâche",
+            "de": "Task-Name",
+            "pt-BR": "Nome da tarefa",
+            "ru": "Имя задачи",
+            "ar": "اسم المهمة",
+            "hi": "टास्क नाम"
           }
         },
         {
@@ -49,7 +79,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Cron表达式",
-            "en-US": "Cron expression"
+            "en-US": "Cron expression",
+            "zh-TW": "Cron表達式",
+            "ja": "Cron式",
+            "ko": "Cron 표현식",
+            "es": "Expresión Cron",
+            "fr": "Expression Cron",
+            "de": "Cron-Ausdruck",
+            "pt-BR": "Expressão Cron",
+            "ru": "Cron-выражение",
+            "ar": "تعبير Cron",
+            "hi": "Cron एक्सप्रेशन"
           }
         },
         {
@@ -57,7 +97,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "触发时回调ID",
-            "en-US": "Trigger callback ID"
+            "en-US": "Trigger callback ID",
+            "zh-TW": "觸發時回調ID",
+            "ja": "トリガーコールバックID",
+            "ko": "트리거 콜백 ID",
+            "es": "ID de callback de activación",
+            "fr": "ID de rappel de déclenchement",
+            "de": "Trigger-Callback-ID",
+            "pt-BR": "ID de callback de ativação",
+            "ru": "ID обратного вызова триггера",
+            "ar": "معرف استدعاء المشغل",
+            "hi": "ट्रिगर कॉलबैक आईडी"
           }
         }
       ],
@@ -65,7 +115,17 @@
         "type": "TaskHandle",
         "descs": {
           "zh-CN": "任务信息",
-          "en-US": "Task info"
+          "en-US": "Task info",
+          "zh-TW": "任務資訊",
+          "ja": "タスク情報",
+          "ko": "작업 정보",
+          "es": "Información de tarea",
+          "fr": "Infos de tâche",
+          "de": "Task-Info",
+          "pt-BR": "Informações da tarefa",
+          "ru": "Информация о задаче",
+          "ar": "معلومات المهمة",
+          "hi": "टास्क जानकारी"
         }
       },
       "bridge_path": "scheduler.createCron",
@@ -77,7 +137,17 @@
       "symbol": "hap_scheduler_create_interval",
       "descriptions": {
         "zh-CN": "创建按固定时间间隔重复执行的定时任务",
-        "en-US": "Create task that repeats at fixed interval"
+        "en-US": "Create task that repeats at fixed interval",
+        "zh-TW": "建立按固定時間間隔重複執行的定時任務",
+        "ja": "固定間隔で繰り返すタスクを作成",
+        "ko": "고정 간격으로 반복하는 작업 생성",
+        "es": "Crear tarea que se repite a intervalos",
+        "fr": "Créer une tâche répétitive à intervalle fixe",
+        "de": "Wiederholende Aufgabe mit festem Intervall",
+        "pt-BR": "Criar tarefa repetitiva com intervalo fixo",
+        "ru": "Создать повторяющуюся задачу с интервалом",
+        "ar": "إنشاء مهمة تتكرر بفاصل زمني ثابت",
+        "hi": "निश्चित अंतराल पर दोहराने वाला कार्य बनाएं"
       },
       "params": [
         {
@@ -85,7 +155,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "任务名称",
-            "en-US": "Task name"
+            "en-US": "Task name",
+            "zh-TW": "任務名稱",
+            "ja": "タスク名",
+            "ko": "태스크 이름",
+            "es": "Nombre de tarea",
+            "fr": "Nom de tâche",
+            "de": "Task-Name",
+            "pt-BR": "Nome da tarefa",
+            "ru": "Имя задачи",
+            "ar": "اسم المهمة",
+            "hi": "टास्क नाम"
           }
         },
         {
@@ -93,7 +173,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "间隔(毫秒)",
-            "en-US": "Interval (ms)"
+            "en-US": "Interval (ms)",
+            "zh-TW": "間隔(毫秒)",
+            "ja": "インターバル(毫秒)",
+            "ko": "간격 (밀리초)",
+            "es": "Intervalo (ms)",
+            "fr": "Intervalle (ms)",
+            "de": "Intervall (ms)",
+            "pt-BR": "Intervalo (ms)",
+            "ru": "Интервал (мс)",
+            "ar": "الفاصل الزمني (مللي ثانية)",
+            "hi": "अंतराल (मिलीसेकंड)"
           }
         },
         {
@@ -101,7 +191,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調ID",
+            "ja": "コールバックID",
+            "ko": "콜백ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           }
         },
         {
@@ -111,7 +211,17 @@
           "default_value": "0",
           "descs": {
             "zh-CN": "重复次数(0=无限)",
-            "en-US": "Repeat count (0=infinite)"
+            "en-US": "Repeat count (0=infinite)",
+            "zh-TW": "重複次數(0=無限)",
+            "ja": "リピート回数（0=無限）",
+            "ko": "반복 횟수 (0=무한)",
+            "es": "Repeticiones (0=infinito)",
+            "fr": "Répétitions (0=infini)",
+            "de": "Wiederholungen (0=unendlich)",
+            "pt-BR": "Repetições (0=infinito)",
+            "ru": "Повторы (0=бесконечно)",
+            "ar": "التكرارات (0=لا نهائي)",
+            "hi": "दोहराव (0=अनंत)"
           }
         }
       ],
@@ -119,7 +229,17 @@
         "type": "TaskHandle",
         "descs": {
           "zh-CN": "任务信息",
-          "en-US": "Task info"
+          "en-US": "Task info",
+          "zh-TW": "任務資訊",
+          "ja": "タスク情報",
+          "ko": "작업 정보",
+          "es": "Información de tarea",
+          "fr": "Infos de tâche",
+          "de": "Task-Info",
+          "pt-BR": "Informações da tarefa",
+          "ru": "Информация о задаче",
+          "ar": "معلومات المهمة",
+          "hi": "टास्क जानकारी"
         }
       },
       "bridge_path": "scheduler.createInterval",
@@ -131,7 +251,17 @@
       "symbol": "hap_scheduler_create_timeout",
       "descriptions": {
         "zh-CN": "创建在指定延迟后执行一次的延时任务",
-        "en-US": "Create one-shot task that fires after specified delay"
+        "en-US": "Create one-shot task that fires after specified delay",
+        "zh-TW": "建立在指定延迟后執行一次的延時任務",
+        "ja": "指定遅延後に実行されるワンショットタスクを作成",
+        "ko": "지정된 지연 후 한 번 실행되는 작업 생성",
+        "es": "Crear tarea de una vez con retardo",
+        "fr": "Créer une tâche unique après délai",
+        "de": "Einmalige Aufgabe nach Verzögerung erstellen",
+        "pt-BR": "Criar tarefa única após atraso",
+        "ru": "Создать однократную задачу с задержкой",
+        "ar": "إنشاء مهمة تُنفذ مرة واحدة بعد التأخير",
+        "hi": "निर्दिष्ट देरी के बाद वन-शॉट कार्य बनाएं"
       },
       "params": [
         {
@@ -139,7 +269,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "任务名称",
-            "en-US": "Task name"
+            "en-US": "Task name",
+            "zh-TW": "任務名稱",
+            "ja": "タスク名",
+            "ko": "태스크 이름",
+            "es": "Nombre de tarea",
+            "fr": "Nom de tâche",
+            "de": "Task-Name",
+            "pt-BR": "Nome da tarefa",
+            "ru": "Имя задачи",
+            "ar": "اسم المهمة",
+            "hi": "टास्क नाम"
           }
         },
         {
@@ -147,7 +287,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "延迟(毫秒)",
-            "en-US": "Delay (ms)"
+            "en-US": "Delay (ms)",
+            "zh-TW": "延迟(毫秒)",
+            "ja": "遅延(毫秒)",
+            "ko": "지연 (ms)",
+            "es": "Retraso (ms)",
+            "fr": "Délai (ms)",
+            "de": "Verzögerung (ms)",
+            "pt-BR": "Atraso (ms)",
+            "ru": "Задержка (мс)",
+            "ar": "التأخير (مللي ثانية)",
+            "hi": "विलंब (ms)"
           }
         },
         {
@@ -155,7 +305,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調ID",
+            "ja": "コールバックID",
+            "ko": "콜백ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           }
         }
       ],
@@ -163,7 +323,17 @@
         "type": "TaskHandle",
         "descs": {
           "zh-CN": "任务信息",
-          "en-US": "Task info"
+          "en-US": "Task info",
+          "zh-TW": "任務資訊",
+          "ja": "タスク情報",
+          "ko": "작업 정보",
+          "es": "Información de tarea",
+          "fr": "Infos de tâche",
+          "de": "Task-Info",
+          "pt-BR": "Informações da tarefa",
+          "ru": "Информация о задаче",
+          "ar": "معلومات المهمة",
+          "hi": "टास्क जानकारी"
         }
       },
       "bridge_path": "scheduler.createTimeout",
@@ -175,7 +345,17 @@
       "symbol": "hap_scheduler_cancel",
       "descriptions": {
         "zh-CN": "取消并删除一个已注册的定时任务",
-        "en-US": "Cancel and remove a registered scheduled task"
+        "en-US": "Cancel and remove a registered scheduled task",
+        "zh-TW": "取消並刪除一個已注册的定時任務",
+        "ja": "登録済みのスケジュールタスクをキャンセルして削除",
+        "ko": "등록된 예약 작업 취소 및 제거",
+        "es": "Cancelar y eliminar tarea programada",
+        "fr": "Annuler et supprimer une tâche planifiée",
+        "de": "Geplante Aufgabe abbrechen und entfernen",
+        "pt-BR": "Cancelar e remover tarefa agendada",
+        "ru": "Отменить и удалить запланированную задачу",
+        "ar": "إلغاء وإزالة مهمة مجدولة",
+        "hi": "पंजीकृत शेड्यूल्ड कार्य रद्द करें"
       },
       "params": [
         {
@@ -183,7 +363,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "任务ID",
-            "en-US": "Task ID"
+            "en-US": "Task ID",
+            "zh-TW": "任務ID",
+            "ja": "タスクID",
+            "ko": "태스크 ID",
+            "es": "ID de tarea",
+            "fr": "ID de tâche",
+            "de": "Task-ID",
+            "pt-BR": "ID da tarefa",
+            "ru": "ID задачи",
+            "ar": "معرف المهمة",
+            "hi": "टास्क ID"
           }
         }
       ],
@@ -191,7 +381,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "scheduler.cancel",
@@ -203,7 +403,17 @@
       "symbol": "hap_scheduler_pause",
       "descriptions": {
         "zh-CN": "暂停一个定时任务（不删除，可恢复）",
-        "en-US": "Pause a scheduled task (can be resumed later)"
+        "en-US": "Pause a scheduled task (can be resumed later)",
+        "zh-TW": "暂停一個定時任務（不刪除，可恢複）",
+        "ja": "スケジュールタスクを一時停止（後で再開可能）",
+        "ko": "예약된 작업 일시 중지 (나중에 재개 가능)",
+        "es": "Pausar tarea programada (se puede reanudar)",
+        "fr": "Mettre en pause la tâche planifiée (reprise possible)",
+        "de": "Geplante Aufgabe pausieren (später fortsetzbar)",
+        "pt-BR": "Pausar tarefa agendada (pode ser retomada)",
+        "ru": "Приостановить запланированную задачу (можно возобновить)",
+        "ar": "إيقاف مهمة مجدولة مؤقتاً (يمكن استئنافها)",
+        "hi": "शेड्यूल किया गया कार्य रोकें (बाद में फिर शुरू कर सकते हैं)"
       },
       "params": [
         {
@@ -211,7 +421,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "任务ID",
-            "en-US": "Task ID"
+            "en-US": "Task ID",
+            "zh-TW": "任務ID",
+            "ja": "タスクID",
+            "ko": "태스크 ID",
+            "es": "ID de tarea",
+            "fr": "ID de tâche",
+            "de": "Task-ID",
+            "pt-BR": "ID da tarefa",
+            "ru": "ID задачи",
+            "ar": "معرف المهمة",
+            "hi": "टास्क ID"
           }
         }
       ],
@@ -219,7 +439,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "scheduler.pause",
@@ -231,7 +461,17 @@
       "symbol": "hap_scheduler_resume",
       "descriptions": {
         "zh-CN": "恢复一个已暂停的定时任务继续执行",
-        "en-US": "Resume a previously paused scheduled task"
+        "en-US": "Resume a previously paused scheduled task",
+        "zh-TW": "恢複一個已暂停的定時任務继續執行",
+        "ja": "一時停止したスケジュールタスクを再開",
+        "ko": "이전에 일시 중지된 예약 작업 재개",
+        "es": "Reanudar tarea programada pausada",
+        "fr": "Reprendre la tâche planifiée en pause",
+        "de": "Pausierte geplante Aufgabe fortsetzen",
+        "pt-BR": "Retomar tarefa agendada pausada",
+        "ru": "Возобновить приостановленную задачу",
+        "ar": "استئناف مهمة مجدولة متوقفة",
+        "hi": "पहले रुके हुए शेड्यूल कार्य को फिर शुरू करें"
       },
       "params": [
         {
@@ -239,7 +479,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "任务ID",
-            "en-US": "Task ID"
+            "en-US": "Task ID",
+            "zh-TW": "任務ID",
+            "ja": "タスクID",
+            "ko": "태스크 ID",
+            "es": "ID de tarea",
+            "fr": "ID de tâche",
+            "de": "Task-ID",
+            "pt-BR": "ID da tarefa",
+            "ru": "ID задачи",
+            "ar": "معرف المهمة",
+            "hi": "टास्क ID"
           }
         }
       ],
@@ -247,7 +497,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "scheduler.resume",
@@ -259,14 +519,34 @@
       "symbol": "hap_scheduler_list",
       "descriptions": {
         "zh-CN": "获取所有已注册的定时任务列表及其状态",
-        "en-US": "List all registered scheduled tasks with their status"
+        "en-US": "List all registered scheduled tasks with their status",
+        "zh-TW": "取得所有已注册的定時任務列表及其狀態",
+        "ja": "登録済みの全スケジュールタスクとその状態を一覧表示",
+        "ko": "등록된 모든 예약 작업 및 상태 나열",
+        "es": "Listar todas las tareas programadas con su estado",
+        "fr": "Lister toutes les tâches planifiées avec leur statut",
+        "de": "Alle registrierten geplanten Aufgaben mit Status auflisten",
+        "pt-BR": "Listar todas as tarefas agendadas com seu status",
+        "ru": "Список всех зарегистрированных задач с их статусом",
+        "ar": "سرد جميع المهام المجدولة مع حالتها",
+        "hi": "सभी पंजीकृत शेड्यूल कार्य उनकी स्थिति के साथ सूचीबद्ध करें"
       },
       "params": [],
       "returns": {
         "type": "array",
         "descs": {
           "zh-CN": "任务列表",
-          "en-US": "Task list"
+          "en-US": "Task list",
+          "zh-TW": "任務列表",
+          "ja": "タスクリスト",
+          "ko": "작업 목록",
+          "es": "Lista de tareas",
+          "fr": "Liste des tâches",
+          "de": "Aufgabenliste",
+          "pt-BR": "Lista de tarefas",
+          "ru": "Список задач",
+          "ar": "قائمة المهام",
+          "hi": "कार्य सूची"
         }
       },
       "bridge_path": "scheduler.list",
@@ -278,7 +558,17 @@
       "symbol": "hap_scheduler_get_next_run",
       "descriptions": {
         "zh-CN": "计算指定 Cron 任务的下一次执行时间",
-        "en-US": "Calculate next execution time for a cron task"
+        "en-US": "Calculate next execution time for a cron task",
+        "zh-TW": "計算指定 Cron 任務的下一次執行時間",
+        "ja": "cronタスクの次回実行時刻を計算",
+        "ko": "cron 작업의 다음 실행 시간 계산",
+        "es": "Calcular próxima ejecución de tarea cron",
+        "fr": "Calculer la prochaine exécution cron",
+        "de": "Nächste Cron-Ausführungszeit berechnen",
+        "pt-BR": "Calcular próxima execução do cron",
+        "ru": "Вычислить время следующего запуска cron",
+        "ar": "حساب وقت التنفيذ التالي لمهمة cron",
+        "hi": "Cron कार्य का अगला निष्पादन समय गणना करें"
       },
       "params": [
         {
@@ -286,7 +576,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "任务ID",
-            "en-US": "Task ID"
+            "en-US": "Task ID",
+            "zh-TW": "任務ID",
+            "ja": "タスクID",
+            "ko": "태스크 ID",
+            "es": "ID de tarea",
+            "fr": "ID de tâche",
+            "de": "Task-ID",
+            "pt-BR": "ID da tarefa",
+            "ru": "ID задачи",
+            "ar": "معرف المهمة",
+            "hi": "टास्क ID"
           }
         }
       ],
@@ -294,7 +594,17 @@
         "type": "NextRun",
         "descs": {
           "zh-CN": "下次执行时间",
-          "en-US": "Next run time"
+          "en-US": "Next run time",
+          "zh-TW": "下次執行時間",
+          "ja": "下次実行する时间",
+          "ko": "다음 실행 시간",
+          "es": "Próxima ejecución",
+          "fr": "Prochaine exécution",
+          "de": "Nächste Ausführungszeit",
+          "pt-BR": "Próxima execução",
+          "ru": "Следующее время выполнения",
+          "ar": "وقت التشغيل التالي",
+          "hi": "अगला चलने का समय"
         }
       },
       "bridge_path": "scheduler.getNextRun",
@@ -307,7 +617,17 @@
       "name": "TaskHandle",
       "descriptions": {
         "zh-CN": "定时任务句柄",
-        "en-US": "Schedule handle"
+        "en-US": "Schedule handle",
+        "zh-TW": "定時任務句柄",
+        "ja": "スケジュールハンドル",
+        "ko": "스케줄 핸들",
+        "es": "Manejador de programación",
+        "fr": "Handle de planification",
+        "de": "Zeitplan-Handle",
+        "pt-BR": "Handle de agendamento",
+        "ru": "Дескриптор расписания",
+        "ar": "مقبض الجدولة",
+        "hi": "शेड्यूल हैंडल"
       },
       "fields": [
         {
@@ -315,7 +635,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "任务ID",
-            "en-US": "Task ID"
+            "en-US": "Task ID",
+            "zh-TW": "任務ID",
+            "ja": "タスクID",
+            "ko": "작업 ID",
+            "es": "ID de tarea",
+            "fr": "ID de tâche",
+            "de": "Aufgaben-ID",
+            "pt-BR": "ID da tarefa",
+            "ru": "ID задачи",
+            "ar": "معرّف المهمة",
+            "hi": "कार्य ID"
           }
         },
         {
@@ -324,7 +654,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "下次执行时间",
-            "en-US": "Next run time"
+            "en-US": "Next run time",
+            "zh-TW": "下次執行時间",
+            "ja": "次回実行時間",
+            "ko": "다음 실행 시간",
+            "es": "Hora de próxima ejecución",
+            "fr": "Heure de prochaine exécution",
+            "de": "Nächste Ausführungszeit",
+            "pt-BR": "Hora da próxima execução",
+            "ru": "Время следующего запуска",
+            "ar": "وقت التشغيل التالي",
+            "hi": "अगले रन का समय"
           }
         }
       ]
@@ -333,7 +673,17 @@
       "name": "NextRun",
       "descriptions": {
         "zh-CN": "下次执行信息",
-        "en-US": "Next run info"
+        "en-US": "Next run info",
+        "zh-TW": "下次執行資訊",
+        "ja": "次回実行情報",
+        "ko": "다음 실행 정보",
+        "es": "Información de próxima ejecución",
+        "fr": "Informations sur la prochaine exécution",
+        "de": "Nächste Ausführungsinformationen",
+        "pt-BR": "Informações da próxima execução",
+        "ru": "Информация о следующем запуске",
+        "ar": "معلومات التشغيل التالي",
+        "hi": "अगले रन की जानकारी"
       },
       "fields": [
         {
@@ -341,7 +691,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "执行时间",
-            "en-US": "Run time"
+            "en-US": "Run time",
+            "zh-TW": "執行時间",
+            "ja": "実行時間",
+            "ko": "실행 시간",
+            "es": "Tiempo de ejecución",
+            "fr": "Temps d'exécution",
+            "de": "Laufzeit",
+            "pt-BR": "Tempo de execução",
+            "ru": "Время выполнения",
+            "ar": "وقت التشغيل",
+            "hi": "रन टाइम"
           }
         },
         {
@@ -349,7 +709,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "剩余毫秒",
-            "en-US": "Remaining ms"
+            "en-US": "Remaining ms",
+            "zh-TW": "剩余毫秒",
+            "ja": "残りミリ秒",
+            "ko": "남은 밀리초",
+            "es": "Milisegundos restantes",
+            "fr": "Millisecondes restantes",
+            "de": "Verbleibende ms",
+            "pt-BR": "ms restantes",
+            "ru": "Оставшиеся мс",
+            "ar": "المللي ثانية المتبقية",
+            "hi": "शेष ms"
           }
         }
       ]

@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要执行的命令",
-            "en-US": "Command to execute"
+            "en-US": "Command to execute",
+            "zh-TW": "要執行的命令",
+            "ja": "要実行するの命令",
+            "ko": "실행할 명령",
+            "es": "Comando a ejecutar",
+            "fr": "Commande à exécuter",
+            "de": "Auszuführender Befehl",
+            "pt-BR": "Comando a executar",
+            "ru": "Команда для выполнения",
+            "ar": "الأمر المراد تنفيذه",
+            "hi": "निष्पादित करने के लिए कमांड"
           },
           "desc": "Command to execute"
         },
@@ -42,7 +52,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "命令行参数列表",
-            "en-US": "Command arguments list"
+            "en-US": "Command arguments list",
+            "zh-TW": "命令行參數列表",
+            "ja": "命令行パラメータリスト",
+            "ko": "명령 인수 목록",
+            "es": "Lista de argumentos del comando",
+            "fr": "Liste d'arguments de la commande",
+            "de": "Befehlsargumentliste",
+            "pt-BR": "Lista de argumentos do comando",
+            "ru": "Список аргументов команды",
+            "ar": "قائمة وسائط الأمر",
+            "hi": "कमांड तर्क सूची"
           },
           "optional": true,
           "desc": "Command arguments list"
@@ -52,7 +72,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作目录",
-            "en-US": "Cwd"
+            "en-US": "Cwd",
+            "zh-TW": "工作目錄",
+            "ja": "工作ディレクトリ",
+            "ko": "현재 작업 디렉토리",
+            "es": "Directorio de trabajo",
+            "fr": "Répertoire de travail",
+            "de": "Arbeitsverzeichnis",
+            "pt-BR": "Diretório de trabalho",
+            "ru": "Рабочий каталог",
+            "ar": "مجلد العمل",
+            "hi": "कार्य डायरेक्टरी"
           },
           "optional": true
         },
@@ -61,7 +91,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "环境变量",
-            "en-US": "Env"
+            "en-US": "Env",
+            "zh-TW": "環境變量",
+            "ja": "環境",
+            "ko": "환경",
+            "es": "Entorno",
+            "fr": "Environnement",
+            "de": "Umgebung",
+            "pt-BR": "Ambiente",
+            "ru": "Среда",
+            "ar": "البيئة",
+            "hi": "वातावरण"
           },
           "optional": true
         },
@@ -70,7 +110,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "超时(毫秒)",
-            "en-US": "Timeout in ms"
+            "en-US": "Timeout in ms",
+            "zh-TW": "超時(毫秒)",
+            "ja": "タイムアウト(毫秒)",
+            "ko": "타임아웃 (밀리초)",
+            "es": "Tiempo de espera en ms",
+            "fr": "Délai en ms",
+            "de": "Timeout in ms",
+            "pt-BR": "Timeout em ms",
+            "ru": "Тайм-аут в мс",
+            "ar": "المهلة بالمللي ثانية",
+            "hi": "टाइमआउट मिलीसेकंड में"
           },
           "optional": true
         },
@@ -79,7 +129,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标准输入",
-            "en-US": "Standard input"
+            "en-US": "Standard input",
+            "zh-TW": "標準輸入",
+            "ja": "標準入力",
+            "ko": "표준 입력",
+            "es": "Entrada estándar",
+            "fr": "Entrée standard",
+            "de": "Standardeingabe",
+            "pt-BR": "Entrada padrão",
+            "ru": "Стандартный ввод",
+            "ar": "الإدخال القياسي",
+            "hi": "मानक इनपुट"
           },
           "optional": true
         },
@@ -88,7 +148,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "字符编码（如utf-8/gbk）",
-            "en-US": "Character encoding (e.g. utf-8/gbk)"
+            "en-US": "Character encoding (e.g. utf-8/gbk)",
+            "zh-TW": "字元編碼（如utf-8/gbk）",
+            "ja": "文字エンコーディング（如utf-8/gbk）",
+            "ko": "문자 인코딩 (예: utf-8/gbk)",
+            "es": "Codificación de caracteres (ej. utf-8/gbk)",
+            "fr": "Encodage de caractères (ex. utf-8/gbk)",
+            "de": "Zeichenkodierung (z.B. utf-8/gbk)",
+            "pt-BR": "Codificação de caracteres (ex. utf-8/gbk)",
+            "ru": "Кодировка символов (напр. utf-8/gbk)",
+            "ar": "ترميز الأحرف (مثل utf-8/gbk)",
+            "hi": "कैरेक्टर एनकोडिंग (जैसे utf-8/gbk)"
           },
           "optional": true,
           "desc": "Character encoding (e.g. utf-8/gbk)"
@@ -98,14 +168,34 @@
         "type": "ExecResult",
         "descs": {
           "zh-CN": "ExecResult类型的结果对象",
-          "en-US": "Result object of type ExecResult"
+          "en-US": "Result object of type ExecResult",
+          "zh-TW": "ExecResult類型的結果物件",
+          "ja": "ExecResultタイプの結果オブジェクト",
+          "ko": "ExecResult유형의결과객체",
+          "es": "Objeto resultado de tipo ExecResult",
+          "fr": "Objet résultat de type ExecResult",
+          "de": "Ergebnisobjekt vom Typ ExecResult",
+          "pt-BR": "Objeto resultado do tipo ExecResult",
+          "ru": "Объект результата типа ExecResult",
+          "ar": "كائن نتيجة من نوع ExecResult",
+          "hi": "ExecResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type ExecResult"
       },
       "bridge_path": "process.exec",
       "descriptions": {
         "zh-CN": "执行命令并等待完成，返回标准输出和退出码",
-        "en-US": "Execute command, wait for completion, return stdout and exit code"
+        "en-US": "Execute command, wait for completion, return stdout and exit code",
+        "zh-TW": "執行命令並等待完成，返回標準輸出和退出碼",
+        "ja": "コマンドを実行し、完了を待ち、stdoutと終了コードを返す",
+        "ko": "명령 실행, 완료 대기, stdout 및 종료 코드 반환",
+        "es": "Ejecutar comando y devolver stdout y código de salida",
+        "fr": "Exécuter la commande et retourner stdout et code de sortie",
+        "de": "Befehl ausführen, auf Abschluss warten",
+        "pt-BR": "Executar comando e retornar stdout e código de saída",
+        "ru": "Выполнить команду и вернуть stdout и код выхода",
+        "ar": "تنفيذ الأمر وانتظار الاكتمال",
+        "hi": "कमांड निष्पादित करें, stdout और एक्ज़िट कोड लौटाएं"
       },
       "async": true,
       "group": "control",
@@ -120,7 +210,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要执行的命令",
-            "en-US": "Command to execute"
+            "en-US": "Command to execute",
+            "zh-TW": "要執行的命令",
+            "ja": "要実行するの命令",
+            "ko": "실행할 명령",
+            "es": "Comando a ejecutar",
+            "fr": "Commande à exécuter",
+            "de": "Auszuführender Befehl",
+            "pt-BR": "Comando a executar",
+            "ru": "Команда для выполнения",
+            "ar": "الأمر المراد تنفيذه",
+            "hi": "निष्पादित करने के लिए कमांड"
           },
           "desc": "Command to execute"
         },
@@ -129,7 +229,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "命令参数列表",
-            "en-US": "Command arguments"
+            "en-US": "Command arguments",
+            "zh-TW": "命令參數列表",
+            "ja": "命令パラメータリスト",
+            "ko": "명령 인수",
+            "es": "Argumentos del comando",
+            "fr": "Arguments de la commande",
+            "de": "Befehlsargumente",
+            "pt-BR": "Argumentos do comando",
+            "ru": "Аргументы команды",
+            "ar": "وسائط الأمر",
+            "hi": "कमांड तर्क"
           },
           "optional": true,
           "desc": "Command arguments"
@@ -139,7 +249,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作目录",
-            "en-US": "Cwd"
+            "en-US": "Cwd",
+            "zh-TW": "工作目錄",
+            "ja": "工作ディレクトリ",
+            "ko": "현재 작업 디렉토리",
+            "es": "Directorio de trabajo",
+            "fr": "Répertoire de travail",
+            "de": "Arbeitsverzeichnis",
+            "pt-BR": "Diretório de trabalho",
+            "ru": "Рабочий каталог",
+            "ar": "مجلد العمل",
+            "hi": "कार्य डायरेक्टरी"
           },
           "optional": true
         },
@@ -148,7 +268,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "环境变量",
-            "en-US": "Env"
+            "en-US": "Env",
+            "zh-TW": "環境變量",
+            "ja": "環境",
+            "ko": "환경",
+            "es": "Entorno",
+            "fr": "Environnement",
+            "de": "Umgebung",
+            "pt-BR": "Ambiente",
+            "ru": "Среда",
+            "ar": "البيئة",
+            "hi": "वातावरण"
           },
           "optional": true
         },
@@ -157,7 +287,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "字符编码（如utf-8/gbk）",
-            "en-US": "Character encoding (e.g. utf-8/gbk)"
+            "en-US": "Character encoding (e.g. utf-8/gbk)",
+            "zh-TW": "字元編碼（如utf-8/gbk）",
+            "ja": "文字エンコーディング（如utf-8/gbk）",
+            "ko": "문자 인코딩 (예: utf-8/gbk)",
+            "es": "Codificación de caracteres (ej. utf-8/gbk)",
+            "fr": "Encodage de caractères (ex. utf-8/gbk)",
+            "de": "Zeichenkodierung (z.B. utf-8/gbk)",
+            "pt-BR": "Codificação de caracteres (ex. utf-8/gbk)",
+            "ru": "Кодировка символов (напр. utf-8/gbk)",
+            "ar": "ترميز الأحرف (مثل utf-8/gbk)",
+            "hi": "कैरेक्टर एनकोडिंग (जैसे utf-8/gbk)"
           },
           "optional": true,
           "desc": "Character encoding (e.g. utf-8/gbk)"
@@ -167,7 +307,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -176,14 +326,34 @@
         "type": "SpawnHandle",
         "descs": {
           "zh-CN": "SpawnHandle类型的结果对象",
-          "en-US": "Result object of type SpawnHandle"
+          "en-US": "Result object of type SpawnHandle",
+          "zh-TW": "SpawnHandle類型的結果物件",
+          "ja": "SpawnHandleタイプの結果オブジェクト",
+          "ko": "SpawnHandle유형의결과객체",
+          "es": "Objeto resultado de tipo SpawnHandle",
+          "fr": "Objet résultat de type SpawnHandle",
+          "de": "Ergebnisobjekt vom Typ SpawnHandle",
+          "pt-BR": "Objeto resultado do tipo SpawnHandle",
+          "ru": "Объект результата типа SpawnHandle",
+          "ar": "كائن نتيجة من نوع SpawnHandle",
+          "hi": "SpawnHandle प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type SpawnHandle"
       },
       "bridge_path": "process.spawn",
       "descriptions": {
         "zh-CN": "启动一个新的子进程并返回其PID",
-        "en-US": "Spawn a new child process and return its PID"
+        "en-US": "Spawn a new child process and return its PID",
+        "zh-TW": "啟動一個新的子進程並返回其PID",
+        "ja": "新しい子プロセスを生成してPIDを返す",
+        "ko": "새 자식 프로세스 생성 후 PID 반환",
+        "es": "Crear proceso hijo y devolver su PID",
+        "fr": "Lancer un processus enfant et retourner son PID",
+        "de": "Neuen Kindprozess starten und PID zurückgeben",
+        "pt-BR": "Criar processo filho e retornar seu PID",
+        "ru": "Запустить дочерний процесс и вернуть PID",
+        "ar": "إنشاء عملية فرعية وإرجاع معرفها",
+        "hi": "नई चाइल्ड प्रोसेस शुरू करें और PID लौटाएं"
       },
       "async": true,
       "group": "control",
@@ -198,7 +368,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "要终止的进程ID",
-            "en-US": "Process ID to kill"
+            "en-US": "Process ID to kill",
+            "zh-TW": "要終止的進程ID",
+            "ja": "終了するプロセスID",
+            "ko": "종료할 프로세스 ID",
+            "es": "ID de proceso a terminar",
+            "fr": "ID du processus à tuer",
+            "de": "Zu beendende Prozess-ID",
+            "pt-BR": "ID do processo a encerrar",
+            "ru": "ID процесса для завершения",
+            "ar": "معرف العملية للإنهاء",
+            "hi": "समाप्त करने के लिए प्रोसेस आईडी"
           },
           "desc": "Process ID to kill"
         },
@@ -207,7 +387,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "信号编号",
-            "en-US": "Signal number"
+            "en-US": "Signal number",
+            "zh-TW": "信號編號",
+            "ja": "シグナル番号",
+            "ko": "시그널 번호",
+            "es": "Número de señal",
+            "fr": "Numéro de signal",
+            "de": "Signalnummer",
+            "pt-BR": "Número do sinal",
+            "ru": "Номер сигнала",
+            "ar": "رقم الإشارة",
+            "hi": "सिग्नल नंबर"
           },
           "optional": true
         }
@@ -216,14 +406,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "process.kill",
       "descriptions": {
         "zh-CN": "向指定PID的进程发送终止信号",
-        "en-US": "Send kill signal to process with specified PID"
+        "en-US": "Send kill signal to process with specified PID",
+        "zh-TW": "向指定PID的進程傳送終止信號",
+        "ja": "指定PIDのプロセスにkillシグナルを送信",
+        "ko": "지정된 PID의 프로세스에 kill 신호 전송",
+        "es": "Enviar señal kill al proceso con PID especificado",
+        "fr": "Envoyer le signal kill au processus avec le PID spécifié",
+        "de": "Kill-Signal an Prozess mit angegebener PID senden",
+        "pt-BR": "Enviar sinal kill ao processo com PID especificado",
+        "ru": "Отправить сигнал kill процессу с указанным PID",
+        "ar": "إرسال إشارة إنهاء للعملية بالمعرف المحدد",
+        "hi": "निर्दिष्ट PID की प्रोसेस को kill सिग्नल भेजें"
       },
       "group": "control",
       "description": "Send kill signal to process with specified PID"
@@ -237,7 +447,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "要检查的进程ID",
-            "en-US": "Process ID to check"
+            "en-US": "Process ID to check",
+            "zh-TW": "要檢查的進程ID",
+            "ja": "要チェックするのプロセスID",
+            "ko": "확인할 프로세스 ID",
+            "es": "ID de proceso a verificar",
+            "fr": "ID du processus à vérifier",
+            "de": "Zu prüfende Prozess-ID",
+            "pt-BR": "ID do processo a verificar",
+            "ru": "ID процесса для проверки",
+            "ar": "معرف العملية للتحقق",
+            "hi": "जांचने के लिए प्रोसेस आईडी"
           },
           "desc": "Process ID to check"
         }
@@ -246,13 +466,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "运行中的",
-          "en-US": "Running"
+          "en-US": "Running",
+          "zh-TW": "運行中的",
+          "ja": "実行中",
+          "ko": "실행 중",
+          "es": "En ejecución",
+          "fr": "En cours d'exécution",
+          "de": "Läuft",
+          "pt-BR": "Em execução",
+          "ru": "Выполняется",
+          "ar": "قيد التشغيل",
+          "hi": "चल रहा है"
         }
       },
       "bridge_path": "process.isRunning",
       "descriptions": {
         "zh-CN": "检查进程是否在运行",
-        "en-US": "Check if process running"
+        "en-US": "Check if process running",
+        "zh-TW": "檢查進程是否在運行",
+        "ja": "プロセスが実行中か確認",
+        "ko": "프로세스 실행 중인지 확인",
+        "es": "Verificar si proceso está ejecutándose",
+        "fr": "Vérifier si processus en cours",
+        "de": "Prüfen ob Prozess läuft",
+        "pt-BR": "Verificar se processo está em execução",
+        "ru": "Проверить запущен ли процесс",
+        "ar": "التحقق من تشغيل العملية",
+        "hi": "प्रोसेस चल रहा है जांचें"
       },
       "group": "query",
       "description": "Check if process running"
@@ -266,7 +506,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "要等待的子进程ID",
-            "en-US": "Child process ID to wait for"
+            "en-US": "Child process ID to wait for",
+            "zh-TW": "要等待的子進程ID",
+            "ja": "要等待の子プロセスID",
+            "ko": "대기할 자식 프로세스 ID",
+            "es": "ID del proceso hijo a esperar",
+            "fr": "ID du processus enfant à attendre",
+            "de": "Kindprozess-ID zum Warten",
+            "pt-BR": "ID do processo filho para aguardar",
+            "ru": "ID дочернего процесса для ожидания",
+            "ar": "معرف العملية الفرعية للانتظار",
+            "hi": "प्रतीक्षा करने के लिए चाइल्ड प्रोसेस ID"
           },
           "desc": "Child process ID to wait for"
         },
@@ -275,7 +525,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "超时(毫秒)",
-            "en-US": "Timeout in ms"
+            "en-US": "Timeout in ms",
+            "zh-TW": "超時(毫秒)",
+            "ja": "タイムアウト(毫秒)",
+            "ko": "타임아웃 (밀리초)",
+            "es": "Tiempo de espera en ms",
+            "fr": "Délai en ms",
+            "de": "Timeout in ms",
+            "pt-BR": "Timeout em ms",
+            "ru": "Тайм-аут в мс",
+            "ar": "المهلة بالمللي ثانية",
+            "hi": "टाइमआउट मिलीसेकंड में"
           },
           "optional": true
         }
@@ -284,14 +544,34 @@
         "type": "ExecResult",
         "descs": {
           "zh-CN": "ExecResult类型的结果对象",
-          "en-US": "Result object of type ExecResult"
+          "en-US": "Result object of type ExecResult",
+          "zh-TW": "ExecResult類型的結果物件",
+          "ja": "ExecResultタイプの結果オブジェクト",
+          "ko": "ExecResult유형의결과객체",
+          "es": "Objeto resultado de tipo ExecResult",
+          "fr": "Objet résultat de type ExecResult",
+          "de": "Ergebnisobjekt vom Typ ExecResult",
+          "pt-BR": "Objeto resultado do tipo ExecResult",
+          "ru": "Объект результата типа ExecResult",
+          "ar": "كائن نتيجة من نوع ExecResult",
+          "hi": "ExecResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type ExecResult"
       },
       "bridge_path": "process.wait",
       "descriptions": {
         "zh-CN": "等待进程退出并获取退出码",
-        "en-US": "Wait for child process to finish and get exit code"
+        "en-US": "Wait for child process to finish and get exit code",
+        "zh-TW": "等待進程退出並取得退出碼",
+        "ja": "子プロセスの終了を待ち終了コードを取得",
+        "ko": "자식 프로세스 종료 대기 후 종료 코드 가져오기",
+        "es": "Esperar finalización del proceso hijo y obtener código",
+        "fr": "Attendre la fin du processus enfant et obtenir le code de sortie",
+        "de": "Auf Kindprozess-Ende warten und Exitcode erhalten",
+        "pt-BR": "Aguardar término do processo filho e obter código",
+        "ru": "Дождаться завершения дочернего процесса и получить код",
+        "ar": "انتظار انتهاء العملية الفرعية والحصول على رمز الخروج",
+        "hi": "चाइल्ड प्रोसेस समाप्ति की प्रतीक्षा करें और एक्ज़िट कोड प्राप्त करें"
       },
       "async": true,
       "group": "control",
@@ -306,7 +586,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "排序方式（cpu/memory/pid/name）",
-            "en-US": "Sort by (cpu/memory/pid/name)"
+            "en-US": "Sort by (cpu/memory/pid/name)",
+            "zh-TW": "排序方式（cpu/memory/pid/name）",
+            "ja": "ソートする方式（cpu/memory/pid/name）",
+            "ko": "정렬 기준 (cpu/memory/pid/name)",
+            "es": "Ordenar por (cpu/memory/pid/name)",
+            "fr": "Trier par (cpu/memory/pid/name)",
+            "de": "Sortieren nach (cpu/memory/pid/name)",
+            "pt-BR": "Ordenar por (cpu/memory/pid/name)",
+            "ru": "Сортировать по (cpu/memory/pid/name)",
+            "ar": "ترتيب حسب (cpu/memory/pid/name)",
+            "hi": "क्रमबद्ध करें (cpu/memory/pid/name)"
           },
           "optional": true,
           "desc": "Sort by (cpu/memory/pid/name)"
@@ -316,14 +606,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "进程信息数组",
-          "en-US": "Array of process info"
+          "en-US": "Array of process info",
+          "zh-TW": "進程資訊陣列",
+          "ja": "プロセス情報の配列",
+          "ko": "프로세스정보배열",
+          "es": "Matriz de información de procesos",
+          "fr": "Tableau d'informations de processus",
+          "de": "Array der Prozessinformationen",
+          "pt-BR": "Array de informações de processos",
+          "ru": "Массив информации о процессах",
+          "ar": "مصفوفة معلومات العمليات",
+          "hi": "प्रोसेस जानकारी की सरणी"
         },
         "desc": "Array of process info"
       },
       "bridge_path": "process.list",
       "descriptions": {
         "zh-CN": "获取系统中所有正在运行的进程列表（PID、名称、CPU、内存等）",
-        "en-US": "Get list of all running processes (PID, name, CPU, memory)"
+        "en-US": "Get list of all running processes (PID, name, CPU, memory)",
+        "zh-TW": "取得系統中所有正在運行的進程列表（PID、名稱、CPU、記憶體等）",
+        "ja": "実行中のすべてのプロセスリストを取得（PID、名前、CPU、メモリ）",
+        "ko": "실행 중인 모든 프로세스 목록 가져오기 (PID, 이름, CPU, 메모리)",
+        "es": "Obtener lista de procesos en ejecución (PID, nombre, CPU, memoria)",
+        "fr": "Obtenir la liste des processus en cours (PID, nom, CPU, mémoire)",
+        "de": "Liste aller laufenden Prozesse abrufen (PID, Name, CPU, Speicher)",
+        "pt-BR": "Obter lista de processos em execução (PID, nome, CPU, memória)",
+        "ru": "Получить список всех запущенных процессов (PID, имя, CPU, память)",
+        "ar": "الحصول على قائمة العمليات الجارية (PID, الاسم, CPU, الذاكرة)",
+        "hi": "सभी चल रही प्रोसेस की सूची प्राप्त करें (PID, नाम, CPU, मेमोरी)"
       },
       "group": "info",
       "description": "Get list of all running processes (PID, name, CPU, memory)"
@@ -337,7 +647,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "名称标识",
-            "en-US": "Name identifier"
+            "en-US": "Name identifier",
+            "zh-TW": "名稱標識",
+            "ja": "名前識別子",
+            "ko": "이름 식별자",
+            "es": "Identificador de nombre",
+            "fr": "Identifiant de nom",
+            "de": "Namenskennung",
+            "pt-BR": "Identificador de nome",
+            "ru": "Идентификатор имени",
+            "ar": "معرف الاسم",
+            "hi": "नाम पहचानकर्ता"
           },
           "desc": "Name identifier"
         }
@@ -346,14 +666,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "process.findByName",
       "descriptions": {
         "zh-CN": "查找by name",
-        "en-US": "Find by name of process"
+        "en-US": "Find by name of process",
+        "zh-TW": "查找by name",
+        "ja": "プロセス名で検索",
+        "ko": "프로세스 이름으로 찾기",
+        "es": "Buscar por nombre de proceso",
+        "fr": "Rechercher par nom de processus",
+        "de": "Nach Prozessname suchen",
+        "pt-BR": "Buscar por nome do processo",
+        "ru": "Поиск по имени процесса",
+        "ar": "البحث باسم العملية",
+        "hi": "प्रोसेस नाम से खोजें"
       },
       "group": "query",
       "description": "Find by name of process"
@@ -366,14 +706,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i32类型的结果对象",
-          "en-US": "Result object of type i32"
+          "en-US": "Result object of type i32",
+          "zh-TW": "i32類型的結果物件",
+          "ja": "i32タイプの結果オブジェクト",
+          "ko": "i32유형의결과객체",
+          "es": "Objeto resultado de tipo i32",
+          "fr": "Objet résultat de type i32",
+          "de": "Ergebnisobjekt vom Typ i32",
+          "pt-BR": "Objeto resultado do tipo i32",
+          "ru": "Объект результата типа i32",
+          "ar": "كائن نتيجة من نوع i32",
+          "hi": "i32 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i32"
       },
       "bridge_path": "process.currentPid",
       "descriptions": {
         "zh-CN": "获取当前进程 PID",
-        "en-US": "Current pid of process"
+        "en-US": "Current pid of process",
+        "zh-TW": "取得當前進程 PID",
+        "ja": "取得する現でプロセス PID",
+        "ko": "가져오기현재프로세스 PID",
+        "es": "PID actual del proceso",
+        "fr": "PID actuel du processus",
+        "de": "Aktuelle Prozess-PID",
+        "pt-BR": "PID atual do processo",
+        "ru": "Текущий PID процесса",
+        "ar": "PID الحالي للعملية",
+        "hi": "प्रोसेस का वर्तमान PID"
       },
       "group": "query",
       "description": "Current pid of process"
@@ -387,7 +747,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "名称标识",
-            "en-US": "Name identifier"
+            "en-US": "Name identifier",
+            "zh-TW": "名稱標識",
+            "ja": "名前識別子",
+            "ko": "이름 식별자",
+            "es": "Identificador de nombre",
+            "fr": "Identifiant de nom",
+            "de": "Namenskennung",
+            "pt-BR": "Identificador de nome",
+            "ru": "Идентификатор имени",
+            "ar": "معرف الاسم",
+            "hi": "नाम पहचानकर्ता"
           },
           "desc": "Name identifier"
         }
@@ -396,14 +766,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "process.envVar",
       "descriptions": {
         "zh-CN": "获取系统环境变量的值",
-        "en-US": "Get value of system environment variable"
+        "en-US": "Get value of system environment variable",
+        "zh-TW": "取得系統環境變量的值",
+        "ja": "システム環境変数の値を取得",
+        "ko": "시스템 환경 변수 값 가져오기",
+        "es": "Obtener valor de variable de entorno del sistema",
+        "fr": "Obtenir la valeur de la variable d'environnement",
+        "de": "Systemumgebungsvariable abrufen",
+        "pt-BR": "Obter valor da variável de ambiente do sistema",
+        "ru": "Получить значение переменной окружения",
+        "ar": "الحصول على قيمة متغير بيئة النظام",
+        "hi": "सिस्टम एनवायरनमेंट वैरिएबल का मान प्राप्त करें"
       },
       "group": "env",
       "description": "Get value of system environment variable"
@@ -416,14 +806,34 @@
         "type": "Record",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "process.envVars",
       "descriptions": {
         "zh-CN": "获取所有环境变量",
-        "en-US": "Env vars of process"
+        "en-US": "Env vars of process",
+        "zh-TW": "取得所有環境變量",
+        "ja": "プロセスの環境変数",
+        "ko": "프로세스 환경 변수",
+        "es": "Variables de entorno del proceso",
+        "fr": "Variables d'environnement du processus",
+        "de": "Prozess-Umgebungsvariablen",
+        "pt-BR": "Variáveis de ambiente do processo",
+        "ru": "Переменные окружения процесса",
+        "ar": "متغيرات بيئة العملية",
+        "hi": "प्रोसेस पर्यावरण चर"
       },
       "group": "env",
       "description": "Env vars of process"
@@ -437,7 +847,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要执行的命令",
-            "en-US": "Command to execute"
+            "en-US": "Command to execute",
+            "zh-TW": "要執行的命令",
+            "ja": "要実行するの命令",
+            "ko": "실행할 명령",
+            "es": "Comando a ejecutar",
+            "fr": "Commande à exécuter",
+            "de": "Auszuführender Befehl",
+            "pt-BR": "Comando a executar",
+            "ru": "Команда для выполнения",
+            "ar": "الأمر المراد تنفيذه",
+            "hi": "निष्पादित करने के लिए कमांड"
           },
           "desc": "Command to execute"
         }
@@ -446,14 +866,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "process.which",
       "descriptions": {
         "zh-CN": "查找可执行程序在系统PATH中的完整路径",
-        "en-US": "Find full path of executable in system PATH"
+        "en-US": "Find full path of executable in system PATH",
+        "zh-TW": "查找可執行程序在系統PATH中的完整路徑",
+        "ja": "查找可実行する程序でシステムPATH中の完整パス",
+        "ko": "시스템 PATH에서 실행 파일의 전체 경로 찾기",
+        "es": "Buscar ruta completa del ejecutable en PATH",
+        "fr": "Trouver le chemin complet de l'exécutable dans PATH",
+        "de": "Vollständigen Pfad der ausführbaren Datei in PATH finden",
+        "pt-BR": "Encontrar caminho completo do executável no PATH",
+        "ru": "Найти полный путь исполняемого файла в PATH",
+        "ar": "العثور على المسار الكامل للملف التنفيذي في PATH",
+        "hi": "सिस्टम PATH में निष्पादन योग्य फ़ाइल का पूर्ण पथ खोजें"
       },
       "group": "env",
       "description": "Find full path of executable in system PATH"
@@ -466,13 +906,33 @@
         "type": "ProcessUsage",
         "descs": {
           "zh-CN": "使用情况",
-          "en-US": "Usage"
+          "en-US": "Usage",
+          "zh-TW": "使用情況",
+          "ja": "使用方法",
+          "ko": "사용법",
+          "es": "Uso",
+          "fr": "Utilisation",
+          "de": "Verwendung",
+          "pt-BR": "Uso",
+          "ru": "Использование",
+          "ar": "الاستخدام",
+          "hi": "उपयोग"
         }
       },
       "bridge_path": "process.selfUsage",
       "descriptions": {
         "zh-CN": "获取当前进程资源使用情况",
-        "en-US": "Self usage of process"
+        "en-US": "Self usage of process",
+        "zh-TW": "取得當前進程資源使用情況",
+        "ja": "取得する現でプロセス资源使用情况",
+        "ko": "프로세스 자체 사용량",
+        "es": "Uso propio del proceso",
+        "fr": "Utilisation propre du processus",
+        "de": "Eigener Prozessverbrauch",
+        "pt-BR": "Uso próprio do processo",
+        "ru": "Собственное потребление процесса",
+        "ar": "الاستخدام الذاتي للعملية",
+        "hi": "प्रोसेस का स्वयं का उपयोग"
       },
       "group": "query",
       "description": "Self usage of process"
@@ -486,7 +946,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "目标进程ID",
-            "en-US": "Target process ID"
+            "en-US": "Target process ID",
+            "zh-TW": "目標進程ID",
+            "ja": "ターゲットプロセスID",
+            "ko": "대상 프로세스 ID",
+            "es": "ID de proceso objetivo",
+            "fr": "ID du processus cible",
+            "de": "Zielprozess-ID",
+            "pt-BR": "ID do processo alvo",
+            "ru": "ID целевого процесса",
+            "ar": "معرف العملية الهدف",
+            "hi": "लक्ष्य प्रोसेस आईडी"
           },
           "desc": "Target process ID"
         },
@@ -495,7 +965,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -504,14 +984,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "process.writeStdin",
       "descriptions": {
         "zh-CN": "写入stdin数据",
-        "en-US": "Write stdin of process"
+        "en-US": "Write stdin of process",
+        "zh-TW": "寫入stdin數據",
+        "ja": "書き込むstdinデータ",
+        "ko": "쓰기stdin데이터",
+        "es": "Escribir en stdin del proceso",
+        "fr": "Écrire dans stdin du processus",
+        "de": "In Prozess-Stdin schreiben",
+        "pt-BR": "Escrever em stdin do processo",
+        "ru": "Записать в stdin процесса",
+        "ar": "الكتابة في المدخل القياسي للعملية",
+        "hi": "प्रोसेस stdin में लिखें"
       },
       "group": "control",
       "description": "Write stdin of process"
@@ -525,7 +1025,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "目标进程ID",
-            "en-US": "Target process ID"
+            "en-US": "Target process ID",
+            "zh-TW": "目標進程ID",
+            "ja": "ターゲットプロセスID",
+            "ko": "대상 프로세스 ID",
+            "es": "ID de proceso objetivo",
+            "fr": "ID du processus cible",
+            "de": "Zielprozess-ID",
+            "pt-BR": "ID do processo alvo",
+            "ru": "ID целевого процесса",
+            "ar": "معرف العملية الهدف",
+            "hi": "लक्ष्य प्रोसेस आईडी"
           },
           "desc": "Target process ID"
         }
@@ -534,14 +1044,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "process.closeStdin",
       "descriptions": {
         "zh-CN": "关闭stdin",
-        "en-US": "Close stdin of process"
+        "en-US": "Close stdin of process",
+        "zh-TW": "關閉stdin",
+        "ja": "閉じるstdin",
+        "ko": "닫기stdin",
+        "es": "Cerrar stdin del proceso",
+        "fr": "Fermer stdin du processus",
+        "de": "Prozess-stdin schließen",
+        "pt-BR": "Fechar stdin do processo",
+        "ru": "Закрыть stdin процесса",
+        "ar": "إغلاق stdin للعملية",
+        "hi": "प्रोसेस stdin बंद करें"
       },
       "group": "control",
       "description": "Close stdin of process"
@@ -555,7 +1085,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "目标进程ID",
-            "en-US": "Target process ID"
+            "en-US": "Target process ID",
+            "zh-TW": "目標進程ID",
+            "ja": "ターゲットプロセスID",
+            "ko": "대상 프로세스 ID",
+            "es": "ID de proceso objetivo",
+            "fr": "ID du processus cible",
+            "de": "Zielprozess-ID",
+            "pt-BR": "ID do processo alvo",
+            "ru": "ID целевого процесса",
+            "ar": "معرف العملية الهدف",
+            "hi": "लक्ष्य प्रोसेस आईडी"
           },
           "desc": "Target process ID"
         },
@@ -564,7 +1104,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "priority参数",
-            "en-US": "priority parameter"
+            "en-US": "priority parameter",
+            "zh-TW": "priority參數",
+            "ja": "priorityパラメータ",
+            "ko": "priority매개변수",
+            "es": "Parámetro de priority",
+            "fr": "Paramètre de priority",
+            "de": "priority-Parameter",
+            "pt-BR": "Parâmetro de priority",
+            "ru": "Параметр priority",
+            "ar": "معلمة priority",
+            "hi": "priority पैरामीटर"
           },
           "desc": "priority parameter"
         }
@@ -573,14 +1123,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "process.setPriority",
       "descriptions": {
         "zh-CN": "设置进程优先级",
-        "en-US": "Set priority property of process"
+        "en-US": "Set priority property of process",
+        "zh-TW": "設定進程優先级",
+        "ja": "プロセスの優先度属性を設定",
+        "ko": "프로세스 우선순위 속성 설정",
+        "es": "Establecer prioridad del proceso",
+        "fr": "Définir la priorité du processus",
+        "de": "Prozesspriorität setzen",
+        "pt-BR": "Definir prioridade do processo",
+        "ru": "Установить приоритет процесса",
+        "ar": "تعيين أولوية العملية",
+        "hi": "प्रोसेस प्राथमिकता सेट करें"
       },
       "group": "control",
       "description": "Set priority property of process"
@@ -588,14 +1158,34 @@
   ],
   "overviews": {
     "zh-CN": "提供进程管理能力，包括启动/终止进程、获取进程列表、监控进程状态、执行系统命令、管理子进程的标准输入/输出/错误流等功能。",
-    "en-US": "Process management including start/kill processes, process listing, status monitoring, system command execution, and child process stdin/stdout/stderr management."
+    "en-US": "Process management including start/kill processes, process listing, status monitoring, system command execution, and child process stdin/stdout/stderr management.",
+    "zh-TW": "提供進程管理能力，包括啟動/終止進程、取得進程列表、監控進程狀態、執行系統命令、管理子進程的標準输入/输出/錯誤流等功能。",
+    "ja": "プロセス管理：起動/終了・プロセス一覧・ステータス監視・システムコマンド実行・子プロセスstdin/stdout/stderr管理。",
+    "ko": "프로세스 관리: 시작/종료, 프로세스 목록, 상태 모니터링, 시스템 명령 실행, 자식 프로세스 stdin/stdout/stderr 관리.",
+    "es": "Gestión de procesos: iniciar/terminar, listado, monitoreo, ejecución de comandos y gestión stdin/stdout/stderr.",
+    "fr": "Gestion de processus : démarrer/tuer, liste, surveillance, exécution de commandes et gestion stdin/stdout/stderr.",
+    "de": "Prozessverwaltung: Starten/Beenden, Prozessliste, Statusüberwachung, Befehlsausführung und stdin/stdout/stderr-Verwaltung.",
+    "pt-BR": "Gerenciamento de processos: iniciar/encerrar, listagem, monitoramento, execução de comandos e stdin/stdout/stderr.",
+    "ru": "Управление процессами: запуск/завершение, список, мониторинг, выполнение команд и управление stdin/stdout/stderr.",
+    "ar": "إدارة العمليات: بدء/إنهاء وقائمة ومراقبة وتنفيذ أوامر وإدارة stdin/stdout/stderr.",
+    "hi": "प्रोसेस मैनेजमेंट: शुरू/बंद, प्रोसेस लिस्ट, स्टेटस, कमांड एक्सीक्यूशन और stdin/stdout/stderr।"
   },
   "types": [
     {
       "name": "ExecResult",
       "descriptions": {
         "zh-CN": "执行结果",
-        "en-US": "Execution result"
+        "en-US": "Execution result",
+        "zh-TW": "執行结果",
+        "ja": "実行結果",
+        "ko": "실행 결과",
+        "es": "Resultado de ejecución",
+        "fr": "Résultat d'exécution",
+        "de": "Ausführungsergebnis",
+        "pt-BR": "Resultado da execução",
+        "ru": "Результат выполнения",
+        "ar": "نتيجة التنفيذ",
+        "hi": "निष्पादन परिणाम"
       },
       "fields": [
         {
@@ -603,7 +1193,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标准输出",
-            "en-US": "Standard output"
+            "en-US": "Standard output",
+            "zh-TW": "標準输出",
+            "ja": "標準出力",
+            "ko": "표준 출력",
+            "es": "Salida estándar",
+            "fr": "Sortie standard",
+            "de": "Standardausgabe",
+            "pt-BR": "Saída padrão",
+            "ru": "Стандартный вывод",
+            "ar": "الإخراج القياسي",
+            "hi": "मानक आउटपुट"
           }
         },
         {
@@ -611,7 +1211,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标准错误",
-            "en-US": "Standard error"
+            "en-US": "Standard error",
+            "zh-TW": "標準錯誤",
+            "ja": "標準エラー",
+            "ko": "표준 오류",
+            "es": "Error estándar",
+            "fr": "Erreur standard",
+            "de": "Standardfehler",
+            "pt-BR": "Erro padrão",
+            "ru": "Стандартная ошибка",
+            "ar": "الخطأ القياسي",
+            "hi": "मानक त्रुटि"
           }
         },
         {
@@ -619,7 +1229,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "退出码",
-            "en-US": "Exit code"
+            "en-US": "Exit code",
+            "zh-TW": "退出碼",
+            "ja": "終了コード",
+            "ko": "종료 코드",
+            "es": "Código de salida",
+            "fr": "Code de sortie",
+            "de": "Exit-Code",
+            "pt-BR": "Código de saída",
+            "ru": "Код выхода",
+            "ar": "رمز الخروج",
+            "hi": "एक्ज़िट कोड"
           }
         }
       ]
@@ -628,7 +1248,17 @@
       "name": "SpawnHandle",
       "descriptions": {
         "zh-CN": "进程句柄",
-        "en-US": "Process handle"
+        "en-US": "Process handle",
+        "zh-TW": "進程句柄",
+        "ja": "プロセスハンドル",
+        "ko": "프로세스 핸들",
+        "es": "Manejador de proceso",
+        "fr": "Handle de processus",
+        "de": "Prozess-Handle",
+        "pt-BR": "Handle de processo",
+        "ru": "Дескриптор процесса",
+        "ar": "مقبض العملية",
+        "hi": "प्रोसेस हैंडल"
       },
       "fields": [
         {
@@ -636,7 +1266,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "进程ID",
-            "en-US": "Process ID"
+            "en-US": "Process ID",
+            "zh-TW": "進程ID",
+            "ja": "プロセスID",
+            "ko": "프로세스 ID",
+            "es": "ID de proceso",
+            "fr": "ID du processus",
+            "de": "Prozess-ID",
+            "pt-BR": "ID do processo",
+            "ru": "ID процесса",
+            "ar": "معرّف العملية",
+            "hi": "प्रोसेस ID"
           }
         }
       ]
@@ -645,7 +1285,17 @@
       "name": "ProcessUsage",
       "descriptions": {
         "zh-CN": "进程资源使用",
-        "en-US": "Process usage"
+        "en-US": "Process usage",
+        "zh-TW": "進程資源使用",
+        "ja": "プロセス使用量",
+        "ko": "프로세스 사용량",
+        "es": "Uso del proceso",
+        "fr": "Utilisation du processus",
+        "de": "Prozessauslastung",
+        "pt-BR": "Uso do processo",
+        "ru": "Использование процесса",
+        "ar": "استخدام العملية",
+        "hi": "प्रोसेस उपयोग"
       },
       "fields": [
         {
@@ -653,7 +1303,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "CPU使用率(%)",
-            "en-US": "CPU usage(%)"
+            "en-US": "CPU usage(%)",
+            "zh-TW": "CPU使用率(%)",
+            "ja": "CPU使用率(%)",
+            "ko": "CPU 사용률(%)",
+            "es": "Uso de CPU(%)",
+            "fr": "Utilisation CPU(%)",
+            "de": "CPU-Auslastung(%)",
+            "pt-BR": "Uso da CPU(%)",
+            "ru": "Загрузка CPU(%)",
+            "ar": "استخدام المعالج(%)",
+            "hi": "CPU उपयोग(%)"
           }
         },
         {
@@ -661,7 +1321,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "内存(MB)",
-            "en-US": "Memory(MB)"
+            "en-US": "Memory(MB)",
+            "zh-TW": "記憶體(MB)",
+            "ja": "メモリ(MB)",
+            "ko": "메모리(MB)",
+            "es": "Memoria(MB)",
+            "fr": "Mémoire(Mo)",
+            "de": "Speicher(MB)",
+            "pt-BR": "Memória(MB)",
+            "ru": "Память(МБ)",
+            "ar": "الذاكرة(ميغابايت)",
+            "hi": "मेमोरी(MB)"
           }
         }
       ]

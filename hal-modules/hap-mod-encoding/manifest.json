@@ -22,7 +22,7 @@
     "ar": "وحدة تحويل الترميز",
     "hi": "एन्कोडिंग रूपांतरण मॉड्यूल"
   },
-  "permission": "",
+  "permission": "encoding",
   "functions": [
     {
       "name": "base64_encode",
@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -42,14 +52,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.base64Encode",
       "descriptions": {
         "zh-CN": "将数据编码为 Base64",
-        "en-US": "Base64 encode of encoding"
+        "en-US": "Base64 encode of encoding",
+        "zh-TW": "將數據編碼為 Base64",
+        "ja": "Base64エンコード",
+        "ko": "인코딩의 Base64 인코드",
+        "es": "Codificación Base64",
+        "fr": "Encodage Base64",
+        "de": "Base64-Kodierung",
+        "pt-BR": "Codificação Base64",
+        "ru": "Кодирование Base64",
+        "ar": "تشفير Base64",
+        "hi": "Base64 एनकोड"
       },
       "group": "base",
       "description": "Base64 encode of encoding"
@@ -63,7 +93,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64",
-            "en-US": "Base64"
+            "en-US": "Base64",
+            "zh-TW": "Base64",
+            "ja": "Base64",
+            "ko": "Base64",
+            "es": "Base64",
+            "fr": "Base64",
+            "de": "Base64",
+            "pt-BR": "Base64",
+            "ru": "Base64",
+            "ar": "Base64",
+            "hi": "Base64"
           }
         }
       ],
@@ -71,14 +111,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.base64Decode",
       "descriptions": {
         "zh-CN": "解码 Base64 数据",
-        "en-US": "Base64 decode of encoding"
+        "en-US": "Base64 decode of encoding",
+        "zh-TW": "解碼 Base64 數據",
+        "ja": "デコード Base64 データ",
+        "ko": "디코딩 Base64 데이터",
+        "es": "Decodificación Base64",
+        "fr": "Décodage Base64",
+        "de": "Base64-Dekodierung",
+        "pt-BR": "Decodificação Base64",
+        "ru": "Декодирование Base64",
+        "ar": "فك تشفير Base64",
+        "hi": "Base64 डीकोड"
       },
       "group": "base",
       "description": "Base64 decode of encoding"
@@ -92,7 +152,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -101,14 +171,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.base64urlEncode",
       "descriptions": {
         "zh-CN": "将数据编码为 BASE64URL 格式",
-        "en-US": "Base64URL encode"
+        "en-US": "Base64URL encode",
+        "zh-TW": "將數據編碼為 BASE64URL 格式",
+        "ja": "Base64URLエンコード",
+        "ko": "Base64URL 인코드",
+        "es": "Codificación Base64URL",
+        "fr": "Encodage Base64URL",
+        "de": "Base64URL-Kodierung",
+        "pt-BR": "Codificação Base64URL",
+        "ru": "Кодирование Base64URL",
+        "ar": "تشفير Base64URL",
+        "hi": "Base64URL एनकोड"
       },
       "group": "base"
     },
@@ -121,7 +211,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64URL",
-            "en-US": "Base64URL"
+            "en-US": "Base64URL",
+            "zh-TW": "Base64URL",
+            "ja": "Base64URL",
+            "ko": "Base64URL",
+            "es": "Base64URL",
+            "fr": "Base64URL",
+            "de": "Base64URL",
+            "pt-BR": "Base64URL",
+            "ru": "Base64URL",
+            "ar": "Base64URL",
+            "hi": "Base64URL"
           }
         }
       ],
@@ -129,14 +229,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.base64urlDecode",
       "descriptions": {
         "zh-CN": "解码 BASE64URL 格式数据",
-        "en-US": "Base64URL decode"
+        "en-US": "Base64URL decode",
+        "zh-TW": "解碼 BASE64URL 格式數據",
+        "ja": "デコード BASE64URL フォーマットデータ",
+        "ko": "디코딩 BASE64URL 형식데이터",
+        "es": "Decodificación Base64URL",
+        "fr": "Décodage Base64URL",
+        "de": "Base64URL-Dekodierung",
+        "pt-BR": "Decodificação Base64URL",
+        "ru": "Декодирование Base64URL",
+        "ar": "فك تشفير Base64URL",
+        "hi": "Base64URL डीकोड"
       },
       "group": "base"
     },
@@ -149,7 +269,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         },
@@ -158,7 +288,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否添加填充字符=",
-            "en-US": "Whether to add padding character ="
+            "en-US": "Whether to add padding character =",
+            "zh-TW": "是否添加填充字元=",
+            "ja": "かどうか添加填充文字=",
+            "ko": "패딩 문자 = 추가 여부",
+            "es": "Agregar carácter de relleno =",
+            "fr": "Ajouter le caractère de remplissage =",
+            "de": "Auffüllungszeichen = hinzufügen",
+            "pt-BR": "Adicionar caractere de preenchimento =",
+            "ru": "Добавить символ заполнения =",
+            "ar": "إضافة حرف الحشو =",
+            "hi": "पैडिंग कैरेक्टर = जोड़ें"
           },
           "desc": "Whether to add padding character ="
         }
@@ -167,14 +307,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.base32Encode",
       "descriptions": {
         "zh-CN": "将数据编码为 BASE32 格式",
-        "en-US": "Base32 encode of encoding"
+        "en-US": "Base32 encode of encoding",
+        "zh-TW": "將數據編碼為 BASE32 格式",
+        "ja": "Base32エンコード",
+        "ko": "인코딩의 Base32 인코드",
+        "es": "Codificación Base32",
+        "fr": "Encodage Base32",
+        "de": "Base32-Kodierung",
+        "pt-BR": "Codificação Base32",
+        "ru": "Кодирование Base32",
+        "ar": "تشفير Base32",
+        "hi": "Base32 एनकोड"
       },
       "group": "base",
       "description": "Base32 encode of encoding"
@@ -188,7 +348,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base32",
-            "en-US": "Base32"
+            "en-US": "Base32",
+            "zh-TW": "Base32",
+            "ja": "Base32",
+            "ko": "Base32",
+            "es": "Base32",
+            "fr": "Base32",
+            "de": "Base32",
+            "pt-BR": "Base32",
+            "ru": "Base32",
+            "ar": "Base32",
+            "hi": "Base32"
           }
         }
       ],
@@ -196,14 +366,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.base32Decode",
       "descriptions": {
         "zh-CN": "解码 BASE32 格式数据",
-        "en-US": "Base32 decode of encoding"
+        "en-US": "Base32 decode of encoding",
+        "zh-TW": "解碼 BASE32 格式數據",
+        "ja": "デコード BASE32 フォーマットデータ",
+        "ko": "디코딩 BASE32 형식데이터",
+        "es": "Decodificación Base32",
+        "fr": "Décodage Base32",
+        "de": "Base32-Dekodierung",
+        "pt-BR": "Decodificação Base32",
+        "ru": "Декодирование Base32",
+        "ar": "فك تشفير Base32",
+        "hi": "Base32 डीकोड"
       },
       "group": "base",
       "description": "Base32 decode of encoding"
@@ -217,7 +407,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -226,13 +426,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "十六进制",
-          "en-US": "Hex"
+          "en-US": "Hex",
+          "zh-TW": "十六進製",
+          "ja": "16進数",
+          "ko": "16진수",
+          "es": "Hexadecimal",
+          "fr": "Hexadécimal",
+          "de": "Hexadezimal",
+          "pt-BR": "Hexadecimal",
+          "ru": "Шестнадцатеричное",
+          "ar": "سداسي عشري",
+          "hi": "हेक्स"
         }
       },
       "bridge_path": "encoding.hexEncode",
       "descriptions": {
         "zh-CN": "将数据编码为十六进制",
-        "en-US": "Hex encode of encoding"
+        "en-US": "Hex encode of encoding",
+        "zh-TW": "將數據編碼為十六進製",
+        "ja": "Hexエンコード",
+        "ko": "인코딩의 hex 인코딩",
+        "es": "Codificación hexadecimal",
+        "fr": "Encodage hexadécimal",
+        "de": "Hex-Kodierung",
+        "pt-BR": "Codificação hexadecimal",
+        "ru": "Hex-кодирование",
+        "ar": "تشفير ست عشري",
+        "hi": "हेक्स एनकोड"
       },
       "group": "base",
       "description": "Hex encode of encoding"
@@ -246,7 +466,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "十六进制",
-            "en-US": "Hex"
+            "en-US": "Hex",
+            "zh-TW": "十六進製",
+            "ja": "16進数",
+            "ko": "16진수",
+            "es": "Hexadecimal",
+            "fr": "Hexadécimal",
+            "de": "Hexadezimal",
+            "pt-BR": "Hexadecimal",
+            "ru": "Шестнадцатеричное",
+            "ar": "سداسي عشري",
+            "hi": "हेक्स"
           }
         }
       ],
@@ -254,14 +484,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.hexDecode",
       "descriptions": {
         "zh-CN": "解码十六进制数据",
-        "en-US": "Hex decode of encoding"
+        "en-US": "Hex decode of encoding",
+        "zh-TW": "解碼十六進製數據",
+        "ja": "Hexデコード",
+        "ko": "인코딩의 hex 디코딩",
+        "es": "Decodificación hexadecimal",
+        "fr": "Décodage hexadécimal",
+        "de": "Hex-Dekodierung",
+        "pt-BR": "Decodificação hexadecimal",
+        "ru": "Hex-декодирование",
+        "ar": "فك تشفير ست عشري",
+        "hi": "हेक्स डीकोड"
       },
       "group": "base",
       "description": "Hex decode of encoding"
@@ -275,7 +525,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         },
@@ -284,7 +544,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "component参数",
-            "en-US": "component parameter"
+            "en-US": "component parameter",
+            "zh-TW": "component參數",
+            "ja": "componentパラメータ",
+            "ko": "component매개변수",
+            "es": "Parámetro de componente",
+            "fr": "Paramètre de composant",
+            "de": "Komponenten-Parameter",
+            "pt-BR": "Parâmetro de componente",
+            "ru": "Параметр компонента",
+            "ar": "معلمة المكون",
+            "hi": "कंपोनेंट पैरामीटर"
           },
           "desc": "component parameter"
         }
@@ -293,14 +563,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.urlEncode",
       "descriptions": {
         "zh-CN": "URL 编码字符串",
-        "en-US": "Url encode of encoding"
+        "en-US": "Url encode of encoding",
+        "zh-TW": "URL 編碼字串",
+        "ja": "URL エンコーディング文字列",
+        "ko": "URL 인코딩문자열",
+        "es": "Codificación URL",
+        "fr": "Encodage URL",
+        "de": "URL-Kodierung",
+        "pt-BR": "Codificação URL",
+        "ru": "URL-кодирование",
+        "ar": "تشفير URL",
+        "hi": "URL एनकोड"
       },
       "group": "text",
       "description": "Url encode of encoding"
@@ -314,7 +604,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL 编码d",
-            "en-US": "URL encoded"
+            "en-US": "URL encoded",
+            "zh-TW": "URL 編碼d",
+            "ja": "URL エンコーディングd",
+            "ko": "URL 인코딩d",
+            "es": "Codificado en URL",
+            "fr": "Encodé en URL",
+            "de": "URL-kodiert",
+            "pt-BR": "Codificado em URL",
+            "ru": "Закодировано в URL",
+            "ar": "مشفر بـ URL",
+            "hi": "URL एनकोडेड"
           }
         }
       ],
@@ -322,14 +622,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.urlDecode",
       "descriptions": {
         "zh-CN": "URL 解码字符串",
-        "en-US": "Url decode of encoding"
+        "en-US": "Url decode of encoding",
+        "zh-TW": "URL 解碼字串",
+        "ja": "URL デコード文字列",
+        "ko": "URL 디코딩문자열",
+        "es": "Decodificación URL",
+        "fr": "Décodage URL",
+        "de": "URL-Dekodierung",
+        "pt-BR": "Decodificação URL",
+        "ru": "URL-декодирование",
+        "ar": "فك تشفير URL",
+        "hi": "URL डीकोड"
       },
       "group": "text",
       "description": "Url decode of encoding"
@@ -343,7 +663,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "HTML",
-            "en-US": "HTML"
+            "en-US": "HTML",
+            "zh-TW": "HTML",
+            "ja": "HTML",
+            "ko": "HTML",
+            "es": "HTML",
+            "fr": "HTML",
+            "de": "HTML",
+            "pt-BR": "HTML",
+            "ru": "HTML",
+            "ar": "HTML",
+            "hi": "HTML"
           }
         }
       ],
@@ -351,14 +681,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.htmlEncode",
       "descriptions": {
         "zh-CN": "将数据编码为 HTML 格式",
-        "en-US": "Html encode of encoding"
+        "en-US": "Html encode of encoding",
+        "zh-TW": "將數據編碼為 HTML 格式",
+        "ja": "HTMLエンコード",
+        "ko": "인코딩의 HTML 인코딩",
+        "es": "Codificación HTML",
+        "fr": "Encodage HTML",
+        "de": "HTML-Kodierung",
+        "pt-BR": "Codificação HTML",
+        "ru": "HTML-кодирование",
+        "ar": "تشفير HTML",
+        "hi": "HTML एनकोड"
       },
       "group": "text",
       "description": "Html encode of encoding"
@@ -372,7 +722,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "HTML 实体",
-            "en-US": "HTML 实体"
+            "en-US": "HTML 实体",
+            "zh-TW": "HTML 實体",
+            "ja": "HTMLエンティティ",
+            "ko": "HTML 엔티티",
+            "es": "Entidad HTML",
+            "fr": "Entité HTML",
+            "de": "HTML-Entität",
+            "pt-BR": "Entidade HTML",
+            "ru": "HTML-сущность",
+            "ar": "كيان HTML",
+            "hi": "HTML एंटिटी"
           }
         }
       ],
@@ -380,14 +740,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.htmlDecode",
       "descriptions": {
         "zh-CN": "解码 HTML 格式数据",
-        "en-US": "Html decode of encoding"
+        "en-US": "Html decode of encoding",
+        "zh-TW": "解碼 HTML 格式數據",
+        "ja": "デコード HTML フォーマットデータ",
+        "ko": "디코딩 HTML 형식데이터",
+        "es": "Decodificación HTML",
+        "fr": "Décodage HTML",
+        "de": "HTML-Dekodierung",
+        "pt-BR": "Decodificação HTML",
+        "ru": "HTML-декодирование",
+        "ar": "فك تشفير HTML",
+        "hi": "HTML डीकोड"
       },
       "group": "text",
       "description": "Html decode of encoding"
@@ -401,7 +781,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         },
@@ -410,7 +800,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "源字符编码（如GBK/UTF-8）",
-            "en-US": "Source encoding (e.g. GBK/UTF-8)"
+            "en-US": "Source encoding (e.g. GBK/UTF-8)",
+            "zh-TW": "源字元編碼（如GBK/UTF-8）",
+            "ja": "源文字エンコーディング（如GBK/UTF-8）",
+            "ko": "원본 인코딩 (예: GBK/UTF-8)",
+            "es": "Codificación de origen (ej. GBK/UTF-8)",
+            "fr": "Encodage source (ex. GBK/UTF-8)",
+            "de": "Quellkodierung (z.B. GBK/UTF-8)",
+            "pt-BR": "Codificação de origem (ex. GBK/UTF-8)",
+            "ru": "Исходная кодировка (напр. GBK/UTF-8)",
+            "ar": "ترميز المصدر (مثل GBK/UTF-8)",
+            "hi": "स्रोत एनकोडिंग (जैसे GBK/UTF-8)"
           },
           "desc": "Source encoding (e.g. GBK/UTF-8)"
         },
@@ -419,7 +819,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "目标字符编码（如UTF-8/GBK）",
-            "en-US": "Target encoding (e.g. UTF-8/GBK)"
+            "en-US": "Target encoding (e.g. UTF-8/GBK)",
+            "zh-TW": "目標字元編碼（如UTF-8/GBK）",
+            "ja": "ターゲットエンコーディング（例: UTF-8/GBK）",
+            "ko": "대상 인코딩 (예: UTF-8/GBK)",
+            "es": "Codificación de destino (ej. UTF-8/GBK)",
+            "fr": "Encodage cible (ex. UTF-8/GBK)",
+            "de": "Zielkodierung (z.B. UTF-8/GBK)",
+            "pt-BR": "Codificação de destino (ex. UTF-8/GBK)",
+            "ru": "Целевая кодировка (напр. UTF-8/GBK)",
+            "ar": "ترميز الهدف (مثل UTF-8/GBK)",
+            "hi": "लक्ष्य एनकोडिंग (जैसे UTF-8/GBK)"
           },
           "desc": "Target encoding (e.g. UTF-8/GBK)"
         }
@@ -428,14 +838,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.textConvert",
       "descriptions": {
         "zh-CN": "文本转换编码",
-        "en-US": "Text convert of encoding"
+        "en-US": "Text convert of encoding",
+        "zh-TW": "文字轉換編碼",
+        "ja": "テキスト変換するエンコーディング",
+        "ko": "텍스트변환인코딩",
+        "es": "Conversión de codificación de texto",
+        "fr": "Conversion d'encodage de texte",
+        "de": "Text-Kodierungskonvertierung",
+        "pt-BR": "Conversão de codificação de texto",
+        "ru": "Конвертация кодировки текста",
+        "ar": "تحويل ترميز النص",
+        "hi": "टेक्स्ट एनकोडिंग रूपांतरण"
       },
       "group": "text",
       "description": "Text convert of encoding"
@@ -449,7 +879,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         },
         {
@@ -457,7 +897,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "采样大小",
-            "en-US": "Sample size"
+            "en-US": "Sample size",
+            "zh-TW": "採样大小",
+            "ja": "サンプルサイズ",
+            "ko": "샘플 크기",
+            "es": "Tamaño de muestra",
+            "fr": "Taille de l'échantillon",
+            "de": "Stichprobengröße",
+            "pt-BR": "Tamanho da amostra",
+            "ru": "Размер выборки",
+            "ar": "حجم العينة",
+            "hi": "सैंपल साइज़"
           }
         }
       ],
@@ -465,14 +915,34 @@
         "type": "EncodingDetectResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "encoding.detectEncoding",
       "descriptions": {
         "zh-CN": "检测编码编码",
-        "en-US": "Detect encoding of encoding"
+        "en-US": "Detect encoding of encoding",
+        "zh-TW": "檢測編碼編碼",
+        "ja": "検出するエンコーディングエンコーディング",
+        "ko": "감지인코딩인코딩",
+        "es": "Detectar codificación",
+        "fr": "Détecter l'encodage",
+        "de": "Kodierung erkennen",
+        "pt-BR": "Detectar codificação",
+        "ru": "Определить кодировку",
+        "ar": "كشف الترميز",
+        "hi": "एनकोडिंग डिटेक्ट"
       },
       "group": "text",
       "description": "Detect encoding of encoding"
@@ -486,7 +956,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入文件路径",
-            "en-US": "Input file path"
+            "en-US": "Input file path",
+            "zh-TW": "輸入檔案路徑",
+            "ja": "入力ファイルパス",
+            "ko": "입력파일경로",
+            "es": "Ruta del archivo de entrada",
+            "fr": "Chemin du fichier d'entrée",
+            "de": "Eingabedateipfad",
+            "pt-BR": "Caminho do arquivo de entrada",
+            "ru": "Путь входного файла",
+            "ar": "مسار ملف الإدخال",
+            "hi": "इनपुट फ़ाइल पथ"
           },
           "desc": "Input file path"
         },
@@ -495,7 +975,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         },
@@ -504,7 +994,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "源文件字符编码",
-            "en-US": "Source file encoding"
+            "en-US": "Source file encoding",
+            "zh-TW": "源檔案字元編碼",
+            "ja": "源ファイル文字エンコーディング",
+            "ko": "원본 파일 인코딩",
+            "es": "Codificación del archivo de origen",
+            "fr": "Encodage du fichier source",
+            "de": "Quelldatei-Kodierung",
+            "pt-BR": "Codificação do arquivo de origem",
+            "ru": "Кодировка исходного файла",
+            "ar": "ترميز الملف المصدر",
+            "hi": "स्रोत फ़ाइल एनकोडिंग"
           },
           "desc": "Source file encoding"
         },
@@ -513,7 +1013,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "目标字符编码",
-            "en-US": "Target encoding"
+            "en-US": "Target encoding",
+            "zh-TW": "目標字元編碼",
+            "ja": "ターゲットエンコーディング",
+            "ko": "대상 인코딩",
+            "es": "Codificación de destino",
+            "fr": "Encodage cible",
+            "de": "Zielkodierung",
+            "pt-BR": "Codificação de destino",
+            "ru": "Целевая кодировка",
+            "ar": "الترميز الهدف",
+            "hi": "लक्ष्य एनकोडिंग"
           },
           "desc": "Target encoding"
         },
@@ -522,7 +1032,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否写入BOM标记",
-            "en-US": "Whether to write BOM marker"
+            "en-US": "Whether to write BOM marker",
+            "zh-TW": "是否寫入BOM標記",
+            "ja": "BOMマーカーを書き込むかどうか",
+            "ko": "BOM 마커 쓰기 여부",
+            "es": "Escribir marcador BOM",
+            "fr": "Écrire le marqueur BOM",
+            "de": "BOM-Marker schreiben",
+            "pt-BR": "Escrever marcador BOM",
+            "ru": "Записать маркер BOM",
+            "ar": "كتابة علامة BOM",
+            "hi": "BOM मार्कर लिखें"
           },
           "desc": "Whether to write BOM marker"
         }
@@ -531,14 +1051,34 @@
         "type": "ConvertResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "encoding.convertFile",
       "descriptions": {
         "zh-CN": "将文件的字符编码从一种转换为另一种",
-        "en-US": "Convert file character encoding from one to another"
+        "en-US": "Convert file character encoding from one to another",
+        "zh-TW": "將檔案的字元編碼從一種轉換為另一種",
+        "ja": "ファイルの文字エンコーディングを変換",
+        "ko": "파일 문자 인코딩을 다른 인코딩으로 변환",
+        "es": "Convertir codificación de caracteres del archivo",
+        "fr": "Convertir l'encodage de caractères du fichier",
+        "de": "Datei-Zeichenkodierung konvertieren",
+        "pt-BR": "Converter codificação de caracteres do arquivo",
+        "ru": "Конвертировать кодировку символов файла",
+        "ar": "تحويل ترميز أحرف الملف",
+        "hi": "फ़ाइल कैरेक्टर एनकोडिंग बदलें"
       },
       "group": "text",
       "description": "Convert file character encoding from one to another"
@@ -552,7 +1092,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         },
@@ -561,7 +1111,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "alphabet参数",
-            "en-US": "alphabet parameter"
+            "en-US": "alphabet parameter",
+            "zh-TW": "alphabet參數",
+            "ja": "alphabetパラメータ",
+            "ko": "alphabet매개변수",
+            "es": "Parámetro de alfabeto",
+            "fr": "Paramètre d'alphabet",
+            "de": "Alphabet-Parameter",
+            "pt-BR": "Parâmetro de alfabeto",
+            "ru": "Параметр алфавита",
+            "ar": "معلمة الأبجدية",
+            "hi": "अल्फ़ाबेट पैरामीटर"
           },
           "desc": "alphabet parameter"
         }
@@ -570,14 +1130,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.base58Encode",
       "descriptions": {
         "zh-CN": "将数据编码为 BASE58 格式",
-        "en-US": "Base58 encode of encoding"
+        "en-US": "Base58 encode of encoding",
+        "zh-TW": "將數據編碼為 BASE58 格式",
+        "ja": "Base58エンコード",
+        "ko": "인코딩의 Base58 인코드",
+        "es": "Codificación Base58",
+        "fr": "Encodage Base58",
+        "de": "Base58-Kodierung",
+        "pt-BR": "Codificação Base58",
+        "ru": "Кодирование Base58",
+        "ar": "تشفير Base58",
+        "hi": "Base58 एनकोड"
       },
       "group": "base",
       "description": "Base58 encode of encoding"
@@ -591,7 +1171,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base58",
-            "en-US": "Base58"
+            "en-US": "Base58",
+            "zh-TW": "Base58",
+            "ja": "Base58",
+            "ko": "Base58",
+            "es": "Base58",
+            "fr": "Base58",
+            "de": "Base58",
+            "pt-BR": "Base58",
+            "ru": "Base58",
+            "ar": "Base58",
+            "hi": "Base58"
           }
         },
         {
@@ -599,7 +1189,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "alphabet参数",
-            "en-US": "alphabet parameter"
+            "en-US": "alphabet parameter",
+            "zh-TW": "alphabet參數",
+            "ja": "alphabetパラメータ",
+            "ko": "alphabet매개변수",
+            "es": "Parámetro de alfabeto",
+            "fr": "Paramètre d'alphabet",
+            "de": "Alphabet-Parameter",
+            "pt-BR": "Parâmetro de alfabeto",
+            "ru": "Параметр алфавита",
+            "ar": "معلمة الأبجدية",
+            "hi": "अल्फ़ाबेट पैरामीटर"
           },
           "desc": "alphabet parameter"
         }
@@ -608,14 +1208,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "encoding.base58Decode",
       "descriptions": {
         "zh-CN": "解码 BASE58 格式数据",
-        "en-US": "Base58 decode of encoding"
+        "en-US": "Base58 decode of encoding",
+        "zh-TW": "解碼 BASE58 格式數據",
+        "ja": "デコード BASE58 フォーマットデータ",
+        "ko": "디코딩 BASE58 형식데이터",
+        "es": "Decodificación Base58",
+        "fr": "Décodage Base58",
+        "de": "Base58-Dekodierung",
+        "pt-BR": "Decodificação Base58",
+        "ru": "Декодирование Base58",
+        "ar": "فك تشفير Base58",
+        "hi": "Base58 डीकोड"
       },
       "group": "base",
       "description": "Base58 decode of encoding"
@@ -623,7 +1243,17 @@
   ],
   "overviews": {
     "zh-CN": "提供字符编码转换、Base64/Hex 编解码、URL 编解码、HTML 实体转义、Unicode 处理等能力。支持 UTF-8/GBK/GB2312/Shift_JIS/EUC-KR 等多种字符集。",
-    "en-US": "Character encoding conversion, Base64/Hex encoding, URL encoding, HTML entity escaping, and Unicode handling. Supports UTF-8/GBK/GB2312/Shift_JIS/EUC-KR and more character sets."
+    "en-US": "Character encoding conversion, Base64/Hex encoding, URL encoding, HTML entity escaping, and Unicode handling. Supports UTF-8/GBK/GB2312/Shift_JIS/EUC-KR and more character sets.",
+    "zh-TW": "提供字符編碼轉换、Base64/Hex 編解碼、URL 編解碼、HTML 實體轉義、Unicode 處理等能力。支援 UTF-8/GBK/GB2312/Shift_JIS/EUC-KR 等多種字符集。",
+    "ja": "文字エンコーディング変換、Base64/Hex/URLエンコード、HTMLエスケープ、Unicode処理。UTF-8/GBK/GB2312/Shift_JIS/EUC-KR等に対応。",
+    "ko": "문자 인코딩 변환, Base64/Hex/URL 인코딩, HTML 이스케이프, Unicode 처리. UTF-8/GBK/GB2312/Shift_JIS/EUC-KR 등 지원.",
+    "es": "Conversión de codificación, Base64/Hex/URL, escape HTML y Unicode. UTF-8/GBK/GB2312/Shift_JIS/EUC-KR y más.",
+    "fr": "Conversion d'encodage, Base64/Hex/URL, échappement HTML et Unicode. UTF-8/GBK/GB2312/Shift_JIS/EUC-KR et plus.",
+    "de": "Zeichencodierung, Base64/Hex/URL, HTML-Escaping und Unicode. UTF-8/GBK/GB2312/Shift_JIS/EUC-KR u.m.",
+    "pt-BR": "Conversão de codificação, Base64/Hex/URL, escape HTML e Unicode. UTF-8/GBK/GB2312/Shift_JIS/EUC-KR e mais.",
+    "ru": "Конвертация кодировок, Base64/Hex/URL, HTML-экранирование и Unicode. UTF-8/GBK/GB2312/Shift_JIS/EUC-KR и др.",
+    "ar": "تحويل الترميز، Base64/Hex/URL، HTML وUnicode. يدعم UTF-8/GBK/GB2312/Shift_JIS/EUC-KR.",
+    "hi": "कैरेक्टर एन्कोडिंग, Base64/Hex/URL, HTML एस्केप और Unicode। UTF-8/GBK/GB2312/Shift_JIS/EUC-KR आदि।"
   },
   "constants": [
     {
@@ -633,7 +1263,17 @@
       "group": "charset",
       "descs": {
         "zh-CN": "UTF-8编码",
-        "en-US": "UTF-8 encoding"
+        "en-US": "UTF-8 encoding",
+        "zh-TW": "UTF-8編碼",
+        "ja": "UTF-8エンコーディング",
+        "ko": "UTF-8 인코딩",
+        "es": "Codificación UTF-8",
+        "fr": "Encodage UTF-8",
+        "de": "UTF-8-Kodierung",
+        "pt-BR": "Codificação UTF-8",
+        "ru": "Кодировка UTF-8",
+        "ar": "ترميز UTF-8",
+        "hi": "UTF-8 एन्कोडिंग"
       }
     },
     {
@@ -643,7 +1283,17 @@
       "group": "charset",
       "descs": {
         "zh-CN": "GBK编码",
-        "en-US": "GBK encoding"
+        "en-US": "GBK encoding",
+        "zh-TW": "GBK編碼",
+        "ja": "GBKエンコーディング",
+        "ko": "GBK 인코딩",
+        "es": "Codificación GBK",
+        "fr": "Encodage GBK",
+        "de": "GBK-Kodierung",
+        "pt-BR": "Codificação GBK",
+        "ru": "Кодировка GBK",
+        "ar": "ترميز GBK",
+        "hi": "GBK एन्कोडिंग"
       }
     },
     {
@@ -653,7 +1303,17 @@
       "group": "charset",
       "descs": {
         "zh-CN": "GB2312编码",
-        "en-US": "GB2312 encoding"
+        "en-US": "GB2312 encoding",
+        "zh-TW": "GB2312編碼",
+        "ja": "GB2312エンコーディング",
+        "ko": "GB2312 인코딩",
+        "es": "Codificación GB2312",
+        "fr": "Encodage GB2312",
+        "de": "GB2312-Kodierung",
+        "pt-BR": "Codificação GB2312",
+        "ru": "Кодировка GB2312",
+        "ar": "ترميز GB2312",
+        "hi": "GB2312 एन्कोडिंग"
       }
     },
     {
@@ -663,7 +1323,17 @@
       "group": "charset",
       "descs": {
         "zh-CN": "BIG5编码",
-        "en-US": "BIG5 encoding"
+        "en-US": "BIG5 encoding",
+        "zh-TW": "BIG5編碼",
+        "ja": "BIG5エンコーディング",
+        "ko": "BIG5 인코딩",
+        "es": "Codificación BIG5",
+        "fr": "Encodage BIG5",
+        "de": "BIG5-Kodierung",
+        "pt-BR": "Codificação BIG5",
+        "ru": "Кодировка BIG5",
+        "ar": "ترميز BIG5",
+        "hi": "BIG5 एन्कोडिंग"
       }
     },
     {
@@ -673,7 +1343,17 @@
       "group": "charset",
       "descs": {
         "zh-CN": "Shift-JIS编码",
-        "en-US": "Shift-JIS encoding"
+        "en-US": "Shift-JIS encoding",
+        "zh-TW": "Shift-JIS編碼",
+        "ja": "Shift-JISエンコーディング",
+        "ko": "Shift-JIS 인코딩",
+        "es": "Codificación Shift-JIS",
+        "fr": "Encodage Shift-JIS",
+        "de": "Shift-JIS-Kodierung",
+        "pt-BR": "Codificação Shift-JIS",
+        "ru": "Кодировка Shift-JIS",
+        "ar": "ترميز Shift-JIS",
+        "hi": "Shift-JIS एन्कोडिंग"
       }
     },
     {
@@ -683,7 +1363,17 @@
       "group": "charset",
       "descs": {
         "zh-CN": "ISO-8859-1编码",
-        "en-US": "ISO-8859-1 encoding"
+        "en-US": "ISO-8859-1 encoding",
+        "zh-TW": "ISO-8859-1編碼",
+        "ja": "ISO-8859-1エンコーディング",
+        "ko": "ISO-8859-1 인코딩",
+        "es": "Codificación ISO-8859-1",
+        "fr": "Encodage ISO-8859-1",
+        "de": "ISO-8859-1-Kodierung",
+        "pt-BR": "Codificação ISO-8859-1",
+        "ru": "Кодировка ISO-8859-1",
+        "ar": "ترميز ISO-8859-1",
+        "hi": "ISO-8859-1 एन्कोडिंग"
       }
     }
   ],
@@ -692,7 +1382,17 @@
       "name": "EncodingResult",
       "descriptions": {
         "zh-CN": "编码/解码操作的结果",
-        "en-US": "Encoding/decoding operation result"
+        "en-US": "Encoding/decoding operation result",
+        "zh-TW": "編碼/解碼操作的结果",
+        "ja": "エンコード/デコード操作結果",
+        "ko": "인코딩/디코딩 작업 결과",
+        "es": "Resultado de operación de codificación/decodificación",
+        "fr": "Résultat d'opération d'encodage/décodage",
+        "de": "Kodierungs-/Dekodierungsergebnis",
+        "pt-BR": "Resultado da operação de codificação/decodificação",
+        "ru": "Результат операции кодирования/декодирования",
+        "ar": "نتيجة عملية التشفير/فك التشفير",
+        "hi": "एन्कोडिंग/डिकोडिंग ऑपरेशन परिणाम"
       },
       "fields": [
         {
@@ -700,7 +1400,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "编码或解码后的数据",
-            "en-US": "Encoded or decoded data"
+            "en-US": "Encoded or decoded data",
+            "zh-TW": "編碼或解碼後的數據",
+            "ja": "エンコードまたはデコードされたデータ",
+            "ko": "인코딩 또는 디코딩된 데이터",
+            "es": "Datos codificados o decodificados",
+            "fr": "Données encodées ou décodées",
+            "de": "Kodierte oder dekodierte Daten",
+            "pt-BR": "Dados codificados ou decodificados",
+            "ru": "Закодированные или декодированные данные",
+            "ar": "بيانات مشفّرة أو مفكوكة",
+            "hi": "एन्कोडेड या डिकोडेड डेटा"
           }
         },
         {
@@ -708,7 +1418,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "结果数据长度",
-            "en-US": "Result data length"
+            "en-US": "Result data length",
+            "zh-TW": "结果數據长度",
+            "ja": "結果データ長",
+            "ko": "결과 데이터 길이",
+            "es": "Longitud de los datos del resultado",
+            "fr": "Longueur des données du résultat",
+            "de": "Ergebnisdatenlänge",
+            "pt-BR": "Comprimento dos dados do resultado",
+            "ru": "Длина данных результата",
+            "ar": "طول بيانات النتيجة",
+            "hi": "परिणाम डेटा लंबाई"
           }
         }
       ]
@@ -717,7 +1437,17 @@
       "name": "EncodingDetectResult",
       "descriptions": {
         "zh-CN": "编码检测结果",
-        "en-US": "Encoding detection result"
+        "en-US": "Encoding detection result",
+        "zh-TW": "編碼檢測结果",
+        "ja": "エンコーディング検出結果",
+        "ko": "인코딩 감지 결과",
+        "es": "Resultado de detección de codificación",
+        "fr": "Résultat de détection d'encodage",
+        "de": "Kodierungserkennungsergebnis",
+        "pt-BR": "Resultado da detecção de codificação",
+        "ru": "Результат определения кодировки",
+        "ar": "نتيجة اكتشاف الترميز",
+        "hi": "एन्कोडिंग पहचान परिणाम"
       },
       "fields": [
         {
@@ -725,7 +1455,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "检测到的编码",
-            "en-US": "Detected encoding"
+            "en-US": "Detected encoding",
+            "zh-TW": "檢測到的編碼",
+            "ja": "検出されたエンコーディング",
+            "ko": "감지된 인코딩",
+            "es": "Codificación detectada",
+            "fr": "Encodage détecté",
+            "de": "Erkannte Kodierung",
+            "pt-BR": "Codificação detectada",
+            "ru": "Обнаруженная кодировка",
+            "ar": "الترميز المكتشف",
+            "hi": "पहचानी गई एन्कोडिंग"
           }
         },
         {
@@ -733,7 +1473,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "检测置信度(0-1)",
-            "en-US": "Detection confidence (0-1)"
+            "en-US": "Detection confidence (0-1)",
+            "zh-TW": "檢測置信度(0-1)",
+            "ja": "検出信頼度(0-1)",
+            "ko": "감지 신뢰도(0-1)",
+            "es": "Confianza de detección(0-1)",
+            "fr": "Confiance de détection(0-1)",
+            "de": "Erkennungskonfidenz(0-1)",
+            "pt-BR": "Confiança da detecção(0-1)",
+            "ru": "Достоверность обнаружения(0-1)",
+            "ar": "ثقة الاكتشاف(0-1)",
+            "hi": "पहचान विश्वसनीयता(0-1)"
           }
         }
       ]
@@ -742,7 +1492,17 @@
       "name": "ConvertResult",
       "descriptions": {
         "zh-CN": "编码转换结果",
-        "en-US": "Encoding conversion result"
+        "en-US": "Encoding conversion result",
+        "zh-TW": "編碼轉换结果",
+        "ja": "エンコーディング変換結果",
+        "ko": "인코딩 변환 결과",
+        "es": "Resultado de conversión de codificación",
+        "fr": "Résultat de conversion d'encodage",
+        "de": "Kodierungskonvertierungsergebnis",
+        "pt-BR": "Resultado da conversão de codificação",
+        "ru": "Результат конвертации кодировки",
+        "ar": "نتيجة تحويل الترميز",
+        "hi": "एन्कोडिंग रूपांतरण परिणाम"
       },
       "fields": [
         {
@@ -750,7 +1510,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否成功",
-            "en-US": "Whether succeeded"
+            "en-US": "Whether succeeded",
+            "zh-TW": "是否成功",
+            "ja": "成功したかどうか",
+            "ko": "성공 여부",
+            "es": "Si tuvo éxito",
+            "fr": "Si réussi",
+            "de": "Ob erfolgreich",
+            "pt-BR": "Se teve sucesso",
+            "ru": "Успешно или нет",
+            "ar": "ما إذا نجح",
+            "hi": "सफल हुआ या नहीं"
           }
         },
         {
@@ -758,7 +1528,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "输出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력 파일 경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь к выходному файлу",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           }
         }
       ]

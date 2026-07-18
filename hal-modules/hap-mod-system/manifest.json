@@ -32,14 +32,34 @@
         "type": "OsInfo",
         "descs": {
           "zh-CN": "操作系统信息对象",
-          "en-US": "OS info object"
+          "en-US": "OS info object",
+          "zh-TW": "操作系統資訊物件",
+          "ja": "操作システム情報オブジェクト",
+          "ko": "작업시스템정보객체",
+          "es": "Objeto de información del SO",
+          "fr": "Objet d'information du système",
+          "de": "OS-Informationsobjekt",
+          "pt-BR": "Objeto de informações do SO",
+          "ru": "Объект информации об ОС",
+          "ar": "كائن معلومات نظام التشغيل",
+          "hi": "OS जानकारी ऑब्जेक्ट"
         },
         "desc": "OS info object"
       },
       "bridge_path": "system.osInfo",
       "descriptions": {
         "zh-CN": "获取操作系统的详细信息（名称、版本、架构等）",
-        "en-US": "Get OS details (name, version, architecture)"
+        "en-US": "Get OS details (name, version, architecture)",
+        "zh-TW": "取得操作系統的詳細資訊（名稱、版本、架構等）",
+        "ja": "OS詳細を取得（名前、バージョン、アーキテクチャ）",
+        "ko": "OS 세부 정보 가져오기 (이름, 버전, 아키텍처)",
+        "es": "Obtener detalles del SO (nombre, versión, arquitectura)",
+        "fr": "Obtenir les détails du système (nom, version, architecture)",
+        "de": "OS-Details abrufen (Name, Version, Architektur)",
+        "pt-BR": "Obter detalhes do SO (nome, versão, arquitetura)",
+        "ru": "Получить сведения об ОС (имя, версия, архитектура)",
+        "ar": "الحصول على تفاصيل نظام التشغيل (الاسم, الإصدار, البنية)",
+        "hi": "OS विवरण प्राप्त करें (नाम, संस्करण, आर्किटेक्चर)"
       },
       "group": "os",
       "description": "Get OS details (name, version, architecture)"
@@ -52,14 +72,34 @@
         "type": "CpuInfo",
         "descs": {
           "zh-CN": "CPU信息对象",
-          "en-US": "CPU info object"
+          "en-US": "CPU info object",
+          "zh-TW": "CPU資訊物件",
+          "ja": "CPU情報オブジェクト",
+          "ko": "CPU정보객체",
+          "es": "Objeto de información de CPU",
+          "fr": "Objet d'informations CPU",
+          "de": "CPU-Informationsobjekt",
+          "pt-BR": "Objeto de informações da CPU",
+          "ru": "Объект информации о CPU",
+          "ar": "كائن معلومات المعالج",
+          "hi": "CPU जानकारी ऑब्जेक्ट"
         },
         "desc": "CPU info object"
       },
       "bridge_path": "system.cpuInfo",
       "descriptions": {
         "zh-CN": "获取CPU的硬件信息（型号、核心数、频率等）",
-        "en-US": "Get CPU hardware info (model, cores, frequency)"
+        "en-US": "Get CPU hardware info (model, cores, frequency)",
+        "zh-TW": "取得CPU的硬件資訊（型號、核心數、頻率等）",
+        "ja": "CPUハードウェア情報を取得（モデル、コア数、周波数）",
+        "ko": "CPU 하드웨어 정보 가져오기 (모델, 코어, 주파수)",
+        "es": "Obtener información del CPU (modelo, núcleos, frecuencia)",
+        "fr": "Obtenir les informations CPU (modèle, cœurs, fréquence)",
+        "de": "CPU-Hardwareinformationen abrufen (Modell, Kerne, Frequenz)",
+        "pt-BR": "Obter informações do CPU (modelo, núcleos, frequência)",
+        "ru": "Получить информацию о CPU (модель, ядра, частота)",
+        "ar": "الحصول على معلومات وحدة المعالجة (الطراز, الأنوية, التردد)",
+        "hi": "CPU हार्डवेयर जानकारी प्राप्त करें (मॉडल, कोर, फ्रीक्वेंसी)"
       },
       "group": "hardware",
       "description": "Get CPU hardware info (model, cores, frequency)"
@@ -72,14 +112,34 @@
         "type": "MemoryInfo",
         "descs": {
           "zh-CN": "内存信息对象",
-          "en-US": "Memory info object"
+          "en-US": "Memory info object",
+          "zh-TW": "記憶體資訊物件",
+          "ja": "メモリ情報オブジェクト",
+          "ko": "메모리정보객체",
+          "es": "Objeto de información de memoria",
+          "fr": "Objet d'information mémoire",
+          "de": "Speicherinformationsobjekt",
+          "pt-BR": "Objeto de informações de memória",
+          "ru": "Объект информации о памяти",
+          "ar": "كائن معلومات الذاكرة",
+          "hi": "मेमोरी जानकारी ऑब्जेक्ट"
         },
         "desc": "Memory info object"
       },
       "bridge_path": "system.memoryInfo",
       "descriptions": {
         "zh-CN": "获取系统内存使用情况（总量、已用、可用）",
-        "en-US": "Get memory usage (total, used, available)"
+        "en-US": "Get memory usage (total, used, available)",
+        "zh-TW": "取得系統記憶體使用情況（總量、已用、可用）",
+        "ja": "メモリ使用量を取得（合計、使用中、利用可能）",
+        "ko": "메모리 사용량 가져오기 (전체, 사용, 가용)",
+        "es": "Obtener uso de memoria (total, usada, disponible)",
+        "fr": "Obtenir l'utilisation mémoire (total, utilisé, disponible)",
+        "de": "Speicherauslastung abrufen (gesamt, verwendet, verfügbar)",
+        "pt-BR": "Obter uso de memória (total, usado, disponível)",
+        "ru": "Получить использование памяти (всего, использовано, доступно)",
+        "ar": "الحصول على استخدام الذاكرة (الإجمالي, المستخدم, المتاح)",
+        "hi": "मेमोरी उपयोग प्राप्त करें (कुल, उपयोग, उपलब्ध)"
       },
       "group": "hardware",
       "description": "Get memory usage (total, used, available)"
@@ -92,14 +152,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "磁盘分区信息数组",
-          "en-US": "Array of disk partition info"
+          "en-US": "Array of disk partition info",
+          "zh-TW": "磁盤分區資訊陣列",
+          "ja": "ディスクパーティション情報の配列",
+          "ko": "디스크 파티션 정보 배열",
+          "es": "Matriz de información de particiones",
+          "fr": "Tableau d'informations de partitions",
+          "de": "Array der Partitionsinformationen",
+          "pt-BR": "Array de informações de partições",
+          "ru": "Массив информации о разделах диска",
+          "ar": "مصفوفة معلومات أقسام القرص",
+          "hi": "डिस्क पार्टीशन जानकारी की सरणी"
         },
         "desc": "Array of disk partition info"
       },
       "bridge_path": "system.diskInfo",
       "descriptions": {
         "zh-CN": "获取所有磁盘分区的容量和使用情况",
-        "en-US": "Get capacity and usage for all disk partitions"
+        "en-US": "Get capacity and usage for all disk partitions",
+        "zh-TW": "取得所有磁盤分區的容量和使用情況",
+        "ja": "全ディスクパーティションの容量と使用量を取得",
+        "ko": "모든 디스크 파티션의 용량 및 사용량 가져오기",
+        "es": "Obtener capacidad y uso de todas las particiones",
+        "fr": "Obtenir la capacité et l'utilisation de toutes les partitions",
+        "de": "Kapazität und Nutzung aller Festplattenpartitionen abrufen",
+        "pt-BR": "Obter capacidade e uso de todas as partições de disco",
+        "ru": "Получить ёмкость и использование всех разделов диска",
+        "ar": "الحصول على سعة واستخدام جميع أقسام القرص",
+        "hi": "सभी डिस्क विभाजनों की क्षमता और उपयोग प्राप्त करें"
       },
       "group": "hardware",
       "description": "Get capacity and usage for all disk partitions"
@@ -112,13 +192,33 @@
         "type": "GpuInfo",
         "descs": {
           "zh-CN": "GPU 信息",
-          "en-US": "GPU info"
+          "en-US": "GPU info",
+          "zh-TW": "GPU 資訊",
+          "ja": "GPU 情報",
+          "ko": "GPU 정보",
+          "es": "Información GPU",
+          "fr": "Informations GPU",
+          "de": "GPU-Informationen",
+          "pt-BR": "Informações GPU",
+          "ru": "Информация о GPU",
+          "ar": "معلومات GPU",
+          "hi": "GPU जानकारी"
         }
       },
       "bridge_path": "system.gpuInfo",
       "descriptions": {
         "zh-CN": "获取 GPU 显卡信息",
-        "en-US": "Gpu info of system"
+        "en-US": "Gpu info of system",
+        "zh-TW": "取得 GPU 顯卡資訊",
+        "ja": "システムGPU情報",
+        "ko": "시스템 GPU 정보",
+        "es": "Información GPU del sistema",
+        "fr": "Informations GPU du système",
+        "de": "GPU-Informationen des Systems",
+        "pt-BR": "Informações GPU do sistema",
+        "ru": "Информация о GPU системы",
+        "ar": "معلومات GPU للنظام",
+        "hi": "सिस्टम GPU जानकारी"
       },
       "group": "hardware",
       "description": "Gpu info of system"
@@ -131,14 +231,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "主机名字符串",
-          "en-US": "Hostname string"
+          "en-US": "Hostname string",
+          "zh-TW": "主機名字串",
+          "ja": "ホスト名文字列",
+          "ko": "호스트명 문자열",
+          "es": "Cadena de nombre de host",
+          "fr": "Chaîne du nom d'hôte",
+          "de": "Hostname-Zeichenkette",
+          "pt-BR": "String do nome do host",
+          "ru": "Строка имени хоста",
+          "ar": "سلسلة اسم المضيف",
+          "hi": "होस्टनाम स्ट्रिंग"
         },
         "desc": "Hostname string"
       },
       "bridge_path": "system.hostname",
       "descriptions": {
         "zh-CN": "获取当前计算机的主机名",
-        "en-US": "Get current computer hostname"
+        "en-US": "Get current computer hostname",
+        "zh-TW": "取得當前計算機的主機名",
+        "ja": "取得する現で计算机のホスト名",
+        "ko": "현재 컴퓨터 호스트명 가져오기",
+        "es": "Obtener nombre del equipo",
+        "fr": "Obtenir le nom d'hôte de l'ordinateur",
+        "de": "Aktuellen Computernamen abrufen",
+        "pt-BR": "Obter nome do computador",
+        "ru": "Получить имя текущего компьютера",
+        "ar": "الحصول على اسم المضيف الحالي",
+        "hi": "वर्तमान कंप्यूटर होस्टनाम प्राप्त करें"
       },
       "group": "os",
       "description": "Get current computer hostname"
@@ -151,14 +271,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "用户名字符串",
-          "en-US": "Username string"
+          "en-US": "Username string",
+          "zh-TW": "用戶名字串",
+          "ja": "ユーザー名文字列",
+          "ko": "사용자 이름 문자열",
+          "es": "Cadena de nombre de usuario",
+          "fr": "Chaîne du nom d'utilisateur",
+          "de": "Benutzername-Zeichenkette",
+          "pt-BR": "String do nome de usuário",
+          "ru": "Строка имени пользователя",
+          "ar": "سلسلة اسم المستخدم",
+          "hi": "उपयोगकर्ता नाम स्ट्रिंग"
         },
         "desc": "Username string"
       },
       "bridge_path": "system.username",
       "descriptions": {
         "zh-CN": "获取当前登录用户的用户名",
-        "en-US": "Get current logged-in username"
+        "en-US": "Get current logged-in username",
+        "zh-TW": "取得當前登錄用戶的用戶名",
+        "ja": "現在ログインしているユーザー名を取得",
+        "ko": "현재 로그인한 사용자 이름 가져오기",
+        "es": "Obtener nombre del usuario actual",
+        "fr": "Obtenir le nom d'utilisateur connecté",
+        "de": "Aktuell angemeldeten Benutzernamen abrufen",
+        "pt-BR": "Obter nome do usuário logado",
+        "ru": "Получить имя текущего пользователя",
+        "ar": "الحصول على اسم المستخدم المسجل حالياً",
+        "hi": "वर्तमान लॉगिन उपयोगकर्ता नाम प्राप्त करें"
       },
       "group": "os",
       "description": "Get current logged-in username"
@@ -171,14 +311,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "system.homeDir",
       "descriptions": {
         "zh-CN": "获取用户主目录路径",
-        "en-US": "Home dir of system"
+        "en-US": "Home dir of system",
+        "zh-TW": "取得用戶主目錄路徑",
+        "ja": "取得するユーザー主ディレクトリパス",
+        "ko": "시스템 홈 디렉토리",
+        "es": "Directorio principal del sistema",
+        "fr": "Répertoire personnel du système",
+        "de": "Home-Verzeichnis des Systems",
+        "pt-BR": "Diretório home do sistema",
+        "ru": "Домашний каталог системы",
+        "ar": "المجلد الرئيسي للنظام",
+        "hi": "सिस्टम होम डायरेक्टरी"
       },
       "group": "os",
       "description": "Home dir of system"
@@ -191,14 +351,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "system.uptime",
       "descriptions": {
         "zh-CN": "uptime系统信息",
-        "en-US": "Uptime system"
+        "en-US": "Uptime system",
+        "zh-TW": "uptime系統資訊",
+        "ja": "uptimeシステム情報",
+        "ko": "uptime시스템정보",
+        "es": "Tiempo de actividad del sistema",
+        "fr": "Temps de fonctionnement du système",
+        "de": "System-Betriebszeit",
+        "pt-BR": "Tempo de atividade do sistema",
+        "ru": "Время работы системы",
+        "ar": "وقت تشغيل النظام",
+        "hi": "सिस्टम अपटाइम"
       },
       "group": "runtime",
       "description": "Uptime system"
@@ -211,13 +391,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "区域设置",
-          "en-US": "Locale"
+          "en-US": "Locale",
+          "zh-TW": "區域設定",
+          "ja": "ロケール",
+          "ko": "로캘",
+          "es": "Configuración regional",
+          "fr": "Paramètres régionaux",
+          "de": "Gebietsschema",
+          "pt-BR": "Localidade",
+          "ru": "Локаль",
+          "ar": "الإعدادات المحلية",
+          "hi": "लोकेल"
         }
       },
       "bridge_path": "system.locale",
       "descriptions": {
         "zh-CN": "locale系统信息",
-        "en-US": "Locale system"
+        "en-US": "Locale system",
+        "zh-TW": "locale系統資訊",
+        "ja": "localeシステム情報",
+        "ko": "locale시스템정보",
+        "es": "Configuración regional del sistema",
+        "fr": "Paramètres régionaux du système",
+        "de": "System-Gebietsschema",
+        "pt-BR": "Localidade do sistema",
+        "ru": "Локаль системы",
+        "ar": "الإعدادات المحلية للنظام",
+        "hi": "सिस्टम लोकेल"
       },
       "group": "os",
       "description": "Locale system"
@@ -230,14 +430,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "system.theme",
       "descriptions": {
         "zh-CN": "获取当前系统主题模式（浅色/深色）",
-        "en-US": "Get current system theme mode (light/dark)"
+        "en-US": "Get current system theme mode (light/dark)",
+        "zh-TW": "取得當前系統主題模式（浅色/深色）",
+        "ja": "取得する現でシステム主题モード（浅色/深色）",
+        "ko": "현재 시스템 테마 모드 가져오기 (라이트/다크)",
+        "es": "Obtener modo de tema del sistema (claro/oscuro)",
+        "fr": "Obtenir le mode de thème du système (clair/sombre)",
+        "de": "Aktuellen System-Themenmodus abrufen (hell/dunkel)",
+        "pt-BR": "Obter modo de tema do sistema (claro/escuro)",
+        "ru": "Получить текущий режим темы (светлый/тёмный)",
+        "ar": "الحصول على وضع السمة الحالي (فاتح/داكن)",
+        "hi": "वर्तमान सिस्टम थीम मोड प्राप्त करें (लाइट/डार्क)"
       },
       "group": "os",
       "description": "Get current system theme mode (light/dark)"
@@ -250,14 +470,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "system.isElevated",
       "descriptions": {
         "zh-CN": "检查是否system elevated",
-        "en-US": "Check if system elevated"
+        "en-US": "Check if system elevated",
+        "zh-TW": "檢查是否system elevated",
+        "ja": "チェックするかどうかsystem elevated",
+        "ko": "확인여부system elevated",
+        "es": "Verificar si tiene permisos elevados",
+        "fr": "Vérifier si exécution en mode élevé",
+        "de": "Erhöhte Rechte prüfen",
+        "pt-BR": "Verificar se tem privilégios elevados",
+        "ru": "Проверить повышенные привилегии",
+        "ar": "التحقق من الصلاحيات المرتفعة",
+        "hi": "सिस्टम एलिवेटेड है जांचें"
       },
       "group": "os",
       "description": "Check if system elevated"
@@ -270,14 +510,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "system.shellVersion",
       "descriptions": {
         "zh-CN": "获取 Shell 版本号",
-        "en-US": "Shell version of system"
+        "en-US": "Shell version of system",
+        "zh-TW": "取得 Shell 版本號",
+        "ja": "取得する Shell バージョン号",
+        "ko": "시스템 셸 버전",
+        "es": "Versión de shell del sistema",
+        "fr": "Version du shell du système",
+        "de": "Shell-Version des Systems",
+        "pt-BR": "Versão do shell do sistema",
+        "ru": "Версия оболочки системы",
+        "ar": "إصدار صدفة النظام",
+        "hi": "सिस्टम शेल संस्करण"
       },
       "group": "os",
       "description": "Shell version of system"
@@ -290,14 +550,34 @@
         "type": "ProxyConfig",
         "descs": {
           "zh-CN": "ProxyConfig类型的结果对象",
-          "en-US": "Result object of type ProxyConfig"
+          "en-US": "Result object of type ProxyConfig",
+          "zh-TW": "ProxyConfig類型的結果物件",
+          "ja": "ProxyConfigタイプの結果オブジェクト",
+          "ko": "ProxyConfig유형의결과객체",
+          "es": "Objeto resultado de tipo ProxyConfig",
+          "fr": "Objet résultat de type ProxyConfig",
+          "de": "Ergebnisobjekt vom Typ ProxyConfig",
+          "pt-BR": "Objeto resultado do tipo ProxyConfig",
+          "ru": "Объект результата типа ProxyConfig",
+          "ar": "كائن نتيجة من نوع ProxyConfig",
+          "hi": "ProxyConfig प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type ProxyConfig"
       },
       "bridge_path": "system.getProxy",
       "descriptions": {
         "zh-CN": "获取proxy信息",
-        "en-US": "Get proxy info of system"
+        "en-US": "Get proxy info of system",
+        "zh-TW": "取得proxy資訊",
+        "ja": "取得するproxy情報",
+        "ko": "가져오기proxy정보",
+        "es": "Obtener información de proxy del sistema",
+        "fr": "Obtenir les informations proxy du système",
+        "de": "System-Proxy-Informationen abrufen",
+        "pt-BR": "Obter informações de proxy do sistema",
+        "ru": "Получить информацию о прокси системы",
+        "ar": "الحصول على معلومات وكيل النظام",
+        "hi": "सिस्टम प्रॉक्सी जानकारी प्राप्त करें"
       },
       "group": "os",
       "description": "Get proxy info of system"
@@ -311,7 +591,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设置面板名称（如wifi/bluetooth/display）",
-            "en-US": "Settings panel name (e.g. wifi/bluetooth/display)"
+            "en-US": "Settings panel name (e.g. wifi/bluetooth/display)",
+            "zh-TW": "設定面板名稱（如wifi/bluetooth/display）",
+            "ja": "設定する面板名称（如wifi/bluetooth/display）",
+            "ko": "설정 패널 이름 (예: wifi/bluetooth/display)",
+            "es": "Nombre del panel de configuración (ej. wifi/bluetooth/display)",
+            "fr": "Nom du panneau de paramètres (ex. wifi/bluetooth/display)",
+            "de": "Einstellungs-Panel-Name (z.B. wifi/bluetooth/display)",
+            "pt-BR": "Nome do painel de configurações (ex. wifi/bluetooth/display)",
+            "ru": "Имя панели настроек (напр. wifi/bluetooth/display)",
+            "ar": "اسم لوحة الإعدادات (مثل wifi/bluetooth/display)",
+            "hi": "सेटिंग्स पैनल नाम (जैसे wifi/bluetooth/display)"
           },
           "optional": true,
           "desc": "Settings panel name (e.g. wifi/bluetooth/display)"
@@ -321,14 +611,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "system.openSettings",
       "descriptions": {
         "zh-CN": "打开settings",
-        "en-US": "Open settings of system"
+        "en-US": "Open settings of system",
+        "zh-TW": "打開settings",
+        "ja": "開くsettings",
+        "ko": "열기settings",
+        "es": "Abrir configuración del sistema",
+        "fr": "Ouvrir les paramètres du système",
+        "de": "Systemeinstellungen öffnen",
+        "pt-BR": "Abrir configurações do sistema",
+        "ru": "Открыть настройки системы",
+        "ar": "فتح إعدادات النظام",
+        "hi": "सिस्टम सेटिंग्स खोलें"
       },
       "group": "app",
       "description": "Open settings of system"
@@ -342,7 +652,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "应用 ID",
-            "en-US": "Application ID"
+            "en-US": "Application ID",
+            "zh-TW": "應用 ID",
+            "ja": "アプリケーションID",
+            "ko": "애플리케이션 ID",
+            "es": "ID de la aplicación",
+            "fr": "ID de l'application",
+            "de": "Anwendungs-ID",
+            "pt-BR": "ID do aplicativo",
+            "ru": "ID приложения",
+            "ar": "معرف التطبيق",
+            "hi": "एप्लिकेशन ID"
           },
           "optional": true
         }
@@ -351,14 +671,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "system.appDataDir",
       "descriptions": {
         "zh-CN": "获取应用数据目录路径",
-        "en-US": "App data dir of system"
+        "en-US": "App data dir of system",
+        "zh-TW": "取得應用數據目錄路徑",
+        "ja": "システムアプリデータディレクトリ",
+        "ko": "시스템 앱 데이터 디렉토리",
+        "es": "Directorio de datos de la aplicación",
+        "fr": "Répertoire de données de l'application",
+        "de": "App-Datenverzeichnis des Systems",
+        "pt-BR": "Diretório de dados do aplicativo",
+        "ru": "Каталог данных приложения",
+        "ar": "مجلد بيانات التطبيق",
+        "hi": "सिस्टम ऐप डेटा डायरेक्टरी"
       },
       "group": "app",
       "description": "App data dir of system"
@@ -371,14 +711,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "system.totalMemoryMb",
       "descriptions": {
         "zh-CN": "获取系统总内存（MB）",
-        "en-US": "Total memory mb of system"
+        "en-US": "Total memory mb of system",
+        "zh-TW": "取得系統總記憶體（MB）",
+        "ja": "システム合計メモリ（MB）",
+        "ko": "시스템 전체 메모리 (MB)",
+        "es": "Memoria total del sistema (MB)",
+        "fr": "Mémoire totale du système (Mo)",
+        "de": "Gesamtspeicher des Systems (MB)",
+        "pt-BR": "Memória total do sistema (MB)",
+        "ru": "Общая память системы (МБ)",
+        "ar": "إجمالي ذاكرة النظام (ميغابايت)",
+        "hi": "सिस्टम कुल मेमोरी MB"
       },
       "group": "hardware",
       "description": "Total memory mb of system"
@@ -391,14 +751,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "system.freeMemoryMb",
       "descriptions": {
         "zh-CN": "获取系统空闲内存（MB）",
-        "en-US": "Free memory mb of system"
+        "en-US": "Free memory mb of system",
+        "zh-TW": "取得系統空闲記憶體（MB）",
+        "ja": "取得するシステム空闲メモリ（MB）",
+        "ko": "시스템 여유 메모리 (MB)",
+        "es": "Memoria libre del sistema (MB)",
+        "fr": "Mémoire libre du système (Mo)",
+        "de": "Freier Speicher des Systems (MB)",
+        "pt-BR": "Memória livre do sistema (MB)",
+        "ru": "Свободная память системы (МБ)",
+        "ar": "الذاكرة الحرة للنظام (ميغابايت)",
+        "hi": "सिस्टम खाली मेमोरी MB"
       },
       "group": "hardware",
       "description": "Free memory mb of system"
@@ -411,14 +791,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "system.machineId",
       "descriptions": {
         "zh-CN": "获取设备唯一标识符",
-        "en-US": "Machine id of system"
+        "en-US": "Machine id of system",
+        "zh-TW": "取得設備唯一標識符",
+        "ja": "システムのマシンID",
+        "ko": "시스템 머신 ID",
+        "es": "ID de máquina del sistema",
+        "fr": "ID de machine du système",
+        "de": "Maschinen-ID des Systems",
+        "pt-BR": "ID da máquina do sistema",
+        "ru": "ID машины системы",
+        "ar": "معرف جهاز النظام",
+        "hi": "सिस्टम मशीन आईडी"
       },
       "group": "os",
       "description": "Machine id of system"
@@ -431,14 +831,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "system.defaultBrowser",
       "descriptions": {
         "zh-CN": "获取系统默认浏览器",
-        "en-US": "Default browser of system"
+        "en-US": "Default browser of system",
+        "zh-TW": "取得系統默認瀏覽器",
+        "ja": "取得するシステムデフォルトブラウザ",
+        "ko": "시스템 기본 브라우저",
+        "es": "Navegador predeterminado del sistema",
+        "fr": "Navigateur par défaut du système",
+        "de": "Standard-Browser des Systems",
+        "pt-BR": "Navegador padrão do sistema",
+        "ru": "Браузер по умолчанию",
+        "ar": "المتصفح الافتراضي للنظام",
+        "hi": "सिस्टम डिफ़ॉल्ट ब्राउज़र"
       },
       "group": "os",
       "description": "Default browser of system"
@@ -451,14 +871,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "system.monitors",
       "descriptions": {
         "zh-CN": "monitors系统信息",
-        "en-US": "Monitors system"
+        "en-US": "Monitors system",
+        "zh-TW": "monitors系統資訊",
+        "ja": "monitorsシステム情報",
+        "ko": "monitors시스템정보",
+        "es": "Monitores del sistema",
+        "fr": "Moniteurs du système",
+        "de": "Systemmonitore",
+        "pt-BR": "Monitores do sistema",
+        "ru": "Мониторы системы",
+        "ar": "شاشات النظام",
+        "hi": "सिस्टम मॉनिटर"
       },
       "group": "hardware",
       "description": "Monitors system"
@@ -472,7 +912,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "间隔(毫秒)",
-            "en-US": "Interval in ms"
+            "en-US": "Interval in ms",
+            "zh-TW": "間隔(毫秒)",
+            "ja": "インターバル(毫秒)",
+            "ko": "간격 (밀리초)",
+            "es": "Intervalo en ms",
+            "fr": "Intervalle en ms",
+            "de": "Intervall in ms",
+            "pt-BR": "Intervalo em ms",
+            "ru": "Интервал в мс",
+            "ar": "الفاصل بالمللي ثانية",
+            "hi": "अंतराल मिलीसेकंड में"
           },
           "optional": true,
           "default_value": "1000"
@@ -482,14 +932,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "f64类型的结果对象",
-          "en-US": "Result object of type f64"
+          "en-US": "Result object of type f64",
+          "zh-TW": "f64類型的結果物件",
+          "ja": "f64タイプの結果オブジェクト",
+          "ko": "f64유형의결과객체",
+          "es": "Objeto resultado de tipo f64",
+          "fr": "Objet résultat de type f64",
+          "de": "Ergebnisobjekt vom Typ f64",
+          "pt-BR": "Objeto resultado do tipo f64",
+          "ru": "Объект результата типа f64",
+          "ar": "كائن نتيجة من نوع f64",
+          "hi": "f64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type f64"
       },
       "bridge_path": "system.cpuUsage",
       "descriptions": {
         "zh-CN": "获取当前 CPU 使用率",
-        "en-US": "Cpu usage of system"
+        "en-US": "Cpu usage of system",
+        "zh-TW": "取得當前 CPU 使用率",
+        "ja": "取得する現で CPU 使用率",
+        "ko": "시스템 CPU 사용량",
+        "es": "Uso de CPU del sistema",
+        "fr": "Utilisation CPU du système",
+        "de": "CPU-Auslastung des Systems",
+        "pt-BR": "Uso de CPU do sistema",
+        "ru": "Загрузка CPU системы",
+        "ar": "استخدام المعالج للنظام",
+        "hi": "सिस्टम CPU उपयोग"
       },
       "group": "hardware",
       "description": "Cpu usage of system"
@@ -503,7 +973,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "异步回调标识符",
-            "en-US": "Async callback identifier"
+            "en-US": "Async callback identifier",
+            "zh-TW": "異步回調標識符",
+            "ja": "非同期コールバック識別子",
+            "ko": "비동기 콜백 식별자",
+            "es": "Identificador de callback asíncrono",
+            "fr": "Identifiant de rappel asynchrone",
+            "de": "Asynchroner Callback-Bezeichner",
+            "pt-BR": "Identificador de callback assíncrono",
+            "ru": "Идентификатор асинхронного обратного вызова",
+            "ar": "معرف رد الاتصال غير المتزامن",
+            "hi": "एसिंक कॉलबैक पहचानकर्ता"
           },
           "desc": "Async callback identifier"
         }
@@ -512,14 +992,34 @@
         "type": "ThemeWatcher",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "system.onThemeChange",
       "descriptions": {
         "zh-CN": "监听系统主题切换事件",
-        "en-US": "Listen for theme change event on system"
+        "en-US": "Listen for theme change event on system",
+        "zh-TW": "監聽系統主題切換事件",
+        "ja": "リッスンするシステム主题切换イベント",
+        "ko": "시스템 테마 변경 이벤트 수신 대기",
+        "es": "Escuchar evento de cambio de tema del sistema",
+        "fr": "Écouter l'événement de changement de thème",
+        "de": "System-Theme-Änderungsereignis überwachen",
+        "pt-BR": "Ouvir evento de mudança de tema do sistema",
+        "ru": "Слушать события изменения темы системы",
+        "ar": "الاستماع لحدث تغيير سمة النظام",
+        "hi": "सिस्टम थीम परिवर्तन इवेंट सुनें"
       },
       "group": "event",
       "description": "Listen for theme change event on system"
@@ -533,7 +1033,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "watcher_id参数",
-            "en-US": "watcher_id parameter"
+            "en-US": "watcher_id parameter",
+            "zh-TW": "watcher_id參數",
+            "ja": "watcher_idパラメータ",
+            "ko": "watcher_id매개변수",
+            "es": "Parámetro de ID del observador",
+            "fr": "Paramètre d'ID d'observateur",
+            "de": "Watcher-ID-Parameter",
+            "pt-BR": "Parâmetro de ID do observador",
+            "ru": "Параметр ID наблюдателя",
+            "ar": "معلمة معرف المراقب",
+            "hi": "वॉचर ID पैरामीटर"
           },
           "desc": "watcher_id parameter"
         }
@@ -542,14 +1052,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "system.offThemeChange",
       "descriptions": {
         "zh-CN": "停止listening for theme change event on system",
-        "en-US": "Stop listening for theme change event on system"
+        "en-US": "Stop listening for theme change event on system",
+        "zh-TW": "停止listening for theme change event on system",
+        "ja": "停止するlistening for theme change event on system",
+        "ko": "중지listening for theme change event on system",
+        "es": "Dejar de escuchar evento de cambio de tema",
+        "fr": "Arrêter l'écoute de l'événement de changement de thème",
+        "de": "Überwachung der Theme-Änderung beenden",
+        "pt-BR": "Parar de ouvir evento de mudança de tema",
+        "ru": "Прекратить слушать события изменения темы",
+        "ar": "التوقف عن الاستماع لحدث تغيير سمة النظام",
+        "hi": "सिस्टम थीम परिवर्तन इवेंट सुनना बंद करें"
       },
       "group": "event",
       "description": "Stop listening for theme change event on system"
@@ -562,14 +1092,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "system.accentColor",
       "descriptions": {
         "zh-CN": "获取系统强调色",
-        "en-US": "Accent color of system"
+        "en-US": "Accent color of system",
+        "zh-TW": "取得系統強調色",
+        "ja": "システムのアクセントカラー",
+        "ko": "시스템 강조 색상",
+        "es": "Color de acento del sistema",
+        "fr": "Couleur d'accent du système",
+        "de": "Systemakzentfarbe",
+        "pt-BR": "Cor de destaque do sistema",
+        "ru": "Акцентный цвет системы",
+        "ar": "لون تمييز النظام",
+        "hi": "सिस्टम एक्सेंट रंग"
       },
       "group": "os",
       "description": "Accent color of system"
@@ -582,14 +1132,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "system.listFonts",
       "descriptions": {
         "zh-CN": "列出fonts",
-        "en-US": "List fonts of system"
+        "en-US": "List fonts of system",
+        "zh-TW": "列出fonts",
+        "ja": "システムフォント一覧",
+        "ko": "시스템 폰트 목록",
+        "es": "Listar fuentes del sistema",
+        "fr": "Lister les polices système",
+        "de": "Systemschriftarten auflisten",
+        "pt-BR": "Listar fontes do sistema",
+        "ru": "Список системных шрифтов",
+        "ar": "قائمة خطوط النظام",
+        "hi": "सिस्टम फ़ॉन्ट सूची"
       },
       "group": "hardware",
       "description": "List fonts of system"
@@ -597,14 +1167,34 @@
   ],
   "overviews": {
     "zh-CN": "提供系统信息查询与控制能力，包括 CPU/内存/磁盘信息、操作系统信息、网络状态、系统时间、环境变量、用户信息等功能。",
-    "en-US": "System information and control including CPU/memory/disk info, OS details, network status, system time, environment variables, and user information."
+    "en-US": "System information and control including CPU/memory/disk info, OS details, network status, system time, environment variables, and user information.",
+    "zh-TW": "提供系統資訊查询與控制能力，包括 CPU/記憶體/磁碟資訊、操作系統資訊、網路狀態、系統時间、環境變量、用户資訊等功能。",
+    "ja": "システム情報と制御：CPU/メモリ/ディスク情報・OS詳細・ネットワーク状態・システム時刻・環境変数・ユーザー情報。",
+    "ko": "시스템 정보 및 제어: CPU/메모리/디스크, OS 세부 정보, 네트워크 상태, 시스템 시간, 환경 변수, 사용자 정보.",
+    "es": "Información del sistema: CPU/memoria/disco, OS, red, hora, variables de entorno e información de usuario.",
+    "fr": "Informations système : CPU/mémoire/disque, OS, réseau, heure, variables d'environnement et utilisateur.",
+    "de": "Systeminformationen: CPU/Speicher/Festplatte, OS, Netzwerk, Zeit, Umgebungsvariablen und Benutzerinformationen.",
+    "pt-BR": "Informações do sistema: CPU/memória/disco, OS, rede, hora, variáveis de ambiente e informações do usuário.",
+    "ru": "Системная информация: CPU/память/диск, ОС, сеть, время, переменные окружения и пользователь.",
+    "ar": "معلومات النظام: CPU/ذاكرة/قرص ونظام تشغيل وشبكة ووقت ومتغيرات بيئية ومعلومات مستخدم.",
+    "hi": "सिस्टम जानकारी: CPU/मेमोरी/डिस्क, OS, नेटवर्क, समय, एनवायरनमेंट वेरिएबल और यूजर इंफो।"
   },
   "events": [
     {
       "name": "theme_change",
       "descriptions": {
         "zh-CN": "系统主题变更",
-        "en-US": "System theme changed"
+        "en-US": "System theme changed",
+        "zh-TW": "系統主题變更",
+        "ja": "システムテーマが変更されました",
+        "ko": "시스템 테마가 변경됨",
+        "es": "Tema del sistema cambiado",
+        "fr": "Thème système modifié",
+        "de": "Systemdesign geändert",
+        "pt-BR": "Tema do sistema alterado",
+        "ru": "Системная тема изменена",
+        "ar": "تم تغيير سمة النظام",
+        "hi": "सिस्टम थीम बदल गई"
       },
       "payload": [
         {
@@ -612,7 +1202,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "新主题(light/dark)",
-            "en-US": "New theme(light/dark)"
+            "en-US": "New theme(light/dark)",
+            "zh-TW": "新主題(light/dark)",
+            "ja": "新しいテーマ(light/dark)",
+            "ko": "새 테마(light/dark)",
+            "es": "Nuevo tema (light/dark)",
+            "fr": "Nouveau thème (light/dark)",
+            "de": "Neues Thema (light/dark)",
+            "pt-BR": "Novo tema (light/dark)",
+            "ru": "Новая тема (light/dark)",
+            "ar": "المظهر الجديد (light/dark)",
+            "hi": "नई थीम (light/dark)"
           }
         }
       ]
@@ -623,7 +1223,17 @@
       "name": "OsInfo",
       "descriptions": {
         "zh-CN": "操作系统信息",
-        "en-US": "OS info"
+        "en-US": "OS info",
+        "zh-TW": "操作系統資訊",
+        "ja": "OS情報",
+        "ko": "OS 정보",
+        "es": "Información del SO",
+        "fr": "Informations sur l'OS",
+        "de": "Betriebssysteminformationen",
+        "pt-BR": "Informações do SO",
+        "ru": "Информация об ОС",
+        "ar": "معلومات نظام التشغيل",
+        "hi": "OS जानकारी"
       },
       "fields": [
         {
@@ -631,7 +1241,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "系统名",
-            "en-US": "OS name"
+            "en-US": "OS name",
+            "zh-TW": "系統名",
+            "ja": "OS名",
+            "ko": "OS 이름",
+            "es": "Nombre del SO",
+            "fr": "Nom de l'OS",
+            "de": "Betriebssystemname",
+            "pt-BR": "Nome do SO",
+            "ru": "Имя ОС",
+            "ar": "اسم نظام التشغيل",
+            "hi": "OS नाम"
           }
         },
         {
@@ -639,7 +1259,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "版本号",
-            "en-US": "Version"
+            "en-US": "Version",
+            "zh-TW": "版本號",
+            "ja": "バージョン",
+            "ko": "버전",
+            "es": "Versión",
+            "fr": "Version",
+            "de": "Version",
+            "pt-BR": "Versão",
+            "ru": "Версия",
+            "ar": "الإصدار",
+            "hi": "संस्करण"
           }
         },
         {
@@ -647,7 +1277,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "架构",
-            "en-US": "Architecture"
+            "en-US": "Architecture",
+            "zh-TW": "架構",
+            "ja": "アーキテクチャ",
+            "ko": "아키텍처",
+            "es": "Arquitectura",
+            "fr": "Architecture",
+            "de": "Architektur",
+            "pt-BR": "Arquitetura",
+            "ru": "Архитектура",
+            "ar": "البنية",
+            "hi": "आर्किटेक्चर"
           }
         },
         {
@@ -655,7 +1295,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "内核版本",
-            "en-US": "Kernel version"
+            "en-US": "Kernel version",
+            "zh-TW": "內核版本",
+            "ja": "カーネルバージョン",
+            "ko": "커널 버전",
+            "es": "Versión del kernel",
+            "fr": "Version du noyau",
+            "de": "Kernel-Version",
+            "pt-BR": "Versão do kernel",
+            "ru": "Версия ядра",
+            "ar": "إصدار النواة",
+            "hi": "कर्नेल संस्करण"
           }
         }
       ]
@@ -664,7 +1314,17 @@
       "name": "CpuInfo",
       "descriptions": {
         "zh-CN": "CPU信息",
-        "en-US": "CPU info"
+        "en-US": "CPU info",
+        "zh-TW": "CPU資訊",
+        "ja": "CPU情報",
+        "ko": "CPU 정보",
+        "es": "Información de CPU",
+        "fr": "Informations CPU",
+        "de": "CPU-Informationen",
+        "pt-BR": "Informações da CPU",
+        "ru": "Информация о процессоре",
+        "ar": "معلومات المعالج",
+        "hi": "CPU जानकारी"
       },
       "fields": [
         {
@@ -672,7 +1332,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "型号",
-            "en-US": "Model"
+            "en-US": "Model",
+            "zh-TW": "型號",
+            "ja": "モデル",
+            "ko": "모델",
+            "es": "Modelo",
+            "fr": "Modèle",
+            "de": "Modell",
+            "pt-BR": "Modelo",
+            "ru": "Модель",
+            "ar": "الطراز",
+            "hi": "मॉडल"
           }
         },
         {
@@ -680,7 +1350,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "核心数",
-            "en-US": "Cores"
+            "en-US": "Cores",
+            "zh-TW": "核心数",
+            "ja": "コア数",
+            "ko": "코어 수",
+            "es": "Núcleos",
+            "fr": "Cœurs",
+            "de": "Kerne",
+            "pt-BR": "Núcleos",
+            "ru": "Ядра",
+            "ar": "الأنوية",
+            "hi": "कोर"
           }
         },
         {
@@ -688,7 +1368,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "频率(MHz)",
-            "en-US": "Frequency(MHz)"
+            "en-US": "Frequency(MHz)",
+            "zh-TW": "频率(MHz)",
+            "ja": "周波数(MHz)",
+            "ko": "주파수(MHz)",
+            "es": "Frecuencia(MHz)",
+            "fr": "Fréquence(MHz)",
+            "de": "Frequenz(MHz)",
+            "pt-BR": "Frequência(MHz)",
+            "ru": "Частота(МГц)",
+            "ar": "التردد(ميغاهرتز)",
+            "hi": "आवृत्ति(MHz)"
           }
         }
       ]
@@ -697,7 +1387,17 @@
       "name": "MemoryInfo",
       "descriptions": {
         "zh-CN": "内存信息",
-        "en-US": "Memory info"
+        "en-US": "Memory info",
+        "zh-TW": "記憶體資訊",
+        "ja": "メモリ情報",
+        "ko": "메모리 정보",
+        "es": "Información de memoria",
+        "fr": "Informations mémoire",
+        "de": "Speicherinformationen",
+        "pt-BR": "Informações de memória",
+        "ru": "Информация о памяти",
+        "ar": "معلومات الذاكرة",
+        "hi": "मेमोरी जानकारी"
       },
       "fields": [
         {
@@ -705,7 +1405,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "总内存(MB)",
-            "en-US": "Total(MB)"
+            "en-US": "Total(MB)",
+            "zh-TW": "總記憶體(MB)",
+            "ja": "合計(MB)",
+            "ko": "총 용량(MB)",
+            "es": "Total(MB)",
+            "fr": "Total(Mo)",
+            "de": "Gesamt(MB)",
+            "pt-BR": "Total(MB)",
+            "ru": "Всего(МБ)",
+            "ar": "الإجمالي(ميغابايت)",
+            "hi": "कुल(MB)"
           }
         },
         {
@@ -713,7 +1423,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "可用(MB)",
-            "en-US": "Free(MB)"
+            "en-US": "Free(MB)",
+            "zh-TW": "可用(MB)",
+            "ja": "空き容量(MB)",
+            "ko": "여유 공간(MB)",
+            "es": "Libre(MB)",
+            "fr": "Libre(Mo)",
+            "de": "Frei(MB)",
+            "pt-BR": "Livre(MB)",
+            "ru": "Свободно(МБ)",
+            "ar": "حر(ميغابايت)",
+            "hi": "खाली(MB)"
           }
         },
         {
@@ -721,7 +1441,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "已用(MB)",
-            "en-US": "Used(MB)"
+            "en-US": "Used(MB)",
+            "zh-TW": "已用(MB)",
+            "ja": "使用中(MB)",
+            "ko": "사용 중(MB)",
+            "es": "Usado(MB)",
+            "fr": "Utilisé(Mo)",
+            "de": "Verwendet(MB)",
+            "pt-BR": "Usado(MB)",
+            "ru": "Использовано(МБ)",
+            "ar": "مستخدم(ميغابايت)",
+            "hi": "प्रयुक्त(MB)"
           }
         }
       ]
@@ -730,7 +1460,17 @@
       "name": "GpuInfo",
       "descriptions": {
         "zh-CN": "GPU信息",
-        "en-US": "GPU info"
+        "en-US": "GPU info",
+        "zh-TW": "GPU資訊",
+        "ja": "GPU情報",
+        "ko": "GPU 정보",
+        "es": "Información de GPU",
+        "fr": "Informations GPU",
+        "de": "GPU-Informationen",
+        "pt-BR": "Informações da GPU",
+        "ru": "Информация о GPU",
+        "ar": "معلومات GPU",
+        "hi": "GPU जानकारी"
       },
       "fields": [
         {
@@ -738,7 +1478,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "名称",
-            "en-US": "Name"
+            "en-US": "Name",
+            "zh-TW": "名稱",
+            "ja": "名前",
+            "ko": "이름",
+            "es": "Nombre",
+            "fr": "Nom",
+            "de": "Name",
+            "pt-BR": "Nome",
+            "ru": "Имя",
+            "ar": "الاسم",
+            "hi": "नाम"
           }
         },
         {
@@ -746,7 +1496,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "厂商",
-            "en-US": "Vendor"
+            "en-US": "Vendor",
+            "zh-TW": "廠商",
+            "ja": "ベンダー",
+            "ko": "공급업체",
+            "es": "Proveedor",
+            "fr": "Fournisseur",
+            "de": "Hersteller",
+            "pt-BR": "Fornecedor",
+            "ru": "Поставщик",
+            "ar": "المورّد",
+            "hi": "विक्रेता"
           }
         },
         {
@@ -755,7 +1515,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "显存(MB)",
-            "en-US": "VRAM(MB)"
+            "en-US": "VRAM(MB)",
+            "zh-TW": "顯存(MB)",
+            "ja": "VRAM(MB)",
+            "ko": "VRAM(MB)",
+            "es": "VRAM(MB)",
+            "fr": "VRAM(Mo)",
+            "de": "VRAM(MB)",
+            "pt-BR": "VRAM(MB)",
+            "ru": "VRAM(МБ)",
+            "ar": "VRAM(ميغابايت)",
+            "hi": "VRAM(MB)"
           }
         }
       ]
@@ -764,7 +1534,17 @@
       "name": "ProxyConfig",
       "descriptions": {
         "zh-CN": "代理配置",
-        "en-US": "Proxy config"
+        "en-US": "Proxy config",
+        "zh-TW": "代理配置",
+        "ja": "プロキシ設定",
+        "ko": "프록시 설정",
+        "es": "Configuración de proxy",
+        "fr": "Configuration du proxy",
+        "de": "Proxy-Konfiguration",
+        "pt-BR": "Configuração de proxy",
+        "ru": "Настройка прокси",
+        "ar": "إعداد الوكيل",
+        "hi": "प्रॉक्सी कॉन्फ़िगरेशन"
       },
       "fields": [
         {
@@ -773,7 +1553,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "HTTP代理",
-            "en-US": "HTTP proxy"
+            "en-US": "HTTP proxy",
+            "zh-TW": "HTTP代理",
+            "ja": "HTTPプロキシ",
+            "ko": "HTTP 프록시",
+            "es": "Proxy HTTP",
+            "fr": "Proxy HTTP",
+            "de": "HTTP-Proxy",
+            "pt-BR": "Proxy HTTP",
+            "ru": "HTTP-прокси",
+            "ar": "وكيل HTTP",
+            "hi": "HTTP प्रॉक्सी"
           }
         },
         {
@@ -782,7 +1572,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "HTTPS代理",
-            "en-US": "HTTPS proxy"
+            "en-US": "HTTPS proxy",
+            "zh-TW": "HTTPS代理",
+            "ja": "HTTPSプロキシ",
+            "ko": "HTTPS 프록시",
+            "es": "Proxy HTTPS",
+            "fr": "Proxy HTTPS",
+            "de": "HTTPS-Proxy",
+            "pt-BR": "Proxy HTTPS",
+            "ru": "HTTPS-прокси",
+            "ar": "وكيل HTTPS",
+            "hi": "HTTPS प्रॉक्सी"
           }
         },
         {
@@ -791,7 +1591,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "不代理列表",
-            "en-US": "No proxy list"
+            "en-US": "No proxy list",
+            "zh-TW": "不代理列表",
+            "ja": "プロキシ除外リスト",
+            "ko": "프록시 제외 목록",
+            "es": "Lista sin proxy",
+            "fr": "Liste sans proxy",
+            "de": "Keine-Proxy-Liste",
+            "pt-BR": "Lista sem proxy",
+            "ru": "Список без прокси",
+            "ar": "قائمة بدون وكيل",
+            "hi": "प्रॉक्सी रहित सूची"
           }
         }
       ]
@@ -800,7 +1610,17 @@
       "name": "ThemeWatcher",
       "descriptions": {
         "zh-CN": "主题变化监听器",
-        "en-US": "Theme change watcher"
+        "en-US": "Theme change watcher",
+        "zh-TW": "主题變化監听器",
+        "ja": "テーマ変更監視",
+        "ko": "테마 변경 감시자",
+        "es": "Monitor de cambio de tema",
+        "fr": "Surveillant de changement de thème",
+        "de": "Designänderungsüberwachung",
+        "pt-BR": "Monitor de mudança de tema",
+        "ru": "Наблюдатель изменений темы",
+        "ar": "مراقب تغيير السمة",
+        "hi": "थीम परिवर्तन वॉचर"
       },
       "fields": [
         {
@@ -808,7 +1628,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "监听器ID",
-            "en-US": "Watcher ID"
+            "en-US": "Watcher ID",
+            "zh-TW": "監听器ID",
+            "ja": "ウォッチャーID",
+            "ko": "감시자 ID",
+            "es": "ID del vigilante",
+            "fr": "ID du surveillant",
+            "de": "Wächter-ID",
+            "pt-BR": "ID do monitor",
+            "ru": "ID наблюдателя",
+            "ar": "معرّف المراقب",
+            "hi": "वॉचर ID"
           }
         }
       ]

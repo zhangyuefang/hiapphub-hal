@@ -22,7 +22,7 @@
     "ar": "وحدة التاريخ والوقت",
     "hi": "दिनांक समय मॉड्यूल"
   },
-  "permission": "",
+  "permission": "datetime",
   "functions": [
     {
       "name": "now",
@@ -32,14 +32,34 @@
         "type": "DateTime",
         "descs": {
           "zh-CN": "DateTime类型的结果对象",
-          "en-US": "Result object of type DateTime"
+          "en-US": "Result object of type DateTime",
+          "zh-TW": "DateTime類型的結果物件",
+          "ja": "DateTimeタイプの結果オブジェクト",
+          "ko": "DateTime유형의결과객체",
+          "es": "Objeto resultado de tipo DateTime",
+          "fr": "Objet résultat de type DateTime",
+          "de": "Ergebnisobjekt vom Typ DateTime",
+          "pt-BR": "Objeto resultado do tipo DateTime",
+          "ru": "Объект результата типа DateTime",
+          "ar": "كائن نتيجة من نوع DateTime",
+          "hi": "DateTime प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type DateTime"
       },
       "bridge_path": "datetime.now",
       "descriptions": {
         "zh-CN": "获取当前本地日期时间的格式化字符串",
-        "en-US": "Get current local datetime as formatted string"
+        "en-US": "Get current local datetime as formatted string",
+        "zh-TW": "取得當前本地日期時間的格式化字串",
+        "ja": "取得する現でローカル日期时间のフォーマットする文字列",
+        "ko": "현재 로컬 날짜시간을 포맷된 문자열로 가져오기",
+        "es": "Obtener fecha/hora local actual como cadena",
+        "fr": "Obtenir la date/heure locale actuelle",
+        "de": "Aktuelle lokale Datum/Uhrzeit als String",
+        "pt-BR": "Obter data/hora local atual como string",
+        "ru": "Получить текущую дату/время как строку",
+        "ar": "الحصول على التاريخ/الوقت المحلي كسلسلة",
+        "hi": "वर्तमान स्थानीय दिनांक/समय फ़ॉर्मैटेड स्ट्रिंग में प्राप्त करें"
       },
       "group": "now",
       "description": "Get current local datetime as formatted string"
@@ -53,7 +73,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Unix毫秒时间戳",
-            "en-US": "Unix timestamp in milliseconds"
+            "en-US": "Unix timestamp in milliseconds",
+            "zh-TW": "Unix毫秒時間戳",
+            "ja": "Unixタイムスタンプ（ミリ秒）",
+            "ko": "Unix 타임스탬프 (밀리초)",
+            "es": "Marca de tiempo Unix (ms)",
+            "fr": "Horodatage Unix (ms)",
+            "de": "Unix-Zeitstempel (ms)",
+            "pt-BR": "Timestamp Unix (ms)",
+            "ru": "Метка времени Unix (мс)",
+            "ar": "طابع زمني Unix (مللي ثانية)",
+            "hi": "Unix टाइमस्टैम्प (मिली सेकंड)"
           },
           "desc": "Unix timestamp in milliseconds"
         },
@@ -62,7 +92,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "格式化模式",
-            "en-US": "Format pattern"
+            "en-US": "Format pattern",
+            "zh-TW": "格式化模式",
+            "ja": "フォーマットするモード",
+            "ko": "포맷모드",
+            "es": "Patrón de formato",
+            "fr": "Modèle de format",
+            "de": "Formatmuster",
+            "pt-BR": "Padrão de formato",
+            "ru": "Шаблон формата",
+            "ar": "نمط التنسيق",
+            "hi": "फ़ॉर्मैट पैटर्न"
           }
         }
       ],
@@ -70,13 +110,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "已格式化",
-          "en-US": "Formatted"
+          "en-US": "Formatted",
+          "zh-TW": "已格式化",
+          "ja": "済みフォーマットする",
+          "ko": "포맷됨",
+          "es": "Formateado",
+          "fr": "Formaté",
+          "de": "Formatiert",
+          "pt-BR": "Formatado",
+          "ru": "Отформатировано",
+          "ar": "منسّق",
+          "hi": "फ़ॉर्मैटेड"
         }
       },
       "bridge_path": "datetime.format",
       "descriptions": {
         "zh-CN": "将日期时间按指定模板格式化为字符串",
-        "en-US": "Format datetime to string with specified template"
+        "en-US": "Format datetime to string with specified template",
+        "zh-TW": "將日期時間按指定模板格式化為字串",
+        "ja": "指定テンプレートで日時を文字列にフォーマット",
+        "ko": "지정된 템플릿으로 날짜시간을 문자열로 포맷",
+        "es": "Formatear fecha/hora con plantilla",
+        "fr": "Formater la date/heure avec le modèle",
+        "de": "Datum/Uhrzeit mit Vorlage formatieren",
+        "pt-BR": "Formatar data/hora com modelo",
+        "ru": "Форматировать дату/время по шаблону",
+        "ar": "تنسيق التاريخ/الوقت حسب القالب",
+        "hi": "निर्दिष्ट टेम्प्लेट से दिनांक/समय फ़ॉर्मैट करें"
       },
       "group": "format",
       "description": "Format datetime to string with specified template"
@@ -90,7 +150,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "日期字符串",
-            "en-US": "Date string"
+            "en-US": "Date string",
+            "zh-TW": "日期字串",
+            "ja": "日期文字列",
+            "ko": "날짜 문자열",
+            "es": "Cadena de fecha",
+            "fr": "Chaîne de date",
+            "de": "Datumszeichenkette",
+            "pt-BR": "String de data",
+            "ru": "Строка даты",
+            "ar": "سلسلة التاريخ",
+            "hi": "दिनांक स्ट्रिंग"
           }
         }
       ],
@@ -98,14 +168,34 @@
         "type": "DateTime",
         "descs": {
           "zh-CN": "DateTime类型的结果对象",
-          "en-US": "Result object of type DateTime"
+          "en-US": "Result object of type DateTime",
+          "zh-TW": "DateTime類型的結果物件",
+          "ja": "DateTimeタイプの結果オブジェクト",
+          "ko": "DateTime유형의결과객체",
+          "es": "Objeto resultado de tipo DateTime",
+          "fr": "Objet résultat de type DateTime",
+          "de": "Ergebnisobjekt vom Typ DateTime",
+          "pt-BR": "Objeto resultado do tipo DateTime",
+          "ru": "Объект результата типа DateTime",
+          "ar": "كائن نتيجة من نوع DateTime",
+          "hi": "DateTime प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type DateTime"
       },
       "bridge_path": "datetime.parse",
       "descriptions": {
         "zh-CN": "将日期时间字符串解析为标准时间对象",
-        "en-US": "Parse datetime string into standard time object"
+        "en-US": "Parse datetime string into standard time object",
+        "zh-TW": "將日期時間字串解析為標準時間物件",
+        "ja": "日時文字列を標準時間オブジェクトに解析",
+        "ko": "날짜시간 문자열을 표준 시간 객체로 파싱",
+        "es": "Analizar cadena de fecha/hora",
+        "fr": "Analyser la chaîne de date/heure",
+        "de": "Datum/Uhrzeit-String parsen",
+        "pt-BR": "Analisar string de data/hora",
+        "ru": "Разобрать строку даты/времени",
+        "ar": "تحليل سلسلة التاريخ/الوقت",
+        "hi": "दिनांक/समय स्ट्रिंग पार्स करें"
       },
       "group": "format",
       "description": "Parse datetime string into standard time object"
@@ -119,7 +209,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "时间 1",
-            "en-US": "Time 1"
+            "en-US": "Time 1",
+            "zh-TW": "時間 1",
+            "ja": "時刻1",
+            "ko": "시간 1",
+            "es": "Tiempo 1",
+            "fr": "Temps 1",
+            "de": "Zeit 1",
+            "pt-BR": "Tempo 1",
+            "ru": "Время 1",
+            "ar": "الوقت 1",
+            "hi": "समय 1"
           }
         },
         {
@@ -127,7 +227,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "时间 2",
-            "en-US": "Time 2"
+            "en-US": "Time 2",
+            "zh-TW": "時間 2",
+            "ja": "時刻2",
+            "ko": "시간 2",
+            "es": "Tiempo 2",
+            "fr": "Temps 2",
+            "de": "Zeit 2",
+            "pt-BR": "Tempo 2",
+            "ru": "Время 2",
+            "ar": "الوقت 2",
+            "hi": "समय 2"
           }
         },
         {
@@ -135,7 +245,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "差值单位（ms/s/m/h/d/M/y）",
-            "en-US": "Diff unit (ms/s/m/h/d/M/y)"
+            "en-US": "Diff unit (ms/s/m/h/d/M/y)",
+            "zh-TW": "差值單位（ms/s/m/h/d/M/y）",
+            "ja": "差分単位（ms/s/m/h/d/M/y）",
+            "ko": "차이 단위 (ms/s/m/h/d/M/y)",
+            "es": "Unidad de diferencia (ms/s/m/h/d/M/y)",
+            "fr": "Unité de différence (ms/s/m/h/d/M/y)",
+            "de": "Differenzeinheit (ms/s/m/h/d/M/y)",
+            "pt-BR": "Unidade de diferença (ms/s/m/h/d/M/y)",
+            "ru": "Единица разницы (мс/с/м/ч/д/М/г)",
+            "ar": "وحدة الفرق (ms/s/m/h/d/M/y)",
+            "hi": "अंतर इकाई (ms/s/m/h/d/M/y)"
           },
           "desc": "Diff unit (ms/s/m/h/d/M/y)"
         }
@@ -144,14 +264,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "f64类型的结果对象",
-          "en-US": "Result object of type f64"
+          "en-US": "Result object of type f64",
+          "zh-TW": "f64類型的結果物件",
+          "ja": "f64タイプの結果オブジェクト",
+          "ko": "f64유형의결과객체",
+          "es": "Objeto resultado de tipo f64",
+          "fr": "Objet résultat de type f64",
+          "de": "Ergebnisobjekt vom Typ f64",
+          "pt-BR": "Objeto resultado do tipo f64",
+          "ru": "Объект результата типа f64",
+          "ar": "كائن نتيجة من نوع f64",
+          "hi": "f64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type f64"
       },
       "bridge_path": "datetime.diff",
       "descriptions": {
         "zh-CN": "计算两个日期时间之间的差值",
-        "en-US": "Calculate difference between two datetimes"
+        "en-US": "Calculate difference between two datetimes",
+        "zh-TW": "計算两個日期時間之間的差值",
+        "ja": "2つの日時間の差を計算",
+        "ko": "두 날짜시간 간의 차이 계산",
+        "es": "Calcular diferencia entre dos fechas",
+        "fr": "Calculer la différence entre deux dates",
+        "de": "Differenz zwischen zwei Daten berechnen",
+        "pt-BR": "Calcular diferença entre duas datas",
+        "ru": "Вычислить разницу между двумя датами",
+        "ar": "حساب الفرق بين تاريخين",
+        "hi": "दो दिनांक/समय के बीच अंतर गणना करें"
       },
       "group": "calc",
       "description": "Calculate difference between two datetimes"
@@ -165,7 +305,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "基准Unix毫秒时间戳",
-            "en-US": "Base Unix timestamp in milliseconds"
+            "en-US": "Base Unix timestamp in milliseconds",
+            "zh-TW": "基準Unix毫秒時間戳",
+            "ja": "基準Unixタイムスタンプ（ミリ秒）",
+            "ko": "기준 Unix 타임스탬프 (밀리초)",
+            "es": "Marca de tiempo Unix base (ms)",
+            "fr": "Horodatage Unix de base (ms)",
+            "de": "Basis-Unix-Zeitstempel (ms)",
+            "pt-BR": "Timestamp Unix base (ms)",
+            "ru": "Базовая метка времени Unix (мс)",
+            "ar": "طابع زمني أساسي (مللي ثانية)",
+            "hi": "बेस Unix टाइमस्टैम्प (ms)"
           },
           "desc": "Base Unix timestamp in milliseconds"
         },
@@ -174,7 +324,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "要增加的数量",
-            "en-US": "Amount to add"
+            "en-US": "Amount to add",
+            "zh-TW": "要增加的數量",
+            "ja": "追加する量",
+            "ko": "추가할 양",
+            "es": "Cantidad a agregar",
+            "fr": "Quantité à ajouter",
+            "de": "Hinzuzufügender Betrag",
+            "pt-BR": "Quantidade a adicionar",
+            "ru": "Количество для добавления",
+            "ar": "الكمية المراد إضافتها",
+            "hi": "जोड़ने की मात्रा"
           },
           "desc": "Amount to add"
         },
@@ -183,7 +343,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "时间单位（ms/s/m/h/d/M/y）",
-            "en-US": "Time unit (ms/s/m/h/d/M/y)"
+            "en-US": "Time unit (ms/s/m/h/d/M/y)",
+            "zh-TW": "時間單位（ms/s/m/h/d/M/y）",
+            "ja": "時間単位（ms/s/m/h/d/M/y）",
+            "ko": "시간 단위 (ms/s/m/h/d/M/y)",
+            "es": "Unidad de tiempo (ms/s/m/h/d/M/y)",
+            "fr": "Unité de temps (ms/s/m/h/d/M/y)",
+            "de": "Zeiteinheit (ms/s/m/h/d/M/y)",
+            "pt-BR": "Unidade de tempo (ms/s/m/h/d/M/y)",
+            "ru": "Единица времени (мс/с/м/ч/д/М/г)",
+            "ar": "وحدة الزمن (ms/s/m/h/d/M/y)",
+            "hi": "समय इकाई (ms/s/m/h/d/M/y)"
           },
           "desc": "Time unit (ms/s/m/h/d/M/y)"
         }
@@ -192,13 +362,33 @@
         "type": "number",
         "descs": {
           "zh-CN": "新时间戳",
-          "en-US": "New timestamp"
+          "en-US": "New timestamp",
+          "zh-TW": "新時間戳",
+          "ja": "新しいタイムスタンプ",
+          "ko": "새 타임스탬프",
+          "es": "Nueva marca de tiempo",
+          "fr": "Nouvel horodatage",
+          "de": "Neuer Zeitstempel",
+          "pt-BR": "Novo timestamp",
+          "ru": "Новая метка времени",
+          "ar": "طابع زمني جديد",
+          "hi": "नया टाइमस्टैम्प"
         }
       },
       "bridge_path": "datetime.add",
       "descriptions": {
         "zh-CN": "在日期时间上增加指定的时间间隔",
-        "en-US": "Add specified duration to datetime"
+        "en-US": "Add specified duration to datetime",
+        "zh-TW": "在日期時間上增加指定的時間間隔",
+        "ja": "で日期时间上增加指定の时间インターバル",
+        "ko": "날짜시간에 지정된 기간 추가",
+        "es": "Agregar duración a la fecha/hora",
+        "fr": "Ajouter une durée à la date/heure",
+        "de": "Dauer zur Datum/Uhrzeit hinzufügen",
+        "pt-BR": "Adicionar duração à data/hora",
+        "ru": "Добавить длительность к дате/времени",
+        "ar": "إضافة مدة إلى التاريخ/الوقت",
+        "hi": "दिनांक/समय में अवधि जोड़ें"
       },
       "group": "calc",
       "description": "Add specified duration to datetime"
@@ -212,7 +402,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Unix毫秒时间戳",
-            "en-US": "Unix timestamp in milliseconds"
+            "en-US": "Unix timestamp in milliseconds",
+            "zh-TW": "Unix毫秒時間戳",
+            "ja": "Unixタイムスタンプ（ミリ秒）",
+            "ko": "Unix 타임스탬프 (밀리초)",
+            "es": "Marca de tiempo Unix (ms)",
+            "fr": "Horodatage Unix (ms)",
+            "de": "Unix-Zeitstempel (ms)",
+            "pt-BR": "Timestamp Unix (ms)",
+            "ru": "Метка времени Unix (мс)",
+            "ar": "طابع زمني Unix (مللي ثانية)",
+            "hi": "Unix टाइमस्टैम्प (मिली सेकंड)"
           },
           "desc": "Unix timestamp in milliseconds"
         },
@@ -221,7 +421,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "时间单位（day/week/month/year）",
-            "en-US": "Time unit (day/week/month/year)"
+            "en-US": "Time unit (day/week/month/year)",
+            "zh-TW": "時間單位（day/week/month/year）",
+            "ja": "時間単位（日/週/月/年）",
+            "ko": "시간 단위 (일/주/월/년)",
+            "es": "Unidad de tiempo (día/semana/mes/año)",
+            "fr": "Unité de temps (jour/semaine/mois/année)",
+            "de": "Zeiteinheit (Tag/Woche/Monat/Jahr)",
+            "pt-BR": "Unidade de tempo (dia/semana/mês/ano)",
+            "ru": "Единица времени (день/неделя/месяц/год)",
+            "ar": "وحدة الزمن (يوم/أسبوع/شهر/سنة)",
+            "hi": "समय इकाई (दिन/सप्ताह/माह/वर्ष)"
           },
           "desc": "Time unit (day/week/month/year)"
         }
@@ -230,14 +440,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "datetime.startOf",
       "descriptions": {
         "zh-CN": "获取指定时间单位（日/周/月/年）的起始时刻",
-        "en-US": "Get start of specified time unit (day/week/month/year)"
+        "en-US": "Get start of specified time unit (day/week/month/year)",
+        "zh-TW": "取得指定時間單位（日/周/月/年）的起始時刻",
+        "ja": "指定時間単位の開始を取得（日/週/月/年）",
+        "ko": "지정된 시간 단위의 시작 가져오기 (일/주/월/년)",
+        "es": "Obtener inicio de la unidad de tiempo",
+        "fr": "Obtenir le début de l'unité de temps",
+        "de": "Anfang der Zeiteinheit ermitteln",
+        "pt-BR": "Obter início da unidade de tempo",
+        "ru": "Получить начало единицы времени",
+        "ar": "الحصول على بداية وحدة الزمن",
+        "hi": "निर्दिष्ट समय इकाई का प्रारंभ प्राप्त करें"
       },
       "group": "calc",
       "description": "Get start of specified time unit (day/week/month/year)"
@@ -251,7 +481,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Unix毫秒时间戳",
-            "en-US": "Unix timestamp in milliseconds"
+            "en-US": "Unix timestamp in milliseconds",
+            "zh-TW": "Unix毫秒時間戳",
+            "ja": "Unixタイムスタンプ（ミリ秒）",
+            "ko": "Unix 타임스탬프 (밀리초)",
+            "es": "Marca de tiempo Unix (ms)",
+            "fr": "Horodatage Unix (ms)",
+            "de": "Unix-Zeitstempel (ms)",
+            "pt-BR": "Timestamp Unix (ms)",
+            "ru": "Метка времени Unix (мс)",
+            "ar": "طابع زمني Unix (مللي ثانية)",
+            "hi": "Unix टाइमस्टैम्प (मिली सेकंड)"
           },
           "desc": "Unix timestamp in milliseconds"
         },
@@ -260,7 +500,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "时间单位（day/week/month/year）",
-            "en-US": "Time unit (day/week/month/year)"
+            "en-US": "Time unit (day/week/month/year)",
+            "zh-TW": "時間單位（day/week/month/year）",
+            "ja": "時間単位（日/週/月/年）",
+            "ko": "시간 단위 (일/주/월/년)",
+            "es": "Unidad de tiempo (día/semana/mes/año)",
+            "fr": "Unité de temps (jour/semaine/mois/année)",
+            "de": "Zeiteinheit (Tag/Woche/Monat/Jahr)",
+            "pt-BR": "Unidade de tempo (dia/semana/mês/ano)",
+            "ru": "Единица времени (день/неделя/месяц/год)",
+            "ar": "وحدة الزمن (يوم/أسبوع/شهر/سنة)",
+            "hi": "समय इकाई (दिन/सप्ताह/माह/वर्ष)"
           },
           "desc": "Time unit (day/week/month/year)"
         }
@@ -269,14 +519,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "datetime.endOf",
       "descriptions": {
         "zh-CN": "获取时间单位结束点",
-        "en-US": "End of of datetime"
+        "en-US": "End of of datetime",
+        "zh-TW": "取得時間單位結束點",
+        "ja": "日時の終了",
+        "ko": "날짜시간의 종료",
+        "es": "Fin de la fecha/hora",
+        "fr": "Fin de la date/heure",
+        "de": "Ende der Datum/Uhrzeit",
+        "pt-BR": "Fim da data/hora",
+        "ru": "Конец даты/времени",
+        "ar": "نهاية التاريخ/الوقت",
+        "hi": "दिनांक/समय का अंत"
       },
       "group": "calc",
       "description": "End of of datetime"
@@ -289,14 +559,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "datetime.timezoneList",
       "descriptions": {
         "zh-CN": "获取所有可用时区列表",
-        "en-US": "Timezone list of datetime"
+        "en-US": "Timezone list of datetime",
+        "zh-TW": "取得所有可用時區列表",
+        "ja": "日時のタイムゾーンリスト",
+        "ko": "날짜시간의 시간대 목록",
+        "es": "Lista de zonas horarias",
+        "fr": "Liste des fuseaux horaires",
+        "de": "Zeitzonenliste",
+        "pt-BR": "Lista de fusos horários",
+        "ru": "Список часовых поясов",
+        "ar": "قائمة المناطق الزمنية",
+        "hi": "टाइमज़ोन सूची"
       },
       "group": "timezone",
       "description": "Timezone list of datetime"
@@ -310,7 +600,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "timezone参数",
-            "en-US": "timezone parameter"
+            "en-US": "timezone parameter",
+            "zh-TW": "timezone參數",
+            "ja": "timezoneパラメータ",
+            "ko": "timezone매개변수",
+            "es": "Parámetro de zona horaria",
+            "fr": "Paramètre de fuseau horaire",
+            "de": "Zeitzonen-Parameter",
+            "pt-BR": "Parâmetro de fuso horário",
+            "ru": "Параметр часового пояса",
+            "ar": "معلمة المنطقة الزمنية",
+            "hi": "टाइमज़ोन पैरामीटर"
           },
           "desc": "timezone parameter"
         }
@@ -319,13 +619,33 @@
         "type": "number",
         "descs": {
           "zh-CN": "偏移(分钟)",
-          "en-US": "Offset min"
+          "en-US": "Offset min",
+          "zh-TW": "偏移(分鐘)",
+          "ja": "オフセット（分）",
+          "ko": "오프셋 (분)",
+          "es": "Desplazamiento (min)",
+          "fr": "Décalage (min)",
+          "de": "Offset (Min)",
+          "pt-BR": "Offset (min)",
+          "ru": "Смещение (мин)",
+          "ar": "الإزاحة (دقائق)",
+          "hi": "ऑफ़सेट (मिनट)"
         }
       },
       "bridge_path": "datetime.timezoneOffset",
       "descriptions": {
         "zh-CN": "获取指定时区的 UTC 偏移量",
-        "en-US": "Timezone offset of datetime"
+        "en-US": "Timezone offset of datetime",
+        "zh-TW": "取得指定時區的 UTC 偏移量",
+        "ja": "日時のタイムゾーンオフセット",
+        "ko": "날짜시간의 시간대 오프셋",
+        "es": "Desplazamiento de zona horaria",
+        "fr": "Décalage de fuseau horaire",
+        "de": "Zeitzonenversatz",
+        "pt-BR": "Deslocamento de fuso horário",
+        "ru": "Смещение часового пояса",
+        "ar": "إزاحة المنطقة الزمنية",
+        "hi": "टाइमज़ोन ऑफ़सेट"
       },
       "group": "timezone",
       "description": "Timezone offset of datetime"
@@ -339,7 +659,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "ISO 字符串",
-            "en-US": "ISO string"
+            "en-US": "ISO string",
+            "zh-TW": "ISO 字串",
+            "ja": "ISO 文字列",
+            "ko": "ISO 문자열",
+            "es": "Cadena ISO",
+            "fr": "Chaîne ISO",
+            "de": "ISO-Zeichenkette",
+            "pt-BR": "String ISO",
+            "ru": "Строка ISO",
+            "ar": "سلسلة ISO",
+            "hi": "ISO स्ट्रिंग"
           }
         }
       ],
@@ -347,13 +677,33 @@
         "type": "number",
         "descs": {
           "zh-CN": "Unix 毫秒",
-          "en-US": "Unix 毫秒"
+          "en-US": "Unix 毫秒",
+          "zh-TW": "Unix 毫秒",
+          "ja": "Unixミリ秒",
+          "ko": "Unix 밀리초",
+          "es": "Unix ms",
+          "fr": "Unix ms",
+          "de": "Unix ms",
+          "pt-BR": "Unix ms",
+          "ru": "Unix мс",
+          "ar": "يونكس مللي ثانية",
+          "hi": "Unix मिली सेकंड"
         }
       },
       "bridge_path": "datetime.toUnix",
       "descriptions": {
         "zh-CN": "将日期时间转换为 Unix 时间戳",
-        "en-US": "To unix of datetime"
+        "en-US": "To unix of datetime",
+        "zh-TW": "將日期時間轉換為 Unix 時間戳",
+        "ja": "日時をUnixタイムスタンプに変換",
+        "ko": "날짜시간을 Unix 타임스탬프로",
+        "es": "Convertir fecha/hora a Unix",
+        "fr": "Convertir en horodatage Unix",
+        "de": "In Unix-Zeitstempel konvertieren",
+        "pt-BR": "Converter para timestamp Unix",
+        "ru": "Преобразовать в Unix-метку времени",
+        "ar": "تحويل إلى طابع زمني Unix",
+        "hi": "दिनांक/समय को Unix में बदलें"
       },
       "group": "format",
       "description": "To unix of datetime"
@@ -367,7 +717,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Unix 毫秒",
-            "en-US": "Unix 毫秒"
+            "en-US": "Unix 毫秒",
+            "zh-TW": "Unix 毫秒",
+            "ja": "Unixミリ秒",
+            "ko": "Unix 밀리초",
+            "es": "Unix ms",
+            "fr": "Unix ms",
+            "de": "Unix ms",
+            "pt-BR": "Unix ms",
+            "ru": "Unix мс",
+            "ar": "يونكس مللي ثانية",
+            "hi": "Unix मिली सेकंड"
           }
         }
       ],
@@ -375,13 +735,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "ISO 字符串",
-          "en-US": "ISO string"
+          "en-US": "ISO string",
+          "zh-TW": "ISO 字串",
+          "ja": "ISO 文字列",
+          "ko": "ISO 문자열",
+          "es": "Cadena ISO",
+          "fr": "Chaîne ISO",
+          "de": "ISO-Zeichenkette",
+          "pt-BR": "String ISO",
+          "ru": "Строка ISO",
+          "ar": "سلسلة ISO",
+          "hi": "ISO स्ट्रिंग"
         }
       },
       "bridge_path": "datetime.fromUnix",
       "descriptions": {
         "zh-CN": "将 Unix 时间戳转换为日期时间",
-        "en-US": "From unix of datetime"
+        "en-US": "From unix of datetime",
+        "zh-TW": "將 Unix 時間戳轉換為日期時間",
+        "ja": "Unixタイムスタンプから日時へ",
+        "ko": "Unix 타임스탬프에서 날짜시간으로",
+        "es": "Obtener fecha/hora desde Unix",
+        "fr": "Obtenir la date/heure depuis Unix",
+        "de": "Datum/Uhrzeit aus Unix-Zeitstempel",
+        "pt-BR": "Obter data/hora de timestamp Unix",
+        "ru": "Получить дату/время из Unix",
+        "ar": "الحصول على التاريخ/الوقت من Unix",
+        "hi": "Unix से दिनांक/समय प्राप्त करें"
       },
       "group": "query",
       "description": "From unix of datetime"
@@ -395,7 +775,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "要判断的年份（如2024）",
-            "en-US": "Year to check (e.g. 2024)"
+            "en-US": "Year to check (e.g. 2024)",
+            "zh-TW": "要判斷的年份（如2024）",
+            "ja": "確認する年（例：2024）",
+            "ko": "확인할 연도 (예: 2024)",
+            "es": "Año a verificar (ej. 2024)",
+            "fr": "Année à vérifier (ex. 2024)",
+            "de": "Zu prüfendes Jahr (z.B. 2024)",
+            "pt-BR": "Ano a verificar (ex. 2024)",
+            "ru": "Год для проверки (напр. 2024)",
+            "ar": "السنة للتحقق (مثل 2024)",
+            "hi": "जांचने के लिए वर्ष (जैसे 2024)"
           },
           "desc": "Year to check (e.g. 2024)"
         }
@@ -404,14 +794,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "datetime.isLeapYear",
       "descriptions": {
         "zh-CN": "检查是否为闰年",
-        "en-US": "Check if datetime leap year"
+        "en-US": "Check if datetime leap year",
+        "zh-TW": "檢查是否為闰年",
+        "ja": "うるう年かどうかを確認",
+        "ko": "윤년인지 확인",
+        "es": "Verificar si es año bisiesto",
+        "fr": "Vérifier si année bissextile",
+        "de": "Schaltjahr prüfen",
+        "pt-BR": "Verificar se é ano bissexto",
+        "ru": "Проверить високосный ли год",
+        "ar": "التحقق من السنة الكبيسة",
+        "hi": "लीप वर्ष है जांचें"
       },
       "group": "query",
       "description": "Check if datetime leap year"
@@ -425,7 +835,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "年份",
-            "en-US": "Year"
+            "en-US": "Year",
+            "zh-TW": "年份",
+            "ja": "年",
+            "ko": "연도",
+            "es": "Año",
+            "fr": "Année",
+            "de": "Jahr",
+            "pt-BR": "Ano",
+            "ru": "Год",
+            "ar": "سنة",
+            "hi": "वर्ष"
           },
           "desc": "Year"
         },
@@ -434,7 +854,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "月份（1-12）",
-            "en-US": "Month (1-12)"
+            "en-US": "Month (1-12)",
+            "zh-TW": "月份（1-12）",
+            "ja": "月（1-12）",
+            "ko": "월 (1-12)",
+            "es": "Mes (1-12)",
+            "fr": "Mois (1-12)",
+            "de": "Monat (1-12)",
+            "pt-BR": "Mês (1-12)",
+            "ru": "Месяц (1-12)",
+            "ar": "الشهر (1-12)",
+            "hi": "महीना (1-12)"
           },
           "desc": "Month (1-12)"
         }
@@ -443,14 +873,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i32类型的结果对象",
-          "en-US": "Result object of type i32"
+          "en-US": "Result object of type i32",
+          "zh-TW": "i32類型的結果物件",
+          "ja": "i32タイプの結果オブジェクト",
+          "ko": "i32유형의결과객체",
+          "es": "Objeto resultado de tipo i32",
+          "fr": "Objet résultat de type i32",
+          "de": "Ergebnisobjekt vom Typ i32",
+          "pt-BR": "Objeto resultado do tipo i32",
+          "ru": "Объект результата типа i32",
+          "ar": "كائن نتيجة من نوع i32",
+          "hi": "i32 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i32"
       },
       "bridge_path": "datetime.daysInMonth",
       "descriptions": {
         "zh-CN": "获取指定月份的天数",
-        "en-US": "Days in month of datetime"
+        "en-US": "Days in month of datetime",
+        "zh-TW": "取得指定月份的天數",
+        "ja": "日時の月の日数",
+        "ko": "날짜시간의 월 일수",
+        "es": "Días del mes",
+        "fr": "Jours du mois",
+        "de": "Tage im Monat",
+        "pt-BR": "Dias no mês",
+        "ru": "Дней в месяце",
+        "ar": "أيام الشهر",
+        "hi": "महीने में दिनों की संख्या"
       },
       "group": "query",
       "description": "Days in month of datetime"
@@ -464,7 +914,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Unix毫秒时间戳",
-            "en-US": "Unix timestamp in milliseconds"
+            "en-US": "Unix timestamp in milliseconds",
+            "zh-TW": "Unix毫秒時間戳",
+            "ja": "Unixタイムスタンプ（ミリ秒）",
+            "ko": "Unix 타임스탬프 (밀리초)",
+            "es": "Marca de tiempo Unix (ms)",
+            "fr": "Horodatage Unix (ms)",
+            "de": "Unix-Zeitstempel (ms)",
+            "pt-BR": "Timestamp Unix (ms)",
+            "ru": "Метка времени Unix (мс)",
+            "ar": "طابع زمني Unix (مللي ثانية)",
+            "hi": "Unix टाइमस्टैम्प (मिली सेकंड)"
           },
           "desc": "Unix timestamp in milliseconds"
         }
@@ -473,14 +933,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i32类型的结果对象",
-          "en-US": "Result object of type i32"
+          "en-US": "Result object of type i32",
+          "zh-TW": "i32類型的結果物件",
+          "ja": "i32タイプの結果オブジェクト",
+          "ko": "i32유형의결과객체",
+          "es": "Objeto resultado de tipo i32",
+          "fr": "Objet résultat de type i32",
+          "de": "Ergebnisobjekt vom Typ i32",
+          "pt-BR": "Objeto resultado do tipo i32",
+          "ru": "Объект результата типа i32",
+          "ar": "كائن نتيجة من نوع i32",
+          "hi": "i32 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i32"
       },
       "bridge_path": "datetime.dayOfWeek",
       "descriptions": {
         "zh-CN": "获取星期几",
-        "en-US": "Day of week of datetime"
+        "en-US": "Day of week of datetime",
+        "zh-TW": "取得星期几",
+        "ja": "取得する星期几",
+        "ko": "날짜시간의 요일",
+        "es": "Día de la semana",
+        "fr": "Jour de la semaine",
+        "de": "Wochentag",
+        "pt-BR": "Dia da semana",
+        "ru": "День недели",
+        "ar": "يوم الأسبوع",
+        "hi": "सप्ताह का दिन"
       },
       "group": "query",
       "description": "Day of week of datetime"
@@ -494,7 +974,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "要判断的Unix毫秒时间戳",
-            "en-US": "Unix timestamp to check"
+            "en-US": "Unix timestamp to check",
+            "zh-TW": "要判斷的Unix毫秒時間戳",
+            "ja": "確認するUnixタイムスタンプ",
+            "ko": "확인할 Unix 타임스탬프",
+            "es": "Marca de tiempo Unix a verificar",
+            "fr": "Horodatage Unix à vérifier",
+            "de": "Zu prüfender Unix-Zeitstempel",
+            "pt-BR": "Timestamp Unix a verificar",
+            "ru": "Unix-метка для проверки",
+            "ar": "طابع زمني Unix للتحقق",
+            "hi": "जांचने के लिए Unix टाइमस्टैम्प"
           },
           "desc": "Unix timestamp to check"
         },
@@ -503,7 +993,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "start_ms参数",
-            "en-US": "start_ms parameter"
+            "en-US": "start_ms parameter",
+            "zh-TW": "start_ms參數",
+            "ja": "start_msパラメータ",
+            "ko": "start_ms매개변수",
+            "es": "Parámetro de inicio (ms)",
+            "fr": "Paramètre de début (ms)",
+            "de": "Start-Parameter (ms)",
+            "pt-BR": "Parâmetro de início (ms)",
+            "ru": "Параметр начала (мс)",
+            "ar": "معلمة البداية (مللي ثانية)",
+            "hi": "प्रारंभ (ms) पैरामीटर"
           },
           "desc": "start_ms parameter"
         },
@@ -512,7 +1012,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "范围结束的Unix毫秒时间戳",
-            "en-US": "End Unix timestamp of range"
+            "en-US": "End Unix timestamp of range",
+            "zh-TW": "範圍結束的Unix毫秒時間戳",
+            "ja": "範囲の終了Unixタイムスタンプ",
+            "ko": "범위 종료 Unix 타임스탬프",
+            "es": "Marca de tiempo Unix de fin del rango",
+            "fr": "Horodatage Unix de fin de plage",
+            "de": "End-Unix-Zeitstempel des Bereichs",
+            "pt-BR": "Timestamp Unix de fim do intervalo",
+            "ru": "Конечная метка времени Unix диапазона",
+            "ar": "طابع زمني Unix لنهاية النطاق",
+            "hi": "रेंज का अंतिम Unix टाइमस्टैम्प"
           },
           "desc": "End Unix timestamp of range"
         }
@@ -521,14 +1031,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "datetime.isBetween",
       "descriptions": {
         "zh-CN": "检查日期是否在指定范围内",
-        "en-US": "Check if datetime between"
+        "en-US": "Check if datetime between",
+        "zh-TW": "檢查日期是否在指定範圍內",
+        "ja": "日時が範囲内か確認",
+        "ko": "날짜시간이 범위 내인지 확인",
+        "es": "Verificar si fecha está entre rango",
+        "fr": "Vérifier si date dans l'intervalle",
+        "de": "Prüfen ob Datum im Bereich",
+        "pt-BR": "Verificar se data está no intervalo",
+        "ru": "Проверить дату в диапазоне",
+        "ar": "التحقق مما إذا كان التاريخ ضمن النطاق",
+        "hi": "दिनांक/समय सीमा में है जांचें"
       },
       "group": "query",
       "description": "Check if datetime between"
@@ -542,7 +1072,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Unix毫秒时间戳",
-            "en-US": "Unix timestamp in milliseconds"
+            "en-US": "Unix timestamp in milliseconds",
+            "zh-TW": "Unix毫秒時間戳",
+            "ja": "Unixタイムスタンプ（ミリ秒）",
+            "ko": "Unix 타임스탬프 (밀리초)",
+            "es": "Marca de tiempo Unix (ms)",
+            "fr": "Horodatage Unix (ms)",
+            "de": "Unix-Zeitstempel (ms)",
+            "pt-BR": "Timestamp Unix (ms)",
+            "ru": "Метка времени Unix (мс)",
+            "ar": "طابع زمني Unix (مللي ثانية)",
+            "hi": "Unix टाइमस्टैम्प (मिली सेकंड)"
           },
           "desc": "Unix timestamp in milliseconds"
         }
@@ -551,14 +1091,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "datetime.relative",
       "descriptions": {
         "zh-CN": "relative日期时间",
-        "en-US": "Relative datetime"
+        "en-US": "Relative datetime",
+        "zh-TW": "relative日期時間",
+        "ja": "相対日時",
+        "ko": "상대 날짜/시간",
+        "es": "Fecha/hora relativa",
+        "fr": "Date/heure relative",
+        "de": "Relatives Datum/Uhrzeit",
+        "pt-BR": "Data/hora relativa",
+        "ru": "Относительная дата/время",
+        "ar": "تاريخ/وقت نسبي",
+        "hi": "सापेक्ष दिनांक/समय"
       },
       "group": "format",
       "description": "Relative datetime"
@@ -572,7 +1132,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Unix毫秒时间戳",
-            "en-US": "Unix timestamp in milliseconds"
+            "en-US": "Unix timestamp in milliseconds",
+            "zh-TW": "Unix毫秒時間戳",
+            "ja": "Unixタイムスタンプ（ミリ秒）",
+            "ko": "Unix 타임스탬프 (밀리초)",
+            "es": "Marca de tiempo Unix (ms)",
+            "fr": "Horodatage Unix (ms)",
+            "de": "Unix-Zeitstempel (ms)",
+            "pt-BR": "Timestamp Unix (ms)",
+            "ru": "Метка времени Unix (мс)",
+            "ar": "طابع زمني Unix (مللي ثانية)",
+            "hi": "Unix टाइमस्टैम्प (मिली सेकंड)"
           },
           "desc": "Unix timestamp in milliseconds"
         }
@@ -581,14 +1151,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "datetime.isWeekend",
       "descriptions": {
         "zh-CN": "检查日期是否为周末",
-        "en-US": "Check if datetime weekend"
+        "en-US": "Check if datetime weekend",
+        "zh-TW": "檢查日期是否為周末",
+        "ja": "週末かどうかを確認",
+        "ko": "주말인지 확인",
+        "es": "Verificar si es fin de semana",
+        "fr": "Vérifier si c'est le week-end",
+        "de": "Wochenende prüfen",
+        "pt-BR": "Verificar se é fim de semana",
+        "ru": "Проверить выходной ли день",
+        "ar": "التحقق من عطلة نهاية الأسبوع",
+        "hi": "सप्ताहांत है जांचें"
       },
       "group": "query",
       "description": "Check if datetime weekend"
@@ -602,7 +1192,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Unix毫秒时间戳",
-            "en-US": "Unix timestamp in milliseconds"
+            "en-US": "Unix timestamp in milliseconds",
+            "zh-TW": "Unix毫秒時間戳",
+            "ja": "Unixタイムスタンプ（ミリ秒）",
+            "ko": "Unix 타임스탬프 (밀리초)",
+            "es": "Marca de tiempo Unix (ms)",
+            "fr": "Horodatage Unix (ms)",
+            "de": "Unix-Zeitstempel (ms)",
+            "pt-BR": "Timestamp Unix (ms)",
+            "ru": "Метка времени Unix (мс)",
+            "ar": "طابع زمني Unix (مللي ثانية)",
+            "hi": "Unix टाइमस्टैम्प (मिली सेकंड)"
           },
           "desc": "Unix timestamp in milliseconds"
         }
@@ -611,14 +1211,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i32类型的结果对象",
-          "en-US": "Result object of type i32"
+          "en-US": "Result object of type i32",
+          "zh-TW": "i32類型的結果物件",
+          "ja": "i32タイプの結果オブジェクト",
+          "ko": "i32유형의결과객체",
+          "es": "Objeto resultado de tipo i32",
+          "fr": "Objet résultat de type i32",
+          "de": "Ergebnisobjekt vom Typ i32",
+          "pt-BR": "Objeto resultado do tipo i32",
+          "ru": "Объект результата типа i32",
+          "ar": "كائن نتيجة من نوع i32",
+          "hi": "i32 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i32"
       },
       "bridge_path": "datetime.weekOfYear",
       "descriptions": {
         "zh-CN": "获取日期在当年的第几周",
-        "en-US": "Week of year of datetime"
+        "en-US": "Week of year of datetime",
+        "zh-TW": "取得日期在當年的第几周",
+        "ja": "日時の年間週番号",
+        "ko": "날짜시간의 연간 주차",
+        "es": "Semana del año",
+        "fr": "Semaine de l'année",
+        "de": "Kalenderwoche",
+        "pt-BR": "Semana do ano",
+        "ru": "Неделя года",
+        "ar": "أسبوع السنة",
+        "hi": "वर्ष का सप्ताह"
       },
       "group": "query",
       "description": "Week of year of datetime"
@@ -632,7 +1252,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "年份",
-            "en-US": "Year"
+            "en-US": "Year",
+            "zh-TW": "年份",
+            "ja": "年",
+            "ko": "연도",
+            "es": "Año",
+            "fr": "Année",
+            "de": "Jahr",
+            "pt-BR": "Ano",
+            "ru": "Год",
+            "ar": "سنة",
+            "hi": "वर्ष"
           },
           "desc": "Year"
         },
@@ -641,7 +1271,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "月份（1-12）",
-            "en-US": "Month (1-12)"
+            "en-US": "Month (1-12)",
+            "zh-TW": "月份（1-12）",
+            "ja": "月（1-12）",
+            "ko": "월 (1-12)",
+            "es": "Mes (1-12)",
+            "fr": "Mois (1-12)",
+            "de": "Monat (1-12)",
+            "pt-BR": "Mês (1-12)",
+            "ru": "Месяц (1-12)",
+            "ar": "الشهر (1-12)",
+            "hi": "महीना (1-12)"
           },
           "desc": "Month (1-12)"
         }
@@ -650,14 +1290,34 @@
         "type": "CalendarMonth",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "datetime.calendar",
       "descriptions": {
         "zh-CN": "calendar日期时间",
-        "en-US": "Calendar datetime"
+        "en-US": "Calendar datetime",
+        "zh-TW": "calendar日期時間",
+        "ja": "カレンダー日時",
+        "ko": "달력 날짜/시간",
+        "es": "Fecha y hora del calendario",
+        "fr": "Date et heure du calendrier",
+        "de": "Kalenderdatum/-zeit",
+        "pt-BR": "Data/hora do calendário",
+        "ru": "Дата/время календаря",
+        "ar": "تاريخ/وقت التقويم",
+        "hi": "कैलेंडर दिनांक/समय"
       },
       "group": "format",
       "description": "Calendar datetime"
@@ -671,7 +1331,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "日期字符串",
-            "en-US": "Date string"
+            "en-US": "Date string",
+            "zh-TW": "日期字串",
+            "ja": "日期文字列",
+            "ko": "날짜 문자열",
+            "es": "Cadena de fecha",
+            "fr": "Chaîne de date",
+            "de": "Datumszeichenkette",
+            "pt-BR": "String de data",
+            "ru": "Строка даты",
+            "ar": "سلسلة التاريخ",
+            "hi": "दिनांक स्ट्रिंग"
           }
         }
       ],
@@ -679,14 +1349,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "datetime.isValid",
       "descriptions": {
         "zh-CN": "检查日期时间字符串是否有效",
-        "en-US": "Check if datetime valid"
+        "en-US": "Check if datetime valid",
+        "zh-TW": "檢查日期時間字串是否有效",
+        "ja": "チェックする日期时间文字列かどうか有効",
+        "ko": "날짜시간이 유효한지 확인",
+        "es": "Verificar si fecha/hora es válida",
+        "fr": "Vérifier si date/heure valide",
+        "de": "Datum/Uhrzeit-Gültigkeit prüfen",
+        "pt-BR": "Verificar se data/hora é válida",
+        "ru": "Проверить корректность даты/времени",
+        "ar": "التحقق من صلاحية التاريخ/الوقت",
+        "hi": "दिनांक/समय मान्य है जांचें"
       },
       "group": "query",
       "description": "Check if datetime valid"
@@ -694,14 +1384,34 @@
   ],
   "overviews": {
     "zh-CN": "提供日期时间的获取、格式化、解析、计算、时区转换等能力。支持时间戳与字符串互转、日期差计算、日历操作、定时器管理等功能。",
-    "en-US": "Date/time retrieval, formatting, parsing, arithmetic, and timezone conversion. Supports timestamp/string conversion, date difference calculation, calendar operations, and timer management."
+    "en-US": "Date/time retrieval, formatting, parsing, arithmetic, and timezone conversion. Supports timestamp/string conversion, date difference calculation, calendar operations, and timer management.",
+    "zh-TW": "提供日期時间的取得、格式化、解析、计算、時區轉换等能力。支援時间戳與字符串互轉、日期差计算、日歷操作、定時器管理等功能。",
+    "ja": "日時の取得・フォーマット・パース・演算・タイムゾーン変換。タイムスタンプ/文字列変換・日付差計算・カレンダー操作・タイマー管理。",
+    "ko": "날짜/시간 가져오기, 포맷, 파싱, 연산, 시간대 변환. 타임스탬프/문자열, 날짜 차이, 캘린더, 타이머 관리.",
+    "es": "Fecha/hora: obtención, formato, análisis, aritmética y zonas horarias. Timestamps, diferencias, calendario y temporizadores.",
+    "fr": "Date/heure : récupération, formatage, analyse, arithmétique et fuseaux horaires. Horodatages, différences, calendrier et minuteurs.",
+    "de": "Datum/Uhrzeit: Abruf, Formatierung, Parsing, Arithmetik und Zeitzonen. Zeitstempel, Differenzen, Kalender und Timer.",
+    "pt-BR": "Data/hora: obtenção, formatação, parsing, aritmética e fusos. Timestamps, diferenças, calendário e temporizadores.",
+    "ru": "Дата/время: получение, форматирование, разбор, арифметика и часовые пояса. Метки времени, разность дат, календарь и таймеры.",
+    "ar": "التاريخ/الوقت: استرجاع وتنسيق وتحليل وحساب ومناطق زمنية. طوابع وفروق وتقويم ومؤقتات.",
+    "hi": "दिनांक/समय: प्राप्ति, फॉर्मेट, पार्सिंग, गणित और टाइमज़ोन। टाइमस्टैम्प, अंतर, कैलेंडर और टाइमर।"
   },
   "types": [
     {
       "name": "DateTime",
       "descriptions": {
         "zh-CN": "日期时间结构",
-        "en-US": "DateTime structure"
+        "en-US": "DateTime structure",
+        "zh-TW": "日期時间结構",
+        "ja": "DateTime構造体",
+        "ko": "DateTime 구조",
+        "es": "Estructura DateTime",
+        "fr": "Structure DateTime",
+        "de": "DateTime-Struktur",
+        "pt-BR": "Estrutura DateTime",
+        "ru": "Структура DateTime",
+        "ar": "هيكل DateTime",
+        "hi": "DateTime संरचना"
       },
       "fields": [
         {
@@ -709,7 +1419,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "年",
-            "en-US": "Year"
+            "en-US": "Year",
+            "zh-TW": "年",
+            "ja": "年",
+            "ko": "년",
+            "es": "Año",
+            "fr": "Année",
+            "de": "Jahr",
+            "pt-BR": "Ano",
+            "ru": "Год",
+            "ar": "السنة",
+            "hi": "वर्ष"
           }
         },
         {
@@ -717,7 +1437,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "月",
-            "en-US": "Month"
+            "en-US": "Month",
+            "zh-TW": "月",
+            "ja": "月",
+            "ko": "월",
+            "es": "Mes",
+            "fr": "Mois",
+            "de": "Monat",
+            "pt-BR": "Mês",
+            "ru": "Месяц",
+            "ar": "الشهر",
+            "hi": "माह"
           }
         },
         {
@@ -725,7 +1455,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "日",
-            "en-US": "Day"
+            "en-US": "Day",
+            "zh-TW": "日",
+            "ja": "日",
+            "ko": "일",
+            "es": "Día",
+            "fr": "Jour",
+            "de": "Tag",
+            "pt-BR": "Dia",
+            "ru": "День",
+            "ar": "اليوم",
+            "hi": "दिन"
           }
         },
         {
@@ -733,7 +1473,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "时",
-            "en-US": "Hour"
+            "en-US": "Hour",
+            "zh-TW": "時",
+            "ja": "時",
+            "ko": "시",
+            "es": "Hora",
+            "fr": "Heure",
+            "de": "Stunde",
+            "pt-BR": "Hora",
+            "ru": "Час",
+            "ar": "الساعة",
+            "hi": "घंटा"
           }
         },
         {
@@ -741,7 +1491,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "分",
-            "en-US": "Minute"
+            "en-US": "Minute",
+            "zh-TW": "分",
+            "ja": "分",
+            "ko": "분",
+            "es": "Minuto",
+            "fr": "Minute",
+            "de": "Minute",
+            "pt-BR": "Minuto",
+            "ru": "Минута",
+            "ar": "الدقيقة",
+            "hi": "मिनट"
           }
         },
         {
@@ -749,7 +1509,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "秒",
-            "en-US": "Second"
+            "en-US": "Second",
+            "zh-TW": "秒",
+            "ja": "秒",
+            "ko": "초",
+            "es": "Segundo",
+            "fr": "Seconde",
+            "de": "Sekunde",
+            "pt-BR": "Segundo",
+            "ru": "Секунда",
+            "ar": "الثانية",
+            "hi": "सेकंड"
           }
         },
         {
@@ -757,7 +1527,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Unix时间戳(ms)",
-            "en-US": "Unix timestamp(ms)"
+            "en-US": "Unix timestamp(ms)",
+            "zh-TW": "Unix時间戳(ms)",
+            "ja": "Unixタイムスタンプ(ms)",
+            "ko": "Unix 타임스탬프(ms)",
+            "es": "Marca de tiempo Unix(ms)",
+            "fr": "Horodatage Unix(ms)",
+            "de": "Unix-Zeitstempel(ms)",
+            "pt-BR": "Timestamp Unix(ms)",
+            "ru": "Временная метка Unix(мс)",
+            "ar": "طابع وقت Unix(مللي ثانية)",
+            "hi": "Unix टाइमस्टैम्प(ms)"
           }
         }
       ]
@@ -766,7 +1546,17 @@
       "name": "CalendarMonth",
       "descriptions": {
         "zh-CN": "月历数据",
-        "en-US": "Calendar month data"
+        "en-US": "Calendar month data",
+        "zh-TW": "月歷數據",
+        "ja": "カレンダー月データ",
+        "ko": "달력 월 데이터",
+        "es": "Datos del mes del calendario",
+        "fr": "Données du mois du calendrier",
+        "de": "Kalendermonatsdaten",
+        "pt-BR": "Dados do mês do calendário",
+        "ru": "Данные месяца календаря",
+        "ar": "بيانات شهر التقويم",
+        "hi": "कैलेंडर माह डेटा"
       },
       "fields": [
         {
@@ -774,7 +1564,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "年份",
-            "en-US": "Year"
+            "en-US": "Year",
+            "zh-TW": "年份",
+            "ja": "年",
+            "ko": "년",
+            "es": "Año",
+            "fr": "Année",
+            "de": "Jahr",
+            "pt-BR": "Ano",
+            "ru": "Год",
+            "ar": "السنة",
+            "hi": "वर्ष"
           }
         },
         {
@@ -782,7 +1582,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "月份",
-            "en-US": "Month"
+            "en-US": "Month",
+            "zh-TW": "月份",
+            "ja": "月",
+            "ko": "월",
+            "es": "Mes",
+            "fr": "Mois",
+            "de": "Monat",
+            "pt-BR": "Mês",
+            "ru": "Месяц",
+            "ar": "الشهر",
+            "hi": "माह"
           }
         },
         {
@@ -790,7 +1600,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "每日信息数组",
-            "en-US": "Daily info array"
+            "en-US": "Daily info array",
+            "zh-TW": "每日資訊数組",
+            "ja": "日別情報配列",
+            "ko": "일별 정보 배열",
+            "es": "Matriz de información diaria",
+            "fr": "Tableau d'informations quotidiennes",
+            "de": "Tägliche Informationen-Array",
+            "pt-BR": "Array de informações diárias",
+            "ru": "Массив ежедневной информации",
+            "ar": "مصفوفة المعلومات اليومية",
+            "hi": "दैनिक जानकारी सरणी"
           }
         },
         {
@@ -798,7 +1618,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "总周数",
-            "en-US": "Total weeks"
+            "en-US": "Total weeks",
+            "zh-TW": "總周数",
+            "ja": "総週数",
+            "ko": "총 주 수",
+            "es": "Total de semanas",
+            "fr": "Total de semaines",
+            "de": "Gesamtwochen",
+            "pt-BR": "Total de semanas",
+            "ru": "Всего недель",
+            "ar": "إجمالي الأسابيع",
+            "hi": "कुल सप्ताह"
           }
         }
       ]

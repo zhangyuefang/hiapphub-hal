@@ -32,14 +32,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "serial.listPorts",
       "descriptions": {
         "zh-CN": "列出可用串口",
-        "en-US": "List ports of serial port"
+        "en-US": "List ports of serial port",
+        "zh-TW": "列出可用串口",
+        "ja": "シリアルポート一覧",
+        "ko": "시리얼 포트 목록",
+        "es": "Listar puertos seriales",
+        "fr": "Lister les ports série",
+        "de": "Serielle Ports auflisten",
+        "pt-BR": "Listar portas seriais",
+        "ru": "Список последовательных портов",
+        "ar": "قائمة المنافذ التسلسلية",
+        "hi": "सीरियल पोर्ट सूची"
       },
       "group": "port",
       "description": "List ports of serial port"
@@ -53,7 +73,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -62,7 +92,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "baud_rate参数",
-            "en-US": "baud_rate parameter"
+            "en-US": "baud_rate parameter",
+            "zh-TW": "baud_rate參數",
+            "ja": "baud_rateパラメータ",
+            "ko": "baud_rate매개변수",
+            "es": "Parámetro de baud_rate",
+            "fr": "Paramètre de baud_rate",
+            "de": "baud_rate-Parameter",
+            "pt-BR": "Parâmetro de baud_rate",
+            "ru": "Параметр baud_rate",
+            "ar": "معلمة baud_rate",
+            "hi": "baud_rate पैरामीटर"
           },
           "optional": true,
           "default_value": "9600",
@@ -73,7 +113,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "data_bits参数",
-            "en-US": "data_bits parameter"
+            "en-US": "data_bits parameter",
+            "zh-TW": "data_bits參數",
+            "ja": "data_bitsパラメータ",
+            "ko": "data_bits매개변수",
+            "es": "Parámetro de data_bits",
+            "fr": "Paramètre de data_bits",
+            "de": "data_bits-Parameter",
+            "pt-BR": "Parâmetro de data_bits",
+            "ru": "Параметр data_bits",
+            "ar": "معلمة data_bits",
+            "hi": "data_bits पैरामीटर"
           },
           "optional": true,
           "default_value": "8",
@@ -84,7 +134,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "stop_bits参数",
-            "en-US": "stop_bits parameter"
+            "en-US": "stop_bits parameter",
+            "zh-TW": "stop_bits參數",
+            "ja": "stop_bitsパラメータ",
+            "ko": "stop_bits매개변수",
+            "es": "Parámetro de stop_bits",
+            "fr": "Paramètre de stop_bits",
+            "de": "stop_bits-Parameter",
+            "pt-BR": "Parâmetro de stop_bits",
+            "ru": "Параметр stop_bits",
+            "ar": "معلمة stop_bits",
+            "hi": "stop_bits पैरामीटर"
           },
           "optional": true,
           "default_value": "1",
@@ -95,7 +155,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "校验位（none/odd/even）",
-            "en-US": "Parity (none/odd/even)"
+            "en-US": "Parity (none/odd/even)",
+            "zh-TW": "校驗位（none/odd/even）",
+            "ja": "パリティ（none/odd/even）",
+            "ko": "패리티 (none/odd/even)",
+            "es": "Paridad (none/odd/even)",
+            "fr": "Parité (none/odd/even)",
+            "de": "Parität (none/odd/even)",
+            "pt-BR": "Paridade (none/odd/even)",
+            "ru": "Чётность (none/odd/even)",
+            "ar": "التماثل (none/odd/even)",
+            "hi": "पैरिटी (none/odd/even)"
           },
           "optional": true,
           "desc": "Parity (none/odd/even)"
@@ -105,7 +175,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "超时(毫秒)",
-            "en-US": "Timeout in ms"
+            "en-US": "Timeout in ms",
+            "zh-TW": "超時(毫秒)",
+            "ja": "タイムアウト(毫秒)",
+            "ko": "타임아웃 (밀리초)",
+            "es": "Tiempo de espera en ms",
+            "fr": "Délai en ms",
+            "de": "Timeout in ms",
+            "pt-BR": "Timeout em ms",
+            "ru": "Тайм-аут в мс",
+            "ar": "المهلة بالمللي ثانية",
+            "hi": "टाइमआउट मिलीसेकंड में"
           },
           "optional": true,
           "default_value": "1000"
@@ -115,14 +195,34 @@
         "type": "SerialHandle",
         "descs": {
           "zh-CN": "SerialHandle类型的结果对象",
-          "en-US": "Result object of type SerialHandle"
+          "en-US": "Result object of type SerialHandle",
+          "zh-TW": "SerialHandle類型的結果物件",
+          "ja": "SerialHandleタイプの結果オブジェクト",
+          "ko": "SerialHandle유형의결과객체",
+          "es": "Objeto resultado de tipo SerialHandle",
+          "fr": "Objet résultat de type SerialHandle",
+          "de": "Ergebnisobjekt vom Typ SerialHandle",
+          "pt-BR": "Objeto resultado do tipo SerialHandle",
+          "ru": "Объект результата типа SerialHandle",
+          "ar": "كائن نتيجة من نوع SerialHandle",
+          "hi": "SerialHandle प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type SerialHandle"
       },
       "bridge_path": "serial.open",
       "descriptions": {
         "zh-CN": "打开指定的串口设备并配置通信参数",
-        "en-US": "Open serial port with communication parameters"
+        "en-US": "Open serial port with communication parameters",
+        "zh-TW": "打開指定的串口設備並設定通信參數",
+        "ja": "通信パラメータでシリアルポートを開く",
+        "ko": "통신 매개변수로 시리얼 포트 열기",
+        "es": "Abrir puerto serial con parámetros de comunicación",
+        "fr": "Ouvrir le port série avec paramètres de communication",
+        "de": "Serielle Schnittstelle mit Kommunikationsparametern öffnen",
+        "pt-BR": "Abrir porta serial com parâmetros de comunicação",
+        "ru": "Открыть последовательный порт с параметрами",
+        "ar": "فتح المنفذ التسلسلي مع معلمات الاتصال",
+        "hi": "संचार पैरामीटर के साथ सीरियल पोर्ट खोलें"
       },
       "group": "port",
       "description": "Open serial port with communication parameters"
@@ -136,7 +236,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口 ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "埠 ID",
+            "ja": "ポート ID",
+            "ko": "포트 ID",
+            "es": "ID de puerto",
+            "fr": "ID de port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرف المنفذ",
+            "hi": "पोर्ट ID"
           }
         }
       ],
@@ -144,14 +254,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "serial.close",
       "descriptions": {
         "zh-CN": "关闭串口连接并释放设备资源",
-        "en-US": "Close serial port and release device resources"
+        "en-US": "Close serial port and release device resources",
+        "zh-TW": "關閉串口連接並釋放設備資源",
+        "ja": "シリアルポートを閉じてデバイスリソースを解放",
+        "ko": "시리얼 포트 닫기 및 장치 리소스 해제",
+        "es": "Cerrar puerto serial y liberar recursos",
+        "fr": "Fermer le port série et libérer les ressources",
+        "de": "Seriellen Port schließen und Ressourcen freigeben",
+        "pt-BR": "Fechar porta serial e liberar recursos",
+        "ru": "Закрыть последовательный порт и освободить ресурсы",
+        "ar": "إغلاق المنفذ التسلسلي وتحرير الموارد",
+        "hi": "सीरियल पोर्ट बंद करें और संसाधन मुक्त करें"
       },
       "group": "port",
       "description": "Close serial port and release device resources"
@@ -165,7 +295,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口 ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "埠 ID",
+            "ja": "ポート ID",
+            "ko": "포트 ID",
+            "es": "ID de puerto",
+            "fr": "ID de port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرف المنفذ",
+            "hi": "पोर्ट ID"
           }
         },
         {
@@ -173,7 +313,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         },
@@ -182,7 +332,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "字符编码（如utf-8/gbk）",
-            "en-US": "Character encoding (e.g. utf-8/gbk)"
+            "en-US": "Character encoding (e.g. utf-8/gbk)",
+            "zh-TW": "字元編碼（如utf-8/gbk）",
+            "ja": "文字エンコーディング（如utf-8/gbk）",
+            "ko": "문자 인코딩 (예: utf-8/gbk)",
+            "es": "Codificación de caracteres (ej. utf-8/gbk)",
+            "fr": "Encodage de caractères (ex. utf-8/gbk)",
+            "de": "Zeichenkodierung (z.B. utf-8/gbk)",
+            "pt-BR": "Codificação de caracteres (ex. utf-8/gbk)",
+            "ru": "Кодировка символов (напр. utf-8/gbk)",
+            "ar": "ترميز الأحرف (مثل utf-8/gbk)",
+            "hi": "कैरेक्टर एनकोडिंग (जैसे utf-8/gbk)"
           },
           "optional": true,
           "desc": "Character encoding (e.g. utf-8/gbk)"
@@ -192,14 +352,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i32类型的结果对象",
-          "en-US": "Result object of type i32"
+          "en-US": "Result object of type i32",
+          "zh-TW": "i32類型的結果物件",
+          "ja": "i32タイプの結果オブジェクト",
+          "ko": "i32유형의결과객체",
+          "es": "Objeto resultado de tipo i32",
+          "fr": "Objet résultat de type i32",
+          "de": "Ergebnisobjekt vom Typ i32",
+          "pt-BR": "Objeto resultado do tipo i32",
+          "ru": "Объект результата типа i32",
+          "ar": "كائن نتيجة من نوع i32",
+          "hi": "i32 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i32"
       },
       "bridge_path": "serial.write",
       "descriptions": {
         "zh-CN": "向串口发送数据（字符串或十六进制字节）",
-        "en-US": "Send data to serial port (string or hex bytes)"
+        "en-US": "Send data to serial port (string or hex bytes)",
+        "zh-TW": "向串口傳送數據（字串或十六進製位元組）",
+        "ja": "シリアルポートにデータを送信（文字列またはhexバイト）",
+        "ko": "시리얼 포트로 데이터 전송 (문자열 또는 hex 바이트)",
+        "es": "Enviar datos al puerto serial (cadena o bytes hex)",
+        "fr": "Envoyer des données au port série (chaîne ou bytes hex)",
+        "de": "Daten an serielle Schnittstelle senden (String oder Hex)",
+        "pt-BR": "Enviar dados para porta serial (string ou bytes hex)",
+        "ru": "Отправить данные в последовательный порт (строка или hex)",
+        "ar": "إرسال بيانات إلى المنفذ التسلسلي (نص أو بايتات hex)",
+        "hi": "सीरियल पोर्ट पर डेटा भेजें (स्ट्रिंग या hex बाइट)"
       },
       "group": "transfer",
       "description": "Send data to serial port (string or hex bytes)"
@@ -213,7 +393,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口 ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "埠 ID",
+            "ja": "ポート ID",
+            "ko": "포트 ID",
+            "es": "ID de puerto",
+            "fr": "ID de port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرف المنفذ",
+            "hi": "पोर्ट ID"
           }
         },
         {
@@ -221,7 +411,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "图像尺寸(像素)",
-            "en-US": "Image size px"
+            "en-US": "Image size px",
+            "zh-TW": "圖像尺寸(像素)",
+            "ja": "画像サイズ(ピクセル)",
+            "ko": "이미지 크기 (px)",
+            "es": "Tamaño de imagen (px)",
+            "fr": "Taille de l'image (px)",
+            "de": "Bildgröße (px)",
+            "pt-BR": "Tamanho da imagem (px)",
+            "ru": "Размер изображения (пикс.)",
+            "ar": "حجم الصورة (بكسل)",
+            "hi": "इमेज साइज़ (px)"
           },
           "optional": true,
           "default_value": "1024"
@@ -231,7 +431,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "超时(毫秒)",
-            "en-US": "Timeout in ms"
+            "en-US": "Timeout in ms",
+            "zh-TW": "超時(毫秒)",
+            "ja": "タイムアウト(毫秒)",
+            "ko": "타임아웃 (밀리초)",
+            "es": "Tiempo de espera en ms",
+            "fr": "Délai en ms",
+            "de": "Timeout in ms",
+            "pt-BR": "Timeout em ms",
+            "ru": "Тайм-аут в мс",
+            "ar": "المهلة بالمللي ثانية",
+            "hi": "टाइमआउट मिलीसेकंड में"
           },
           "optional": true,
           "default_value": "1000"
@@ -241,14 +451,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "serial.read",
       "descriptions": {
         "zh-CN": "从串口读取指定长度的数据",
-        "en-US": "Read specified length of data from serial port"
+        "en-US": "Read specified length of data from serial port",
+        "zh-TW": "從串口讀取指定長度的數據",
+        "ja": "から串口読み取る指定長さのデータ",
+        "ko": "시리얼 포트에서 지정 길이의 데이터 읽기",
+        "es": "Leer longitud especificada de datos del puerto serial",
+        "fr": "Lire la longueur spécifiée de données du port série",
+        "de": "Angegebene Datenlänge von serieller Schnittstelle lesen",
+        "pt-BR": "Ler comprimento especificado de dados da porta serial",
+        "ru": "Прочитать указанную длину данных из порта",
+        "ar": "قراءة طول محدد من البيانات من المنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट से निर्दिष्ट लंबाई का डेटा पढ़ें"
       },
       "async": true,
       "group": "transfer",
@@ -263,7 +493,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口 ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "埠 ID",
+            "ja": "ポート ID",
+            "ko": "포트 ID",
+            "es": "ID de puerto",
+            "fr": "ID de port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرف المنفذ",
+            "hi": "पोर्ट ID"
           }
         },
         {
@@ -271,7 +511,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "超时(毫秒)",
-            "en-US": "Timeout in ms"
+            "en-US": "Timeout in ms",
+            "zh-TW": "超時(毫秒)",
+            "ja": "タイムアウト(毫秒)",
+            "ko": "타임아웃 (밀리초)",
+            "es": "Tiempo de espera en ms",
+            "fr": "Délai en ms",
+            "de": "Timeout in ms",
+            "pt-BR": "Timeout em ms",
+            "ru": "Тайм-аут в мс",
+            "ar": "المهلة بالمللي ثانية",
+            "hi": "टाइमआउट मिलीसेकंड में"
           },
           "optional": true,
           "default_value": "1000"
@@ -281,14 +531,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "serial.readLine",
       "descriptions": {
         "zh-CN": "从串口读取一行数据",
-        "en-US": "Read line of serial port"
+        "en-US": "Read line of serial port",
+        "zh-TW": "從串口讀取一行數據",
+        "ja": "から串口読み取る一行データ",
+        "ko": "시리얼 포트 줄 읽기",
+        "es": "Leer línea del puerto serial",
+        "fr": "Lire la ligne du port série",
+        "de": "Zeile der seriellen Schnittstelle lesen",
+        "pt-BR": "Ler linha da porta serial",
+        "ru": "Прочитать строку из последовательного порта",
+        "ar": "قراءة سطر من المنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट लाइन पढ़ें"
       },
       "async": true,
       "group": "transfer",
@@ -303,7 +573,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口 ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "埠 ID",
+            "ja": "ポート ID",
+            "ko": "포트 ID",
+            "es": "ID de puerto",
+            "fr": "ID de port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرف المنفذ",
+            "hi": "पोर्ट ID"
           }
         },
         {
@@ -311,7 +591,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "分隔符字符",
-            "en-US": "Delimiter character"
+            "en-US": "Delimiter character",
+            "zh-TW": "分隔符字元",
+            "ja": "分隔符文字",
+            "ko": "구분 문자",
+            "es": "Carácter delimitador",
+            "fr": "Caractère délimiteur",
+            "de": "Trennzeichen",
+            "pt-BR": "Caractere delimitador",
+            "ru": "Символ-разделитель",
+            "ar": "حرف الفاصل",
+            "hi": "डिलिमिटर कैरेक्टर"
           },
           "desc": "Delimiter character"
         }
@@ -320,14 +610,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "serial.readUntil",
       "descriptions": {
         "zh-CN": "读取串口数据直到遇到指定字符",
-        "en-US": "Read until of serial port"
+        "en-US": "Read until of serial port",
+        "zh-TW": "讀取串口數據直到遇到指定字元",
+        "ja": "読み取る串口データ直へ遇へ指定文字",
+        "ko": "시리얼 포트에서 지정 문자열까지 읽기",
+        "es": "Leer hasta delimitador del puerto serial",
+        "fr": "Lire jusqu'au délimiteur du port série",
+        "de": "Bis zum Trennzeichen der seriellen Schnittstelle lesen",
+        "pt-BR": "Ler até delimitador da porta serial",
+        "ru": "Читать до разделителя из последовательного порта",
+        "ar": "القراءة حتى محدد من المنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट में निर्दिष्ट तक पढ़ें"
       },
       "async": true,
       "group": "transfer",
@@ -342,7 +652,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口 ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "埠 ID",
+            "ja": "ポート ID",
+            "ko": "포트 ID",
+            "es": "ID de puerto",
+            "fr": "ID de port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرف المنفذ",
+            "hi": "पोर्ट ID"
           }
         }
       ],
@@ -350,14 +670,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i32类型的结果对象",
-          "en-US": "Result object of type i32"
+          "en-US": "Result object of type i32",
+          "zh-TW": "i32類型的結果物件",
+          "ja": "i32タイプの結果オブジェクト",
+          "ko": "i32유형의결과객체",
+          "es": "Objeto resultado de tipo i32",
+          "fr": "Objet résultat de type i32",
+          "de": "Ergebnisobjekt vom Typ i32",
+          "pt-BR": "Objeto resultado do tipo i32",
+          "ru": "Объект результата типа i32",
+          "ar": "كائن نتيجة من نوع i32",
+          "hi": "i32 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i32"
       },
       "bridge_path": "serial.available",
       "descriptions": {
         "zh-CN": "available串口通信",
-        "en-US": "Available serial port"
+        "en-US": "Available serial port",
+        "zh-TW": "available串口通信",
+        "ja": "利用可能なシリアルポート",
+        "ko": "사용 가능한 시리얼 포트",
+        "es": "Puerto serial disponible",
+        "fr": "Port série disponible",
+        "de": "Verfügbarer serieller Port",
+        "pt-BR": "Porta serial disponível",
+        "ru": "Доступный последовательный порт",
+        "ar": "المنفذ التسلسلي المتاح",
+        "hi": "उपलब्ध सीरियल पोर्ट"
       },
       "group": "transfer",
       "description": "Available serial port"
@@ -371,7 +711,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口 ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "埠 ID",
+            "ja": "ポート ID",
+            "ko": "포트 ID",
+            "es": "ID de puerto",
+            "fr": "ID de port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرف المنفذ",
+            "hi": "पोर्ट ID"
           }
         },
         {
@@ -379,7 +729,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "baud_rate参数",
-            "en-US": "baud_rate parameter"
+            "en-US": "baud_rate parameter",
+            "zh-TW": "baud_rate參數",
+            "ja": "baud_rateパラメータ",
+            "ko": "baud_rate매개변수",
+            "es": "Parámetro de baud_rate",
+            "fr": "Paramètre de baud_rate",
+            "de": "baud_rate-Parameter",
+            "pt-BR": "Parâmetro de baud_rate",
+            "ru": "Параметр baud_rate",
+            "ar": "معلمة baud_rate",
+            "hi": "baud_rate पैरामीटर"
           },
           "desc": "baud_rate parameter",
           "optional": true,
@@ -390,14 +750,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "serial.setBaudRate",
       "descriptions": {
         "zh-CN": "设置波特率属性串口",
-        "en-US": "Set baud rate property of serial port"
+        "en-US": "Set baud rate property of serial port",
+        "zh-TW": "設定波特率屬性串口",
+        "ja": "設定する波特率プロパティ串口",
+        "ko": "시리얼 포트 전송 속도 속성 설정",
+        "es": "Establecer velocidad en baudios del puerto serial",
+        "fr": "Définir le débit du port série",
+        "de": "Baudrate der seriellen Schnittstelle setzen",
+        "pt-BR": "Definir taxa de transmissão da porta serial",
+        "ru": "Установить скорость передачи последовательного порта",
+        "ar": "تعيين معدل البود للمنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट बॉड रेट सेट करें"
       },
       "group": "config",
       "description": "Set baud rate property of serial port"
@@ -411,7 +791,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口 ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "埠 ID",
+            "ja": "ポート ID",
+            "ko": "포트 ID",
+            "es": "ID de puerto",
+            "fr": "ID de port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرف المنفذ",
+            "hi": "पोर्ट ID"
           }
         },
         {
@@ -419,7 +809,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "压缩级别",
-            "en-US": "Compression level"
+            "en-US": "Compression level",
+            "zh-TW": "壓縮级別",
+            "ja": "圧縮レベル",
+            "ko": "압축 레벨",
+            "es": "Nivel de compresión",
+            "fr": "Niveau de compression",
+            "de": "Komprimierungsstufe",
+            "pt-BR": "Nível de compressão",
+            "ru": "Уровень сжатия",
+            "ar": "مستوى الضغط",
+            "hi": "कंप्रेशन स्तर"
           },
           "desc": "Compression level"
         }
@@ -428,14 +828,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "serial.setDtr",
       "descriptions": {
         "zh-CN": "设置串口 DTR 信号",
-        "en-US": "Set dtr property of serial port"
+        "en-US": "Set dtr property of serial port",
+        "zh-TW": "設定串口 DTR 信號",
+        "ja": "設定する串口 DTR 信号",
+        "ko": "시리얼 포트 DTR 속성 설정",
+        "es": "Establecer DTR del puerto serial",
+        "fr": "Définir DTR du port série",
+        "de": "DTR der seriellen Schnittstelle setzen",
+        "pt-BR": "Definir DTR da porta serial",
+        "ru": "Установить DTR последовательного порта",
+        "ar": "تعيين DTR للمنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट DTR सेट करें"
       },
       "group": "config",
       "description": "Set dtr property of serial port"
@@ -449,7 +869,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口 ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "埠 ID",
+            "ja": "ポート ID",
+            "ko": "포트 ID",
+            "es": "ID de puerto",
+            "fr": "ID de port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرف المنفذ",
+            "hi": "पोर्ट ID"
           }
         },
         {
@@ -457,7 +887,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "压缩级别",
-            "en-US": "Compression level"
+            "en-US": "Compression level",
+            "zh-TW": "壓縮级別",
+            "ja": "圧縮レベル",
+            "ko": "압축 레벨",
+            "es": "Nivel de compresión",
+            "fr": "Niveau de compression",
+            "de": "Komprimierungsstufe",
+            "pt-BR": "Nível de compressão",
+            "ru": "Уровень сжатия",
+            "ar": "مستوى الضغط",
+            "hi": "कंप्रेशन स्तर"
           },
           "desc": "Compression level"
         }
@@ -466,14 +906,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "serial.setRts",
       "descriptions": {
         "zh-CN": "设置串口 RTS 信号",
-        "en-US": "Set rts property of serial port"
+        "en-US": "Set rts property of serial port",
+        "zh-TW": "設定串口 RTS 信號",
+        "ja": "設定する串口 RTS 信号",
+        "ko": "시리얼 포트 RTS 속성 설정",
+        "es": "Establecer RTS del puerto serial",
+        "fr": "Définir RTS du port série",
+        "de": "RTS der seriellen Schnittstelle setzen",
+        "pt-BR": "Definir RTS da porta serial",
+        "ru": "Установить RTS последовательного порта",
+        "ar": "تعيين RTS للمنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट RTS सेट करें"
       },
       "group": "config",
       "description": "Set rts property of serial port"
@@ -487,7 +947,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口 ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "埠 ID",
+            "ja": "ポート ID",
+            "ko": "포트 ID",
+            "es": "ID de puerto",
+            "fr": "ID de port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرف المنفذ",
+            "hi": "पोर्ट ID"
           }
         }
       ],
@@ -495,14 +965,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "serial.flush",
       "descriptions": {
         "zh-CN": "刷新串口缓冲区",
-        "en-US": "Flush serial port buffer to ensure all data sent"
+        "en-US": "Flush serial port buffer to ensure all data sent",
+        "zh-TW": "刷新串口緩沖區",
+        "ja": "全データ送信を保証するためシリアルポートバッファをフラッシュ",
+        "ko": "모든 데이터 전송을 보장하기 위해 시리얼 포트 버퍼 비우기",
+        "es": "Vaciar buffer del puerto serial para enviar todos los datos",
+        "fr": "Vider le tampon du port série pour s'assurer que toutes les données sont envoyées",
+        "de": "Seriellen Puffer leeren um alle Daten zu senden",
+        "pt-BR": "Esvaziar buffer da porta serial para garantir envio",
+        "ru": "Очистить буфер последовательного порта",
+        "ar": "تفريغ مخزن المنفذ التسلسلي لضمان إرسال جميع البيانات",
+        "hi": "सभी डेटा भेजने के लिए सीरियल पोर्ट बफ़र फ्लश करें"
       },
       "group": "transfer",
       "description": "Flush serial port buffer to ensure all data sent"
@@ -516,7 +1006,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口 ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "埠 ID",
+            "ja": "ポート ID",
+            "ko": "포트 ID",
+            "es": "ID de puerto",
+            "fr": "ID de port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرف المنفذ",
+            "hi": "पोर्ट ID"
           }
         },
         {
@@ -524,7 +1024,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "缓冲区类型",
-            "en-US": "Buffer type"
+            "en-US": "Buffer type",
+            "zh-TW": "緩沖區類型",
+            "ja": "バッファタイプ",
+            "ko": "버퍼 유형",
+            "es": "Tipo de búfer",
+            "fr": "Type de tampon",
+            "de": "Puffertyp",
+            "pt-BR": "Tipo de buffer",
+            "ru": "Тип буфера",
+            "ar": "نوع المخزن المؤقت",
+            "hi": "बफ़र प्रकार"
           },
           "optional": true
         }
@@ -533,14 +1043,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "serial.clearBuffer",
       "descriptions": {
         "zh-CN": "清空串口读写缓冲区",
-        "en-US": "Clear buffer of serial port"
+        "en-US": "Clear buffer of serial port",
+        "zh-TW": "清空串口讀寫緩沖區",
+        "ja": "シリアルポートのバッファをクリア",
+        "ko": "시리얼 포트 버퍼 비우기",
+        "es": "Limpiar búfer del puerto serial",
+        "fr": "Vider le tampon du port série",
+        "de": "Seriellen Port-Puffer leeren",
+        "pt-BR": "Limpar buffer da porta serial",
+        "ru": "Очистить буфер последовательного порта",
+        "ar": "مسح المخزن المؤقت للمنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट बफ़र साफ़ करें"
       },
       "group": "transfer",
       "description": "Clear buffer of serial port"
@@ -554,7 +1084,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "异步回调标识符",
-            "en-US": "Async callback identifier"
+            "en-US": "Async callback identifier",
+            "zh-TW": "異步回調標識符",
+            "ja": "非同期コールバック識別子",
+            "ko": "비동기 콜백 식별자",
+            "es": "Identificador de callback asíncrono",
+            "fr": "Identifiant de rappel asynchrone",
+            "de": "Asynchroner Callback-Bezeichner",
+            "pt-BR": "Identificador de callback assíncrono",
+            "ru": "Идентификатор асинхронного обратного вызова",
+            "ar": "معرف رد الاتصال غير المتزامن",
+            "hi": "एसिंक कॉलबैक पहचानकर्ता"
           },
           "desc": "Async callback identifier"
         }
@@ -563,14 +1103,34 @@
         "type": "PortWatcher",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "serial.onPortChange",
       "descriptions": {
         "zh-CN": "监听串口设备插拔事件",
-        "en-US": "Listen for port change event on serial port"
+        "en-US": "Listen for port change event on serial port",
+        "zh-TW": "監聽串口設備插拔事件",
+        "ja": "リッスンする串口デバイス插拔イベント",
+        "ko": "시리얼 포트 변경 이벤트 수신 대기",
+        "es": "Escuchar evento de cambio de puerto serial",
+        "fr": "Écouter l'événement de changement de port série",
+        "de": "Port-Änderungs-Ereignis der seriellen Schnittstelle überwachen",
+        "pt-BR": "Ouvir evento de mudança da porta serial",
+        "ru": "Слушать события изменения последовательного порта",
+        "ar": "الاستماع لحدث تغيير المنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट परिवर्तन इवेंट सुनें"
       },
       "group": "event",
       "description": "Listen for port change event on serial port"
@@ -584,7 +1144,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "watcher_id参数",
-            "en-US": "watcher_id parameter"
+            "en-US": "watcher_id parameter",
+            "zh-TW": "watcher_id參數",
+            "ja": "watcher_idパラメータ",
+            "ko": "watcher_id매개변수",
+            "es": "Parámetro de ID del observador",
+            "fr": "Paramètre d'ID d'observateur",
+            "de": "Watcher-ID-Parameter",
+            "pt-BR": "Parâmetro de ID do observador",
+            "ru": "Параметр ID наблюдателя",
+            "ar": "معلمة معرف المراقب",
+            "hi": "वॉचर ID पैरामीटर"
           },
           "desc": "watcher_id parameter"
         }
@@ -593,14 +1163,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "serial.offPortChange",
       "descriptions": {
         "zh-CN": "停止listening for port change event on serial port",
-        "en-US": "Stop listening for port change event on serial port"
+        "en-US": "Stop listening for port change event on serial port",
+        "zh-TW": "停止listening for port change event on serial port",
+        "ja": "停止するlistening for port change event on serial port",
+        "ko": "중지listening for port change event on serial port",
+        "es": "Dejar de escuchar evento de cambio de puerto serial",
+        "fr": "Arrêter l'écoute de l'événement de changement de port série",
+        "de": "Überwachung der Port-Änderung beenden",
+        "pt-BR": "Parar de ouvir evento de mudança da porta serial",
+        "ru": "Прекратить слушать события изменения порта",
+        "ar": "التوقف عن الاستماع لحدث تغيير المنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट परिवर्तन इवेंट सुनना बंद करें"
       },
       "group": "event",
       "description": "Stop listening for port change event on serial port"
@@ -614,7 +1204,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口 ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "埠 ID",
+            "ja": "ポート ID",
+            "ko": "포트 ID",
+            "es": "ID de puerto",
+            "fr": "ID de port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرف المنفذ",
+            "hi": "पोर्ट ID"
           }
         }
       ],
@@ -622,13 +1222,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "已打开的",
-          "en-US": "Open"
+          "en-US": "Open",
+          "zh-TW": "已打開的",
+          "ja": "済み開くの",
+          "ko": "열기",
+          "es": "Abrir",
+          "fr": "Ouvrir",
+          "de": "Öffnen",
+          "pt-BR": "Abrir",
+          "ru": "Открыть",
+          "ar": "فتح",
+          "hi": "खोलें"
         }
       },
       "bridge_path": "serial.isOpen",
       "descriptions": {
         "zh-CN": "检查串口打开",
-        "en-US": "Check if serial port open"
+        "en-US": "Check if serial port open",
+        "zh-TW": "檢查串口打開",
+        "ja": "チェックする串口開く",
+        "ko": "시리얼 포트가 열려있는지 확인",
+        "es": "Verificar si puerto serial está abierto",
+        "fr": "Vérifier si port série ouvert",
+        "de": "Prüfen ob serieller Port geöffnet",
+        "pt-BR": "Verificar se porta serial está aberta",
+        "ru": "Проверить открыт ли последовательный порт",
+        "ar": "التحقق من فتح المنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट खुला है जांचें"
       },
       "group": "port",
       "description": "Check if serial port open"
@@ -641,14 +1261,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "serial.listOpen",
       "descriptions": {
         "zh-CN": "列出已打开的串口连接",
-        "en-US": "List open of serial port"
+        "en-US": "List open of serial port",
+        "zh-TW": "列出已打開的串口連接",
+        "ja": "列出済み開くの串口接続",
+        "ko": "열린 시리얼 포트 목록",
+        "es": "Listar puertos seriales abiertos",
+        "fr": "Lister les ports série ouverts",
+        "de": "Geöffnete serielle Schnittstellen auflisten",
+        "pt-BR": "Listar portas seriais abertas",
+        "ru": "Список открытых последовательных портов",
+        "ar": "قائمة المنافذ التسلسلية المفتوحة",
+        "hi": "खुले सीरियल पोर्ट सूचीबद्ध करें"
       },
       "group": "manage",
       "description": "List open of serial port"
@@ -656,14 +1296,34 @@
   ],
   "overviews": {
     "zh-CN": "提供串口通信能力，包括串口的打开/关闭、数据读写、波特率设置、流控制、串口列表枚举、事件监听等功能。适用于硬件设备通信。",
-    "en-US": "Serial port communication including open/close, data read/write, baud rate configuration, flow control, port enumeration, and event monitoring. For hardware device communication."
+    "en-US": "Serial port communication including open/close, data read/write, baud rate configuration, flow control, port enumeration, and event monitoring. For hardware device communication.",
+    "zh-TW": "提供串列埠通訊能力，包括串列埠的開啟/關閉、數據读写、波特率設置、流控制、串列埠列表枚舉、事件監听等功能。适用于硬件設備通訊。",
+    "ja": "シリアルポート通信：開閉・データ読み書き・ボーレート設定・フロー制御・ポート列挙・イベント監視。ハードウェアデバイス通信用。",
+    "ko": "시리얼 포트 통신: 열기/닫기, 데이터 읽기/쓰기, 전송 속도, 흐름 제어, 포트 열거, 이벤트 모니터링. 하드웨어 장치 통신용.",
+    "es": "Comunicación de puerto serie: abrir/cerrar, lectura/escritura, velocidad, control de flujo, enumeración y monitoreo. Para dispositivos de hardware.",
+    "fr": "Communication série : ouvrir/fermer, lecture/écriture, débit, contrôle de flux, énumération et surveillance. Pour appareils matériels.",
+    "de": "Serielle Kommunikation: Öffnen/Schließen, Lesen/Schreiben, Baudrate, Flusskontrolle, Aufzählung und Überwachung. Für Hardwaregeräte.",
+    "pt-BR": "Comunicação serial: abrir/fechar, leitura/escrita, taxa de baud, controle de fluxo, enumeração e monitoramento. Para dispositivos de hardware.",
+    "ru": "Последовательный порт: открытие/закрытие, чтение/запись, скорость, управление потоком, перечисление и мониторинг. Для аппаратных устройств.",
+    "ar": "اتصال المنفذ التسلسلي: فتح/إغلاق وقراءة/كتابة ومعدل البود والتحكم في التدفق وتعداد ومراقبة. لاتصال الأجهزة.",
+    "hi": "सीरियल पोर्ट: खोलना/बंद, पढ़ना/लिखना, बॉड रेट, फ्लो कंट्रोल, पोर्ट एन्यूमरेशन और इवेंट। हार्डवेयर डिवाइस के लिए।"
   },
   "types": [
     {
       "name": "PortConfig",
       "descriptions": {
         "zh-CN": "串口配置",
-        "en-US": "Serial port config"
+        "en-US": "Serial port config",
+        "zh-TW": "串列埠配置",
+        "ja": "シリアルポート設定",
+        "ko": "시리얼 포트 설정",
+        "es": "Configuración del puerto serial",
+        "fr": "Configuration du port série",
+        "de": "Serielle-Port-Konfiguration",
+        "pt-BR": "Configuração da porta serial",
+        "ru": "Настройка последовательного порта",
+        "ar": "إعداد المنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट कॉन्फ़िगरेशन"
       },
       "fields": [
         {
@@ -671,7 +1331,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "波特率",
-            "en-US": "Baud rate"
+            "en-US": "Baud rate",
+            "zh-TW": "波特率",
+            "ja": "ボーレート",
+            "ko": "보드 레이트",
+            "es": "Velocidad en baudios",
+            "fr": "Débit en bauds",
+            "de": "Baudrate",
+            "pt-BR": "Taxa de baud",
+            "ru": "Скорость передачи",
+            "ar": "معدل البود",
+            "hi": "बॉड रेट"
           }
         },
         {
@@ -681,7 +1351,17 @@
           "default_value": "8",
           "descs": {
             "zh-CN": "数据位",
-            "en-US": "Data bits"
+            "en-US": "Data bits",
+            "zh-TW": "數據位",
+            "ja": "データビット",
+            "ko": "데이터 비트",
+            "es": "Bits de datos",
+            "fr": "Bits de données",
+            "de": "Datenbits",
+            "pt-BR": "Bits de dados",
+            "ru": "Биты данных",
+            "ar": "بتات البيانات",
+            "hi": "डेटा बिट्स"
           }
         },
         {
@@ -691,7 +1371,17 @@
           "default_value": "1",
           "descs": {
             "zh-CN": "停止位",
-            "en-US": "Stop bits"
+            "en-US": "Stop bits",
+            "zh-TW": "停止位",
+            "ja": "ストップビット",
+            "ko": "정지 비트",
+            "es": "Bits de parada",
+            "fr": "Bits d'arrêt",
+            "de": "Stoppbits",
+            "pt-BR": "Bits de parada",
+            "ru": "Стоп-биты",
+            "ar": "بتات التوقف",
+            "hi": "स्टॉप बिट्स"
           }
         },
         {
@@ -701,7 +1391,17 @@
           "default_value": "none",
           "descs": {
             "zh-CN": "校验(none/odd/even)",
-            "en-US": "Parity"
+            "en-US": "Parity",
+            "zh-TW": "校驗(none/odd/even)",
+            "ja": "パリティ",
+            "ko": "패리티",
+            "es": "Paridad",
+            "fr": "Parité",
+            "de": "Parität",
+            "pt-BR": "Paridade",
+            "ru": "Чётность",
+            "ar": "التكافؤ",
+            "hi": "पैरिटी"
           }
         }
       ]
@@ -710,7 +1410,17 @@
       "name": "SerialHandle",
       "descriptions": {
         "zh-CN": "串口句柄",
-        "en-US": "Serial port handle"
+        "en-US": "Serial port handle",
+        "zh-TW": "串列埠句柄",
+        "ja": "シリアルポートハンドル",
+        "ko": "시리얼 포트 핸들",
+        "es": "Manejador del puerto serial",
+        "fr": "Handle du port série",
+        "de": "Serielle-Port-Handle",
+        "pt-BR": "Handle da porta serial",
+        "ru": "Дескриптор последовательного порта",
+        "ar": "مقبض المنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट हैंडल"
       },
       "fields": [
         {
@@ -718,7 +1428,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "端口ID",
+            "ja": "ポートID",
+            "ko": "포트 ID",
+            "es": "ID del puerto",
+            "fr": "ID du port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرّف المنفذ",
+            "hi": "पोर्ट ID"
           }
         },
         {
@@ -726,7 +1446,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口名",
-            "en-US": "Port name"
+            "en-US": "Port name",
+            "zh-TW": "端口名",
+            "ja": "ポート名",
+            "ko": "포트 이름",
+            "es": "Nombre del puerto",
+            "fr": "Nom du port",
+            "de": "Portname",
+            "pt-BR": "Nome da porta",
+            "ru": "Имя порта",
+            "ar": "اسم المنفذ",
+            "hi": "पोर्ट नाम"
           }
         }
       ]
@@ -735,7 +1465,17 @@
       "name": "PortWatcher",
       "descriptions": {
         "zh-CN": "串口变化监听器",
-        "en-US": "Serial port change watcher"
+        "en-US": "Serial port change watcher",
+        "zh-TW": "串列埠變化監听器",
+        "ja": "シリアルポート変更監視",
+        "ko": "시리얼 포트 변경 감시자",
+        "es": "Monitor de cambio de puerto serial",
+        "fr": "Surveillant de changement de port série",
+        "de": "Serielle-Port-Änderungsüberwachung",
+        "pt-BR": "Monitor de mudança de porta serial",
+        "ru": "Наблюдатель изменений последовательного порта",
+        "ar": "مراقب تغيير المنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट परिवर्तन वॉचर"
       },
       "fields": [
         {
@@ -743,7 +1483,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "监听器ID",
-            "en-US": "Watcher ID"
+            "en-US": "Watcher ID",
+            "zh-TW": "監听器ID",
+            "ja": "ウォッチャーID",
+            "ko": "감시자 ID",
+            "es": "ID del vigilante",
+            "fr": "ID du surveillant",
+            "de": "Wächter-ID",
+            "pt-BR": "ID do monitor",
+            "ru": "ID наблюдателя",
+            "ar": "معرّف المراقب",
+            "hi": "वॉचर ID"
           }
         }
       ]
@@ -757,7 +1507,17 @@
       "group": "baud",
       "descs": {
         "zh-CN": "9600波特率",
-        "en-US": "9600 baud"
+        "en-US": "9600 baud",
+        "zh-TW": "9600波特率",
+        "ja": "9600ボー",
+        "ko": "9600 보드",
+        "es": "9600 baudios",
+        "fr": "9600 bauds",
+        "de": "9600 Baud",
+        "pt-BR": "9600 baud",
+        "ru": "9600 бод",
+        "ar": "9600 بود",
+        "hi": "9600 बॉड"
       }
     },
     {
@@ -767,7 +1527,17 @@
       "group": "baud",
       "descs": {
         "zh-CN": "19200波特率",
-        "en-US": "19200 baud"
+        "en-US": "19200 baud",
+        "zh-TW": "19200波特率",
+        "ja": "19200ボー",
+        "ko": "19200 보드",
+        "es": "19200 baudios",
+        "fr": "19200 bauds",
+        "de": "19200 Baud",
+        "pt-BR": "19200 baud",
+        "ru": "19200 бод",
+        "ar": "19200 بود",
+        "hi": "19200 बॉड"
       }
     },
     {
@@ -777,7 +1547,17 @@
       "group": "baud",
       "descs": {
         "zh-CN": "38400波特率",
-        "en-US": "38400 baud"
+        "en-US": "38400 baud",
+        "zh-TW": "38400波特率",
+        "ja": "38400ボー",
+        "ko": "38400 보드",
+        "es": "38400 baudios",
+        "fr": "38400 bauds",
+        "de": "38400 Baud",
+        "pt-BR": "38400 baud",
+        "ru": "38400 бод",
+        "ar": "38400 بود",
+        "hi": "38400 बॉड"
       }
     },
     {
@@ -787,7 +1567,17 @@
       "group": "baud",
       "descs": {
         "zh-CN": "57600波特率",
-        "en-US": "57600 baud"
+        "en-US": "57600 baud",
+        "zh-TW": "57600波特率",
+        "ja": "57600ボー",
+        "ko": "57600 보드",
+        "es": "57600 baudios",
+        "fr": "57600 bauds",
+        "de": "57600 Baud",
+        "pt-BR": "57600 baud",
+        "ru": "57600 бод",
+        "ar": "57600 بود",
+        "hi": "57600 बॉड"
       }
     },
     {
@@ -797,7 +1587,17 @@
       "group": "baud",
       "descs": {
         "zh-CN": "115200波特率",
-        "en-US": "115200 baud"
+        "en-US": "115200 baud",
+        "zh-TW": "115200波特率",
+        "ja": "115200ボー",
+        "ko": "115200 보드",
+        "es": "115200 baudios",
+        "fr": "115200 bauds",
+        "de": "115200 Baud",
+        "pt-BR": "115200 baud",
+        "ru": "115200 бод",
+        "ar": "115200 بود",
+        "hi": "115200 बॉड"
       }
     },
     {
@@ -807,7 +1607,17 @@
       "group": "parity",
       "descs": {
         "zh-CN": "无校验",
-        "en-US": "No parity"
+        "en-US": "No parity",
+        "zh-TW": "無校驗",
+        "ja": "パリティなし",
+        "ko": "패리티 없음",
+        "es": "Sin paridad",
+        "fr": "Pas de parité",
+        "de": "Keine Parität",
+        "pt-BR": "Sem paridade",
+        "ru": "Без чётности",
+        "ar": "بدون تكافؤ",
+        "hi": "कोई पैरिटी नहीं"
       }
     },
     {
@@ -817,7 +1627,17 @@
       "group": "parity",
       "descs": {
         "zh-CN": "奇校验",
-        "en-US": "Odd parity"
+        "en-US": "Odd parity",
+        "zh-TW": "奇校驗",
+        "ja": "奇数パリティ",
+        "ko": "홀수 패리티",
+        "es": "Paridad impar",
+        "fr": "Parité impaire",
+        "de": "Ungerade Parität",
+        "pt-BR": "Paridade ímpar",
+        "ru": "Нечётная чётность",
+        "ar": "تكافؤ فردي",
+        "hi": "विषम पैरिटी"
       }
     },
     {
@@ -827,7 +1647,17 @@
       "group": "parity",
       "descs": {
         "zh-CN": "偶校验",
-        "en-US": "Even parity"
+        "en-US": "Even parity",
+        "zh-TW": "偶校驗",
+        "ja": "偶数パリティ",
+        "ko": "짝수 패리티",
+        "es": "Paridad par",
+        "fr": "Parité paire",
+        "de": "Gerade Parität",
+        "pt-BR": "Paridade par",
+        "ru": "Чётная чётность",
+        "ar": "تكافؤ زوجي",
+        "hi": "सम पैरिटी"
       }
     }
   ],
@@ -836,7 +1666,17 @@
       "name": "port_change",
       "descriptions": {
         "zh-CN": "串口设备变更",
-        "en-US": "Port device changed"
+        "en-US": "Port device changed",
+        "zh-TW": "串列埠設備變更",
+        "ja": "ポートデバイスが変更されました",
+        "ko": "포트 장치가 변경됨",
+        "es": "Dispositivo de puerto cambiado",
+        "fr": "Périphérique de port modifié",
+        "de": "Port-Gerät geändert",
+        "pt-BR": "Dispositivo da porta alterado",
+        "ru": "Устройство порта изменено",
+        "ar": "تم تغيير جهاز المنفذ",
+        "hi": "पोर्ट डिवाइस बदल गया"
       },
       "payload": [
         {
@@ -844,7 +1684,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "变更类型(added/removed)",
-            "en-US": "Change type"
+            "en-US": "Change type",
+            "zh-TW": "變更類型(added/removed)",
+            "ja": "変更タイプ",
+            "ko": "변경 유형",
+            "es": "Tipo de cambio",
+            "fr": "Type de changement",
+            "de": "Änderungstyp",
+            "pt-BR": "Tipo de alteração",
+            "ru": "Тип изменения",
+            "ar": "نوع التغيير",
+            "hi": "परिवर्तन प्रकार"
           }
         },
         {
@@ -852,7 +1702,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "端口名",
-            "en-US": "Port name"
+            "en-US": "Port name",
+            "zh-TW": "端口名",
+            "ja": "ポート名",
+            "ko": "포트 이름",
+            "es": "Nombre del puerto",
+            "fr": "Nom du port",
+            "de": "Portname",
+            "pt-BR": "Nome da porta",
+            "ru": "Имя порта",
+            "ar": "اسم المنفذ",
+            "hi": "पोर्ट नाम"
           }
         }
       ]
@@ -861,7 +1721,17 @@
       "name": "serial_data",
       "descriptions": {
         "zh-CN": "串口接收到数据",
-        "en-US": "Serial port data received"
+        "en-US": "Serial port data received",
+        "zh-TW": "串列埠接收到數據",
+        "ja": "シリアルポートデータ受信",
+        "ko": "시리얼 포트 데이터 수신됨",
+        "es": "Datos del puerto serial recibidos",
+        "fr": "Données du port série reçues",
+        "de": "Serielle-Port-Daten empfangen",
+        "pt-BR": "Dados da porta serial recebidos",
+        "ru": "Данные последовательного порта получены",
+        "ar": "تم استلام بيانات المنفذ التسلسلي",
+        "hi": "सीरियल पोर्ट डेटा प्राप्त"
       },
       "payload": [
         {
@@ -869,7 +1739,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "串口ID",
-            "en-US": "Port ID"
+            "en-US": "Port ID",
+            "zh-TW": "串口ID",
+            "ja": "ポートID",
+            "ko": "포트 ID",
+            "es": "ID de puerto",
+            "fr": "ID de port",
+            "de": "Port-ID",
+            "pt-BR": "ID da porta",
+            "ru": "ID порта",
+            "ar": "معرف المنفذ",
+            "hi": "पोर्ट ID"
           }
         },
         {
@@ -877,7 +1757,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "接收的数据",
-            "en-US": "Received data"
+            "en-US": "Received data",
+            "zh-TW": "接收的資料",
+            "ja": "受信データ",
+            "ko": "수신 데이터",
+            "es": "Datos recibidos",
+            "fr": "Données reçues",
+            "de": "Empfangene Daten",
+            "pt-BR": "Dados recebidos",
+            "ru": "Полученные данные",
+            "ar": "البيانات المستلمة",
+            "hi": "प्राप्त डेटा"
           }
         }
       ]

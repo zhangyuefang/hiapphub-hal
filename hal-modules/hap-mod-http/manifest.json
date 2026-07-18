@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -43,7 +53,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "HTTP方法（GET/POST/PUT/DELETE等）",
-            "en-US": "HTTP method"
+            "en-US": "HTTP method",
+            "zh-TW": "HTTP方法（GET/POST/PUT/DELETE等）",
+            "ja": "HTTPメソッド（GET/POST/PUT/DELETE等）",
+            "ko": "HTTP 메서드",
+            "es": "Método HTTP",
+            "fr": "Méthode HTTP",
+            "de": "HTTP-Methode",
+            "pt-BR": "Método HTTP",
+            "ru": "HTTP-метод",
+            "ar": "طريقة HTTP",
+            "hi": "HTTP विधि"
           },
           "desc": "HTTP method",
           "optional": true
@@ -53,14 +73,34 @@
         "type": "HttpResponse",
         "descs": {
           "zh-CN": "HttpResponse类型的结果对象",
-          "en-US": "Result object of type HttpResponse"
+          "en-US": "Result object of type HttpResponse",
+          "zh-TW": "HttpResponse類型的結果物件",
+          "ja": "HttpResponseタイプの結果オブジェクト",
+          "ko": "HttpResponse유형의결과객체",
+          "es": "Objeto resultado de tipo HttpResponse",
+          "fr": "Objet résultat de type HttpResponse",
+          "de": "Ergebnisobjekt vom Typ HttpResponse",
+          "pt-BR": "Objeto resultado do tipo HttpResponse",
+          "ru": "Объект результата типа HttpResponse",
+          "ar": "كائن نتيجة من نوع HttpResponse",
+          "hi": "HttpResponse प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.request",
       "descriptions": {
         "zh-CN": "发送自定义 HTTP 请求（支持 GET/POST/PUT/DELETE 等方法）",
-        "en-US": "Send custom HTTP request with any method"
+        "en-US": "Send custom HTTP request with any method",
+        "zh-TW": "傳送自定義 HTTP 請求（支持 GET/POST/PUT/DELETE 等方法）",
+        "ja": "送信するカスタム HTTP リクエスト（サポート GET/POST/PUT/DELETE 等メソッド）",
+        "ko": "임의의 HTTP 메서드로 커스텀 요청 전송",
+        "es": "Enviar solicitud HTTP personalizada",
+        "fr": "Envoyer une requête HTTP personnalisée",
+        "de": "Benutzerdefinierte HTTP-Anfrage senden",
+        "pt-BR": "Enviar solicitação HTTP personalizada",
+        "ru": "Отправить пользовательский HTTP-запрос",
+        "ar": "إرسال طلب HTTP مخصص",
+        "hi": "किसी भी विधि से कस्टम HTTP अनुरोध भेजें"
       },
       "async": true,
       "description": "Send custom HTTP request with any method",
@@ -75,7 +115,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -85,14 +135,34 @@
         "type": "HttpResponse",
         "descs": {
           "zh-CN": "HttpResponse类型的结果对象",
-          "en-US": "Result object of type HttpResponse"
+          "en-US": "Result object of type HttpResponse",
+          "zh-TW": "HttpResponse類型的結果物件",
+          "ja": "HttpResponseタイプの結果オブジェクト",
+          "ko": "HttpResponse유형의결과객체",
+          "es": "Objeto resultado de tipo HttpResponse",
+          "fr": "Objet résultat de type HttpResponse",
+          "de": "Ergebnisobjekt vom Typ HttpResponse",
+          "pt-BR": "Objeto resultado do tipo HttpResponse",
+          "ru": "Объект результата типа HttpResponse",
+          "ar": "كائن نتيجة من نوع HttpResponse",
+          "hi": "HttpResponse प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.get",
       "descriptions": {
         "zh-CN": "发送 HTTP GET 请求并返回响应内容",
-        "en-US": "Send HTTP GET request and return response"
+        "en-US": "Send HTTP GET request and return response",
+        "zh-TW": "傳送 HTTP GET 請求並返回回應內容",
+        "ja": "HTTP GETリクエストを送信して応答を返す",
+        "ko": "HTTP GET 요청을 보내고 응답 반환",
+        "es": "Enviar solicitud HTTP GET y devolver respuesta",
+        "fr": "Envoyer une requête HTTP GET et retourner la réponse",
+        "de": "HTTP GET-Anfrage senden und Antwort zurückgeben",
+        "pt-BR": "Enviar solicitação HTTP GET e retornar resposta",
+        "ru": "Отправить HTTP GET-запрос и вернуть ответ",
+        "ar": "إرسال طلب HTTP GET وإرجاع الاستجابة",
+        "hi": "HTTP GET अनुरोध भेजें और प्रतिक्रिया लौटाएं"
       },
       "async": true,
       "description": "Send HTTP GET request and return response",
@@ -107,7 +177,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -117,7 +197,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求体内容",
-            "en-US": "Request body content"
+            "en-US": "Request body content",
+            "zh-TW": "請求体內容",
+            "ja": "リクエスト体コンテンツ",
+            "ko": "요청 본문 내용",
+            "es": "Contenido del cuerpo de la solicitud",
+            "fr": "Contenu du corps de la requête",
+            "de": "Anfrage-Body-Inhalt",
+            "pt-BR": "Conteúdo do corpo da requisição",
+            "ru": "Содержимое тела запроса",
+            "ar": "محتوى جسم الطلب",
+            "hi": "रिक्वेस्ट बॉडी सामग्री"
           },
           "desc": "Request body content",
           "optional": true
@@ -127,14 +217,34 @@
         "type": "HttpResponse",
         "descs": {
           "zh-CN": "HttpResponse类型的结果对象",
-          "en-US": "Result object of type HttpResponse"
+          "en-US": "Result object of type HttpResponse",
+          "zh-TW": "HttpResponse類型的結果物件",
+          "ja": "HttpResponseタイプの結果オブジェクト",
+          "ko": "HttpResponse유형의결과객체",
+          "es": "Objeto resultado de tipo HttpResponse",
+          "fr": "Objet résultat de type HttpResponse",
+          "de": "Ergebnisobjekt vom Typ HttpResponse",
+          "pt-BR": "Objeto resultado do tipo HttpResponse",
+          "ru": "Объект результата типа HttpResponse",
+          "ar": "كائن نتيجة من نوع HttpResponse",
+          "hi": "HttpResponse प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.post",
       "descriptions": {
         "zh-CN": "发送 HTTP POST 请求，支持 JSON/表单/文件上传等请求体",
-        "en-US": "Send HTTP POST request with JSON/form/file upload body"
+        "en-US": "Send HTTP POST request with JSON/form/file upload body",
+        "zh-TW": "傳送 HTTP POST 請求，支持 JSON/表單/檔案上傳等請求体",
+        "ja": "JSON/フォーム/ファイルアップロードでHTTP POSTリクエストを送信",
+        "ko": "JSON/폼/파일 업로드로 HTTP POST 요청 전송",
+        "es": "Enviar solicitud HTTP POST con JSON/formulario/archivo",
+        "fr": "Envoyer une requête HTTP POST avec JSON/formulaire/fichier",
+        "de": "HTTP POST-Anfrage mit JSON/Formular/Datei senden",
+        "pt-BR": "Enviar solicitação HTTP POST com JSON/formulário/arquivo",
+        "ru": "Отправить HTTP POST-запрос с JSON/формой/файлом",
+        "ar": "إرسال طلب HTTP POST مع JSON/نموذج/ملف",
+        "hi": "JSON/फ़ॉर्म/फ़ाइल अपलोड के साथ HTTP POST अनुरोध भेजें"
       },
       "async": true,
       "description": "Send HTTP POST request with JSON/form/file upload body",
@@ -149,7 +259,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -159,7 +279,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求体内容",
-            "en-US": "Request body content"
+            "en-US": "Request body content",
+            "zh-TW": "請求体內容",
+            "ja": "リクエスト体コンテンツ",
+            "ko": "요청 본문 내용",
+            "es": "Contenido del cuerpo de la solicitud",
+            "fr": "Contenu du corps de la requête",
+            "de": "Anfrage-Body-Inhalt",
+            "pt-BR": "Conteúdo do corpo da requisição",
+            "ru": "Содержимое тела запроса",
+            "ar": "محتوى جسم الطلب",
+            "hi": "रिक्वेस्ट बॉडी सामग्री"
           },
           "desc": "Request body content",
           "optional": true
@@ -169,14 +299,34 @@
         "type": "HttpResponse",
         "descs": {
           "zh-CN": "HttpResponse类型的结果对象",
-          "en-US": "Result object of type HttpResponse"
+          "en-US": "Result object of type HttpResponse",
+          "zh-TW": "HttpResponse類型的結果物件",
+          "ja": "HttpResponseタイプの結果オブジェクト",
+          "ko": "HttpResponse유형의결과객체",
+          "es": "Objeto resultado de tipo HttpResponse",
+          "fr": "Objet résultat de type HttpResponse",
+          "de": "Ergebnisobjekt vom Typ HttpResponse",
+          "pt-BR": "Objeto resultado do tipo HttpResponse",
+          "ru": "Объект результата типа HttpResponse",
+          "ar": "كائن نتيجة من نوع HttpResponse",
+          "hi": "HttpResponse प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.put",
       "descriptions": {
         "zh-CN": "发送HTTP PUT请求（用于更新资源）",
-        "en-US": "Send HTTP PUT request (for updating resources)"
+        "en-US": "Send HTTP PUT request (for updating resources)",
+        "zh-TW": "傳送HTTP PUT請求（用於更新資源）",
+        "ja": "送信するHTTP PUTリクエスト（のための更新する资源）",
+        "ko": "HTTP PUT 요청 전송 (리소스 업데이트용)",
+        "es": "Enviar solicitud HTTP PUT (para actualizar recursos)",
+        "fr": "Envoyer une requête HTTP PUT (mise à jour de ressources)",
+        "de": "HTTP PUT-Anfrage senden (Ressourcen aktualisieren)",
+        "pt-BR": "Enviar solicitação HTTP PUT (atualizar recursos)",
+        "ru": "Отправить HTTP PUT-запрос (обновление ресурсов)",
+        "ar": "إرسال طلب HTTP PUT (لتحديث الموارد)",
+        "hi": "HTTP PUT अनुरोध भेजें (संसाधन अपडेट के लिए)"
       },
       "async": true,
       "group": "request",
@@ -191,7 +341,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -201,7 +361,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求体内容",
-            "en-US": "Request body content"
+            "en-US": "Request body content",
+            "zh-TW": "請求体內容",
+            "ja": "リクエスト体コンテンツ",
+            "ko": "요청 본문 내용",
+            "es": "Contenido del cuerpo de la solicitud",
+            "fr": "Contenu du corps de la requête",
+            "de": "Anfrage-Body-Inhalt",
+            "pt-BR": "Conteúdo do corpo da requisição",
+            "ru": "Содержимое тела запроса",
+            "ar": "محتوى جسم الطلب",
+            "hi": "रिक्वेस्ट बॉडी सामग्री"
           },
           "desc": "Request body content",
           "optional": true
@@ -211,14 +381,34 @@
         "type": "HttpResponse",
         "descs": {
           "zh-CN": "HttpResponse类型的结果对象",
-          "en-US": "Result object of type HttpResponse"
+          "en-US": "Result object of type HttpResponse",
+          "zh-TW": "HttpResponse類型的結果物件",
+          "ja": "HttpResponseタイプの結果オブジェクト",
+          "ko": "HttpResponse유형의결과객체",
+          "es": "Objeto resultado de tipo HttpResponse",
+          "fr": "Objet résultat de type HttpResponse",
+          "de": "Ergebnisobjekt vom Typ HttpResponse",
+          "pt-BR": "Objeto resultado do tipo HttpResponse",
+          "ru": "Объект результата типа HttpResponse",
+          "ar": "كائن نتيجة من نوع HttpResponse",
+          "hi": "HttpResponse प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.patch",
       "descriptions": {
         "zh-CN": "发送HTTP PATCH请求（用于部分更新资源）",
-        "en-US": "Send HTTP PATCH request (for partial updates)"
+        "en-US": "Send HTTP PATCH request (for partial updates)",
+        "zh-TW": "傳送HTTP PATCH請求（用於部分更新資源）",
+        "ja": "送信するHTTP PATCHリクエスト（のための部分更新する资源）",
+        "ko": "HTTP PATCH 요청 전송 (부분 업데이트용)",
+        "es": "Enviar solicitud HTTP PATCH (para actualizaciones parciales)",
+        "fr": "Envoyer une requête HTTP PATCH (mises à jour partielles)",
+        "de": "HTTP PATCH-Anfrage senden (teilweise Aktualisierung)",
+        "pt-BR": "Enviar solicitação HTTP PATCH (atualizações parciais)",
+        "ru": "Отправить HTTP PATCH-запрос (частичное обновление)",
+        "ar": "إرسال طلب HTTP PATCH (للتحديثات الجزئية)",
+        "hi": "HTTP PATCH अनुरोध भेजें (आंशिक अपडेट के लिए)"
       },
       "async": true,
       "group": "request",
@@ -233,7 +423,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -243,14 +443,34 @@
         "type": "HttpResponse",
         "descs": {
           "zh-CN": "HttpResponse类型的结果对象",
-          "en-US": "Result object of type HttpResponse"
+          "en-US": "Result object of type HttpResponse",
+          "zh-TW": "HttpResponse類型的結果物件",
+          "ja": "HttpResponseタイプの結果オブジェクト",
+          "ko": "HttpResponse유형의결과객체",
+          "es": "Objeto resultado de tipo HttpResponse",
+          "fr": "Objet résultat de type HttpResponse",
+          "de": "Ergebnisobjekt vom Typ HttpResponse",
+          "pt-BR": "Objeto resultado do tipo HttpResponse",
+          "ru": "Объект результата типа HttpResponse",
+          "ar": "كائن نتيجة من نوع HttpResponse",
+          "hi": "HttpResponse प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.delete",
       "descriptions": {
         "zh-CN": "发送HTTP DELETE请求（用于删除资源）",
-        "en-US": "Send HTTP DELETE request (for deleting resources)"
+        "en-US": "Send HTTP DELETE request (for deleting resources)",
+        "zh-TW": "傳送HTTP DELETE請求（用於刪除資源）",
+        "ja": "送信するHTTP DELETEリクエスト（のための削除する资源）",
+        "ko": "HTTP DELETE 요청 전송 (리소스 삭제용)",
+        "es": "Enviar solicitud HTTP DELETE (para eliminar recursos)",
+        "fr": "Envoyer une requête HTTP DELETE (suppression de ressources)",
+        "de": "HTTP DELETE-Anfrage senden (Ressourcen löschen)",
+        "pt-BR": "Enviar solicitação HTTP DELETE (excluir recursos)",
+        "ru": "Отправить HTTP DELETE-запрос (удаление ресурсов)",
+        "ar": "إرسال طلب HTTP DELETE (لحذف الموارد)",
+        "hi": "HTTP DELETE अनुरोध भेजें (संसाधन हटाने के लिए)"
       },
       "async": true,
       "group": "request",
@@ -265,7 +485,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -275,14 +505,34 @@
         "type": "HttpResponse",
         "descs": {
           "zh-CN": "HttpResponse类型的结果对象",
-          "en-US": "Result object of type HttpResponse"
+          "en-US": "Result object of type HttpResponse",
+          "zh-TW": "HttpResponse類型的結果物件",
+          "ja": "HttpResponseタイプの結果オブジェクト",
+          "ko": "HttpResponse유형의결과객체",
+          "es": "Objeto resultado de tipo HttpResponse",
+          "fr": "Objet résultat de type HttpResponse",
+          "de": "Ergebnisobjekt vom Typ HttpResponse",
+          "pt-BR": "Objeto resultado do tipo HttpResponse",
+          "ru": "Объект результата типа HttpResponse",
+          "ar": "كائن نتيجة من نوع HttpResponse",
+          "hi": "HttpResponse प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.head",
       "descriptions": {
         "zh-CN": "发送HTTP HEAD请求（只获取响应头不获取正文）",
-        "en-US": "Send HTTP HEAD request (headers only, no body)"
+        "en-US": "Send HTTP HEAD request (headers only, no body)",
+        "zh-TW": "傳送HTTP HEAD請求（只取得回應頭不取得正文）",
+        "ja": "送信するHTTP HEADリクエスト（只取得するレスポンス头不取得する正文）",
+        "ko": "HTTP HEAD 요청 전송 (헤더만, 본문 없음)",
+        "es": "Enviar solicitud HTTP HEAD (solo encabezados)",
+        "fr": "Envoyer une requête HTTP HEAD (en-têtes uniquement)",
+        "de": "HTTP HEAD-Anfrage senden (nur Header)",
+        "pt-BR": "Enviar solicitação HTTP HEAD (somente cabeçalhos)",
+        "ru": "Отправить HTTP HEAD-запрос (только заголовки)",
+        "ar": "إرسال طلب HTTP HEAD (رؤوس فقط)",
+        "hi": "HTTP HEAD अनुरोध भेजें (केवल हेडर)"
       },
       "async": true,
       "group": "request",
@@ -297,7 +547,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -307,7 +567,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "保存路径",
-            "en-US": "Save path"
+            "en-US": "Save path",
+            "zh-TW": "保存路徑",
+            "ja": "保存するパス",
+            "ko": "저장경로",
+            "es": "Ruta de guardado",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения",
+            "ar": "مسار الحفظ",
+            "hi": "सहेजने का पथ"
           },
           "optional": true
         }
@@ -316,14 +586,34 @@
         "type": "DownloadResult",
         "descs": {
           "zh-CN": "DownloadResult类型的结果对象",
-          "en-US": "Result object of type DownloadResult"
+          "en-US": "Result object of type DownloadResult",
+          "zh-TW": "DownloadResult類型的結果物件",
+          "ja": "DownloadResultタイプの結果オブジェクト",
+          "ko": "DownloadResult유형의결과객체",
+          "es": "Objeto resultado de tipo DownloadResult",
+          "fr": "Objet résultat de type DownloadResult",
+          "de": "Ergebnisobjekt vom Typ DownloadResult",
+          "pt-BR": "Objeto resultado do tipo DownloadResult",
+          "ru": "Объект результата типа DownloadResult",
+          "ar": "كائن نتيجة من نوع DownloadResult",
+          "hi": "DownloadResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type DownloadResult"
       },
       "bridge_path": "http.download",
       "descriptions": {
         "zh-CN": "下载远程文件到本地指定路径，支持断点续传",
-        "en-US": "Download remote file to local path with resume support"
+        "en-US": "Download remote file to local path with resume support",
+        "zh-TW": "下載遠程檔案到本地指定路徑，支持斷點續傳",
+        "ja": "リモートファイルをレジューム対応でローカルにダウンロード",
+        "ko": "원격 파일을 재개 지원으로 로컬 경로에 다운로드",
+        "es": "Descargar archivo remoto con reanudación",
+        "fr": "Télécharger le fichier distant avec reprise",
+        "de": "Remote-Datei herunterladen mit Fortsetzung",
+        "pt-BR": "Baixar arquivo remoto com suporte a retomada",
+        "ru": "Скачать удалённый файл с возможностью возобновления",
+        "ar": "تنزيل ملف بعيد مع دعم الاستئناف",
+        "hi": "रिमोट फ़ाइल को रीज़्यूम सपोर्ट के साथ डाउनलोड करें"
       },
       "async": true,
       "description": "Download remote file to local path with resume support",
@@ -338,7 +628,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -348,7 +648,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "optional": true
         }
@@ -357,14 +667,34 @@
         "type": "HttpResponse",
         "descs": {
           "zh-CN": "HttpResponse类型的结果对象",
-          "en-US": "Result object of type HttpResponse"
+          "en-US": "Result object of type HttpResponse",
+          "zh-TW": "HttpResponse類型的結果物件",
+          "ja": "HttpResponseタイプの結果オブジェクト",
+          "ko": "HttpResponse유형의결과객체",
+          "es": "Objeto resultado de tipo HttpResponse",
+          "fr": "Objet résultat de type HttpResponse",
+          "de": "Ergebnisobjekt vom Typ HttpResponse",
+          "pt-BR": "Objeto resultado do tipo HttpResponse",
+          "ru": "Объект результата типа HttpResponse",
+          "ar": "كائن نتيجة من نوع HttpResponse",
+          "hi": "HttpResponse प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.upload",
       "descriptions": {
         "zh-CN": "上传本地文件到远程服务器",
-        "en-US": "Upload local file to remote server"
+        "en-US": "Upload local file to remote server",
+        "zh-TW": "上傳本地檔案到遠程服務器",
+        "ja": "アップロードするローカルファイルへリモートサーバー",
+        "ko": "로컬 파일을 원격 서버에 업로드",
+        "es": "Subir archivo local al servidor remoto",
+        "fr": "Téléverser le fichier local vers le serveur distant",
+        "de": "Lokale Datei auf Remote-Server hochladen",
+        "pt-BR": "Enviar arquivo local para servidor remoto",
+        "ru": "Загрузить локальный файл на удалённый сервер",
+        "ar": "رفع ملف محلي إلى خادم بعيد",
+        "hi": "लोकल फ़ाइल रिमोट सर्वर पर अपलोड करें"
       },
       "async": true,
       "description": "Upload local file to remote server",
@@ -379,7 +709,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -389,7 +729,17 @@
           "type": "Record",
           "descs": {
             "zh-CN": "表单字段键值对",
-            "en-US": "Form field key-value pairs"
+            "en-US": "Form field key-value pairs",
+            "zh-TW": "表單字段鍵值對",
+            "ja": "フォームフィールドのキー値ペア",
+            "ko": "폼 필드 키-값 쌍",
+            "es": "Pares clave-valor del formulario",
+            "fr": "Paires clé-valeur du formulaire",
+            "de": "Formularfeld-Schlüssel-Wert-Paare",
+            "pt-BR": "Pares chave-valor do formulário",
+            "ru": "Пары ключ-значение формы",
+            "ar": "أزواج مفتاح-قيمة النموذج",
+            "hi": "फ़ॉर्म फ़ील्ड की-वैल्यू जोड़े"
           },
           "desc": "Form field key-value pairs"
         }
@@ -398,14 +748,34 @@
         "type": "HttpResponse",
         "descs": {
           "zh-CN": "HttpResponse类型的结果对象",
-          "en-US": "Result object of type HttpResponse"
+          "en-US": "Result object of type HttpResponse",
+          "zh-TW": "HttpResponse類型的結果物件",
+          "ja": "HttpResponseタイプの結果オブジェクト",
+          "ko": "HttpResponse유형의결과객체",
+          "es": "Objeto resultado de tipo HttpResponse",
+          "fr": "Objet résultat de type HttpResponse",
+          "de": "Ergebnisobjekt vom Typ HttpResponse",
+          "pt-BR": "Objeto resultado do tipo HttpResponse",
+          "ru": "Объект результата типа HttpResponse",
+          "ar": "كائن نتيجة من نوع HttpResponse",
+          "hi": "HttpResponse प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.postForm",
       "descriptions": {
         "zh-CN": "postHTTP的form",
-        "en-US": "Post form of HTTP"
+        "en-US": "Post form of HTTP",
+        "zh-TW": "postHTTP的form",
+        "ja": "postHTTPのform",
+        "ko": "postHTTP의form",
+        "es": "Enviar formulario HTTP por POST",
+        "fr": "Envoyer le formulaire HTTP par POST",
+        "de": "HTTP-Formular per POST senden",
+        "pt-BR": "Enviar formulário HTTP por POST",
+        "ru": "Отправить HTTP-форму методом POST",
+        "ar": "إرسال نموذج HTTP عبر POST",
+        "hi": "HTTP फ़ॉर्म POST भेजें"
       },
       "async": true,
       "group": "request",
@@ -420,7 +790,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "代理 URL",
-            "en-US": "Proxy URL"
+            "en-US": "Proxy URL",
+            "zh-TW": "代理 URL",
+            "ja": "プロキシ URL",
+            "ko": "프록시 URL",
+            "es": "URL del proxy",
+            "fr": "URL du proxy",
+            "de": "Proxy-URL",
+            "pt-BR": "URL do proxy",
+            "ru": "URL прокси",
+            "ar": "عنوان URL للوكيل",
+            "hi": "प्रॉक्सी URL"
           }
         }
       ],
@@ -428,14 +808,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "http.setProxy",
       "descriptions": {
         "zh-CN": "设置HTTP的proxy属性",
-        "en-US": "Set proxy property of HTTP"
+        "en-US": "Set proxy property of HTTP",
+        "zh-TW": "設定HTTP的proxy屬性",
+        "ja": "設定するHTTPのproxyプロパティ",
+        "ko": "설정HTTP의proxy속성",
+        "es": "Establecer proxy HTTP",
+        "fr": "Définir le proxy HTTP",
+        "de": "HTTP-Proxy setzen",
+        "pt-BR": "Definir proxy HTTP",
+        "ru": "Установить прокси HTTP",
+        "ar": "تعيين وكيل HTTP",
+        "hi": "HTTP प्रॉक्सी सेट करें"
       },
       "group": "session",
       "description": "Set proxy property of HTTP"
@@ -449,7 +849,17 @@
           "type": "Record",
           "descs": {
             "zh-CN": "HTTP请求头",
-            "en-US": "HTTP headers"
+            "en-US": "HTTP headers",
+            "zh-TW": "HTTP請求頭",
+            "ja": "HTTPリクエスト头",
+            "ko": "HTTP 헤더",
+            "es": "Encabezados HTTP",
+            "fr": "En-têtes HTTP",
+            "de": "HTTP-Header",
+            "pt-BR": "Cabeçalhos HTTP",
+            "ru": "HTTP-заголовки",
+            "ar": "رؤوس HTTP",
+            "hi": "HTTP हेडर"
           },
           "desc": "HTTP headers",
           "optional": true
@@ -459,14 +869,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "http.setDefaultHeaders",
       "descriptions": {
         "zh-CN": "设置HTTP的default headers属性",
-        "en-US": "Set default headers property of HTTP"
+        "en-US": "Set default headers property of HTTP",
+        "zh-TW": "設定HTTP的default headers屬性",
+        "ja": "設定するHTTPのdefault headersプロパティ",
+        "ko": "설정HTTP의default headers속성",
+        "es": "Establecer encabezados HTTP predeterminados",
+        "fr": "Définir les en-têtes HTTP par défaut",
+        "de": "Standard-HTTP-Header setzen",
+        "pt-BR": "Definir cabeçalhos HTTP padrão",
+        "ru": "Установить заголовки HTTP по умолчанию",
+        "ar": "تعيين رؤوس HTTP الافتراضية",
+        "hi": "डिफ़ॉल्ट HTTP हेडर सेट करें"
       },
       "group": "config",
       "description": "Set default headers property of HTTP"
@@ -480,7 +910,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "超时(毫秒)",
-            "en-US": "Timeout ms"
+            "en-US": "Timeout ms",
+            "zh-TW": "超時(毫秒)",
+            "ja": "タイムアウト(毫秒)",
+            "ko": "타임아웃 (밀리초)",
+            "es": "Tiempo de espera (ms)",
+            "fr": "Délai (ms)",
+            "de": "Timeout (ms)",
+            "pt-BR": "Timeout (ms)",
+            "ru": "Тайм-аут (мс)",
+            "ar": "المهلة (مللي ثانية)",
+            "hi": "टाइमआउट (मिलीसेकंड)"
           },
           "optional": true
         }
@@ -489,14 +929,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "http.setDefaultTimeout",
       "descriptions": {
         "zh-CN": "设置HTTP的default timeout属性",
-        "en-US": "Set default timeout property of HTTP"
+        "en-US": "Set default timeout property of HTTP",
+        "zh-TW": "設定HTTP的default timeout屬性",
+        "ja": "設定するHTTPのdefault timeoutプロパティ",
+        "ko": "설정HTTP의default timeout속성",
+        "es": "Establecer tiempo de espera HTTP predeterminado",
+        "fr": "Définir le délai HTTP par défaut",
+        "de": "Standard-HTTP-Timeout setzen",
+        "pt-BR": "Definir timeout HTTP padrão",
+        "ru": "Установить тайм-аут HTTP по умолчанию",
+        "ar": "تعيين مهلة HTTP الافتراضية",
+        "hi": "डिफ़ॉल्ट HTTP टाइमआउट सेट करें"
       },
       "group": "config",
       "description": "Set default timeout property of HTTP"
@@ -510,7 +970,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -520,7 +990,17 @@
           "type": "any",
           "descs": {
             "zh-CN": "JSON 数据",
-            "en-US": "JSON data"
+            "en-US": "JSON data",
+            "zh-TW": "JSON 數據",
+            "ja": "JSON データ",
+            "ko": "JSON 데이터",
+            "es": "Datos JSON",
+            "fr": "Données JSON",
+            "de": "JSON-Daten",
+            "pt-BR": "Dados JSON",
+            "ru": "JSON-данные",
+            "ar": "بيانات JSON",
+            "hi": "JSON डेटा"
           },
           "optional": true
         }
@@ -529,14 +1009,34 @@
         "type": "HttpResponse",
         "descs": {
           "zh-CN": "HttpResponse类型的结果对象",
-          "en-US": "Result object of type HttpResponse"
+          "en-US": "Result object of type HttpResponse",
+          "zh-TW": "HttpResponse類型的結果物件",
+          "ja": "HttpResponseタイプの結果オブジェクト",
+          "ko": "HttpResponse유형의결과객체",
+          "es": "Objeto resultado de tipo HttpResponse",
+          "fr": "Objet résultat de type HttpResponse",
+          "de": "Ergebnisobjekt vom Typ HttpResponse",
+          "pt-BR": "Objeto resultado do tipo HttpResponse",
+          "ru": "Объект результата типа HttpResponse",
+          "ar": "كائن نتيجة من نوع HttpResponse",
+          "hi": "HttpResponse प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.postJson",
       "descriptions": {
         "zh-CN": "postHTTP的json",
-        "en-US": "Post json of HTTP"
+        "en-US": "Post json of HTTP",
+        "zh-TW": "postHTTP的json",
+        "ja": "postHTTPのjson",
+        "ko": "postHTTP의json",
+        "es": "Enviar JSON por POST HTTP",
+        "fr": "Envoyer JSON par POST HTTP",
+        "de": "JSON per HTTP POST senden",
+        "pt-BR": "Enviar JSON por POST HTTP",
+        "ru": "Отправить JSON по HTTP POST",
+        "ar": "إرسال JSON عبر HTTP POST",
+        "hi": "HTTP JSON POST भेजें"
       },
       "async": true,
       "group": "request",
@@ -551,7 +1051,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -561,14 +1071,34 @@
         "type": "HttpResponse",
         "descs": {
           "zh-CN": "HttpResponse类型的结果对象",
-          "en-US": "Result object of type HttpResponse"
+          "en-US": "Result object of type HttpResponse",
+          "zh-TW": "HttpResponse類型的結果物件",
+          "ja": "HttpResponseタイプの結果オブジェクト",
+          "ko": "HttpResponse유형의결과객체",
+          "es": "Objeto resultado de tipo HttpResponse",
+          "fr": "Objet résultat de type HttpResponse",
+          "de": "Ergebnisobjekt vom Typ HttpResponse",
+          "pt-BR": "Objeto resultado do tipo HttpResponse",
+          "ru": "Объект результата типа HttpResponse",
+          "ar": "كائن نتيجة من نوع HttpResponse",
+          "hi": "HttpResponse प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.getJson",
       "descriptions": {
         "zh-CN": "获取HTTP的json信息",
-        "en-US": "Get json info of HTTP"
+        "en-US": "Get json info of HTTP",
+        "zh-TW": "取得HTTP的json資訊",
+        "ja": "取得するHTTPのjson情報",
+        "ko": "가져오기HTTP의json정보",
+        "es": "Obtener información JSON por HTTP",
+        "fr": "Obtenir les informations JSON par HTTP",
+        "de": "JSON-Informationen per HTTP abrufen",
+        "pt-BR": "Obter informações JSON por HTTP",
+        "ru": "Получить информацию JSON по HTTP",
+        "ar": "الحصول على معلومات JSON عبر HTTP",
+        "hi": "HTTP JSON जानकारी प्राप्त करें"
       },
       "async": true,
       "group": "request",
@@ -583,7 +1113,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -593,7 +1133,17 @@
           "type": "any",
           "descs": {
             "zh-CN": "JSON 数据",
-            "en-US": "JSON data"
+            "en-US": "JSON data",
+            "zh-TW": "JSON 數據",
+            "ja": "JSON データ",
+            "ko": "JSON 데이터",
+            "es": "Datos JSON",
+            "fr": "Données JSON",
+            "de": "JSON-Daten",
+            "pt-BR": "Dados JSON",
+            "ru": "JSON-данные",
+            "ar": "بيانات JSON",
+            "hi": "JSON डेटा"
           },
           "optional": true
         }
@@ -602,14 +1152,34 @@
         "type": "HttpResponse",
         "descs": {
           "zh-CN": "HttpResponse类型的结果对象",
-          "en-US": "Result object of type HttpResponse"
+          "en-US": "Result object of type HttpResponse",
+          "zh-TW": "HttpResponse類型的結果物件",
+          "ja": "HttpResponseタイプの結果オブジェクト",
+          "ko": "HttpResponse유형의결과객체",
+          "es": "Objeto resultado de tipo HttpResponse",
+          "fr": "Objet résultat de type HttpResponse",
+          "de": "Ergebnisobjekt vom Typ HttpResponse",
+          "pt-BR": "Objeto resultado do tipo HttpResponse",
+          "ru": "Объект результата типа HttpResponse",
+          "ar": "كائن نتيجة من نوع HttpResponse",
+          "hi": "HttpResponse प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.putJson",
       "descriptions": {
         "zh-CN": "putHTTP的json",
-        "en-US": "Put json of HTTP"
+        "en-US": "Put json of HTTP",
+        "zh-TW": "putHTTP的json",
+        "ja": "putHTTPのjson",
+        "ko": "putHTTP의json",
+        "es": "Enviar JSON por PUT HTTP",
+        "fr": "Envoyer JSON par PUT HTTP",
+        "de": "JSON per HTTP PUT senden",
+        "pt-BR": "Enviar JSON por PUT HTTP",
+        "ru": "Отправить JSON по HTTP PUT",
+        "ar": "إرسال JSON عبر HTTP PUT",
+        "hi": "HTTP JSON PUT भेजें"
       },
       "async": true,
       "group": "request",
@@ -624,7 +1194,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -634,7 +1214,17 @@
           "type": "any",
           "descs": {
             "zh-CN": "JSON 数据",
-            "en-US": "JSON data"
+            "en-US": "JSON data",
+            "zh-TW": "JSON 數據",
+            "ja": "JSON データ",
+            "ko": "JSON 데이터",
+            "es": "Datos JSON",
+            "fr": "Données JSON",
+            "de": "JSON-Daten",
+            "pt-BR": "Dados JSON",
+            "ru": "JSON-данные",
+            "ar": "بيانات JSON",
+            "hi": "JSON डेटा"
           },
           "optional": true
         }
@@ -643,14 +1233,34 @@
         "type": "HttpResponse",
         "descs": {
           "zh-CN": "HttpResponse类型的结果对象",
-          "en-US": "Result object of type HttpResponse"
+          "en-US": "Result object of type HttpResponse",
+          "zh-TW": "HttpResponse類型的結果物件",
+          "ja": "HttpResponseタイプの結果オブジェクト",
+          "ko": "HttpResponse유형의결과객체",
+          "es": "Objeto resultado de tipo HttpResponse",
+          "fr": "Objet résultat de type HttpResponse",
+          "de": "Ergebnisobjekt vom Typ HttpResponse",
+          "pt-BR": "Objeto resultado do tipo HttpResponse",
+          "ru": "Объект результата типа HttpResponse",
+          "ar": "كائن نتيجة من نوع HttpResponse",
+          "hi": "HttpResponse प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type HttpResponse"
       },
       "bridge_path": "http.patchJson",
       "descriptions": {
         "zh-CN": "PATCH JSON",
-        "en-US": "PATCH JSON"
+        "en-US": "PATCH JSON",
+        "zh-TW": "PATCH JSON",
+        "ja": "PATCH JSON",
+        "ko": "PATCH JSON",
+        "es": "PATCH JSON",
+        "fr": "PATCH JSON",
+        "de": "PATCH JSON",
+        "pt-BR": "PATCH JSON",
+        "ru": "PATCH JSON",
+        "ar": "PATCH JSON",
+        "hi": "PATCH JSON"
       },
       "async": true,
       "group": "request"
@@ -664,7 +1274,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -674,14 +1294,34 @@
         "type": "SseConnection",
         "descs": {
           "zh-CN": "SseConnection类型的结果对象",
-          "en-US": "Result object of type SseConnection"
+          "en-US": "Result object of type SseConnection",
+          "zh-TW": "SseConnection類型的結果物件",
+          "ja": "SseConnectionタイプの結果オブジェクト",
+          "ko": "SseConnection유형의결과객체",
+          "es": "Objeto resultado de tipo SseConnection",
+          "fr": "Objet résultat de type SseConnection",
+          "de": "Ergebnisobjekt vom Typ SseConnection",
+          "pt-BR": "Objeto resultado do tipo SseConnection",
+          "ru": "Объект результата типа SseConnection",
+          "ar": "كائن نتيجة من نوع SseConnection",
+          "hi": "SseConnection प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type SseConnection"
       },
       "bridge_path": "http.sseConnect",
       "descriptions": {
         "zh-CN": "sseHTTP的connect",
-        "en-US": "Sse connect of HTTP"
+        "en-US": "Sse connect of HTTP",
+        "zh-TW": "sseHTTP的connect",
+        "ja": "sseHTTPのconnect",
+        "ko": "sseHTTP의connect",
+        "es": "Conexión SSE de HTTP",
+        "fr": "Connexion SSE HTTP",
+        "de": "HTTP SSE-Verbindung",
+        "pt-BR": "Conexão SSE HTTP",
+        "ru": "SSE-соединение HTTP",
+        "ar": "اتصال SSE عبر HTTP",
+        "hi": "HTTP SSE कनेक्ट"
       },
       "group": "sse",
       "description": "Sse connect of HTTP"
@@ -695,7 +1335,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         }
       ],
@@ -703,14 +1353,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "http.sseClose",
       "descriptions": {
         "zh-CN": "sseHTTP的close",
-        "en-US": "Sse close of HTTP"
+        "en-US": "Sse close of HTTP",
+        "zh-TW": "sseHTTP的close",
+        "ja": "sseHTTPのclose",
+        "ko": "sseHTTP의close",
+        "es": "Cerrar conexión SSE de HTTP",
+        "fr": "Fermer la connexion SSE HTTP",
+        "de": "HTTP SSE-Verbindung schließen",
+        "pt-BR": "Fechar conexão SSE HTTP",
+        "ru": "Закрыть SSE-соединение HTTP",
+        "ar": "إغلاق اتصال SSE عبر HTTP",
+        "hi": "HTTP SSE बंद करें"
       },
       "group": "sse",
       "description": "Sse close of HTTP"
@@ -723,14 +1393,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "http.listSse",
       "descriptions": {
         "zh-CN": "列出HTTP的sse",
-        "en-US": "List sse of HTTP"
+        "en-US": "List sse of HTTP",
+        "zh-TW": "列出HTTP的sse",
+        "ja": "列出HTTPのsse",
+        "ko": "HTTP SSE 목록",
+        "es": "Listar SSE de HTTP",
+        "fr": "Lister les SSE HTTP",
+        "de": "HTTP SSE auflisten",
+        "pt-BR": "Listar SSE HTTP",
+        "ru": "Список SSE HTTP",
+        "ar": "قائمة SSE عبر HTTP",
+        "hi": "HTTP SSE सूचीबद्ध करें"
       },
       "group": "sse",
       "description": "List sse of HTTP"
@@ -744,7 +1434,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -754,7 +1454,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "名称标识",
-            "en-US": "Name identifier"
+            "en-US": "Name identifier",
+            "zh-TW": "名稱標識",
+            "ja": "名前識別子",
+            "ko": "이름 식별자",
+            "es": "Identificador de nombre",
+            "fr": "Identifiant de nom",
+            "de": "Namenskennung",
+            "pt-BR": "Identificador de nome",
+            "ru": "Идентификатор имени",
+            "ar": "معرف الاسم",
+            "hi": "नाम पहचानकर्ता"
           },
           "desc": "Name identifier"
         },
@@ -763,7 +1473,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要设置的值",
-            "en-US": "Value to set"
+            "en-US": "Value to set",
+            "zh-TW": "要設定的值",
+            "ja": "設定する値",
+            "ko": "설정할 값",
+            "es": "Valor a establecer",
+            "fr": "Valeur à définir",
+            "de": "Zu setzender Wert",
+            "pt-BR": "Valor a definir",
+            "ru": "Устанавливаемое значение",
+            "ar": "القيمة المراد تعيينها",
+            "hi": "सेट करने का मान"
           },
           "desc": "Value to set"
         }
@@ -772,14 +1492,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "http.setCookie",
       "descriptions": {
         "zh-CN": "设置HTTP的cookie属性",
-        "en-US": "Set cookie property of HTTP"
+        "en-US": "Set cookie property of HTTP",
+        "zh-TW": "設定HTTP的cookie屬性",
+        "ja": "設定するHTTPのcookieプロパティ",
+        "ko": "설정HTTP의cookie속성",
+        "es": "Establecer cookies HTTP",
+        "fr": "Définir les cookies HTTP",
+        "de": "HTTP-Cookies setzen",
+        "pt-BR": "Definir cookies HTTP",
+        "ru": "Установить cookies HTTP",
+        "ar": "تعيين ملفات تعريف الارتباط HTTP",
+        "hi": "HTTP कुकी सेट करें"
       },
       "group": "config",
       "description": "Set cookie property of HTTP"
@@ -793,7 +1533,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -803,13 +1553,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "Cookie",
-          "en-US": "Cookies"
+          "en-US": "Cookies",
+          "zh-TW": "Cookie",
+          "ja": "クッキー",
+          "ko": "쿠키",
+          "es": "Cookies",
+          "fr": "Cookies",
+          "de": "Cookies",
+          "pt-BR": "Cookies",
+          "ru": "Куки",
+          "ar": "ملفات تعريف الارتباط",
+          "hi": "कुकीज़"
         }
       },
       "bridge_path": "http.getCookies",
       "descriptions": {
         "zh-CN": "获取HTTP的cookies信息",
-        "en-US": "Get cookies info of HTTP"
+        "en-US": "Get cookies info of HTTP",
+        "zh-TW": "取得HTTP的cookies資訊",
+        "ja": "取得するHTTPのcookies情報",
+        "ko": "가져오기HTTP의cookies정보",
+        "es": "Obtener cookies HTTP",
+        "fr": "Obtenir les cookies HTTP",
+        "de": "HTTP-Cookie-Informationen abrufen",
+        "pt-BR": "Obter cookies HTTP",
+        "ru": "Получить cookies HTTP",
+        "ar": "الحصول على ملفات تعريف الارتباط HTTP",
+        "hi": "HTTP कुकी जानकारी प्राप्त करें"
       },
       "group": "config",
       "description": "Get cookies info of HTTP"
@@ -823,7 +1593,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -833,14 +1613,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "http.clearCookies",
       "descriptions": {
         "zh-CN": "清空HTTP的cookies",
-        "en-US": "Clear cookies of HTTP"
+        "en-US": "Clear cookies of HTTP",
+        "zh-TW": "清空HTTP的cookies",
+        "ja": "クリアするHTTPのcookies",
+        "ko": "비우기HTTP의cookies",
+        "es": "Limpiar cookies HTTP",
+        "fr": "Effacer les cookies HTTP",
+        "de": "HTTP-Cookies löschen",
+        "pt-BR": "Limpar cookies HTTP",
+        "ru": "Очистить HTTP-куки",
+        "ar": "مسح ملفات تعريف ارتباط HTTP",
+        "hi": "HTTP कुकीज़ साफ़ करें"
       },
       "group": "config",
       "description": "Clear cookies of HTTP"
@@ -854,7 +1654,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "获取用户名",
-            "en-US": "Username"
+            "en-US": "Username",
+            "zh-TW": "取得用戶名",
+            "ja": "取得するユーザー名",
+            "ko": "사용자 이름",
+            "es": "Nombre de usuario",
+            "fr": "Nom d'utilisateur",
+            "de": "Benutzername",
+            "pt-BR": "Nome de usuário",
+            "ru": "Имя пользователя",
+            "ar": "اسم المستخدم",
+            "hi": "उपयोगकर्ता नाम"
           }
         },
         {
@@ -862,7 +1672,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string"
         }
@@ -871,14 +1691,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "http.setBasicAuth",
       "descriptions": {
         "zh-CN": "设置 Basic 认证",
-        "en-US": "Set basic auth"
+        "en-US": "Set basic auth",
+        "zh-TW": "設定 Basic 認證",
+        "ja": "基本認証を設定",
+        "ko": "기본 인증 설정",
+        "es": "Establecer autenticación básica",
+        "fr": "Définir l'authentification basique",
+        "de": "Basis-Authentifizierung setzen",
+        "pt-BR": "Definir autenticação básica",
+        "ru": "Установить базовую аутентификацию",
+        "ar": "تعيين المصادقة الأساسية",
+        "hi": "बेसिक ऑथ सेट करें"
       },
       "group": "config"
     },
@@ -891,7 +1731,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address",
           "optional": true
@@ -901,7 +1751,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path",
           "optional": true
@@ -911,14 +1771,34 @@
         "type": "DownloadResult",
         "descs": {
           "zh-CN": "DownloadResult类型的结果对象",
-          "en-US": "Result object of type DownloadResult"
+          "en-US": "Result object of type DownloadResult",
+          "zh-TW": "DownloadResult類型的結果物件",
+          "ja": "DownloadResultタイプの結果オブジェクト",
+          "ko": "DownloadResult유형의결과객체",
+          "es": "Objeto resultado de tipo DownloadResult",
+          "fr": "Objet résultat de type DownloadResult",
+          "de": "Ergebnisobjekt vom Typ DownloadResult",
+          "pt-BR": "Objeto resultado do tipo DownloadResult",
+          "ru": "Объект результата типа DownloadResult",
+          "ar": "كائن نتيجة من نوع DownloadResult",
+          "hi": "DownloadResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type DownloadResult"
       },
       "bridge_path": "http.downloadResume",
       "descriptions": {
         "zh-CN": "下载HTTP的resume",
-        "en-US": "Download resume of HTTP"
+        "en-US": "Download resume of HTTP",
+        "zh-TW": "下載HTTP的resume",
+        "ja": "ダウンロードするHTTPのresume",
+        "ko": "다운로드HTTP의resume",
+        "es": "Reanudar descarga HTTP",
+        "fr": "Reprendre le téléchargement HTTP",
+        "de": "HTTP-Download fortsetzen",
+        "pt-BR": "Retomar download HTTP",
+        "ru": "Возобновить загрузку HTTP",
+        "ar": "استئناف تنزيل HTTP",
+        "hi": "HTTP डाउनलोड रीज़्यूम"
       },
       "async": true,
       "group": "transfer",
@@ -933,7 +1813,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求 ID",
-            "en-US": "Request ID"
+            "en-US": "Request ID",
+            "zh-TW": "請求 ID",
+            "ja": "リクエスト ID",
+            "ko": "요청 ID",
+            "es": "ID de solicitud",
+            "fr": "ID de requête",
+            "de": "Anfrage-ID",
+            "pt-BR": "ID da solicitação",
+            "ru": "ID запроса",
+            "ar": "معرف الطلب",
+            "hi": "अनुरोध आईडी"
           }
         }
       ],
@@ -941,14 +1831,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "http.cancel",
       "descriptions": {
         "zh-CN": "cancelHTTP",
-        "en-US": "Cancel HTTP"
+        "en-US": "Cancel HTTP",
+        "zh-TW": "cancelHTTP",
+        "ja": "HTTPをキャンセル",
+        "ko": "HTTP 취소",
+        "es": "Cancelar HTTP",
+        "fr": "Annuler HTTP",
+        "de": "HTTP abbrechen",
+        "pt-BR": "Cancelar HTTP",
+        "ru": "Отменить HTTP",
+        "ar": "إلغاء HTTP",
+        "hi": "HTTP रद्द"
       },
       "group": "transfer",
       "description": "Cancel HTTP"
@@ -962,7 +1872,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         }
       ],
@@ -970,14 +1890,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "http.ssePoll",
       "descriptions": {
         "zh-CN": "sseHTTP的poll",
-        "en-US": "Sse poll of HTTP"
+        "en-US": "Sse poll of HTTP",
+        "zh-TW": "sseHTTP的poll",
+        "ja": "sseHTTPのpoll",
+        "ko": "sseHTTP의poll",
+        "es": "Sondeo SSE de HTTP",
+        "fr": "Sondage SSE HTTP",
+        "de": "HTTP SSE-Abfrage",
+        "pt-BR": "Polling SSE HTTP",
+        "ru": "SSE-опрос HTTP",
+        "ar": "استقصاء SSE عبر HTTP",
+        "hi": "HTTP SSE पोलिंग"
       },
       "group": "sse",
       "description": "Sse poll of HTTP"
@@ -985,14 +1925,34 @@
   ],
   "overviews": {
     "zh-CN": "提供 HTTP/HTTPS 客户端能力，支持 GET/POST/PUT/DELETE 等方法、文件上传下载、Cookie 管理、代理设置、超时控制、请求拦截等功能。",
-    "en-US": "HTTP/HTTPS client supporting GET/POST/PUT/DELETE methods, file upload/download, cookie management, proxy settings, timeout control, and request interception."
+    "en-US": "HTTP/HTTPS client supporting GET/POST/PUT/DELETE methods, file upload/download, cookie management, proxy settings, timeout control, and request interception.",
+    "zh-TW": "提供 HTTP/HTTPS 客户端能力，支援 GET/POST/PUT/DELETE 等方法、檔案上傳下載、Cookie 管理、代理設置、超時控制、請求攔截等功能。",
+    "ja": "HTTP/HTTPSクライアント。GET/POST/PUT/DELETEメソッド・ファイルアップロード/ダウンロード・Cookie・プロキシ・タイムアウト・リクエストインターセプト。",
+    "ko": "HTTP/HTTPS 클라이언트. GET/POST/PUT/DELETE, 파일 업로드/다운로드, 쿠키, 프록시, 타임아웃, 요청 인터셉트.",
+    "es": "Cliente HTTP/HTTPS. GET/POST/PUT/DELETE, subida/descarga, cookies, proxy, timeout e interceptación.",
+    "fr": "Client HTTP/HTTPS. GET/POST/PUT/DELETE, upload/download, cookies, proxy, timeout et interception.",
+    "de": "HTTP/HTTPS-Client. GET/POST/PUT/DELETE, Upload/Download, Cookies, Proxy, Timeout und Interception.",
+    "pt-BR": "Cliente HTTP/HTTPS. GET/POST/PUT/DELETE, upload/download, cookies, proxy, timeout e interceptação.",
+    "ru": "HTTP/HTTPS-клиент. GET/POST/PUT/DELETE, загрузка/скачивание, cookies, прокси, таймаут и перехват запросов.",
+    "ar": "عميل HTTP/HTTPS. GET/POST/PUT/DELETE، رفع/تنزيل، كوكيز، بروكسي، مهلة واعتراض.",
+    "hi": "HTTP/HTTPS क्लाइंट। GET/POST/PUT/DELETE, अपलोड/डाउनलोड, कुकीज़, प्रॉक्सी, टाइमआउट और इंटरसेप्शन।"
   },
   "types": [
     {
       "name": "HttpFile",
       "descriptions": {
         "zh-CN": "上传文件结构",
-        "en-US": "File upload structure"
+        "en-US": "File upload structure",
+        "zh-TW": "上傳檔案结構",
+        "ja": "ファイルアップロード構造",
+        "ko": "파일 업로드 구조",
+        "es": "Estructura de carga de archivo",
+        "fr": "Structure de téléversement de fichier",
+        "de": "Datei-Upload-Struktur",
+        "pt-BR": "Estrutura de upload de arquivo",
+        "ru": "Структура загрузки файла",
+        "ar": "هيكل رفع الملف",
+        "hi": "फ़ाइल अपलोड संरचना"
       },
       "fields": [
         {
@@ -1000,7 +1960,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "表单字段名",
-            "en-US": "Form field name"
+            "en-US": "Form field name",
+            "zh-TW": "表單字段名",
+            "ja": "フォームフィールド名",
+            "ko": "양식 필드 이름",
+            "es": "Nombre del campo del formulario",
+            "fr": "Nom du champ de formulaire",
+            "de": "Formularfeldname",
+            "pt-BR": "Nome do campo do formulário",
+            "ru": "Имя поля формы",
+            "ar": "اسم حقل النموذج",
+            "hi": "फ़ॉर्म फ़ील्ड नाम"
           }
         },
         {
@@ -1008,7 +1978,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件名",
-            "en-US": "File name"
+            "en-US": "File name",
+            "zh-TW": "檔案名",
+            "ja": "ファイル名",
+            "ko": "파일 이름",
+            "es": "Nombre de archivo",
+            "fr": "Nom du fichier",
+            "de": "Dateiname",
+            "pt-BR": "Nome do arquivo",
+            "ru": "Имя файла",
+            "ar": "اسم الملف",
+            "hi": "फ़ाइल नाम"
           }
         },
         {
@@ -1018,7 +1998,17 @@
           "default_value": "application/octet-stream",
           "descs": {
             "zh-CN": "MIME类型",
-            "en-US": "MIME type"
+            "en-US": "MIME type",
+            "zh-TW": "MIME類型",
+            "ja": "MIMEタイプ",
+            "ko": "MIME 유형",
+            "es": "Tipo MIME",
+            "fr": "Type MIME",
+            "de": "MIME-Typ",
+            "pt-BR": "Tipo MIME",
+            "ru": "MIME-тип",
+            "ar": "نوع MIME",
+            "hi": "MIME प्रकार"
           }
         },
         {
@@ -1026,7 +2016,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64编码的文件内容",
-            "en-US": "Base64 encoded content"
+            "en-US": "Base64 encoded content",
+            "zh-TW": "Base64編碼的檔案內容",
+            "ja": "Base64エンコード済みコンテンツ",
+            "ko": "Base64 인코딩된 콘텐츠",
+            "es": "Contenido codificado en Base64",
+            "fr": "Contenu encodé en Base64",
+            "de": "Base64-kodierter Inhalt",
+            "pt-BR": "Conteúdo codificado em Base64",
+            "ru": "Содержимое в кодировке Base64",
+            "ar": "محتوى مشفّر بـ Base64",
+            "hi": "Base64 एन्कोडेड सामग्री"
           }
         }
       ]
@@ -1035,7 +2035,17 @@
       "name": "HttpResponse",
       "descriptions": {
         "zh-CN": "HTTP响应结构",
-        "en-US": "HTTP response structure"
+        "en-US": "HTTP response structure",
+        "zh-TW": "HTTP響應结構",
+        "ja": "HTTPレスポンス構造",
+        "ko": "HTTP 응답 구조",
+        "es": "Estructura de respuesta HTTP",
+        "fr": "Structure de réponse HTTP",
+        "de": "HTTP-Antwortstruktur",
+        "pt-BR": "Estrutura de resposta HTTP",
+        "ru": "Структура HTTP-ответа",
+        "ar": "هيكل استجابة HTTP",
+        "hi": "HTTP प्रतिक्रिया संरचना"
       },
       "fields": [
         {
@@ -1043,7 +2053,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "状态码",
-            "en-US": "Status code"
+            "en-US": "Status code",
+            "zh-TW": "狀態碼",
+            "ja": "ステータスコード",
+            "ko": "상태 코드",
+            "es": "Código de estado",
+            "fr": "Code de statut",
+            "de": "Statuscode",
+            "pt-BR": "Código de status",
+            "ru": "Код статуса",
+            "ar": "رمز الحالة",
+            "hi": "स्टेटस कोड"
           }
         },
         {
@@ -1051,7 +2071,17 @@
           "type": "object",
           "descs": {
             "zh-CN": "响应头",
-            "en-US": "Response headers"
+            "en-US": "Response headers",
+            "zh-TW": "響應頭",
+            "ja": "レスポンスヘッダー",
+            "ko": "응답 헤더",
+            "es": "Encabezados de la respuesta",
+            "fr": "En-têtes de la réponse",
+            "de": "Antwort-Header",
+            "pt-BR": "Cabeçalhos da resposta",
+            "ru": "Заголовки ответа",
+            "ar": "رؤوس الاستجابة",
+            "hi": "प्रतिक्रिया हेडर"
           }
         },
         {
@@ -1059,7 +2089,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "响应体",
-            "en-US": "Response body"
+            "en-US": "Response body",
+            "zh-TW": "響應體",
+            "ja": "レスポンスボディ",
+            "ko": "응답 본문",
+            "es": "Cuerpo de la respuesta",
+            "fr": "Corps de la réponse",
+            "de": "Antwortkörper",
+            "pt-BR": "Corpo da resposta",
+            "ru": "Тело ответа",
+            "ar": "نص الاستجابة",
+            "hi": "प्रतिक्रिया बॉडी"
           }
         }
       ]
@@ -1068,7 +2108,17 @@
       "name": "DownloadResult",
       "descriptions": {
         "zh-CN": "下载结果",
-        "en-US": "Download result"
+        "en-US": "Download result",
+        "zh-TW": "下載结果",
+        "ja": "ダウンロード結果",
+        "ko": "다운로드 결과",
+        "es": "Resultado de descarga",
+        "fr": "Résultat de téléchargement",
+        "de": "Download-Ergebnis",
+        "pt-BR": "Resultado do download",
+        "ru": "Результат загрузки",
+        "ar": "نتيجة التحميل",
+        "hi": "डाउनलोड परिणाम"
       },
       "fields": [
         {
@@ -1076,7 +2126,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "保存路径",
-            "en-US": "Save path"
+            "en-US": "Save path",
+            "zh-TW": "保存路徑",
+            "ja": "保存パス",
+            "ko": "저장 경로",
+            "es": "Ruta de guardado",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения",
+            "ar": "مسار الحفظ",
+            "hi": "सहेजने का पथ"
           }
         },
         {
@@ -1084,7 +2144,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "文件大小",
-            "en-US": "File size"
+            "en-US": "File size",
+            "zh-TW": "檔案大小",
+            "ja": "ファイルサイズ",
+            "ko": "파일 크기",
+            "es": "Tamaño de archivo",
+            "fr": "Taille du fichier",
+            "de": "Dateigröße",
+            "pt-BR": "Tamanho do arquivo",
+            "ru": "Размер файла",
+            "ar": "حجم الملف",
+            "hi": "फ़ाइल आकार"
           }
         },
         {
@@ -1092,7 +2162,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "状态码",
-            "en-US": "Status code"
+            "en-US": "Status code",
+            "zh-TW": "狀態碼",
+            "ja": "ステータスコード",
+            "ko": "상태 코드",
+            "es": "Código de estado",
+            "fr": "Code de statut",
+            "de": "Statuscode",
+            "pt-BR": "Código de status",
+            "ru": "Код статуса",
+            "ar": "رمز الحالة",
+            "hi": "स्टेटस कोड"
           }
         }
       ]
@@ -1101,7 +2181,17 @@
       "name": "SseConnection",
       "descriptions": {
         "zh-CN": "SSE连接信息",
-        "en-US": "SSE connection info"
+        "en-US": "SSE connection info",
+        "zh-TW": "SSE連接資訊",
+        "ja": "SSE接続情報",
+        "ko": "SSE 연결 정보",
+        "es": "Información de conexión SSE",
+        "fr": "Informations de connexion SSE",
+        "de": "SSE-Verbindungsinformationen",
+        "pt-BR": "Informações da conexão SSE",
+        "ru": "Информация о SSE-соединении",
+        "ar": "معلومات اتصال SSE",
+        "hi": "SSE कनेक्शन जानकारी"
       },
       "fields": [
         {
@@ -1109,7 +2199,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "SSE连接ID",
-            "en-US": "SSE connection ID"
+            "en-US": "SSE connection ID",
+            "zh-TW": "SSE連接ID",
+            "ja": "SSE接続ID",
+            "ko": "SSE 연결 ID",
+            "es": "ID de conexión SSE",
+            "fr": "ID de connexion SSE",
+            "de": "SSE-Verbindungs-ID",
+            "pt-BR": "ID da conexão SSE",
+            "ru": "ID SSE-соединения",
+            "ar": "معرّف اتصال SSE",
+            "hi": "SSE कनेक्शन ID"
           }
         }
       ]
@@ -1123,7 +2223,17 @@
       "group": "method",
       "descs": {
         "zh-CN": "GET方法",
-        "en-US": "GET method"
+        "en-US": "GET method",
+        "zh-TW": "GET方法",
+        "ja": "GETメソッド",
+        "ko": "GET 메서드",
+        "es": "Método GET",
+        "fr": "Méthode GET",
+        "de": "GET-Methode",
+        "pt-BR": "Método GET",
+        "ru": "Метод GET",
+        "ar": "طريقة GET",
+        "hi": "GET विधि"
       }
     },
     {
@@ -1133,7 +2243,17 @@
       "group": "method",
       "descs": {
         "zh-CN": "POST方法",
-        "en-US": "POST method"
+        "en-US": "POST method",
+        "zh-TW": "POST方法",
+        "ja": "POSTメソッド",
+        "ko": "POST 메서드",
+        "es": "Método POST",
+        "fr": "Méthode POST",
+        "de": "POST-Methode",
+        "pt-BR": "Método POST",
+        "ru": "Метод POST",
+        "ar": "طريقة POST",
+        "hi": "POST विधि"
       }
     },
     {
@@ -1143,7 +2263,17 @@
       "group": "method",
       "descs": {
         "zh-CN": "PUT方法",
-        "en-US": "PUT method"
+        "en-US": "PUT method",
+        "zh-TW": "PUT方法",
+        "ja": "PUTメソッド",
+        "ko": "PUT 메서드",
+        "es": "Método PUT",
+        "fr": "Méthode PUT",
+        "de": "PUT-Methode",
+        "pt-BR": "Método PUT",
+        "ru": "Метод PUT",
+        "ar": "طريقة PUT",
+        "hi": "PUT विधि"
       }
     },
     {
@@ -1153,7 +2283,17 @@
       "group": "method",
       "descs": {
         "zh-CN": "DELETE方法",
-        "en-US": "DELETE method"
+        "en-US": "DELETE method",
+        "zh-TW": "DELETE方法",
+        "ja": "DELETEメソッド",
+        "ko": "DELETE 메서드",
+        "es": "Método DELETE",
+        "fr": "Méthode DELETE",
+        "de": "DELETE-Methode",
+        "pt-BR": "Método DELETE",
+        "ru": "Метод DELETE",
+        "ar": "طريقة DELETE",
+        "hi": "DELETE विधि"
       }
     },
     {
@@ -1163,7 +2303,17 @@
       "group": "method",
       "descs": {
         "zh-CN": "PATCH方法",
-        "en-US": "PATCH method"
+        "en-US": "PATCH method",
+        "zh-TW": "PATCH方法",
+        "ja": "PATCHメソッド",
+        "ko": "PATCH 메서드",
+        "es": "Método PATCH",
+        "fr": "Méthode PATCH",
+        "de": "PATCH-Methode",
+        "pt-BR": "Método PATCH",
+        "ru": "Метод PATCH",
+        "ar": "طريقة PATCH",
+        "hi": "PATCH विधि"
       }
     },
     {
@@ -1173,7 +2323,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "成功",
-        "en-US": "OK"
+        "en-US": "OK",
+        "zh-TW": "成功",
+        "ja": "成功",
+        "ko": "성공",
+        "es": "OK",
+        "fr": "OK",
+        "de": "OK",
+        "pt-BR": "OK",
+        "ru": "OK",
+        "ar": "موافق",
+        "hi": "ठीक"
       }
     },
     {
@@ -1183,7 +2343,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "已创建",
-        "en-US": "Created"
+        "en-US": "Created",
+        "zh-TW": "已建立",
+        "ja": "作成日時",
+        "ko": "생성됨",
+        "es": "Creado",
+        "fr": "Créé",
+        "de": "Erstellt",
+        "pt-BR": "Criado",
+        "ru": "Создано",
+        "ar": "تم الإنشاء",
+        "hi": "बनाया गया"
       }
     },
     {
@@ -1193,7 +2363,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "请求错误",
-        "en-US": "Bad Request"
+        "en-US": "Bad Request",
+        "zh-TW": "請求錯誤",
+        "ja": "不正なリクエスト",
+        "ko": "잘못된 요청",
+        "es": "Solicitud incorrecta",
+        "fr": "Requête incorrecte",
+        "de": "Fehlerhafte Anfrage",
+        "pt-BR": "Requisição inválida",
+        "ru": "Неверный запрос",
+        "ar": "طلب غير صالح",
+        "hi": "गलत अनुरोध"
       }
     },
     {
@@ -1203,7 +2383,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "未授权",
-        "en-US": "Unauthorized"
+        "en-US": "Unauthorized",
+        "zh-TW": "未授權",
+        "ja": "認証なし",
+        "ko": "인증되지 않음",
+        "es": "No autorizado",
+        "fr": "Non autorisé",
+        "de": "Nicht autorisiert",
+        "pt-BR": "Não autorizado",
+        "ru": "Не авторизован",
+        "ar": "غير مصرّح",
+        "hi": "अनधिकृत"
       }
     },
     {
@@ -1213,7 +2403,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "未找到",
-        "en-US": "Not Found"
+        "en-US": "Not Found",
+        "zh-TW": "未找到",
+        "ja": "見つかりません",
+        "ko": "찾을 수 없음",
+        "es": "No encontrado",
+        "fr": "Non trouvé",
+        "de": "Nicht gefunden",
+        "pt-BR": "Não encontrado",
+        "ru": "Не найдено",
+        "ar": "غير موجود",
+        "hi": "नहीं मिला"
       }
     },
     {
@@ -1223,7 +2423,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "服务器错误",
-        "en-US": "Server Error"
+        "en-US": "Server Error",
+        "zh-TW": "服務器錯誤",
+        "ja": "サーバーエラー",
+        "ko": "서버 오류",
+        "es": "Error del servidor",
+        "fr": "Erreur du serveur",
+        "de": "Serverfehler",
+        "pt-BR": "Erro do servidor",
+        "ru": "Ошибка сервера",
+        "ar": "خطأ الخادم",
+        "hi": "सर्वर त्रुटि"
       }
     }
   ]

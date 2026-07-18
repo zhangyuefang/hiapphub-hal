@@ -22,7 +22,7 @@
     "ar": "وحدة CSV",
     "hi": "CSV मॉड्यूल"
   },
-  "permission": "",
+  "permission": "csv",
   "functions": [
     {
       "name": "parse",
@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "CSV 内容",
-            "en-US": "CSV content"
+            "en-US": "CSV content",
+            "zh-TW": "CSV 內容",
+            "ja": "CSV コンテンツ",
+            "ko": "CSV 콘텐츠",
+            "es": "Contenido CSV",
+            "fr": "Contenu CSV",
+            "de": "CSV-Inhalt",
+            "pt-BR": "Conteúdo CSV",
+            "ru": "Содержимое CSV",
+            "ar": "محتوى CSV",
+            "hi": "CSV सामग्री"
           }
         }
       ],
@@ -41,14 +51,34 @@
         "type": "CsvData",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "csv.parse",
       "descriptions": {
         "zh-CN": "解析CSV格式字符串或文件为结构化数据",
-        "en-US": "Parse CSV string or file into structured data"
+        "en-US": "Parse CSV string or file into structured data",
+        "zh-TW": "解析CSV格式字串或檔案為結構化數據",
+        "ja": "CSV文字列またはファイルを構造化データに解析",
+        "ko": "CSV 문자열 또는 파일을 구조화된 데이터로 파싱",
+        "es": "Analizar CSV en datos estructurados",
+        "fr": "Analyser le CSV en données structurées",
+        "de": "CSV in strukturierte Daten parsen",
+        "pt-BR": "Analisar CSV em dados estruturados",
+        "ru": "Разобрать CSV в структурированные данные",
+        "ar": "تحليل CSV إلى بيانات منظمة",
+        "hi": "CSV स्ट्रिंग या फ़ाइल को संरचित डेटा में पार्स करें"
       },
       "group": "read",
       "description": "Parse CSV string or file into structured data"
@@ -62,7 +92,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "要转换为CSV的二维数组数据",
-            "en-US": "2D array data to convert to CSV"
+            "en-US": "2D array data to convert to CSV",
+            "zh-TW": "要轉換為CSV的二維陣列數據",
+            "ja": "CSVに変換する2D配列データ",
+            "ko": "CSV로 변환할 2차원 배열 데이터",
+            "es": "Datos de arreglo 2D para CSV",
+            "fr": "Données de tableau 2D pour CSV",
+            "de": "2D-Array-Daten für CSV",
+            "pt-BR": "Dados de array 2D para CSV",
+            "ru": "2D-массив для CSV",
+            "ar": "بيانات مصفوفة ثنائية الأبعاد لتحويلها CSV",
+            "hi": "CSV के लिए 2D ऐरे डेटा"
           },
           "desc": "2D array data to convert to CSV"
         }
@@ -71,13 +111,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "CSV 字符串",
-          "en-US": "CSV string"
+          "en-US": "CSV string",
+          "zh-TW": "CSV 字串",
+          "ja": "CSV 文字列",
+          "ko": "CSV 문자열",
+          "es": "Cadena CSV",
+          "fr": "Chaîne CSV",
+          "de": "CSV-Zeichenkette",
+          "pt-BR": "String CSV",
+          "ru": "Строка CSV",
+          "ar": "سلسلة CSV",
+          "hi": "CSV स्ट्रिंग"
         }
       },
       "bridge_path": "csv.stringify",
       "descriptions": {
         "zh-CN": "stringifyCSV",
-        "en-US": "Stringify CSV"
+        "en-US": "Stringify CSV",
+        "zh-TW": "stringifyCSV",
+        "ja": "CSVを文字列化",
+        "ko": "CSV 문자열화",
+        "es": "Convertir CSV a texto",
+        "fr": "Convertir CSV en texte",
+        "de": "CSV als String",
+        "pt-BR": "Converter CSV em texto",
+        "ru": "CSV в строку",
+        "ar": "تحويل CSV إلى نص",
+        "hi": "CSV स्ट्रिंग"
       },
       "group": "write",
       "description": "Stringify CSV"
@@ -91,7 +151,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         }
       ],
@@ -99,14 +169,34 @@
         "type": "CsvData",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "csv.readFile",
       "descriptions": {
         "zh-CN": "读取CSV的file",
-        "en-US": "Read file of CSV"
+        "en-US": "Read file of CSV",
+        "zh-TW": "讀取CSV的file",
+        "ja": "読み取るCSVのfile",
+        "ko": "읽기CSV의file",
+        "es": "Leer archivo CSV",
+        "fr": "Lire le fichier CSV",
+        "de": "CSV-Datei lesen",
+        "pt-BR": "Ler arquivo CSV",
+        "ru": "Прочитать CSV-файл",
+        "ar": "قراءة ملف CSV",
+        "hi": "CSV फ़ाइल पढ़ें"
       },
       "group": "read",
       "description": "Read file of CSV"
@@ -120,7 +210,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         },
         {
@@ -128,7 +228,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "要写入的二维数组数据",
-            "en-US": "2D array data to write"
+            "en-US": "2D array data to write",
+            "zh-TW": "要寫入的二維陣列數據",
+            "ja": "書き込む2D配列データ",
+            "ko": "쓸 2차원 배열 데이터",
+            "es": "Datos de arreglo 2D a escribir",
+            "fr": "Données de tableau 2D à écrire",
+            "de": "2D-Array-Daten zum Schreiben",
+            "pt-BR": "Dados de array 2D para escrita",
+            "ru": "2D-массив для записи",
+            "ar": "بيانات مصفوفة ثنائية للكتابة",
+            "hi": "लिखने के लिए 2D ऐरे डेटा"
           },
           "desc": "2D array data to write"
         }
@@ -137,14 +247,34 @@
         "type": "WriteResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "csv.writeFile",
       "descriptions": {
         "zh-CN": "写入CSV的file",
-        "en-US": "Write file of CSV"
+        "en-US": "Write file of CSV",
+        "zh-TW": "寫入CSV的file",
+        "ja": "書き込むCSVのfile",
+        "ko": "쓰기CSV의file",
+        "es": "Escribir archivo CSV",
+        "fr": "Écrire le fichier CSV",
+        "de": "CSV-Datei schreiben",
+        "pt-BR": "Escrever arquivo CSV",
+        "ru": "Записать CSV-файл",
+        "ar": "كتابة ملف CSV",
+        "hi": "CSV फ़ाइल लिखें"
       },
       "group": "write",
       "description": "Write file of CSV"
@@ -158,7 +288,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         }
       ],
@@ -166,14 +306,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i32类型的结果对象",
-          "en-US": "Result object of type i32"
+          "en-US": "Result object of type i32",
+          "zh-TW": "i32類型的結果物件",
+          "ja": "i32タイプの結果オブジェクト",
+          "ko": "i32유형의결과객체",
+          "es": "Objeto resultado de tipo i32",
+          "fr": "Objet résultat de type i32",
+          "de": "Ergebnisobjekt vom Typ i32",
+          "pt-BR": "Objeto resultado do tipo i32",
+          "ru": "Объект результата типа i32",
+          "ar": "كائن نتيجة من نوع i32",
+          "hi": "i32 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i32"
       },
       "bridge_path": "csv.countRows",
       "descriptions": {
         "zh-CN": "计算CSV文件的总行数（不含表头）",
-        "en-US": "Count total rows in CSV file (excluding header)"
+        "en-US": "Count total rows in CSV file (excluding header)",
+        "zh-TW": "計算CSV檔案的總行數（不含表頭）",
+        "ja": "CSVファイルの総行数をカウント（ヘッダー除く）",
+        "ko": "CSV 파일의 총 행 수 카운트 (헤더 제외)",
+        "es": "Contar filas totales en CSV (sin encabezado)",
+        "fr": "Compter les lignes du CSV (hors en-tête)",
+        "de": "Gesamtzeilen in CSV zählen (ohne Kopfzeile)",
+        "pt-BR": "Contar total de linhas no CSV (sem cabeçalho)",
+        "ru": "Подсчитать строки в CSV (без заголовка)",
+        "ar": "عدّ إجمالي صفوف CSV (بدون الرأس)",
+        "hi": "CSV में कुल पंक्तियाँ गिनें (हेडर छोड़कर)"
       },
       "group": "read",
       "description": "Count total rows in CSV file (excluding header)"
@@ -187,7 +347,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         }
       ],
@@ -195,14 +365,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "csv.getHeaders",
       "descriptions": {
         "zh-CN": "获取CSV的headers信息",
-        "en-US": "Get headers info of CSV"
+        "en-US": "Get headers info of CSV",
+        "zh-TW": "取得CSV的headers資訊",
+        "ja": "取得するCSVのheaders情報",
+        "ko": "가져오기CSV의headers정보",
+        "es": "Obtener encabezados del CSV",
+        "fr": "Obtenir les en-têtes du CSV",
+        "de": "CSV-Kopfzeilen abrufen",
+        "pt-BR": "Obter cabeçalhos do CSV",
+        "ru": "Получить заголовки CSV",
+        "ar": "الحصول على رؤوس CSV",
+        "hi": "CSV हेडर जानकारी प्राप्त करें"
       },
       "group": "read",
       "description": "Get headers info of CSV"
@@ -216,7 +406,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         },
         {
@@ -224,7 +424,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "起始偏移量",
-            "en-US": "Starting offset"
+            "en-US": "Starting offset",
+            "zh-TW": "起始偏移量",
+            "ja": "開始オフセット",
+            "ko": "시작 오프셋",
+            "es": "Desplazamiento inicial",
+            "fr": "Décalage de départ",
+            "de": "Startversatz",
+            "pt-BR": "Offset inicial",
+            "ru": "Начальное смещение",
+            "ar": "إزاحة البداية",
+            "hi": "प्रारंभिक ऑफ़सेट"
           },
           "desc": "Starting offset"
         },
@@ -233,7 +443,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "最大数量限制",
-            "en-US": "Maximum count limit"
+            "en-US": "Maximum count limit",
+            "zh-TW": "最大數量限製",
+            "ja": "最大数制限",
+            "ko": "최대 수 제한",
+            "es": "Límite de cantidad máxima",
+            "fr": "Limite maximale",
+            "de": "Maximale Anzahlbegrenzung",
+            "pt-BR": "Limite máximo",
+            "ru": "Максимальный лимит",
+            "ar": "الحد الأقصى للعدد",
+            "hi": "अधिकतम संख्या सीमा"
           },
           "desc": "Maximum count limit"
         }
@@ -242,14 +462,34 @@
         "type": "StreamReader",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "csv.readStream",
       "descriptions": {
         "zh-CN": "以流式方式逐行读取大型CSV文件",
-        "en-US": "Read large CSV file line by line in streaming mode"
+        "en-US": "Read large CSV file line by line in streaming mode",
+        "zh-TW": "以流式方式逐行讀取大型CSV檔案",
+        "ja": "以流式方式逐行読み取る大型CSVファイル",
+        "ko": "스트리밍 모드로 대용량 CSV 파일 줄 단위 읽기",
+        "es": "Leer archivo CSV grande línea a línea",
+        "fr": "Lire un grand CSV en mode streaming",
+        "de": "Große CSV-Datei zeilenweise im Streaming lesen",
+        "pt-BR": "Ler arquivo CSV grande linha a linha",
+        "ru": "Читать большой CSV построчно в потоковом режиме",
+        "ar": "قراءة ملف CSV كبير سطراً بسطر",
+        "hi": "स्ट्रीमिंग मोड में बड़ी CSV फ़ाइल पंक्ति-दर-पंक्ति पढ़ें"
       },
       "group": "read",
       "description": "Read large CSV file line by line in streaming mode"
@@ -257,14 +497,34 @@
   ],
   "overviews": {
     "zh-CN": "提供 CSV 文件的读取、写入、追加、查询和转换能力。支持自定义分隔符、引号字符、编码格式，可将 CSV 转换为 JSON 或其他格式。",
-    "en-US": "Read, write, append, query, and convert CSV files. Supports custom delimiters, quote characters, encodings, and CSV-to-JSON conversion."
+    "en-US": "Read, write, append, query, and convert CSV files. Supports custom delimiters, quote characters, encodings, and CSV-to-JSON conversion.",
+    "zh-TW": "提供 CSV 檔案的讀取、寫入、追加、查询和轉换能力。支援自定義分隔符、引號字符、編碼格式，可將 CSV 轉换為 JSON 或其他格式。",
+    "ja": "CSVファイルの読取・書込・追加・検索・変換。カスタム区切り文字・引用符・エンコーディング・CSV→JSON変換対応。",
+    "ko": "CSV 파일 읽기, 쓰기, 추가, 쿼리, 변환. 사용자 정의 구분자, 인용 부호, 인코딩, CSV→JSON 변환.",
+    "es": "Leer, escribir, agregar, consultar y convertir CSV. Delimitadores, comillas, codificaciones y conversión CSV a JSON.",
+    "fr": "Lire, écrire, ajouter, interroger et convertir CSV. Délimiteurs, guillemets, encodages et conversion CSV vers JSON.",
+    "de": "CSV-Dateien lesen, schreiben, anhängen, abfragen und konvertieren. Trennzeichen, Anführungszeichen, Codierungen und CSV→JSON.",
+    "pt-BR": "Ler, escrever, adicionar, consultar e converter CSV. Delimitadores, aspas, codificações e conversão CSV para JSON.",
+    "ru": "Чтение, запись, добавление, запросы и конвертация CSV. Разделители, кавычки, кодировки и конвертация CSV→JSON.",
+    "ar": "قراءة وكتابة وإلحاق واستعلام وتحويل CSV. فواصل وعلامات اقتباس وترميز وتحويل CSV إلى JSON.",
+    "hi": "CSV पढ़ना, लिखना, जोड़ना, क्वेरी और कन्वर्ट। कस्टम डिलिमिटर, कोट, एन्कोडिंग और CSV→JSON।"
   },
   "types": [
     {
       "name": "CsvOptions",
       "descriptions": {
         "zh-CN": "CSV 解析/生成配置选项",
-        "en-US": "CSV parsing/generation options"
+        "en-US": "CSV parsing/generation options",
+        "zh-TW": "CSV 解析/生成配置選项",
+        "ja": "CSV解析/生成オプション",
+        "ko": "CSV 파싱/생성 옵션",
+        "es": "Opciones de análisis/generación CSV",
+        "fr": "Options d'analyse/génération CSV",
+        "de": "CSV-Parse/Generierungsoptionen",
+        "pt-BR": "Opções de análise/geração CSV",
+        "ru": "Параметры разбора/генерации CSV",
+        "ar": "خيارات تحليل/إنشاء CSV",
+        "hi": "CSV पार्सिंग/जनरेशन विकल्प"
       },
       "fields": [
         {
@@ -272,7 +532,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "分隔符，默认逗号",
-            "en-US": "Delimiter, default comma"
+            "en-US": "Delimiter, default comma",
+            "zh-TW": "分隔符，默認逗號",
+            "ja": "区切り文字、デフォルトはカンマ",
+            "ko": "구분자, 기본값 쉼표",
+            "es": "Delimitador, por defecto coma",
+            "fr": "Délimiteur, virgule par défaut",
+            "de": "Trennzeichen, Standard Komma",
+            "pt-BR": "Delimitador, padrão vírgula",
+            "ru": "Разделитель, по умолчанию запятая",
+            "ar": "المحدد، الفاصلة افتراضياً",
+            "hi": "विभाजक, डिफ़ॉल्ट अल्पविराम"
           }
         },
         {
@@ -280,7 +550,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "首行是否为表头",
-            "en-US": "Whether first row is header"
+            "en-US": "Whether first row is header",
+            "zh-TW": "首行是否為表頭",
+            "ja": "最初の行がヘッダーかどうか",
+            "ko": "첫 번째 행이 헤더인지 여부",
+            "es": "Si la primera fila es encabezado",
+            "fr": "Si la première ligne est un en-tête",
+            "de": "Ob die erste Zeile eine Kopfzeile ist",
+            "pt-BR": "Se a primeira linha é cabeçalho",
+            "ru": "Является ли первая строка заголовком",
+            "ar": "ما إذا كان الصف الأول رأساً",
+            "hi": "पहली पंक्ति हेडर है या नहीं"
           }
         },
         {
@@ -288,7 +568,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件编码（utf-8/gbk等）",
-            "en-US": "File encoding"
+            "en-US": "File encoding",
+            "zh-TW": "檔案編碼（utf-8/gbk等）",
+            "ja": "ファイルエンコーディング",
+            "ko": "파일 인코딩",
+            "es": "Codificación de archivo",
+            "fr": "Encodage du fichier",
+            "de": "Dateikodierung",
+            "pt-BR": "Codificação do arquivo",
+            "ru": "Кодировка файла",
+            "ar": "ترميز الملف",
+            "hi": "फ़ाइल एन्कोडिंग"
           }
         }
       ]
@@ -297,7 +587,17 @@
       "name": "CsvData",
       "descriptions": {
         "zh-CN": "CSV解析结果数据",
-        "en-US": "CSV parsed data"
+        "en-US": "CSV parsed data",
+        "zh-TW": "CSV解析结果數據",
+        "ja": "CSV解析データ",
+        "ko": "CSV 파싱된 데이터",
+        "es": "Datos CSV analizados",
+        "fr": "Données CSV analysées",
+        "de": "CSV-geparste Daten",
+        "pt-BR": "Dados CSV analisados",
+        "ru": "Разобранные данные CSV",
+        "ar": "بيانات CSV المحلّلة",
+        "hi": "CSV पार्स किया गया डेटा"
       },
       "fields": [
         {
@@ -305,7 +605,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "列标题数组",
-            "en-US": "Column headers array"
+            "en-US": "Column headers array",
+            "zh-TW": "列標题数組",
+            "ja": "列ヘッダー配列",
+            "ko": "열 헤더 배열",
+            "es": "Matriz de encabezados de columna",
+            "fr": "Tableau d'en-têtes de colonnes",
+            "de": "Spaltenüberschriften-Array",
+            "pt-BR": "Array de cabeçalhos de coluna",
+            "ru": "Массив заголовков столбцов",
+            "ar": "مصفوفة رؤوس الأعمدة",
+            "hi": "कॉलम हेडर सरणी"
           }
         },
         {
@@ -313,7 +623,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "行数据二维数组",
-            "en-US": "Row data 2D array"
+            "en-US": "Row data 2D array",
+            "zh-TW": "行數據二维数組",
+            "ja": "行データ2次元配列",
+            "ko": "행 데이터 2차원 배열",
+            "es": "Matriz 2D de datos de filas",
+            "fr": "Tableau 2D de données de lignes",
+            "de": "Zeilendaten 2D-Array",
+            "pt-BR": "Array 2D de dados de linhas",
+            "ru": "2D-массив данных строк",
+            "ar": "مصفوفة ثنائية الأبعاد لبيانات الصفوف",
+            "hi": "पंक्ति डेटा 2D सरणी"
           }
         },
         {
@@ -321,7 +641,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "行数",
-            "en-US": "Row count"
+            "en-US": "Row count",
+            "zh-TW": "行数",
+            "ja": "行数",
+            "ko": "행 수",
+            "es": "Cantidad de filas",
+            "fr": "Nombre de lignes",
+            "de": "Zeilenanzahl",
+            "pt-BR": "Contagem de linhas",
+            "ru": "Количество строк",
+            "ar": "عدد الصفوف",
+            "hi": "पंक्ति संख्या"
           }
         }
       ]
@@ -330,7 +660,17 @@
       "name": "WriteResult",
       "descriptions": {
         "zh-CN": "写入操作结果",
-        "en-US": "Write operation result"
+        "en-US": "Write operation result",
+        "zh-TW": "寫入操作结果",
+        "ja": "書き込み操作結果",
+        "ko": "쓰기 작업 결과",
+        "es": "Resultado de la operación de escritura",
+        "fr": "Résultat de l'opération d'écriture",
+        "de": "Schreiboperationsergebnis",
+        "pt-BR": "Resultado da operação de escrita",
+        "ru": "Результат операции записи",
+        "ar": "نتيجة عملية الكتابة",
+        "hi": "लिखने का ऑपरेशन परिणाम"
       },
       "fields": [
         {
@@ -338,7 +678,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否成功",
-            "en-US": "Whether succeeded"
+            "en-US": "Whether succeeded",
+            "zh-TW": "是否成功",
+            "ja": "成功したかどうか",
+            "ko": "성공 여부",
+            "es": "Si tuvo éxito",
+            "fr": "Si réussi",
+            "de": "Ob erfolgreich",
+            "pt-BR": "Se teve sucesso",
+            "ru": "Успешно или нет",
+            "ar": "ما إذا نجح",
+            "hi": "सफल हुआ या नहीं"
           }
         },
         {
@@ -346,7 +696,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "写入行数",
-            "en-US": "Rows written"
+            "en-US": "Rows written",
+            "zh-TW": "寫入行数",
+            "ja": "書き込まれた行数",
+            "ko": "기록된 행 수",
+            "es": "Filas escritas",
+            "fr": "Lignes écrites",
+            "de": "Geschriebene Zeilen",
+            "pt-BR": "Linhas escritas",
+            "ru": "Записанные строки",
+            "ar": "الصفوف المكتوبة",
+            "hi": "लिखी गई पंक्तियाँ"
           }
         }
       ]
@@ -355,7 +715,17 @@
       "name": "StreamReader",
       "descriptions": {
         "zh-CN": "流式读取器句柄",
-        "en-US": "Stream reader handle"
+        "en-US": "Stream reader handle",
+        "zh-TW": "流式讀取器句柄",
+        "ja": "ストリームリーダーハンドル",
+        "ko": "스트림 리더 핸들",
+        "es": "Manejador de lector de flujo",
+        "fr": "Handle de lecteur de flux",
+        "de": "Stream-Reader-Handle",
+        "pt-BR": "Handle de leitor de stream",
+        "ru": "Дескриптор потокового чтения",
+        "ar": "مقبض قارئ التدفق",
+        "hi": "स्ट्रीम रीडर हैंडल"
       },
       "fields": [
         {
@@ -363,7 +733,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "读取器ID",
-            "en-US": "Reader ID"
+            "en-US": "Reader ID",
+            "zh-TW": "讀取器ID",
+            "ja": "リーダーID",
+            "ko": "리더 ID",
+            "es": "ID del lector",
+            "fr": "ID du lecteur",
+            "de": "Leser-ID",
+            "pt-BR": "ID do leitor",
+            "ru": "ID считывателя",
+            "ar": "معرّف القارئ",
+            "hi": "रीडर ID"
           }
         }
       ]

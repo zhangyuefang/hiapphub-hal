@@ -24,7 +24,17 @@
   },
   "overviews": {
     "zh-CN": "提供USB设备通信能力，支持设备枚举、HID读写、批量传输、设备信息查询等功能。",
-    "en-US": "Provides USB device communication including device enumeration, HID read/write, bulk transfer, and device info queries."
+    "en-US": "Provides USB device communication including device enumeration, HID read/write, bulk transfer, and device info queries.",
+    "zh-TW": "提供USB設備通訊能力，支援設備枚舉、HID读写、批量傳输、設備資訊查询等功能。",
+    "ja": "USBデバイス通信：デバイス列挙・HID読み書き・バルク転送・デバイス情報クエリ。",
+    "ko": "USB 장치 통신: 장치 열거, HID 읽기/쓰기, 벌크 전송, 장치 정보 쿼리.",
+    "es": "Comunicación USB: enumeración, lectura/escritura HID, transferencia masiva y consultas de dispositivo.",
+    "fr": "Communication USB : énumération, lecture/écriture HID, transfert en masse et requêtes d'informations.",
+    "de": "USB-Kommunikation: Geräteaufzählung, HID-Lesen/Schreiben, Massentransfer und Geräteinfo-Abfragen.",
+    "pt-BR": "Comunicação USB: enumeração, leitura/escrita HID, transferência em massa e consultas de dispositivo.",
+    "ru": "Связь с USB-устройствами: перечисление, чтение/запись HID, массовая передача и запросы информации.",
+    "ar": "اتصال USB: تعداد الأجهزة وقراءة/كتابة HID ونقل جماعي واستعلام معلومات.",
+    "hi": "USB डिवाइस: एन्यूमरेशन, HID पढ़ना/लिखना, बल्क ट्रांसफर और डिवाइस इंफो क्वेरी।"
   },
   "permission": "usb",
   "functions": [
@@ -33,7 +43,17 @@
       "symbol": "hap_usb_list_devices",
       "descriptions": {
         "zh-CN": "枚举系统中所有已连接的 USB 设备，可按厂商/产品ID过滤",
-        "en-US": "Enumerate all connected USB devices with optional VID/PID filter"
+        "en-US": "Enumerate all connected USB devices with optional VID/PID filter",
+        "zh-TW": "枚舉系統中所有已連接的 USB 設備，可按厂商/產品ID過濾",
+        "ja": "接続済みUSBデバイスをすべて列挙（VID/PIDフィルター対応）",
+        "ko": "연결된 모든 USB 장치 열거 (VID/PID 필터 선택)",
+        "es": "Enumerar dispositivos USB con filtro VID/PID",
+        "fr": "Énumérer les périphériques USB avec filtre VID/PID",
+        "de": "USB-Geräte mit VID/PID-Filter auflisten",
+        "pt-BR": "Enumerar dispositivos USB com filtro VID/PID",
+        "ru": "Перечислить USB-устройства с фильтром VID/PID",
+        "ar": "سرد جميع أجهزة USB مع فلتر VID/PID",
+        "hi": "VID/PID फ़िल्टर के साथ सभी USB डिवाइस सूचीबद्ध करें"
       },
       "params": [
         {
@@ -42,7 +62,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "厂商ID过滤",
-            "en-US": "Vendor ID filter"
+            "en-US": "Vendor ID filter",
+            "zh-TW": "厂商ID過濾",
+            "ja": "ベンダーIDフィルター",
+            "ko": "벤더 ID 필터",
+            "es": "Filtro de ID de proveedor",
+            "fr": "Filtre d'ID de fournisseur",
+            "de": "Hersteller-ID-Filter",
+            "pt-BR": "Filtro de ID do fornecedor",
+            "ru": "Фильтр по ID производителя",
+            "ar": "مرشح معرف المصنع",
+            "hi": "वेंडर ID फ़िल्टर"
           }
         },
         {
@@ -51,7 +81,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "产品ID过滤",
-            "en-US": "Product ID filter"
+            "en-US": "Product ID filter",
+            "zh-TW": "產品ID過濾",
+            "ja": "プロダクトIDフィルター",
+            "ko": "제품 ID 필터",
+            "es": "Filtro de ID de producto",
+            "fr": "Filtre d'ID de produit",
+            "de": "Produkt-ID-Filter",
+            "pt-BR": "Filtro de ID do produto",
+            "ru": "Фильтр по ID продукта",
+            "ar": "مرشح معرف المنتج",
+            "hi": "प्रोडक्ट ID फ़िल्टर"
           }
         }
       ],
@@ -59,7 +99,17 @@
         "type": "array",
         "descs": {
           "zh-CN": "设备列表",
-          "en-US": "Device list"
+          "en-US": "Device list",
+          "zh-TW": "設備列表",
+          "ja": "デバイスリスト",
+          "ko": "디바이스목록",
+          "es": "Lista de dispositivos",
+          "fr": "Liste des périphériques",
+          "de": "Geräteliste",
+          "pt-BR": "Lista de dispositivos",
+          "ru": "Список устройств",
+          "ar": "قائمة الأجهزة",
+          "hi": "डिवाइस सूची"
         }
       },
       "bridge_path": "usb.listDevices",
@@ -71,7 +121,17 @@
       "symbol": "hap_usb_open",
       "descriptions": {
         "zh-CN": "打开指定的 USB 设备并声明接口，获取操作句柄",
-        "en-US": "Open USB device, claim interface and get operation handle"
+        "en-US": "Open USB device, claim interface and get operation handle",
+        "zh-TW": "打開指定的 USB 設備並聲明接口，取得操作句柄",
+        "ja": "USBデバイスを開き、インターフェースを要求して操作ハンドルを取得",
+        "ko": "USB 장치 열기, 인터페이스 요청 및 작업 핸들 가져오기",
+        "es": "Abrir dispositivo USB, reclamar interfaz y obtener manejador",
+        "fr": "Ouvrir le périphérique USB, réclamer l'interface et obtenir le handle",
+        "de": "USB-Gerät öffnen, Schnittstelle beanspruchen und Handle erhalten",
+        "pt-BR": "Abrir dispositivo USB, reivindicar interface e obter handle",
+        "ru": "Открыть USB-устройство, занять интерфейс и получить дескриптор",
+        "ar": "فتح جهاز USB والمطالبة بالواجهة والحصول على المعرف",
+        "hi": "USB डिवाइस खोलें, इंटरफ़ेस क्लेम करें और ऑपरेशन हैंडल प्राप्त करें"
       },
       "params": [
         {
@@ -79,7 +139,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "厂商ID",
-            "en-US": "Vendor ID"
+            "en-US": "Vendor ID",
+            "zh-TW": "厂商ID",
+            "ja": "ベンダーID",
+            "ko": "벤더 ID",
+            "es": "ID del vendedor",
+            "fr": "ID du fournisseur",
+            "de": "Hersteller-ID",
+            "pt-BR": "ID do fornecedor",
+            "ru": "ID поставщика",
+            "ar": "معرف البائع",
+            "hi": "वेंडर ID"
           }
         },
         {
@@ -87,7 +157,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "产品ID",
-            "en-US": "Product ID"
+            "en-US": "Product ID",
+            "zh-TW": "產品ID",
+            "ja": "プロダクトID",
+            "ko": "제품 ID",
+            "es": "ID del producto",
+            "fr": "ID du produit",
+            "de": "Produkt-ID",
+            "pt-BR": "ID do produto",
+            "ru": "ID продукта",
+            "ar": "معرف المنتج",
+            "hi": "प्रोडक्ट ID"
           }
         },
         {
@@ -97,7 +177,17 @@
           "default_value": "0",
           "descs": {
             "zh-CN": "interface_number参数",
-            "en-US": "interface_number parameter"
+            "en-US": "interface_number parameter",
+            "zh-TW": "interface_number參數",
+            "ja": "interface_numberパラメータ",
+            "ko": "interface_number매개변수",
+            "es": "Parámetro de interface_number",
+            "fr": "Paramètre de interface_number",
+            "de": "interface_number-Parameter",
+            "pt-BR": "Parâmetro de interface_number",
+            "ru": "Параметр interface_number",
+            "ar": "معلمة interface_number",
+            "hi": "interface_number पैरामीटर"
           },
           "desc": "interface_number parameter"
         }
@@ -106,7 +196,17 @@
         "type": "UsbHandle",
         "descs": {
           "zh-CN": "设备句柄信息",
-          "en-US": "Device handle info"
+          "en-US": "Device handle info",
+          "zh-TW": "設備句柄資訊",
+          "ja": "デバイス句柄情報",
+          "ko": "장치 핸들 정보",
+          "es": "Información del manejador del dispositivo",
+          "fr": "Informations du handle du périphérique",
+          "de": "Geräte-Handle-Informationen",
+          "pt-BR": "Informações do handle do dispositivo",
+          "ru": "Информация о дескрипторе устройства",
+          "ar": "معلومات مقبض الجهاز",
+          "hi": "डिवाइस हैंडल जानकारी"
         }
       },
       "bridge_path": "usb.open",
@@ -118,7 +218,17 @@
       "symbol": "hap_usb_close",
       "descriptions": {
         "zh-CN": "释放 USB 设备接口并关闭连接句柄",
-        "en-US": "Release USB interface and close device handle"
+        "en-US": "Release USB interface and close device handle",
+        "zh-TW": "釋放 USB 設備接口並關閉連接句柄",
+        "ja": "USBインターフェースを解放してデバイスハンドルを閉じる",
+        "ko": "USB 인터페이스 해제 및 장치 핸들 닫기",
+        "es": "Liberar interfaz USB y cerrar manejador",
+        "fr": "Libérer l'interface USB et fermer le handle",
+        "de": "USB-Schnittstelle freigeben und Handle schließen",
+        "pt-BR": "Liberar interface USB e fechar handle",
+        "ru": "Освободить интерфейс USB и закрыть дескриптор",
+        "ar": "تحرير واجهة USB وإغلاق المعرف",
+        "hi": "USB इंटरफ़ेस रिलीज़ करें और डिवाइस हैंडल बंद करें"
       },
       "params": [
         {
@@ -126,7 +236,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备句柄ID",
-            "en-US": "Device handle ID"
+            "en-US": "Device handle ID",
+            "zh-TW": "設備句柄ID",
+            "ja": "デバイス句柄ID",
+            "ko": "장치 핸들 ID",
+            "es": "ID del manejador del dispositivo",
+            "fr": "ID du handle du périphérique",
+            "de": "Geräte-Handle-ID",
+            "pt-BR": "ID do handle do dispositivo",
+            "ru": "ID дескриптора устройства",
+            "ar": "معرف مقبض الجهاز",
+            "hi": "डिवाइस हैंडल ID"
           }
         }
       ],
@@ -134,7 +254,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "usb.close",
@@ -146,7 +276,17 @@
       "symbol": "hap_usb_bulk_transfer_out",
       "descriptions": {
         "zh-CN": "向 USB 设备的批量传输端点写入数据",
-        "en-US": "Write data to USB device bulk transfer endpoint"
+        "en-US": "Write data to USB device bulk transfer endpoint",
+        "zh-TW": "向 USB 設備的批量傳輸端點寫入數據",
+        "ja": "USBデバイスバルク転送エンドポイントにデータを書き込み",
+        "ko": "USB 장치 벌크 전송 엔드포인트에 데이터 쓰기",
+        "es": "Escribir datos al endpoint de transferencia USB",
+        "fr": "Écrire des données au endpoint de transfert USB",
+        "de": "Daten an USB-Bulk-Transfer-Endpoint schreiben",
+        "pt-BR": "Escrever dados no endpoint de transferência USB",
+        "ru": "Записать данные в конечную точку массовой передачи USB",
+        "ar": "كتابة بيانات إلى نقطة نهاية النقل الجماعي USB",
+        "hi": "USB डिवाइस बल्क ट्रांसफ़र एंडपॉइंट पर डेटा लिखें"
       },
       "params": [
         {
@@ -154,7 +294,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备句柄ID",
-            "en-US": "Handle ID"
+            "en-US": "Handle ID",
+            "zh-TW": "設備句柄ID",
+            "ja": "デバイス句柄ID",
+            "ko": "핸들 ID",
+            "es": "ID de manejador",
+            "fr": "ID du handle",
+            "de": "Handle-ID",
+            "pt-BR": "ID do handle",
+            "ru": "ID дескриптора",
+            "ar": "معرف المقبض",
+            "hi": "हैंडल आईडी"
           }
         },
         {
@@ -162,7 +312,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "endpoint参数",
-            "en-US": "endpoint parameter"
+            "en-US": "endpoint parameter",
+            "zh-TW": "endpoint參數",
+            "ja": "endpointパラメータ",
+            "ko": "endpoint매개변수",
+            "es": "Parámetro de endpoint",
+            "fr": "Paramètre de endpoint",
+            "de": "endpoint-Parameter",
+            "pt-BR": "Parâmetro de endpoint",
+            "ru": "Параметр endpoint",
+            "ar": "معلمة endpoint",
+            "hi": "endpoint पैरामीटर"
           },
           "desc": "endpoint parameter"
         },
@@ -171,7 +331,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据(hex编码)",
-            "en-US": "Data (hex encoded)"
+            "en-US": "Data (hex encoded)",
+            "zh-TW": "數據(hex編碼)",
+            "ja": "データ(hexエンコーディング)",
+            "ko": "데이터(hex인코딩)",
+            "es": "Datos (codificación hex)",
+            "fr": "Données (encodage hex)",
+            "de": "Daten (hex-kodiert)",
+            "pt-BR": "Dados (codificação hex)",
+            "ru": "Данные (hex)",
+            "ar": "بيانات (مشفرة بالست عشري)",
+            "hi": "डेटा (हेक्स एनकोडेड)"
           }
         },
         {
@@ -181,7 +351,17 @@
           "default_value": "5000",
           "descs": {
             "zh-CN": "超时(毫秒)",
-            "en-US": "Timeout (ms)"
+            "en-US": "Timeout (ms)",
+            "zh-TW": "超時(毫秒)",
+            "ja": "タイムアウト(毫秒)",
+            "ko": "타임아웃 (ms)",
+            "es": "Tiempo de espera (ms)",
+            "fr": "Délai d'attente (ms)",
+            "de": "Zeitlimit (ms)",
+            "pt-BR": "Tempo limite (ms)",
+            "ru": "Таймаут (мс)",
+            "ar": "مهلة الانتظار (مللي ثانية)",
+            "hi": "टाइमआउट (ms)"
           }
         }
       ],
@@ -189,7 +369,17 @@
         "type": "TransferResult",
         "descs": {
           "zh-CN": "传输结果",
-          "en-US": "Transfer result"
+          "en-US": "Transfer result",
+          "zh-TW": "傳輸結果",
+          "ja": "転送結果",
+          "ko": "전송 결과",
+          "es": "Resultado de transferencia",
+          "fr": "Résultat du transfert",
+          "de": "Übertragungsergebnis",
+          "pt-BR": "Resultado da transferência",
+          "ru": "Результат передачи",
+          "ar": "نتيجة النقل",
+          "hi": "ट्रांसफ़र परिणाम"
         }
       },
       "bridge_path": "usb.bulkTransferOut",
@@ -201,7 +391,17 @@
       "symbol": "hap_usb_bulk_transfer_in",
       "descriptions": {
         "zh-CN": "从 USB 设备的批量传输端点读取数据",
-        "en-US": "Read data from USB device bulk transfer endpoint"
+        "en-US": "Read data from USB device bulk transfer endpoint",
+        "zh-TW": "從 USB 設備的批量傳輸端點讀取數據",
+        "ja": "USBデバイスバルク転送エンドポイントからデータを読み取る",
+        "ko": "USB 장치 벌크 전송 엔드포인트에서 데이터 읽기",
+        "es": "Leer datos del endpoint de transferencia USB",
+        "fr": "Lire des données du endpoint de transfert USB",
+        "de": "Daten vom USB-Bulk-Transfer-Endpoint lesen",
+        "pt-BR": "Ler dados do endpoint de transferência USB",
+        "ru": "Прочитать данные из конечной точки массовой передачи USB",
+        "ar": "قراءة بيانات من نقطة نهاية النقل الجماعي USB",
+        "hi": "USB डिवाइस बल्क ट्रांसफ़र एंडपॉइंट से डेटा पढ़ें"
       },
       "params": [
         {
@@ -209,7 +409,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备句柄ID",
-            "en-US": "Handle ID"
+            "en-US": "Handle ID",
+            "zh-TW": "設備句柄ID",
+            "ja": "デバイス句柄ID",
+            "ko": "핸들 ID",
+            "es": "ID de manejador",
+            "fr": "ID du handle",
+            "de": "Handle-ID",
+            "pt-BR": "ID do handle",
+            "ru": "ID дескриптора",
+            "ar": "معرف المقبض",
+            "hi": "हैंडल आईडी"
           }
         },
         {
@@ -217,7 +427,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "endpoint参数",
-            "en-US": "endpoint parameter"
+            "en-US": "endpoint parameter",
+            "zh-TW": "endpoint參數",
+            "ja": "endpointパラメータ",
+            "ko": "endpoint매개변수",
+            "es": "Parámetro de endpoint",
+            "fr": "Paramètre de endpoint",
+            "de": "endpoint-Parameter",
+            "pt-BR": "Parâmetro de endpoint",
+            "ru": "Параметр endpoint",
+            "ar": "معلمة endpoint",
+            "hi": "endpoint पैरामीटर"
           },
           "desc": "endpoint parameter"
         },
@@ -226,7 +446,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "读取长度",
-            "en-US": "Read length"
+            "en-US": "Read length",
+            "zh-TW": "讀取長度",
+            "ja": "読み取る長さ",
+            "ko": "읽기길이",
+            "es": "Longitud de lectura",
+            "fr": "Longueur de lecture",
+            "de": "Leselänge",
+            "pt-BR": "Comprimento de leitura",
+            "ru": "Длина чтения",
+            "ar": "طول القراءة",
+            "hi": "पढ़ने की लंबाई"
           }
         },
         {
@@ -236,7 +466,17 @@
           "default_value": "5000",
           "descs": {
             "zh-CN": "超时(毫秒)",
-            "en-US": "Timeout (ms)"
+            "en-US": "Timeout (ms)",
+            "zh-TW": "超時(毫秒)",
+            "ja": "タイムアウト(毫秒)",
+            "ko": "타임아웃 (ms)",
+            "es": "Tiempo de espera (ms)",
+            "fr": "Délai d'attente (ms)",
+            "de": "Zeitlimit (ms)",
+            "pt-BR": "Tempo limite (ms)",
+            "ru": "Таймаут (мс)",
+            "ar": "مهلة الانتظار (مللي ثانية)",
+            "hi": "टाइमआउट (ms)"
           }
         }
       ],
@@ -244,7 +484,17 @@
         "type": "TransferResult",
         "descs": {
           "zh-CN": "读取数据",
-          "en-US": "Read data"
+          "en-US": "Read data",
+          "zh-TW": "讀取數據",
+          "ja": "読み取るデータ",
+          "ko": "읽기데이터",
+          "es": "Leer datos",
+          "fr": "Lire les données",
+          "de": "Daten lesen",
+          "pt-BR": "Ler dados",
+          "ru": "Прочитать данные",
+          "ar": "قراءة البيانات",
+          "hi": "डेटा पढ़ें"
         }
       },
       "bridge_path": "usb.bulkTransferIn",
@@ -256,7 +506,17 @@
       "symbol": "hap_usb_control_transfer",
       "descriptions": {
         "zh-CN": "执行 USB 控制传输（读取或写入设备控制信息）",
-        "en-US": "Execute USB control transfer (read or write device control info)"
+        "en-US": "Execute USB control transfer (read or write device control info)",
+        "zh-TW": "執行 USB 控製傳輸（讀取或寫入設備控製資訊）",
+        "ja": "USBコントロール転送を実行（デバイス制御情報の読み書き）",
+        "ko": "USB 제어 전송 실행 (장치 제어 정보 읽기 또는 쓰기)",
+        "es": "Ejecutar transferencia de control USB",
+        "fr": "Exécuter un transfert de contrôle USB",
+        "de": "USB-Steuerübertragung ausführen",
+        "pt-BR": "Executar transferência de controle USB",
+        "ru": "Выполнить управляющую передачу USB",
+        "ar": "تنفيذ نقل تحكم USB",
+        "hi": "USB कंट्रोल ट्रांसफर निष्पादित करें"
       },
       "params": [
         {
@@ -264,7 +524,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备句柄ID",
-            "en-US": "Handle ID"
+            "en-US": "Handle ID",
+            "zh-TW": "設備句柄ID",
+            "ja": "デバイス句柄ID",
+            "ko": "핸들 ID",
+            "es": "ID de manejador",
+            "fr": "ID du handle",
+            "de": "Handle-ID",
+            "pt-BR": "ID do handle",
+            "ru": "ID дескриптора",
+            "ar": "معرف المقبض",
+            "hi": "हैंडल आईडी"
           }
         },
         {
@@ -272,7 +542,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "请求类型",
-            "en-US": "Request type"
+            "en-US": "Request type",
+            "zh-TW": "請求類型",
+            "ja": "リクエストタイプ",
+            "ko": "요청유형",
+            "es": "Tipo de solicitud",
+            "fr": "Type de requête",
+            "de": "Anforderungstyp",
+            "pt-BR": "Tipo de solicitação",
+            "ru": "Тип запроса",
+            "ar": "نوع الطلب",
+            "hi": "अनुरोध प्रकार"
           }
         },
         {
@@ -280,7 +560,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "USB控制请求类型码",
-            "en-US": "USB control request type code"
+            "en-US": "USB control request type code",
+            "zh-TW": "USB控製請求類型碼",
+            "ja": "USBコントロールリクエストタイプコード",
+            "ko": "USB 제어 요청 유형 코드",
+            "es": "Código de tipo de solicitud de control USB",
+            "fr": "Code de type de requête de contrôle USB",
+            "de": "USB-Steuerungsanforderungs-Typcode",
+            "pt-BR": "Código de tipo de solicitação de controle USB",
+            "ru": "Код типа управляющего запроса USB",
+            "ar": "رمز نوع طلب التحكم USB",
+            "hi": "USB कंट्रोल रिक्वेस्ट टाइप कोड"
           },
           "desc": "USB control request type code"
         },
@@ -289,7 +579,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "要设置的值",
-            "en-US": "Value to set"
+            "en-US": "Value to set",
+            "zh-TW": "要設定的值",
+            "ja": "設定する値",
+            "ko": "설정할 값",
+            "es": "Valor a establecer",
+            "fr": "Valeur à définir",
+            "de": "Zu setzender Wert",
+            "pt-BR": "Valor a definir",
+            "ru": "Устанавливаемое значение",
+            "ar": "القيمة المراد تعيينها",
+            "hi": "सेट करने का मान"
           },
           "desc": "Value to set"
         },
@@ -298,7 +598,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "索引位置（从0开始）",
-            "en-US": "Index position (0-based)"
+            "en-US": "Index position (0-based)",
+            "zh-TW": "索引位置（從0開始）",
+            "ja": "インデックス位置（から0开始）",
+            "ko": "인덱스 위치 (0부터 시작)",
+            "es": "Posición de índice (base 0)",
+            "fr": "Position d'index (base 0)",
+            "de": "Indexposition (0-basiert)",
+            "pt-BR": "Posição do índice (base 0)",
+            "ru": "Позиция индекса (начиная с 0)",
+            "ar": "موضع الفهرس (يبدأ من 0)",
+            "hi": "इंडेक्स स्थिति (0-आधारित)"
           },
           "desc": "Index position (0-based)"
         },
@@ -308,7 +618,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "数据(hex)",
-            "en-US": "Data (hex)"
+            "en-US": "Data (hex)",
+            "zh-TW": "數據(hex)",
+            "ja": "データ(hex)",
+            "ko": "데이터(hex)",
+            "es": "Datos (hex)",
+            "fr": "Données (hex)",
+            "de": "Daten (hex)",
+            "pt-BR": "Dados (hex)",
+            "ru": "Данные (hex)",
+            "ar": "بيانات (ست عشري)",
+            "hi": "डेटा (हेक्स)"
           }
         },
         {
@@ -318,7 +638,17 @@
           "default_value": "5000",
           "descs": {
             "zh-CN": "超时时间（毫秒）",
-            "en-US": "Timeout in milliseconds"
+            "en-US": "Timeout in milliseconds",
+            "zh-TW": "超時時間（毫秒）",
+            "ja": "タイムアウト时间（毫秒）",
+            "ko": "타임아웃 (밀리초)",
+            "es": "Tiempo de espera en milisegundos",
+            "fr": "Délai en millisecondes",
+            "de": "Timeout in Millisekunden",
+            "pt-BR": "Timeout em milissegundos",
+            "ru": "Тайм-аут в миллисекундах",
+            "ar": "المهلة بالمللي ثانية",
+            "hi": "टाइमआउट मिलीसेकंड में"
           },
           "desc": "Timeout in milliseconds"
         }
@@ -327,7 +657,17 @@
         "type": "TransferResult",
         "descs": {
           "zh-CN": "传输结果",
-          "en-US": "Transfer result"
+          "en-US": "Transfer result",
+          "zh-TW": "傳輸結果",
+          "ja": "転送結果",
+          "ko": "전송 결과",
+          "es": "Resultado de transferencia",
+          "fr": "Résultat du transfert",
+          "de": "Übertragungsergebnis",
+          "pt-BR": "Resultado da transferência",
+          "ru": "Результат передачи",
+          "ar": "نتيجة النقل",
+          "hi": "ट्रांसफ़र परिणाम"
         }
       },
       "bridge_path": "usb.controlTransfer",
@@ -339,7 +679,17 @@
       "symbol": "hap_usb_get_device_info",
       "descriptions": {
         "zh-CN": "获取已打开 USB 设备的详细硬件信息",
-        "en-US": "Get detailed hardware info of opened USB device"
+        "en-US": "Get detailed hardware info of opened USB device",
+        "zh-TW": "取得已打開 USB 設備的詳細硬件資訊",
+        "ja": "開いたUSBデバイスの詳細ハードウェア情報を取得",
+        "ko": "열린 USB 장치의 상세 하드웨어 정보 가져오기",
+        "es": "Obtener información detallada del hardware USB abierto",
+        "fr": "Obtenir les informations matérielles détaillées du périphérique USB",
+        "de": "Detaillierte Hardware-Informationen des USB-Geräts abrufen",
+        "pt-BR": "Obter informações detalhadas do hardware USB aberto",
+        "ru": "Получить подробную информацию об открытом USB-устройстве",
+        "ar": "الحصول على معلومات الأجهزة التفصيلية لجهاز USB المفتوح",
+        "hi": "खुले USB डिवाइस की विस्तृत हार्डवेयर जानकारी प्राप्त करें"
       },
       "params": [
         {
@@ -347,7 +697,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备句柄ID",
-            "en-US": "Handle ID"
+            "en-US": "Handle ID",
+            "zh-TW": "設備句柄ID",
+            "ja": "デバイス句柄ID",
+            "ko": "핸들 ID",
+            "es": "ID de manejador",
+            "fr": "ID du handle",
+            "de": "Handle-ID",
+            "pt-BR": "ID do handle",
+            "ru": "ID дескриптора",
+            "ar": "معرف المقبض",
+            "hi": "हैंडल आईडी"
           }
         }
       ],
@@ -355,7 +715,17 @@
         "type": "UsbDeviceInfo",
         "descs": {
           "zh-CN": "设备详情",
-          "en-US": "Device details"
+          "en-US": "Device details",
+          "zh-TW": "設備詳情",
+          "ja": "デバイス詳細",
+          "ko": "장치 상세 정보",
+          "es": "Detalles del dispositivo",
+          "fr": "Détails du périphérique",
+          "de": "Gerätedetails",
+          "pt-BR": "Detalhes do dispositivo",
+          "ru": "Сведения об устройстве",
+          "ar": "تفاصيل الجهاز",
+          "hi": "डिवाइस विवरण"
         }
       },
       "bridge_path": "usb.getDeviceInfo",
@@ -367,7 +737,17 @@
       "symbol": "hap_usb_reset_device",
       "descriptions": {
         "zh-CN": "重置 USB 设备（等同于重新插拔）",
-        "en-US": "Reset USB device (equivalent to re-plug)"
+        "en-US": "Reset USB device (equivalent to re-plug)",
+        "zh-TW": "重置 USB 設備（等同於重新插拔）",
+        "ja": "リセットする USB デバイス（等同于重新插拔）",
+        "ko": "USB 장치 리셋 (재연결과 동등)",
+        "es": "Restablecer dispositivo USB (equivalente a reconectar)",
+        "fr": "Réinitialiser le périphérique USB (équivalent à reconnecter)",
+        "de": "USB-Gerät zurücksetzen (entspricht Neu-Einstecken)",
+        "pt-BR": "Redefinir dispositivo USB (equivalente a reconectar)",
+        "ru": "Сбросить USB-устройство (аналог переподключения)",
+        "ar": "إعادة تعيين جهاز USB (مكافئ لإعادة التوصيل)",
+        "hi": "USB डिवाइस रीसेट करें (पुनः प्लग के समतुल्य)"
       },
       "params": [
         {
@@ -375,7 +755,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备句柄ID",
-            "en-US": "Handle ID"
+            "en-US": "Handle ID",
+            "zh-TW": "設備句柄ID",
+            "ja": "デバイス句柄ID",
+            "ko": "핸들 ID",
+            "es": "ID de manejador",
+            "fr": "ID du handle",
+            "de": "Handle-ID",
+            "pt-BR": "ID do handle",
+            "ru": "ID дескриптора",
+            "ar": "معرف المقبض",
+            "hi": "हैंडल आईडी"
           }
         }
       ],
@@ -383,7 +773,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "usb.resetDevice",
@@ -396,7 +796,17 @@
       "name": "UsbDevice",
       "descriptions": {
         "zh-CN": "USB设备信息",
-        "en-US": "USB device info"
+        "en-US": "USB device info",
+        "zh-TW": "USB設備資訊",
+        "ja": "USBデバイス情報",
+        "ko": "USB 장치 정보",
+        "es": "Información del dispositivo USB",
+        "fr": "Informations du périphérique USB",
+        "de": "USB-Geräteinformationen",
+        "pt-BR": "Informações do dispositivo USB",
+        "ru": "Информация об устройстве USB",
+        "ar": "معلومات جهاز USB",
+        "hi": "USB डिवाइस जानकारी"
       },
       "fields": [
         {
@@ -404,7 +814,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "厂商ID",
-            "en-US": "Vendor ID"
+            "en-US": "Vendor ID",
+            "zh-TW": "廠商ID",
+            "ja": "ベンダーID",
+            "ko": "공급업체 ID",
+            "es": "ID del proveedor",
+            "fr": "ID du fournisseur",
+            "de": "Hersteller-ID",
+            "pt-BR": "ID do fornecedor",
+            "ru": "ID поставщика",
+            "ar": "معرّف المورّد",
+            "hi": "विक्रेता ID"
           }
         },
         {
@@ -412,7 +832,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "产品ID",
-            "en-US": "Product ID"
+            "en-US": "Product ID",
+            "zh-TW": "产品ID",
+            "ja": "プロダクトID",
+            "ko": "제품 ID",
+            "es": "ID de producto",
+            "fr": "ID du produit",
+            "de": "Produkt-ID",
+            "pt-BR": "ID do produto",
+            "ru": "ID продукта",
+            "ar": "معرّف المنتج",
+            "hi": "उत्पाद ID"
           }
         },
         {
@@ -421,7 +851,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "序列号",
-            "en-US": "Serial number"
+            "en-US": "Serial number",
+            "zh-TW": "序列號",
+            "ja": "シリアル番号",
+            "ko": "일련 번호",
+            "es": "Número de serie",
+            "fr": "Numéro de série",
+            "de": "Seriennummer",
+            "pt-BR": "Número de série",
+            "ru": "Серийный номер",
+            "ar": "الرقم التسلسلي",
+            "hi": "सीरियल नंबर"
           }
         },
         {
@@ -430,7 +870,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "制造商",
-            "en-US": "Manufacturer"
+            "en-US": "Manufacturer",
+            "zh-TW": "制造商",
+            "ja": "メーカー",
+            "ko": "제조사",
+            "es": "Fabricante",
+            "fr": "Fabricant",
+            "de": "Hersteller",
+            "pt-BR": "Fabricante",
+            "ru": "Производитель",
+            "ar": "الشركة المصنعة",
+            "hi": "निर्माता"
           }
         }
       ]
@@ -439,7 +889,17 @@
       "name": "UsbHandle",
       "descriptions": {
         "zh-CN": "USB设备句柄",
-        "en-US": "USB device handle"
+        "en-US": "USB device handle",
+        "zh-TW": "USB設備句柄",
+        "ja": "USBデバイスハンドル",
+        "ko": "USB 장치 핸들",
+        "es": "Manejador de dispositivo USB",
+        "fr": "Handle de périphérique USB",
+        "de": "USB-Geräte-Handle",
+        "pt-BR": "Handle de dispositivo USB",
+        "ru": "Дескриптор устройства USB",
+        "ar": "مقبض جهاز USB",
+        "hi": "USB डिवाइस हैंडल"
       },
       "fields": [
         {
@@ -447,7 +907,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "장치 ID",
+            "es": "ID del dispositivo",
+            "fr": "ID du périphérique",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرّف الجهاز",
+            "hi": "डिवाइस ID"
           }
         },
         {
@@ -455,7 +925,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "厂商ID",
-            "en-US": "Vendor ID"
+            "en-US": "Vendor ID",
+            "zh-TW": "廠商ID",
+            "ja": "ベンダーID",
+            "ko": "공급업체 ID",
+            "es": "ID del proveedor",
+            "fr": "ID du fournisseur",
+            "de": "Hersteller-ID",
+            "pt-BR": "ID do fornecedor",
+            "ru": "ID поставщика",
+            "ar": "معرّف المورّد",
+            "hi": "विक्रेता ID"
           }
         },
         {
@@ -463,7 +943,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "产品ID",
-            "en-US": "Product ID"
+            "en-US": "Product ID",
+            "zh-TW": "产品ID",
+            "ja": "プロダクトID",
+            "ko": "제품 ID",
+            "es": "ID de producto",
+            "fr": "ID du produit",
+            "de": "Produkt-ID",
+            "pt-BR": "ID do produto",
+            "ru": "ID продукта",
+            "ar": "معرّف المنتج",
+            "hi": "उत्पाद ID"
           }
         }
       ]
@@ -472,7 +962,17 @@
       "name": "TransferResult",
       "descriptions": {
         "zh-CN": "传输结果",
-        "en-US": "Transfer result"
+        "en-US": "Transfer result",
+        "zh-TW": "傳输结果",
+        "ja": "転送結果",
+        "ko": "전송 결과",
+        "es": "Resultado de transferencia",
+        "fr": "Résultat du transfert",
+        "de": "Übertragungsergebnis",
+        "pt-BR": "Resultado da transferência",
+        "ru": "Результат передачи",
+        "ar": "نتيجة النقل",
+        "hi": "स्थानांतरण परिणाम"
       },
       "fields": [
         {
@@ -480,7 +980,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "传输字节数",
-            "en-US": "Bytes transferred"
+            "en-US": "Bytes transferred",
+            "zh-TW": "傳输字節数",
+            "ja": "転送バイト数",
+            "ko": "전송된 바이트",
+            "es": "Bytes transferidos",
+            "fr": "Octets transférés",
+            "de": "Übertragene Bytes",
+            "pt-BR": "Bytes transferidos",
+            "ru": "Переданные байты",
+            "ar": "البايتات المنقولة",
+            "hi": "स्थानांतरित बाइट्स"
           }
         },
         {
@@ -489,7 +999,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "接收数据(Base64)",
-            "en-US": "Received data(Base64)"
+            "en-US": "Received data(Base64)",
+            "zh-TW": "接收數據(Base64)",
+            "ja": "受信データ(Base64)",
+            "ko": "수신 데이터(Base64)",
+            "es": "Datos recibidos(Base64)",
+            "fr": "Données reçues(Base64)",
+            "de": "Empfangene Daten(Base64)",
+            "pt-BR": "Dados recebidos(Base64)",
+            "ru": "Полученные данные(Base64)",
+            "ar": "البيانات المستلمة(Base64)",
+            "hi": "प्राप्त डेटा(Base64)"
           }
         }
       ]
@@ -498,7 +1018,17 @@
       "name": "UsbDeviceInfo",
       "descriptions": {
         "zh-CN": "USB设备详细信息",
-        "en-US": "USB device detailed info"
+        "en-US": "USB device detailed info",
+        "zh-TW": "USB設備詳細資訊",
+        "ja": "USBデバイス詳細情報",
+        "ko": "USB 장치 상세 정보",
+        "es": "Información detallada del dispositivo USB",
+        "fr": "Informations détaillées du périphérique USB",
+        "de": "Detaillierte USB-Geräteinformationen",
+        "pt-BR": "Informações detalhadas do dispositivo USB",
+        "ru": "Подробная информация об устройстве USB",
+        "ar": "معلومات تفصيلية لجهاز USB",
+        "hi": "USB डिवाइस विस्तृत जानकारी"
       },
       "fields": [
         {
@@ -506,7 +1036,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "厂商ID",
-            "en-US": "Vendor ID"
+            "en-US": "Vendor ID",
+            "zh-TW": "廠商ID",
+            "ja": "ベンダーID",
+            "ko": "공급업체 ID",
+            "es": "ID del proveedor",
+            "fr": "ID du fournisseur",
+            "de": "Hersteller-ID",
+            "pt-BR": "ID do fornecedor",
+            "ru": "ID поставщика",
+            "ar": "معرّف المورّد",
+            "hi": "विक्रेता ID"
           }
         },
         {
@@ -514,7 +1054,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "产品ID",
-            "en-US": "Product ID"
+            "en-US": "Product ID",
+            "zh-TW": "产品ID",
+            "ja": "プロダクトID",
+            "ko": "제품 ID",
+            "es": "ID de producto",
+            "fr": "ID du produit",
+            "de": "Produkt-ID",
+            "pt-BR": "ID do produto",
+            "ru": "ID продукта",
+            "ar": "معرّف المنتج",
+            "hi": "उत्पाद ID"
           }
         },
         {
@@ -522,7 +1072,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "制造商",
-            "en-US": "Manufacturer"
+            "en-US": "Manufacturer",
+            "zh-TW": "制造商",
+            "ja": "メーカー",
+            "ko": "제조사",
+            "es": "Fabricante",
+            "fr": "Fabricant",
+            "de": "Hersteller",
+            "pt-BR": "Fabricante",
+            "ru": "Производитель",
+            "ar": "الشركة المصنعة",
+            "hi": "निर्माता"
           }
         },
         {
@@ -530,7 +1090,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "产品名称",
-            "en-US": "Product name"
+            "en-US": "Product name",
+            "zh-TW": "产品名稱",
+            "ja": "製品名",
+            "ko": "제품 이름",
+            "es": "Nombre del producto",
+            "fr": "Nom du produit",
+            "de": "Produktname",
+            "pt-BR": "Nome do produto",
+            "ru": "Название продукта",
+            "ar": "اسم المنتج",
+            "hi": "उत्पाद नाम"
           }
         },
         {
@@ -538,7 +1108,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "序列号",
-            "en-US": "Serial number"
+            "en-US": "Serial number",
+            "zh-TW": "序列號",
+            "ja": "シリアル番号",
+            "ko": "일련 번호",
+            "es": "Número de serie",
+            "fr": "Numéro de série",
+            "de": "Seriennummer",
+            "pt-BR": "Número de série",
+            "ru": "Серийный номер",
+            "ar": "الرقم التسلسلي",
+            "hi": "सीरियल नंबर"
           }
         },
         {
@@ -546,7 +1126,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "总线号",
-            "en-US": "Bus number"
+            "en-US": "Bus number",
+            "zh-TW": "總線號",
+            "ja": "バス番号",
+            "ko": "버스 번호",
+            "es": "Número de bus",
+            "fr": "Numéro de bus",
+            "de": "Busnummer",
+            "pt-BR": "Número do barramento",
+            "ru": "Номер шины",
+            "ar": "رقم الناقل",
+            "hi": "बस नंबर"
           }
         },
         {
@@ -554,7 +1144,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "设备地址",
-            "en-US": "Device address"
+            "en-US": "Device address",
+            "zh-TW": "設備地址",
+            "ja": "デバイスアドレス",
+            "ko": "장치 주소",
+            "es": "Dirección del dispositivo",
+            "fr": "Adresse du périphérique",
+            "de": "Geräteadresse",
+            "pt-BR": "Endereço do dispositivo",
+            "ru": "Адрес устройства",
+            "ar": "عنوان الجهاز",
+            "hi": "डिवाइस पता"
           }
         }
       ]

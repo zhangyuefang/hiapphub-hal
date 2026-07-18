@@ -24,7 +24,17 @@
   },
   "overviews": {
     "zh-CN": "提供邮件收发能力，支持SMTP发送、IMAP/POP3收取、附件处理、HTML邮件、多收件人等功能。",
-    "en-US": "Email send/receive support including SMTP sending, IMAP/POP3 fetching, attachment handling, HTML emails, and multiple recipients."
+    "en-US": "Email send/receive support including SMTP sending, IMAP/POP3 fetching, attachment handling, HTML emails, and multiple recipients.",
+    "zh-TW": "提供郵件收发能力，支援SMTP发送、IMAP/POP3收取、附件處理、HTML郵件、多收件人等功能。",
+    "ja": "SMTP送信・IMAP/POP3受信・添付ファイル・HTMLメール・複数宛先のメール送受信。",
+    "ko": "SMTP 발송, IMAP/POP3 수신, 첨부 파일, HTML 이메일, 다중 수신자 지원.",
+    "es": "Envío SMTP, recepción IMAP/POP3, adjuntos, HTML y múltiples destinatarios.",
+    "fr": "Envoi SMTP, réception IMAP/POP3, pièces jointes, HTML et destinataires multiples.",
+    "de": "SMTP-Versand, IMAP/POP3-Empfang, Anhänge, HTML-Mails und mehrere Empfänger.",
+    "pt-BR": "Envio SMTP, recebimento IMAP/POP3, anexos, HTML e múltiplos destinatários.",
+    "ru": "Отправка SMTP, получение IMAP/POP3, вложения, HTML-письма и множество получателей.",
+    "ar": "إرسال SMTP واستقبال IMAP/POP3 ومرفقات وHTML ومستلمين متعددين.",
+    "hi": "SMTP भेजना, IMAP/POP3 प्राप्त, अटैचमेंट, HTML ईमेल और मल्टीपल रिसीवर।"
   },
   "permission": "network",
   "functions": [
@@ -33,7 +43,17 @@
       "symbol": "hap_email_send",
       "descriptions": {
         "zh-CN": "通过 SMTP 协议发送电子邮件，支持HTML正文、抄送和附件",
-        "en-US": "Send email via SMTP with HTML body, CC/BCC and attachments support"
+        "en-US": "Send email via SMTP with HTML body, CC/BCC and attachments support",
+        "zh-TW": "通過 SMTP 协议傳送電子郵件，支持HTML正文、抄送和附件",
+        "ja": "を通じて SMTP プロトコル送信する电子邮件，サポートHTML正文、抄送と附件",
+        "ko": "SMTP로 HTML 본문, CC/BCC 및 첨부 파일 지원 이메일 전송",
+        "es": "Enviar correo SMTP con HTML, CC/BCC y adjuntos",
+        "fr": "Envoyer un e-mail SMTP avec HTML, CC/BCC et pièces jointes",
+        "de": "E-Mail über SMTP mit HTML, CC/BCC und Anhängen senden",
+        "pt-BR": "Enviar e-mail SMTP com HTML, CC/BCC e anexos",
+        "ru": "Отправить письмо через SMTP с HTML, CC/BCC и вложениями",
+        "ar": "إرسال بريد عبر SMTP مع HTML وCC/BCC ومرفقات",
+        "hi": "HTML, CC/BCC और अटैचमेंट के साथ SMTP ईमेल भेजें"
       },
       "params": [
         {
@@ -41,7 +61,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "SMTP服务器",
-            "en-US": "SMTP server"
+            "en-US": "SMTP server",
+            "zh-TW": "SMTP服務器",
+            "ja": "SMTPサーバー",
+            "ko": "SMTP서버",
+            "es": "Servidor SMTP",
+            "fr": "Serveur SMTP",
+            "de": "SMTP-Server",
+            "pt-BR": "Servidor SMTP",
+            "ru": "SMTP-сервер",
+            "ar": "خادم SMTP",
+            "hi": "SMTP सर्वर"
           }
         },
         {
@@ -51,7 +81,17 @@
           "default_value": "587",
           "descs": {
             "zh-CN": "smtp_port参数",
-            "en-US": "smtp_port parameter"
+            "en-US": "smtp_port parameter",
+            "zh-TW": "smtp_port參數",
+            "ja": "smtp_portパラメータ",
+            "ko": "smtp_port매개변수",
+            "es": "Parámetro de puerto SMTP",
+            "fr": "Paramètre de port SMTP",
+            "de": "SMTP-Port-Parameter",
+            "pt-BR": "Parâmetro de porta SMTP",
+            "ru": "Параметр порта SMTP",
+            "ar": "معلمة منفذ SMTP",
+            "hi": "SMTP पोर्ट पैरामीटर"
           },
           "desc": "smtp_port parameter"
         },
@@ -60,7 +100,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "SMTP登录用户名",
-            "en-US": "SMTP login username"
+            "en-US": "SMTP login username",
+            "zh-TW": "SMTP登錄用戶名",
+            "ja": "SMTPログインユーザー名",
+            "ko": "SMTP 로그인 사용자 이름",
+            "es": "Nombre de usuario SMTP",
+            "fr": "Nom d'utilisateur SMTP",
+            "de": "SMTP-Benutzername",
+            "pt-BR": "Nome de usuário SMTP",
+            "ru": "Имя пользователя SMTP",
+            "ar": "اسم مستخدم SMTP",
+            "hi": "SMTP लॉगिन उपयोगकर्ता नाम"
           },
           "desc": "SMTP login username"
         },
@@ -69,7 +119,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码/授权码",
-            "en-US": "Password/auth code"
+            "en-US": "Password/auth code",
+            "zh-TW": "密碼/授權碼",
+            "ja": "パスワード/認証コード",
+            "ko": "비밀번호/인증 코드",
+            "es": "Contraseña/código de autenticación",
+            "fr": "Mot de passe/code d'authentification",
+            "de": "Passwort/Auth-Code",
+            "pt-BR": "Senha/código de autenticação",
+            "ru": "Пароль/код авторизации",
+            "ar": "كلمة المرور/رمز المصادقة",
+            "hi": "पासवर्ड/प्रमाणीकरण कोड"
           }
         },
         {
@@ -77,7 +137,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "发件人邮箱地址",
-            "en-US": "Sender email address"
+            "en-US": "Sender email address",
+            "zh-TW": "發件人郵箱地址",
+            "ja": "送信者メールアドレス",
+            "ko": "발신자 이메일 주소",
+            "es": "Dirección de correo del remitente",
+            "fr": "Adresse e-mail de l'expéditeur",
+            "de": "Absender-E-Mail-Adresse",
+            "pt-BR": "Endereço de e-mail do remetente",
+            "ru": "Адрес электронной почты отправителя",
+            "ar": "عنوان بريد المرسل",
+            "hi": "प्रेषक ईमेल पता"
           },
           "desc": "Sender email address"
         },
@@ -86,7 +156,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "收件人列表",
-            "en-US": "Recipients"
+            "en-US": "Recipients",
+            "zh-TW": "收件人列表",
+            "ja": "收件人リスト",
+            "ko": "수신자",
+            "es": "Destinatarios",
+            "fr": "Destinataires",
+            "de": "Empfänger",
+            "pt-BR": "Destinatários",
+            "ru": "Получатели",
+            "ar": "المستلمون",
+            "hi": "प्राप्तकर्ता"
           }
         },
         {
@@ -94,7 +174,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "邮件主题",
-            "en-US": "Email subject"
+            "en-US": "Email subject",
+            "zh-TW": "郵件主題",
+            "ja": "メール件名",
+            "ko": "이메일 제목",
+            "es": "Asunto del correo",
+            "fr": "Sujet de l'e-mail",
+            "de": "E-Mail-Betreff",
+            "pt-BR": "Assunto do e-mail",
+            "ru": "Тема письма",
+            "ar": "موضوع البريد",
+            "hi": "ईमेल विषय"
           },
           "desc": "Email subject"
         },
@@ -103,7 +193,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求体内容",
-            "en-US": "Request body content"
+            "en-US": "Request body content",
+            "zh-TW": "請求体內容",
+            "ja": "リクエスト体コンテンツ",
+            "ko": "요청 본문 내용",
+            "es": "Contenido del cuerpo de la solicitud",
+            "fr": "Contenu du corps de la requête",
+            "de": "Anfrage-Body-Inhalt",
+            "pt-BR": "Conteúdo do corpo da requisição",
+            "ru": "Содержимое тела запроса",
+            "ar": "محتوى جسم الطلب",
+            "hi": "रिक्वेस्ट बॉडी सामग्री"
           },
           "desc": "Request body content"
         },
@@ -114,7 +214,17 @@
           "default_value": "false",
           "descs": {
             "zh-CN": "是否HTML格式",
-            "en-US": "HTML format"
+            "en-US": "HTML format",
+            "zh-TW": "是否HTML格式",
+            "ja": "かどうかHTMLフォーマット",
+            "ko": "여부HTML형식",
+            "es": "Formato HTML",
+            "fr": "Format HTML",
+            "de": "HTML-Format",
+            "pt-BR": "Formato HTML",
+            "ru": "Формат HTML",
+            "ar": "تنسيق HTML",
+            "hi": "HTML फ़ॉर्मैट"
           }
         },
         {
@@ -123,7 +233,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "抄送邮箱地址列表",
-            "en-US": "CC email address list"
+            "en-US": "CC email address list",
+            "zh-TW": "抄送郵箱地址列表",
+            "ja": "抄送邮箱アドレスリスト",
+            "ko": "CC 이메일 주소 목록",
+            "es": "Lista de direcciones CC",
+            "fr": "Liste d'adresses CC",
+            "de": "CC-E-Mail-Adressliste",
+            "pt-BR": "Lista de endereços CC",
+            "ru": "Список адресов CC",
+            "ar": "قائمة عناوين CC",
+            "hi": "CC ईमेल पता सूची"
           },
           "desc": "CC email address list"
         },
@@ -133,7 +253,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "密送邮箱地址列表",
-            "en-US": "BCC email address list"
+            "en-US": "BCC email address list",
+            "zh-TW": "密送郵箱地址列表",
+            "ja": "密送邮箱アドレスリスト",
+            "ko": "BCC 이메일 주소 목록",
+            "es": "Lista de direcciones BCC",
+            "fr": "Liste d'adresses BCC",
+            "de": "BCC-E-Mail-Adressliste",
+            "pt-BR": "Lista de endereços BCC",
+            "ru": "Список адресов BCC",
+            "ar": "قائمة عناوين BCC",
+            "hi": "BCC ईमेल पता सूची"
           },
           "desc": "BCC email address list"
         },
@@ -143,7 +273,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "附件路径列表",
-            "en-US": "Attachment paths"
+            "en-US": "Attachment paths",
+            "zh-TW": "附件路徑列表",
+            "ja": "附件パスリスト",
+            "ko": "첨부 파일 경로",
+            "es": "Rutas de adjuntos",
+            "fr": "Chemins des pièces jointes",
+            "de": "Anhangspfade",
+            "pt-BR": "Caminhos dos anexos",
+            "ru": "Пути вложений",
+            "ar": "مسارات المرفقات",
+            "hi": "अटैचमेंट पथ"
           }
         },
         {
@@ -153,7 +293,17 @@
           "default_value": "true",
           "descs": {
             "zh-CN": "使用TLS",
-            "en-US": "Use TLS"
+            "en-US": "Use TLS",
+            "zh-TW": "使用TLS",
+            "ja": "TLSを使用",
+            "ko": "TLS 사용",
+            "es": "Usar TLS",
+            "fr": "Utiliser TLS",
+            "de": "TLS verwenden",
+            "pt-BR": "Usar TLS",
+            "ru": "Использовать TLS",
+            "ar": "استخدام TLS",
+            "hi": "TLS का उपयोग"
           }
         }
       ],
@@ -161,7 +311,17 @@
         "type": "SendResult",
         "descs": {
           "zh-CN": "发送结果",
-          "en-US": "Send result"
+          "en-US": "Send result",
+          "zh-TW": "傳送結果",
+          "ja": "送信する結果",
+          "ko": "전송결과",
+          "es": "Resultado de envío",
+          "fr": "Résultat d'envoi",
+          "de": "Sendeergebnis",
+          "pt-BR": "Resultado do envio",
+          "ru": "Результат отправки",
+          "ar": "نتيجة الإرسال",
+          "hi": "भेजने का परिणाम"
         }
       },
       "bridge_path": "email.send",
@@ -174,7 +334,17 @@
       "symbol": "hap_email_fetch",
       "descriptions": {
         "zh-CN": "通过 IMAP 协议获取邮箱中的邮件列表（支持只获取未读）",
-        "en-US": "Fetch email list via IMAP (supports unseen only filter)"
+        "en-US": "Fetch email list via IMAP (supports unseen only filter)",
+        "zh-TW": "通過 IMAP 协议取得郵箱中的郵件列表（支持只取得未讀）",
+        "ja": "を通じて IMAP プロトコル取得する邮箱中の邮件リスト（サポート只取得する未读）",
+        "ko": "IMAP으로 이메일 목록 가져오기 (읽지 않은 메일만 필터 지원)",
+        "es": "Obtener lista de correos por IMAP",
+        "fr": "Récupérer la liste d'e-mails via IMAP",
+        "de": "E-Mail-Liste über IMAP abrufen",
+        "pt-BR": "Buscar lista de e-mails via IMAP",
+        "ru": "Получить список писем через IMAP",
+        "ar": "جلب قائمة البريد عبر IMAP",
+        "hi": "IMAP से ईमेल सूची प्राप्त करें"
       },
       "params": [
         {
@@ -182,7 +352,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "协议: imap/pop3",
-            "en-US": "Protocol: imap/pop3"
+            "en-US": "Protocol: imap/pop3",
+            "zh-TW": "协议: imap/pop3",
+            "ja": "プロトコル: imap/pop3",
+            "ko": "프로토콜: imap/pop3",
+            "es": "Protocolo: imap/pop3",
+            "fr": "Protocole: imap/pop3",
+            "de": "Protokoll: imap/pop3",
+            "pt-BR": "Protocolo: imap/pop3",
+            "ru": "Протокол: imap/pop3",
+            "ar": "البروتوكول: imap/pop3",
+            "hi": "प्रोटोकॉल: imap/pop3"
           }
         },
         {
@@ -190,7 +370,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "主机地址（IP或域名）",
-            "en-US": "Host (IP or domain)"
+            "en-US": "Host (IP or domain)",
+            "zh-TW": "主機地址（IP或域名）",
+            "ja": "ホストアドレス（IPまたは域名）",
+            "ko": "호스트 (IP 또는 도메인)",
+            "es": "Host (IP o dominio)",
+            "fr": "Hôte (IP ou domaine)",
+            "de": "Host (IP oder Domain)",
+            "pt-BR": "Host (IP ou domínio)",
+            "ru": "Хост (IP или домен)",
+            "ar": "المضيف (IP أو نطاق)",
+            "hi": "होस्ट (IP या डोमेन)"
           },
           "desc": "Host (IP or domain)"
         },
@@ -200,7 +390,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "IMAP服务器端口号",
-            "en-US": "IMAP server port number"
+            "en-US": "IMAP server port number",
+            "zh-TW": "IMAP服務器埠號",
+            "ja": "IMAPサーバーポート号",
+            "ko": "IMAP 서버 포트 번호",
+            "es": "Número de puerto del servidor IMAP",
+            "fr": "Numéro de port du serveur IMAP",
+            "de": "IMAP-Server-Portnummer",
+            "pt-BR": "Número da porta do servidor IMAP",
+            "ru": "Номер порта IMAP-сервера",
+            "ar": "رقم منفذ خادم IMAP",
+            "hi": "IMAP सर्वर पोर्ट नंबर"
           },
           "desc": "IMAP server port number"
         },
@@ -209,7 +409,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "IMAP登录用户名",
-            "en-US": "IMAP login username"
+            "en-US": "IMAP login username",
+            "zh-TW": "IMAP登錄用戶名",
+            "ja": "IMAPログインユーザー名",
+            "ko": "IMAP 로그인 사용자 이름",
+            "es": "Nombre de usuario IMAP",
+            "fr": "Nom d'utilisateur IMAP",
+            "de": "IMAP-Benutzername",
+            "pt-BR": "Nome de usuário IMAP",
+            "ru": "Имя пользователя IMAP",
+            "ar": "اسم مستخدم IMAP",
+            "hi": "IMAP लॉगिन उपयोगकर्ता नाम"
           },
           "desc": "IMAP login username"
         },
@@ -218,7 +428,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string"
         },
@@ -229,7 +449,17 @@
           "default_value": "\"INBOX\"",
           "descs": {
             "zh-CN": "邮箱文件夹名（如INBOX/Sent）",
-            "en-US": "Mailbox folder name (e.g. INBOX/Sent)"
+            "en-US": "Mailbox folder name (e.g. INBOX/Sent)",
+            "zh-TW": "郵箱檔案夾名（如INBOX/Sent）",
+            "ja": "邮箱フォルダ名（如INBOX/Sent）",
+            "ko": "메일함 폴더 이름 (예: INBOX/Sent)",
+            "es": "Nombre de carpeta (ej. INBOX/Sent)",
+            "fr": "Nom du dossier (ex. INBOX/Sent)",
+            "de": "Postfachordner (z.B. INBOX/Sent)",
+            "pt-BR": "Nome da pasta (ex. INBOX/Sent)",
+            "ru": "Имя папки (напр. INBOX/Sent)",
+            "ar": "اسم مجلد البريد (مثل INBOX/Sent)",
+            "hi": "मेलबॉक्स फ़ोल्डर नाम (जैसे INBOX/Sent)"
           },
           "desc": "Mailbox folder name (e.g. INBOX/Sent)"
         },
@@ -240,7 +470,17 @@
           "default_value": "20",
           "descs": {
             "zh-CN": "获取数量",
-            "en-US": "Fetch limit"
+            "en-US": "Fetch limit",
+            "zh-TW": "取得數量",
+            "ja": "取得制限",
+            "ko": "가져오기 제한",
+            "es": "Límite de obtención",
+            "fr": "Limite de récupération",
+            "de": "Abruflimit",
+            "pt-BR": "Limite de busca",
+            "ru": "Лимит выборки",
+            "ar": "حد الجلب",
+            "hi": "फ़ेच सीमा"
           }
         },
         {
@@ -250,7 +490,17 @@
           "default_value": "false",
           "descs": {
             "zh-CN": "unseen_only参数",
-            "en-US": "unseen_only parameter"
+            "en-US": "unseen_only parameter",
+            "zh-TW": "unseen_only參數",
+            "ja": "unseen_onlyパラメータ",
+            "ko": "unseen_only매개변수",
+            "es": "Parámetro de solo no leídos",
+            "fr": "Paramètre non lus uniquement",
+            "de": "Nur-ungelesen-Parameter",
+            "pt-BR": "Parâmetro de apenas não lidos",
+            "ru": "Параметр только непрочитанных",
+            "ar": "معلمة غير المقروءة فقط",
+            "hi": "केवल अपठित पैरामीटर"
           },
           "desc": "unseen_only parameter"
         },
@@ -261,7 +511,17 @@
           "default_value": "true",
           "descs": {
             "zh-CN": "使用TLS",
-            "en-US": "Use TLS"
+            "en-US": "Use TLS",
+            "zh-TW": "使用TLS",
+            "ja": "TLSを使用",
+            "ko": "TLS 사용",
+            "es": "Usar TLS",
+            "fr": "Utiliser TLS",
+            "de": "TLS verwenden",
+            "pt-BR": "Usar TLS",
+            "ru": "Использовать TLS",
+            "ar": "استخدام TLS",
+            "hi": "TLS का उपयोग"
           }
         }
       ],
@@ -269,7 +529,17 @@
         "type": "array",
         "descs": {
           "zh-CN": "邮件列表",
-          "en-US": "Email list"
+          "en-US": "Email list",
+          "zh-TW": "郵件列表",
+          "ja": "邮件リスト",
+          "ko": "이메일 목록",
+          "es": "Lista de correos",
+          "fr": "Liste d'e-mails",
+          "de": "E-Mail-Liste",
+          "pt-BR": "Lista de e-mails",
+          "ru": "Список писем",
+          "ar": "قائمة البريد",
+          "hi": "ईमेल सूची"
         }
       },
       "bridge_path": "email.fetch",
@@ -282,7 +552,17 @@
       "symbol": "hap_email_list_folders",
       "descriptions": {
         "zh-CN": "获取邮箱中所有文件夹（收件箱、已发送、草稿等）的列表",
-        "en-US": "List all mailbox folders (Inbox, Sent, Drafts, etc.)"
+        "en-US": "List all mailbox folders (Inbox, Sent, Drafts, etc.)",
+        "zh-TW": "取得郵箱中所有檔案夾（收件箱、已傳送、草稿等）的列表",
+        "ja": "取得する邮箱中すべてフォルダ（收件箱、済み送信する、草稿等）のリスト",
+        "ko": "모든 메일함 폴더 나열 (받은편지함, 보낸편지함, 임시보관함 등)",
+        "es": "Listar todas las carpetas del correo",
+        "fr": "Lister tous les dossiers de la boîte mail",
+        "de": "Alle Postfachordner auflisten",
+        "pt-BR": "Listar todas as pastas de e-mail",
+        "ru": "Список всех папок почтового ящика",
+        "ar": "سرد جميع مجلدات البريد",
+        "hi": "सभी मेलबॉक्स फ़ोल्डर सूचीबद्ध करें"
       },
       "params": [
         {
@@ -290,7 +570,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "协议: imap",
-            "en-US": "Protocol: imap"
+            "en-US": "Protocol: imap",
+            "zh-TW": "协议: imap",
+            "ja": "プロトコル: imap",
+            "ko": "프로토콜: imap",
+            "es": "Protocolo: imap",
+            "fr": "Protocole: imap",
+            "de": "Protokoll: imap",
+            "pt-BR": "Protocolo: imap",
+            "ru": "Протокол: imap",
+            "ar": "البروتوكول: imap",
+            "hi": "प्रोटोकॉल: imap"
           }
         },
         {
@@ -298,7 +588,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "主机地址（IP或域名）",
-            "en-US": "Host (IP or domain)"
+            "en-US": "Host (IP or domain)",
+            "zh-TW": "主機地址（IP或域名）",
+            "ja": "ホストアドレス（IPまたは域名）",
+            "ko": "호스트 (IP 또는 도메인)",
+            "es": "Host (IP o dominio)",
+            "fr": "Hôte (IP ou domaine)",
+            "de": "Host (IP oder Domain)",
+            "pt-BR": "Host (IP ou domínio)",
+            "ru": "Хост (IP или домен)",
+            "ar": "المضيف (IP أو نطاق)",
+            "hi": "होस्ट (IP या डोमेन)"
           },
           "desc": "Host (IP or domain)"
         },
@@ -308,7 +608,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "IMAP服务器端口号",
-            "en-US": "IMAP server port number"
+            "en-US": "IMAP server port number",
+            "zh-TW": "IMAP服務器埠號",
+            "ja": "IMAPサーバーポート号",
+            "ko": "IMAP 서버 포트 번호",
+            "es": "Número de puerto del servidor IMAP",
+            "fr": "Numéro de port du serveur IMAP",
+            "de": "IMAP-Server-Portnummer",
+            "pt-BR": "Número da porta do servidor IMAP",
+            "ru": "Номер порта IMAP-сервера",
+            "ar": "رقم منفذ خادم IMAP",
+            "hi": "IMAP सर्वर पोर्ट नंबर"
           },
           "desc": "IMAP server port number"
         },
@@ -317,7 +627,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "IMAP登录用户名",
-            "en-US": "IMAP login username"
+            "en-US": "IMAP login username",
+            "zh-TW": "IMAP登錄用戶名",
+            "ja": "IMAPログインユーザー名",
+            "ko": "IMAP 로그인 사용자 이름",
+            "es": "Nombre de usuario IMAP",
+            "fr": "Nom d'utilisateur IMAP",
+            "de": "IMAP-Benutzername",
+            "pt-BR": "Nome de usuário IMAP",
+            "ru": "Имя пользователя IMAP",
+            "ar": "اسم مستخدم IMAP",
+            "hi": "IMAP लॉगिन उपयोगकर्ता नाम"
           },
           "desc": "IMAP login username"
         },
@@ -326,7 +646,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string"
         },
@@ -337,7 +667,17 @@
           "default_value": "true",
           "descs": {
             "zh-CN": "使用TLS",
-            "en-US": "Use TLS"
+            "en-US": "Use TLS",
+            "zh-TW": "使用TLS",
+            "ja": "TLSを使用",
+            "ko": "TLS 사용",
+            "es": "Usar TLS",
+            "fr": "Utiliser TLS",
+            "de": "TLS verwenden",
+            "pt-BR": "Usar TLS",
+            "ru": "Использовать TLS",
+            "ar": "استخدام TLS",
+            "hi": "TLS का उपयोग"
           }
         }
       ],
@@ -345,7 +685,17 @@
         "type": "array",
         "descs": {
           "zh-CN": "文件夹列表",
-          "en-US": "Folder list"
+          "en-US": "Folder list",
+          "zh-TW": "檔案夾列表",
+          "ja": "フォルダリスト",
+          "ko": "폴더목록",
+          "es": "Lista de carpetas",
+          "fr": "Liste des dossiers",
+          "de": "Ordnerliste",
+          "pt-BR": "Lista de pastas",
+          "ru": "Список папок",
+          "ar": "قائمة المجلدات",
+          "hi": "फ़ोल्डर सूची"
         }
       },
       "bridge_path": "email.listFolders",
@@ -358,7 +708,17 @@
       "symbol": "hap_email_mark_read",
       "descriptions": {
         "zh-CN": "将指定邮件标记为已读状态",
-        "en-US": "Mark specified email as read"
+        "en-US": "Mark specified email as read",
+        "zh-TW": "將指定郵件標記為已讀狀態",
+        "ja": "指定メールを既読にする",
+        "ko": "지정된 이메일을 읽음으로 표시",
+        "es": "Marcar correo como leído",
+        "fr": "Marquer l'e-mail comme lu",
+        "de": "E-Mail als gelesen markieren",
+        "pt-BR": "Marcar e-mail como lido",
+        "ru": "Отметить письмо как прочитанное",
+        "ar": "تعليم البريد كمقروء",
+        "hi": "निर्दिष्ट ईमेल को पढ़ा हुआ चिह्नित करें"
       },
       "params": [
         {
@@ -366,7 +726,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "主机地址（IP或域名）",
-            "en-US": "Host (IP or domain)"
+            "en-US": "Host (IP or domain)",
+            "zh-TW": "主機地址（IP或域名）",
+            "ja": "ホストアドレス（IPまたは域名）",
+            "ko": "호스트 (IP 또는 도메인)",
+            "es": "Host (IP o dominio)",
+            "fr": "Hôte (IP ou domaine)",
+            "de": "Host (IP oder Domain)",
+            "pt-BR": "Host (IP ou domínio)",
+            "ru": "Хост (IP или домен)",
+            "ar": "المضيف (IP أو نطاق)",
+            "hi": "होस्ट (IP या डोमेन)"
           },
           "desc": "Host (IP or domain)"
         },
@@ -376,7 +746,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "IMAP服务器端口号",
-            "en-US": "IMAP server port number"
+            "en-US": "IMAP server port number",
+            "zh-TW": "IMAP服務器埠號",
+            "ja": "IMAPサーバーポート号",
+            "ko": "IMAP 서버 포트 번호",
+            "es": "Número de puerto del servidor IMAP",
+            "fr": "Numéro de port du serveur IMAP",
+            "de": "IMAP-Server-Portnummer",
+            "pt-BR": "Número da porta do servidor IMAP",
+            "ru": "Номер порта IMAP-сервера",
+            "ar": "رقم منفذ خادم IMAP",
+            "hi": "IMAP सर्वर पोर्ट नंबर"
           },
           "desc": "IMAP server port number"
         },
@@ -385,7 +765,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "IMAP登录用户名",
-            "en-US": "IMAP login username"
+            "en-US": "IMAP login username",
+            "zh-TW": "IMAP登錄用戶名",
+            "ja": "IMAPログインユーザー名",
+            "ko": "IMAP 로그인 사용자 이름",
+            "es": "Nombre de usuario IMAP",
+            "fr": "Nom d'utilisateur IMAP",
+            "de": "IMAP-Benutzername",
+            "pt-BR": "Nome de usuário IMAP",
+            "ru": "Имя пользователя IMAP",
+            "ar": "اسم مستخدم IMAP",
+            "hi": "IMAP लॉगिन उपयोगकर्ता नाम"
           },
           "desc": "IMAP login username"
         },
@@ -394,7 +784,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string"
         },
@@ -403,7 +803,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "邮件UID",
-            "en-US": "Message UID"
+            "en-US": "Message UID",
+            "zh-TW": "郵件UID",
+            "ja": "メッセージUID",
+            "ko": "메시지 UID",
+            "es": "UID del mensaje",
+            "fr": "UID du message",
+            "de": "Nachrichten-UID",
+            "pt-BR": "UID da mensagem",
+            "ru": "UID сообщения",
+            "ar": "UID الرسالة",
+            "hi": "संदेश UID"
           }
         },
         {
@@ -413,7 +823,17 @@
           "default_value": "\"INBOX\"",
           "descs": {
             "zh-CN": "邮件所在文件夹名",
-            "en-US": "Folder name containing the email"
+            "en-US": "Folder name containing the email",
+            "zh-TW": "郵件所在檔案夾名",
+            "ja": "邮件所でフォルダ名",
+            "ko": "이메일이 포함된 폴더 이름",
+            "es": "Nombre de la carpeta del correo",
+            "fr": "Nom du dossier contenant l'e-mail",
+            "de": "Ordnername der E-Mail",
+            "pt-BR": "Nome da pasta do e-mail",
+            "ru": "Имя папки с письмом",
+            "ar": "اسم المجلد المحتوي على البريد",
+            "hi": "ईमेल वाले फ़ोल्डर का नाम"
           },
           "desc": "Folder name containing the email"
         },
@@ -424,7 +844,17 @@
           "default_value": "true",
           "descs": {
             "zh-CN": "使用TLS",
-            "en-US": "Use TLS"
+            "en-US": "Use TLS",
+            "zh-TW": "使用TLS",
+            "ja": "TLSを使用",
+            "ko": "TLS 사용",
+            "es": "Usar TLS",
+            "fr": "Utiliser TLS",
+            "de": "TLS verwenden",
+            "pt-BR": "Usar TLS",
+            "ru": "Использовать TLS",
+            "ar": "استخدام TLS",
+            "hi": "TLS का उपयोग"
           }
         }
       ],
@@ -432,7 +862,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "email.markRead",
@@ -445,7 +885,17 @@
       "symbol": "hap_email_delete",
       "descriptions": {
         "zh-CN": "从邮箱中永久删除指定的邮件",
-        "en-US": "Permanently delete specified email from mailbox"
+        "en-US": "Permanently delete specified email from mailbox",
+        "zh-TW": "從郵箱中永久刪除指定的郵件",
+        "ja": "から邮箱中永続削除する指定の邮件",
+        "ko": "메일함에서 지정된 이메일 영구 삭제",
+        "es": "Eliminar correo permanentemente",
+        "fr": "Supprimer définitivement l'e-mail",
+        "de": "E-Mail dauerhaft löschen",
+        "pt-BR": "Excluir e-mail permanentemente",
+        "ru": "Навсегда удалить письмо",
+        "ar": "حذف البريد نهائياً",
+        "hi": "मेलबॉक्स से ईमेल स्थायी रूप से हटाएं"
       },
       "params": [
         {
@@ -453,7 +903,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "主机地址（IP或域名）",
-            "en-US": "Host (IP or domain)"
+            "en-US": "Host (IP or domain)",
+            "zh-TW": "主機地址（IP或域名）",
+            "ja": "ホストアドレス（IPまたは域名）",
+            "ko": "호스트 (IP 또는 도메인)",
+            "es": "Host (IP o dominio)",
+            "fr": "Hôte (IP ou domaine)",
+            "de": "Host (IP oder Domain)",
+            "pt-BR": "Host (IP ou domínio)",
+            "ru": "Хост (IP или домен)",
+            "ar": "المضيف (IP أو نطاق)",
+            "hi": "होस्ट (IP या डोमेन)"
           },
           "desc": "Host (IP or domain)"
         },
@@ -463,7 +923,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "IMAP服务器端口号",
-            "en-US": "IMAP server port number"
+            "en-US": "IMAP server port number",
+            "zh-TW": "IMAP服務器埠號",
+            "ja": "IMAPサーバーポート号",
+            "ko": "IMAP 서버 포트 번호",
+            "es": "Número de puerto del servidor IMAP",
+            "fr": "Numéro de port du serveur IMAP",
+            "de": "IMAP-Server-Portnummer",
+            "pt-BR": "Número da porta do servidor IMAP",
+            "ru": "Номер порта IMAP-сервера",
+            "ar": "رقم منفذ خادم IMAP",
+            "hi": "IMAP सर्वर पोर्ट नंबर"
           },
           "desc": "IMAP server port number"
         },
@@ -472,7 +942,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "IMAP登录用户名",
-            "en-US": "IMAP login username"
+            "en-US": "IMAP login username",
+            "zh-TW": "IMAP登錄用戶名",
+            "ja": "IMAPログインユーザー名",
+            "ko": "IMAP 로그인 사용자 이름",
+            "es": "Nombre de usuario IMAP",
+            "fr": "Nom d'utilisateur IMAP",
+            "de": "IMAP-Benutzername",
+            "pt-BR": "Nome de usuário IMAP",
+            "ru": "Имя пользователя IMAP",
+            "ar": "اسم مستخدم IMAP",
+            "hi": "IMAP लॉगिन उपयोगकर्ता नाम"
           },
           "desc": "IMAP login username"
         },
@@ -481,7 +961,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string"
         },
@@ -490,7 +980,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "邮件UID",
-            "en-US": "Message UID"
+            "en-US": "Message UID",
+            "zh-TW": "郵件UID",
+            "ja": "メッセージUID",
+            "ko": "메시지 UID",
+            "es": "UID del mensaje",
+            "fr": "UID du message",
+            "de": "Nachrichten-UID",
+            "pt-BR": "UID da mensagem",
+            "ru": "UID сообщения",
+            "ar": "UID الرسالة",
+            "hi": "संदेश UID"
           }
         },
         {
@@ -500,7 +1000,17 @@
           "default_value": "\"INBOX\"",
           "descs": {
             "zh-CN": "邮件所在文件夹名",
-            "en-US": "Folder name containing the email"
+            "en-US": "Folder name containing the email",
+            "zh-TW": "郵件所在檔案夾名",
+            "ja": "邮件所でフォルダ名",
+            "ko": "이메일이 포함된 폴더 이름",
+            "es": "Nombre de la carpeta del correo",
+            "fr": "Nom du dossier contenant l'e-mail",
+            "de": "Ordnername der E-Mail",
+            "pt-BR": "Nome da pasta do e-mail",
+            "ru": "Имя папки с письмом",
+            "ar": "اسم المجلد المحتوي على البريد",
+            "hi": "ईमेल वाले फ़ोल्डर का नाम"
           },
           "desc": "Folder name containing the email"
         },
@@ -511,7 +1021,17 @@
           "default_value": "true",
           "descs": {
             "zh-CN": "使用TLS",
-            "en-US": "Use TLS"
+            "en-US": "Use TLS",
+            "zh-TW": "使用TLS",
+            "ja": "TLSを使用",
+            "ko": "TLS 사용",
+            "es": "Usar TLS",
+            "fr": "Utiliser TLS",
+            "de": "TLS verwenden",
+            "pt-BR": "Usar TLS",
+            "ru": "Использовать TLS",
+            "ar": "استخدام TLS",
+            "hi": "TLS का उपयोग"
           }
         }
       ],
@@ -519,7 +1039,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "email.delete",
@@ -532,7 +1062,17 @@
       "symbol": "hap_email_download_attachment",
       "descriptions": {
         "zh-CN": "下载邮件中的指定附件并保存到本地路径",
-        "en-US": "Download email attachment and save to local path"
+        "en-US": "Download email attachment and save to local path",
+        "zh-TW": "下載郵件中的指定附件並保存到本地路徑",
+        "ja": "メール添付ファイルをダウンロードしてローカルパスに保存",
+        "ko": "이메일 첨부 파일 다운로드 및 로컬 경로에 저장",
+        "es": "Descargar adjunto de correo y guardar",
+        "fr": "Télécharger la pièce jointe et enregistrer",
+        "de": "E-Mail-Anhang herunterladen und speichern",
+        "pt-BR": "Baixar anexo de e-mail e salvar",
+        "ru": "Скачать вложение и сохранить",
+        "ar": "تنزيل مرفق البريد وحفظه محلياً",
+        "hi": "ईमेल अटैचमेंट डाउनलोड और लोकल में सहेजें"
       },
       "params": [
         {
@@ -540,7 +1080,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "主机地址（IP或域名）",
-            "en-US": "Host (IP or domain)"
+            "en-US": "Host (IP or domain)",
+            "zh-TW": "主機地址（IP或域名）",
+            "ja": "ホストアドレス（IPまたは域名）",
+            "ko": "호스트 (IP 또는 도메인)",
+            "es": "Host (IP o dominio)",
+            "fr": "Hôte (IP ou domaine)",
+            "de": "Host (IP oder Domain)",
+            "pt-BR": "Host (IP ou domínio)",
+            "ru": "Хост (IP или домен)",
+            "ar": "المضيف (IP أو نطاق)",
+            "hi": "होस्ट (IP या डोमेन)"
           },
           "desc": "Host (IP or domain)"
         },
@@ -550,7 +1100,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "IMAP服务器端口号",
-            "en-US": "IMAP server port number"
+            "en-US": "IMAP server port number",
+            "zh-TW": "IMAP服務器埠號",
+            "ja": "IMAPサーバーポート号",
+            "ko": "IMAP 서버 포트 번호",
+            "es": "Número de puerto del servidor IMAP",
+            "fr": "Numéro de port du serveur IMAP",
+            "de": "IMAP-Server-Portnummer",
+            "pt-BR": "Número da porta do servidor IMAP",
+            "ru": "Номер порта IMAP-сервера",
+            "ar": "رقم منفذ خادم IMAP",
+            "hi": "IMAP सर्वर पोर्ट नंबर"
           },
           "desc": "IMAP server port number"
         },
@@ -559,7 +1119,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "IMAP登录用户名",
-            "en-US": "IMAP login username"
+            "en-US": "IMAP login username",
+            "zh-TW": "IMAP登錄用戶名",
+            "ja": "IMAPログインユーザー名",
+            "ko": "IMAP 로그인 사용자 이름",
+            "es": "Nombre de usuario IMAP",
+            "fr": "Nom d'utilisateur IMAP",
+            "de": "IMAP-Benutzername",
+            "pt-BR": "Nome de usuário IMAP",
+            "ru": "Имя пользователя IMAP",
+            "ar": "اسم مستخدم IMAP",
+            "hi": "IMAP लॉगिन उपयोगकर्ता नाम"
           },
           "desc": "IMAP login username"
         },
@@ -568,7 +1138,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string"
         },
@@ -577,7 +1157,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "邮件UID",
-            "en-US": "Message UID"
+            "en-US": "Message UID",
+            "zh-TW": "郵件UID",
+            "ja": "メッセージUID",
+            "ko": "메시지 UID",
+            "es": "UID del mensaje",
+            "fr": "UID du message",
+            "de": "Nachrichten-UID",
+            "pt-BR": "UID da mensagem",
+            "ru": "UID сообщения",
+            "ar": "UID الرسالة",
+            "hi": "संदेश UID"
           }
         },
         {
@@ -585,7 +1175,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "附件索引",
-            "en-US": "Attachment index"
+            "en-US": "Attachment index",
+            "zh-TW": "附件索引",
+            "ja": "附件インデックス",
+            "ko": "첨부 파일 인덱스",
+            "es": "Índice de adjunto",
+            "fr": "Index de pièce jointe",
+            "de": "Anhangsindex",
+            "pt-BR": "Índice do anexo",
+            "ru": "Индекс вложения",
+            "ar": "فهرس المرفق",
+            "hi": "अटैचमेंट इंडेक्स"
           }
         },
         {
@@ -593,7 +1193,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "保存路径",
-            "en-US": "Save path"
+            "en-US": "Save path",
+            "zh-TW": "保存路徑",
+            "ja": "保存するパス",
+            "ko": "저장경로",
+            "es": "Ruta de guardado",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения",
+            "ar": "مسار الحفظ",
+            "hi": "सहेजने का पथ"
           }
         },
         {
@@ -603,7 +1213,17 @@
           "default_value": "true",
           "descs": {
             "zh-CN": "使用TLS",
-            "en-US": "Use TLS"
+            "en-US": "Use TLS",
+            "zh-TW": "使用TLS",
+            "ja": "TLSを使用",
+            "ko": "TLS 사용",
+            "es": "Usar TLS",
+            "fr": "Utiliser TLS",
+            "de": "TLS verwenden",
+            "pt-BR": "Usar TLS",
+            "ru": "Использовать TLS",
+            "ar": "استخدام TLS",
+            "hi": "TLS का उपयोग"
           }
         }
       ],
@@ -611,7 +1231,17 @@
         "type": "DownloadResult",
         "descs": {
           "zh-CN": "下载结果",
-          "en-US": "Download result"
+          "en-US": "Download result",
+          "zh-TW": "下載結果",
+          "ja": "ダウンロードする結果",
+          "ko": "다운로드결과",
+          "es": "Resultado de descarga",
+          "fr": "Résultat du téléchargement",
+          "de": "Download-Ergebnis",
+          "pt-BR": "Resultado do download",
+          "ru": "Результат загрузки",
+          "ar": "نتيجة التنزيل",
+          "hi": "डाउनलोड परिणाम"
         }
       },
       "bridge_path": "email.downloadAttachment",
@@ -625,7 +1255,17 @@
       "name": "EmailAttachment",
       "descriptions": {
         "zh-CN": "邮件附件结构",
-        "en-US": "Email attachment"
+        "en-US": "Email attachment",
+        "zh-TW": "郵件附件结構",
+        "ja": "メール添付ファイル",
+        "ko": "이메일 첨부 파일",
+        "es": "Adjunto de correo electrónico",
+        "fr": "Pièce jointe d'e-mail",
+        "de": "E-Mail-Anhang",
+        "pt-BR": "Anexo de e-mail",
+        "ru": "Вложение электронной почты",
+        "ar": "مرفق البريد الإلكتروني",
+        "hi": "ईमेल अटैचमेंट"
       },
       "fields": [
         {
@@ -633,7 +1273,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件名",
-            "en-US": "File name"
+            "en-US": "File name",
+            "zh-TW": "檔案名",
+            "ja": "ファイル名",
+            "ko": "파일 이름",
+            "es": "Nombre de archivo",
+            "fr": "Nom du fichier",
+            "de": "Dateiname",
+            "pt-BR": "Nome do arquivo",
+            "ru": "Имя файла",
+            "ar": "اسم الملف",
+            "hi": "फ़ाइल नाम"
           }
         },
         {
@@ -641,7 +1291,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "MIME类型",
-            "en-US": "MIME type"
+            "en-US": "MIME type",
+            "zh-TW": "MIME類型",
+            "ja": "MIMEタイプ",
+            "ko": "MIME 유형",
+            "es": "Tipo MIME",
+            "fr": "Type MIME",
+            "de": "MIME-Typ",
+            "pt-BR": "Tipo MIME",
+            "ru": "MIME-тип",
+            "ar": "نوع MIME",
+            "hi": "MIME प्रकार"
           }
         },
         {
@@ -649,7 +1309,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64内容",
-            "en-US": "Base64 content"
+            "en-US": "Base64 content",
+            "zh-TW": "Base64內容",
+            "ja": "Base64コンテンツ",
+            "ko": "Base64 콘텐츠",
+            "es": "Contenido Base64",
+            "fr": "Contenu Base64",
+            "de": "Base64-Inhalt",
+            "pt-BR": "Conteúdo Base64",
+            "ru": "Содержимое Base64",
+            "ar": "محتوى Base64",
+            "hi": "Base64 सामग्री"
           }
         }
       ]
@@ -658,7 +1328,17 @@
       "name": "SendResult",
       "descriptions": {
         "zh-CN": "邮件发送结果",
-        "en-US": "Email send result"
+        "en-US": "Email send result",
+        "zh-TW": "郵件发送结果",
+        "ja": "メール送信結果",
+        "ko": "이메일 전송 결과",
+        "es": "Resultado del envío de correo",
+        "fr": "Résultat de l'envoi d'e-mail",
+        "de": "E-Mail-Sendeergebnis",
+        "pt-BR": "Resultado do envio de e-mail",
+        "ru": "Результат отправки электронной почты",
+        "ar": "نتيجة إرسال البريد الإلكتروني",
+        "hi": "ईमेल भेजने का परिणाम"
       },
       "fields": [
         {
@@ -666,7 +1346,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否发送成功",
-            "en-US": "Whether sent successfully"
+            "en-US": "Whether sent successfully",
+            "zh-TW": "是否发送成功",
+            "ja": "送信成功かどうか",
+            "ko": "전송 성공 여부",
+            "es": "Si se envió correctamente",
+            "fr": "Si envoyé avec succès",
+            "de": "Ob erfolgreich gesendet",
+            "pt-BR": "Se enviado com sucesso",
+            "ru": "Успешно ли отправлено",
+            "ar": "ما إذا تم الإرسال بنجاح",
+            "hi": "सफलतापूर्वक भेजा गया या नहीं"
           }
         },
         {
@@ -674,7 +1364,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "邮件消息ID",
-            "en-US": "Email message ID"
+            "en-US": "Email message ID",
+            "zh-TW": "郵件訊息ID",
+            "ja": "メールメッセージID",
+            "ko": "이메일 메시지 ID",
+            "es": "ID del mensaje de correo",
+            "fr": "ID du message e-mail",
+            "de": "E-Mail-Nachrichten-ID",
+            "pt-BR": "ID da mensagem de e-mail",
+            "ru": "ID сообщения электронной почты",
+            "ar": "معرّف رسالة البريد الإلكتروني",
+            "hi": "ईमेल संदेश ID"
           }
         }
       ]
@@ -683,7 +1383,17 @@
       "name": "DownloadResult",
       "descriptions": {
         "zh-CN": "附件下载结果",
-        "en-US": "Attachment download result"
+        "en-US": "Attachment download result",
+        "zh-TW": "附件下載结果",
+        "ja": "添付ファイルダウンロード結果",
+        "ko": "첨부 파일 다운로드 결과",
+        "es": "Resultado de descarga del adjunto",
+        "fr": "Résultat du téléchargement de la pièce jointe",
+        "de": "Ergebnis des Anhangsdownloads",
+        "pt-BR": "Resultado do download do anexo",
+        "ru": "Результат загрузки вложения",
+        "ar": "نتيجة تحميل المرفق",
+        "hi": "अटैचमेंट डाउनलोड परिणाम"
       },
       "fields": [
         {
@@ -691,7 +1401,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否成功",
-            "en-US": "Whether succeeded"
+            "en-US": "Whether succeeded",
+            "zh-TW": "是否成功",
+            "ja": "成功したかどうか",
+            "ko": "성공 여부",
+            "es": "Si tuvo éxito",
+            "fr": "Si réussi",
+            "de": "Ob erfolgreich",
+            "pt-BR": "Se teve sucesso",
+            "ru": "Успешно или нет",
+            "ar": "ما إذا نجح",
+            "hi": "सफल हुआ या नहीं"
           }
         },
         {
@@ -699,7 +1419,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "保存路径",
-            "en-US": "Save path"
+            "en-US": "Save path",
+            "zh-TW": "保存路徑",
+            "ja": "保存パス",
+            "ko": "저장 경로",
+            "es": "Ruta de guardado",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения",
+            "ar": "مسار الحفظ",
+            "hi": "सहेजने का पथ"
           }
         },
         {
@@ -707,7 +1437,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "文件大小(字节)",
-            "en-US": "File size in bytes"
+            "en-US": "File size in bytes",
+            "zh-TW": "檔案大小(字節)",
+            "ja": "ファイルサイズ（バイト）",
+            "ko": "파일 크기(바이트)",
+            "es": "Tamaño de archivo en bytes",
+            "fr": "Taille du fichier en octets",
+            "de": "Dateigröße in Bytes",
+            "pt-BR": "Tamanho do arquivo em bytes",
+            "ru": "Размер файла в байтах",
+            "ar": "حجم الملف بالبايت",
+            "hi": "फ़ाइल आकार बाइट में"
           }
         }
       ]

@@ -22,7 +22,7 @@
     "ar": "وحدة PDF",
     "hi": "PDF मॉड्यूल"
   },
-  "permission": "",
+  "permission": "pdf",
   "functions": [
     {
       "name": "info",
@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -42,14 +52,34 @@
         "type": "PdfInfo",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "pdf.info",
       "descriptions": {
         "zh-CN": "获取PDF文件的元信息（页数、标题、作者、加密状态等）",
-        "en-US": "Get PDF metadata (pages, title, author, encryption)"
+        "en-US": "Get PDF metadata (pages, title, author, encryption)",
+        "zh-TW": "取得PDF檔案的元資訊（頁數、標題、作者、加密狀態等）",
+        "ja": "PDFメタデータを取得（ページ数、タイトル、著者、暗号化）",
+        "ko": "PDF 메타데이터 가져오기 (페이지, 제목, 저자, 암호화)",
+        "es": "Obtener metadatos del PDF (páginas, título, autor, encriptación)",
+        "fr": "Obtenir les métadonnées du PDF (pages, titre, auteur, chiffrement)",
+        "de": "PDF-Metadaten abrufen (Seiten, Titel, Autor, Verschlüsselung)",
+        "pt-BR": "Obter metadados do PDF (páginas, título, autor, criptografia)",
+        "ru": "Получить метаданные PDF (страницы, заголовок, автор, шифрование)",
+        "ar": "الحصول على بيانات PDF الوصفية (الصفحات, العنوان, المؤلف, التشفير)",
+        "hi": "PDF मेटाडेटा प्राप्त करें (पेज, शीर्षक, लेखक, एन्क्रिप्शन)"
       },
       "group": "file",
       "description": "Get PDF metadata (pages, title, author, encryption)"
@@ -63,7 +93,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -72,7 +112,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "optional": true,
           "desc": "Password string"
@@ -82,14 +132,34 @@
         "type": "PdfHandle",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "pdf.open",
       "descriptions": {
         "zh-CN": "打开PDF文件获取文档操作句柄",
-        "en-US": "Open PDF file and get document handle"
+        "en-US": "Open PDF file and get document handle",
+        "zh-TW": "打開PDF檔案取得文檔操作句柄",
+        "ja": "PDFファイルを開いてドキュメントハンドルを取得",
+        "ko": "PDF 파일 열기 및 문서 핸들 가져오기",
+        "es": "Abrir archivo PDF y obtener manejador",
+        "fr": "Ouvrir le fichier PDF et obtenir le handle",
+        "de": "PDF-Datei öffnen und Handle erhalten",
+        "pt-BR": "Abrir arquivo PDF e obter handle",
+        "ru": "Открыть PDF-файл и получить дескриптор",
+        "ar": "فتح ملف PDF والحصول على المعرف",
+        "hi": "PDF फ़ाइल खोलें और डॉक्यूमेंट हैंडल प्राप्त करें"
       },
       "group": "file",
       "description": "Open PDF file and get document handle"
@@ -103,7 +173,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "对话框标题",
-            "en-US": "Dialog title"
+            "en-US": "Dialog title",
+            "zh-TW": "對話框標題",
+            "ja": "ダイアログタイトル",
+            "ko": "대화상자제목",
+            "es": "Título del diálogo",
+            "fr": "Titre du dialogue",
+            "de": "Dialogtitel",
+            "pt-BR": "Título do diálogo",
+            "ru": "Заголовок диалога",
+            "ar": "عنوان الحوار",
+            "hi": "डायलॉग शीर्षक"
           },
           "optional": true
         },
@@ -112,7 +192,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "PDF文档作者名称",
-            "en-US": "PDF document author name"
+            "en-US": "PDF document author name",
+            "zh-TW": "PDF文檔作者名稱",
+            "ja": "PDF文書の著者名",
+            "ko": "PDF 문서 작성자 이름",
+            "es": "Nombre del autor del PDF",
+            "fr": "Nom de l'auteur du PDF",
+            "de": "PDF-Dokumentautor",
+            "pt-BR": "Nome do autor do PDF",
+            "ru": "Имя автора PDF",
+            "ar": "اسم مؤلف مستند PDF",
+            "hi": "PDF दस्तावेज़ लेखक नाम"
           },
           "optional": true,
           "desc": "PDF document author name"
@@ -122,7 +212,17 @@
           "type": "PageSize",
           "descs": {
             "zh-CN": "page_size参数",
-            "en-US": "page_size parameter"
+            "en-US": "page_size parameter",
+            "zh-TW": "page_size參數",
+            "ja": "page_sizeパラメータ",
+            "ko": "page_size매개변수",
+            "es": "Parámetro de page_size",
+            "fr": "Paramètre de page_size",
+            "de": "page_size-Parameter",
+            "pt-BR": "Parâmetro de page_size",
+            "ru": "Параметр page_size",
+            "ar": "معلمة page_size",
+            "hi": "page_size पैरामीटर"
           },
           "optional": true,
           "desc": "page_size parameter"
@@ -132,14 +232,34 @@
         "type": "PdfHandle",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "pdf.create",
       "descriptions": {
         "zh-CN": "创建一个新的空白PDF文档文件",
-        "en-US": "Create a new empty PDF document"
+        "en-US": "Create a new empty PDF document",
+        "zh-TW": "建立一個新的空白PDF文檔檔案",
+        "ja": "新しい空のPDFドキュメントを作成",
+        "ko": "새 빈 PDF 문서 생성",
+        "es": "Crear nuevo documento PDF vacío",
+        "fr": "Créer un document PDF vide",
+        "de": "Neues leeres PDF-Dokument erstellen",
+        "pt-BR": "Criar novo documento PDF vazio",
+        "ru": "Создать новый пустой PDF-документ",
+        "ar": "إنشاء مستند PDF فارغ جديد",
+        "hi": "नया खाली PDF दस्तावेज़ बनाएं"
       },
       "group": "file",
       "description": "Create a new empty PDF document"
@@ -153,7 +273,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -161,7 +291,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度(毫米)",
-            "en-US": "Width in mm"
+            "en-US": "Width in mm",
+            "zh-TW": "寬度(毫米)",
+            "ja": "幅(毫米)",
+            "ko": "너비 (mm)",
+            "es": "Ancho en mm",
+            "fr": "Largeur en mm",
+            "de": "Breite in mm",
+            "pt-BR": "Largura em mm",
+            "ru": "Ширина в мм",
+            "ar": "العرض بالمللمتر",
+            "hi": "चौड़ाई मिमी में"
           },
           "optional": true,
           "default_value": "210.0"
@@ -171,7 +311,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度(毫米)",
-            "en-US": "Height in mm"
+            "en-US": "Height in mm",
+            "zh-TW": "高度(毫米)",
+            "ja": "高さ(毫米)",
+            "ko": "높이 (mm)",
+            "es": "Alto en mm",
+            "fr": "Hauteur en mm",
+            "de": "Höhe in mm",
+            "pt-BR": "Altura em mm",
+            "ru": "Высота в мм",
+            "ar": "الارتفاع بالمللمتر",
+            "hi": "ऊंचाई मिमी में"
           },
           "optional": true,
           "default_value": "297.0"
@@ -181,14 +331,34 @@
         "type": "PageHandle",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "pdf.addPage",
       "descriptions": {
         "zh-CN": "添加PDF文档的page",
-        "en-US": "Add page of PDF"
+        "en-US": "Add page of PDF",
+        "zh-TW": "添加PDF文檔的page",
+        "ja": "PDFページを追加",
+        "ko": "PDF 페이지 추가",
+        "es": "Agregar página al PDF",
+        "fr": "Ajouter une page au PDF",
+        "de": "PDF-Seite hinzufügen",
+        "pt-BR": "Adicionar página ao PDF",
+        "ru": "Добавить страницу в PDF",
+        "ar": "إضافة صفحة إلى PDF",
+        "hi": "PDF में पेज जोड़ें"
       },
       "group": "content",
       "description": "Add page of PDF"
@@ -202,7 +372,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -210,7 +390,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "page_index参数",
-            "en-US": "page_index parameter"
+            "en-US": "page_index parameter",
+            "zh-TW": "page_index參數",
+            "ja": "page_indexパラメータ",
+            "ko": "page_index매개변수",
+            "es": "Parámetro de page_index",
+            "fr": "Paramètre de page_index",
+            "de": "page_index-Parameter",
+            "pt-BR": "Parâmetro de page_index",
+            "ru": "Параметр page_index",
+            "ar": "معلمة page_index",
+            "hi": "page_index पैरामीटर"
           },
           "desc": "page_index parameter",
           "optional": true,
@@ -221,7 +411,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文本字符串",
-            "en-US": "Text string"
+            "en-US": "Text string",
+            "zh-TW": "文字字串",
+            "ja": "テキスト文字列",
+            "ko": "텍스트문자열",
+            "es": "Cadena de texto",
+            "fr": "Chaîne de texte",
+            "de": "Textzeichenkette",
+            "pt-BR": "String de texto",
+            "ru": "Текстовая строка",
+            "ar": "سلسلة نصية",
+            "hi": "टेक्स्ट स्ट्रिंग"
           },
           "desc": "Text string"
         },
@@ -230,7 +430,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "X坐标位置",
-            "en-US": "X coordinate position"
+            "en-US": "X coordinate position",
+            "zh-TW": "X坐標位置",
+            "ja": "X座標位置",
+            "ko": "X 좌표 위치",
+            "es": "Posición coordenada X",
+            "fr": "Position coordonnée X",
+            "de": "X-Koordinatenposition",
+            "pt-BR": "Posição coordenada X",
+            "ru": "Позиция по X",
+            "ar": "موقع الإحداثي X",
+            "hi": "X निर्देशांक स्थिति"
           },
           "desc": "X coordinate position"
         },
@@ -239,7 +449,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Y坐标位置",
-            "en-US": "Y coordinate position"
+            "en-US": "Y coordinate position",
+            "zh-TW": "Y坐標位置",
+            "ja": "Y座標位置",
+            "ko": "Y 좌표 위치",
+            "es": "Posición coordenada Y",
+            "fr": "Position coordonnée Y",
+            "de": "Y-Koordinatenposition",
+            "pt-BR": "Posição coordenada Y",
+            "ru": "Позиция по Y",
+            "ar": "موقع الإحداثي Y",
+            "hi": "Y निर्देशांक स्थिति"
           },
           "desc": "Y coordinate position"
         },
@@ -248,7 +468,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "字号(磅)",
-            "en-US": "Font size pt"
+            "en-US": "Font size pt",
+            "zh-TW": "字號(磅)",
+            "ja": "フォントサイズ pt",
+            "ko": "폰트 크기 pt",
+            "es": "Tamaño de fuente pt",
+            "fr": "Taille de police pt",
+            "de": "Schriftgröße pt",
+            "pt-BR": "Tamanho da fonte pt",
+            "ru": "Размер шрифта pt",
+            "ar": "حجم الخط pt",
+            "hi": "फ़ॉन्ट साइज़ pt"
           },
           "optional": true,
           "default_value": "12.0"
@@ -258,14 +488,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.addText",
       "descriptions": {
         "zh-CN": "添加PDF文档的text",
-        "en-US": "Add text of PDF"
+        "en-US": "Add text of PDF",
+        "zh-TW": "添加PDF文檔的text",
+        "ja": "PDFテキストを追加",
+        "ko": "PDF 텍스트 추가",
+        "es": "Agregar texto al PDF",
+        "fr": "Ajouter du texte au PDF",
+        "de": "PDF-Text hinzufügen",
+        "pt-BR": "Adicionar texto ao PDF",
+        "ru": "Добавить текст в PDF",
+        "ar": "إضافة نص إلى PDF",
+        "hi": "PDF में टेक्स्ट जोड़ें"
       },
       "group": "content",
       "description": "Add text of PDF"
@@ -279,7 +529,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -287,7 +547,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "page_index参数",
-            "en-US": "page_index parameter"
+            "en-US": "page_index parameter",
+            "zh-TW": "page_index參數",
+            "ja": "page_indexパラメータ",
+            "ko": "page_index매개변수",
+            "es": "Parámetro de page_index",
+            "fr": "Paramètre de page_index",
+            "de": "page_index-Parameter",
+            "pt-BR": "Parâmetro de page_index",
+            "ru": "Параметр page_index",
+            "ar": "معلمة page_index",
+            "hi": "page_index पैरामीटर"
           },
           "desc": "page_index parameter",
           "optional": true,
@@ -298,7 +568,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图像路径",
-            "en-US": "Image Path"
+            "en-US": "Image Path",
+            "zh-TW": "圖像路徑",
+            "ja": "画像パス",
+            "ko": "이미지 경로",
+            "es": "Ruta de imagen",
+            "fr": "Chemin de l'image",
+            "de": "Bildpfad",
+            "pt-BR": "Caminho da imagem",
+            "ru": "Путь к изображению",
+            "ar": "مسار الصورة",
+            "hi": "इमेज पथ"
           }
         },
         {
@@ -306,7 +586,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "X坐标位置",
-            "en-US": "X coordinate position"
+            "en-US": "X coordinate position",
+            "zh-TW": "X坐標位置",
+            "ja": "X座標位置",
+            "ko": "X 좌표 위치",
+            "es": "Posición coordenada X",
+            "fr": "Position coordonnée X",
+            "de": "X-Koordinatenposition",
+            "pt-BR": "Posição coordenada X",
+            "ru": "Позиция по X",
+            "ar": "موقع الإحداثي X",
+            "hi": "X निर्देशांक स्थिति"
           },
           "desc": "X coordinate position"
         },
@@ -315,7 +605,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Y坐标位置",
-            "en-US": "Y coordinate position"
+            "en-US": "Y coordinate position",
+            "zh-TW": "Y坐標位置",
+            "ja": "Y座標位置",
+            "ko": "Y 좌표 위치",
+            "es": "Posición coordenada Y",
+            "fr": "Position coordonnée Y",
+            "de": "Y-Koordinatenposition",
+            "pt-BR": "Posição coordenada Y",
+            "ru": "Позиция по Y",
+            "ar": "موقع الإحداثي Y",
+            "hi": "Y निर्देशांक स्थिति"
           },
           "desc": "Y coordinate position"
         },
@@ -324,7 +624,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度(像素)",
-            "en-US": "Width px"
+            "en-US": "Width px",
+            "zh-TW": "寬度(像素)",
+            "ja": "幅(ピクセル)",
+            "ko": "너비 (px)",
+            "es": "Ancho (px)",
+            "fr": "Largeur (px)",
+            "de": "Breite (px)",
+            "pt-BR": "Largura (px)",
+            "ru": "Ширина (пикс.)",
+            "ar": "العرض (بكسل)",
+            "hi": "चौड़ाई (px)"
           }
         },
         {
@@ -332,7 +642,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度(像素)",
-            "en-US": "Height px"
+            "en-US": "Height px",
+            "zh-TW": "高度(像素)",
+            "ja": "高さ(ピクセル)",
+            "ko": "높이 (px)",
+            "es": "Alto (px)",
+            "fr": "Hauteur (px)",
+            "de": "Höhe (px)",
+            "pt-BR": "Altura (px)",
+            "ru": "Высота (пикс.)",
+            "ar": "الارتفاع (بكسل)",
+            "hi": "ऊंचाई (px)"
           }
         }
       ],
@@ -340,14 +660,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.addImage",
       "descriptions": {
         "zh-CN": "添加PDF文档的image",
-        "en-US": "Add image of PDF"
+        "en-US": "Add image of PDF",
+        "zh-TW": "添加PDF文檔的image",
+        "ja": "PDF画像を追加",
+        "ko": "PDF 이미지 추가",
+        "es": "Agregar imagen al PDF",
+        "fr": "Ajouter une image au PDF",
+        "de": "PDF-Bild hinzufügen",
+        "pt-BR": "Adicionar imagem ao PDF",
+        "ru": "Добавить изображение в PDF",
+        "ar": "إضافة صورة إلى PDF",
+        "hi": "PDF में इमेज जोड़ें"
       },
       "group": "content",
       "description": "Add image of PDF"
@@ -361,7 +701,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -369,7 +719,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "page_index参数",
-            "en-US": "page_index parameter"
+            "en-US": "page_index parameter",
+            "zh-TW": "page_index參數",
+            "ja": "page_indexパラメータ",
+            "ko": "page_index매개변수",
+            "es": "Parámetro de page_index",
+            "fr": "Paramètre de page_index",
+            "de": "page_index-Parameter",
+            "pt-BR": "Parâmetro de page_index",
+            "ru": "Параметр page_index",
+            "ar": "معلمة page_index",
+            "hi": "page_index पैरामीटर"
           },
           "desc": "page_index parameter",
           "optional": true,
@@ -380,7 +740,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "起点X坐标（pt）",
-            "en-US": "Start X coordinate in pt"
+            "en-US": "Start X coordinate in pt",
+            "zh-TW": "起點X坐標（pt）",
+            "ja": "開始X座標（pt）",
+            "ko": "시작 X 좌표 (pt)",
+            "es": "Coordenada X inicial (pt)",
+            "fr": "Coordonnée X de début (pt)",
+            "de": "Start-X-Koordinate (pt)",
+            "pt-BR": "Coordenada X inicial (pt)",
+            "ru": "Начальная координата X (pt)",
+            "ar": "إحداثي X البداية (pt)",
+            "hi": "प्रारंभ X निर्देशांक (pt)"
           },
           "desc": "Start X coordinate in pt"
         },
@@ -389,7 +759,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "起点Y坐标（pt）",
-            "en-US": "Start Y coordinate in pt"
+            "en-US": "Start Y coordinate in pt",
+            "zh-TW": "起點Y坐標（pt）",
+            "ja": "開始Y座標（pt）",
+            "ko": "시작 Y 좌표 (pt)",
+            "es": "Coordenada Y inicial (pt)",
+            "fr": "Coordonnée Y de début (pt)",
+            "de": "Start-Y-Koordinate (pt)",
+            "pt-BR": "Coordenada Y inicial (pt)",
+            "ru": "Начальная координата Y (pt)",
+            "ar": "إحداثي Y البداية (pt)",
+            "hi": "प्रारंभ Y निर्देशांक (pt)"
           },
           "desc": "Start Y coordinate in pt"
         },
@@ -398,7 +778,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "终点X坐标（pt）",
-            "en-US": "End X coordinate in pt"
+            "en-US": "End X coordinate in pt",
+            "zh-TW": "終點X坐標（pt）",
+            "ja": "終了X座標（pt）",
+            "ko": "끝 X 좌표 (pt)",
+            "es": "Coordenada X final (pt)",
+            "fr": "Coordonnée X de fin (pt)",
+            "de": "End-X-Koordinate (pt)",
+            "pt-BR": "Coordenada X final (pt)",
+            "ru": "Конечная координата X (pt)",
+            "ar": "إحداثي X النهاية (pt)",
+            "hi": "समाप्ति X निर्देशांक (pt)"
           },
           "desc": "End X coordinate in pt"
         },
@@ -407,7 +797,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "终点Y坐标（pt）",
-            "en-US": "End Y coordinate in pt"
+            "en-US": "End Y coordinate in pt",
+            "zh-TW": "終點Y坐標（pt）",
+            "ja": "終了Y座標（pt）",
+            "ko": "끝 Y 좌표 (pt)",
+            "es": "Coordenada Y final (pt)",
+            "fr": "Coordonnée Y de fin (pt)",
+            "de": "End-Y-Koordinate (pt)",
+            "pt-BR": "Coordenada Y final (pt)",
+            "ru": "Конечная координата Y (pt)",
+            "ar": "إحداثي Y النهاية (pt)",
+            "hi": "समाप्ति Y निर्देशांक (pt)"
           },
           "desc": "End Y coordinate in pt"
         },
@@ -416,7 +816,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "line_width参数",
-            "en-US": "line_width parameter"
+            "en-US": "line_width parameter",
+            "zh-TW": "line_width參數",
+            "ja": "line_widthパラメータ",
+            "ko": "line_width매개변수",
+            "es": "Parámetro de line_width",
+            "fr": "Paramètre de line_width",
+            "de": "line_width-Parameter",
+            "pt-BR": "Parâmetro de line_width",
+            "ru": "Параметр line_width",
+            "ar": "معلمة line_width",
+            "hi": "line_width पैरामीटर"
           },
           "optional": true,
           "default_value": "1.0",
@@ -427,14 +837,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.addLine",
       "descriptions": {
         "zh-CN": "添加PDF文档的line",
-        "en-US": "Add line of PDF"
+        "en-US": "Add line of PDF",
+        "zh-TW": "添加PDF文檔的line",
+        "ja": "PDF線を追加",
+        "ko": "PDF 선 추가",
+        "es": "Agregar línea al PDF",
+        "fr": "Ajouter une ligne au PDF",
+        "de": "PDF-Linie hinzufügen",
+        "pt-BR": "Adicionar linha ao PDF",
+        "ru": "Добавить линию в PDF",
+        "ar": "إضافة خط إلى PDF",
+        "hi": "PDF में रेखा जोड़ें"
       },
       "group": "content",
       "description": "Add line of PDF"
@@ -448,7 +878,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -456,7 +896,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "page_index参数",
-            "en-US": "page_index parameter"
+            "en-US": "page_index parameter",
+            "zh-TW": "page_index參數",
+            "ja": "page_indexパラメータ",
+            "ko": "page_index매개변수",
+            "es": "Parámetro de page_index",
+            "fr": "Paramètre de page_index",
+            "de": "page_index-Parameter",
+            "pt-BR": "Parâmetro de page_index",
+            "ru": "Параметр page_index",
+            "ar": "معلمة page_index",
+            "hi": "page_index पैरामीटर"
           },
           "desc": "page_index parameter",
           "optional": true,
@@ -467,7 +917,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "X坐标位置",
-            "en-US": "X coordinate position"
+            "en-US": "X coordinate position",
+            "zh-TW": "X坐標位置",
+            "ja": "X座標位置",
+            "ko": "X 좌표 위치",
+            "es": "Posición coordenada X",
+            "fr": "Position coordonnée X",
+            "de": "X-Koordinatenposition",
+            "pt-BR": "Posição coordenada X",
+            "ru": "Позиция по X",
+            "ar": "موقع الإحداثي X",
+            "hi": "X निर्देशांक स्थिति"
           },
           "desc": "X coordinate position"
         },
@@ -476,7 +936,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Y坐标位置",
-            "en-US": "Y coordinate position"
+            "en-US": "Y coordinate position",
+            "zh-TW": "Y坐標位置",
+            "ja": "Y座標位置",
+            "ko": "Y 좌표 위치",
+            "es": "Posición coordenada Y",
+            "fr": "Position coordonnée Y",
+            "de": "Y-Koordinatenposition",
+            "pt-BR": "Posição coordenada Y",
+            "ru": "Позиция по Y",
+            "ar": "موقع الإحداثي Y",
+            "hi": "Y निर्देशांक स्थिति"
           },
           "desc": "Y coordinate position"
         },
@@ -485,7 +955,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "矩形宽度（pt）",
-            "en-US": "Rectangle width in pt"
+            "en-US": "Rectangle width in pt",
+            "zh-TW": "矩形寬度（pt）",
+            "ja": "矩形幅（pt）",
+            "ko": "사각형 너비 (pt)",
+            "es": "Ancho del rectángulo en pt",
+            "fr": "Largeur du rectangle en pt",
+            "de": "Rechteckbreite in pt",
+            "pt-BR": "Largura do retângulo em pt",
+            "ru": "Ширина прямоугольника в pt",
+            "ar": "عرض المستطيل بالنقاط",
+            "hi": "आयत चौड़ाई pt में"
           },
           "desc": "Rectangle width in pt"
         },
@@ -494,7 +974,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "矩形高度（pt）",
-            "en-US": "Rectangle height in pt"
+            "en-US": "Rectangle height in pt",
+            "zh-TW": "矩形高度（pt）",
+            "ja": "矩形高さ（pt）",
+            "ko": "사각형 높이 (pt)",
+            "es": "Alto del rectángulo en pt",
+            "fr": "Hauteur du rectangle en pt",
+            "de": "Rechteckhöhe in pt",
+            "pt-BR": "Altura do retângulo em pt",
+            "ru": "Высота прямоугольника в pt",
+            "ar": "ارتفاع المستطيل بالنقاط",
+            "hi": "आयत ऊंचाई pt में"
           },
           "desc": "Rectangle height in pt"
         },
@@ -503,7 +993,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "填充颜色",
-            "en-US": "Fill color"
+            "en-US": "Fill color",
+            "zh-TW": "填充顏色",
+            "ja": "填充カラー",
+            "ko": "채우기 색상",
+            "es": "Color de relleno",
+            "fr": "Couleur de remplissage",
+            "de": "Füllfarbe",
+            "pt-BR": "Cor de preenchimento",
+            "ru": "Цвет заливки",
+            "ar": "لون التعبئة",
+            "hi": "भरण रंग"
           },
           "optional": true,
           "default_value": "false"
@@ -513,7 +1013,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "line_width参数",
-            "en-US": "line_width parameter"
+            "en-US": "line_width parameter",
+            "zh-TW": "line_width參數",
+            "ja": "line_widthパラメータ",
+            "ko": "line_width매개변수",
+            "es": "Parámetro de line_width",
+            "fr": "Paramètre de line_width",
+            "de": "line_width-Parameter",
+            "pt-BR": "Parâmetro de line_width",
+            "ru": "Параметр line_width",
+            "ar": "معلمة line_width",
+            "hi": "line_width पैरामीटर"
           },
           "optional": true,
           "default_value": "1.0",
@@ -524,14 +1034,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.addRect",
       "descriptions": {
         "zh-CN": "添加PDF文档的rect",
-        "en-US": "Add rect of PDF"
+        "en-US": "Add rect of PDF",
+        "zh-TW": "添加PDF文檔的rect",
+        "ja": "PDF矩形を追加",
+        "ko": "PDF 사각형 추가",
+        "es": "Agregar rectángulo al PDF",
+        "fr": "Ajouter un rectangle au PDF",
+        "de": "PDF-Rechteck hinzufügen",
+        "pt-BR": "Adicionar retângulo ao PDF",
+        "ru": "Добавить прямоугольник в PDF",
+        "ar": "إضافة مستطيل إلى PDF",
+        "hi": "PDF में आयत जोड़ें"
       },
       "group": "content",
       "description": "Add rect of PDF"
@@ -545,7 +1075,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -553,7 +1093,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "page_index参数",
-            "en-US": "page_index parameter"
+            "en-US": "page_index parameter",
+            "zh-TW": "page_index參數",
+            "ja": "page_indexパラメータ",
+            "ko": "page_index매개변수",
+            "es": "Parámetro de page_index",
+            "fr": "Paramètre de page_index",
+            "de": "page_index-Parameter",
+            "pt-BR": "Parâmetro de page_index",
+            "ru": "Параметр page_index",
+            "ar": "معلمة page_index",
+            "hi": "page_index पैरामीटर"
           },
           "desc": "page_index parameter",
           "optional": true,
@@ -564,7 +1114,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "X坐标位置",
-            "en-US": "X coordinate position"
+            "en-US": "X coordinate position",
+            "zh-TW": "X坐標位置",
+            "ja": "X座標位置",
+            "ko": "X 좌표 위치",
+            "es": "Posición coordenada X",
+            "fr": "Position coordonnée X",
+            "de": "X-Koordinatenposition",
+            "pt-BR": "Posição coordenada X",
+            "ru": "Позиция по X",
+            "ar": "موقع الإحداثي X",
+            "hi": "X निर्देशांक स्थिति"
           },
           "desc": "X coordinate position"
         },
@@ -573,7 +1133,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Y坐标位置",
-            "en-US": "Y coordinate position"
+            "en-US": "Y coordinate position",
+            "zh-TW": "Y坐標位置",
+            "ja": "Y座標位置",
+            "ko": "Y 좌표 위치",
+            "es": "Posición coordenada Y",
+            "fr": "Position coordonnée Y",
+            "de": "Y-Koordinatenposition",
+            "pt-BR": "Posição coordenada Y",
+            "ru": "Позиция по Y",
+            "ar": "موقع الإحداثي Y",
+            "hi": "Y निर्देशांक स्थिति"
           },
           "desc": "Y coordinate position"
         },
@@ -582,7 +1152,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "HTTP请求头",
-            "en-US": "HTTP headers"
+            "en-US": "HTTP headers",
+            "zh-TW": "HTTP請求頭",
+            "ja": "HTTPリクエスト头",
+            "ko": "HTTP 헤더",
+            "es": "Encabezados HTTP",
+            "fr": "En-têtes HTTP",
+            "de": "HTTP-Header",
+            "pt-BR": "Cabeçalhos HTTP",
+            "ru": "HTTP-заголовки",
+            "ar": "رؤوس HTTP",
+            "hi": "HTTP हेडर"
           },
           "desc": "HTTP headers"
         },
@@ -591,7 +1171,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "表格行数据（二维数组）",
-            "en-US": "Table row data (2D array)"
+            "en-US": "Table row data (2D array)",
+            "zh-TW": "表格行數據（二維陣列）",
+            "ja": "テーブル行データ（2D配列）",
+            "ko": "테이블 행 데이터 (2차원 배열)",
+            "es": "Datos de fila de tabla (matriz 2D)",
+            "fr": "Données de ligne de tableau (tableau 2D)",
+            "de": "Tabellenzeilendaten (2D-Array)",
+            "pt-BR": "Dados de linha da tabela (array 2D)",
+            "ru": "Данные строк таблицы (2D-массив)",
+            "ar": "بيانات صف الجدول (مصفوفة ثنائية)",
+            "hi": "टेबल पंक्ति डेटा (2D ऐरे)"
           },
           "desc": "Table row data (2D array)"
         }
@@ -600,14 +1190,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.addTable",
       "descriptions": {
         "zh-CN": "添加PDF文档的table",
-        "en-US": "Add table of PDF"
+        "en-US": "Add table of PDF",
+        "zh-TW": "添加PDF文檔的table",
+        "ja": "PDFテーブルを追加",
+        "ko": "PDF 테이블 추가",
+        "es": "Agregar tabla al PDF",
+        "fr": "Ajouter un tableau au PDF",
+        "de": "PDF-Tabelle hinzufügen",
+        "pt-BR": "Adicionar tabela ao PDF",
+        "ru": "Добавить таблицу в PDF",
+        "ar": "إضافة جدول إلى PDF",
+        "hi": "PDF में टेबल जोड़ें"
       },
       "group": "content",
       "description": "Add table of PDF"
@@ -621,7 +1231,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -629,7 +1249,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         }
@@ -638,14 +1268,34 @@
         "type": "SaveResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "pdf.save",
       "descriptions": {
         "zh-CN": "将对PDF文档的所有修改保存到磁盘",
-        "en-US": "Save all PDF document changes to disk"
+        "en-US": "Save all PDF document changes to disk",
+        "zh-TW": "將對PDF文檔的所有修改保存到磁盤",
+        "ja": "すべてのPDFドキュメントの変更をディスクに保存",
+        "ko": "모든 PDF 문서 변경 사항을 디스크에 저장",
+        "es": "Guardar todos los cambios del documento PDF",
+        "fr": "Enregistrer toutes les modifications du PDF",
+        "de": "Alle PDF-Änderungen auf Festplatte speichern",
+        "pt-BR": "Salvar todas as alterações do PDF",
+        "ru": "Сохранить все изменения PDF-документа на диск",
+        "ar": "حفظ جميع تغييرات مستند PDF على القرص",
+        "hi": "सभी PDF दस्तावेज़ परिवर्तन डिस्क में सहेजें"
       },
       "group": "file",
       "description": "Save all PDF document changes to disk"
@@ -659,7 +1309,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         }
       ],
@@ -667,14 +1327,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.close",
       "descriptions": {
         "zh-CN": "关闭PDF文档并释放内存资源",
-        "en-US": "Close PDF document and release memory"
+        "en-US": "Close PDF document and release memory",
+        "zh-TW": "關閉PDF文檔並釋放記憶體資源",
+        "ja": "PDFドキュメントを閉じてメモリを解放",
+        "ko": "PDF 문서 닫기 및 메모리 해제",
+        "es": "Cerrar documento PDF y liberar memoria",
+        "fr": "Fermer le PDF et libérer la mémoire",
+        "de": "PDF-Dokument schließen und Speicher freigeben",
+        "pt-BR": "Fechar PDF e liberar memória",
+        "ru": "Закрыть PDF и освободить память",
+        "ar": "إغلاق مستند PDF وتحرير الذاكرة",
+        "hi": "PDF दस्तावेज़ बंद करें और मेमोरी मुक्त करें"
       },
       "group": "file",
       "description": "Close PDF document and release memory"
@@ -688,7 +1368,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -696,7 +1386,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "font_family参数",
-            "en-US": "font_family parameter"
+            "en-US": "font_family parameter",
+            "zh-TW": "font_family參數",
+            "ja": "font_familyパラメータ",
+            "ko": "font_family매개변수",
+            "es": "Parámetro de font_family",
+            "fr": "Paramètre de font_family",
+            "de": "font_family-Parameter",
+            "pt-BR": "Parâmetro de font_family",
+            "ru": "Параметр font_family",
+            "ar": "معلمة font_family",
+            "hi": "font_family पैरामीटर"
           },
           "desc": "font_family parameter"
         },
@@ -705,7 +1405,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "字体路径",
-            "en-US": "Font Path"
+            "en-US": "Font Path",
+            "zh-TW": "字体路徑",
+            "ja": "フォントパス",
+            "ko": "폰트경로",
+            "es": "Ruta de la fuente",
+            "fr": "Chemin de la police",
+            "de": "Schriftartpfad",
+            "pt-BR": "Caminho da fonte",
+            "ru": "Путь к шрифту",
+            "ar": "مسار الخط",
+            "hi": "फ़ॉन्ट पथ"
           }
         }
       ],
@@ -713,13 +1423,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "字体 ID",
-          "en-US": "Font ID"
+          "en-US": "Font ID",
+          "zh-TW": "字体 ID",
+          "ja": "フォント ID",
+          "ko": "폰트 ID",
+          "es": "ID de fuente",
+          "fr": "ID de police",
+          "de": "Schriftart-ID",
+          "pt-BR": "ID da fonte",
+          "ru": "ID шрифта",
+          "ar": "معرف الخط",
+          "hi": "फ़ॉन्ट आईडी"
         }
       },
       "bridge_path": "pdf.registerFont",
       "descriptions": {
         "zh-CN": "注册PDF文档的font",
-        "en-US": "Register font of PDF"
+        "en-US": "Register font of PDF",
+        "zh-TW": "注册PDF文檔的font",
+        "ja": "PDFフォントを登録",
+        "ko": "PDF 글꼴 등록",
+        "es": "Registrar fuente en PDF",
+        "fr": "Enregistrer la police PDF",
+        "de": "PDF-Schriftart registrieren",
+        "pt-BR": "Registrar fonte do PDF",
+        "ru": "Зарегистрировать шрифт PDF",
+        "ar": "تسجيل خط PDF",
+        "hi": "PDF फ़ॉन्ट पंजीकृत करें"
       },
       "group": "content",
       "description": "Register font of PDF"
@@ -733,7 +1463,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "input_paths参数",
-            "en-US": "input_paths parameter"
+            "en-US": "input_paths parameter",
+            "zh-TW": "input_paths參數",
+            "ja": "input_pathsパラメータ",
+            "ko": "input_paths매개변수",
+            "es": "Parámetro de rutas de entrada",
+            "fr": "Paramètre de chemins d'entrée",
+            "de": "Eingabepfade-Parameter",
+            "pt-BR": "Parâmetro de caminhos de entrada",
+            "ru": "Параметр входных путей",
+            "ar": "معلمة مسارات الإدخال",
+            "hi": "इनपुट पथ पैरामीटर"
           },
           "desc": "input_paths parameter"
         },
@@ -742,7 +1482,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         },
@@ -751,7 +1501,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -760,14 +1520,34 @@
         "type": "SaveResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "pdf.merge",
       "descriptions": {
         "zh-CN": "mergePDF文档",
-        "en-US": "Merge PDF"
+        "en-US": "Merge PDF",
+        "zh-TW": "mergePDF文檔",
+        "ja": "PDFを結合",
+        "ko": "PDF 병합",
+        "es": "Fusionar PDF",
+        "fr": "Fusionner les PDF",
+        "de": "PDF zusammenführen",
+        "pt-BR": "Mesclar PDF",
+        "ru": "Объединить PDF",
+        "ar": "دمج PDF",
+        "hi": "PDF मर्ज"
       },
       "group": "file",
       "description": "Merge PDF"
@@ -781,7 +1561,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入路径",
-            "en-US": "Input Path"
+            "en-US": "Input Path",
+            "zh-TW": "輸入路徑",
+            "ja": "入力パス",
+            "ko": "입력경로",
+            "es": "Ruta de entrada",
+            "fr": "Chemin d'entrée",
+            "de": "Eingabepfad",
+            "pt-BR": "Caminho de entrada",
+            "ru": "Входной путь",
+            "ar": "مسار الإدخال",
+            "hi": "इनपुट पथ"
           }
         },
         {
@@ -789,7 +1579,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "output_dir参数",
-            "en-US": "output_dir parameter"
+            "en-US": "output_dir parameter",
+            "zh-TW": "output_dir參數",
+            "ja": "output_dirパラメータ",
+            "ko": "output_dir매개변수",
+            "es": "Parámetro de directorio de salida",
+            "fr": "Paramètre de répertoire de sortie",
+            "de": "Ausgabeverzeichnis-Parameter",
+            "pt-BR": "Parâmetro de diretório de saída",
+            "ru": "Параметр выходного каталога",
+            "ar": "معلمة مجلد الإخراج",
+            "hi": "आउटपुट डायरेक्टरी पैरामीटर"
           },
           "desc": "output_dir parameter"
         },
@@ -798,7 +1598,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "每文件页数",
-            "en-US": "Pages per file"
+            "en-US": "Pages per file",
+            "zh-TW": "每檔案頁數",
+            "ja": "ファイルあたりのページ数",
+            "ko": "파일당 페이지 수",
+            "es": "Páginas por archivo",
+            "fr": "Pages par fichier",
+            "de": "Seiten pro Datei",
+            "pt-BR": "Páginas por arquivo",
+            "ru": "Страниц на файл",
+            "ar": "صفحات لكل ملف",
+            "hi": "प्रति फ़ाइल पेज"
           },
           "optional": true,
           "default_value": "1"
@@ -808,14 +1618,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "pdf.split",
       "descriptions": {
         "zh-CN": "splitPDF文档",
-        "en-US": "Split PDF"
+        "en-US": "Split PDF",
+        "zh-TW": "splitPDF文檔",
+        "ja": "PDFを分割",
+        "ko": "PDF 분할",
+        "es": "Dividir PDF",
+        "fr": "Diviser le PDF",
+        "de": "PDF aufteilen",
+        "pt-BR": "Dividir PDF",
+        "ru": "Разделить PDF",
+        "ar": "تقسيم PDF",
+        "hi": "PDF विभाजन"
       },
       "group": "file",
       "description": "Split PDF"
@@ -829,7 +1659,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -838,7 +1678,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "page_start参数",
-            "en-US": "page_start parameter"
+            "en-US": "page_start parameter",
+            "zh-TW": "page_start參數",
+            "ja": "page_startパラメータ",
+            "ko": "page_start매개변수",
+            "es": "Parámetro de page_start",
+            "fr": "Paramètre de page_start",
+            "de": "page_start-Parameter",
+            "pt-BR": "Parâmetro de page_start",
+            "ru": "Параметр page_start",
+            "ar": "معلمة page_start",
+            "hi": "page_start पैरामीटर"
           },
           "optional": true,
           "default_value": "0",
@@ -849,7 +1699,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "page_end参数",
-            "en-US": "page_end parameter"
+            "en-US": "page_end parameter",
+            "zh-TW": "page_end參數",
+            "ja": "page_endパラメータ",
+            "ko": "page_end매개변수",
+            "es": "Parámetro de page_end",
+            "fr": "Paramètre de page_end",
+            "de": "page_end-Parameter",
+            "pt-BR": "Parâmetro de page_end",
+            "ru": "Параметр page_end",
+            "ar": "معلمة page_end",
+            "hi": "page_end पैरामीटर"
           },
           "optional": true,
           "desc": "page_end parameter"
@@ -859,7 +1719,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -868,14 +1738,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "pdf.extractText",
       "descriptions": {
         "zh-CN": "提取PDF文档的text",
-        "en-US": "Extract text of PDF"
+        "en-US": "Extract text of PDF",
+        "zh-TW": "提取PDF文檔的text",
+        "ja": "PDFからテキストを抽出",
+        "ko": "PDF 텍스트 추출",
+        "es": "Extraer texto del PDF",
+        "fr": "Extraire le texte du PDF",
+        "de": "PDF-Text extrahieren",
+        "pt-BR": "Extrair texto do PDF",
+        "ru": "Извлечь текст из PDF",
+        "ar": "استخراج نص من PDF",
+        "hi": "PDF से टेक्स्ट एक्सट्रैक्ट करें"
       },
       "group": "extract",
       "description": "Extract text of PDF"
@@ -889,7 +1779,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -898,7 +1798,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "output_dir参数",
-            "en-US": "output_dir parameter"
+            "en-US": "output_dir parameter",
+            "zh-TW": "output_dir參數",
+            "ja": "output_dirパラメータ",
+            "ko": "output_dir매개변수",
+            "es": "Parámetro de directorio de salida",
+            "fr": "Paramètre de répertoire de sortie",
+            "de": "Ausgabeverzeichnis-Parameter",
+            "pt-BR": "Parâmetro de diretório de saída",
+            "ru": "Параметр выходного каталога",
+            "ar": "معلمة مجلد الإخراج",
+            "hi": "आउटपुट डायरेक्टरी पैरामीटर"
           },
           "desc": "output_dir parameter"
         }
@@ -907,14 +1817,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "pdf.toImages",
       "descriptions": {
         "zh-CN": "toPDF文档的images",
-        "en-US": "To images of PDF"
+        "en-US": "To images of PDF",
+        "zh-TW": "toPDF文檔的images",
+        "ja": "PDFを画像に変換",
+        "ko": "PDF를 이미지로 변환",
+        "es": "Convertir PDF a imágenes",
+        "fr": "Convertir PDF en images",
+        "de": "PDF in Bilder konvertieren",
+        "pt-BR": "Converter PDF em imagens",
+        "ru": "Конвертировать PDF в изображения",
+        "ar": "تحويل PDF إلى صور",
+        "hi": "PDF को इमेज में बदलें"
       },
       "group": "extract",
       "description": "To images of PDF"
@@ -928,7 +1858,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入路径",
-            "en-US": "Input Path"
+            "en-US": "Input Path",
+            "zh-TW": "輸入路徑",
+            "ja": "入力パス",
+            "ko": "입력경로",
+            "es": "Ruta de entrada",
+            "fr": "Chemin d'entrée",
+            "de": "Eingabepfad",
+            "pt-BR": "Caminho de entrada",
+            "ru": "Входной путь",
+            "ar": "مسار الإدخال",
+            "hi": "इनपुट पथ"
           }
         },
         {
@@ -936,7 +1876,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -944,7 +1894,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文本字符串",
-            "en-US": "Text string"
+            "en-US": "Text string",
+            "zh-TW": "文字字串",
+            "ja": "テキスト文字列",
+            "ko": "텍스트문자열",
+            "es": "Cadena de texto",
+            "fr": "Chaîne de texte",
+            "de": "Textzeichenkette",
+            "pt-BR": "String de texto",
+            "ru": "Текстовая строка",
+            "ar": "سلسلة نصية",
+            "hi": "टेक्स्ट स्ट्रिंग"
           },
           "desc": "Text string"
         },
@@ -953,7 +1913,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "字号(磅)",
-            "en-US": "Font size pt"
+            "en-US": "Font size pt",
+            "zh-TW": "字號(磅)",
+            "ja": "フォントサイズ pt",
+            "ko": "폰트 크기 pt",
+            "es": "Tamaño de fuente pt",
+            "fr": "Taille de police pt",
+            "de": "Schriftgröße pt",
+            "pt-BR": "Tamanho da fonte pt",
+            "ru": "Размер шрифта pt",
+            "ar": "حجم الخط pt",
+            "hi": "फ़ॉन्ट साइज़ pt"
           },
           "optional": true,
           "default_value": "48.0"
@@ -963,7 +1933,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "透明度 0-1",
-            "en-US": "Opacity 0-1"
+            "en-US": "Opacity 0-1",
+            "zh-TW": "透明度 0-1",
+            "ja": "不透明度 0-1",
+            "ko": "불투명도 0-1",
+            "es": "Opacidad 0-1",
+            "fr": "Opacité 0-1",
+            "de": "Deckkraft 0-1",
+            "pt-BR": "Opacidade 0-1",
+            "ru": "Прозрачность 0-1",
+            "ar": "الشفافية 0-1",
+            "hi": "अपारदर्शिता 0-1"
           },
           "optional": true,
           "default_value": "0.3"
@@ -973,7 +1953,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "旋转角度",
-            "en-US": "Rotation degrees"
+            "en-US": "Rotation degrees",
+            "zh-TW": "旋轉角度",
+            "ja": "回転角度",
+            "ko": "회전 각도",
+            "es": "Grados de rotación",
+            "fr": "Degrés de rotation",
+            "de": "Rotationsgrad",
+            "pt-BR": "Graus de rotação",
+            "ru": "Градусы поворота",
+            "ar": "درجات الدوران",
+            "hi": "रोटेशन डिग्री"
           },
           "optional": true,
           "default_value": "45.0"
@@ -983,14 +1973,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.addWatermark",
       "descriptions": {
         "zh-CN": "添加PDF文档的watermark",
-        "en-US": "Add watermark of PDF"
+        "en-US": "Add watermark of PDF",
+        "zh-TW": "添加PDF文檔的watermark",
+        "ja": "PDFウォーターマークを追加",
+        "ko": "PDF 워터마크 추가",
+        "es": "Agregar marca de agua al PDF",
+        "fr": "Ajouter un filigrane au PDF",
+        "de": "PDF-Wasserzeichen hinzufügen",
+        "pt-BR": "Adicionar marca d'água ao PDF",
+        "ru": "Добавить водяной знак в PDF",
+        "ar": "إضافة علامة مائية إلى PDF",
+        "hi": "PDF में वॉटरमार्क जोड़ें"
       },
       "group": "content",
       "description": "Add watermark of PDF"
@@ -1004,7 +2014,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -1012,7 +2032,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "页码索引",
-            "en-US": "Page index"
+            "en-US": "Page index",
+            "zh-TW": "頁碼索引",
+            "ja": "ページインデックス",
+            "ko": "페이지 인덱스",
+            "es": "Índice de página",
+            "fr": "Index de page",
+            "de": "Seitenindex",
+            "pt-BR": "Índice da página",
+            "ru": "Индекс страницы",
+            "ar": "فهرس الصفحة",
+            "hi": "पेज इंडेक्स"
           },
           "optional": true,
           "default_value": "0"
@@ -1022,7 +2052,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "X坐标位置",
-            "en-US": "X coordinate position"
+            "en-US": "X coordinate position",
+            "zh-TW": "X坐標位置",
+            "ja": "X座標位置",
+            "ko": "X 좌표 위치",
+            "es": "Posición coordenada X",
+            "fr": "Position coordonnée X",
+            "de": "X-Koordinatenposition",
+            "pt-BR": "Posição coordenada X",
+            "ru": "Позиция по X",
+            "ar": "موقع الإحداثي X",
+            "hi": "X निर्देशांक स्थिति"
           },
           "desc": "X coordinate position"
         },
@@ -1031,7 +2071,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Y坐标位置",
-            "en-US": "Y coordinate position"
+            "en-US": "Y coordinate position",
+            "zh-TW": "Y坐標位置",
+            "ja": "Y座標位置",
+            "ko": "Y 좌표 위치",
+            "es": "Posición coordenada Y",
+            "fr": "Position coordonnée Y",
+            "de": "Y-Koordinatenposition",
+            "pt-BR": "Posição coordenada Y",
+            "ru": "Позиция по Y",
+            "ar": "موقع الإحداثي Y",
+            "hi": "Y निर्देशांक स्थिति"
           },
           "desc": "Y coordinate position"
         },
@@ -1040,7 +2090,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "链接区域宽度（pt）",
-            "en-US": "Link area width in pt"
+            "en-US": "Link area width in pt",
+            "zh-TW": "鏈接區域寬度（pt）",
+            "ja": "リンク領域の幅（pt）",
+            "ko": "링크 영역 너비 (pt)",
+            "es": "Ancho del área de enlace en pt",
+            "fr": "Largeur de la zone de lien en pt",
+            "de": "Linkbereichsbreite in pt",
+            "pt-BR": "Largura da área de link em pt",
+            "ru": "Ширина области ссылки в pt",
+            "ar": "عرض منطقة الرابط بالنقاط",
+            "hi": "लिंक क्षेत्र चौड़ाई pt में"
           },
           "desc": "Link area width in pt"
         },
@@ -1049,7 +2109,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "链接区域高度（pt）",
-            "en-US": "Link area height in pt"
+            "en-US": "Link area height in pt",
+            "zh-TW": "鏈接區域高度（pt）",
+            "ja": "リンク領域の高さ（pt）",
+            "ko": "링크 영역 높이 (pt)",
+            "es": "Alto del área de enlace en pt",
+            "fr": "Hauteur de la zone de lien en pt",
+            "de": "Linkbereichshöhe in pt",
+            "pt-BR": "Altura da área de link em pt",
+            "ru": "Высота области ссылки в pt",
+            "ar": "ارتفاع منطقة الرابط بالنقاط",
+            "hi": "लिंक क्षेत्र ऊंचाई pt में"
           },
           "desc": "Link area height in pt"
         },
@@ -1058,7 +2128,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address"
         }
@@ -1067,14 +2147,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.addLink",
       "descriptions": {
         "zh-CN": "添加PDF文档的link",
-        "en-US": "Add link of PDF"
+        "en-US": "Add link of PDF",
+        "zh-TW": "添加PDF文檔的link",
+        "ja": "PDFリンクを追加",
+        "ko": "PDF 링크 추가",
+        "es": "Agregar enlace al PDF",
+        "fr": "Ajouter un lien au PDF",
+        "de": "PDF-Link hinzufügen",
+        "pt-BR": "Adicionar link ao PDF",
+        "ru": "Добавить ссылку в PDF",
+        "ar": "إضافة رابط إلى PDF",
+        "hi": "PDF में लिंक जोड़ें"
       },
       "group": "content",
       "description": "Add link of PDF"
@@ -1088,7 +2188,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -1097,14 +2207,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "pdf.getBookmarks",
       "descriptions": {
         "zh-CN": "获取PDF文档的bookmarks信息",
-        "en-US": "Get bookmarks info of PDF"
+        "en-US": "Get bookmarks info of PDF",
+        "zh-TW": "取得PDF文檔的bookmarks資訊",
+        "ja": "PDFブックマーク情報を取得",
+        "ko": "PDF 북마크 정보 가져오기",
+        "es": "Obtener marcadores del PDF",
+        "fr": "Obtenir les signets du PDF",
+        "de": "PDF-Lesezeichen-Informationen abrufen",
+        "pt-BR": "Obter marcadores do PDF",
+        "ru": "Получить информацию о закладках PDF",
+        "ar": "الحصول على معلومات إشارات PDF المرجعية",
+        "hi": "PDF बुकमार्क जानकारी प्राप्त करें"
       },
       "group": "navigate",
       "description": "Get bookmarks info of PDF"
@@ -1118,7 +2248,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -1126,7 +2266,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "对话框标题",
-            "en-US": "Dialog title"
+            "en-US": "Dialog title",
+            "zh-TW": "對話框標題",
+            "ja": "ダイアログタイトル",
+            "ko": "대화상자제목",
+            "es": "Título del diálogo",
+            "fr": "Titre du dialogue",
+            "de": "Dialogtitel",
+            "pt-BR": "Título do diálogo",
+            "ru": "Заголовок диалога",
+            "ar": "عنوان الحوار",
+            "hi": "डायलॉग शीर्षक"
           },
           "optional": true
         },
@@ -1135,7 +2285,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "页码索引",
-            "en-US": "Page index"
+            "en-US": "Page index",
+            "zh-TW": "頁碼索引",
+            "ja": "ページインデックス",
+            "ko": "페이지 인덱스",
+            "es": "Índice de página",
+            "fr": "Index de page",
+            "de": "Seitenindex",
+            "pt-BR": "Índice da página",
+            "ru": "Индекс страницы",
+            "ar": "فهرس الصفحة",
+            "hi": "पेज इंडेक्स"
           },
           "optional": true,
           "default_value": "0"
@@ -1145,14 +2305,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.addBookmark",
       "descriptions": {
         "zh-CN": "添加PDF文档的bookmark",
-        "en-US": "Add bookmark of PDF"
+        "en-US": "Add bookmark of PDF",
+        "zh-TW": "添加PDF文檔的bookmark",
+        "ja": "PDFブックマークを追加",
+        "ko": "PDF 북마크 추가",
+        "es": "Agregar marcador al PDF",
+        "fr": "Ajouter un signet au PDF",
+        "de": "PDF-Lesezeichen hinzufügen",
+        "pt-BR": "Adicionar marcador ao PDF",
+        "ru": "Добавить закладку в PDF",
+        "ar": "إضافة إشارة مرجعية إلى PDF",
+        "hi": "PDF में बुकमार्क जोड़ें"
       },
       "group": "navigate",
       "description": "Add bookmark of PDF"
@@ -1166,7 +2346,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入路径",
-            "en-US": "Input Path"
+            "en-US": "Input Path",
+            "zh-TW": "輸入路徑",
+            "ja": "入力パス",
+            "ko": "입력경로",
+            "es": "Ruta de entrada",
+            "fr": "Chemin d'entrée",
+            "de": "Eingabepfad",
+            "pt-BR": "Caminho de entrada",
+            "ru": "Входной путь",
+            "ar": "مسار الإدخال",
+            "hi": "इनपुट पथ"
           }
         },
         {
@@ -1174,7 +2364,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -1182,7 +2382,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "page_index参数",
-            "en-US": "page_index parameter"
+            "en-US": "page_index parameter",
+            "zh-TW": "page_index參數",
+            "ja": "page_indexパラメータ",
+            "ko": "page_index매개변수",
+            "es": "Parámetro de page_index",
+            "fr": "Paramètre de page_index",
+            "de": "page_index-Parameter",
+            "pt-BR": "Parâmetro de page_index",
+            "ru": "Параметр page_index",
+            "ar": "معلمة page_index",
+            "hi": "page_index पैरामीटर"
           },
           "desc": "page_index parameter",
           "optional": true,
@@ -1193,7 +2403,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "旋转角度（90/180/270）",
-            "en-US": "Rotation angle (90/180/270)"
+            "en-US": "Rotation angle (90/180/270)",
+            "zh-TW": "旋轉角度（90/180/270）",
+            "ja": "回転角度（90/180/270）",
+            "ko": "회전 각도 (90/180/270)",
+            "es": "Ángulo de rotación (90/180/270)",
+            "fr": "Angle de rotation (90/180/270)",
+            "de": "Drehwinkel (90/180/270)",
+            "pt-BR": "Ângulo de rotação (90/180/270)",
+            "ru": "Угол поворота (90/180/270)",
+            "ar": "زاوية الدوران (90/180/270)",
+            "hi": "रोटेशन कोण (90/180/270)"
           },
           "desc": "Rotation angle (90/180/270)"
         }
@@ -1202,14 +2422,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.rotatePage",
       "descriptions": {
         "zh-CN": "rotatePDF文档的page",
-        "en-US": "Rotate page of PDF"
+        "en-US": "Rotate page of PDF",
+        "zh-TW": "rotatePDF文檔的page",
+        "ja": "PDFページを回転",
+        "ko": "PDF 페이지 회전",
+        "es": "Rotar página del PDF",
+        "fr": "Pivoter la page du PDF",
+        "de": "PDF-Seite drehen",
+        "pt-BR": "Rotacionar página do PDF",
+        "ru": "Повернуть страницу PDF",
+        "ar": "تدوير صفحة PDF",
+        "hi": "PDF पेज घुमाएं"
       },
       "group": "page",
       "description": "Rotate page of PDF"
@@ -1223,7 +2463,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1232,7 +2482,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "页码索引",
-            "en-US": "Page index"
+            "en-US": "Page index",
+            "zh-TW": "頁碼索引",
+            "ja": "ページインデックス",
+            "ko": "페이지 인덱스",
+            "es": "Índice de página",
+            "fr": "Index de page",
+            "de": "Seitenindex",
+            "pt-BR": "Índice da página",
+            "ru": "Индекс страницы",
+            "ar": "فهرس الصفحة",
+            "hi": "पेज इंडेक्स"
           },
           "optional": true,
           "default_value": "0"
@@ -1242,14 +2502,34 @@
         "type": "PageDimensions",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "pdf.pageDimensions",
       "descriptions": {
         "zh-CN": "pagePDF文档的dimensions",
-        "en-US": "Page dimensions of PDF"
+        "en-US": "Page dimensions of PDF",
+        "zh-TW": "pagePDF文檔的dimensions",
+        "ja": "PDFページサイズ",
+        "ko": "PDF 페이지 크기",
+        "es": "Dimensiones de página del PDF",
+        "fr": "Dimensions de page du PDF",
+        "de": "PDF-Seitenmaße",
+        "pt-BR": "Dimensões da página do PDF",
+        "ru": "Размеры страницы PDF",
+        "ar": "أبعاد صفحة PDF",
+        "hi": "PDF पेज आयाम"
       },
       "group": "page",
       "description": "Page dimensions of PDF"
@@ -1263,7 +2543,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入路径",
-            "en-US": "Input Path"
+            "en-US": "Input Path",
+            "zh-TW": "輸入路徑",
+            "ja": "入力パス",
+            "ko": "입력경로",
+            "es": "Ruta de entrada",
+            "fr": "Chemin d'entrée",
+            "de": "Eingabepfad",
+            "pt-BR": "Caminho de entrada",
+            "ru": "Входной путь",
+            "ar": "مسار الإدخال",
+            "hi": "इनपुट पथ"
           }
         },
         {
@@ -1271,7 +2561,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -1279,7 +2579,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "用户密码",
-            "en-US": "User Password"
+            "en-US": "User Password",
+            "zh-TW": "用戶密碼",
+            "ja": "ユーザーパスワード",
+            "ko": "사용자비밀번호",
+            "es": "Contraseña de usuario",
+            "fr": "Mot de passe utilisateur",
+            "de": "Benutzerpasswort",
+            "pt-BR": "Senha do usuário",
+            "ru": "Пароль пользователя",
+            "ar": "كلمة مرور المستخدم",
+            "hi": "उपयोगकर्ता पासवर्ड"
           }
         }
       ],
@@ -1287,14 +2597,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.setPassword",
       "descriptions": {
         "zh-CN": "设置PDF文档的password属性",
-        "en-US": "Set password property of PDF"
+        "en-US": "Set password property of PDF",
+        "zh-TW": "設定PDF文檔的password屬性",
+        "ja": "PDFのパスワード属性を設定",
+        "ko": "PDF 비밀번호 속성 설정",
+        "es": "Establecer contraseña del PDF",
+        "fr": "Définir le mot de passe du PDF",
+        "de": "PDF-Passwort setzen",
+        "pt-BR": "Definir senha do PDF",
+        "ru": "Установить пароль PDF",
+        "ar": "تعيين كلمة مرور PDF",
+        "hi": "PDF पासवर्ड सेट करें"
       },
       "group": "security",
       "description": "Set password property of PDF"
@@ -1308,7 +2638,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入路径",
-            "en-US": "Input Path"
+            "en-US": "Input Path",
+            "zh-TW": "輸入路徑",
+            "ja": "入力パス",
+            "ko": "입력경로",
+            "es": "Ruta de entrada",
+            "fr": "Chemin d'entrée",
+            "de": "Eingabepfad",
+            "pt-BR": "Caminho de entrada",
+            "ru": "Входной путь",
+            "ar": "مسار الإدخال",
+            "hi": "इनपुट पथ"
           }
         },
         {
@@ -1316,7 +2656,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -1324,7 +2674,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string",
           "optional": true
@@ -1334,14 +2694,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.removePassword",
       "descriptions": {
         "zh-CN": "移除PDF文档的password",
-        "en-US": "Remove password of PDF"
+        "en-US": "Remove password of PDF",
+        "zh-TW": "移除PDF文檔的password",
+        "ja": "PDFパスワードを削除",
+        "ko": "PDF 비밀번호 제거",
+        "es": "Eliminar contraseña del PDF",
+        "fr": "Supprimer le mot de passe du PDF",
+        "de": "PDF-Passwort entfernen",
+        "pt-BR": "Remover senha do PDF",
+        "ru": "Удалить пароль PDF",
+        "ar": "إزالة كلمة مرور PDF",
+        "hi": "PDF पासवर्ड हटाएं"
       },
       "group": "security",
       "description": "Remove password of PDF"
@@ -1355,7 +2735,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "HTML",
-            "en-US": "HTML"
+            "en-US": "HTML",
+            "zh-TW": "HTML",
+            "ja": "HTML",
+            "ko": "HTML",
+            "es": "HTML",
+            "fr": "HTML",
+            "de": "HTML",
+            "pt-BR": "HTML",
+            "ru": "HTML",
+            "ar": "HTML",
+            "hi": "HTML"
           }
         },
         {
@@ -1363,7 +2753,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         }
@@ -1372,14 +2772,34 @@
         "type": "SaveResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "pdf.htmlToPdf",
       "descriptions": {
         "zh-CN": "HTML 到 PDF",
-        "en-US": "HTML to PDF"
+        "en-US": "HTML to PDF",
+        "zh-TW": "HTML 到 PDF",
+        "ja": "HTML へ PDF",
+        "ko": "HTML 으로 PDF",
+        "es": "Convertir HTML a PDF",
+        "fr": "Convertir HTML en PDF",
+        "de": "HTML in PDF konvertieren",
+        "pt-BR": "Converter HTML em PDF",
+        "ru": "Конвертировать HTML в PDF",
+        "ar": "تحويل HTML إلى PDF",
+        "hi": "HTML को PDF में बदलें"
       },
       "group": "file"
     },
@@ -1392,7 +2812,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入路径",
-            "en-US": "Input Path"
+            "en-US": "Input Path",
+            "zh-TW": "輸入路徑",
+            "ja": "入力パス",
+            "ko": "입력경로",
+            "es": "Ruta de entrada",
+            "fr": "Chemin d'entrée",
+            "de": "Eingabepfad",
+            "pt-BR": "Caminho de entrada",
+            "ru": "Входной путь",
+            "ar": "مسار الإدخال",
+            "hi": "इनपुट पथ"
           }
         },
         {
@@ -1400,7 +2830,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -1408,7 +2848,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "position参数",
-            "en-US": "position parameter"
+            "en-US": "position parameter",
+            "zh-TW": "position參數",
+            "ja": "positionパラメータ",
+            "ko": "position매개변수",
+            "es": "Parámetro de position",
+            "fr": "Paramètre de position",
+            "de": "position-Parameter",
+            "pt-BR": "Parâmetro de position",
+            "ru": "Параметр position",
+            "ar": "معلمة position",
+            "hi": "position पैरामीटर"
           },
           "optional": true,
           "desc": "position parameter"
@@ -1418,7 +2868,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "字号(磅)",
-            "en-US": "Font size pt"
+            "en-US": "Font size pt",
+            "zh-TW": "字號(磅)",
+            "ja": "フォントサイズ pt",
+            "ko": "폰트 크기 pt",
+            "es": "Tamaño de fuente pt",
+            "fr": "Taille de police pt",
+            "de": "Schriftgröße pt",
+            "pt-BR": "Tamanho da fonte pt",
+            "ru": "Размер шрифта pt",
+            "ar": "حجم الخط pt",
+            "hi": "फ़ॉन्ट साइज़ pt"
           },
           "optional": true,
           "default_value": "10.0"
@@ -1428,7 +2888,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "起始页码",
-            "en-US": "Start page number"
+            "en-US": "Start page number",
+            "zh-TW": "起始頁碼",
+            "ja": "開始ページ番号",
+            "ko": "시작 페이지 번호",
+            "es": "Número de página inicial",
+            "fr": "Numéro de page de début",
+            "de": "Startseite",
+            "pt-BR": "Número da página inicial",
+            "ru": "Начальный номер страницы",
+            "ar": "رقم صفحة البداية",
+            "hi": "प्रारंभ पेज नंबर"
           },
           "optional": true,
           "default_value": "1"
@@ -1438,14 +2908,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.addPageNumbers",
       "descriptions": {
         "zh-CN": "添加PDF文档的page numbers",
-        "en-US": "Add page numbers of PDF"
+        "en-US": "Add page numbers of PDF",
+        "zh-TW": "添加PDF文檔的page numbers",
+        "ja": "PDFページ番号を追加",
+        "ko": "PDF 페이지 번호 추가",
+        "es": "Agregar números de página al PDF",
+        "fr": "Ajouter des numéros de page au PDF",
+        "de": "PDF-Seitenzahlen hinzufügen",
+        "pt-BR": "Adicionar números de página ao PDF",
+        "ru": "Добавить номера страниц в PDF",
+        "ar": "إضافة أرقام الصفحات إلى PDF",
+        "hi": "PDF में पेज नंबर जोड़ें"
       },
       "group": "content",
       "description": "Add page numbers of PDF"
@@ -1459,7 +2949,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -1467,7 +2967,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文本字符串",
-            "en-US": "Text string"
+            "en-US": "Text string",
+            "zh-TW": "文字字串",
+            "ja": "テキスト文字列",
+            "ko": "텍스트문자열",
+            "es": "Cadena de texto",
+            "fr": "Chaîne de texte",
+            "de": "Textzeichenkette",
+            "pt-BR": "String de texto",
+            "ru": "Текстовая строка",
+            "ar": "سلسلة نصية",
+            "hi": "टेक्स्ट स्ट्रिंग"
           },
           "desc": "Text string"
         },
@@ -1476,7 +2986,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "字号(磅)",
-            "en-US": "Font size pt"
+            "en-US": "Font size pt",
+            "zh-TW": "字號(磅)",
+            "ja": "フォントサイズ pt",
+            "ko": "폰트 크기 pt",
+            "es": "Tamaño de fuente pt",
+            "fr": "Taille de police pt",
+            "de": "Schriftgröße pt",
+            "pt-BR": "Tamanho da fonte pt",
+            "ru": "Размер шрифта pt",
+            "ar": "حجم الخط pt",
+            "hi": "फ़ॉन्ट साइज़ pt"
           },
           "optional": true,
           "default_value": "10.0"
@@ -1486,14 +3006,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.addHeader",
       "descriptions": {
         "zh-CN": "添加PDF文档的header",
-        "en-US": "Add header of PDF"
+        "en-US": "Add header of PDF",
+        "zh-TW": "添加PDF文檔的header",
+        "ja": "PDFヘッダーを追加",
+        "ko": "PDF 헤더 추가",
+        "es": "Agregar encabezado al PDF",
+        "fr": "Ajouter un en-tête au PDF",
+        "de": "PDF-Kopfzeile hinzufügen",
+        "pt-BR": "Adicionar cabeçalho ao PDF",
+        "ru": "Добавить верхний колонтитул в PDF",
+        "ar": "إضافة رأس إلى PDF",
+        "hi": "PDF में हेडर जोड़ें"
       },
       "group": "content",
       "description": "Add header of PDF"
@@ -1507,7 +3047,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -1515,7 +3065,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文本字符串",
-            "en-US": "Text string"
+            "en-US": "Text string",
+            "zh-TW": "文字字串",
+            "ja": "テキスト文字列",
+            "ko": "텍스트문자열",
+            "es": "Cadena de texto",
+            "fr": "Chaîne de texte",
+            "de": "Textzeichenkette",
+            "pt-BR": "String de texto",
+            "ru": "Текстовая строка",
+            "ar": "سلسلة نصية",
+            "hi": "टेक्स्ट स्ट्रिंग"
           },
           "desc": "Text string"
         },
@@ -1524,7 +3084,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "字号(磅)",
-            "en-US": "Font size pt"
+            "en-US": "Font size pt",
+            "zh-TW": "字號(磅)",
+            "ja": "フォントサイズ pt",
+            "ko": "폰트 크기 pt",
+            "es": "Tamaño de fuente pt",
+            "fr": "Taille de police pt",
+            "de": "Schriftgröße pt",
+            "pt-BR": "Tamanho da fonte pt",
+            "ru": "Размер шрифта pt",
+            "ar": "حجم الخط pt",
+            "hi": "फ़ॉन्ट साइज़ pt"
           },
           "optional": true,
           "default_value": "10.0"
@@ -1534,14 +3104,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.addFooter",
       "descriptions": {
         "zh-CN": "添加PDF文档的footer",
-        "en-US": "Add footer of PDF"
+        "en-US": "Add footer of PDF",
+        "zh-TW": "添加PDF文檔的footer",
+        "ja": "PDFフッターを追加",
+        "ko": "PDF 푸터 추가",
+        "es": "Agregar pie de página al PDF",
+        "fr": "Ajouter un pied de page au PDF",
+        "de": "PDF-Fußzeile hinzufügen",
+        "pt-BR": "Adicionar rodapé ao PDF",
+        "ru": "Добавить нижний колонтитул в PDF",
+        "ar": "إضافة تذييل إلى PDF",
+        "hi": "PDF में फ़ुटर जोड़ें"
       },
       "group": "content",
       "description": "Add footer of PDF"
@@ -1555,7 +3145,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入路径",
-            "en-US": "Input Path"
+            "en-US": "Input Path",
+            "zh-TW": "輸入路徑",
+            "ja": "入力パス",
+            "ko": "입력경로",
+            "es": "Ruta de entrada",
+            "fr": "Chemin d'entrée",
+            "de": "Eingabepfad",
+            "pt-BR": "Caminho de entrada",
+            "ru": "Входной путь",
+            "ar": "مسار الإدخال",
+            "hi": "इनपुट पथ"
           }
         },
         {
@@ -1563,7 +3163,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         }
       ],
@@ -1571,14 +3181,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.flatten",
       "descriptions": {
         "zh-CN": "flattenPDF文档",
-        "en-US": "Flatten PDF"
+        "en-US": "Flatten PDF",
+        "zh-TW": "flattenPDF文檔",
+        "ja": "PDFをフラット化",
+        "ko": "PDF 평탄화",
+        "es": "Aplanar PDF",
+        "fr": "Aplatir le PDF",
+        "de": "PDF glätten",
+        "pt-BR": "Achatar PDF",
+        "ru": "Выровнять PDF",
+        "ar": "تسوية PDF",
+        "hi": "PDF फ़्लैटन"
       },
       "group": "security",
       "description": "Flatten PDF"
@@ -1592,7 +3222,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入路径",
-            "en-US": "Input Path"
+            "en-US": "Input Path",
+            "zh-TW": "輸入路徑",
+            "ja": "入力パス",
+            "ko": "입력경로",
+            "es": "Ruta de entrada",
+            "fr": "Chemin d'entrée",
+            "de": "Eingabepfad",
+            "pt-BR": "Caminho de entrada",
+            "ru": "Входной путь",
+            "ar": "مسار الإدخال",
+            "hi": "इनपुट पथ"
           }
         },
         {
@@ -1600,7 +3240,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -1608,7 +3258,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "插入路径",
-            "en-US": "Insert Path"
+            "en-US": "Insert Path",
+            "zh-TW": "插入路徑",
+            "ja": "插入パス",
+            "ko": "삽입 경로",
+            "es": "Ruta de inserción",
+            "fr": "Chemin d'insertion",
+            "de": "Einfügepfad",
+            "pt-BR": "Caminho de inserção",
+            "ru": "Путь для вставки",
+            "ar": "مسار الإدراج",
+            "hi": "सम्मिलन पथ"
           }
         },
         {
@@ -1616,7 +3276,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "position参数",
-            "en-US": "position parameter"
+            "en-US": "position parameter",
+            "zh-TW": "position參數",
+            "ja": "positionパラメータ",
+            "ko": "position매개변수",
+            "es": "Parámetro de position",
+            "fr": "Paramètre de position",
+            "de": "position-Parameter",
+            "pt-BR": "Parâmetro de position",
+            "ru": "Параметр position",
+            "ar": "معلمة position",
+            "hi": "position पैरामीटर"
           },
           "desc": "position parameter",
           "optional": true
@@ -1626,14 +3296,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.insertPage",
       "descriptions": {
         "zh-CN": "insertPDF文档的page",
-        "en-US": "Insert page of PDF"
+        "en-US": "Insert page of PDF",
+        "zh-TW": "insertPDF文檔的page",
+        "ja": "PDFページを挿入",
+        "ko": "PDF 페이지 삽입",
+        "es": "Insertar página en PDF",
+        "fr": "Insérer une page dans le PDF",
+        "de": "Seite in PDF einfügen",
+        "pt-BR": "Inserir página no PDF",
+        "ru": "Вставить страницу в PDF",
+        "ar": "إدراج صفحة في PDF",
+        "hi": "PDF में पेज सम्मिलित करें"
       },
       "group": "page",
       "description": "Insert page of PDF"
@@ -1647,7 +3337,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入路径",
-            "en-US": "Input Path"
+            "en-US": "Input Path",
+            "zh-TW": "輸入路徑",
+            "ja": "入力パス",
+            "ko": "입력경로",
+            "es": "Ruta de entrada",
+            "fr": "Chemin d'entrée",
+            "de": "Eingabepfad",
+            "pt-BR": "Caminho de entrada",
+            "ru": "Входной путь",
+            "ar": "مسار الإدخال",
+            "hi": "इनपुट पथ"
           }
         },
         {
@@ -1655,7 +3355,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -1663,7 +3373,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "page_index参数",
-            "en-US": "page_index parameter"
+            "en-US": "page_index parameter",
+            "zh-TW": "page_index參數",
+            "ja": "page_indexパラメータ",
+            "ko": "page_index매개변수",
+            "es": "Parámetro de page_index",
+            "fr": "Paramètre de page_index",
+            "de": "page_index-Parameter",
+            "pt-BR": "Parâmetro de page_index",
+            "ru": "Параметр page_index",
+            "ar": "معلمة page_index",
+            "hi": "page_index पैरामीटर"
           },
           "desc": "page_index parameter",
           "optional": true,
@@ -1674,14 +3394,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.deletePage",
       "descriptions": {
         "zh-CN": "删除PDF文档的page",
-        "en-US": "Delete page of PDF"
+        "en-US": "Delete page of PDF",
+        "zh-TW": "刪除PDF文檔的page",
+        "ja": "PDFページを削除",
+        "ko": "PDF 페이지 삭제",
+        "es": "Eliminar página del PDF",
+        "fr": "Supprimer une page du PDF",
+        "de": "PDF-Seite löschen",
+        "pt-BR": "Excluir página do PDF",
+        "ru": "Удалить страницу PDF",
+        "ar": "حذف صفحة من PDF",
+        "hi": "PDF पेज हटाएं"
       },
       "group": "page",
       "description": "Delete page of PDF"
@@ -1695,7 +3435,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入路径",
-            "en-US": "Input Path"
+            "en-US": "Input Path",
+            "zh-TW": "輸入路徑",
+            "ja": "入力パス",
+            "ko": "입력경로",
+            "es": "Ruta de entrada",
+            "fr": "Chemin d'entrée",
+            "de": "Eingabepfad",
+            "pt-BR": "Caminho de entrada",
+            "ru": "Входной путь",
+            "ar": "مسار الإدخال",
+            "hi": "इनपुट पथ"
           }
         },
         {
@@ -1703,7 +3453,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -1711,7 +3471,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "页面顺序",
-            "en-US": "Page Order"
+            "en-US": "Page Order",
+            "zh-TW": "頁面順序",
+            "ja": "ページ顺序",
+            "ko": "페이지 순서",
+            "es": "Orden de páginas",
+            "fr": "Ordre des pages",
+            "de": "Seitenreihenfolge",
+            "pt-BR": "Ordem das páginas",
+            "ru": "Порядок страниц",
+            "ar": "ترتيب الصفحات",
+            "hi": "पेज क्रम"
           }
         }
       ],
@@ -1719,14 +3489,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.reorderPages",
       "descriptions": {
         "zh-CN": "reorderPDF文档的pages",
-        "en-US": "Reorder pages of PDF"
+        "en-US": "Reorder pages of PDF",
+        "zh-TW": "reorderPDF文檔的pages",
+        "ja": "PDFページの順序を変更",
+        "ko": "PDF 페이지 순서 변경",
+        "es": "Reordenar páginas del PDF",
+        "fr": "Réorganiser les pages du PDF",
+        "de": "PDF-Seiten neu ordnen",
+        "pt-BR": "Reordenar páginas do PDF",
+        "ru": "Переупорядочить страницы PDF",
+        "ar": "إعادة ترتيب صفحات PDF",
+        "hi": "PDF पेज पुनर्क्रमित करें"
       },
       "group": "page",
       "description": "Reorder pages of PDF"
@@ -1740,7 +3530,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -1749,14 +3549,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "pdf.getFormFields",
       "descriptions": {
         "zh-CN": "获取PDF文档的form fields信息",
-        "en-US": "Get form fields info of PDF"
+        "en-US": "Get form fields info of PDF",
+        "zh-TW": "取得PDF文檔的form fields資訊",
+        "ja": "PDFフォームフィールド情報を取得",
+        "ko": "PDF 양식 필드 정보 가져오기",
+        "es": "Obtener campos de formulario del PDF",
+        "fr": "Obtenir les champs du formulaire PDF",
+        "de": "PDF-Formularfelder-Informationen abrufen",
+        "pt-BR": "Obter campos de formulário do PDF",
+        "ru": "Получить информацию о полях формы PDF",
+        "ar": "الحصول على معلومات حقول نموذج PDF",
+        "hi": "PDF फ़ॉर्म फ़ील्ड जानकारी प्राप्त करें"
       },
       "group": "form",
       "description": "Get form fields info of PDF"
@@ -1770,7 +3590,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入路径",
-            "en-US": "Input Path"
+            "en-US": "Input Path",
+            "zh-TW": "輸入路徑",
+            "ja": "入力パス",
+            "ko": "입력경로",
+            "es": "Ruta de entrada",
+            "fr": "Chemin d'entrée",
+            "de": "Eingabepfad",
+            "pt-BR": "Caminho de entrada",
+            "ru": "Входной путь",
+            "ar": "مسار الإدخال",
+            "hi": "इनपुट पथ"
           }
         },
         {
@@ -1778,7 +3608,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -1786,7 +3626,17 @@
           "type": "Record",
           "descs": {
             "zh-CN": "表单字段名与值的映射",
-            "en-US": "Form field name-value mapping"
+            "en-US": "Form field name-value mapping",
+            "zh-TW": "表單字段名與值的映射",
+            "ja": "フォームフィールドの名前-値マッピング",
+            "ko": "양식 필드 이름-값 매핑",
+            "es": "Mapeo nombre-valor de campo de formulario",
+            "fr": "Mapping nom-valeur du champ de formulaire",
+            "de": "Formularfeld-Name-Wert-Zuordnung",
+            "pt-BR": "Mapeamento nome-valor do campo",
+            "ru": "Сопоставление имя-значение полей формы",
+            "ar": "تعيين اسم-قيمة حقل النموذج",
+            "hi": "फ़ॉर्म फ़ील्ड नाम-मान मैपिंग"
           },
           "desc": "Form field name-value mapping"
         }
@@ -1795,14 +3645,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.fillForm",
       "descriptions": {
         "zh-CN": "fillPDF文档的form",
-        "en-US": "Fill form of PDF"
+        "en-US": "Fill form of PDF",
+        "zh-TW": "fillPDF文檔的form",
+        "ja": "PDFフォームを入力",
+        "ko": "PDF 양식 작성",
+        "es": "Rellenar formulario del PDF",
+        "fr": "Remplir le formulaire PDF",
+        "de": "PDF-Formular ausfüllen",
+        "pt-BR": "Preencher formulário do PDF",
+        "ru": "Заполнить форму PDF",
+        "ar": "ملء نموذج PDF",
+        "hi": "PDF फ़ॉर्म भरें"
       },
       "group": "form",
       "description": "Fill form of PDF"
@@ -1816,7 +3686,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1825,7 +3705,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "页码索引",
-            "en-US": "Page index"
+            "en-US": "Page index",
+            "zh-TW": "頁碼索引",
+            "ja": "ページインデックス",
+            "ko": "페이지 인덱스",
+            "es": "Índice de página",
+            "fr": "Index de page",
+            "de": "Seitenindex",
+            "pt-BR": "Índice da página",
+            "ru": "Индекс страницы",
+            "ar": "فهرس الصفحة",
+            "hi": "पेज इंडेक्स"
           },
           "optional": true,
           "default_value": "0"
@@ -1835,14 +3725,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "pdf.getAnnotations",
       "descriptions": {
         "zh-CN": "获取PDF文档的annotations信息",
-        "en-US": "Get annotations info of PDF"
+        "en-US": "Get annotations info of PDF",
+        "zh-TW": "取得PDF文檔的annotations資訊",
+        "ja": "PDF注釈情報を取得",
+        "ko": "PDF 주석 정보 가져오기",
+        "es": "Obtener anotaciones del PDF",
+        "fr": "Obtenir les annotations du PDF",
+        "de": "PDF-Annotationen abrufen",
+        "pt-BR": "Obter anotações do PDF",
+        "ru": "Получить информацию об аннотациях PDF",
+        "ar": "الحصول على معلومات تعليقات PDF",
+        "hi": "PDF एनोटेशन जानकारी प्राप्त करें"
       },
       "group": "annotate",
       "description": "Get annotations info of PDF"
@@ -1856,7 +3766,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -1864,7 +3784,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "页码索引",
-            "en-US": "Page index"
+            "en-US": "Page index",
+            "zh-TW": "頁碼索引",
+            "ja": "ページインデックス",
+            "ko": "페이지 인덱스",
+            "es": "Índice de página",
+            "fr": "Index de page",
+            "de": "Seitenindex",
+            "pt-BR": "Índice da página",
+            "ru": "Индекс страницы",
+            "ar": "فهرس الصفحة",
+            "hi": "पेज इंडेक्स"
           },
           "optional": true,
           "default_value": "0"
@@ -1874,7 +3804,17 @@
           "type": "Rect",
           "descs": {
             "zh-CN": "注释区域矩形[x,y,w,h]",
-            "en-US": "Annotation area rectangle [x,y,w,h]"
+            "en-US": "Annotation area rectangle [x,y,w,h]",
+            "zh-TW": "注釋區域矩形[x,y,w,h]",
+            "ja": "注釈エリア矩形 [x,y,w,h]",
+            "ko": "주석 영역 사각형 [x,y,w,h]",
+            "es": "Rectángulo de anotación [x,y,w,h]",
+            "fr": "Rectangle d'annotation [x,y,w,h]",
+            "de": "Anmerkungsbereich [x,y,w,h]",
+            "pt-BR": "Retângulo de anotação [x,y,w,h]",
+            "ru": "Прямоугольник аннотации [x,y,w,h]",
+            "ar": "مستطيل التعليق [x,y,w,h]",
+            "hi": "एनोटेशन क्षेत्र [x,y,w,h]"
           },
           "desc": "Annotation area rectangle [x,y,w,h]"
         },
@@ -1883,7 +3823,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文本内容",
-            "en-US": "Text content"
+            "en-US": "Text content",
+            "zh-TW": "文字內容",
+            "ja": "テキストコンテンツ",
+            "ko": "텍스트콘텐츠",
+            "es": "Contenido de texto",
+            "fr": "Contenu du texte",
+            "de": "Textinhalt",
+            "pt-BR": "Conteúdo de texto",
+            "ru": "Текстовое содержимое",
+            "ar": "محتوى نصي",
+            "hi": "टेक्स्ट सामग्री"
           },
           "optional": true,
           "desc": "Text content"
@@ -1893,7 +3843,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "颜色值（十六进制或RGB）",
-            "en-US": "Color value (hex or RGB)"
+            "en-US": "Color value (hex or RGB)",
+            "zh-TW": "顏色值（十六進製或RGB）",
+            "ja": "カラー値（hexまたはRGB）",
+            "ko": "색상 값 (hex 또는 RGB)",
+            "es": "Valor de color (hex o RGB)",
+            "fr": "Valeur de couleur (hex ou RGB)",
+            "de": "Farbwert (hex oder RGB)",
+            "pt-BR": "Valor de cor (hex ou RGB)",
+            "ru": "Значение цвета (hex или RGB)",
+            "ar": "قيمة اللون (hex أو RGB)",
+            "hi": "रंग मान (hex या RGB)"
           },
           "optional": true,
           "desc": "Color value (hex or RGB)"
@@ -1903,14 +3863,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.addAnnotation",
       "descriptions": {
         "zh-CN": "添加PDF文档的annotation",
-        "en-US": "Add annotation of PDF"
+        "en-US": "Add annotation of PDF",
+        "zh-TW": "添加PDF文檔的annotation",
+        "ja": "PDF注釈を追加",
+        "ko": "PDF 주석 추가",
+        "es": "Agregar anotación al PDF",
+        "fr": "Ajouter une annotation au PDF",
+        "de": "PDF-Anmerkung hinzufügen",
+        "pt-BR": "Adicionar anotação ao PDF",
+        "ru": "Добавить аннотацию в PDF",
+        "ar": "إضافة تعليق إلى PDF",
+        "hi": "PDF में एनोटेशन जोड़ें"
       },
       "group": "annotate",
       "description": "Add annotation of PDF"
@@ -1924,7 +3904,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档 ID",
-            "en-US": "文档 ID"
+            "en-US": "文档 ID",
+            "zh-TW": "文檔 ID",
+            "ja": "ドキュメントID",
+            "ko": "문서 ID",
+            "es": "ID del documento",
+            "fr": "ID du document",
+            "de": "Dokument-ID",
+            "pt-BR": "ID do documento",
+            "ru": "ID документа",
+            "ar": "معرف المستند",
+            "hi": "दस्तावेज़ ID"
           }
         },
         {
@@ -1932,7 +3922,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "页码索引",
-            "en-US": "Page index"
+            "en-US": "Page index",
+            "zh-TW": "頁碼索引",
+            "ja": "ページインデックス",
+            "ko": "페이지 인덱스",
+            "es": "Índice de página",
+            "fr": "Index de page",
+            "de": "Seitenindex",
+            "pt-BR": "Índice da página",
+            "ru": "Индекс страницы",
+            "ar": "فهرس الصفحة",
+            "hi": "पेज इंडेक्स"
           },
           "optional": true,
           "default_value": "0"
@@ -1942,7 +3942,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "注释索引",
-            "en-US": "Annotation Index"
+            "en-US": "Annotation Index",
+            "zh-TW": "注釋索引",
+            "ja": "注釈インデックス",
+            "ko": "주석 인덱스",
+            "es": "Índice de anotación",
+            "fr": "Index d'annotation",
+            "de": "Anmerkungsindex",
+            "pt-BR": "Índice de anotação",
+            "ru": "Индекс аннотации",
+            "ar": "فهرس التعليق",
+            "hi": "एनोटेशन इंडेक्स"
           }
         }
       ],
@@ -1950,14 +3960,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.removeAnnotation",
       "descriptions": {
         "zh-CN": "移除PDF文档的annotation",
-        "en-US": "Remove annotation of PDF"
+        "en-US": "Remove annotation of PDF",
+        "zh-TW": "移除PDF文檔的annotation",
+        "ja": "PDF注釈を削除",
+        "ko": "PDF 주석 제거",
+        "es": "Eliminar anotación del PDF",
+        "fr": "Supprimer l'annotation du PDF",
+        "de": "PDF-Annotation entfernen",
+        "pt-BR": "Remover anotação do PDF",
+        "ru": "Удалить аннотацию PDF",
+        "ar": "إزالة تعليق PDF",
+        "hi": "PDF एनोटेशन हटाएं"
       },
       "group": "annotate",
       "description": "Remove annotation of PDF"
@@ -1971,7 +4001,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入路径",
-            "en-US": "Input Path"
+            "en-US": "Input Path",
+            "zh-TW": "輸入路徑",
+            "ja": "入力パス",
+            "ko": "입력경로",
+            "es": "Ruta de entrada",
+            "fr": "Chemin d'entrée",
+            "de": "Eingabepfad",
+            "pt-BR": "Caminho de entrada",
+            "ru": "Входной путь",
+            "ar": "مسار الإدخال",
+            "hi": "इनपुट पथ"
           }
         },
         {
@@ -1979,7 +4019,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -1987,7 +4037,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图像路径",
-            "en-US": "Image Path"
+            "en-US": "Image Path",
+            "zh-TW": "圖像路徑",
+            "ja": "画像パス",
+            "ko": "이미지 경로",
+            "es": "Ruta de imagen",
+            "fr": "Chemin de l'image",
+            "de": "Bildpfad",
+            "pt-BR": "Caminho da imagem",
+            "ru": "Путь к изображению",
+            "ar": "مسار الصورة",
+            "hi": "इमेज पथ"
           }
         },
         {
@@ -1995,7 +4055,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "透明度 0-1",
-            "en-US": "Opacity 0-1"
+            "en-US": "Opacity 0-1",
+            "zh-TW": "透明度 0-1",
+            "ja": "不透明度 0-1",
+            "ko": "불투명도 0-1",
+            "es": "Opacidad 0-1",
+            "fr": "Opacité 0-1",
+            "de": "Deckkraft 0-1",
+            "pt-BR": "Opacidade 0-1",
+            "ru": "Прозрачность 0-1",
+            "ar": "الشفافية 0-1",
+            "hi": "अपारदर्शिता 0-1"
           },
           "optional": true,
           "default_value": "0.3"
@@ -2005,7 +4075,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "缩放比例",
-            "en-US": "Scale factor"
+            "en-US": "Scale factor",
+            "zh-TW": "縮放比例",
+            "ja": "スケールファクター",
+            "ko": "스케일 팩터",
+            "es": "Factor de escala",
+            "fr": "Facteur d'échelle",
+            "de": "Skalierungsfaktor",
+            "pt-BR": "Fator de escala",
+            "ru": "Масштабный коэффициент",
+            "ar": "عامل القياس",
+            "hi": "स्केल फ़ैक्टर"
           },
           "optional": true,
           "default_value": "0.15"
@@ -2015,14 +4095,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "pdf.stampImage",
       "descriptions": {
         "zh-CN": "stampPDF文档的image",
-        "en-US": "Stamp image of PDF"
+        "en-US": "Stamp image of PDF",
+        "zh-TW": "stampPDF文檔的image",
+        "ja": "PDFに画像スタンプ",
+        "ko": "PDF 이미지 스탬프",
+        "es": "Estampar imagen en PDF",
+        "fr": "Apposer une image tampon sur le PDF",
+        "de": "Bildstempel auf PDF setzen",
+        "pt-BR": "Carimbar imagem no PDF",
+        "ru": "Поставить штамп изображения на PDF",
+        "ar": "ختم صورة على PDF",
+        "hi": "PDF पर इमेज स्टैम्प लगाएं"
       },
       "group": "content",
       "description": "Stamp image of PDF"
@@ -2036,7 +4136,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -2045,7 +4155,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "output_dir参数",
-            "en-US": "output_dir parameter"
+            "en-US": "output_dir parameter",
+            "zh-TW": "output_dir參數",
+            "ja": "output_dirパラメータ",
+            "ko": "output_dir매개변수",
+            "es": "Parámetro de directorio de salida",
+            "fr": "Paramètre de répertoire de sortie",
+            "de": "Ausgabeverzeichnis-Parameter",
+            "pt-BR": "Parâmetro de diretório de saída",
+            "ru": "Параметр выходного каталога",
+            "ar": "معلمة مجلد الإخراج",
+            "hi": "आउटपुट डायरेक्टरी पैरामीटर"
           },
           "desc": "output_dir parameter"
         }
@@ -2054,14 +4174,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "pdf.extractImages",
       "descriptions": {
         "zh-CN": "提取PDF文档的images",
-        "en-US": "Extract images of PDF"
+        "en-US": "Extract images of PDF",
+        "zh-TW": "提取PDF文檔的images",
+        "ja": "PDFから画像を抽出",
+        "ko": "PDF 이미지 추출",
+        "es": "Extraer imágenes del PDF",
+        "fr": "Extraire les images du PDF",
+        "de": "PDF-Bilder extrahieren",
+        "pt-BR": "Extrair imagens do PDF",
+        "ru": "Извлечь изображения из PDF",
+        "ar": "استخراج صور من PDF",
+        "hi": "PDF से इमेज एक्सट्रैक्ट करें"
       },
       "group": "extract",
       "description": "Extract images of PDF"
@@ -2074,14 +4214,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "pdf.listOpen",
       "descriptions": {
         "zh-CN": "列出PDF文档的open",
-        "en-US": "List open of PDF"
+        "en-US": "List open of PDF",
+        "zh-TW": "列出PDF文檔的open",
+        "ja": "開いているPDF一覧",
+        "ko": "열린 PDF 목록",
+        "es": "Listar PDF abiertos",
+        "fr": "Lister les PDF ouverts",
+        "de": "Geöffnete PDFs auflisten",
+        "pt-BR": "Listar PDFs abertos",
+        "ru": "Список открытых PDF",
+        "ar": "قائمة ملفات PDF المفتوحة",
+        "hi": "खुले PDF सूचीबद्ध करें"
       },
       "group": "file",
       "description": "List open of PDF"
@@ -2089,14 +4249,34 @@
   ],
   "overviews": {
     "zh-CN": "提供 PDF 文件的创建、读取、编辑、合并、拆分、加密、水印等能力。支持文本提取、页面操作、表单填写、书签管理、图片插入等功能。",
-    "en-US": "Create, read, edit, merge, split, encrypt, and watermark PDF files. Supports text extraction, page operations, form filling, bookmarks, and image insertion."
+    "en-US": "Create, read, edit, merge, split, encrypt, and watermark PDF files. Supports text extraction, page operations, form filling, bookmarks, and image insertion.",
+    "zh-TW": "提供 PDF 檔案的建立、讀取、編輯、合並、拆分、加密、水印等能力。支援文本提取、页面操作、表單填写、書簽管理、图片插入等功能。",
+    "ja": "PDFの作成・読取・編集・結合・分割・暗号化・透かし。テキスト抽出・ページ操作・フォーム入力・ブックマーク・画像挿入対応。",
+    "ko": "PDF 생성, 읽기, 편집, 병합, 분할, 암호화, 워터마크. 텍스트 추출, 페이지, 양식, 북마크, 이미지 삽입.",
+    "es": "Crear, leer, editar, fusionar, dividir, cifrar y marcar PDFs. Texto, páginas, formularios, marcadores e imágenes.",
+    "fr": "Créer, lire, éditer, fusionner, diviser, chiffrer et filigraner des PDF. Texte, pages, formulaires, signets et images.",
+    "de": "PDF erstellen, lesen, bearbeiten, zusammenführen, teilen, verschlüsseln und Wasserzeichen. Text, Seiten, Formulare, Lesezeichen, Bilder.",
+    "pt-BR": "Criar, ler, editar, mesclar, dividir, criptografar e marca d'água em PDFs. Texto, páginas, formulários, marcadores e imagens.",
+    "ru": "Создание, чтение, редактирование, объединение, разделение, шифрование и водяные знаки PDF. Текст, страницы, формы, закладки, изображения.",
+    "ar": "إنشاء وقراءة وتحرير ودمج وتقسيم وتشفير PDF وعلامات مائية. نصوص وصفحات ونماذج وإشارات وصور.",
+    "hi": "PDF बनाना, पढ़ना, संपादित, मर्ज, विभाजित, एन्क्रिप्ट और वॉटरमार्क। टेक्स्ट, पेज, फॉर्म, बुकमार्क, इमेज।"
   },
   "types": [
     {
       "name": "PdfPageInfo",
       "descriptions": {
         "zh-CN": "PDF 页面信息",
-        "en-US": "PDF page information"
+        "en-US": "PDF page information",
+        "zh-TW": "PDF 页面資訊",
+        "ja": "PDFページ情報",
+        "ko": "PDF 페이지 정보",
+        "es": "Información de página PDF",
+        "fr": "Informations de page PDF",
+        "de": "PDF-Seiteninformationen",
+        "pt-BR": "Informações da página PDF",
+        "ru": "Информация о странице PDF",
+        "ar": "معلومات صفحة PDF",
+        "hi": "PDF पेज जानकारी"
       },
       "fields": [
         {
@@ -2104,7 +4284,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "页码索引（从0开始）",
-            "en-US": "Page index (0-based)"
+            "en-US": "Page index (0-based)",
+            "zh-TW": "页碼索引（從0开始）",
+            "ja": "ページインデックス（0始まり）",
+            "ko": "페이지 인덱스(0부터)",
+            "es": "Índice de página (basado en 0)",
+            "fr": "Index de page (base 0)",
+            "de": "Seitenindex (0-basiert)",
+            "pt-BR": "Índice da página (base 0)",
+            "ru": "Индекс страницы (с 0)",
+            "ar": "فهرس الصفحة (يبدأ من 0)",
+            "hi": "पेज इंडेक्स (0-आधारित)"
           }
         },
         {
@@ -2112,7 +4302,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "页面宽度（点）",
-            "en-US": "Page width in points"
+            "en-US": "Page width in points",
+            "zh-TW": "页面宽度（点）",
+            "ja": "ページ幅（ポイント）",
+            "ko": "페이지 너비(포인트)",
+            "es": "Ancho de la página en puntos",
+            "fr": "Largeur de la page en points",
+            "de": "Seitenbreite in Punkten",
+            "pt-BR": "Largura da página em pontos",
+            "ru": "Ширина страницы в пунктах",
+            "ar": "عرض الصفحة بالنقاط",
+            "hi": "पेज चौड़ाई पॉइंट में"
           }
         },
         {
@@ -2120,7 +4320,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "页面高度（点）",
-            "en-US": "Page height in points"
+            "en-US": "Page height in points",
+            "zh-TW": "页面高度（点）",
+            "ja": "ページ高さ（ポイント）",
+            "ko": "페이지 높이(포인트)",
+            "es": "Altura de la página en puntos",
+            "fr": "Hauteur de la page en points",
+            "de": "Seitenhöhe in Punkten",
+            "pt-BR": "Altura da página em pontos",
+            "ru": "Высота страницы в пунктах",
+            "ar": "ارتفاع الصفحة بالنقاط",
+            "hi": "पेज ऊँचाई पॉइंट में"
           }
         }
       ]
@@ -2129,7 +4339,17 @@
       "name": "PdfMetadata",
       "descriptions": {
         "zh-CN": "PDF 文档元数据",
-        "en-US": "PDF document metadata"
+        "en-US": "PDF document metadata",
+        "zh-TW": "PDF 文檔元數據",
+        "ja": "PDFドキュメントメタデータ",
+        "ko": "PDF 문서 메타데이터",
+        "es": "Metadatos del documento PDF",
+        "fr": "Métadonnées du document PDF",
+        "de": "PDF-Dokument-Metadaten",
+        "pt-BR": "Metadados do documento PDF",
+        "ru": "Метаданные PDF-документа",
+        "ar": "بيانات وصفية لمستند PDF",
+        "hi": "PDF दस्तावेज़ मेटाडेटा"
       },
       "fields": [
         {
@@ -2137,7 +4357,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档标题",
-            "en-US": "Document title"
+            "en-US": "Document title",
+            "zh-TW": "文檔標题",
+            "ja": "ドキュメントタイトル",
+            "ko": "문서 제목",
+            "es": "Título del documento",
+            "fr": "Titre du document",
+            "de": "Dokumenttitel",
+            "pt-BR": "Título do documento",
+            "ru": "Заголовок документа",
+            "ar": "عنوان المستند",
+            "hi": "दस्तावेज़ शीर्षक"
           }
         },
         {
@@ -2145,7 +4375,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档作者",
-            "en-US": "Document author"
+            "en-US": "Document author",
+            "zh-TW": "文檔作者",
+            "ja": "ドキュメント著者",
+            "ko": "문서 저자",
+            "es": "Autor del documento",
+            "fr": "Auteur du document",
+            "de": "Dokumentautor",
+            "pt-BR": "Autor do documento",
+            "ru": "Автор документа",
+            "ar": "مؤلف المستند",
+            "hi": "दस्तावेज़ लेखक"
           }
         },
         {
@@ -2153,7 +4393,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "总页数",
-            "en-US": "Total page count"
+            "en-US": "Total page count",
+            "zh-TW": "總页数",
+            "ja": "総ページ数",
+            "ko": "총 페이지 수",
+            "es": "Total de páginas",
+            "fr": "Nombre total de pages",
+            "de": "Gesamtseitenzahl",
+            "pt-BR": "Contagem total de páginas",
+            "ru": "Общее количество страниц",
+            "ar": "العدد الكلي للصفحات",
+            "hi": "कुल पेज संख्या"
           }
         },
         {
@@ -2161,7 +4411,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否加密",
-            "en-US": "Whether encrypted"
+            "en-US": "Whether encrypted",
+            "zh-TW": "是否加密",
+            "ja": "暗号化されているかどうか",
+            "ko": "암호화 여부",
+            "es": "Si está cifrado",
+            "fr": "Si chiffré",
+            "de": "Ob verschlüsselt",
+            "pt-BR": "Se criptografado",
+            "ru": "Зашифровано или нет",
+            "ar": "ما إذا كان مشفّراً",
+            "hi": "एन्क्रिप्टेड है या नहीं"
           }
         }
       ]
@@ -2170,7 +4430,17 @@
       "name": "PdfInfo",
       "descriptions": {
         "zh-CN": "PDF文件信息",
-        "en-US": "PDF file info"
+        "en-US": "PDF file info",
+        "zh-TW": "PDF檔案資訊",
+        "ja": "PDFファイル情報",
+        "ko": "PDF 파일 정보",
+        "es": "Información del archivo PDF",
+        "fr": "Informations du fichier PDF",
+        "de": "PDF-Dateiinformationen",
+        "pt-BR": "Informações do arquivo PDF",
+        "ru": "Информация о PDF-файле",
+        "ar": "معلومات ملف PDF",
+        "hi": "PDF फ़ाइल जानकारी"
       },
       "fields": [
         {
@@ -2178,7 +4448,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "总页数",
-            "en-US": "Total pages"
+            "en-US": "Total pages",
+            "zh-TW": "總页数",
+            "ja": "総ページ数",
+            "ko": "총 페이지 수",
+            "es": "Total de páginas",
+            "fr": "Total de pages",
+            "de": "Gesamtseiten",
+            "pt-BR": "Total de páginas",
+            "ru": "Всего страниц",
+            "ar": "إجمالي الصفحات",
+            "hi": "कुल पेज"
           }
         },
         {
@@ -2186,7 +4466,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档标题",
-            "en-US": "Document title"
+            "en-US": "Document title",
+            "zh-TW": "文檔標题",
+            "ja": "ドキュメントタイトル",
+            "ko": "문서 제목",
+            "es": "Título del documento",
+            "fr": "Titre du document",
+            "de": "Dokumenttitel",
+            "pt-BR": "Título do documento",
+            "ru": "Заголовок документа",
+            "ar": "عنوان المستند",
+            "hi": "दस्तावेज़ शीर्षक"
           }
         },
         {
@@ -2194,7 +4484,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "作者",
-            "en-US": "Author"
+            "en-US": "Author",
+            "zh-TW": "作者",
+            "ja": "著者",
+            "ko": "저자",
+            "es": "Autor",
+            "fr": "Auteur",
+            "de": "Autor",
+            "pt-BR": "Autor",
+            "ru": "Автор",
+            "ar": "المؤلف",
+            "hi": "लेखक"
           }
         },
         {
@@ -2202,7 +4502,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否加密",
-            "en-US": "Whether encrypted"
+            "en-US": "Whether encrypted",
+            "zh-TW": "是否加密",
+            "ja": "暗号化されているかどうか",
+            "ko": "암호화 여부",
+            "es": "Si está cifrado",
+            "fr": "Si chiffré",
+            "de": "Ob verschlüsselt",
+            "pt-BR": "Se criptografado",
+            "ru": "Зашифровано или нет",
+            "ar": "ما إذا كان مشفّراً",
+            "hi": "एन्क्रिप्टेड है या नहीं"
           }
         }
       ]
@@ -2211,7 +4521,17 @@
       "name": "PdfHandle",
       "descriptions": {
         "zh-CN": "PDF文档操作句柄",
-        "en-US": "PDF document handle"
+        "en-US": "PDF document handle",
+        "zh-TW": "PDF文檔操作句柄",
+        "ja": "PDFドキュメントハンドル",
+        "ko": "PDF 문서 핸들",
+        "es": "Manejador de documento PDF",
+        "fr": "Handle de document PDF",
+        "de": "PDF-Dokument-Handle",
+        "pt-BR": "Handle de documento PDF",
+        "ru": "Дескриптор PDF-документа",
+        "ar": "مقبض مستند PDF",
+        "hi": "PDF दस्तावेज़ हैंडल"
       },
       "fields": [
         {
@@ -2219,7 +4539,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文档句柄ID",
-            "en-US": "Document handle ID"
+            "en-US": "Document handle ID",
+            "zh-TW": "文檔句柄ID",
+            "ja": "ドキュメントハンドルID",
+            "ko": "문서 핸들 ID",
+            "es": "ID de manejador de documento",
+            "fr": "ID de handle de document",
+            "de": "Dokument-Handle-ID",
+            "pt-BR": "ID do handle do documento",
+            "ru": "ID дескриптора документа",
+            "ar": "معرّف مقبض المستند",
+            "hi": "दस्तावेज़ हैंडल ID"
           }
         },
         {
@@ -2227,7 +4557,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "总页数",
-            "en-US": "Total pages"
+            "en-US": "Total pages",
+            "zh-TW": "總页数",
+            "ja": "総ページ数",
+            "ko": "총 페이지 수",
+            "es": "Total de páginas",
+            "fr": "Total de pages",
+            "de": "Gesamtseiten",
+            "pt-BR": "Total de páginas",
+            "ru": "Всего страниц",
+            "ar": "إجمالي الصفحات",
+            "hi": "कुल पेज"
           }
         }
       ]
@@ -2236,7 +4576,17 @@
       "name": "PageHandle",
       "descriptions": {
         "zh-CN": "PDF页面句柄",
-        "en-US": "PDF page handle"
+        "en-US": "PDF page handle",
+        "zh-TW": "PDF页面句柄",
+        "ja": "PDFページハンドル",
+        "ko": "PDF 페이지 핸들",
+        "es": "Manejador de página PDF",
+        "fr": "Handle de page PDF",
+        "de": "PDF-Seiten-Handle",
+        "pt-BR": "Handle de página PDF",
+        "ru": "Дескриптор страницы PDF",
+        "ar": "مقبض صفحة PDF",
+        "hi": "PDF पेज हैंडल"
       },
       "fields": [
         {
@@ -2244,7 +4594,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "页面索引",
-            "en-US": "Page index"
+            "en-US": "Page index",
+            "zh-TW": "页面索引",
+            "ja": "ページインデックス",
+            "ko": "페이지 인덱스",
+            "es": "Índice de página",
+            "fr": "Index de page",
+            "de": "Seitenindex",
+            "pt-BR": "Índice da página",
+            "ru": "Индекс страницы",
+            "ar": "فهرس الصفحة",
+            "hi": "पेज इंडेक्स"
           }
         }
       ]
@@ -2253,7 +4613,17 @@
       "name": "PageDimensions",
       "descriptions": {
         "zh-CN": "页面尺寸信息",
-        "en-US": "Page dimensions"
+        "en-US": "Page dimensions",
+        "zh-TW": "页面尺寸資訊",
+        "ja": "ページサイズ",
+        "ko": "페이지 크기",
+        "es": "Dimensiones de la página",
+        "fr": "Dimensions de la page",
+        "de": "Seitenmaße",
+        "pt-BR": "Dimensões da página",
+        "ru": "Размеры страницы",
+        "ar": "أبعاد الصفحة",
+        "hi": "पेज आयाम"
       },
       "fields": [
         {
@@ -2261,7 +4631,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度(pt)",
-            "en-US": "Width in pt"
+            "en-US": "Width in pt",
+            "zh-TW": "宽度(pt)",
+            "ja": "幅（pt）",
+            "ko": "너비(pt)",
+            "es": "Ancho en pt",
+            "fr": "Largeur en pt",
+            "de": "Breite in pt",
+            "pt-BR": "Largura em pt",
+            "ru": "Ширина в pt",
+            "ar": "العرض بالنقاط",
+            "hi": "चौड़ाई pt में"
           }
         },
         {
@@ -2269,7 +4649,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度(pt)",
-            "en-US": "Height in pt"
+            "en-US": "Height in pt",
+            "zh-TW": "高度(pt)",
+            "ja": "高さ（pt）",
+            "ko": "높이(pt)",
+            "es": "Altura en pt",
+            "fr": "Hauteur en pt",
+            "de": "Höhe in pt",
+            "pt-BR": "Altura em pt",
+            "ru": "Высота в pt",
+            "ar": "الارتفاع بالنقاط",
+            "hi": "ऊँचाई pt में"
           }
         }
       ]
@@ -2278,7 +4668,17 @@
       "name": "SaveResult",
       "descriptions": {
         "zh-CN": "保存操作结果",
-        "en-US": "Save operation result"
+        "en-US": "Save operation result",
+        "zh-TW": "保存操作结果",
+        "ja": "保存操作結果",
+        "ko": "저장 작업 결과",
+        "es": "Resultado de la operación de guardado",
+        "fr": "Résultat de l'opération de sauvegarde",
+        "de": "Speicheroperationsergebnis",
+        "pt-BR": "Resultado da operação de salvamento",
+        "ru": "Результат операции сохранения",
+        "ar": "نتيجة عملية الحفظ",
+        "hi": "सहेजने का ऑपरेशन परिणाम"
       },
       "fields": [
         {
@@ -2286,7 +4686,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否成功",
-            "en-US": "Whether succeeded"
+            "en-US": "Whether succeeded",
+            "zh-TW": "是否成功",
+            "ja": "成功したかどうか",
+            "ko": "성공 여부",
+            "es": "Si tuvo éxito",
+            "fr": "Si réussi",
+            "de": "Ob erfolgreich",
+            "pt-BR": "Se teve sucesso",
+            "ru": "Успешно или нет",
+            "ar": "ما إذا نجح",
+            "hi": "सफल हुआ या नहीं"
           }
         },
         {
@@ -2294,7 +4704,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "保存路径",
-            "en-US": "Save path"
+            "en-US": "Save path",
+            "zh-TW": "保存路徑",
+            "ja": "保存パス",
+            "ko": "저장 경로",
+            "es": "Ruta de guardado",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения",
+            "ar": "مسار الحفظ",
+            "hi": "सहेजने का पथ"
           }
         },
         {
@@ -2302,7 +4722,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "文件大小(字节)",
-            "en-US": "File size in bytes"
+            "en-US": "File size in bytes",
+            "zh-TW": "檔案大小(字節)",
+            "ja": "ファイルサイズ（バイト）",
+            "ko": "파일 크기(바이트)",
+            "es": "Tamaño de archivo en bytes",
+            "fr": "Taille du fichier en octets",
+            "de": "Dateigröße in Bytes",
+            "pt-BR": "Tamanho do arquivo em bytes",
+            "ru": "Размер файла в байтах",
+            "ar": "حجم الملف بالبايت",
+            "hi": "फ़ाइल आकार बाइट में"
           }
         }
       ]
@@ -2311,7 +4741,17 @@
       "name": "PageSize",
       "descriptions": {
         "zh-CN": "页面尺寸配置",
-        "en-US": "Page size config"
+        "en-US": "Page size config",
+        "zh-TW": "页面尺寸配置",
+        "ja": "ページサイズ設定",
+        "ko": "페이지 크기 설정",
+        "es": "Configuración de tamaño de página",
+        "fr": "Configuration de la taille de page",
+        "de": "Seitengrößenkonfiguration",
+        "pt-BR": "Configuração de tamanho de página",
+        "ru": "Настройка размера страницы",
+        "ar": "إعداد حجم الصفحة",
+        "hi": "पेज आकार कॉन्फ़िगरेशन"
       },
       "fields": [
         {
@@ -2319,7 +4759,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度(pt)",
-            "en-US": "Width in pt"
+            "en-US": "Width in pt",
+            "zh-TW": "宽度(pt)",
+            "ja": "幅（pt）",
+            "ko": "너비(pt)",
+            "es": "Ancho en pt",
+            "fr": "Largeur en pt",
+            "de": "Breite in pt",
+            "pt-BR": "Largura em pt",
+            "ru": "Ширина в pt",
+            "ar": "العرض بالنقاط",
+            "hi": "चौड़ाई pt में"
           }
         },
         {
@@ -2327,7 +4777,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度(pt)",
-            "en-US": "Height in pt"
+            "en-US": "Height in pt",
+            "zh-TW": "高度(pt)",
+            "ja": "高さ（pt）",
+            "ko": "높이(pt)",
+            "es": "Altura en pt",
+            "fr": "Hauteur en pt",
+            "de": "Höhe in pt",
+            "pt-BR": "Altura em pt",
+            "ru": "Высота в pt",
+            "ar": "الارتفاع بالنقاط",
+            "hi": "ऊँचाई pt में"
           }
         }
       ]
@@ -2336,7 +4796,17 @@
       "name": "Rect",
       "descriptions": {
         "zh-CN": "矩形区域",
-        "en-US": "Rectangle area"
+        "en-US": "Rectangle area",
+        "zh-TW": "矩形區域",
+        "ja": "矩形エリア",
+        "ko": "직사각형 영역",
+        "es": "Área rectangular",
+        "fr": "Zone rectangulaire",
+        "de": "Rechteckiger Bereich",
+        "pt-BR": "Área retangular",
+        "ru": "Прямоугольная область",
+        "ar": "المنطقة المستطيلة",
+        "hi": "आयत क्षेत्र"
       },
       "fields": [
         {
@@ -2344,7 +4814,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "X坐标",
-            "en-US": "X coordinate"
+            "en-US": "X coordinate",
+            "zh-TW": "X坐標",
+            "ja": "X座標",
+            "ko": "X 좌표",
+            "es": "Coordenada X",
+            "fr": "Coordonnée X",
+            "de": "X-Koordinate",
+            "pt-BR": "Coordenada X",
+            "ru": "Координата X",
+            "ar": "إحداثي X",
+            "hi": "X निर्देशांक"
           }
         },
         {
@@ -2352,7 +4832,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Y坐标",
-            "en-US": "Y coordinate"
+            "en-US": "Y coordinate",
+            "zh-TW": "Y坐標",
+            "ja": "Y座標",
+            "ko": "Y 좌표",
+            "es": "Coordenada Y",
+            "fr": "Coordonnée Y",
+            "de": "Y-Koordinate",
+            "pt-BR": "Coordenada Y",
+            "ru": "Координата Y",
+            "ar": "إحداثي Y",
+            "hi": "Y निर्देशांक"
           }
         },
         {
@@ -2360,7 +4850,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度",
-            "en-US": "Width"
+            "en-US": "Width",
+            "zh-TW": "宽度",
+            "ja": "幅",
+            "ko": "너비",
+            "es": "Ancho",
+            "fr": "Largeur",
+            "de": "Breite",
+            "pt-BR": "Largura",
+            "ru": "Ширина",
+            "ar": "العرض",
+            "hi": "चौड़ाई"
           }
         },
         {
@@ -2368,7 +4868,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度",
-            "en-US": "Height"
+            "en-US": "Height",
+            "zh-TW": "高度",
+            "ja": "高さ",
+            "ko": "높이",
+            "es": "Altura",
+            "fr": "Hauteur",
+            "de": "Höhe",
+            "pt-BR": "Altura",
+            "ru": "Высота",
+            "ar": "الارتفاع",
+            "hi": "ऊँचाई"
           }
         }
       ]
@@ -2380,7 +4890,17 @@
       "value": 595,
       "descs": {
         "zh-CN": "A4纸宽度(pt)",
-        "en-US": "A4 paper width in pt"
+        "en-US": "A4 paper width in pt",
+        "zh-TW": "A4紙宽度(pt)",
+        "ja": "A4用紙の幅（pt）",
+        "ko": "A4 용지 너비(pt)",
+        "es": "Ancho de papel A4 en pt",
+        "fr": "Largeur du papier A4 en pt",
+        "de": "A4-Papierbreite in pt",
+        "pt-BR": "Largura do papel A4 em pt",
+        "ru": "Ширина бумаги A4 в pt",
+        "ar": "عرض ورق A4 بالنقاط",
+        "hi": "A4 कागज की चौड़ाई pt में"
       },
       "type": "number"
     },
@@ -2389,7 +4909,17 @@
       "value": 842,
       "descs": {
         "zh-CN": "A4纸高度(pt)",
-        "en-US": "A4 paper height in pt"
+        "en-US": "A4 paper height in pt",
+        "zh-TW": "A4紙高度(pt)",
+        "ja": "A4用紙の高さ（pt）",
+        "ko": "A4 용지 높이(pt)",
+        "es": "Altura de papel A4 en pt",
+        "fr": "Hauteur du papier A4 en pt",
+        "de": "A4-Papierhöhe in pt",
+        "pt-BR": "Altura do papel A4 em pt",
+        "ru": "Высота бумаги A4 в pt",
+        "ar": "ارتفاع ورق A4 بالنقاط",
+        "hi": "A4 कागज की ऊँचाई pt में"
       },
       "type": "number"
     },
@@ -2398,7 +4928,17 @@
       "value": 612,
       "descs": {
         "zh-CN": "Letter纸宽度(pt)",
-        "en-US": "Letter paper width in pt"
+        "en-US": "Letter paper width in pt",
+        "zh-TW": "Letter紙宽度(pt)",
+        "ja": "レター用紙の幅（pt）",
+        "ko": "레터 용지 너비(pt)",
+        "es": "Ancho del papel carta en pt",
+        "fr": "Largeur du papier lettre en pt",
+        "de": "Letter-Papierbreite in pt",
+        "pt-BR": "Largura do papel carta em pt",
+        "ru": "Ширина бумаги Letter в pt",
+        "ar": "عرض ورق Letter بالنقاط",
+        "hi": "लेटर कागज की चौड़ाई pt में"
       },
       "type": "number"
     },
@@ -2407,7 +4947,17 @@
       "value": 792,
       "descs": {
         "zh-CN": "Letter纸高度(pt)",
-        "en-US": "Letter paper height in pt"
+        "en-US": "Letter paper height in pt",
+        "zh-TW": "Letter紙高度(pt)",
+        "ja": "レター用紙の高さ（pt）",
+        "ko": "레터 용지 높이(pt)",
+        "es": "Altura del papel carta en pt",
+        "fr": "Hauteur du papier lettre en pt",
+        "de": "Letter-Papierhöhe in pt",
+        "pt-BR": "Altura do papel carta em pt",
+        "ru": "Высота бумаги Letter в pt",
+        "ar": "ارتفاع ورق Letter بالنقاط",
+        "hi": "लेटर कागज की ऊँचाई pt में"
       },
       "type": "number"
     }

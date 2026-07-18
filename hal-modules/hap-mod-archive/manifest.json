@@ -33,7 +33,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "source_paths参数",
-            "en-US": "source_paths parameter"
+            "en-US": "source_paths parameter",
+            "zh-TW": "source_paths參數",
+            "ja": "source_pathsパラメータ",
+            "ko": "source_paths매개변수",
+            "es": "Parámetro de rutas de origen",
+            "fr": "Paramètre de chemins source",
+            "de": "Quellpfade-Parameter",
+            "pt-BR": "Parâmetro de caminhos de origem",
+            "ru": "Параметр исходных путей",
+            "ar": "معلمة مسارات المصدر",
+            "hi": "स्रोत पथ पैरामीटर"
           },
           "desc": "source_paths parameter"
         },
@@ -42,7 +52,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "dest_path参数",
-            "en-US": "dest_path parameter"
+            "en-US": "dest_path parameter",
+            "zh-TW": "dest_path參數",
+            "ja": "dest_pathパラメータ",
+            "ko": "dest_path매개변수",
+            "es": "Parámetro de ruta de destino",
+            "fr": "Paramètre de chemin de destination",
+            "de": "Zielpfad-Parameter",
+            "pt-BR": "Parâmetro de caminho de destino",
+            "ru": "Параметр пути назначения",
+            "ar": "معلمة مسار الوجهة",
+            "hi": "गंतव्य पथ पैरामीटर"
           },
           "desc": "dest_path parameter"
         },
@@ -51,7 +71,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "optional": true,
           "desc": "Password string"
@@ -61,7 +91,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "加密方式",
-            "en-US": "Encryption method"
+            "en-US": "Encryption method",
+            "zh-TW": "加密方式",
+            "ja": "暗号化する方式",
+            "ko": "암호화 방법",
+            "es": "Método de cifrado",
+            "fr": "Méthode de chiffrement",
+            "de": "Verschlüsselungsmethode",
+            "pt-BR": "Método de criptografia",
+            "ru": "Метод шифрования",
+            "ar": "طريقة التشفير",
+            "hi": "एन्क्रिप्शन विधि"
           },
           "optional": true
         },
@@ -70,7 +110,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "压缩级别",
-            "en-US": "Compression level"
+            "en-US": "Compression level",
+            "zh-TW": "壓縮级別",
+            "ja": "圧縮レベル",
+            "ko": "압축 레벨",
+            "es": "Nivel de compresión",
+            "fr": "Niveau de compression",
+            "de": "Komprimierungsstufe",
+            "pt-BR": "Nível de compressão",
+            "ru": "Уровень сжатия",
+            "ar": "مستوى الضغط",
+            "hi": "कंप्रेशन स्तर"
           },
           "optional": true,
           "default_value": "6"
@@ -80,7 +130,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "压缩方法",
-            "en-US": "Compression method"
+            "en-US": "Compression method",
+            "zh-TW": "壓縮方法",
+            "ja": "圧縮するメソッド",
+            "ko": "압축 방법",
+            "es": "Método de compresión",
+            "fr": "Méthode de compression",
+            "de": "Komprimierungsmethode",
+            "pt-BR": "Método de compressão",
+            "ru": "Метод сжатия",
+            "ar": "طريقة الضغط",
+            "hi": "कंप्रेशन विधि"
           },
           "optional": true
         },
@@ -89,7 +149,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -98,14 +168,34 @@
         "type": "ArchiveResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "archive.zip",
       "descriptions": {
         "zh-CN": "将文件或目录压缩为ZIP格式的压缩包",
-        "en-US": "Compress files or directory into ZIP archive"
+        "en-US": "Compress files or directory into ZIP archive",
+        "zh-TW": "將檔案或目錄壓縮為ZIP格式的壓縮包",
+        "ja": "ファイルまたはディレクトリをZIPアーカイブに圧縮",
+        "ko": "파일 또는 디렉토리를 ZIP 아카이브로 압축",
+        "es": "Comprimir archivos o directorio en ZIP",
+        "fr": "Compresser des fichiers en archive ZIP",
+        "de": "Dateien/Verzeichnis in ZIP komprimieren",
+        "pt-BR": "Comprimir arquivos ou diretório em ZIP",
+        "ru": "Сжать файлы или каталог в ZIP",
+        "ar": "ضغط الملفات أو المجلد في أرشيف ZIP",
+        "hi": "फ़ाइलें या डायरेक्टरी को ZIP में कंप्रेस करें"
       },
       "group": "compress",
       "description": "Compress files or directory into ZIP archive"
@@ -119,7 +209,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "archive_path参数",
-            "en-US": "archive_path parameter"
+            "en-US": "archive_path parameter",
+            "zh-TW": "archive_path參數",
+            "ja": "archive_pathパラメータ",
+            "ko": "archive_path매개변수",
+            "es": "Parámetro de ruta del archivo",
+            "fr": "Paramètre de chemin d'archive",
+            "de": "Archivpfad-Parameter",
+            "pt-BR": "Parâmetro de caminho do arquivo",
+            "ru": "Параметр пути архива",
+            "ar": "معلمة مسار الأرشيف",
+            "hi": "आर्काइव पथ पैरामीटर"
           },
           "desc": "archive_path parameter"
         },
@@ -128,7 +228,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "dest_dir参数",
-            "en-US": "dest_dir parameter"
+            "en-US": "dest_dir parameter",
+            "zh-TW": "dest_dir參數",
+            "ja": "dest_dirパラメータ",
+            "ko": "dest_dir매개변수",
+            "es": "Parámetro de directorio de destino",
+            "fr": "Paramètre de répertoire de destination",
+            "de": "Zielverzeichnis-Parameter",
+            "pt-BR": "Parâmetro de diretório de destino",
+            "ru": "Параметр каталога назначения",
+            "ar": "معلمة مجلد الوجهة",
+            "hi": "गंतव्य डायरेक्टरी पैरामीटर"
           },
           "desc": "dest_dir parameter"
         },
@@ -137,7 +247,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "optional": true,
           "desc": "Password string"
@@ -147,7 +267,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否覆盖已有文件",
-            "en-US": "Overwrite existing"
+            "en-US": "Overwrite existing",
+            "zh-TW": "是否覆蓋已有檔案",
+            "ja": "既存のファイルを上書き",
+            "ko": "기존 파일 덮어쓰기",
+            "es": "Sobrescribir existente",
+            "fr": "Écraser l'existant",
+            "de": "Vorhandenes überschreiben",
+            "pt-BR": "Sobrescrever existente",
+            "ru": "Перезаписать существующий",
+            "ar": "الكتابة فوق الموجود",
+            "hi": "मौजूदा को ओवरराइट करें"
           },
           "optional": true,
           "default_value": "true"
@@ -157,7 +287,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -166,14 +306,34 @@
         "type": "ExtractResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "archive.unzip",
       "descriptions": {
         "zh-CN": "解压ZIP格式的压缩包到指定目录",
-        "en-US": "Extract ZIP archive to specified directory"
+        "en-US": "Extract ZIP archive to specified directory",
+        "zh-TW": "解壓ZIP格式的壓縮包到指定目錄",
+        "ja": "展開するZIPフォーマットの圧縮する包へ指定ディレクトリ",
+        "ko": "ZIP 아카이브를 지정 디렉토리에 압축 해제",
+        "es": "Extraer archivo ZIP al directorio",
+        "fr": "Extraire l'archive ZIP",
+        "de": "ZIP-Archiv extrahieren",
+        "pt-BR": "Extrair arquivo ZIP para o diretório",
+        "ru": "Извлечь ZIP-архив в каталог",
+        "ar": "استخراج أرشيف ZIP إلى المجلد",
+        "hi": "ZIP आर्काइव निर्दिष्ट डायरेक्टरी में एक्सट्रैक्ट करें"
       },
       "group": "decompress",
       "description": "Extract ZIP archive to specified directory"
@@ -187,7 +347,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "archive_path参数",
-            "en-US": "archive_path parameter"
+            "en-US": "archive_path parameter",
+            "zh-TW": "archive_path參數",
+            "ja": "archive_pathパラメータ",
+            "ko": "archive_path매개변수",
+            "es": "Parámetro de ruta del archivo",
+            "fr": "Paramètre de chemin d'archive",
+            "de": "Archivpfad-Parameter",
+            "pt-BR": "Parâmetro de caminho do arquivo",
+            "ru": "Параметр пути архива",
+            "ar": "معلمة مسار الأرشيف",
+            "hi": "आर्काइव पथ पैरामीटर"
           },
           "desc": "archive_path parameter"
         },
@@ -196,7 +366,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "optional": true,
           "desc": "Password string"
@@ -206,14 +386,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "archive.listEntries",
       "descriptions": {
         "zh-CN": "列出压缩包内所有文件和目录的条目信息",
-        "en-US": "List all file and directory entries in archive"
+        "en-US": "List all file and directory entries in archive",
+        "zh-TW": "列出壓縮包內所有檔案和目錄的條目資訊",
+        "ja": "アーカイブ内の全ファイルとディレクトリ項目を一覧表示",
+        "ko": "아카이브의 모든 파일 및 디렉토리 항목 나열",
+        "es": "Listar todos los archivos y directorios del archivo",
+        "fr": "Lister toutes les entrées de l'archive",
+        "de": "Alle Einträge im Archiv auflisten",
+        "pt-BR": "Listar todas as entradas do arquivo",
+        "ru": "Список всех записей в архиве",
+        "ar": "سرد جميع الملفات والمجلدات في الأرشيف",
+        "hi": "आर्काइव में सभी फ़ाइल और डायरेक्टरी सूचीबद्ध करें"
       },
       "group": "info",
       "description": "List all file and directory entries in archive"
@@ -227,7 +427,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "archive_path参数",
-            "en-US": "archive_path parameter"
+            "en-US": "archive_path parameter",
+            "zh-TW": "archive_path參數",
+            "ja": "archive_pathパラメータ",
+            "ko": "archive_path매개변수",
+            "es": "Parámetro de ruta del archivo",
+            "fr": "Paramètre de chemin d'archive",
+            "de": "Archivpfad-Parameter",
+            "pt-BR": "Parâmetro de caminho do arquivo",
+            "ru": "Параметр пути архива",
+            "ar": "معلمة مسار الأرشيف",
+            "hi": "आर्काइव पथ पैरामीटर"
           },
           "desc": "archive_path parameter"
         },
@@ -236,7 +446,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "entry_name参数",
-            "en-US": "entry_name parameter"
+            "en-US": "entry_name parameter",
+            "zh-TW": "entry_name參數",
+            "ja": "entry_nameパラメータ",
+            "ko": "entry_name매개변수",
+            "es": "Parámetro de nombre de entrada",
+            "fr": "Paramètre de nom d'entrée",
+            "de": "Eintragsname-Parameter",
+            "pt-BR": "Parâmetro de nome da entrada",
+            "ru": "Параметр имени записи",
+            "ar": "معلمة اسم الإدخال",
+            "hi": "एंट्री नाम पैरामीटर"
           },
           "desc": "entry_name parameter"
         },
@@ -245,7 +465,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "目标路径",
-            "en-US": "Dest Path"
+            "en-US": "Dest Path",
+            "zh-TW": "目標路徑",
+            "ja": "宛先パス",
+            "ko": "대상 경로",
+            "es": "Ruta de destino",
+            "fr": "Chemin de destination",
+            "de": "Zielpfad",
+            "pt-BR": "Caminho de destino",
+            "ru": "Путь назначения",
+            "ar": "مسار الوجهة",
+            "hi": "गंतव्य पथ"
           }
         },
         {
@@ -253,7 +483,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "optional": true,
           "desc": "Password string"
@@ -263,7 +503,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否覆盖已有文件",
-            "en-US": "Overwrite existing"
+            "en-US": "Overwrite existing",
+            "zh-TW": "是否覆蓋已有檔案",
+            "ja": "既存のファイルを上書き",
+            "ko": "기존 파일 덮어쓰기",
+            "es": "Sobrescribir existente",
+            "fr": "Écraser l'existant",
+            "de": "Vorhandenes überschreiben",
+            "pt-BR": "Sobrescrever existente",
+            "ru": "Перезаписать существующий",
+            "ar": "الكتابة فوق الموجود",
+            "hi": "मौजूदा को ओवरराइट करें"
           },
           "optional": true,
           "default_value": "true"
@@ -273,14 +523,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "archive.extractEntry",
       "descriptions": {
         "zh-CN": "从压缩包中提取单个指定文件",
-        "en-US": "Extract a single file from archive"
+        "en-US": "Extract a single file from archive",
+        "zh-TW": "從壓縮包中提取單個指定檔案",
+        "ja": "アーカイブから単一ファイルを抽出",
+        "ko": "아카이브에서 단일 파일 추출",
+        "es": "Extraer un archivo del archivo comprimido",
+        "fr": "Extraire un fichier de l'archive",
+        "de": "Einzelne Datei aus Archiv extrahieren",
+        "pt-BR": "Extrair um arquivo do arquivo comprimido",
+        "ru": "Извлечь один файл из архива",
+        "ar": "استخراج ملف واحد من الأرشيف",
+        "hi": "आर्काइव से एकल फ़ाइल एक्सट्रैक्ट करें"
       },
       "group": "decompress",
       "description": "Extract a single file from archive"
@@ -294,7 +564,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "source_paths参数",
-            "en-US": "source_paths parameter"
+            "en-US": "source_paths parameter",
+            "zh-TW": "source_paths參數",
+            "ja": "source_pathsパラメータ",
+            "ko": "source_paths매개변수",
+            "es": "Parámetro de rutas de origen",
+            "fr": "Paramètre de chemins source",
+            "de": "Quellpfade-Parameter",
+            "pt-BR": "Parâmetro de caminhos de origem",
+            "ru": "Параметр исходных путей",
+            "ar": "معلمة مسارات المصدر",
+            "hi": "स्रोत पथ पैरामीटर"
           },
           "desc": "source_paths parameter"
         },
@@ -303,7 +583,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "dest_path参数",
-            "en-US": "dest_path parameter"
+            "en-US": "dest_path parameter",
+            "zh-TW": "dest_path參數",
+            "ja": "dest_pathパラメータ",
+            "ko": "dest_path매개변수",
+            "es": "Parámetro de ruta de destino",
+            "fr": "Paramètre de chemin de destination",
+            "de": "Zielpfad-Parameter",
+            "pt-BR": "Parâmetro de caminho de destino",
+            "ru": "Параметр пути назначения",
+            "ar": "معلمة مسار الوجهة",
+            "hi": "गंतव्य पथ पैरामीटर"
           },
           "desc": "dest_path parameter"
         },
@@ -312,7 +602,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "压缩算法",
-            "en-US": "Compression algorithm"
+            "en-US": "Compression algorithm",
+            "zh-TW": "壓縮算法",
+            "ja": "圧縮するアルゴリズム",
+            "ko": "압축 알고리즘",
+            "es": "Algoritmo de compresión",
+            "fr": "Algorithme de compression",
+            "de": "Kompressionsalgorithmus",
+            "pt-BR": "Algoritmo de compressão",
+            "ru": "Алгоритм сжатия",
+            "ar": "خوارزمية الضغط",
+            "hi": "कंप्रेशन एल्गोरिथ्म"
           },
           "optional": true
         },
@@ -321,7 +621,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -330,14 +640,34 @@
         "type": "ArchiveResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "archive.tar",
       "descriptions": {
         "zh-CN": "将文件或目录打包为TAR格式归档文件",
-        "en-US": "Pack files or directory into TAR archive"
+        "en-US": "Pack files or directory into TAR archive",
+        "zh-TW": "將檔案或目錄打包為TAR格式歸檔檔案",
+        "ja": "ファイルまたはディレクトリをTARアーカイブにパック",
+        "ko": "파일 또는 디렉토리를 TAR 아카이브로 패킹",
+        "es": "Empaquetar archivos en archivo TAR",
+        "fr": "Empaqueter des fichiers en archive TAR",
+        "de": "Dateien/Verzeichnis in TAR packen",
+        "pt-BR": "Empacotar arquivos em arquivo TAR",
+        "ru": "Упаковать файлы в TAR-архив",
+        "ar": "حزم الملفات في أرشيف TAR",
+        "hi": "फ़ाइलें या डायरेक्टरी को TAR में पैक करें"
       },
       "group": "compress",
       "description": "Pack files or directory into TAR archive"
@@ -351,7 +681,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "archive_path参数",
-            "en-US": "archive_path parameter"
+            "en-US": "archive_path parameter",
+            "zh-TW": "archive_path參數",
+            "ja": "archive_pathパラメータ",
+            "ko": "archive_path매개변수",
+            "es": "Parámetro de ruta del archivo",
+            "fr": "Paramètre de chemin d'archive",
+            "de": "Archivpfad-Parameter",
+            "pt-BR": "Parâmetro de caminho do arquivo",
+            "ru": "Параметр пути архива",
+            "ar": "معلمة مسار الأرشيف",
+            "hi": "आर्काइव पथ पैरामीटर"
           },
           "desc": "archive_path parameter"
         },
@@ -360,7 +700,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "dest_dir参数",
-            "en-US": "dest_dir parameter"
+            "en-US": "dest_dir parameter",
+            "zh-TW": "dest_dir參數",
+            "ja": "dest_dirパラメータ",
+            "ko": "dest_dir매개변수",
+            "es": "Parámetro de directorio de destino",
+            "fr": "Paramètre de répertoire de destination",
+            "de": "Zielverzeichnis-Parameter",
+            "pt-BR": "Parâmetro de diretório de destino",
+            "ru": "Параметр каталога назначения",
+            "ar": "معلمة مجلد الوجهة",
+            "hi": "गंतव्य डायरेक्टरी पैरामीटर"
           },
           "desc": "dest_dir parameter"
         },
@@ -369,7 +719,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否覆盖已有文件",
-            "en-US": "Overwrite existing"
+            "en-US": "Overwrite existing",
+            "zh-TW": "是否覆蓋已有檔案",
+            "ja": "既存のファイルを上書き",
+            "ko": "기존 파일 덮어쓰기",
+            "es": "Sobrescribir existente",
+            "fr": "Écraser l'existant",
+            "de": "Vorhandenes überschreiben",
+            "pt-BR": "Sobrescrever existente",
+            "ru": "Перезаписать существующий",
+            "ar": "الكتابة فوق الموجود",
+            "hi": "मौजूदा को ओवरराइट करें"
           },
           "optional": true,
           "default_value": "true"
@@ -379,7 +739,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -388,14 +758,34 @@
         "type": "ExtractResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "archive.untar",
       "descriptions": {
         "zh-CN": "解包TAR格式归档文件到指定目录",
-        "en-US": "Extract TAR archive to specified directory"
+        "en-US": "Extract TAR archive to specified directory",
+        "zh-TW": "解包TAR格式歸檔檔案到指定目錄",
+        "ja": "TARアーカイブを指定ディレクトリに展開",
+        "ko": "TAR 아카이브를 지정 디렉토리에 압축 해제",
+        "es": "Extraer archivo TAR al directorio",
+        "fr": "Extraire l'archive TAR",
+        "de": "TAR-Archiv extrahieren",
+        "pt-BR": "Extrair arquivo TAR para o diretório",
+        "ru": "Извлечь TAR-архив в каталог",
+        "ar": "استخراج أرشيف TAR إلى المجلد",
+        "hi": "TAR आर्काइव निर्दिष्ट डायरेक्टरी में एक्सट्रैक्ट करें"
       },
       "group": "decompress",
       "description": "Extract TAR archive to specified directory"
@@ -409,7 +799,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         },
@@ -418,7 +818,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "算法名称",
-            "en-US": "Algorithm name"
+            "en-US": "Algorithm name",
+            "zh-TW": "算法名稱",
+            "ja": "アルゴリズム名称",
+            "ko": "알고리즘 이름",
+            "es": "Nombre del algoritmo",
+            "fr": "Nom de l'algorithme",
+            "de": "Algorithmusname",
+            "pt-BR": "Nome do algoritmo",
+            "ru": "Название алгоритма",
+            "ar": "اسم الخوارزمية",
+            "hi": "एल्गोरिथ्म नाम"
           },
           "desc": "Algorithm name"
         },
@@ -427,7 +837,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "压缩级别",
-            "en-US": "Compression level"
+            "en-US": "Compression level",
+            "zh-TW": "壓縮级別",
+            "ja": "圧縮レベル",
+            "ko": "압축 레벨",
+            "es": "Nivel de compresión",
+            "fr": "Niveau de compression",
+            "de": "Komprimierungsstufe",
+            "pt-BR": "Nível de compressão",
+            "ru": "Уровень сжатия",
+            "ar": "مستوى الضغط",
+            "hi": "कंप्रेशन स्तर"
           },
           "optional": true,
           "default_value": "3"
@@ -437,14 +857,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "archive.compressBytes",
       "descriptions": {
         "zh-CN": "将字节数据使用指定算法进行压缩",
-        "en-US": "Compress byte data with specified algorithm"
+        "en-US": "Compress byte data with specified algorithm",
+        "zh-TW": "將位元組數據使用指定算法進行壓縮",
+        "ja": "指定アルゴリズムでバイトデータを圧縮",
+        "ko": "지정된 알고리즘으로 바이트 데이터 압축",
+        "es": "Comprimir datos con algoritmo especificado",
+        "fr": "Compresser les données avec l'algorithme",
+        "de": "Bytedaten mit Algorithmus komprimieren",
+        "pt-BR": "Comprimir dados com algoritmo especificado",
+        "ru": "Сжать данные указанным алгоритмом",
+        "ar": "ضغط البيانات بالخوارزمية المحددة",
+        "hi": "निर्दिष्ट एल्गोरिथ्म से बाइट डेटा कंप्रेस करें"
       },
       "group": "compress",
       "description": "Compress byte data with specified algorithm"
@@ -458,7 +898,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         },
@@ -467,7 +917,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "算法名称",
-            "en-US": "Algorithm name"
+            "en-US": "Algorithm name",
+            "zh-TW": "算法名稱",
+            "ja": "アルゴリズム名称",
+            "ko": "알고리즘 이름",
+            "es": "Nombre del algoritmo",
+            "fr": "Nom de l'algorithme",
+            "de": "Algorithmusname",
+            "pt-BR": "Nome do algoritmo",
+            "ru": "Название алгоритма",
+            "ar": "اسم الخوارزمية",
+            "hi": "एल्गोरिथ्म नाम"
           },
           "desc": "Algorithm name"
         }
@@ -476,14 +936,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "archive.decompressBytes",
       "descriptions": {
         "zh-CN": "将压缩的字节数据解压还原",
-        "en-US": "Decompress compressed byte data"
+        "en-US": "Decompress compressed byte data",
+        "zh-TW": "將壓縮的位元組數據解壓還原",
+        "ja": "圧縮されたバイトデータを展開",
+        "ko": "압축된 바이트 데이터 압축 해제",
+        "es": "Descomprimir datos de bytes comprimidos",
+        "fr": "Décompresser les données compressées",
+        "de": "Komprimierte Bytedaten dekomprimieren",
+        "pt-BR": "Descompactar dados de bytes comprimidos",
+        "ru": "Распаковать сжатые данные",
+        "ar": "فك ضغط البيانات المضغوطة",
+        "hi": "कंप्रेस्ड बाइट डेटा डीकंप्रेस करें"
       },
       "group": "decompress",
       "description": "Decompress compressed byte data"
@@ -497,7 +977,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -506,14 +996,34 @@
         "type": "ArchiveDetectResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "archive.isArchive",
       "descriptions": {
         "zh-CN": "检测文件是否为有效的压缩包格式",
-        "en-US": "Detect if file is a valid archive format"
+        "en-US": "Detect if file is a valid archive format",
+        "zh-TW": "檢測檔案是否為有效的壓縮包格式",
+        "ja": "ファイルが有効なアーカイブ形式かを検出",
+        "ko": "파일이 유효한 아카이브 형식인지 감지",
+        "es": "Detectar si es un archivo de formato válido",
+        "fr": "Détecter si le fichier est un format d'archive valide",
+        "de": "Prüfen ob Datei gültiges Archivformat ist",
+        "pt-BR": "Detectar se é um formato de arquivo válido",
+        "ru": "Определить формат архива",
+        "ar": "كشف ما إذا كان الملف بتنسيق أرشيف صالح",
+        "hi": "फ़ाइल वैध आर्काइव फ़ॉर्मैट है डिटेक्ट करें"
       },
       "group": "info",
       "description": "Detect if file is a valid archive format"
@@ -527,7 +1037,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "archive_path参数",
-            "en-US": "archive_path parameter"
+            "en-US": "archive_path parameter",
+            "zh-TW": "archive_path參數",
+            "ja": "archive_pathパラメータ",
+            "ko": "archive_path매개변수",
+            "es": "Parámetro de ruta del archivo",
+            "fr": "Paramètre de chemin d'archive",
+            "de": "Archivpfad-Parameter",
+            "pt-BR": "Parâmetro de caminho do arquivo",
+            "ru": "Параметр пути архива",
+            "ar": "معلمة مسار الأرشيف",
+            "hi": "आर्काइव पथ पैरामीटर"
           },
           "desc": "archive_path parameter"
         },
@@ -536,7 +1056,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "optional": true,
           "desc": "Password string"
@@ -546,14 +1076,34 @@
         "type": "ArchiveTestResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "archive.testArchive",
       "descriptions": {
         "zh-CN": "验证压缩包的完整性（检查是否损坏）",
-        "en-US": "Verify archive integrity (check for corruption)"
+        "en-US": "Verify archive integrity (check for corruption)",
+        "zh-TW": "驗證壓縮包的完整性（檢查是否損坏）",
+        "ja": "アーカイブの整合性を検証（破損チェック）",
+        "ko": "아카이브 무결성 확인 (손상 검사)",
+        "es": "Verificar integridad del archivo",
+        "fr": "Vérifier l'intégrité de l'archive",
+        "de": "Archivintegrität prüfen",
+        "pt-BR": "Verificar integridade do arquivo",
+        "ru": "Проверить целостность архива",
+        "ar": "التحقق من سلامة الأرشيف",
+        "hi": "आर्काइव अखंडता सत्यापित करें"
       },
       "group": "info",
       "description": "Verify archive integrity (check for corruption)"
@@ -567,7 +1117,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "archive_path参数",
-            "en-US": "archive_path parameter"
+            "en-US": "archive_path parameter",
+            "zh-TW": "archive_path參數",
+            "ja": "archive_pathパラメータ",
+            "ko": "archive_path매개변수",
+            "es": "Parámetro de ruta del archivo",
+            "fr": "Paramètre de chemin d'archive",
+            "de": "Archivpfad-Parameter",
+            "pt-BR": "Parâmetro de caminho do arquivo",
+            "ru": "Параметр пути архива",
+            "ar": "معلمة مسار الأرشيف",
+            "hi": "आर्काइव पथ पैरामीटर"
           },
           "desc": "archive_path parameter"
         },
@@ -576,7 +1136,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File Paths"
+            "en-US": "File Paths",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Rutas de archivos",
+            "fr": "Chemins de fichiers",
+            "de": "Dateipfade",
+            "pt-BR": "Caminhos de arquivos",
+            "ru": "Пути к файлам",
+            "ar": "مسارات الملفات",
+            "hi": "फ़ाइल पथ"
           }
         },
         {
@@ -584,7 +1154,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "optional": true,
           "desc": "Password string"
@@ -594,7 +1174,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -603,14 +1193,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "archive.addToZip",
       "descriptions": {
         "zh-CN": "向已有的ZIP压缩包中添加新文件",
-        "en-US": "Add new files to existing ZIP archive"
+        "en-US": "Add new files to existing ZIP archive",
+        "zh-TW": "向已有的ZIP壓縮包中添加新檔案",
+        "ja": "向既存ののZIP圧縮する包中添加新ファイル",
+        "ko": "기존 ZIP 아카이브에 새 파일 추가",
+        "es": "Agregar archivos al archivo ZIP existente",
+        "fr": "Ajouter des fichiers à l'archive ZIP",
+        "de": "Neue Dateien zum ZIP-Archiv hinzufügen",
+        "pt-BR": "Adicionar arquivos ao arquivo ZIP existente",
+        "ru": "Добавить файлы в существующий ZIP-архив",
+        "ar": "إضافة ملفات إلى أرشيف ZIP موجود",
+        "hi": "मौजूदा ZIP आर्काइव में नई फ़ाइलें जोड़ें"
       },
       "group": "compress",
       "description": "Add new files to existing ZIP archive"
@@ -624,7 +1234,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "archive_path参数",
-            "en-US": "archive_path parameter"
+            "en-US": "archive_path parameter",
+            "zh-TW": "archive_path參數",
+            "ja": "archive_pathパラメータ",
+            "ko": "archive_path매개변수",
+            "es": "Parámetro de ruta del archivo",
+            "fr": "Paramètre de chemin d'archive",
+            "de": "Archivpfad-Parameter",
+            "pt-BR": "Parâmetro de caminho do arquivo",
+            "ru": "Параметр пути архива",
+            "ar": "معلمة مسار الأرشيف",
+            "hi": "आर्काइव पथ पैरामीटर"
           },
           "desc": "archive_path parameter"
         },
@@ -633,7 +1253,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "entry_name参数",
-            "en-US": "entry_name parameter"
+            "en-US": "entry_name parameter",
+            "zh-TW": "entry_name參數",
+            "ja": "entry_nameパラメータ",
+            "ko": "entry_name매개변수",
+            "es": "Parámetro de nombre de entrada",
+            "fr": "Paramètre de nom d'entrée",
+            "de": "Eintragsname-Parameter",
+            "pt-BR": "Parâmetro de nome da entrada",
+            "ru": "Параметр имени записи",
+            "ar": "معلمة اسم الإدخال",
+            "hi": "एंट्री नाम पैरामीटर"
           },
           "desc": "entry_name parameter"
         }
@@ -642,14 +1272,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "archive.removeFromZip",
       "descriptions": {
         "zh-CN": "从ZIP压缩包中移除指定文件",
-        "en-US": "Remove specified file from ZIP archive"
+        "en-US": "Remove specified file from ZIP archive",
+        "zh-TW": "從ZIP壓縮包中移除指定檔案",
+        "ja": "からZIP圧縮する包中移除指定ファイル",
+        "ko": "ZIP 아카이브에서 지정 파일 제거",
+        "es": "Eliminar archivo del archivo ZIP",
+        "fr": "Supprimer un fichier de l'archive ZIP",
+        "de": "Datei aus ZIP-Archiv entfernen",
+        "pt-BR": "Remover arquivo do arquivo ZIP",
+        "ru": "Удалить файл из ZIP-архива",
+        "ar": "إزالة ملف من أرشيف ZIP",
+        "hi": "ZIP आर्काइव से निर्दिष्ट फ़ाइल हटाएं"
       },
       "group": "decompress",
       "description": "Remove specified file from ZIP archive"
@@ -663,7 +1313,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "archive_path参数",
-            "en-US": "archive_path parameter"
+            "en-US": "archive_path parameter",
+            "zh-TW": "archive_path參數",
+            "ja": "archive_pathパラメータ",
+            "ko": "archive_path매개변수",
+            "es": "Parámetro de ruta del archivo",
+            "fr": "Paramètre de chemin d'archive",
+            "de": "Archivpfad-Parameter",
+            "pt-BR": "Parâmetro de caminho do arquivo",
+            "ru": "Параметр пути архива",
+            "ar": "معلمة مسار الأرشيف",
+            "hi": "आर्काइव पथ पैरामीटर"
           },
           "desc": "archive_path parameter"
         },
@@ -672,7 +1332,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "dest_dir参数",
-            "en-US": "dest_dir parameter"
+            "en-US": "dest_dir parameter",
+            "zh-TW": "dest_dir參數",
+            "ja": "dest_dirパラメータ",
+            "ko": "dest_dir매개변수",
+            "es": "Parámetro de directorio de destino",
+            "fr": "Paramètre de répertoire de destination",
+            "de": "Zielverzeichnis-Parameter",
+            "pt-BR": "Parâmetro de diretório de destino",
+            "ru": "Параметр каталога назначения",
+            "ar": "معلمة مجلد الوجهة",
+            "hi": "गंतव्य डायरेक्टरी पैरामीटर"
           },
           "desc": "dest_dir parameter"
         },
@@ -681,7 +1351,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "optional": true,
           "desc": "Password string"
@@ -691,7 +1371,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否覆盖已有文件",
-            "en-US": "Overwrite existing"
+            "en-US": "Overwrite existing",
+            "zh-TW": "是否覆蓋已有檔案",
+            "ja": "既存のファイルを上書き",
+            "ko": "기존 파일 덮어쓰기",
+            "es": "Sobrescribir existente",
+            "fr": "Écraser l'existant",
+            "de": "Vorhandenes überschreiben",
+            "pt-BR": "Sobrescrever existente",
+            "ru": "Перезаписать существующий",
+            "ar": "الكتابة فوق الموجود",
+            "hi": "मौजूदा को ओवरराइट करें"
           },
           "optional": true,
           "default_value": "true"
@@ -701,7 +1391,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -710,14 +1410,34 @@
         "type": "ExtractResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "archive.extractAuto",
       "descriptions": {
         "zh-CN": "自动识别压缩格式并解压到目标目录",
-        "en-US": "Auto-detect format and extract to target directory"
+        "en-US": "Auto-detect format and extract to target directory",
+        "zh-TW": "自動識別壓縮格式並解壓到目標目錄",
+        "ja": "形式を自動検出して目標ディレクトリに展開",
+        "ko": "형식 자동 감지 후 대상 디렉토리에 압축 해제",
+        "es": "Detectar formato y extraer al directorio destino",
+        "fr": "Détecter le format et extraire",
+        "de": "Format erkennen und ins Zielverzeichnis extrahieren",
+        "pt-BR": "Detectar formato e extrair para o diretório",
+        "ru": "Автоопределение формата и извлечение",
+        "ar": "كشف تلقائي للتنسيق والاستخراج",
+        "hi": "फ़ॉर्मैट ऑटो-डिटेक्ट और लक्ष्य डायरेक्टरी में एक्सट्रैक्ट"
       },
       "group": "decompress",
       "description": "Auto-detect format and extract to target directory"
@@ -731,7 +1451,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "archive_path参数",
-            "en-US": "archive_path parameter"
+            "en-US": "archive_path parameter",
+            "zh-TW": "archive_path參數",
+            "ja": "archive_pathパラメータ",
+            "ko": "archive_path매개변수",
+            "es": "Parámetro de ruta del archivo",
+            "fr": "Paramètre de chemin d'archive",
+            "de": "Archivpfad-Parameter",
+            "pt-BR": "Parâmetro de caminho do arquivo",
+            "ru": "Параметр пути архива",
+            "ar": "معلمة مسار الأرشيف",
+            "hi": "आर्काइव पथ पैरामीटर"
           },
           "desc": "archive_path parameter"
         },
@@ -740,7 +1470,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "entry_name参数",
-            "en-US": "entry_name parameter"
+            "en-US": "entry_name parameter",
+            "zh-TW": "entry_name參數",
+            "ja": "entry_nameパラメータ",
+            "ko": "entry_name매개변수",
+            "es": "Parámetro de nombre de entrada",
+            "fr": "Paramètre de nom d'entrée",
+            "de": "Eintragsname-Parameter",
+            "pt-BR": "Parâmetro de nome da entrada",
+            "ru": "Параметр имени записи",
+            "ar": "معلمة اسم الإدخال",
+            "hi": "एंट्री नाम पैरामीटर"
           },
           "desc": "entry_name parameter"
         },
@@ -749,7 +1489,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "optional": true,
           "desc": "Password string"
@@ -759,13 +1509,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "Base64",
-          "en-US": "Base64"
+          "en-US": "Base64",
+          "zh-TW": "Base64",
+          "ja": "Base64",
+          "ko": "Base64",
+          "es": "Base64",
+          "fr": "Base64",
+          "de": "Base64",
+          "pt-BR": "Base64",
+          "ru": "Base64",
+          "ar": "Base64",
+          "hi": "Base64"
         }
       },
       "bridge_path": "archive.readEntryBytes",
       "descriptions": {
         "zh-CN": "读取压缩包中指定文件的内容（不解压到磁盘）",
-        "en-US": "Read content of specified file in archive without extracting"
+        "en-US": "Read content of specified file in archive without extracting",
+        "zh-TW": "讀取壓縮包中指定檔案的內容（不解壓到磁盤）",
+        "ja": "展開せずにアーカイブ内の指定ファイルの内容を読み取る",
+        "ko": "추출하지 않고 아카이브의 지정 파일 내용 읽기",
+        "es": "Leer contenido del archivo sin extraer",
+        "fr": "Lire le contenu du fichier sans extraire",
+        "de": "Dateiinhalt im Archiv ohne Extraktion lesen",
+        "pt-BR": "Ler conteúdo do arquivo sem extrair",
+        "ru": "Прочитать содержимое файла без извлечения",
+        "ar": "قراءة محتوى الملف بدون استخراج",
+        "hi": "एक्सट्रैक्ट किए बिना आर्काइव फ़ाइल पढ़ें"
       },
       "group": "decompress",
       "description": "Read content of specified file in archive without extracting"
@@ -773,14 +1543,34 @@
   ],
   "overviews": {
     "zh-CN": "提供 ZIP/TAR/GZ/BZ2/XZ 等常见归档格式的创建、解压、列表及流式处理能力。支持密码保护 ZIP、多文件批量操作、归档信息查询等功能。",
-    "en-US": "Create, extract, list, and stream common archive formats (ZIP/TAR/GZ/BZ2/XZ). Supports password-protected ZIP, batch operations, and archive metadata queries."
+    "en-US": "Create, extract, list, and stream common archive formats (ZIP/TAR/GZ/BZ2/XZ). Supports password-protected ZIP, batch operations, and archive metadata queries.",
+    "zh-TW": "提供 ZIP/TAR/GZ/BZ2/XZ 等常见歸檔格式的建立、解壓、列表及流式處理能力。支援密碼保護 ZIP、多檔案批量操作、歸檔資訊查询等功能。",
+    "ja": "ZIP/TAR/GZ/BZ2/XZ等の一般的なアーカイブの作成・展開・一覧・ストリーム処理。パスワード付きZIP、バッチ操作、メタデータクエリ対応。",
+    "ko": "ZIP/TAR/GZ/BZ2/XZ 등 일반 아카이브 생성, 추출, 목록, 스트림 처리. 비밀번호 ZIP, 일괄 작업, 메타데이터 쿼리 지원.",
+    "es": "Crear, extraer, listar y procesar archivos ZIP/TAR/GZ/BZ2/XZ. ZIP con contraseña, operaciones por lotes y consultas de metadatos.",
+    "fr": "Créer, extraire, lister et traiter les archives ZIP/TAR/GZ/BZ2/XZ. ZIP protégé, opérations par lots et métadonnées.",
+    "de": "Erstellen, Extrahieren, Auflisten und Streamen von ZIP/TAR/GZ/BZ2/XZ-Archiven. Passwort-ZIP, Batch-Operationen und Metadaten.",
+    "pt-BR": "Criar, extrair, listar e processar ZIP/TAR/GZ/BZ2/XZ. ZIP com senha, operações em lote e consultas de metadados.",
+    "ru": "Создание, извлечение, просмотр и потоковая обработка ZIP/TAR/GZ/BZ2/XZ. ZIP с паролем, пакетные операции и метаданные.",
+    "ar": "إنشاء واستخراج وسرد ومعالجة ZIP/TAR/GZ/BZ2/XZ. دعم ZIP محمي بكلمة مرور والعمليات الدفعية.",
+    "hi": "ZIP/TAR/GZ/BZ2/XZ आर्काइव बनाना, निकालना, सूचीबद्ध करना और स्ट्रीम करना। पासवर्ड ZIP, बैच ऑपरेशन और मेटाडेटा।"
   },
   "types": [
     {
       "name": "ArchiveEntry",
       "descriptions": {
         "zh-CN": "压缩包内的单个文件条目信息",
-        "en-US": "Single file entry info within an archive"
+        "en-US": "Single file entry info within an archive",
+        "zh-TW": "壓縮包內的單个檔案条目資訊",
+        "ja": "アーカイブ内の単一ファイルエントリ情報",
+        "ko": "아카이브 내 단일 파일 항목 정보",
+        "es": "Información de entrada de archivo único dentro del archivo",
+        "fr": "Informations sur une entrée de fichier unique dans l'archive",
+        "de": "Informationen zu einem einzelnen Dateieintrag im Archiv",
+        "pt-BR": "Informações de entrada de arquivo único no arquivo",
+        "ru": "Информация об отдельном файле в архиве",
+        "ar": "معلومات إدخال ملف واحد داخل الأرشيف",
+        "hi": "आर्काइव के भीतर एकल फ़ाइल प्रविष्टि जानकारी"
       },
       "fields": [
         {
@@ -788,7 +1578,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "条目在压缩包内的相对路径",
-            "en-US": "Relative path within the archive"
+            "en-US": "Relative path within the archive",
+            "zh-TW": "条目在壓縮包內的相對路徑",
+            "ja": "アーカイブ内の相対パス",
+            "ko": "아카이브 내 상대 경로",
+            "es": "Ruta relativa dentro del archivo",
+            "fr": "Chemin relatif dans l'archive",
+            "de": "Relativer Pfad im Archiv",
+            "pt-BR": "Caminho relativo no arquivo",
+            "ru": "Относительный путь в архиве",
+            "ar": "المسار النسبي داخل الأرشيف",
+            "hi": "आर्काइव के भीतर सापेक्ष पथ"
           }
         },
         {
@@ -796,7 +1596,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "解压后的文件大小（字节）",
-            "en-US": "Uncompressed file size in bytes"
+            "en-US": "Uncompressed file size in bytes",
+            "zh-TW": "解壓後的檔案大小（字節）",
+            "ja": "非圧縮ファイルサイズ（バイト）",
+            "ko": "비압축 파일 크기(바이트)",
+            "es": "Tamaño de archivo sin comprimir en bytes",
+            "fr": "Taille du fichier non compressé en octets",
+            "de": "Unkomprimierte Dateigröße in Bytes",
+            "pt-BR": "Tamanho do arquivo descomprimido em bytes",
+            "ru": "Размер несжатого файла в байтах",
+            "ar": "حجم الملف غير المضغوط بالبايت",
+            "hi": "असंपीड़ित फ़ाइल आकार बाइट में"
           }
         },
         {
@@ -804,7 +1614,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "压缩后的大小（字节）",
-            "en-US": "Compressed size in bytes"
+            "en-US": "Compressed size in bytes",
+            "zh-TW": "壓縮後的大小（字節）",
+            "ja": "圧縮後のサイズ（バイト）",
+            "ko": "압축 크기(바이트)",
+            "es": "Tamaño comprimido en bytes",
+            "fr": "Taille compressée en octets",
+            "de": "Komprimierte Größe in Bytes",
+            "pt-BR": "Tamanho comprimido em bytes",
+            "ru": "Сжатый размер в байтах",
+            "ar": "الحجم المضغوط بالبايت",
+            "hi": "संपीड़ित आकार बाइट में"
           }
         },
         {
@@ -812,7 +1632,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否为目录",
-            "en-US": "Whether entry is a directory"
+            "en-US": "Whether entry is a directory",
+            "zh-TW": "是否為目錄",
+            "ja": "エントリがディレクトリかどうか",
+            "ko": "항목이 디렉토리인지 여부",
+            "es": "Si la entrada es un directorio",
+            "fr": "Si l'entrée est un répertoire",
+            "de": "Ob der Eintrag ein Verzeichnis ist",
+            "pt-BR": "Se a entrada é um diretório",
+            "ru": "Является ли запись каталогом",
+            "ar": "ما إذا كان الإدخال مجلداً",
+            "hi": "प्रविष्टि डायरेक्टरी है या नहीं"
           }
         },
         {
@@ -820,7 +1650,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "最后修改时间",
-            "en-US": "Last modified timestamp"
+            "en-US": "Last modified timestamp",
+            "zh-TW": "最後修改時间",
+            "ja": "最終更新タイムスタンプ",
+            "ko": "마지막 수정 타임스탬프",
+            "es": "Marca de tiempo de última modificación",
+            "fr": "Horodatage de dernière modification",
+            "de": "Letzter Änderungszeitstempel",
+            "pt-BR": "Timestamp da última modificação",
+            "ru": "Временная метка последнего изменения",
+            "ar": "طابع وقت آخر تعديل",
+            "hi": "अंतिम संशोधन टाइमस्टैम्प"
           }
         }
       ]
@@ -829,7 +1669,17 @@
       "name": "ArchiveInfo",
       "descriptions": {
         "zh-CN": "压缩包的整体信息",
-        "en-US": "Overall archive information"
+        "en-US": "Overall archive information",
+        "zh-TW": "壓縮包的整體資訊",
+        "ja": "アーカイブ全体の情報",
+        "ko": "전체 아카이브 정보",
+        "es": "Información general del archivo",
+        "fr": "Informations générales de l'archive",
+        "de": "Gesamte Archivinformationen",
+        "pt-BR": "Informações gerais do arquivo",
+        "ru": "Общая информация об архиве",
+        "ar": "المعلومات العامة للأرشيف",
+        "hi": "समग्र आर्काइव जानकारी"
       },
       "fields": [
         {
@@ -837,7 +1687,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "压缩格式（zip/gzip/tar/bz2/7z）",
-            "en-US": "Compression format"
+            "en-US": "Compression format",
+            "zh-TW": "壓縮格式（zip/gzip/tar/bz2/7z）",
+            "ja": "圧縮形式",
+            "ko": "압축 형식",
+            "es": "Formato de compresión",
+            "fr": "Format de compression",
+            "de": "Komprimierungsformat",
+            "pt-BR": "Formato de compressão",
+            "ru": "Формат сжатия",
+            "ar": "تنسيق الضغط",
+            "hi": "संपीड़न प्रारूप"
           }
         },
         {
@@ -845,7 +1705,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "压缩包总大小",
-            "en-US": "Total archive size"
+            "en-US": "Total archive size",
+            "zh-TW": "壓縮包總大小",
+            "ja": "アーカイブ合計サイズ",
+            "ko": "전체 아카이브 크기",
+            "es": "Tamaño total del archivo",
+            "fr": "Taille totale de l'archive",
+            "de": "Gesamte Archivgröße",
+            "pt-BR": "Tamanho total do arquivo",
+            "ru": "Общий размер архива",
+            "ar": "الحجم الكلي للأرشيف",
+            "hi": "कुल आर्काइव आकार"
           }
         },
         {
@@ -853,7 +1723,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "包含的条目总数",
-            "en-US": "Total number of entries"
+            "en-US": "Total number of entries",
+            "zh-TW": "包含的条目總数",
+            "ja": "エントリの総数",
+            "ko": "전체 항목 수",
+            "es": "Número total de entradas",
+            "fr": "Nombre total d'entrées",
+            "de": "Gesamtanzahl der Einträge",
+            "pt-BR": "Número total de entradas",
+            "ru": "Общее количество записей",
+            "ar": "العدد الإجمالي للإدخالات",
+            "hi": "प्रविष्टियों की कुल संख्या"
           }
         }
       ]
@@ -862,7 +1742,17 @@
       "name": "ArchiveResult",
       "descriptions": {
         "zh-CN": "压缩操作结果",
-        "en-US": "Archive operation result"
+        "en-US": "Archive operation result",
+        "zh-TW": "壓縮操作结果",
+        "ja": "アーカイブ操作結果",
+        "ko": "아카이브 작업 결과",
+        "es": "Resultado de operación de archivo",
+        "fr": "Résultat de l'opération d'archive",
+        "de": "Archivoperationsergebnis",
+        "pt-BR": "Resultado da operação de arquivo",
+        "ru": "Результат операции с архивом",
+        "ar": "نتيجة عملية الأرشيف",
+        "hi": "आर्काइव संचालन परिणाम"
       },
       "fields": [
         {
@@ -870,7 +1760,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否成功",
-            "en-US": "Whether succeeded"
+            "en-US": "Whether succeeded",
+            "zh-TW": "是否成功",
+            "ja": "成功したかどうか",
+            "ko": "성공 여부",
+            "es": "Si tuvo éxito",
+            "fr": "Si réussi",
+            "de": "Ob erfolgreich",
+            "pt-BR": "Se teve sucesso",
+            "ru": "Успешно или нет",
+            "ar": "ما إذا نجح",
+            "hi": "सफल हुआ या नहीं"
           }
         },
         {
@@ -878,7 +1778,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "输出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력 파일 경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь к выходному файлу",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           }
         },
         {
@@ -886,7 +1796,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "输出文件大小(字节)",
-            "en-US": "Output file size in bytes"
+            "en-US": "Output file size in bytes",
+            "zh-TW": "输出檔案大小(字節)",
+            "ja": "出力ファイルサイズ（バイト）",
+            "ko": "출력 파일 크기(바이트)",
+            "es": "Tamaño del archivo de salida en bytes",
+            "fr": "Taille du fichier de sortie en octets",
+            "de": "Ausgabedateigröße in Bytes",
+            "pt-BR": "Tamanho do arquivo de saída em bytes",
+            "ru": "Размер выходного файла в байтах",
+            "ar": "حجم ملف الإخراج بالبايت",
+            "hi": "आउटपुट फ़ाइल आकार बाइट में"
           }
         }
       ]
@@ -895,7 +1815,17 @@
       "name": "ExtractResult",
       "descriptions": {
         "zh-CN": "解压操作结果",
-        "en-US": "Extract operation result"
+        "en-US": "Extract operation result",
+        "zh-TW": "解壓操作结果",
+        "ja": "展開操作結果",
+        "ko": "추출 작업 결과",
+        "es": "Resultado de la operación de extracción",
+        "fr": "Résultat de l'opération d'extraction",
+        "de": "Extraktionsergebnis",
+        "pt-BR": "Resultado da operação de extração",
+        "ru": "Результат операции извлечения",
+        "ar": "نتيجة عملية الاستخراج",
+        "hi": "निष्कर्षण ऑपरेशन परिणाम"
       },
       "fields": [
         {
@@ -903,7 +1833,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否成功",
-            "en-US": "Whether succeeded"
+            "en-US": "Whether succeeded",
+            "zh-TW": "是否成功",
+            "ja": "成功したかどうか",
+            "ko": "성공 여부",
+            "es": "Si tuvo éxito",
+            "fr": "Si réussi",
+            "de": "Ob erfolgreich",
+            "pt-BR": "Se teve sucesso",
+            "ru": "Успешно или нет",
+            "ar": "ما إذا نجح",
+            "hi": "सफल हुआ या नहीं"
           }
         },
         {
@@ -911,7 +1851,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "解压目标目录",
-            "en-US": "Extract output directory"
+            "en-US": "Extract output directory",
+            "zh-TW": "解壓目標目錄",
+            "ja": "展開先ディレクトリ",
+            "ko": "추출 출력 디렉토리",
+            "es": "Directorio de salida de extracción",
+            "fr": "Répertoire de sortie d'extraction",
+            "de": "Extraktionsausgabeverzeichnis",
+            "pt-BR": "Diretório de saída de extração",
+            "ru": "Каталог вывода извлечения",
+            "ar": "دليل إخراج الاستخراج",
+            "hi": "निष्कर्षण आउटपुट डायरेक्टरी"
           }
         },
         {
@@ -919,7 +1869,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "解压的文件数量",
-            "en-US": "Number of extracted files"
+            "en-US": "Number of extracted files",
+            "zh-TW": "解壓的檔案数量",
+            "ja": "展開されたファイル数",
+            "ko": "추출된 파일 수",
+            "es": "Número de archivos extraídos",
+            "fr": "Nombre de fichiers extraits",
+            "de": "Anzahl extrahierter Dateien",
+            "pt-BR": "Número de arquivos extraídos",
+            "ru": "Количество извлечённых файлов",
+            "ar": "عدد الملفات المستخرجة",
+            "hi": "निकाली गई फ़ाइलों की संख्या"
           }
         }
       ]
@@ -928,7 +1888,17 @@
       "name": "ArchiveDetectResult",
       "descriptions": {
         "zh-CN": "压缩包格式检测结果",
-        "en-US": "Archive format detection result"
+        "en-US": "Archive format detection result",
+        "zh-TW": "壓縮包格式檢測结果",
+        "ja": "アーカイブ形式検出結果",
+        "ko": "아카이브 형식 감지 결과",
+        "es": "Resultado de detección de formato de archivo",
+        "fr": "Résultat de détection du format d'archive",
+        "de": "Archivformat-Erkennungsergebnis",
+        "pt-BR": "Resultado da detecção de formato de arquivo",
+        "ru": "Результат определения формата архива",
+        "ar": "نتيجة اكتشاف تنسيق الأرشيف",
+        "hi": "आर्काइव प्रारूप पहचान परिणाम"
       },
       "fields": [
         {
@@ -936,7 +1906,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否为压缩包",
-            "en-US": "Whether it is an archive"
+            "en-US": "Whether it is an archive",
+            "zh-TW": "是否為壓縮包",
+            "ja": "アーカイブかどうか",
+            "ko": "아카이브인지 여부",
+            "es": "Si es un archivo",
+            "fr": "Si c'est une archive",
+            "de": "Ob es ein Archiv ist",
+            "pt-BR": "Se é um arquivo",
+            "ru": "Является ли архивом",
+            "ar": "ما إذا كان أرشيفاً",
+            "hi": "आर्काइव है या नहीं"
           }
         },
         {
@@ -944,7 +1924,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "检测到的格式(zip/tar/gz)",
-            "en-US": "Detected format (zip/tar/gz)"
+            "en-US": "Detected format (zip/tar/gz)",
+            "zh-TW": "檢測到的格式(zip/tar/gz)",
+            "ja": "検出された形式（zip/tar/gz）",
+            "ko": "감지된 형식(zip/tar/gz)",
+            "es": "Formato detectado (zip/tar/gz)",
+            "fr": "Format détecté (zip/tar/gz)",
+            "de": "Erkanntes Format (zip/tar/gz)",
+            "pt-BR": "Formato detectado (zip/tar/gz)",
+            "ru": "Обнаруженный формат (zip/tar/gz)",
+            "ar": "التنسيق المكتشف (zip/tar/gz)",
+            "hi": "पहचाना गया प्रारूप (zip/tar/gz)"
           }
         }
       ]
@@ -953,7 +1943,17 @@
       "name": "ArchiveTestResult",
       "descriptions": {
         "zh-CN": "压缩包完整性测试结果",
-        "en-US": "Archive integrity test result"
+        "en-US": "Archive integrity test result",
+        "zh-TW": "壓縮包完整性測試结果",
+        "ja": "アーカイブ整合性テスト結果",
+        "ko": "아카이브 무결성 테스트 결과",
+        "es": "Resultado de prueba de integridad del archivo",
+        "fr": "Résultat du test d'intégrité de l'archive",
+        "de": "Archiv-Integritätsprüfungsergebnis",
+        "pt-BR": "Resultado do teste de integridade do arquivo",
+        "ru": "Результат проверки целостности архива",
+        "ar": "نتيجة اختبار سلامة الأرشيف",
+        "hi": "आर्काइव अखंडता परीक्षण परिणाम"
       },
       "fields": [
         {
@@ -961,7 +1961,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否完整有效",
-            "en-US": "Whether valid and intact"
+            "en-US": "Whether valid and intact",
+            "zh-TW": "是否完整有效",
+            "ja": "有効で完全かどうか",
+            "ko": "유효하고 손상되지 않았는지 여부",
+            "es": "Si es válido e intacto",
+            "fr": "Si valide et intact",
+            "de": "Ob gültig und intakt",
+            "pt-BR": "Se válido e intacto",
+            "ru": "Действительно и не повреждено",
+            "ar": "ما إذا كان صالحاً وسليماً",
+            "hi": "मान्य और अक्षुण्ण है या नहीं"
           }
         },
         {
@@ -969,7 +1979,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "错误信息列表",
-            "en-US": "Error messages list"
+            "en-US": "Error messages list",
+            "zh-TW": "錯誤資訊列表",
+            "ja": "エラーメッセージ一覧",
+            "ko": "오류 메시지 목록",
+            "es": "Lista de mensajes de error",
+            "fr": "Liste de messages d'erreur",
+            "de": "Fehlermeldungsliste",
+            "pt-BR": "Lista de mensagens de erro",
+            "ru": "Список сообщений об ошибках",
+            "ar": "قائمة رسائل الخطأ",
+            "hi": "त्रुटि संदेश सूची"
           }
         }
       ]
@@ -982,7 +2002,17 @@
       "type": "string",
       "descs": {
         "zh-CN": "ZIP 格式",
-        "en-US": "ZIP format"
+        "en-US": "ZIP format",
+        "zh-TW": "ZIP 格式",
+        "ja": "ZIP形式",
+        "ko": "ZIP 형식",
+        "es": "Formato ZIP",
+        "fr": "Format ZIP",
+        "de": "ZIP-Format",
+        "pt-BR": "Formato ZIP",
+        "ru": "Формат ZIP",
+        "ar": "تنسيق ZIP",
+        "hi": "ZIP प्रारूप"
       }
     },
     {
@@ -991,7 +2021,17 @@
       "type": "string",
       "descs": {
         "zh-CN": "GZIP 格式",
-        "en-US": "GZIP format"
+        "en-US": "GZIP format",
+        "zh-TW": "GZIP 格式",
+        "ja": "GZIP形式",
+        "ko": "GZIP 형식",
+        "es": "Formato GZIP",
+        "fr": "Format GZIP",
+        "de": "GZIP-Format",
+        "pt-BR": "Formato GZIP",
+        "ru": "Формат GZIP",
+        "ar": "تنسيق GZIP",
+        "hi": "GZIP प्रारूप"
       }
     },
     {
@@ -1000,7 +2040,17 @@
       "type": "string",
       "descs": {
         "zh-CN": "TAR 格式",
-        "en-US": "TAR format"
+        "en-US": "TAR format",
+        "zh-TW": "TAR 格式",
+        "ja": "TAR形式",
+        "ko": "TAR 형식",
+        "es": "Formato TAR",
+        "fr": "Format TAR",
+        "de": "TAR-Format",
+        "pt-BR": "Formato TAR",
+        "ru": "Формат TAR",
+        "ar": "تنسيق TAR",
+        "hi": "TAR प्रारूप"
       }
     },
     {
@@ -1009,7 +2059,17 @@
       "type": "string",
       "descs": {
         "zh-CN": "BZ2 格式",
-        "en-US": "BZ2 format"
+        "en-US": "BZ2 format",
+        "zh-TW": "BZ2 格式",
+        "ja": "BZ2形式",
+        "ko": "BZ2 형식",
+        "es": "Formato BZ2",
+        "fr": "Format BZ2",
+        "de": "BZ2-Format",
+        "pt-BR": "Formato BZ2",
+        "ru": "Формат BZ2",
+        "ar": "تنسيق BZ2",
+        "hi": "BZ2 प्रारूप"
       }
     },
     {
@@ -1018,7 +2078,17 @@
       "type": "string",
       "descs": {
         "zh-CN": "7Z 格式",
-        "en-US": "7Z format"
+        "en-US": "7Z format",
+        "zh-TW": "7Z 格式",
+        "ja": "7Z形式",
+        "ko": "7Z 형식",
+        "es": "Formato 7Z",
+        "fr": "Format 7Z",
+        "de": "7Z-Format",
+        "pt-BR": "Formato 7Z",
+        "ru": "Формат 7Z",
+        "ar": "تنسيق 7Z",
+        "hi": "7Z प्रारूप"
       }
     }
   ]

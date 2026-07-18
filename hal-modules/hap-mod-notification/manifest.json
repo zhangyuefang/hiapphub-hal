@@ -22,7 +22,7 @@
     "ar": "وحدة الإشعارات",
     "hi": "सूचना मॉड्यूल"
   },
-  "permission": "",
+  "permission": "notification",
   "functions": [
     {
       "name": "send",
@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标题文本",
-            "en-US": "Title text"
+            "en-US": "Title text",
+            "zh-TW": "標題文字",
+            "ja": "タイトルテキスト",
+            "ko": "제목텍스트",
+            "es": "Texto del título",
+            "fr": "Texte du titre",
+            "de": "Titeltext",
+            "pt-BR": "Texto do título",
+            "ru": "Текст заголовка",
+            "ar": "نص العنوان",
+            "hi": "शीर्षक टेक्स्ट"
           },
           "desc": "Title text"
         },
@@ -42,7 +52,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求体内容",
-            "en-US": "Request body content"
+            "en-US": "Request body content",
+            "zh-TW": "請求体內容",
+            "ja": "リクエスト体コンテンツ",
+            "ko": "요청 본문 내용",
+            "es": "Contenido del cuerpo de la solicitud",
+            "fr": "Contenu du corps de la requête",
+            "de": "Anfrage-Body-Inhalt",
+            "pt-BR": "Conteúdo do corpo da requisição",
+            "ru": "Содержимое тела запроса",
+            "ar": "محتوى جسم الطلب",
+            "hi": "रिक्वेस्ट बॉडी सामग्री"
           },
           "desc": "Request body content"
         },
@@ -51,7 +71,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图标路径",
-            "en-US": "Icon path"
+            "en-US": "Icon path",
+            "zh-TW": "圖標路徑",
+            "ja": "アイコンパス",
+            "ko": "아이콘 경로",
+            "es": "Ruta del icono",
+            "fr": "Chemin de l'icône",
+            "de": "Symbolpfad",
+            "pt-BR": "Caminho do ícone",
+            "ru": "Путь к значку",
+            "ar": "مسار الأيقونة",
+            "hi": "आइकन पथ"
           },
           "optional": true
         },
@@ -60,7 +90,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "通知操作按钮列表",
-            "en-US": "Notification action button list"
+            "en-US": "Notification action button list",
+            "zh-TW": "通知操作按鈕列表",
+            "ja": "通知操作ボタンリスト",
+            "ko": "알림 액션 버튼 목록",
+            "es": "Lista de botones de acción de notificación",
+            "fr": "Liste des boutons d'action de notification",
+            "de": "Liste der Benachrichtigungs-Aktionsschaltflächen",
+            "pt-BR": "Lista de botões de ação da notificação",
+            "ru": "Список кнопок действий уведомления",
+            "ar": "قائمة أزرار إجراء الإشعار",
+            "hi": "नोटिफ़िकेशन एक्शन बटन सूची"
           },
           "optional": true,
           "desc": "Notification action button list"
@@ -70,7 +110,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "播放声音",
-            "en-US": "Play sound"
+            "en-US": "Play sound",
+            "zh-TW": "播放聲音",
+            "ja": "サウンド再生",
+            "ko": "사운드 재생",
+            "es": "Reproducir sonido",
+            "fr": "Jouer un son",
+            "de": "Sound abspielen",
+            "pt-BR": "Reproduzir som",
+            "ru": "Воспроизвести звук",
+            "ar": "تشغيل الصوت",
+            "hi": "ध्वनि चलाएं"
           },
           "optional": true
         },
@@ -79,7 +129,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否静默执行",
-            "en-US": "Whether to execute silently"
+            "en-US": "Whether to execute silently",
+            "zh-TW": "是否靜默執行",
+            "ja": "かどうか静默実行する",
+            "ko": "자동으로 실행 여부",
+            "es": "Si ejecutar silenciosamente",
+            "fr": "Exécuter silencieusement",
+            "de": "Ob lautlos ausgeführt werden soll",
+            "pt-BR": "Se deve executar silenciosamente",
+            "ru": "Выполнить ли без уведомления",
+            "ar": "هل يتم التنفيذ بصمت",
+            "hi": "चुपचाप निष्पादित करें क्या"
           },
           "optional": true,
           "desc": "Whether to execute silently"
@@ -89,7 +149,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "超时(毫秒)",
-            "en-US": "Timeout in ms"
+            "en-US": "Timeout in ms",
+            "zh-TW": "超時(毫秒)",
+            "ja": "タイムアウト(毫秒)",
+            "ko": "타임아웃 (밀리초)",
+            "es": "Tiempo de espera en ms",
+            "fr": "Délai en ms",
+            "de": "Timeout in ms",
+            "pt-BR": "Timeout em ms",
+            "ru": "Тайм-аут в мс",
+            "ar": "المهلة بالمللي ثانية",
+            "hi": "टाइमआउट मिलीसेकंड में"
           },
           "optional": true
         },
@@ -98,7 +168,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -107,13 +187,33 @@
         "type": "NotificationHandle",
         "descs": {
           "zh-CN": "通知 ID",
-          "en-US": "Notification ID"
+          "en-US": "Notification ID",
+          "zh-TW": "通知 ID",
+          "ja": "通知ID",
+          "ko": "알림 ID",
+          "es": "ID de notificación",
+          "fr": "ID de notification",
+          "de": "Benachrichtigungs-ID",
+          "pt-BR": "ID de notificação",
+          "ru": "ID уведомления",
+          "ar": "معرف الإشعار",
+          "hi": "नोटिफ़िकेशन ID"
         }
       },
       "bridge_path": "notification.send",
       "descriptions": {
         "zh-CN": "向用户发送一条系统通知（支持标题、正文和图标）",
-        "en-US": "Send system notification (supports title, body and icon)"
+        "en-US": "Send system notification (supports title, body and icon)",
+        "zh-TW": "向用戶傳送一條系統通知（支持標題、正文和圖標）",
+        "ja": "システム通知を送信（タイトル、本文、アイコン対応）",
+        "ko": "시스템 알림 전송 (제목, 본문, 아이콘 지원)",
+        "es": "Enviar notificación del sistema (título, cuerpo e icono)",
+        "fr": "Envoyer une notification système (titre, corps et icône)",
+        "de": "Systembenachrichtigung senden (Titel, Text und Symbol)",
+        "pt-BR": "Enviar notificação do sistema (título, corpo e ícone)",
+        "ru": "Отправить системное уведомление (заголовок, текст и значок)",
+        "ar": "إرسال إشعار نظام (العنوان والنص والأيقونة)",
+        "hi": "सिस्टम नोटिफ़िकेशन भेजें (शीर्षक, मुख्य भाग और आइकन)"
       },
       "group": "send",
       "description": "Send system notification (supports title, body and icon)"
@@ -127,7 +227,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "通知 ID",
-            "en-US": "Notification ID"
+            "en-US": "Notification ID",
+            "zh-TW": "通知 ID",
+            "ja": "通知ID",
+            "ko": "알림 ID",
+            "es": "ID de notificación",
+            "fr": "ID de notification",
+            "de": "Benachrichtigungs-ID",
+            "pt-BR": "ID de notificação",
+            "ru": "ID уведомления",
+            "ar": "معرف الإشعار",
+            "hi": "नोटिफ़िकेशन ID"
           }
         }
       ],
@@ -135,14 +245,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "notification.close",
       "descriptions": {
         "zh-CN": "关闭/撤销一条已显示的系统通知",
-        "en-US": "Close/dismiss a displayed system notification"
+        "en-US": "Close/dismiss a displayed system notification",
+        "zh-TW": "關閉/撤销一條已顯示的系統通知",
+        "ja": "表示中のシステム通知を閉じる",
+        "ko": "표시된 시스템 알림 닫기/해제",
+        "es": "Cerrar/descartar notificación del sistema",
+        "fr": "Fermer/rejeter une notification système",
+        "de": "Systembenachrichtigung schließen/verwerfen",
+        "pt-BR": "Fechar/dispensar notificação do sistema",
+        "ru": "Закрыть/отклонить системное уведомление",
+        "ar": "إغلاق/رفض إشعار النظام",
+        "hi": "प्रदर्शित सिस्टम अधिसूचना बंद/खारिज करें"
       },
       "group": "manage",
       "description": "Close/dismiss a displayed system notification"
@@ -155,14 +285,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "notification.closeAll",
       "descriptions": {
         "zh-CN": "关闭all",
-        "en-US": "Close all of notification"
+        "en-US": "Close all of notification",
+        "zh-TW": "關閉all",
+        "ja": "閉じるall",
+        "ko": "닫기all",
+        "es": "Cerrar todas las notificaciones",
+        "fr": "Fermer toutes les notifications",
+        "de": "Alle Benachrichtigungen schließen",
+        "pt-BR": "Fechar todas as notificações",
+        "ru": "Закрыть все уведомления",
+        "ar": "إغلاق جميع الإشعارات",
+        "hi": "सभी अधिसूचनाएं बंद करें"
       },
       "group": "manage",
       "description": "Close all of notification"
@@ -175,14 +325,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "notification.requestPermission",
       "descriptions": {
         "zh-CN": "请求通知权限",
-        "en-US": "Request permission of notification"
+        "en-US": "Request permission of notification",
+        "zh-TW": "請求通知權限",
+        "ja": "通知の権限をリクエスト",
+        "ko": "요청알림권한",
+        "es": "Solicitar permiso de notificación",
+        "fr": "Demander la permission de notification",
+        "de": "Benachrichtigungsberechtigung anfordern",
+        "pt-BR": "Solicitar permissão de notificação",
+        "ru": "Запросить разрешение на уведомления",
+        "ar": "طلب إذن الإشعار",
+        "hi": "नोटिफ़िकेशन अनुमति अनुरोध करें"
       },
       "group": "manage",
       "description": "Request permission of notification"
@@ -195,14 +365,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "notification.isPermitted",
       "descriptions": {
         "zh-CN": "检查是否notification permitted",
-        "en-US": "Check if notification permitted"
+        "en-US": "Check if notification permitted",
+        "zh-TW": "檢查是否notification permitted",
+        "ja": "チェックするかどうかnotification permitted",
+        "ko": "확인여부notification permitted",
+        "es": "Verificar si notificaciones permitidas",
+        "fr": "Vérifier si notifications autorisées",
+        "de": "Benachrichtigungsberechtigung prüfen",
+        "pt-BR": "Verificar se notificações são permitidas",
+        "ru": "Проверить разрешены ли уведомления",
+        "ar": "التحقق من إذن الإشعارات",
+        "hi": "अधिसूचना अनुमति है जांचें"
       },
       "group": "manage",
       "description": "Check if notification permitted"
@@ -216,7 +406,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "角标数量",
-            "en-US": "Badge count"
+            "en-US": "Badge count",
+            "zh-TW": "角標數量",
+            "ja": "バッジ数",
+            "ko": "뱃지 수",
+            "es": "Número de insignia",
+            "fr": "Nombre de badges",
+            "de": "Badge-Anzahl",
+            "pt-BR": "Contagem de badges",
+            "ru": "Счётчик значков",
+            "ar": "عدد الشارات",
+            "hi": "बैज संख्या"
           }
         }
       ],
@@ -224,14 +424,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "notification.setBadge",
       "descriptions": {
         "zh-CN": "设置应用角标数字",
-        "en-US": "Set badge property of notification"
+        "en-US": "Set badge property of notification",
+        "zh-TW": "設定應用角標數字",
+        "ja": "通知のバッジプロパティを設定",
+        "ko": "알림 배지 속성 설정",
+        "es": "Establecer insignia de notificación",
+        "fr": "Définir le badge de notification",
+        "de": "Benachrichtigungs-Badge setzen",
+        "pt-BR": "Definir badge da notificação",
+        "ru": "Установить значок уведомления",
+        "ar": "تعيين شارة الإشعار",
+        "hi": "नोटिफ़िकेशन बैज सेट करें"
       },
       "group": "send",
       "description": "Set badge property of notification"
@@ -245,7 +465,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标题文本",
-            "en-US": "Title text"
+            "en-US": "Title text",
+            "zh-TW": "標題文字",
+            "ja": "タイトルテキスト",
+            "ko": "제목텍스트",
+            "es": "Texto del título",
+            "fr": "Texte du titre",
+            "de": "Titeltext",
+            "pt-BR": "Texto do título",
+            "ru": "Текст заголовка",
+            "ar": "نص العنوان",
+            "hi": "शीर्षक टेक्स्ट"
           },
           "desc": "Title text"
         },
@@ -254,7 +484,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求体内容",
-            "en-US": "Request body content"
+            "en-US": "Request body content",
+            "zh-TW": "請求体內容",
+            "ja": "リクエスト体コンテンツ",
+            "ko": "요청 본문 내용",
+            "es": "Contenido del cuerpo de la solicitud",
+            "fr": "Contenu du corps de la requête",
+            "de": "Anfrage-Body-Inhalt",
+            "pt-BR": "Conteúdo do corpo da requisição",
+            "ru": "Содержимое тела запроса",
+            "ar": "محتوى جسم الطلب",
+            "hi": "रिक्वेस्ट बॉडी सामग्री"
           },
           "desc": "Request body content"
         },
@@ -263,7 +503,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "延迟(毫秒)",
-            "en-US": "Delay ms"
+            "en-US": "Delay ms",
+            "zh-TW": "延迟(毫秒)",
+            "ja": "遅延(毫秒)",
+            "ko": "지연 (ms)",
+            "es": "Retraso (ms)",
+            "fr": "Délai (ms)",
+            "de": "Verzögerung (ms)",
+            "pt-BR": "Atraso (ms)",
+            "ru": "Задержка (мс)",
+            "ar": "التأخير (مللي ثانية)",
+            "hi": "विलंब (ms)"
           }
         },
         {
@@ -271,7 +521,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图标文件路径或名称",
-            "en-US": "Icon file path or name"
+            "en-US": "Icon file path or name",
+            "zh-TW": "圖標檔案路徑或名稱",
+            "ja": "アイコンファイルパスまたは名前",
+            "ko": "아이콘 파일 경로 또는 이름",
+            "es": "Ruta o nombre del archivo de icono",
+            "fr": "Chemin ou nom du fichier d'icône",
+            "de": "Symboldateipfad oder -name",
+            "pt-BR": "Caminho ou nome do arquivo de ícone",
+            "ru": "Путь или имя файла иконки",
+            "ar": "مسار أو اسم ملف الأيقونة",
+            "hi": "आइकन फ़ाइल पथ या नाम"
           },
           "optional": true,
           "desc": "Icon file path or name"
@@ -281,7 +541,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "重复次数",
-            "en-US": "Repeat count"
+            "en-US": "Repeat count",
+            "zh-TW": "重複次數",
+            "ja": "リピート回数",
+            "ko": "반복 횟수",
+            "es": "Cantidad de repeticiones",
+            "fr": "Nombre de répétitions",
+            "de": "Wiederholungsanzahl",
+            "pt-BR": "Contagem de repetições",
+            "ru": "Количество повторов",
+            "ar": "عدد التكرارات",
+            "hi": "दोहराव संख्या"
           },
           "optional": true,
           "desc": "Repeat count"
@@ -291,7 +561,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -300,13 +580,33 @@
         "type": "NotificationHandle",
         "descs": {
           "zh-CN": "定时发送 ID",
-          "en-US": "Schedule ID"
+          "en-US": "Schedule ID",
+          "zh-TW": "定時傳送 ID",
+          "ja": "定时送信する ID",
+          "ko": "스케줄 ID",
+          "es": "ID de programación",
+          "fr": "ID de planification",
+          "de": "Zeitplan-ID",
+          "pt-BR": "ID de agendamento",
+          "ru": "ID расписания",
+          "ar": "معرف الجدولة",
+          "hi": "शेड्यूल आईडी"
         }
       },
       "bridge_path": "notification.schedule",
       "descriptions": {
         "zh-CN": "schedule系统通知",
-        "en-US": "Schedule notification"
+        "en-US": "Schedule notification",
+        "zh-TW": "schedule系統通知",
+        "ja": "scheduleシステム通知",
+        "ko": "schedule시스템알림",
+        "es": "Programar notificación",
+        "fr": "Programmer une notification",
+        "de": "Benachrichtigung planen",
+        "pt-BR": "Agendar notificação",
+        "ru": "Запланировать уведомление",
+        "ar": "جدولة إشعار",
+        "hi": "नोटिफ़िकेशन शेड्यूल करें"
       },
       "group": "send",
       "description": "Schedule notification"
@@ -320,7 +620,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "定时发送 ID",
-            "en-US": "Schedule ID"
+            "en-US": "Schedule ID",
+            "zh-TW": "定時傳送 ID",
+            "ja": "定时送信する ID",
+            "ko": "스케줄 ID",
+            "es": "ID de programación",
+            "fr": "ID de planification",
+            "de": "Zeitplan-ID",
+            "pt-BR": "ID de agendamento",
+            "ru": "ID расписания",
+            "ar": "معرف الجدولة",
+            "hi": "शेड्यूल आईडी"
           }
         }
       ],
@@ -328,14 +638,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "notification.cancelSchedule",
       "descriptions": {
         "zh-CN": "取消指定的定时通知",
-        "en-US": "Cancel schedule of notification"
+        "en-US": "Cancel schedule of notification",
+        "zh-TW": "取消指定的定時通知",
+        "ja": "キャンセルする指定の定时通知",
+        "ko": "알림 예약 취소",
+        "es": "Cancelar programación de notificación",
+        "fr": "Annuler la planification de notification",
+        "de": "Benachrichtigungsplan abbrechen",
+        "pt-BR": "Cancelar agendamento de notificação",
+        "ru": "Отменить расписание уведомления",
+        "ar": "إلغاء جدولة الإشعار",
+        "hi": "अधिसूचना शेड्यूल रद्द करें"
       },
       "group": "send",
       "description": "Cancel schedule of notification"
@@ -343,14 +673,34 @@
   ],
   "overviews": {
     "zh-CN": "提供系统通知能力，支持发送通知、设置图标/声音/动作按钮、管理通知权限、清除通知等。适配各操作系统的通知中心。",
-    "en-US": "System notifications with custom icons, sounds, action buttons, permission management, and notification clearing. Adapted for each OS notification center."
+    "en-US": "System notifications with custom icons, sounds, action buttons, permission management, and notification clearing. Adapted for each OS notification center.",
+    "zh-TW": "提供系統通知能力，支援发送通知、設置图標/声音/動作按钮、管理通知權限、清除通知等。适配各操作系統的通知中心。",
+    "ja": "システム通知：カスタムアイコン・サウンド・アクションボタン・権限管理・通知クリア。各OS通知センター対応。",
+    "ko": "시스템 알림: 사용자 정의 아이콘, 소리, 액션 버튼, 권한 관리, 알림 지우기. 각 OS 알림 센터 대응.",
+    "es": "Notificaciones del sistema: iconos, sonidos, botones de acción, permisos y limpieza. Adaptado para cada SO.",
+    "fr": "Notifications système : icônes, sons, boutons d'action, permissions et effacement. Adapté pour chaque OS.",
+    "de": "Systembenachrichtigungen: Icons, Sounds, Aktionsbuttons, Berechtigungen und Löschen. Für jedes OS angepasst.",
+    "pt-BR": "Notificações do sistema: ícones, sons, botões de ação, permissões e limpeza. Adaptado para cada SO.",
+    "ru": "Системные уведомления: иконки, звуки, кнопки действий, разрешения и очистка. Адаптировано для каждой ОС.",
+    "ar": "إشعارات النظام: أيقونات وأصوات وأزرار إجراء وأذونات ومسح. متكيف مع كل نظام.",
+    "hi": "सिस्टम नोटिफिकेशन: कस्टम आइकन, साउंड, एक्शन बटन, परमिशन और क्लियर। प्रत्येक OS के लिए अनुकूलित।"
   },
   "types": [
     {
       "name": "NotificationAction",
       "descriptions": {
         "zh-CN": "通知操作按钮定义",
-        "en-US": "Notification action button"
+        "en-US": "Notification action button",
+        "zh-TW": "通知操作按钮定義",
+        "ja": "通知アクションボタン",
+        "ko": "알림 액션 버튼",
+        "es": "Botón de acción de notificación",
+        "fr": "Bouton d'action de notification",
+        "de": "Benachrichtigungs-Aktionsschaltfläche",
+        "pt-BR": "Botão de ação de notificação",
+        "ru": "Кнопка действия уведомления",
+        "ar": "زر إجراء الإشعار",
+        "hi": "सूचना एक्शन बटन"
       },
       "fields": [
         {
@@ -358,7 +708,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "操作标识符",
-            "en-US": "Action identifier"
+            "en-US": "Action identifier",
+            "zh-TW": "操作標識符",
+            "ja": "アクション識別子",
+            "ko": "액션 식별자",
+            "es": "Identificador de acción",
+            "fr": "Identifiant d'action",
+            "de": "Aktionskennung",
+            "pt-BR": "Identificador de ação",
+            "ru": "Идентификатор действия",
+            "ar": "معرّف الإجراء",
+            "hi": "क्रिया पहचानकर्ता"
           }
         },
         {
@@ -366,7 +726,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "按钮显示文本",
-            "en-US": "Button display text"
+            "en-US": "Button display text",
+            "zh-TW": "按钮顯示文本",
+            "ja": "ボタン表示テキスト",
+            "ko": "버튼 표시 텍스트",
+            "es": "Texto del botón",
+            "fr": "Texte d'affichage du bouton",
+            "de": "Schaltflächentext",
+            "pt-BR": "Texto de exibição do botão",
+            "ru": "Текст кнопки",
+            "ar": "نص عرض الزر",
+            "hi": "बटन प्रदर्शन टेक्स्ट"
           }
         }
       ]
@@ -375,7 +745,17 @@
       "name": "NotificationHandle",
       "descriptions": {
         "zh-CN": "通知句柄",
-        "en-US": "Notification handle"
+        "en-US": "Notification handle",
+        "zh-TW": "通知句柄",
+        "ja": "通知ハンドル",
+        "ko": "알림 핸들",
+        "es": "Manejador de notificación",
+        "fr": "Handle de notification",
+        "de": "Benachrichtigungs-Handle",
+        "pt-BR": "Handle de notificação",
+        "ru": "Дескриптор уведомления",
+        "ar": "مقبض الإشعار",
+        "hi": "सूचना हैंडल"
       },
       "fields": [
         {
@@ -383,7 +763,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "通知ID",
-            "en-US": "Notification ID"
+            "en-US": "Notification ID",
+            "zh-TW": "通知ID",
+            "ja": "通知ID",
+            "ko": "알림 ID",
+            "es": "ID de notificación",
+            "fr": "ID de notification",
+            "de": "Benachrichtigungs-ID",
+            "pt-BR": "ID de notificação",
+            "ru": "ID уведомления",
+            "ar": "معرّف الإشعار",
+            "hi": "सूचना ID"
           }
         }
       ]
@@ -394,7 +784,17 @@
       "name": "notification_clicked",
       "descriptions": {
         "zh-CN": "用户点击了通知",
-        "en-US": "User clicked a notification"
+        "en-US": "User clicked a notification",
+        "zh-TW": "用户点擊了通知",
+        "ja": "ユーザーが通知をクリックしました",
+        "ko": "사용자가 알림을 클릭함",
+        "es": "El usuario hizo clic en una notificación",
+        "fr": "L'utilisateur a cliqué sur une notification",
+        "de": "Benutzer hat eine Benachrichtigung angeklickt",
+        "pt-BR": "Usuário clicou em uma notificação",
+        "ru": "Пользователь нажал на уведомление",
+        "ar": "نقر المستخدم على إشعار",
+        "hi": "उपयोगकर्ता ने सूचना पर क्लिक किया"
       },
       "payload": [
         {
@@ -402,7 +802,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "被点击的通知ID",
-            "en-US": "Clicked notification ID"
+            "en-US": "Clicked notification ID",
+            "zh-TW": "被點擊的通知ID",
+            "ja": "クリックされた通知ID",
+            "ko": "클릭된 알림 ID",
+            "es": "ID de notificación clicada",
+            "fr": "ID de notification cliqué",
+            "de": "ID der angeklickten Benachrichtigung",
+            "pt-BR": "ID da notificação clicada",
+            "ru": "ID нажатого уведомления",
+            "ar": "معرف الإشعار المنقور",
+            "hi": "क्लिक किया गया अधिसूचना ID"
           }
         },
         {
@@ -410,7 +820,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "点击的操作按钮ID（如有）",
-            "en-US": "Clicked action ID if any"
+            "en-US": "Clicked action ID if any",
+            "zh-TW": "點擊的操作按鈕ID（如有）",
+            "ja": "クリックされたアクションID（存在する場合）",
+            "ko": "클릭된 작업 ID(있는 경우)",
+            "es": "ID de acción clicada (si aplica)",
+            "fr": "ID d'action cliqué (le cas échéant)",
+            "de": "Angeklickte Aktions-ID (falls vorhanden)",
+            "pt-BR": "ID da ação clicada (se houver)",
+            "ru": "ID нажатого действия (если есть)",
+            "ar": "معرف الإجراء المنقور (إن وجد)",
+            "hi": "क्लिक किया गया कार्य ID (यदि कोई हो)"
           },
           "optional": true
         }
@@ -420,7 +840,17 @@
       "name": "notification_click",
       "descriptions": {
         "zh-CN": "通知被点击",
-        "en-US": "Notification clicked"
+        "en-US": "Notification clicked",
+        "zh-TW": "通知被点擊",
+        "ja": "通知がクリックされました",
+        "ko": "알림이 클릭됨",
+        "es": "Notificación clicada",
+        "fr": "Notification cliquée",
+        "de": "Benachrichtigung angeklickt",
+        "pt-BR": "Notificação clicada",
+        "ru": "Уведомление нажато",
+        "ar": "تم النقر على الإشعار",
+        "hi": "सूचना क्लिक की गई"
       },
       "payload": [
         {
@@ -428,7 +858,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "通知ID",
-            "en-US": "Notification ID"
+            "en-US": "Notification ID",
+            "zh-TW": "通知ID",
+            "ja": "通知ID",
+            "ko": "알림 ID",
+            "es": "ID de notificación",
+            "fr": "ID de notification",
+            "de": "Benachrichtigungs-ID",
+            "pt-BR": "ID da notificação",
+            "ru": "ID уведомления",
+            "ar": "معرف الإشعار",
+            "hi": "अधिसूचना ID"
           }
         },
         {
@@ -436,7 +876,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "点击的操作按钮",
-            "en-US": "Clicked action button"
+            "en-US": "Clicked action button",
+            "zh-TW": "點擊的操作按鈕",
+            "ja": "クリックされたアクションボタン",
+            "ko": "클릭된 작업 버튼",
+            "es": "Botón de acción clicado",
+            "fr": "Bouton d'action cliqué",
+            "de": "Angeklickte Aktionstaste",
+            "pt-BR": "Botão de ação clicado",
+            "ru": "Нажатая кнопка действия",
+            "ar": "زر الإجراء المنقور",
+            "hi": "क्लिक किया गया कार्य बटन"
           }
         }
       ]

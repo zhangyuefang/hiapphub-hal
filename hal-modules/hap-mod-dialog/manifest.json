@@ -22,7 +22,7 @@
     "ar": "وحدة مربعات الحوار",
     "hi": "डायलॉग मॉड्यूल"
   },
-  "permission": "",
+  "permission": "dialog",
   "functions": [
     {
       "name": "open_file",
@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "对话框标题",
-            "en-US": "Dialog title"
+            "en-US": "Dialog title",
+            "zh-TW": "對話框標題",
+            "ja": "ダイアログタイトル",
+            "ko": "대화상자제목",
+            "es": "Título del diálogo",
+            "fr": "Titre du dialogue",
+            "de": "Dialogtitel",
+            "pt-BR": "Título do diálogo",
+            "ru": "Заголовок диалога",
+            "ar": "عنوان الحوار",
+            "hi": "डायलॉग शीर्षक"
           },
           "optional": true
         },
@@ -42,7 +52,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "文件过滤器",
-            "en-US": "File filters"
+            "en-US": "File filters",
+            "zh-TW": "檔案過濾器",
+            "ja": "ファイルフィルタする器",
+            "ko": "파일 필터",
+            "es": "Filtros de archivos",
+            "fr": "Filtres de fichiers",
+            "de": "Dateifilter",
+            "pt-BR": "Filtros de arquivos",
+            "ru": "Фильтры файлов",
+            "ar": "فلاتر الملفات",
+            "hi": "फ़ाइल फ़िल्टर"
           },
           "optional": true
         },
@@ -51,7 +71,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "允许多个",
-            "en-US": "Allow multiple"
+            "en-US": "Allow multiple",
+            "zh-TW": "允許多個",
+            "ja": "複数選択を許可",
+            "ko": "다중 허용",
+            "es": "Permitir múltiples",
+            "fr": "Autoriser plusieurs",
+            "de": "Mehrfach erlauben",
+            "pt-BR": "Permitir múltiplos",
+            "ru": "Разрешить множественные",
+            "ar": "السماح بالمتعدد",
+            "hi": "एकाधिक अनुमति"
           },
           "optional": true,
           "default_value": "false"
@@ -61,7 +91,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "默认路径",
-            "en-US": "Default path"
+            "en-US": "Default path",
+            "zh-TW": "默認路徑",
+            "ja": "デフォルトパス",
+            "ko": "기본 경로",
+            "es": "Ruta predeterminada",
+            "fr": "Chemin par défaut",
+            "de": "Standardpfad",
+            "pt-BR": "Caminho padrão",
+            "ru": "Путь по умолчанию",
+            "ar": "المسار الافتراضي",
+            "hi": "डिफ़ॉल्ट पथ"
           },
           "optional": true
         }
@@ -70,13 +110,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "已选择文件路径",
-          "en-US": "Selected file paths"
+          "en-US": "Selected file paths",
+          "zh-TW": "已選擇檔案路徑",
+          "ja": "選択されたファイルパス",
+          "ko": "선택된 파일 경로",
+          "es": "Rutas de archivos seleccionados",
+          "fr": "Chemins de fichiers sélectionnés",
+          "de": "Ausgewählte Dateipfade",
+          "pt-BR": "Caminhos dos arquivos selecionados",
+          "ru": "Выбранные пути файлов",
+          "ar": "مسارات الملفات المحددة",
+          "hi": "चयनित फ़ाइल पथ"
         }
       },
       "bridge_path": "dialog.openFile",
       "descriptions": {
         "zh-CN": "打开系统文件选择对话框，让用户选择一个文件",
-        "en-US": "Open system file picker dialog to select a file"
+        "en-US": "Open system file picker dialog to select a file",
+        "zh-TW": "打開系統檔案選擇對話框，讓用戶選擇一個檔案",
+        "ja": "ファイル選択用のシステムファイルピッカーダイアログを開く",
+        "ko": "파일 선택용 시스템 파일 선택기 다이얼로그 열기",
+        "es": "Abrir selector de archivos del sistema",
+        "fr": "Ouvrir le sélecteur de fichiers",
+        "de": "Dateiauswahl-Dialog öffnen",
+        "pt-BR": "Abrir seletor de arquivos",
+        "ru": "Открыть диалог выбора файла",
+        "ar": "فتح منتقي الملفات",
+        "hi": "फ़ाइल चुनने के लिए सिस्टम डायलॉग खोलें"
       },
       "group": "file",
       "description": "Open system file picker dialog to select a file"
@@ -90,7 +150,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "对话框标题",
-            "en-US": "Dialog title"
+            "en-US": "Dialog title",
+            "zh-TW": "對話框標題",
+            "ja": "ダイアログタイトル",
+            "ko": "대화상자제목",
+            "es": "Título del diálogo",
+            "fr": "Titre du dialogue",
+            "de": "Dialogtitel",
+            "pt-BR": "Título do diálogo",
+            "ru": "Заголовок диалога",
+            "ar": "عنوان الحوار",
+            "hi": "डायलॉग शीर्षक"
           },
           "optional": true
         },
@@ -99,7 +169,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "文件过滤器",
-            "en-US": "File filters"
+            "en-US": "File filters",
+            "zh-TW": "檔案過濾器",
+            "ja": "ファイルフィルタする器",
+            "ko": "파일 필터",
+            "es": "Filtros de archivos",
+            "fr": "Filtres de fichiers",
+            "de": "Dateifilter",
+            "pt-BR": "Filtros de arquivos",
+            "ru": "Фильтры файлов",
+            "ar": "فلاتر الملفات",
+            "hi": "फ़ाइल फ़िल्टर"
           },
           "optional": true
         },
@@ -108,7 +188,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "默认名称",
-            "en-US": "Default name"
+            "en-US": "Default name",
+            "zh-TW": "默認名稱",
+            "ja": "デフォルト名称",
+            "ko": "기본 이름",
+            "es": "Nombre predeterminado",
+            "fr": "Nom par défaut",
+            "de": "Standardname",
+            "pt-BR": "Nome padrão",
+            "ru": "Имя по умолчанию",
+            "ar": "الاسم الافتراضي",
+            "hi": "डिफ़ॉल्ट नाम"
           },
           "optional": true
         },
@@ -117,7 +207,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "默认路径",
-            "en-US": "Default Path"
+            "en-US": "Default Path",
+            "zh-TW": "默認路徑",
+            "ja": "デフォルトパス",
+            "ko": "기본 경로",
+            "es": "Ruta predeterminada",
+            "fr": "Chemin par défaut",
+            "de": "Standardpfad",
+            "pt-BR": "Caminho padrão",
+            "ru": "Путь по умолчанию",
+            "ar": "المسار الافتراضي",
+            "hi": "डिफ़ॉल्ट पथ"
           },
           "optional": true
         }
@@ -126,13 +226,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "保存路径",
-          "en-US": "Save path"
+          "en-US": "Save path",
+          "zh-TW": "保存路徑",
+          "ja": "保存するパス",
+          "ko": "저장경로",
+          "es": "Ruta de guardado",
+          "fr": "Chemin de sauvegarde",
+          "de": "Speicherpfad",
+          "pt-BR": "Caminho de salvamento",
+          "ru": "Путь сохранения",
+          "ar": "مسار الحفظ",
+          "hi": "सहेजने का पथ"
         }
       },
       "bridge_path": "dialog.saveFile",
       "descriptions": {
         "zh-CN": "打开系统保存文件对话框，让用户选择保存位置",
-        "en-US": "Open save file dialog to choose save location"
+        "en-US": "Open save file dialog to choose save location",
+        "zh-TW": "打開系統保存檔案對話框，讓用戶選擇保存位置",
+        "ja": "保存先選択用のファイル保存ダイアログを開く",
+        "ko": "저장 위치 선택용 파일 저장 다이얼로그 열기",
+        "es": "Abrir diálogo de guardar archivo",
+        "fr": "Ouvrir le dialogue de sauvegarde",
+        "de": "Speichern-Dialog öffnen",
+        "pt-BR": "Abrir diálogo para salvar arquivo",
+        "ru": "Открыть диалог сохранения файла",
+        "ar": "فتح حوار حفظ الملف",
+        "hi": "सेव लोकेशन चुनने के लिए डायलॉग खोलें"
       },
       "group": "file",
       "description": "Open save file dialog to choose save location"
@@ -146,7 +266,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "对话框标题",
-            "en-US": "Dialog title"
+            "en-US": "Dialog title",
+            "zh-TW": "對話框標題",
+            "ja": "ダイアログタイトル",
+            "ko": "대화상자제목",
+            "es": "Título del diálogo",
+            "fr": "Titre du dialogue",
+            "de": "Dialogtitel",
+            "pt-BR": "Título do diálogo",
+            "ru": "Заголовок диалога",
+            "ar": "عنوان الحوار",
+            "hi": "डायलॉग शीर्षक"
           },
           "optional": true
         },
@@ -155,7 +285,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "默认路径",
-            "en-US": "Default path"
+            "en-US": "Default path",
+            "zh-TW": "默認路徑",
+            "ja": "デフォルトパス",
+            "ko": "기본 경로",
+            "es": "Ruta predeterminada",
+            "fr": "Chemin par défaut",
+            "de": "Standardpfad",
+            "pt-BR": "Caminho padrão",
+            "ru": "Путь по умолчанию",
+            "ar": "المسار الافتراضي",
+            "hi": "डिफ़ॉल्ट पथ"
           },
           "optional": true
         },
@@ -164,7 +304,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "允许多个",
-            "en-US": "Allow multiple"
+            "en-US": "Allow multiple",
+            "zh-TW": "允許多個",
+            "ja": "複数選択を許可",
+            "ko": "다중 허용",
+            "es": "Permitir múltiples",
+            "fr": "Autoriser plusieurs",
+            "de": "Mehrfach erlauben",
+            "pt-BR": "Permitir múltiplos",
+            "ru": "Разрешить множественные",
+            "ar": "السماح بالمتعدد",
+            "hi": "एकाधिक अनुमति"
           },
           "optional": true,
           "default_value": "false"
@@ -174,13 +324,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "已选择的目录",
-          "en-US": "Selected directories"
+          "en-US": "Selected directories",
+          "zh-TW": "已選擇的目錄",
+          "ja": "選択されたディレクトリ",
+          "ko": "선택된 디렉토리",
+          "es": "Directorios seleccionados",
+          "fr": "Répertoires sélectionnés",
+          "de": "Ausgewählte Verzeichnisse",
+          "pt-BR": "Diretórios selecionados",
+          "ru": "Выбранные каталоги",
+          "ar": "المجلدات المحددة",
+          "hi": "चयनित डायरेक्टरी"
         }
       },
       "bridge_path": "dialog.openDirectory",
       "descriptions": {
         "zh-CN": "打开系统目录选择对话框让用户选择文件夹",
-        "en-US": "Open directory picker dialog for user to select folder"
+        "en-US": "Open directory picker dialog for user to select folder",
+        "zh-TW": "打開系統目錄選擇對話框讓用戶選擇檔案夾",
+        "ja": "フォルダ選択用のディレクトリピッカーダイアログを開く",
+        "ko": "폴더 선택용 디렉토리 선택기 다이얼로그 열기",
+        "es": "Abrir selector de directorios",
+        "fr": "Ouvrir le sélecteur de dossiers",
+        "de": "Ordnerauswahl-Dialog öffnen",
+        "pt-BR": "Abrir seletor de diretórios",
+        "ru": "Открыть диалог выбора папки",
+        "ar": "فتح منتقي المجلدات",
+        "hi": "फ़ोल्डर चुनने के लिए डायलॉग खोलें"
       },
       "group": "file",
       "description": "Open directory picker dialog for user to select folder"
@@ -194,7 +364,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标题文本",
-            "en-US": "Title text"
+            "en-US": "Title text",
+            "zh-TW": "標題文字",
+            "ja": "タイトルテキスト",
+            "ko": "제목텍스트",
+            "es": "Texto del título",
+            "fr": "Texte du titre",
+            "de": "Titeltext",
+            "pt-BR": "Texto do título",
+            "ru": "Текст заголовка",
+            "ar": "نص العنوان",
+            "hi": "शीर्षक टेक्स्ट"
           },
           "desc": "Title text",
           "optional": true
@@ -204,7 +384,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息内容",
-            "en-US": "Message content"
+            "en-US": "Message content",
+            "zh-TW": "消息內容",
+            "ja": "メッセージコンテンツ",
+            "ko": "메시지콘텐츠",
+            "es": "Contenido del mensaje",
+            "fr": "Contenu du message",
+            "de": "Nachrichteninhalt",
+            "pt-BR": "Conteúdo da mensagem",
+            "ru": "Содержание сообщения",
+            "ar": "محتوى الرسالة",
+            "hi": "संदेश सामग्री"
           },
           "desc": "Message content",
           "optional": true
@@ -214,7 +404,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "按钮标签",
-            "en-US": "Button labels"
+            "en-US": "Button labels",
+            "zh-TW": "按鈕標籤",
+            "ja": "ボタンラベル",
+            "ko": "버튼 레이블",
+            "es": "Etiquetas de botones",
+            "fr": "Libellés des boutons",
+            "de": "Button-Beschriftungen",
+            "pt-BR": "Rótulos dos botões",
+            "ru": "Метки кнопок",
+            "ar": "تسميات الأزرار",
+            "hi": "बटन लेबल"
           },
           "optional": true
         },
@@ -223,7 +423,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "默认按钮",
-            "en-US": "Default Button"
+            "en-US": "Default Button",
+            "zh-TW": "默認按鈕",
+            "ja": "デフォルトボタン",
+            "ko": "기본 버튼",
+            "es": "Botón predeterminado",
+            "fr": "Bouton par défaut",
+            "de": "Standard-Button",
+            "pt-BR": "Botão padrão",
+            "ru": "Кнопка по умолчанию",
+            "ar": "الزر الافتراضي",
+            "hi": "डिफ़ॉल्ट बटन"
           },
           "optional": true
         },
@@ -232,7 +442,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图标文件路径或名称",
-            "en-US": "Icon file path or name"
+            "en-US": "Icon file path or name",
+            "zh-TW": "圖標檔案路徑或名稱",
+            "ja": "アイコンファイルパスまたは名前",
+            "ko": "아이콘 파일 경로 또는 이름",
+            "es": "Ruta o nombre del archivo de icono",
+            "fr": "Chemin ou nom du fichier d'icône",
+            "de": "Symboldateipfad oder -name",
+            "pt-BR": "Caminho ou nome do arquivo de ícone",
+            "ru": "Путь или имя файла иконки",
+            "ar": "مسار أو اسم ملف الأيقونة",
+            "hi": "आइकन फ़ाइल पथ या नाम"
           },
           "optional": true,
           "desc": "Icon file path or name"
@@ -242,13 +462,33 @@
         "type": "DialogResult",
         "descs": {
           "zh-CN": "按钮结果",
-          "en-US": "Button result"
+          "en-US": "Button result",
+          "zh-TW": "按鈕結果",
+          "ja": "ボタン結果",
+          "ko": "버튼 결과",
+          "es": "Resultado del botón",
+          "fr": "Résultat du bouton",
+          "de": "Button-Ergebnis",
+          "pt-BR": "Resultado do botão",
+          "ru": "Результат кнопки",
+          "ar": "نتيجة الزر",
+          "hi": "बटन परिणाम"
         }
       },
       "bridge_path": "dialog.messageBox",
       "descriptions": {
         "zh-CN": "显示自定义按钮的消息对话框",
-        "en-US": "Show message dialog with custom buttons"
+        "en-US": "Show message dialog with custom buttons",
+        "zh-TW": "顯示自定義按鈕的消息對話框",
+        "ja": "カスタムボタン付きメッセージダイアログを表示",
+        "ko": "사용자 정의 버튼이 있는 메시지 다이얼로그 표시",
+        "es": "Mostrar diálogo de mensaje con botones personalizados",
+        "fr": "Afficher un dialogue avec boutons personnalisés",
+        "de": "Nachrichtendialog mit benutzerdefinierten Buttons",
+        "pt-BR": "Mostrar diálogo de mensagem com botões personalizados",
+        "ru": "Показать диалог с пользовательскими кнопками",
+        "ar": "عرض حوار رسالة مع أزرار مخصصة",
+        "hi": "कस्टम बटन वाला मैसेज डायलॉग दिखाएं"
       },
       "group": "input",
       "description": "Show message dialog with custom buttons"
@@ -262,7 +502,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标题文本",
-            "en-US": "Title text"
+            "en-US": "Title text",
+            "zh-TW": "標題文字",
+            "ja": "タイトルテキスト",
+            "ko": "제목텍스트",
+            "es": "Texto del título",
+            "fr": "Texte du titre",
+            "de": "Titeltext",
+            "pt-BR": "Texto do título",
+            "ru": "Текст заголовка",
+            "ar": "نص العنوان",
+            "hi": "शीर्षक टेक्स्ट"
           },
           "desc": "Title text",
           "optional": true
@@ -272,7 +522,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息内容",
-            "en-US": "Message content"
+            "en-US": "Message content",
+            "zh-TW": "消息內容",
+            "ja": "メッセージコンテンツ",
+            "ko": "메시지콘텐츠",
+            "es": "Contenido del mensaje",
+            "fr": "Contenu du message",
+            "de": "Nachrichteninhalt",
+            "pt-BR": "Conteúdo da mensagem",
+            "ru": "Содержание сообщения",
+            "ar": "محتوى الرسالة",
+            "hi": "संदेश सामग्री"
           },
           "optional": true,
           "desc": "Message content"
@@ -282,7 +542,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "default_value参数",
-            "en-US": "default_value parameter"
+            "en-US": "default_value parameter",
+            "zh-TW": "default_value參數",
+            "ja": "default_valueパラメータ",
+            "ko": "default_value매개변수",
+            "es": "Parámetro de valor predeterminado",
+            "fr": "Paramètre de valeur par défaut",
+            "de": "Standardwert-Parameter",
+            "pt-BR": "Parâmetro de valor padrão",
+            "ru": "Параметр значения по умолчанию",
+            "ar": "معلمة القيمة الافتراضية",
+            "hi": "डिफ़ॉल्ट मान पैरामीटर"
           },
           "optional": true,
           "desc": "default_value parameter"
@@ -292,7 +562,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "placeholder参数",
-            "en-US": "placeholder parameter"
+            "en-US": "placeholder parameter",
+            "zh-TW": "placeholder參數",
+            "ja": "placeholderパラメータ",
+            "ko": "placeholder매개변수",
+            "es": "Parámetro de marcador de posición",
+            "fr": "Paramètre de texte indicatif",
+            "de": "Platzhalter-Parameter",
+            "pt-BR": "Parâmetro de placeholder",
+            "ru": "Параметр подсказки",
+            "ar": "معلمة النص التوضيحي",
+            "hi": "प्लेसहोल्डर पैरामीटर"
           },
           "optional": true,
           "desc": "placeholder parameter"
@@ -302,7 +582,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "密码模式",
-            "en-US": "Password mode"
+            "en-US": "Password mode",
+            "zh-TW": "密碼模式",
+            "ja": "パスワードモード",
+            "ko": "비밀번호모드",
+            "es": "Modo de contraseña",
+            "fr": "Mode mot de passe",
+            "de": "Passwort-Modus",
+            "pt-BR": "Modo de senha",
+            "ru": "Режим пароля",
+            "ar": "وضع كلمة المرور",
+            "hi": "पासवर्ड मोड"
           },
           "optional": true,
           "default_value": "false"
@@ -312,7 +602,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "multiline参数",
-            "en-US": "multiline parameter"
+            "en-US": "multiline parameter",
+            "zh-TW": "multiline參數",
+            "ja": "multilineパラメータ",
+            "ko": "multiline매개변수",
+            "es": "Parámetro multilínea",
+            "fr": "Paramètre multiligne",
+            "de": "Mehrzeilen-Parameter",
+            "pt-BR": "Parâmetro multilinha",
+            "ru": "Параметр многострочности",
+            "ar": "معلمة متعدد الأسطر",
+            "hi": "मल्टीलाइन पैरामीटर"
           },
           "optional": true,
           "desc": "multiline parameter"
@@ -322,13 +622,33 @@
         "type": "InputResult",
         "descs": {
           "zh-CN": "输入结果",
-          "en-US": "Input result"
+          "en-US": "Input result",
+          "zh-TW": "輸入結果",
+          "ja": "入力結果",
+          "ko": "입력결과",
+          "es": "Resultado de entrada",
+          "fr": "Résultat de saisie",
+          "de": "Eingabeergebnis",
+          "pt-BR": "Resultado da entrada",
+          "ru": "Результат ввода",
+          "ar": "نتيجة الإدخال",
+          "hi": "इनपुट परिणाम"
         }
       },
       "bridge_path": "dialog.inputBox",
       "descriptions": {
         "zh-CN": "显示带文本输入框的对话框获取用户输入",
-        "en-US": "Show input dialog to get user text input"
+        "en-US": "Show input dialog to get user text input",
+        "zh-TW": "顯示帶文字輸入框的對話框取得用戶輸入",
+        "ja": "テキスト入力用の入力ダイアログを表示",
+        "ko": "사용자 텍스트 입력용 입력 다이얼로그 표시",
+        "es": "Mostrar diálogo de entrada de texto",
+        "fr": "Afficher un dialogue de saisie",
+        "de": "Eingabedialog anzeigen",
+        "pt-BR": "Mostrar diálogo de entrada de texto",
+        "ru": "Показать диалог ввода текста",
+        "ar": "عرض حوار إدخال النص",
+        "hi": "उपयोगकर्ता टेक्स्ट इनपुट डायलॉग दिखाएं"
       },
       "group": "input",
       "description": "Show input dialog to get user text input"
@@ -342,7 +662,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "默认颜色十六进制",
-            "en-US": "Default color hex"
+            "en-US": "Default color hex",
+            "zh-TW": "默認顏色十六進製",
+            "ja": "デフォルト色（hex）",
+            "ko": "기본 색상 hex",
+            "es": "Color hex predeterminado",
+            "fr": "Couleur hex par défaut",
+            "de": "Standard-Farbwert (hex)",
+            "pt-BR": "Cor hex padrão",
+            "ru": "Цвет по умолчанию (hex)",
+            "ar": "اللون الافتراضي (hex)",
+            "hi": "डिफ़ॉल्ट रंग (hex)"
           },
           "optional": true
         },
@@ -351,7 +681,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "显示透明度",
-            "en-US": "Show Alpha"
+            "en-US": "Show Alpha",
+            "zh-TW": "顯示透明度",
+            "ja": "アルファを表示",
+            "ko": "알파 표시",
+            "es": "Mostrar alfa",
+            "fr": "Afficher l'alpha",
+            "de": "Alpha anzeigen",
+            "pt-BR": "Mostrar alfa",
+            "ru": "Показать альфа",
+            "ar": "عرض ألفا",
+            "hi": "अल्फ़ा दिखाएं"
           },
           "optional": true
         }
@@ -360,13 +700,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "已选择颜色十六进制",
-          "en-US": "Selected color hex"
+          "en-US": "Selected color hex",
+          "zh-TW": "已選擇顏色十六進製",
+          "ja": "選択された色の16進数",
+          "ko": "선택된 색상 hex",
+          "es": "Color hex seleccionado",
+          "fr": "Couleur hex sélectionnée",
+          "de": "Ausgewählte Farbe (hex)",
+          "pt-BR": "Cor hex selecionada",
+          "ru": "Выбранный цвет (hex)",
+          "ar": "اللون المحدد (hex)",
+          "hi": "चयनित रंग (hex)"
         }
       },
       "bridge_path": "dialog.colorPicker",
       "descriptions": {
         "zh-CN": "打开颜色选择器",
-        "en-US": "Color picker of dialog"
+        "en-US": "Color picker of dialog",
+        "zh-TW": "打開顏色選擇器",
+        "ja": "ダイアログのカラーピッカー",
+        "ko": "다이얼로그 색상 선택기",
+        "es": "Selector de color del diálogo",
+        "fr": "Sélecteur de couleur du dialogue",
+        "de": "Farbauswahl-Dialog",
+        "pt-BR": "Seletor de cores do diálogo",
+        "ru": "Выбор цвета в диалоге",
+        "ar": "منتقي الألوان في الحوار",
+        "hi": "डायलॉग कलर पिकर"
       },
       "group": "picker",
       "description": "Color picker of dialog"
@@ -380,7 +740,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标题文本",
-            "en-US": "Title text"
+            "en-US": "Title text",
+            "zh-TW": "標題文字",
+            "ja": "タイトルテキスト",
+            "ko": "제목텍스트",
+            "es": "Texto del título",
+            "fr": "Texte du titre",
+            "de": "Titeltext",
+            "pt-BR": "Texto do título",
+            "ru": "Текст заголовка",
+            "ar": "نص العنوان",
+            "hi": "शीर्षक टेक्स्ट"
           },
           "desc": "Title text",
           "optional": true
@@ -390,7 +760,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息内容",
-            "en-US": "Message content"
+            "en-US": "Message content",
+            "zh-TW": "消息內容",
+            "ja": "メッセージコンテンツ",
+            "ko": "메시지콘텐츠",
+            "es": "Contenido del mensaje",
+            "fr": "Contenu du message",
+            "de": "Nachrichteninhalt",
+            "pt-BR": "Conteúdo da mensagem",
+            "ru": "Содержание сообщения",
+            "ar": "محتوى الرسالة",
+            "hi": "संदेश सामग्री"
           },
           "optional": true,
           "desc": "Message content"
@@ -400,7 +780,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "允许取消",
-            "en-US": "允许取消"
+            "en-US": "允许取消",
+            "zh-TW": "允許取消",
+            "ja": "キャンセルを許可",
+            "ko": "취소 허용",
+            "es": "Permitir cancelación",
+            "fr": "Autoriser l'annulation",
+            "de": "Abbrechen erlauben",
+            "pt-BR": "Permitir cancelamento",
+            "ru": "Разрешить отмену",
+            "ar": "السماح بالإلغاء",
+            "hi": "रद्द करने की अनुमति"
           },
           "optional": true,
           "default_value": "false"
@@ -410,7 +800,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "不确定模式",
-            "en-US": "Indeterminate mode"
+            "en-US": "Indeterminate mode",
+            "zh-TW": "不確定模式",
+            "ja": "不確定モード",
+            "ko": "불확정 모드",
+            "es": "Modo indeterminado",
+            "fr": "Mode indéterminé",
+            "de": "Unbestimmter Modus",
+            "pt-BR": "Modo indeterminado",
+            "ru": "Неопределённый режим",
+            "ar": "الوضع غير المحدد",
+            "hi": "अनिर्धारित मोड"
           },
           "optional": true,
           "default_value": "false"
@@ -420,7 +820,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -429,13 +839,33 @@
         "type": "ProgressHandle",
         "descs": {
           "zh-CN": "对话框 ID",
-          "en-US": "Dialog ID"
+          "en-US": "Dialog ID",
+          "zh-TW": "對話框 ID",
+          "ja": "ダイアログ ID",
+          "ko": "대화상자 ID",
+          "es": "ID del diálogo",
+          "fr": "ID du dialogue",
+          "de": "Dialog-ID",
+          "pt-BR": "ID do diálogo",
+          "ru": "ID диалога",
+          "ar": "معرف الحوار",
+          "hi": "डायलॉग ID"
         }
       },
       "bridge_path": "dialog.progress",
       "descriptions": {
         "zh-CN": "progress对话框",
-        "en-US": "Progress dialog"
+        "en-US": "Progress dialog",
+        "zh-TW": "progress對話框",
+        "ja": "progressダイアログ",
+        "ko": "progress대화상자",
+        "es": "Diálogo de progreso",
+        "fr": "Dialogue de progression",
+        "de": "Fortschrittsdialog",
+        "pt-BR": "Diálogo de progresso",
+        "ru": "Диалог прогресса",
+        "ar": "حوار التقدم",
+        "hi": "प्रोग्रेस डायलॉग"
       },
       "group": "progress",
       "description": "Progress dialog"
@@ -449,7 +879,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "对话框 ID",
-            "en-US": "Dialog ID"
+            "en-US": "Dialog ID",
+            "zh-TW": "對話框 ID",
+            "ja": "ダイアログ ID",
+            "ko": "대화상자 ID",
+            "es": "ID del diálogo",
+            "fr": "ID du dialogue",
+            "de": "Dialog-ID",
+            "pt-BR": "ID do diálogo",
+            "ru": "ID диалога",
+            "ar": "معرف الحوار",
+            "hi": "डायलॉग ID"
           }
         },
         {
@@ -457,7 +897,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "进度 0-1",
-            "en-US": "进度 0-1"
+            "en-US": "进度 0-1",
+            "zh-TW": "進度 0-1",
+            "ja": "進捗 0-1",
+            "ko": "진행률 0-1",
+            "es": "Progreso 0-1",
+            "fr": "Progression 0-1",
+            "de": "Fortschritt 0-1",
+            "pt-BR": "Progresso 0-1",
+            "ru": "Прогресс 0-1",
+            "ar": "التقدم 0-1",
+            "hi": "प्रोग्रेस 0-1"
           }
         },
         {
@@ -465,7 +915,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息内容",
-            "en-US": "Message content"
+            "en-US": "Message content",
+            "zh-TW": "消息內容",
+            "ja": "メッセージコンテンツ",
+            "ko": "메시지콘텐츠",
+            "es": "Contenido del mensaje",
+            "fr": "Contenu du message",
+            "de": "Nachrichteninhalt",
+            "pt-BR": "Conteúdo da mensagem",
+            "ru": "Содержание сообщения",
+            "ar": "محتوى الرسالة",
+            "hi": "संदेश सामग्री"
           },
           "optional": true,
           "desc": "Message content"
@@ -475,14 +935,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "dialog.progressUpdate",
       "descriptions": {
         "zh-CN": "更新进度条对话框的进度",
-        "en-US": "Progress update of dialog"
+        "en-US": "Progress update of dialog",
+        "zh-TW": "更新進度條對話框的進度",
+        "ja": "更新する進捗条ダイアログの進捗",
+        "ko": "다이얼로그 진행률 업데이트",
+        "es": "Actualizar progreso del diálogo",
+        "fr": "Mettre à jour la progression",
+        "de": "Fortschritt aktualisieren",
+        "pt-BR": "Atualizar progresso do diálogo",
+        "ru": "Обновить прогресс диалога",
+        "ar": "تحديث تقدم الحوار",
+        "hi": "डायलॉग प्रोग्रेस अपडेट"
       },
       "group": "progress",
       "description": "Progress update of dialog"
@@ -496,7 +976,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "对话框 ID",
-            "en-US": "Dialog ID"
+            "en-US": "Dialog ID",
+            "zh-TW": "對話框 ID",
+            "ja": "ダイアログ ID",
+            "ko": "대화상자 ID",
+            "es": "ID del diálogo",
+            "fr": "ID du dialogue",
+            "de": "Dialog-ID",
+            "pt-BR": "ID do diálogo",
+            "ru": "ID диалога",
+            "ar": "معرف الحوار",
+            "hi": "डायलॉग ID"
           }
         }
       ],
@@ -504,14 +994,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "dialog.progressClose",
       "descriptions": {
         "zh-CN": "关闭进度条对话框",
-        "en-US": "Progress close of dialog"
+        "en-US": "Progress close of dialog",
+        "zh-TW": "關閉進度條對話框",
+        "ja": "閉じる進捗条ダイアログ",
+        "ko": "다이얼로그 진행률 닫기",
+        "es": "Cerrar progreso del diálogo",
+        "fr": "Fermer la progression",
+        "de": "Fortschrittsdialog schließen",
+        "pt-BR": "Fechar progresso do diálogo",
+        "ru": "Закрыть диалог прогресса",
+        "ar": "إغلاق حوار التقدم",
+        "hi": "डायलॉग प्रोग्रेस बंद करें"
       },
       "group": "progress",
       "description": "Progress close of dialog"
@@ -525,7 +1035,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标题文本",
-            "en-US": "Title text"
+            "en-US": "Title text",
+            "zh-TW": "標題文字",
+            "ja": "タイトルテキスト",
+            "ko": "제목텍스트",
+            "es": "Texto del título",
+            "fr": "Texte du titre",
+            "de": "Titeltext",
+            "pt-BR": "Texto do título",
+            "ru": "Текст заголовка",
+            "ar": "نص العنوان",
+            "hi": "शीर्षक टेक्स्ट"
           },
           "optional": true,
           "desc": "Title text"
@@ -535,7 +1055,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "默认日期 YYYY-MM-DD",
-            "en-US": "Default date YYYY-MM-DD"
+            "en-US": "Default date YYYY-MM-DD",
+            "zh-TW": "默認日期 YYYY-MM-DD",
+            "ja": "デフォルト日期 YYYY-MM-DD",
+            "ko": "기본 날짜 YYYY-MM-DD",
+            "es": "Fecha predeterminada YYYY-MM-DD",
+            "fr": "Date par défaut YYYY-MM-DD",
+            "de": "Standarddatum YYYY-MM-DD",
+            "pt-BR": "Data padrão YYYY-MM-DD",
+            "ru": "Дата по умолчанию YYYY-MM-DD",
+            "ar": "التاريخ الافتراضي YYYY-MM-DD",
+            "hi": "डिफ़ॉल्ट दिनांक YYYY-MM-DD"
           },
           "optional": true
         },
@@ -544,7 +1074,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "最小日期",
-            "en-US": "Min Date"
+            "en-US": "Min Date",
+            "zh-TW": "最小日期",
+            "ja": "最小日付",
+            "ko": "최소 날짜",
+            "es": "Fecha mínima",
+            "fr": "Date minimale",
+            "de": "Minimales Datum",
+            "pt-BR": "Data mínima",
+            "ru": "Минимальная дата",
+            "ar": "أدنى تاريخ",
+            "hi": "न्यूनतम दिनांक"
           },
           "optional": true
         },
@@ -553,7 +1093,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "最大日期",
-            "en-US": "Max Date"
+            "en-US": "Max Date",
+            "zh-TW": "最大日期",
+            "ja": "最大日付",
+            "ko": "최대 날짜",
+            "es": "Fecha máxima",
+            "fr": "Date maximale",
+            "de": "Maximales Datum",
+            "pt-BR": "Data máxima",
+            "ru": "Максимальная дата",
+            "ar": "أقصى تاريخ",
+            "hi": "अधिकतम दिनांक"
           },
           "optional": true
         }
@@ -562,13 +1112,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "已选择日期",
-          "en-US": "Selected date"
+          "en-US": "Selected date",
+          "zh-TW": "已選擇日期",
+          "ja": "選択された日付",
+          "ko": "선택된 날짜",
+          "es": "Fecha seleccionada",
+          "fr": "Date sélectionnée",
+          "de": "Ausgewähltes Datum",
+          "pt-BR": "Data selecionada",
+          "ru": "Выбранная дата",
+          "ar": "التاريخ المحدد",
+          "hi": "चयनित दिनांक"
         }
       },
       "bridge_path": "dialog.datePicker",
       "descriptions": {
         "zh-CN": "打开日期选择器",
-        "en-US": "Date picker of dialog"
+        "en-US": "Date picker of dialog",
+        "zh-TW": "打開日期選擇器",
+        "ja": "ダイアログの日付ピッカー",
+        "ko": "다이얼로그 날짜 선택기",
+        "es": "Selector de fecha del diálogo",
+        "fr": "Sélecteur de date du dialogue",
+        "de": "Datumsauswahl-Dialog",
+        "pt-BR": "Seletor de data do diálogo",
+        "ru": "Выбор даты в диалоге",
+        "ar": "منتقي التاريخ في الحوار",
+        "hi": "डायलॉग डेट पिकर"
       },
       "group": "picker",
       "description": "Date picker of dialog"
@@ -582,7 +1152,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标题文本",
-            "en-US": "Title text"
+            "en-US": "Title text",
+            "zh-TW": "標題文字",
+            "ja": "タイトルテキスト",
+            "ko": "제목텍스트",
+            "es": "Texto del título",
+            "fr": "Texte du titre",
+            "de": "Titeltext",
+            "pt-BR": "Texto do título",
+            "ru": "Текст заголовка",
+            "ar": "نص العنوان",
+            "hi": "शीर्षक टेक्स्ट"
           },
           "desc": "Title text",
           "optional": true
@@ -592,7 +1172,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "可选项列表",
-            "en-US": "Items to select from"
+            "en-US": "Items to select from",
+            "zh-TW": "可選項列表",
+            "ja": "可オプションリスト",
+            "ko": "선택할 항목 목록",
+            "es": "Elementos para seleccionar",
+            "fr": "Éléments à sélectionner",
+            "de": "Auswählbare Elemente",
+            "pt-BR": "Itens para selecionar",
+            "ru": "Элементы для выбора",
+            "ar": "عناصر للاختيار منها",
+            "hi": "चुनने के लिए आइटम"
           }
         },
         {
@@ -600,7 +1190,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "允许多个",
-            "en-US": "Allow multiple"
+            "en-US": "Allow multiple",
+            "zh-TW": "允許多個",
+            "ja": "複数選択を許可",
+            "ko": "다중 허용",
+            "es": "Permitir múltiples",
+            "fr": "Autoriser plusieurs",
+            "de": "Mehrfach erlauben",
+            "pt-BR": "Permitir múltiplos",
+            "ru": "Разрешить множественные",
+            "ar": "السماح بالمتعدد",
+            "hi": "एकाधिक अनुमति"
           },
           "optional": true,
           "default_value": "false"
@@ -610,7 +1210,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否启用搜索过滤功能",
-            "en-US": "Whether to enable search filtering"
+            "en-US": "Whether to enable search filtering",
+            "zh-TW": "是否啟用搜尋過濾功能",
+            "ja": "検索フィルタリングを有効にするかどうか",
+            "ko": "검색 필터링 활성화 여부",
+            "es": "Habilitar filtrado de búsqueda",
+            "fr": "Activer le filtrage de recherche",
+            "de": "Suchfilterung aktivieren",
+            "pt-BR": "Habilitar filtragem de busca",
+            "ru": "Включить поисковую фильтрацию",
+            "ar": "تفعيل تصفية البحث",
+            "hi": "सर्च फ़िल्टरिंग सक्षम करें"
           },
           "optional": true,
           "desc": "Whether to enable search filtering"
@@ -620,13 +1230,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "已选择项目",
-          "en-US": "Selected items"
+          "en-US": "Selected items",
+          "zh-TW": "已選擇項目",
+          "ja": "選択された項目",
+          "ko": "선택된 항목",
+          "es": "Elementos seleccionados",
+          "fr": "Éléments sélectionnés",
+          "de": "Ausgewählte Elemente",
+          "pt-BR": "Itens selecionados",
+          "ru": "Выбранные элементы",
+          "ar": "العناصر المحددة",
+          "hi": "चयनित आइटम"
         }
       },
       "bridge_path": "dialog.listSelect",
       "descriptions": {
         "zh-CN": "显示列表选择对话框让用户从选项中选择",
-        "en-US": "Show list selection dialog for user to choose from options"
+        "en-US": "Show list selection dialog for user to choose from options",
+        "zh-TW": "顯示列表選擇對話框讓用戶從選項中選擇",
+        "ja": "オプションから選択するリスト選択ダイアログを表示",
+        "ko": "옵션 선택용 목록 선택 다이얼로그 표시",
+        "es": "Mostrar diálogo de selección de lista",
+        "fr": "Afficher un dialogue de sélection de liste",
+        "de": "Listenauswahl-Dialog anzeigen",
+        "pt-BR": "Mostrar diálogo de seleção de lista",
+        "ru": "Показать диалог выбора из списка",
+        "ar": "عرض حوار اختيار من قائمة",
+        "hi": "विकल्पों से चुनने के लिए सूची डायलॉग दिखाएं"
       },
       "group": "input",
       "description": "Show list selection dialog for user to choose from options"
@@ -640,7 +1270,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "对话框标题",
-            "en-US": "Dialog title"
+            "en-US": "Dialog title",
+            "zh-TW": "對話框標題",
+            "ja": "ダイアログタイトル",
+            "ko": "대화상자제목",
+            "es": "Título del diálogo",
+            "fr": "Titre du dialogue",
+            "de": "Dialogtitel",
+            "pt-BR": "Título do diálogo",
+            "ru": "Заголовок диалога",
+            "ar": "عنوان الحوار",
+            "hi": "डायलॉग शीर्षक"
           },
           "desc": "Dialog title",
           "optional": true
@@ -650,7 +1290,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要显示的确认消息",
-            "en-US": "Confirmation message"
+            "en-US": "Confirmation message",
+            "zh-TW": "要顯示的確認消息",
+            "ja": "確認メッセージ",
+            "ko": "확인 메시지",
+            "es": "Mensaje de confirmación",
+            "fr": "Message de confirmation",
+            "de": "Bestätigungsnachricht",
+            "pt-BR": "Mensagem de confirmação",
+            "ru": "Сообщение подтверждения",
+            "ar": "رسالة التأكيد",
+            "hi": "पुष्टि संदेश"
           },
           "desc": "Confirmation message",
           "optional": true
@@ -660,7 +1310,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "OK 按钮标签",
-            "en-US": "OK button label"
+            "en-US": "OK button label",
+            "zh-TW": "OK 按鈕標籤",
+            "ja": "OK ボタンラベル",
+            "ko": "확인 버튼 레이블",
+            "es": "Etiqueta del botón Aceptar",
+            "fr": "Libellé du bouton OK",
+            "de": "OK-Button-Beschriftung",
+            "pt-BR": "Rótulo do botão OK",
+            "ru": "Метка кнопки ОК",
+            "ar": "تسمية زر موافق",
+            "hi": "OK बटन लेबल"
           },
           "optional": true
         },
@@ -669,7 +1329,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "取消按钮标签",
-            "en-US": "Cancel button label"
+            "en-US": "Cancel button label",
+            "zh-TW": "取消按鈕標籤",
+            "ja": "キャンセルするボタンラベル",
+            "ko": "취소 버튼 레이블",
+            "es": "Etiqueta del botón Cancelar",
+            "fr": "Libellé du bouton Annuler",
+            "de": "Abbrechen-Beschriftung",
+            "pt-BR": "Rótulo do botão Cancelar",
+            "ru": "Метка кнопки Отмена",
+            "ar": "تسمية زر الإلغاء",
+            "hi": "रद्द बटन लेबल"
           },
           "optional": true
         }
@@ -678,14 +1348,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "dialog.confirm",
       "descriptions": {
         "zh-CN": "显示带有确认和取消按钮的确认对话框，返回用户选择",
-        "en-US": "Show confirm dialog with OK/Cancel, return user choice"
+        "en-US": "Show confirm dialog with OK/Cancel, return user choice",
+        "zh-TW": "顯示帶有確認和取消按鈕的確認對話框，返回用戶選擇",
+        "ja": "OK/キャンセル付き確認ダイアログを表示してユーザーの選択を返す",
+        "ko": "확인/취소 대화상자 표시, 사용자 선택 반환",
+        "es": "Mostrar diálogo de confirmación OK/Cancelar",
+        "fr": "Afficher un dialogue de confirmation OK/Annuler",
+        "de": "Bestätigungsdialog OK/Abbrechen anzeigen",
+        "pt-BR": "Mostrar diálogo de confirmação OK/Cancelar",
+        "ru": "Показать диалог подтверждения ОК/Отмена",
+        "ar": "عرض حوار تأكيد موافق/إلغاء",
+        "hi": "OK/कैंसल कन्फ़र्म डायलॉग दिखाएं"
       },
       "group": "message",
       "description": "Show confirm dialog with OK/Cancel, return user choice"
@@ -699,7 +1389,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息内容",
-            "en-US": "Message content"
+            "en-US": "Message content",
+            "zh-TW": "消息內容",
+            "ja": "メッセージコンテンツ",
+            "ko": "메시지콘텐츠",
+            "es": "Contenido del mensaje",
+            "fr": "Contenu du message",
+            "de": "Nachrichteninhalt",
+            "pt-BR": "Conteúdo da mensagem",
+            "ru": "Содержание сообщения",
+            "ar": "محتوى الرسالة",
+            "hi": "संदेश सामग्री"
           },
           "desc": "Message content",
           "optional": true
@@ -709,7 +1409,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "持续时间(毫秒)",
-            "en-US": "Duration ms"
+            "en-US": "Duration ms",
+            "zh-TW": "持續時間(毫秒)",
+            "ja": "持続時間（ミリ秒）",
+            "ko": "지속 시간 (ms)",
+            "es": "Duración (ms)",
+            "fr": "Durée (ms)",
+            "de": "Dauer (ms)",
+            "pt-BR": "Duração (ms)",
+            "ru": "Длительность (мс)",
+            "ar": "المدة (مللي ثانية)",
+            "hi": "अवधि (ms)"
           },
           "optional": true
         }
@@ -718,14 +1428,34 @@
         "type": "null",
         "descs": {
           "zh-CN": "null类型的结果对象",
-          "en-US": "Result object of type null"
+          "en-US": "Result object of type null",
+          "zh-TW": "null類型的結果物件",
+          "ja": "nullタイプの結果オブジェクト",
+          "ko": "null유형의결과객체",
+          "es": "Objeto resultado de tipo null",
+          "fr": "Objet résultat de type null",
+          "de": "Ergebnisobjekt vom Typ null",
+          "pt-BR": "Objeto resultado do tipo null",
+          "ru": "Объект результата типа null",
+          "ar": "كائن نتيجة من نوع null",
+          "hi": "null प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type null"
       },
       "bridge_path": "dialog.notify",
       "descriptions": {
         "zh-CN": "发送一条简短的系统级通知消息",
-        "en-US": "Send a brief system-level notification message"
+        "en-US": "Send a brief system-level notification message",
+        "zh-TW": "傳送一條简短的系統级通知消息",
+        "ja": "短いシステムレベルの通知メッセージを送信",
+        "ko": "짧은 시스템 수준 알림 메시지 전송",
+        "es": "Enviar notificación breve del sistema",
+        "fr": "Envoyer une notification système brève",
+        "de": "Kurze Systembenachrichtigung senden",
+        "pt-BR": "Enviar notificação breve do sistema",
+        "ru": "Отправить краткое системное уведомление",
+        "ar": "إرسال إشعار نظام مختصر",
+        "hi": "संक्षिप्त सिस्टम अधिसूचना भेजें"
       },
       "group": "notify",
       "description": "Send a brief system-level notification message"
@@ -739,7 +1469,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标题文本",
-            "en-US": "Title text"
+            "en-US": "Title text",
+            "zh-TW": "標題文字",
+            "ja": "タイトルテキスト",
+            "ko": "제목텍스트",
+            "es": "Texto del título",
+            "fr": "Texte du titre",
+            "de": "Titeltext",
+            "pt-BR": "Texto do título",
+            "ru": "Текст заголовка",
+            "ar": "نص العنوان",
+            "hi": "शीर्षक टेक्स्ट"
           },
           "optional": true,
           "desc": "Title text"
@@ -749,7 +1489,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "默认时间 HH:MM",
-            "en-US": "Default time HH:MM"
+            "en-US": "Default time HH:MM",
+            "zh-TW": "默認時間 HH:MM",
+            "ja": "デフォルト时间 HH:MM",
+            "ko": "기본 시간 HH:MM",
+            "es": "Hora predeterminada HH:MM",
+            "fr": "Heure par défaut HH:MM",
+            "de": "Standardzeit HH:MM",
+            "pt-BR": "Hora padrão HH:MM",
+            "ru": "Время по умолчанию HH:MM",
+            "ar": "الوقت الافتراضي HH:MM",
+            "hi": "डिफ़ॉल्ट समय HH:MM"
           },
           "optional": true
         },
@@ -758,7 +1508,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "24-小时格式",
-            "en-US": "24-hour format"
+            "en-US": "24-hour format",
+            "zh-TW": "24-小時格式",
+            "ja": "24-小时フォーマット",
+            "ko": "24시간 형식",
+            "es": "Formato 24 horas",
+            "fr": "Format 24 heures",
+            "de": "24-Stunden-Format",
+            "pt-BR": "Formato 24 horas",
+            "ru": "24-часовой формат",
+            "ar": "تنسيق 24 ساعة",
+            "hi": "24-घंटे प्रारूप"
           },
           "optional": true
         }
@@ -767,13 +1527,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "已选择时间",
-          "en-US": "Selected time"
+          "en-US": "Selected time",
+          "zh-TW": "已選擇時間",
+          "ja": "選択された時間",
+          "ko": "선택된 시간",
+          "es": "Hora seleccionada",
+          "fr": "Heure sélectionnée",
+          "de": "Ausgewählte Zeit",
+          "pt-BR": "Hora selecionada",
+          "ru": "Выбранное время",
+          "ar": "الوقت المحدد",
+          "hi": "चयनित समय"
         }
       },
       "bridge_path": "dialog.timePicker",
       "descriptions": {
         "zh-CN": "显示时间选择器对话框",
-        "en-US": "Show time picker dialog"
+        "en-US": "Show time picker dialog",
+        "zh-TW": "顯示時間選擇器對話框",
+        "ja": "時間ピッカーダイアログを表示",
+        "ko": "시간 선택기 다이얼로그 표시",
+        "es": "Mostrar selector de hora",
+        "fr": "Afficher le sélecteur d'heure",
+        "de": "Zeitauswahl-Dialog anzeigen",
+        "pt-BR": "Mostrar seletor de hora",
+        "ru": "Показать диалог выбора времени",
+        "ar": "عرض منتقي الوقت",
+        "hi": "समय चुनने का डायलॉग दिखाएं"
       },
       "group": "picker",
       "description": "Show time picker dialog"
@@ -787,7 +1567,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标题文本",
-            "en-US": "Title text"
+            "en-US": "Title text",
+            "zh-TW": "標題文字",
+            "ja": "タイトルテキスト",
+            "ko": "제목텍스트",
+            "es": "Texto del título",
+            "fr": "Texte du titre",
+            "de": "Titeltext",
+            "pt-BR": "Texto do título",
+            "ru": "Текст заголовка",
+            "ar": "نص العنوان",
+            "hi": "शीर्षक टेक्स्ट"
           },
           "optional": true,
           "desc": "Title text"
@@ -797,7 +1587,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "默认 YYYY-MM-DD HH:MM",
-            "en-US": "Default YYYY-MM-DD HH:MM"
+            "en-US": "Default YYYY-MM-DD HH:MM",
+            "zh-TW": "默認 YYYY-MM-DD HH:MM",
+            "ja": "デフォルト YYYY-MM-DD HH:MM",
+            "ko": "기본값 YYYY-MM-DD HH:MM",
+            "es": "Predeterminado YYYY-MM-DD HH:MM",
+            "fr": "Par défaut YYYY-MM-DD HH:MM",
+            "de": "Standard YYYY-MM-DD HH:MM",
+            "pt-BR": "Padrão YYYY-MM-DD HH:MM",
+            "ru": "По умолчанию YYYY-MM-DD HH:MM",
+            "ar": "الافتراضي YYYY-MM-DD HH:MM",
+            "hi": "डिफ़ॉल्ट YYYY-MM-DD HH:MM"
           },
           "optional": true
         },
@@ -806,7 +1606,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "可选最小日期时间",
-            "en-US": "Minimum selectable datetime"
+            "en-US": "Minimum selectable datetime",
+            "zh-TW": "可選最小日期時間",
+            "ja": "オプション最小日期时间",
+            "ko": "선택 가능한 최소 날짜/시간",
+            "es": "Fecha/hora mínima seleccionable",
+            "fr": "Date/heure minimale sélectionnable",
+            "de": "Minimale auswählbare Datum/Uhrzeit",
+            "pt-BR": "Data/hora mínima selecionável",
+            "ru": "Минимальная выбираемая дата/время",
+            "ar": "أقل تاريخ/وقت قابل للتحديد",
+            "hi": "न्यूनतम चयन योग्य दिनांक/समय"
           },
           "optional": true,
           "desc": "Minimum selectable datetime"
@@ -816,7 +1626,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "可选最大日期时间",
-            "en-US": "Maximum selectable datetime"
+            "en-US": "Maximum selectable datetime",
+            "zh-TW": "可選最大日期時間",
+            "ja": "オプション最大日期时间",
+            "ko": "선택 가능한 최대 날짜/시간",
+            "es": "Fecha/hora máxima seleccionable",
+            "fr": "Date/heure maximale sélectionnable",
+            "de": "Maximale auswählbare Datum/Uhrzeit",
+            "pt-BR": "Data/hora máxima selecionável",
+            "ru": "Максимальная выбираемая дата/время",
+            "ar": "أقصى تاريخ/وقت قابل للتحديد",
+            "hi": "अधिकतम चयन योग्य दिनांक/समय"
           },
           "optional": true,
           "desc": "Maximum selectable datetime"
@@ -826,7 +1646,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否 24H",
-            "en-US": "Is 24H"
+            "en-US": "Is 24H",
+            "zh-TW": "是否 24H",
+            "ja": "かどうか 24H",
+            "ko": "여부 24H",
+            "es": "Formato 24 horas",
+            "fr": "Format 24h",
+            "de": "24-Stunden-Format",
+            "pt-BR": "Formato 24h",
+            "ru": "24-часовой формат",
+            "ar": "تنسيق 24 ساعة",
+            "hi": "24 घंटे फ़ॉर्मैट"
           },
           "optional": true
         }
@@ -835,13 +1665,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "已选择的日期时间",
-          "en-US": "Selected datetime"
+          "en-US": "Selected datetime",
+          "zh-TW": "已選擇的日期時間",
+          "ja": "選択された日時",
+          "ko": "선택된 날짜시간",
+          "es": "Fecha/hora seleccionada",
+          "fr": "Date/heure sélectionnée",
+          "de": "Ausgewähltes Datum/Uhrzeit",
+          "pt-BR": "Data/hora selecionada",
+          "ru": "Выбранная дата/время",
+          "ar": "التاريخ/الوقت المحدد",
+          "hi": "चयनित दिनांक/समय"
         }
       },
       "bridge_path": "dialog.datetimePicker",
       "descriptions": {
         "zh-CN": "显示日期时间选择器对话框",
-        "en-US": "Show datetime picker dialog"
+        "en-US": "Show datetime picker dialog",
+        "zh-TW": "顯示日期時間選擇器對話框",
+        "ja": "日時ピッカーダイアログを表示",
+        "ko": "날짜시간 선택기 다이얼로그 표시",
+        "es": "Mostrar selector de fecha y hora",
+        "fr": "Afficher le sélecteur de date et heure",
+        "de": "Datum/Uhrzeit-Auswahl anzeigen",
+        "pt-BR": "Mostrar seletor de data e hora",
+        "ru": "Показать диалог выбора даты и времени",
+        "ar": "عرض منتقي التاريخ والوقت",
+        "hi": "दिनांक/समय चुनने का डायलॉग दिखाएं"
       },
       "group": "picker",
       "description": "Show datetime picker dialog"
@@ -849,14 +1699,34 @@
   ],
   "overviews": {
     "zh-CN": "提供系统原生对话框能力，包括消息提示、确认框、输入框、文件/目录选择器、保存对话框、日期/时间选择器、颜色选择器等。所有对话框均使用操作系统原生 UI。",
-    "en-US": "System native dialogs including message alerts, confirmation, input, file/directory pickers, save dialogs, date/time pickers, and color pickers. All dialogs use the OS native UI."
+    "en-US": "System native dialogs including message alerts, confirmation, input, file/directory pickers, save dialogs, date/time pickers, and color pickers. All dialogs use the OS native UI.",
+    "zh-TW": "提供系統原生對話框能力，包括訊息提示、確認框、输入框、檔案/目錄選擇器、保存對話框、日期/時间選擇器、颜色選擇器等。所有對話框均使用操作系統原生 UI。",
+    "ja": "システムネイティブダイアログ：メッセージ・確認・入力・ファイル/ディレクトリ選択・保存・日時選択・カラーピッカー。OS標準UIを使用。",
+    "ko": "시스템 네이티브 다이얼로그: 메시지, 확인, 입력, 파일/디렉토리 선택, 저장, 날짜/시간, 색상 선택. OS 네이티브 UI 사용.",
+    "es": "Diálogos nativos del sistema: mensajes, confirmación, entrada, selectores de archivo/directorio, guardado, fecha/hora y color. UI nativa del SO.",
+    "fr": "Dialogues natifs : messages, confirmation, saisie, sélecteurs fichier/dossier, sauvegarde, date/heure et couleur. UI native du système.",
+    "de": "Native Systemdialoge: Nachrichten, Bestätigung, Eingabe, Datei-/Ordnerwahl, Speichern, Datum/Zeit und Farbwahl. Natives OS-UI.",
+    "pt-BR": "Diálogos nativos: mensagens, confirmação, entrada, seleção de arquivo/diretório, salvar, data/hora e cor. UI nativa do SO.",
+    "ru": "Нативные диалоги ОС: сообщения, подтверждение, ввод, выбор файлов/папок, сохранение, дата/время и цвет. Нативный UI.",
+    "ar": "حوارات أصلية للنظام: رسائل وتأكيد وإدخال ومنتقي ملفات/مجلدات وحفظ وتاريخ/وقت ولون. واجهة أصلية.",
+    "hi": "नेटिव सिस्टम डायलॉग: मैसेज, कन्फर्मेशन, इनपुट, फाइल/डायरेक्टरी पिकर, सेव, डेट/टाइम और कलर। OS नेटिव UI।"
   },
   "types": [
     {
       "name": "DialogResult",
       "descriptions": {
         "zh-CN": "对话框返回结果",
-        "en-US": "Dialog result"
+        "en-US": "Dialog result",
+        "zh-TW": "對話框返回结果",
+        "ja": "ダイアログ結果",
+        "ko": "대화 상자 결과",
+        "es": "Resultado del diálogo",
+        "fr": "Résultat du dialogue",
+        "de": "Dialogergebnis",
+        "pt-BR": "Resultado do diálogo",
+        "ru": "Результат диалога",
+        "ar": "نتيجة مربع الحوار",
+        "hi": "डायलॉग परिणाम"
       },
       "fields": [
         {
@@ -864,7 +1734,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "用户是否点击确认",
-            "en-US": "Whether user confirmed"
+            "en-US": "Whether user confirmed",
+            "zh-TW": "用户是否点擊確認",
+            "ja": "ユーザーが確認したかどうか",
+            "ko": "사용자 확인 여부",
+            "es": "Si el usuario confirmó",
+            "fr": "Si l'utilisateur a confirmé",
+            "de": "Ob der Benutzer bestätigt hat",
+            "pt-BR": "Se o usuário confirmou",
+            "ru": "Подтвердил ли пользователь",
+            "ar": "ما إذا أكّد المستخدم",
+            "hi": "उपयोगकर्ता ने पुष्टि की या नहीं"
           }
         },
         {
@@ -872,7 +1752,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "用户输入的值",
-            "en-US": "User input value"
+            "en-US": "User input value",
+            "zh-TW": "用户输入的值",
+            "ja": "ユーザー入力値",
+            "ko": "사용자 입력 값",
+            "es": "Valor de entrada del usuario",
+            "fr": "Valeur saisie par l'utilisateur",
+            "de": "Benutzereingabewert",
+            "pt-BR": "Valor de entrada do usuário",
+            "ru": "Значение ввода пользователя",
+            "ar": "قيمة إدخال المستخدم",
+            "hi": "उपयोगकर्ता इनपुट मान"
           }
         }
       ]
@@ -881,7 +1771,17 @@
       "name": "FileFilter",
       "descriptions": {
         "zh-CN": "文件选择器的过滤规则",
-        "en-US": "File picker filter rule"
+        "en-US": "File picker filter rule",
+        "zh-TW": "檔案選擇器的过滤規則",
+        "ja": "ファイル選択フィルタルール",
+        "ko": "파일 선택 필터 규칙",
+        "es": "Regla de filtro del selector de archivos",
+        "fr": "Règle de filtre du sélecteur de fichiers",
+        "de": "Dateiauswahl-Filterregel",
+        "pt-BR": "Regra de filtro do seletor de arquivos",
+        "ru": "Правило фильтра выбора файлов",
+        "ar": "قاعدة فلتر منتقي الملفات",
+        "hi": "फ़ाइल पिकर फ़िल्टर नियम"
       },
       "fields": [
         {
@@ -889,7 +1789,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "过滤器名称（如'图片文件'）",
-            "en-US": "Filter name"
+            "en-US": "Filter name",
+            "zh-TW": "过滤器名稱（如'图片檔案'）",
+            "ja": "フィルタ名",
+            "ko": "필터 이름",
+            "es": "Nombre del filtro",
+            "fr": "Nom du filtre",
+            "de": "Filtername",
+            "pt-BR": "Nome do filtro",
+            "ru": "Имя фильтра",
+            "ar": "اسم الفلتر",
+            "hi": "फ़िल्टर नाम"
           }
         },
         {
@@ -897,7 +1807,17 @@
           "type": "string[]",
           "descs": {
             "zh-CN": "允许的扩展名列表",
-            "en-US": "Allowed extensions"
+            "en-US": "Allowed extensions",
+            "zh-TW": "允許的擴展名列表",
+            "ja": "許可された拡張子",
+            "ko": "허용된 확장자",
+            "es": "Extensiones permitidas",
+            "fr": "Extensions autorisées",
+            "de": "Erlaubte Erweiterungen",
+            "pt-BR": "Extensões permitidas",
+            "ru": "Разрешённые расширения",
+            "ar": "الامتدادات المسموحة",
+            "hi": "अनुमत एक्सटेंशन"
           }
         }
       ]
@@ -906,7 +1826,17 @@
       "name": "InputResult",
       "descriptions": {
         "zh-CN": "输入对话框结果",
-        "en-US": "Input dialog result"
+        "en-US": "Input dialog result",
+        "zh-TW": "输入對話框结果",
+        "ja": "入力ダイアログ結果",
+        "ko": "입력 대화 상자 결과",
+        "es": "Resultado del diálogo de entrada",
+        "fr": "Résultat du dialogue de saisie",
+        "de": "Eingabedialogergebnis",
+        "pt-BR": "Resultado do diálogo de entrada",
+        "ru": "Результат диалога ввода",
+        "ar": "نتيجة مربع حوار الإدخال",
+        "hi": "इनपुट डायलॉग परिणाम"
       },
       "fields": [
         {
@@ -914,7 +1844,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "用户是否确认",
-            "en-US": "Whether user confirmed"
+            "en-US": "Whether user confirmed",
+            "zh-TW": "用户是否確認",
+            "ja": "ユーザーが確認したかどうか",
+            "ko": "사용자 확인 여부",
+            "es": "Si el usuario confirmó",
+            "fr": "Si l'utilisateur a confirmé",
+            "de": "Ob der Benutzer bestätigt hat",
+            "pt-BR": "Se o usuário confirmou",
+            "ru": "Подтвердил ли пользователь",
+            "ar": "ما إذا أكّد المستخدم",
+            "hi": "उपयोगकर्ता ने पुष्टि की या नहीं"
           }
         },
         {
@@ -922,7 +1862,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入的文本内容",
-            "en-US": "Input text content"
+            "en-US": "Input text content",
+            "zh-TW": "输入的文本內容",
+            "ja": "入力テキスト内容",
+            "ko": "입력 텍스트 내용",
+            "es": "Contenido de texto de entrada",
+            "fr": "Contenu du texte saisi",
+            "de": "Eingegebener Textinhalt",
+            "pt-BR": "Conteúdo de texto de entrada",
+            "ru": "Содержимое введённого текста",
+            "ar": "محتوى نص الإدخال",
+            "hi": "इनपुट टेक्स्ट सामग्री"
           }
         }
       ]
@@ -931,7 +1881,17 @@
       "name": "ProgressHandle",
       "descriptions": {
         "zh-CN": "进度条句柄",
-        "en-US": "Progress bar handle"
+        "en-US": "Progress bar handle",
+        "zh-TW": "進度条句柄",
+        "ja": "プログレスバーハンドル",
+        "ko": "진행 표시줄 핸들",
+        "es": "Manejador de la barra de progreso",
+        "fr": "Handle de la barre de progression",
+        "de": "Fortschrittsbalken-Handle",
+        "pt-BR": "Handle da barra de progresso",
+        "ru": "Дескриптор индикатора прогресса",
+        "ar": "مقبض شريط التقدم",
+        "hi": "प्रगति बार हैंडल"
       },
       "fields": [
         {
@@ -939,7 +1899,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "进度条ID",
-            "en-US": "Progress bar ID"
+            "en-US": "Progress bar ID",
+            "zh-TW": "進度条ID",
+            "ja": "プログレスバーID",
+            "ko": "진행 표시줄 ID",
+            "es": "ID de la barra de progreso",
+            "fr": "ID de la barre de progression",
+            "de": "Fortschrittsbalken-ID",
+            "pt-BR": "ID da barra de progresso",
+            "ru": "ID индикатора прогресса",
+            "ar": "معرّف شريط التقدم",
+            "hi": "प्रगति बार ID"
           }
         }
       ]

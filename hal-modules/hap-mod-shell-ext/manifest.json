@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "URL地址",
-            "en-US": "URL address"
+            "en-US": "URL address",
+            "zh-TW": "URL地址",
+            "ja": "URLアドレス",
+            "ko": "URL주소",
+            "es": "Dirección URL",
+            "fr": "Adresse URL",
+            "de": "URL-Adresse",
+            "pt-BR": "Endereço URL",
+            "ru": "URL-адрес",
+            "ar": "عنوان URL",
+            "hi": "URL पता"
           },
           "desc": "URL address"
         }
@@ -42,14 +52,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "shellExt.openUrl",
       "descriptions": {
         "zh-CN": "打开 URL 在浏览器",
-        "en-US": "Open URL in browser"
+        "en-US": "Open URL in browser",
+        "zh-TW": "打開 URL 在瀏覽器",
+        "ja": "開く URL でブラウザ",
+        "ko": "브라우저에서 URL 열기",
+        "es": "Abrir URL en navegador",
+        "fr": "Ouvrir l'URL dans le navigateur",
+        "de": "URL im Browser öffnen",
+        "pt-BR": "Abrir URL no navegador",
+        "ru": "Открыть URL в браузере",
+        "ar": "فتح URL في المتصفح",
+        "hi": "ब्राउज़र में URL खोलें"
       },
       "group": "open"
     },
@@ -62,7 +92,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -71,14 +111,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "shellExt.openPath",
       "descriptions": {
         "zh-CN": "打开path",
-        "en-US": "Open path of shell"
+        "en-US": "Open path of shell",
+        "zh-TW": "打開path",
+        "ja": "開くpath",
+        "ko": "열기path",
+        "es": "Abrir ruta en shell",
+        "fr": "Ouvrir le chemin dans le shell",
+        "de": "Pfad in Shell öffnen",
+        "pt-BR": "Abrir caminho no shell",
+        "ru": "Открыть путь в оболочке",
+        "ar": "فتح مسار في الصدفة",
+        "hi": "शेल में पथ खोलें"
       },
       "group": "open",
       "description": "Open path of shell"
@@ -92,7 +152,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         },
         {
@@ -100,7 +170,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "应用路径",
-            "en-US": "App path"
+            "en-US": "App path",
+            "zh-TW": "應用路徑",
+            "ja": "アプリパス",
+            "ko": "앱 경로",
+            "es": "Ruta de la aplicación",
+            "fr": "Chemin de l'application",
+            "de": "App-Pfad",
+            "pt-BR": "Caminho do aplicativo",
+            "ru": "Путь приложения",
+            "ar": "مسار التطبيق",
+            "hi": "ऐप पथ"
           }
         }
       ],
@@ -108,14 +188,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "shellExt.openWith",
       "descriptions": {
         "zh-CN": "使用指定程序打开文件",
-        "en-US": "Open with of shell"
+        "en-US": "Open with of shell",
+        "zh-TW": "使用指定程序打開檔案",
+        "ja": "使用指定程序開くファイル",
+        "ko": "셸에서 다른 앱으로 열기",
+        "es": "Abrir con de shell",
+        "fr": "Ouvrir avec dans le shell",
+        "de": "Öffnen mit in Shell",
+        "pt-BR": "Abrir com no shell",
+        "ru": "Открыть с помощью в оболочке",
+        "ar": "فتح باستخدام في الصدفة",
+        "hi": "शेल में इसके साथ खोलें"
       },
       "group": "open",
       "description": "Open with of shell"
@@ -129,7 +229,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -138,14 +248,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "shellExt.showInExplorer",
       "descriptions": {
         "zh-CN": "在 Finder 中显示",
-        "en-US": "Show in Finder"
+        "en-US": "Show in Finder",
+        "zh-TW": "在 Finder 中顯示",
+        "ja": "Finderで表示",
+        "ko": "Finder에서 보기",
+        "es": "Mostrar en Finder",
+        "fr": "Afficher dans le Finder",
+        "de": "Im Finder anzeigen",
+        "pt-BR": "Mostrar no Finder",
+        "ru": "Показать в Finder",
+        "ar": "إظهار في Finder",
+        "hi": "Finder में दिखाएं"
       },
       "group": "open"
     },
@@ -158,7 +288,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -167,14 +307,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "shellExt.trash",
       "descriptions": {
         "zh-CN": "将文件移入回收站",
-        "en-US": "Trash shell"
+        "en-US": "Trash shell",
+        "zh-TW": "將檔案移入回收站",
+        "ja": "将ファイル移入回收站",
+        "ko": "셸 휴지통으로 이동",
+        "es": "Enviar a papelera de shell",
+        "fr": "Mettre à la corbeille dans le shell",
+        "de": "In Papierkorb der Shell verschieben",
+        "pt-BR": "Enviar para lixeira do shell",
+        "ru": "Переместить в корзину через оболочку",
+        "ar": "نقل إلى سلة المهملات",
+        "hi": "शेल ट्रैश"
       },
       "group": "open",
       "description": "Trash shell"
@@ -188,7 +348,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要执行的命令",
-            "en-US": "Command to execute"
+            "en-US": "Command to execute",
+            "zh-TW": "要執行的命令",
+            "ja": "要実行するの命令",
+            "ko": "실행할 명령",
+            "es": "Comando a ejecutar",
+            "fr": "Commande à exécuter",
+            "de": "Auszuführender Befehl",
+            "pt-BR": "Comando a executar",
+            "ru": "Команда для выполнения",
+            "ar": "الأمر المراد تنفيذه",
+            "hi": "निष्पादित करने के लिए कमांड"
           },
           "desc": "Command to execute"
         },
@@ -197,7 +367,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "命令行参数列表",
-            "en-US": "Command arguments list"
+            "en-US": "Command arguments list",
+            "zh-TW": "命令行參數列表",
+            "ja": "命令行パラメータリスト",
+            "ko": "명령 인수 목록",
+            "es": "Lista de argumentos del comando",
+            "fr": "Liste d'arguments de la commande",
+            "de": "Befehlsargumentliste",
+            "pt-BR": "Lista de argumentos do comando",
+            "ru": "Список аргументов команды",
+            "ar": "قائمة وسائط الأمر",
+            "hi": "कमांड तर्क सूची"
           },
           "optional": true,
           "desc": "Command arguments list"
@@ -207,7 +387,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "工作目录",
-            "en-US": "Cwd"
+            "en-US": "Cwd",
+            "zh-TW": "工作目錄",
+            "ja": "工作ディレクトリ",
+            "ko": "현재 작업 디렉토리",
+            "es": "Directorio de trabajo",
+            "fr": "Répertoire de travail",
+            "de": "Arbeitsverzeichnis",
+            "pt-BR": "Diretório de trabalho",
+            "ru": "Рабочий каталог",
+            "ar": "مجلد العمل",
+            "hi": "कार्य डायरेक्टरी"
           },
           "optional": true
         }
@@ -216,13 +406,33 @@
         "type": "ProcessHandle",
         "descs": {
           "zh-CN": "进程信息",
-          "en-US": "Process info"
+          "en-US": "Process info",
+          "zh-TW": "進程資訊",
+          "ja": "プロセス情報",
+          "ko": "프로세스정보",
+          "es": "Información de proceso",
+          "fr": "Informations de processus",
+          "de": "Prozessinformationen",
+          "pt-BR": "Informações do processo",
+          "ru": "Информация о процессе",
+          "ar": "معلومات العملية",
+          "hi": "प्रोसेस जानकारी"
         }
       },
       "bridge_path": "shellExt.runDetached",
       "descriptions": {
         "zh-CN": "以分离模式运行程序",
-        "en-US": "Run detached of shell"
+        "en-US": "Run detached of shell",
+        "zh-TW": "以分離模式運行程序",
+        "ja": "シェルでデタッチ実行",
+        "ko": "셸에서 분리 실행",
+        "es": "Ejecutar desacoplado de shell",
+        "fr": "Exécuter en arrière-plan dans le shell",
+        "de": "Abgetrennt in Shell ausführen",
+        "pt-BR": "Executar desanexado do shell",
+        "ru": "Запустить отсоединённо в оболочке",
+        "ar": "تشغيل منفصل في الصدفة",
+        "hi": "शेल में अलग से चलाएं"
       },
       "group": "execute",
       "description": "Run detached of shell"
@@ -236,7 +446,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "目录名称: home/desktop/文档/downloads/temp/config/data/cache",
-            "en-US": "Dir name: home/desktop/documents/downloads/temp/config/data/cache"
+            "en-US": "Dir name: home/desktop/documents/downloads/temp/config/data/cache",
+            "zh-TW": "目錄名稱: home/desktop/文檔/downloads/temp/config/data/cache",
+            "ja": "ディレクトリ名: home/desktop/documents/downloads/temp/config/data/cache",
+            "ko": "디렉토리 이름: home/desktop/documents/downloads/temp/config/data/cache",
+            "es": "Nombre de directorio: home/desktop/documents/downloads/temp/config/data/cache",
+            "fr": "Nom de répertoire: home/desktop/documents/downloads/temp/config/data/cache",
+            "de": "Verzeichnisname: home/desktop/documents/downloads/temp/config/data/cache",
+            "pt-BR": "Nome do diretório: home/desktop/documents/downloads/temp/config/data/cache",
+            "ru": "Имя каталога: home/desktop/documents/downloads/temp/config/data/cache",
+            "ar": "اسم المجلد: home/desktop/documents/downloads/temp/config/data/cache",
+            "hi": "डायरेक्टरी नाम: home/desktop/documents/downloads/temp/config/data/cache"
           }
         }
       ],
@@ -244,14 +464,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "shellExt.getSpecialDir",
       "descriptions": {
         "zh-CN": "获取special dir信息",
-        "en-US": "Get special dir info of shell"
+        "en-US": "Get special dir info of shell",
+        "zh-TW": "取得special dir資訊",
+        "ja": "取得するspecial dir情報",
+        "ko": "가져오기special dir정보",
+        "es": "Obtener directorio especial de shell",
+        "fr": "Obtenir les répertoires spéciaux du shell",
+        "de": "Spezialverzeichnis-Info der Shell abrufen",
+        "pt-BR": "Obter diretório especial do shell",
+        "ru": "Получить информацию о специальной директории",
+        "ar": "الحصول على معلومات المجلد الخاص",
+        "hi": "शेल विशेष डायरेक्टरी जानकारी प्राप्त करें"
       },
       "group": "file",
       "description": "Get special dir info of shell"
@@ -265,7 +505,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "名称标识",
-            "en-US": "Name identifier"
+            "en-US": "Name identifier",
+            "zh-TW": "名稱標識",
+            "ja": "名前識別子",
+            "ko": "이름 식별자",
+            "es": "Identificador de nombre",
+            "fr": "Identifiant de nom",
+            "de": "Namenskennung",
+            "pt-BR": "Identificador de nome",
+            "ru": "Идентификатор имени",
+            "ar": "معرف الاسم",
+            "hi": "नाम पहचानकर्ता"
           },
           "desc": "Name identifier"
         }
@@ -274,14 +524,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "shellExt.getEnv",
       "descriptions": {
         "zh-CN": "获取env信息",
-        "en-US": "Get env info of shell"
+        "en-US": "Get env info of shell",
+        "zh-TW": "取得env資訊",
+        "ja": "取得するenv情報",
+        "ko": "가져오기env정보",
+        "es": "Obtener información de entorno de shell",
+        "fr": "Obtenir les informations d'environnement du shell",
+        "de": "Shell-Umgebungsinformationen abrufen",
+        "pt-BR": "Obter informações de ambiente do shell",
+        "ru": "Получить информацию об окружении оболочки",
+        "ar": "الحصول على معلومات بيئة الصدفة",
+        "hi": "शेल एनवायरनमेंट जानकारी प्राप्त करें"
       },
       "group": "env",
       "description": "Get env info of shell"
@@ -295,7 +565,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "名称标识",
-            "en-US": "Name identifier"
+            "en-US": "Name identifier",
+            "zh-TW": "名稱標識",
+            "ja": "名前識別子",
+            "ko": "이름 식별자",
+            "es": "Identificador de nombre",
+            "fr": "Identifiant de nom",
+            "de": "Namenskennung",
+            "pt-BR": "Identificador de nome",
+            "ru": "Идентификатор имени",
+            "ar": "معرف الاسم",
+            "hi": "नाम पहचानकर्ता"
           },
           "desc": "Name identifier"
         },
@@ -304,7 +584,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要设置的值",
-            "en-US": "Value to set"
+            "en-US": "Value to set",
+            "zh-TW": "要設定的值",
+            "ja": "設定する値",
+            "ko": "설정할 값",
+            "es": "Valor a establecer",
+            "fr": "Valeur à définir",
+            "de": "Zu setzender Wert",
+            "pt-BR": "Valor a definir",
+            "ru": "Устанавливаемое значение",
+            "ar": "القيمة المراد تعيينها",
+            "hi": "सेट करने का मान"
           },
           "desc": "Value to set"
         }
@@ -313,14 +603,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "shellExt.setEnv",
       "descriptions": {
         "zh-CN": "设置env property",
-        "en-US": "Set env property of shell"
+        "en-US": "Set env property of shell",
+        "zh-TW": "設定env property",
+        "ja": "設定するenv property",
+        "ko": "설정env property",
+        "es": "Establecer variable de entorno de shell",
+        "fr": "Définir la variable d'environnement du shell",
+        "de": "Shell-Umgebungseigenschaft setzen",
+        "pt-BR": "Definir variável de ambiente do shell",
+        "ru": "Установить переменную окружения оболочки",
+        "ar": "تعيين خاصية بيئة الصدفة",
+        "hi": "शेल एनवायरनमेंट प्रॉपर्टी सेट करें"
       },
       "group": "env",
       "description": "Set env property of shell"
@@ -334,7 +644,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         },
         {
@@ -342,7 +662,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "小/中/大",
-            "en-US": "小/中/大"
+            "en-US": "小/中/大",
+            "zh-TW": "小/中/大",
+            "ja": "小/中/大",
+            "ko": "소/중/대",
+            "es": "Pequeño/Mediano/Grande",
+            "fr": "Petit/Moyen/Grand",
+            "de": "Klein/Mittel/Groß",
+            "pt-BR": "Pequeno/Médio/Grande",
+            "ru": "Малый/Средний/Большой",
+            "ar": "صغير/متوسط/كبير",
+            "hi": "छोटा/मध्यम/बड़ा"
           },
           "optional": true
         }
@@ -351,13 +681,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "数据 URI PNG",
-          "en-US": "Data URI PNG"
+          "en-US": "Data URI PNG",
+          "zh-TW": "數據 URI PNG",
+          "ja": "データ URI PNG",
+          "ko": "데이터 URI PNG",
+          "es": "URI de datos PNG",
+          "fr": "URI de données PNG",
+          "de": "Daten-URI PNG",
+          "pt-BR": "URI de dados PNG",
+          "ru": "Data URI PNG",
+          "ar": "URI بيانات PNG",
+          "hi": "डेटा URI PNG"
         }
       },
       "bridge_path": "shellExt.getFileIcon",
       "descriptions": {
         "zh-CN": "获取file icon信息",
-        "en-US": "Get file icon info of shell"
+        "en-US": "Get file icon info of shell",
+        "zh-TW": "取得file icon資訊",
+        "ja": "取得するfile icon情報",
+        "ko": "가져오기file icon정보",
+        "es": "Obtener icono de archivo de shell",
+        "fr": "Obtenir l'icône de fichier du shell",
+        "de": "Datei-Icon-Info der Shell abrufen",
+        "pt-BR": "Obter ícone de arquivo do shell",
+        "ru": "Получить информацию об иконке файла",
+        "ar": "الحصول على معلومات أيقونة الملف",
+        "hi": "शेल फ़ाइल आइकन जानकारी प्राप्त करें"
       },
       "group": "file",
       "description": "Get file icon info of shell"
@@ -371,7 +721,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         }
       ],
@@ -379,13 +739,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "MIME 类型",
-          "en-US": "MIME type"
+          "en-US": "MIME type",
+          "zh-TW": "MIME 類型",
+          "ja": "MIME タイプ",
+          "ko": "MIME 유형",
+          "es": "Tipo MIME",
+          "fr": "Type MIME",
+          "de": "MIME-Typ",
+          "pt-BR": "Tipo MIME",
+          "ru": "MIME-тип",
+          "ar": "نوع MIME",
+          "hi": "MIME प्रकार"
         }
       },
       "bridge_path": "shellExt.getMimeType",
       "descriptions": {
         "zh-CN": "获取 MIME 类型",
-        "en-US": "Get MIME type"
+        "en-US": "Get MIME type",
+        "zh-TW": "取得 MIME 類型",
+        "ja": "取得する MIME タイプ",
+        "ko": "가져오기 MIME 유형",
+        "es": "Obtener tipo MIME",
+        "fr": "Obtenir le type MIME",
+        "de": "MIME-Typ abrufen",
+        "pt-BR": "Obter tipo MIME",
+        "ru": "Получить MIME-тип",
+        "ar": "الحصول على نوع MIME",
+        "hi": "MIME प्रकार प्राप्त करें"
       },
       "group": "file"
     },
@@ -398,7 +778,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件扩展名",
-            "en-US": "File extension"
+            "en-US": "File extension",
+            "zh-TW": "檔案扩展名",
+            "ja": "ファイル拡張子",
+            "ko": "파일 확장자",
+            "es": "Extensión de archivo",
+            "fr": "Extension de fichier",
+            "de": "Dateierweiterung",
+            "pt-BR": "Extensão de arquivo",
+            "ru": "Расширение файла",
+            "ar": "امتداد الملف",
+            "hi": "फ़ाइल एक्सटेंशन"
           }
         }
       ],
@@ -406,13 +796,33 @@
         "type": "AppInfo",
         "descs": {
           "zh-CN": "应用信息",
-          "en-US": "App info"
+          "en-US": "App info",
+          "zh-TW": "應用資訊",
+          "ja": "アプリ情報",
+          "ko": "앱 정보",
+          "es": "Información de la aplicación",
+          "fr": "Informations de l'application",
+          "de": "App-Informationen",
+          "pt-BR": "Informações do aplicativo",
+          "ru": "Информация о приложении",
+          "ar": "معلومات التطبيق",
+          "hi": "ऐप जानकारी"
         }
       },
       "bridge_path": "shellExt.getDefaultApp",
       "descriptions": {
         "zh-CN": "获取文件类型的默认打开程序",
-        "en-US": "Get default app info of shell"
+        "en-US": "Get default app info of shell",
+        "zh-TW": "取得檔案類型的默認打開程序",
+        "ja": "取得するファイルタイプのデフォルト開く程序",
+        "ko": "셸 기본 앱 정보 가져오기",
+        "es": "Obtener aplicación predeterminada de shell",
+        "fr": "Obtenir l'application par défaut du shell",
+        "de": "Standard-App-Info der Shell abrufen",
+        "pt-BR": "Obter aplicativo padrão do shell",
+        "ru": "Получить информацию о приложении по умолчанию",
+        "ar": "الحصول على معلومات التطبيق الافتراضي",
+        "hi": "शेल डिफ़ॉल्ट ऐप जानकारी प्राप्त करें"
       },
       "group": "file_assoc",
       "description": "Get default app info of shell"
@@ -426,7 +836,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "目标路径",
-            "en-US": "Target path"
+            "en-US": "Target path",
+            "zh-TW": "目標路徑",
+            "ja": "ターゲットパス",
+            "ko": "대상 경로",
+            "es": "Ruta de destino",
+            "fr": "Chemin cible",
+            "de": "Zielpfad",
+            "pt-BR": "Caminho de destino",
+            "ru": "Целевой путь",
+            "ar": "المسار الهدف",
+            "hi": "लक्ष्य पथ"
           }
         },
         {
@@ -434,7 +854,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "快捷方式路径",
-            "en-US": "Shortcut path"
+            "en-US": "Shortcut path",
+            "zh-TW": "快捷方式路徑",
+            "ja": "快捷方式パス",
+            "ko": "바로가기 경로",
+            "es": "Ruta de acceso directo",
+            "fr": "Chemin du raccourci",
+            "de": "Verknüpfungspfad",
+            "pt-BR": "Caminho do atalho",
+            "ru": "Путь к ярлыку",
+            "ar": "مسار الاختصار",
+            "hi": "शॉर्टकट पथ"
           }
         },
         {
@@ -442,7 +872,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图标路径",
-            "en-US": "Icon Path"
+            "en-US": "Icon Path",
+            "zh-TW": "圖標路徑",
+            "ja": "アイコンパス",
+            "ko": "아이콘 경로",
+            "es": "Ruta del icono",
+            "fr": "Chemin de l'icône",
+            "de": "Symbolpfad",
+            "pt-BR": "Caminho do ícone",
+            "ru": "Путь к значку",
+            "ar": "مسار الأيقونة",
+            "hi": "आइकन पथ"
           },
           "optional": true
         },
@@ -451,7 +891,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "description参数",
-            "en-US": "description parameter"
+            "en-US": "description parameter",
+            "zh-TW": "description參數",
+            "ja": "descriptionパラメータ",
+            "ko": "description매개변수",
+            "es": "Parámetro de description",
+            "fr": "Paramètre de description",
+            "de": "description-Parameter",
+            "pt-BR": "Parâmetro de description",
+            "ru": "Параметр description",
+            "ar": "معلمة description",
+            "hi": "description पैरामीटर"
           },
           "optional": true,
           "desc": "description parameter"
@@ -461,7 +911,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "快捷方式启动时传递的命令行参数",
-            "en-US": "Command-line arguments passed when shortcut launches"
+            "en-US": "Command-line arguments passed when shortcut launches",
+            "zh-TW": "快捷方式啟動時傳遞的命令行參數",
+            "ja": "ショートカット起動時に渡すコマンドライン引数",
+            "ko": "바로가기 실행 시 전달되는 명령줄 인수",
+            "es": "Argumentos al lanzar el acceso directo",
+            "fr": "Arguments au lancement du raccourci",
+            "de": "Argumente beim Start der Verknüpfung",
+            "pt-BR": "Argumentos ao iniciar o atalho",
+            "ru": "Аргументы при запуске ярлыка",
+            "ar": "وسائط عند تشغيل الاختصار",
+            "hi": "शॉर्टकट लॉन्च में कमांड-लाइन तर्क"
           },
           "optional": true,
           "desc": "Command-line arguments passed when shortcut launches"
@@ -471,14 +931,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "shellExt.createShortcut",
       "descriptions": {
         "zh-CN": "创建桌面快捷方式",
-        "en-US": "Create shortcut of shell"
+        "en-US": "Create shortcut of shell",
+        "zh-TW": "建立桌面快捷方式",
+        "ja": "作成する桌面快捷方式",
+        "ko": "셸 바로가기 생성",
+        "es": "Crear acceso directo del shell",
+        "fr": "Créer un raccourci shell",
+        "de": "Shell-Verknüpfung erstellen",
+        "pt-BR": "Criar atalho do shell",
+        "ru": "Создать ярлык оболочки",
+        "ar": "إنشاء اختصار الغلاف",
+        "hi": "शेल शॉर्टकट बनाएं"
       },
       "group": "shortcut",
       "description": "Create shortcut of shell"
@@ -492,7 +972,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "快捷方式路径",
-            "en-US": "Shortcut path"
+            "en-US": "Shortcut path",
+            "zh-TW": "快捷方式路徑",
+            "ja": "快捷方式パス",
+            "ko": "바로가기 경로",
+            "es": "Ruta de acceso directo",
+            "fr": "Chemin du raccourci",
+            "de": "Verknüpfungspfad",
+            "pt-BR": "Caminho do atalho",
+            "ru": "Путь к ярлыку",
+            "ar": "مسار الاختصار",
+            "hi": "शॉर्टकट पथ"
           }
         }
       ],
@@ -500,14 +990,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "shellExt.removeShortcut",
       "descriptions": {
         "zh-CN": "移除shortcut",
-        "en-US": "Remove shortcut of shell"
+        "en-US": "Remove shortcut of shell",
+        "zh-TW": "移除shortcut",
+        "ja": "シェルショートカットを削除",
+        "ko": "셸 바로가기 제거",
+        "es": "Eliminar acceso directo",
+        "fr": "Supprimer le raccourci",
+        "de": "Shell-Verknüpfung entfernen",
+        "pt-BR": "Remover atalho do shell",
+        "ru": "Удалить ярлык оболочки",
+        "ar": "إزالة اختصار الغلاف",
+        "hi": "शेल शॉर्टकट हटाएं"
       },
       "group": "shortcut",
       "description": "Remove shortcut of shell"
@@ -521,7 +1031,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "快捷方式路径",
-            "en-US": "Shortcut path"
+            "en-US": "Shortcut path",
+            "zh-TW": "快捷方式路徑",
+            "ja": "快捷方式パス",
+            "ko": "바로가기 경로",
+            "es": "Ruta de acceso directo",
+            "fr": "Chemin du raccourci",
+            "de": "Verknüpfungspfad",
+            "pt-BR": "Caminho do atalho",
+            "ru": "Путь к ярлыку",
+            "ar": "مسار الاختصار",
+            "hi": "शॉर्टकट पथ"
           }
         }
       ],
@@ -529,13 +1049,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否存在",
-          "en-US": "Exists"
+          "en-US": "Exists",
+          "zh-TW": "是否存在",
+          "ja": "存でするかどうか",
+          "ko": "존재 여부",
+          "es": "Si existe",
+          "fr": "Si existe",
+          "de": "Ob vorhanden",
+          "pt-BR": "Se existe",
+          "ru": "Существует ли",
+          "ar": "هل موجود",
+          "hi": "मौजूद है या नहीं"
         }
       },
       "bridge_path": "shellExt.shortcutExists",
       "descriptions": {
         "zh-CN": "检查快捷方式是否存在",
-        "en-US": "Shortcut exists of shell"
+        "en-US": "Shortcut exists of shell",
+        "zh-TW": "檢查快捷方式是否存在",
+        "ja": "チェックする快捷方式存でするかどうか",
+        "ko": "셸 바로가기 존재 확인",
+        "es": "Verificar si existe acceso directo de shell",
+        "fr": "Vérifier si le raccourci shell existe",
+        "de": "Shell-Verknüpfung existiert prüfen",
+        "pt-BR": "Verificar se atalho do shell existe",
+        "ru": "Проверить существование ярлыка оболочки",
+        "ar": "التحقق من وجود اختصار الصدفة",
+        "hi": "शेल शॉर्टकट मौजूद है क्या जांचें"
       },
       "group": "shortcut",
       "description": "Shortcut exists of shell"
@@ -549,7 +1089,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "应用 ID",
-            "en-US": "Application ID"
+            "en-US": "Application ID",
+            "zh-TW": "應用 ID",
+            "ja": "アプリケーションID",
+            "ko": "애플리케이션 ID",
+            "es": "ID de la aplicación",
+            "fr": "ID de l'application",
+            "de": "Anwendungs-ID",
+            "pt-BR": "ID do aplicativo",
+            "ru": "ID приложения",
+            "ar": "معرف التطبيق",
+            "hi": "एप्लिकेशन ID"
           }
         },
         {
@@ -557,7 +1107,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "启用/禁用",
-            "en-US": "Enable/disable"
+            "en-US": "Enable/disable",
+            "zh-TW": "啟用/禁用",
+            "ja": "有効/無効",
+            "ko": "활성화/비활성화",
+            "es": "Activar/desactivar",
+            "fr": "Activer/désactiver",
+            "de": "Aktivieren/Deaktivieren",
+            "pt-BR": "Ativar/desativar",
+            "ru": "Включить/выключить",
+            "ar": "تفعيل/تعطيل",
+            "hi": "सक्षम/अक्षम"
           },
           "optional": true,
           "default_value": "true"
@@ -567,7 +1127,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "开机自启动时传递的命令行参数",
-            "en-US": "Arguments passed during autostart"
+            "en-US": "Arguments passed during autostart",
+            "zh-TW": "開機自啟動時傳遞的命令行參數",
+            "ja": "自動起動時に渡されるコマンドラインパラメータ",
+            "ko": "자동 시작 시 전달되는 인수",
+            "es": "Argumentos pasados durante el inicio automático",
+            "fr": "Arguments passés au démarrage automatique",
+            "de": "Argumente beim Autostart",
+            "pt-BR": "Argumentos passados durante o início automático",
+            "ru": "Аргументы при автозапуске",
+            "ar": "الوسائط أثناء التشغيل التلقائي",
+            "hi": "ऑटोस्टार्ट के दौरान पास किए गए तर्क"
           },
           "optional": true,
           "desc": "Arguments passed during autostart"
@@ -577,13 +1147,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否自启动",
-          "en-US": "Is autostart"
+          "en-US": "Is autostart",
+          "zh-TW": "是否自啟動",
+          "ja": "かどうか自起動する",
+          "ko": "자동 시작 여부",
+          "es": "Si es inicio automático",
+          "fr": "Si c'est un démarrage automatique",
+          "de": "Ob Autostart",
+          "pt-BR": "Se é início automático",
+          "ru": "Автозапуск",
+          "ar": "هل التشغيل تلقائي",
+          "hi": "ऑटोस्टार्ट है क्या"
         }
       },
       "bridge_path": "shellExt.isAutostart",
       "descriptions": {
         "zh-CN": "检查是否shell autostart",
-        "en-US": "Check if shell autostart"
+        "en-US": "Check if shell autostart",
+        "zh-TW": "檢查是否shell autostart",
+        "ja": "チェックするかどうかshell autostart",
+        "ko": "확인여부shell autostart",
+        "es": "Verificar inicio automático del shell",
+        "fr": "Vérifier le démarrage automatique",
+        "de": "Shell-Autostart prüfen",
+        "pt-BR": "Verificar início automático do shell",
+        "ru": "Проверить автозапуск оболочки",
+        "ar": "التحقق من التشغيل التلقائي",
+        "hi": "शेल ऑटोस्टार्ट है जांचें"
       },
       "group": "shortcut",
       "description": "Check if shell autostart"
@@ -597,7 +1187,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "应用 ID",
-            "en-US": "Application ID"
+            "en-US": "Application ID",
+            "zh-TW": "應用 ID",
+            "ja": "アプリケーションID",
+            "ko": "애플리케이션 ID",
+            "es": "ID de la aplicación",
+            "fr": "ID de l'application",
+            "de": "Anwendungs-ID",
+            "pt-BR": "ID do aplicativo",
+            "ru": "ID приложения",
+            "ar": "معرف التطبيق",
+            "hi": "एप्लिकेशन ID"
           }
         },
         {
@@ -605,7 +1205,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否启用",
-            "en-US": "Whether enabled"
+            "en-US": "Whether enabled",
+            "zh-TW": "是否啟用",
+            "ja": "有効かどうか",
+            "ko": "활성화 여부",
+            "es": "Si está habilitado",
+            "fr": "Si activé",
+            "de": "Ob aktiviert",
+            "pt-BR": "Se está habilitado",
+            "ru": "Включено ли",
+            "ar": "هل مفعل",
+            "hi": "सक्षम है क्या"
           },
           "optional": true,
           "default_value": "true",
@@ -616,7 +1226,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "开机自启动时传递的命令行参数",
-            "en-US": "Arguments passed during autostart"
+            "en-US": "Arguments passed during autostart",
+            "zh-TW": "開機自啟動時傳遞的命令行參數",
+            "ja": "自動起動時に渡されるコマンドラインパラメータ",
+            "ko": "자동 시작 시 전달되는 인수",
+            "es": "Argumentos pasados durante el inicio automático",
+            "fr": "Arguments passés au démarrage automatique",
+            "de": "Argumente beim Autostart",
+            "pt-BR": "Argumentos passados durante o início automático",
+            "ru": "Аргументы при автозапуске",
+            "ar": "الوسائط أثناء التشغيل التلقائي",
+            "hi": "ऑटोस्टार्ट के दौरान पास किए गए तर्क"
           },
           "optional": true,
           "desc": "Arguments passed during autostart"
@@ -626,14 +1246,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "shellExt.setAutostart",
       "descriptions": {
         "zh-CN": "设置autostart property",
-        "en-US": "Set autostart property of shell"
+        "en-US": "Set autostart property of shell",
+        "zh-TW": "設定autostart property",
+        "ja": "設定するautostart property",
+        "ko": "설정autostart property",
+        "es": "Establecer inicio automático de shell",
+        "fr": "Définir le démarrage automatique du shell",
+        "de": "Shell-Autostart-Eigenschaft setzen",
+        "pt-BR": "Definir início automático do shell",
+        "ru": "Установить свойство автозапуска оболочки",
+        "ar": "تعيين خاصية التشغيل التلقائي",
+        "hi": "शेल ऑटोस्टार्ट प्रॉपर्टी सेट करें"
       },
       "group": "shortcut",
       "description": "Set autostart property of shell"
@@ -646,13 +1286,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "打印机列表",
-          "en-US": "Printer list"
+          "en-US": "Printer list",
+          "zh-TW": "打印機列表",
+          "ja": "打印机リスト",
+          "ko": "프린터 목록",
+          "es": "Lista de impresoras",
+          "fr": "Liste des imprimantes",
+          "de": "Druckerliste",
+          "pt-BR": "Lista de impressoras",
+          "ru": "Список принтеров",
+          "ar": "قائمة الطابعات",
+          "hi": "प्रिंटर सूची"
         }
       },
       "bridge_path": "shellExt.listPrinters",
       "descriptions": {
         "zh-CN": "列出printers",
-        "en-US": "List printers of shell"
+        "en-US": "List printers of shell",
+        "zh-TW": "列出printers",
+        "ja": "プリンタ一覧",
+        "ko": "프린터 목록",
+        "es": "Listar impresoras",
+        "fr": "Lister les imprimantes",
+        "de": "Drucker auflisten",
+        "pt-BR": "Listar impressoras",
+        "ru": "Список принтеров",
+        "ar": "قائمة الطابعات",
+        "hi": "प्रिंटर सूची"
       },
       "group": "print",
       "description": "List printers of shell"
@@ -665,13 +1325,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "打印机名称",
-          "en-US": "Printer name"
+          "en-US": "Printer name",
+          "zh-TW": "打印機名稱",
+          "ja": "プリンタ名",
+          "ko": "프린터 이름",
+          "es": "Nombre de impresora",
+          "fr": "Nom de l'imprimante",
+          "de": "Druckername",
+          "pt-BR": "Nome da impressora",
+          "ru": "Имя принтера",
+          "ar": "اسم الطابعة",
+          "hi": "प्रिंटर नाम"
         }
       },
       "bridge_path": "shellExt.getDefaultPrinter",
       "descriptions": {
         "zh-CN": "获取default printer信息",
-        "en-US": "Get default printer info of shell"
+        "en-US": "Get default printer info of shell",
+        "zh-TW": "取得default printer資訊",
+        "ja": "取得するdefault printer情報",
+        "ko": "가져오기default printer정보",
+        "es": "Obtener impresora predeterminada de shell",
+        "fr": "Obtenir l'imprimante par défaut du shell",
+        "de": "Standard-Drucker-Info der Shell abrufen",
+        "pt-BR": "Obter impressora padrão do shell",
+        "ru": "Получить информацию о принтере по умолчанию",
+        "ar": "الحصول على معلومات الطابعة الافتراضية",
+        "hi": "शेल डिफ़ॉल्ट प्रिंटर जानकारी प्राप्त करें"
       },
       "group": "print",
       "description": "Get default printer info of shell"
@@ -685,7 +1365,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         },
         {
@@ -693,7 +1383,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "打印机名称",
-            "en-US": "Printer name"
+            "en-US": "Printer name",
+            "zh-TW": "打印機名稱",
+            "ja": "プリンタ名",
+            "ko": "프린터 이름",
+            "es": "Nombre de impresora",
+            "fr": "Nom de l'imprimante",
+            "de": "Druckername",
+            "pt-BR": "Nome da impressora",
+            "ru": "Имя принтера",
+            "ar": "اسم الطابعة",
+            "hi": "प्रिंटर नाम"
           },
           "optional": true
         },
@@ -702,7 +1402,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "打印份数",
-            "en-US": "Number of copies"
+            "en-US": "Number of copies",
+            "zh-TW": "打印份數",
+            "ja": "部数",
+            "ko": "복사 매수",
+            "es": "Número de copias",
+            "fr": "Nombre de copies",
+            "de": "Kopienanzahl",
+            "pt-BR": "Número de cópias",
+            "ru": "Количество копий",
+            "ar": "عدد النسخ",
+            "hi": "प्रतियों की संख्या"
           },
           "optional": true
         },
@@ -711,7 +1421,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "打印页码范围（如1-5）",
-            "en-US": "Print page range (e.g. 1-5)"
+            "en-US": "Print page range (e.g. 1-5)",
+            "zh-TW": "打印頁碼範圍（如1-5）",
+            "ja": "印刷ページ範囲（例: 1-5）",
+            "ko": "인쇄 페이지 범위 (예: 1-5)",
+            "es": "Rango de páginas (ej. 1-5)",
+            "fr": "Plage de pages (ex. 1-5)",
+            "de": "Seitenbereich (z.B. 1-5)",
+            "pt-BR": "Intervalo de páginas (ex. 1-5)",
+            "ru": "Диапазон страниц (напр. 1-5)",
+            "ar": "نطاق الصفحات (مثل 1-5)",
+            "hi": "प्रिंट पेज रेंज (जैसे 1-5)"
           },
           "optional": true,
           "desc": "Print page range (e.g. 1-5)"
@@ -721,7 +1441,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "双面打印",
-            "en-US": "Duplex printing"
+            "en-US": "Duplex printing",
+            "zh-TW": "双面打印",
+            "ja": "両面印刷",
+            "ko": "양면 인쇄",
+            "es": "Impresión dúplex",
+            "fr": "Impression recto-verso",
+            "de": "Duplexdruck",
+            "pt-BR": "Impressão frente e verso",
+            "ru": "Двусторонняя печать",
+            "ar": "الطباعة المزدوجة",
+            "hi": "डुप्लेक्स प्रिंटिंग"
           },
           "optional": true
         },
@@ -730,7 +1460,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "orientation参数",
-            "en-US": "orientation parameter"
+            "en-US": "orientation parameter",
+            "zh-TW": "orientation參數",
+            "ja": "orientationパラメータ",
+            "ko": "orientation매개변수",
+            "es": "Parámetro de orientation",
+            "fr": "Paramètre de orientation",
+            "de": "orientation-Parameter",
+            "pt-BR": "Parâmetro de orientation",
+            "ru": "Параметр orientation",
+            "ar": "معلمة orientation",
+            "hi": "orientation पैरामीटर"
           },
           "optional": true,
           "desc": "orientation parameter"
@@ -740,7 +1480,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "纸张大小",
-            "en-US": "Paper Size"
+            "en-US": "Paper Size",
+            "zh-TW": "纸张大小",
+            "ja": "纸张サイズ",
+            "ko": "용지 크기",
+            "es": "Tamaño de papel",
+            "fr": "Taille du papier",
+            "de": "Papiergröße",
+            "pt-BR": "Tamanho do papel",
+            "ru": "Размер бумаги",
+            "ar": "حجم الورق",
+            "hi": "पेपर साइज़"
           },
           "optional": true
         },
@@ -749,7 +1499,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否静默执行",
-            "en-US": "Whether to execute silently"
+            "en-US": "Whether to execute silently",
+            "zh-TW": "是否靜默執行",
+            "ja": "かどうか静默実行する",
+            "ko": "자동으로 실행 여부",
+            "es": "Si ejecutar silenciosamente",
+            "fr": "Exécuter silencieusement",
+            "de": "Ob lautlos ausgeführt werden soll",
+            "pt-BR": "Se deve executar silenciosamente",
+            "ru": "Выполнить ли без уведомления",
+            "ar": "هل يتم التنفيذ بصمت",
+            "hi": "चुपचाप निष्पादित करें क्या"
           },
           "optional": true,
           "desc": "Whether to execute silently"
@@ -759,14 +1519,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "shellExt.printFile",
       "descriptions": {
         "zh-CN": "调用系统打印功能打印文件",
-        "en-US": "Print file of shell"
+        "en-US": "Print file of shell",
+        "zh-TW": "調用系統打印功能打印檔案",
+        "ja": "シェルでファイルを印刷",
+        "ko": "셸에서 파일 인쇄",
+        "es": "Imprimir archivo de shell",
+        "fr": "Imprimer le fichier du shell",
+        "de": "Datei in Shell drucken",
+        "pt-BR": "Imprimir arquivo do shell",
+        "ru": "Напечатать файл через оболочку",
+        "ar": "طباعة ملف من الصدفة",
+        "hi": "शेल में फ़ाइल प्रिंट करें"
       },
       "group": "print",
       "description": "Print file of shell"
@@ -774,14 +1554,34 @@
   ],
   "overviews": {
     "zh-CN": "提供操作系统 Shell 扩展能力，包括在 Finder/Explorer 中显示文件、打开外部 URL、获取文件图标、读取系统环境变量、执行系统级操作等功能。",
-    "en-US": "OS shell extensions including reveal in Finder/Explorer, open external URLs, get file icons, read system environment variables, and perform system-level operations."
+    "en-US": "OS shell extensions including reveal in Finder/Explorer, open external URLs, get file icons, read system environment variables, and perform system-level operations.",
+    "zh-TW": "提供操作系統 Shell 擴展能力，包括在 Finder/Explorer 中顯示檔案、開啟外部 URL、取得檔案图標、讀取系統環境變量、執行系統級操作等功能。",
+    "ja": "OSシェル拡張：Finder/Explorerで表示・外部URL開く・ファイルアイコン取得・環境変数読取・システムレベル操作。",
+    "ko": "OS 셸 확장: Finder/Explorer에서 표시, 외부 URL 열기, 파일 아이콘, 환경 변수, 시스템 수준 작업.",
+    "es": "Extensiones de shell del SO: mostrar en Finder/Explorer, abrir URLs, iconos de archivo, variables de entorno y operaciones del sistema.",
+    "fr": "Extensions shell OS : afficher dans Finder/Explorer, ouvrir des URL, icônes, variables d'environnement et opérations système.",
+    "de": "OS-Shell-Erweiterungen: Im Finder/Explorer anzeigen, URLs öffnen, Dateisymbole, Umgebungsvariablen und Systemoperationen.",
+    "pt-BR": "Extensões de shell do SO: mostrar no Finder/Explorer, abrir URLs, ícones, variáveis de ambiente e operações do sistema.",
+    "ru": "Расширения оболочки ОС: показать в Finder/Explorer, открыть URL, значки файлов, переменные окружения и системные операции.",
+    "ar": "إضافات صدفة النظام: عرض في Finder/Explorer وفتح URLs وأيقونات ومتغيرات بيئية وعمليات نظام.",
+    "hi": "OS शेल एक्सटेंशन: Finder/Explorer में दिखाना, URL खोलना, फाइल आइकन, एनवायरनमेंट वेरिएबल और सिस्टम ऑपरेशन।"
   },
   "types": [
     {
       "name": "CommandResult",
       "descriptions": {
         "zh-CN": "命令执行结果",
-        "en-US": "Command execution result"
+        "en-US": "Command execution result",
+        "zh-TW": "命令執行结果",
+        "ja": "コマンド実行結果",
+        "ko": "명령 실행 결과",
+        "es": "Resultado de ejecución del comando",
+        "fr": "Résultat d'exécution de commande",
+        "de": "Befehlsausführungsergebnis",
+        "pt-BR": "Resultado da execução do comando",
+        "ru": "Результат выполнения команды",
+        "ar": "نتيجة تنفيذ الأمر",
+        "hi": "कमांड निष्पादन परिणाम"
       },
       "fields": [
         {
@@ -789,7 +1589,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标准输出内容",
-            "en-US": "Standard output content"
+            "en-US": "Standard output content",
+            "zh-TW": "標準输出內容",
+            "ja": "標準出力内容",
+            "ko": "표준 출력 내용",
+            "es": "Contenido de la salida estándar",
+            "fr": "Contenu de la sortie standard",
+            "de": "Standardausgabeinhalt",
+            "pt-BR": "Conteúdo da saída padrão",
+            "ru": "Содержимое стандартного вывода",
+            "ar": "محتوى الإخراج القياسي",
+            "hi": "मानक आउटपुट सामग्री"
           }
         },
         {
@@ -797,7 +1607,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标准错误输出",
-            "en-US": "Standard error output"
+            "en-US": "Standard error output",
+            "zh-TW": "標準錯誤输出",
+            "ja": "標準エラー出力",
+            "ko": "표준 오류 출력",
+            "es": "Salida de error estándar",
+            "fr": "Sortie d'erreur standard",
+            "de": "Standardfehlerausgabe",
+            "pt-BR": "Saída de erro padrão",
+            "ru": "Стандартный вывод ошибок",
+            "ar": "إخراج الخطأ القياسي",
+            "hi": "मानक त्रुटि आउटपुट"
           }
         },
         {
@@ -805,7 +1625,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "进程退出码",
-            "en-US": "Process exit code"
+            "en-US": "Process exit code",
+            "zh-TW": "進程退出碼",
+            "ja": "プロセス終了コード",
+            "ko": "프로세스 종료 코드",
+            "es": "Código de salida del proceso",
+            "fr": "Code de sortie du processus",
+            "de": "Prozess-Exitcode",
+            "pt-BR": "Código de saída do processo",
+            "ru": "Код выхода процесса",
+            "ar": "رمز خروج العملية",
+            "hi": "प्रोसेस एक्ज़िट कोड"
           }
         }
       ]
@@ -814,7 +1644,17 @@
       "name": "ProcessHandle",
       "descriptions": {
         "zh-CN": "分离进程句柄",
-        "en-US": "Detached process handle"
+        "en-US": "Detached process handle",
+        "zh-TW": "分離進程句柄",
+        "ja": "デタッチされたプロセスハンドル",
+        "ko": "분리된 프로세스 핸들",
+        "es": "Manejador de proceso separado",
+        "fr": "Handle de processus détaché",
+        "de": "Losgelöster Prozess-Handle",
+        "pt-BR": "Handle de processo separado",
+        "ru": "Дескриптор отсоединённого процесса",
+        "ar": "مقبض العملية المنفصلة",
+        "hi": "डिटैच्ड प्रोसेस हैंडल"
       },
       "fields": [
         {
@@ -822,7 +1662,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "进程ID",
-            "en-US": "Process ID"
+            "en-US": "Process ID",
+            "zh-TW": "進程ID",
+            "ja": "プロセスID",
+            "ko": "프로세스 ID",
+            "es": "ID de proceso",
+            "fr": "ID du processus",
+            "de": "Prozess-ID",
+            "pt-BR": "ID do processo",
+            "ru": "ID процесса",
+            "ar": "معرّف العملية",
+            "hi": "प्रोसेस ID"
           }
         }
       ]
@@ -831,7 +1681,17 @@
       "name": "AppInfo",
       "descriptions": {
         "zh-CN": "应用程序信息",
-        "en-US": "Application info"
+        "en-US": "Application info",
+        "zh-TW": "應用程式資訊",
+        "ja": "アプリケーション情報",
+        "ko": "애플리케이션 정보",
+        "es": "Información de la aplicación",
+        "fr": "Informations sur l'application",
+        "de": "Anwendungsinformationen",
+        "pt-BR": "Informações do aplicativo",
+        "ru": "Информация о приложении",
+        "ar": "معلومات التطبيق",
+        "hi": "एप्लिकेशन जानकारी"
       },
       "fields": [
         {
@@ -839,7 +1699,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "应用名称",
-            "en-US": "App name"
+            "en-US": "App name",
+            "zh-TW": "應用名稱",
+            "ja": "アプリ名",
+            "ko": "앱 이름",
+            "es": "Nombre de la aplicación",
+            "fr": "Nom de l'application",
+            "de": "App-Name",
+            "pt-BR": "Nome do aplicativo",
+            "ru": "Имя приложения",
+            "ar": "اسم التطبيق",
+            "hi": "ऐप का नाम"
           }
         },
         {
@@ -847,7 +1717,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "可执行文件路径",
-            "en-US": "Executable path"
+            "en-US": "Executable path",
+            "zh-TW": "可執行檔案路徑",
+            "ja": "実行ファイルパス",
+            "ko": "실행 파일 경로",
+            "es": "Ruta del ejecutable",
+            "fr": "Chemin de l'exécutable",
+            "de": "Pfad zur ausführbaren Datei",
+            "pt-BR": "Caminho do executável",
+            "ru": "Путь к исполняемому файлу",
+            "ar": "مسار الملف التنفيذي",
+            "hi": "निष्पादन योग्य फ़ाइल पथ"
           }
         }
       ]

@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库文件路径（不存在则自动创建）",
-            "en-US": "Database file path (created if not exists)"
+            "en-US": "Database file path (created if not exists)",
+            "zh-TW": "資料庫檔案路徑（不存在則自動建立）",
+            "ja": "データベースファイルパス（存在しない場合は作成）",
+            "ko": "데이터베이스 파일 경로 (존재하지 않으면 생성)",
+            "es": "Ruta del archivo de base de datos",
+            "fr": "Chemin du fichier de base de données",
+            "de": "Datenbankdateipfad",
+            "pt-BR": "Caminho do arquivo do banco de dados",
+            "ru": "Путь к файлу базы данных",
+            "ar": "مسار ملف قاعدة البيانات",
+            "hi": "डेटाबेस फ़ाइल पथ (मौजूद नहीं तो बनाएं)"
           },
           "desc": "Database file path (created if not exists)"
         },
@@ -42,7 +52,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "optional": true,
           "desc": "Password string"
@@ -52,7 +72,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "只读模式",
-            "en-US": "Read only mode"
+            "en-US": "Read only mode",
+            "zh-TW": "只讀模式",
+            "ja": "読み取り専用モード",
+            "ko": "읽기 전용 모드",
+            "es": "Modo solo lectura",
+            "fr": "Mode lecture seule",
+            "de": "Nur-Lese-Modus",
+            "pt-BR": "Modo somente leitura",
+            "ru": "Режим только для чтения",
+            "ar": "وضع القراءة فقط",
+            "hi": "केवल पढ़ने का मोड"
           },
           "optional": true,
           "default_value": "false"
@@ -62,7 +92,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "不存在时创建",
-            "en-US": "Create if not exists"
+            "en-US": "Create if not exists",
+            "zh-TW": "不存在時建立",
+            "ja": "不存で时作成する",
+            "ko": "존재하지 않으면 생성",
+            "es": "Crear si no existe",
+            "fr": "Créer si n'existe pas",
+            "de": "Erstellen falls nicht vorhanden",
+            "pt-BR": "Criar se não existir",
+            "ru": "Создать если не существует",
+            "ar": "إنشاء إذا لم يوجد",
+            "hi": "मौजूद नहीं है तो बनाएं"
           },
           "optional": true,
           "default_value": "true"
@@ -72,13 +112,33 @@
         "type": "DbHandle",
         "descs": {
           "zh-CN": "DB 信息",
-          "en-US": "DB info"
+          "en-US": "DB info",
+          "zh-TW": "DB 資訊",
+          "ja": "DB 情報",
+          "ko": "DB 정보",
+          "es": "Información de la base de datos",
+          "fr": "Informations de la base de données",
+          "de": "Datenbankinformationen",
+          "pt-BR": "Informações do banco de dados",
+          "ru": "Информация о базе данных",
+          "ar": "معلومات قاعدة البيانات",
+          "hi": "डेटाबेस जानकारी"
         }
       },
       "bridge_path": "sqlite.open",
       "descriptions": {
         "zh-CN": "打开或创建一个SQLite数据库文件，获取数据库连接句柄",
-        "en-US": "Open or create SQLite database file and get connection handle"
+        "en-US": "Open or create SQLite database file and get connection handle",
+        "zh-TW": "打開或建立一個SQLite資料庫檔案，取得資料庫連接句柄",
+        "ja": "SQLiteデータベースファイルを開くまたは作成して接続ハンドルを取得",
+        "ko": "SQLite 데이터베이스 파일 열기/생성 후 연결 핸들 가져오기",
+        "es": "Abrir o crear base de datos SQLite y obtener manejador",
+        "fr": "Ouvrir ou créer la base de données SQLite et obtenir le handle",
+        "de": "SQLite-Datenbank öffnen/erstellen und Handle erhalten",
+        "pt-BR": "Abrir ou criar banco de dados SQLite e obter handle",
+        "ru": "Открыть или создать файл базы данных SQLite и получить дескриптор",
+        "ar": "فتح أو إنشاء ملف قاعدة بيانات SQLite والحصول على المعرف",
+        "hi": "SQLite डेटाबेस फ़ाइल खोलें/बनाएं और कनेक्शन हैंडल प्राप्त करें"
       },
       "group": "connection",
       "description": "Open or create SQLite database file and get connection handle"
@@ -92,7 +152,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         }
       ],
@@ -100,14 +170,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "sqlite.close",
       "descriptions": {
         "zh-CN": "关闭数据库连接并释放所有相关资源",
-        "en-US": "Close database connection and release resources"
+        "en-US": "Close database connection and release resources",
+        "zh-TW": "關閉資料庫連接並釋放所有相關資源",
+        "ja": "データベース接続を閉じてリソースを解放",
+        "ko": "데이터베이스 연결 닫기 및 리소스 해제",
+        "es": "Cerrar conexión de base de datos",
+        "fr": "Fermer la connexion de base de données",
+        "de": "Datenbankverbindung schließen",
+        "pt-BR": "Fechar conexão do banco de dados",
+        "ru": "Закрыть подключение к базе данных",
+        "ar": "إغلاق اتصال قاعدة البيانات",
+        "hi": "डेटाबेस कनेक्शन बंद करें"
       },
       "group": "connection",
       "description": "Close database connection and release resources"
@@ -121,7 +211,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -129,7 +229,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要执行的SQL语句",
-            "en-US": "SQL statement to execute"
+            "en-US": "SQL statement to execute",
+            "zh-TW": "要執行的SQL語句",
+            "ja": "要実行するのSQL语句",
+            "ko": "실행할 SQL 문",
+            "es": "Sentencia SQL a ejecutar",
+            "fr": "Instruction SQL à exécuter",
+            "de": "Auszuführende SQL-Anweisung",
+            "pt-BR": "Instrução SQL a executar",
+            "ru": "SQL-запрос для выполнения",
+            "ar": "عبارة SQL للتنفيذ",
+            "hi": "निष्पादित करने के लिए SQL स्टेटमेंट"
           },
           "desc": "SQL statement to execute"
         },
@@ -138,7 +248,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "SQL语句的绑定参数列表",
-            "en-US": "SQL statement bind parameter list"
+            "en-US": "SQL statement bind parameter list",
+            "zh-TW": "SQL語句的綁定參數列表",
+            "ja": "SQL文バインドパラメータリスト",
+            "ko": "SQL 문 바인드 매개변수 목록",
+            "es": "Lista de parámetros de enlace SQL",
+            "fr": "Liste des paramètres de liaison SQL",
+            "de": "SQL-Bind-Parameterliste",
+            "pt-BR": "Lista de parâmetros de ligação SQL",
+            "ru": "Список параметров привязки SQL",
+            "ar": "قائمة معلمات ربط عبارة SQL",
+            "hi": "SQL स्टेटमेंट बाइंड पैरामीटर सूची"
           },
           "optional": true,
           "desc": "SQL statement bind parameter list"
@@ -148,14 +268,34 @@
         "type": "ExecResult",
         "descs": {
           "zh-CN": "ExecResult类型的结果对象",
-          "en-US": "Result object of type ExecResult"
+          "en-US": "Result object of type ExecResult",
+          "zh-TW": "ExecResult類型的結果物件",
+          "ja": "ExecResultタイプの結果オブジェクト",
+          "ko": "ExecResult유형의결과객체",
+          "es": "Objeto resultado de tipo ExecResult",
+          "fr": "Objet résultat de type ExecResult",
+          "de": "Ergebnisobjekt vom Typ ExecResult",
+          "pt-BR": "Objeto resultado do tipo ExecResult",
+          "ru": "Объект результата типа ExecResult",
+          "ar": "كائن نتيجة من نوع ExecResult",
+          "hi": "ExecResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type ExecResult"
       },
       "bridge_path": "sqlite.execute",
       "descriptions": {
         "zh-CN": "执行SQL语句（INSERT/UPDATE/DELETE/DDL），返回受影响行数",
-        "en-US": "Execute SQL statement, return affected row count"
+        "en-US": "Execute SQL statement, return affected row count",
+        "zh-TW": "執行SQL語句（INSERT/UPDATE/DELETE/DDL），返回受影響行數",
+        "ja": "SQL文を実行し、影響行数を返す",
+        "ko": "SQL 문 실행, 영향받은 행 수 반환",
+        "es": "Ejecutar sentencia SQL y devolver filas afectadas",
+        "fr": "Exécuter l'instruction SQL et retourner les lignes affectées",
+        "de": "SQL-Anweisung ausführen und betroffene Zeilen zurückgeben",
+        "pt-BR": "Executar instrução SQL e retornar linhas afetadas",
+        "ru": "Выполнить SQL-запрос и вернуть число строк",
+        "ar": "تنفيذ عبارة SQL وإرجاع عدد الصفوف المتأثرة",
+        "hi": "SQL स्टेटमेंट निष्पादित करें और प्रभावित पंक्ति संख्या लौटाएं"
       },
       "group": "query",
       "description": "Execute SQL statement, return affected row count"
@@ -169,7 +309,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -177,7 +327,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "SQL 语句",
-            "en-US": "SQL 语句"
+            "en-US": "SQL 语句",
+            "zh-TW": "SQL 語句",
+            "ja": "SQL文",
+            "ko": "SQL 문",
+            "es": "Sentencia SQL",
+            "fr": "Instruction SQL",
+            "de": "SQL-Anweisung",
+            "pt-BR": "Instrução SQL",
+            "ru": "SQL-запрос",
+            "ar": "عبارة SQL",
+            "hi": "SQL स्टेटमेंट"
           }
         }
       ],
@@ -185,14 +345,34 @@
         "type": "ExecResult",
         "descs": {
           "zh-CN": "ExecResult类型的结果对象",
-          "en-US": "Result object of type ExecResult"
+          "en-US": "Result object of type ExecResult",
+          "zh-TW": "ExecResult類型的結果物件",
+          "ja": "ExecResultタイプの結果オブジェクト",
+          "ko": "ExecResult유형의결과객체",
+          "es": "Objeto resultado de tipo ExecResult",
+          "fr": "Objet résultat de type ExecResult",
+          "de": "Ergebnisobjekt vom Typ ExecResult",
+          "pt-BR": "Objeto resultado do tipo ExecResult",
+          "ru": "Объект результата типа ExecResult",
+          "ar": "كائن نتيجة من نوع ExecResult",
+          "hi": "ExecResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type ExecResult"
       },
       "bridge_path": "sqlite.batchExecute",
       "descriptions": {
         "zh-CN": "batchSQLite数据库的execute",
-        "en-US": "Batch execute of SQLite"
+        "en-US": "Batch execute of SQLite",
+        "zh-TW": "batchSQLite資料庫的execute",
+        "ja": "batchSQLiteデータベースのexecute",
+        "ko": "batchSQLite데이터베이스의execute",
+        "es": "Ejecución por lotes de SQLite",
+        "fr": "Exécution par lots SQLite",
+        "de": "SQLite-Stapelausführung",
+        "pt-BR": "Execução em lote do SQLite",
+        "ru": "Пакетное выполнение SQLite",
+        "ar": "تنفيذ دُفعي لـ SQLite",
+        "hi": "SQLite बैच निष्पादन"
       },
       "group": "query",
       "description": "Batch execute of SQLite"
@@ -206,7 +386,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -214,7 +404,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "SELECT查询语句",
-            "en-US": "SELECT query"
+            "en-US": "SELECT query",
+            "zh-TW": "SELECT查询語句",
+            "ja": "SELECTクエリする语句",
+            "ko": "SELECT 쿼리",
+            "es": "Consulta SELECT",
+            "fr": "Requête SELECT",
+            "de": "SELECT-Abfrage",
+            "pt-BR": "Consulta SELECT",
+            "ru": "Запрос SELECT",
+            "ar": "استعلام SELECT",
+            "hi": "SELECT क्वेरी"
           },
           "desc": "SELECT query"
         },
@@ -223,7 +423,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "SQL查询的绑定参数列表",
-            "en-US": "SQL query bind parameter list"
+            "en-US": "SQL query bind parameter list",
+            "zh-TW": "SQL查询的綁定參數列表",
+            "ja": "SQLクエリバインドパラメータリスト",
+            "ko": "SQL 쿼리 바인드 매개변수 목록",
+            "es": "Lista de parámetros de enlace de consulta SQL",
+            "fr": "Liste des paramètres de liaison de requête SQL",
+            "de": "SQL-Abfrage-Bind-Parameterliste",
+            "pt-BR": "Lista de parâmetros de ligação da consulta SQL",
+            "ru": "Список параметров привязки SQL-запроса",
+            "ar": "قائمة معلمات ربط استعلام SQL",
+            "hi": "SQL क्वेरी बाइंड पैरामीटर सूची"
           },
           "optional": true,
           "desc": "SQL query bind parameter list"
@@ -233,14 +443,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "sqlite.query",
       "descriptions": {
         "zh-CN": "执行SQL查询并返回结果集的所有行",
-        "en-US": "Execute SQL query and return all result rows"
+        "en-US": "Execute SQL query and return all result rows",
+        "zh-TW": "執行SQL查询並返回結果集的所有行",
+        "ja": "SQLクエリを実行して全結果行を返す",
+        "ko": "SQL 쿼리 실행 및 모든 결과 행 반환",
+        "es": "Ejecutar consulta SQL y devolver resultados",
+        "fr": "Exécuter la requête SQL et retourner les résultats",
+        "de": "SQL-Abfrage ausführen und Ergebnisse zurückgeben",
+        "pt-BR": "Executar consulta SQL e retornar resultados",
+        "ru": "Выполнить SQL-запрос и вернуть все строки",
+        "ar": "تنفيذ استعلام SQL وإرجاع جميع النتائج",
+        "hi": "SQL क्वेरी निष्पादित करें और सभी परिणाम लौटाएं"
       },
       "group": "query",
       "description": "Execute SQL query and return all result rows"
@@ -254,7 +484,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -262,7 +502,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "SQL语句",
-            "en-US": "SQL statement"
+            "en-US": "SQL statement",
+            "zh-TW": "SQL語句",
+            "ja": "SQL文",
+            "ko": "SQL 문",
+            "es": "Sentencia SQL",
+            "fr": "Instruction SQL",
+            "de": "SQL-Anweisung",
+            "pt-BR": "Instrução SQL",
+            "ru": "SQL-запрос",
+            "ar": "عبارة SQL",
+            "hi": "SQL स्टेटमेंट"
           },
           "desc": "SQL statement"
         },
@@ -271,7 +521,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "SQL查询的绑定参数列表",
-            "en-US": "SQL query bind parameter list"
+            "en-US": "SQL query bind parameter list",
+            "zh-TW": "SQL查询的綁定參數列表",
+            "ja": "SQLクエリバインドパラメータリスト",
+            "ko": "SQL 쿼리 바인드 매개변수 목록",
+            "es": "Lista de parámetros de enlace de consulta SQL",
+            "fr": "Liste des paramètres de liaison de requête SQL",
+            "de": "SQL-Abfrage-Bind-Parameterliste",
+            "pt-BR": "Lista de parâmetros de ligação da consulta SQL",
+            "ru": "Список параметров привязки SQL-запроса",
+            "ar": "قائمة معلمات ربط استعلام SQL",
+            "hi": "SQL क्वेरी बाइंड पैरामीटर सूची"
           },
           "optional": true,
           "desc": "SQL query bind parameter list"
@@ -281,14 +541,34 @@
         "type": "Record",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "sqlite.queryOne",
       "descriptions": {
         "zh-CN": "查询SQLite数据库的one",
-        "en-US": "Query one of SQLite"
+        "en-US": "Query one of SQLite",
+        "zh-TW": "查询SQLite資料庫的one",
+        "ja": "クエリするSQLiteデータベースのone",
+        "ko": "쿼리SQLite데이터베이스의one",
+        "es": "Consulta única de SQLite",
+        "fr": "Requête unique SQLite",
+        "de": "SQLite-Einzelabfrage",
+        "pt-BR": "Consulta única SQLite",
+        "ru": "Одиночный запрос SQLite",
+        "ar": "استعلام واحد من SQLite",
+        "hi": "SQLite सिंगल क्वेरी"
       },
       "group": "query",
       "description": "Query one of SQLite"
@@ -302,7 +582,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -310,7 +600,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "SQL语句",
-            "en-US": "SQL statement"
+            "en-US": "SQL statement",
+            "zh-TW": "SQL語句",
+            "ja": "SQL文",
+            "ko": "SQL 문",
+            "es": "Sentencia SQL",
+            "fr": "Instruction SQL",
+            "de": "SQL-Anweisung",
+            "pt-BR": "Instrução SQL",
+            "ru": "SQL-запрос",
+            "ar": "عبارة SQL",
+            "hi": "SQL स्टेटमेंट"
           },
           "desc": "SQL statement"
         },
@@ -319,7 +619,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "SQL查询的绑定参数列表",
-            "en-US": "SQL query bind parameter list"
+            "en-US": "SQL query bind parameter list",
+            "zh-TW": "SQL查询的綁定參數列表",
+            "ja": "SQLクエリバインドパラメータリスト",
+            "ko": "SQL 쿼리 바인드 매개변수 목록",
+            "es": "Lista de parámetros de enlace de consulta SQL",
+            "fr": "Liste des paramètres de liaison de requête SQL",
+            "de": "SQL-Abfrage-Bind-Parameterliste",
+            "pt-BR": "Lista de parâmetros de ligação da consulta SQL",
+            "ru": "Список параметров привязки SQL-запроса",
+            "ar": "قائمة معلمات ربط استعلام SQL",
+            "hi": "SQL क्वेरी बाइंड पैरामीटर सूची"
           },
           "optional": true,
           "desc": "SQL query bind parameter list"
@@ -329,14 +639,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "sqlite.queryObjects",
       "descriptions": {
         "zh-CN": "查询SQLite数据库的objects",
-        "en-US": "Query objects of SQLite"
+        "en-US": "Query objects of SQLite",
+        "zh-TW": "查询SQLite資料庫的objects",
+        "ja": "クエリするSQLiteデータベースのobjects",
+        "ko": "쿼리SQLite데이터베이스의objects",
+        "es": "Consulta de objetos SQLite",
+        "fr": "Requête d'objets SQLite",
+        "de": "SQLite-Objektabfrage",
+        "pt-BR": "Consulta de objetos SQLite",
+        "ru": "Запрос объектов SQLite",
+        "ar": "استعلام كائنات SQLite",
+        "hi": "SQLite ऑब्जेक्ट क्वेरी"
       },
       "group": "query",
       "description": "Query objects of SQLite"
@@ -350,7 +680,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -358,7 +698,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "事务类型",
-            "en-US": "Transaction type"
+            "en-US": "Transaction type",
+            "zh-TW": "事務類型",
+            "ja": "トランザクションタイプ",
+            "ko": "트랜잭션 유형",
+            "es": "Tipo de transacción",
+            "fr": "Type de transaction",
+            "de": "Transaktionstyp",
+            "pt-BR": "Tipo de transação",
+            "ru": "Тип транзакции",
+            "ar": "نوع المعاملة",
+            "hi": "ट्रांज़ैक्शन प्रकार"
           },
           "optional": true
         }
@@ -367,14 +717,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "sqlite.begin",
       "descriptions": {
         "zh-CN": "beginSQLite数据库",
-        "en-US": "Begin SQLite"
+        "en-US": "Begin SQLite",
+        "zh-TW": "beginSQLite資料庫",
+        "ja": "beginSQLiteデータベース",
+        "ko": "beginSQLite데이터베이스",
+        "es": "Iniciar transacción SQLite",
+        "fr": "Démarrer une transaction SQLite",
+        "de": "SQLite-Transaktion starten",
+        "pt-BR": "Iniciar transação SQLite",
+        "ru": "Начать транзакцию SQLite",
+        "ar": "بدء معاملة SQLite",
+        "hi": "SQLite ट्रांजैक्शन शुरू"
       },
       "group": "transaction",
       "description": "Begin SQLite"
@@ -388,7 +758,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         }
       ],
@@ -396,14 +776,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "sqlite.commit",
       "descriptions": {
         "zh-CN": "commitSQLite数据库",
-        "en-US": "Commit SQLite"
+        "en-US": "Commit SQLite",
+        "zh-TW": "commitSQLite資料庫",
+        "ja": "commitSQLiteデータベース",
+        "ko": "commitSQLite데이터베이스",
+        "es": "Confirmar SQLite",
+        "fr": "Valider SQLite",
+        "de": "SQLite bestätigen",
+        "pt-BR": "Confirmar SQLite",
+        "ru": "Зафиксировать SQLite",
+        "ar": "تأكيد SQLite",
+        "hi": "SQLite कमिट"
       },
       "group": "transaction",
       "description": "Commit SQLite"
@@ -417,7 +817,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         }
       ],
@@ -425,14 +835,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "sqlite.rollback",
       "descriptions": {
         "zh-CN": "rollbackSQLite数据库",
-        "en-US": "Rollback SQLite"
+        "en-US": "Rollback SQLite",
+        "zh-TW": "rollbackSQLite資料庫",
+        "ja": "rollbackSQLiteデータベース",
+        "ko": "rollbackSQLite데이터베이스",
+        "es": "Revertir SQLite",
+        "fr": "Annuler SQLite",
+        "de": "SQLite-Rollback",
+        "pt-BR": "Reverter SQLite",
+        "ru": "Откат SQLite",
+        "ar": "التراجع في SQLite",
+        "hi": "SQLite रोलबैक"
       },
       "group": "transaction",
       "description": "Rollback SQLite"
@@ -446,7 +876,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         }
       ],
@@ -454,14 +894,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "sqlite.vacuum",
       "descriptions": {
         "zh-CN": "vacuumSQLite数据库",
-        "en-US": "Vacuum SQLite"
+        "en-US": "Vacuum SQLite",
+        "zh-TW": "vacuumSQLite資料庫",
+        "ja": "vacuumSQLiteデータベース",
+        "ko": "vacuumSQLite데이터베이스",
+        "es": "Vaciar SQLite",
+        "fr": "Vacuum SQLite",
+        "de": "SQLite-Vacuum",
+        "pt-BR": "Vacuum SQLite",
+        "ru": "Vacuum SQLite",
+        "ar": "تنظيف SQLite",
+        "hi": "SQLite वैक्यूम"
       },
       "group": "util",
       "description": "Vacuum SQLite"
@@ -475,7 +935,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -483,7 +953,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "dest_path参数",
-            "en-US": "dest_path parameter"
+            "en-US": "dest_path parameter",
+            "zh-TW": "dest_path參數",
+            "ja": "dest_pathパラメータ",
+            "ko": "dest_path매개변수",
+            "es": "Parámetro de ruta de destino",
+            "fr": "Paramètre de chemin de destination",
+            "de": "Zielpfad-Parameter",
+            "pt-BR": "Parâmetro de caminho de destino",
+            "ru": "Параметр пути назначения",
+            "ar": "معلمة مسار الوجهة",
+            "hi": "गंतव्य पथ पैरामीटर"
           },
           "desc": "dest_path parameter"
         }
@@ -492,14 +972,34 @@
         "type": "BackupResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "sqlite.backup",
       "descriptions": {
         "zh-CN": "backupSQLite数据库",
-        "en-US": "Backup SQLite"
+        "en-US": "Backup SQLite",
+        "zh-TW": "backupSQLite資料庫",
+        "ja": "backupSQLiteデータベース",
+        "ko": "backupSQLite데이터베이스",
+        "es": "Hacer copia de seguridad de SQLite",
+        "fr": "Sauvegarder SQLite",
+        "de": "SQLite sichern",
+        "pt-BR": "Fazer backup do SQLite",
+        "ru": "Резервное копирование SQLite",
+        "ar": "نسخ احتياطي لـ SQLite",
+        "hi": "SQLite बैकअप"
       },
       "group": "util",
       "description": "Backup SQLite"
@@ -513,7 +1013,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         }
       ],
@@ -521,14 +1031,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "sqlite.tableList",
       "descriptions": {
         "zh-CN": "tableSQLite数据库的list",
-        "en-US": "Table list of SQLite"
+        "en-US": "Table list of SQLite",
+        "zh-TW": "tableSQLite資料庫的list",
+        "ja": "tableSQLiteデータベースのlist",
+        "ko": "tableSQLite데이터베이스의list",
+        "es": "Lista de tablas de SQLite",
+        "fr": "Liste des tables SQLite",
+        "de": "SQLite-Tabellenliste",
+        "pt-BR": "Lista de tabelas SQLite",
+        "ru": "Список таблиц SQLite",
+        "ar": "قائمة جداول SQLite",
+        "hi": "SQLite टेबल सूची"
       },
       "group": "schema",
       "description": "Table list of SQLite"
@@ -542,7 +1072,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -550,7 +1090,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "table_name参数",
-            "en-US": "table_name parameter"
+            "en-US": "table_name parameter",
+            "zh-TW": "table_name參數",
+            "ja": "table_nameパラメータ",
+            "ko": "table_name매개변수",
+            "es": "Parámetro de table_name",
+            "fr": "Paramètre de table_name",
+            "de": "table_name-Parameter",
+            "pt-BR": "Parâmetro de table_name",
+            "ru": "Параметр table_name",
+            "ar": "معلمة table_name",
+            "hi": "table_name पैरामीटर"
           },
           "desc": "table_name parameter"
         }
@@ -559,14 +1109,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "sqlite.tableInfo",
       "descriptions": {
         "zh-CN": "tableSQLite数据库的info",
-        "en-US": "Table info of SQLite"
+        "en-US": "Table info of SQLite",
+        "zh-TW": "tableSQLite資料庫的info",
+        "ja": "tableSQLiteデータベースのinfo",
+        "ko": "tableSQLite데이터베이스의info",
+        "es": "Información de tabla de SQLite",
+        "fr": "Informations de table SQLite",
+        "de": "SQLite-Tabelleninformationen",
+        "pt-BR": "Informações da tabela SQLite",
+        "ru": "Информация о таблице SQLite",
+        "ar": "معلومات جدول SQLite",
+        "hi": "SQLite टेबल जानकारी"
       },
       "group": "schema",
       "description": "Table info of SQLite"
@@ -580,7 +1150,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -588,7 +1168,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "名称标识",
-            "en-US": "Name identifier"
+            "en-US": "Name identifier",
+            "zh-TW": "名稱標識",
+            "ja": "名前識別子",
+            "ko": "이름 식별자",
+            "es": "Identificador de nombre",
+            "fr": "Identifiant de nom",
+            "de": "Namenskennung",
+            "pt-BR": "Identificador de nome",
+            "ru": "Идентификатор имени",
+            "ar": "معرف الاسم",
+            "hi": "नाम पहचानकर्ता"
           },
           "desc": "Name identifier"
         },
@@ -597,7 +1187,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要设置的值",
-            "en-US": "Value to set"
+            "en-US": "Value to set",
+            "zh-TW": "要設定的值",
+            "ja": "設定する値",
+            "ko": "설정할 값",
+            "es": "Valor a establecer",
+            "fr": "Valeur à définir",
+            "de": "Zu setzender Wert",
+            "pt-BR": "Valor a definir",
+            "ru": "Устанавливаемое значение",
+            "ar": "القيمة المراد تعيينها",
+            "hi": "सेट करने का मान"
           },
           "optional": true,
           "desc": "Value to set"
@@ -607,14 +1207,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "sqlite.pragma",
       "descriptions": {
         "zh-CN": "pragmaSQLite数据库",
-        "en-US": "Pragma SQLite"
+        "en-US": "Pragma SQLite",
+        "zh-TW": "pragmaSQLite資料庫",
+        "ja": "pragmaSQLiteデータベース",
+        "ko": "pragmaSQLite데이터베이스",
+        "es": "Pragma de SQLite",
+        "fr": "Pragma SQLite",
+        "de": "SQLite-Pragma",
+        "pt-BR": "Pragma SQLite",
+        "ru": "Pragma SQLite",
+        "ar": "Pragma SQLite",
+        "hi": "SQLite Pragma"
       },
       "group": "util",
       "description": "Pragma SQLite"
@@ -628,7 +1248,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         }
       ],
@@ -636,13 +1266,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "已打开的",
-          "en-US": "Open"
+          "en-US": "Open",
+          "zh-TW": "已打開的",
+          "ja": "済み開くの",
+          "ko": "열기",
+          "es": "Abrir",
+          "fr": "Ouvrir",
+          "de": "Öffnen",
+          "pt-BR": "Abrir",
+          "ru": "Открыть",
+          "ar": "فتح",
+          "hi": "खोलें"
         }
       },
       "bridge_path": "sqlite.isOpen",
       "descriptions": {
         "zh-CN": "检查SQLite数据库是否open",
-        "en-US": "Check if SQLite open"
+        "en-US": "Check if SQLite open",
+        "zh-TW": "檢查SQLite資料庫是否open",
+        "ja": "チェックするSQLiteデータベースかどうかopen",
+        "ko": "확인SQLite데이터베이스여부open",
+        "es": "Verificar si SQLite está abierto",
+        "fr": "Vérifier si SQLite est ouvert",
+        "de": "Prüfen ob SQLite geöffnet",
+        "pt-BR": "Verificar se SQLite está aberto",
+        "ru": "Проверить открыт ли SQLite",
+        "ar": "التحقق من فتح SQLite",
+        "hi": "SQLite खुला है जांचें"
       },
       "group": "connection",
       "description": "Check if SQLite open"
@@ -656,7 +1306,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         }
       ],
@@ -664,14 +1324,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "sqlite.dbSize",
       "descriptions": {
         "zh-CN": "dbSQLite数据库的size",
-        "en-US": "Db size of SQLite"
+        "en-US": "Db size of SQLite",
+        "zh-TW": "dbSQLite資料庫的size",
+        "ja": "dbSQLiteデータベースのsize",
+        "ko": "dbSQLite데이터베이스의size",
+        "es": "Tamaño de la base de datos SQLite",
+        "fr": "Taille de la base de données SQLite",
+        "de": "SQLite-Datenbankgröße",
+        "pt-BR": "Tamanho do banco de dados SQLite",
+        "ru": "Размер базы данных SQLite",
+        "ar": "حجم قاعدة بيانات SQLite",
+        "hi": "SQLite डेटाबेस आकार"
       },
       "group": "manage",
       "description": "Db size of SQLite"
@@ -685,7 +1365,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -693,7 +1383,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "table_name参数",
-            "en-US": "table_name parameter"
+            "en-US": "table_name parameter",
+            "zh-TW": "table_name參數",
+            "ja": "table_nameパラメータ",
+            "ko": "table_name매개변수",
+            "es": "Parámetro de table_name",
+            "fr": "Paramètre de table_name",
+            "de": "table_name-Parameter",
+            "pt-BR": "Parâmetro de table_name",
+            "ru": "Параметр table_name",
+            "ar": "معلمة table_name",
+            "hi": "table_name पैरामीटर"
           },
           "desc": "table_name parameter"
         },
@@ -702,7 +1402,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "条件子句",
-            "en-US": "条件子句"
+            "en-US": "条件子句",
+            "zh-TW": "條件子句",
+            "ja": "条件節",
+            "ko": "조건절",
+            "es": "Cláusula de condición",
+            "fr": "Clause de condition",
+            "de": "Bedingungsklausel",
+            "pt-BR": "Cláusula de condição",
+            "ru": "Условная часть",
+            "ar": "جملة الشرط",
+            "hi": "शर्त वाक्यांश"
           },
           "optional": true
         },
@@ -711,7 +1421,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "SQL查询的绑定参数列表",
-            "en-US": "SQL query bind parameter list"
+            "en-US": "SQL query bind parameter list",
+            "zh-TW": "SQL查询的綁定參數列表",
+            "ja": "SQLクエリバインドパラメータリスト",
+            "ko": "SQL 쿼리 바인드 매개변수 목록",
+            "es": "Lista de parámetros de enlace de consulta SQL",
+            "fr": "Liste des paramètres de liaison de requête SQL",
+            "de": "SQL-Abfrage-Bind-Parameterliste",
+            "pt-BR": "Lista de parâmetros de ligação da consulta SQL",
+            "ru": "Список параметров привязки SQL-запроса",
+            "ar": "قائمة معلمات ربط استعلام SQL",
+            "hi": "SQL क्वेरी बाइंड पैरामीटर सूची"
           },
           "optional": true,
           "desc": "SQL query bind parameter list"
@@ -721,14 +1441,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "sqlite.count",
       "descriptions": {
         "zh-CN": "计数SQLite数据库",
-        "en-US": "Count SQLite"
+        "en-US": "Count SQLite",
+        "zh-TW": "計數SQLite資料庫",
+        "ja": "SQLiteのカウント",
+        "ko": "SQLite 카운트",
+        "es": "Contar en SQLite",
+        "fr": "Compter dans SQLite",
+        "de": "SQLite zählen",
+        "pt-BR": "Contar no SQLite",
+        "ru": "Подсчёт в SQLite",
+        "ar": "عدّ في SQLite",
+        "hi": "SQLite गिनती"
       },
       "group": "query",
       "description": "Count SQLite"
@@ -742,7 +1482,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -750,7 +1500,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "table_name参数",
-            "en-US": "table_name parameter"
+            "en-US": "table_name parameter",
+            "zh-TW": "table_name參數",
+            "ja": "table_nameパラメータ",
+            "ko": "table_name매개변수",
+            "es": "Parámetro de table_name",
+            "fr": "Paramètre de table_name",
+            "de": "table_name-Parameter",
+            "pt-BR": "Parâmetro de table_name",
+            "ru": "Параметр table_name",
+            "ar": "معلمة table_name",
+            "hi": "table_name पैरामीटर"
           },
           "desc": "table_name parameter"
         }
@@ -759,14 +1519,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "sqlite.indexList",
       "descriptions": {
         "zh-CN": "indexSQLite数据库的list",
-        "en-US": "Index list of SQLite"
+        "en-US": "Index list of SQLite",
+        "zh-TW": "indexSQLite資料庫的list",
+        "ja": "indexSQLiteデータベースのlist",
+        "ko": "indexSQLite데이터베이스의list",
+        "es": "Lista de índices de SQLite",
+        "fr": "Liste des index SQLite",
+        "de": "SQLite-Indexliste",
+        "pt-BR": "Lista de índices SQLite",
+        "ru": "Список индексов SQLite",
+        "ar": "قائمة فهارس SQLite",
+        "hi": "SQLite इंडेक्स सूची"
       },
       "group": "schema",
       "description": "Index list of SQLite"
@@ -780,7 +1560,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -788,7 +1578,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "表/SQL",
-            "en-US": "Table/SQL"
+            "en-US": "Table/SQL",
+            "zh-TW": "表/SQL",
+            "ja": "テーブル/SQL",
+            "ko": "테이블/SQL",
+            "es": "Tabla/SQL",
+            "fr": "Table/SQL",
+            "de": "Tabelle/SQL",
+            "pt-BR": "Tabela/SQL",
+            "ru": "Таблица/SQL",
+            "ar": "جدول/SQL",
+            "hi": "टेबल/SQL"
           }
         },
         {
@@ -796,7 +1596,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         },
@@ -805,7 +1615,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "分隔符字符",
-            "en-US": "Delimiter character"
+            "en-US": "Delimiter character",
+            "zh-TW": "分隔符字元",
+            "ja": "分隔符文字",
+            "ko": "구분 문자",
+            "es": "Carácter delimitador",
+            "fr": "Caractère délimiteur",
+            "de": "Trennzeichen",
+            "pt-BR": "Caractere delimitador",
+            "ru": "Символ-разделитель",
+            "ar": "حرف الفاصل",
+            "hi": "डिलिमिटर कैरेक्टर"
           },
           "optional": true,
           "desc": "Delimiter character"
@@ -815,7 +1635,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否包含表头",
-            "en-US": "Include header"
+            "en-US": "Include header",
+            "zh-TW": "是否包含表頭",
+            "ja": "かどうか含む表头",
+            "ko": "헤더 포함",
+            "es": "Incluir encabezado",
+            "fr": "Inclure l'en-tête",
+            "de": "Header einbeziehen",
+            "pt-BR": "Incluir cabeçalho",
+            "ru": "Включить заголовок",
+            "ar": "تضمين الرأس",
+            "hi": "हेडर शामिल करें"
           },
           "optional": true,
           "default_value": "true"
@@ -825,14 +1655,34 @@
         "type": "ExportResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "sqlite.exportCsv",
       "descriptions": {
         "zh-CN": "导出SQLite数据库的csv",
-        "en-US": "Export csv of SQLite"
+        "en-US": "Export csv of SQLite",
+        "zh-TW": "匯出SQLite資料庫的csv",
+        "ja": "エクスポートするSQLiteデータベースのcsv",
+        "ko": "내보내기SQLite데이터베이스의csv",
+        "es": "Exportar CSV de SQLite",
+        "fr": "Exporter SQLite en CSV",
+        "de": "SQLite als CSV exportieren",
+        "pt-BR": "Exportar CSV do SQLite",
+        "ru": "Экспортировать SQLite в CSV",
+        "ar": "تصدير SQLite إلى CSV",
+        "hi": "SQLite CSV एक्सपोर्ट"
       },
       "group": "util",
       "description": "Export csv of SQLite"
@@ -846,7 +1696,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -854,7 +1714,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "table_name参数",
-            "en-US": "table_name parameter"
+            "en-US": "table_name parameter",
+            "zh-TW": "table_name參數",
+            "ja": "table_nameパラメータ",
+            "ko": "table_name매개변수",
+            "es": "Parámetro de table_name",
+            "fr": "Paramètre de table_name",
+            "de": "table_name-Parameter",
+            "pt-BR": "Parâmetro de table_name",
+            "ru": "Параметр table_name",
+            "ar": "معلمة table_name",
+            "hi": "table_name पैरामीटर"
           },
           "desc": "table_name parameter"
         },
@@ -863,7 +1733,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "csv_path参数",
-            "en-US": "csv_path parameter"
+            "en-US": "csv_path parameter",
+            "zh-TW": "csv_path參數",
+            "ja": "csv_pathパラメータ",
+            "ko": "csv_path매개변수",
+            "es": "Parámetro de csv_path",
+            "fr": "Paramètre de csv_path",
+            "de": "csv_path-Parameter",
+            "pt-BR": "Parâmetro de csv_path",
+            "ru": "Параметр csv_path",
+            "ar": "معلمة csv_path",
+            "hi": "csv_path पैरामीटर"
           },
           "desc": "csv_path parameter"
         },
@@ -872,7 +1752,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "分隔符字符",
-            "en-US": "Delimiter character"
+            "en-US": "Delimiter character",
+            "zh-TW": "分隔符字元",
+            "ja": "分隔符文字",
+            "ko": "구분 문자",
+            "es": "Carácter delimitador",
+            "fr": "Caractère délimiteur",
+            "de": "Trennzeichen",
+            "pt-BR": "Caractere delimitador",
+            "ru": "Символ-разделитель",
+            "ar": "حرف الفاصل",
+            "hi": "डिलिमिटर कैरेक्टर"
           },
           "optional": true,
           "desc": "Delimiter character"
@@ -882,7 +1772,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否有表头",
-            "en-US": "Has header row"
+            "en-US": "Has header row",
+            "zh-TW": "是否有表頭",
+            "ja": "かどうか有表头",
+            "ko": "헤더 행 포함 여부",
+            "es": "Si tiene fila de encabezado",
+            "fr": "A une ligne d'en-tête",
+            "de": "Hat Kopfzeile",
+            "pt-BR": "Se tem linha de cabeçalho",
+            "ru": "Есть ли строка заголовка",
+            "ar": "هل يحتوي على صف رأس",
+            "hi": "हेडर पंक्ति है क्या"
           },
           "optional": true,
           "default_value": "true"
@@ -892,7 +1792,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "冲突处理",
-            "en-US": "On conflict action"
+            "en-US": "On conflict action",
+            "zh-TW": "沖突處理",
+            "ja": "競合時のアクション",
+            "ko": "충돌 시 동작",
+            "es": "Acción en conflicto",
+            "fr": "Action en cas de conflit",
+            "de": "Aktion bei Konflikt",
+            "pt-BR": "Ação em conflito",
+            "ru": "Действие при конфликте",
+            "ar": "إجراء عند التعارض",
+            "hi": "विवाद पर कार्रवाई"
           },
           "optional": true
         }
@@ -901,14 +1811,34 @@
         "type": "ImportResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "sqlite.importCsv",
       "descriptions": {
         "zh-CN": "导入SQLite数据库的csv",
-        "en-US": "Import csv of SQLite"
+        "en-US": "Import csv of SQLite",
+        "zh-TW": "匯入SQLite資料庫的csv",
+        "ja": "インポートするSQLiteデータベースのcsv",
+        "ko": "가져오기SQLite데이터베이스의csv",
+        "es": "Importar CSV a SQLite",
+        "fr": "Importer CSV dans SQLite",
+        "de": "CSV in SQLite importieren",
+        "pt-BR": "Importar CSV para SQLite",
+        "ru": "Импортировать CSV в SQLite",
+        "ar": "استيراد CSV إلى SQLite",
+        "hi": "SQLite में CSV आयात करें"
       },
       "group": "util",
       "description": "Import csv of SQLite"
@@ -922,7 +1852,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -930,7 +1870,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "检查点模式（PASSIVE/FULL/RESTART/TRUNCATE）",
-            "en-US": "Checkpoint mode (PASSIVE/FULL/RESTART/TRUNCATE)"
+            "en-US": "Checkpoint mode (PASSIVE/FULL/RESTART/TRUNCATE)",
+            "zh-TW": "檢查點模式（PASSIVE/FULL/RESTART/TRUNCATE）",
+            "ja": "チェックする点モード（PASSIVE/FULL/RESTART/TRUNCATE）",
+            "ko": "체크포인트 모드 (PASSIVE/FULL/RESTART/TRUNCATE)",
+            "es": "Modo de checkpoint (PASSIVE/FULL/RESTART/TRUNCATE)",
+            "fr": "Mode de checkpoint (PASSIVE/FULL/RESTART/TRUNCATE)",
+            "de": "Checkpoint-Modus (PASSIVE/FULL/RESTART/TRUNCATE)",
+            "pt-BR": "Modo de checkpoint (PASSIVE/FULL/RESTART/TRUNCATE)",
+            "ru": "Режим контрольной точки (PASSIVE/FULL/RESTART/TRUNCATE)",
+            "ar": "وضع نقطة التفتيش (PASSIVE/FULL/RESTART/TRUNCATE)",
+            "hi": "चेकपॉइंट मोड (PASSIVE/FULL/RESTART/TRUNCATE)"
           },
           "optional": true,
           "desc": "Checkpoint mode (PASSIVE/FULL/RESTART/TRUNCATE)"
@@ -940,14 +1890,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "sqlite.walCheckpoint",
       "descriptions": {
         "zh-CN": "walSQLite数据库的checkpoint",
-        "en-US": "Wal checkpoint of SQLite"
+        "en-US": "Wal checkpoint of SQLite",
+        "zh-TW": "walSQLite資料庫的checkpoint",
+        "ja": "walSQLiteデータベースのcheckpoint",
+        "ko": "walSQLite데이터베이스의checkpoint",
+        "es": "Checkpoint WAL de SQLite",
+        "fr": "Checkpoint WAL de SQLite",
+        "de": "SQLite WAL-Checkpoint",
+        "pt-BR": "Checkpoint WAL do SQLite",
+        "ru": "WAL-контрольная точка SQLite",
+        "ar": "نقطة فحص WAL لـ SQLite",
+        "hi": "SQLite WAL चेकपॉइंट"
       },
       "group": "manage",
       "description": "Wal checkpoint of SQLite"
@@ -961,7 +1931,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -969,7 +1949,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -978,7 +1968,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "附加数据库的别名",
-            "en-US": "Alias for attached database"
+            "en-US": "Alias for attached database",
+            "zh-TW": "附加資料庫的別名",
+            "ja": "附加データベースの别名",
+            "ko": "연결된 데이터베이스의 별칭",
+            "es": "Alias de la base de datos adjunta",
+            "fr": "Alias de la base de données attachée",
+            "de": "Alias für angehängte Datenbank",
+            "pt-BR": "Alias do banco de dados anexado",
+            "ru": "Псевдоним прикреплённой базы данных",
+            "ar": "اسم مستعار لقاعدة البيانات المرفقة",
+            "hi": "अटैच्ड डेटाबेस का उपनाम"
           },
           "desc": "Alias for attached database"
         },
@@ -987,7 +1987,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "optional": true,
           "desc": "Password string"
@@ -997,14 +2007,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "sqlite.attach",
       "descriptions": {
         "zh-CN": "附加SQLite数据库",
-        "en-US": "Attach SQLite"
+        "en-US": "Attach SQLite",
+        "zh-TW": "附加SQLite資料庫",
+        "ja": "附加SQLiteデータベース",
+        "ko": "SQLite 연결",
+        "es": "Adjuntar SQLite",
+        "fr": "Attacher SQLite",
+        "de": "SQLite anhängen",
+        "pt-BR": "Anexar SQLite",
+        "ru": "Прикрепить SQLite",
+        "ar": "إرفاق SQLite",
+        "hi": "SQLite अटैच"
       },
       "group": "manage",
       "description": "Attach SQLite"
@@ -1018,7 +2048,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -1026,7 +2066,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要分离的数据库别名",
-            "en-US": "Database alias to detach"
+            "en-US": "Database alias to detach",
+            "zh-TW": "要分離的資料庫別名",
+            "ja": "要分离のデータベース别名",
+            "ko": "분리할 데이터베이스 별칭",
+            "es": "Alias de base de datos a separar",
+            "fr": "Alias de la base de données à détacher",
+            "de": "Datenbankaliasname zum Trennen",
+            "pt-BR": "Alias do banco de dados para desanexar",
+            "ru": "Псевдоним базы данных для отсоединения",
+            "ar": "اسم مستعار لقاعدة البيانات للفصل",
+            "hi": "डिटैच करने के लिए डेटाबेस उपनाम"
           },
           "desc": "Database alias to detach"
         }
@@ -1035,14 +2085,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "sqlite.detach",
       "descriptions": {
         "zh-CN": "分离SQLite数据库",
-        "en-US": "Detach SQLite"
+        "en-US": "Detach SQLite",
+        "zh-TW": "分離SQLite資料庫",
+        "ja": "分离SQLiteデータベース",
+        "ko": "SQLite 분리",
+        "es": "Separar SQLite",
+        "fr": "Détacher SQLite",
+        "de": "SQLite trennen",
+        "pt-BR": "Desanexar SQLite",
+        "ru": "Отсоединить SQLite",
+        "ar": "فصل SQLite",
+        "hi": "SQLite डिटैच"
       },
       "group": "manage",
       "description": "Detach SQLite"
@@ -1056,7 +2126,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -1064,7 +2144,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "超时(毫秒)",
-            "en-US": "Timeout ms"
+            "en-US": "Timeout ms",
+            "zh-TW": "超時(毫秒)",
+            "ja": "タイムアウト(毫秒)",
+            "ko": "타임아웃 (밀리초)",
+            "es": "Tiempo de espera (ms)",
+            "fr": "Délai (ms)",
+            "de": "Timeout (ms)",
+            "pt-BR": "Timeout (ms)",
+            "ru": "Тайм-аут (мс)",
+            "ar": "المهلة (مللي ثانية)",
+            "hi": "टाइमआउट (मिलीसेकंड)"
           }
         }
       ],
@@ -1072,14 +2162,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "sqlite.setBusyTimeout",
       "descriptions": {
         "zh-CN": "设置SQLite数据库的busy timeout属性",
-        "en-US": "Set busy timeout property of SQLite"
+        "en-US": "Set busy timeout property of SQLite",
+        "zh-TW": "設定SQLite資料庫的busy timeout屬性",
+        "ja": "設定するSQLiteデータベースのbusy timeoutプロパティ",
+        "ko": "설정SQLite데이터베이스의busy timeout속성",
+        "es": "Establecer timeout de ocupado de SQLite",
+        "fr": "Définir le délai d'occupation de SQLite",
+        "de": "SQLite Busy-Timeout setzen",
+        "pt-BR": "Definir timeout de ocupado do SQLite",
+        "ru": "Установить тайм-аут занятости SQLite",
+        "ar": "تعيين مهلة الانشغال لـ SQLite",
+        "hi": "SQLite बिज़ी टाइमआउट सेट करें"
       },
       "group": "manage",
       "description": "Set busy timeout property of SQLite"
@@ -1093,7 +2203,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         }
       ],
@@ -1101,14 +2221,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "sqlite.interrupt",
       "descriptions": {
         "zh-CN": "interruptSQLite数据库",
-        "en-US": "Interrupt SQLite"
+        "en-US": "Interrupt SQLite",
+        "zh-TW": "interruptSQLite資料庫",
+        "ja": "interruptSQLiteデータベース",
+        "ko": "interruptSQLite데이터베이스",
+        "es": "Interrumpir SQLite",
+        "fr": "Interrompre SQLite",
+        "de": "SQLite unterbrechen",
+        "pt-BR": "Interromper SQLite",
+        "ru": "Прервать SQLite",
+        "ar": "مقاطعة SQLite",
+        "hi": "SQLite इंटरप्ट करें"
       },
       "group": "manage",
       "description": "Interrupt SQLite"
@@ -1122,7 +2262,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -1130,7 +2280,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "new_password参数",
-            "en-US": "new_password parameter"
+            "en-US": "new_password parameter",
+            "zh-TW": "new_password參數",
+            "ja": "new_passwordパラメータ",
+            "ko": "new_password매개변수",
+            "es": "Parámetro de new_password",
+            "fr": "Paramètre de new_password",
+            "de": "new_password-Parameter",
+            "pt-BR": "Parâmetro de new_password",
+            "ru": "Параметр new_password",
+            "ar": "معلمة new_password",
+            "hi": "new_password पैरामीटर"
           },
           "desc": "new_password parameter"
         }
@@ -1139,14 +2299,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "sqlite.changePassword",
       "descriptions": {
         "zh-CN": "changeSQLite数据库的password",
-        "en-US": "Change password of SQLite"
+        "en-US": "Change password of SQLite",
+        "zh-TW": "changeSQLite資料庫的password",
+        "ja": "changeSQLiteデータベースのpassword",
+        "ko": "changeSQLite데이터베이스의password",
+        "es": "Cambiar contraseña de SQLite",
+        "fr": "Changer le mot de passe SQLite",
+        "de": "SQLite-Passwort ändern",
+        "pt-BR": "Alterar senha do SQLite",
+        "ru": "Изменить пароль SQLite",
+        "ar": "تغيير كلمة مرور SQLite",
+        "hi": "SQLite पासवर्ड बदलें"
       },
       "group": "manage",
       "description": "Change password of SQLite"
@@ -1160,7 +2340,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -1168,7 +2358,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "名称标识",
-            "en-US": "Name identifier"
+            "en-US": "Name identifier",
+            "zh-TW": "名稱標識",
+            "ja": "名前識別子",
+            "ko": "이름 식별자",
+            "es": "Identificador de nombre",
+            "fr": "Identifiant de nom",
+            "de": "Namenskennung",
+            "pt-BR": "Identificador de nome",
+            "ru": "Идентификатор имени",
+            "ar": "معرف الاسم",
+            "hi": "नाम पहचानकर्ता"
           },
           "desc": "Name identifier"
         },
@@ -1177,7 +2377,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "参数数量",
-            "en-US": "参数数量"
+            "en-US": "参数数量",
+            "zh-TW": "參數數量",
+            "ja": "パラメータ数",
+            "ko": "매개변수 수",
+            "es": "Cantidad de parámetros",
+            "fr": "Nombre de paramètres",
+            "de": "Parameteranzahl",
+            "pt-BR": "Quantidade de parâmetros",
+            "ru": "Количество параметров",
+            "ar": "عدد المعلمات",
+            "hi": "पैरामीटर की संख्या"
           }
         },
         {
@@ -1185,7 +2395,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           }
         }
       ],
@@ -1193,14 +2413,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "sqlite.createFunction",
       "descriptions": {
         "zh-CN": "创建SQLite数据库的function",
-        "en-US": "Create function of SQLite"
+        "en-US": "Create function of SQLite",
+        "zh-TW": "建立SQLite資料庫的function",
+        "ja": "作成するSQLiteデータベースのfunction",
+        "ko": "생성SQLite데이터베이스의function",
+        "es": "Crear función SQLite",
+        "fr": "Créer une fonction SQLite",
+        "de": "SQLite-Funktion erstellen",
+        "pt-BR": "Criar função SQLite",
+        "ru": "Создать функцию SQLite",
+        "ar": "إنشاء دالة SQLite",
+        "hi": "SQLite फ़ंक्शन बनाएं"
       },
       "group": "extension",
       "description": "Create function of SQLite"
@@ -1214,7 +2454,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库 ID",
-            "en-US": "DB ID"
+            "en-US": "DB ID",
+            "zh-TW": "資料庫 ID",
+            "ja": "データベース ID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de BD",
+            "fr": "ID de BD",
+            "de": "DB-ID",
+            "pt-BR": "ID do BD",
+            "ru": "ID базы данных",
+            "ar": "معرف قاعدة البيانات",
+            "hi": "DB ID"
           }
         },
         {
@@ -1222,7 +2472,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "名称标识",
-            "en-US": "Name identifier"
+            "en-US": "Name identifier",
+            "zh-TW": "名稱標識",
+            "ja": "名前識別子",
+            "ko": "이름 식별자",
+            "es": "Identificador de nombre",
+            "fr": "Identifiant de nom",
+            "de": "Namenskennung",
+            "pt-BR": "Identificador de nome",
+            "ru": "Идентификатор имени",
+            "ar": "معرف الاسم",
+            "hi": "नाम पहचानकर्ता"
           },
           "desc": "Name identifier"
         }
@@ -1231,14 +2491,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "sqlite.removeFunction",
       "descriptions": {
         "zh-CN": "移除SQLite数据库的function",
-        "en-US": "Remove function of SQLite"
+        "en-US": "Remove function of SQLite",
+        "zh-TW": "移除SQLite資料庫的function",
+        "ja": "移除SQLiteデータベースのfunction",
+        "ko": "SQLite 함수 제거",
+        "es": "Eliminar función de SQLite",
+        "fr": "Supprimer la fonction SQLite",
+        "de": "SQLite-Funktion entfernen",
+        "pt-BR": "Remover função do SQLite",
+        "ru": "Удалить функцию SQLite",
+        "ar": "إزالة دالة SQLite",
+        "hi": "SQLite फ़ंक्शन हटाएं"
       },
       "group": "extension",
       "description": "Remove function of SQLite"
@@ -1251,14 +2531,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "sqlite.listOpen",
       "descriptions": {
         "zh-CN": "列出SQLite数据库的open",
-        "en-US": "List open of SQLite"
+        "en-US": "List open of SQLite",
+        "zh-TW": "列出SQLite資料庫的open",
+        "ja": "列出SQLiteデータベースのopen",
+        "ko": "열린 SQLite 목록",
+        "es": "Listar SQLite abiertos",
+        "fr": "Lister les SQLite ouverts",
+        "de": "Geöffnete SQLite auflisten",
+        "pt-BR": "Listar SQLite abertos",
+        "ru": "Список открытых SQLite",
+        "ar": "قائمة اتصالات SQLite المفتوحة",
+        "hi": "खुले SQLite सूचीबद्ध करें"
       },
       "group": "manage",
       "description": "List open of SQLite"
@@ -1266,14 +2566,34 @@
   ],
   "overviews": {
     "zh-CN": "提供 SQLite 数据库的完整操作能力，包括数据库打开/关闭、SQL 执行、预编译语句、事务管理、表操作、数据导入导出、备份恢复、PRAGMA 管理等功能。",
-    "en-US": "Full SQLite database operations including open/close, SQL execution, prepared statements, transactions, table management, import/export, backup/restore, and PRAGMA management."
+    "en-US": "Full SQLite database operations including open/close, SQL execution, prepared statements, transactions, table management, import/export, backup/restore, and PRAGMA management.",
+    "zh-TW": "提供 SQLite 數據库的完整操作能力，包括數據库開啟/關閉、SQL 執行、预編译語句、事務管理、表操作、數據导入导出、备份恢復、PRAGMA 管理等功能。",
+    "ja": "SQLiteデータベースの完全操作：開閉・SQL実行・プリペアドステートメント・トランザクション・テーブル管理・インポート/エクスポート・バックアップ/リストア・PRAGMA。",
+    "ko": "SQLite 데이터베이스 전체 작업: 열기/닫기, SQL, 프리페어드 스테이트먼트, 트랜잭션, 테이블, 가져오기/내보내기, 백업/복원, PRAGMA.",
+    "es": "SQLite completo: abrir/cerrar, SQL, sentencias preparadas, transacciones, tablas, importar/exportar, respaldo y PRAGMA.",
+    "fr": "SQLite complet : ouvrir/fermer, SQL, requêtes préparées, transactions, tables, import/export, sauvegarde et PRAGMA.",
+    "de": "Vollständige SQLite-Operationen: Öffnen/Schließen, SQL, Prepared Statements, Transaktionen, Tabellen, Import/Export, Backup und PRAGMA.",
+    "pt-BR": "SQLite completo: abrir/fechar, SQL, prepared statements, transações, tabelas, importar/exportar, backup e PRAGMA.",
+    "ru": "Полные операции SQLite: открытие/закрытие, SQL, подготовленные запросы, транзакции, таблицы, импорт/экспорт, бэкап и PRAGMA.",
+    "ar": "عمليات SQLite الكاملة: فتح/إغلاق وSQL وعبارات محضرة ومعاملات وجداول واستيراد/تصدير ونسخ احتياطي وPRAGMA.",
+    "hi": "पूर्ण SQLite: खोलना/बंद, SQL, प्रिपेयर्ड स्टेटमेंट, ट्रांज़ैक्शन, टेबल, इम्पोर्ट/एक्सपोर्ट, बैकअप और PRAGMA।"
   },
   "types": [
     {
       "name": "ColumnInfo",
       "descriptions": {
         "zh-CN": "列信息",
-        "en-US": "Column info"
+        "en-US": "Column info",
+        "zh-TW": "列資訊",
+        "ja": "列情報",
+        "ko": "열 정보",
+        "es": "Información de columna",
+        "fr": "Informations de colonne",
+        "de": "Spalteninformationen",
+        "pt-BR": "Informações da coluna",
+        "ru": "Информация о столбце",
+        "ar": "معلومات العمود",
+        "hi": "कॉलम जानकारी"
       },
       "fields": [
         {
@@ -1281,7 +2601,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "列名",
-            "en-US": "Column name"
+            "en-US": "Column name",
+            "zh-TW": "列名",
+            "ja": "列名",
+            "ko": "열 이름",
+            "es": "Nombre de columna",
+            "fr": "Nom de colonne",
+            "de": "Spaltenname",
+            "pt-BR": "Nome da coluna",
+            "ru": "Имя столбца",
+            "ar": "اسم العمود",
+            "hi": "कॉलम नाम"
           }
         },
         {
@@ -1289,7 +2619,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据类型",
-            "en-US": "Data type"
+            "en-US": "Data type",
+            "zh-TW": "數據類型",
+            "ja": "データ型",
+            "ko": "데이터 유형",
+            "es": "Tipo de dato",
+            "fr": "Type de données",
+            "de": "Datentyp",
+            "pt-BR": "Tipo de dado",
+            "ru": "Тип данных",
+            "ar": "نوع البيانات",
+            "hi": "डेटा प्रकार"
           }
         },
         {
@@ -1297,7 +2637,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否可空",
-            "en-US": "Is nullable"
+            "en-US": "Is nullable",
+            "zh-TW": "是否可空",
+            "ja": "NULL許可かどうか",
+            "ko": "널 허용 여부",
+            "es": "Es anulable",
+            "fr": "Est nullable",
+            "de": "Ist nullable",
+            "pt-BR": "É anulável",
+            "ru": "Допускает null",
+            "ar": "قابل للقيمة الفارغة",
+            "hi": "नल योग्य है"
           }
         },
         {
@@ -1305,7 +2655,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否主键",
-            "en-US": "Is primary key"
+            "en-US": "Is primary key",
+            "zh-TW": "是否主鍵",
+            "ja": "主キーかどうか",
+            "ko": "기본 키 여부",
+            "es": "Es clave primaria",
+            "fr": "Est clé primaire",
+            "de": "Ist Primärschlüssel",
+            "pt-BR": "É chave primária",
+            "ru": "Является первичным ключом",
+            "ar": "هل هو مفتاح رئيسي",
+            "hi": "प्राथमिक कुंजी है"
           }
         }
       ]
@@ -1314,7 +2674,17 @@
       "name": "DbHandle",
       "descriptions": {
         "zh-CN": "数据库句柄",
-        "en-US": "Database handle"
+        "en-US": "Database handle",
+        "zh-TW": "數據库句柄",
+        "ja": "データベースハンドル",
+        "ko": "데이터베이스 핸들",
+        "es": "Manejador de base de datos",
+        "fr": "Handle de base de données",
+        "de": "Datenbank-Handle",
+        "pt-BR": "Handle do banco de dados",
+        "ru": "Дескриптор базы данных",
+        "ar": "مقبض قاعدة البيانات",
+        "hi": "डेटाबेस हैंडल"
       },
       "fields": [
         {
@@ -1322,7 +2692,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据库ID",
-            "en-US": "Database ID"
+            "en-US": "Database ID",
+            "zh-TW": "數據库ID",
+            "ja": "データベースID",
+            "ko": "데이터베이스 ID",
+            "es": "ID de base de datos",
+            "fr": "ID de base de données",
+            "de": "Datenbank-ID",
+            "pt-BR": "ID do banco de dados",
+            "ru": "ID базы данных",
+            "ar": "معرّف قاعدة البيانات",
+            "hi": "डेटाबेस ID"
           }
         },
         {
@@ -1330,7 +2710,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일 경로",
+            "es": "Ruta del archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         }
       ]
@@ -1339,7 +2729,17 @@
       "name": "ExecResult",
       "descriptions": {
         "zh-CN": "执行结果",
-        "en-US": "Execution result"
+        "en-US": "Execution result",
+        "zh-TW": "執行结果",
+        "ja": "実行結果",
+        "ko": "실행 결과",
+        "es": "Resultado de ejecución",
+        "fr": "Résultat d'exécution",
+        "de": "Ausführungsergebnis",
+        "pt-BR": "Resultado da execução",
+        "ru": "Результат выполнения",
+        "ar": "نتيجة التنفيذ",
+        "hi": "निष्पादन परिणाम"
       },
       "fields": [
         {
@@ -1347,7 +2747,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "影响行数",
-            "en-US": "Rows affected"
+            "en-US": "Rows affected",
+            "zh-TW": "影響行数",
+            "ja": "影響を受けた行数",
+            "ko": "영향받은 행 수",
+            "es": "Filas afectadas",
+            "fr": "Lignes affectées",
+            "de": "Betroffene Zeilen",
+            "pt-BR": "Linhas afetadas",
+            "ru": "Затронутые строки",
+            "ar": "الصفوف المتأثرة",
+            "hi": "प्रभावित पंक्तियाँ"
           }
         },
         {
@@ -1355,7 +2765,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "最后插入ID",
-            "en-US": "Last insert ID"
+            "en-US": "Last insert ID",
+            "zh-TW": "最後插入ID",
+            "ja": "最後の挿入ID",
+            "ko": "마지막 삽입 ID",
+            "es": "ID de última inserción",
+            "fr": "ID de dernière insertion",
+            "de": "Letzte Einfüge-ID",
+            "pt-BR": "ID da última inserção",
+            "ru": "ID последней вставки",
+            "ar": "معرّف الإدراج الأخير",
+            "hi": "अंतिम इन्सर्ट ID"
           }
         }
       ]
@@ -1364,7 +2784,17 @@
       "name": "BackupResult",
       "descriptions": {
         "zh-CN": "数据库备份结果",
-        "en-US": "Database backup result"
+        "en-US": "Database backup result",
+        "zh-TW": "數據库备份结果",
+        "ja": "データベースバックアップ結果",
+        "ko": "데이터베이스 백업 결과",
+        "es": "Resultado de respaldo de base de datos",
+        "fr": "Résultat de sauvegarde de base de données",
+        "de": "Datenbank-Sicherungsergebnis",
+        "pt-BR": "Resultado do backup do banco de dados",
+        "ru": "Результат резервного копирования базы данных",
+        "ar": "نتيجة النسخ الاحتياطي لقاعدة البيانات",
+        "hi": "डेटाबेस बैकअप परिणाम"
       },
       "fields": [
         {
@@ -1372,7 +2802,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否成功",
-            "en-US": "Whether succeeded"
+            "en-US": "Whether succeeded",
+            "zh-TW": "是否成功",
+            "ja": "成功したかどうか",
+            "ko": "성공 여부",
+            "es": "Si tuvo éxito",
+            "fr": "Si réussi",
+            "de": "Ob erfolgreich",
+            "pt-BR": "Se teve sucesso",
+            "ru": "Успешно или нет",
+            "ar": "ما إذا نجح",
+            "hi": "सफल हुआ या नहीं"
           }
         },
         {
@@ -1380,7 +2820,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "备份文件路径",
-            "en-US": "Backup file path"
+            "en-US": "Backup file path",
+            "zh-TW": "备份檔案路徑",
+            "ja": "バックアップファイルパス",
+            "ko": "백업 파일 경로",
+            "es": "Ruta del archivo de respaldo",
+            "fr": "Chemin du fichier de sauvegarde",
+            "de": "Sicherungsdateipfad",
+            "pt-BR": "Caminho do arquivo de backup",
+            "ru": "Путь к файлу резервной копии",
+            "ar": "مسار ملف النسخ الاحتياطي",
+            "hi": "बैकअप फ़ाइल पथ"
           }
         }
       ]
@@ -1389,7 +2839,17 @@
       "name": "ExportResult",
       "descriptions": {
         "zh-CN": "导出操作结果",
-        "en-US": "Export operation result"
+        "en-US": "Export operation result",
+        "zh-TW": "导出操作结果",
+        "ja": "エクスポート操作結果",
+        "ko": "내보내기 작업 결과",
+        "es": "Resultado de la operación de exportación",
+        "fr": "Résultat de l'opération d'export",
+        "de": "Exportoperationsergebnis",
+        "pt-BR": "Resultado da operação de exportação",
+        "ru": "Результат операции экспорта",
+        "ar": "نتيجة عملية التصدير",
+        "hi": "निर्यात ऑपरेशन परिणाम"
       },
       "fields": [
         {
@@ -1397,7 +2857,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否成功",
-            "en-US": "Whether succeeded"
+            "en-US": "Whether succeeded",
+            "zh-TW": "是否成功",
+            "ja": "成功したかどうか",
+            "ko": "성공 여부",
+            "es": "Si tuvo éxito",
+            "fr": "Si réussi",
+            "de": "Ob erfolgreich",
+            "pt-BR": "Se teve sucesso",
+            "ru": "Успешно или нет",
+            "ar": "ما إذا نجح",
+            "hi": "सफल हुआ या नहीं"
           }
         },
         {
@@ -1405,7 +2875,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "导出文件路径",
-            "en-US": "Export file path"
+            "en-US": "Export file path",
+            "zh-TW": "导出檔案路徑",
+            "ja": "エクスポートファイルパス",
+            "ko": "내보내기 파일 경로",
+            "es": "Ruta del archivo exportado",
+            "fr": "Chemin du fichier d'export",
+            "de": "Exportdateipfad",
+            "pt-BR": "Caminho do arquivo de exportação",
+            "ru": "Путь к экспортируемому файлу",
+            "ar": "مسار ملف التصدير",
+            "hi": "निर्यात फ़ाइल पथ"
           }
         },
         {
@@ -1413,7 +2893,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "导出行数",
-            "en-US": "Exported row count"
+            "en-US": "Exported row count",
+            "zh-TW": "导出行数",
+            "ja": "エクスポートされた行数",
+            "ko": "내보낸 행 수",
+            "es": "Cantidad de filas exportadas",
+            "fr": "Nombre de lignes exportées",
+            "de": "Anzahl exportierter Zeilen",
+            "pt-BR": "Contagem de linhas exportadas",
+            "ru": "Количество экспортированных строк",
+            "ar": "عدد الصفوف المصدّرة",
+            "hi": "निर्यातित पंक्ति संख्या"
           }
         }
       ]
@@ -1422,7 +2912,17 @@
       "name": "ImportResult",
       "descriptions": {
         "zh-CN": "导入操作结果",
-        "en-US": "Import operation result"
+        "en-US": "Import operation result",
+        "zh-TW": "导入操作结果",
+        "ja": "インポート操作結果",
+        "ko": "가져오기 작업 결과",
+        "es": "Resultado de la operación de importación",
+        "fr": "Résultat de l'opération d'import",
+        "de": "Importoperationsergebnis",
+        "pt-BR": "Resultado da operação de importação",
+        "ru": "Результат операции импорта",
+        "ar": "نتيجة عملية الاستيراد",
+        "hi": "आयात ऑपरेशन परिणाम"
       },
       "fields": [
         {
@@ -1430,7 +2930,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否成功",
-            "en-US": "Whether succeeded"
+            "en-US": "Whether succeeded",
+            "zh-TW": "是否成功",
+            "ja": "成功したかどうか",
+            "ko": "성공 여부",
+            "es": "Si tuvo éxito",
+            "fr": "Si réussi",
+            "de": "Ob erfolgreich",
+            "pt-BR": "Se teve sucesso",
+            "ru": "Успешно или нет",
+            "ar": "ما إذا نجح",
+            "hi": "सफल हुआ या नहीं"
           }
         },
         {
@@ -1438,7 +2948,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "导入行数",
-            "en-US": "Imported row count"
+            "en-US": "Imported row count",
+            "zh-TW": "导入行数",
+            "ja": "インポートされた行数",
+            "ko": "가져온 행 수",
+            "es": "Cantidad de filas importadas",
+            "fr": "Nombre de lignes importées",
+            "de": "Anzahl importierter Zeilen",
+            "pt-BR": "Contagem de linhas importadas",
+            "ru": "Количество импортированных строк",
+            "ar": "عدد الصفوف المستوردة",
+            "hi": "आयातित पंक्ति संख्या"
           }
         }
       ]

@@ -22,7 +22,7 @@
     "ar": "وحدة الحافظة",
     "hi": "क्लिपबोर्ड मॉड्यूल"
   },
-  "permission": "",
+  "permission": "clipboard",
   "functions": [
     {
       "name": "read_text",
@@ -32,14 +32,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "剪贴板中的文本字符串",
-          "en-US": "Text string from clipboard"
+          "en-US": "Text string from clipboard",
+          "zh-TW": "剪貼簿中的文字字串",
+          "ja": "クリップボード中のテキスト文字列",
+          "ko": "클립보드의 텍스트 문자열",
+          "es": "Cadena de texto del portapapeles",
+          "fr": "Chaîne de texte du presse-papiers",
+          "de": "Textzeichenkette aus Zwischenablage",
+          "pt-BR": "String de texto da área de transferência",
+          "ru": "Текстовая строка из буфера обмена",
+          "ar": "سلسلة نصية من الحافظة",
+          "hi": "क्लिपबोर्ड से टेक्स्ट स्ट्रिंग"
         },
         "desc": "Text string from clipboard"
       },
       "bridge_path": "clipboard.readText",
       "descriptions": {
         "zh-CN": "从系统剪贴板读取文本内容",
-        "en-US": "Read text content from system clipboard"
+        "en-US": "Read text content from system clipboard",
+        "zh-TW": "從系統剪貼簿讀取文字內容",
+        "ja": "からシステムクリップボード読み取るテキストコンテンツ",
+        "ko": "에서시스템클립보드읽기텍스트콘텐츠",
+        "es": "Leer texto del portapapeles del sistema",
+        "fr": "Lire le texte du presse-papiers",
+        "de": "Text aus Zwischenablage lesen",
+        "pt-BR": "Ler texto da área de transferência",
+        "ru": "Прочитать текст из буфера обмена",
+        "ar": "قراءة نص من حافظة النظام",
+        "hi": "सिस्टम क्लिपबोर्ड से टेक्स्ट पढ़ें"
       },
       "group": "text",
       "description": "Read text content from system clipboard"
@@ -53,7 +73,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要写入剪贴板的文本内容",
-            "en-US": "Text to write to clipboard"
+            "en-US": "Text to write to clipboard",
+            "zh-TW": "要寫入剪貼簿的文字內容",
+            "ja": "要書き込むクリップボードのテキストコンテンツ",
+            "ko": "클립보드에 쓸 텍스트",
+            "es": "Texto a escribir en el portapapeles",
+            "fr": "Texte à écrire dans le presse-papiers",
+            "de": "In Zwischenablage zu schreibender Text",
+            "pt-BR": "Texto para escrever na área de transferência",
+            "ru": "Текст для записи в буфер обмена",
+            "ar": "النص المراد كتابته في الحافظة",
+            "hi": "क्लिपबोर्ड में लिखने के लिए टेक्स्ट"
           },
           "desc": "Text to write to clipboard"
         }
@@ -62,14 +92,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeText",
       "descriptions": {
         "zh-CN": "将文本内容写入系统剪贴板（覆盖原有内容）",
-        "en-US": "Write text content to system clipboard (replaces existing)"
+        "en-US": "Write text content to system clipboard (replaces existing)",
+        "zh-TW": "將文字內容寫入系統剪貼簿（覆蓋原有內容）",
+        "ja": "システムクリップボードにテキストを書き込み（既存の内容を置換）",
+        "ko": "시스템 클립보드에 텍스트 내용 쓰기 (기존 내용 대체)",
+        "es": "Escribir texto en el portapapeles (reemplaza existente)",
+        "fr": "Écrire le texte dans le presse-papiers (remplace l'existant)",
+        "de": "Text in Zwischenablage schreiben (ersetzt vorhandenes)",
+        "pt-BR": "Escrever texto na área de transferência (substitui existente)",
+        "ru": "Записать текст в буфер обмена (заменяет существующий)",
+        "ar": "كتابة نص في الحافظة (يستبدل الموجود)",
+        "hi": "सिस्टम क्लिपबोर्ड में टेक्स्ट लिखें (मौजूदा बदलें)"
       },
       "group": "text",
       "description": "Write text content to system clipboard (replaces existing)"
@@ -82,13 +132,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否有文本",
-          "en-US": "Has text"
+          "en-US": "Has text",
+          "zh-TW": "是否有文字",
+          "ja": "かどうか有テキスト",
+          "ko": "텍스트 포함 여부",
+          "es": "Tiene texto",
+          "fr": "A du texte",
+          "de": "Hat Text",
+          "pt-BR": "Tem texto",
+          "ru": "Есть текст",
+          "ar": "يحتوي على نص",
+          "hi": "टेक्स्ट है"
         }
       },
       "bridge_path": "clipboard.hasText",
       "descriptions": {
         "zh-CN": "检查剪贴板文本",
-        "en-US": "Check if clipboard text"
+        "en-US": "Check if clipboard text",
+        "zh-TW": "檢查剪貼簿文字",
+        "ja": "チェックするクリップボードテキスト",
+        "ko": "확인클립보드텍스트",
+        "es": "Verificar si hay texto en portapapeles",
+        "fr": "Vérifier si texte dans presse-papiers",
+        "de": "Prüfen ob Text in Zwischenablage",
+        "pt-BR": "Verificar se há texto na área de transferência",
+        "ru": "Проверить есть ли текст в буфере",
+        "ar": "التحقق من وجود نص في الحافظة",
+        "hi": "क्लिपबोर्ड में टेक्स्ट है जांचें"
       },
       "group": "info",
       "description": "Check if clipboard text"
@@ -102,7 +172,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出格式",
-            "en-US": "Output format"
+            "en-US": "Output format",
+            "zh-TW": "輸出格式",
+            "ja": "出力フォーマット",
+            "ko": "출력형식",
+            "es": "Formato de salida",
+            "fr": "Format de sortie",
+            "de": "Ausgabeformat",
+            "pt-BR": "Formato de saída",
+            "ru": "Формат вывода",
+            "ar": "تنسيق الإخراج",
+            "hi": "आउटपुट फ़ॉर्मैट"
           },
           "optional": true
         }
@@ -111,13 +191,33 @@
         "type": "ImageData",
         "descs": {
           "zh-CN": "图像数据",
-          "en-US": "Image data"
+          "en-US": "Image data",
+          "zh-TW": "圖像數據",
+          "ja": "画像データ",
+          "ko": "이미지 데이터",
+          "es": "Datos de imagen",
+          "fr": "Données d'image",
+          "de": "Bilddaten",
+          "pt-BR": "Dados de imagem",
+          "ru": "Данные изображения",
+          "ar": "بيانات الصورة",
+          "hi": "इमेज डेटा"
         }
       },
       "bridge_path": "clipboard.readImage",
       "descriptions": {
         "zh-CN": "从剪贴板读取图片数据（Base64编码PNG）",
-        "en-US": "Read image data from clipboard as Base64 PNG"
+        "en-US": "Read image data from clipboard as Base64 PNG",
+        "zh-TW": "從剪貼簿讀取圖片數據（Base64編碼PNG）",
+        "ja": "からクリップボード読み取る画像データ（Base64エンコーディングPNG）",
+        "ko": "에서클립보드읽기이미지데이터（Base64인코딩PNG）",
+        "es": "Leer imagen del portapapeles como Base64 PNG",
+        "fr": "Lire l'image du presse-papiers en Base64 PNG",
+        "de": "Bilddaten aus Zwischenablage als Base64 PNG lesen",
+        "pt-BR": "Ler imagem da área de transferência como Base64 PNG",
+        "ru": "Прочитать изображение из буфера как Base64 PNG",
+        "ar": "قراءة بيانات الصورة من الحافظة كـ Base64 PNG",
+        "hi": "क्लिपबोर्ड से इमेज डेटा Base64 PNG के रूप में पढ़ें"
       },
       "group": "image",
       "description": "Read image data from clipboard as Base64 PNG"
@@ -131,7 +231,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64 图像数据",
-            "en-US": "Base64 image data"
+            "en-US": "Base64 image data",
+            "zh-TW": "Base64 圖像數據",
+            "ja": "Base64 画像データ",
+            "ko": "Base64 이미지 데이터",
+            "es": "Datos de imagen Base64",
+            "fr": "Données d'image Base64",
+            "de": "Base64-Bilddaten",
+            "pt-BR": "Dados de imagem Base64",
+            "ru": "Данные изображения Base64",
+            "ar": "بيانات صورة Base64",
+            "hi": "Base64 इमेज डेटा"
           }
         },
         {
@@ -139,7 +249,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出格式",
-            "en-US": "Output format"
+            "en-US": "Output format",
+            "zh-TW": "輸出格式",
+            "ja": "出力フォーマット",
+            "ko": "출력형식",
+            "es": "Formato de salida",
+            "fr": "Format de sortie",
+            "de": "Ausgabeformat",
+            "pt-BR": "Formato de saída",
+            "ru": "Формат вывода",
+            "ar": "تنسيق الإخراج",
+            "hi": "आउटपुट फ़ॉर्मैट"
           },
           "optional": true
         }
@@ -148,14 +268,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeImage",
       "descriptions": {
         "zh-CN": "将图片写入剪贴板",
-        "en-US": "Write image file or Base64 data to clipboard"
+        "en-US": "Write image file or Base64 data to clipboard",
+        "zh-TW": "將圖片寫入剪貼簿",
+        "ja": "将画像書き込むクリップボード",
+        "ko": "클립보드에 이미지 파일 또는 Base64 데이터 쓰기",
+        "es": "Escribir imagen o Base64 en el portapapeles",
+        "fr": "Écrire l'image ou Base64 dans le presse-papiers",
+        "de": "Bild oder Base64-Daten in Zwischenablage schreiben",
+        "pt-BR": "Escrever imagem ou Base64 na área de transferência",
+        "ru": "Записать изображение или Base64 в буфер обмена",
+        "ar": "كتابة صورة أو بيانات Base64 في الحافظة",
+        "hi": "इमेज फ़ाइल या Base64 डेटा क्लिपबोर्ड में लिखें"
       },
       "group": "image",
       "description": "Write image file or Base64 data to clipboard"
@@ -168,13 +308,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否有图像",
-          "en-US": "Has image"
+          "en-US": "Has image",
+          "zh-TW": "是否有圖像",
+          "ja": "かどうか有画像",
+          "ko": "이미지 포함 여부",
+          "es": "Tiene imagen",
+          "fr": "A une image",
+          "de": "Hat Bild",
+          "pt-BR": "Tem imagem",
+          "ru": "Есть изображение",
+          "ar": "يحتوي على صورة",
+          "hi": "इमेज है"
         }
       },
       "bridge_path": "clipboard.hasImage",
       "descriptions": {
         "zh-CN": "检查剪贴板图片",
-        "en-US": "Check if clipboard image"
+        "en-US": "Check if clipboard image",
+        "zh-TW": "檢查剪貼簿圖片",
+        "ja": "チェックするクリップボード画像",
+        "ko": "확인클립보드이미지",
+        "es": "Verificar si hay imagen en portapapeles",
+        "fr": "Vérifier si image dans presse-papiers",
+        "de": "Prüfen ob Bild in Zwischenablage",
+        "pt-BR": "Verificar se há imagem na área de transferência",
+        "ru": "Проверить есть ли изображение в буфере",
+        "ar": "التحقق من وجود صورة في الحافظة",
+        "hi": "क्लिपबोर्ड में इमेज है जांचें"
       },
       "group": "image",
       "description": "Check if clipboard image"
@@ -187,13 +347,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "HTML 内容",
-          "en-US": "HTML content"
+          "en-US": "HTML content",
+          "zh-TW": "HTML 內容",
+          "ja": "HTML コンテンツ",
+          "ko": "HTML 콘텐츠",
+          "es": "Contenido HTML",
+          "fr": "Contenu HTML",
+          "de": "HTML-Inhalt",
+          "pt-BR": "Conteúdo HTML",
+          "ru": "HTML-содержимое",
+          "ar": "محتوى HTML",
+          "hi": "HTML सामग्री"
         }
       },
       "bridge_path": "clipboard.readHtml",
       "descriptions": {
         "zh-CN": "读取剪贴板中的 HTML 内容",
-        "en-US": "Read html of clipboard"
+        "en-US": "Read html of clipboard",
+        "zh-TW": "讀取剪貼簿中的 HTML 內容",
+        "ja": "読み取るクリップボード中の HTML コンテンツ",
+        "ko": "클립보드 HTML 읽기",
+        "es": "Leer HTML del portapapeles",
+        "fr": "Lire le HTML du presse-papiers",
+        "de": "HTML aus Zwischenablage lesen",
+        "pt-BR": "Ler HTML da área de transferência",
+        "ru": "Прочитать HTML из буфера обмена",
+        "ar": "قراءة HTML من الحافظة",
+        "hi": "क्लिपबोर्ड HTML पढ़ें"
       },
       "group": "rich",
       "description": "Read html of clipboard"
@@ -207,7 +387,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "HTML 内容",
-            "en-US": "HTML content"
+            "en-US": "HTML content",
+            "zh-TW": "HTML 內容",
+            "ja": "HTML コンテンツ",
+            "ko": "HTML 콘텐츠",
+            "es": "Contenido HTML",
+            "fr": "Contenu HTML",
+            "de": "HTML-Inhalt",
+            "pt-BR": "Conteúdo HTML",
+            "ru": "HTML-содержимое",
+            "ar": "محتوى HTML",
+            "hi": "HTML सामग्री"
           }
         },
         {
@@ -215,7 +405,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "备选文本",
-            "en-US": "Fallback text"
+            "en-US": "Fallback text",
+            "zh-TW": "備選文字",
+            "ja": "フォールバックテキスト",
+            "ko": "대체 텍스트",
+            "es": "Texto alternativo",
+            "fr": "Texte de repli",
+            "de": "Fallback-Text",
+            "pt-BR": "Texto de fallback",
+            "ru": "Запасной текст",
+            "ar": "النص الاحتياطي",
+            "hi": "फ़ॉलबैक टेक्स्ट"
           },
           "optional": true
         }
@@ -224,14 +424,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeHtml",
       "descriptions": {
         "zh-CN": "将 HTML 内容写入剪贴板",
-        "en-US": "Write html of clipboard"
+        "en-US": "Write html of clipboard",
+        "zh-TW": "將 HTML 內容寫入剪貼簿",
+        "ja": "将 HTML コンテンツ書き込むクリップボード",
+        "ko": "클립보드 HTML 쓰기",
+        "es": "Escribir HTML en el portapapeles",
+        "fr": "Écrire le HTML dans le presse-papiers",
+        "de": "HTML in Zwischenablage schreiben",
+        "pt-BR": "Escrever HTML na área de transferência",
+        "ru": "Записать HTML в буфер обмена",
+        "ar": "كتابة HTML في الحافظة",
+        "hi": "क्लिपबोर्ड में HTML लिखें"
       },
       "group": "rich",
       "description": "Write html of clipboard"
@@ -244,13 +464,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "文件路径s",
-          "en-US": "File paths"
+          "en-US": "File paths",
+          "zh-TW": "檔案路徑s",
+          "ja": "ファイルパスs",
+          "ko": "파일경로s",
+          "es": "Rutas de archivos",
+          "fr": "Chemins de fichiers",
+          "de": "Dateipfade",
+          "pt-BR": "Caminhos de arquivos",
+          "ru": "Пути к файлам",
+          "ar": "مسارات الملفات",
+          "hi": "फ़ाइल पथ"
         }
       },
       "bridge_path": "clipboard.readFiles",
       "descriptions": {
         "zh-CN": "读取剪贴板中的文件路径列表",
-        "en-US": "Read files of clipboard"
+        "en-US": "Read files of clipboard",
+        "zh-TW": "讀取剪貼簿中的檔案路徑列表",
+        "ja": "読み取るクリップボード中のファイルパスリスト",
+        "ko": "클립보드 파일 읽기",
+        "es": "Leer archivos del portapapeles",
+        "fr": "Lire les fichiers du presse-papiers",
+        "de": "Dateien aus Zwischenablage lesen",
+        "pt-BR": "Ler arquivos da área de transferência",
+        "ru": "Прочитать файлы из буфера обмена",
+        "ar": "قراءة ملفات من الحافظة",
+        "hi": "क्लिपबोर्ड फ़ाइलें पढ़ें"
       },
       "group": "file",
       "description": "Read files of clipboard"
@@ -264,7 +504,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "文件路径s",
-            "en-US": "File paths"
+            "en-US": "File paths",
+            "zh-TW": "檔案路徑s",
+            "ja": "ファイルパスs",
+            "ko": "파일경로s",
+            "es": "Rutas de archivos",
+            "fr": "Chemins de fichiers",
+            "de": "Dateipfade",
+            "pt-BR": "Caminhos de arquivos",
+            "ru": "Пути к файлам",
+            "ar": "مسارات الملفات",
+            "hi": "फ़ाइल पथ"
           }
         },
         {
@@ -272,7 +522,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否为剪切操作（true=剪切/false=复制）",
-            "en-US": "Whether it is a cut operation (true=cut/false=copy)"
+            "en-US": "Whether it is a cut operation (true=cut/false=copy)",
+            "zh-TW": "是否為剪切操作（true=剪切/false=複製）",
+            "ja": "切り取り操作かどうか（true=切り取り/false=コピー）",
+            "ko": "잘라내기 작업인지 여부 (true=잘라내기/false=복사)",
+            "es": "Si es operación de cortar (true=cortar/false=copiar)",
+            "fr": "Opération couper (true=couper/false=copier)",
+            "de": "Ausschneiden (true=Ausschneiden/false=Kopieren)",
+            "pt-BR": "Se é operação de cortar (true=cortar/false=copiar)",
+            "ru": "Операция вырезания (true=вырезать/false=копировать)",
+            "ar": "هل هي عملية قص (true=قص/false=نسخ)",
+            "hi": "क्या यह कट ऑपरेशन है (true=कट/false=कॉपी)"
           },
           "optional": true,
           "desc": "Whether it is a cut operation (true=cut/false=copy)"
@@ -282,14 +542,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeFiles",
       "descriptions": {
         "zh-CN": "将文件路径列表写入剪贴板",
-        "en-US": "Write files of clipboard"
+        "en-US": "Write files of clipboard",
+        "zh-TW": "將檔案路徑列表寫入剪貼簿",
+        "ja": "将ファイルパスリスト書き込むクリップボード",
+        "ko": "클립보드 파일 쓰기",
+        "es": "Escribir archivos en el portapapeles",
+        "fr": "Écrire les fichiers dans le presse-papiers",
+        "de": "Dateien in Zwischenablage schreiben",
+        "pt-BR": "Escrever arquivos na área de transferência",
+        "ru": "Записать файлы в буфер обмена",
+        "ar": "كتابة ملفات في الحافظة",
+        "hi": "क्लिपबोर्ड में फ़ाइलें लिखें"
       },
       "group": "file",
       "description": "Write files of clipboard"
@@ -302,13 +582,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "可用的格式",
-          "en-US": "Available formats"
+          "en-US": "Available formats",
+          "zh-TW": "可用的格式",
+          "ja": "可用のフォーマット",
+          "ko": "사용 가능한 형식",
+          "es": "Formatos disponibles",
+          "fr": "Formats disponibles",
+          "de": "Verfügbare Formate",
+          "pt-BR": "Formatos disponíveis",
+          "ru": "Доступные форматы",
+          "ar": "التنسيقات المتاحة",
+          "hi": "उपलब्ध फ़ॉर्मैट"
         }
       },
       "bridge_path": "clipboard.availableFormats",
       "descriptions": {
         "zh-CN": "获取剪贴板当前可用的数据格式",
-        "en-US": "Available formats of clipboard"
+        "en-US": "Available formats of clipboard",
+        "zh-TW": "取得剪貼簿當前可用的數據格式",
+        "ja": "取得するクリップボード現で可用のデータフォーマット",
+        "ko": "클립보드의 사용 가능한 형식",
+        "es": "Formatos disponibles del portapapeles",
+        "fr": "Formats disponibles du presse-papiers",
+        "de": "Verfügbare Zwischenablage-Formate",
+        "pt-BR": "Formatos disponíveis da área de transferência",
+        "ru": "Доступные форматы буфера обмена",
+        "ar": "التنسيقات المتاحة في الحافظة",
+        "hi": "क्लिपबोर्ड के उपलब्ध फ़ॉर्मैट"
       },
       "group": "info",
       "description": "Available formats of clipboard"
@@ -321,14 +621,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "clipboard.clear",
       "descriptions": {
         "zh-CN": "清空系统剪贴板的所有内容",
-        "en-US": "Clear all content from system clipboard"
+        "en-US": "Clear all content from system clipboard",
+        "zh-TW": "清空系統剪貼簿的所有內容",
+        "ja": "クリアするシステムクリップボードのすべてコンテンツ",
+        "ko": "비우기시스템클립보드의모든콘텐츠",
+        "es": "Limpiar todo el contenido del portapapeles",
+        "fr": "Effacer le contenu du presse-papiers",
+        "de": "Zwischenablage-Inhalt löschen",
+        "pt-BR": "Limpar todo o conteúdo da área de transferência",
+        "ru": "Очистить содержимое буфера обмена",
+        "ar": "مسح محتوى الحافظة",
+        "hi": "सिस्टम क्लिपबोर्ड की सभी सामग्री साफ़ करें"
       },
       "group": "text",
       "description": "Clear all content from system clipboard"
@@ -342,7 +662,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           }
         }
       ],
@@ -350,13 +680,33 @@
         "type": "ClipboardWatcher",
         "descs": {
           "zh-CN": "监视器 ID",
-          "en-US": "Watcher ID"
+          "en-US": "Watcher ID",
+          "zh-TW": "監視器 ID",
+          "ja": "ウォッチャーID",
+          "ko": "감시자 ID",
+          "es": "ID del observador",
+          "fr": "ID de l'observateur",
+          "de": "Watcher-ID",
+          "pt-BR": "ID do observador",
+          "ru": "ID наблюдателя",
+          "ar": "معرف المراقب",
+          "hi": "वॉचर ID"
         }
       },
       "bridge_path": "clipboard.onChange",
       "descriptions": {
         "zh-CN": "监听剪贴板内容变化",
-        "en-US": "Listen for change event on clipboard"
+        "en-US": "Listen for change event on clipboard",
+        "zh-TW": "監聽剪貼簿內容變化",
+        "ja": "クリップボード変更イベントを監視",
+        "ko": "클립보드 변경 이벤트 수신 대기",
+        "es": "Escuchar cambios en el portapapeles",
+        "fr": "Écouter les changements du presse-papiers",
+        "de": "Zwischenablage-Änderungen überwachen",
+        "pt-BR": "Ouvir mudanças na área de transferência",
+        "ru": "Слушать изменения буфера обмена",
+        "ar": "الاستماع لتغييرات الحافظة",
+        "hi": "क्लिपबोर्ड परिवर्तन इवेंट सुनें"
       },
       "group": "event",
       "description": "Listen for change event on clipboard"
@@ -370,7 +720,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "监视器 ID",
-            "en-US": "Watcher ID"
+            "en-US": "Watcher ID",
+            "zh-TW": "監視器 ID",
+            "ja": "ウォッチャーID",
+            "ko": "감시자 ID",
+            "es": "ID del observador",
+            "fr": "ID de l'observateur",
+            "de": "Watcher-ID",
+            "pt-BR": "ID do observador",
+            "ru": "ID наблюдателя",
+            "ar": "معرف المراقب",
+            "hi": "वॉचर ID"
           }
         }
       ],
@@ -378,14 +738,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "clipboard.offChange",
       "descriptions": {
         "zh-CN": "取消监听剪贴板变化",
-        "en-US": "Stop listening for change event on clipboard"
+        "en-US": "Stop listening for change event on clipboard",
+        "zh-TW": "取消監聽剪貼簿變化",
+        "ja": "クリップボード変更イベントの監視を停止",
+        "ko": "클립보드 변경 이벤트 수신 대기 중지",
+        "es": "Dejar de escuchar cambios del portapapeles",
+        "fr": "Arrêter l'écoute des changements",
+        "de": "Zwischenablage-Überwachung stoppen",
+        "pt-BR": "Parar de ouvir mudanças",
+        "ru": "Прекратить отслеживание буфера обмена",
+        "ar": "إيقاف الاستماع لتغييرات الحافظة",
+        "hi": "क्लिपबोर्ड परिवर्तन सुनना बंद करें"
       },
       "group": "event",
       "description": "Stop listening for change event on clipboard"
@@ -398,13 +778,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "RTF 内容",
-          "en-US": "RTF content"
+          "en-US": "RTF content",
+          "zh-TW": "RTF 內容",
+          "ja": "RTF コンテンツ",
+          "ko": "RTF 콘텐츠",
+          "es": "Contenido RTF",
+          "fr": "Contenu RTF",
+          "de": "RTF-Inhalt",
+          "pt-BR": "Conteúdo RTF",
+          "ru": "Содержимое RTF",
+          "ar": "محتوى RTF",
+          "hi": "RTF सामग्री"
         }
       },
       "bridge_path": "clipboard.readRtf",
       "descriptions": {
         "zh-CN": "从剪贴板读取富文本格式(RTF)内容",
-        "en-US": "Read Rich Text Format (RTF) content from clipboard"
+        "en-US": "Read Rich Text Format (RTF) content from clipboard",
+        "zh-TW": "從剪貼簿讀取富文字格式(RTF)內容",
+        "ja": "からクリップボード読み取る富テキストフォーマット(RTF)コンテンツ",
+        "ko": "클립보드에서 RTF 내용 읽기",
+        "es": "Leer contenido RTF del portapapeles",
+        "fr": "Lire le contenu RTF du presse-papiers",
+        "de": "RTF-Inhalt aus Zwischenablage lesen",
+        "pt-BR": "Ler conteúdo RTF da área de transferência",
+        "ru": "Прочитать содержимое RTF из буфера",
+        "ar": "قراءة محتوى RTF من الحافظة",
+        "hi": "क्लिपबोर्ड से RTF सामग्री पढ़ें"
       },
       "group": "rich",
       "description": "Read Rich Text Format (RTF) content from clipboard"
@@ -418,7 +818,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "RTF 内容",
-            "en-US": "RTF content"
+            "en-US": "RTF content",
+            "zh-TW": "RTF 內容",
+            "ja": "RTF コンテンツ",
+            "ko": "RTF 콘텐츠",
+            "es": "Contenido RTF",
+            "fr": "Contenu RTF",
+            "de": "RTF-Inhalt",
+            "pt-BR": "Conteúdo RTF",
+            "ru": "Содержимое RTF",
+            "ar": "محتوى RTF",
+            "hi": "RTF सामग्री"
           }
         }
       ],
@@ -426,14 +836,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeRtf",
       "descriptions": {
         "zh-CN": "将富文本格式(RTF)内容写入剪贴板",
-        "en-US": "Write Rich Text Format (RTF) content to clipboard"
+        "en-US": "Write Rich Text Format (RTF) content to clipboard",
+        "zh-TW": "將富文字格式(RTF)內容寫入剪貼簿",
+        "ja": "将富テキストフォーマット(RTF)コンテンツ書き込むクリップボード",
+        "ko": "클립보드에 RTF 내용 쓰기",
+        "es": "Escribir contenido RTF en el portapapeles",
+        "fr": "Écrire le contenu RTF dans le presse-papiers",
+        "de": "RTF-Inhalt in Zwischenablage schreiben",
+        "pt-BR": "Escrever conteúdo RTF na área de transferência",
+        "ru": "Записать содержимое RTF в буфер",
+        "ar": "كتابة محتوى RTF في الحافظة",
+        "hi": "क्लिपबोर्ड में RTF सामग्री लिखें"
       },
       "group": "rich",
       "description": "Write Rich Text Format (RTF) content to clipboard"
@@ -447,7 +877,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "格式化名称",
-            "en-US": "Format name"
+            "en-US": "Format name",
+            "zh-TW": "格式化名稱",
+            "ja": "フォーマットする名称",
+            "ko": "형식 이름",
+            "es": "Nombre del formato",
+            "fr": "Nom du format",
+            "de": "Formatname",
+            "pt-BR": "Nome do formato",
+            "ru": "Имя формата",
+            "ar": "اسم التنسيق",
+            "hi": "फ़ॉर्मैट नाम"
           },
           "optional": true
         }
@@ -456,14 +896,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "clipboard.readCustom",
       "descriptions": {
         "zh-CN": "读取剪贴板中指定格式的自定义数据",
-        "en-US": "Read custom of clipboard"
+        "en-US": "Read custom of clipboard",
+        "zh-TW": "讀取剪貼簿中指定格式的自定義數據",
+        "ja": "読み取るクリップボード中指定フォーマットのカスタムデータ",
+        "ko": "클립보드 사용자 정의 읽기",
+        "es": "Leer datos personalizados del portapapeles",
+        "fr": "Lire les données personnalisées",
+        "de": "Benutzerdefinierte Daten aus Zwischenablage lesen",
+        "pt-BR": "Ler dados personalizados da área de transferência",
+        "ru": "Прочитать пользовательские данные из буфера",
+        "ar": "قراءة بيانات مخصصة من الحافظة",
+        "hi": "क्लिपबोर्ड कस्टम डेटा पढ़ें"
       },
       "group": "custom",
       "description": "Read custom of clipboard"
@@ -477,7 +937,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "格式化名称",
-            "en-US": "Format name"
+            "en-US": "Format name",
+            "zh-TW": "格式化名稱",
+            "ja": "フォーマットする名称",
+            "ko": "형식 이름",
+            "es": "Nombre del formato",
+            "fr": "Nom du format",
+            "de": "Formatname",
+            "pt-BR": "Nome do formato",
+            "ru": "Имя формата",
+            "ar": "اسم التنسيق",
+            "hi": "फ़ॉर्मैट नाम"
           },
           "optional": true
         },
@@ -486,7 +956,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -495,14 +975,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeCustom",
       "descriptions": {
         "zh-CN": "写入自定义格式数据到剪贴板",
-        "en-US": "Write custom of clipboard"
+        "en-US": "Write custom of clipboard",
+        "zh-TW": "寫入自定義格式數據到剪貼簿",
+        "ja": "書き込むカスタムフォーマットデータへクリップボード",
+        "ko": "클립보드 사용자 정의 쓰기",
+        "es": "Escribir datos personalizados en el portapapeles",
+        "fr": "Écrire les données personnalisées",
+        "de": "Benutzerdefinierte Daten in Zwischenablage schreiben",
+        "pt-BR": "Escrever dados personalizados na área de transferência",
+        "ru": "Записать пользовательские данные в буфер",
+        "ar": "كتابة بيانات مخصصة في الحافظة",
+        "hi": "क्लिपबोर्ड में कस्टम डेटा लिखें"
       },
       "group": "custom",
       "description": "Write custom of clipboard"
@@ -516,7 +1016,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "格式-数据对",
-            "en-US": "Format-data pairs"
+            "en-US": "Format-data pairs",
+            "zh-TW": "格式-數據對",
+            "ja": "フォーマット-データペア",
+            "ko": "형식-데이터 쌍",
+            "es": "Pares formato-datos",
+            "fr": "Paires format-données",
+            "de": "Format-Daten-Paare",
+            "pt-BR": "Pares formato-dados",
+            "ru": "Пары формат-данные",
+            "ar": "أزواج تنسيق-بيانات",
+            "hi": "फ़ॉर्मैट-डेटा जोड़े"
           }
         }
       ],
@@ -524,14 +1034,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "clipboard.writeMulti",
       "descriptions": {
         "zh-CN": "同时写入多种格式数据到剪贴板",
-        "en-US": "Write multi of clipboard"
+        "en-US": "Write multi of clipboard",
+        "zh-TW": "同時寫入多種格式數據到剪貼簿",
+        "ja": "クリップボードに複数形式で書き込み",
+        "ko": "클립보드 다중 쓰기",
+        "es": "Escribir múltiples datos en el portapapeles",
+        "fr": "Écrire plusieurs données dans le presse-papiers",
+        "de": "Mehrere Daten in Zwischenablage schreiben",
+        "pt-BR": "Escrever múltiplos dados na área de transferência",
+        "ru": "Записать множественные данные в буфер",
+        "ar": "كتابة بيانات متعددة في الحافظة",
+        "hi": "क्लिपबोर्ड में कई डेटा लिखें"
       },
       "group": "custom",
       "description": "Write multi of clipboard"
@@ -539,14 +1069,34 @@
   ],
   "overviews": {
     "zh-CN": "提供系统剪贴板的读写操作，支持纯文本、富文本（HTML）、图片等格式。可监听剪贴板变化、获取剪贴板历史、管理多条目剪贴板数据。",
-    "en-US": "Read/write system clipboard supporting plain text, rich text (HTML), and images. Monitor clipboard changes, access clipboard history, and manage multiple clipboard entries."
+    "en-US": "Read/write system clipboard supporting plain text, rich text (HTML), and images. Monitor clipboard changes, access clipboard history, and manage multiple clipboard entries.",
+    "zh-TW": "提供系統剪貼簿的读写操作，支援純文本、富文本（HTML）、图片等格式。可監听剪貼簿變化、取得剪貼簿歷史、管理多条目剪貼簿數據。",
+    "ja": "システムクリップボードの読み書き：プレーンテキスト・リッチテキスト(HTML)・画像。変更監視・履歴アクセス・複数エントリ管理。",
+    "ko": "시스템 클립보드 읽기/쓰기: 일반 텍스트, 리치 텍스트(HTML), 이미지. 변경 감시, 히스토리, 다중 항목 관리.",
+    "es": "Portapapeles del sistema: texto, texto enriquecido (HTML) e imágenes. Monitoreo, historial y gestión de múltiples entradas.",
+    "fr": "Presse-papiers système : texte, texte riche (HTML) et images. Surveillance, historique et gestion de multiples entrées.",
+    "de": "Systemzwischenablage: Text, Rich Text (HTML) und Bilder. Überwachung, Verlauf und Verwaltung mehrerer Einträge.",
+    "pt-BR": "Área de transferência do sistema: texto, rich text (HTML) e imagens. Monitoramento, histórico e gerenciamento de múltiplas entradas.",
+    "ru": "Буфер обмена: текст, форматированный текст (HTML) и изображения. Мониторинг, история и управление несколькими записями.",
+    "ar": "الحافظة: نص ونص منسق (HTML) وصور. مراقبة وسجل وإدارة إدخالات متعددة.",
+    "hi": "क्लिपबोर्ड: टेक्स्ट, रिच टेक्स्ट (HTML) और इमेज। मॉनिटरिंग, हिस्ट्री और मल्टीपल एंट्री प्रबंधन।"
   },
   "events": [
     {
       "name": "change",
       "descriptions": {
         "zh-CN": "剪贴板内容变更",
-        "en-US": "Clipboard changed"
+        "en-US": "Clipboard changed",
+        "zh-TW": "剪貼簿內容變更",
+        "ja": "クリップボードが変更されました",
+        "ko": "클립보드가 변경됨",
+        "es": "Portapapeles cambiado",
+        "fr": "Presse-papiers modifié",
+        "de": "Zwischenablage geändert",
+        "pt-BR": "Área de transferência alterada",
+        "ru": "Буфер обмена изменён",
+        "ar": "تم تغيير الحافظة",
+        "hi": "क्लिपबोर्ड बदल गया"
       },
       "payload": [
         {
@@ -554,7 +1104,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "可用格式列表",
-            "en-US": "Available formats"
+            "en-US": "Available formats",
+            "zh-TW": "可用格式列表",
+            "ja": "利用可能なフォーマット",
+            "ko": "사용 가능한 형식",
+            "es": "Formatos disponibles",
+            "fr": "Formats disponibles",
+            "de": "Verfügbare Formate",
+            "pt-BR": "Formatos disponíveis",
+            "ru": "Доступные форматы",
+            "ar": "التنسيقات المتاحة",
+            "hi": "उपलब्ध प्रारूप"
           }
         }
       ]
@@ -563,7 +1123,17 @@
       "name": "clipboard_change",
       "descriptions": {
         "zh-CN": "剪贴板内容变化",
-        "en-US": "Clipboard content changed"
+        "en-US": "Clipboard content changed",
+        "zh-TW": "剪貼簿內容變化",
+        "ja": "クリップボードの内容が変更されました",
+        "ko": "클립보드 내용이 변경됨",
+        "es": "Contenido del portapapeles cambiado",
+        "fr": "Contenu du presse-papiers modifié",
+        "de": "Zwischenablage-Inhalt geändert",
+        "pt-BR": "Conteúdo da área de transferência alterado",
+        "ru": "Содержимое буфера обмена изменено",
+        "ar": "تم تغيير محتوى الحافظة",
+        "hi": "क्लिपबोर्ड सामग्री बदल गई"
       },
       "payload": [
         {
@@ -571,7 +1141,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "内容类型(text/image/files)",
-            "en-US": "Content type (text/image/files)"
+            "en-US": "Content type (text/image/files)",
+            "zh-TW": "內容類型(text/image/files)",
+            "ja": "コンテンツタイプ(text/image/files)",
+            "ko": "콘텐츠 유형(text/image/files)",
+            "es": "Tipo de contenido (text/image/files)",
+            "fr": "Type de contenu (text/image/files)",
+            "de": "Inhaltstyp (text/image/files)",
+            "pt-BR": "Tipo de conteúdo (text/image/files)",
+            "ru": "Тип содержимого (text/image/files)",
+            "ar": "نوع المحتوى (text/image/files)",
+            "hi": "सामग्री प्रकार (text/image/files)"
           }
         }
       ]
@@ -582,7 +1162,17 @@
       "name": "ClipboardContent",
       "descriptions": {
         "zh-CN": "剪贴板内容对象",
-        "en-US": "Clipboard content object"
+        "en-US": "Clipboard content object",
+        "zh-TW": "剪貼簿內容對象",
+        "ja": "クリップボードコンテンツオブジェクト",
+        "ko": "클립보드 콘텐츠 객체",
+        "es": "Objeto de contenido del portapapeles",
+        "fr": "Objet de contenu du presse-papiers",
+        "de": "Zwischenablage-Inhaltsobjekt",
+        "pt-BR": "Objeto de conteúdo da área de transferência",
+        "ru": "Объект содержимого буфера обмена",
+        "ar": "كائن محتوى الحافظة",
+        "hi": "क्लिपबोर्ड सामग्री ऑब्जेक्ट"
       },
       "fields": [
         {
@@ -590,7 +1180,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "内容类型（text/image/files/html）",
-            "en-US": "Content type"
+            "en-US": "Content type",
+            "zh-TW": "內容類型（text/image/files/html）",
+            "ja": "コンテンツタイプ",
+            "ko": "콘텐츠 유형",
+            "es": "Tipo de contenido",
+            "fr": "Type de contenu",
+            "de": "Inhaltstyp",
+            "pt-BR": "Tipo de conteúdo",
+            "ru": "Тип содержимого",
+            "ar": "نوع المحتوى",
+            "hi": "सामग्री प्रकार"
           }
         },
         {
@@ -598,7 +1198,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "内容数据",
-            "en-US": "Content data"
+            "en-US": "Content data",
+            "zh-TW": "內容數據",
+            "ja": "コンテンツデータ",
+            "ko": "콘텐츠 데이터",
+            "es": "Datos de contenido",
+            "fr": "Données de contenu",
+            "de": "Inhaltsdaten",
+            "pt-BR": "Dados de conteúdo",
+            "ru": "Данные содержимого",
+            "ar": "بيانات المحتوى",
+            "hi": "सामग्री डेटा"
           }
         },
         {
@@ -606,7 +1216,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "写入时间戳",
-            "en-US": "Write timestamp"
+            "en-US": "Write timestamp",
+            "zh-TW": "寫入時间戳",
+            "ja": "書き込みタイムスタンプ",
+            "ko": "쓰기 타임스탬프",
+            "es": "Marca de tiempo de escritura",
+            "fr": "Horodatage d'écriture",
+            "de": "Schreibzeitstempel",
+            "pt-BR": "Timestamp de escrita",
+            "ru": "Временная метка записи",
+            "ar": "طابع وقت الكتابة",
+            "hi": "लिखने का टाइमस्टैम्प"
           }
         }
       ]
@@ -615,7 +1235,17 @@
       "name": "ImageData",
       "descriptions": {
         "zh-CN": "剪贴板图像数据",
-        "en-US": "Clipboard image data"
+        "en-US": "Clipboard image data",
+        "zh-TW": "剪貼簿图像數據",
+        "ja": "クリップボード画像データ",
+        "ko": "클립보드 이미지 데이터",
+        "es": "Datos de imagen del portapapeles",
+        "fr": "Données d'image du presse-papiers",
+        "de": "Zwischenablage-Bilddaten",
+        "pt-BR": "Dados de imagem da área de transferência",
+        "ru": "Данные изображения буфера обмена",
+        "ar": "بيانات صورة الحافظة",
+        "hi": "क्लिपबोर्ड छवि डेटा"
       },
       "fields": [
         {
@@ -623,7 +1253,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "图像宽度",
-            "en-US": "Image width"
+            "en-US": "Image width",
+            "zh-TW": "图像宽度",
+            "ja": "画像の幅",
+            "ko": "이미지 너비",
+            "es": "Ancho de imagen",
+            "fr": "Largeur de l'image",
+            "de": "Bildbreite",
+            "pt-BR": "Largura da imagem",
+            "ru": "Ширина изображения",
+            "ar": "عرض الصورة",
+            "hi": "छवि चौड़ाई"
           }
         },
         {
@@ -631,7 +1271,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "图像高度",
-            "en-US": "Image height"
+            "en-US": "Image height",
+            "zh-TW": "图像高度",
+            "ja": "画像の高さ",
+            "ko": "이미지 높이",
+            "es": "Altura de imagen",
+            "fr": "Hauteur de l'image",
+            "de": "Bildhöhe",
+            "pt-BR": "Altura da imagem",
+            "ru": "Высота изображения",
+            "ar": "ارتفاع الصورة",
+            "hi": "छवि ऊँचाई"
           }
         },
         {
@@ -639,7 +1289,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64编码的图像数据",
-            "en-US": "Base64 encoded image data"
+            "en-US": "Base64 encoded image data",
+            "zh-TW": "Base64編碼的图像數據",
+            "ja": "Base64エンコード済み画像データ",
+            "ko": "Base64 인코딩된 이미지 데이터",
+            "es": "Datos de imagen codificados en Base64",
+            "fr": "Données d'image encodées en Base64",
+            "de": "Base64-kodierte Bilddaten",
+            "pt-BR": "Dados de imagem codificados em Base64",
+            "ru": "Данные изображения в кодировке Base64",
+            "ar": "بيانات صورة مشفّرة بـ Base64",
+            "hi": "Base64 एन्कोडेड छवि डेटा"
           }
         }
       ]
@@ -648,7 +1308,17 @@
       "name": "ClipboardWatcher",
       "descriptions": {
         "zh-CN": "剪贴板变化监听器",
-        "en-US": "Clipboard change watcher"
+        "en-US": "Clipboard change watcher",
+        "zh-TW": "剪貼簿變化監听器",
+        "ja": "クリップボード変更監視",
+        "ko": "클립보드 변경 감시자",
+        "es": "Monitor de cambio de portapapeles",
+        "fr": "Surveillant de changement de presse-papiers",
+        "de": "Zwischenablage-Änderungsüberwachung",
+        "pt-BR": "Monitor de mudança da área de transferência",
+        "ru": "Наблюдатель изменений буфера обмена",
+        "ar": "مراقب تغيير الحافظة",
+        "hi": "क्लिपबोर्ड परिवर्तन वॉचर"
       },
       "fields": [
         {
@@ -656,7 +1326,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "监听器ID",
-            "en-US": "Watcher ID"
+            "en-US": "Watcher ID",
+            "zh-TW": "監听器ID",
+            "ja": "ウォッチャーID",
+            "ko": "감시자 ID",
+            "es": "ID del vigilante",
+            "fr": "ID du surveillant",
+            "de": "Wächter-ID",
+            "pt-BR": "ID do monitor",
+            "ru": "ID наблюдателя",
+            "ar": "معرّف المراقب",
+            "hi": "वॉचर ID"
           }
         }
       ]

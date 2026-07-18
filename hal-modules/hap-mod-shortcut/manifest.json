@@ -22,7 +22,7 @@
     "ar": "وحدة الاختصارات",
     "hi": "शॉर्टकट मॉड्यूल"
   },
-  "permission": "",
+  "permission": "shortcut",
   "functions": [
     {
       "name": "register",
@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "accelerator参数",
-            "en-US": "accelerator parameter"
+            "en-US": "accelerator parameter",
+            "zh-TW": "accelerator參數",
+            "ja": "acceleratorパラメータ",
+            "ko": "accelerator매개변수",
+            "es": "Parámetro de accelerator",
+            "fr": "Paramètre de accelerator",
+            "de": "accelerator-Parameter",
+            "pt-BR": "Parâmetro de accelerator",
+            "ru": "Параметр accelerator",
+            "ar": "معلمة accelerator",
+            "hi": "accelerator पैरामीटर"
           },
           "desc": "accelerator parameter"
         },
@@ -42,7 +52,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           }
         }
       ],
@@ -50,13 +70,33 @@
         "type": "ShortcutHandle",
         "descs": {
           "zh-CN": "快捷方式信息",
-          "en-US": "Shortcut info"
+          "en-US": "Shortcut info",
+          "zh-TW": "快捷方式資訊",
+          "ja": "快捷方式情報",
+          "ko": "단축키 정보",
+          "es": "Información del atajo",
+          "fr": "Informations du raccourci",
+          "de": "Verknüpfungsinformationen",
+          "pt-BR": "Informações do atalho",
+          "ru": "Информация о ярлыке",
+          "ar": "معلومات الاختصار",
+          "hi": "शॉर्टकट जानकारी"
         }
       },
       "bridge_path": "shortcut.register",
       "descriptions": {
         "zh-CN": "注册一个全局键盘快捷键并绑定回调",
-        "en-US": "Register global keyboard shortcut with callback"
+        "en-US": "Register global keyboard shortcut with callback",
+        "zh-TW": "注册一個全局鍵盤快捷鍵並綁定回調",
+        "ja": "コールバック付きグローバルキーボードショートカットを登録",
+        "ko": "콜백이 있는 글로벌 키보드 단축키 등록",
+        "es": "Registrar atajo de teclado global con callback",
+        "fr": "Enregistrer le raccourci clavier global avec callback",
+        "de": "Globalen Tastaturkürzel mit Callback registrieren",
+        "pt-BR": "Registrar atalho de teclado global com callback",
+        "ru": "Зарегистрировать глобальное сочетание клавиш с обратным вызовом",
+        "ar": "تسجيل اختصار لوحة مفاتيح عام مع استدعاء",
+        "hi": "कॉलबैक के साथ ग्लोबल कीबोर्ड शॉर्टकट पंजीकृत करें"
       },
       "group": "manage",
       "description": "Register global keyboard shortcut with callback"
@@ -70,7 +110,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "快捷方式 ID",
-            "en-US": "Shortcut ID"
+            "en-US": "Shortcut ID",
+            "zh-TW": "快捷方式 ID",
+            "ja": "ショートカットID",
+            "ko": "바로가기 ID",
+            "es": "ID de acceso directo",
+            "fr": "ID du raccourci",
+            "de": "Verknüpfungs-ID",
+            "pt-BR": "ID do atalho",
+            "ru": "ID ярлыка",
+            "ar": "معرف الاختصار",
+            "hi": "शॉर्टकट ID"
           }
         }
       ],
@@ -78,14 +128,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "shortcut.unregister",
       "descriptions": {
         "zh-CN": "注销已注册的全局快捷键",
-        "en-US": "Unregister a registered global shortcut"
+        "en-US": "Unregister a registered global shortcut",
+        "zh-TW": "注销已注册的全局快捷鍵",
+        "ja": "登録済みのグローバルショートカットを解除",
+        "ko": "등록된 글로벌 단축키 해제",
+        "es": "Desregistrar atajo global registrado",
+        "fr": "Désenregistrer le raccourci global",
+        "de": "Registrierten globalen Tastaturkürzel entfernen",
+        "pt-BR": "Desregistrar atalho global registrado",
+        "ru": "Отменить регистрацию глобального сочетания",
+        "ar": "إلغاء تسجيل اختصار عام مسجل",
+        "hi": "पंजीकृत ग्लोबल शॉर्टकट अपंजीकृत करें"
       },
       "group": "manage",
       "description": "Unregister a registered global shortcut"
@@ -98,14 +168,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "shortcut.unregisterAll",
       "descriptions": {
         "zh-CN": "注销所有已注册的快捷键",
-        "en-US": "Unregister all of global shortcut"
+        "en-US": "Unregister all of global shortcut",
+        "zh-TW": "注销所有已注册的快捷鍵",
+        "ja": "全グローバルショートカットを解除",
+        "ko": "모든 글로벌 단축키 해제",
+        "es": "Desregistrar todos los atajos globales",
+        "fr": "Désenregistrer tous les raccourcis globaux",
+        "de": "Alle globalen Tastaturkürzel entfernen",
+        "pt-BR": "Desregistrar todos os atalhos globais",
+        "ru": "Отменить регистрацию всех глобальных сочетаний",
+        "ar": "إلغاء تسجيل جميع الاختصارات العامة",
+        "hi": "सभी ग्लोबल शॉर्टकट अपंजीकृत करें"
       },
       "group": "manage",
       "description": "Unregister all of global shortcut"
@@ -119,7 +209,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "accelerator参数",
-            "en-US": "accelerator parameter"
+            "en-US": "accelerator parameter",
+            "zh-TW": "accelerator參數",
+            "ja": "acceleratorパラメータ",
+            "ko": "accelerator매개변수",
+            "es": "Parámetro de accelerator",
+            "fr": "Paramètre de accelerator",
+            "de": "accelerator-Parameter",
+            "pt-BR": "Parâmetro de accelerator",
+            "ru": "Параметр accelerator",
+            "ar": "معلمة accelerator",
+            "hi": "accelerator पैरामीटर"
           },
           "desc": "accelerator parameter"
         }
@@ -128,13 +228,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否已注册",
-          "en-US": "Is registered"
+          "en-US": "Is registered",
+          "zh-TW": "是否已注册",
+          "ja": "かどうか済み注册",
+          "ko": "등록 여부",
+          "es": "Si está registrado",
+          "fr": "Si enregistré",
+          "de": "Ob registriert",
+          "pt-BR": "Se está registrado",
+          "ru": "Зарегистрировано ли",
+          "ar": "هل مسجل",
+          "hi": "पंजीकृत है क्या"
         }
       },
       "bridge_path": "shortcut.isRegistered",
       "descriptions": {
         "zh-CN": "检查快捷键是否已注册",
-        "en-US": "Check if global shortcut registered"
+        "en-US": "Check if global shortcut registered",
+        "zh-TW": "檢查快捷鍵是否已注册",
+        "ja": "グローバルショートカットが登録済みか確認",
+        "ko": "글로벌 단축키가 등록되었는지 확인",
+        "es": "Verificar si atajo global está registrado",
+        "fr": "Vérifier si raccourci global enregistré",
+        "de": "Globale Tastenkombination registriert prüfen",
+        "pt-BR": "Verificar se atalho global está registrado",
+        "ru": "Проверить зарегистрирован ли глобальный ярлык",
+        "ar": "التحقق من تسجيل الاختصار العام",
+        "hi": "ग्लोबल शॉर्टकट पंजीकृत है जांचें"
       },
       "group": "manage",
       "description": "Check if global shortcut registered"
@@ -147,13 +267,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "快捷方式列表",
-          "en-US": "Shortcut list"
+          "en-US": "Shortcut list",
+          "zh-TW": "快捷方式列表",
+          "ja": "快捷方式リスト",
+          "ko": "단축키 목록",
+          "es": "Lista de atajos",
+          "fr": "Liste des raccourcis",
+          "de": "Verknüpfungsliste",
+          "pt-BR": "Lista de atalhos",
+          "ru": "Список ярлыков",
+          "ar": "قائمة الاختصارات",
+          "hi": "शॉर्टकट सूची"
         }
       },
       "bridge_path": "shortcut.list",
       "descriptions": {
         "zh-CN": "列出当前所有已注册的全局快捷键",
-        "en-US": "List all currently registered global shortcuts"
+        "en-US": "List all currently registered global shortcuts",
+        "zh-TW": "列出當前所有已注册的全局快捷鍵",
+        "ja": "現在登録されている全グローバルショートカットを一覧表示",
+        "ko": "현재 등록된 모든 글로벌 단축키 나열",
+        "es": "Listar todos los atajos globales registrados",
+        "fr": "Lister tous les raccourcis globaux enregistrés",
+        "de": "Alle registrierten globalen Tastaturkürzel auflisten",
+        "pt-BR": "Listar todos os atalhos globais registrados",
+        "ru": "Список всех зарегистрированных глобальных сочетаний",
+        "ar": "سرد جميع الاختصارات العامة المسجلة",
+        "hi": "सभी पंजीकृत ग्लोबल शॉर्टकट सूचीबद्ध करें"
       },
       "group": "manage",
       "description": "List all currently registered global shortcuts"
@@ -161,14 +301,34 @@
   ],
   "overviews": {
     "zh-CN": "提供桌面快捷方式管理能力，包括创建、删除、查询快捷方式，支持自定义图标、启动参数等。适配 macOS/Windows/Linux 三平台。",
-    "en-US": "Desktop shortcut management including create, delete, and query shortcuts with custom icons and launch parameters. Supports macOS/Windows/Linux."
+    "en-US": "Desktop shortcut management including create, delete, and query shortcuts with custom icons and launch parameters. Supports macOS/Windows/Linux.",
+    "zh-TW": "提供桌面快捷方式管理能力，包括建立、刪除、查询快捷方式，支援自定義图標、啟動參數等。适配 macOS/Windows/Linux 三平台。",
+    "ja": "デスクトップショートカットの作成・削除・検索。カスタムアイコンと起動パラメータ。macOS/Windows/Linux対応。",
+    "ko": "바로가기 생성, 삭제, 조회. 사용자 정의 아이콘과 실행 매개변수. macOS/Windows/Linux 지원.",
+    "es": "Accesos directos de escritorio: crear, eliminar y consultar con iconos y parámetros. macOS/Windows/Linux.",
+    "fr": "Raccourcis bureau : créer, supprimer et rechercher avec icônes et paramètres. macOS/Windows/Linux.",
+    "de": "Desktop-Verknüpfungen: Erstellen, Löschen, Abfragen mit Symbolen und Parametern. macOS/Windows/Linux.",
+    "pt-BR": "Atalhos de desktop: criar, excluir e consultar com ícones e parâmetros. macOS/Windows/Linux.",
+    "ru": "Ярлыки рабочего стола: создание, удаление и поиск с иконками и параметрами. macOS/Windows/Linux.",
+    "ar": "اختصارات سطح المكتب: إنشاء وحذف واستعلام مع أيقونات ومعاملات. macOS/Windows/Linux.",
+    "hi": "डेस्कटॉप शॉर्टकट: बनाना, हटाना, क्वेरी। कस्टम आइकन और पैरामीटर। macOS/Windows/Linux।"
   },
   "types": [
     {
       "name": "ShortcutInfo",
       "descriptions": {
         "zh-CN": "快捷键注册信息",
-        "en-US": "Shortcut registration info"
+        "en-US": "Shortcut registration info",
+        "zh-TW": "快捷鍵註冊資訊",
+        "ja": "ショートカット登録情報",
+        "ko": "단축키 등록 정보",
+        "es": "Información de registro del atajo",
+        "fr": "Informations d'enregistrement du raccourci",
+        "de": "Tastenkürzel-Registrierungsinformationen",
+        "pt-BR": "Informações de registro do atalho",
+        "ru": "Информация о регистрации ярлыка",
+        "ar": "معلومات تسجيل الاختصار",
+        "hi": "शॉर्टकट पंजीकरण जानकारी"
       },
       "fields": [
         {
@@ -176,7 +336,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "快捷键唯一标识",
-            "en-US": "Shortcut unique ID"
+            "en-US": "Shortcut unique ID",
+            "zh-TW": "快捷鍵唯一標識",
+            "ja": "ショートカット一意ID",
+            "ko": "단축키 고유 ID",
+            "es": "ID único del atajo",
+            "fr": "ID unique du raccourci",
+            "de": "Eindeutige Tastenkürzel-ID",
+            "pt-BR": "ID único do atalho",
+            "ru": "Уникальный ID ярлыка",
+            "ar": "المعرّف الفريد للاختصار",
+            "hi": "शॉर्टकट यूनिक ID"
           }
         },
         {
@@ -184,7 +354,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "按键组合（如 Ctrl+Shift+A）",
-            "en-US": "Key combination"
+            "en-US": "Key combination",
+            "zh-TW": "按鍵組合（如 Ctrl+Shift+A）",
+            "ja": "キーの組み合わせ",
+            "ko": "키 조합",
+            "es": "Combinación de teclas",
+            "fr": "Combinaison de touches",
+            "de": "Tastenkombination",
+            "pt-BR": "Combinação de teclas",
+            "ru": "Сочетание клавиш",
+            "ar": "مجموعة المفاتيح",
+            "hi": "कुंजी संयोजन"
           }
         },
         {
@@ -192,7 +372,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "快捷键描述",
-            "en-US": "Shortcut description"
+            "en-US": "Shortcut description",
+            "zh-TW": "快捷鍵描述",
+            "ja": "ショートカットの説明",
+            "ko": "단축키 설명",
+            "es": "Descripción del atajo",
+            "fr": "Description du raccourci",
+            "de": "Tastenkürzel-Beschreibung",
+            "pt-BR": "Descrição do atalho",
+            "ru": "Описание ярлыка",
+            "ar": "وصف الاختصار",
+            "hi": "शॉर्टकट विवरण"
           }
         }
       ]
@@ -201,7 +391,17 @@
       "name": "ShortcutHandle",
       "descriptions": {
         "zh-CN": "快捷键注册句柄",
-        "en-US": "Shortcut registration handle"
+        "en-US": "Shortcut registration handle",
+        "zh-TW": "快捷鍵註冊句柄",
+        "ja": "ショートカット登録ハンドル",
+        "ko": "단축키 등록 핸들",
+        "es": "Manejador de registro de atajo",
+        "fr": "Handle d'enregistrement de raccourci",
+        "de": "Tastenkürzel-Registrierungs-Handle",
+        "pt-BR": "Handle de registro de atalho",
+        "ru": "Дескриптор регистрации ярлыка",
+        "ar": "مقبض تسجيل الاختصار",
+        "hi": "शॉर्टकट पंजीकरण हैंडल"
       },
       "fields": [
         {
@@ -209,7 +409,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "快捷键ID",
-            "en-US": "Shortcut ID"
+            "en-US": "Shortcut ID",
+            "zh-TW": "快捷鍵ID",
+            "ja": "ショートカットID",
+            "ko": "단축키 ID",
+            "es": "ID del atajo",
+            "fr": "ID du raccourci",
+            "de": "Tastenkürzel-ID",
+            "pt-BR": "ID do atalho",
+            "ru": "ID ярлыка",
+            "ar": "معرّف الاختصار",
+            "hi": "शॉर्टकट ID"
           }
         }
       ]
@@ -220,7 +430,17 @@
       "name": "shortcut_triggered",
       "descriptions": {
         "zh-CN": "全局快捷键被触发",
-        "en-US": "Global shortcut triggered"
+        "en-US": "Global shortcut triggered",
+        "zh-TW": "全局快捷鍵被觸發",
+        "ja": "グローバルショートカットが発動されました",
+        "ko": "글로벌 단축키가 실행됨",
+        "es": "Atajo global activado",
+        "fr": "Raccourci global déclenché",
+        "de": "Globale Tastenkombination ausgelöst",
+        "pt-BR": "Atalho global acionado",
+        "ru": "Глобальное сочетание клавиш сработало",
+        "ar": "تم تشغيل الاختصار العام",
+        "hi": "ग्लोबल शॉर्टकट सक्रिय"
       },
       "payload": [
         {
@@ -228,7 +448,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "被触发的快捷键ID",
-            "en-US": "Triggered shortcut ID"
+            "en-US": "Triggered shortcut ID",
+            "zh-TW": "被觸發的快捷鍵ID",
+            "ja": "トリガーされたショートカットID",
+            "ko": "트리거된 단축키 ID",
+            "es": "ID de atajo activado",
+            "fr": "ID du raccourci déclenché",
+            "de": "Ausgelöste Tastenkombinations-ID",
+            "pt-BR": "ID do atalho acionado",
+            "ru": "ID сработавшего ярлыка",
+            "ar": "معرف الاختصار المُشغَّل",
+            "hi": "ट्रिगर किया गया शॉर्टकट ID"
           }
         },
         {
@@ -236,7 +466,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "按键组合",
-            "en-US": "Key combination"
+            "en-US": "Key combination",
+            "zh-TW": "按鍵組合",
+            "ja": "キーの組み合わせ",
+            "ko": "키 조합",
+            "es": "Combinación de teclas",
+            "fr": "Combinaison de touches",
+            "de": "Tastenkombination",
+            "pt-BR": "Combinação de teclas",
+            "ru": "Сочетание клавиш",
+            "ar": "مجموعة المفاتيح",
+            "hi": "कुंजी संयोजन"
           }
         }
       ]

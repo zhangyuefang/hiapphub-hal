@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务名称",
-            "en-US": "Service name"
+            "en-US": "Service name",
+            "zh-TW": "服務名稱",
+            "ja": "サービス名称",
+            "ko": "서비스 이름",
+            "es": "Nombre del servicio",
+            "fr": "Nom du service",
+            "de": "Dienstname",
+            "pt-BR": "Nome do serviço",
+            "ru": "Имя сервиса",
+            "ar": "اسم الخدمة",
+            "hi": "सेवा नाम"
           }
         },
         {
@@ -41,7 +51,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "账户名（密钥链的二级标识）",
-            "en-US": "Account name (secondary keychain identifier)"
+            "en-US": "Account name (secondary keychain identifier)",
+            "zh-TW": "帳戶名（密钥鏈的二级標識）",
+            "ja": "アカウント名（キーチェーンの副識別子）",
+            "ko": "계정 이름 (키체인 보조 식별자)",
+            "es": "Nombre de cuenta (identificador secundario)",
+            "fr": "Nom du compte (identifiant secondaire)",
+            "de": "Kontoname (sekundärer Schlüsselbund)",
+            "pt-BR": "Nome da conta (identificador secundário)",
+            "ru": "Имя аккаунта (вторичный идентификатор)",
+            "ar": "اسم الحساب (معرف ثانوي)",
+            "hi": "खाता नाम (सेकेंडरी कीचेन)"
           },
           "desc": "Account name (secondary keychain identifier)"
         },
@@ -50,7 +70,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string"
         },
@@ -59,7 +89,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "显示标签文本",
-            "en-US": "Display label text"
+            "en-US": "Display label text",
+            "zh-TW": "顯示標籤文字",
+            "ja": "表示ラベルテキスト",
+            "ko": "표시 레이블 텍스트",
+            "es": "Texto de etiqueta de visualización",
+            "fr": "Texte du libellé",
+            "de": "Anzeigebeschriftung",
+            "pt-BR": "Texto do rótulo de exibição",
+            "ru": "Текст метки отображения",
+            "ar": "نص تسمية العرض",
+            "hi": "डिस्प्ले लेबल टेक्स्ट"
           },
           "optional": true,
           "desc": "Display label text"
@@ -69,14 +109,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "keychain.store",
       "descriptions": {
         "zh-CN": "store钥匙串/密钥存储",
-        "en-US": "Store keychain"
+        "en-US": "Store keychain",
+        "zh-TW": "store钥匙串/密钥儲存",
+        "ja": "store钥匙串/キーストレージ",
+        "ko": "키체인에 저장",
+        "es": "Almacenar en llavero",
+        "fr": "Stocker dans le trousseau",
+        "de": "Im Schlüsselbund speichern",
+        "pt-BR": "Armazenar no chaveiro",
+        "ru": "Сохранить в связку ключей",
+        "ar": "تخزين في سلسلة المفاتيح",
+        "hi": "कीचेन में संग्रहित करें"
       },
       "group": "basic",
       "description": "Store keychain"
@@ -90,7 +150,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务名称",
-            "en-US": "Service name"
+            "en-US": "Service name",
+            "zh-TW": "服務名稱",
+            "ja": "サービス名称",
+            "ko": "서비스 이름",
+            "es": "Nombre del servicio",
+            "fr": "Nom du service",
+            "de": "Dienstname",
+            "pt-BR": "Nome do serviço",
+            "ru": "Имя сервиса",
+            "ar": "اسم الخدمة",
+            "hi": "सेवा नाम"
           }
         },
         {
@@ -98,7 +168,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "账户名",
-            "en-US": "Account name"
+            "en-US": "Account name",
+            "zh-TW": "帳戶名",
+            "ja": "アカウント名",
+            "ko": "계정 이름",
+            "es": "Nombre de cuenta",
+            "fr": "Nom du compte",
+            "de": "Kontoname",
+            "pt-BR": "Nome da conta",
+            "ru": "Имя аккаунта",
+            "ar": "اسم الحساب",
+            "hi": "खाता नाम"
           },
           "desc": "Account name"
         }
@@ -107,14 +187,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "keychain.retrieve",
       "descriptions": {
         "zh-CN": "retrieve钥匙串/密钥存储",
-        "en-US": "Retrieve keychain"
+        "en-US": "Retrieve keychain",
+        "zh-TW": "retrieve钥匙串/密钥儲存",
+        "ja": "retrieve钥匙串/キーストレージ",
+        "ko": "키체인에서 가져오기",
+        "es": "Recuperar del llavero",
+        "fr": "Récupérer du trousseau",
+        "de": "Aus Schlüsselbund abrufen",
+        "pt-BR": "Recuperar do chaveiro",
+        "ru": "Получить из связки ключей",
+        "ar": "استرداد من سلسلة المفاتيح",
+        "hi": "कीचेन से प्राप्त करें"
       },
       "group": "basic",
       "description": "Retrieve keychain"
@@ -128,7 +228,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务名称",
-            "en-US": "Service name"
+            "en-US": "Service name",
+            "zh-TW": "服務名稱",
+            "ja": "サービス名称",
+            "ko": "서비스 이름",
+            "es": "Nombre del servicio",
+            "fr": "Nom du service",
+            "de": "Dienstname",
+            "pt-BR": "Nome do serviço",
+            "ru": "Имя сервиса",
+            "ar": "اسم الخدمة",
+            "hi": "सेवा नाम"
           }
         },
         {
@@ -136,7 +246,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "账户名",
-            "en-US": "Account name"
+            "en-US": "Account name",
+            "zh-TW": "帳戶名",
+            "ja": "アカウント名",
+            "ko": "계정 이름",
+            "es": "Nombre de cuenta",
+            "fr": "Nom du compte",
+            "de": "Kontoname",
+            "pt-BR": "Nome da conta",
+            "ru": "Имя аккаунта",
+            "ar": "اسم الحساب",
+            "hi": "खाता नाम"
           },
           "desc": "Account name"
         }
@@ -145,14 +265,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "keychain.delete",
       "descriptions": {
         "zh-CN": "删除钥匙串/密钥存储",
-        "en-US": "Delete keychain"
+        "en-US": "Delete keychain",
+        "zh-TW": "刪除钥匙串/密钥儲存",
+        "ja": "削除する钥匙串/キーストレージ",
+        "ko": "키체인 삭제",
+        "es": "Eliminar llavero",
+        "fr": "Supprimer le trousseau",
+        "de": "Schlüsselbund löschen",
+        "pt-BR": "Excluir chaves",
+        "ru": "Удалить связку ключей",
+        "ar": "حذف سلسلة المفاتيح",
+        "hi": "कीचेन हटाएं"
       },
       "group": "basic",
       "description": "Delete keychain"
@@ -166,7 +306,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务名称",
-            "en-US": "Service name"
+            "en-US": "Service name",
+            "zh-TW": "服務名稱",
+            "ja": "サービス名称",
+            "ko": "서비스 이름",
+            "es": "Nombre del servicio",
+            "fr": "Nom du service",
+            "de": "Dienstname",
+            "pt-BR": "Nome do serviço",
+            "ru": "Имя сервиса",
+            "ar": "اسم الخدمة",
+            "hi": "सेवा नाम"
           }
         },
         {
@@ -174,7 +324,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "账户名",
-            "en-US": "Account name"
+            "en-US": "Account name",
+            "zh-TW": "帳戶名",
+            "ja": "アカウント名",
+            "ko": "계정 이름",
+            "es": "Nombre de cuenta",
+            "fr": "Nom du compte",
+            "de": "Kontoname",
+            "pt-BR": "Nome da conta",
+            "ru": "Имя аккаунта",
+            "ar": "اسم الحساب",
+            "hi": "खाता नाम"
           },
           "desc": "Account name"
         }
@@ -183,13 +343,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否存在",
-          "en-US": "Exists"
+          "en-US": "Exists",
+          "zh-TW": "是否存在",
+          "ja": "存でするかどうか",
+          "ko": "존재 여부",
+          "es": "Si existe",
+          "fr": "Si existe",
+          "de": "Ob vorhanden",
+          "pt-BR": "Se existe",
+          "ru": "Существует ли",
+          "ar": "هل موجود",
+          "hi": "मौजूद है या नहीं"
         }
       },
       "bridge_path": "keychain.has",
       "descriptions": {
         "zh-CN": "has钥匙串/密钥存储",
-        "en-US": "Has keychain"
+        "en-US": "Has keychain",
+        "zh-TW": "has钥匙串/密钥儲存",
+        "ja": "has钥匙串/キーストレージ",
+        "ko": "키체인에 존재하는지 확인",
+        "es": "Verificar si existe en llavero",
+        "fr": "Vérifier si existe dans le trousseau",
+        "de": "Im Schlüsselbund vorhanden prüfen",
+        "pt-BR": "Verificar se existe no chaveiro",
+        "ru": "Проверить наличие в связке ключей",
+        "ar": "التحقق من وجود في سلسلة المفاتيح",
+        "hi": "कीचेन में मौजूद है क्या जांचें"
       },
       "group": "basic",
       "description": "Has keychain"
@@ -203,7 +383,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务过滤器",
-            "en-US": "Service filter"
+            "en-US": "Service filter",
+            "zh-TW": "服務過濾器",
+            "ja": "サービスフィルタする器",
+            "ko": "서비스 필터",
+            "es": "Filtro de servicio",
+            "fr": "Filtre de service",
+            "de": "Dienstfilter",
+            "pt-BR": "Filtro de serviço",
+            "ru": "Фильтр сервиса",
+            "ar": "مرشح الخدمة",
+            "hi": "सेवा फ़िल्टर"
           }
         }
       ],
@@ -211,13 +401,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "凭据列表",
-          "en-US": "Credential list"
+          "en-US": "Credential list",
+          "zh-TW": "憑據列表",
+          "ja": "認証情報リスト",
+          "ko": "자격 증명 목록",
+          "es": "Lista de credenciales",
+          "fr": "Liste des identifiants",
+          "de": "Anmeldeinformationsliste",
+          "pt-BR": "Lista de credenciais",
+          "ru": "Список учётных данных",
+          "ar": "قائمة بيانات الاعتماد",
+          "hi": "क्रेडेंशियल सूची"
         }
       },
       "bridge_path": "keychain.list",
       "descriptions": {
         "zh-CN": "列出钥匙串/密钥存储",
-        "en-US": "List keychain"
+        "en-US": "List keychain",
+        "zh-TW": "列出钥匙串/密钥儲存",
+        "ja": "列出钥匙串/キーストレージ",
+        "ko": "키체인 목록",
+        "es": "Listar llavero",
+        "fr": "Lister le trousseau",
+        "de": "Schlüsselbund auflisten",
+        "pt-BR": "Listar chaveiro",
+        "ru": "Список связки ключей",
+        "ar": "قائمة سلسلة المفاتيح",
+        "hi": "कीचेन सूचीबद्ध करें"
       },
       "group": "basic",
       "description": "List keychain"
@@ -231,7 +441,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务名称",
-            "en-US": "Service name"
+            "en-US": "Service name",
+            "zh-TW": "服務名稱",
+            "ja": "サービス名称",
+            "ko": "서비스 이름",
+            "es": "Nombre del servicio",
+            "fr": "Nom du service",
+            "de": "Dienstname",
+            "pt-BR": "Nome do serviço",
+            "ru": "Имя сервиса",
+            "ar": "اسم الخدمة",
+            "hi": "सेवा नाम"
           }
         },
         {
@@ -239,7 +459,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "账户名",
-            "en-US": "Account name"
+            "en-US": "Account name",
+            "zh-TW": "帳戶名",
+            "ja": "アカウント名",
+            "ko": "계정 이름",
+            "es": "Nombre de cuenta",
+            "fr": "Nom du compte",
+            "de": "Kontoname",
+            "pt-BR": "Nome da conta",
+            "ru": "Имя аккаунта",
+            "ar": "اسم الحساب",
+            "hi": "खाता नाम"
           },
           "desc": "Account name"
         },
@@ -248,7 +478,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string"
         },
@@ -257,7 +497,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "显示标签文本",
-            "en-US": "Display label text"
+            "en-US": "Display label text",
+            "zh-TW": "顯示標籤文字",
+            "ja": "表示ラベルテキスト",
+            "ko": "표시 레이블 텍스트",
+            "es": "Texto de etiqueta de visualización",
+            "fr": "Texte du libellé",
+            "de": "Anzeigebeschriftung",
+            "pt-BR": "Texto do rótulo de exibição",
+            "ru": "Текст метки отображения",
+            "ar": "نص تسمية العرض",
+            "hi": "डिस्प्ले लेबल टेक्स्ट"
           },
           "optional": true,
           "desc": "Display label text"
@@ -267,14 +517,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "keychain.update",
       "descriptions": {
         "zh-CN": "更新钥匙串/密钥存储",
-        "en-US": "Update keychain"
+        "en-US": "Update keychain",
+        "zh-TW": "更新钥匙串/密钥儲存",
+        "ja": "更新する钥匙串/キーストレージ",
+        "ko": "키체인 업데이트",
+        "es": "Actualizar llavero",
+        "fr": "Mettre à jour le trousseau",
+        "de": "Schlüsselbund aktualisieren",
+        "pt-BR": "Atualizar chaveiro",
+        "ru": "Обновить связку ключей",
+        "ar": "تحديث سلسلة المفاتيح",
+        "hi": "कीचेन अपडेट करें"
       },
       "group": "basic",
       "description": "Update keychain"
@@ -288,7 +558,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务名（密钥链的一级标识）",
-            "en-US": "Service name (primary keychain identifier)"
+            "en-US": "Service name (primary keychain identifier)",
+            "zh-TW": "服務名（密钥鏈的一级標識）",
+            "ja": "サービス名（キーチェーンの主識別子）",
+            "ko": "서비스 이름 (키체인 기본 식별자)",
+            "es": "Nombre del servicio (identificador principal del llavero)",
+            "fr": "Nom du service (identifiant principal du trousseau)",
+            "de": "Dienstname (primärer Schlüsselbund-Identifikator)",
+            "pt-BR": "Nome do serviço (identificador principal do chaveiro)",
+            "ru": "Имя сервиса (основной идентификатор связки ключей)",
+            "ar": "اسم الخدمة (المعرف الأساسي لسلسلة المفاتيح)",
+            "hi": "सेवा नाम (कीचेन का प्राथमिक पहचानकर्ता)"
           },
           "desc": "Service name (primary keychain identifier)"
         },
@@ -297,7 +577,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "账户名",
-            "en-US": "Account name"
+            "en-US": "Account name",
+            "zh-TW": "帳戶名",
+            "ja": "アカウント名",
+            "ko": "계정 이름",
+            "es": "Nombre de cuenta",
+            "fr": "Nom du compte",
+            "de": "Kontoname",
+            "pt-BR": "Nome da conta",
+            "ru": "Имя аккаунта",
+            "ar": "اسم الحساب",
+            "hi": "खाता नाम"
           },
           "desc": "Account name"
         },
@@ -306,7 +596,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64 数据",
-            "en-US": "Base64 data"
+            "en-US": "Base64 data",
+            "zh-TW": "Base64 數據",
+            "ja": "Base64 データ",
+            "ko": "Base64 데이터",
+            "es": "Datos Base64",
+            "fr": "Données Base64",
+            "de": "Base64-Daten",
+            "pt-BR": "Dados Base64",
+            "ru": "Данные Base64",
+            "ar": "بيانات Base64",
+            "hi": "Base64 डेटा"
           }
         }
       ],
@@ -314,14 +614,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "keychain.storeBinary",
       "descriptions": {
         "zh-CN": "保存二进制数据到钥匙串",
-        "en-US": "Store binary of keychain"
+        "en-US": "Store binary of keychain",
+        "zh-TW": "保存二進製數據到钥匙串",
+        "ja": "キーチェーンにバイナリデータを保存",
+        "ko": "키체인에 바이너리 데이터 저장",
+        "es": "Almacenar datos binarios en llavero",
+        "fr": "Stocker les données binaires dans le trousseau",
+        "de": "Binärdaten im Schlüsselbund speichern",
+        "pt-BR": "Armazenar dados binários no chaveiro",
+        "ru": "Сохранить бинарные данные в связку ключей",
+        "ar": "تخزين بيانات ثنائية في سلسلة المفاتيح",
+        "hi": "कीचेन में बाइनरी डेटा संग्रहित करें"
       },
       "group": "binary",
       "description": "Store binary of keychain"
@@ -335,7 +655,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务名",
-            "en-US": "Service name"
+            "en-US": "Service name",
+            "zh-TW": "服務名",
+            "ja": "サービス名",
+            "ko": "서비스 이름",
+            "es": "Nombre del servicio",
+            "fr": "Nom du service",
+            "de": "Dienstname",
+            "pt-BR": "Nome do serviço",
+            "ru": "Имя сервиса",
+            "ar": "اسم الخدمة",
+            "hi": "सेवा नाम"
           },
           "desc": "Service name"
         },
@@ -344,7 +674,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "账户名",
-            "en-US": "Account name"
+            "en-US": "Account name",
+            "zh-TW": "帳戶名",
+            "ja": "アカウント名",
+            "ko": "계정 이름",
+            "es": "Nombre de cuenta",
+            "fr": "Nom du compte",
+            "de": "Kontoname",
+            "pt-BR": "Nome da conta",
+            "ru": "Имя аккаунта",
+            "ar": "اسم الحساب",
+            "hi": "खाता नाम"
           },
           "desc": "Account name"
         }
@@ -353,13 +693,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "Base64 数据",
-          "en-US": "Base64 data"
+          "en-US": "Base64 data",
+          "zh-TW": "Base64 數據",
+          "ja": "Base64 データ",
+          "ko": "Base64 데이터",
+          "es": "Datos Base64",
+          "fr": "Données Base64",
+          "de": "Base64-Daten",
+          "pt-BR": "Dados Base64",
+          "ru": "Данные Base64",
+          "ar": "بيانات Base64",
+          "hi": "Base64 डेटा"
         }
       },
       "bridge_path": "keychain.retrieveBinary",
       "descriptions": {
         "zh-CN": "从钥匙串获取二进制数据",
-        "en-US": "Retrieve binary of keychain"
+        "en-US": "Retrieve binary of keychain",
+        "zh-TW": "從钥匙串取得二進製數據",
+        "ja": "キーチェーンからバイナリデータを取得",
+        "ko": "키체인에서 바이너리 데이터 가져오기",
+        "es": "Recuperar datos binarios del llavero",
+        "fr": "Récupérer les données binaires du trousseau",
+        "de": "Binärdaten aus Schlüsselbund abrufen",
+        "pt-BR": "Recuperar dados binários do chaveiro",
+        "ru": "Получить бинарные данные из связки ключей",
+        "ar": "استرداد بيانات ثنائية من سلسلة المفاتيح",
+        "hi": "कीचेन से बाइनरी डेटा प्राप्त करें"
       },
       "group": "binary",
       "description": "Retrieve binary of keychain"
@@ -373,7 +733,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务过滤器",
-            "en-US": "Service filter"
+            "en-US": "Service filter",
+            "zh-TW": "服務過濾器",
+            "ja": "サービスフィルタする器",
+            "ko": "서비스 필터",
+            "es": "Filtro de servicio",
+            "fr": "Filtre de service",
+            "de": "Dienstfilter",
+            "pt-BR": "Filtro de serviço",
+            "ru": "Фильтр сервиса",
+            "ar": "مرشح الخدمة",
+            "hi": "सेवा फ़िल्टर"
           }
         }
       ],
@@ -381,14 +751,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "keychain.clear",
       "descriptions": {
         "zh-CN": "清空钥匙串/密钥存储",
-        "en-US": "Clear keychain"
+        "en-US": "Clear keychain",
+        "zh-TW": "清空钥匙串/密钥儲存",
+        "ja": "クリアする钥匙串/キーストレージ",
+        "ko": "키체인 비우기",
+        "es": "Limpiar llavero",
+        "fr": "Effacer le trousseau",
+        "de": "Schlüsselbund löschen",
+        "pt-BR": "Limpar chaves",
+        "ru": "Очистить связку ключей",
+        "ar": "مسح سلسلة المفاتيح",
+        "hi": "कीचेन साफ़ करें"
       },
       "group": "basic",
       "description": "Clear keychain"
@@ -401,13 +791,33 @@
         "type": "BiometricInfo",
         "descs": {
           "zh-CN": "生物识别信息",
-          "en-US": "Biometric info"
+          "en-US": "Biometric info",
+          "zh-TW": "生物識別資訊",
+          "ja": "生体認証情報",
+          "ko": "생체 인증 정보",
+          "es": "Información biométrica",
+          "fr": "Informations biométriques",
+          "de": "Biometrische Informationen",
+          "pt-BR": "Informações biométricas",
+          "ru": "Биометрическая информация",
+          "ar": "معلومات بيومترية",
+          "hi": "बायोमेट्रिक जानकारी"
         }
       },
       "bridge_path": "keychain.biometricAvailable",
       "descriptions": {
         "zh-CN": "检查生物识别是否可用",
-        "en-US": "Biometric available of keychain"
+        "en-US": "Biometric available of keychain",
+        "zh-TW": "檢查生物識別是否可用",
+        "ja": "キーチェーンの生体認証利用可能確認",
+        "ko": "키체인 생체 인증 가능 여부",
+        "es": "Disponibilidad biométrica del llavero",
+        "fr": "Disponibilité biométrique du trousseau",
+        "de": "Biometrie-Verfügbarkeit des Schlüsselbunds",
+        "pt-BR": "Disponibilidade biométrica das chaves",
+        "ru": "Доступность биометрии связки ключей",
+        "ar": "توفر المصادقة البيومترية",
+        "hi": "कीचेन बायोमेट्रिक उपलब्धता"
       },
       "group": "biometric",
       "description": "Biometric available of keychain"
@@ -421,7 +831,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "认证原因",
-            "en-US": "Auth reason"
+            "en-US": "Auth reason",
+            "zh-TW": "認證原因",
+            "ja": "認証理由",
+            "ko": "인증 이유",
+            "es": "Razón de autenticación",
+            "fr": "Raison d'authentification",
+            "de": "Authentifizierungsgrund",
+            "pt-BR": "Motivo de autenticação",
+            "ru": "Причина аутентификации",
+            "ar": "سبب المصادقة",
+            "hi": "प्रमाणीकरण कारण"
           }
         }
       ],
@@ -429,14 +849,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "keychain.biometricAuthenticate",
       "descriptions": {
         "zh-CN": "使用生物识别进行认证",
-        "en-US": "Biometric authenticate of keychain"
+        "en-US": "Biometric authenticate of keychain",
+        "zh-TW": "使用生物識別進行認證",
+        "ja": "キーチェーンの生体認証",
+        "ko": "키체인 생체 인증",
+        "es": "Autenticación biométrica",
+        "fr": "Authentification biométrique",
+        "de": "Biometrische Authentifizierung",
+        "pt-BR": "Autenticação biométrica",
+        "ru": "Биометрическая аутентификация",
+        "ar": "المصادقة البيومترية",
+        "hi": "बायोमेट्रिक प्रमाणीकरण"
       },
       "group": "biometric",
       "description": "Biometric authenticate of keychain"
@@ -444,14 +884,34 @@
   ],
   "overviews": {
     "zh-CN": "提供操作系统安全凭据存储（macOS Keychain / Windows Credential Manager / Linux Secret Service）的读写能力，用于安全地存储密码、令牌等敏感信息。",
-    "en-US": "Secure credential storage using OS keychain (macOS Keychain / Windows Credential Manager / Linux Secret Service) for passwords, tokens, and other sensitive data."
+    "en-US": "Secure credential storage using OS keychain (macOS Keychain / Windows Credential Manager / Linux Secret Service) for passwords, tokens, and other sensitive data.",
+    "zh-TW": "提供操作系統安全凭据存儲（macOS Keychain / Windows Credential Manager / Linux Secret Service）的读写能力，用于安全地存儲密碼、令牌等敏感資訊。",
+    "ja": "OSキーチェーン(macOS Keychain/Windows Credential Manager/Linux Secret Service)によるセキュアな資格情報ストレージ。パスワード・トークン・機密データ。",
+    "ko": "OS 키체인(macOS Keychain/Windows Credential Manager/Linux Secret Service)을 사용한 보안 자격 증명 저장. 비밀번호, 토큰, 민감 데이터.",
+    "es": "Almacenamiento seguro de credenciales con el llavero del SO (macOS Keychain/Windows Credential Manager/Linux Secret Service). Contraseñas, tokens y datos sensibles.",
+    "fr": "Stockage sécurisé via le trousseau OS (macOS Keychain/Windows Credential Manager/Linux Secret Service). Mots de passe, jetons et données sensibles.",
+    "de": "Sichere Anmeldedatenspeicherung mit OS-Schlüsselbund (macOS Keychain/Windows Credential Manager/Linux Secret Service). Passwörter, Token, sensible Daten.",
+    "pt-BR": "Armazenamento seguro de credenciais via keychain do SO (macOS Keychain/Windows Credential Manager/Linux Secret Service). Senhas, tokens e dados sensíveis.",
+    "ru": "Безопасное хранение учётных данных через связку ключей ОС (macOS Keychain/Windows Credential Manager/Linux Secret Service). Пароли, токены и конфиденциальные данные.",
+    "ar": "تخزين بيانات اعتماد آمن عبر سلسلة مفاتيح النظام (macOS Keychain/Windows Credential Manager/Linux Secret Service). كلمات مرور ورموز وبيانات حساسة.",
+    "hi": "OS कीचेन (macOS Keychain/Windows Credential Manager/Linux Secret Service) से सुरक्षित क्रेडेंशियल स्टोरेज। पासवर्ड, टोकन और संवेदनशील डेटा।"
   },
   "types": [
     {
       "name": "KeychainItem",
       "descriptions": {
         "zh-CN": "钥匙串存储条目",
-        "en-US": "Keychain storage item"
+        "en-US": "Keychain storage item",
+        "zh-TW": "钥匙串存儲条目",
+        "ja": "キーチェーン保管アイテム",
+        "ko": "키체인 저장 항목",
+        "es": "Elemento de almacenamiento del llavero",
+        "fr": "Élément de stockage du trousseau",
+        "de": "Schlüsselbund-Speicherelement",
+        "pt-BR": "Item de armazenamento do chaveiro",
+        "ru": "Элемент хранилища связки ключей",
+        "ar": "عنصر تخزين سلسلة المفاتيح",
+        "hi": "कीचेन स्टोरेज आइटम"
       },
       "fields": [
         {
@@ -459,7 +919,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务标识",
-            "en-US": "Service identifier"
+            "en-US": "Service identifier",
+            "zh-TW": "服務標識",
+            "ja": "サービス識別子",
+            "ko": "서비스 식별자",
+            "es": "Identificador de servicio",
+            "fr": "Identifiant de service",
+            "de": "Dienstkennung",
+            "pt-BR": "Identificador de serviço",
+            "ru": "Идентификатор сервиса",
+            "ar": "معرّف الخدمة",
+            "hi": "सेवा पहचानकर्ता"
           }
         },
         {
@@ -467,7 +937,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "账户名",
-            "en-US": "Account name"
+            "en-US": "Account name",
+            "zh-TW": "账户名",
+            "ja": "アカウント名",
+            "ko": "계정 이름",
+            "es": "Nombre de cuenta",
+            "fr": "Nom du compte",
+            "de": "Kontoname",
+            "pt-BR": "Nome da conta",
+            "ru": "Имя учётной записи",
+            "ar": "اسم الحساب",
+            "hi": "खाता नाम"
           }
         },
         {
@@ -475,7 +955,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "显示标签",
-            "en-US": "Display label"
+            "en-US": "Display label",
+            "zh-TW": "顯示標簽",
+            "ja": "表示ラベル",
+            "ko": "표시 레이블",
+            "es": "Etiqueta de visualización",
+            "fr": "Libellé d'affichage",
+            "de": "Anzeigebezeichnung",
+            "pt-BR": "Rótulo de exibição",
+            "ru": "Метка отображения",
+            "ar": "تسمية العرض",
+            "hi": "प्रदर्शन लेबल"
           },
           "optional": true
         }
@@ -485,7 +975,17 @@
       "name": "BiometricInfo",
       "descriptions": {
         "zh-CN": "生物识别信息",
-        "en-US": "Biometric info"
+        "en-US": "Biometric info",
+        "zh-TW": "生物識別資訊",
+        "ja": "生体認証情報",
+        "ko": "생체 인증 정보",
+        "es": "Información biométrica",
+        "fr": "Informations biométriques",
+        "de": "Biometrische Informationen",
+        "pt-BR": "Informações biométricas",
+        "ru": "Биометрическая информация",
+        "ar": "معلومات بيومترية",
+        "hi": "बायोमेट्रिक जानकारी"
       },
       "fields": [
         {
@@ -493,7 +993,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否支持生物识别",
-            "en-US": "Whether biometric is available"
+            "en-US": "Whether biometric is available",
+            "zh-TW": "是否支援生物識別",
+            "ja": "生体認証が利用可能かどうか",
+            "ko": "생체 인증 사용 가능 여부",
+            "es": "Si la biometría está disponible",
+            "fr": "Si la biométrie est disponible",
+            "de": "Ob Biometrie verfügbar ist",
+            "pt-BR": "Se biometria está disponível",
+            "ru": "Доступна ли биометрия",
+            "ar": "ما إذا كانت البيومترية متاحة",
+            "hi": "बायोमेट्रिक उपलब्ध है या नहीं"
           }
         },
         {
@@ -501,7 +1011,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "识别类型(face/fingerprint)",
-            "en-US": "Biometric type (face/fingerprint)"
+            "en-US": "Biometric type (face/fingerprint)",
+            "zh-TW": "識別類型(face/fingerprint)",
+            "ja": "生体認証タイプ（顔/指紋）",
+            "ko": "생체 인증 유형(얼굴/지문)",
+            "es": "Tipo biométrico (rostro/huella)",
+            "fr": "Type biométrique (visage/empreinte)",
+            "de": "Biometrischer Typ (Gesicht/Fingerabdruck)",
+            "pt-BR": "Tipo biométrico (rosto/impressão digital)",
+            "ru": "Тип биометрии (лицо/отпечаток)",
+            "ar": "نوع البيومترية (وجه/بصمة)",
+            "hi": "बायोमेट्रिक प्रकार (चेहरा/उंगली की छाप)"
           }
         }
       ]

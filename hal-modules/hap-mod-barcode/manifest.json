@@ -24,16 +24,36 @@
   },
   "overviews": {
     "zh-CN": "提供条码和二维码的生成与识别能力。支持 QR Code、EAN-13、Code 128、Data Matrix 等多种格式，可自定义尺寸、颜色、纠错等级。",
-    "en-US": "Generate and recognize barcodes and QR codes. Supports QR Code, EAN-13, Code 128, Data Matrix and more, with customizable size, color, and error correction levels."
+    "en-US": "Generate and recognize barcodes and QR codes. Supports QR Code, EAN-13, Code 128, Data Matrix and more, with customizable size, color, and error correction levels.",
+    "zh-TW": "提供条碼和二维碼的生成與識別能力。支援 QR Code、EAN-13、Code 128、Data Matrix 等多種格式，可自定義尺寸、颜色、糾錯等級。",
+    "ja": "バーコード・QRコードの生成と認識。QR Code・EAN-13・Code 128・Data Matrix等対応。サイズ・色・誤り訂正レベルのカスタマイズ可能。",
+    "ko": "바코드 및 QR 코드 생성과 인식. QR Code, EAN-13, Code 128, Data Matrix 등 지원. 크기, 색상, 오류 정정 수준 설정 가능.",
+    "es": "Generar y reconocer códigos de barras y QR. QR Code, EAN-13, Code 128, Data Matrix y más. Tamaño, color y corrección personalizables.",
+    "fr": "Générer et reconnaître codes-barres et QR. QR Code, EAN-13, Code 128, Data Matrix et plus. Taille, couleur et correction personnalisables.",
+    "de": "Barcodes und QR-Codes erzeugen und erkennen. QR Code, EAN-13, Code 128, Data Matrix u.m. Größe, Farbe und Fehlerkorrekturstufe anpassbar.",
+    "pt-BR": "Gerar e reconhecer códigos de barras e QR. QR Code, EAN-13, Code 128, Data Matrix e mais. Tamanho, cor e correção personalizáveis.",
+    "ru": "Генерация и распознавание штрих-кодов и QR-кодов. QR Code, EAN-13, Code 128, Data Matrix и другие. Настройка размера, цвета и коррекции ошибок.",
+    "ar": "إنشاء والتعرف على الباركود وQR. يدعم QR Code وEAN-13 وCode 128 وData Matrix. حجم ولون ومستوى تصحيح قابل للتخصيص.",
+    "hi": "बारकोड और QR कोड जनरेट और पहचान। QR Code, EAN-13, Code 128, Data Matrix आदि। साइज, रंग और एरर करेक्शन अनुकूलन।"
   },
-  "permission": "",
+  "permission": "barcode",
   "functions": [
     {
       "name": "generate_qr",
       "symbol": "hap_barcode_generate_qr",
       "descriptions": {
         "zh-CN": "生成二维码图片数据",
-        "en-US": "Generate qr of barcode/QR code"
+        "en-US": "Generate qr of barcode/QR code",
+        "zh-TW": "產生二維碼圖片數據",
+        "ja": "バーコード/QRコードのQR生成",
+        "ko": "바코드/QR 코드의 QR 생성",
+        "es": "Generar código QR",
+        "fr": "Générer un code QR",
+        "de": "QR-Code generieren",
+        "pt-BR": "Gerar código QR",
+        "ru": "Сгенерировать QR-код",
+        "ar": "إنشاء رمز QR",
+        "hi": "QR कोड जनरेट करें"
       },
       "params": [
         {
@@ -41,7 +61,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据到编码",
-            "en-US": "Data to encode"
+            "en-US": "Data to encode",
+            "zh-TW": "數據到編碼",
+            "ja": "データへエンコーディング",
+            "ko": "데이터으로인코딩",
+            "es": "Datos a codificar",
+            "fr": "Données à encoder",
+            "de": "Zu kodierende Daten",
+            "pt-BR": "Dados para codificar",
+            "ru": "Данные для кодирования",
+            "ar": "بيانات للتشفير",
+            "hi": "एनकोड करने के लिए डेटा"
           }
         },
         {
@@ -49,7 +79,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "图像大小 px",
-            "en-US": "Image size px"
+            "en-US": "Image size px",
+            "zh-TW": "圖像大小 px",
+            "ja": "画像サイズ px",
+            "ko": "이미지 크기 (px)",
+            "es": "Tamaño de imagen (px)",
+            "fr": "Taille de l'image (px)",
+            "de": "Bildgröße (px)",
+            "pt-BR": "Tamanho da imagem (px)",
+            "ru": "Размер изображения (пикс.)",
+            "ar": "حجم الصورة (بكسل)",
+            "hi": "इमेज साइज़ (px)"
           },
           "optional": true,
           "default_value": "256"
@@ -59,7 +99,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "纠错等级",
-            "en-US": "Error correction level"
+            "en-US": "Error correction level",
+            "zh-TW": "纠錯等级",
+            "ja": "誤り訂正レベル",
+            "ko": "오류 정정 수준",
+            "es": "Nivel de corrección",
+            "fr": "Niveau de correction",
+            "de": "Fehlerkorrekturstufe",
+            "pt-BR": "Nível de correção",
+            "ru": "Уровень коррекции",
+            "ar": "مستوى تصحيح الخطأ",
+            "hi": "त्रुटि सुधार स्तर"
           },
           "optional": true
         },
@@ -68,7 +118,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出格式",
-            "en-US": "Output format"
+            "en-US": "Output format",
+            "zh-TW": "輸出格式",
+            "ja": "出力フォーマット",
+            "ko": "출력형식",
+            "es": "Formato de salida",
+            "fr": "Format de sortie",
+            "de": "Ausgabeformat",
+            "pt-BR": "Formato de saída",
+            "ru": "Формат вывода",
+            "ar": "تنسيق الإخراج",
+            "hi": "आउटपुट फ़ॉर्मैट"
           },
           "optional": true
         },
@@ -77,7 +137,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Fg 颜色",
-            "en-US": "Fg Color"
+            "en-US": "Fg Color",
+            "zh-TW": "Fg 顏色",
+            "ja": "Fg カラー",
+            "ko": "Fg 색상",
+            "es": "Color de primer plano",
+            "fr": "Couleur de premier plan",
+            "de": "Vordergrundfarbe",
+            "pt-BR": "Cor de primeiro plano",
+            "ru": "Цвет переднего плана",
+            "ar": "لون المقدمة",
+            "hi": "फ़ोरग्राउंड रंग"
           },
           "optional": true
         },
@@ -86,7 +156,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Bg 颜色",
-            "en-US": "Bg Color"
+            "en-US": "Bg Color",
+            "zh-TW": "Bg 顏色",
+            "ja": "Bg カラー",
+            "ko": "Bg 색상",
+            "es": "Color de fondo",
+            "fr": "Couleur de fond",
+            "de": "Hintergrundfarbe",
+            "pt-BR": "Cor de fundo",
+            "ru": "Цвет фона",
+            "ar": "لون الخلفية",
+            "hi": "बैकग्राउंड रंग"
           },
           "optional": true
         }
@@ -95,7 +175,17 @@
         "type": "string",
         "descs": {
           "zh-CN": "Base64 PNG 图像",
-          "en-US": "Base64 PNG"
+          "en-US": "Base64 PNG",
+          "zh-TW": "Base64 PNG 圖像",
+          "ja": "Base64 PNG 画像",
+          "ko": "Base64 PNG",
+          "es": "Base64 PNG",
+          "fr": "Base64 PNG",
+          "de": "Base64 PNG",
+          "pt-BR": "Base64 PNG",
+          "ru": "Base64 PNG",
+          "ar": "Base64 PNG",
+          "hi": "Base64 PNG"
         }
       },
       "bridge_path": "barcode.generateQr",
@@ -107,7 +197,17 @@
       "symbol": "hap_barcode_generate_barcode",
       "descriptions": {
         "zh-CN": "生成条形码图片数据",
-        "en-US": "Generate barcode of barcode/QR code"
+        "en-US": "Generate barcode of barcode/QR code",
+        "zh-TW": "產生條形碼圖片數據",
+        "ja": "バーコード/QRコードのバーコード生成",
+        "ko": "바코드/QR 코드의 바코드 생성",
+        "es": "Generar código de barras",
+        "fr": "Générer un code-barres",
+        "de": "Barcode generieren",
+        "pt-BR": "Gerar código de barras",
+        "ru": "Сгенерировать штрих-код",
+        "ar": "إنشاء باركود",
+        "hi": "बारकोड जनरेट करें"
       },
       "params": [
         {
@@ -115,7 +215,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         },
@@ -124,7 +234,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "code128/ean13/...",
-            "en-US": "code128/ean13/..."
+            "en-US": "code128/ean13/...",
+            "zh-TW": "code128/ean13/...",
+            "ja": "code128/ean13/...",
+            "ko": "code128/ean13/...",
+            "es": "code128/ean13/...",
+            "fr": "code128/ean13/...",
+            "de": "code128/ean13/...",
+            "pt-BR": "code128/ean13/...",
+            "ru": "code128/ean13/...",
+            "ar": "code128/ean13/...",
+            "hi": "code128/ean13/..."
           },
           "optional": true
         },
@@ -133,7 +253,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度（像素）",
-            "en-US": "Width in pixels"
+            "en-US": "Width in pixels",
+            "zh-TW": "寬度（像素）",
+            "ja": "幅（ピクセル）",
+            "ko": "너비 (픽셀)",
+            "es": "Ancho en píxeles",
+            "fr": "Largeur en pixels",
+            "de": "Breite in Pixel",
+            "pt-BR": "Largura em pixels",
+            "ru": "Ширина в пикселях",
+            "ar": "العرض بالبكسل",
+            "hi": "चौड़ाई पिक्सेल में"
           },
           "optional": true,
           "desc": "Width in pixels"
@@ -143,7 +273,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度（像素）",
-            "en-US": "Height in pixels"
+            "en-US": "Height in pixels",
+            "zh-TW": "高度（像素）",
+            "ja": "高さ（ピクセル）",
+            "ko": "높이 (픽셀)",
+            "es": "Alto en píxeles",
+            "fr": "Hauteur en pixels",
+            "de": "Höhe in Pixel",
+            "pt-BR": "Altura em pixels",
+            "ru": "Высота в пикселях",
+            "ar": "الارتفاع بالبكسل",
+            "hi": "ऊँचाई पिक्सेल में"
           },
           "optional": true,
           "default_value": "80",
@@ -154,7 +294,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "显示文本",
-            "en-US": "Show Text"
+            "en-US": "Show Text",
+            "zh-TW": "顯示文字",
+            "ja": "テキスト表示",
+            "ko": "텍스트 표시",
+            "es": "Mostrar texto",
+            "fr": "Afficher le texte",
+            "de": "Text anzeigen",
+            "pt-BR": "Mostrar texto",
+            "ru": "Показать текст",
+            "ar": "عرض النص",
+            "hi": "टेक्स्ट दिखाएं"
           },
           "optional": true
         }
@@ -163,7 +313,17 @@
         "type": "string",
         "descs": {
           "zh-CN": "Base64 PNG 图像",
-          "en-US": "Base64 PNG"
+          "en-US": "Base64 PNG",
+          "zh-TW": "Base64 PNG 圖像",
+          "ja": "Base64 PNG 画像",
+          "ko": "Base64 PNG",
+          "es": "Base64 PNG",
+          "fr": "Base64 PNG",
+          "de": "Base64 PNG",
+          "pt-BR": "Base64 PNG",
+          "ru": "Base64 PNG",
+          "ar": "Base64 PNG",
+          "hi": "Base64 PNG"
         }
       },
       "bridge_path": "barcode.generateBarcode",
@@ -175,7 +335,17 @@
       "symbol": "hap_barcode_save_qr",
       "descriptions": {
         "zh-CN": "生成二维码并保存到文件",
-        "en-US": "Save qr of barcode/QR code"
+        "en-US": "Save qr of barcode/QR code",
+        "zh-TW": "產生二維碼並保存到檔案",
+        "ja": "バーコード/QRコードのQRを保存",
+        "ko": "바코드/QR 코드의 QR 저장",
+        "es": "Guardar código QR",
+        "fr": "Enregistrer le code QR",
+        "de": "QR-Code speichern",
+        "pt-BR": "Salvar código QR",
+        "ru": "Сохранить QR-код",
+        "ar": "حفظ رمز QR",
+        "hi": "QR कोड सहेजें"
       },
       "params": [
         {
@@ -183,7 +353,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         },
@@ -192,7 +372,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -200,7 +390,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "大小 px",
-            "en-US": "Size px"
+            "en-US": "Size px",
+            "zh-TW": "大小 px",
+            "ja": "サイズ px",
+            "ko": "크기 px",
+            "es": "Tamaño (px)",
+            "fr": "Taille (px)",
+            "de": "Größe (px)",
+            "pt-BR": "Tamanho (px)",
+            "ru": "Размер (пикс.)",
+            "ar": "الحجم (بكسل)",
+            "hi": "साइज़ (px)"
           },
           "optional": true,
           "default_value": "256"
@@ -210,7 +410,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "纠错等级",
-            "en-US": "Error correction level"
+            "en-US": "Error correction level",
+            "zh-TW": "纠錯等级",
+            "ja": "誤り訂正レベル",
+            "ko": "오류 정정 수준",
+            "es": "Nivel de corrección",
+            "fr": "Niveau de correction",
+            "de": "Fehlerkorrekturstufe",
+            "pt-BR": "Nível de correção",
+            "ru": "Уровень коррекции",
+            "ar": "مستوى تصحيح الخطأ",
+            "hi": "त्रुटि सुधार स्तर"
           },
           "optional": true
         },
@@ -219,7 +429,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出格式",
-            "en-US": "Output format"
+            "en-US": "Output format",
+            "zh-TW": "輸出格式",
+            "ja": "出力フォーマット",
+            "ko": "출력형식",
+            "es": "Formato de salida",
+            "fr": "Format de sortie",
+            "de": "Ausgabeformat",
+            "pt-BR": "Formato de saída",
+            "ru": "Формат вывода",
+            "ar": "تنسيق الإخراج",
+            "hi": "आउटपुट फ़ॉर्मैट"
           },
           "optional": true
         },
@@ -228,7 +448,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Fg 颜色",
-            "en-US": "Fg Color"
+            "en-US": "Fg Color",
+            "zh-TW": "Fg 顏色",
+            "ja": "Fg カラー",
+            "ko": "Fg 색상",
+            "es": "Color de primer plano",
+            "fr": "Couleur de premier plan",
+            "de": "Vordergrundfarbe",
+            "pt-BR": "Cor de primeiro plano",
+            "ru": "Цвет переднего плана",
+            "ar": "لون المقدمة",
+            "hi": "फ़ोरग्राउंड रंग"
           },
           "optional": true
         },
@@ -237,7 +467,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Bg 颜色",
-            "en-US": "Bg Color"
+            "en-US": "Bg Color",
+            "zh-TW": "Bg 顏色",
+            "ja": "Bg カラー",
+            "ko": "Bg 색상",
+            "es": "Color de fondo",
+            "fr": "Couleur de fond",
+            "de": "Hintergrundfarbe",
+            "pt-BR": "Cor de fundo",
+            "ru": "Цвет фона",
+            "ar": "لون الخلفية",
+            "hi": "बैकग्राउंड रंग"
           },
           "optional": true
         }
@@ -246,7 +486,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
@@ -259,7 +509,17 @@
       "symbol": "hap_barcode_save_barcode",
       "descriptions": {
         "zh-CN": "生成条形码并保存到文件",
-        "en-US": "Save barcode of barcode/QR code"
+        "en-US": "Save barcode of barcode/QR code",
+        "zh-TW": "產生條形碼並保存到檔案",
+        "ja": "バーコード/QRコードのバーコードを保存",
+        "ko": "바코드/QR 코드의 바코드 저장",
+        "es": "Guardar código de barras",
+        "fr": "Enregistrer le code-barres",
+        "de": "Barcode speichern",
+        "pt-BR": "Salvar código de barras",
+        "ru": "Сохранить штрих-код",
+        "ar": "حفظ الباركود",
+        "hi": "बारकोड सहेजें"
       },
       "params": [
         {
@@ -267,7 +527,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         },
@@ -276,7 +546,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "条码格式",
-            "en-US": "Barcode format"
+            "en-US": "Barcode format",
+            "zh-TW": "條碼格式",
+            "ja": "バーコード形式",
+            "ko": "바코드 형식",
+            "es": "Formato de código de barras",
+            "fr": "Format de code-barres",
+            "de": "Barcode-Format",
+            "pt-BR": "Formato do código de barras",
+            "ru": "Формат штрих-кода",
+            "ar": "تنسيق الباركود",
+            "hi": "बारकोड फ़ॉर्मैट"
           },
           "optional": true
         },
@@ -285,7 +565,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -293,7 +583,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度(像素)",
-            "en-US": "Width px"
+            "en-US": "Width px",
+            "zh-TW": "寬度(像素)",
+            "ja": "幅(ピクセル)",
+            "ko": "너비 (px)",
+            "es": "Ancho (px)",
+            "fr": "Largeur (px)",
+            "de": "Breite (px)",
+            "pt-BR": "Largura (px)",
+            "ru": "Ширина (пикс.)",
+            "ar": "العرض (بكسل)",
+            "hi": "चौड़ाई (px)"
           },
           "optional": true
         },
@@ -302,7 +602,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度(像素)",
-            "en-US": "Height px"
+            "en-US": "Height px",
+            "zh-TW": "高度(像素)",
+            "ja": "高さ(ピクセル)",
+            "ko": "높이 (px)",
+            "es": "Alto (px)",
+            "fr": "Hauteur (px)",
+            "de": "Höhe (px)",
+            "pt-BR": "Altura (px)",
+            "ru": "Высота (пикс.)",
+            "ar": "الارتفاع (بكسل)",
+            "hi": "ऊंचाई (px)"
           },
           "optional": true,
           "default_value": "80"
@@ -312,7 +622,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
@@ -325,7 +645,17 @@
       "symbol": "hap_barcode_decode_image",
       "descriptions": {
         "zh-CN": "从图片文件中识别解码条形码/二维码",
-        "en-US": "Decode image of barcode/QR code"
+        "en-US": "Decode image of barcode/QR code",
+        "zh-TW": "從圖片檔案中識別解碼條形碼/二維碼",
+        "ja": "バーコード/QRコードの画像をデコード",
+        "ko": "바코드/QR 코드 이미지 디코딩",
+        "es": "Decodificar imagen de código de barras/QR",
+        "fr": "Décoder l'image du code-barres/QR",
+        "de": "Barcode/QR-Code-Bild dekodieren",
+        "pt-BR": "Decodificar imagem de código de barras/QR",
+        "ru": "Декодировать изображение штрих-кода/QR",
+        "ar": "فك تشفير صورة الباركود/رمز QR",
+        "hi": "बारकोड/QR कोड इमेज डीकोड"
       },
       "params": [
         {
@@ -333,7 +663,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图像路径",
-            "en-US": "Image path"
+            "en-US": "Image path",
+            "zh-TW": "圖像路徑",
+            "ja": "画像パス",
+            "ko": "이미지 경로",
+            "es": "Ruta de la imagen",
+            "fr": "Chemin de l'image",
+            "de": "Bildpfad",
+            "pt-BR": "Caminho da imagem",
+            "ru": "Путь к изображению",
+            "ar": "مسار الصورة",
+            "hi": "इमेज पथ"
           }
         }
       ],
@@ -341,7 +681,17 @@
         "type": "array",
         "descs": {
           "zh-CN": "识别结果",
-          "en-US": "Decoded results"
+          "en-US": "Decoded results",
+          "zh-TW": "識別結果",
+          "ja": "デコード結果",
+          "ko": "디코딩 결과",
+          "es": "Resultados decodificados",
+          "fr": "Résultats décodés",
+          "de": "Dekodierte Ergebnisse",
+          "pt-BR": "Resultados decodificados",
+          "ru": "Результаты декодирования",
+          "ar": "النتائج المفكوكة",
+          "hi": "डीकोड परिणाम"
         }
       },
       "bridge_path": "barcode.decodeImage",
@@ -353,7 +703,17 @@
       "symbol": "hap_barcode_decode_base64",
       "descriptions": {
         "zh-CN": "从 Base64 解码",
-        "en-US": "Decode from base64"
+        "en-US": "Decode from base64",
+        "zh-TW": "從 Base64 解碼",
+        "ja": "から Base64 デコード",
+        "ko": "에서 Base64 디코딩",
+        "es": "Decodificar desde Base64",
+        "fr": "Décoder depuis Base64",
+        "de": "Aus Base64 dekodieren",
+        "pt-BR": "Decodificar de Base64",
+        "ru": "Декодировать из Base64",
+        "ar": "فك التشفير من Base64",
+        "hi": "Base64 से डीकोड"
       },
       "params": [
         {
@@ -361,7 +721,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64 图像",
-            "en-US": "Base64 image"
+            "en-US": "Base64 image",
+            "zh-TW": "Base64 圖像",
+            "ja": "Base64 画像",
+            "ko": "Base64 이미지",
+            "es": "Imagen Base64",
+            "fr": "Image Base64",
+            "de": "Base64-Bild",
+            "pt-BR": "Imagem Base64",
+            "ru": "Изображение Base64",
+            "ar": "صورة Base64",
+            "hi": "Base64 इमेज"
           }
         }
       ],
@@ -369,7 +739,17 @@
         "type": "array",
         "descs": {
           "zh-CN": "识别结果",
-          "en-US": "Decoded results"
+          "en-US": "Decoded results",
+          "zh-TW": "識別結果",
+          "ja": "デコード結果",
+          "ko": "디코딩 결과",
+          "es": "Resultados decodificados",
+          "fr": "Résultats décodés",
+          "de": "Dekodierte Ergebnisse",
+          "pt-BR": "Resultados decodificados",
+          "ru": "Результаты декодирования",
+          "ar": "النتائج المفكوكة",
+          "hi": "डीकोड परिणाम"
         }
       },
       "bridge_path": "barcode.decodeBase64",
@@ -380,7 +760,17 @@
       "symbol": "hap_barcode_generate_qr_with_logo",
       "descriptions": {
         "zh-CN": "生成带 Logo 二维码",
-        "en-US": "QR with logo"
+        "en-US": "QR with logo",
+        "zh-TW": "產生帶 Logo 二維碼",
+        "ja": "ロゴ付きQRコード",
+        "ko": "로고가 있는 QR 코드",
+        "es": "QR con logotipo",
+        "fr": "QR avec logo",
+        "de": "QR mit Logo",
+        "pt-BR": "QR com logotipo",
+        "ru": "QR с логотипом",
+        "ar": "QR مع شعار",
+        "hi": "लोगो के साथ QR"
       },
       "params": [
         {
@@ -388,7 +778,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         },
@@ -397,7 +797,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Logo 图像路径",
-            "en-US": "Logo image path"
+            "en-US": "Logo image path",
+            "zh-TW": "Logo 圖像路徑",
+            "ja": "Logo 画像パス",
+            "ko": "로고 이미지 경로",
+            "es": "Ruta de imagen del logotipo",
+            "fr": "Chemin de l'image du logo",
+            "de": "Logo-Bildpfad",
+            "pt-BR": "Caminho da imagem do logotipo",
+            "ru": "Путь к изображению логотипа",
+            "ar": "مسار صورة الشعار",
+            "hi": "लोगो इमेज पथ"
           }
         },
         {
@@ -405,7 +815,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -413,7 +833,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "大小 px",
-            "en-US": "Size px"
+            "en-US": "Size px",
+            "zh-TW": "大小 px",
+            "ja": "サイズ px",
+            "ko": "크기 px",
+            "es": "Tamaño (px)",
+            "fr": "Taille (px)",
+            "de": "Größe (px)",
+            "pt-BR": "Tamanho (px)",
+            "ru": "Размер (пикс.)",
+            "ar": "الحجم (بكسل)",
+            "hi": "साइज़ (px)"
           },
           "optional": true,
           "default_value": "256"
@@ -423,7 +853,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "纠错等级",
-            "en-US": "Error correction level"
+            "en-US": "Error correction level",
+            "zh-TW": "纠錯等级",
+            "ja": "誤り訂正レベル",
+            "ko": "오류 정정 수준",
+            "es": "Nivel de corrección",
+            "fr": "Niveau de correction",
+            "de": "Fehlerkorrekturstufe",
+            "pt-BR": "Nível de correção",
+            "ru": "Уровень коррекции",
+            "ar": "مستوى تصحيح الخطأ",
+            "hi": "त्रुटि सुधार स्तर"
           },
           "optional": true
         },
@@ -432,7 +872,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Logo 大小比例",
-            "en-US": "Logo size ratio"
+            "en-US": "Logo size ratio",
+            "zh-TW": "Logo 大小比例",
+            "ja": "Logo サイズ比率",
+            "ko": "로고 크기 비율",
+            "es": "Proporción del tamaño del logotipo",
+            "fr": "Ratio de taille du logo",
+            "de": "Logo-Größenverhältnis",
+            "pt-BR": "Proporção do tamanho do logotipo",
+            "ru": "Соотношение размера логотипа",
+            "ar": "نسبة حجم الشعار",
+            "hi": "लोगो साइज़ अनुपात"
           },
           "optional": true,
           "default_value": "0.2"
@@ -442,7 +892,17 @@
         "type": "string",
         "descs": {
           "zh-CN": "Base64 PNG 图像",
-          "en-US": "Base64 PNG"
+          "en-US": "Base64 PNG",
+          "zh-TW": "Base64 PNG 圖像",
+          "ja": "Base64 PNG 画像",
+          "ko": "Base64 PNG",
+          "es": "Base64 PNG",
+          "fr": "Base64 PNG",
+          "de": "Base64 PNG",
+          "pt-BR": "Base64 PNG",
+          "ru": "Base64 PNG",
+          "ar": "Base64 PNG",
+          "hi": "Base64 PNG"
         }
       },
       "bridge_path": "barcode.generateQrWithLogo",
@@ -454,7 +914,17 @@
       "name": "BarcodeResult",
       "descriptions": {
         "zh-CN": "条码/二维码扫描识别结果",
-        "en-US": "Barcode/QR code scan result"
+        "en-US": "Barcode/QR code scan result",
+        "zh-TW": "条碼/二维碼掃描識別结果",
+        "ja": "バーコード/QRコードスキャン結果",
+        "ko": "바코드/QR코드 스캔 결과",
+        "es": "Resultado del escaneo de código de barras/QR",
+        "fr": "Résultat du scan de code-barres/QR",
+        "de": "Barcode/QR-Code-Scanergebnis",
+        "pt-BR": "Resultado da leitura de código de barras/QR",
+        "ru": "Результат сканирования штрихкода/QR-кода",
+        "ar": "نتيجة مسح الباركود/رمز QR",
+        "hi": "बारकोड/QR कोड स्कैन परिणाम"
       },
       "fields": [
         {
@@ -462,7 +932,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "识别到的文本内容",
-            "en-US": "Decoded text content"
+            "en-US": "Decoded text content",
+            "zh-TW": "識別到的文本內容",
+            "ja": "デコード済みテキスト内容",
+            "ko": "디코딩된 텍스트 내용",
+            "es": "Contenido de texto decodificado",
+            "fr": "Contenu de texte décodé",
+            "de": "Dekodierter Textinhalt",
+            "pt-BR": "Conteúdo de texto decodificado",
+            "ru": "Декодированное текстовое содержимое",
+            "ar": "محتوى النص المفكوك",
+            "hi": "डिकोडेड टेक्स्ट सामग्री"
           }
         },
         {
@@ -470,7 +950,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "条码格式（qrcode/ean13/code128等）",
-            "en-US": "Barcode format (qrcode/ean13/code128 etc)"
+            "en-US": "Barcode format (qrcode/ean13/code128 etc)",
+            "zh-TW": "条碼格式（qrcode/ean13/code128等）",
+            "ja": "バーコード形式（qrcode/ean13/code128等）",
+            "ko": "바코드 형식(qrcode/ean13/code128 등)",
+            "es": "Formato de código de barras (qrcode/ean13/code128 etc)",
+            "fr": "Format de code-barres (qrcode/ean13/code128 etc)",
+            "de": "Barcode-Format (qrcode/ean13/code128 etc)",
+            "pt-BR": "Formato de código de barras (qrcode/ean13/code128 etc)",
+            "ru": "Формат штрихкода (qrcode/ean13/code128 и т.д.)",
+            "ar": "تنسيق الباركود (qrcode/ean13/code128 إلخ)",
+            "hi": "बारकोड प्रारूप (qrcode/ean13/code128 आदि)"
           }
         },
         {
@@ -478,7 +968,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "识别置信度（0-1）",
-            "en-US": "Recognition confidence (0-1)"
+            "en-US": "Recognition confidence (0-1)",
+            "zh-TW": "識別置信度（0-1）",
+            "ja": "認識信頼度(0-1)",
+            "ko": "인식 신뢰도(0-1)",
+            "es": "Confianza de reconocimiento(0-1)",
+            "fr": "Confiance de reconnaissance(0-1)",
+            "de": "Erkennungskonfidenz(0-1)",
+            "pt-BR": "Confiança do reconhecimento(0-1)",
+            "ru": "Достоверность распознавания(0-1)",
+            "ar": "ثقة التعرّف(0-1)",
+            "hi": "पहचान विश्वसनीयता(0-1)"
           }
         }
       ]
@@ -491,7 +991,17 @@
       "type": "string",
       "descs": {
         "zh-CN": "二维码格式",
-        "en-US": "QR Code format"
+        "en-US": "QR Code format",
+        "zh-TW": "二维碼格式",
+        "ja": "QRコード形式",
+        "ko": "QR 코드 형식",
+        "es": "Formato de código QR",
+        "fr": "Format de code QR",
+        "de": "QR-Code-Format",
+        "pt-BR": "Formato de código QR",
+        "ru": "Формат QR-кода",
+        "ar": "تنسيق رمز QR",
+        "hi": "QR कोड प्रारूप"
       }
     },
     {
@@ -500,7 +1010,17 @@
       "type": "string",
       "descs": {
         "zh-CN": "EAN-13 条码格式",
-        "en-US": "EAN-13 barcode format"
+        "en-US": "EAN-13 barcode format",
+        "zh-TW": "EAN-13 条碼格式",
+        "ja": "EAN-13バーコード形式",
+        "ko": "EAN-13 바코드 형식",
+        "es": "Formato de código de barras EAN-13",
+        "fr": "Format de code-barres EAN-13",
+        "de": "EAN-13-Barcode-Format",
+        "pt-BR": "Formato de código de barras EAN-13",
+        "ru": "Формат штрихкода EAN-13",
+        "ar": "تنسيق باركود EAN-13",
+        "hi": "EAN-13 बारकोड प्रारूप"
       }
     },
     {
@@ -509,7 +1029,17 @@
       "type": "string",
       "descs": {
         "zh-CN": "Code 128 条码格式",
-        "en-US": "Code 128 barcode format"
+        "en-US": "Code 128 barcode format",
+        "zh-TW": "Code 128 条碼格式",
+        "ja": "Code 128バーコード形式",
+        "ko": "Code 128 바코드 형식",
+        "es": "Formato de código de barras Code 128",
+        "fr": "Format de code-barres Code 128",
+        "de": "Code 128 Barcode-Format",
+        "pt-BR": "Formato de código de barras Code 128",
+        "ru": "Формат штрихкода Code 128",
+        "ar": "تنسيق باركود Code 128",
+        "hi": "Code 128 बारकोड प्रारूप"
       }
     }
   ]

@@ -24,7 +24,17 @@
   },
   "overviews": {
     "zh-CN": "提供键盘和鼠标模拟输入能力，支持按键模拟、文本输入、鼠标移动/点击/拖拽、组合键、滚轮操作等自动化功能。",
-    "en-US": "Keyboard and mouse input simulation including key press, text input, mouse move/click/drag, key combinations, and scroll operations."
+    "en-US": "Keyboard and mouse input simulation including key press, text input, mouse move/click/drag, key combinations, and scroll operations.",
+    "zh-TW": "提供鍵盘和鼠標模擬输入能力，支援按鍵模擬、文本输入、鼠標移動/点擊/拖拽、組合鍵、滚輪操作等自動化功能。",
+    "ja": "キーボード・マウス入力シミュレーション：キー押下・テキスト入力・マウス移動/クリック/ドラッグ・キーコンビネーション・スクロール。",
+    "ko": "키보드 및 마우스 입력 시뮬레이션: 키 누르기, 텍스트 입력, 마우스 이동/클릭/드래그, 키 조합, 스크롤.",
+    "es": "Simulación de teclado y ratón: teclas, texto, movimiento/clic/arrastre, combinaciones y desplazamiento.",
+    "fr": "Simulation clavier et souris : touches, texte, déplacement/clic/glisser, combinaisons et défilement.",
+    "de": "Tastatur- und Maus-Simulation: Tasten, Text, Bewegen/Klicken/Ziehen, Kombinationen und Scrollen.",
+    "pt-BR": "Simulação de teclado e mouse: teclas, texto, mover/clicar/arrastar, combinações e rolagem.",
+    "ru": "Симуляция клавиатуры и мыши: нажатия, текст, перемещение/клик/перетаскивание, комбинации и прокрутка.",
+    "ar": "محاكاة لوحة المفاتيح والماوس: ضغط مفاتيح ونص وتحريك/نقر/سحب وتوليفات وتمرير.",
+    "hi": "कीबोर्ड और माउस सिमुलेशन: की प्रेस, टेक्स्ट, माउस मूव/क्लिक/ड्रैग, की कॉम्बो और स्क्रॉल।"
   },
   "permission": "input",
   "functions": [
@@ -33,7 +43,17 @@
       "symbol": "hap_input_key_press",
       "descriptions": {
         "zh-CN": "模拟按下并释放一个键盘按键，支持组合修饰键",
-        "en-US": "Simulate key press and release with optional modifier keys"
+        "en-US": "Simulate key press and release with optional modifier keys",
+        "zh-TW": "模擬按下並釋放一個鍵盤按鍵，支持組合修飾鍵",
+        "ja": "修飾キー付きでキーの押下とリリースをシミュレート",
+        "ko": "선택적 수정 키와 함께 키 누르기 및 놓기 시뮬레이션",
+        "es": "Simular pulsación de tecla con modificadores opcionales",
+        "fr": "Simuler l'appui/relâchement de touche avec modificateurs",
+        "de": "Tastendruck mit optionalen Modifikatoren simulieren",
+        "pt-BR": "Simular pressionamento de tecla com modificadores opcionais",
+        "ru": "Имитировать нажатие клавиши с модификаторами",
+        "ar": "محاكاة ضغط وتحرير المفتاح مع مفاتيح معدلة",
+        "hi": "वैकल्पिक मॉडिफायर कुंजियों के साथ कुंजी प्रेस सिमुलेट करें"
       },
       "params": [
         {
@@ -41,7 +61,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "键名(如enter/tab/escape/a/1)",
-            "en-US": "Key name (e.g. enter/tab/escape/a/1)"
+            "en-US": "Key name (e.g. enter/tab/escape/a/1)",
+            "zh-TW": "鍵名(如enter/tab/escape/a/1)",
+            "ja": "キー名（例: enter/tab/escape/a/1）",
+            "ko": "키 이름 (예: enter/tab/escape/a/1)",
+            "es": "Nombre de tecla (ej. enter/tab/escape)",
+            "fr": "Nom de touche (ex. enter/tab/escape)",
+            "de": "Tastenname (z.B. enter/tab/escape)",
+            "pt-BR": "Nome da tecla (ex. enter/tab/escape)",
+            "ru": "Имя клавиши (напр. enter/tab/escape)",
+            "ar": "اسم المفتاح (مثل enter/tab/escape)",
+            "hi": "कुंजी नाम (जैसे enter/tab/escape)"
           }
         },
         {
@@ -50,7 +80,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "修饰键列表[ctrl/alt/shift/meta]",
-            "en-US": "Modifiers [ctrl/alt/shift/meta]"
+            "en-US": "Modifiers [ctrl/alt/shift/meta]",
+            "zh-TW": "修飾鍵列表[ctrl/alt/shift/meta]",
+            "ja": "修飾キー [ctrl/alt/shift/meta]",
+            "ko": "수정 키 [ctrl/alt/shift/meta]",
+            "es": "Modificadores [ctrl/alt/shift/meta]",
+            "fr": "Modificateurs [ctrl/alt/shift/meta]",
+            "de": "Modifikatoren [ctrl/alt/shift/meta]",
+            "pt-BR": "Modificadores [ctrl/alt/shift/meta]",
+            "ru": "Модификаторы [ctrl/alt/shift/meta]",
+            "ar": "المعدلات [ctrl/alt/shift/meta]",
+            "hi": "मॉडिफायर [ctrl/alt/shift/meta]"
           }
         }
       ],
@@ -58,7 +98,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "input.keyPress",
@@ -70,7 +120,17 @@
       "symbol": "hap_input_key_down",
       "descriptions": {
         "zh-CN": "模拟按住一个键盘按键（不释放）",
-        "en-US": "Simulate holding down a key (without releasing)"
+        "en-US": "Simulate holding down a key (without releasing)",
+        "zh-TW": "模擬按住一個鍵盤按鍵（不釋放）",
+        "ja": "キーの長押しをシミュレート（離さない）",
+        "ko": "키를 누르고 있는 시뮬레이션 (놓지 않음)",
+        "es": "Simular mantener tecla presionada",
+        "fr": "Simuler le maintien d'une touche",
+        "de": "Tastenhalten simulieren",
+        "pt-BR": "Simular manter tecla pressionada",
+        "ru": "Симуляция удержания клавиши",
+        "ar": "محاكاة الضغط المستمر على مفتاح",
+        "hi": "कुंजी दबाए रखने का अनुकरण"
       },
       "params": [
         {
@@ -78,7 +138,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要按下的键名（如Enter/Tab/A）",
-            "en-US": "Key name to press down (e.g. Enter/Tab/A)"
+            "en-US": "Key name to press down (e.g. Enter/Tab/A)",
+            "zh-TW": "要按下的鍵名（如Enter/Tab/A）",
+            "ja": "押下するキー名（例：Enter/Tab/A）",
+            "ko": "누를 키 이름 (예: Enter/Tab/A)",
+            "es": "Nombre de tecla a presionar (ej. Enter/Tab/A)",
+            "fr": "Nom de la touche à appuyer (ex. Enter/Tab/A)",
+            "de": "Tastenname zum Drücken (z.B. Enter/Tab/A)",
+            "pt-BR": "Nome da tecla a pressionar (ex. Enter/Tab/A)",
+            "ru": "Имя клавиши для нажатия (напр. Enter/Tab/A)",
+            "ar": "اسم المفتاح للضغط (مثل Enter/Tab/A)",
+            "hi": "दबाने के लिए कुंजी का नाम (जैसे Enter/Tab/A)"
           },
           "desc": "Key name to press down (e.g. Enter/Tab/A)"
         }
@@ -87,7 +157,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "input.keyDown",
@@ -99,7 +179,17 @@
       "symbol": "hap_input_key_up",
       "descriptions": {
         "zh-CN": "释放之前按住的键盘按键",
-        "en-US": "Release a previously held key"
+        "en-US": "Release a previously held key",
+        "zh-TW": "釋放之前按住的鍵盤按鍵",
+        "ja": "以前に押されたキーを解放",
+        "ko": "이전에 눌린 키 놓기",
+        "es": "Soltar una tecla previamente presionada",
+        "fr": "Relâcher une touche précédemment maintenue",
+        "de": "Zuvor gehaltene Taste loslassen",
+        "pt-BR": "Soltar uma tecla previamente pressionada",
+        "ru": "Отпустить ранее нажатую клавишу",
+        "ar": "تحرير مفتاح مضغوط سابقاً",
+        "hi": "पहले से दबी हुई कुंजी छोड़ें"
       },
       "params": [
         {
@@ -107,7 +197,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要释放的键名（如Enter/Tab/A）",
-            "en-US": "Key name to release (e.g. Enter/Tab/A)"
+            "en-US": "Key name to release (e.g. Enter/Tab/A)",
+            "zh-TW": "要釋放的鍵名（如Enter/Tab/A）",
+            "ja": "リリースするキー名（例：Enter/Tab/A）",
+            "ko": "놓을 키 이름 (예: Enter/Tab/A)",
+            "es": "Nombre de tecla a soltar (ej. Enter/Tab/A)",
+            "fr": "Nom de la touche à relâcher (ex. Enter/Tab/A)",
+            "de": "Tastenname zum Loslassen (z.B. Enter/Tab/A)",
+            "pt-BR": "Nome da tecla a soltar (ex. Enter/Tab/A)",
+            "ru": "Имя клавиши для отпускания (напр. Enter/Tab/A)",
+            "ar": "اسم المفتاح للتحرير (مثل Enter/Tab/A)",
+            "hi": "छोड़ने के लिए कुंजी का नाम (जैसे Enter/Tab/A)"
           },
           "desc": "Key name to release (e.g. Enter/Tab/A)"
         }
@@ -116,7 +216,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "input.keyUp",
@@ -128,7 +238,17 @@
       "symbol": "hap_input_type_text",
       "descriptions": {
         "zh-CN": "模拟逐字输入一段文本，支持设置每字符间的延迟",
-        "en-US": "Simulate typing text character by character with optional delay"
+        "en-US": "Simulate typing text character by character with optional delay",
+        "zh-TW": "模擬逐字輸入一段文字，支持設定每字元間的延迟",
+        "ja": "任意の遅延付きで1文字ずつテキスト入力をシミュレーション",
+        "ko": "선택적 지연과 함께 문자별 텍스트 입력 시뮬레이션",
+        "es": "Simular escritura carácter por carácter con retraso opcional",
+        "fr": "Simuler la saisie caractère par caractère avec délai",
+        "de": "Zeichenweises Tippen mit optionaler Verzögerung simulieren",
+        "pt-BR": "Simular digitação caractere por caractere com atraso opcional",
+        "ru": "Имитировать посимвольный ввод текста с задержкой",
+        "ar": "محاكاة كتابة النص حرفاً بحرف مع تأخير اختياري",
+        "hi": "वैकल्पिक विलंब के साथ अक्षर-दर-अक्षर टाइपिंग सिमुलेट करें"
       },
       "params": [
         {
@@ -136,7 +256,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文本内容",
-            "en-US": "Text content"
+            "en-US": "Text content",
+            "zh-TW": "文字內容",
+            "ja": "テキストコンテンツ",
+            "ko": "텍스트콘텐츠",
+            "es": "Contenido de texto",
+            "fr": "Contenu du texte",
+            "de": "Textinhalt",
+            "pt-BR": "Conteúdo de texto",
+            "ru": "Текстовое содержимое",
+            "ar": "محتوى نصي",
+            "hi": "टेक्स्ट सामग्री"
           }
         },
         {
@@ -146,7 +276,17 @@
           "default_value": "0",
           "descs": {
             "zh-CN": "字符间延迟(毫秒)",
-            "en-US": "Delay between chars (ms)"
+            "en-US": "Delay between chars (ms)",
+            "zh-TW": "字元間延迟(毫秒)",
+            "ja": "文字间遅延(毫秒)",
+            "ko": "문자 간 지연 (ms)",
+            "es": "Retraso entre caracteres (ms)",
+            "fr": "Délai entre caractères (ms)",
+            "de": "Verzögerung zwischen Zeichen (ms)",
+            "pt-BR": "Atraso entre caracteres (ms)",
+            "ru": "Задержка между символами (мс)",
+            "ar": "التأخير بين الأحرف (مللي ثانية)",
+            "hi": "अक्षरों के बीच विलंब (ms)"
           }
         }
       ],
@@ -154,7 +294,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "input.typeText",
@@ -166,7 +316,17 @@
       "symbol": "hap_input_mouse_move",
       "descriptions": {
         "zh-CN": "将鼠标移动到屏幕指定坐标位置，支持平滑移动",
-        "en-US": "Move mouse to specified screen coordinates with smooth option"
+        "en-US": "Move mouse to specified screen coordinates with smooth option",
+        "zh-TW": "將鼠標移動到屏幕指定坐標位置，支持平滑移動",
+        "ja": "スムーズオプション付きで指定画面座標にマウスを移動",
+        "ko": "부드러운 옵션으로 지정 화면 좌표로 마우스 이동",
+        "es": "Mover ratón a coordenadas con opción suave",
+        "fr": "Déplacer la souris aux coordonnées avec option lisse",
+        "de": "Maus zu Bildschirmkoordinaten bewegen (glatt)",
+        "pt-BR": "Mover mouse para coordenadas com opção suave",
+        "ru": "Переместить мышь к координатам с плавным движением",
+        "ar": "تحريك الماوس إلى إحداثيات محددة بحركة سلسة",
+        "hi": "सुचारू विकल्प के साथ माउस को निर्दिष्ट निर्देशांक पर ले जाएं"
       },
       "params": [
         {
@@ -174,7 +334,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "目标X坐标",
-            "en-US": "Target X"
+            "en-US": "Target X",
+            "zh-TW": "目標X坐標",
+            "ja": "ターゲットX",
+            "ko": "대상 X",
+            "es": "Destino X",
+            "fr": "Cible X",
+            "de": "Ziel X",
+            "pt-BR": "Destino X",
+            "ru": "Целевой X",
+            "ar": "الهدف X",
+            "hi": "लक्ष्य X"
           }
         },
         {
@@ -182,7 +352,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "目标Y坐标",
-            "en-US": "Target Y"
+            "en-US": "Target Y",
+            "zh-TW": "目標Y坐標",
+            "ja": "ターゲットY",
+            "ko": "대상 Y",
+            "es": "Destino Y",
+            "fr": "Cible Y",
+            "de": "Ziel Y",
+            "pt-BR": "Destino Y",
+            "ru": "Целевой Y",
+            "ar": "الهدف Y",
+            "hi": "लक्ष्य Y"
           }
         },
         {
@@ -192,7 +372,17 @@
           "default_value": "false",
           "descs": {
             "zh-CN": "是否平滑移动",
-            "en-US": "Smooth movement"
+            "en-US": "Smooth movement",
+            "zh-TW": "是否平滑移動",
+            "ja": "かどうか平滑移動する",
+            "ko": "부드러운 이동",
+            "es": "Movimiento suave",
+            "fr": "Mouvement fluide",
+            "de": "Glatte Bewegung",
+            "pt-BR": "Movimento suave",
+            "ru": "Плавное перемещение",
+            "ar": "حركة سلسة",
+            "hi": "सुचारू गति"
           }
         },
         {
@@ -202,7 +392,17 @@
           "default_value": "0",
           "descs": {
             "zh-CN": "移动耗时(毫秒)",
-            "en-US": "Duration (ms)"
+            "en-US": "Duration (ms)",
+            "zh-TW": "移動耗時(毫秒)",
+            "ja": "移動する耗时(毫秒)",
+            "ko": "지속 시간 (ms)",
+            "es": "Duración (ms)",
+            "fr": "Durée (ms)",
+            "de": "Dauer (ms)",
+            "pt-BR": "Duração (ms)",
+            "ru": "Длительность (мс)",
+            "ar": "المدة (مللي ثانية)",
+            "hi": "अवधि (ms)"
           }
         }
       ],
@@ -210,7 +410,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "input.mouseMove",
@@ -222,7 +432,17 @@
       "symbol": "hap_input_mouse_click",
       "descriptions": {
         "zh-CN": "在指定位置执行鼠标点击操作（支持左/中/右键和多次点击）",
-        "en-US": "Click mouse at position (supports left/middle/right and multi-click)"
+        "en-US": "Click mouse at position (supports left/middle/right and multi-click)",
+        "zh-TW": "在指定位置執行鼠標點击操作（支持左/中/右鍵和多次點击）",
+        "ja": "指定位置でマウスクリック（左/中/右ボタン、複数クリック対応）",
+        "ko": "지정 위치에서 마우스 클릭 (좌/중/우 버튼, 다중 클릭 지원)",
+        "es": "Clic del ratón en posición (izq/der/medio, multi-clic)",
+        "fr": "Cliquer à la position (gauche/milieu/droite, multi-clic)",
+        "de": "Mausklick an Position (links/mitte/rechts, Mehrfachklick)",
+        "pt-BR": "Clique do mouse na posição (esq/dir/meio, multi-clique)",
+        "ru": "Клик мыши в позиции (лев/сред/прав, мульти-клик)",
+        "ar": "نقر الفأرة في الموضع (يسار/وسط/يمين)",
+        "hi": "स्थिति पर माउस क्लिक करें (बाएं/मध्य/दाएं)"
       },
       "params": [
         {
@@ -231,7 +451,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "X坐标(省略则当前位置)",
-            "en-US": "X (current if omitted)"
+            "en-US": "X (current if omitted)",
+            "zh-TW": "X坐標(省略則當前位置)",
+            "ja": "X座標（省略時は現在位置）",
+            "ko": "X (생략 시 현재 위치)",
+            "es": "X (actual si se omite)",
+            "fr": "X (actuel si omis)",
+            "de": "X (aktuell wenn weggelassen)",
+            "pt-BR": "X (atual se omitido)",
+            "ru": "X (текущий если не указан)",
+            "ar": "X (الحالي إذا حُذف)",
+            "hi": "X (छोड़ने पर वर्तमान)"
           }
         },
         {
@@ -240,7 +470,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "Y坐标(省略则当前位置)",
-            "en-US": "Y (current if omitted)"
+            "en-US": "Y (current if omitted)",
+            "zh-TW": "Y坐標(省略則當前位置)",
+            "ja": "Y座標（省略時は現在位置）",
+            "ko": "Y (생략 시 현재 위치)",
+            "es": "Y (actual si se omite)",
+            "fr": "Y (actuel si omis)",
+            "de": "Y (aktuell wenn weggelassen)",
+            "pt-BR": "Y (atual se omitido)",
+            "ru": "Y (текущий если не указан)",
+            "ar": "Y (الحالي إذا حُذف)",
+            "hi": "Y (छोड़ने पर वर्तमान)"
           }
         },
         {
@@ -250,7 +490,17 @@
           "default_value": "\"left\"",
           "descs": {
             "zh-CN": "按钮: left/right/middle",
-            "en-US": "Button: left/right/middle"
+            "en-US": "Button: left/right/middle",
+            "zh-TW": "按鈕: left/right/middle",
+            "ja": "ボタン: left/right/middle",
+            "ko": "버튼: 왼쪽/오른쪽/가운데",
+            "es": "Botón: izquierdo/derecho/medio",
+            "fr": "Bouton: gauche/droite/milieu",
+            "de": "Taste: links/rechts/mitte",
+            "pt-BR": "Botão: esquerdo/direito/meio",
+            "ru": "Кнопка: левая/правая/средняя",
+            "ar": "الزر: يسار/يمين/وسط",
+            "hi": "बटन: बाएं/दाएं/मध्य"
           }
         },
         {
@@ -260,7 +510,17 @@
           "default_value": "1",
           "descs": {
             "zh-CN": "点击次数",
-            "en-US": "Click count"
+            "en-US": "Click count",
+            "zh-TW": "點击次數",
+            "ja": "クリック回数",
+            "ko": "클릭 횟수",
+            "es": "Número de clics",
+            "fr": "Nombre de clics",
+            "de": "Klickanzahl",
+            "pt-BR": "Contagem de cliques",
+            "ru": "Количество кликов",
+            "ar": "عدد النقرات",
+            "hi": "क्लिक गिनती"
           }
         }
       ],
@@ -268,7 +528,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "input.mouseClick",
@@ -280,7 +550,17 @@
       "symbol": "hap_input_mouse_down",
       "descriptions": {
         "zh-CN": "模拟鼠标按下",
-        "en-US": "Mouse down of input simulation"
+        "en-US": "Mouse down of input simulation",
+        "zh-TW": "模擬鼠標按下",
+        "ja": "入力シミュレーションのマウスダウン",
+        "ko": "입력 시뮬레이션 마우스 다운",
+        "es": "Mouse down de simulación de entrada",
+        "fr": "Mouse down de simulation d'entrée",
+        "de": "Maus-Down der Eingabesimulation",
+        "pt-BR": "Mouse down da simulação de entrada",
+        "ru": "Нажатие мыши (симуляция ввода)",
+        "ar": "ضغط الفأرة (محاكاة)",
+        "hi": "इनपुट सिम्युलेशन माउस डाउन"
       },
       "params": [
         {
@@ -290,7 +570,17 @@
           "default_value": "\"left\"",
           "descs": {
             "zh-CN": "鼠标按键（left/right/middle）",
-            "en-US": "Mouse button (left/right/middle)"
+            "en-US": "Mouse button (left/right/middle)",
+            "zh-TW": "鼠標按鍵（left/right/middle）",
+            "ja": "マウスボタン（左/右/中）",
+            "ko": "마우스 버튼 (좌/우/중간)",
+            "es": "Botón del ratón (izq/der/medio)",
+            "fr": "Bouton de souris (gauche/droit/milieu)",
+            "de": "Maustaste (links/rechts/mitte)",
+            "pt-BR": "Botão do mouse (esq/dir/meio)",
+            "ru": "Кнопка мыши (лев/прав/сред)",
+            "ar": "زر الفأرة (يسار/يمين/وسط)",
+            "hi": "माउस बटन (बाएँ/दाएँ/मध्य)"
           },
           "desc": "Mouse button (left/right/middle)"
         }
@@ -299,7 +589,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "input.mouseDown",
@@ -311,7 +611,17 @@
       "symbol": "hap_input_mouse_up",
       "descriptions": {
         "zh-CN": "模拟鼠标释放",
-        "en-US": "Mouse up of input simulation"
+        "en-US": "Mouse up of input simulation",
+        "zh-TW": "模擬鼠標釋放",
+        "ja": "入力シミュレーションのマウスアップ",
+        "ko": "입력 시뮬레이션 마우스 업",
+        "es": "Mouse up de simulación de entrada",
+        "fr": "Mouse up de simulation d'entrée",
+        "de": "Maus-Up der Eingabesimulation",
+        "pt-BR": "Mouse up da simulação de entrada",
+        "ru": "Отпускание мыши (симуляция ввода)",
+        "ar": "رفع الفأرة (محاكاة)",
+        "hi": "इनपुट सिम्युलेशन माउस अप"
       },
       "params": [
         {
@@ -321,7 +631,17 @@
           "default_value": "\"left\"",
           "descs": {
             "zh-CN": "鼠标按键（left/right/middle）",
-            "en-US": "Mouse button (left/right/middle)"
+            "en-US": "Mouse button (left/right/middle)",
+            "zh-TW": "鼠標按鍵（left/right/middle）",
+            "ja": "マウスボタン（左/右/中）",
+            "ko": "마우스 버튼 (좌/우/중간)",
+            "es": "Botón del ratón (izq/der/medio)",
+            "fr": "Bouton de souris (gauche/droit/milieu)",
+            "de": "Maustaste (links/rechts/mitte)",
+            "pt-BR": "Botão do mouse (esq/dir/meio)",
+            "ru": "Кнопка мыши (лев/прав/сред)",
+            "ar": "زر الفأرة (يسار/يمين/وسط)",
+            "hi": "माउस बटन (बाएँ/दाएँ/मध्य)"
           },
           "desc": "Mouse button (left/right/middle)"
         }
@@ -330,7 +650,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "input.mouseUp",
@@ -342,7 +672,17 @@
       "symbol": "hap_input_mouse_drag",
       "descriptions": {
         "zh-CN": "模拟从起点到终点的鼠标拖拽操作",
-        "en-US": "Simulate mouse drag from start to end position"
+        "en-US": "Simulate mouse drag from start to end position",
+        "zh-TW": "模擬從起點到終點的鼠標拖拽操作",
+        "ja": "マウスドラッグをシミュレート（開始位置から終了位置）",
+        "ko": "시작에서 끝 위치로 마우스 드래그 시뮬레이션",
+        "es": "Simular arrastre de ratón de inicio a fin",
+        "fr": "Simuler le glisser de la souris du début à la fin",
+        "de": "Maus-Ziehen von Start- zu Endposition simulieren",
+        "pt-BR": "Simular arraste do mouse do início ao fim",
+        "ru": "Имитировать перетаскивание мышью",
+        "ar": "محاكاة سحب الماوس من البداية إلى النهاية",
+        "hi": "प्रारंभ से अंत स्थिति तक माउस ड्रैग सिमुलेट करें"
       },
       "params": [
         {
@@ -350,7 +690,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "拖拽起始X坐标",
-            "en-US": "Drag start X coordinate"
+            "en-US": "Drag start X coordinate",
+            "zh-TW": "拖拽起始X坐標",
+            "ja": "ドラッグ開始X座標",
+            "ko": "드래그 시작 X 좌표",
+            "es": "Coordenada X de inicio de arrastre",
+            "fr": "Coordonnée X de début de glissement",
+            "de": "Zieh-Start X-Koordinate",
+            "pt-BR": "Coordenada X inicial do arrasto",
+            "ru": "Начальная X-координата",
+            "ar": "إحداثي X بداية السحب",
+            "hi": "ड्रैग प्रारंभ X निर्देशांक"
           },
           "desc": "Drag start X coordinate"
         },
@@ -359,7 +709,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "拖拽起始Y坐标",
-            "en-US": "Drag start Y coordinate"
+            "en-US": "Drag start Y coordinate",
+            "zh-TW": "拖拽起始Y坐標",
+            "ja": "ドラッグ開始Y座標",
+            "ko": "드래그 시작 Y 좌표",
+            "es": "Coordenada Y de inicio de arrastre",
+            "fr": "Coordonnée Y de début de glissement",
+            "de": "Zieh-Start Y-Koordinate",
+            "pt-BR": "Coordenada Y inicial do arrasto",
+            "ru": "Начальная Y-координата",
+            "ar": "إحداثي Y بداية السحب",
+            "hi": "ड्रैग प्रारंभ Y निर्देशांक"
           },
           "desc": "Drag start Y coordinate"
         },
@@ -368,7 +728,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "拖拽终点X坐标",
-            "en-US": "Drag end X coordinate"
+            "en-US": "Drag end X coordinate",
+            "zh-TW": "拖拽終點X坐標",
+            "ja": "ドラッグ終了X座標",
+            "ko": "드래그 끝 X 좌표",
+            "es": "Coordenada X de fin de arrastre",
+            "fr": "Coordonnée X de fin de glissement",
+            "de": "Zieh-Ende X-Koordinate",
+            "pt-BR": "Coordenada X final do arrasto",
+            "ru": "Конечная X-координата",
+            "ar": "إحداثي X نهاية السحب",
+            "hi": "ड्रैग समाप्ति X निर्देशांक"
           },
           "desc": "Drag end X coordinate"
         },
@@ -377,7 +747,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "拖拽终点Y坐标",
-            "en-US": "Drag end Y coordinate"
+            "en-US": "Drag end Y coordinate",
+            "zh-TW": "拖拽終點Y坐標",
+            "ja": "ドラッグ終了Y座標",
+            "ko": "드래그 끝 Y 좌표",
+            "es": "Coordenada Y de fin de arrastre",
+            "fr": "Coordonnée Y de fin de glissement",
+            "de": "Zieh-Ende Y-Koordinate",
+            "pt-BR": "Coordenada Y final do arrasto",
+            "ru": "Конечная Y-координата",
+            "ar": "إحداثي Y نهاية السحب",
+            "hi": "ड्रैग समाप्ति Y निर्देशांक"
           },
           "desc": "Drag end Y coordinate"
         },
@@ -388,7 +768,17 @@
           "default_value": "300",
           "descs": {
             "zh-CN": "拖拽耗时(毫秒)",
-            "en-US": "Drag duration (ms)"
+            "en-US": "Drag duration (ms)",
+            "zh-TW": "拖拽耗時(毫秒)",
+            "ja": "ドラッグ時間（ミリ秒）",
+            "ko": "드래그 시간 (ms)",
+            "es": "Duración del arrastre (ms)",
+            "fr": "Durée du glissement (ms)",
+            "de": "Zieh-Dauer (ms)",
+            "pt-BR": "Duração do arrasto (ms)",
+            "ru": "Длительность перетаскивания (мс)",
+            "ar": "مدة السحب (مللي ثانية)",
+            "hi": "ड्रैग अवधि (ms)"
           }
         }
       ],
@@ -396,7 +786,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "input.mouseDrag",
@@ -408,7 +808,17 @@
       "symbol": "hap_input_scroll",
       "descriptions": {
         "zh-CN": "模拟鼠标滚轮滚动操作（支持垂直和水平方向）",
-        "en-US": "Simulate mouse wheel scroll (vertical and horizontal)"
+        "en-US": "Simulate mouse wheel scroll (vertical and horizontal)",
+        "zh-TW": "模擬鼠標滚轮滚動操作（支持垂直和水平方向）",
+        "ja": "マウスホイールスクロールをシミュレート（垂直・水平）",
+        "ko": "마우스 휠 스크롤 시뮬레이션 (수직 및 수평)",
+        "es": "Simular desplazamiento de rueda del ratón",
+        "fr": "Simuler le défilement de la molette de la souris",
+        "de": "Mausrad-Scrollen simulieren (vertikal und horizontal)",
+        "pt-BR": "Simular rolagem da roda do mouse (vertical e horizontal)",
+        "ru": "Имитировать прокрутку колёсика мыши",
+        "ar": "محاكاة تمرير عجلة الماوس (رأسي وأفقي)",
+        "hi": "माउस व्हील स्क्रॉल सिमुलेट करें (लंबवत और क्षैतिज)"
       },
       "params": [
         {
@@ -418,7 +828,17 @@
           "default_value": "0",
           "descs": {
             "zh-CN": "水平滚动量",
-            "en-US": "Horizontal delta"
+            "en-US": "Horizontal delta",
+            "zh-TW": "水平滚動量",
+            "ja": "水平方向のデルタ",
+            "ko": "수평 델타",
+            "es": "Delta horizontal",
+            "fr": "Delta horizontal",
+            "de": "Horizontaler Delta",
+            "pt-BR": "Delta horizontal",
+            "ru": "Горизонтальное смещение",
+            "ar": "الإزاحة الأفقية",
+            "hi": "क्षैतिज डेल्टा"
           }
         },
         {
@@ -426,7 +846,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "垂直滚动量(正=上，负=下)",
-            "en-US": "Vertical delta (pos=up, neg=down)"
+            "en-US": "Vertical delta (pos=up, neg=down)",
+            "zh-TW": "垂直滚動量(正=上，负=下)",
+            "ja": "垂直デルタ（正=上、負=下）",
+            "ko": "수직 델타 (양수=위, 음수=아래)",
+            "es": "Delta vertical (pos=arriba, neg=abajo)",
+            "fr": "Delta vertical (pos=haut, nég=bas)",
+            "de": "Vertikaler Delta (pos=oben, neg=unten)",
+            "pt-BR": "Delta vertical (pos=cima, neg=baixo)",
+            "ru": "Вертикальное смещение (пол=вверх, отр=вниз)",
+            "ar": "الإزاحة العمودية (موجب=أعلى, سالب=أسفل)",
+            "hi": "लंबवत डेल्टा (धनात्मक=ऊपर, ऋणात्मक=नीचे)"
           }
         }
       ],
@@ -434,7 +864,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "input.scroll",
@@ -446,14 +886,34 @@
       "symbol": "hap_input_get_mouse_position",
       "descriptions": {
         "zh-CN": "获取鼠标当前在屏幕上的坐标位置",
-        "en-US": "Get current mouse cursor position on screen"
+        "en-US": "Get current mouse cursor position on screen",
+        "zh-TW": "取得鼠標當前在屏幕上的坐標位置",
+        "ja": "画面上の現在のマウスカーソル位置を取得",
+        "ko": "화면에서 현재 마우스 커서 위치 가져오기",
+        "es": "Obtener posición actual del cursor en pantalla",
+        "fr": "Obtenir la position actuelle du curseur à l'écran",
+        "de": "Aktuelle Mauscursorposition auf dem Bildschirm abrufen",
+        "pt-BR": "Obter posição atual do cursor na tela",
+        "ru": "Получить текущую позицию курсора мыши",
+        "ar": "الحصول على موضع مؤشر الماوس الحالي",
+        "hi": "स्क्रीन पर वर्तमान माउस कर्सर स्थिति प्राप्त करें"
       },
       "params": [],
       "returns": {
         "type": "MousePosition",
         "descs": {
           "zh-CN": "坐标{x,y}",
-          "en-US": "Position {x,y}"
+          "en-US": "Position {x,y}",
+          "zh-TW": "坐標{x,y}",
+          "ja": "位置 {x,y}",
+          "ko": "위치 {x,y}",
+          "es": "Posición {x,y}",
+          "fr": "Position {x,y}",
+          "de": "Position {x,y}",
+          "pt-BR": "Posição {x,y}",
+          "ru": "Позиция {x,y}",
+          "ar": "الموضع {x,y}",
+          "hi": "स्थिति {x,y}"
         }
       },
       "bridge_path": "input.getMousePosition",
@@ -465,7 +925,17 @@
       "symbol": "hap_input_hotkey",
       "descriptions": {
         "zh-CN": "模拟同时按下多个按键的快捷键组合",
-        "en-US": "Simulate pressing multiple keys simultaneously as hotkey"
+        "en-US": "Simulate pressing multiple keys simultaneously as hotkey",
+        "zh-TW": "模擬同時按下多個按鍵的快捷鍵組合",
+        "ja": "複数キーを同時にホットキーとして押すシミュレート",
+        "ko": "여러 키를 동시에 핫키로 누르기 시뮬레이션",
+        "es": "Simular presión simultánea de teclas como atajo",
+        "fr": "Simuler l'appui simultané de touches comme raccourci",
+        "de": "Mehrere Tasten gleichzeitig als Hotkey simulieren",
+        "pt-BR": "Simular pressionamento simultâneo de teclas como atalho",
+        "ru": "Имитировать нажатие нескольких клавиш как горячую клавишу",
+        "ar": "محاكاة ضغط عدة مفاتيح كاختصار",
+        "hi": "हॉटकी के रूप में एकाधिक कुंजियां दबाना सिमुलेट करें"
       },
       "params": [
         {
@@ -473,7 +943,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "键名列表(如[\"ctrl\",\"c\"])",
-            "en-US": "Key names (e.g. [\"ctrl\",\"c\"])"
+            "en-US": "Key names (e.g. [\"ctrl\",\"c\"])",
+            "zh-TW": "鍵名列表(如[\"ctrl\",\"c\"])",
+            "ja": "キー名（例：[\"ctrl\",\"c\"]）",
+            "ko": "키 이름 (예: [\"ctrl\",\"c\"])",
+            "es": "Nombres de teclas (ej. [\"ctrl\",\"c\"])",
+            "fr": "Noms des touches (ex. [\"ctrl\",\"c\"])",
+            "de": "Tastennamen (z.B. [\"ctrl\",\"c\"])",
+            "pt-BR": "Nomes das teclas (ex. [\"ctrl\",\"c\"])",
+            "ru": "Имена клавиш (напр. [\"ctrl\",\"c\"])",
+            "ar": "أسماء المفاتيح (مثل [\"ctrl\",\"c\"])",
+            "hi": "कुंजी नाम (जैसे [\"ctrl\",\"c\"])"
           }
         }
       ],
@@ -481,7 +961,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "input.hotkey",
@@ -497,7 +987,17 @@
       "group": "key",
       "descs": {
         "zh-CN": "回车键",
-        "en-US": "Enter key"
+        "en-US": "Enter key",
+        "zh-TW": "回车鍵",
+        "ja": "Enterキー",
+        "ko": "Enter 키",
+        "es": "Tecla Enter",
+        "fr": "Touche Entrée",
+        "de": "Eingabetaste",
+        "pt-BR": "Tecla Enter",
+        "ru": "Клавиша Enter",
+        "ar": "مفتاح Enter",
+        "hi": "Enter कुंजी"
       }
     },
     {
@@ -507,7 +1007,17 @@
       "group": "key",
       "descs": {
         "zh-CN": "ESC键",
-        "en-US": "Escape key"
+        "en-US": "Escape key",
+        "zh-TW": "ESC鍵",
+        "ja": "Escapeキー",
+        "ko": "Escape 키",
+        "es": "Tecla Escape",
+        "fr": "Touche Échap",
+        "de": "Escape-Taste",
+        "pt-BR": "Tecla Escape",
+        "ru": "Клавиша Escape",
+        "ar": "مفتاح Escape",
+        "hi": "Escape कुंजी"
       }
     },
     {
@@ -517,7 +1027,17 @@
       "group": "key",
       "descs": {
         "zh-CN": "Tab键",
-        "en-US": "Tab key"
+        "en-US": "Tab key",
+        "zh-TW": "Tab鍵",
+        "ja": "Tabキー",
+        "ko": "Tab 키",
+        "es": "Tecla Tab",
+        "fr": "Touche Tab",
+        "de": "Tab-Taste",
+        "pt-BR": "Tecla Tab",
+        "ru": "Клавиша Tab",
+        "ar": "مفتاح Tab",
+        "hi": "Tab कुंजी"
       }
     },
     {
@@ -527,7 +1047,17 @@
       "group": "key",
       "descs": {
         "zh-CN": "退格键",
-        "en-US": "Backspace key"
+        "en-US": "Backspace key",
+        "zh-TW": "退格鍵",
+        "ja": "Backspaceキー",
+        "ko": "Backspace 키",
+        "es": "Tecla Retroceso",
+        "fr": "Touche Retour arrière",
+        "de": "Rücktaste",
+        "pt-BR": "Tecla Backspace",
+        "ru": "Клавиша Backspace",
+        "ar": "مفتاح Backspace",
+        "hi": "Backspace कुंजी"
       }
     },
     {
@@ -537,7 +1067,17 @@
       "group": "key",
       "descs": {
         "zh-CN": "删除键",
-        "en-US": "Delete key"
+        "en-US": "Delete key",
+        "zh-TW": "刪除鍵",
+        "ja": "Deleteキー",
+        "ko": "Delete 키",
+        "es": "Tecla Suprimir",
+        "fr": "Touche Supprimer",
+        "de": "Entf-Taste",
+        "pt-BR": "Tecla Delete",
+        "ru": "Клавиша Delete",
+        "ar": "مفتاح Delete",
+        "hi": "Delete कुंजी"
       }
     },
     {
@@ -547,7 +1087,17 @@
       "group": "key",
       "descs": {
         "zh-CN": "空格键",
-        "en-US": "Space key"
+        "en-US": "Space key",
+        "zh-TW": "空格鍵",
+        "ja": "スペースキー",
+        "ko": "스페이스 키",
+        "es": "Tecla Espacio",
+        "fr": "Touche Espace",
+        "de": "Leertaste",
+        "pt-BR": "Tecla Espaço",
+        "ru": "Клавиша Пробел",
+        "ar": "مفتاح المسافة",
+        "hi": "स्पेस कुंजी"
       }
     },
     {
@@ -557,7 +1107,17 @@
       "group": "key",
       "descs": {
         "zh-CN": "上方向键",
-        "en-US": "Up arrow"
+        "en-US": "Up arrow",
+        "zh-TW": "上方向鍵",
+        "ja": "上矢印キー",
+        "ko": "위 화살표",
+        "es": "Flecha arriba",
+        "fr": "Flèche haut",
+        "de": "Pfeil oben",
+        "pt-BR": "Seta para cima",
+        "ru": "Стрелка вверх",
+        "ar": "السهم لأعلى",
+        "hi": "ऊपर तीर"
       }
     },
     {
@@ -567,7 +1127,17 @@
       "group": "key",
       "descs": {
         "zh-CN": "下方向键",
-        "en-US": "Down arrow"
+        "en-US": "Down arrow",
+        "zh-TW": "下方向鍵",
+        "ja": "下矢印キー",
+        "ko": "아래 화살표",
+        "es": "Flecha abajo",
+        "fr": "Flèche bas",
+        "de": "Pfeil unten",
+        "pt-BR": "Seta para baixo",
+        "ru": "Стрелка вниз",
+        "ar": "السهم لأسفل",
+        "hi": "नीचे तीर"
       }
     },
     {
@@ -577,7 +1147,17 @@
       "group": "key",
       "descs": {
         "zh-CN": "左方向键",
-        "en-US": "Left arrow"
+        "en-US": "Left arrow",
+        "zh-TW": "左方向鍵",
+        "ja": "左矢印キー",
+        "ko": "왼쪽 화살표",
+        "es": "Flecha izquierda",
+        "fr": "Flèche gauche",
+        "de": "Pfeil links",
+        "pt-BR": "Seta para esquerda",
+        "ru": "Стрелка влево",
+        "ar": "السهم لليسار",
+        "hi": "बायाँ तीर"
       }
     },
     {
@@ -587,7 +1167,17 @@
       "group": "key",
       "descs": {
         "zh-CN": "右方向键",
-        "en-US": "Right arrow"
+        "en-US": "Right arrow",
+        "zh-TW": "右方向鍵",
+        "ja": "右矢印キー",
+        "ko": "오른쪽 화살표",
+        "es": "Flecha derecha",
+        "fr": "Flèche droite",
+        "de": "Pfeil rechts",
+        "pt-BR": "Seta para direita",
+        "ru": "Стрелка вправо",
+        "ar": "السهم لليمين",
+        "hi": "दायाँ तीर"
       }
     },
     {
@@ -597,7 +1187,17 @@
       "group": "modifier",
       "descs": {
         "zh-CN": "Ctrl修饰键",
-        "en-US": "Ctrl modifier"
+        "en-US": "Ctrl modifier",
+        "zh-TW": "Ctrl修饰鍵",
+        "ja": "Ctrlキー修飾子",
+        "ko": "Ctrl 수정키",
+        "es": "Modificador Ctrl",
+        "fr": "Modificateur Ctrl",
+        "de": "Strg-Modifikator",
+        "pt-BR": "Modificador Ctrl",
+        "ru": "Модификатор Ctrl",
+        "ar": "مُعدِّل Ctrl",
+        "hi": "Ctrl संशोधक"
       }
     },
     {
@@ -607,7 +1207,17 @@
       "group": "modifier",
       "descs": {
         "zh-CN": "Alt修饰键",
-        "en-US": "Alt modifier"
+        "en-US": "Alt modifier",
+        "zh-TW": "Alt修饰鍵",
+        "ja": "Altキー修飾子",
+        "ko": "Alt 수정키",
+        "es": "Modificador Alt",
+        "fr": "Modificateur Alt",
+        "de": "Alt-Modifikator",
+        "pt-BR": "Modificador Alt",
+        "ru": "Модификатор Alt",
+        "ar": "مُعدِّل Alt",
+        "hi": "Alt संशोधक"
       }
     },
     {
@@ -617,7 +1227,17 @@
       "group": "modifier",
       "descs": {
         "zh-CN": "Shift修饰键",
-        "en-US": "Shift modifier"
+        "en-US": "Shift modifier",
+        "zh-TW": "Shift修饰鍵",
+        "ja": "Shiftキー修飾子",
+        "ko": "Shift 수정키",
+        "es": "Modificador Shift",
+        "fr": "Modificateur Maj",
+        "de": "Umschalt-Modifikator",
+        "pt-BR": "Modificador Shift",
+        "ru": "Модификатор Shift",
+        "ar": "مُعدِّل Shift",
+        "hi": "Shift संशोधक"
       }
     },
     {
@@ -627,7 +1247,17 @@
       "group": "modifier",
       "descs": {
         "zh-CN": "Meta/Command修饰键",
-        "en-US": "Meta/Command modifier"
+        "en-US": "Meta/Command modifier",
+        "zh-TW": "Meta/Command修饰鍵",
+        "ja": "Meta/Commandキー修飾子",
+        "ko": "Meta/Command 수정키",
+        "es": "Modificador Meta/Comando",
+        "fr": "Modificateur Meta/Commande",
+        "de": "Meta/Befehl-Modifikator",
+        "pt-BR": "Modificador Meta/Command",
+        "ru": "Модификатор Meta/Command",
+        "ar": "مُعدِّل Meta/Command",
+        "hi": "Meta/Command संशोधक"
       }
     }
   ],
@@ -636,7 +1266,17 @@
       "name": "MousePosition",
       "descriptions": {
         "zh-CN": "鼠标位置",
-        "en-US": "Mouse position"
+        "en-US": "Mouse position",
+        "zh-TW": "鼠標位置",
+        "ja": "マウス位置",
+        "ko": "마우스 위치",
+        "es": "Posición del ratón",
+        "fr": "Position de la souris",
+        "de": "Mausposition",
+        "pt-BR": "Posição do mouse",
+        "ru": "Позиция мыши",
+        "ar": "موقع الفأرة",
+        "hi": "माउस स्थिति"
       },
       "fields": [
         {
@@ -644,7 +1284,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "X坐标",
-            "en-US": "X"
+            "en-US": "X",
+            "zh-TW": "X坐標",
+            "ja": "X",
+            "ko": "X",
+            "es": "X",
+            "fr": "X",
+            "de": "X",
+            "pt-BR": "X",
+            "ru": "X",
+            "ar": "X",
+            "hi": "X"
           }
         },
         {
@@ -652,7 +1302,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Y坐标",
-            "en-US": "Y"
+            "en-US": "Y",
+            "zh-TW": "Y坐標",
+            "ja": "Y",
+            "ko": "Y",
+            "es": "Y",
+            "fr": "Y",
+            "de": "Y",
+            "pt-BR": "Y",
+            "ru": "Y",
+            "ar": "Y",
+            "hi": "Y"
           }
         }
       ]

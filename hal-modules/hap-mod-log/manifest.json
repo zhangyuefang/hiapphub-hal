@@ -22,7 +22,7 @@
     "ar": "وحدة السجلات",
     "hi": "लॉग मॉड्यूल"
   },
-  "permission": "",
+  "permission": "log",
   "functions": [
     {
       "name": "debug",
@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "日志标签（用于分类过滤）",
-            "en-US": "Log tag (for categorization/filtering)"
+            "en-US": "Log tag (for categorization/filtering)",
+            "zh-TW": "日志標籤（用於分類過濾）",
+            "ja": "ログタグ（分類/フィルタリング用）",
+            "ko": "로그 태그 (분류/필터링용)",
+            "es": "Etiqueta de registro (para categorización/filtrado)",
+            "fr": "Étiquette de journal (catégorisation/filtrage)",
+            "de": "Log-Tag (zur Kategorisierung/Filterung)",
+            "pt-BR": "Tag de log (para categorização/filtragem)",
+            "ru": "Тег журнала (для категоризации/фильтрации)",
+            "ar": "وسم السجل (للتصنيف/التصفية)",
+            "hi": "लॉग टैग (वर्गीकरण/फ़िल्टरिंग के लिए)"
           },
           "desc": "Log tag (for categorization/filtering)"
         },
@@ -42,7 +52,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息内容",
-            "en-US": "Message content"
+            "en-US": "Message content",
+            "zh-TW": "消息內容",
+            "ja": "メッセージコンテンツ",
+            "ko": "메시지콘텐츠",
+            "es": "Contenido del mensaje",
+            "fr": "Contenu du message",
+            "de": "Nachrichteninhalt",
+            "pt-BR": "Conteúdo da mensagem",
+            "ru": "Содержание сообщения",
+            "ar": "محتوى الرسالة",
+            "hi": "संदेश सामग्री"
           },
           "desc": "Message content"
         }
@@ -52,13 +72,33 @@
         "desc": "Result object of type null",
         "descs": {
           "zh-CN": "null类型的结果对象",
-          "en-US": "Result object of type null"
+          "en-US": "Result object of type null",
+          "zh-TW": "null類型的結果物件",
+          "ja": "nullタイプの結果オブジェクト",
+          "ko": "null유형의결과객체",
+          "es": "Objeto resultado de tipo null",
+          "fr": "Objet résultat de type null",
+          "de": "Ergebnisobjekt vom Typ null",
+          "pt-BR": "Objeto resultado do tipo null",
+          "ru": "Объект результата типа null",
+          "ar": "كائن نتيجة من نوع null",
+          "hi": "null प्रकार का परिणाम ऑब्जेक्ट"
         }
       },
       "bridge_path": "log.debug",
       "descriptions": {
         "zh-CN": "写入一条DEBUG级别的调试日志信息",
-        "en-US": "Write a DEBUG level log message"
+        "en-US": "Write a DEBUG level log message",
+        "zh-TW": "寫入一條DEBUG级別的調試日志資訊",
+        "ja": "DEBUGレベルのログメッセージを書き込み",
+        "ko": "DEBUG 레벨 로그 메시지 쓰기",
+        "es": "Escribir mensaje de registro nivel DEBUG",
+        "fr": "Écrire un message de journal niveau DEBUG",
+        "de": "DEBUG-Log-Nachricht schreiben",
+        "pt-BR": "Escrever mensagem de log nível DEBUG",
+        "ru": "Записать сообщение уровня DEBUG",
+        "ar": "كتابة رسالة سجل بمستوى DEBUG",
+        "hi": "DEBUG स्तर लॉग संदेश लिखें"
       },
       "group": "write",
       "description": "Write a DEBUG level log message"
@@ -72,7 +112,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "日志标签（用于分类过滤）",
-            "en-US": "Log tag (for categorization/filtering)"
+            "en-US": "Log tag (for categorization/filtering)",
+            "zh-TW": "日志標籤（用於分類過濾）",
+            "ja": "ログタグ（分類/フィルタリング用）",
+            "ko": "로그 태그 (분류/필터링용)",
+            "es": "Etiqueta de registro (para categorización/filtrado)",
+            "fr": "Étiquette de journal (catégorisation/filtrage)",
+            "de": "Log-Tag (zur Kategorisierung/Filterung)",
+            "pt-BR": "Tag de log (para categorização/filtragem)",
+            "ru": "Тег журнала (для категоризации/фильтрации)",
+            "ar": "وسم السجل (للتصنيف/التصفية)",
+            "hi": "लॉग टैग (वर्गीकरण/फ़िल्टरिंग के लिए)"
           },
           "desc": "Log tag (for categorization/filtering)"
         },
@@ -81,7 +131,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息内容",
-            "en-US": "Message content"
+            "en-US": "Message content",
+            "zh-TW": "消息內容",
+            "ja": "メッセージコンテンツ",
+            "ko": "메시지콘텐츠",
+            "es": "Contenido del mensaje",
+            "fr": "Contenu du message",
+            "de": "Nachrichteninhalt",
+            "pt-BR": "Conteúdo da mensagem",
+            "ru": "Содержание сообщения",
+            "ar": "محتوى الرسالة",
+            "hi": "संदेश सामग्री"
           },
           "desc": "Message content"
         }
@@ -91,13 +151,33 @@
         "desc": "Result object of type null",
         "descs": {
           "zh-CN": "null类型的结果对象",
-          "en-US": "Result object of type null"
+          "en-US": "Result object of type null",
+          "zh-TW": "null類型的結果物件",
+          "ja": "nullタイプの結果オブジェクト",
+          "ko": "null유형의결과객체",
+          "es": "Objeto resultado de tipo null",
+          "fr": "Objet résultat de type null",
+          "de": "Ergebnisobjekt vom Typ null",
+          "pt-BR": "Objeto resultado do tipo null",
+          "ru": "Объект результата типа null",
+          "ar": "كائن نتيجة من نوع null",
+          "hi": "null प्रकार का परिणाम ऑब्जेक्ट"
         }
       },
       "bridge_path": "log.info",
       "descriptions": {
         "zh-CN": "写入一条INFO级别的普通日志信息",
-        "en-US": "Write an INFO level log message"
+        "en-US": "Write an INFO level log message",
+        "zh-TW": "寫入一條INFO级別的普通日志資訊",
+        "ja": "INFOレベルのログメッセージを書き込み",
+        "ko": "INFO 레벨 로그 메시지 쓰기",
+        "es": "Escribir mensaje de registro nivel INFO",
+        "fr": "Écrire un message de journal niveau INFO",
+        "de": "INFO-Log-Nachricht schreiben",
+        "pt-BR": "Escrever mensagem de log nível INFO",
+        "ru": "Записать сообщение уровня INFO",
+        "ar": "كتابة رسالة سجل بمستوى INFO",
+        "hi": "INFO स्तर लॉग संदेश लिखें"
       },
       "group": "write",
       "description": "Write an INFO level log message"
@@ -111,7 +191,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "日志标签（用于分类过滤）",
-            "en-US": "Log tag (for categorization/filtering)"
+            "en-US": "Log tag (for categorization/filtering)",
+            "zh-TW": "日志標籤（用於分類過濾）",
+            "ja": "ログタグ（分類/フィルタリング用）",
+            "ko": "로그 태그 (분류/필터링용)",
+            "es": "Etiqueta de registro (para categorización/filtrado)",
+            "fr": "Étiquette de journal (catégorisation/filtrage)",
+            "de": "Log-Tag (zur Kategorisierung/Filterung)",
+            "pt-BR": "Tag de log (para categorização/filtragem)",
+            "ru": "Тег журнала (для категоризации/фильтрации)",
+            "ar": "وسم السجل (للتصنيف/التصفية)",
+            "hi": "लॉग टैग (वर्गीकरण/फ़िल्टरिंग के लिए)"
           },
           "desc": "Log tag (for categorization/filtering)"
         },
@@ -120,7 +210,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息内容",
-            "en-US": "Message content"
+            "en-US": "Message content",
+            "zh-TW": "消息內容",
+            "ja": "メッセージコンテンツ",
+            "ko": "메시지콘텐츠",
+            "es": "Contenido del mensaje",
+            "fr": "Contenu du message",
+            "de": "Nachrichteninhalt",
+            "pt-BR": "Conteúdo da mensagem",
+            "ru": "Содержание сообщения",
+            "ar": "محتوى الرسالة",
+            "hi": "संदेश सामग्री"
           },
           "desc": "Message content"
         }
@@ -130,13 +230,33 @@
         "desc": "Result object of type null",
         "descs": {
           "zh-CN": "null类型的结果对象",
-          "en-US": "Result object of type null"
+          "en-US": "Result object of type null",
+          "zh-TW": "null類型的結果物件",
+          "ja": "nullタイプの結果オブジェクト",
+          "ko": "null유형의결과객체",
+          "es": "Objeto resultado de tipo null",
+          "fr": "Objet résultat de type null",
+          "de": "Ergebnisobjekt vom Typ null",
+          "pt-BR": "Objeto resultado do tipo null",
+          "ru": "Объект результата типа null",
+          "ar": "كائن نتيجة من نوع null",
+          "hi": "null प्रकार का परिणाम ऑब्जेक्ट"
         }
       },
       "bridge_path": "log.warn",
       "descriptions": {
         "zh-CN": "写入一条WARN级别的警告日志信息",
-        "en-US": "Write a WARN level warning log message"
+        "en-US": "Write a WARN level warning log message",
+        "zh-TW": "寫入一條WARN级別的警告日志資訊",
+        "ja": "WARNレベルの警告ログメッセージを書き込み",
+        "ko": "WARN 레벨 경고 로그 메시지 쓰기",
+        "es": "Escribir mensaje de advertencia nivel WARN",
+        "fr": "Écrire un message d'avertissement niveau WARN",
+        "de": "WARN-Warnungs-Log-Nachricht schreiben",
+        "pt-BR": "Escrever mensagem de aviso nível WARN",
+        "ru": "Записать предупреждение уровня WARN",
+        "ar": "كتابة رسالة تحذير بمستوى WARN",
+        "hi": "WARN स्तर चेतावनी लॉग संदेश लिखें"
       },
       "group": "write",
       "description": "Write a WARN level warning log message"
@@ -150,7 +270,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "日志标签（用于分类过滤）",
-            "en-US": "Log tag (for categorization/filtering)"
+            "en-US": "Log tag (for categorization/filtering)",
+            "zh-TW": "日志標籤（用於分類過濾）",
+            "ja": "ログタグ（分類/フィルタリング用）",
+            "ko": "로그 태그 (분류/필터링용)",
+            "es": "Etiqueta de registro (para categorización/filtrado)",
+            "fr": "Étiquette de journal (catégorisation/filtrage)",
+            "de": "Log-Tag (zur Kategorisierung/Filterung)",
+            "pt-BR": "Tag de log (para categorização/filtragem)",
+            "ru": "Тег журнала (для категоризации/фильтрации)",
+            "ar": "وسم السجل (للتصنيف/التصفية)",
+            "hi": "लॉग टैग (वर्गीकरण/फ़िल्टरिंग के लिए)"
           },
           "desc": "Log tag (for categorization/filtering)"
         },
@@ -159,7 +289,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息内容",
-            "en-US": "Message content"
+            "en-US": "Message content",
+            "zh-TW": "消息內容",
+            "ja": "メッセージコンテンツ",
+            "ko": "메시지콘텐츠",
+            "es": "Contenido del mensaje",
+            "fr": "Contenu du message",
+            "de": "Nachrichteninhalt",
+            "pt-BR": "Conteúdo da mensagem",
+            "ru": "Содержание сообщения",
+            "ar": "محتوى الرسالة",
+            "hi": "संदेश सामग्री"
           },
           "desc": "Message content"
         }
@@ -169,13 +309,33 @@
         "desc": "Result object of type null",
         "descs": {
           "zh-CN": "null类型的结果对象",
-          "en-US": "Result object of type null"
+          "en-US": "Result object of type null",
+          "zh-TW": "null類型的結果物件",
+          "ja": "nullタイプの結果オブジェクト",
+          "ko": "null유형의결과객체",
+          "es": "Objeto resultado de tipo null",
+          "fr": "Objet résultat de type null",
+          "de": "Ergebnisobjekt vom Typ null",
+          "pt-BR": "Objeto resultado do tipo null",
+          "ru": "Объект результата типа null",
+          "ar": "كائن نتيجة من نوع null",
+          "hi": "null प्रकार का परिणाम ऑब्जेक्ट"
         }
       },
       "bridge_path": "log.error",
       "descriptions": {
         "zh-CN": "写入一条ERROR级别的错误日志信息",
-        "en-US": "Write an ERROR level error log message"
+        "en-US": "Write an ERROR level error log message",
+        "zh-TW": "寫入一條ERROR级別的錯誤日志資訊",
+        "ja": "ERRORレベルのエラーログメッセージを書き込み",
+        "ko": "ERROR 레벨 에러 로그 메시지 쓰기",
+        "es": "Escribir mensaje de error nivel ERROR",
+        "fr": "Écrire un message d'erreur niveau ERROR",
+        "de": "ERROR-Fehler-Log-Nachricht schreiben",
+        "pt-BR": "Escrever mensagem de erro nível ERROR",
+        "ru": "Записать ошибку уровня ERROR",
+        "ar": "كتابة رسالة خطأ بمستوى ERROR",
+        "hi": "ERROR स्तर त्रुटि लॉग संदेश लिखें"
       },
       "group": "write",
       "description": "Write an ERROR level error log message"
@@ -189,7 +349,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "日志标签（用于分类过滤）",
-            "en-US": "Log tag (for categorization/filtering)"
+            "en-US": "Log tag (for categorization/filtering)",
+            "zh-TW": "日志標籤（用於分類過濾）",
+            "ja": "ログタグ（分類/フィルタリング用）",
+            "ko": "로그 태그 (분류/필터링용)",
+            "es": "Etiqueta de registro (para categorización/filtrado)",
+            "fr": "Étiquette de journal (catégorisation/filtrage)",
+            "de": "Log-Tag (zur Kategorisierung/Filterung)",
+            "pt-BR": "Tag de log (para categorização/filtragem)",
+            "ru": "Тег журнала (для категоризации/фильтрации)",
+            "ar": "وسم السجل (للتصنيف/التصفية)",
+            "hi": "लॉग टैग (वर्गीकरण/फ़िल्टरिंग के लिए)"
           },
           "desc": "Log tag (for categorization/filtering)"
         },
@@ -198,7 +368,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息内容",
-            "en-US": "Message content"
+            "en-US": "Message content",
+            "zh-TW": "消息內容",
+            "ja": "メッセージコンテンツ",
+            "ko": "메시지콘텐츠",
+            "es": "Contenido del mensaje",
+            "fr": "Contenu du message",
+            "de": "Nachrichteninhalt",
+            "pt-BR": "Conteúdo da mensagem",
+            "ru": "Содержание сообщения",
+            "ar": "محتوى الرسالة",
+            "hi": "संदेश सामग्री"
           },
           "desc": "Message content"
         }
@@ -208,13 +388,33 @@
         "desc": "Result object of type null",
         "descs": {
           "zh-CN": "null类型的结果对象",
-          "en-US": "Result object of type null"
+          "en-US": "Result object of type null",
+          "zh-TW": "null類型的結果物件",
+          "ja": "nullタイプの結果オブジェクト",
+          "ko": "null유형의결과객체",
+          "es": "Objeto resultado de tipo null",
+          "fr": "Objet résultat de type null",
+          "de": "Ergebnisobjekt vom Typ null",
+          "pt-BR": "Objeto resultado do tipo null",
+          "ru": "Объект результата типа null",
+          "ar": "كائن نتيجة من نوع null",
+          "hi": "null प्रकार का परिणाम ऑब्जेक्ट"
         }
       },
       "bridge_path": "log.trace",
       "descriptions": {
         "zh-CN": "输出跟踪级别日志",
-        "en-US": "Write a TRACE level detailed trace log"
+        "en-US": "Write a TRACE level detailed trace log",
+        "zh-TW": "輸出跟踪级別日志",
+        "ja": "TRACEレベルの詳細トレースログを書き込み",
+        "ko": "TRACE 레벨 상세 추적 로그 쓰기",
+        "es": "Escribir registro de traza detallado nivel TRACE",
+        "fr": "Écrire un journal de trace détaillé niveau TRACE",
+        "de": "TRACE-Detaillog schreiben",
+        "pt-BR": "Escrever log de rastreamento detalhado nível TRACE",
+        "ru": "Записать подробный трассировочный журнал TRACE",
+        "ar": "كتابة سجل تتبع تفصيلي بمستوى TRACE",
+        "hi": "TRACE स्तर विस्तृत ट्रेस लॉग लिखें"
       },
       "group": "write",
       "description": "Write a TRACE level detailed trace log"
@@ -228,7 +428,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "压缩级别",
-            "en-US": "Compression level"
+            "en-US": "Compression level",
+            "zh-TW": "壓縮级別",
+            "ja": "圧縮レベル",
+            "ko": "압축 레벨",
+            "es": "Nivel de compresión",
+            "fr": "Niveau de compression",
+            "de": "Komprimierungsstufe",
+            "pt-BR": "Nível de compressão",
+            "ru": "Уровень сжатия",
+            "ar": "مستوى الضغط",
+            "hi": "कंप्रेशन स्तर"
           },
           "desc": "Compression level"
         }
@@ -238,13 +448,33 @@
         "desc": "Result object of type null",
         "descs": {
           "zh-CN": "null类型的结果对象",
-          "en-US": "Result object of type null"
+          "en-US": "Result object of type null",
+          "zh-TW": "null類型的結果物件",
+          "ja": "nullタイプの結果オブジェクト",
+          "ko": "null유형의결과객체",
+          "es": "Objeto resultado de tipo null",
+          "fr": "Objet résultat de type null",
+          "de": "Ergebnisobjekt vom Typ null",
+          "pt-BR": "Objeto resultado do tipo null",
+          "ru": "Объект результата типа null",
+          "ar": "كائن نتيجة من نوع null",
+          "hi": "null प्रकार का परिणाम ऑब्जेक्ट"
         }
       },
       "bridge_path": "log.setLevel",
       "descriptions": {
         "zh-CN": "设置日志输出级别",
-        "en-US": "Set level property of logging"
+        "en-US": "Set level property of logging",
+        "zh-TW": "設定日志輸出级別",
+        "ja": "ログレベル属性を設定",
+        "ko": "로깅 레벨 속성 설정",
+        "es": "Establecer nivel de registro",
+        "fr": "Définir le niveau de journalisation",
+        "de": "Protokollierungsstufe setzen",
+        "pt-BR": "Definir nível de log",
+        "ru": "Установить уровень журналирования",
+        "ar": "تعيين مستوى التسجيل",
+        "hi": "लॉगिंग स्तर सेट करें"
       },
       "group": "config",
       "description": "Set level property of logging"
@@ -258,7 +488,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         }
       ],
@@ -266,14 +506,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "log.setFile",
       "descriptions": {
         "zh-CN": "设置file property",
-        "en-US": "Set file property of logging"
+        "en-US": "Set file property of logging",
+        "zh-TW": "設定file property",
+        "ja": "設定するfile property",
+        "ko": "설정file property",
+        "es": "Establecer archivo de registro",
+        "fr": "Définir le fichier de journalisation",
+        "de": "Protokollierungsdatei setzen",
+        "pt-BR": "Definir arquivo de log",
+        "ru": "Установить файл журнала",
+        "ar": "تعيين ملف التسجيل",
+        "hi": "लॉगिंग फ़ाइल सेट करें"
       },
       "group": "config",
       "description": "Set file property of logging"
@@ -287,13 +547,33 @@
         "desc": "Result object of type null",
         "descs": {
           "zh-CN": "null类型的结果对象",
-          "en-US": "Result object of type null"
+          "en-US": "Result object of type null",
+          "zh-TW": "null類型的結果物件",
+          "ja": "nullタイプの結果オブジェクト",
+          "ko": "null유형의결과객체",
+          "es": "Objeto resultado de tipo null",
+          "fr": "Objet résultat de type null",
+          "de": "Ergebnisobjekt vom Typ null",
+          "pt-BR": "Objeto resultado do tipo null",
+          "ru": "Объект результата типа null",
+          "ar": "كائن نتيجة من نوع null",
+          "hi": "null प्रकार का परिणाम ऑब्जेक्ट"
         }
       },
       "bridge_path": "log.flush",
       "descriptions": {
         "zh-CN": "刷新日志缓冲区",
-        "en-US": "Flush buffered logs to disk immediately"
+        "en-US": "Flush buffered logs to disk immediately",
+        "zh-TW": "刷新日志緩沖區",
+        "ja": "バッファされたログを即座にディスクに書き出し",
+        "ko": "버퍼링된 로그를 즉시 디스크에 기록",
+        "es": "Vaciar registros almacenados al disco inmediatamente",
+        "fr": "Vider les journaux en mémoire sur le disque",
+        "de": "Gepufferte Logs sofort auf die Festplatte schreiben",
+        "pt-BR": "Gravar logs em buffer no disco imediatamente",
+        "ru": "Немедленно сбросить буферизованные логи на диск",
+        "ar": "تفريغ السجلات المخزنة إلى القرص فوراً",
+        "hi": "बफ़र किए गए लॉग तुरंत डिस्क में फ्लश करें"
       },
       "group": "manage",
       "description": "Flush buffered logs to disk immediately"
@@ -307,7 +587,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         }
       ],
@@ -315,14 +605,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "log.readLines",
       "descriptions": {
         "zh-CN": "读取lines数据",
-        "en-US": "Read lines of logging"
+        "en-US": "Read lines of logging",
+        "zh-TW": "讀取lines數據",
+        "ja": "読み取るlinesデータ",
+        "ko": "읽기lines데이터",
+        "es": "Leer líneas de registro",
+        "fr": "Lire les lignes de journal",
+        "de": "Protokollzeilen lesen",
+        "pt-BR": "Ler linhas de log",
+        "ru": "Прочитать строки журнала",
+        "ar": "قراءة سطور السجل",
+        "hi": "लॉगिंग पंक्तियां पढ़ें"
       },
       "group": "query",
       "description": "Read lines of logging"
@@ -336,7 +646,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         }
       ],
@@ -344,14 +664,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "log.clear",
       "descriptions": {
         "zh-CN": "清空当前日志文件的所有内容",
-        "en-US": "Clear all content from current log file"
+        "en-US": "Clear all content from current log file",
+        "zh-TW": "清空當前日志檔案的所有內容",
+        "ja": "クリアする現でログファイルのすべてコンテンツ",
+        "ko": "비우기현재로그파일의모든콘텐츠",
+        "es": "Limpiar contenido del archivo de registro",
+        "fr": "Effacer le contenu du fichier journal",
+        "de": "Inhalt der Logdatei löschen",
+        "pt-BR": "Limpar conteúdo do arquivo de log",
+        "ru": "Очистить содержимое файла журнала",
+        "ar": "مسح محتوى ملف السجل",
+        "hi": "वर्तमान लॉग फ़ाइल की सभी सामग्री साफ़ करें"
       },
       "group": "manage",
       "description": "Clear all content from current log file"
@@ -365,7 +705,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         },
         {
@@ -373,7 +723,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "正则模式",
-            "en-US": "Regex pattern"
+            "en-US": "Regex pattern",
+            "zh-TW": "正則模式",
+            "ja": "正規表現パターン",
+            "ko": "정규식 패턴",
+            "es": "Patrón de expresión regular",
+            "fr": "Motif d'expression régulière",
+            "de": "Regulärer Ausdruck",
+            "pt-BR": "Padrão de expressão regular",
+            "ru": "Шаблон регулярного выражения",
+            "ar": "نمط تعبير منتظم",
+            "hi": "रेगेक्स पैटर्न"
           }
         }
       ],
@@ -381,14 +741,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "log.search",
       "descriptions": {
         "zh-CN": "在日志文件中搜索匹配关键词的记录",
-        "en-US": "Search log file for records matching keywords"
+        "en-US": "Search log file for records matching keywords",
+        "zh-TW": "在日志檔案中搜尋匹配關鍵词的記錄",
+        "ja": "キーワードに一致するレコードをログファイルから検索",
+        "ko": "키워드와 일치하는 레코드를 로그 파일에서 검색",
+        "es": "Buscar registros que coincidan con palabras clave",
+        "fr": "Rechercher des enregistrements correspondant aux mots-clés",
+        "de": "Protokolldatei nach übereinstimmenden Einträgen durchsuchen",
+        "pt-BR": "Pesquisar registros que correspondam a palavras-chave",
+        "ru": "Поиск записей журнала по ключевым словам",
+        "ar": "البحث في ملف السجل عن سجلات مطابقة",
+        "hi": "कीवर्ड से मिलते रिकॉर्ड लॉग फ़ाइल में खोजें"
       },
       "group": "query",
       "description": "Search log file for records matching keywords"
@@ -402,7 +782,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         }
       ],
@@ -410,14 +800,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "log.rotate",
       "descriptions": {
         "zh-CN": "轮转日志文件",
-        "en-US": "Manually trigger log file rotation"
+        "en-US": "Manually trigger log file rotation",
+        "zh-TW": "轮轉日志檔案",
+        "ja": "ログファイルローテーションを手動でトリガー",
+        "ko": "로그 파일 로테이션 수동 트리거",
+        "es": "Activar rotación de archivo de registro manualmente",
+        "fr": "Déclencher manuellement la rotation du fichier journal",
+        "de": "Protokolldatei-Rotation manuell auslösen",
+        "pt-BR": "Acionar rotação do arquivo de log manualmente",
+        "ru": "Вручную запустить ротацию файла журнала",
+        "ar": "تشغيل تدوير ملف السجل يدوياً",
+        "hi": "लॉग फ़ाइल रोटेशन मैन्युअली ट्रिगर करें"
       },
       "group": "manage",
       "description": "Manually trigger log file rotation"
@@ -425,7 +835,17 @@
   ],
   "overviews": {
     "zh-CN": "提供结构化日志记录能力，支持多级别日志（trace/debug/info/warn/error）、文件输出、日志轮转、格式自定义、运行时级别动态调整等功能。",
-    "en-US": "Structured logging with multi-level support (trace/debug/info/warn/error), file output, log rotation, custom formatting, and runtime level adjustment."
+    "en-US": "Structured logging with multi-level support (trace/debug/info/warn/error), file output, log rotation, custom formatting, and runtime level adjustment.",
+    "zh-TW": "提供结構化日志記錄能力，支援多級別日志（trace/debug/info/warn/error）、檔案输出、日志輪轉、格式自定義、執行時級別動態調整等功能。",
+    "ja": "構造化ログ：マルチレベル(trace/debug/info/warn/error)・ファイル出力・ログローテーション・カスタムフォーマット・実行時レベル調整。",
+    "ko": "구조화된 로깅: 다중 레벨(trace/debug/info/warn/error), 파일 출력, 로그 로테이션, 커스텀 포맷, 런타임 레벨 조정.",
+    "es": "Registro estructurado: múltiples niveles (trace/debug/info/warn/error), archivo, rotación, formato personalizado y ajuste en tiempo de ejecución.",
+    "fr": "Journalisation structurée : multi-niveaux (trace/debug/info/warn/error), fichier, rotation, format personnalisé et ajustement à l'exécution.",
+    "de": "Strukturiertes Logging: Multi-Level (trace/debug/info/warn/error), Dateiausgabe, Rotation, benutzerdefiniertes Format und Laufzeitanpassung.",
+    "pt-BR": "Log estruturado: multi-nível (trace/debug/info/warn/error), arquivo, rotação, formato personalizado e ajuste em tempo de execução.",
+    "ru": "Структурированное логирование: уровни (trace/debug/info/warn/error), файлы, ротация, формат и настройка уровня во время выполнения.",
+    "ar": "تسجيل منظم: مستويات متعددة (trace/debug/info/warn/error)، ملف، تدوير، تنسيق مخصص وضبط مستوى أثناء التشغيل.",
+    "hi": "स्ट्रक्चर्ड लॉगिंग: मल्टी-लेवल (trace/debug/info/warn/error), फाइल, रोटेशन, कस्टम फॉर्मेट और रनटाइम लेवल।"
   },
   "constants": [
     {
@@ -435,7 +855,17 @@
       "group": "level",
       "descs": {
         "zh-CN": "跟踪级别",
-        "en-US": "Trace level"
+        "en-US": "Trace level",
+        "zh-TW": "跟踪級別",
+        "ja": "トレースレベル",
+        "ko": "트레이스 레벨",
+        "es": "Nivel de rastreo",
+        "fr": "Niveau de trace",
+        "de": "Trace-Level",
+        "pt-BR": "Nível de rastreamento",
+        "ru": "Уровень трассировки",
+        "ar": "مستوى التتبع",
+        "hi": "ट्रेस स्तर"
       }
     },
     {
@@ -445,7 +875,17 @@
       "group": "level",
       "descs": {
         "zh-CN": "调试级别",
-        "en-US": "Debug level"
+        "en-US": "Debug level",
+        "zh-TW": "偵錯級別",
+        "ja": "デバッグレベル",
+        "ko": "디버그 레벨",
+        "es": "Nivel de depuración",
+        "fr": "Niveau de débogage",
+        "de": "Debug-Level",
+        "pt-BR": "Nível de depuração",
+        "ru": "Уровень отладки",
+        "ar": "مستوى التصحيح",
+        "hi": "डीबग स्तर"
       }
     },
     {
@@ -455,7 +895,17 @@
       "group": "level",
       "descs": {
         "zh-CN": "信息级别",
-        "en-US": "Info level"
+        "en-US": "Info level",
+        "zh-TW": "資訊級別",
+        "ja": "情報レベル",
+        "ko": "정보 레벨",
+        "es": "Nivel de información",
+        "fr": "Niveau d'information",
+        "de": "Info-Level",
+        "pt-BR": "Nível de informação",
+        "ru": "Уровень информации",
+        "ar": "مستوى المعلومات",
+        "hi": "जानकारी स्तर"
       }
     },
     {
@@ -465,7 +915,17 @@
       "group": "level",
       "descs": {
         "zh-CN": "警告级别",
-        "en-US": "Warning level"
+        "en-US": "Warning level",
+        "zh-TW": "警告級別",
+        "ja": "警告レベル",
+        "ko": "경고 레벨",
+        "es": "Nivel de advertencia",
+        "fr": "Niveau d'avertissement",
+        "de": "Warnstufe",
+        "pt-BR": "Nível de aviso",
+        "ru": "Уровень предупреждения",
+        "ar": "مستوى التحذير",
+        "hi": "चेतावनी स्तर"
       }
     },
     {
@@ -475,7 +935,17 @@
       "group": "level",
       "descs": {
         "zh-CN": "错误级别",
-        "en-US": "Error level"
+        "en-US": "Error level",
+        "zh-TW": "錯誤級別",
+        "ja": "エラーレベル",
+        "ko": "에러 레벨",
+        "es": "Nivel de error",
+        "fr": "Niveau d'erreur",
+        "de": "Fehlerstufe",
+        "pt-BR": "Nível de erro",
+        "ru": "Уровень ошибки",
+        "ar": "مستوى الخطأ",
+        "hi": "त्रुटि स्तर"
       }
     }
   ],
@@ -484,7 +954,17 @@
       "name": "LogEntry",
       "descriptions": {
         "zh-CN": "日志条目信息",
-        "en-US": "Log entry information"
+        "en-US": "Log entry information",
+        "zh-TW": "日志条目資訊",
+        "ja": "ログエントリ情報",
+        "ko": "로그 항목 정보",
+        "es": "Información de entrada de registro",
+        "fr": "Informations d'entrée de journal",
+        "de": "Protokolleintragsinformationen",
+        "pt-BR": "Informações de entrada de log",
+        "ru": "Информация о записи журнала",
+        "ar": "معلومات إدخال السجل",
+        "hi": "लॉग प्रविष्टि जानकारी"
       },
       "fields": [
         {
@@ -492,7 +972,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "日志级别（debug/info/warn/error）",
-            "en-US": "Log level"
+            "en-US": "Log level",
+            "zh-TW": "日志級別（debug/info/warn/error）",
+            "ja": "ログレベル",
+            "ko": "로그 레벨",
+            "es": "Nivel de registro",
+            "fr": "Niveau de journal",
+            "de": "Protokollstufe",
+            "pt-BR": "Nível de log",
+            "ru": "Уровень журнала",
+            "ar": "مستوى السجل",
+            "hi": "लॉग स्तर"
           }
         },
         {
@@ -500,7 +990,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "日志消息内容",
-            "en-US": "Log message content"
+            "en-US": "Log message content",
+            "zh-TW": "日志訊息內容",
+            "ja": "ログメッセージ内容",
+            "ko": "로그 메시지 내용",
+            "es": "Contenido del mensaje de registro",
+            "fr": "Contenu du message de journal",
+            "de": "Protokollnachrichteninhalt",
+            "pt-BR": "Conteúdo da mensagem de log",
+            "ru": "Содержимое сообщения журнала",
+            "ar": "محتوى رسالة السجل",
+            "hi": "लॉग संदेश सामग्री"
           }
         },
         {
@@ -508,7 +1008,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "日志时间戳",
-            "en-US": "Log timestamp"
+            "en-US": "Log timestamp",
+            "zh-TW": "日志時间戳",
+            "ja": "ログタイムスタンプ",
+            "ko": "로그 타임스탬프",
+            "es": "Marca de tiempo del registro",
+            "fr": "Horodatage du journal",
+            "de": "Protokollzeitstempel",
+            "pt-BR": "Timestamp do log",
+            "ru": "Временная метка журнала",
+            "ar": "طابع وقت السجل",
+            "hi": "लॉग टाइमस्टैम्प"
           }
         },
         {
@@ -516,7 +1026,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "日志来源模块",
-            "en-US": "Log source module"
+            "en-US": "Log source module",
+            "zh-TW": "日志來源模組",
+            "ja": "ログソースモジュール",
+            "ko": "로그 소스 모듈",
+            "es": "Módulo fuente del registro",
+            "fr": "Module source du journal",
+            "de": "Protokollquellmodul",
+            "pt-BR": "Módulo de origem do log",
+            "ru": "Модуль-источник журнала",
+            "ar": "وحدة مصدر السجل",
+            "hi": "लॉग स्रोत मॉड्यूल"
           },
           "optional": true
         }

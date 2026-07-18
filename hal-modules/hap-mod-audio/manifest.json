@@ -22,7 +22,7 @@
     "ar": "وحدة الصوت",
     "hi": "ऑडियो मॉड्यूल"
   },
-  "permission": "",
+  "permission": "audio",
   "functions": [
     {
       "name": "play",
@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "本地音频文件路径",
-            "en-US": "Local audio file path"
+            "en-US": "Local audio file path",
+            "zh-TW": "本地音訊檔案路徑",
+            "ja": "ローカルオーディオファイルパス",
+            "ko": "로컬 오디오 파일 경로",
+            "es": "Ruta del archivo de audio local",
+            "fr": "Chemin du fichier audio local",
+            "de": "Lokaler Audiodateipfad",
+            "pt-BR": "Caminho do arquivo de áudio local",
+            "ru": "Путь к локальному аудиофайлу",
+            "ar": "مسار ملف الصوت المحلي",
+            "hi": "लोकल ऑडियो फ़ाइल पथ"
           },
           "desc": "Local audio file path"
         },
@@ -42,7 +52,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "播放音量（0.0-1.0，1.0为最大音量）",
-            "en-US": "Volume level (0.0-1.0)"
+            "en-US": "Volume level (0.0-1.0)",
+            "zh-TW": "播放音量（0.0-1.0，1.0為最大音量）",
+            "ja": "音量レベル（0.0-1.0）",
+            "ko": "볼륨 레벨 (0.0-1.0)",
+            "es": "Nivel de volumen (0.0-1.0)",
+            "fr": "Niveau de volume (0.0-1.0)",
+            "de": "Lautstärke (0.0-1.0)",
+            "pt-BR": "Nível de volume (0.0-1.0)",
+            "ru": "Уровень громкости (0.0-1.0)",
+            "ar": "مستوى الصوت (0.0-1.0)",
+            "hi": "वॉल्यूम स्तर (0.0-1.0)"
           },
           "optional": true,
           "desc": "Volume level (0.0-1.0)"
@@ -52,7 +72,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "播放完成时的回调标识",
-            "en-US": "Callback ID for playback completion"
+            "en-US": "Callback ID for playback completion",
+            "zh-TW": "播放完成時的回調標識",
+            "ja": "再生完了時のコールバックID",
+            "ko": "재생 완료 콜백 ID",
+            "es": "ID de callback de fin de reproducción",
+            "fr": "ID de rappel de fin de lecture",
+            "de": "Callback-ID für Wiedergabeende",
+            "pt-BR": "ID de callback de conclusão",
+            "ru": "ID обратного вызова завершения",
+            "ar": "معرف رد الاتصال لاكتمال التشغيل",
+            "hi": "प्लेबैक पूर्ण कॉलबैक ID"
           },
           "optional": true,
           "desc": "Callback ID for playback completion"
@@ -62,13 +92,33 @@
         "type": "PlayHandle",
         "descs": {
           "zh-CN": "播放器信息",
-          "en-US": "Player info"
+          "en-US": "Player info",
+          "zh-TW": "播放器資訊",
+          "ja": "播放器情報",
+          "ko": "플레이어 정보",
+          "es": "Información del reproductor",
+          "fr": "Infos du lecteur",
+          "de": "Player-Info",
+          "pt-BR": "Informações do player",
+          "ru": "Информация о плеере",
+          "ar": "معلومات المشغل",
+          "hi": "प्लेयर जानकारी"
         }
       },
       "bridge_path": "audio.play",
       "descriptions": {
         "zh-CN": "播放本地音频文件，支持调节音量和播放完成回调",
-        "en-US": "Play local audio file with volume control and completion callback"
+        "en-US": "Play local audio file with volume control and completion callback",
+        "zh-TW": "播放本地音訊檔案，支持調節音量和播放完成回調",
+        "ja": "ローカルオーディオファイルを再生（音量調整と完了コールバック対応）",
+        "ko": "볼륨 조절 및 완료 콜백으로 로컬 오디오 파일 재생",
+        "es": "Reproducir archivo de audio local con control de volumen",
+        "fr": "Lire un fichier audio local avec contrôle du volume",
+        "de": "Lokale Audiodatei mit Lautstärkeregelung abspielen",
+        "pt-BR": "Reproduzir arquivo de áudio local com controle de volume",
+        "ru": "Воспроизвести локальный аудиофайл с регулировкой громкости",
+        "ar": "تشغيل ملف صوتي محلي مع التحكم في مستوى الصوت",
+        "hi": "वॉल्यूम कंट्रोल और पूर्णता कॉलबैक के साथ लोकल ऑडियो फ़ाइल चलाएं"
       },
       "group": "playback",
       "async": true,
@@ -83,7 +133,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "音频资源的网络URL地址",
-            "en-US": "Audio resource URL"
+            "en-US": "Audio resource URL",
+            "zh-TW": "音訊資源的網絡URL地址",
+            "ja": "オーディオ资源のネットワークURLアドレス",
+            "ko": "오디오 리소스 URL",
+            "es": "URL del recurso de audio",
+            "fr": "URL de la ressource audio",
+            "de": "Audio-Ressourcen-URL",
+            "pt-BR": "URL do recurso de áudio",
+            "ru": "URL аудиоресурса",
+            "ar": "URL مورد الصوت",
+            "hi": "ऑडियो रिसोर्स URL"
           },
           "desc": "Audio resource URL"
         },
@@ -92,7 +152,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "音量 0-1",
-            "en-US": "Volume 0-1"
+            "en-US": "Volume 0-1",
+            "zh-TW": "音量 0-1",
+            "ja": "音量 0-1",
+            "ko": "볼륨 0-1",
+            "es": "Volumen 0-1",
+            "fr": "Volume 0-1",
+            "de": "Lautstärke 0-1",
+            "pt-BR": "Volume 0-1",
+            "ru": "Громкость 0-1",
+            "ar": "الصوت 0-1",
+            "hi": "वॉल्यूम 0-1"
           },
           "optional": true
         },
@@ -101,7 +171,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -110,13 +190,33 @@
         "type": "PlayHandle",
         "descs": {
           "zh-CN": "播放器信息",
-          "en-US": "Player info"
+          "en-US": "Player info",
+          "zh-TW": "播放器資訊",
+          "ja": "播放器情報",
+          "ko": "플레이어 정보",
+          "es": "Información del reproductor",
+          "fr": "Infos du lecteur",
+          "de": "Player-Info",
+          "pt-BR": "Informações do player",
+          "ru": "Информация о плеере",
+          "ar": "معلومات المشغل",
+          "hi": "प्लेयर जानकारी"
         }
       },
       "bridge_path": "audio.playUrl",
       "descriptions": {
         "zh-CN": "播放网络音频流URL，支持HTTP/HTTPS音频资源",
-        "en-US": "Play audio from network URL (HTTP/HTTPS)"
+        "en-US": "Play audio from network URL (HTTP/HTTPS)",
+        "zh-TW": "播放網絡音訊流URL，支持HTTP/HTTPS音訊資源",
+        "ja": "播放ネットワークオーディオ流URL，サポートHTTP/HTTPSオーディオ资源",
+        "ko": "네트워크 URL에서 오디오 재생 (HTTP/HTTPS)",
+        "es": "Reproducir audio desde URL de red",
+        "fr": "Lire l'audio depuis une URL réseau",
+        "de": "Audio von Netzwerk-URL abspielen",
+        "pt-BR": "Reproduzir áudio de URL de rede",
+        "ru": "Воспроизвести аудио из сетевого URL",
+        "ar": "تشغيل الصوت من URL الشبكة",
+        "hi": "नेटवर्क URL (HTTP/HTTPS) से ऑडियो चलाएं"
       },
       "group": "playback",
       "async": true,
@@ -131,7 +231,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要暂停的播放器实例ID",
-            "en-US": "Player instance ID to pause"
+            "en-US": "Player instance ID to pause",
+            "zh-TW": "要暂停的播放器實例ID",
+            "ja": "一時停止するプレイヤーインスタンスID",
+            "ko": "일시 중지할 플레이어 인스턴스 ID",
+            "es": "ID de instancia del reproductor a pausar",
+            "fr": "ID d'instance du lecteur à mettre en pause",
+            "de": "Zu pausierende Player-Instanz-ID",
+            "pt-BR": "ID da instância do player para pausar",
+            "ru": "ID экземпляра проигрывателя для паузы",
+            "ar": "معرف نسخة المشغل للإيقاف المؤقت",
+            "hi": "रोकने के लिए प्लेयर इंस्टेंस ID"
           },
           "desc": "Player instance ID to pause"
         }
@@ -140,14 +250,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.pause",
       "descriptions": {
         "zh-CN": "暂停当前正在播放的音频（可通过 resume 恢复）",
-        "en-US": "Pause currently playing audio (can be resumed)"
+        "en-US": "Pause currently playing audio (can be resumed)",
+        "zh-TW": "暂停當前正在播放的音訊（可通過 resume 恢複）",
+        "ja": "現在再生中のオーディオを一時停止（再開可能）",
+        "ko": "현재 재생 중인 오디오 일시 중지 (재개 가능)",
+        "es": "Pausar audio en reproducción (reanudable)",
+        "fr": "Mettre en pause l'audio (peut être repris)",
+        "de": "Audio pausieren (kann fortgesetzt werden)",
+        "pt-BR": "Pausar áudio em reprodução (pode ser retomado)",
+        "ru": "Приостановить воспроизведение (можно возобновить)",
+        "ar": "إيقاف الصوت مؤقتاً (يمكن استئنافه)",
+        "hi": "वर्तमान ऑडियो रोकें (फिर से शुरू किया जा सकता है)"
       },
       "group": "playback",
       "description": "Pause currently playing audio (can be resumed)"
@@ -161,7 +291,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "播放器 ID",
-            "en-US": "Player ID"
+            "en-US": "Player ID",
+            "zh-TW": "播放器 ID",
+            "ja": "プレーヤーID",
+            "ko": "플레이어 ID",
+            "es": "ID del reproductor",
+            "fr": "ID du lecteur",
+            "de": "Player-ID",
+            "pt-BR": "ID do player",
+            "ru": "ID плеера",
+            "ar": "معرف المشغل",
+            "hi": "प्लेयर ID"
           }
         }
       ],
@@ -169,14 +309,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.resume",
       "descriptions": {
         "zh-CN": "恢复之前暂停的音频播放",
-        "en-US": "Resume previously paused audio playback"
+        "en-US": "Resume previously paused audio playback",
+        "zh-TW": "恢複之前暂停的音訊播放",
+        "ja": "一時停止していたオーディオ再生を再開",
+        "ko": "일시 중지된 오디오 재생 재개",
+        "es": "Reanudar reproducción de audio pausada",
+        "fr": "Reprendre la lecture audio en pause",
+        "de": "Pausierte Audio-Wiedergabe fortsetzen",
+        "pt-BR": "Retomar reprodução de áudio pausada",
+        "ru": "Возобновить приостановленное воспроизведение",
+        "ar": "استئناف تشغيل الصوت المتوقف مؤقتاً",
+        "hi": "रोका गया ऑडियो प्लेबैक फिर शुरू करें"
       },
       "group": "playback",
       "description": "Resume previously paused audio playback"
@@ -190,7 +350,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "播放器 ID",
-            "en-US": "Player ID"
+            "en-US": "Player ID",
+            "zh-TW": "播放器 ID",
+            "ja": "プレーヤーID",
+            "ko": "플레이어 ID",
+            "es": "ID del reproductor",
+            "fr": "ID du lecteur",
+            "de": "Player-ID",
+            "pt-BR": "ID do player",
+            "ru": "ID плеера",
+            "ar": "معرف المشغل",
+            "hi": "प्लेयर ID"
           }
         }
       ],
@@ -198,14 +368,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.stop",
       "descriptions": {
         "zh-CN": "完全停止音频播放并释放资源",
-        "en-US": "Completely stop audio playback and release resources"
+        "en-US": "Completely stop audio playback and release resources",
+        "zh-TW": "完全停止音訊播放並釋放資源",
+        "ja": "オーディオ再生を完全に停止してリソースを解放",
+        "ko": "오디오 재생 완전 중지 및 리소스 해제",
+        "es": "Detener reproducción y liberar recursos",
+        "fr": "Arrêter complètement la lecture audio",
+        "de": "Audio-Wiedergabe stoppen und Ressourcen freigeben",
+        "pt-BR": "Parar reprodução e liberar recursos",
+        "ru": "Полностью остановить воспроизведение",
+        "ar": "إيقاف التشغيل بالكامل وتحرير الموارد",
+        "hi": "ऑडियो प्लेबैक पूरी तरह बंद करें"
       },
       "group": "playback",
       "description": "Completely stop audio playback and release resources"
@@ -218,14 +408,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.stopAll",
       "descriptions": {
         "zh-CN": "停止所有正在播放的音频实例",
-        "en-US": "Stop all currently playing audio instances"
+        "en-US": "Stop all currently playing audio instances",
+        "zh-TW": "停止所有正在播放的音訊實例",
+        "ja": "停止するすべて正で播放のオーディオインスタンス",
+        "ko": "현재 재생 중인 모든 오디오 인스턴스 중지",
+        "es": "Detener todas las instancias de audio",
+        "fr": "Arrêter toutes les instances audio",
+        "de": "Alle laufenden Audio-Instanzen stoppen",
+        "pt-BR": "Parar todas as instâncias de áudio",
+        "ru": "Остановить все экземпляры воспроизведения",
+        "ar": "إيقاف جميع مثيلات الصوت",
+        "hi": "सभी चल रहे ऑडियो इंस्टेंस बंद करें"
       },
       "group": "playback",
       "description": "Stop all currently playing audio instances"
@@ -239,7 +449,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "播放器 ID",
-            "en-US": "Player ID"
+            "en-US": "Player ID",
+            "zh-TW": "播放器 ID",
+            "ja": "プレーヤーID",
+            "ko": "플레이어 ID",
+            "es": "ID del reproductor",
+            "fr": "ID du lecteur",
+            "de": "Player-ID",
+            "pt-BR": "ID do player",
+            "ru": "ID плеера",
+            "ar": "معرف المشغل",
+            "hi": "प्लेयर ID"
           }
         },
         {
@@ -247,7 +467,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "音量（0.0-1.0）",
-            "en-US": "Volume (0.0-1.0)"
+            "en-US": "Volume (0.0-1.0)",
+            "zh-TW": "音量（0.0-1.0）",
+            "ja": "音量（0.0-1.0）",
+            "ko": "볼륨 (0.0-1.0)",
+            "es": "Volumen (0.0-1.0)",
+            "fr": "Volume (0.0-1.0)",
+            "de": "Lautstärke (0.0-1.0)",
+            "pt-BR": "Volume (0.0-1.0)",
+            "ru": "Громкость (0.0-1.0)",
+            "ar": "الصوت (0.0-1.0)",
+            "hi": "वॉल्यूम (0.0-1.0)"
           },
           "desc": "Volume (0.0-1.0)",
           "optional": true
@@ -257,14 +487,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.setVolume",
       "descriptions": {
         "zh-CN": "设置音频播放实例的音量大小",
-        "en-US": "Set volume property of audio"
+        "en-US": "Set volume property of audio",
+        "zh-TW": "設定音訊播放實例的音量大小",
+        "ja": "設定するオーディオ播放インスタンスの音量サイズ",
+        "ko": "오디오 볼륨 속성 설정",
+        "es": "Establecer volumen del audio",
+        "fr": "Définir le volume de l'audio",
+        "de": "Audio-Lautstärke einstellen",
+        "pt-BR": "Definir volume do áudio",
+        "ru": "Установить громкость аудио",
+        "ar": "تعيين خاصية مستوى الصوت",
+        "hi": "ऑडियो वॉल्यूम सेट करें"
       },
       "group": "playback",
       "description": "Set volume property of audio"
@@ -278,7 +528,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "播放器 ID",
-            "en-US": "Player ID"
+            "en-US": "Player ID",
+            "zh-TW": "播放器 ID",
+            "ja": "プレーヤーID",
+            "ko": "플레이어 ID",
+            "es": "ID del reproductor",
+            "fr": "ID du lecteur",
+            "de": "Player-ID",
+            "pt-BR": "ID do player",
+            "ru": "ID плеера",
+            "ar": "معرف المشغل",
+            "hi": "प्लेयर ID"
           }
         },
         {
@@ -286,7 +546,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "播放速度倍率",
-            "en-US": "Playback speed multiplier"
+            "en-US": "Playback speed multiplier",
+            "zh-TW": "播放速度倍率",
+            "ja": "再生速度倍率",
+            "ko": "재생 속도 배율",
+            "es": "Multiplicador de velocidad",
+            "fr": "Multiplicateur de vitesse",
+            "de": "Wiedergabe-Geschwindigkeit",
+            "pt-BR": "Multiplicador de velocidade",
+            "ru": "Множитель скорости",
+            "ar": "مضاعف سرعة التشغيل",
+            "hi": "प्लेबैक स्पीड गुणक"
           },
           "desc": "Playback speed multiplier"
         }
@@ -295,14 +565,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.setSpeed",
       "descriptions": {
         "zh-CN": "设置音频播放的速度倍率",
-        "en-US": "Set speed property of audio"
+        "en-US": "Set speed property of audio",
+        "zh-TW": "設定音訊播放的速度倍率",
+        "ja": "設定するオーディオ播放の速度倍率",
+        "ko": "오디오 속도 속성 설정",
+        "es": "Establecer velocidad del audio",
+        "fr": "Définir la vitesse de l'audio",
+        "de": "Audio-Geschwindigkeit einstellen",
+        "pt-BR": "Definir velocidade do áudio",
+        "ru": "Установить скорость аудио",
+        "ar": "تعيين خاصية سرعة الصوت",
+        "hi": "ऑडियो स्पीड सेट करें"
       },
       "group": "playback",
       "description": "Set speed property of audio"
@@ -316,7 +606,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "播放器 ID",
-            "en-US": "Player ID"
+            "en-US": "Player ID",
+            "zh-TW": "播放器 ID",
+            "ja": "プレーヤーID",
+            "ko": "플레이어 ID",
+            "es": "ID del reproductor",
+            "fr": "ID du lecteur",
+            "de": "Player-ID",
+            "pt-BR": "ID do player",
+            "ru": "ID плеера",
+            "ar": "معرف المشغل",
+            "hi": "प्लेयर ID"
           }
         }
       ],
@@ -324,14 +624,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "f64类型的结果对象",
-          "en-US": "Result object of type f64"
+          "en-US": "Result object of type f64",
+          "zh-TW": "f64類型的結果物件",
+          "ja": "f64タイプの結果オブジェクト",
+          "ko": "f64유형의결과객체",
+          "es": "Objeto resultado de tipo f64",
+          "fr": "Objet résultat de type f64",
+          "de": "Ergebnisobjekt vom Typ f64",
+          "pt-BR": "Objeto resultado do tipo f64",
+          "ru": "Объект результата типа f64",
+          "ar": "كائن نتيجة من نوع f64",
+          "hi": "f64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type f64"
       },
       "bridge_path": "audio.getPosition",
       "descriptions": {
         "zh-CN": "获取音频当前的播放位置（毫秒）",
-        "en-US": "Get position info of audio"
+        "en-US": "Get position info of audio",
+        "zh-TW": "取得音訊當前的播放位置（毫秒）",
+        "ja": "取得するオーディオ現での播放位置（毫秒）",
+        "ko": "오디오 재생 위치 정보 가져오기",
+        "es": "Obtener posición del audio",
+        "fr": "Obtenir la position de l'audio",
+        "de": "Audio-Position abrufen",
+        "pt-BR": "Obter posição do áudio",
+        "ru": "Получить позицию воспроизведения",
+        "ar": "الحصول على معلومات موضع الصوت",
+        "hi": "ऑडियो की स्थिति जानकारी प्राप्त करें"
       },
       "group": "playback",
       "description": "Get position info of audio"
@@ -345,7 +665,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "播放器 ID",
-            "en-US": "Player ID"
+            "en-US": "Player ID",
+            "zh-TW": "播放器 ID",
+            "ja": "プレーヤーID",
+            "ko": "플레이어 ID",
+            "es": "ID del reproductor",
+            "fr": "ID du lecteur",
+            "de": "Player-ID",
+            "pt-BR": "ID do player",
+            "ru": "ID плеера",
+            "ar": "معرف المشغل",
+            "hi": "प्लेयर ID"
           }
         }
       ],
@@ -353,14 +683,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "f64类型的结果对象",
-          "en-US": "Result object of type f64"
+          "en-US": "Result object of type f64",
+          "zh-TW": "f64類型的結果物件",
+          "ja": "f64タイプの結果オブジェクト",
+          "ko": "f64유형의결과객체",
+          "es": "Objeto resultado de tipo f64",
+          "fr": "Objet résultat de type f64",
+          "de": "Ergebnisobjekt vom Typ f64",
+          "pt-BR": "Objeto resultado do tipo f64",
+          "ru": "Объект результата типа f64",
+          "ar": "كائن نتيجة من نوع f64",
+          "hi": "f64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type f64"
       },
       "bridge_path": "audio.getDuration",
       "descriptions": {
         "zh-CN": "获取音频文件的总时长（毫秒）",
-        "en-US": "Get duration info of audio"
+        "en-US": "Get duration info of audio",
+        "zh-TW": "取得音訊檔案的總時長（毫秒）",
+        "ja": "オーディオの再生時間情報を取得",
+        "ko": "오디오 재생 시간 정보 가져오기",
+        "es": "Obtener duración del audio",
+        "fr": "Obtenir la durée de l'audio",
+        "de": "Audio-Dauer abrufen",
+        "pt-BR": "Obter duração do áudio",
+        "ru": "Получить длительность аудио",
+        "ar": "الحصول على معلومات مدة الصوت",
+        "hi": "ऑडियो की अवधि जानकारी प्राप्त करें"
       },
       "group": "playback",
       "description": "Get duration info of audio"
@@ -374,7 +724,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "播放器 ID",
-            "en-US": "Player ID"
+            "en-US": "Player ID",
+            "zh-TW": "播放器 ID",
+            "ja": "プレーヤーID",
+            "ko": "플레이어 ID",
+            "es": "ID del reproductor",
+            "fr": "ID du lecteur",
+            "de": "Player-ID",
+            "pt-BR": "ID do player",
+            "ru": "ID плеера",
+            "ar": "معرف المشغل",
+            "hi": "प्लेयर ID"
           }
         },
         {
@@ -382,7 +742,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "position_ms参数",
-            "en-US": "position_ms parameter"
+            "en-US": "position_ms parameter",
+            "zh-TW": "position_ms參數",
+            "ja": "position_msパラメータ",
+            "ko": "position_ms매개변수",
+            "es": "Parámetro de posición (ms)",
+            "fr": "Paramètre de position (ms)",
+            "de": "Position-Parameter (ms)",
+            "pt-BR": "Parâmetro de posição (ms)",
+            "ru": "Параметр позиции (мс)",
+            "ar": "معلمة الموضع (مللي ثانية)",
+            "hi": "स्थिति (ms) पैरामीटर"
           },
           "desc": "position_ms parameter"
         }
@@ -391,14 +761,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.seek",
       "descriptions": {
         "zh-CN": "跳转到音频的指定时间位置",
-        "en-US": "Seek to specified time position in audio"
+        "en-US": "Seek to specified time position in audio",
+        "zh-TW": "跳轉到音訊的指定時間位置",
+        "ja": "オーディオの指定時間位置にシーク",
+        "ko": "오디오의 지정 시간 위치로 탐색",
+        "es": "Ir a posición de tiempo en el audio",
+        "fr": "Aller à la position spécifiée",
+        "de": "Zur Zeitposition im Audio springen",
+        "pt-BR": "Ir para posição no áudio",
+        "ru": "Перемотать к указанной позиции",
+        "ar": "الانتقال إلى موضع زمني محدد",
+        "hi": "ऑडियो में निर्दिष्ट समय स्थिति पर जाएं"
       },
       "group": "playback",
       "description": "Seek to specified time position in audio"
@@ -412,7 +802,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "播放器 ID",
-            "en-US": "Player ID"
+            "en-US": "Player ID",
+            "zh-TW": "播放器 ID",
+            "ja": "プレーヤーID",
+            "ko": "플레이어 ID",
+            "es": "ID del reproductor",
+            "fr": "ID du lecteur",
+            "de": "Player-ID",
+            "pt-BR": "ID do player",
+            "ru": "ID плеера",
+            "ar": "معرف المشغل",
+            "hi": "प्लेयर ID"
           }
         }
       ],
@@ -420,14 +820,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.isPlaying",
       "descriptions": {
         "zh-CN": "检查音频实例是否正在播放中",
-        "en-US": "Check if audio playing"
+        "en-US": "Check if audio playing",
+        "zh-TW": "檢查音訊實例是否正在播放中",
+        "ja": "チェックするオーディオインスタンスかどうか正で播放中",
+        "ko": "오디오 재생 중인지 확인",
+        "es": "Verificar si audio está reproduciéndose",
+        "fr": "Vérifier si l'audio est en lecture",
+        "de": "Prüfen ob Audio abgespielt wird",
+        "pt-BR": "Verificar se áudio está tocando",
+        "ru": "Проверить воспроизводится ли звук",
+        "ar": "التحقق من تشغيل الصوت",
+        "hi": "ऑडियो चल रहा है जांचें"
       },
       "group": "playback",
       "description": "Check if audio playing"
@@ -441,7 +861,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "播放器 ID",
-            "en-US": "Player ID"
+            "en-US": "Player ID",
+            "zh-TW": "播放器 ID",
+            "ja": "プレーヤーID",
+            "ko": "플레이어 ID",
+            "es": "ID del reproductor",
+            "fr": "ID du lecteur",
+            "de": "Player-ID",
+            "pt-BR": "ID do player",
+            "ru": "ID плеера",
+            "ar": "معرف المشغل",
+            "hi": "प्लेयर ID"
           }
         }
       ],
@@ -449,14 +879,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "audio.getState",
       "descriptions": {
         "zh-CN": "获取音频播放器的当前状态",
-        "en-US": "Get state info of audio"
+        "en-US": "Get state info of audio",
+        "zh-TW": "取得音訊播放器的當前狀態",
+        "ja": "取得するオーディオ播放器の現でステータス",
+        "ko": "오디오 상태 정보 가져오기",
+        "es": "Obtener estado del audio",
+        "fr": "Obtenir l'état de l'audio",
+        "de": "Audio-Status abrufen",
+        "pt-BR": "Obter estado do áudio",
+        "ru": "Получить состояние аудио",
+        "ar": "الحصول على معلومات حالة الصوت",
+        "hi": "ऑडियो की स्थिति जानकारी प्राप्त करें"
       },
       "group": "playback",
       "description": "Get state info of audio"
@@ -469,14 +919,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "audio.listDevices",
       "descriptions": {
         "zh-CN": "列出系统所有可用的音频输出设备",
-        "en-US": "List devices of audio"
+        "en-US": "List devices of audio",
+        "zh-TW": "列出系統所有可用的音訊輸出設備",
+        "ja": "列出システムすべて可用のオーディオ出力デバイス",
+        "ko": "오디오 장치 목록",
+        "es": "Listar dispositivos de audio",
+        "fr": "Lister les périphériques audio",
+        "de": "Audiogeräte auflisten",
+        "pt-BR": "Listar dispositivos de áudio",
+        "ru": "Список аудиоустройств",
+        "ar": "قائمة أجهزة الصوت",
+        "hi": "ऑडियो डिवाइस सूचीबद्ध करें"
       },
       "group": "device",
       "description": "List devices of audio"
@@ -490,7 +960,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "播放器 ID",
-            "en-US": "播放器 ID"
+            "en-US": "播放器 ID",
+            "zh-TW": "播放器 ID",
+            "ja": "プレーヤーID",
+            "ko": "플레이어 ID",
+            "es": "ID del reproductor",
+            "fr": "ID du lecteur",
+            "de": "Player-ID",
+            "pt-BR": "ID do player",
+            "ru": "ID плеера",
+            "ar": "معرف المشغل",
+            "hi": "प्लेयर ID"
           }
         },
         {
@@ -498,7 +978,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备 ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備 ID",
+            "ja": "デバイス ID",
+            "ko": "디바이스 ID",
+            "es": "ID del dispositivo",
+            "fr": "ID de l'appareil",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرف الجهاز",
+            "hi": "डिवाइस ID"
           },
           "optional": true
         }
@@ -507,14 +997,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.setDevice",
       "descriptions": {
         "zh-CN": "设置音频输出到指定的设备",
-        "en-US": "Set device property of audio"
+        "en-US": "Set device property of audio",
+        "zh-TW": "設定音訊輸出到指定的設備",
+        "ja": "設定するオーディオ出力へ指定のデバイス",
+        "ko": "설정오디오출력으로지정의디바이스",
+        "es": "Establecer dispositivo de audio",
+        "fr": "Définir le périphérique audio",
+        "de": "Audiogerät einstellen",
+        "pt-BR": "Definir dispositivo de áudio",
+        "ru": "Установить аудиоустройство",
+        "ar": "تعيين خاصية جهاز الصوت",
+        "hi": "ऑडियो डिवाइस सेट करें"
       },
       "group": "device",
       "description": "Set device property of audio"
@@ -528,7 +1038,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "frequency参数",
-            "en-US": "frequency parameter"
+            "en-US": "frequency parameter",
+            "zh-TW": "frequency參數",
+            "ja": "frequencyパラメータ",
+            "ko": "frequency매개변수",
+            "es": "Parámetro de frecuencia",
+            "fr": "Paramètre de fréquence",
+            "de": "Frequenz-Parameter",
+            "pt-BR": "Parâmetro de frequência",
+            "ru": "Параметр частоты",
+            "ar": "معلمة التردد",
+            "hi": "आवृत्ति पैरामीटर"
           },
           "optional": true,
           "default_value": "440",
@@ -539,7 +1059,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "duration_ms参数",
-            "en-US": "duration_ms parameter"
+            "en-US": "duration_ms parameter",
+            "zh-TW": "duration_ms參數",
+            "ja": "duration_msパラメータ",
+            "ko": "duration_ms매개변수",
+            "es": "Parámetro de duración (ms)",
+            "fr": "Paramètre de durée (ms)",
+            "de": "Dauer-Parameter (ms)",
+            "pt-BR": "Parâmetro de duração (ms)",
+            "ru": "Параметр длительности (мс)",
+            "ar": "معلمة المدة (مللي ثانية)",
+            "hi": "अवधि (ms) पैरामीटर"
           },
           "optional": true,
           "default_value": "200",
@@ -550,14 +1080,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.beep",
       "descriptions": {
         "zh-CN": "播放一个简短的系统提示音",
-        "en-US": "Play a short system beep sound"
+        "en-US": "Play a short system beep sound",
+        "zh-TW": "播放一個简短的系統提示音",
+        "ja": "短いシステムビープ音を再生",
+        "ko": "짧은 시스템 비프음 재생",
+        "es": "Reproducir un pitido del sistema",
+        "fr": "Émettre un bip système",
+        "de": "Kurzen Systemton abspielen",
+        "pt-BR": "Reproduzir bipe do sistema",
+        "ru": "Воспроизвести системный звуковой сигнал",
+        "ar": "تشغيل صوت تنبيه النظام",
+        "hi": "छोटी सिस्टम बीप ध्वनि चलाएं"
       },
       "group": "device",
       "description": "Play a short system beep sound"
@@ -571,7 +1121,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -579,7 +1139,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "wav/mp3",
-            "en-US": "wav/mp3"
+            "en-US": "wav/mp3",
+            "zh-TW": "wav/mp3",
+            "ja": "wav/mp3",
+            "ko": "wav/mp3",
+            "es": "wav/mp3",
+            "fr": "wav/mp3",
+            "de": "wav/mp3",
+            "pt-BR": "wav/mp3",
+            "ru": "wav/mp3",
+            "ar": "wav/mp3",
+            "hi": "wav/mp3"
           },
           "optional": true
         },
@@ -588,7 +1158,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "采样率(Hz)",
-            "en-US": "Sample rate Hz"
+            "en-US": "Sample rate Hz",
+            "zh-TW": "採样率(Hz)",
+            "ja": "サンプルレート Hz",
+            "ko": "샘플 레이트 Hz",
+            "es": "Frecuencia de muestreo Hz",
+            "fr": "Fréquence d'échantillonnage Hz",
+            "de": "Abtastrate Hz",
+            "pt-BR": "Taxa de amostragem Hz",
+            "ru": "Частота дискретизации Гц",
+            "ar": "معدل العينة هرتز",
+            "hi": "सैंपल रेट Hz"
           },
           "optional": true
         },
@@ -597,7 +1177,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "录音声道数（1=单声道, 2=立体声）",
-            "en-US": "Recording channels (1=mono, 2=stereo)"
+            "en-US": "Recording channels (1=mono, 2=stereo)",
+            "zh-TW": "錄音聲道數（1=單聲道, 2=立体聲）",
+            "ja": "録音チャンネル（1=モノ, 2=ステレオ）",
+            "ko": "녹음 채널 (1=모노, 2=스테레오)",
+            "es": "Canales (1=mono, 2=estéreo)",
+            "fr": "Canaux (1=mono, 2=stéréo)",
+            "de": "Aufnahmekanäle (1=Mono, 2=Stereo)",
+            "pt-BR": "Canais (1=mono, 2=estéreo)",
+            "ru": "Каналы (1=моно, 2=стерео)",
+            "ar": "قنوات التسجيل (1=أحادي, 2=ستيريو)",
+            "hi": "रिकॉर्डिंग चैनल (1=मोनो, 2=स्टीरियो)"
           },
           "optional": true,
           "desc": "Recording channels (1=mono, 2=stereo)"
@@ -607,7 +1197,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备 Id",
-            "en-US": "Device Id"
+            "en-US": "Device Id",
+            "zh-TW": "設備 Id",
+            "ja": "デバイス Id",
+            "ko": "디바이스 Id",
+            "es": "ID del dispositivo",
+            "fr": "ID du périphérique",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرف الجهاز",
+            "hi": "डिवाइस ID"
           },
           "optional": true
         },
@@ -616,7 +1216,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调 ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調 ID",
+            "ja": "コールバック ID",
+            "ko": "콜백 ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           },
           "optional": true
         }
@@ -625,14 +1235,34 @@
         "type": "RecordHandle",
         "descs": {
           "zh-CN": "RecordHandle类型的结果对象",
-          "en-US": "Result object of type RecordHandle"
+          "en-US": "Result object of type RecordHandle",
+          "zh-TW": "RecordHandle類型的結果物件",
+          "ja": "RecordHandleタイプの結果オブジェクト",
+          "ko": "RecordHandle유형의결과객체",
+          "es": "Objeto resultado de tipo RecordHandle",
+          "fr": "Objet résultat de type RecordHandle",
+          "de": "Ergebnisobjekt vom Typ RecordHandle",
+          "pt-BR": "Objeto resultado do tipo RecordHandle",
+          "ru": "Объект результата типа RecordHandle",
+          "ar": "كائن نتيجة من نوع RecordHandle",
+          "hi": "RecordHandle प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type RecordHandle"
       },
       "bridge_path": "audio.recordStart",
       "descriptions": {
         "zh-CN": "开始录制音频（从麦克风采集）",
-        "en-US": "Record start of audio"
+        "en-US": "Record start of audio",
+        "zh-TW": "開始錄製音訊（從麦克風採集）",
+        "ja": "オーディオ録音を開始",
+        "ko": "오디오 녹음 시작",
+        "es": "Iniciar grabación de audio",
+        "fr": "Démarrer l'enregistrement audio",
+        "de": "Audioaufnahme starten",
+        "pt-BR": "Iniciar gravação de áudio",
+        "ru": "Начать запись аудио",
+        "ar": "بدء تسجيل الصوت",
+        "hi": "ऑडियो रिकॉर्डिंग शुरू करें"
       },
       "group": "record",
       "async": true,
@@ -647,7 +1277,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "recorder_id参数",
-            "en-US": "recorder_id parameter"
+            "en-US": "recorder_id parameter",
+            "zh-TW": "recorder_id參數",
+            "ja": "recorder_idパラメータ",
+            "ko": "recorder_id매개변수",
+            "es": "Parámetro de ID del grabador",
+            "fr": "Paramètre d'ID d'enregistreur",
+            "de": "Rekorder-ID-Parameter",
+            "pt-BR": "Parâmetro de ID do gravador",
+            "ru": "Параметр ID рекордера",
+            "ar": "معلمة معرف المسجل",
+            "hi": "रिकॉर्डर ID पैरामीटर"
           },
           "desc": "recorder_id parameter"
         }
@@ -656,14 +1296,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.recordPause",
       "descriptions": {
         "zh-CN": "暂停当前的音频录制",
-        "en-US": "Record pause of audio"
+        "en-US": "Record pause of audio",
+        "zh-TW": "暂停當前的音訊錄製",
+        "ja": "オーディオ録音を一時停止",
+        "ko": "오디오 녹음 일시 중지",
+        "es": "Pausar grabación de audio",
+        "fr": "Mettre en pause l'enregistrement",
+        "de": "Audioaufnahme pausieren",
+        "pt-BR": "Pausar gravação de áudio",
+        "ru": "Приостановить запись аудио",
+        "ar": "إيقاف تسجيل الصوت مؤقتاً",
+        "hi": "ऑडियो रिकॉर्डिंग रोकें"
       },
       "group": "record",
       "description": "Record pause of audio"
@@ -677,7 +1337,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "recorder_id参数",
-            "en-US": "recorder_id parameter"
+            "en-US": "recorder_id parameter",
+            "zh-TW": "recorder_id參數",
+            "ja": "recorder_idパラメータ",
+            "ko": "recorder_id매개변수",
+            "es": "Parámetro de ID del grabador",
+            "fr": "Paramètre d'ID d'enregistreur",
+            "de": "Rekorder-ID-Parameter",
+            "pt-BR": "Parâmetro de ID do gravador",
+            "ru": "Параметр ID рекордера",
+            "ar": "معلمة معرف المسجل",
+            "hi": "रिकॉर्डर ID पैरामीटर"
           },
           "desc": "recorder_id parameter"
         }
@@ -686,14 +1356,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.recordResume",
       "descriptions": {
         "zh-CN": "恢复之前暂停的音频录制",
-        "en-US": "Record resume of audio"
+        "en-US": "Record resume of audio",
+        "zh-TW": "恢複之前暂停的音訊錄製",
+        "ja": "オーディオ録音を再開",
+        "ko": "오디오 녹음 재개",
+        "es": "Reanudar grabación de audio",
+        "fr": "Reprendre l'enregistrement",
+        "de": "Audioaufnahme fortsetzen",
+        "pt-BR": "Retomar gravação de áudio",
+        "ru": "Возобновить запись аудио",
+        "ar": "استئناف تسجيل الصوت",
+        "hi": "ऑडियो रिकॉर्डिंग फिर शुरू करें"
       },
       "group": "record",
       "description": "Record resume of audio"
@@ -707,7 +1397,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "recorder_id参数",
-            "en-US": "recorder_id parameter"
+            "en-US": "recorder_id parameter",
+            "zh-TW": "recorder_id參數",
+            "ja": "recorder_idパラメータ",
+            "ko": "recorder_id매개변수",
+            "es": "Parámetro de ID del grabador",
+            "fr": "Paramètre d'ID d'enregistreur",
+            "de": "Rekorder-ID-Parameter",
+            "pt-BR": "Parâmetro de ID do gravador",
+            "ru": "Параметр ID рекордера",
+            "ar": "معلمة معرف المسجل",
+            "hi": "रिकॉर्डर ID पैरामीटर"
           },
           "desc": "recorder_id parameter"
         }
@@ -716,14 +1416,34 @@
         "type": "RecordResult",
         "descs": {
           "zh-CN": "RecordResult类型的结果对象",
-          "en-US": "Result object of type RecordResult"
+          "en-US": "Result object of type RecordResult",
+          "zh-TW": "RecordResult類型的結果物件",
+          "ja": "RecordResultタイプの結果オブジェクト",
+          "ko": "RecordResult유형의결과객체",
+          "es": "Objeto resultado de tipo RecordResult",
+          "fr": "Objet résultat de type RecordResult",
+          "de": "Ergebnisobjekt vom Typ RecordResult",
+          "pt-BR": "Objeto resultado do tipo RecordResult",
+          "ru": "Объект результата типа RecordResult",
+          "ar": "كائن نتيجة من نوع RecordResult",
+          "hi": "RecordResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type RecordResult"
       },
       "bridge_path": "audio.recordStop",
       "descriptions": {
         "zh-CN": "停止当前正在进行的音频录制",
-        "en-US": "Stop current audio recording"
+        "en-US": "Stop current audio recording",
+        "zh-TW": "停止當前正在進行的音訊錄製",
+        "ja": "現在のオーディオ録音を停止",
+        "ko": "현재 오디오 녹음 중지",
+        "es": "Detener grabación de audio actual",
+        "fr": "Arrêter l'enregistrement en cours",
+        "de": "Aktuelle Audioaufnahme stoppen",
+        "pt-BR": "Parar gravação de áudio atual",
+        "ru": "Остановить текущую запись",
+        "ar": "إيقاف تسجيل الصوت الحالي",
+        "hi": "वर्तमान ऑडियो रिकॉर्डिंग बंद करें"
       },
       "group": "record",
       "description": "Stop current audio recording"
@@ -736,13 +1456,33 @@
         "type": "number",
         "descs": {
           "zh-CN": "0-100",
-          "en-US": "0-100"
+          "en-US": "0-100",
+          "zh-TW": "0-100",
+          "ja": "0-100",
+          "ko": "0-100",
+          "es": "0-100",
+          "fr": "0-100",
+          "de": "0-100",
+          "pt-BR": "0-100",
+          "ru": "0-100",
+          "ar": "0-100",
+          "hi": "0-100"
         }
       },
       "bridge_path": "audio.getSystemVolume",
       "descriptions": {
         "zh-CN": "获取系统全局音量大小",
-        "en-US": "Get system volume info of audio"
+        "en-US": "Get system volume info of audio",
+        "zh-TW": "取得系統全局音量大小",
+        "ja": "取得するシステムグローバル音量サイズ",
+        "ko": "시스템 볼륨 정보 가져오기",
+        "es": "Obtener volumen del sistema",
+        "fr": "Obtenir le volume système",
+        "de": "Systemlautstärke abrufen",
+        "pt-BR": "Obter volume do sistema",
+        "ru": "Получить системную громкость",
+        "ar": "الحصول على مستوى صوت النظام",
+        "hi": "सिस्टम वॉल्यूम जानकारी प्राप्त करें"
       },
       "group": "system",
       "description": "Get system volume info of audio"
@@ -756,7 +1496,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "0-100",
-            "en-US": "0-100"
+            "en-US": "0-100",
+            "zh-TW": "0-100",
+            "ja": "0-100",
+            "ko": "0-100",
+            "es": "0-100",
+            "fr": "0-100",
+            "de": "0-100",
+            "pt-BR": "0-100",
+            "ru": "0-100",
+            "ar": "0-100",
+            "hi": "0-100"
           },
           "optional": true
         }
@@ -765,14 +1515,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.setSystemVolume",
       "descriptions": {
         "zh-CN": "设置系统全局音量大小",
-        "en-US": "Set system volume property of audio"
+        "en-US": "Set system volume property of audio",
+        "zh-TW": "設定系統全局音量大小",
+        "ja": "設定するシステムグローバル音量サイズ",
+        "ko": "시스템 볼륨 속성 설정",
+        "es": "Establecer volumen del sistema",
+        "fr": "Définir le volume système",
+        "de": "Systemlautstärke einstellen",
+        "pt-BR": "Definir volume do sistema",
+        "ru": "Установить системную громкость",
+        "ar": "تعيين مستوى صوت النظام",
+        "hi": "सिस्टम वॉल्यूम सेट करें"
       },
       "group": "system",
       "description": "Set system volume property of audio"
@@ -785,14 +1555,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.isMuted",
       "descriptions": {
         "zh-CN": "检查系统是否处于静音状态",
-        "en-US": "Check if audio muted"
+        "en-US": "Check if audio muted",
+        "zh-TW": "檢查系統是否處於靜音狀態",
+        "ja": "システムがミュート状態か確認",
+        "ko": "시스템 음소거 상태 확인",
+        "es": "Verificar si audio está silenciado",
+        "fr": "Vérifier si l'audio est coupé",
+        "de": "Prüfen ob Audio stummgeschaltet",
+        "pt-BR": "Verificar se áudio está mudo",
+        "ru": "Проверить приглушён ли звук",
+        "ar": "التحقق من كتم الصوت",
+        "hi": "ऑडियो म्यूट है जांचें"
       },
       "group": "system",
       "description": "Check if audio muted"
@@ -806,7 +1596,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否静音（true=静音/false=取消静音）",
-            "en-US": "Whether to mute (true=mute/false=unmute)"
+            "en-US": "Whether to mute (true=mute/false=unmute)",
+            "zh-TW": "是否靜音（true=靜音/false=取消靜音）",
+            "ja": "かどうか静音（true=静音/false=キャンセルする静音）",
+            "ko": "음소거 여부 (true=음소거/false=해제)",
+            "es": "Silenciar (true=silenciar/false=desilenciar)",
+            "fr": "Couper le son (true=oui/false=non)",
+            "de": "Stummschalten (true=stumm/false=laut)",
+            "pt-BR": "Mutar (true=mutar/false=desmutar)",
+            "ru": "Приглушить (true=да/false=нет)",
+            "ar": "كتم الصوت (true=كتم/false=إلغاء الكتم)",
+            "hi": "म्यूट करें (true=म्यूट/false=अनम्यूट)"
           },
           "desc": "Whether to mute (true=mute/false=unmute)"
         }
@@ -815,14 +1615,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.setMuted",
       "descriptions": {
         "zh-CN": "设置系统静音或取消静音",
-        "en-US": "Set muted property of audio"
+        "en-US": "Set muted property of audio",
+        "zh-TW": "設定系統靜音或取消靜音",
+        "ja": "設定するシステム静音またはキャンセルする静音",
+        "ko": "오디오 음소거 속성 설정",
+        "es": "Establecer silencio del audio",
+        "fr": "Définir le mode muet",
+        "de": "Audio stumm schalten",
+        "pt-BR": "Definir mudo do áudio",
+        "ru": "Установить приглушение аудио",
+        "ar": "تعيين خاصية كتم الصوت",
+        "hi": "ऑडियो म्यूट सेट करें"
       },
       "group": "system",
       "description": "Set muted property of audio"
@@ -835,14 +1655,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "audio.listPlayers",
       "descriptions": {
         "zh-CN": "列出当前所有活跃的音频播放实例",
-        "en-US": "List players of audio"
+        "en-US": "List players of audio",
+        "zh-TW": "列出當前所有活躍的音訊播放實例",
+        "ja": "列出現ですべて活跃のオーディオ播放インスタンス",
+        "ko": "오디오 플레이어 목록",
+        "es": "Listar reproductores de audio",
+        "fr": "Lister les lecteurs audio",
+        "de": "Audio-Player auflisten",
+        "pt-BR": "Listar players de áudio",
+        "ru": "Список аудиоплееров",
+        "ar": "قائمة مشغلات الصوت",
+        "hi": "ऑडियो प्लेयर सूचीबद्ध करें"
       },
       "group": "playback",
       "description": "List players of audio"
@@ -856,7 +1696,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -865,14 +1715,34 @@
         "type": "AudioFileInfo",
         "descs": {
           "zh-CN": "AudioFileInfo类型的结果对象",
-          "en-US": "Result object of type AudioFileInfo"
+          "en-US": "Result object of type AudioFileInfo",
+          "zh-TW": "AudioFileInfo類型的結果物件",
+          "ja": "AudioFileInfoタイプの結果オブジェクト",
+          "ko": "AudioFileInfo유형의결과객체",
+          "es": "Objeto resultado de tipo AudioFileInfo",
+          "fr": "Objet résultat de type AudioFileInfo",
+          "de": "Ergebnisobjekt vom Typ AudioFileInfo",
+          "pt-BR": "Objeto resultado do tipo AudioFileInfo",
+          "ru": "Объект результата типа AudioFileInfo",
+          "ar": "كائن نتيجة من نوع AudioFileInfo",
+          "hi": "AudioFileInfo प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type AudioFileInfo"
       },
       "bridge_path": "audio.fileInfo",
       "descriptions": {
         "zh-CN": "获取音频文件的基本信息（格式、时长等）",
-        "en-US": "File info of audio"
+        "en-US": "File info of audio",
+        "zh-TW": "取得音訊檔案的基本資訊（格式、時長等）",
+        "ja": "取得するオーディオファイルの基本情報（フォーマット、时长等）",
+        "ko": "오디오 파일 정보",
+        "es": "Información del archivo de audio",
+        "fr": "Informations du fichier audio",
+        "de": "Audio-Dateiinformationen",
+        "pt-BR": "Informações do arquivo de áudio",
+        "ru": "Информация об аудиофайле",
+        "ar": "معلومات ملف الصوت",
+        "hi": "ऑडियो फ़ाइल जानकारी"
       },
       "group": "edit",
       "description": "File info of audio"
@@ -886,7 +1756,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入文件路径",
-            "en-US": "Input file path"
+            "en-US": "Input file path",
+            "zh-TW": "輸入檔案路徑",
+            "ja": "入力ファイルパス",
+            "ko": "입력파일경로",
+            "es": "Ruta del archivo de entrada",
+            "fr": "Chemin du fichier d'entrée",
+            "de": "Eingabedateipfad",
+            "pt-BR": "Caminho do arquivo de entrada",
+            "ru": "Путь входного файла",
+            "ar": "مسار ملف الإدخال",
+            "hi": "इनपुट फ़ाइल पथ"
           },
           "desc": "Input file path"
         },
@@ -895,7 +1775,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         }
@@ -904,14 +1794,34 @@
         "type": "ConvertResult",
         "descs": {
           "zh-CN": "ConvertResult类型的结果对象",
-          "en-US": "Result object of type ConvertResult"
+          "en-US": "Result object of type ConvertResult",
+          "zh-TW": "ConvertResult類型的結果物件",
+          "ja": "ConvertResultタイプの結果オブジェクト",
+          "ko": "ConvertResult유형의결과객체",
+          "es": "Objeto resultado de tipo ConvertResult",
+          "fr": "Objet résultat de type ConvertResult",
+          "de": "Ergebnisobjekt vom Typ ConvertResult",
+          "pt-BR": "Objeto resultado do tipo ConvertResult",
+          "ru": "Объект результата типа ConvertResult",
+          "ar": "كائن نتيجة من نوع ConvertResult",
+          "hi": "ConvertResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type ConvertResult"
       },
       "bridge_path": "audio.convert",
       "descriptions": {
         "zh-CN": "将音频文件转换为其他格式（MP3/WAV/OGG等）",
-        "en-US": "Convert audio file to another format (MP3/WAV/OGG)"
+        "en-US": "Convert audio file to another format (MP3/WAV/OGG)",
+        "zh-TW": "將音訊檔案轉換為其他格式（MP3/WAV/OGG等）",
+        "ja": "オーディオファイルを別の形式に変換（MP3/WAV/OGG）",
+        "ko": "오디오 파일을 다른 형식으로 변환 (MP3/WAV/OGG)",
+        "es": "Convertir audio a otro formato (MP3/WAV/OGG)",
+        "fr": "Convertir l'audio en un autre format",
+        "de": "Audiodatei konvertieren (MP3/WAV/OGG)",
+        "pt-BR": "Converter áudio para outro formato",
+        "ru": "Конвертировать аудио в другой формат",
+        "ar": "تحويل ملف صوتي إلى تنسيق آخر",
+        "hi": "ऑडियो फ़ाइल को दूसरे फ़ॉर्मैट में बदलें"
       },
       "group": "edit",
       "async": true,
@@ -926,7 +1836,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入文件路径",
-            "en-US": "Input file path"
+            "en-US": "Input file path",
+            "zh-TW": "輸入檔案路徑",
+            "ja": "入力ファイルパス",
+            "ko": "입력파일경로",
+            "es": "Ruta del archivo de entrada",
+            "fr": "Chemin du fichier d'entrée",
+            "de": "Eingabedateipfad",
+            "pt-BR": "Caminho do arquivo de entrada",
+            "ru": "Путь входного файла",
+            "ar": "مسار ملف الإدخال",
+            "hi": "इनपुट फ़ाइल पथ"
           },
           "desc": "Input file path"
         },
@@ -935,7 +1855,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         },
@@ -944,7 +1874,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "start_ms参数",
-            "en-US": "start_ms parameter"
+            "en-US": "start_ms parameter",
+            "zh-TW": "start_ms參數",
+            "ja": "start_msパラメータ",
+            "ko": "start_ms매개변수",
+            "es": "Parámetro de inicio (ms)",
+            "fr": "Paramètre de début (ms)",
+            "de": "Start-Parameter (ms)",
+            "pt-BR": "Parâmetro de início (ms)",
+            "ru": "Параметр начала (мс)",
+            "ar": "معلمة البداية (مللي ثانية)",
+            "hi": "प्रारंभ (ms) पैरामीटर"
           },
           "desc": "start_ms parameter"
         },
@@ -953,7 +1893,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "裁剪结束时间（毫秒）",
-            "en-US": "Trim end time in milliseconds"
+            "en-US": "Trim end time in milliseconds",
+            "zh-TW": "裁剪結束時間（毫秒）",
+            "ja": "トリム終了時間（ミリ秒）",
+            "ko": "트림 종료 시간 (밀리초)",
+            "es": "Tiempo de fin de recorte (ms)",
+            "fr": "Temps de fin de découpe (ms)",
+            "de": "Schnitt-Endzeit (ms)",
+            "pt-BR": "Tempo final do corte (ms)",
+            "ru": "Время окончания обрезки (мс)",
+            "ar": "وقت نهاية القص (مللي ثانية)",
+            "hi": "ट्रिम समाप्ति समय (मिली सेकंड)"
           },
           "desc": "Trim end time in milliseconds"
         }
@@ -962,14 +1912,34 @@
         "type": "ConvertResult",
         "descs": {
           "zh-CN": "ConvertResult类型的结果对象",
-          "en-US": "Result object of type ConvertResult"
+          "en-US": "Result object of type ConvertResult",
+          "zh-TW": "ConvertResult類型的結果物件",
+          "ja": "ConvertResultタイプの結果オブジェクト",
+          "ko": "ConvertResult유형의결과객체",
+          "es": "Objeto resultado de tipo ConvertResult",
+          "fr": "Objet résultat de type ConvertResult",
+          "de": "Ergebnisobjekt vom Typ ConvertResult",
+          "pt-BR": "Objeto resultado do tipo ConvertResult",
+          "ru": "Объект результата типа ConvertResult",
+          "ar": "كائن نتيجة من نوع ConvertResult",
+          "hi": "ConvertResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type ConvertResult"
       },
       "bridge_path": "audio.trim",
       "descriptions": {
         "zh-CN": "裁剪音频文件的指定时间段",
-        "en-US": "Trim audio file to specified time range"
+        "en-US": "Trim audio file to specified time range",
+        "zh-TW": "裁剪音訊檔案的指定時間段",
+        "ja": "裁剪オーディオファイルの指定时间段",
+        "ko": "지정된 시간 범위로 오디오 파일 트리밍",
+        "es": "Recortar archivo de audio al rango de tiempo",
+        "fr": "Couper le fichier audio à la plage de temps",
+        "de": "Audiodatei auf Zeitbereich zuschneiden",
+        "pt-BR": "Cortar arquivo de áudio no intervalo",
+        "ru": "Обрезать аудиофайл по диапазону",
+        "ar": "قص ملف الصوت إلى نطاق زمني محدد",
+        "hi": "ऑडियो फ़ाइल को निर्दिष्ट समय सीमा पर ट्रिम करें"
       },
       "group": "edit",
       "async": true,
@@ -984,7 +1954,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "input_paths参数",
-            "en-US": "input_paths parameter"
+            "en-US": "input_paths parameter",
+            "zh-TW": "input_paths參數",
+            "ja": "input_pathsパラメータ",
+            "ko": "input_paths매개변수",
+            "es": "Parámetro de rutas de entrada",
+            "fr": "Paramètre de chemins d'entrée",
+            "de": "Eingabepfade-Parameter",
+            "pt-BR": "Parâmetro de caminhos de entrada",
+            "ru": "Параметр входных путей",
+            "ar": "معلمة مسارات الإدخال",
+            "hi": "इनपुट पथ पैरामीटर"
           },
           "desc": "input_paths parameter"
         },
@@ -993,7 +1973,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         }
@@ -1002,14 +1992,34 @@
         "type": "ConvertResult",
         "descs": {
           "zh-CN": "ConvertResult类型的结果对象",
-          "en-US": "Result object of type ConvertResult"
+          "en-US": "Result object of type ConvertResult",
+          "zh-TW": "ConvertResult類型的結果物件",
+          "ja": "ConvertResultタイプの結果オブジェクト",
+          "ko": "ConvertResult유형의결과객체",
+          "es": "Objeto resultado de tipo ConvertResult",
+          "fr": "Objet résultat de type ConvertResult",
+          "de": "Ergebnisobjekt vom Typ ConvertResult",
+          "pt-BR": "Objeto resultado do tipo ConvertResult",
+          "ru": "Объект результата типа ConvertResult",
+          "ar": "كائن نتيجة من نوع ConvertResult",
+          "hi": "ConvertResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type ConvertResult"
       },
       "bridge_path": "audio.concat",
       "descriptions": {
         "zh-CN": "将多个音频文件首尾拼接为一个文件",
-        "en-US": "Concatenate multiple audio files into one"
+        "en-US": "Concatenate multiple audio files into one",
+        "zh-TW": "將多個音訊檔案首尾拼接為一個檔案",
+        "ja": "複数のオーディオファイルを1つに結合",
+        "ko": "여러 오디오 파일을 하나로 결합",
+        "es": "Concatenar varios archivos de audio",
+        "fr": "Concaténer plusieurs fichiers audio",
+        "de": "Mehrere Audiodateien zusammenfügen",
+        "pt-BR": "Concatenar vários arquivos de áudio",
+        "ru": "Объединить несколько аудиофайлов",
+        "ar": "دمج عدة ملفات صوتية في ملف واحد",
+        "hi": "कई ऑडियो फ़ाइलों को एक में जोड़ें"
       },
       "group": "edit",
       "async": true,
@@ -1024,7 +2034,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -1033,14 +2053,34 @@
         "type": "AudioMetadata",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "audio.getMetadata",
       "descriptions": {
         "zh-CN": "获取音频文件的ID3标签元数据",
-        "en-US": "Get metadata info of audio"
+        "en-US": "Get metadata info of audio",
+        "zh-TW": "取得音訊檔案的ID3標籤元數據",
+        "ja": "取得するオーディオファイルのID3ラベル元データ",
+        "ko": "오디오 메타데이터 정보 가져오기",
+        "es": "Obtener metadatos del audio",
+        "fr": "Obtenir les métadonnées de l'audio",
+        "de": "Audio-Metadaten abrufen",
+        "pt-BR": "Obter metadados do áudio",
+        "ru": "Получить метаданные аудио",
+        "ar": "الحصول على بيانات وصفية للصوت",
+        "hi": "ऑडियो मेटाडेटा जानकारी प्राप्त करें"
       },
       "group": "edit",
       "description": "Get metadata info of audio"
@@ -1054,7 +2094,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1063,7 +2113,17 @@
           "type": "AudioMetadata",
           "descs": {
             "zh-CN": "元数据标签",
-            "en-US": "Metadata tags"
+            "en-US": "Metadata tags",
+            "zh-TW": "元數據標籤",
+            "ja": "元データラベル",
+            "ko": "메타데이터 태그",
+            "es": "Etiquetas de metadatos",
+            "fr": "Balises de métadonnées",
+            "de": "Metadaten-Tags",
+            "pt-BR": "Tags de metadados",
+            "ru": "Теги метаданных",
+            "ar": "علامات البيانات الوصفية",
+            "hi": "मेटाडेटा टैग"
           }
         }
       ],
@@ -1071,14 +2131,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.setMetadata",
       "descriptions": {
         "zh-CN": "设置音频文件的ID3标签元数据",
-        "en-US": "Set metadata property of audio"
+        "en-US": "Set metadata property of audio",
+        "zh-TW": "設定音訊檔案的ID3標籤元數據",
+        "ja": "設定するオーディオファイルのID3ラベル元データ",
+        "ko": "오디오 메타데이터 속성 설정",
+        "es": "Establecer metadatos del audio",
+        "fr": "Définir les métadonnées de l'audio",
+        "de": "Audio-Metadaten einstellen",
+        "pt-BR": "Definir metadados do áudio",
+        "ru": "Установить метаданные аудио",
+        "ar": "تعيين خصائص بيانات الصوت الوصفية",
+        "hi": "ऑडियो मेटाडेटा सेट करें"
       },
       "group": "edit",
       "description": "Set metadata property of audio"
@@ -1092,7 +2172,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1101,7 +2191,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "image_path参数",
-            "en-US": "image_path parameter"
+            "en-US": "image_path parameter",
+            "zh-TW": "image_path參數",
+            "ja": "image_pathパラメータ",
+            "ko": "image_path매개변수",
+            "es": "Parámetro de ruta de imagen",
+            "fr": "Paramètre de chemin d'image",
+            "de": "Bildpfad-Parameter",
+            "pt-BR": "Parâmetro de caminho de imagem",
+            "ru": "Параметр пути изображения",
+            "ar": "معلمة مسار الصورة",
+            "hi": "इमेज पथ पैरामीटर"
           },
           "desc": "image_path parameter"
         }
@@ -1110,14 +2210,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.setAlbumArt",
       "descriptions": {
         "zh-CN": "设置音频文件的专辑封面图片",
-        "en-US": "Set album art property of audio"
+        "en-US": "Set album art property of audio",
+        "zh-TW": "設定音訊檔案的专輯封面圖片",
+        "ja": "オーディオのアルバムアート属性を設定",
+        "ko": "오디오 앨범 아트 속성 설정",
+        "es": "Establecer arte del álbum del audio",
+        "fr": "Définir la pochette de l'album",
+        "de": "Album-Cover einstellen",
+        "pt-BR": "Definir arte do álbum",
+        "ru": "Установить обложку альбома",
+        "ar": "تعيين صورة غلاف الألبوم",
+        "hi": "ऑडियो एल्बम आर्ट सेट करें"
       },
       "group": "edit",
       "description": "Set album art property of audio"
@@ -1131,7 +2251,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入文件路径",
-            "en-US": "Input file path"
+            "en-US": "Input file path",
+            "zh-TW": "輸入檔案路徑",
+            "ja": "入力ファイルパス",
+            "ko": "입력파일경로",
+            "es": "Ruta del archivo de entrada",
+            "fr": "Chemin du fichier d'entrée",
+            "de": "Eingabedateipfad",
+            "pt-BR": "Caminho do arquivo de entrada",
+            "ru": "Путь входного файла",
+            "ar": "مسار ملف الإدخال",
+            "hi": "इनपुट फ़ाइल पथ"
           },
           "desc": "Input file path"
         },
@@ -1140,7 +2270,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         }
@@ -1149,14 +2289,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.normalize",
       "descriptions": {
         "zh-CN": "normalize音频",
-        "en-US": "Normalize audio"
+        "en-US": "Normalize audio",
+        "zh-TW": "normalize音訊",
+        "ja": "normalizeオーディオ",
+        "ko": "normalize오디오",
+        "es": "Normalizar audio",
+        "fr": "Normaliser l'audio",
+        "de": "Audio normalisieren",
+        "pt-BR": "Normalizar áudio",
+        "ru": "Нормализовать аудио",
+        "ar": "تطبيع الصوت",
+        "hi": "ऑडियो नॉर्मलाइज़ करें"
       },
       "group": "edit",
       "async": true,
@@ -1171,7 +2331,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1180,7 +2350,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "采样点数量",
-            "en-US": "Number of sample points"
+            "en-US": "Number of sample points",
+            "zh-TW": "採样點數量",
+            "ja": "サンプルポイント数",
+            "ko": "샘플 포인트 수",
+            "es": "Número de puntos de muestra",
+            "fr": "Nombre de points d'échantillonnage",
+            "de": "Anzahl der Abtastpunkte",
+            "pt-BR": "Número de pontos de amostra",
+            "ru": "Количество точек выборки",
+            "ar": "عدد نقاط العينة",
+            "hi": "सैंपल पॉइंट संख्या"
           },
           "optional": true,
           "default_value": "200",
@@ -1191,13 +2371,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "采样数据",
-          "en-US": "采样数据"
+          "en-US": "采样数据",
+          "zh-TW": "採样數據",
+          "ja": "サンプリングデータ",
+          "ko": "샘플 데이터",
+          "es": "Datos de muestreo",
+          "fr": "Données d'échantillonnage",
+          "de": "Abtastdaten",
+          "pt-BR": "Dados de amostragem",
+          "ru": "Данные выборки",
+          "ar": "بيانات أخذ العينات",
+          "hi": "सैंपलिंग डेटा"
         }
       },
       "bridge_path": "audio.getWaveform",
       "descriptions": {
         "zh-CN": "获取音频文件的波形数据",
-        "en-US": "Get waveform info of audio"
+        "en-US": "Get waveform info of audio",
+        "zh-TW": "取得音訊檔案的波形數據",
+        "ja": "取得するオーディオファイルの波形データ",
+        "ko": "오디오 파형 정보 가져오기",
+        "es": "Obtener forma de onda del audio",
+        "fr": "Obtenir la forme d'onde de l'audio",
+        "de": "Audio-Wellenform abrufen",
+        "pt-BR": "Obter forma de onda do áudio",
+        "ru": "Получить информацию о волне аудио",
+        "ar": "الحصول على معلومات شكل الموجة",
+        "hi": "ऑडियो वेवफ़ॉर्म जानकारी प्राप्त करें"
       },
       "group": "edit",
       "description": "Get waveform info of audio"
@@ -1211,7 +2411,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入文件路径",
-            "en-US": "Input file path"
+            "en-US": "Input file path",
+            "zh-TW": "輸入檔案路徑",
+            "ja": "入力ファイルパス",
+            "ko": "입력파일경로",
+            "es": "Ruta del archivo de entrada",
+            "fr": "Chemin du fichier d'entrée",
+            "de": "Eingabedateipfad",
+            "pt-BR": "Caminho do arquivo de entrada",
+            "ru": "Путь входного файла",
+            "ar": "مسار ملف الإدخال",
+            "hi": "इनपुट फ़ाइल पथ"
           },
           "desc": "Input file path"
         },
@@ -1220,7 +2430,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "output_dir参数",
-            "en-US": "output_dir parameter"
+            "en-US": "output_dir parameter",
+            "zh-TW": "output_dir參數",
+            "ja": "output_dirパラメータ",
+            "ko": "output_dir매개변수",
+            "es": "Parámetro de directorio de salida",
+            "fr": "Paramètre de répertoire de sortie",
+            "de": "Ausgabeverzeichnis-Parameter",
+            "pt-BR": "Parâmetro de diretório de saída",
+            "ru": "Параметр выходного каталога",
+            "ar": "معلمة مجلد الإخراج",
+            "hi": "आउटपुट डायरेक्टरी पैरामीटर"
           },
           "desc": "output_dir parameter"
         },
@@ -1229,7 +2449,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "points_ms参数",
-            "en-US": "points_ms parameter"
+            "en-US": "points_ms parameter",
+            "zh-TW": "points_ms參數",
+            "ja": "points_msパラメータ",
+            "ko": "points_ms매개변수",
+            "es": "Parámetro de puntos (ms)",
+            "fr": "Paramètre de points (ms)",
+            "de": "Punkte-Parameter (ms)",
+            "pt-BR": "Parâmetro de pontos (ms)",
+            "ru": "Параметр точек (мс)",
+            "ar": "معلمة النقاط (مللي ثانية)",
+            "hi": "पॉइंट्स (ms) पैरामीटर"
           },
           "desc": "points_ms parameter"
         }
@@ -1238,14 +2468,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "audio.split",
       "descriptions": {
         "zh-CN": "将音频文件按指定时间点分割为多段",
-        "en-US": "Split audio file into segments at specified points"
+        "en-US": "Split audio file into segments at specified points",
+        "zh-TW": "將音訊檔案按指定時間點分割為多段",
+        "ja": "指定ポイントでオーディオファイルをセグメントに分割",
+        "ko": "지정된 지점에서 오디오 파일을 세그먼트로 분할",
+        "es": "Dividir archivo de audio en puntos especificados",
+        "fr": "Diviser le fichier audio aux points spécifiés",
+        "de": "Audiodatei an Punkten aufteilen",
+        "pt-BR": "Dividir arquivo de áudio nos pontos especificados",
+        "ru": "Разделить аудиофайл на сегменты",
+        "ar": "تقسيم ملف الصوت عند نقاط محددة",
+        "hi": "निर्दिष्ट बिंदुओं पर ऑडियो फ़ाइल विभाजित करें"
       },
       "group": "edit",
       "async": true,
@@ -1260,7 +2510,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入文件路径",
-            "en-US": "Input file path"
+            "en-US": "Input file path",
+            "zh-TW": "輸入檔案路徑",
+            "ja": "入力ファイルパス",
+            "ko": "입력파일경로",
+            "es": "Ruta del archivo de entrada",
+            "fr": "Chemin du fichier d'entrée",
+            "de": "Eingabedateipfad",
+            "pt-BR": "Caminho do arquivo de entrada",
+            "ru": "Путь входного файла",
+            "ar": "مسار ملف الإدخال",
+            "hi": "इनपुट फ़ाइल पथ"
           },
           "desc": "Input file path"
         },
@@ -1269,7 +2529,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         },
@@ -1278,7 +2548,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "fade_in_ms参数",
-            "en-US": "fade_in_ms parameter"
+            "en-US": "fade_in_ms parameter",
+            "zh-TW": "fade_in_ms參數",
+            "ja": "fade_in_msパラメータ",
+            "ko": "fade_in_ms매개변수",
+            "es": "Parámetro de fundido de entrada (ms)",
+            "fr": "Paramètre de fondu d'entrée (ms)",
+            "de": "Einblend-Parameter (ms)",
+            "pt-BR": "Parâmetro de fade in (ms)",
+            "ru": "Параметр нарастания (мс)",
+            "ar": "معلمة التلاشي للداخل (مللي ثانية)",
+            "hi": "फ़ेड इन (ms) पैरामीटर"
           },
           "optional": true,
           "default_value": "0.0",
@@ -1289,7 +2569,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "fade_out_ms参数",
-            "en-US": "fade_out_ms parameter"
+            "en-US": "fade_out_ms parameter",
+            "zh-TW": "fade_out_ms參數",
+            "ja": "fade_out_msパラメータ",
+            "ko": "fade_out_ms매개변수",
+            "es": "Parámetro de fundido de salida (ms)",
+            "fr": "Paramètre de fondu de sortie (ms)",
+            "de": "Ausblend-Parameter (ms)",
+            "pt-BR": "Parâmetro de fade out (ms)",
+            "ru": "Параметр затухания (мс)",
+            "ar": "معلمة التلاشي للخارج (مللي ثانية)",
+            "hi": "फ़ेड आउट (ms) पैरामीटर"
           },
           "optional": true,
           "default_value": "0.0",
@@ -1300,14 +2590,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.fade",
       "descriptions": {
         "zh-CN": "为音频添加淡入或淡出效果",
-        "en-US": "Add fade-in or fade-out effect to audio"
+        "en-US": "Add fade-in or fade-out effect to audio",
+        "zh-TW": "為音訊添加淡入或淡出效果",
+        "ja": "オーディオにフェードイン/フェードアウト効果を追加",
+        "ko": "오디오에 페이드 인/아웃 효과 추가",
+        "es": "Agregar efecto de fundido al audio",
+        "fr": "Ajouter un effet de fondu à l'audio",
+        "de": "Audio-Einblend-/Ausblendeffekt hinzufügen",
+        "pt-BR": "Adicionar efeito de fade ao áudio",
+        "ru": "Добавить эффект затухания к аудио",
+        "ar": "إضافة تأثير تلاشي إلى الصوت",
+        "hi": "ऑडियो में फ़ेड इन/आउट इफ़ेक्ट जोड़ें"
       },
       "group": "edit",
       "async": true,
@@ -1322,7 +2632,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "要混合的多个音频文件路径列表",
-            "en-US": "List of audio file paths to mix"
+            "en-US": "List of audio file paths to mix",
+            "zh-TW": "要混合的多個音訊檔案路徑列表",
+            "ja": "ミックスするオーディオファイルパスのリスト",
+            "ko": "믹스할 오디오 파일 경로 목록",
+            "es": "Lista de rutas de archivos de audio a mezclar",
+            "fr": "Liste de chemins de fichiers audio à mixer",
+            "de": "Liste der zu mischenden Audiodateien",
+            "pt-BR": "Lista de caminhos de áudio para mixar",
+            "ru": "Список путей аудиофайлов для микширования",
+            "ar": "قائمة مسارات ملفات الصوت للمزج",
+            "hi": "मिक्स करने के लिए ऑडियो फ़ाइल पथों की सूची"
           },
           "desc": "List of audio file paths to mix"
         },
@@ -1331,7 +2651,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         }
@@ -1340,14 +2670,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.mix",
       "descriptions": {
         "zh-CN": "将多个音频轨道混合叠加为一个",
-        "en-US": "Mix multiple audio tracks into one"
+        "en-US": "Mix multiple audio tracks into one",
+        "zh-TW": "將多個音訊軌道混合疊加為一個",
+        "ja": "複数のオーディオトラックを1つにミックス",
+        "ko": "여러 오디오 트랙을 하나로 믹스",
+        "es": "Mezclar varias pistas de audio en una",
+        "fr": "Mixer plusieurs pistes audio en une",
+        "de": "Mehrere Audiospuren mischen",
+        "pt-BR": "Mixar várias faixas de áudio em uma",
+        "ru": "Смешать несколько аудиодорожек в одну",
+        "ar": "مزج عدة مسارات صوتية في مسار واحد",
+        "hi": "कई ऑडियो ट्रैक को एक में मिक्स करें"
       },
       "group": "edit",
       "async": true,
@@ -1361,13 +2711,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "录音器列表",
-          "en-US": "Recorders"
+          "en-US": "Recorders",
+          "zh-TW": "錄音器列表",
+          "ja": "レコーダー",
+          "ko": "레코더",
+          "es": "Grabadoras",
+          "fr": "Enregistreurs",
+          "de": "Rekorder",
+          "pt-BR": "Gravadores",
+          "ru": "Рекордеры",
+          "ar": "المسجلات",
+          "hi": "रिकॉर्डर"
         }
       },
       "bridge_path": "audio.listRecorders",
       "descriptions": {
         "zh-CN": "列出可用录音设备",
-        "en-US": "List recorders of audio"
+        "en-US": "List recorders of audio",
+        "zh-TW": "列出可用錄音設備",
+        "ja": "オーディオレコーダー一覧",
+        "ko": "오디오 레코더 목록",
+        "es": "Listar grabadoras de audio",
+        "fr": "Lister les enregistreurs audio",
+        "de": "Audio-Rekorder auflisten",
+        "pt-BR": "Listar gravadores de áudio",
+        "ru": "Список аудиорекордеров",
+        "ar": "قائمة مسجلات الصوت",
+        "hi": "ऑडियो रिकॉर्डर सूचीबद्ध करें"
       },
       "group": "record",
       "description": "List recorders of audio"
@@ -1381,7 +2751,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "异步回调标识符",
-            "en-US": "Async callback identifier"
+            "en-US": "Async callback identifier",
+            "zh-TW": "異步回調標識符",
+            "ja": "非同期コールバック識別子",
+            "ko": "비동기 콜백 식별자",
+            "es": "Identificador de callback asíncrono",
+            "fr": "Identifiant de rappel asynchrone",
+            "de": "Asynchroner Callback-Bezeichner",
+            "pt-BR": "Identificador de callback assíncrono",
+            "ru": "Идентификатор асинхронного обратного вызова",
+            "ar": "معرف رد الاتصال غير المتزامن",
+            "hi": "एसिंक कॉलबैक पहचानकर्ता"
           },
           "desc": "Async callback identifier",
           "optional": true
@@ -1391,14 +2771,34 @@
         "type": "DeviceWatcher",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "audio.onDeviceChange",
       "descriptions": {
         "zh-CN": "监听音频设备插拔变化事件",
-        "en-US": "Listen for device change event on audio"
+        "en-US": "Listen for device change event on audio",
+        "zh-TW": "監聽音訊設備插拔變化事件",
+        "ja": "オーディオデバイス変更イベントを監視",
+        "ko": "오디오 장치 변경 이벤트 수신 대기",
+        "es": "Escuchar cambios de dispositivo de audio",
+        "fr": "Écouter les changements de périphérique audio",
+        "de": "Audio-Geräteänderungen überwachen",
+        "pt-BR": "Ouvir mudanças de dispositivo de áudio",
+        "ru": "Слушать изменения аудиоустройств",
+        "ar": "الاستماع لتغييرات أجهزة الصوت",
+        "hi": "ऑडियो डिवाइस परिवर्तन इवेंट सुनें"
       },
       "group": "system",
       "description": "Listen for device change event on audio"
@@ -1412,7 +2812,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "watcher_id参数",
-            "en-US": "watcher_id parameter"
+            "en-US": "watcher_id parameter",
+            "zh-TW": "watcher_id參數",
+            "ja": "watcher_idパラメータ",
+            "ko": "watcher_id매개변수",
+            "es": "Parámetro de ID del observador",
+            "fr": "Paramètre d'ID d'observateur",
+            "de": "Watcher-ID-Parameter",
+            "pt-BR": "Parâmetro de ID do observador",
+            "ru": "Параметр ID наблюдателя",
+            "ar": "معلمة معرف المراقب",
+            "hi": "वॉचर ID पैरामीटर"
           },
           "desc": "watcher_id parameter"
         }
@@ -1421,14 +2831,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "audio.offDeviceChange",
       "descriptions": {
         "zh-CN": "取消监听音频设备变化事件",
-        "en-US": "Stop listening for device change event on audio"
+        "en-US": "Stop listening for device change event on audio",
+        "zh-TW": "取消監聽音訊設備變化事件",
+        "ja": "オーディオデバイス変更イベントの監視を停止",
+        "ko": "오디오 장치 변경 이벤트 수신 대기 중지",
+        "es": "Dejar de escuchar cambios de dispositivo",
+        "fr": "Arrêter l'écoute des changements de périphérique",
+        "de": "Audio-Geräteüberwachung stoppen",
+        "pt-BR": "Parar de ouvir mudanças de dispositivo",
+        "ru": "Прекратить отслеживание изменений устройств",
+        "ar": "إيقاف الاستماع لتغييرات أجهزة الصوت",
+        "hi": "ऑडियो डिवाइस परिवर्तन इवेंट सुनना बंद करें"
       },
       "group": "system",
       "description": "Stop listening for device change event on audio"
@@ -1436,14 +2866,34 @@
   ],
   "overviews": {
     "zh-CN": "提供音频录制、播放、格式转换、元数据读写、波形分析、音量控制等能力。支持 MP3/WAV/OGG/FLAC/AAC 等格式，以及混音、剪辑、效果器等高级操作。",
-    "en-US": "Audio recording, playback, format conversion, metadata read/write, waveform analysis, and volume control. Supports MP3/WAV/OGG/FLAC/AAC formats, plus mixing, trimming, and effects."
+    "en-US": "Audio recording, playback, format conversion, metadata read/write, waveform analysis, and volume control. Supports MP3/WAV/OGG/FLAC/AAC formats, plus mixing, trimming, and effects.",
+    "zh-TW": "提供音频錄製、播放、格式轉换、元數據读写、波形分析、音量控制等能力。支援 MP3/WAV/OGG/FLAC/AAC 等格式，以及混音、剪輯、效果器等高級操作。",
+    "ja": "オーディオ録音・再生・形式変換・メタデータ読み書き・波形分析・音量制御。MP3/WAV/OGG/FLAC/AAC対応、ミキシング・トリミング・エフェクト。",
+    "ko": "오디오 녹음, 재생, 형식 변환, 메타데이터, 파형 분석, 볼륨 제어. MP3/WAV/OGG/FLAC/AAC, 믹싱, 트리밍, 이펙트 지원.",
+    "es": "Grabación, reproducción, conversión, metadatos, onda y volumen. MP3/WAV/OGG/FLAC/AAC, mezcla, recorte y efectos.",
+    "fr": "Enregistrement, lecture, conversion, métadonnées, onde et volume. MP3/WAV/OGG/FLAC/AAC, mixage, découpe et effets.",
+    "de": "Aufnahme, Wiedergabe, Konvertierung, Metadaten, Wellenform und Lautstärke. MP3/WAV/OGG/FLAC/AAC, Mischen, Trimmen, Effekte.",
+    "pt-BR": "Gravação, reprodução, conversão, metadados, onda e volume. MP3/WAV/OGG/FLAC/AAC, mixagem, corte e efeitos.",
+    "ru": "Запись, воспроизведение, конвертация, метаданные, анализ волн и громкость. MP3/WAV/OGG/FLAC/AAC, микширование, обрезка и эффекты.",
+    "ar": "تسجيل وتشغيل وتحويل وبيانات وصفية وتحليل موجات وتحكم بالصوت. MP3/WAV/OGG/FLAC/AAC، مزج وقص ومؤثرات.",
+    "hi": "ऑडियो रिकॉर्डिंग, प्लेबैक, फॉर्मेट, मेटाडेटा, वेवफॉर्म और वॉल्यूम। MP3/WAV/OGG/FLAC/AAC, मिक्सिंग, ट्रिमिंग, इफेक्ट्स।"
   },
   "types": [
     {
       "name": "AudioDevice",
       "descriptions": {
         "zh-CN": "音频设备信息",
-        "en-US": "Audio device info"
+        "en-US": "Audio device info",
+        "zh-TW": "音频設備資訊",
+        "ja": "オーディオデバイス情報",
+        "ko": "오디오 장치 정보",
+        "es": "Información del dispositivo de audio",
+        "fr": "Informations sur le périphérique audio",
+        "de": "Audiogeräteinformationen",
+        "pt-BR": "Informações do dispositivo de áudio",
+        "ru": "Информация об аудиоустройстве",
+        "ar": "معلومات جهاز الصوت",
+        "hi": "ऑडियो डिवाइस जानकारी"
       },
       "fields": [
         {
@@ -1451,7 +2901,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "장치 ID",
+            "es": "ID del dispositivo",
+            "fr": "ID du périphérique",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرّف الجهاز",
+            "hi": "डिवाइस ID"
           }
         },
         {
@@ -1459,7 +2919,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备名称",
-            "en-US": "Device name"
+            "en-US": "Device name",
+            "zh-TW": "設備名稱",
+            "ja": "デバイス名",
+            "ko": "장치 이름",
+            "es": "Nombre del dispositivo",
+            "fr": "Nom du périphérique",
+            "de": "Gerätename",
+            "pt-BR": "Nome do dispositivo",
+            "ru": "Имя устройства",
+            "ar": "اسم الجهاز",
+            "hi": "डिवाइस नाम"
           }
         },
         {
@@ -1467,7 +2937,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否默认",
-            "en-US": "Is default"
+            "en-US": "Is default",
+            "zh-TW": "是否默認",
+            "ja": "デフォルトかどうか",
+            "ko": "기본값 여부",
+            "es": "Es predeterminado",
+            "fr": "Par défaut",
+            "de": "Ist Standard",
+            "pt-BR": "É padrão",
+            "ru": "По умолчанию",
+            "ar": "افتراضي",
+            "hi": "डिफ़ॉल्ट है"
           }
         },
         {
@@ -1475,7 +2955,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否输入设备",
-            "en-US": "Is input device"
+            "en-US": "Is input device",
+            "zh-TW": "是否输入設備",
+            "ja": "入力デバイスかどうか",
+            "ko": "입력 장치 여부",
+            "es": "Es dispositivo de entrada",
+            "fr": "Est un périphérique d'entrée",
+            "de": "Ist Eingabegerät",
+            "pt-BR": "É dispositivo de entrada",
+            "ru": "Является устройством ввода",
+            "ar": "هل هو جهاز إدخال",
+            "hi": "इनपुट डिवाइस है"
           }
         }
       ]
@@ -1484,7 +2974,17 @@
       "name": "PlayHandle",
       "descriptions": {
         "zh-CN": "播放句柄",
-        "en-US": "Play handle"
+        "en-US": "Play handle",
+        "zh-TW": "播放句柄",
+        "ja": "再生ハンドル",
+        "ko": "재생 핸들",
+        "es": "Manejador de reproducción",
+        "fr": "Handle de lecture",
+        "de": "Wiedergabe-Handle",
+        "pt-BR": "Handle de reprodução",
+        "ru": "Дескриптор воспроизведения",
+        "ar": "مقبض التشغيل",
+        "hi": "प्ले हैंडल"
       },
       "fields": [
         {
@@ -1492,7 +2992,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "播放器ID",
-            "en-US": "Player ID"
+            "en-US": "Player ID",
+            "zh-TW": "播放器ID",
+            "ja": "プレーヤーID",
+            "ko": "플레이어 ID",
+            "es": "ID del reproductor",
+            "fr": "ID du lecteur",
+            "de": "Player-ID",
+            "pt-BR": "ID do reprodutor",
+            "ru": "ID проигрывателя",
+            "ar": "معرّف المشغّل",
+            "hi": "प्लेयर ID"
           }
         }
       ]
@@ -1501,7 +3011,17 @@
       "name": "RecordHandle",
       "descriptions": {
         "zh-CN": "录音句柄",
-        "en-US": "Record handle"
+        "en-US": "Record handle",
+        "zh-TW": "錄音句柄",
+        "ja": "録音ハンドル",
+        "ko": "녹음 핸들",
+        "es": "Manejador de grabación",
+        "fr": "Handle d'enregistrement",
+        "de": "Aufnahme-Handle",
+        "pt-BR": "Handle de gravação",
+        "ru": "Дескриптор записи",
+        "ar": "مقبض التسجيل",
+        "hi": "रिकॉर्ड हैंडल"
       },
       "fields": [
         {
@@ -1509,7 +3029,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "录音器ID",
-            "en-US": "Recorder ID"
+            "en-US": "Recorder ID",
+            "zh-TW": "錄音器ID",
+            "ja": "レコーダーID",
+            "ko": "레코더 ID",
+            "es": "ID del grabador",
+            "fr": "ID de l'enregistreur",
+            "de": "Rekorder-ID",
+            "pt-BR": "ID do gravador",
+            "ru": "ID рекордера",
+            "ar": "معرّف المسجّل",
+            "hi": "रिकॉर्डर ID"
           }
         }
       ]
@@ -1518,7 +3048,17 @@
       "name": "RecordResult",
       "descriptions": {
         "zh-CN": "录音结果",
-        "en-US": "Record result"
+        "en-US": "Record result",
+        "zh-TW": "錄音结果",
+        "ja": "録音結果",
+        "ko": "녹음 결과",
+        "es": "Resultado de grabación",
+        "fr": "Résultat d'enregistrement",
+        "de": "Aufnahmeergebnis",
+        "pt-BR": "Resultado da gravação",
+        "ru": "Результат записи",
+        "ar": "نتيجة التسجيل",
+        "hi": "रिकॉर्ड परिणाम"
       },
       "fields": [
         {
@@ -1526,7 +3066,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일 경로",
+            "es": "Ruta del archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         },
         {
@@ -1534,7 +3084,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "时长(ms)",
-            "en-US": "Duration(ms)"
+            "en-US": "Duration(ms)",
+            "zh-TW": "時长(ms)",
+            "ja": "再生時間(ms)",
+            "ko": "지속 시간(ms)",
+            "es": "Duración(ms)",
+            "fr": "Durée(ms)",
+            "de": "Dauer(ms)",
+            "pt-BR": "Duração(ms)",
+            "ru": "Длительность(мс)",
+            "ar": "المدة(مللي ثانية)",
+            "hi": "अवधि(ms)"
           }
         },
         {
@@ -1542,7 +3102,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "文件大小",
-            "en-US": "File size"
+            "en-US": "File size",
+            "zh-TW": "檔案大小",
+            "ja": "ファイルサイズ",
+            "ko": "파일 크기",
+            "es": "Tamaño de archivo",
+            "fr": "Taille du fichier",
+            "de": "Dateigröße",
+            "pt-BR": "Tamanho do arquivo",
+            "ru": "Размер файла",
+            "ar": "حجم الملف",
+            "hi": "फ़ाइल आकार"
           }
         }
       ]
@@ -1551,7 +3121,17 @@
       "name": "AudioFileInfo",
       "descriptions": {
         "zh-CN": "音频文件信息",
-        "en-US": "Audio file info"
+        "en-US": "Audio file info",
+        "zh-TW": "音频檔案資訊",
+        "ja": "オーディオファイル情報",
+        "ko": "오디오 파일 정보",
+        "es": "Información del archivo de audio",
+        "fr": "Informations sur le fichier audio",
+        "de": "Audiodateiinformationen",
+        "pt-BR": "Informações do arquivo de áudio",
+        "ru": "Информация об аудиофайле",
+        "ar": "معلومات ملف الصوت",
+        "hi": "ऑडियो फ़ाइल जानकारी"
       },
       "fields": [
         {
@@ -1559,7 +3139,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "时长(ms)",
-            "en-US": "Duration(ms)"
+            "en-US": "Duration(ms)",
+            "zh-TW": "時长(ms)",
+            "ja": "再生時間(ms)",
+            "ko": "지속 시간(ms)",
+            "es": "Duración(ms)",
+            "fr": "Durée(ms)",
+            "de": "Dauer(ms)",
+            "pt-BR": "Duração(ms)",
+            "ru": "Длительность(мс)",
+            "ar": "المدة(مللي ثانية)",
+            "hi": "अवधि(ms)"
           }
         },
         {
@@ -1567,7 +3157,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "格式",
-            "en-US": "Format"
+            "en-US": "Format",
+            "zh-TW": "格式",
+            "ja": "形式",
+            "ko": "형식",
+            "es": "Formato",
+            "fr": "Format",
+            "de": "Format",
+            "pt-BR": "Formato",
+            "ru": "Формат",
+            "ar": "التنسيق",
+            "hi": "प्रारूप"
           }
         },
         {
@@ -1575,7 +3175,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "采样率",
-            "en-US": "Sample rate"
+            "en-US": "Sample rate",
+            "zh-TW": "采樣率",
+            "ja": "サンプルレート",
+            "ko": "샘플 레이트",
+            "es": "Frecuencia de muestreo",
+            "fr": "Fréquence d'échantillonnage",
+            "de": "Abtastrate",
+            "pt-BR": "Taxa de amostragem",
+            "ru": "Частота дискретизации",
+            "ar": "معدل العينات",
+            "hi": "सैंपल रेट"
           }
         },
         {
@@ -1583,7 +3193,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "声道数",
-            "en-US": "Channels"
+            "en-US": "Channels",
+            "zh-TW": "声道数",
+            "ja": "チャンネル数",
+            "ko": "채널 수",
+            "es": "Canales",
+            "fr": "Canaux",
+            "de": "Kanäle",
+            "pt-BR": "Canais",
+            "ru": "Каналы",
+            "ar": "القنوات",
+            "hi": "चैनल"
           }
         },
         {
@@ -1591,7 +3211,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "比特率",
-            "en-US": "Bitrate"
+            "en-US": "Bitrate",
+            "zh-TW": "比特率",
+            "ja": "ビットレート",
+            "ko": "비트레이트",
+            "es": "Tasa de bits",
+            "fr": "Débit binaire",
+            "de": "Bitrate",
+            "pt-BR": "Taxa de bits",
+            "ru": "Битрейт",
+            "ar": "معدل البت",
+            "hi": "बिटरेट"
           }
         }
       ]
@@ -1600,7 +3230,17 @@
       "name": "ConvertResult",
       "descriptions": {
         "zh-CN": "转换结果",
-        "en-US": "Convert result"
+        "en-US": "Convert result",
+        "zh-TW": "轉换结果",
+        "ja": "変換結果",
+        "ko": "변환 결과",
+        "es": "Resultado de conversión",
+        "fr": "Résultat de conversion",
+        "de": "Konvertierungsergebnis",
+        "pt-BR": "Resultado da conversão",
+        "ru": "Результат конвертации",
+        "ar": "نتيجة التحويل",
+        "hi": "रूपांतरण परिणाम"
       },
       "fields": [
         {
@@ -1608,7 +3248,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output path"
+            "en-US": "Output path",
+            "zh-TW": "输出路徑",
+            "ja": "出力パス",
+            "ko": "출력 경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Выходной путь",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -1616,7 +3266,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "文件大小",
-            "en-US": "File size"
+            "en-US": "File size",
+            "zh-TW": "檔案大小",
+            "ja": "ファイルサイズ",
+            "ko": "파일 크기",
+            "es": "Tamaño de archivo",
+            "fr": "Taille du fichier",
+            "de": "Dateigröße",
+            "pt-BR": "Tamanho do arquivo",
+            "ru": "Размер файла",
+            "ar": "حجم الملف",
+            "hi": "फ़ाइल आकार"
           }
         }
       ]
@@ -1625,7 +3285,17 @@
       "name": "AudioMetadata",
       "descriptions": {
         "zh-CN": "音频文件元数据",
-        "en-US": "Audio file metadata"
+        "en-US": "Audio file metadata",
+        "zh-TW": "音频檔案元數據",
+        "ja": "オーディオファイルメタデータ",
+        "ko": "오디오 파일 메타데이터",
+        "es": "Metadatos del archivo de audio",
+        "fr": "Métadonnées du fichier audio",
+        "de": "Audiodatei-Metadaten",
+        "pt-BR": "Metadados do arquivo de áudio",
+        "ru": "Метаданные аудиофайла",
+        "ar": "بيانات وصفية لملف الصوت",
+        "hi": "ऑडियो फ़ाइल मेटाडेटा"
       },
       "fields": [
         {
@@ -1633,7 +3303,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标题",
-            "en-US": "Title"
+            "en-US": "Title",
+            "zh-TW": "標题",
+            "ja": "タイトル",
+            "ko": "제목",
+            "es": "Título",
+            "fr": "Titre",
+            "de": "Titel",
+            "pt-BR": "Título",
+            "ru": "Заголовок",
+            "ar": "العنوان",
+            "hi": "शीर्षक"
           }
         },
         {
@@ -1641,7 +3321,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "艺术家",
-            "en-US": "Artist"
+            "en-US": "Artist",
+            "zh-TW": "艺術家",
+            "ja": "アーティスト",
+            "ko": "아티스트",
+            "es": "Artista",
+            "fr": "Artiste",
+            "de": "Künstler",
+            "pt-BR": "Artista",
+            "ru": "Исполнитель",
+            "ar": "الفنان",
+            "hi": "कलाकार"
           }
         },
         {
@@ -1649,7 +3339,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "专辑",
-            "en-US": "Album"
+            "en-US": "Album",
+            "zh-TW": "專輯",
+            "ja": "アルバム",
+            "ko": "앨범",
+            "es": "Álbum",
+            "fr": "Album",
+            "de": "Album",
+            "pt-BR": "Álbum",
+            "ru": "Альбом",
+            "ar": "الألبوم",
+            "hi": "एल्बम"
           }
         },
         {
@@ -1657,7 +3357,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "时长(毫秒)",
-            "en-US": "Duration in ms"
+            "en-US": "Duration in ms",
+            "zh-TW": "時长(毫秒)",
+            "ja": "再生時間(ミリ秒)",
+            "ko": "지속 시간(ms)",
+            "es": "Duración en ms",
+            "fr": "Durée en ms",
+            "de": "Dauer in ms",
+            "pt-BR": "Duração em ms",
+            "ru": "Длительность в мс",
+            "ar": "المدة بالمللي ثانية",
+            "hi": "अवधि ms में"
           }
         },
         {
@@ -1665,7 +3375,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "采样率(Hz)",
-            "en-US": "Sample rate in Hz"
+            "en-US": "Sample rate in Hz",
+            "zh-TW": "采樣率(Hz)",
+            "ja": "サンプルレート(Hz)",
+            "ko": "샘플 레이트(Hz)",
+            "es": "Frecuencia de muestreo en Hz",
+            "fr": "Fréquence d'échantillonnage en Hz",
+            "de": "Abtastrate in Hz",
+            "pt-BR": "Taxa de amostragem em Hz",
+            "ru": "Частота дискретизации в Гц",
+            "ar": "معدل العينات بالهرتز",
+            "hi": "Hz में सैंपल रेट"
           }
         },
         {
@@ -1673,7 +3393,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "声道数",
-            "en-US": "Channels"
+            "en-US": "Channels",
+            "zh-TW": "声道数",
+            "ja": "チャンネル数",
+            "ko": "채널 수",
+            "es": "Canales",
+            "fr": "Canaux",
+            "de": "Kanäle",
+            "pt-BR": "Canais",
+            "ru": "Каналы",
+            "ar": "القنوات",
+            "hi": "चैनल"
           }
         },
         {
@@ -1681,7 +3411,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "比特率(bps)",
-            "en-US": "Bitrate in bps"
+            "en-US": "Bitrate in bps",
+            "zh-TW": "比特率(bps)",
+            "ja": "ビットレート（bps）",
+            "ko": "비트레이트(bps)",
+            "es": "Tasa de bits en bps",
+            "fr": "Débit binaire en bps",
+            "de": "Bitrate in bps",
+            "pt-BR": "Taxa de bits em bps",
+            "ru": "Битрейт в bps",
+            "ar": "معدل البت بالـ bps",
+            "hi": "bps में बिटरेट"
           }
         }
       ]
@@ -1690,7 +3430,17 @@
       "name": "DeviceWatcher",
       "descriptions": {
         "zh-CN": "音频设备变化监听器",
-        "en-US": "Audio device change watcher"
+        "en-US": "Audio device change watcher",
+        "zh-TW": "音频設備變化監听器",
+        "ja": "オーディオデバイス変更監視",
+        "ko": "오디오 장치 변경 감시자",
+        "es": "Monitor de cambio de dispositivo de audio",
+        "fr": "Surveillant de changement de périphérique audio",
+        "de": "Audio-Geräteänderungsüberwachung",
+        "pt-BR": "Monitor de mudança de dispositivo de áudio",
+        "ru": "Наблюдатель изменений аудиоустройства",
+        "ar": "مراقب تغيير جهاز الصوت",
+        "hi": "ऑडियो डिवाइस परिवर्तन वॉचर"
       },
       "fields": [
         {
@@ -1698,7 +3448,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "监听器ID",
-            "en-US": "Watcher ID"
+            "en-US": "Watcher ID",
+            "zh-TW": "監听器ID",
+            "ja": "ウォッチャーID",
+            "ko": "감시자 ID",
+            "es": "ID del vigilante",
+            "fr": "ID du surveillant",
+            "de": "Wächter-ID",
+            "pt-BR": "ID do monitor",
+            "ru": "ID наблюдателя",
+            "ar": "معرّف المراقب",
+            "hi": "वॉचर ID"
           }
         }
       ]
@@ -1712,7 +3472,17 @@
       "group": "format",
       "descs": {
         "zh-CN": "MP3格式",
-        "en-US": "MP3 format"
+        "en-US": "MP3 format",
+        "zh-TW": "MP3格式",
+        "ja": "MP3形式",
+        "ko": "MP3 형식",
+        "es": "Formato MP3",
+        "fr": "Format MP3",
+        "de": "MP3-Format",
+        "pt-BR": "Formato MP3",
+        "ru": "Формат MP3",
+        "ar": "تنسيق MP3",
+        "hi": "MP3 प्रारूप"
       }
     },
     {
@@ -1722,7 +3492,17 @@
       "group": "format",
       "descs": {
         "zh-CN": "WAV格式",
-        "en-US": "WAV format"
+        "en-US": "WAV format",
+        "zh-TW": "WAV格式",
+        "ja": "WAV形式",
+        "ko": "WAV 형식",
+        "es": "Formato WAV",
+        "fr": "Format WAV",
+        "de": "WAV-Format",
+        "pt-BR": "Formato WAV",
+        "ru": "Формат WAV",
+        "ar": "تنسيق WAV",
+        "hi": "WAV प्रारूप"
       }
     },
     {
@@ -1732,7 +3512,17 @@
       "group": "format",
       "descs": {
         "zh-CN": "FLAC格式",
-        "en-US": "FLAC format"
+        "en-US": "FLAC format",
+        "zh-TW": "FLAC格式",
+        "ja": "FLAC形式",
+        "ko": "FLAC 형식",
+        "es": "Formato FLAC",
+        "fr": "Format FLAC",
+        "de": "FLAC-Format",
+        "pt-BR": "Formato FLAC",
+        "ru": "Формат FLAC",
+        "ar": "تنسيق FLAC",
+        "hi": "FLAC प्रारूप"
       }
     },
     {
@@ -1742,7 +3532,17 @@
       "group": "format",
       "descs": {
         "zh-CN": "OGG格式",
-        "en-US": "OGG format"
+        "en-US": "OGG format",
+        "zh-TW": "OGG格式",
+        "ja": "OGG形式",
+        "ko": "OGG 형식",
+        "es": "Formato OGG",
+        "fr": "Format OGG",
+        "de": "OGG-Format",
+        "pt-BR": "Formato OGG",
+        "ru": "Формат OGG",
+        "ar": "تنسيق OGG",
+        "hi": "OGG प्रारूप"
       }
     },
     {
@@ -1752,7 +3552,17 @@
       "group": "format",
       "descs": {
         "zh-CN": "AAC格式",
-        "en-US": "AAC format"
+        "en-US": "AAC format",
+        "zh-TW": "AAC格式",
+        "ja": "AAC形式",
+        "ko": "AAC 형식",
+        "es": "Formato AAC",
+        "fr": "Format AAC",
+        "de": "AAC-Format",
+        "pt-BR": "Formato AAC",
+        "ru": "Формат AAC",
+        "ar": "تنسيق AAC",
+        "hi": "AAC प्रारूप"
       }
     }
   ],
@@ -1761,7 +3571,17 @@
       "name": "device_change",
       "descriptions": {
         "zh-CN": "音频设备变更",
-        "en-US": "Audio device changed"
+        "en-US": "Audio device changed",
+        "zh-TW": "音频設備變更",
+        "ja": "オーディオデバイスが変更されました",
+        "ko": "오디오 장치가 변경됨",
+        "es": "Dispositivo de audio cambiado",
+        "fr": "Périphérique audio modifié",
+        "de": "Audiogerät geändert",
+        "pt-BR": "Dispositivo de áudio alterado",
+        "ru": "Аудиоустройство изменено",
+        "ar": "تم تغيير جهاز الصوت",
+        "hi": "ऑडियो डिवाइस बदल गया"
       },
       "payload": [
         {
@@ -1769,7 +3589,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "变更类型(added/removed)",
-            "en-US": "Change type"
+            "en-US": "Change type",
+            "zh-TW": "變更類型(added/removed)",
+            "ja": "変更タイプ",
+            "ko": "변경 유형",
+            "es": "Tipo de cambio",
+            "fr": "Type de changement",
+            "de": "Änderungstyp",
+            "pt-BR": "Tipo de alteração",
+            "ru": "Тип изменения",
+            "ar": "نوع التغيير",
+            "hi": "परिवर्तन प्रकार"
           }
         }
       ]
@@ -1778,7 +3608,17 @@
       "name": "playback_ended",
       "descriptions": {
         "zh-CN": "播放结束",
-        "en-US": "Playback ended"
+        "en-US": "Playback ended",
+        "zh-TW": "播放结束",
+        "ja": "再生が終了しました",
+        "ko": "재생이 종료됨",
+        "es": "Reproducción finalizada",
+        "fr": "Lecture terminée",
+        "de": "Wiedergabe beendet",
+        "pt-BR": "Reprodução finalizada",
+        "ru": "Воспроизведение завершено",
+        "ar": "انتهى التشغيل",
+        "hi": "प्लेबैक समाप्त"
       },
       "payload": [
         {
@@ -1786,7 +3626,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "播放器ID",
-            "en-US": "Player ID"
+            "en-US": "Player ID",
+            "zh-TW": "播放器ID",
+            "ja": "プレーヤーID",
+            "ko": "플레이어 ID",
+            "es": "ID del reproductor",
+            "fr": "ID du lecteur",
+            "de": "Player-ID",
+            "pt-BR": "ID do player",
+            "ru": "ID плеера",
+            "ar": "معرف المشغل",
+            "hi": "प्लेयर ID"
           }
         }
       ]

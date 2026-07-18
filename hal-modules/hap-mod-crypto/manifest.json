@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "哈希算法名称（md5/sha1/sha256/sha512）",
-            "en-US": "Hash algorithm (md5/sha1/sha256/sha512)"
+            "en-US": "Hash algorithm (md5/sha1/sha256/sha512)",
+            "zh-TW": "雜湊算法名稱（md5/sha1/sha256/sha512）",
+            "ja": "ハッシュアルゴリズム名称（md5/sha1/sha256/sha512）",
+            "ko": "해시 알고리즘 (md5/sha1/sha256/sha512)",
+            "es": "Algoritmo hash (md5/sha1/sha256/sha512)",
+            "fr": "Algorithme de hachage (md5/sha1/sha256/sha512)",
+            "de": "Hash-Algorithmus (md5/sha1/sha256/sha512)",
+            "pt-BR": "Algoritmo hash (md5/sha1/sha256/sha512)",
+            "ru": "Алгоритм хеширования (md5/sha1/sha256/sha512)",
+            "ar": "خوارزمية التجزئة (md5/sha1/sha256/sha512)",
+            "hi": "हैश एल्गोरिथ्म (md5/sha1/sha256/sha512)"
           },
           "desc": "Hash algorithm (md5/sha1/sha256/sha512)",
           "optional": true
@@ -43,7 +53,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要计算哈希的字符串数据",
-            "en-US": "String data to hash"
+            "en-US": "String data to hash",
+            "zh-TW": "要計算雜湊的字串數據",
+            "ja": "要计算ハッシュの文字列データ",
+            "ko": "해시할 문자열 데이터",
+            "es": "Datos de cadena a hashear",
+            "fr": "Données à hacher",
+            "de": "Zu hashende Zeichenkette",
+            "pt-BR": "Dados de string para hash",
+            "ru": "Строковые данные для хеширования",
+            "ar": "بيانات نصية للتجزئة",
+            "hi": "हैश करने के लिए स्ट्रिंग डेटा"
           },
           "desc": "String data to hash"
         }
@@ -52,14 +72,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "十六进制编码的哈希值字符串",
-          "en-US": "Hex-encoded hash string"
+          "en-US": "Hex-encoded hash string",
+          "zh-TW": "十六進製編碼的雜湊值字串",
+          "ja": "16進数エンコードのハッシュ文字列",
+          "ko": "16진수 인코딩된 해시 문자열",
+          "es": "Cadena hash codificada en hexadecimal",
+          "fr": "Chaîne de hachage encodée en hex",
+          "de": "Hex-kodierte Hash-Zeichenkette",
+          "pt-BR": "String hash codificada em hexadecimal",
+          "ru": "Хеш-строка в hex-кодировке",
+          "ar": "سلسلة تجزئة مشفرة بالست عشري",
+          "hi": "हेक्स-एनकोडेड हैश स्ट्रिंग"
         },
         "desc": "Hex-encoded hash string"
       },
       "bridge_path": "crypto.hash",
       "descriptions": {
         "zh-CN": "使用指定算法计算字符串数据的哈希摘要值",
-        "en-US": "Compute hash digest of string data with specified algorithm"
+        "en-US": "Compute hash digest of string data with specified algorithm",
+        "zh-TW": "使用指定算法計算字串數據的雜湊摘要值",
+        "ja": "指定アルゴリズムで文字列データのハッシュダイジェストを計算",
+        "ko": "지정된 알고리즘으로 문자열 데이터의 해시 다이제스트 계산",
+        "es": "Calcular hash de datos con algoritmo",
+        "fr": "Calculer le hash des données avec l'algorithme",
+        "de": "Hash-Digest mit Algorithmus berechnen",
+        "pt-BR": "Calcular hash com algoritmo especificado",
+        "ru": "Вычислить хеш-дайджест с алгоритмом",
+        "ar": "حساب بصمة التجزئة بالخوارزمية المحددة",
+        "hi": "निर्दिष्ट एल्गोरिथ्म से स्ट्रिंग हैश गणना करें"
       },
       "group": "hash",
       "description": "Compute hash digest of string data with specified algorithm"
@@ -73,7 +113,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "哈希算法名称",
-            "en-US": "Hash algorithm"
+            "en-US": "Hash algorithm",
+            "zh-TW": "雜湊算法名稱",
+            "ja": "ハッシュアルゴリズム名称",
+            "ko": "해시 알고리즘",
+            "es": "Algoritmo hash",
+            "fr": "Algorithme de hachage",
+            "de": "Hash-Algorithmus",
+            "pt-BR": "Algoritmo hash",
+            "ru": "Алгоритм хеширования",
+            "ar": "خوارزمية التجزئة",
+            "hi": "हैश एल्गोरिथ्म"
           },
           "desc": "Hash algorithm",
           "optional": true
@@ -83,7 +133,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要计算哈希的文件路径",
-            "en-US": "File path to hash"
+            "en-US": "File path to hash",
+            "zh-TW": "要計算雜湊的檔案路徑",
+            "ja": "要计算ハッシュのファイルパス",
+            "ko": "해시할 파일 경로",
+            "es": "Ruta del archivo a hashear",
+            "fr": "Chemin du fichier à hacher",
+            "de": "Zu hashender Dateipfad",
+            "pt-BR": "Caminho do arquivo para hash",
+            "ru": "Путь к файлу для хеширования",
+            "ar": "مسار الملف للتجزئة",
+            "hi": "हैश करने के लिए फ़ाइल पथ"
           },
           "desc": "File path to hash"
         }
@@ -92,14 +152,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "十六进制编码的文件哈希值",
-          "en-US": "Hex-encoded file hash"
+          "en-US": "Hex-encoded file hash",
+          "zh-TW": "十六進製編碼的檔案雜湊值",
+          "ja": "16進数エンコードのファイルハッシュ",
+          "ko": "16진수 인코딩된 파일 해시",
+          "es": "Hash de archivo codificado en hexadecimal",
+          "fr": "Hash de fichier encodé en hex",
+          "de": "Hex-kodierter Datei-Hash",
+          "pt-BR": "Hash de arquivo codificado em hexadecimal",
+          "ru": "Хеш файла в hex-кодировке",
+          "ar": "بصمة ملف مشفرة بالست عشري",
+          "hi": "हेक्स-एनकोडेड फ़ाइल हैश"
         },
         "desc": "Hex-encoded file hash"
       },
       "bridge_path": "crypto.hashFile",
       "descriptions": {
         "zh-CN": "计算文件内容的哈希摘要值（适用于大文件）",
-        "en-US": "Compute hash digest of file content (suitable for large files)"
+        "en-US": "Compute hash digest of file content (suitable for large files)",
+        "zh-TW": "計算檔案內容的雜湊摘要值（適用於大檔案）",
+        "ja": "ファイル内容のハッシュダイジェストを計算（大きなファイル向け）",
+        "ko": "파일 내용의 해시 다이제스트 계산 (대용량 파일용)",
+        "es": "Calcular hash del contenido del archivo",
+        "fr": "Calculer le hash du contenu du fichier",
+        "de": "Hash-Digest des Dateiinhalts berechnen",
+        "pt-BR": "Calcular hash do conteúdo do arquivo",
+        "ru": "Вычислить хеш-дайджест файла",
+        "ar": "حساب بصمة تجزئة محتوى الملف",
+        "hi": "फ़ाइल सामग्री का हैश डाइजेस्ट गणना करें"
       },
       "group": "hash",
       "description": "Compute hash digest of file content (suitable for large files)"
@@ -113,7 +193,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "HMAC 算法（sha256/sha512）",
-            "en-US": "HMAC algorithm"
+            "en-US": "HMAC algorithm",
+            "zh-TW": "HMAC 算法（sha256/sha512）",
+            "ja": "HMAC アルゴリズム（sha256/sha512）",
+            "ko": "HMAC 알고리즘",
+            "es": "Algoritmo HMAC",
+            "fr": "Algorithme HMAC",
+            "de": "HMAC-Algorithmus",
+            "pt-BR": "Algoritmo HMAC",
+            "ru": "Алгоритм HMAC",
+            "ar": "خوارزمية HMAC",
+            "hi": "HMAC एल्गोरिथ्म"
           },
           "desc": "HMAC algorithm",
           "optional": true
@@ -123,7 +213,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "HMAC 密钥字符串",
-            "en-US": "HMAC key string"
+            "en-US": "HMAC key string",
+            "zh-TW": "HMAC 密钥字串",
+            "ja": "HMAC キー文字列",
+            "ko": "HMAC 키문자열",
+            "es": "Cadena de clave HMAC",
+            "fr": "Chaîne de clé HMAC",
+            "de": "HMAC-Schlüsselzeichenkette",
+            "pt-BR": "String de chave HMAC",
+            "ru": "Строка ключа HMAC",
+            "ar": "سلسلة مفتاح HMAC",
+            "hi": "HMAC कुंजी स्ट्रिंग"
           },
           "desc": "HMAC key string"
         },
@@ -132,7 +232,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要认证的数据",
-            "en-US": "Data to authenticate"
+            "en-US": "Data to authenticate",
+            "zh-TW": "要認證的數據",
+            "ja": "認証するデータ",
+            "ko": "인증할 데이터",
+            "es": "Datos a autenticar",
+            "fr": "Données à authentifier",
+            "de": "Zu authentifizierende Daten",
+            "pt-BR": "Dados para autenticar",
+            "ru": "Данные для аутентификации",
+            "ar": "بيانات للمصادقة",
+            "hi": "प्रमाणित करने के लिए डेटा"
           },
           "desc": "Data to authenticate"
         }
@@ -141,14 +251,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "十六进制编码的 HMAC 值",
-          "en-US": "Hex-encoded HMAC value"
+          "en-US": "Hex-encoded HMAC value",
+          "zh-TW": "十六進製編碼的 HMAC 值",
+          "ja": "16進数エンコードのHMAC値",
+          "ko": "16진수 인코딩된 HMAC 값",
+          "es": "Valor HMAC codificado en hexadecimal",
+          "fr": "Valeur HMAC encodée en hex",
+          "de": "Hex-kodierter HMAC-Wert",
+          "pt-BR": "Valor HMAC codificado em hexadecimal",
+          "ru": "Значение HMAC в hex-кодировке",
+          "ar": "قيمة HMAC مشفرة بالست عشري",
+          "hi": "हेक्स-एनकोडेड HMAC मान"
         },
         "desc": "Hex-encoded HMAC value"
       },
       "bridge_path": "crypto.hmac",
       "descriptions": {
         "zh-CN": "使用密钥和指定算法计算 HMAC 消息认证码",
-        "en-US": "Compute HMAC message authentication code with key and algorithm"
+        "en-US": "Compute HMAC message authentication code with key and algorithm",
+        "zh-TW": "使用密钥和指定算法計算 HMAC 消息認證碼",
+        "ja": "鍵とアルゴリズムでHMACメッセージ認証コードを計算",
+        "ko": "키와 알고리즘으로 HMAC 메시지 인증 코드 계산",
+        "es": "Calcular código HMAC con clave y algoritmo",
+        "fr": "Calculer le code HMAC avec clé et algorithme",
+        "de": "HMAC-Code mit Schlüssel und Algorithmus berechnen",
+        "pt-BR": "Calcular código HMAC com chave e algoritmo",
+        "ru": "Вычислить HMAC с ключом и алгоритмом",
+        "ar": "حساب رمز HMAC بالمفتاح والخوارزمية",
+        "hi": "कुंजी और एल्गोरिथ्म से HMAC गणना करें"
       },
       "group": "hash",
       "description": "Compute HMAC message authentication code with key and algorithm"
@@ -162,7 +292,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "要生成的随机字节数量",
-            "en-US": "Number of random bytes to generate"
+            "en-US": "Number of random bytes to generate",
+            "zh-TW": "要產生的隨機位元組數量",
+            "ja": "生成するランダムバイト数",
+            "ko": "생성할 무작위 바이트 수",
+            "es": "Número de bytes aleatorios a generar",
+            "fr": "Nombre d'octets aléatoires à générer",
+            "de": "Anzahl zu generierender Zufallsbytes",
+            "pt-BR": "Número de bytes aleatórios a gerar",
+            "ru": "Количество случайных байтов",
+            "ar": "عدد البايتات العشوائية المطلوبة",
+            "hi": "जनरेट करने के लिए रैंडम बाइट्स की संख्या"
           },
           "desc": "Number of random bytes to generate",
           "optional": true,
@@ -173,14 +313,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "十六进制编码的随机字节串",
-          "en-US": "Hex-encoded random bytes"
+          "en-US": "Hex-encoded random bytes",
+          "zh-TW": "十六進製編碼的隨機位元組串",
+          "ja": "16進エンコードされたランダムバイト",
+          "ko": "16진수 인코딩된 무작위 바이트",
+          "es": "Bytes aleatorios codificados en hexadecimal",
+          "fr": "Octets aléatoires encodés en hex",
+          "de": "Hex-kodierte Zufallsbytes",
+          "pt-BR": "Bytes aleatórios codificados em hexadecimal",
+          "ru": "Случайные байты в hex-кодировке",
+          "ar": "بايتات عشوائية مشفرة بالست عشري",
+          "hi": "हेक्स-एनकोडेड रैंडम बाइट्स"
         },
         "desc": "Hex-encoded random bytes"
       },
       "bridge_path": "crypto.randomBytes",
       "descriptions": {
         "zh-CN": "生成指定长度的密码学安全随机字节序列",
-        "en-US": "Generate cryptographically secure random bytes"
+        "en-US": "Generate cryptographically secure random bytes",
+        "zh-TW": "產生指定長度的密碼学安全隨機位元組序列",
+        "ja": "生成する指定長さのパスワード学安全ランダムバイト序列",
+        "ko": "암호학적으로 안전한 무작위 바이트 생성",
+        "es": "Generar bytes aleatorios criptográficamente seguros",
+        "fr": "Générer des octets aléatoires sécurisés",
+        "de": "Kryptografisch sichere Zufallsbytes generieren",
+        "pt-BR": "Gerar bytes aleatórios criptograficamente seguros",
+        "ru": "Сгенерировать криптографически безопасные случайные байты",
+        "ar": "توليد بايتات عشوائية آمنة تشفيرياً",
+        "hi": "क्रिप्टोग्राफ़िक रूप से सुरक्षित रैंडम बाइट्स जनरेट करें"
       },
       "group": "utility",
       "description": "Generate cryptographically secure random bytes"
@@ -193,14 +353,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "UUID 字符串（如 550e8400-e29b-41d4-a716-446655440000）",
-          "en-US": "UUID string"
+          "en-US": "UUID string",
+          "zh-TW": "UUID 字串（如 550e8400-e29b-41d4-a716-446655440000）",
+          "ja": "UUID 文字列（如 550e8400-e29b-41d4-a716-446655440000）",
+          "ko": "UUID 문자열",
+          "es": "Cadena UUID",
+          "fr": "Chaîne UUID",
+          "de": "UUID-Zeichenkette",
+          "pt-BR": "String UUID",
+          "ru": "Строка UUID",
+          "ar": "سلسلة UUID",
+          "hi": "UUID स्ट्रिंग"
         },
         "desc": "UUID string"
       },
       "bridge_path": "crypto.generateUuid",
       "descriptions": {
         "zh-CN": "生成一个符合 RFC 4122 标准的 UUID v4 随机标识符",
-        "en-US": "Generate RFC 4122 compliant UUID v4 random identifier"
+        "en-US": "Generate RFC 4122 compliant UUID v4 random identifier",
+        "zh-TW": "產生一個符合 RFC 4122 標準的 UUID v4 隨機標識符",
+        "ja": "RFC 4122準拠のUUID v4ランダム識別子を生成",
+        "ko": "RFC 4122 호환 UUID v4 무작위 식별자 생성",
+        "es": "Generar UUID v4 aleatorio conforme RFC 4122",
+        "fr": "Générer un UUID v4 conforme RFC 4122",
+        "de": "RFC 4122-konformes UUID v4 generieren",
+        "pt-BR": "Gerar UUID v4 aleatório conforme RFC 4122",
+        "ru": "Сгенерировать UUID v4 по RFC 4122",
+        "ar": "توليد معرف UUID v4 عشوائي وفق RFC 4122",
+        "hi": "RFC 4122 अनुरूप UUID v4 जनरेट करें"
       },
       "group": "utility",
       "description": "Generate RFC 4122 compliant UUID v4 random identifier"
@@ -214,7 +394,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "密钥位数（如2048/4096）",
-            "en-US": "Key size in bits (e.g. 2048/4096)"
+            "en-US": "Key size in bits (e.g. 2048/4096)",
+            "zh-TW": "密钥位數（如2048/4096）",
+            "ja": "鍵サイズ（ビット単位、例: 2048/4096）",
+            "ko": "키 크기 (비트 단위, 예: 2048/4096)",
+            "es": "Tamaño de clave en bits (ej. 2048/4096)",
+            "fr": "Taille de clé en bits (ex. 2048/4096)",
+            "de": "Schlüsselgröße in Bits (z.B. 2048/4096)",
+            "pt-BR": "Tamanho da chave em bits (ex. 2048/4096)",
+            "ru": "Размер ключа в битах (напр. 2048/4096)",
+            "ar": "حجم المفتاح بالبتات (مثل 2048/4096)",
+            "hi": "कुंजी आकार बिट्स में (जैसे 2048/4096)"
           },
           "desc": "Key size in bits (e.g. 2048/4096)"
         }
@@ -223,14 +413,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "crypto.generateKey",
       "descriptions": {
         "zh-CN": "生成随机密钥",
-        "en-US": "Generate key of crypto"
+        "en-US": "Generate key of crypto",
+        "zh-TW": "產生隨機密钥",
+        "ja": "生成するランダムキー",
+        "ko": "생성랜덤키",
+        "es": "Generar clave criptográfica",
+        "fr": "Générer une clé cryptographique",
+        "de": "Kryptografischen Schlüssel generieren",
+        "pt-BR": "Gerar chave criptográfica",
+        "ru": "Сгенерировать криптографический ключ",
+        "ar": "توليد مفتاح تشفير",
+        "hi": "क्रिप्टो कुंजी जनरेट करें"
       },
       "group": "symmetric",
       "description": "Generate key of crypto"
@@ -244,7 +454,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string"
         },
@@ -253,7 +473,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密钥派生用的盐值",
-            "en-US": "Salt value for key derivation"
+            "en-US": "Salt value for key derivation",
+            "zh-TW": "密钥派生用的盐值",
+            "ja": "鍵導出用のソルト値",
+            "ko": "키 파생용 솔트 값",
+            "es": "Valor de sal para derivación de clave",
+            "fr": "Valeur de sel pour la dérivation de clé",
+            "de": "Salt-Wert für Schlüsselableitung",
+            "pt-BR": "Valor de salt para derivação de chave",
+            "ru": "Значение соли для деривации ключа",
+            "ar": "قيمة الملح لاشتقاق المفتاح",
+            "hi": "कुंजी डेराइवेशन के लिए सॉल्ट मान"
           },
           "desc": "Salt value for key derivation"
         }
@@ -262,13 +492,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "派生密钥",
-          "en-US": "Derived key"
+          "en-US": "Derived key",
+          "zh-TW": "派生密钥",
+          "ja": "派生キー",
+          "ko": "파생된 키",
+          "es": "Clave derivada",
+          "fr": "Clé dérivée",
+          "de": "Abgeleiteter Schlüssel",
+          "pt-BR": "Chave derivada",
+          "ru": "Производный ключ",
+          "ar": "المفتاح المشتق",
+          "hi": "डेराइव्ड कुंजी"
         }
       },
       "bridge_path": "crypto.deriveKey",
       "descriptions": {
         "zh-CN": "从密码派生密钥（PBKDF2/scrypt）",
-        "en-US": "Derive key of crypto"
+        "en-US": "Derive key of crypto",
+        "zh-TW": "從密碼派生密钥（PBKDF2/scrypt）",
+        "ja": "からパスワード派生キー（PBKDF2/scrypt）",
+        "ko": "암호화 키 파생",
+        "es": "Derivar clave criptográfica",
+        "fr": "Dériver une clé cryptographique",
+        "de": "Kryptografischen Schlüssel ableiten",
+        "pt-BR": "Derivar chave criptográfica",
+        "ru": "Получить ключ шифрования",
+        "ar": "اشتقاق مفتاح التشفير",
+        "hi": "क्रिप्टो कुंजी डेराइव करें"
       },
       "group": "symmetric",
       "description": "Derive key of crypto"
@@ -282,7 +532,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "算法名称",
-            "en-US": "Algorithm name"
+            "en-US": "Algorithm name",
+            "zh-TW": "算法名稱",
+            "ja": "アルゴリズム名称",
+            "ko": "알고리즘 이름",
+            "es": "Nombre del algoritmo",
+            "fr": "Nom de l'algorithme",
+            "de": "Algorithmusname",
+            "pt-BR": "Nome do algoritmo",
+            "ru": "Название алгоритма",
+            "ar": "اسم الخوارزمية",
+            "hi": "एल्गोरिथ्म नाम"
           },
           "desc": "Algorithm name",
           "optional": true
@@ -292,7 +552,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "加密密钥字符串",
-            "en-US": "Encryption key string"
+            "en-US": "Encryption key string",
+            "zh-TW": "加密密钥字串",
+            "ja": "暗号化するキー文字列",
+            "ko": "암호화키문자열",
+            "es": "Cadena de clave de cifrado",
+            "fr": "Chaîne de clé de chiffrement",
+            "de": "Verschlüsselungs-Zeichenkette",
+            "pt-BR": "String de chave de criptografia",
+            "ru": "Строка ключа шифрования",
+            "ar": "سلسلة مفتاح التشفير",
+            "hi": "एन्क्रिप्शन कुंजी स्ट्रिंग"
           },
           "desc": "Encryption key string"
         },
@@ -301,7 +571,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -310,14 +590,34 @@
         "type": "EncryptResult",
         "descs": {
           "zh-CN": "EncryptResult类型的结果对象",
-          "en-US": "Result object of type EncryptResult"
+          "en-US": "Result object of type EncryptResult",
+          "zh-TW": "EncryptResult類型的結果物件",
+          "ja": "EncryptResultタイプの結果オブジェクト",
+          "ko": "EncryptResult유형의결과객체",
+          "es": "Objeto resultado de tipo EncryptResult",
+          "fr": "Objet résultat de type EncryptResult",
+          "de": "Ergebnisobjekt vom Typ EncryptResult",
+          "pt-BR": "Objeto resultado do tipo EncryptResult",
+          "ru": "Объект результата типа EncryptResult",
+          "ar": "كائن نتيجة من نوع EncryptResult",
+          "hi": "EncryptResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type EncryptResult"
       },
       "bridge_path": "crypto.encrypt",
       "descriptions": {
         "zh-CN": "使用对称或非对称算法加密数据",
-        "en-US": "Encrypt data using symmetric or asymmetric algorithm"
+        "en-US": "Encrypt data using symmetric or asymmetric algorithm",
+        "zh-TW": "使用對稱或非對稱算法加密數據",
+        "ja": "使用対称または非対称アルゴリズム暗号化するデータ",
+        "ko": "대칭 또는 비대칭 알고리즘으로 데이터 암호화",
+        "es": "Cifrar datos con algoritmo simétrico o asimétrico",
+        "fr": "Chiffrer les données",
+        "de": "Daten mit symmetrischem/asymmetrischem Algorithmus verschlüsseln",
+        "pt-BR": "Criptografar dados com algoritmo simétrico ou assimétrico",
+        "ru": "Зашифровать данные",
+        "ar": "تشفير البيانات",
+        "hi": "सममित/असममित एल्गोरिथ्म से डेटा एन्क्रिप्ट करें"
       },
       "group": "symmetric",
       "description": "Encrypt data using symmetric or asymmetric algorithm"
@@ -331,7 +631,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "算法名称",
-            "en-US": "Algorithm name"
+            "en-US": "Algorithm name",
+            "zh-TW": "算法名稱",
+            "ja": "アルゴリズム名称",
+            "ko": "알고리즘 이름",
+            "es": "Nombre del algoritmo",
+            "fr": "Nom de l'algorithme",
+            "de": "Algorithmusname",
+            "pt-BR": "Nome do algoritmo",
+            "ru": "Название алгоритма",
+            "ar": "اسم الخوارزمية",
+            "hi": "एल्गोरिथ्म नाम"
           },
           "desc": "Algorithm name",
           "optional": true
@@ -341,7 +651,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "解密密钥字符串",
-            "en-US": "Decryption key string"
+            "en-US": "Decryption key string",
+            "zh-TW": "解密密钥字串",
+            "ja": "復号するキー文字列",
+            "ko": "복호화키문자열",
+            "es": "Cadena de clave de descifrado",
+            "fr": "Chaîne de clé de déchiffrement",
+            "de": "Entschlüsselungs-Zeichenkette",
+            "pt-BR": "String de chave de descriptografia",
+            "ru": "Строка ключа расшифровки",
+            "ar": "سلسلة مفتاح فك التشفير",
+            "hi": "डिक्रिप्शन कुंजी स्ट्रिंग"
           },
           "desc": "Decryption key string"
         },
@@ -350,7 +670,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -359,14 +689,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "crypto.decrypt",
       "descriptions": {
         "zh-CN": "使用对称或非对称算法解密数据",
-        "en-US": "Decrypt data using symmetric or asymmetric algorithm"
+        "en-US": "Decrypt data using symmetric or asymmetric algorithm",
+        "zh-TW": "使用對稱或非對稱算法解密數據",
+        "ja": "使用対称または非対称アルゴリズム復号するデータ",
+        "ko": "대칭 또는 비대칭 알고리즘으로 데이터 복호화",
+        "es": "Descifrar datos con algoritmo simétrico o asimétrico",
+        "fr": "Déchiffrer les données",
+        "de": "Daten mit symmetrischem/asymmetrischem Algorithmus entschlüsseln",
+        "pt-BR": "Descriptografar dados com algoritmo simétrico ou assimétrico",
+        "ru": "Расшифровать данные",
+        "ar": "فك تشفير البيانات",
+        "hi": "सममित/असममित एल्गोरिथ्म से डेटा डिक्रिप्ट करें"
       },
       "group": "symmetric",
       "description": "Decrypt data using symmetric or asymmetric algorithm"
@@ -380,7 +730,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "算法名称",
-            "en-US": "Algorithm name"
+            "en-US": "Algorithm name",
+            "zh-TW": "算法名稱",
+            "ja": "アルゴリズム名称",
+            "ko": "알고리즘 이름",
+            "es": "Nombre del algoritmo",
+            "fr": "Nom de l'algorithme",
+            "de": "Algorithmusname",
+            "pt-BR": "Nome do algoritmo",
+            "ru": "Название алгоритма",
+            "ar": "اسم الخوارزمية",
+            "hi": "एल्गोरिथ्म नाम"
           },
           "desc": "Algorithm name",
           "optional": true
@@ -390,7 +750,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "签名用私钥",
-            "en-US": "Private key for signing"
+            "en-US": "Private key for signing",
+            "zh-TW": "簽名用私钥",
+            "ja": "署名用秘密鍵",
+            "ko": "서명용 개인 키",
+            "es": "Clave privada para firmar",
+            "fr": "Clé privée pour la signature",
+            "de": "Privater Schlüssel zum Signieren",
+            "pt-BR": "Chave privada para assinatura",
+            "ru": "Закрытый ключ для подписи",
+            "ar": "المفتاح الخاص للتوقيع",
+            "hi": "हस्ताक्षर के लिए प्राइवेट कुंजी"
           },
           "desc": "Private key for signing"
         },
@@ -399,7 +769,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -408,14 +788,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "crypto.sign",
       "descriptions": {
         "zh-CN": "使用私钥对数据进行数字签名",
-        "en-US": "Create digital signature of data using private key"
+        "en-US": "Create digital signature of data using private key",
+        "zh-TW": "使用私钥對數據進行數字簽名",
+        "ja": "秘密鍵を使用してデータのデジタル署名を作成",
+        "ko": "개인 키를 사용하여 데이터의 디지털 서명 생성",
+        "es": "Crear firma digital con clave privada",
+        "fr": "Créer une signature numérique avec clé privée",
+        "de": "Digitale Signatur mit privatem Schlüssel erstellen",
+        "pt-BR": "Criar assinatura digital com chave privada",
+        "ru": "Создать цифровую подпись с помощью закрытого ключа",
+        "ar": "إنشاء توقيع رقمي بالمفتاح الخاص",
+        "hi": "प्राइवेट कुंजी से डिजिटल हस्ताक्षर बनाएं"
       },
       "group": "asymmetric",
       "description": "Create digital signature of data using private key"
@@ -429,7 +829,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "算法名称",
-            "en-US": "Algorithm name"
+            "en-US": "Algorithm name",
+            "zh-TW": "算法名稱",
+            "ja": "アルゴリズム名称",
+            "ko": "알고리즘 이름",
+            "es": "Nombre del algoritmo",
+            "fr": "Nom de l'algorithme",
+            "de": "Algorithmusname",
+            "pt-BR": "Nome do algoritmo",
+            "ru": "Название алгоритма",
+            "ar": "اسم الخوارزمية",
+            "hi": "एल्गोरिथ्म नाम"
           },
           "desc": "Algorithm name",
           "optional": true
@@ -439,7 +849,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "验签用公钥",
-            "en-US": "Public key for verification"
+            "en-US": "Public key for verification",
+            "zh-TW": "驗簽用公钥",
+            "ja": "検証用の公開鍵",
+            "ko": "검증용 공개 키",
+            "es": "Clave pública para verificación",
+            "fr": "Clé publique pour la vérification",
+            "de": "Öffentlicher Schlüssel zur Verifizierung",
+            "pt-BR": "Chave pública para verificação",
+            "ru": "Открытый ключ для проверки",
+            "ar": "المفتاح العام للتحقق",
+            "hi": "सत्यापन के लिए पब्लिक कुंजी"
           },
           "desc": "Public key for verification"
         },
@@ -448,7 +868,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         },
@@ -457,7 +887,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "signature参数",
-            "en-US": "signature parameter"
+            "en-US": "signature parameter",
+            "zh-TW": "signature參數",
+            "ja": "signatureパラメータ",
+            "ko": "signature매개변수",
+            "es": "Parámetro de firma",
+            "fr": "Paramètre de signature",
+            "de": "Signatur-Parameter",
+            "pt-BR": "Parâmetro de assinatura",
+            "ru": "Параметр подписи",
+            "ar": "معلمة التوقيع",
+            "hi": "हस्ताक्षर पैरामीटर"
           },
           "desc": "signature parameter"
         }
@@ -466,14 +906,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "crypto.verify",
       "descriptions": {
         "zh-CN": "使用公钥验证数据的数字签名是否有效",
-        "en-US": "Verify digital signature of data using public key"
+        "en-US": "Verify digital signature of data using public key",
+        "zh-TW": "使用公钥驗證數據的數字簽名是否有效",
+        "ja": "公開鍵を使用してデータのデジタル署名を検証",
+        "ko": "공개 키를 사용하여 데이터의 디지털 서명 검증",
+        "es": "Verificar firma digital con clave pública",
+        "fr": "Vérifier la signature numérique avec clé publique",
+        "de": "Digitale Signatur mit öffentlichem Schlüssel verifizieren",
+        "pt-BR": "Verificar assinatura digital com chave pública",
+        "ru": "Проверить цифровую подпись с помощью открытого ключа",
+        "ar": "التحقق من التوقيع الرقمي بالمفتاح العام",
+        "hi": "पब्लिक कुंजी से डिजिटल हस्ताक्षर सत्यापित करें"
       },
       "group": "asymmetric",
       "description": "Verify digital signature of data using public key"
@@ -487,7 +947,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "待比较的第一个字符串",
-            "en-US": "First string to compare"
+            "en-US": "First string to compare",
+            "zh-TW": "待比較的第一個字串",
+            "ja": "比較する最初の文字列",
+            "ko": "비교할 첫 번째 문자열",
+            "es": "Primera cadena a comparar",
+            "fr": "Première chaîne à comparer",
+            "de": "Erste zu vergleichende Zeichenkette",
+            "pt-BR": "Primeira string a comparar",
+            "ru": "Первая строка для сравнения",
+            "ar": "السلسلة الأولى للمقارنة",
+            "hi": "तुलना के लिए पहली स्ट्रिंग"
           },
           "desc": "First string to compare"
         },
@@ -496,7 +966,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "待比较的第二个字符串",
-            "en-US": "Second string to compare"
+            "en-US": "Second string to compare",
+            "zh-TW": "待比較的第二個字串",
+            "ja": "比較する2番目の文字列",
+            "ko": "비교할 두 번째 문자열",
+            "es": "Segunda cadena a comparar",
+            "fr": "Deuxième chaîne à comparer",
+            "de": "Zweite zu vergleichende Zeichenkette",
+            "pt-BR": "Segunda string a comparar",
+            "ru": "Вторая строка для сравнения",
+            "ar": "السلسلة الثانية للمقارنة",
+            "hi": "तुलना के लिए दूसरी स्ट्रिंग"
           },
           "desc": "Second string to compare"
         }
@@ -505,14 +985,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "crypto.constantTimeEq",
       "descriptions": {
         "zh-CN": "常量时间字符串比较（防时序攻击）",
-        "en-US": "Constant time eq of crypto"
+        "en-US": "Constant time eq of crypto",
+        "zh-TW": "常量時間字串比較（防時序攻击）",
+        "ja": "暗号定数時間比較",
+        "ko": "암호화 상수 시간 비교",
+        "es": "Comparación en tiempo constante",
+        "fr": "Comparaison en temps constant",
+        "de": "Zeitkonstanter Vergleich",
+        "pt-BR": "Comparação em tempo constante",
+        "ru": "Сравнение за постоянное время",
+        "ar": "مقارنة بزمن ثابت",
+        "hi": "क्रिप्टो कांस्टेंट टाइम तुलना"
       },
       "group": "utility",
       "description": "Constant time eq of crypto"
@@ -526,7 +1026,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "算法名称",
-            "en-US": "Algorithm name"
+            "en-US": "Algorithm name",
+            "zh-TW": "算法名稱",
+            "ja": "アルゴリズム名称",
+            "ko": "알고리즘 이름",
+            "es": "Nombre del algoritmo",
+            "fr": "Nom de l'algorithme",
+            "de": "Algorithmusname",
+            "pt-BR": "Nome do algoritmo",
+            "ru": "Название алгоритма",
+            "ar": "اسم الخوارزمية",
+            "hi": "एल्गोरिथ्म नाम"
           },
           "desc": "Algorithm name",
           "optional": true
@@ -536,14 +1046,34 @@
         "type": "KeyPair",
         "descs": {
           "zh-CN": "KeyPair类型的结果对象",
-          "en-US": "Result object of type KeyPair"
+          "en-US": "Result object of type KeyPair",
+          "zh-TW": "KeyPair類型的結果物件",
+          "ja": "KeyPairタイプの結果オブジェクト",
+          "ko": "KeyPair유형의결과객체",
+          "es": "Objeto resultado de tipo KeyPair",
+          "fr": "Objet résultat de type KeyPair",
+          "de": "Ergebnisobjekt vom Typ KeyPair",
+          "pt-BR": "Objeto resultado do tipo KeyPair",
+          "ru": "Объект результата типа KeyPair",
+          "ar": "كائن نتيجة من نوع KeyPair",
+          "hi": "KeyPair प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type KeyPair"
       },
       "bridge_path": "crypto.generateKeypair",
       "descriptions": {
         "zh-CN": "生成非对称密钥对",
-        "en-US": "Generate keypair of crypto"
+        "en-US": "Generate keypair of crypto",
+        "zh-TW": "產生非對稱密钥對",
+        "ja": "暗号鍵ペアを生成",
+        "ko": "암호화 키 쌍 생성",
+        "es": "Generar par de claves criptográficas",
+        "fr": "Générer une paire de clés",
+        "de": "Kryptografisches Schlüsselpaar generieren",
+        "pt-BR": "Gerar par de chaves criptográficas",
+        "ru": "Сгенерировать пару ключей",
+        "ar": "توليد زوج مفاتيح تشفير",
+        "hi": "क्रिप्टो कीपेयर जनरेट करें"
       },
       "group": "asymmetric",
       "description": "Generate keypair of crypto"
@@ -557,7 +1087,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string"
         }
@@ -566,13 +1106,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "Bcrypt 哈希",
-          "en-US": "Bcrypt hash"
+          "en-US": "Bcrypt hash",
+          "zh-TW": "Bcrypt 雜湊",
+          "ja": "Bcrypt ハッシュ",
+          "ko": "Bcrypt 해시",
+          "es": "Hash Bcrypt",
+          "fr": "Hash Bcrypt",
+          "de": "Bcrypt-Hash",
+          "pt-BR": "Hash Bcrypt",
+          "ru": "Хеш Bcrypt",
+          "ar": "تجزئة Bcrypt",
+          "hi": "Bcrypt हैश"
         }
       },
       "bridge_path": "crypto.bcryptHash",
       "descriptions": {
         "zh-CN": "使用 bcrypt 算法哈希密码",
-        "en-US": "Bcrypt hash of crypto"
+        "en-US": "Bcrypt hash of crypto",
+        "zh-TW": "使用 bcrypt 算法雜湊密碼",
+        "ja": "使用 bcrypt アルゴリズムハッシュパスワード",
+        "ko": "암호화 bcrypt 해시",
+        "es": "Generar hash Bcrypt",
+        "fr": "Générer un hash Bcrypt",
+        "de": "Bcrypt-Hash erstellen",
+        "pt-BR": "Gerar hash Bcrypt",
+        "ru": "Создать хеш Bcrypt",
+        "ar": "إنشاء تجزئة Bcrypt",
+        "hi": "Bcrypt हैश बनाएं"
       },
       "group": "utility",
       "description": "Bcrypt hash of crypto"
@@ -586,7 +1146,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string"
         },
@@ -595,7 +1165,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要比对的bcrypt哈希值",
-            "en-US": "Bcrypt hash to verify against"
+            "en-US": "Bcrypt hash to verify against",
+            "zh-TW": "要比對的bcrypt雜湊值",
+            "ja": "検証対象のbcryptハッシュ値",
+            "ko": "검증할 bcrypt 해시 값",
+            "es": "Hash Bcrypt a verificar",
+            "fr": "Hash Bcrypt à vérifier",
+            "de": "Bcrypt-Hash zur Überprüfung",
+            "pt-BR": "Hash Bcrypt para verificar",
+            "ru": "Хеш Bcrypt для проверки",
+            "ar": "تجزئة Bcrypt للتحقق منها",
+            "hi": "सत्यापन के लिए Bcrypt हैश"
           },
           "desc": "Bcrypt hash to verify against"
         }
@@ -604,14 +1184,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "crypto.bcryptVerify",
       "descriptions": {
         "zh-CN": "验证 bcrypt 密码哈希",
-        "en-US": "Bcrypt verify of crypto"
+        "en-US": "Bcrypt verify of crypto",
+        "zh-TW": "驗證 bcrypt 密碼雜湊",
+        "ja": "検証する bcrypt パスワードハッシュ",
+        "ko": "검증 bcrypt 비밀번호해시",
+        "es": "Verificar hash Bcrypt",
+        "fr": "Vérifier le hash Bcrypt",
+        "de": "Bcrypt-Hash überprüfen",
+        "pt-BR": "Verificar hash Bcrypt",
+        "ru": "Проверить хеш Bcrypt",
+        "ar": "التحقق من تجزئة Bcrypt",
+        "hi": "Bcrypt हैश सत्यापित करें"
       },
       "group": "utility",
       "description": "Bcrypt verify of crypto"
@@ -625,7 +1225,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string"
         },
@@ -634,7 +1244,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -643,14 +1263,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "crypto.encryptWithPassword",
       "descriptions": {
         "zh-CN": "使用密码加密数据",
-        "en-US": "Encrypt with password of crypto"
+        "en-US": "Encrypt with password of crypto",
+        "zh-TW": "使用密碼加密數據",
+        "ja": "使用パスワード暗号化するデータ",
+        "ko": "암호로 암호화",
+        "es": "Cifrar con contraseña",
+        "fr": "Chiffrer avec mot de passe",
+        "de": "Mit Passwort verschlüsseln",
+        "pt-BR": "Criptografar com senha",
+        "ru": "Зашифровать с паролем",
+        "ar": "التشفير بكلمة المرور",
+        "hi": "पासवर्ड से एन्क्रिप्ट"
       },
       "group": "symmetric",
       "description": "Encrypt with password of crypto"
@@ -664,7 +1304,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密码字符串",
-            "en-US": "Password string"
+            "en-US": "Password string",
+            "zh-TW": "密碼字串",
+            "ja": "パスワード文字列",
+            "ko": "비밀번호문자열",
+            "es": "Cadena de contraseña",
+            "fr": "Chaîne de mot de passe",
+            "de": "Passwort-Zeichenkette",
+            "pt-BR": "String de senha",
+            "ru": "Строка пароля",
+            "ar": "سلسلة كلمة المرور",
+            "hi": "पासवर्ड स्ट्रिंग"
           },
           "desc": "Password string"
         },
@@ -673,7 +1323,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -682,14 +1342,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "crypto.decryptWithPassword",
       "descriptions": {
         "zh-CN": "使用密码解密数据",
-        "en-US": "Decrypt with password of crypto"
+        "en-US": "Decrypt with password of crypto",
+        "zh-TW": "使用密碼解密數據",
+        "ja": "使用パスワード復号するデータ",
+        "ko": "암호로 암호화 복호화",
+        "es": "Descifrar con contraseña",
+        "fr": "Déchiffrer avec mot de passe",
+        "de": "Mit Passwort entschlüsseln",
+        "pt-BR": "Descriptografar com senha",
+        "ru": "Расшифровать с паролем",
+        "ar": "فك التشفير بكلمة المرور",
+        "hi": "पासवर्ड से डिक्रिप्ट"
       },
       "group": "symmetric",
       "description": "Decrypt with password of crypto"
@@ -703,7 +1383,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "public_key参数",
-            "en-US": "public_key parameter"
+            "en-US": "public_key parameter",
+            "zh-TW": "public_key參數",
+            "ja": "public_keyパラメータ",
+            "ko": "public_key매개변수",
+            "es": "Parámetro de clave pública",
+            "fr": "Paramètre de clé publique",
+            "de": "Öffentlicher-Schlüssel-Parameter",
+            "pt-BR": "Parâmetro de chave pública",
+            "ru": "Параметр открытого ключа",
+            "ar": "معلمة المفتاح العام",
+            "hi": "पब्लिक कुंजी पैरामीटर"
           },
           "desc": "public_key parameter"
         },
@@ -712,7 +1402,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -721,14 +1421,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "crypto.rsaEncrypt",
       "descriptions": {
         "zh-CN": "使用 RSA 公钥加密数据",
-        "en-US": "Rsa encrypt of crypto"
+        "en-US": "Rsa encrypt of crypto",
+        "zh-TW": "使用 RSA 公钥加密數據",
+        "ja": "使用 RSA 公開鍵暗号化するデータ",
+        "ko": "암호화 RSA 암호화",
+        "es": "Cifrado RSA",
+        "fr": "Chiffrement RSA",
+        "de": "RSA-Verschlüsselung",
+        "pt-BR": "Criptografia RSA",
+        "ru": "RSA-шифрование",
+        "ar": "تشفير RSA",
+        "hi": "RSA एन्क्रिप्शन"
       },
       "group": "asymmetric",
       "description": "Rsa encrypt of crypto"
@@ -742,7 +1462,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "private_key参数",
-            "en-US": "private_key parameter"
+            "en-US": "private_key parameter",
+            "zh-TW": "private_key參數",
+            "ja": "private_keyパラメータ",
+            "ko": "private_key매개변수",
+            "es": "Parámetro de clave privada",
+            "fr": "Paramètre de clé privée",
+            "de": "Privater-Schlüssel-Parameter",
+            "pt-BR": "Parâmetro de chave privada",
+            "ru": "Параметр закрытого ключа",
+            "ar": "معلمة المفتاح الخاص",
+            "hi": "प्राइवेट कुंजी पैरामीटर"
           },
           "desc": "private_key parameter"
         },
@@ -751,7 +1481,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -760,14 +1500,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "crypto.rsaDecrypt",
       "descriptions": {
         "zh-CN": "使用 RSA 私钥解密数据",
-        "en-US": "Rsa decrypt of crypto"
+        "en-US": "Rsa decrypt of crypto",
+        "zh-TW": "使用 RSA 私钥解密數據",
+        "ja": "使用 RSA 秘密鍵復号するデータ",
+        "ko": "암호화 RSA 복호화",
+        "es": "Descifrado RSA",
+        "fr": "Déchiffrement RSA",
+        "de": "RSA-Entschlüsselung",
+        "pt-BR": "Descriptografia RSA",
+        "ru": "RSA-расшифрование",
+        "ar": "فك تشفير RSA",
+        "hi": "RSA डिक्रिप्शन"
       },
       "group": "asymmetric",
       "description": "Rsa decrypt of crypto"
@@ -781,7 +1541,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "TOTP共享密钥（Base32编码）",
-            "en-US": "TOTP shared secret (Base32 encoded)"
+            "en-US": "TOTP shared secret (Base32 encoded)",
+            "zh-TW": "TOTP共享密钥（Base32編碼）",
+            "ja": "TOTP共享キー（Base32エンコーディング）",
+            "ko": "TOTP 공유 비밀 (Base32 인코딩)",
+            "es": "Secreto compartido TOTP (codificado en Base32)",
+            "fr": "Secret partagé TOTP (encodé en Base32)",
+            "de": "TOTP-Shared-Secret (Base32-kodiert)",
+            "pt-BR": "Segredo compartilhado TOTP (codificado em Base32)",
+            "ru": "Общий секрет TOTP (в Base32)",
+            "ar": "السر المشترك TOTP (مشفر بـ Base32)",
+            "hi": "TOTP शेयर्ड सीक्रेट (Base32 एनकोडेड)"
           },
           "desc": "TOTP shared secret (Base32 encoded)"
         }
@@ -790,13 +1560,33 @@
         "type": "TotpResult",
         "descs": {
           "zh-CN": "TOTP",
-          "en-US": "TOTP"
+          "en-US": "TOTP",
+          "zh-TW": "TOTP",
+          "ja": "TOTP",
+          "ko": "TOTP",
+          "es": "TOTP",
+          "fr": "TOTP",
+          "de": "TOTP",
+          "pt-BR": "TOTP",
+          "ru": "TOTP",
+          "ar": "TOTP",
+          "hi": "TOTP"
         }
       },
       "bridge_path": "crypto.generateTotp",
       "descriptions": {
         "zh-CN": "生成 TOTP 动态验证码",
-        "en-US": "Generate totp of crypto"
+        "en-US": "Generate totp of crypto",
+        "zh-TW": "產生 TOTP 動態驗證碼",
+        "ja": "TOTP暗号コードを生成",
+        "ko": "TOTP 암호 코드 생성",
+        "es": "Generar TOTP",
+        "fr": "Générer un TOTP",
+        "de": "TOTP generieren",
+        "pt-BR": "Gerar TOTP",
+        "ru": "Сгенерировать TOTP",
+        "ar": "توليد TOTP",
+        "hi": "TOTP जनरेट करें"
       },
       "group": "utility",
       "description": "Generate totp of crypto"
@@ -810,7 +1600,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "TOTP共享密钥（Base32编码）",
-            "en-US": "TOTP shared secret (Base32 encoded)"
+            "en-US": "TOTP shared secret (Base32 encoded)",
+            "zh-TW": "TOTP共享密钥（Base32編碼）",
+            "ja": "TOTP共享キー（Base32エンコーディング）",
+            "ko": "TOTP 공유 비밀 (Base32 인코딩)",
+            "es": "Secreto compartido TOTP (codificado en Base32)",
+            "fr": "Secret partagé TOTP (encodé en Base32)",
+            "de": "TOTP-Shared-Secret (Base32-kodiert)",
+            "pt-BR": "Segredo compartilhado TOTP (codificado em Base32)",
+            "ru": "Общий секрет TOTP (в Base32)",
+            "ar": "السر المشترك TOTP (مشفر بـ Base32)",
+            "hi": "TOTP शेयर्ड सीक्रेट (Base32 एनकोडेड)"
           },
           "desc": "TOTP shared secret (Base32 encoded)"
         },
@@ -819,7 +1619,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "用户输入的6位验证码",
-            "en-US": "6-digit verification code from user"
+            "en-US": "6-digit verification code from user",
+            "zh-TW": "用戶輸入的6位驗證碼",
+            "ja": "ユーザーからの6桁認証コード",
+            "ko": "사용자가 입력한 6자리 인증 코드",
+            "es": "Código de verificación de 6 dígitos",
+            "fr": "Code de vérification à 6 chiffres",
+            "de": "6-stelliger Bestätigungscode",
+            "pt-BR": "Código de verificação de 6 dígitos",
+            "ru": "6-значный код подтверждения",
+            "ar": "رمز التحقق المكون من 6 أرقام",
+            "hi": "6-अंक सत्यापन कोड"
           },
           "desc": "6-digit verification code from user"
         }
@@ -828,14 +1638,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "crypto.verifyTotp",
       "descriptions": {
         "zh-CN": "验证 TOTP 动态验证码",
-        "en-US": "Verify totp of crypto"
+        "en-US": "Verify totp of crypto",
+        "zh-TW": "驗證 TOTP 動態驗證碼",
+        "ja": "TOTP暗号コードを検証",
+        "ko": "TOTP 암호 코드 검증",
+        "es": "Verificar TOTP",
+        "fr": "Vérifier le TOTP",
+        "de": "TOTP verifizieren",
+        "pt-BR": "Verificar TOTP",
+        "ru": "Проверить TOTP",
+        "ar": "التحقق من TOTP",
+        "hi": "TOTP सत्यापित करें"
       },
       "group": "utility",
       "description": "Verify totp of crypto"
@@ -848,13 +1678,33 @@
         "type": "TotpSecret",
         "descs": {
           "zh-CN": "密钥和 URI",
-          "en-US": "Secret and URI"
+          "en-US": "Secret and URI",
+          "zh-TW": "密钥和 URI",
+          "ja": "キーと URI",
+          "ko": "비밀 키 및 URI",
+          "es": "Secreto y URI",
+          "fr": "Secret et URI",
+          "de": "Geheimnis und URI",
+          "pt-BR": "Segredo e URI",
+          "ru": "Секрет и URI",
+          "ar": "السر وURI",
+          "hi": "सीक्रेट और URI"
         }
       },
       "bridge_path": "crypto.generateTotpSecret",
       "descriptions": {
         "zh-CN": "生成 TOTP 密钥",
-        "en-US": "Generate TOTP secret"
+        "en-US": "Generate TOTP secret",
+        "zh-TW": "產生 TOTP 密钥",
+        "ja": "生成する TOTP キー",
+        "ko": "생성 TOTP 키",
+        "es": "Generar secreto TOTP",
+        "fr": "Générer un secret TOTP",
+        "de": "TOTP-Geheimnis generieren",
+        "pt-BR": "Gerar segredo TOTP",
+        "ru": "Сгенерировать секрет TOTP",
+        "ar": "توليد سر TOTP",
+        "hi": "TOTP सीक्रेट जनरेट करें"
       },
       "group": "utility"
     },
@@ -867,7 +1717,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -876,13 +1736,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "CRC32",
-          "en-US": "CRC32"
+          "en-US": "CRC32",
+          "zh-TW": "CRC32",
+          "ja": "CRC32",
+          "ko": "CRC32",
+          "es": "CRC32",
+          "fr": "CRC32",
+          "de": "CRC32",
+          "pt-BR": "CRC32",
+          "ru": "CRC32",
+          "ar": "CRC32",
+          "hi": "CRC32"
         }
       },
       "bridge_path": "crypto.crc32",
       "descriptions": {
         "zh-CN": "计算数据的CRC32循环冗余校验值",
-        "en-US": "Calculate CRC32 checksum of data"
+        "en-US": "Calculate CRC32 checksum of data",
+        "zh-TW": "計算數據的CRC32循環冗餘校驗值",
+        "ja": "データのCRC32チェックサムを計算",
+        "ko": "데이터의 CRC32 체크섬 계산",
+        "es": "Calcular suma de verificación CRC32",
+        "fr": "Calculer la somme CRC32",
+        "de": "CRC32-Prüfsumme berechnen",
+        "pt-BR": "Calcular checksum CRC32",
+        "ru": "Вычислить контрольную сумму CRC32",
+        "ar": "حساب المجموع الاختباري CRC32",
+        "hi": "डेटा का CRC32 चेकसम गणना करें"
       },
       "group": "hash",
       "description": "Calculate CRC32 checksum of data"
@@ -896,7 +1776,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "生成密码的字符长度",
-            "en-US": "Password length in characters"
+            "en-US": "Password length in characters",
+            "zh-TW": "產生密碼的字元長度",
+            "ja": "生成するパスワードの文字長さ",
+            "ko": "생성비밀번호의문자길이",
+            "es": "Longitud de la contraseña en caracteres",
+            "fr": "Longueur du mot de passe en caractères",
+            "de": "Passwortlänge in Zeichen",
+            "pt-BR": "Comprimento da senha em caracteres",
+            "ru": "Длина пароля в символах",
+            "ar": "طول كلمة المرور بالأحرف",
+            "hi": "अक्षरों में पासवर्ड की लंबाई"
           },
           "desc": "Password length in characters",
           "optional": true,
@@ -907,14 +1797,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "crypto.generatePassword",
       "descriptions": {
         "zh-CN": "生成随机安全密码",
-        "en-US": "Generate password of crypto"
+        "en-US": "Generate password of crypto",
+        "zh-TW": "產生隨機安全密碼",
+        "ja": "生成するランダム安全パスワード",
+        "ko": "암호화 비밀번호 생성",
+        "es": "Generar contraseña",
+        "fr": "Générer un mot de passe",
+        "de": "Passwort generieren",
+        "pt-BR": "Gerar senha",
+        "ru": "Сгенерировать пароль",
+        "ar": "توليد كلمة مرور",
+        "hi": "पासवर्ड जनरेट करें"
       },
       "group": "utility",
       "description": "Generate password of crypto"
@@ -928,7 +1838,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "PEM格式的X.509证书内容",
-            "en-US": "X.509 certificate content in PEM format"
+            "en-US": "X.509 certificate content in PEM format",
+            "zh-TW": "PEM格式的X.509證书內容",
+            "ja": "PEMフォーマットのX.509証明書コンテンツ",
+            "ko": "PEM 형식의 X.509 인증서 내용",
+            "es": "Contenido del certificado X.509 en formato PEM",
+            "fr": "Contenu du certificat X.509 en format PEM",
+            "de": "X.509-Zertifikat im PEM-Format",
+            "pt-BR": "Conteúdo do certificado X.509 em formato PEM",
+            "ru": "Содержимое сертификата X.509 в формате PEM",
+            "ar": "محتوى شهادة X.509 بتنسيق PEM",
+            "hi": "PEM फ़ॉर्मैट में X.509 प्रमाणपत्र सामग्री"
           },
           "desc": "X.509 certificate content in PEM format"
         }
@@ -937,13 +1857,33 @@
         "type": "X509Info",
         "descs": {
           "zh-CN": "证书信息",
-          "en-US": "Cert info"
+          "en-US": "Cert info",
+          "zh-TW": "證书資訊",
+          "ja": "証明書情報",
+          "ko": "인증서 정보",
+          "es": "Información del certificado",
+          "fr": "Informations du certificat",
+          "de": "Zertifikatsinformationen",
+          "pt-BR": "Informações do certificado",
+          "ru": "Информация о сертификате",
+          "ar": "معلومات الشهادة",
+          "hi": "प्रमाणपत्र जानकारी"
         }
       },
       "bridge_path": "crypto.x509Info",
       "descriptions": {
         "zh-CN": "解析 X.509 证书信息",
-        "en-US": "X509 info of crypto"
+        "en-US": "X509 info of crypto",
+        "zh-TW": "解析 X.509 證书資訊",
+        "ja": "解析する X.509 証明書情報",
+        "ko": "암호화 X509 정보",
+        "es": "Información de certificado X.509",
+        "fr": "Informations du certificat X.509",
+        "de": "X.509-Zertifikatsinformationen",
+        "pt-BR": "Informações do certificado X.509",
+        "ru": "Информация о сертификате X.509",
+        "ar": "معلومات شهادة X.509",
+        "hi": "X.509 प्रमाणपत्र जानकारी"
       },
       "group": "asymmetric",
       "description": "X509 info of crypto"
@@ -957,7 +1897,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "生成的随机字符串长度",
-            "en-US": "Length of random string to generate"
+            "en-US": "Length of random string to generate",
+            "zh-TW": "產生的隨機字串長度",
+            "ja": "生成するのランダム文字列長さ",
+            "ko": "생성의랜덤문자열길이",
+            "es": "Longitud de la cadena aleatoria",
+            "fr": "Longueur de la chaîne aléatoire",
+            "de": "Länge der Zufallszeichenkette",
+            "pt-BR": "Comprimento da string aleatória",
+            "ru": "Длина случайной строки",
+            "ar": "طول السلسلة العشوائية",
+            "hi": "जनरेट करने के लिए रैंडम स्ट्रिंग की लंबाई"
           },
           "desc": "Length of random string to generate",
           "optional": true,
@@ -968,7 +1918,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "可用字符集（如alphanumeric/hex/custom）",
-            "en-US": "Character set (alphanumeric/hex/custom)"
+            "en-US": "Character set (alphanumeric/hex/custom)",
+            "zh-TW": "可用字元集（如alphanumeric/hex/custom）",
+            "ja": "可用文字集（如alphanumeric/hex/custom）",
+            "ko": "문자 세트 (영숫자/hex/사용자 정의)",
+            "es": "Conjunto de caracteres (alfanumérico/hex/personalizado)",
+            "fr": "Jeu de caractères (alphanumérique/hex/personnalisé)",
+            "de": "Zeichensatz (alphanumerisch/hex/benutzerdefiniert)",
+            "pt-BR": "Conjunto de caracteres (alfanumérico/hex/personalizado)",
+            "ru": "Набор символов (буквенно-цифровой/hex/пользовательский)",
+            "ar": "مجموعة الأحرف (أبجدية رقمية/سداسية عشرية/مخصصة)",
+            "hi": "कैरेक्टर सेट (अल्फ़ान्यूमेरिक/हेक्स/कस्टम)"
           },
           "desc": "Character set (alphanumeric/hex/custom)",
           "optional": true
@@ -978,14 +1938,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "crypto.randomString",
       "descriptions": {
         "zh-CN": "生成随机字符串",
-        "en-US": "Random string of crypto"
+        "en-US": "Random string of crypto",
+        "zh-TW": "產生隨機字串",
+        "ja": "生成するランダム文字列",
+        "ko": "생성랜덤문자열",
+        "es": "Cadena aleatoria criptográfica",
+        "fr": "Chaîne aléatoire cryptographique",
+        "de": "Kryptografische Zufallszeichenkette",
+        "pt-BR": "String aleatória criptográfica",
+        "ru": "Случайная строка",
+        "ar": "سلسلة عشوائية تشفيرية",
+        "hi": "क्रिप्टो रैंडम स्ट्रिंग"
       },
       "group": "utility",
       "description": "Random string of crypto"
@@ -999,7 +1979,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "PEM编码的证书或密钥字符串",
-            "en-US": "PEM-encoded certificate or key string"
+            "en-US": "PEM-encoded certificate or key string",
+            "zh-TW": "PEM編碼的證书或密钥字串",
+            "ja": "PEMエンコーディングの証明書またはキー文字列",
+            "ko": "PEM 인코딩된 인증서 또는 키 문자열",
+            "es": "Cadena de certificado o clave codificada en PEM",
+            "fr": "Chaîne de certificat ou clé encodée en PEM",
+            "de": "PEM-kodiertes Zertifikat oder Schlüssel",
+            "pt-BR": "String de certificado ou chave codificada em PEM",
+            "ru": "Сертификат или ключ в формате PEM",
+            "ar": "سلسلة شهادة أو مفتاح مشفرة بـ PEM",
+            "hi": "PEM-एनकोडेड प्रमाणपत्र या कुंजी स्ट्रिंग"
           },
           "desc": "PEM-encoded certificate or key string"
         }
@@ -1008,13 +1998,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "DER base64",
-          "en-US": "DER base64"
+          "en-US": "DER base64",
+          "zh-TW": "DER base64",
+          "ja": "DER Base64",
+          "ko": "DER Base64",
+          "es": "DER Base64",
+          "fr": "DER Base64",
+          "de": "DER Base64",
+          "pt-BR": "DER Base64",
+          "ru": "DER Base64",
+          "ar": "DER Base64",
+          "hi": "DER Base64"
         }
       },
       "bridge_path": "crypto.pemToDer",
       "descriptions": {
         "zh-CN": "将 PEM 格式转换为 DER 格式",
-        "en-US": "Pem to der of crypto"
+        "en-US": "Pem to der of crypto",
+        "zh-TW": "將 PEM 格式轉換為 DER 格式",
+        "ja": "暗号PEMからDERへの変換",
+        "ko": "암호화 PEM을 DER로 변환",
+        "es": "Convertir PEM a DER",
+        "fr": "Convertir PEM en DER",
+        "de": "PEM zu DER konvertieren",
+        "pt-BR": "Converter PEM para DER",
+        "ru": "Конвертировать PEM в DER",
+        "ar": "تحويل PEM إلى DER",
+        "hi": "PEM से DER में बदलें"
       },
       "group": "asymmetric",
       "description": "Pem to der of crypto"
@@ -1028,7 +2038,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "DER base64",
-            "en-US": "DER base64"
+            "en-US": "DER base64",
+            "zh-TW": "DER base64",
+            "ja": "DER Base64",
+            "ko": "DER Base64",
+            "es": "DER Base64",
+            "fr": "DER Base64",
+            "de": "DER Base64",
+            "pt-BR": "DER Base64",
+            "ru": "DER Base64",
+            "ar": "DER Base64",
+            "hi": "DER Base64"
           }
         },
         {
@@ -1036,7 +2056,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "显示标签文本",
-            "en-US": "Display label text"
+            "en-US": "Display label text",
+            "zh-TW": "顯示標籤文字",
+            "ja": "表示ラベルテキスト",
+            "ko": "표시 레이블 텍스트",
+            "es": "Texto de etiqueta de visualización",
+            "fr": "Texte du libellé",
+            "de": "Anzeigebeschriftung",
+            "pt-BR": "Texto do rótulo de exibição",
+            "ru": "Текст метки отображения",
+            "ar": "نص تسمية العرض",
+            "hi": "डिस्प्ले लेबल टेक्स्ट"
           },
           "desc": "Display label text"
         }
@@ -1045,14 +2075,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "crypto.derToPem",
       "descriptions": {
         "zh-CN": "将 DER 格式转换为 PEM 格式",
-        "en-US": "Der to pem of crypto"
+        "en-US": "Der to pem of crypto",
+        "zh-TW": "將 DER 格式轉換為 PEM 格式",
+        "ja": "暗号DERからPEMへの変換",
+        "ko": "암호화 DER을 PEM으로 변환",
+        "es": "Convertir DER a PEM",
+        "fr": "Convertir DER en PEM",
+        "de": "DER zu PEM konvertieren",
+        "pt-BR": "Converter DER para PEM",
+        "ru": "Конвертировать DER в PEM",
+        "ar": "تحويل DER إلى PEM",
+        "hi": "DER से PEM में बदलें"
       },
       "group": "asymmetric",
       "description": "Der to pem of crypto"
@@ -1066,7 +2116,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件加密密钥",
-            "en-US": "File encryption key"
+            "en-US": "File encryption key",
+            "zh-TW": "檔案加密密钥",
+            "ja": "ファイル暗号化するキー",
+            "ko": "파일암호화키",
+            "es": "Clave de cifrado de archivo",
+            "fr": "Clé de chiffrement de fichier",
+            "de": "Dateiverschlüsselungsschlüssel",
+            "pt-BR": "Chave de criptografia de arquivo",
+            "ru": "Ключ шифрования файла",
+            "ar": "مفتاح تشفير الملف",
+            "hi": "फ़ाइल एन्क्रिप्शन कुंजी"
           },
           "desc": "File encryption key"
         },
@@ -1075,7 +2135,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入文件路径",
-            "en-US": "Input file path"
+            "en-US": "Input file path",
+            "zh-TW": "輸入檔案路徑",
+            "ja": "入力ファイルパス",
+            "ko": "입력파일경로",
+            "es": "Ruta del archivo de entrada",
+            "fr": "Chemin du fichier d'entrée",
+            "de": "Eingabedateipfad",
+            "pt-BR": "Caminho do arquivo de entrada",
+            "ru": "Путь входного файла",
+            "ar": "مسار ملف الإدخال",
+            "hi": "इनपुट फ़ाइल पथ"
           },
           "desc": "Input file path"
         },
@@ -1084,7 +2154,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         }
@@ -1093,14 +2173,34 @@
         "type": "FileEncryptResult",
         "descs": {
           "zh-CN": "FileEncryptResult类型的结果对象",
-          "en-US": "Result object of type FileEncryptResult"
+          "en-US": "Result object of type FileEncryptResult",
+          "zh-TW": "FileEncryptResult類型的結果物件",
+          "ja": "FileEncryptResultタイプの結果オブジェクト",
+          "ko": "FileEncryptResult유형의결과객체",
+          "es": "Objeto resultado de tipo FileEncryptResult",
+          "fr": "Objet résultat de type FileEncryptResult",
+          "de": "Ergebnisobjekt vom Typ FileEncryptResult",
+          "pt-BR": "Objeto resultado do tipo FileEncryptResult",
+          "ru": "Объект результата типа FileEncryptResult",
+          "ar": "كائن نتيجة من نوع FileEncryptResult",
+          "hi": "FileEncryptResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type FileEncryptResult"
       },
       "bridge_path": "crypto.encryptFile",
       "descriptions": {
         "zh-CN": "加密整个文件并保存到指定路径",
-        "en-US": "Encrypt entire file and save to specified path"
+        "en-US": "Encrypt entire file and save to specified path",
+        "zh-TW": "加密整個檔案並保存到指定路徑",
+        "ja": "ファイル全体を暗号化して指定パスに保存",
+        "ko": "파일 전체 암호화 후 지정 경로에 저장",
+        "es": "Cifrar archivo completo y guardar",
+        "fr": "Chiffrer le fichier et enregistrer",
+        "de": "Datei verschlüsseln und speichern",
+        "pt-BR": "Criptografar arquivo e salvar",
+        "ru": "Зашифровать файл и сохранить",
+        "ar": "تشفير الملف بالكامل وحفظه",
+        "hi": "पूरी फ़ाइल एन्क्रिप्ट और सहेजें"
       },
       "group": "symmetric",
       "description": "Encrypt entire file and save to specified path"
@@ -1114,7 +2214,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件解密密钥",
-            "en-US": "File decryption key"
+            "en-US": "File decryption key",
+            "zh-TW": "檔案解密密钥",
+            "ja": "ファイル復号するキー",
+            "ko": "파일복호화키",
+            "es": "Clave de descifrado de archivo",
+            "fr": "Clé de déchiffrement de fichier",
+            "de": "Dateientschlüsselungsschlüssel",
+            "pt-BR": "Chave de descriptografia de arquivo",
+            "ru": "Ключ расшифровки файла",
+            "ar": "مفتاح فك تشفير الملف",
+            "hi": "फ़ाइल डिक्रिप्शन कुंजी"
           },
           "desc": "File decryption key"
         },
@@ -1123,7 +2233,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入文件路径",
-            "en-US": "Input file path"
+            "en-US": "Input file path",
+            "zh-TW": "輸入檔案路徑",
+            "ja": "入力ファイルパス",
+            "ko": "입력파일경로",
+            "es": "Ruta del archivo de entrada",
+            "fr": "Chemin du fichier d'entrée",
+            "de": "Eingabedateipfad",
+            "pt-BR": "Caminho do arquivo de entrada",
+            "ru": "Путь входного файла",
+            "ar": "مسار ملف الإدخال",
+            "hi": "इनपुट फ़ाइल पथ"
           },
           "desc": "Input file path"
         },
@@ -1132,7 +2252,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         }
@@ -1141,14 +2271,34 @@
         "type": "FileEncryptResult",
         "descs": {
           "zh-CN": "FileEncryptResult类型的结果对象",
-          "en-US": "Result object of type FileEncryptResult"
+          "en-US": "Result object of type FileEncryptResult",
+          "zh-TW": "FileEncryptResult類型的結果物件",
+          "ja": "FileEncryptResultタイプの結果オブジェクト",
+          "ko": "FileEncryptResult유형의결과객체",
+          "es": "Objeto resultado de tipo FileEncryptResult",
+          "fr": "Objet résultat de type FileEncryptResult",
+          "de": "Ergebnisobjekt vom Typ FileEncryptResult",
+          "pt-BR": "Objeto resultado do tipo FileEncryptResult",
+          "ru": "Объект результата типа FileEncryptResult",
+          "ar": "كائن نتيجة من نوع FileEncryptResult",
+          "hi": "FileEncryptResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type FileEncryptResult"
       },
       "bridge_path": "crypto.decryptFile",
       "descriptions": {
         "zh-CN": "解密加密文件并保存为明文文件",
-        "en-US": "Decrypt encrypted file and save as plaintext"
+        "en-US": "Decrypt encrypted file and save as plaintext",
+        "zh-TW": "解密加密檔案並保存為明文檔案",
+        "ja": "暗号化ファイルを復号して平文として保存",
+        "ko": "암호화된 파일 복호화 후 평문으로 저장",
+        "es": "Descifrar archivo y guardar como texto plano",
+        "fr": "Déchiffrer le fichier et enregistrer en clair",
+        "de": "Datei entschlüsseln und als Klartext speichern",
+        "pt-BR": "Descriptografar arquivo e salvar como texto",
+        "ru": "Расшифровать файл и сохранить как текст",
+        "ar": "فك تشفير الملف وحفظه كنص عادي",
+        "hi": "एन्क्रिप्टेड फ़ाइल डिक्रिप्ट और प्लेनटेक्स्ट में सहेजें"
       },
       "group": "symmetric",
       "description": "Decrypt encrypted file and save as plaintext"
@@ -1156,7 +2306,17 @@
   ],
   "overviews": {
     "zh-CN": "提供对称/非对称加密、哈希摘要、HMAC、随机数生成、Base64/Hex 编解码等密码学能力。支持 AES-128/256-CBC/GCM、RSA-2048/4096、SHA-256/512、MD5 等算法。",
-    "en-US": "Symmetric/asymmetric encryption, hash digests, HMAC, random number generation, and Base64/Hex encoding. Supports AES-128/256-CBC/GCM, RSA-2048/4096, SHA-256/512, MD5 and more."
+    "en-US": "Symmetric/asymmetric encryption, hash digests, HMAC, random number generation, and Base64/Hex encoding. Supports AES-128/256-CBC/GCM, RSA-2048/4096, SHA-256/512, MD5 and more.",
+    "zh-TW": "提供對稱/非對稱加密、哈希摘要、HMAC、隨機数生成、Base64/Hex 編解碼等密碼學能力。支援 AES-128/256-CBC/GCM、RSA-2048/4096、SHA-256/512、MD5 等算法。",
+    "ja": "対称/非対称暗号化・ハッシュダイジェスト・HMAC・乱数生成・Base64/Hexエンコード。AES-128/256-CBC/GCM、RSA-2048/4096、SHA-256/512、MD5等対応。",
+    "ko": "대칭/비대칭 암호화, 해시 다이제스트, HMAC, 난수 생성, Base64/Hex 인코딩. AES-128/256-CBC/GCM, RSA-2048/4096, SHA-256/512, MD5 등.",
+    "es": "Cifrado simétrico/asimétrico, hash, HMAC, números aleatorios y Base64/Hex. AES-128/256-CBC/GCM, RSA-2048/4096, SHA-256/512, MD5 y más.",
+    "fr": "Chiffrement symétrique/asymétrique, hash, HMAC, nombres aléatoires et Base64/Hex. AES-128/256-CBC/GCM, RSA-2048/4096, SHA-256/512, MD5 et plus.",
+    "de": "Symmetrische/asymmetrische Verschlüsselung, Hash, HMAC, Zufallszahlen und Base64/Hex. AES-128/256-CBC/GCM, RSA-2048/4096, SHA-256/512, MD5 u.m.",
+    "pt-BR": "Criptografia simétrica/assimétrica, hash, HMAC, números aleatórios e Base64/Hex. AES-128/256-CBC/GCM, RSA-2048/4096, SHA-256/512, MD5 e mais.",
+    "ru": "Симметричное/асимметричное шифрование, хэши, HMAC, генерация случайных чисел и Base64/Hex. AES-128/256-CBC/GCM, RSA-2048/4096, SHA-256/512, MD5 и др.",
+    "ar": "تشفير متماثل/غير متماثل وخلاصات هاش وHMAC وأرقام عشوائية وBase64/Hex. AES-128/256-CBC/GCM وRSA-2048/4096 وSHA-256/512 وMD5.",
+    "hi": "सिमेट्रिक/असिमेट्रिक एन्क्रिप्शन, हैश, HMAC, रैंडम नंबर और Base64/Hex। AES-128/256-CBC/GCM, RSA-2048/4096, SHA-256/512, MD5 आदि।"
   },
   "constants": [
     {
@@ -1166,7 +2326,17 @@
       "group": "hash",
       "descs": {
         "zh-CN": "MD5哈希",
-        "en-US": "MD5 hash"
+        "en-US": "MD5 hash",
+        "zh-TW": "MD5哈希",
+        "ja": "MD5ハッシュ",
+        "ko": "MD5 해시",
+        "es": "Hash MD5",
+        "fr": "Hash MD5",
+        "de": "MD5-Hash",
+        "pt-BR": "Hash MD5",
+        "ru": "Хеш MD5",
+        "ar": "تجزئة MD5",
+        "hi": "MD5 हैश"
       }
     },
     {
@@ -1176,7 +2346,17 @@
       "group": "hash",
       "descs": {
         "zh-CN": "SHA-256哈希",
-        "en-US": "SHA-256 hash"
+        "en-US": "SHA-256 hash",
+        "zh-TW": "SHA-256哈希",
+        "ja": "SHA-256ハッシュ",
+        "ko": "SHA-256 해시",
+        "es": "Hash SHA-256",
+        "fr": "Hash SHA-256",
+        "de": "SHA-256-Hash",
+        "pt-BR": "Hash SHA-256",
+        "ru": "Хеш SHA-256",
+        "ar": "تجزئة SHA-256",
+        "hi": "SHA-256 हैश"
       }
     },
     {
@@ -1186,7 +2366,17 @@
       "group": "hash",
       "descs": {
         "zh-CN": "SHA-512哈希",
-        "en-US": "SHA-512 hash"
+        "en-US": "SHA-512 hash",
+        "zh-TW": "SHA-512哈希",
+        "ja": "SHA-512ハッシュ",
+        "ko": "SHA-512 해시",
+        "es": "Hash SHA-512",
+        "fr": "Hash SHA-512",
+        "de": "SHA-512-Hash",
+        "pt-BR": "Hash SHA-512",
+        "ru": "Хеш SHA-512",
+        "ar": "تجزئة SHA-512",
+        "hi": "SHA-512 हैश"
       }
     },
     {
@@ -1196,7 +2386,17 @@
       "group": "algorithm",
       "descs": {
         "zh-CN": "AES-128-CBC加密",
-        "en-US": "AES-128-CBC encryption"
+        "en-US": "AES-128-CBC encryption",
+        "zh-TW": "AES-128-CBC加密",
+        "ja": "AES-128-CBC暗号化",
+        "ko": "AES-128-CBC 암호화",
+        "es": "Cifrado AES-128-CBC",
+        "fr": "Chiffrement AES-128-CBC",
+        "de": "AES-128-CBC-Verschlüsselung",
+        "pt-BR": "Criptografia AES-128-CBC",
+        "ru": "Шифрование AES-128-CBC",
+        "ar": "تشفير AES-128-CBC",
+        "hi": "AES-128-CBC एन्क्रिप्शन"
       }
     },
     {
@@ -1206,7 +2406,17 @@
       "group": "algorithm",
       "descs": {
         "zh-CN": "AES-256-CBC加密",
-        "en-US": "AES-256-CBC encryption"
+        "en-US": "AES-256-CBC encryption",
+        "zh-TW": "AES-256-CBC加密",
+        "ja": "AES-256-CBC暗号化",
+        "ko": "AES-256-CBC 암호화",
+        "es": "Cifrado AES-256-CBC",
+        "fr": "Chiffrement AES-256-CBC",
+        "de": "AES-256-CBC-Verschlüsselung",
+        "pt-BR": "Criptografia AES-256-CBC",
+        "ru": "Шифрование AES-256-CBC",
+        "ar": "تشفير AES-256-CBC",
+        "hi": "AES-256-CBC एन्क्रिप्शन"
       }
     },
     {
@@ -1216,7 +2426,17 @@
       "group": "algorithm",
       "descs": {
         "zh-CN": "AES-256-GCM加密",
-        "en-US": "AES-256-GCM encryption"
+        "en-US": "AES-256-GCM encryption",
+        "zh-TW": "AES-256-GCM加密",
+        "ja": "AES-256-GCM暗号化",
+        "ko": "AES-256-GCM 암호화",
+        "es": "Cifrado AES-256-GCM",
+        "fr": "Chiffrement AES-256-GCM",
+        "de": "AES-256-GCM-Verschlüsselung",
+        "pt-BR": "Criptografia AES-256-GCM",
+        "ru": "Шифрование AES-256-GCM",
+        "ar": "تشفير AES-256-GCM",
+        "hi": "AES-256-GCM एन्क्रिप्शन"
       }
     },
     {
@@ -1226,7 +2446,17 @@
       "group": "algorithm",
       "descs": {
         "zh-CN": "RSA 2048位",
-        "en-US": "RSA 2048-bit"
+        "en-US": "RSA 2048-bit",
+        "zh-TW": "RSA 2048位",
+        "ja": "RSA 2048ビット",
+        "ko": "RSA 2048비트",
+        "es": "RSA 2048 bits",
+        "fr": "RSA 2048 bits",
+        "de": "RSA 2048-Bit",
+        "pt-BR": "RSA 2048 bits",
+        "ru": "RSA 2048 бит",
+        "ar": "RSA 2048 بت",
+        "hi": "RSA 2048-बिट"
       }
     },
     {
@@ -1236,7 +2466,17 @@
       "group": "algorithm",
       "descs": {
         "zh-CN": "RSA 4096位",
-        "en-US": "RSA 4096-bit"
+        "en-US": "RSA 4096-bit",
+        "zh-TW": "RSA 4096位",
+        "ja": "RSA 4096ビット",
+        "ko": "RSA 4096비트",
+        "es": "RSA 4096 bits",
+        "fr": "RSA 4096 bits",
+        "de": "RSA 4096-Bit",
+        "pt-BR": "RSA 4096 bits",
+        "ru": "RSA 4096 бит",
+        "ar": "RSA 4096 بت",
+        "hi": "RSA 4096-बिट"
       }
     },
     {
@@ -1244,7 +2484,17 @@
       "value": "aes-128-cbc",
       "descs": {
         "zh-CN": "AES-128-CBC算法标识",
-        "en-US": "AES-128-CBC algorithm identifier"
+        "en-US": "AES-128-CBC algorithm identifier",
+        "zh-TW": "AES-128-CBC算法標識",
+        "ja": "AES-128-CBCアルゴリズム識別子",
+        "ko": "AES-128-CBC 알고리즘 식별자",
+        "es": "Identificador del algoritmo AES-128-CBC",
+        "fr": "Identifiant de l'algorithme AES-128-CBC",
+        "de": "AES-128-CBC-Algorithmus-Kennung",
+        "pt-BR": "Identificador do algoritmo AES-128-CBC",
+        "ru": "Идентификатор алгоритма AES-128-CBC",
+        "ar": "معرّف خوارزمية AES-128-CBC",
+        "hi": "AES-128-CBC एल्गोरिथ्म पहचानकर्ता"
       },
       "type": "string"
     },
@@ -1253,7 +2503,17 @@
       "value": "aes-256-cbc",
       "descs": {
         "zh-CN": "AES-256-CBC算法标识",
-        "en-US": "AES-256-CBC algorithm identifier"
+        "en-US": "AES-256-CBC algorithm identifier",
+        "zh-TW": "AES-256-CBC算法標識",
+        "ja": "AES-256-CBCアルゴリズム識別子",
+        "ko": "AES-256-CBC 알고리즘 식별자",
+        "es": "Identificador del algoritmo AES-256-CBC",
+        "fr": "Identifiant de l'algorithme AES-256-CBC",
+        "de": "AES-256-CBC-Algorithmus-Kennung",
+        "pt-BR": "Identificador do algoritmo AES-256-CBC",
+        "ru": "Идентификатор алгоритма AES-256-CBC",
+        "ar": "معرّف خوارزمية AES-256-CBC",
+        "hi": "AES-256-CBC एल्गोरिथ्म पहचानकर्ता"
       },
       "type": "string"
     },
@@ -1262,7 +2522,17 @@
       "value": 2048,
       "descs": {
         "zh-CN": "RSA 2048位密钥长度",
-        "en-US": "RSA 2048-bit key length"
+        "en-US": "RSA 2048-bit key length",
+        "zh-TW": "RSA 2048位密钥长度",
+        "ja": "RSA 2048ビット鍵長",
+        "ko": "RSA 2048비트 키 길이",
+        "es": "Longitud de clave RSA 2048 bits",
+        "fr": "Longueur de clé RSA 2048 bits",
+        "de": "RSA 2048-Bit-Schlüssellänge",
+        "pt-BR": "Comprimento de chave RSA 2048 bits",
+        "ru": "Длина ключа RSA 2048 бит",
+        "ar": "طول مفتاح RSA 2048 بت",
+        "hi": "RSA 2048-बिट कुंजी लंबाई"
       },
       "type": "number"
     },
@@ -1271,7 +2541,17 @@
       "value": 4096,
       "descs": {
         "zh-CN": "RSA 4096位密钥长度",
-        "en-US": "RSA 4096-bit key length"
+        "en-US": "RSA 4096-bit key length",
+        "zh-TW": "RSA 4096位密钥长度",
+        "ja": "RSA 4096ビット鍵長",
+        "ko": "RSA 4096비트 키 길이",
+        "es": "Longitud de clave RSA 4096 bits",
+        "fr": "Longueur de clé RSA 4096 bits",
+        "de": "RSA 4096-Bit-Schlüssellänge",
+        "pt-BR": "Comprimento de chave RSA 4096 bits",
+        "ru": "Длина ключа RSA 4096 бит",
+        "ar": "طول مفتاح RSA 4096 بت",
+        "hi": "RSA 4096-बिट कुंजी लंबाई"
       },
       "type": "number"
     },
@@ -1280,7 +2560,17 @@
       "value": "sha256",
       "descs": {
         "zh-CN": "SHA-256哈希算法",
-        "en-US": "SHA-256 hash algorithm"
+        "en-US": "SHA-256 hash algorithm",
+        "zh-TW": "SHA-256哈希算法",
+        "ja": "SHA-256ハッシュアルゴリズム",
+        "ko": "SHA-256 해시 알고리즘",
+        "es": "Algoritmo de hash SHA-256",
+        "fr": "Algorithme de hachage SHA-256",
+        "de": "SHA-256-Hash-Algorithmus",
+        "pt-BR": "Algoritmo de hash SHA-256",
+        "ru": "Алгоритм хеширования SHA-256",
+        "ar": "خوارزمية تجزئة SHA-256",
+        "hi": "SHA-256 हैश एल्गोरिथ्म"
       },
       "type": "string"
     },
@@ -1289,7 +2579,17 @@
       "value": "sha512",
       "descs": {
         "zh-CN": "SHA-512哈希算法",
-        "en-US": "SHA-512 hash algorithm"
+        "en-US": "SHA-512 hash algorithm",
+        "zh-TW": "SHA-512哈希算法",
+        "ja": "SHA-512ハッシュアルゴリズム",
+        "ko": "SHA-512 해시 알고리즘",
+        "es": "Algoritmo de hash SHA-512",
+        "fr": "Algorithme de hachage SHA-512",
+        "de": "SHA-512-Hash-Algorithmus",
+        "pt-BR": "Algoritmo de hash SHA-512",
+        "ru": "Алгоритм хеширования SHA-512",
+        "ar": "خوارزمية تجزئة SHA-512",
+        "hi": "SHA-512 हैश एल्गोरिथ्म"
       },
       "type": "string"
     },
@@ -1298,7 +2598,17 @@
       "value": "md5",
       "descs": {
         "zh-CN": "MD5哈希算法",
-        "en-US": "MD5 hash algorithm"
+        "en-US": "MD5 hash algorithm",
+        "zh-TW": "MD5哈希算法",
+        "ja": "MD5ハッシュアルゴリズム",
+        "ko": "MD5 해시 알고리즘",
+        "es": "Algoritmo de hash MD5",
+        "fr": "Algorithme de hachage MD5",
+        "de": "MD5-Hash-Algorithmus",
+        "pt-BR": "Algoritmo de hash MD5",
+        "ru": "Алгоритм хеширования MD5",
+        "ar": "خوارزمية تجزئة MD5",
+        "hi": "MD5 हैश एल्गोरिथ्म"
       },
       "type": "string"
     }
@@ -1308,7 +2618,17 @@
       "name": "EncryptResult",
       "descriptions": {
         "zh-CN": "加密结果",
-        "en-US": "Encryption result"
+        "en-US": "Encryption result",
+        "zh-TW": "加密结果",
+        "ja": "暗号化結果",
+        "ko": "암호화 결과",
+        "es": "Resultado de cifrado",
+        "fr": "Résultat de chiffrement",
+        "de": "Verschlüsselungsergebnis",
+        "pt-BR": "Resultado da criptografia",
+        "ru": "Результат шифрования",
+        "ar": "نتيجة التشفير",
+        "hi": "एन्क्रिप्शन परिणाम"
       },
       "fields": [
         {
@@ -1316,7 +2636,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密文(Base64)",
-            "en-US": "Ciphertext(Base64)"
+            "en-US": "Ciphertext(Base64)",
+            "zh-TW": "密文(Base64)",
+            "ja": "暗号文(Base64)",
+            "ko": "암호문(Base64)",
+            "es": "Texto cifrado(Base64)",
+            "fr": "Texte chiffré(Base64)",
+            "de": "Chiffretext(Base64)",
+            "pt-BR": "Texto cifrado(Base64)",
+            "ru": "Шифротекст(Base64)",
+            "ar": "النص المشفّر(Base64)",
+            "hi": "सिफरटेक्स्ट(Base64)"
           }
         },
         {
@@ -1325,7 +2655,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "初始向量",
-            "en-US": "Initialization vector"
+            "en-US": "Initialization vector",
+            "zh-TW": "初始向量",
+            "ja": "初期化ベクトル",
+            "ko": "초기화 벡터",
+            "es": "Vector de inicialización",
+            "fr": "Vecteur d'initialisation",
+            "de": "Initialisierungsvektor",
+            "pt-BR": "Vetor de inicialização",
+            "ru": "Вектор инициализации",
+            "ar": "متجه التهيئة",
+            "hi": "इनिशियलाइज़ेशन वेक्टर"
           }
         },
         {
@@ -1334,7 +2674,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "认证标签(GCM)",
-            "en-US": "Auth tag(GCM)"
+            "en-US": "Auth tag(GCM)",
+            "zh-TW": "認證標簽(GCM)",
+            "ja": "認証タグ(GCM)",
+            "ko": "인증 태그(GCM)",
+            "es": "Etiqueta de autenticación(GCM)",
+            "fr": "Balise d'authentification(GCM)",
+            "de": "Auth-Tag(GCM)",
+            "pt-BR": "Tag de autenticação(GCM)",
+            "ru": "Тег аутентификации(GCM)",
+            "ar": "علامة المصادقة(GCM)",
+            "hi": "प्रमाणीकरण टैग(GCM)"
           }
         }
       ]
@@ -1343,7 +2693,17 @@
       "name": "KeyPair",
       "descriptions": {
         "zh-CN": "密钥对",
-        "en-US": "Key pair"
+        "en-US": "Key pair",
+        "zh-TW": "密钥對",
+        "ja": "キーペア",
+        "ko": "키 쌍",
+        "es": "Par de claves",
+        "fr": "Paire de clés",
+        "de": "Schlüsselpaar",
+        "pt-BR": "Par de chaves",
+        "ru": "Пара ключей",
+        "ar": "زوج المفاتيح",
+        "hi": "कुंजी जोड़ी"
       },
       "fields": [
         {
@@ -1351,7 +2711,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "公钥(PEM)",
-            "en-US": "Public key(PEM)"
+            "en-US": "Public key(PEM)",
+            "zh-TW": "公钥(PEM)",
+            "ja": "公開鍵(PEM)",
+            "ko": "공개 키(PEM)",
+            "es": "Clave pública(PEM)",
+            "fr": "Clé publique(PEM)",
+            "de": "Öffentlicher Schlüssel(PEM)",
+            "pt-BR": "Chave pública(PEM)",
+            "ru": "Открытый ключ(PEM)",
+            "ar": "المفتاح العام(PEM)",
+            "hi": "सार्वजनिक कुंजी(PEM)"
           }
         },
         {
@@ -1359,7 +2729,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "私钥(PEM)",
-            "en-US": "Private key(PEM)"
+            "en-US": "Private key(PEM)",
+            "zh-TW": "私钥(PEM)",
+            "ja": "秘密鍵(PEM)",
+            "ko": "개인 키(PEM)",
+            "es": "Clave privada(PEM)",
+            "fr": "Clé privée(PEM)",
+            "de": "Privater Schlüssel(PEM)",
+            "pt-BR": "Chave privada(PEM)",
+            "ru": "Закрытый ключ(PEM)",
+            "ar": "المفتاح الخاص(PEM)",
+            "hi": "निजी कुंजी(PEM)"
           }
         }
       ]
@@ -1368,7 +2748,17 @@
       "name": "TotpResult",
       "descriptions": {
         "zh-CN": "TOTP结果",
-        "en-US": "TOTP result"
+        "en-US": "TOTP result",
+        "zh-TW": "TOTP结果",
+        "ja": "TOTP結果",
+        "ko": "TOTP 결과",
+        "es": "Resultado TOTP",
+        "fr": "Résultat TOTP",
+        "de": "TOTP-Ergebnis",
+        "pt-BR": "Resultado TOTP",
+        "ru": "Результат TOTP",
+        "ar": "نتيجة TOTP",
+        "hi": "TOTP परिणाम"
       },
       "fields": [
         {
@@ -1376,7 +2766,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "验证码",
-            "en-US": "Verification code"
+            "en-US": "Verification code",
+            "zh-TW": "驗證碼",
+            "ja": "検証コード",
+            "ko": "인증 코드",
+            "es": "Código de verificación",
+            "fr": "Code de vérification",
+            "de": "Verifizierungscode",
+            "pt-BR": "Código de verificação",
+            "ru": "Код подтверждения",
+            "ar": "رمز التحقق",
+            "hi": "सत्यापन कोड"
           }
         },
         {
@@ -1384,7 +2784,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "剩余秒数",
-            "en-US": "Remaining seconds"
+            "en-US": "Remaining seconds",
+            "zh-TW": "剩余秒数",
+            "ja": "残り秒数",
+            "ko": "남은 초",
+            "es": "Segundos restantes",
+            "fr": "Secondes restantes",
+            "de": "Verbleibende Sekunden",
+            "pt-BR": "Segundos restantes",
+            "ru": "Оставшиеся секунды",
+            "ar": "الثواني المتبقية",
+            "hi": "शेष सेकंड"
           }
         }
       ]
@@ -1393,7 +2803,17 @@
       "name": "TotpSecret",
       "descriptions": {
         "zh-CN": "TOTP密钥",
-        "en-US": "TOTP secret"
+        "en-US": "TOTP secret",
+        "zh-TW": "TOTP密钥",
+        "ja": "TOTPシークレット",
+        "ko": "TOTP 시크릿",
+        "es": "Secreto TOTP",
+        "fr": "Secret TOTP",
+        "de": "TOTP-Geheimnis",
+        "pt-BR": "Segredo TOTP",
+        "ru": "Секрет TOTP",
+        "ar": "سر TOTP",
+        "hi": "TOTP सीक्रेट"
       },
       "fields": [
         {
@@ -1401,7 +2821,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "密钥(Base32)",
-            "en-US": "Secret(Base32)"
+            "en-US": "Secret(Base32)",
+            "zh-TW": "密钥(Base32)",
+            "ja": "シークレット(Base32)",
+            "ko": "시크릿(Base32)",
+            "es": "Secreto(Base32)",
+            "fr": "Secret(Base32)",
+            "de": "Geheimnis(Base32)",
+            "pt-BR": "Segredo(Base32)",
+            "ru": "Секрет(Base32)",
+            "ar": "السر(Base32)",
+            "hi": "सीक्रेट(Base32)"
           }
         },
         {
@@ -1409,7 +2839,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "otpauth URL",
-            "en-US": "otpauth URL"
+            "en-US": "otpauth URL",
+            "zh-TW": "otpauth URL",
+            "ja": "otpauth URL",
+            "ko": "otpauth URL",
+            "es": "URL otpauth",
+            "fr": "URL otpauth",
+            "de": "otpauth-URL",
+            "pt-BR": "URL otpauth",
+            "ru": "URL otpauth",
+            "ar": "عنوان URL لـ otpauth",
+            "hi": "otpauth URL"
           }
         }
       ]
@@ -1418,7 +2858,17 @@
       "name": "X509Info",
       "descriptions": {
         "zh-CN": "证书信息",
-        "en-US": "Certificate info"
+        "en-US": "Certificate info",
+        "zh-TW": "證書資訊",
+        "ja": "証明書情報",
+        "ko": "인증서 정보",
+        "es": "Información del certificado",
+        "fr": "Informations du certificat",
+        "de": "Zertifikatsinformationen",
+        "pt-BR": "Informações do certificado",
+        "ru": "Информация о сертификате",
+        "ar": "معلومات الشهادة",
+        "hi": "प्रमाणपत्र जानकारी"
       },
       "fields": [
         {
@@ -1426,7 +2876,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "主题",
-            "en-US": "Subject"
+            "en-US": "Subject",
+            "zh-TW": "主题",
+            "ja": "件名",
+            "ko": "제목",
+            "es": "Asunto",
+            "fr": "Sujet",
+            "de": "Betreff",
+            "pt-BR": "Assunto",
+            "ru": "Тема",
+            "ar": "الموضوع",
+            "hi": "विषय"
           }
         },
         {
@@ -1434,7 +2894,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "颁发者",
-            "en-US": "Issuer"
+            "en-US": "Issuer",
+            "zh-TW": "颁发者",
+            "ja": "発行者",
+            "ko": "발급자",
+            "es": "Emisor",
+            "fr": "Émetteur",
+            "de": "Aussteller",
+            "pt-BR": "Emissor",
+            "ru": "Издатель",
+            "ar": "المُصدِر",
+            "hi": "जारीकर्ता"
           }
         },
         {
@@ -1442,7 +2912,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "生效时间",
-            "en-US": "Not before"
+            "en-US": "Not before",
+            "zh-TW": "生效時间",
+            "ja": "有効期限（開始）",
+            "ko": "유효 기간(시작)",
+            "es": "No antes de",
+            "fr": "Pas avant",
+            "de": "Nicht vor",
+            "pt-BR": "Não antes de",
+            "ru": "Не ранее",
+            "ar": "ليس قبل",
+            "hi": "इससे पहले नहीं"
           }
         },
         {
@@ -1450,7 +2930,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "过期时间",
-            "en-US": "Not after"
+            "en-US": "Not after",
+            "zh-TW": "过期時间",
+            "ja": "有効期限（終了）",
+            "ko": "유효 기간(종료)",
+            "es": "No después de",
+            "fr": "Pas après",
+            "de": "Nicht nach",
+            "pt-BR": "Não depois de",
+            "ru": "Не позднее",
+            "ar": "ليس بعد",
+            "hi": "इसके बाद नहीं"
           }
         }
       ]
@@ -1459,7 +2949,17 @@
       "name": "FileEncryptResult",
       "descriptions": {
         "zh-CN": "文件加密结果",
-        "en-US": "File encrypt result"
+        "en-US": "File encrypt result",
+        "zh-TW": "檔案加密结果",
+        "ja": "ファイル暗号化結果",
+        "ko": "파일 암호화 결과",
+        "es": "Resultado de cifrado de archivo",
+        "fr": "Résultat de chiffrement de fichier",
+        "de": "Dateiverschlüsselungsergebnis",
+        "pt-BR": "Resultado da criptografia de arquivo",
+        "ru": "Результат шифрования файла",
+        "ar": "نتيجة تشفير الملف",
+        "hi": "फ़ाइल एन्क्रिप्शन परिणाम"
       },
       "fields": [
         {
@@ -1467,7 +2967,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output path"
+            "en-US": "Output path",
+            "zh-TW": "输出路徑",
+            "ja": "出力パス",
+            "ko": "출력 경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Выходной путь",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -1475,7 +2985,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "输出大小",
-            "en-US": "Output size"
+            "en-US": "Output size",
+            "zh-TW": "输出大小",
+            "ja": "出力サイズ",
+            "ko": "출력 크기",
+            "es": "Tamaño de salida",
+            "fr": "Taille de sortie",
+            "de": "Ausgabegröße",
+            "pt-BR": "Tamanho de saída",
+            "ru": "Размер вывода",
+            "ar": "حجم الإخراج",
+            "hi": "आउटपुट आकार"
           }
         }
       ]

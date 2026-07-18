@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -42,7 +52,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储键名",
-            "en-US": "Storage key"
+            "en-US": "Storage key",
+            "zh-TW": "儲存鍵名",
+            "ja": "ストレージキー",
+            "ko": "저장소 키",
+            "es": "Clave de almacenamiento",
+            "fr": "Clé de stockage",
+            "de": "Speicherschlüssel",
+            "pt-BR": "Chave de armazenamento",
+            "ru": "Ключ хранилища",
+            "ar": "مفتاح التخزين",
+            "hi": "संग्रहण कुंजी"
           },
           "desc": "Storage key"
         },
@@ -51,7 +71,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "default_value参数",
-            "en-US": "default_value parameter"
+            "en-US": "default_value parameter",
+            "zh-TW": "default_value參數",
+            "ja": "default_valueパラメータ",
+            "ko": "default_value매개변수",
+            "es": "Parámetro de valor predeterminado",
+            "fr": "Paramètre de valeur par défaut",
+            "de": "Standardwert-Parameter",
+            "pt-BR": "Parâmetro de valor padrão",
+            "ru": "Параметр значения по умолчанию",
+            "ar": "معلمة القيمة الافتراضية",
+            "hi": "डिफ़ॉल्ट मान पैरामीटर"
           },
           "optional": true,
           "desc": "default_value parameter"
@@ -61,7 +91,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -70,14 +110,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "storage.get",
       "descriptions": {
         "zh-CN": "根据键名从持久化存储中读取对应的值",
-        "en-US": "Read value from persistent storage by key"
+        "en-US": "Read value from persistent storage by key",
+        "zh-TW": "根據鍵名從持久化儲存中讀取對應的值",
+        "ja": "キーで永続ストレージから値を読み取り",
+        "ko": "키로 영구 저장소에서 값 읽기",
+        "es": "Leer valor del almacenamiento persistente por clave",
+        "fr": "Lire la valeur du stockage persistant par clé",
+        "de": "Wert aus persistentem Speicher nach Schlüssel lesen",
+        "pt-BR": "Ler valor do armazenamento persistente por chave",
+        "ru": "Прочитать значение из постоянного хранилища по ключу",
+        "ar": "قراءة قيمة من التخزين الدائم بالمفتاح",
+        "hi": "कुंजी द्वारा स्थायी संग्रहण से मान पढ़ें"
       },
       "group": "kv",
       "description": "Read value from persistent storage by key"
@@ -91,7 +151,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -100,7 +170,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储键名",
-            "en-US": "Storage key"
+            "en-US": "Storage key",
+            "zh-TW": "儲存鍵名",
+            "ja": "ストレージキー",
+            "ko": "저장소 키",
+            "es": "Clave de almacenamiento",
+            "fr": "Clé de stockage",
+            "de": "Speicherschlüssel",
+            "pt-BR": "Chave de armazenamento",
+            "ru": "Ключ хранилища",
+            "ar": "مفتاح التخزين",
+            "hi": "संग्रहण कुंजी"
           },
           "desc": "Storage key"
         },
@@ -109,7 +189,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要存储的值（支持字符串、数字、布尔、对象）",
-            "en-US": "Value to store (string/number/boolean/object)"
+            "en-US": "Value to store (string/number/boolean/object)",
+            "zh-TW": "要儲存的值（支持字串、數字、布尔、物件）",
+            "ja": "保存する値（文字列/数値/ブール/オブジェクト）",
+            "ko": "저장할 값 (문자열/숫자/불리언/객체)",
+            "es": "Valor a almacenar (cadena/número/booleano/objeto)",
+            "fr": "Valeur à stocker (chaîne/nombre/booléen/objet)",
+            "de": "Zu speichernder Wert (String/Nummer/Boolean/Objekt)",
+            "pt-BR": "Valor a armazenar (string/número/boolean/objeto)",
+            "ru": "Значение для хранения (строка/число/логическое/объект)",
+            "ar": "القيمة للتخزين (نص/رقم/منطقي/كائن)",
+            "hi": "संग्रहित करने के लिए मान (स्ट्रिंग/संख्या/बूलियन/ऑब्जेक्ट)"
           },
           "desc": "Value to store (string/number/boolean/object)"
         },
@@ -118,7 +208,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -127,14 +227,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "storage.set",
       "descriptions": {
         "zh-CN": "将键值对写入持久化存储（已存在则覆盖）",
-        "en-US": "Write key-value pair to persistent storage (overwrites if exists)"
+        "en-US": "Write key-value pair to persistent storage (overwrites if exists)",
+        "zh-TW": "將鍵值對寫入持久化儲存（已存在則覆蓋）",
+        "ja": "キー値ペアを永続ストレージに書き込み（存在する場合は上書き）",
+        "ko": "영구 저장소에 키-값 쌍 쓰기 (존재 시 덮어쓰기)",
+        "es": "Escribir par clave-valor en almacenamiento persistente",
+        "fr": "Écrire la paire clé-valeur dans le stockage persistant",
+        "de": "Schlüssel-Wert-Paar in persistenten Speicher schreiben",
+        "pt-BR": "Escrever par chave-valor no armazenamento persistente",
+        "ru": "Записать пару ключ-значение в постоянное хранилище",
+        "ar": "كتابة زوج مفتاح-قيمة في التخزين الدائم",
+        "hi": "स्थायी संग्रहण में कुंजी-मान जोड़ी लिखें"
       },
       "group": "kv",
       "description": "Write key-value pair to persistent storage (overwrites if exists)"
@@ -148,7 +268,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -157,7 +287,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要删除的存储键名",
-            "en-US": "Storage key name to delete"
+            "en-US": "Storage key name to delete",
+            "zh-TW": "要刪除的儲存鍵名",
+            "ja": "削除するストレージキー名",
+            "ko": "삭제할 저장소 키 이름",
+            "es": "Nombre de clave a eliminar",
+            "fr": "Nom de la clé à supprimer",
+            "de": "Zu löschender Speicherschlüsselname",
+            "pt-BR": "Nome da chave a excluir",
+            "ru": "Имя ключа для удаления",
+            "ar": "اسم مفتاح التخزين للحذف",
+            "hi": "हटाने के लिए संग्रहण कुंजी नाम"
           },
           "desc": "Storage key name to delete"
         },
@@ -166,7 +306,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -175,14 +325,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "storage.delete",
       "descriptions": {
         "zh-CN": "从持久化存储中删除指定键的数据",
-        "en-US": "Delete data for specified key from persistent storage"
+        "en-US": "Delete data for specified key from persistent storage",
+        "zh-TW": "從持久化儲存中刪除指定鍵的數據",
+        "ja": "永続ストレージから指定キーのデータを削除",
+        "ko": "영구 저장소에서 지정된 키의 데이터 삭제",
+        "es": "Eliminar datos de la clave del almacenamiento",
+        "fr": "Supprimer les données de la clé",
+        "de": "Daten für Schlüssel aus Speicher löschen",
+        "pt-BR": "Excluir dados da chave do armazenamento",
+        "ru": "Удалить данные по ключу из хранилища",
+        "ar": "حذف بيانات المفتاح المحدد من التخزين",
+        "hi": "स्थायी स्टोरेज से कुंजी का डेटा हटाएं"
       },
       "group": "kv",
       "description": "Delete data for specified key from persistent storage"
@@ -196,7 +366,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -205,7 +385,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要检查是否存在的键名",
-            "en-US": "Key name to check existence"
+            "en-US": "Key name to check existence",
+            "zh-TW": "要檢查是否存在的鍵名",
+            "ja": "存在確認するキー名",
+            "ko": "존재 여부를 확인할 키 이름",
+            "es": "Nombre de clave a verificar existencia",
+            "fr": "Nom de la clé à vérifier",
+            "de": "Schlüsselname zur Existenzprüfung",
+            "pt-BR": "Nome da chave a verificar existência",
+            "ru": "Имя ключа для проверки существования",
+            "ar": "اسم المفتاح للتحقق من الوجود",
+            "hi": "अस्तित्व जांचने के लिए कुंजी नाम"
           },
           "desc": "Key name to check existence"
         },
@@ -214,7 +404,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -223,13 +423,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否存在",
-          "en-US": "Exists"
+          "en-US": "Exists",
+          "zh-TW": "是否存在",
+          "ja": "存でするかどうか",
+          "ko": "존재 여부",
+          "es": "Si existe",
+          "fr": "Si existe",
+          "de": "Ob vorhanden",
+          "pt-BR": "Se existe",
+          "ru": "Существует ли",
+          "ar": "هل موجود",
+          "hi": "मौजूद है या नहीं"
         }
       },
       "bridge_path": "storage.has",
       "descriptions": {
         "zh-CN": "检查存储中是否存在指定的键",
-        "en-US": "Check if specified key exists in storage"
+        "en-US": "Check if specified key exists in storage",
+        "zh-TW": "檢查儲存中是否存在指定的鍵",
+        "ja": "指定キーがストレージに存在するか確認",
+        "ko": "저장소에 지정된 키가 존재하는지 확인",
+        "es": "Verificar si clave existe en almacenamiento",
+        "fr": "Vérifier si clé existe dans le stockage",
+        "de": "Prüfen ob Schlüssel im Speicher existiert",
+        "pt-BR": "Verificar se chave existe no armazenamento",
+        "ru": "Проверить существование ключа в хранилище",
+        "ar": "التحقق من وجود المفتاح في التخزين",
+        "hi": "स्टोरेज में कुंजी मौजूद है जांचें"
       },
       "group": "kv",
       "description": "Check if specified key exists in storage"
@@ -243,7 +463,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -252,7 +482,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "键前缀过滤",
-            "en-US": "Key prefix filter"
+            "en-US": "Key prefix filter",
+            "zh-TW": "鍵前缀過濾",
+            "ja": "キープレフィックスフィルター",
+            "ko": "키 접두사 필터",
+            "es": "Filtro de prefijo de clave",
+            "fr": "Filtre de préfixe de clé",
+            "de": "Schlüsselpräfix-Filter",
+            "pt-BR": "Filtro de prefixo de chave",
+            "ru": "Фильтр по префиксу ключа",
+            "ar": "مرشح بادئة المفتاح",
+            "hi": "कुंजी उपसर्ग फ़िल्टर"
           },
           "optional": true
         },
@@ -261,7 +501,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -270,14 +520,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "storage.keys",
       "descriptions": {
         "zh-CN": "获取存储中所有键名的列表",
-        "en-US": "Get list of all keys in storage"
+        "en-US": "Get list of all keys in storage",
+        "zh-TW": "取得儲存中所有鍵名的列表",
+        "ja": "ストレージの全キーリストを取得",
+        "ko": "저장소의 모든 키 목록 가져오기",
+        "es": "Obtener lista de todas las claves del almacenamiento",
+        "fr": "Obtenir la liste de toutes les clés du stockage",
+        "de": "Liste aller Schlüssel im Speicher abrufen",
+        "pt-BR": "Obter lista de todas as chaves do armazenamento",
+        "ru": "Получить список всех ключей в хранилище",
+        "ar": "الحصول على قائمة جميع المفاتيح في التخزين",
+        "hi": "संग्रहण में सभी कुंजियों की सूची प्राप्त करें"
       },
       "group": "kv",
       "description": "Get list of all keys in storage"
@@ -291,7 +561,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -300,7 +580,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "要批量获取的键名列表",
-            "en-US": "List of key names to batch get"
+            "en-US": "List of key names to batch get",
+            "zh-TW": "要批量取得的鍵名列表",
+            "ja": "一括取得するキー名のリスト",
+            "ko": "일괄 가져올 키 이름 목록",
+            "es": "Lista de claves para obtener en lote",
+            "fr": "Liste des clés à récupérer en lot",
+            "de": "Liste der Schlüssel zum Batch-Abruf",
+            "pt-BR": "Lista de chaves para obter em lote",
+            "ru": "Список ключей для пакетного получения",
+            "ar": "قائمة أسماء المفاتيح للجلب الجماعي",
+            "hi": "बैच प्राप्त करने के लिए कुंजी नामों की सूची"
           },
           "desc": "List of key names to batch get"
         },
@@ -309,7 +599,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -318,14 +618,34 @@
         "type": "Record",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "storage.getMany",
       "descriptions": {
         "zh-CN": "批量获取多个键的值",
-        "en-US": "Get many info of storage"
+        "en-US": "Get many info of storage",
+        "zh-TW": "批量取得多個鍵的值",
+        "ja": "ストレージの複数情報を取得",
+        "ko": "저장소에서 여러 정보 가져오기",
+        "es": "Obtener múltiples valores del almacenamiento",
+        "fr": "Obtenir plusieurs valeurs du stockage",
+        "de": "Mehrere Speicherinformationen abrufen",
+        "pt-BR": "Obter múltiplos valores do armazenamento",
+        "ru": "Получить несколько значений из хранилища",
+        "ar": "الحصول على معلومات متعددة من التخزين",
+        "hi": "संग्रहण से अनेक जानकारी प्राप्त करें"
       },
       "group": "batch",
       "description": "Get many info of storage"
@@ -339,7 +659,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -348,7 +678,17 @@
           "type": "Record",
           "descs": {
             "zh-CN": "键值对数组[{key,value}]",
-            "en-US": "Key-value pair array [{key,value}]"
+            "en-US": "Key-value pair array [{key,value}]",
+            "zh-TW": "鍵值對陣列[{key,value}]",
+            "ja": "キー値ペア配列 [{key,value}]",
+            "ko": "키-값 쌍 배열 [{key,value}]",
+            "es": "Array de pares clave-valor [{key,value}]",
+            "fr": "Tableau de paires clé-valeur [{key,value}]",
+            "de": "Schlüssel-Wert-Paar-Array [{key,value}]",
+            "pt-BR": "Array de pares chave-valor [{key,value}]",
+            "ru": "Массив пар ключ-значение [{key,value}]",
+            "ar": "مصفوفة أزواج مفتاح-قيمة [{key,value}]",
+            "hi": "कुंजी-मान जोड़ी ऐरे [{key,value}]"
           },
           "desc": "Key-value pair array [{key,value}]"
         },
@@ -357,7 +697,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -366,14 +716,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "storage.setMany",
       "descriptions": {
         "zh-CN": "批量设置多个键值对",
-        "en-US": "Set many property of storage"
+        "en-US": "Set many property of storage",
+        "zh-TW": "批量設定多個鍵值對",
+        "ja": "ストレージの複数プロパティを設定",
+        "ko": "저장소 여러 속성 설정",
+        "es": "Establecer múltiples propiedades del almacenamiento",
+        "fr": "Définir plusieurs propriétés du stockage",
+        "de": "Mehrere Speichereigenschaften setzen",
+        "pt-BR": "Definir múltiplas propriedades do armazenamento",
+        "ru": "Установить несколько свойств хранилища",
+        "ar": "تعيين خصائص متعددة للتخزين",
+        "hi": "संग्रहण के अनेक प्रॉपर्टी सेट करें"
       },
       "group": "batch",
       "description": "Set many property of storage"
@@ -387,7 +757,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -396,7 +776,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -405,14 +795,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "storage.clear",
       "descriptions": {
         "zh-CN": "清空当前命名空间下的所有存储数据",
-        "en-US": "Clear all stored data in current namespace"
+        "en-US": "Clear all stored data in current namespace",
+        "zh-TW": "清空當前命名空間下的所有儲存數據",
+        "ja": "クリアする現で命名空间下のすべてストレージデータ",
+        "ko": "현재 네임스페이스의 모든 저장 데이터 삭제",
+        "es": "Limpiar todos los datos del espacio de nombres",
+        "fr": "Effacer toutes les données de l'espace de noms",
+        "de": "Alle Daten im Namespace löschen",
+        "pt-BR": "Limpar todos os dados do namespace",
+        "ru": "Очистить все данные в пространстве имён",
+        "ar": "مسح جميع البيانات في مساحة الاسم",
+        "hi": "वर्तमान नेमस्पेस का सभी डेटा साफ़ करें"
       },
       "group": "kv",
       "description": "Clear all stored data in current namespace"
@@ -426,7 +836,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -435,7 +855,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "键前缀过滤",
-            "en-US": "Key prefix filter"
+            "en-US": "Key prefix filter",
+            "zh-TW": "鍵前缀過濾",
+            "ja": "キープレフィックスフィルター",
+            "ko": "키 접두사 필터",
+            "es": "Filtro de prefijo de clave",
+            "fr": "Filtre de préfixe de clé",
+            "de": "Schlüsselpräfix-Filter",
+            "pt-BR": "Filtro de prefixo de chave",
+            "ru": "Фильтр по префиксу ключа",
+            "ar": "مرشح بادئة المفتاح",
+            "hi": "कुंजी उपसर्ग फ़िल्टर"
           },
           "optional": true
         },
@@ -444,7 +874,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -453,14 +893,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "storage.count",
       "descriptions": {
         "zh-CN": "获取存储中键值对的数量",
-        "en-US": "Get total count of key-value pairs in storage"
+        "en-US": "Get total count of key-value pairs in storage",
+        "zh-TW": "取得儲存中鍵值對的數量",
+        "ja": "ストレージ内のキー値ペアの合計数を取得",
+        "ko": "저장소의 키-값 쌍 총 개수 가져오기",
+        "es": "Obtener total de pares clave-valor en almacenamiento",
+        "fr": "Obtenir le nombre total de paires clé-valeur",
+        "de": "Gesamtanzahl der Schlüssel-Wert-Paare abrufen",
+        "pt-BR": "Obter total de pares chave-valor no armazenamento",
+        "ru": "Получить общее количество пар ключ-значение",
+        "ar": "الحصول على العدد الإجمالي لأزواج مفتاح-قيمة",
+        "hi": "संग्रहण में कुंजी-मान जोड़ियों की कुल गिनती प्राप्त करें"
       },
       "group": "kv",
       "description": "Get total count of key-value pairs in storage"
@@ -474,7 +934,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -483,13 +953,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "命名空间",
-          "en-US": "命名空间"
+          "en-US": "命名空间",
+          "zh-TW": "命名空間",
+          "ja": "名前空間",
+          "ko": "네임스페이스",
+          "es": "Espacio de nombres",
+          "fr": "Espace de noms",
+          "de": "Namespace",
+          "pt-BR": "Namespace",
+          "ru": "Пространство имён",
+          "ar": "مساحة الاسم",
+          "hi": "नेमस्पेस"
         }
       },
       "bridge_path": "storage.namespaces",
       "descriptions": {
         "zh-CN": "namespaces持久化存储",
-        "en-US": "Namespaces storage"
+        "en-US": "Namespaces storage",
+        "zh-TW": "namespaces持久化儲存",
+        "ja": "namespaces持久化ストレージ",
+        "ko": "저장소 네임스페이스",
+        "es": "Espacios de nombre del almacenamiento",
+        "fr": "Espaces de noms du stockage",
+        "de": "Speicher-Namensräume",
+        "pt-BR": "Namespaces do armazenamento",
+        "ru": "Пространства имён хранилища",
+        "ar": "مساحات أسماء التخزين",
+        "hi": "संग्रहण नेमस्पेस"
       },
       "group": "namespace",
       "description": "Namespaces storage"
@@ -503,7 +993,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "命名空间",
-            "en-US": "Namespace"
+            "en-US": "Namespace",
+            "zh-TW": "命名空間",
+            "ja": "名前空間",
+            "ko": "네임스페이스",
+            "es": "Espacio de nombres",
+            "fr": "Espace de noms",
+            "de": "Namespace",
+            "pt-BR": "Namespace",
+            "ru": "Пространство имён",
+            "ar": "مساحة الاسم",
+            "hi": "नेमस्पेस"
           }
         },
         {
@@ -511,7 +1011,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -520,14 +1030,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "storage.size",
       "descriptions": {
         "zh-CN": "获取存储数据占用的磁盘空间大小",
-        "en-US": "Get disk space used by stored data"
+        "en-US": "Get disk space used by stored data",
+        "zh-TW": "取得儲存數據佔用的磁盤空間大小",
+        "ja": "ストレージデータが使用するディスク容量を取得",
+        "ko": "저장된 데이터가 사용하는 디스크 공간 가져오기",
+        "es": "Obtener espacio en disco usado por datos almacenados",
+        "fr": "Obtenir l'espace disque utilisé par les données",
+        "de": "Von gespeicherten Daten verwendeten Speicherplatz abrufen",
+        "pt-BR": "Obter espaço em disco usado pelos dados armazenados",
+        "ru": "Получить занятое дисковое пространство",
+        "ar": "الحصول على مساحة القرص المستخدمة بالبيانات",
+        "hi": "संग्रहित डेटा द्वारा उपयोग किए गए डिस्क स्थान प्राप्त करें"
       },
       "group": "namespace",
       "description": "Get disk space used by stored data"
@@ -541,7 +1071,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -550,7 +1090,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储键名",
-            "en-US": "Storage key name"
+            "en-US": "Storage key name",
+            "zh-TW": "儲存鍵名",
+            "ja": "ストレージキー名",
+            "ko": "저장소 키 이름",
+            "es": "Nombre de clave de almacenamiento",
+            "fr": "Nom de la clé de stockage",
+            "de": "Speicherschlüsselname",
+            "pt-BR": "Nome da chave de armazenamento",
+            "ru": "Имя ключа хранилища",
+            "ar": "اسم مفتاح التخزين",
+            "hi": "संग्रहण कुंजी नाम"
           },
           "desc": "Storage key name"
         },
@@ -559,7 +1109,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要设置的值",
-            "en-US": "Value to set"
+            "en-US": "Value to set",
+            "zh-TW": "要設定的值",
+            "ja": "設定する値",
+            "ko": "설정할 값",
+            "es": "Valor a establecer",
+            "fr": "Valeur à définir",
+            "de": "Zu setzender Wert",
+            "pt-BR": "Valor a definir",
+            "ru": "Устанавливаемое значение",
+            "ar": "القيمة المراد تعيينها",
+            "hi": "सेट करने का मान"
           },
           "desc": "Value to set"
         },
@@ -568,7 +1128,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "TTL ms",
-            "en-US": "TTL ms"
+            "en-US": "TTL ms",
+            "zh-TW": "TTL ms",
+            "ja": "TTL（ミリ秒）",
+            "ko": "TTL (ms)",
+            "es": "TTL (ms)",
+            "fr": "TTL (ms)",
+            "de": "TTL (ms)",
+            "pt-BR": "TTL (ms)",
+            "ru": "TTL (мс)",
+            "ar": "TTL (مللي ثانية)",
+            "hi": "TTL (ms)"
           }
         },
         {
@@ -576,7 +1146,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -585,14 +1165,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "storage.setWithTtl",
       "descriptions": {
         "zh-CN": "设置with ttl property",
-        "en-US": "Set with ttl property of storage"
+        "en-US": "Set with ttl property of storage",
+        "zh-TW": "設定with ttl property",
+        "ja": "設定するwith ttl property",
+        "ko": "설정with ttl property",
+        "es": "Establecer con TTL en almacenamiento",
+        "fr": "Définir avec TTL dans le stockage",
+        "de": "Speicher mit TTL-Eigenschaft setzen",
+        "pt-BR": "Definir com TTL no armazenamento",
+        "ru": "Установить с TTL в хранилище",
+        "ar": "تعيين مع خاصية TTL للتخزين",
+        "hi": "TTL प्रॉपर्टी के साथ संग्रहण सेट करें"
       },
       "group": "kv",
       "description": "Set with ttl property of storage"
@@ -606,7 +1206,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -615,7 +1225,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件保存路径",
-            "en-US": "Output file save path"
+            "en-US": "Output file save path",
+            "zh-TW": "輸出檔案保存路徑",
+            "ja": "出力ファイル保存するパス",
+            "ko": "출력파일저장경로",
+            "es": "Ruta de guardado del archivo",
+            "fr": "Chemin de sauvegarde",
+            "de": "Speicherpfad der Ausgabedatei",
+            "pt-BR": "Caminho de salvamento",
+            "ru": "Путь сохранения файла",
+            "ar": "مسار حفظ الملف",
+            "hi": "आउटपुट फ़ाइल सेव पथ"
           },
           "desc": "Output file save path"
         },
@@ -624,7 +1244,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -633,14 +1263,34 @@
         "type": "ExportResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "storage.export",
       "descriptions": {
         "zh-CN": "导出所有存储数据为 JSON",
-        "en-US": "Export all stored data to JSON file"
+        "en-US": "Export all stored data to JSON file",
+        "zh-TW": "匯出所有儲存數據為 JSON",
+        "ja": "全ストレージデータをJSONファイルにエクスポート",
+        "ko": "모든 저장 데이터를 JSON 파일로 내보내기",
+        "es": "Exportar todos los datos a archivo JSON",
+        "fr": "Exporter toutes les données en fichier JSON",
+        "de": "Alle Daten als JSON exportieren",
+        "pt-BR": "Exportar todos os dados para arquivo JSON",
+        "ru": "Экспортировать все данные в JSON-файл",
+        "ar": "تصدير جميع البيانات إلى ملف JSON",
+        "hi": "सभी संग्रहीत डेटा JSON फ़ाइल में एक्सपोर्ट करें"
       },
       "group": "bulk",
       "description": "Export all stored data to JSON file"
@@ -654,7 +1304,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -663,7 +1323,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输入文件路径",
-            "en-US": "Input file path"
+            "en-US": "Input file path",
+            "zh-TW": "輸入檔案路徑",
+            "ja": "入力ファイルパス",
+            "ko": "입력파일경로",
+            "es": "Ruta del archivo de entrada",
+            "fr": "Chemin du fichier d'entrée",
+            "de": "Eingabedateipfad",
+            "pt-BR": "Caminho do arquivo de entrada",
+            "ru": "Путь входного файла",
+            "ar": "مسار ملف الإدخال",
+            "hi": "इनपुट फ़ाइल पथ"
           },
           "desc": "Input file path"
         },
@@ -672,7 +1342,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否覆盖已有文件",
-            "en-US": "Overwrite existing"
+            "en-US": "Overwrite existing",
+            "zh-TW": "是否覆蓋已有檔案",
+            "ja": "既存のファイルを上書き",
+            "ko": "기존 파일 덮어쓰기",
+            "es": "Sobrescribir existente",
+            "fr": "Écraser l'existant",
+            "de": "Vorhandenes überschreiben",
+            "pt-BR": "Sobrescrever existente",
+            "ru": "Перезаписать существующий",
+            "ar": "الكتابة فوق الموجود",
+            "hi": "मौजूदा को ओवरराइट करें"
           },
           "optional": true,
           "default_value": "false"
@@ -682,7 +1362,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -691,14 +1381,34 @@
         "type": "ImportResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "storage.import",
       "descriptions": {
         "zh-CN": "从JSON文件导入数据到存储中",
-        "en-US": "Import data from JSON file into storage"
+        "en-US": "Import data from JSON file into storage",
+        "zh-TW": "從JSON檔案匯入數據到儲存中",
+        "ja": "からJSONファイルインポートするデータへストレージ中",
+        "ko": "JSON 파일에서 저장소로 데이터 가져오기",
+        "es": "Importar datos de archivo JSON al almacenamiento",
+        "fr": "Importer les données du fichier JSON dans le stockage",
+        "de": "Daten aus JSON-Datei in Speicher importieren",
+        "pt-BR": "Importar dados de arquivo JSON para o armazenamento",
+        "ru": "Импортировать данные из JSON-файла в хранилище",
+        "ar": "استيراد بيانات من ملف JSON إلى التخزين",
+        "hi": "JSON फ़ाइल से संग्रहण में डेटा आयात करें"
       },
       "group": "bulk",
       "description": "Import data from JSON file into storage"
@@ -712,7 +1422,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -721,7 +1441,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要递增的计数器键名",
-            "en-US": "Counter key name to increment"
+            "en-US": "Counter key name to increment",
+            "zh-TW": "要遞增的計數器鍵名",
+            "ja": "インクリメントするカウンターキー名",
+            "ko": "증가시킬 카운터 키 이름",
+            "es": "Nombre de clave del contador",
+            "fr": "Nom de clé du compteur",
+            "de": "Zählerschlüsselname",
+            "pt-BR": "Nome da chave do contador",
+            "ru": "Имя ключа счётчика",
+            "ar": "اسم مفتاح العداد",
+            "hi": "इंक्रीमेंट करने के लिए काउंटर कुंजी नाम"
           },
           "desc": "Counter key name to increment"
         },
@@ -730,7 +1460,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "递增步长值（默认1）",
-            "en-US": "Increment step value (default 1)"
+            "en-US": "Increment step value (default 1)",
+            "zh-TW": "遞增步長值（默認1）",
+            "ja": "インクリメントのステップ値（デフォルト1）",
+            "ko": "증가 단계 값 (기본 1)",
+            "es": "Valor de paso de incremento (predeterminado 1)",
+            "fr": "Valeur de pas d'incrémentation (défaut 1)",
+            "de": "Inkrementschrittwert (Standard 1)",
+            "pt-BR": "Valor do passo de incremento (padrão 1)",
+            "ru": "Значение шага инкремента (по умолчанию 1)",
+            "ar": "قيمة خطوة الزيادة (افتراضي 1)",
+            "hi": "वृद्धि चरण मान (डिफ़ॉल्ट 1)"
           },
           "optional": true,
           "default_value": "1",
@@ -741,7 +1481,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -750,14 +1500,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "storage.increment",
       "descriptions": {
         "zh-CN": "increment持久化存储",
-        "en-US": "Increment storage"
+        "en-US": "Increment storage",
+        "zh-TW": "increment持久化儲存",
+        "ja": "increment持久化ストレージ",
+        "ko": "저장소 값 증가",
+        "es": "Incrementar almacenamiento",
+        "fr": "Incrémenter le stockage",
+        "de": "Speicherwert inkrementieren",
+        "pt-BR": "Incrementar armazenamento",
+        "ru": "Увеличить значение в хранилище",
+        "ar": "زيادة قيمة التخزين",
+        "hi": "संग्रहण वृद्धि"
       },
       "group": "kv",
       "description": "Increment storage"
@@ -771,7 +1541,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -780,7 +1560,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "要批量删除的键名列表",
-            "en-US": "List of key names to batch delete"
+            "en-US": "List of key names to batch delete",
+            "zh-TW": "要批量刪除的鍵名列表",
+            "ja": "一括削除するキー名のリスト",
+            "ko": "일괄 삭제할 키 이름 목록",
+            "es": "Lista de claves para eliminar en lote",
+            "fr": "Liste des clés à supprimer en lot",
+            "de": "Liste der Schlüssel zum Batch-Löschen",
+            "pt-BR": "Lista de chaves para excluir em lote",
+            "ru": "Список ключей для пакетного удаления",
+            "ar": "قائمة أسماء المفاتيح للحذف الجماعي",
+            "hi": "बैच हटाने के लिए कुंजी नामों की सूची"
           },
           "desc": "List of key names to batch delete"
         },
@@ -789,7 +1579,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -798,14 +1598,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i64类型的结果对象",
-          "en-US": "Result object of type i64"
+          "en-US": "Result object of type i64",
+          "zh-TW": "i64類型的結果物件",
+          "ja": "i64タイプの結果オブジェクト",
+          "ko": "i64유형의결과객체",
+          "es": "Objeto resultado de tipo i64",
+          "fr": "Objet résultat de type i64",
+          "de": "Ergebnisobjekt vom Typ i64",
+          "pt-BR": "Objeto resultado do tipo i64",
+          "ru": "Объект результата типа i64",
+          "ar": "كائن نتيجة من نوع i64",
+          "hi": "i64 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i64"
       },
       "bridge_path": "storage.deleteMany",
       "descriptions": {
         "zh-CN": "删除many",
-        "en-US": "Delete many of storage"
+        "en-US": "Delete many of storage",
+        "zh-TW": "刪除many",
+        "ja": "削除するmany",
+        "ko": "삭제many",
+        "es": "Eliminar varios del almacenamiento",
+        "fr": "Supprimer plusieurs du stockage",
+        "de": "Mehrere aus Speicher löschen",
+        "pt-BR": "Excluir vários do armazenamento",
+        "ru": "Удалить несколько из хранилища",
+        "ar": "حذف عدة عناصر من التخزين",
+        "hi": "स्टोरेज से कई आइटम हटाएं"
       },
       "group": "kv",
       "description": "Delete many of storage"
@@ -819,7 +1639,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -828,7 +1658,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "键前缀过滤",
-            "en-US": "Key prefix filter"
+            "en-US": "Key prefix filter",
+            "zh-TW": "鍵前缀過濾",
+            "ja": "キープレフィックスフィルター",
+            "ko": "키 접두사 필터",
+            "es": "Filtro de prefijo de clave",
+            "fr": "Filtre de préfixe de clé",
+            "de": "Schlüsselpräfix-Filter",
+            "pt-BR": "Filtro de prefixo de chave",
+            "ru": "Фильтр по префиксу ключа",
+            "ar": "مرشح بادئة المفتاح",
+            "hi": "कुंजी उपसर्ग फ़िल्टर"
           },
           "optional": true
         },
@@ -837,7 +1677,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -846,14 +1696,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "storage.values",
       "descriptions": {
         "zh-CN": "values持久化存储",
-        "en-US": "Values storage"
+        "en-US": "Values storage",
+        "zh-TW": "values持久化儲存",
+        "ja": "values持久化ストレージ",
+        "ko": "저장소 값",
+        "es": "Valores del almacenamiento",
+        "fr": "Valeurs du stockage",
+        "de": "Speicherwerte",
+        "pt-BR": "Valores do armazenamento",
+        "ru": "Значения хранилища",
+        "ar": "قيم التخزين",
+        "hi": "संग्रहण मान"
       },
       "group": "bulk",
       "description": "Values storage"
@@ -867,7 +1737,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -876,7 +1756,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "键前缀过滤",
-            "en-US": "Key prefix filter"
+            "en-US": "Key prefix filter",
+            "zh-TW": "鍵前缀過濾",
+            "ja": "キープレフィックスフィルター",
+            "ko": "키 접두사 필터",
+            "es": "Filtro de prefijo de clave",
+            "fr": "Filtre de préfixe de clé",
+            "de": "Schlüsselpräfix-Filter",
+            "pt-BR": "Filtro de prefixo de chave",
+            "ru": "Фильтр по префиксу ключа",
+            "ar": "مرشح بادئة المفتاح",
+            "hi": "कुंजी उपसर्ग फ़िल्टर"
           },
           "optional": true
         },
@@ -885,7 +1775,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -894,14 +1794,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "storage.entries",
       "descriptions": {
         "zh-CN": "entries持久化存储",
-        "en-US": "Entries storage"
+        "en-US": "Entries storage",
+        "zh-TW": "entries持久化儲存",
+        "ja": "entries持久化ストレージ",
+        "ko": "저장소 항목",
+        "es": "Entradas del almacenamiento",
+        "fr": "Entrées du stockage",
+        "de": "Speichereinträge",
+        "pt-BR": "Entradas do armazenamento",
+        "ru": "Записи хранилища",
+        "ar": "إدخالات التخزين",
+        "hi": "स्टोरेज प्रविष्टियां"
       },
       "group": "bulk",
       "description": "Entries storage"
@@ -915,7 +1835,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -924,7 +1854,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要获取JSON数据的键名",
-            "en-US": "Key name to get JSON data from"
+            "en-US": "Key name to get JSON data from",
+            "zh-TW": "要取得JSON數據的鍵名",
+            "ja": "JSONデータを取得するキー名",
+            "ko": "JSON 데이터를 가져올 키 이름",
+            "es": "Nombre de clave para obtener datos JSON",
+            "fr": "Nom de la clé pour obtenir les données JSON",
+            "de": "Schlüsselname für JSON-Daten",
+            "pt-BR": "Nome da chave para obter dados JSON",
+            "ru": "Имя ключа для получения JSON-данных",
+            "ar": "اسم المفتاح للحصول على بيانات JSON",
+            "hi": "JSON डेटा प्राप्त करने के लिए कुंजी नाम"
           },
           "desc": "Key name to get JSON data from"
         },
@@ -933,7 +1873,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -942,14 +1892,34 @@
         "type": "any",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "storage.getJson",
       "descriptions": {
         "zh-CN": "获取json信息",
-        "en-US": "Get json info of storage"
+        "en-US": "Get json info of storage",
+        "zh-TW": "取得json資訊",
+        "ja": "取得するjson情報",
+        "ko": "가져오기json정보",
+        "es": "Obtener información JSON del almacenamiento",
+        "fr": "Obtenir les informations JSON du stockage",
+        "de": "JSON-Informationen des Speichers abrufen",
+        "pt-BR": "Obter informações JSON do armazenamento",
+        "ru": "Получить JSON-информацию хранилища",
+        "ar": "الحصول على معلومات JSON من التخزين",
+        "hi": "संग्रहण JSON जानकारी प्राप्त करें"
       },
       "group": "kv",
       "description": "Get json info of storage"
@@ -963,7 +1933,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -972,7 +1952,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要设置JSON数据的键名",
-            "en-US": "Key name to set JSON data to"
+            "en-US": "Key name to set JSON data to",
+            "zh-TW": "要設定JSON數據的鍵名",
+            "ja": "JSONデータを設定するキー名",
+            "ko": "JSON 데이터를 설정할 키 이름",
+            "es": "Nombre de clave para establecer datos JSON",
+            "fr": "Nom de la clé pour définir les données JSON",
+            "de": "Schlüsselname für JSON-Daten",
+            "pt-BR": "Nome da chave para definir dados JSON",
+            "ru": "Имя ключа для установки JSON-данных",
+            "ar": "اسم المفتاح لتعيين بيانات JSON",
+            "hi": "JSON डेटा सेट करने के लिए कुंजी नाम"
           },
           "desc": "Key name to set JSON data to"
         },
@@ -981,7 +1971,17 @@
           "type": "any",
           "descs": {
             "zh-CN": "要设置的值",
-            "en-US": "Value to set"
+            "en-US": "Value to set",
+            "zh-TW": "要設定的值",
+            "ja": "設定する値",
+            "ko": "설정할 값",
+            "es": "Valor a establecer",
+            "fr": "Valeur à définir",
+            "de": "Zu setzender Wert",
+            "pt-BR": "Valor a definir",
+            "ru": "Устанавливаемое значение",
+            "ar": "القيمة المراد تعيينها",
+            "hi": "सेट करने का मान"
           },
           "desc": "Value to set"
         },
@@ -990,7 +1990,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -999,14 +2009,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "storage.setJson",
       "descriptions": {
         "zh-CN": "设置json property",
-        "en-US": "Set json property of storage"
+        "en-US": "Set json property of storage",
+        "zh-TW": "設定json property",
+        "ja": "設定するjson property",
+        "ko": "설정json property",
+        "es": "Establecer propiedad JSON del almacenamiento",
+        "fr": "Définir la propriété JSON du stockage",
+        "de": "JSON-Eigenschaft des Speichers setzen",
+        "pt-BR": "Definir propriedade JSON do armazenamento",
+        "ru": "Установить JSON-свойство хранилища",
+        "ar": "تعيين خاصية JSON للتخزين",
+        "hi": "संग्रहण JSON प्रॉपर्टी सेट करें"
       },
       "group": "kv",
       "description": "Set json property of storage"
@@ -1020,7 +2050,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "namespace参数",
-            "en-US": "namespace parameter"
+            "en-US": "namespace parameter",
+            "zh-TW": "namespace參數",
+            "ja": "namespaceパラメータ",
+            "ko": "namespace매개변수",
+            "es": "Parámetro de namespace",
+            "fr": "Paramètre de namespace",
+            "de": "Namespace-Parameter",
+            "pt-BR": "Parâmetro de namespace",
+            "ru": "Параметр пространства имён",
+            "ar": "معامل مساحة الاسم",
+            "hi": "नेमस्पेस पैरामीटर"
           },
           "desc": "namespace parameter"
         },
@@ -1029,7 +2069,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "key_prefix参数",
-            "en-US": "key_prefix parameter"
+            "en-US": "key_prefix parameter",
+            "zh-TW": "key_prefix參數",
+            "ja": "key_prefixパラメータ",
+            "ko": "key_prefix매개변수",
+            "es": "Parámetro de key_prefix",
+            "fr": "Paramètre de key_prefix",
+            "de": "key_prefix-Parameter",
+            "pt-BR": "Parâmetro de key_prefix",
+            "ru": "Параметр key_prefix",
+            "ar": "معلمة key_prefix",
+            "hi": "key_prefix पैरामीटर"
           },
           "optional": true,
           "desc": "key_prefix parameter"
@@ -1039,7 +2089,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "异步回调标识符",
-            "en-US": "Async callback identifier"
+            "en-US": "Async callback identifier",
+            "zh-TW": "異步回調標識符",
+            "ja": "非同期コールバック識別子",
+            "ko": "비동기 콜백 식별자",
+            "es": "Identificador de callback asíncrono",
+            "fr": "Identifiant de rappel asynchrone",
+            "de": "Asynchroner Callback-Bezeichner",
+            "pt-BR": "Identificador de callback assíncrono",
+            "ru": "Идентификатор асинхронного обратного вызова",
+            "ar": "معرف رد الاتصال غير المتزامن",
+            "hi": "एसिंक कॉलबैक पहचानकर्ता"
           },
           "desc": "Async callback identifier"
         },
@@ -1048,7 +2108,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储目录",
-            "en-US": "Storage directory"
+            "en-US": "Storage directory",
+            "zh-TW": "儲存目錄",
+            "ja": "ストレージディレクトリ",
+            "ko": "저장소디렉토리",
+            "es": "Directorio de almacenamiento",
+            "fr": "Répertoire de stockage",
+            "de": "Speicherverzeichnis",
+            "pt-BR": "Diretório de armazenamento",
+            "ru": "Каталог хранения",
+            "ar": "دليل التخزين",
+            "hi": "स्टोरेज डायरेक्टरी"
           },
           "optional": true
         }
@@ -1057,14 +2127,34 @@
         "type": "StorageWatcher",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "storage.onChange",
       "descriptions": {
         "zh-CN": "监听存储变化事件",
-        "en-US": "Listen for change event on storage"
+        "en-US": "Listen for change event on storage",
+        "zh-TW": "監聽儲存變化事件",
+        "ja": "ストレージ変更イベントを監視",
+        "ko": "저장소 변경 이벤트 수신 대기",
+        "es": "Escuchar evento de cambio en almacenamiento",
+        "fr": "Écouter l'événement de changement du stockage",
+        "de": "Änderungsereignis des Speichers überwachen",
+        "pt-BR": "Ouvir evento de mudança do armazenamento",
+        "ru": "Слушать события изменения хранилища",
+        "ar": "الاستماع لحدث تغيير التخزين",
+        "hi": "संग्रहण परिवर्तन इवेंट सुनें"
       },
       "group": "watch",
       "description": "Listen for change event on storage"
@@ -1078,7 +2168,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "watcher_id参数",
-            "en-US": "watcher_id parameter"
+            "en-US": "watcher_id parameter",
+            "zh-TW": "watcher_id參數",
+            "ja": "watcher_idパラメータ",
+            "ko": "watcher_id매개변수",
+            "es": "Parámetro de ID del observador",
+            "fr": "Paramètre d'ID d'observateur",
+            "de": "Watcher-ID-Parameter",
+            "pt-BR": "Parâmetro de ID do observador",
+            "ru": "Параметр ID наблюдателя",
+            "ar": "معلمة معرف المراقب",
+            "hi": "वॉचर ID पैरामीटर"
           },
           "desc": "watcher_id parameter"
         }
@@ -1087,14 +2187,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "storage.offChange",
       "descriptions": {
         "zh-CN": "取消监听存储变化事件",
-        "en-US": "Stop listening for change event on storage"
+        "en-US": "Stop listening for change event on storage",
+        "zh-TW": "取消監聽儲存變化事件",
+        "ja": "ストレージ変更イベントの監視を停止",
+        "ko": "저장소 변경 이벤트 수신 대기 중지",
+        "es": "Dejar de escuchar evento de cambio en almacenamiento",
+        "fr": "Arrêter l'écoute de l'événement de changement du stockage",
+        "de": "Überwachung der Speicheränderung beenden",
+        "pt-BR": "Parar de ouvir evento de mudança do armazenamento",
+        "ru": "Прекратить слушать события изменения хранилища",
+        "ar": "التوقف عن الاستماع لحدث تغيير التخزين",
+        "hi": "संग्रहण परिवर्तन इवेंट सुनना बंद करें"
       },
       "group": "watch",
       "description": "Stop listening for change event on storage"
@@ -1102,14 +2222,34 @@
   ],
   "overviews": {
     "zh-CN": "提供本地键值存储能力，支持按命名空间隔离的数据存取、批量操作、TTL 过期、数据导入导出、存储空间统计等功能。适用于应用配置和轻量数据持久化。",
-    "en-US": "Local key-value storage with namespace isolation, batch operations, TTL expiry, import/export, and storage statistics. Suitable for app configuration and lightweight data persistence."
+    "en-US": "Local key-value storage with namespace isolation, batch operations, TTL expiry, import/export, and storage statistics. Suitable for app configuration and lightweight data persistence.",
+    "zh-TW": "提供本地鍵值存儲能力，支援按命名空间隔離的數據存取、批量操作、TTL 过期、數據导入导出、存儲空间統计等功能。适用于應用配置和輕量數據持久化。",
+    "ja": "ネームスペース分離・バッチ操作・TTL期限切れ・インポート/エクスポート・統計付きローカルキーバリューストレージ。アプリ設定や軽量データ永続化に最適。",
+    "ko": "네임스페이스 격리, 일괄 작업, TTL 만료, 가져오기/내보내기, 통계를 갖춘 로컬 키-값 스토리지. 앱 설정과 경량 데이터 영속화에 적합.",
+    "es": "Almacenamiento clave-valor local con aislamiento, lotes, TTL, importar/exportar y estadísticas. Para configuración y datos ligeros.",
+    "fr": "Stockage clé-valeur local avec isolation, lots, TTL, import/export et statistiques. Configuration et données légères.",
+    "de": "Lokaler Key-Value-Speicher mit Namespace-Isolierung, Batch, TTL, Import/Export und Statistiken. Für Konfiguration und leichte Datenpersistenz.",
+    "pt-BR": "Armazenamento chave-valor local com isolamento, lotes, TTL, importar/exportar e estatísticas. Para configuração e dados leves.",
+    "ru": "Локальное хранилище ключ-значение с пространствами имён, пакетными операциями, TTL, импортом/экспортом и статистикой. Для конфигурации и лёгкой персистенции.",
+    "ar": "تخزين مفتاح-قيمة محلي مع عزل ودفعات وTTL واستيراد/تصدير وإحصائيات. للتكوين والبيانات الخفيفة.",
+    "hi": "नेमस्पेस अलगाव, बैच, TTL, इम्पोर्ट/एक्सपोर्ट और स्टैटिस्टिक्स वाला लोकल की-वैल्यू स्टोरेज। ऐप कॉन्फ़िग और लाइट डेटा के लिए।"
   },
   "events": [
     {
       "name": "change",
       "descriptions": {
         "zh-CN": "存储值变更",
-        "en-US": "Storage value changed"
+        "en-US": "Storage value changed",
+        "zh-TW": "存儲值變更",
+        "ja": "ストレージ値が変更されました",
+        "ko": "스토리지 값이 변경됨",
+        "es": "Valor de almacenamiento cambiado",
+        "fr": "Valeur de stockage modifiée",
+        "de": "Speicherwert geändert",
+        "pt-BR": "Valor de armazenamento alterado",
+        "ru": "Значение хранилища изменено",
+        "ar": "تم تغيير قيمة التخزين",
+        "hi": "स्टोरेज मान बदल गया"
       },
       "payload": [
         {
@@ -1117,7 +2257,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "键名",
-            "en-US": "Key"
+            "en-US": "Key",
+            "zh-TW": "鍵名",
+            "ja": "キー",
+            "ko": "키",
+            "es": "Clave",
+            "fr": "Clé",
+            "de": "Schlüssel",
+            "pt-BR": "Chave",
+            "ru": "Ключ",
+            "ar": "المفتاح",
+            "hi": "कुंजी"
           }
         },
         {
@@ -1126,7 +2276,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "旧值",
-            "en-US": "Old value"
+            "en-US": "Old value",
+            "zh-TW": "舊值",
+            "ja": "古い値",
+            "ko": "이전 값",
+            "es": "Valor anterior",
+            "fr": "Ancienne valeur",
+            "de": "Alter Wert",
+            "pt-BR": "Valor anterior",
+            "ru": "Старое значение",
+            "ar": "القيمة القديمة",
+            "hi": "पुराना मान"
           }
         },
         {
@@ -1135,7 +2295,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "新值",
-            "en-US": "New value"
+            "en-US": "New value",
+            "zh-TW": "新值",
+            "ja": "新しい値",
+            "ko": "새 값",
+            "es": "Nuevo valor",
+            "fr": "Nouvelle valeur",
+            "de": "Neuer Wert",
+            "pt-BR": "Novo valor",
+            "ru": "Новое значение",
+            "ar": "القيمة الجديدة",
+            "hi": "नया मान"
           }
         }
       ]
@@ -1144,7 +2314,17 @@
       "name": "storage_change",
       "descriptions": {
         "zh-CN": "存储数据变化",
-        "en-US": "Storage data changed"
+        "en-US": "Storage data changed",
+        "zh-TW": "存儲數據變化",
+        "ja": "ストレージデータが変更されました",
+        "ko": "스토리지 데이터가 변경됨",
+        "es": "Datos de almacenamiento cambiados",
+        "fr": "Données de stockage modifiées",
+        "de": "Speicherdaten geändert",
+        "pt-BR": "Dados de armazenamento alterados",
+        "ru": "Данные хранилища изменены",
+        "ar": "تم تغيير بيانات التخزين",
+        "hi": "स्टोरेज डेटा बदल गया"
       },
       "payload": [
         {
@@ -1152,7 +2332,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "变化的键名",
-            "en-US": "Changed key name"
+            "en-US": "Changed key name",
+            "zh-TW": "變化的鍵名",
+            "ja": "変更されたキー名",
+            "ko": "변경된 키 이름",
+            "es": "Nombre de clave modificada",
+            "fr": "Nom de clé modifié",
+            "de": "Geänderter Schlüsselname",
+            "pt-BR": "Nome da chave alterada",
+            "ru": "Имя изменённого ключа",
+            "ar": "اسم المفتاح المتغير",
+            "hi": "बदला हुआ कुंजी नाम"
           }
         },
         {
@@ -1160,7 +2350,17 @@
           "type": "any",
           "descs": {
             "zh-CN": "旧值",
-            "en-US": "Old value"
+            "en-US": "Old value",
+            "zh-TW": "舊值",
+            "ja": "古い値",
+            "ko": "이전 값",
+            "es": "Valor anterior",
+            "fr": "Ancienne valeur",
+            "de": "Alter Wert",
+            "pt-BR": "Valor anterior",
+            "ru": "Старое значение",
+            "ar": "القيمة القديمة",
+            "hi": "पुराना मान"
           }
         },
         {
@@ -1168,7 +2368,17 @@
           "type": "any",
           "descs": {
             "zh-CN": "新值",
-            "en-US": "New value"
+            "en-US": "New value",
+            "zh-TW": "新值",
+            "ja": "新しい値",
+            "ko": "새 값",
+            "es": "Nuevo valor",
+            "fr": "Nouvelle valeur",
+            "de": "Neuer Wert",
+            "pt-BR": "Novo valor",
+            "ru": "Новое значение",
+            "ar": "القيمة الجديدة",
+            "hi": "नया मान"
           }
         }
       ]
@@ -1179,7 +2389,17 @@
       "name": "StorageEntry",
       "descriptions": {
         "zh-CN": "存储条目详情",
-        "en-US": "Storage entry details"
+        "en-US": "Storage entry details",
+        "zh-TW": "存儲条目詳情",
+        "ja": "ストレージエントリ詳細",
+        "ko": "스토리지 항목 세부 정보",
+        "es": "Detalles de la entrada de almacenamiento",
+        "fr": "Détails de l'entrée de stockage",
+        "de": "Speichereintragsdetails",
+        "pt-BR": "Detalhes da entrada de armazenamento",
+        "ru": "Подробности записи хранилища",
+        "ar": "تفاصيل إدخال التخزين",
+        "hi": "स्टोरेज प्रविष्टि विवरण"
       },
       "fields": [
         {
@@ -1187,7 +2407,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储键名",
-            "en-US": "Storage key"
+            "en-US": "Storage key",
+            "zh-TW": "存儲鍵名",
+            "ja": "ストレージキー",
+            "ko": "스토리지 키",
+            "es": "Clave de almacenamiento",
+            "fr": "Clé de stockage",
+            "de": "Speicherschlüssel",
+            "pt-BR": "Chave de armazenamento",
+            "ru": "Ключ хранилища",
+            "ar": "مفتاح التخزين",
+            "hi": "स्टोरेज कुंजी"
           }
         },
         {
@@ -1195,7 +2425,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "存储值（JSON字符串）",
-            "en-US": "Storage value (JSON string)"
+            "en-US": "Storage value (JSON string)",
+            "zh-TW": "存儲值（JSON字符串）",
+            "ja": "ストレージ値（JSON文字列）",
+            "ko": "스토리지 값(JSON 문자열)",
+            "es": "Valor de almacenamiento (cadena JSON)",
+            "fr": "Valeur de stockage (chaîne JSON)",
+            "de": "Speicherwert (JSON-String)",
+            "pt-BR": "Valor de armazenamento (string JSON)",
+            "ru": "Значение хранилища (строка JSON)",
+            "ar": "قيمة التخزين (سلسلة JSON)",
+            "hi": "स्टोरेज मान (JSON स्ट्रिंग)"
           }
         },
         {
@@ -1203,7 +2443,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "值的字节大小",
-            "en-US": "Value size in bytes"
+            "en-US": "Value size in bytes",
+            "zh-TW": "值的字節大小",
+            "ja": "値のサイズ（バイト）",
+            "ko": "값 크기(바이트)",
+            "es": "Tamaño del valor en bytes",
+            "fr": "Taille de la valeur en octets",
+            "de": "Wertgröße in Bytes",
+            "pt-BR": "Tamanho do valor em bytes",
+            "ru": "Размер значения в байтах",
+            "ar": "حجم القيمة بالبايت",
+            "hi": "मान आकार बाइट में"
           }
         },
         {
@@ -1211,7 +2461,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "最后更新时间",
-            "en-US": "Last update timestamp"
+            "en-US": "Last update timestamp",
+            "zh-TW": "最後更新時间",
+            "ja": "最終更新タイムスタンプ",
+            "ko": "마지막 업데이트 타임스탬프",
+            "es": "Marca de tiempo de última actualización",
+            "fr": "Horodatage de dernière mise à jour",
+            "de": "Letzter Aktualisierungszeitstempel",
+            "pt-BR": "Timestamp da última atualização",
+            "ru": "Временная метка последнего обновления",
+            "ar": "طابع وقت آخر تحديث",
+            "hi": "अंतिम अपडेट टाइमस्टैम्प"
           }
         }
       ]
@@ -1220,7 +2480,17 @@
       "name": "ExportResult",
       "descriptions": {
         "zh-CN": "存储导出结果",
-        "en-US": "Storage export result"
+        "en-US": "Storage export result",
+        "zh-TW": "存儲导出结果",
+        "ja": "ストレージエクスポート結果",
+        "ko": "스토리지 내보내기 결과",
+        "es": "Resultado de exportación de almacenamiento",
+        "fr": "Résultat d'export de stockage",
+        "de": "Speicherexportergebnis",
+        "pt-BR": "Resultado de exportação de armazenamento",
+        "ru": "Результат экспорта хранилища",
+        "ar": "نتيجة تصدير التخزين",
+        "hi": "स्टोरेज निर्यात परिणाम"
       },
       "fields": [
         {
@@ -1228,7 +2498,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否成功",
-            "en-US": "Whether succeeded"
+            "en-US": "Whether succeeded",
+            "zh-TW": "是否成功",
+            "ja": "成功したかどうか",
+            "ko": "성공 여부",
+            "es": "Si tuvo éxito",
+            "fr": "Si réussi",
+            "de": "Ob erfolgreich",
+            "pt-BR": "Se teve sucesso",
+            "ru": "Успешно или нет",
+            "ar": "ما إذا نجح",
+            "hi": "सफल हुआ या नहीं"
           }
         },
         {
@@ -1236,7 +2516,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "导出文件路径",
-            "en-US": "Export file path"
+            "en-US": "Export file path",
+            "zh-TW": "导出檔案路徑",
+            "ja": "エクスポートファイルパス",
+            "ko": "내보내기 파일 경로",
+            "es": "Ruta del archivo exportado",
+            "fr": "Chemin du fichier d'export",
+            "de": "Exportdateipfad",
+            "pt-BR": "Caminho do arquivo de exportação",
+            "ru": "Путь к экспортируемому файлу",
+            "ar": "مسار ملف التصدير",
+            "hi": "निर्यात फ़ाइल पथ"
           }
         },
         {
@@ -1244,7 +2534,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "导出的键值对数",
-            "en-US": "Exported key-value pairs"
+            "en-US": "Exported key-value pairs",
+            "zh-TW": "导出的鍵值對数",
+            "ja": "エクスポートされたキーと値のペア",
+            "ko": "내보낸 키-값 쌍",
+            "es": "Pares clave-valor exportados",
+            "fr": "Paires clé-valeur exportées",
+            "de": "Exportierte Schlüssel-Wert-Paare",
+            "pt-BR": "Pares chave-valor exportados",
+            "ru": "Экспортированные пары ключ-значение",
+            "ar": "أزواج المفاتيح والقيم المصدّرة",
+            "hi": "निर्यातित कुंजी-मान जोड़ियाँ"
           }
         }
       ]
@@ -1253,7 +2553,17 @@
       "name": "ImportResult",
       "descriptions": {
         "zh-CN": "存储导入结果",
-        "en-US": "Storage import result"
+        "en-US": "Storage import result",
+        "zh-TW": "存儲导入结果",
+        "ja": "ストレージインポート結果",
+        "ko": "스토리지 가져오기 결과",
+        "es": "Resultado de importación de almacenamiento",
+        "fr": "Résultat d'import de stockage",
+        "de": "Speicherimportergebnis",
+        "pt-BR": "Resultado de importação de armazenamento",
+        "ru": "Результат импорта хранилища",
+        "ar": "نتيجة استيراد التخزين",
+        "hi": "स्टोरेज आयात परिणाम"
       },
       "fields": [
         {
@@ -1261,7 +2571,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否成功",
-            "en-US": "Whether succeeded"
+            "en-US": "Whether succeeded",
+            "zh-TW": "是否成功",
+            "ja": "成功したかどうか",
+            "ko": "성공 여부",
+            "es": "Si tuvo éxito",
+            "fr": "Si réussi",
+            "de": "Ob erfolgreich",
+            "pt-BR": "Se teve sucesso",
+            "ru": "Успешно или нет",
+            "ar": "ما إذا نجح",
+            "hi": "सफल हुआ या नहीं"
           }
         },
         {
@@ -1269,7 +2589,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "导入的键值对数",
-            "en-US": "Imported key-value pairs"
+            "en-US": "Imported key-value pairs",
+            "zh-TW": "导入的鍵值對数",
+            "ja": "インポートされたキーと値のペア",
+            "ko": "가져온 키-값 쌍",
+            "es": "Pares clave-valor importados",
+            "fr": "Paires clé-valeur importées",
+            "de": "Importierte Schlüssel-Wert-Paare",
+            "pt-BR": "Pares chave-valor importados",
+            "ru": "Импортированные пары ключ-значение",
+            "ar": "أزواج المفاتيح والقيم المستوردة",
+            "hi": "आयातित कुंजी-मान जोड़ियाँ"
           }
         }
       ]
@@ -1278,7 +2608,17 @@
       "name": "StorageWatcher",
       "descriptions": {
         "zh-CN": "存储变化监听器",
-        "en-US": "Storage change watcher"
+        "en-US": "Storage change watcher",
+        "zh-TW": "存儲變化監听器",
+        "ja": "ストレージ変更監視",
+        "ko": "스토리지 변경 감시자",
+        "es": "Monitor de cambio de almacenamiento",
+        "fr": "Surveillant de changement de stockage",
+        "de": "Speicheränderungsüberwachung",
+        "pt-BR": "Monitor de mudança de armazenamento",
+        "ru": "Наблюдатель изменений хранилища",
+        "ar": "مراقب تغيير التخزين",
+        "hi": "स्टोरेज परिवर्तन वॉचर"
       },
       "fields": [
         {
@@ -1286,7 +2626,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "监听器ID",
-            "en-US": "Watcher ID"
+            "en-US": "Watcher ID",
+            "zh-TW": "監听器ID",
+            "ja": "ウォッチャーID",
+            "ko": "감시자 ID",
+            "es": "ID del vigilante",
+            "fr": "ID du surveillant",
+            "de": "Wächter-ID",
+            "pt-BR": "ID do monitor",
+            "ru": "ID наблюдателя",
+            "ar": "معرّف المراقب",
+            "hi": "वॉचर ID"
           }
         }
       ]

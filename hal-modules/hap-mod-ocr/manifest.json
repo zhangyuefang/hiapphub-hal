@@ -24,7 +24,17 @@
   },
   "overviews": {
     "zh-CN": "提供本地OCR文字识别能力，支持图片文字提取、区域识别、多语言识别、表格识别等功能。调用系统原生OCR引擎（macOS Vision/Windows OCR/Linux Tesseract）。",
-    "en-US": "Local OCR text recognition using native engines (macOS Vision/Windows OCR/Linux Tesseract). Supports image text extraction, region recognition, multi-language, and table recognition."
+    "en-US": "Local OCR text recognition using native engines (macOS Vision/Windows OCR/Linux Tesseract). Supports image text extraction, region recognition, multi-language, and table recognition.",
+    "zh-TW": "提供本地OCR文字識別能力，支援图片文字提取、區域識別、多語言識別、表格識別等功能。呼叫系統原生OCR引擎（macOS Vision/Windows OCR/Linux Tesseract）。",
+    "ja": "ネイティブエンジン(macOS Vision/Windows OCR/Linux Tesseract)によるローカルOCR。画像テキスト抽出・領域認識・多言語・表認識。",
+    "ko": "네이티브 엔진(macOS Vision/Windows OCR/Linux Tesseract)을 사용한 로컬 OCR. 이미지 텍스트 추출, 영역, 다국어, 표 인식.",
+    "es": "OCR local con motores nativos (macOS Vision/Windows OCR/Linux Tesseract). Extracción de texto, región, multiidioma y tablas.",
+    "fr": "OCR local avec moteurs natifs (macOS Vision/Windows OCR/Linux Tesseract). Extraction de texte, région, multilingue et tableaux.",
+    "de": "Lokale OCR mit nativen Engines (macOS Vision/Windows OCR/Linux Tesseract). Textextraktion, Region, Mehrsprachig und Tabellen.",
+    "pt-BR": "OCR local com engines nativos (macOS Vision/Windows OCR/Linux Tesseract). Extração de texto, região, multilíngue e tabelas.",
+    "ru": "Локальное OCR с нативными движками (macOS Vision/Windows OCR/Linux Tesseract). Извлечение текста, области, многоязычность и таблицы.",
+    "ar": "OCR محلي بمحركات أصلية (macOS Vision/Windows OCR/Linux Tesseract). استخراج نص ومنطقة ومتعدد اللغات وجداول.",
+    "hi": "नेटिव इंजन (macOS Vision/Windows OCR/Linux Tesseract) से लोकल OCR। टेक्स्ट, रीजन, मल्टी-लैंग्वेज और टेबल।"
   },
   "permission": "ocr",
   "functions": [
@@ -33,7 +43,17 @@
       "symbol": "hap_ocr_recognize",
       "descriptions": {
         "zh-CN": "对指定图片文件执行光学字符识别（OCR），提取文字内容",
-        "en-US": "Perform OCR on image file to extract text content"
+        "en-US": "Perform OCR on image file to extract text content",
+        "zh-TW": "對指定圖片檔案執行光学字元識別（OCR），提取文字內容",
+        "ja": "画像ファイルにOCRを実行してテキスト内容を抽出",
+        "ko": "이미지 파일에서 OCR로 텍스트 내용 추출",
+        "es": "Realizar OCR en imagen para extraer texto",
+        "fr": "Effectuer l'OCR sur l'image pour extraire le texte",
+        "de": "OCR auf Bilddatei ausführen um Text zu extrahieren",
+        "pt-BR": "Realizar OCR na imagem para extrair texto",
+        "ru": "Выполнить OCR изображения для извлечения текста",
+        "ar": "تنفيذ OCR على ملف الصورة لاستخراج النص",
+        "hi": "टेक्स्ट निकालने के लिए इमेज फ़ाइल पर OCR करें"
       },
       "params": [
         {
@@ -41,7 +61,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图片路径",
-            "en-US": "Image path"
+            "en-US": "Image path",
+            "zh-TW": "圖片路徑",
+            "ja": "画像パス",
+            "ko": "이미지경로",
+            "es": "Ruta de la imagen",
+            "fr": "Chemin de l'image",
+            "de": "Bildpfad",
+            "pt-BR": "Caminho da imagem",
+            "ru": "Путь к изображению",
+            "ar": "مسار الصورة",
+            "hi": "इमेज पथ"
           }
         },
         {
@@ -50,7 +80,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "语言列表(如[\"zh-CN\",\"en\"])",
-            "en-US": "Languages (e.g. [\"zh-CN\",\"en\"])"
+            "en-US": "Languages (e.g. [\"zh-CN\",\"en\"])",
+            "zh-TW": "語言列表(如[\"zh-CN\",\"en\"])",
+            "ja": "语言リスト(如[\"zh-CN\",\"en\"])",
+            "ko": "언어 (예: [\"zh-CN\",\"en\"])",
+            "es": "Idiomas (ej. [\"zh-CN\",\"en\"])",
+            "fr": "Langues (ex. [\"zh-CN\",\"en\"])",
+            "de": "Sprachen (z.B. [\"zh-CN\",\"en\"])",
+            "pt-BR": "Idiomas (ex. [\"zh-CN\",\"en\"])",
+            "ru": "Языки (напр. [\"zh-CN\",\"en\"])",
+            "ar": "اللغات (مثل [\"zh-CN\",\"en\"])",
+            "hi": "भाषाएं (जैसे [\"zh-CN\",\"en\"])"
           }
         }
       ],
@@ -58,7 +98,17 @@
         "type": "OcrResult",
         "descs": {
           "zh-CN": "识别结果",
-          "en-US": "Recognition result"
+          "en-US": "Recognition result",
+          "zh-TW": "識別結果",
+          "ja": "認識結果",
+          "ko": "인식 결과",
+          "es": "Resultado de reconocimiento",
+          "fr": "Résultat de reconnaissance",
+          "de": "Erkennungsergebnis",
+          "pt-BR": "Resultado de reconhecimento",
+          "ru": "Результат распознавания",
+          "ar": "نتيجة التعرف",
+          "hi": "पहचान परिणाम"
         }
       },
       "bridge_path": "ocr.recognize",
@@ -75,7 +125,17 @@
       "symbol": "hap_ocr_recognize_region",
       "descriptions": {
         "zh-CN": "对图片中指定矩形区域执行文字识别",
-        "en-US": "Perform OCR on specified rectangular region of an image"
+        "en-US": "Perform OCR on specified rectangular region of an image",
+        "zh-TW": "對圖片中指定矩形區域執行文字識別",
+        "ja": "画像の指定矩形領域でOCRを実行",
+        "ko": "이미지의 지정 사각 영역에서 OCR 수행",
+        "es": "Realizar OCR en región rectangular de imagen",
+        "fr": "Effectuer l'OCR sur la région rectangulaire spécifiée",
+        "de": "OCR auf angegebenem Bildbereich ausführen",
+        "pt-BR": "Realizar OCR em região retangular da imagem",
+        "ru": "Выполнить OCR на указанной прямоугольной области",
+        "ar": "تنفيذ OCR على منطقة مستطيلة محددة من الصورة",
+        "hi": "इमेज के निर्दिष्ट आयताकार क्षेत्र पर OCR करें"
       },
       "params": [
         {
@@ -83,7 +143,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图片路径",
-            "en-US": "Image path"
+            "en-US": "Image path",
+            "zh-TW": "圖片路徑",
+            "ja": "画像パス",
+            "ko": "이미지경로",
+            "es": "Ruta de la imagen",
+            "fr": "Chemin de l'image",
+            "de": "Bildpfad",
+            "pt-BR": "Caminho da imagem",
+            "ru": "Путь к изображению",
+            "ar": "مسار الصورة",
+            "hi": "इमेज पथ"
           }
         },
         {
@@ -91,7 +161,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "区域左上角X",
-            "en-US": "Region top-left X"
+            "en-US": "Region top-left X",
+            "zh-TW": "區域左上角X",
+            "ja": "領域の左上X座標",
+            "ko": "영역 좌상단 X",
+            "es": "X superior izquierdo de la región",
+            "fr": "X du coin supérieur gauche",
+            "de": "Region oben-links X",
+            "pt-BR": "X superior esquerdo da região",
+            "ru": "Верхний левый X области",
+            "ar": "X أعلى اليسار للمنطقة",
+            "hi": "क्षेत्र ऊपरी-बाएँ X"
           }
         },
         {
@@ -99,7 +179,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "区域左上角Y",
-            "en-US": "Region top-left Y"
+            "en-US": "Region top-left Y",
+            "zh-TW": "區域左上角Y",
+            "ja": "領域の左上Y座標",
+            "ko": "영역 좌상단 Y",
+            "es": "Y superior izquierdo de la región",
+            "fr": "Y du coin supérieur gauche",
+            "de": "Region oben-links Y",
+            "pt-BR": "Y superior esquerdo da região",
+            "ru": "Верхний левый Y области",
+            "ar": "Y أعلى اليسار للمنطقة",
+            "hi": "क्षेत्र ऊपरी-बाएँ Y"
           }
         },
         {
@@ -107,7 +197,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "区域宽度",
-            "en-US": "Region width"
+            "en-US": "Region width",
+            "zh-TW": "區域寬度",
+            "ja": "領域の幅",
+            "ko": "영역 너비",
+            "es": "Ancho de la región",
+            "fr": "Largeur de la région",
+            "de": "Bereichsbreite",
+            "pt-BR": "Largura da região",
+            "ru": "Ширина области",
+            "ar": "عرض المنطقة",
+            "hi": "क्षेत्र चौड़ाई"
           }
         },
         {
@@ -115,7 +215,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "区域高度",
-            "en-US": "Region height"
+            "en-US": "Region height",
+            "zh-TW": "區域高度",
+            "ja": "領域の高さ",
+            "ko": "영역 높이",
+            "es": "Alto de la región",
+            "fr": "Hauteur de la région",
+            "de": "Bereichshöhe",
+            "pt-BR": "Altura da região",
+            "ru": "Высота области",
+            "ar": "ارتفاع المنطقة",
+            "hi": "क्षेत्र ऊंचाई"
           }
         },
         {
@@ -124,7 +234,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "语言列表",
-            "en-US": "Languages"
+            "en-US": "Languages",
+            "zh-TW": "語言列表",
+            "ja": "语言リスト",
+            "ko": "언어",
+            "es": "Idiomas",
+            "fr": "Langues",
+            "de": "Sprachen",
+            "pt-BR": "Idiomas",
+            "ru": "Языки",
+            "ar": "اللغات",
+            "hi": "भाषाएं"
           }
         }
       ],
@@ -132,7 +252,17 @@
         "type": "OcrResult",
         "descs": {
           "zh-CN": "识别结果",
-          "en-US": "Recognition result"
+          "en-US": "Recognition result",
+          "zh-TW": "識別結果",
+          "ja": "認識結果",
+          "ko": "인식 결과",
+          "es": "Resultado de reconocimiento",
+          "fr": "Résultat de reconnaissance",
+          "de": "Erkennungsergebnis",
+          "pt-BR": "Resultado de reconhecimento",
+          "ru": "Результат распознавания",
+          "ar": "نتيجة التعرف",
+          "hi": "पहचान परिणाम"
         }
       },
       "bridge_path": "ocr.recognizeRegion",
@@ -149,7 +279,17 @@
       "symbol": "hap_ocr_recognize_base64",
       "descriptions": {
         "zh-CN": "对 Base64 编码的图片数据执行文字识别",
-        "en-US": "Perform OCR on Base64 encoded image data"
+        "en-US": "Perform OCR on Base64 encoded image data",
+        "zh-TW": "對 Base64 編碼的圖片數據執行文字識別",
+        "ja": "Base64エンコード画像データでOCRを実行",
+        "ko": "Base64 인코딩된 이미지 데이터에서 OCR 수행",
+        "es": "Realizar OCR en datos de imagen codificados en Base64",
+        "fr": "Effectuer l'OCR sur les données image en Base64",
+        "de": "OCR auf Base64-kodierten Bilddaten ausführen",
+        "pt-BR": "Realizar OCR em dados de imagem Base64",
+        "ru": "Выполнить OCR на изображении в формате Base64",
+        "ar": "تنفيذ OCR على بيانات صورة Base64",
+        "hi": "Base64 एन्कोडेड इमेज डेटा पर OCR करें"
       },
       "params": [
         {
@@ -157,7 +297,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64图片数据",
-            "en-US": "Base64 image data"
+            "en-US": "Base64 image data",
+            "zh-TW": "Base64圖片數據",
+            "ja": "Base64画像データ",
+            "ko": "Base64이미지데이터",
+            "es": "Datos de imagen Base64",
+            "fr": "Données d'image Base64",
+            "de": "Base64-Bilddaten",
+            "pt-BR": "Dados de imagem Base64",
+            "ru": "Данные изображения Base64",
+            "ar": "بيانات صورة Base64",
+            "hi": "Base64 इमेज डेटा"
           }
         },
         {
@@ -166,7 +316,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "语言列表",
-            "en-US": "Languages"
+            "en-US": "Languages",
+            "zh-TW": "語言列表",
+            "ja": "语言リスト",
+            "ko": "언어",
+            "es": "Idiomas",
+            "fr": "Langues",
+            "de": "Sprachen",
+            "pt-BR": "Idiomas",
+            "ru": "Языки",
+            "ar": "اللغات",
+            "hi": "भाषाएं"
           }
         }
       ],
@@ -174,7 +334,17 @@
         "type": "OcrResult",
         "descs": {
           "zh-CN": "识别结果",
-          "en-US": "Recognition result"
+          "en-US": "Recognition result",
+          "zh-TW": "識別結果",
+          "ja": "認識結果",
+          "ko": "인식 결과",
+          "es": "Resultado de reconocimiento",
+          "fr": "Résultat de reconnaissance",
+          "de": "Erkennungsergebnis",
+          "pt-BR": "Resultado de reconhecimento",
+          "ru": "Результат распознавания",
+          "ar": "نتيجة التعرف",
+          "hi": "पहचान परिणाम"
         }
       },
       "bridge_path": "ocr.recognizeBase64",
@@ -191,14 +361,34 @@
       "symbol": "hap_ocr_get_supported_languages",
       "descriptions": {
         "zh-CN": "获取当前系统 OCR 引擎支持的语言列表",
-        "en-US": "Get list of languages supported by system OCR engine"
+        "en-US": "Get list of languages supported by system OCR engine",
+        "zh-TW": "取得當前系統 OCR 引擎支持的語言列表",
+        "ja": "取得する現でシステム OCR 引擎サポートの语言リスト",
+        "ko": "시스템 OCR 엔진이 지원하는 언어 목록 가져오기",
+        "es": "Obtener idiomas soportados por el motor OCR del sistema",
+        "fr": "Obtenir les langues supportées par le moteur OCR",
+        "de": "Vom System-OCR unterstützte Sprachen abrufen",
+        "pt-BR": "Obter idiomas suportados pelo motor OCR do sistema",
+        "ru": "Получить список языков системного OCR",
+        "ar": "الحصول على قائمة اللغات المدعومة من محرك OCR",
+        "hi": "सिस्टम OCR इंजन द्वारा समर्थित भाषाओं की सूची प्राप्त करें"
       },
       "params": [],
       "returns": {
         "type": "array",
         "descs": {
           "zh-CN": "语言列表",
-          "en-US": "Language list"
+          "en-US": "Language list",
+          "zh-TW": "語言列表",
+          "ja": "语言リスト",
+          "ko": "언어 목록",
+          "es": "Lista de idiomas",
+          "fr": "Liste des langues",
+          "de": "Sprachliste",
+          "pt-BR": "Lista de idiomas",
+          "ru": "Список языков",
+          "ar": "قائمة اللغات",
+          "hi": "भाषा सूची"
         }
       },
       "bridge_path": "ocr.getSupportedLanguages",
@@ -210,7 +400,17 @@
       "symbol": "hap_ocr_recognize_screen_region",
       "descriptions": {
         "zh-CN": "截取屏幕指定区域并执行文字识别",
-        "en-US": "Capture screen region and perform OCR"
+        "en-US": "Capture screen region and perform OCR",
+        "zh-TW": "截取屏幕指定區域並執行文字識別",
+        "ja": "画面領域をキャプチャしてOCRを実行",
+        "ko": "화면 영역 캡처 후 OCR 수행",
+        "es": "Capturar región y realizar OCR",
+        "fr": "Capturer une région et effectuer l'OCR",
+        "de": "Bildschirmbereich erfassen und OCR durchführen",
+        "pt-BR": "Capturar região e realizar OCR",
+        "ru": "Захват области экрана и OCR",
+        "ar": "التقاط منطقة الشاشة وتنفيذ OCR",
+        "hi": "स्क्रीन क्षेत्र कैप्चर और OCR करें"
       },
       "params": [
         {
@@ -218,7 +418,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "屏幕区域X",
-            "en-US": "Screen region X"
+            "en-US": "Screen region X",
+            "zh-TW": "屏幕區域X",
+            "ja": "画面領域X",
+            "ko": "화면 영역 X",
+            "es": "Región de pantalla X",
+            "fr": "Région d'écran X",
+            "de": "Bildschirmbereich X",
+            "pt-BR": "Região da tela X",
+            "ru": "Область экрана X",
+            "ar": "منطقة الشاشة X",
+            "hi": "स्क्रीन क्षेत्र X"
           }
         },
         {
@@ -226,7 +436,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "屏幕区域Y",
-            "en-US": "Screen region Y"
+            "en-US": "Screen region Y",
+            "zh-TW": "屏幕區域Y",
+            "ja": "画面領域Y",
+            "ko": "화면 영역 Y",
+            "es": "Región de pantalla Y",
+            "fr": "Région d'écran Y",
+            "de": "Bildschirmbereich Y",
+            "pt-BR": "Região da tela Y",
+            "ru": "Область экрана Y",
+            "ar": "منطقة الشاشة Y",
+            "hi": "स्क्रीन क्षेत्र Y"
           }
         },
         {
@@ -234,7 +454,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度（像素）",
-            "en-US": "Width in pixels"
+            "en-US": "Width in pixels",
+            "zh-TW": "寬度（像素）",
+            "ja": "幅（ピクセル）",
+            "ko": "너비 (픽셀)",
+            "es": "Ancho en píxeles",
+            "fr": "Largeur en pixels",
+            "de": "Breite in Pixel",
+            "pt-BR": "Largura em pixels",
+            "ru": "Ширина в пикселях",
+            "ar": "العرض بالبكسل",
+            "hi": "चौड़ाई पिक्सेल में"
           },
           "desc": "Width in pixels"
         },
@@ -243,7 +473,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度（像素）",
-            "en-US": "Height in pixels"
+            "en-US": "Height in pixels",
+            "zh-TW": "高度（像素）",
+            "ja": "高さ（ピクセル）",
+            "ko": "높이 (픽셀)",
+            "es": "Alto en píxeles",
+            "fr": "Hauteur en pixels",
+            "de": "Höhe in Pixel",
+            "pt-BR": "Altura em pixels",
+            "ru": "Высота в пикселях",
+            "ar": "الارتفاع بالبكسل",
+            "hi": "ऊँचाई पिक्सेल में"
           },
           "desc": "Height in pixels"
         },
@@ -253,7 +493,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "语言列表",
-            "en-US": "Languages"
+            "en-US": "Languages",
+            "zh-TW": "語言列表",
+            "ja": "语言リスト",
+            "ko": "언어",
+            "es": "Idiomas",
+            "fr": "Langues",
+            "de": "Sprachen",
+            "pt-BR": "Idiomas",
+            "ru": "Языки",
+            "ar": "اللغات",
+            "hi": "भाषाएं"
           }
         }
       ],
@@ -261,7 +511,17 @@
         "type": "OcrResult",
         "descs": {
           "zh-CN": "识别结果",
-          "en-US": "Recognition result"
+          "en-US": "Recognition result",
+          "zh-TW": "識別結果",
+          "ja": "認識結果",
+          "ko": "인식 결과",
+          "es": "Resultado de reconocimiento",
+          "fr": "Résultat de reconnaissance",
+          "de": "Erkennungsergebnis",
+          "pt-BR": "Resultado de reconhecimento",
+          "ru": "Результат распознавания",
+          "ar": "نتيجة التعرف",
+          "hi": "पहचान परिणाम"
         }
       },
       "bridge_path": "ocr.recognizeScreenRegion",
@@ -278,7 +538,17 @@
       "name": "OcrResult",
       "descriptions": {
         "zh-CN": "OCR识别结果",
-        "en-US": "OCR result"
+        "en-US": "OCR result",
+        "zh-TW": "OCR識別结果",
+        "ja": "OCR結果",
+        "ko": "OCR 결과",
+        "es": "Resultado OCR",
+        "fr": "Résultat OCR",
+        "de": "OCR-Ergebnis",
+        "pt-BR": "Resultado OCR",
+        "ru": "Результат OCR",
+        "ar": "نتيجة OCR",
+        "hi": "OCR परिणाम"
       },
       "fields": [
         {
@@ -286,7 +556,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "识别文本",
-            "en-US": "Recognized text"
+            "en-US": "Recognized text",
+            "zh-TW": "識別文本",
+            "ja": "認識されたテキスト",
+            "ko": "인식된 텍스트",
+            "es": "Texto reconocido",
+            "fr": "Texte reconnu",
+            "de": "Erkannter Text",
+            "pt-BR": "Texto reconhecido",
+            "ru": "Распознанный текст",
+            "ar": "النص المُتعرَّف عليه",
+            "hi": "पहचाना गया टेक्स्ट"
           }
         },
         {
@@ -294,7 +574,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "置信度(0-1)",
-            "en-US": "Confidence(0-1)"
+            "en-US": "Confidence(0-1)",
+            "zh-TW": "置信度(0-1)",
+            "ja": "信頼度(0-1)",
+            "ko": "신뢰도(0-1)",
+            "es": "Confianza(0-1)",
+            "fr": "Confiance(0-1)",
+            "de": "Konfidenz(0-1)",
+            "pt-BR": "Confiança(0-1)",
+            "ru": "Достоверность(0-1)",
+            "ar": "الثقة(0-1)",
+            "hi": "विश्वसनीयता(0-1)"
           }
         },
         {
@@ -303,7 +593,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "文字区域列表",
-            "en-US": "Text regions"
+            "en-US": "Text regions",
+            "zh-TW": "文字區域列表",
+            "ja": "テキスト領域",
+            "ko": "텍스트 영역",
+            "es": "Regiones de texto",
+            "fr": "Régions de texte",
+            "de": "Textbereiche",
+            "pt-BR": "Regiões de texto",
+            "ru": "Текстовые области",
+            "ar": "مناطق النص",
+            "hi": "टेक्स्ट क्षेत्र"
           }
         }
       ]

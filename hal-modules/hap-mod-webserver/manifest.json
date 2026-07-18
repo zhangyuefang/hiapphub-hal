@@ -35,7 +35,17 @@
           "default_value": "3000",
           "descs": {
             "zh-CN": "监听端口号",
-            "en-US": "Port to listen on"
+            "en-US": "Port to listen on",
+            "zh-TW": "監聽埠號",
+            "ja": "リッスンするポート号",
+            "ko": "수신 대기 포트",
+            "es": "Puerto a escuchar",
+            "fr": "Port d'écoute",
+            "de": "Port zum Lauschen",
+            "pt-BR": "Porta para ouvir",
+            "ru": "Порт для прослушивания",
+            "ar": "المنفذ للاستماع",
+            "hi": "सुनने के लिए पोर्ट"
           }
         },
         {
@@ -45,7 +55,17 @@
           "default_value": "127.0.0.1",
           "descs": {
             "zh-CN": "绑定主机地址",
-            "en-US": "Host to bind"
+            "en-US": "Host to bind",
+            "zh-TW": "綁定主機地址",
+            "ja": "バインドするホスト",
+            "ko": "바인드할 호스트",
+            "es": "Host a enlazar",
+            "fr": "Hôte à lier",
+            "de": "Host zum Binden",
+            "pt-BR": "Host para vincular",
+            "ru": "Хост для привязки",
+            "ar": "المضيف للربط",
+            "hi": "बाइंड करने के लिए होस्ट"
           }
         },
         {
@@ -55,7 +75,17 @@
           "default_value": "false",
           "descs": {
             "zh-CN": "是否启用CORS跨域",
-            "en-US": "Enable CORS"
+            "en-US": "Enable CORS",
+            "zh-TW": "是否啟用CORS跨域",
+            "ja": "CORSを有効化",
+            "ko": "CORS 활성화",
+            "es": "Habilitar CORS",
+            "fr": "Activer CORS",
+            "de": "CORS aktivieren",
+            "pt-BR": "Habilitar CORS",
+            "ru": "Включить CORS",
+            "ar": "تفعيل CORS",
+            "hi": "CORS सक्षम"
           }
         }
       ],
@@ -63,13 +93,33 @@
         "type": "ServerHandle",
         "descs": {
           "zh-CN": "服务器句柄",
-          "en-US": "Server handle"
+          "en-US": "Server handle",
+          "zh-TW": "服務器句柄",
+          "ja": "サーバー句柄",
+          "ko": "서버 핸들",
+          "es": "Manejador del servidor",
+          "fr": "Handle du serveur",
+          "de": "Server-Handle",
+          "pt-BR": "Handle do servidor",
+          "ru": "Дескриптор сервера",
+          "ar": "معرف الخادم",
+          "hi": "सर्वर हैंडल"
         }
       },
       "bridge_path": "webserver.listen",
       "descriptions": {
         "zh-CN": "启动 HTTP 服务器并开始监听请求",
-        "en-US": "Start HTTP server and begin listening"
+        "en-US": "Start HTTP server and begin listening",
+        "zh-TW": "啟動 HTTP 服務器並開始監聽請求",
+        "ja": "HTTPサーバーを起動して待ち受け開始",
+        "ko": "HTTP 서버 시작 및 수신 대기 시작",
+        "es": "Iniciar servidor HTTP y comenzar a escuchar",
+        "fr": "Démarrer le serveur HTTP et commencer à écouter",
+        "de": "HTTP-Server starten und Lauschen beginnen",
+        "pt-BR": "Iniciar servidor HTTP e começar a ouvir",
+        "ru": "Запустить HTTP-сервер и начать прослушивание",
+        "ar": "بدء خادم HTTP والاستماع",
+        "hi": "HTTP सर्वर शुरू करें और सुनना शुरू करें"
       },
       "group": "server",
       "async": true,
@@ -88,7 +138,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器ID",
+            "ja": "サーバーID",
+            "ko": "서버ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         }
       ],
@@ -96,13 +156,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功停止",
-          "en-US": "Whether stopped"
+          "en-US": "Whether stopped",
+          "zh-TW": "是否成功停止",
+          "ja": "成功したかどうか停止する",
+          "ko": "성공 여부중지",
+          "es": "Si se detuvo",
+          "fr": "Si arrêté",
+          "de": "Ob gestoppt",
+          "pt-BR": "Se parou",
+          "ru": "Остановлен ли",
+          "ar": "هل توقف",
+          "hi": "रुका क्या"
         }
       },
       "bridge_path": "webserver.stop",
       "descriptions": {
         "zh-CN": "停止指定的 HTTP 服务器",
-        "en-US": "Stop the specified HTTP server"
+        "en-US": "Stop the specified HTTP server",
+        "zh-TW": "停止指定的 HTTP 服務器",
+        "ja": "停止する指定の HTTP サーバー",
+        "ko": "중지지정의 HTTP 서버",
+        "es": "Detener el servidor HTTP especificado",
+        "fr": "Arrêter le serveur HTTP spécifié",
+        "de": "Angegebenen HTTP-Server stoppen",
+        "pt-BR": "Parar o servidor HTTP especificado",
+        "ru": "Остановить указанный HTTP-сервер",
+        "ar": "إيقاف خادم HTTP المحدد",
+        "hi": "निर्दिष्ट HTTP सर्वर रोकें"
       },
       "group": "server",
       "platform": [
@@ -119,13 +199,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "活跃服务器列表",
-          "en-US": "Active server list"
+          "en-US": "Active server list",
+          "zh-TW": "活躍服務器列表",
+          "ja": "活跃サーバーリスト",
+          "ko": "활성 서버 목록",
+          "es": "Lista de servidores activos",
+          "fr": "Liste des serveurs actifs",
+          "de": "Aktive Serverliste",
+          "pt-BR": "Lista de servidores ativos",
+          "ru": "Список активных серверов",
+          "ar": "قائمة الخوادم النشطة",
+          "hi": "सक्रिय सर्वर सूची"
         }
       },
       "bridge_path": "webserver.listServers",
       "descriptions": {
         "zh-CN": "列出所有运行中的服务器实例",
-        "en-US": "List all running server instances"
+        "en-US": "List all running server instances",
+        "zh-TW": "列出所有運行中的服務器實例",
+        "ja": "実行中のすべてのサーバーインスタンスを一覧表示",
+        "ko": "실행 중인 모든 서버 인스턴스 나열",
+        "es": "Listar todas las instancias de servidor en ejecución",
+        "fr": "Lister toutes les instances de serveur en cours",
+        "de": "Alle laufenden Server-Instanzen auflisten",
+        "pt-BR": "Listar todas as instâncias de servidor em execução",
+        "ru": "Список всех запущенных экземпляров сервера",
+        "ar": "سرد جميع مثيلات الخادم الجارية",
+        "hi": "सभी चल रहे सर्वर इंस्टेंस सूचीबद्ध करें"
       },
       "group": "server",
       "platform": [
@@ -143,7 +243,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器ID",
+            "ja": "サーバーID",
+            "ko": "서버ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         }
       ],
@@ -151,13 +261,33 @@
         "type": "ServerInfo",
         "descs": {
           "zh-CN": "服务器信息",
-          "en-US": "Server info"
+          "en-US": "Server info",
+          "zh-TW": "服務器資訊",
+          "ja": "サーバー情報",
+          "ko": "서버정보",
+          "es": "Información del servidor",
+          "fr": "Informations du serveur",
+          "de": "Server-Informationen",
+          "pt-BR": "Informações do servidor",
+          "ru": "Информация о сервере",
+          "ar": "معلومات الخادم",
+          "hi": "सर्वर जानकारी"
         }
       },
       "bridge_path": "webserver.serverInfo",
       "descriptions": {
         "zh-CN": "获取指定服务器的运行状态信息",
-        "en-US": "Get server runtime info"
+        "en-US": "Get server runtime info",
+        "zh-TW": "取得指定服務器的運行狀態資訊",
+        "ja": "サーバーのランタイム情報を取得",
+        "ko": "서버 런타임 정보 가져오기",
+        "es": "Obtener información de ejecución del servidor",
+        "fr": "Obtenir les informations d'exécution du serveur",
+        "de": "Server-Laufzeitinformationen abrufen",
+        "pt-BR": "Obter informações de execução do servidor",
+        "ru": "Получить информацию о работе сервера",
+        "ar": "الحصول على معلومات تشغيل الخادم",
+        "hi": "सर्वर रनटाइम जानकारी प्राप्त करें"
       },
       "group": "server",
       "platform": [
@@ -175,7 +305,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器ID",
+            "ja": "サーバーID",
+            "ko": "서버ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         }
       ],
@@ -183,13 +323,33 @@
         "type": "number",
         "descs": {
           "zh-CN": "待处理请求数",
-          "en-US": "Pending request count"
+          "en-US": "Pending request count",
+          "zh-TW": "待處理請求數",
+          "ja": "保留中のリクエスト数",
+          "ko": "대기 중인 요청 수",
+          "es": "Cantidad de solicitudes pendientes",
+          "fr": "Nombre de requêtes en attente",
+          "de": "Anzahl ausstehender Anfragen",
+          "pt-BR": "Contagem de solicitações pendentes",
+          "ru": "Количество ожидающих запросов",
+          "ar": "عدد الطلبات المعلقة",
+          "hi": "लंबित अनुरोध गिनती"
         }
       },
       "bridge_path": "webserver.pendingCount",
       "descriptions": {
         "zh-CN": "获取当前待处理的请求数量",
-        "en-US": "Get count of pending requests"
+        "en-US": "Get count of pending requests",
+        "zh-TW": "取得當前待處理的請求數量",
+        "ja": "保留中のリクエスト数を取得",
+        "ko": "대기 중인 요청 수 가져오기",
+        "es": "Obtener cantidad de solicitudes pendientes",
+        "fr": "Obtenir le nombre de requêtes en attente",
+        "de": "Anzahl ausstehender Anfragen abrufen",
+        "pt-BR": "Obter contagem de solicitações pendentes",
+        "ru": "Получить количество ожидающих запросов",
+        "ar": "الحصول على عدد الطلبات المعلقة",
+        "hi": "लंबित अनुरोधों की गिनती प्राप्त करें"
       },
       "group": "server",
       "platform": [
@@ -207,7 +367,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器ID",
+            "ja": "サーバーID",
+            "ko": "서버ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         }
       ],
@@ -215,13 +385,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "待处理请求列表",
-          "en-US": "Pending request list"
+          "en-US": "Pending request list",
+          "zh-TW": "待處理請求列表",
+          "ja": "保留中のリクエストリスト",
+          "ko": "대기 요청 목록",
+          "es": "Lista de solicitudes pendientes",
+          "fr": "Liste des requêtes en attente",
+          "de": "Liste ausstehender Anfragen",
+          "pt-BR": "Lista de solicitações pendentes",
+          "ru": "Список ожидающих запросов",
+          "ar": "قائمة الطلبات المعلقة",
+          "hi": "लंबित अनुरोध सूची"
         }
       },
       "bridge_path": "webserver.getRequests",
       "descriptions": {
         "zh-CN": "获取所有待处理请求的详细信息（轮询模式）",
-        "en-US": "Get all pending requests info (polling)"
+        "en-US": "Get all pending requests info (polling)",
+        "zh-TW": "取得所有待處理請求的詳細資訊（轮询模式）",
+        "ja": "すべての保留中リクエスト情報を取得（ポーリング）",
+        "ko": "모든 대기 요청 정보 가져오기 (폴링)",
+        "es": "Obtener todas las solicitudes pendientes (sondeo)",
+        "fr": "Obtenir toutes les requêtes en attente (sondage)",
+        "de": "Alle ausstehenden Anfragen abrufen (Polling)",
+        "pt-BR": "Obter todas as solicitações pendentes (polling)",
+        "ru": "Получить все ожидающие запросы (опрос)",
+        "ar": "الحصول على جميع الطلبات المعلقة (استقصاء)",
+        "hi": "सभी लंबित अनुरोध जानकारी प्राप्त करें (पोलिंग)"
       },
       "group": "handler",
       "platform": [
@@ -239,7 +429,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器ID",
+            "ja": "サーバーID",
+            "ko": "서버ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -247,7 +447,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求ID",
-            "en-US": "Request ID"
+            "en-US": "Request ID",
+            "zh-TW": "請求ID",
+            "ja": "リクエストID",
+            "ko": "요청ID",
+            "es": "ID de solicitud",
+            "fr": "ID de requête",
+            "de": "Anfrage-ID",
+            "pt-BR": "ID da solicitação",
+            "ru": "ID запроса",
+            "ar": "معرف الطلب",
+            "hi": "अनुरोध आईडी"
           }
         },
         {
@@ -257,7 +467,17 @@
           "default_value": "200",
           "descs": {
             "zh-CN": "HTTP状态码",
-            "en-US": "HTTP status code"
+            "en-US": "HTTP status code",
+            "zh-TW": "HTTP狀態碼",
+            "ja": "HTTPステータスコード",
+            "ko": "HTTP 상태 코드",
+            "es": "Código de estado HTTP",
+            "fr": "Code d'état HTTP",
+            "de": "HTTP-Statuscode",
+            "pt-BR": "Código de status HTTP",
+            "ru": "Код состояния HTTP",
+            "ar": "رمز حالة HTTP",
+            "hi": "HTTP स्टेटस कोड"
           }
         },
         {
@@ -266,7 +486,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "响应头键值对",
-            "en-US": "Response headers"
+            "en-US": "Response headers",
+            "zh-TW": "回應頭鍵值對",
+            "ja": "レスポンスヘッダー",
+            "ko": "응답 헤더",
+            "es": "Encabezados de respuesta",
+            "fr": "En-têtes de réponse",
+            "de": "Antwort-Header",
+            "pt-BR": "Cabeçalhos de resposta",
+            "ru": "Заголовки ответа",
+            "ar": "رؤوس الاستجابة",
+            "hi": "रिस्पॉन्स हेडर"
           }
         },
         {
@@ -275,7 +505,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "响应体内容",
-            "en-US": "Response body"
+            "en-US": "Response body",
+            "zh-TW": "回應体內容",
+            "ja": "レスポンス体コンテンツ",
+            "ko": "응답 본문",
+            "es": "Cuerpo de respuesta",
+            "fr": "Corps de la réponse",
+            "de": "Antwortkörper",
+            "pt-BR": "Corpo da resposta",
+            "ru": "Тело ответа",
+            "ar": "جسم الاستجابة",
+            "hi": "रिस्पॉन्स बॉडी"
           }
         }
       ],
@@ -283,13 +523,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         }
       },
       "bridge_path": "webserver.respond",
       "descriptions": {
         "zh-CN": "向挂起的请求发送 HTTP 响应",
-        "en-US": "Send HTTP response to pending request"
+        "en-US": "Send HTTP response to pending request",
+        "zh-TW": "向挂起的請求傳送 HTTP 回應",
+        "ja": "向挂起のリクエスト送信する HTTP レスポンス",
+        "ko": "대기 요청에 HTTP 응답 전송",
+        "es": "Enviar respuesta HTTP a solicitud pendiente",
+        "fr": "Envoyer la réponse HTTP à la requête en attente",
+        "de": "HTTP-Antwort an ausstehende Anfrage senden",
+        "pt-BR": "Enviar resposta HTTP para solicitação pendente",
+        "ru": "Отправить HTTP-ответ на ожидающий запрос",
+        "ar": "إرسال استجابة HTTP للطلب المعلق",
+        "hi": "लंबित अनुरोध को HTTP प्रतिक्रिया भेजें"
       },
       "group": "handler",
       "platform": [
@@ -307,7 +567,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器ID",
+            "ja": "サーバーID",
+            "ko": "서버ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -315,7 +585,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求ID",
-            "en-US": "Request ID"
+            "en-US": "Request ID",
+            "zh-TW": "請求ID",
+            "ja": "リクエストID",
+            "ko": "요청ID",
+            "es": "ID de solicitud",
+            "fr": "ID de requête",
+            "de": "Anfrage-ID",
+            "pt-BR": "ID da solicitação",
+            "ru": "ID запроса",
+            "ar": "معرف الطلب",
+            "hi": "अनुरोध आईडी"
           }
         },
         {
@@ -325,7 +605,17 @@
           "default_value": "200",
           "descs": {
             "zh-CN": "HTTP状态码",
-            "en-US": "HTTP status code"
+            "en-US": "HTTP status code",
+            "zh-TW": "HTTP狀態碼",
+            "ja": "HTTPステータスコード",
+            "ko": "HTTP 상태 코드",
+            "es": "Código de estado HTTP",
+            "fr": "Code d'état HTTP",
+            "de": "HTTP-Statuscode",
+            "pt-BR": "Código de status HTTP",
+            "ru": "Код состояния HTTP",
+            "ar": "رمز حالة HTTP",
+            "hi": "HTTP स्टेटस कोड"
           }
         },
         {
@@ -333,7 +623,17 @@
           "type": "object",
           "descs": {
             "zh-CN": "JSON数据对象",
-            "en-US": "JSON data object"
+            "en-US": "JSON data object",
+            "zh-TW": "JSON數據物件",
+            "ja": "JSONデータオブジェクト",
+            "ko": "JSON데이터객체",
+            "es": "Objeto de datos JSON",
+            "fr": "Objet de données JSON",
+            "de": "JSON-Datenobjekt",
+            "pt-BR": "Objeto de dados JSON",
+            "ru": "Объект данных JSON",
+            "ar": "كائن بيانات JSON",
+            "hi": "JSON डेटा ऑब्जेक्ट"
           }
         }
       ],
@@ -341,13 +641,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         }
       },
       "bridge_path": "webserver.respondJson",
       "descriptions": {
         "zh-CN": "以 JSON 格式响应请求（自动设置 Content-Type）",
-        "en-US": "Respond with JSON (auto Content-Type)"
+        "en-US": "Respond with JSON (auto Content-Type)",
+        "zh-TW": "以 JSON 格式回應請求（自動設定 Content-Type）",
+        "ja": "以 JSON フォーマットレスポンスリクエスト（自動設定する Content-Type）",
+        "ko": "JSON으로 응답 (Content-Type 자동 설정)",
+        "es": "Responder con JSON (Content-Type automático)",
+        "fr": "Répondre avec JSON (Content-Type automatique)",
+        "de": "Mit JSON antworten (automatischer Content-Type)",
+        "pt-BR": "Responder com JSON (Content-Type automático)",
+        "ru": "Ответить JSON (автоматический Content-Type)",
+        "ar": "الاستجابة بـ JSON (Content-Type تلقائي)",
+        "hi": "JSON से जवाब दें (ऑटो Content-Type)"
       },
       "group": "handler",
       "platform": [
@@ -365,7 +685,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器ID",
+            "ja": "サーバーID",
+            "ko": "서버ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -373,7 +703,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求ID",
-            "en-US": "Request ID"
+            "en-US": "Request ID",
+            "zh-TW": "請求ID",
+            "ja": "リクエストID",
+            "ko": "요청ID",
+            "es": "ID de solicitud",
+            "fr": "ID de requête",
+            "de": "Anfrage-ID",
+            "pt-BR": "ID da solicitação",
+            "ru": "ID запроса",
+            "ar": "معرف الطلب",
+            "hi": "अनुरोध आईडी"
           }
         },
         {
@@ -381,7 +721,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         },
         {
@@ -390,7 +740,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "MIME类型（自动推断）",
-            "en-US": "MIME type (auto-detected)"
+            "en-US": "MIME type (auto-detected)",
+            "zh-TW": "MIME類型（自動推斷）",
+            "ja": "MIMEタイプ（自動検出）",
+            "ko": "MIME 타입 (자동 감지)",
+            "es": "Tipo MIME (auto-detectado)",
+            "fr": "Type MIME (auto-détecté)",
+            "de": "MIME-Typ (automatisch erkannt)",
+            "pt-BR": "Tipo MIME (auto-detectado)",
+            "ru": "MIME-тип (автоопределение)",
+            "ar": "نوع MIME (مكتشف تلقائياً)",
+            "hi": "MIME प्रकार (ऑटो-डिटेक्ट)"
           }
         }
       ],
@@ -398,13 +758,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         }
       },
       "bridge_path": "webserver.respondFile",
       "descriptions": {
         "zh-CN": "以文件内容响应请求（自动推断 MIME 类型）",
-        "en-US": "Respond with file content (auto MIME)"
+        "en-US": "Respond with file content (auto MIME)",
+        "zh-TW": "以檔案內容回應請求（自動推斷 MIME 類型）",
+        "ja": "ファイル内容で応答（MIME自動検出）",
+        "ko": "파일 내용으로 응답 (MIME 자동 설정)",
+        "es": "Responder con contenido de archivo (MIME automático)",
+        "fr": "Répondre avec le contenu du fichier (MIME automatique)",
+        "de": "Mit Dateiinhalt antworten (automatischer MIME)",
+        "pt-BR": "Responder com conteúdo do arquivo (MIME automático)",
+        "ru": "Ответить содержимым файла (автоматический MIME)",
+        "ar": "الاستجابة بمحتوى الملف (MIME تلقائي)",
+        "hi": "फ़ाइल सामग्री से जवाब दें (ऑटो MIME)"
       },
       "group": "handler",
       "platform": [
@@ -422,7 +802,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器ID",
+            "ja": "サーバーID",
+            "ko": "서버ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -430,7 +820,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求ID",
-            "en-US": "Request ID"
+            "en-US": "Request ID",
+            "zh-TW": "請求ID",
+            "ja": "リクエストID",
+            "ko": "요청ID",
+            "es": "ID de solicitud",
+            "fr": "ID de requête",
+            "de": "Anfrage-ID",
+            "pt-BR": "ID da solicitação",
+            "ru": "ID запроса",
+            "ar": "معرف الطلب",
+            "hi": "अनुरोध आईडी"
           }
         },
         {
@@ -438,7 +838,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "重定向目标URL",
-            "en-US": "Redirect target URL"
+            "en-US": "Redirect target URL",
+            "zh-TW": "重定向目標URL",
+            "ja": "リダイレクト先URL",
+            "ko": "리다이렉트 대상 URL",
+            "es": "URL de redirección",
+            "fr": "URL de redirection",
+            "de": "Weiterleitungs-URL",
+            "pt-BR": "URL de redirecionamento",
+            "ru": "URL перенаправления",
+            "ar": "URL إعادة التوجيه",
+            "hi": "रीडायरेक्ट लक्ष्य URL"
           }
         },
         {
@@ -448,7 +858,17 @@
           "default_value": "302",
           "descs": {
             "zh-CN": "重定向状态码",
-            "en-US": "Redirect status code"
+            "en-US": "Redirect status code",
+            "zh-TW": "重定向狀態碼",
+            "ja": "リダイレクトステータスコード",
+            "ko": "리다이렉트 상태 코드",
+            "es": "Código de estado de redirección",
+            "fr": "Code d'état de redirection",
+            "de": "Weiterleitungs-Statuscode",
+            "pt-BR": "Código de status de redirecionamento",
+            "ru": "Код состояния перенаправления",
+            "ar": "رمز حالة إعادة التوجيه",
+            "hi": "रीडायरेक्ट स्टेटस कोड"
           }
         }
       ],
@@ -456,13 +876,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         }
       },
       "bridge_path": "webserver.redirect",
       "descriptions": {
         "zh-CN": "发送 HTTP 重定向响应",
-        "en-US": "Send HTTP redirect response"
+        "en-US": "Send HTTP redirect response",
+        "zh-TW": "傳送 HTTP 重定向回應",
+        "ja": "送信する HTTP 重定向レスポンス",
+        "ko": "HTTP 리다이렉트 응답 전송",
+        "es": "Enviar respuesta de redirección HTTP",
+        "fr": "Envoyer une réponse de redirection HTTP",
+        "de": "HTTP-Weiterleitungsantwort senden",
+        "pt-BR": "Enviar resposta de redirecionamento HTTP",
+        "ru": "Отправить HTTP-ответ перенаправления",
+        "ar": "إرسال استجابة إعادة توجيه HTTP",
+        "hi": "HTTP रीडायरेक्ट रिस्पॉन्स भेजें"
       },
       "group": "handler",
       "platform": [
@@ -480,7 +920,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器ID",
+            "ja": "サーバーID",
+            "ko": "서버ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -488,7 +938,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "超时时间（毫秒）",
-            "en-US": "Timeout in milliseconds"
+            "en-US": "Timeout in milliseconds",
+            "zh-TW": "超時時間（毫秒）",
+            "ja": "タイムアウト时间（毫秒）",
+            "ko": "타임아웃 (밀리초)",
+            "es": "Tiempo de espera en milisegundos",
+            "fr": "Délai en millisecondes",
+            "de": "Timeout in Millisekunden",
+            "pt-BR": "Timeout em milissegundos",
+            "ru": "Тайм-аут в миллисекундах",
+            "ar": "المهلة بالمللي ثانية",
+            "hi": "टाइमआउट मिलीसेकंड में"
           }
         }
       ],
@@ -496,13 +956,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         }
       },
       "bridge_path": "webserver.setTimeout",
       "descriptions": {
         "zh-CN": "设置请求响应超时时间",
-        "en-US": "Set request response timeout"
+        "en-US": "Set request response timeout",
+        "zh-TW": "設定請求回應超時時間",
+        "ja": "設定するリクエストレスポンスタイムアウト时间",
+        "ko": "요청 응답 타임아웃 설정",
+        "es": "Establecer timeout de respuesta de solicitud",
+        "fr": "Définir le délai de réponse de requête",
+        "de": "Anfrage-Antwort-Timeout setzen",
+        "pt-BR": "Definir timeout de resposta da solicitação",
+        "ru": "Установить тайм-аут ответа на запрос",
+        "ar": "تعيين مهلة استجابة الطلب",
+        "hi": "अनुरोध प्रतिक्रिया टाइमआउट सेट करें"
       },
       "group": "config",
       "platform": [
@@ -520,7 +1000,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器ID",
+            "ja": "サーバーID",
+            "ko": "서버ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -528,7 +1018,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "静态文件目录路径",
-            "en-US": "Static files directory"
+            "en-US": "Static files directory",
+            "zh-TW": "靜態檔案目錄路徑",
+            "ja": "静的ファイルディレクトリ",
+            "ko": "정적 파일 디렉토리",
+            "es": "Directorio de archivos estáticos",
+            "fr": "Répertoire de fichiers statiques",
+            "de": "Statisches Dateiverzeichnis",
+            "pt-BR": "Diretório de arquivos estáticos",
+            "ru": "Каталог статических файлов",
+            "ar": "مجلد الملفات الثابتة",
+            "hi": "स्टैटिक फ़ाइल डायरेक्टरी"
           }
         }
       ],
@@ -536,13 +1036,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         }
       },
       "bridge_path": "webserver.addStatic",
       "descriptions": {
         "zh-CN": "为服务器设置静态文件服务目录",
-        "en-US": "Set static file serving directory"
+        "en-US": "Set static file serving directory",
+        "zh-TW": "為服務器設定靜態檔案服務目錄",
+        "ja": "静的ファイル配信ディレクトリを設定",
+        "ko": "정적 파일 제공 디렉토리 설정",
+        "es": "Establecer directorio de archivos estáticos",
+        "fr": "Définir le répertoire de fichiers statiques",
+        "de": "Statisches Dateiverzeichnis setzen",
+        "pt-BR": "Definir diretório de arquivos estáticos",
+        "ru": "Установить каталог статических файлов",
+        "ar": "تعيين مجلد الملفات الثابتة",
+        "hi": "स्टैटिक फ़ाइल सर्विंग डायरेक्टरी सेट करें"
       },
       "group": "config",
       "platform": [
@@ -554,14 +1074,34 @@
   ],
   "overviews": {
     "zh-CN": "提供 HTTP Web 服务器能力，基于 Axum 框架。支持启动/停止服务器、请求轮询与响应、JSON响应、文件响应、重定向、CORS、静态文件服务、超时配置等完整功能。",
-    "en-US": "HTTP web server powered by Axum. Supports server lifecycle, request polling & response, JSON/file responses, redirects, CORS, static serving, and timeout config."
+    "en-US": "HTTP web server powered by Axum. Supports server lifecycle, request polling & response, JSON/file responses, redirects, CORS, static serving, and timeout config.",
+    "zh-TW": "提供 HTTP Web 服務器能力，基于 Axum 框架。支援啟動/停止服務器、請求輪询與響應、JSON響應、檔案響應、重定向、CORS、静態檔案服務、超時配置等完整功能。",
+    "ja": "Axumベースの HTTPウェブサーバー。サーバーライフサイクル・リクエストポーリング＆レスポンス・JSON/ファイル応答・リダイレクト・CORS・静的ファイル・タイムアウト。",
+    "ko": "Axum 기반 HTTP 웹 서버. 서버 수명 주기, 요청 폴링/응답, JSON/파일 응답, 리다이렉트, CORS, 정적 파일, 타임아웃.",
+    "es": "Servidor web HTTP con Axum. Ciclo de vida, polling de solicitudes, respuestas JSON/archivo, redirecciones, CORS, archivos estáticos y timeout.",
+    "fr": "Serveur web HTTP avec Axum. Cycle de vie, polling de requêtes, réponses JSON/fichier, redirections, CORS, fichiers statiques et timeout.",
+    "de": "HTTP-Webserver mit Axum. Lebenszyklus, Request-Polling, JSON-/Datei-Antworten, Redirects, CORS, statische Dateien und Timeout.",
+    "pt-BR": "Servidor web HTTP com Axum. Ciclo de vida, polling, respostas JSON/arquivo, redirecionamentos, CORS, arquivos estáticos e timeout.",
+    "ru": "HTTP-сервер на Axum. Жизненный цикл, поллинг запросов, ответы JSON/файл, редиректы, CORS, статика и таймауты.",
+    "ar": "خادم ويب HTTP بـ Axum. دورة حياة واستطلاع طلبات واستجابات JSON/ملف وإعادة توجيه وCORS وملفات ثابتة ومهلة.",
+    "hi": "Axum आधारित HTTP वेब सर्वर। लाइफसाइकल, रिक्वेस्ट पोलिंग, JSON/फाइल रिस्पॉन्स, रीडायरेक्ट, CORS, स्टैटिक और टाइमआउट।"
   },
   "types": [
     {
       "name": "ServerHandle",
       "descriptions": {
         "zh-CN": "服务器句柄",
-        "en-US": "Server handle"
+        "en-US": "Server handle",
+        "zh-TW": "服務器句柄",
+        "ja": "サーバーハンドル",
+        "ko": "서버 핸들",
+        "es": "Manejador del servidor",
+        "fr": "Handle du serveur",
+        "de": "Server-Handle",
+        "pt-BR": "Handle do servidor",
+        "ru": "Дескриптор сервера",
+        "ar": "مقبض الخادم",
+        "hi": "सर्वर हैंडल"
       },
       "fields": [
         {
@@ -569,7 +1109,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器唯一ID",
-            "en-US": "Unique server ID"
+            "en-US": "Unique server ID",
+            "zh-TW": "服務器唯一ID",
+            "ja": "一意のサーバーID",
+            "ko": "고유 서버 ID",
+            "es": "ID de servidor único",
+            "fr": "ID de serveur unique",
+            "de": "Eindeutige Server-ID",
+            "pt-BR": "ID exclusivo do servidor",
+            "ru": "Уникальный ID сервера",
+            "ar": "معرّف الخادم الفريد",
+            "hi": "यूनिक सर्वर ID"
           }
         },
         {
@@ -577,7 +1127,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "实际监听端口",
-            "en-US": "Actual listening port"
+            "en-US": "Actual listening port",
+            "zh-TW": "實際監听端口",
+            "ja": "実際のリスニングポート",
+            "ko": "실제 수신 포트",
+            "es": "Puerto de escucha real",
+            "fr": "Port d'écoute réel",
+            "de": "Tatsächlicher Lausch-Port",
+            "pt-BR": "Porta de escuta real",
+            "ru": "Фактический порт прослушивания",
+            "ar": "منفذ الاستماع الفعلي",
+            "hi": "वास्तविक श्रवण पोर्ट"
           }
         }
       ]
@@ -586,7 +1146,17 @@
       "name": "ServerInfo",
       "descriptions": {
         "zh-CN": "服务器运行信息",
-        "en-US": "Server runtime info"
+        "en-US": "Server runtime info",
+        "zh-TW": "服務器執行資訊",
+        "ja": "サーバー実行時情報",
+        "ko": "서버 런타임 정보",
+        "es": "Información de ejecución del servidor",
+        "fr": "Informations d'exécution du serveur",
+        "de": "Server-Laufzeitinformationen",
+        "pt-BR": "Informações de execução do servidor",
+        "ru": "Информация о работе сервера",
+        "ar": "معلومات تشغيل الخادم",
+        "hi": "सर्वर रनटाइम जानकारी"
       },
       "fields": [
         {
@@ -594,7 +1164,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器ID",
+            "ja": "サーバーID",
+            "ko": "서버 ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرّف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -602,7 +1182,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "绑定主机",
-            "en-US": "Bound host"
+            "en-US": "Bound host",
+            "zh-TW": "綁定主機",
+            "ja": "バインドされたホスト",
+            "ko": "바인딩된 호스트",
+            "es": "Host vinculado",
+            "fr": "Hôte lié",
+            "de": "Gebundener Host",
+            "pt-BR": "Host vinculado",
+            "ru": "Привязанный хост",
+            "ar": "المضيف المرتبط",
+            "hi": "बाउंड होस्ट"
           }
         },
         {
@@ -610,7 +1200,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "端口号",
-            "en-US": "Port"
+            "en-US": "Port",
+            "zh-TW": "端口號",
+            "ja": "ポート",
+            "ko": "포트",
+            "es": "Puerto",
+            "fr": "Port",
+            "de": "Port",
+            "pt-BR": "Porta",
+            "ru": "Порт",
+            "ar": "المنفذ",
+            "hi": "पोर्ट"
           }
         },
         {
@@ -619,7 +1219,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "静态目录",
-            "en-US": "Static dir"
+            "en-US": "Static dir",
+            "zh-TW": "静態目錄",
+            "ja": "静的ファイルディレクトリ",
+            "ko": "정적 파일 디렉토리",
+            "es": "Directorio estático",
+            "fr": "Répertoire statique",
+            "de": "Statisches Verzeichnis",
+            "pt-BR": "Diretório estático",
+            "ru": "Статический каталог",
+            "ar": "المجلد الثابت",
+            "hi": "स्टैटिक डायरेक्टरी"
           }
         },
         {
@@ -627,7 +1237,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "待处理请求数",
-            "en-US": "Pending requests"
+            "en-US": "Pending requests",
+            "zh-TW": "待處理請求数",
+            "ja": "保留中のリクエスト",
+            "ko": "대기 중인 요청",
+            "es": "Solicitudes pendientes",
+            "fr": "Requêtes en attente",
+            "de": "Ausstehende Anfragen",
+            "pt-BR": "Requisições pendentes",
+            "ru": "Ожидающие запросы",
+            "ar": "الطلبات المعلّقة",
+            "hi": "लंबित अनुरोध"
           }
         },
         {
@@ -635,7 +1255,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "累计请求数",
-            "en-US": "Total requests"
+            "en-US": "Total requests",
+            "zh-TW": "累计請求数",
+            "ja": "総リクエスト数",
+            "ko": "총 요청 수",
+            "es": "Total de solicitudes",
+            "fr": "Total de requêtes",
+            "de": "Gesamtanfragen",
+            "pt-BR": "Total de requisições",
+            "ru": "Всего запросов",
+            "ar": "إجمالي الطلبات",
+            "hi": "कुल अनुरोध"
           }
         },
         {
@@ -643,7 +1273,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "超时时间(ms)",
-            "en-US": "Timeout(ms)"
+            "en-US": "Timeout(ms)",
+            "zh-TW": "超時時间(ms)",
+            "ja": "タイムアウト(ms)",
+            "ko": "타임아웃(ms)",
+            "es": "Tiempo de espera(ms)",
+            "fr": "Délai d'attente(ms)",
+            "de": "Zeitüberschreitung(ms)",
+            "pt-BR": "Tempo limite(ms)",
+            "ru": "Таймаут(мс)",
+            "ar": "مهلة الانتظار(مللي ثانية)",
+            "hi": "टाइमआउट(ms)"
           }
         }
       ]
@@ -652,7 +1292,17 @@
       "name": "RequestInfo",
       "descriptions": {
         "zh-CN": "请求信息",
-        "en-US": "Request info"
+        "en-US": "Request info",
+        "zh-TW": "請求資訊",
+        "ja": "リクエスト情報",
+        "ko": "요청 정보",
+        "es": "Información de la solicitud",
+        "fr": "Informations de la requête",
+        "de": "Anfrageinformationen",
+        "pt-BR": "Informações da requisição",
+        "ru": "Информация о запросе",
+        "ar": "معلومات الطلب",
+        "hi": "अनुरोध जानकारी"
       },
       "fields": [
         {
@@ -660,7 +1310,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求ID",
-            "en-US": "Request ID"
+            "en-US": "Request ID",
+            "zh-TW": "請求ID",
+            "ja": "リクエストID",
+            "ko": "요청 ID",
+            "es": "ID de solicitud",
+            "fr": "ID de requête",
+            "de": "Anfrage-ID",
+            "pt-BR": "ID da requisição",
+            "ru": "ID запроса",
+            "ar": "معرّف الطلب",
+            "hi": "अनुरोध ID"
           }
         },
         {
@@ -668,7 +1328,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "HTTP方法",
-            "en-US": "HTTP method"
+            "en-US": "HTTP method",
+            "zh-TW": "HTTP方法",
+            "ja": "HTTPメソッド",
+            "ko": "HTTP 메서드",
+            "es": "Método HTTP",
+            "fr": "Méthode HTTP",
+            "de": "HTTP-Methode",
+            "pt-BR": "Método HTTP",
+            "ru": "HTTP-метод",
+            "ar": "طريقة HTTP",
+            "hi": "HTTP विधि"
           }
         },
         {
@@ -676,7 +1346,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求路径",
-            "en-US": "Request URI"
+            "en-US": "Request URI",
+            "zh-TW": "請求路徑",
+            "ja": "リクエストURI",
+            "ko": "요청 URI",
+            "es": "URI de la solicitud",
+            "fr": "URI de la requête",
+            "de": "Anfrage-URI",
+            "pt-BR": "URI da requisição",
+            "ru": "URI запроса",
+            "ar": "عنوان URI للطلب",
+            "hi": "अनुरोध URI"
           }
         },
         {
@@ -684,7 +1364,17 @@
           "type": "object",
           "descs": {
             "zh-CN": "请求头",
-            "en-US": "Headers"
+            "en-US": "Headers",
+            "zh-TW": "請求頭",
+            "ja": "ヘッダー",
+            "ko": "헤더",
+            "es": "Encabezados",
+            "fr": "En-têtes",
+            "de": "Header",
+            "pt-BR": "Cabeçalhos",
+            "ru": "Заголовки",
+            "ar": "الرؤوس",
+            "hi": "हेडर"
           }
         },
         {
@@ -692,7 +1382,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求体",
-            "en-US": "Body"
+            "en-US": "Body",
+            "zh-TW": "請求體",
+            "ja": "本文",
+            "ko": "본문",
+            "es": "Cuerpo",
+            "fr": "Corps",
+            "de": "Inhalt",
+            "pt-BR": "Corpo",
+            "ru": "Тело",
+            "ar": "النص",
+            "hi": "बॉडी"
           }
         },
         {
@@ -700,7 +1400,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "已等待毫秒数",
-            "en-US": "Elapsed ms"
+            "en-US": "Elapsed ms",
+            "zh-TW": "已等待毫秒数",
+            "ja": "経過時間(ms)",
+            "ko": "경과 시간(ms)",
+            "es": "Milisegundos transcurridos",
+            "fr": "Millisecondes écoulées",
+            "de": "Vergangene ms",
+            "pt-BR": "ms decorridos",
+            "ru": "Прошедшие мс",
+            "ar": "المللي ثانية المنقضية",
+            "hi": "बीता हुआ समय ms"
           }
         }
       ]
@@ -711,7 +1421,17 @@
       "name": "request",
       "descriptions": {
         "zh-CN": "收到HTTP请求",
-        "en-US": "HTTP request received"
+        "en-US": "HTTP request received",
+        "zh-TW": "收到HTTP請求",
+        "ja": "HTTPリクエスト受信",
+        "ko": "HTTP 요청 수신됨",
+        "es": "Solicitud HTTP recibida",
+        "fr": "Requête HTTP reçue",
+        "de": "HTTP-Anfrage empfangen",
+        "pt-BR": "Requisição HTTP recebida",
+        "ru": "HTTP-запрос получен",
+        "ar": "تم استلام طلب HTTP",
+        "hi": "HTTP अनुरोध प्राप्त"
       },
       "payload": [
         {
@@ -719,7 +1439,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求ID",
-            "en-US": "Request ID"
+            "en-US": "Request ID",
+            "zh-TW": "請求ID",
+            "ja": "リクエストID",
+            "ko": "요청 ID",
+            "es": "ID de solicitud",
+            "fr": "ID de requête",
+            "de": "Anfrage-ID",
+            "pt-BR": "ID da requisição",
+            "ru": "ID запроса",
+            "ar": "معرف الطلب",
+            "hi": "अनुरोध ID"
           }
         },
         {
@@ -727,7 +1457,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "HTTP方法",
-            "en-US": "HTTP method"
+            "en-US": "HTTP method",
+            "zh-TW": "HTTP方法",
+            "ja": "HTTPメソッド",
+            "ko": "HTTP 메서드",
+            "es": "Método HTTP",
+            "fr": "Méthode HTTP",
+            "de": "HTTP-Methode",
+            "pt-BR": "Método HTTP",
+            "ru": "HTTP-метод",
+            "ar": "طريقة HTTP",
+            "hi": "HTTP विधि"
           }
         },
         {
@@ -735,7 +1475,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求路径",
-            "en-US": "Request URI"
+            "en-US": "Request URI",
+            "zh-TW": "請求路徑",
+            "ja": "リクエストURI",
+            "ko": "요청 URI",
+            "es": "URI de solicitud",
+            "fr": "URI de requête",
+            "de": "Anfrage-URI",
+            "pt-BR": "URI da requisição",
+            "ru": "URI запроса",
+            "ar": "عنوان URI للطلب",
+            "hi": "अनुरोध URI"
           }
         },
         {
@@ -743,7 +1493,17 @@
           "type": "object",
           "descs": {
             "zh-CN": "请求头",
-            "en-US": "Headers"
+            "en-US": "Headers",
+            "zh-TW": "請求頭",
+            "ja": "ヘッダー",
+            "ko": "헤더",
+            "es": "Encabezados",
+            "fr": "En-têtes",
+            "de": "Header",
+            "pt-BR": "Cabeçalhos",
+            "ru": "Заголовки",
+            "ar": "الرؤوس",
+            "hi": "हेडर"
           }
         },
         {
@@ -751,7 +1511,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "请求体",
-            "en-US": "Body"
+            "en-US": "Body",
+            "zh-TW": "請求體",
+            "ja": "リクエストボディ",
+            "ko": "요청 본문",
+            "es": "Cuerpo",
+            "fr": "Corps",
+            "de": "Textkörper",
+            "pt-BR": "Corpo",
+            "ru": "Тело запроса",
+            "ar": "نص الطلب",
+            "hi": "अनुरोध बॉडी"
           }
         }
       ]
@@ -764,7 +1534,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "成功",
-        "en-US": "OK"
+        "en-US": "OK",
+        "zh-TW": "成功",
+        "ja": "成功",
+        "ko": "성공",
+        "es": "OK",
+        "fr": "OK",
+        "de": "OK",
+        "pt-BR": "OK",
+        "ru": "OK",
+        "ar": "موافق",
+        "hi": "ठीक"
       },
       "type": "number"
     },
@@ -774,7 +1554,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "已创建",
-        "en-US": "Created"
+        "en-US": "Created",
+        "zh-TW": "已建立",
+        "ja": "作成日時",
+        "ko": "생성됨",
+        "es": "Creado",
+        "fr": "Créé",
+        "de": "Erstellt",
+        "pt-BR": "Criado",
+        "ru": "Создано",
+        "ar": "تم الإنشاء",
+        "hi": "बनाया गया"
       },
       "type": "number"
     },
@@ -784,7 +1574,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "无内容",
-        "en-US": "No Content"
+        "en-US": "No Content",
+        "zh-TW": "無內容",
+        "ja": "コンテンツなし",
+        "ko": "콘텐츠 없음",
+        "es": "Sin contenido",
+        "fr": "Pas de contenu",
+        "de": "Kein Inhalt",
+        "pt-BR": "Sem conteúdo",
+        "ru": "Нет содержимого",
+        "ar": "لا يوجد محتوى",
+        "hi": "कोई सामग्री नहीं"
       },
       "type": "number"
     },
@@ -794,7 +1594,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "永久重定向",
-        "en-US": "Moved Permanently"
+        "en-US": "Moved Permanently",
+        "zh-TW": "永久重定向",
+        "ja": "恒久的に移動",
+        "ko": "영구 이동됨",
+        "es": "Movido permanentemente",
+        "fr": "Déplacé définitivement",
+        "de": "Permanent verschoben",
+        "pt-BR": "Movido permanentemente",
+        "ru": "Перемещено навсегда",
+        "ar": "تم النقل نهائياً",
+        "hi": "स्थायी रूप से स्थानांतरित"
       },
       "type": "number"
     },
@@ -804,7 +1614,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "临时重定向",
-        "en-US": "Found"
+        "en-US": "Found",
+        "zh-TW": "臨時重定向",
+        "ja": "見つかった",
+        "ko": "발견됨",
+        "es": "Encontrado",
+        "fr": "Trouvé",
+        "de": "Gefunden",
+        "pt-BR": "Encontrado",
+        "ru": "Найдено",
+        "ar": "تم العثور عليه",
+        "hi": "पाया गया"
       },
       "type": "number"
     },
@@ -814,7 +1634,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "请求错误",
-        "en-US": "Bad Request"
+        "en-US": "Bad Request",
+        "zh-TW": "請求錯誤",
+        "ja": "不正なリクエスト",
+        "ko": "잘못된 요청",
+        "es": "Solicitud incorrecta",
+        "fr": "Requête incorrecte",
+        "de": "Fehlerhafte Anfrage",
+        "pt-BR": "Requisição inválida",
+        "ru": "Неверный запрос",
+        "ar": "طلب غير صالح",
+        "hi": "गलत अनुरोध"
       },
       "type": "number"
     },
@@ -824,7 +1654,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "未授权",
-        "en-US": "Unauthorized"
+        "en-US": "Unauthorized",
+        "zh-TW": "未授權",
+        "ja": "認証なし",
+        "ko": "인증되지 않음",
+        "es": "No autorizado",
+        "fr": "Non autorisé",
+        "de": "Nicht autorisiert",
+        "pt-BR": "Não autorizado",
+        "ru": "Не авторизован",
+        "ar": "غير مصرّح",
+        "hi": "अनधिकृत"
       },
       "type": "number"
     },
@@ -834,7 +1674,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "禁止访问",
-        "en-US": "Forbidden"
+        "en-US": "Forbidden",
+        "zh-TW": "禁止访問",
+        "ja": "アクセス禁止",
+        "ko": "접근 금지",
+        "es": "Prohibido",
+        "fr": "Interdit",
+        "de": "Verboten",
+        "pt-BR": "Proibido",
+        "ru": "Запрещено",
+        "ar": "محظور",
+        "hi": "निषिद्ध"
       },
       "type": "number"
     },
@@ -844,7 +1694,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "未找到",
-        "en-US": "Not Found"
+        "en-US": "Not Found",
+        "zh-TW": "未找到",
+        "ja": "見つかりません",
+        "ko": "찾을 수 없음",
+        "es": "No encontrado",
+        "fr": "Non trouvé",
+        "de": "Nicht gefunden",
+        "pt-BR": "Não encontrado",
+        "ru": "Не найдено",
+        "ar": "غير موجود",
+        "hi": "नहीं मिला"
       },
       "type": "number"
     },
@@ -854,7 +1714,17 @@
       "group": "status",
       "descs": {
         "zh-CN": "服务器错误",
-        "en-US": "Internal Server Error"
+        "en-US": "Internal Server Error",
+        "zh-TW": "服務器錯誤",
+        "ja": "内部サーバーエラー",
+        "ko": "내부 서버 오류",
+        "es": "Error interno del servidor",
+        "fr": "Erreur interne du serveur",
+        "de": "Interner Serverfehler",
+        "pt-BR": "Erro interno do servidor",
+        "ru": "Внутренняя ошибка сервера",
+        "ar": "خطأ داخلي في الخادم",
+        "hi": "आंतरिक सर्वर त्रुटि"
       },
       "type": "number"
     }

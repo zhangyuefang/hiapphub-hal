@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "WebSocket URL",
-            "en-US": "WebSocket URL"
+            "en-US": "WebSocket URL",
+            "zh-TW": "WebSocket URL",
+            "ja": "WebSocket URL",
+            "ko": "WebSocket URL",
+            "es": "URL de WebSocket",
+            "fr": "URL WebSocket",
+            "de": "WebSocket-URL",
+            "pt-BR": "URL WebSocket",
+            "ru": "URL WebSocket",
+            "ar": "URL WebSocket",
+            "hi": "WebSocket URL"
           }
         },
         {
@@ -41,7 +51,17 @@
           "type": "Record",
           "descs": {
             "zh-CN": "自定义头部",
-            "en-US": "Custom headers"
+            "en-US": "Custom headers",
+            "zh-TW": "自定義頭部",
+            "ja": "カスタムヘッダー",
+            "ko": "사용자 정의 헤더",
+            "es": "Encabezados personalizados",
+            "fr": "En-têtes personnalisés",
+            "de": "Benutzerdefinierte Header",
+            "pt-BR": "Cabeçalhos personalizados",
+            "ru": "Пользовательские заголовки",
+            "ar": "رؤوس مخصصة",
+            "hi": "कस्टम हेडर"
           },
           "optional": true
         },
@@ -50,7 +70,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "protocols参数",
-            "en-US": "protocols parameter"
+            "en-US": "protocols parameter",
+            "zh-TW": "protocols參數",
+            "ja": "protocolsパラメータ",
+            "ko": "protocols매개변수",
+            "es": "Parámetro de protocols",
+            "fr": "Paramètre de protocols",
+            "de": "protocols-Parameter",
+            "pt-BR": "Parâmetro de protocols",
+            "ru": "Параметр protocols",
+            "ar": "معلمة protocols",
+            "hi": "protocols पैरामीटर"
           },
           "optional": true,
           "desc": "protocols parameter"
@@ -60,7 +90,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "事件回调",
-            "en-US": "Event callback"
+            "en-US": "Event callback",
+            "zh-TW": "事件回調",
+            "ja": "イベントコールバック",
+            "ko": "이벤트콜백",
+            "es": "Callback de evento",
+            "fr": "Rappel d'événement",
+            "de": "Event-Callback",
+            "pt-BR": "Callback de evento",
+            "ru": "Обратный вызов события",
+            "ar": "رد اتصال الحدث",
+            "hi": "इवेंट कॉलबैक"
           }
         }
       ],
@@ -68,13 +108,33 @@
         "type": "WsConnection",
         "descs": {
           "zh-CN": "连接信息",
-          "en-US": "Connection info"
+          "en-US": "Connection info",
+          "zh-TW": "連接資訊",
+          "ja": "接続情報",
+          "ko": "연결정보",
+          "es": "Información de conexión",
+          "fr": "Informations de connexion",
+          "de": "Verbindungsinformationen",
+          "pt-BR": "Informações de conexão",
+          "ru": "Информация о подключении",
+          "ar": "معلومات الاتصال",
+          "hi": "कनेक्शन जानकारी"
         }
       },
       "bridge_path": "websocket.connect",
       "descriptions": {
         "zh-CN": "建立到指定URL的WebSocket客户端连接",
-        "en-US": "Establish WebSocket client connection to URL"
+        "en-US": "Establish WebSocket client connection to URL",
+        "zh-TW": "建立到指定URL的WebSocket客戶端連接",
+        "ja": "建立へ指定URLのWebSocketクライアント接続",
+        "ko": "URL에 WebSocket 클라이언트 연결 설정",
+        "es": "Establecer conexión WebSocket con URL",
+        "fr": "Établir une connexion WebSocket",
+        "de": "WebSocket-Verbindung zur URL herstellen",
+        "pt-BR": "Estabelecer conexão WebSocket com URL",
+        "ru": "Установить WebSocket-соединение",
+        "ar": "إنشاء اتصال WebSocket بـ URL",
+        "hi": "URL से WebSocket क्लाइंट कनेक्शन स्थापित करें"
       },
       "group": "client",
       "async": true,
@@ -89,7 +149,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -97,7 +167,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文本数据",
-            "en-US": "Text data"
+            "en-US": "Text data",
+            "zh-TW": "文字數據",
+            "ja": "テキストデータ",
+            "ko": "텍스트데이터",
+            "es": "Datos de texto",
+            "fr": "Données texte",
+            "de": "Textdaten",
+            "pt-BR": "Dados de texto",
+            "ru": "Текстовые данные",
+            "ar": "بيانات نصية",
+            "hi": "टेक्स्ट डेटा"
           }
         }
       ],
@@ -105,14 +185,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "websocket.send",
       "descriptions": {
         "zh-CN": "通过 WebSocket 发送消息",
-        "en-US": "Send message data over WebSocket connection"
+        "en-US": "Send message data over WebSocket connection",
+        "zh-TW": "通過 WebSocket 傳送消息",
+        "ja": "を通じて WebSocket 送信するメッセージ",
+        "ko": "WebSocket 연결을 통해 메시지 데이터 전송",
+        "es": "Enviar datos de mensaje por WebSocket",
+        "fr": "Envoyer des données de message via WebSocket",
+        "de": "Nachrichtendaten über WebSocket senden",
+        "pt-BR": "Enviar dados de mensagem pela conexão WebSocket",
+        "ru": "Отправить данные сообщения через WebSocket",
+        "ar": "إرسال بيانات الرسالة عبر اتصال WebSocket",
+        "hi": "WebSocket कनेक्शन पर संदेश डेटा भेजें"
       },
       "group": "client",
       "description": "Send message data over WebSocket connection"
@@ -126,7 +226,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -134,7 +244,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64 数据",
-            "en-US": "Base64 data"
+            "en-US": "Base64 data",
+            "zh-TW": "Base64 數據",
+            "ja": "Base64 データ",
+            "ko": "Base64 데이터",
+            "es": "Datos Base64",
+            "fr": "Données Base64",
+            "de": "Base64-Daten",
+            "pt-BR": "Dados Base64",
+            "ru": "Данные Base64",
+            "ar": "بيانات Base64",
+            "hi": "Base64 डेटा"
           }
         }
       ],
@@ -142,14 +262,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "websocket.sendBinary",
       "descriptions": {
         "zh-CN": "通过 WebSocket 发送二进制数据",
-        "en-US": "Send binary of WebSocket"
+        "en-US": "Send binary of WebSocket",
+        "zh-TW": "通過 WebSocket 傳送二進製數據",
+        "ja": "WebSocketバイナリを送信",
+        "ko": "WebSocket 바이너리 전송",
+        "es": "Enviar binario por WebSocket",
+        "fr": "Envoyer des données binaires via WebSocket",
+        "de": "Binärdaten über WebSocket senden",
+        "pt-BR": "Enviar binário pelo WebSocket",
+        "ru": "Отправить бинарные данные через WebSocket",
+        "ar": "إرسال بيانات ثنائية عبر WebSocket",
+        "hi": "WebSocket पर बाइनरी भेजें"
       },
       "group": "client",
       "description": "Send binary of WebSocket"
@@ -163,7 +303,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -171,7 +321,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "关闭状态码（如1000=正常关闭）",
-            "en-US": "Close status code (e.g. 1000=normal)"
+            "en-US": "Close status code (e.g. 1000=normal)",
+            "zh-TW": "關閉狀態碼（如1000=正常關閉）",
+            "ja": "クローズステータスコード（例：1000=正常）",
+            "ko": "닫기 상태 코드 (예: 1000=정상)",
+            "es": "Código de estado de cierre (ej. 1000=normal)",
+            "fr": "Code d'état de fermeture (ex. 1000=normal)",
+            "de": "Schließungs-Statuscode (z.B. 1000=normal)",
+            "pt-BR": "Código de status de fechamento (ex. 1000=normal)",
+            "ru": "Код статуса закрытия (напр. 1000=нормальный)",
+            "ar": "رمز حالة الإغلاق (مثل 1000=عادي)",
+            "hi": "बंद करने का स्टेटस कोड (जैसे 1000=सामान्य)"
           },
           "optional": true,
           "default_value": "1000",
@@ -182,7 +342,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "关闭原因",
-            "en-US": "Close reason"
+            "en-US": "Close reason",
+            "zh-TW": "關閉原因",
+            "ja": "閉じる原因",
+            "ko": "닫기 이유",
+            "es": "Motivo de cierre",
+            "fr": "Raison de fermeture",
+            "de": "Schließungsgrund",
+            "pt-BR": "Motivo de fechamento",
+            "ru": "Причина закрытия",
+            "ar": "سبب الإغلاق",
+            "hi": "बंद करने का कारण"
           },
           "optional": true
         }
@@ -191,14 +361,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "websocket.close",
       "descriptions": {
         "zh-CN": "关闭 WebSocket 连接",
-        "en-US": "Close WebSocket connection and release resources"
+        "en-US": "Close WebSocket connection and release resources",
+        "zh-TW": "關閉 WebSocket 連接",
+        "ja": "閉じる WebSocket 接続",
+        "ko": "닫기 WebSocket 연결",
+        "es": "Cerrar conexión WebSocket y liberar recursos",
+        "fr": "Fermer la connexion WebSocket",
+        "de": "WebSocket-Verbindung schließen",
+        "pt-BR": "Fechar conexão WebSocket e liberar recursos",
+        "ru": "Закрыть WebSocket-соединение",
+        "ar": "إغلاق اتصال WebSocket وتحرير الموارد",
+        "hi": "WebSocket कनेक्शन बंद करें और संसाधन मुक्त करें"
       },
       "group": "client",
       "description": "Close WebSocket connection and release resources"
@@ -212,7 +402,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         }
       ],
@@ -220,14 +420,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "websocket.state",
       "descriptions": {
         "zh-CN": "stateWebSocket",
-        "en-US": "State WebSocket"
+        "en-US": "State WebSocket",
+        "zh-TW": "stateWebSocket",
+        "ja": "WebSocket状態",
+        "ko": "WebSocket 상태",
+        "es": "Estado de WebSocket",
+        "fr": "État du WebSocket",
+        "de": "WebSocket-Status",
+        "pt-BR": "Estado do WebSocket",
+        "ru": "Состояние WebSocket",
+        "ar": "حالة WebSocket",
+        "hi": "WebSocket स्थिति"
       },
       "group": "client",
       "description": "State WebSocket"
@@ -241,7 +461,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -249,7 +479,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否启用",
-            "en-US": "Whether enabled"
+            "en-US": "Whether enabled",
+            "zh-TW": "是否啟用",
+            "ja": "有効かどうか",
+            "ko": "활성화 여부",
+            "es": "Si está habilitado",
+            "fr": "Si activé",
+            "de": "Ob aktiviert",
+            "pt-BR": "Se está habilitado",
+            "ru": "Включено ли",
+            "ar": "هل مفعل",
+            "hi": "सक्षम है क्या"
           },
           "desc": "Whether enabled"
         },
@@ -258,7 +498,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "间隔(毫秒)",
-            "en-US": "Interval ms"
+            "en-US": "Interval ms",
+            "zh-TW": "間隔(毫秒)",
+            "ja": "インターバル(毫秒)",
+            "ko": "간격 (밀리초)",
+            "es": "Intervalo (ms)",
+            "fr": "Intervalle (ms)",
+            "de": "Intervall (ms)",
+            "pt-BR": "Intervalo (ms)",
+            "ru": "Интервал (мс)",
+            "ar": "الفاصل (مللي ثانية)",
+            "hi": "अंतराल (मिलीसेकंड)"
           },
           "optional": true
         },
@@ -267,7 +517,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "最大重试",
-            "en-US": "最大重试"
+            "en-US": "最大重试",
+            "zh-TW": "最大重試",
+            "ja": "最大リトライ回数",
+            "ko": "최대 재시도",
+            "es": "Máximo de reintentos",
+            "fr": "Maximum de tentatives",
+            "de": "Maximale Wiederholungen",
+            "pt-BR": "Máximo de tentativas",
+            "ru": "Максимум повторов",
+            "ar": "أقصى محاولات",
+            "hi": "अधिकतम पुनः प्रयास"
           },
           "optional": true
         }
@@ -276,14 +536,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "websocket.setAutoReconnect",
       "descriptions": {
         "zh-CN": "设置自动重连策略",
-        "en-US": "Set auto reconnect property of WebSocket"
+        "en-US": "Set auto reconnect property of WebSocket",
+        "zh-TW": "設定自動重連策略",
+        "ja": "WebSocketの自動再接続プロパティを設定",
+        "ko": "WebSocket 자동 재연결 속성 설정",
+        "es": "Establecer reconexión automática de WebSocket",
+        "fr": "Définir la reconnexion automatique WebSocket",
+        "de": "WebSocket-Auto-Reconnect setzen",
+        "pt-BR": "Definir reconexão automática do WebSocket",
+        "ru": "Установить автопереподключение WebSocket",
+        "ar": "تعيين إعادة الاتصال التلقائي لـ WebSocket",
+        "hi": "WebSocket ऑटो रिकनेक्ट सेट करें"
       },
       "group": "client",
       "description": "Set auto reconnect property of WebSocket"
@@ -297,7 +577,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         }
       ],
@@ -305,14 +595,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "websocket.ping",
       "descriptions": {
         "zh-CN": "pingWebSocket",
-        "en-US": "Ping WebSocket"
+        "en-US": "Ping WebSocket",
+        "zh-TW": "pingWebSocket",
+        "ja": "WebSocket Ping",
+        "ko": "WebSocket Ping",
+        "es": "Ping de WebSocket",
+        "fr": "Ping WebSocket",
+        "de": "WebSocket-Ping",
+        "pt-BR": "Ping WebSocket",
+        "ru": "Ping WebSocket",
+        "ar": "اختبار اتصال WebSocket",
+        "hi": "WebSocket Ping"
       },
       "group": "client",
       "description": "Ping WebSocket"
@@ -326,7 +636,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         }
       ],
@@ -334,13 +654,33 @@
         "type": "number",
         "descs": {
           "zh-CN": "已缓冲字节",
-          "en-US": "Bytes buffered"
+          "en-US": "Bytes buffered",
+          "zh-TW": "已緩沖位元組",
+          "ja": "バッファされたバイト数",
+          "ko": "버퍼된 바이트",
+          "es": "Bytes en búfer",
+          "fr": "Octets mis en tampon",
+          "de": "Gepufferte Bytes",
+          "pt-BR": "Bytes em buffer",
+          "ru": "Буферизированные байты",
+          "ar": "البايتات المخزنة مؤقتاً",
+          "hi": "बफ़र किए गए बाइट्स"
         }
       },
       "bridge_path": "websocket.bufferedAmount",
       "descriptions": {
         "zh-CN": "获取待发送数据的缓冲大小",
-        "en-US": "Buffered amount of WebSocket"
+        "en-US": "Buffered amount of WebSocket",
+        "zh-TW": "取得待傳送數據的緩沖大小",
+        "ja": "WebSocketのバッファ量",
+        "ko": "WebSocket 버퍼링된 양",
+        "es": "Cantidad en búfer de WebSocket",
+        "fr": "Quantité mise en tampon WebSocket",
+        "de": "WebSocket-Puffermenge",
+        "pt-BR": "Quantidade em buffer do WebSocket",
+        "ru": "Размер буфера WebSocket",
+        "ar": "كمية المخزن المؤقت لـ WebSocket",
+        "hi": "WebSocket बफ़र मात्रा"
       },
       "group": "client",
       "description": "Buffered amount of WebSocket"
@@ -353,13 +693,33 @@
         "type": "array",
         "descs": {
           "zh-CN": "连接列表",
-          "en-US": "Connection list"
+          "en-US": "Connection list",
+          "zh-TW": "連接列表",
+          "ja": "接続リスト",
+          "ko": "연결목록",
+          "es": "Lista de conexiones",
+          "fr": "Liste des connexions",
+          "de": "Verbindungsliste",
+          "pt-BR": "Lista de conexões",
+          "ru": "Список подключений",
+          "ar": "قائمة الاتصالات",
+          "hi": "कनेक्शन सूची"
         }
       },
       "bridge_path": "websocket.listConnections",
       "descriptions": {
         "zh-CN": "列出connections",
-        "en-US": "List connections of WebSocket"
+        "en-US": "List connections of WebSocket",
+        "zh-TW": "列出connections",
+        "ja": "WebSocket接続一覧",
+        "ko": "WebSocket 연결 목록",
+        "es": "Listar conexiones WebSocket",
+        "fr": "Lister les connexions WebSocket",
+        "de": "WebSocket-Verbindungen auflisten",
+        "pt-BR": "Listar conexões WebSocket",
+        "ru": "Список WebSocket-подключений",
+        "ar": "قائمة اتصالات WebSocket",
+        "hi": "WebSocket कनेक्शन सूची"
       },
       "group": "client",
       "description": "List connections of WebSocket"
@@ -370,7 +730,17 @@
       "group": "server",
       "descriptions": {
         "zh-CN": "启动 WebSocket 服务器",
-        "en-US": "Start WebSocket server"
+        "en-US": "Start WebSocket server",
+        "zh-TW": "啟動 WebSocket 服務器",
+        "ja": "起動する WebSocket サーバー",
+        "ko": "시작 WebSocket 서버",
+        "es": "Iniciar servidor WebSocket",
+        "fr": "Démarrer le serveur WebSocket",
+        "de": "WebSocket-Server starten",
+        "pt-BR": "Iniciar servidor WebSocket",
+        "ru": "Запустить WebSocket-сервер",
+        "ar": "بدء خادم WebSocket",
+        "hi": "WebSocket सर्वर शुरू करें"
       },
       "params": [
         {
@@ -378,7 +748,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "监听地址",
-            "en-US": "Listen address"
+            "en-US": "Listen address",
+            "zh-TW": "監聽地址",
+            "ja": "リッスンするアドレス",
+            "ko": "리스너주소",
+            "es": "Dirección de escucha",
+            "fr": "Adresse d'écoute",
+            "de": "Lausch-Adresse",
+            "pt-BR": "Endereço de escuta",
+            "ru": "Адрес прослушивания",
+            "ar": "عنوان الاستماع",
+            "hi": "लिसन एड्रेस"
           },
           "optional": true,
           "default_value": "\"0.0.0.0\""
@@ -388,7 +768,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "WebSocket服务器监听端口",
-            "en-US": "WebSocket server listen port"
+            "en-US": "WebSocket server listen port",
+            "zh-TW": "WebSocket服務器監聽埠",
+            "ja": "WebSocketサーバーリッスンするポート",
+            "ko": "WebSocket서버리스너포트",
+            "es": "Puerto de escucha del servidor WebSocket",
+            "fr": "Port d'écoute du serveur WebSocket",
+            "de": "WebSocket-Server-Lauschport",
+            "pt-BR": "Porta de escuta do servidor WebSocket",
+            "ru": "Порт прослушивания WebSocket-сервера",
+            "ar": "منفذ استماع خادم WebSocket",
+            "hi": "WebSocket सर्वर लिसन पोर्ट"
           },
           "desc": "WebSocket server listen port"
         },
@@ -397,7 +787,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "optional": true,
           "default_value": "\"/\"",
@@ -408,7 +808,17 @@
         "type": "string",
         "descs": {
           "zh-CN": "服务器 ID",
-          "en-US": "Server ID"
+          "en-US": "Server ID",
+          "zh-TW": "服務器 ID",
+          "ja": "サーバー ID",
+          "ko": "서버 ID",
+          "es": "ID del servidor",
+          "fr": "ID du serveur",
+          "de": "Server-ID",
+          "pt-BR": "ID do servidor",
+          "ru": "ID сервера",
+          "ar": "معرف الخادم",
+          "hi": "सर्वर ID"
         }
       },
       "bridge_path": "websocket.listen"
@@ -419,7 +829,17 @@
       "group": "server",
       "descriptions": {
         "zh-CN": "关闭 WebSocket 服务器",
-        "en-US": "Stop WebSocket server"
+        "en-US": "Stop WebSocket server",
+        "zh-TW": "關閉 WebSocket 服務器",
+        "ja": "閉じる WebSocket サーバー",
+        "ko": "닫기 WebSocket 서버",
+        "es": "Detener servidor WebSocket",
+        "fr": "Arrêter le serveur WebSocket",
+        "de": "WebSocket-Server stoppen",
+        "pt-BR": "Parar servidor WebSocket",
+        "ru": "Остановить WebSocket-сервер",
+        "ar": "إيقاف خادم WebSocket",
+        "hi": "WebSocket सर्वर रोकें"
       },
       "params": [
         {
@@ -427,7 +847,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器 ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器 ID",
+            "ja": "サーバー ID",
+            "ko": "서버 ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         }
       ],
@@ -435,7 +865,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "操作是否成功",
-          "en-US": "Whether operation succeeded"
+          "en-US": "Whether operation succeeded",
+          "zh-TW": "操作是否成功",
+          "ja": "操作成功したかどうか",
+          "ko": "작업성공 여부",
+          "es": "Si la operación tuvo éxito",
+          "fr": "Si l'opération a réussi",
+          "de": "Ob die Operation erfolgreich war",
+          "pt-BR": "Se a operação foi bem-sucedida",
+          "ru": "Успешна ли операция",
+          "ar": "هل نجحت العملية",
+          "hi": "क्या ऑपरेशन सफल हुआ"
         },
         "desc": "Whether operation succeeded"
       },
@@ -447,7 +887,17 @@
       "group": "server",
       "descriptions": {
         "zh-CN": "向客户端发送消息",
-        "en-US": "Server send of WebSocket"
+        "en-US": "Server send of WebSocket",
+        "zh-TW": "向客戶端傳送消息",
+        "ja": "向クライアント送信するメッセージ",
+        "ko": "WebSocket 서버 전송",
+        "es": "Envío del servidor WebSocket",
+        "fr": "Envoi du serveur WebSocket",
+        "de": "WebSocket-Server-Senden",
+        "pt-BR": "Envio do servidor WebSocket",
+        "ru": "Серверная отправка WebSocket",
+        "ar": "إرسال خادم WebSocket",
+        "hi": "WebSocket सर्वर सेंड"
       },
       "params": [
         {
@@ -455,7 +905,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器 ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器 ID",
+            "ja": "サーバー ID",
+            "ko": "서버 ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -463,7 +923,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "客户端 ID",
-            "en-US": "Client ID"
+            "en-US": "Client ID",
+            "zh-TW": "客戶端 ID",
+            "ja": "クライアント ID",
+            "ko": "클라이언트 ID",
+            "es": "ID del cliente",
+            "fr": "ID du client",
+            "de": "Client-ID",
+            "pt-BR": "ID do cliente",
+            "ru": "ID клиента",
+            "ar": "معرف العميل",
+            "hi": "क्लाइंट ID"
           }
         },
         {
@@ -471,7 +941,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息数据",
-            "en-US": "Message data"
+            "en-US": "Message data",
+            "zh-TW": "消息數據",
+            "ja": "メッセージデータ",
+            "ko": "메시지데이터",
+            "es": "Datos del mensaje",
+            "fr": "Données du message",
+            "de": "Nachrichtendaten",
+            "pt-BR": "Dados da mensagem",
+            "ru": "Данные сообщения",
+            "ar": "بيانات الرسالة",
+            "hi": "संदेश डेटा"
           }
         }
       ],
@@ -479,7 +959,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "操作是否成功",
-          "en-US": "Whether operation succeeded"
+          "en-US": "Whether operation succeeded",
+          "zh-TW": "操作是否成功",
+          "ja": "操作成功したかどうか",
+          "ko": "작업성공 여부",
+          "es": "Si la operación tuvo éxito",
+          "fr": "Si l'opération a réussi",
+          "de": "Ob die Operation erfolgreich war",
+          "pt-BR": "Se a operação foi bem-sucedida",
+          "ru": "Успешна ли операция",
+          "ar": "هل نجحت العملية",
+          "hi": "क्या ऑपरेशन सफल हुआ"
         },
         "desc": "Whether operation succeeded"
       },
@@ -492,7 +982,17 @@
       "group": "server",
       "descriptions": {
         "zh-CN": "向所有客户端广播消息",
-        "en-US": "Server broadcast of WebSocket"
+        "en-US": "Server broadcast of WebSocket",
+        "zh-TW": "向所有客戶端廣播消息",
+        "ja": "向すべてクライアント广播メッセージ",
+        "ko": "WebSocket 서버 브로드캐스트",
+        "es": "Broadcast del servidor WebSocket",
+        "fr": "Diffusion du serveur WebSocket",
+        "de": "WebSocket-Server-Broadcast",
+        "pt-BR": "Broadcast do servidor WebSocket",
+        "ru": "Широковещание сервера WebSocket",
+        "ar": "بث خادم WebSocket",
+        "hi": "WebSocket सर्वर ब्रॉडकास्ट"
       },
       "params": [
         {
@@ -500,7 +1000,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器 ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器 ID",
+            "ja": "サーバー ID",
+            "ko": "서버 ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -508,7 +1018,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息数据",
-            "en-US": "Message data"
+            "en-US": "Message data",
+            "zh-TW": "消息數據",
+            "ja": "メッセージデータ",
+            "ko": "메시지데이터",
+            "es": "Datos del mensaje",
+            "fr": "Données du message",
+            "de": "Nachrichtendaten",
+            "pt-BR": "Dados da mensagem",
+            "ru": "Данные сообщения",
+            "ar": "بيانات الرسالة",
+            "hi": "संदेश डेटा"
           }
         }
       ],
@@ -516,7 +1036,17 @@
         "type": "number",
         "descs": {
           "zh-CN": "已发送数量",
-          "en-US": "Sent count"
+          "en-US": "Sent count",
+          "zh-TW": "已傳送數量",
+          "ja": "送信数",
+          "ko": "전송 수",
+          "es": "Cantidad enviada",
+          "fr": "Nombre d'envois",
+          "de": "Gesendet-Anzahl",
+          "pt-BR": "Contagem de envios",
+          "ru": "Количество отправленных",
+          "ar": "عدد المرسل",
+          "hi": "भेजी गई गिनती"
         }
       },
       "bridge_path": "websocket.serverBroadcast",
@@ -528,7 +1058,17 @@
       "group": "server",
       "descriptions": {
         "zh-CN": "获取已连接的客户端列表",
-        "en-US": "Server clients of WebSocket"
+        "en-US": "Server clients of WebSocket",
+        "zh-TW": "取得已連接的客戶端列表",
+        "ja": "取得する済み接続のクライアントリスト",
+        "ko": "WebSocket 서버 클라이언트",
+        "es": "Clientes del servidor WebSocket",
+        "fr": "Clients du serveur WebSocket",
+        "de": "WebSocket-Server-Clients",
+        "pt-BR": "Clientes do servidor WebSocket",
+        "ru": "Клиенты сервера WebSocket",
+        "ar": "عملاء خادم WebSocket",
+        "hi": "WebSocket सर्वर क्लाइंट"
       },
       "params": [
         {
@@ -536,7 +1076,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器 ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器 ID",
+            "ja": "サーバー ID",
+            "ko": "서버 ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         }
       ],
@@ -544,7 +1094,17 @@
         "type": "array",
         "descs": {
           "zh-CN": "客户端列表",
-          "en-US": "Client list"
+          "en-US": "Client list",
+          "zh-TW": "客戶端列表",
+          "ja": "クライアントリスト",
+          "ko": "클라이언트목록",
+          "es": "Lista de clientes",
+          "fr": "Liste des clients",
+          "de": "Client-Liste",
+          "pt-BR": "Lista de clientes",
+          "ru": "Список клиентов",
+          "ar": "قائمة العملاء",
+          "hi": "क्लाइंट सूची"
         }
       },
       "bridge_path": "websocket.serverClients",
@@ -556,7 +1116,17 @@
       "group": "server",
       "descriptions": {
         "zh-CN": "断开指定客户端连接",
-        "en-US": "Server disconnect of WebSocket"
+        "en-US": "Server disconnect of WebSocket",
+        "zh-TW": "斷開指定客戶端連接",
+        "ja": "WebSocketサーバー切断",
+        "ko": "연결 해제지정클라이언트연결",
+        "es": "Desconexión del servidor WebSocket",
+        "fr": "Déconnexion du serveur WebSocket",
+        "de": "WebSocket-Server-Trennung",
+        "pt-BR": "Desconexão do servidor WebSocket",
+        "ru": "Отключение клиента сервером WebSocket",
+        "ar": "قطع اتصال خادم WebSocket",
+        "hi": "WebSocket सर्वर डिस्कनेक्ट"
       },
       "params": [
         {
@@ -564,7 +1134,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器 ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器 ID",
+            "ja": "サーバー ID",
+            "ko": "서버 ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -572,7 +1152,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "客户端 ID",
-            "en-US": "Client ID"
+            "en-US": "Client ID",
+            "zh-TW": "客戶端 ID",
+            "ja": "クライアント ID",
+            "ko": "클라이언트 ID",
+            "es": "ID del cliente",
+            "fr": "ID du client",
+            "de": "Client-ID",
+            "pt-BR": "ID do cliente",
+            "ru": "ID клиента",
+            "ar": "معرف العميل",
+            "hi": "क्लाइंट ID"
           }
         }
       ],
@@ -580,7 +1170,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "操作是否成功",
-          "en-US": "Whether operation succeeded"
+          "en-US": "Whether operation succeeded",
+          "zh-TW": "操作是否成功",
+          "ja": "操作成功したかどうか",
+          "ko": "작업성공 여부",
+          "es": "Si la operación tuvo éxito",
+          "fr": "Si l'opération a réussi",
+          "de": "Ob die Operation erfolgreich war",
+          "pt-BR": "Se a operação foi bem-sucedida",
+          "ru": "Успешна ли операция",
+          "ar": "هل نجحت العملية",
+          "hi": "क्या ऑपरेशन सफल हुआ"
         },
         "desc": "Whether operation succeeded"
       },
@@ -590,14 +1190,34 @@
   ],
   "overviews": {
     "zh-CN": "提供 WebSocket 客户端与服务端能力。客户端支持连接/断开、消息收发、二进制数据、自动重连、心跳检测；服务端支持监听端口、广播消息、管理客户端连接。",
-    "en-US": "WebSocket client and server module. Client supports connect/disconnect, messaging, binary data, auto-reconnect, heartbeat. Server supports listening, broadcasting, and client management."
+    "en-US": "WebSocket client and server module. Client supports connect/disconnect, messaging, binary data, auto-reconnect, heartbeat. Server supports listening, broadcasting, and client management.",
+    "zh-TW": "提供 WebSocket 客户端與服務端能力。客户端支援連接/斷开、訊息收发、二進制數據、自動重連、心跳檢測；服務端支援監听端口、广播訊息、管理客户端連接。",
+    "ja": "WebSocketクライアント＆サーバー。クライアント：接続/切断・メッセージ・バイナリ・自動再接続・ハートビート。サーバー：リスン・ブロードキャスト・クライアント管理。",
+    "ko": "WebSocket 클라이언트 및 서버. 클라이언트: 연결/해제, 메시징, 바이너리, 자동 재연결, 하트비트. 서버: 리스닝, 브로드캐스트, 클라이언트 관리.",
+    "es": "WebSocket cliente y servidor. Cliente: conectar/desconectar, mensajes, binario, reconexión, heartbeat. Servidor: escucha, broadcast y gestión.",
+    "fr": "Client et serveur WebSocket. Client : connexion/déconnexion, messages, binaire, reconnexion, heartbeat. Serveur : écoute, broadcast et gestion.",
+    "de": "WebSocket-Client und -Server. Client: Verbinden/Trennen, Nachrichten, Binär, Auto-Reconnect, Heartbeat. Server: Listening, Broadcast, Client-Verwaltung.",
+    "pt-BR": "Cliente e servidor WebSocket. Cliente: conectar/desconectar, mensagens, binário, reconexão, heartbeat. Servidor: escuta, broadcast e gerenciamento.",
+    "ru": "WebSocket-клиент и сервер. Клиент: подключение/отключение, сообщения, бинарные данные, автопереподключение, heartbeat. Сервер: прослушивание, рассылка и управление.",
+    "ar": "عميل وخادم WebSocket. العميل: اتصال/قطع ورسائل وبيانات ثنائية وإعادة اتصال ونبض. الخادم: استماع وبث وإدارة.",
+    "hi": "WebSocket क्लाइंट और सर्वर। क्लाइंट: कनेक्ट/डिस्कनेक्ट, मैसेजिंग, बाइनरी, ऑटो-रीकनेक्ट, हार्टबीट। सर्वर: लिसन, ब्रॉडकास्ट, क्लाइंट मैनेजमेंट।"
   },
   "events": [
     {
       "name": "message",
       "descriptions": {
         "zh-CN": "收到消息",
-        "en-US": "Message received"
+        "en-US": "Message received",
+        "zh-TW": "收到訊息",
+        "ja": "メッセージ受信",
+        "ko": "메시지 수신됨",
+        "es": "Mensaje recibido",
+        "fr": "Message reçu",
+        "de": "Nachricht empfangen",
+        "pt-BR": "Mensagem recebida",
+        "ru": "Сообщение получено",
+        "ar": "تم استلام الرسالة",
+        "hi": "संदेश प्राप्त"
       },
       "payload": [
         {
@@ -605,7 +1225,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接ID",
+            "ja": "接続ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID соединения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -613,7 +1243,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息内容",
-            "en-US": "Message data"
+            "en-US": "Message data",
+            "zh-TW": "訊息內容",
+            "ja": "メッセージデータ",
+            "ko": "메시지 데이터",
+            "es": "Datos del mensaje",
+            "fr": "Données du message",
+            "de": "Nachrichtendaten",
+            "pt-BR": "Dados da mensagem",
+            "ru": "Данные сообщения",
+            "ar": "بيانات الرسالة",
+            "hi": "संदेश डेटा"
           }
         },
         {
@@ -621,7 +1261,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否二进制",
-            "en-US": "Is binary"
+            "en-US": "Is binary",
+            "zh-TW": "是否二進制",
+            "ja": "バイナリかどうか",
+            "ko": "바이너리 여부",
+            "es": "Es binario",
+            "fr": "Est binaire",
+            "de": "Ist binär",
+            "pt-BR": "É binário",
+            "ru": "Является бинарным",
+            "ar": "هل هو ثنائي",
+            "hi": "बाइनरी है"
           }
         }
       ]
@@ -630,7 +1280,17 @@
       "name": "close",
       "descriptions": {
         "zh-CN": "连接关闭",
-        "en-US": "Connection closed"
+        "en-US": "Connection closed",
+        "zh-TW": "連接關閉",
+        "ja": "接続が閉じられました",
+        "ko": "연결이 닫힘",
+        "es": "Conexión cerrada",
+        "fr": "Connexion fermée",
+        "de": "Verbindung geschlossen",
+        "pt-BR": "Conexão fechada",
+        "ru": "Соединение закрыто",
+        "ar": "تم إغلاق الاتصال",
+        "hi": "कनेक्शन बंद"
       },
       "payload": [
         {
@@ -638,7 +1298,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接ID",
+            "ja": "接続ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID соединения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -646,7 +1316,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "关闭码",
-            "en-US": "Close code"
+            "en-US": "Close code",
+            "zh-TW": "關閉碼",
+            "ja": "クローズコード",
+            "ko": "닫기 코드",
+            "es": "Código de cierre",
+            "fr": "Code de fermeture",
+            "de": "Schließcode",
+            "pt-BR": "Código de fechamento",
+            "ru": "Код закрытия",
+            "ar": "رمز الإغلاق",
+            "hi": "क्लोज़ कोड"
           }
         },
         {
@@ -654,7 +1334,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "原因",
-            "en-US": "Reason"
+            "en-US": "Reason",
+            "zh-TW": "原因",
+            "ja": "理由",
+            "ko": "사유",
+            "es": "Motivo",
+            "fr": "Raison",
+            "de": "Grund",
+            "pt-BR": "Motivo",
+            "ru": "Причина",
+            "ar": "السبب",
+            "hi": "कारण"
           }
         }
       ]
@@ -663,7 +1353,17 @@
       "name": "error",
       "descriptions": {
         "zh-CN": "连接错误",
-        "en-US": "Connection error"
+        "en-US": "Connection error",
+        "zh-TW": "連接錯誤",
+        "ja": "接続エラー",
+        "ko": "연결 오류",
+        "es": "Error de conexión",
+        "fr": "Erreur de connexion",
+        "de": "Verbindungsfehler",
+        "pt-BR": "Erro de conexão",
+        "ru": "Ошибка соединения",
+        "ar": "خطأ في الاتصال",
+        "hi": "कनेक्शन त्रुटि"
       },
       "payload": [
         {
@@ -671,7 +1371,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接ID",
+            "ja": "接続ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID соединения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -679,7 +1389,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "错误信息",
-            "en-US": "Error message"
+            "en-US": "Error message",
+            "zh-TW": "錯誤訊息",
+            "ja": "エラーメッセージ",
+            "ko": "오류 메시지",
+            "es": "Mensaje de error",
+            "fr": "Message d'erreur",
+            "de": "Fehlermeldung",
+            "pt-BR": "Mensagem de erro",
+            "ru": "Сообщение об ошибке",
+            "ar": "رسالة الخطأ",
+            "hi": "त्रुटि संदेश"
           }
         }
       ]
@@ -688,7 +1408,17 @@
       "name": "server_client_connect",
       "descriptions": {
         "zh-CN": "客户端连入(服务端)",
-        "en-US": "Client connected(server)"
+        "en-US": "Client connected(server)",
+        "zh-TW": "客户端連入(服務端)",
+        "ja": "クライアント接続済み（サーバー）",
+        "ko": "클라이언트 연결됨(서버)",
+        "es": "Cliente conectado(servidor)",
+        "fr": "Client connecté(serveur)",
+        "de": "Client verbunden(Server)",
+        "pt-BR": "Cliente conectado(servidor)",
+        "ru": "Клиент подключён(сервер)",
+        "ar": "العميل متصل(الخادم)",
+        "hi": "क्लाइंट कनेक्टेड(सर्वर)"
       },
       "payload": [
         {
@@ -696,7 +1426,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "伺服器ID",
+            "ja": "サーバーID",
+            "ko": "서버 ID",
+            "es": "ID de servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -704,7 +1444,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "客户端ID",
-            "en-US": "Client ID"
+            "en-US": "Client ID",
+            "zh-TW": "客戶端ID",
+            "ja": "クライアントID",
+            "ko": "클라이언트 ID",
+            "es": "ID de cliente",
+            "fr": "ID client",
+            "de": "Client-ID",
+            "pt-BR": "ID do cliente",
+            "ru": "ID клиента",
+            "ar": "معرف العميل",
+            "hi": "क्लाइंट ID"
           }
         }
       ]
@@ -713,7 +1463,17 @@
       "name": "server_client_disconnect",
       "descriptions": {
         "zh-CN": "客户端断开(服务端)",
-        "en-US": "Client disconnected(server)"
+        "en-US": "Client disconnected(server)",
+        "zh-TW": "客户端斷开(服務端)",
+        "ja": "クライアント切断（サーバー）",
+        "ko": "클라이언트 연결 해제됨(서버)",
+        "es": "Cliente desconectado(servidor)",
+        "fr": "Client déconnecté(serveur)",
+        "de": "Client getrennt(Server)",
+        "pt-BR": "Cliente desconectado(servidor)",
+        "ru": "Клиент отключён(сервер)",
+        "ar": "العميل غير متصل(الخادم)",
+        "hi": "क्लाइंट डिस्कनेक्टेड(सर्वर)"
       },
       "payload": [
         {
@@ -721,7 +1481,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "伺服器ID",
+            "ja": "サーバーID",
+            "ko": "서버 ID",
+            "es": "ID de servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -729,7 +1499,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "客户端ID",
-            "en-US": "Client ID"
+            "en-US": "Client ID",
+            "zh-TW": "客戶端ID",
+            "ja": "クライアントID",
+            "ko": "클라이언트 ID",
+            "es": "ID de cliente",
+            "fr": "ID client",
+            "de": "Client-ID",
+            "pt-BR": "ID do cliente",
+            "ru": "ID клиента",
+            "ar": "معرف العميل",
+            "hi": "क्लाइंट ID"
           }
         }
       ]
@@ -738,7 +1518,17 @@
       "name": "ws_message",
       "descriptions": {
         "zh-CN": "WebSocket接收到消息",
-        "en-US": "WebSocket message received"
+        "en-US": "WebSocket message received",
+        "zh-TW": "WebSocket接收到訊息",
+        "ja": "WebSocketメッセージ受信",
+        "ko": "WebSocket 메시지 수신됨",
+        "es": "Mensaje WebSocket recibido",
+        "fr": "Message WebSocket reçu",
+        "de": "WebSocket-Nachricht empfangen",
+        "pt-BR": "Mensagem WebSocket recebida",
+        "ru": "WebSocket-сообщение получено",
+        "ar": "تم استلام رسالة WebSocket",
+        "hi": "WebSocket संदेश प्राप्त"
       },
       "payload": [
         {
@@ -746,7 +1536,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接ID",
+            "ja": "接続ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID соединения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -754,7 +1554,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "消息数据",
-            "en-US": "Message data"
+            "en-US": "Message data",
+            "zh-TW": "訊息內容",
+            "ja": "メッセージデータ",
+            "ko": "메시지 데이터",
+            "es": "Datos del mensaje",
+            "fr": "Données du message",
+            "de": "Nachrichtendaten",
+            "pt-BR": "Dados da mensagem",
+            "ru": "Данные сообщения",
+            "ar": "بيانات الرسالة",
+            "hi": "संदेश डेटा"
           }
         },
         {
@@ -762,7 +1572,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否为二进制消息",
-            "en-US": "Whether binary message"
+            "en-US": "Whether binary message",
+            "zh-TW": "是否為二進制訊息",
+            "ja": "バイナリメッセージかどうか",
+            "ko": "바이너리 메시지 여부",
+            "es": "Si es mensaje binario",
+            "fr": "Si message binaire",
+            "de": "Ob Binärnachricht",
+            "pt-BR": "Se é mensagem binária",
+            "ru": "Является ли бинарным сообщением",
+            "ar": "هل هي رسالة ثنائية",
+            "hi": "बाइनरी संदेश है या नहीं"
           }
         }
       ]
@@ -771,7 +1591,17 @@
       "name": "ws_close",
       "descriptions": {
         "zh-CN": "WebSocket连接关闭",
-        "en-US": "WebSocket connection closed"
+        "en-US": "WebSocket connection closed",
+        "zh-TW": "WebSocket連接關閉",
+        "ja": "WebSocket接続が閉じられました",
+        "ko": "WebSocket 연결이 닫힘",
+        "es": "Conexión WebSocket cerrada",
+        "fr": "Connexion WebSocket fermée",
+        "de": "WebSocket-Verbindung geschlossen",
+        "pt-BR": "Conexão WebSocket fechada",
+        "ru": "WebSocket-соединение закрыто",
+        "ar": "تم إغلاق اتصال WebSocket",
+        "hi": "WebSocket कनेक्शन बंद"
       },
       "payload": [
         {
@@ -779,7 +1609,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接ID",
+            "ja": "接続ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID соединения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -787,7 +1627,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "关闭状态码",
-            "en-US": "Close status code"
+            "en-US": "Close status code",
+            "zh-TW": "關閉狀態碼",
+            "ja": "クローズステータスコード",
+            "ko": "닫기 상태 코드",
+            "es": "Código de estado de cierre",
+            "fr": "Code d'état de fermeture",
+            "de": "Schließ-Statuscode",
+            "pt-BR": "Código de status de fechamento",
+            "ru": "Код статуса закрытия",
+            "ar": "رمز حالة الإغلاق",
+            "hi": "क्लोज़ स्टेटस कोड"
           }
         },
         {
@@ -795,7 +1645,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "关闭原因",
-            "en-US": "Close reason"
+            "en-US": "Close reason",
+            "zh-TW": "關閉原因",
+            "ja": "クローズ理由",
+            "ko": "닫기 사유",
+            "es": "Motivo de cierre",
+            "fr": "Raison de fermeture",
+            "de": "Schließgrund",
+            "pt-BR": "Motivo de fechamento",
+            "ru": "Причина закрытия",
+            "ar": "سبب الإغلاق",
+            "hi": "बंद करने का कारण"
           }
         }
       ]
@@ -804,7 +1664,17 @@
       "name": "ws_server_connect",
       "descriptions": {
         "zh-CN": "服务端有新客户端连接",
-        "en-US": "Server new client connected"
+        "en-US": "Server new client connected",
+        "zh-TW": "服務端有新客户端連接",
+        "ja": "サーバーに新しいクライアントが接続しました",
+        "ko": "서버에 새 클라이언트가 연결됨",
+        "es": "Nuevo cliente conectado al servidor",
+        "fr": "Nouveau client connecté au serveur",
+        "de": "Neuer Client mit Server verbunden",
+        "pt-BR": "Novo cliente conectado ao servidor",
+        "ru": "К серверу подключился новый клиент",
+        "ar": "عميل جديد متصل بالخادم",
+        "hi": "सर्वर पर नया क्लाइंट कनेक्ट हुआ"
       },
       "payload": [
         {
@@ -812,7 +1682,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "伺服器ID",
+            "ja": "サーバーID",
+            "ko": "서버 ID",
+            "es": "ID de servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -820,7 +1700,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "客户端ID",
-            "en-US": "Client ID"
+            "en-US": "Client ID",
+            "zh-TW": "客戶端ID",
+            "ja": "クライアントID",
+            "ko": "클라이언트 ID",
+            "es": "ID de cliente",
+            "fr": "ID client",
+            "de": "Client-ID",
+            "pt-BR": "ID do cliente",
+            "ru": "ID клиента",
+            "ar": "معرف العميل",
+            "hi": "क्लाइंट ID"
           }
         },
         {
@@ -828,7 +1718,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "客户端地址",
-            "en-US": "Client address"
+            "en-US": "Client address",
+            "zh-TW": "客戶端地址",
+            "ja": "クライアントアドレス",
+            "ko": "클라이언트 주소",
+            "es": "Dirección del cliente",
+            "fr": "Adresse client",
+            "de": "Client-Adresse",
+            "pt-BR": "Endereço do cliente",
+            "ru": "Адрес клиента",
+            "ar": "عنوان العميل",
+            "hi": "क्लाइंट पता"
           }
         }
       ]
@@ -839,7 +1739,17 @@
       "name": "WsConnection",
       "descriptions": {
         "zh-CN": "WebSocket连接信息",
-        "en-US": "WebSocket connection info"
+        "en-US": "WebSocket connection info",
+        "zh-TW": "WebSocket連接資訊",
+        "ja": "WebSocket接続情報",
+        "ko": "WebSocket 연결 정보",
+        "es": "Información de conexión WebSocket",
+        "fr": "Informations de connexion WebSocket",
+        "de": "WebSocket-Verbindungsinformationen",
+        "pt-BR": "Informações da conexão WebSocket",
+        "ru": "Информация о WebSocket-соединении",
+        "ar": "معلومات اتصال WebSocket",
+        "hi": "WebSocket कनेक्शन जानकारी"
       },
       "fields": [
         {
@@ -847,7 +1757,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接ID",
+            "ja": "接続ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID da conexão",
+            "ru": "ID соединения",
+            "ar": "معرّف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -855,7 +1775,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接地址",
-            "en-US": "Connection URL"
+            "en-US": "Connection URL",
+            "zh-TW": "連接地址",
+            "ja": "接続URL",
+            "ko": "연결 URL",
+            "es": "URL de conexión",
+            "fr": "URL de connexion",
+            "de": "Verbindungs-URL",
+            "pt-BR": "URL de conexão",
+            "ru": "URL соединения",
+            "ar": "عنوان URL للاتصال",
+            "hi": "कनेक्शन URL"
           }
         },
         {
@@ -864,7 +1794,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "协商的子协议",
-            "en-US": "Negotiated sub-protocol"
+            "en-US": "Negotiated sub-protocol",
+            "zh-TW": "協商的子協議",
+            "ja": "ネゴシエートされたサブプロトコル",
+            "ko": "협상된 서브 프로토콜",
+            "es": "Sub-protocolo negociado",
+            "fr": "Sous-protocole négocié",
+            "de": "Ausgehandeltes Unterprotokoll",
+            "pt-BR": "Sub-protocolo negociado",
+            "ru": "Согласованный подпротокол",
+            "ar": "البروتوكول الفرعي المتفاوض عليه",
+            "hi": "बातचीत किया गया उप-प्रोटोकॉल"
           }
         }
       ]
@@ -876,7 +1816,17 @@
       "value": 1000,
       "descs": {
         "zh-CN": "正常关闭状态码",
-        "en-US": "Normal close status code"
+        "en-US": "Normal close status code",
+        "zh-TW": "正常關閉狀態碼",
+        "ja": "正常終了ステータスコード",
+        "ko": "정상 종료 상태 코드",
+        "es": "Código de estado de cierre normal",
+        "fr": "Code de statut de fermeture normale",
+        "de": "Normaler Schließ-Statuscode",
+        "pt-BR": "Código de status de fechamento normal",
+        "ru": "Код статуса нормального закрытия",
+        "ar": "رمز حالة الإغلاق الطبيعي",
+        "hi": "सामान्य बंद स्थिति कोड"
       },
       "type": "number"
     },
@@ -885,7 +1835,17 @@
       "value": 1001,
       "descs": {
         "zh-CN": "端点离开状态码",
-        "en-US": "Going away status code"
+        "en-US": "Going away status code",
+        "zh-TW": "端点離开狀態碼",
+        "ja": "切断ステータスコード",
+        "ko": "종료 상태 코드",
+        "es": "Código de estado de desconexión",
+        "fr": "Code de statut de déconnexion",
+        "de": "Going-Away-Statuscode",
+        "pt-BR": "Código de status de desconexão",
+        "ru": "Код статуса закрытия",
+        "ar": "رمز حالة الانتهاء",
+        "hi": "जा रहा है स्थिति कोड"
       },
       "type": "number"
     },
@@ -894,7 +1854,17 @@
       "value": 1002,
       "descs": {
         "zh-CN": "协议错误状态码",
-        "en-US": "Protocol error status code"
+        "en-US": "Protocol error status code",
+        "zh-TW": "協議錯誤狀態碼",
+        "ja": "プロトコルエラーステータスコード",
+        "ko": "프로토콜 오류 상태 코드",
+        "es": "Código de estado de error de protocolo",
+        "fr": "Code de statut d'erreur de protocole",
+        "de": "Protokollfehler-Statuscode",
+        "pt-BR": "Código de status de erro de protocolo",
+        "ru": "Код статуса ошибки протокола",
+        "ar": "رمز حالة خطأ البروتوكول",
+        "hi": "प्रोटोकॉल त्रुटि स्थिति कोड"
       },
       "type": "number"
     }

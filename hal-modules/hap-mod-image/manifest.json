@@ -22,7 +22,7 @@
     "ar": "وحدة معالجة الصور",
     "hi": "इमेज प्रोसेसिंग मॉड्यूल"
   },
-  "permission": "",
+  "permission": "image",
   "functions": [
     {
       "name": "info",
@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "图片文件的路径",
-            "en-US": "Path to the image file"
+            "en-US": "Path to the image file",
+            "zh-TW": "圖片檔案的路徑",
+            "ja": "画像ファイルのパス",
+            "ko": "이미지파일의경로",
+            "es": "Ruta del archivo de imagen",
+            "fr": "Chemin du fichier image",
+            "de": "Pfad zur Bilddatei",
+            "pt-BR": "Caminho do arquivo de imagem",
+            "ru": "Путь к файлу изображения",
+            "ar": "مسار ملف الصورة",
+            "hi": "इमेज फ़ाइल का पथ"
           },
           "desc": "Path to the image file"
         }
@@ -42,14 +52,34 @@
         "type": "ImageInfo",
         "descs": {
           "zh-CN": "包含宽高、格式、色彩模式等的图像信息对象",
-          "en-US": "Image info object with dimensions, format, color mode"
+          "en-US": "Image info object with dimensions, format, color mode",
+          "zh-TW": "包含寬高、格式、色彩模式等的圖像資訊物件",
+          "ja": "含む宽高、フォーマット、色彩モード等の画像情報オブジェクト",
+          "ko": "크기, 형식, 색상 모드를 포함한 이미지 정보 객체",
+          "es": "Objeto con dimensiones, formato y modo de color",
+          "fr": "Objet avec dimensions, format et mode couleur",
+          "de": "Bildinformationsobjekt mit Abmessungen, Format, Farbmodus",
+          "pt-BR": "Objeto com dimensões, formato e modo de cor",
+          "ru": "Объект с размерами, форматом и цветовым режимом",
+          "ar": "كائن معلومات الصورة مع الأبعاد والتنسيق ووضع الألوان",
+          "hi": "आयाम, फ़ॉर्मैट, कलर मोड सहित इमेज जानकारी ऑब्जेक्ट"
         },
         "desc": "Image info object with dimensions, format, color mode"
       },
       "bridge_path": "image.info",
       "descriptions": {
         "zh-CN": "获取指定图片文件的基本信息（宽高、格式、色彩模式等）",
-        "en-US": "Get basic information of an image file (dimensions, format, color mode, etc.)"
+        "en-US": "Get basic information of an image file (dimensions, format, color mode, etc.)",
+        "zh-TW": "取得指定圖片檔案的基本資訊（寬高、格式、色彩模式等）",
+        "ja": "取得する指定画像ファイルの基本情報（宽高、フォーマット、色彩モード等）",
+        "ko": "이미지 파일 기본 정보 가져오기 (크기, 형식, 색상 모드 등)",
+        "es": "Obtener información básica de imagen (dimensiones, formato, modo de color, etc.)",
+        "fr": "Obtenir les informations de base de l'image (dimensions, format, mode couleur, etc.)",
+        "de": "Grundinformationen eines Bildes abrufen (Abmessungen, Format, Farbmodus etc.)",
+        "pt-BR": "Obter informações básicas da imagem (dimensões, formato, modo de cor, etc.)",
+        "ru": "Получить основную информацию об изображении (размеры, формат, цветовой режим и т.д.)",
+        "ar": "الحصول على معلومات أساسية عن الصورة (الأبعاد, التنسيق, وضع الألوان, إلخ)",
+        "hi": "इमेज फ़ाइल की मूल जानकारी प्राप्त करें (आयाम, फ़ॉर्मैट, कलर मोड आदि)"
       },
       "group": "basic",
       "description": "Get basic information of an image file (dimensions, format, color mode, etc.)"
@@ -63,7 +93,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "源图片文件路径",
-            "en-US": "Source image path"
+            "en-US": "Source image path",
+            "zh-TW": "源圖片檔案路徑",
+            "ja": "源画像ファイルパス",
+            "ko": "원본 이미지 경로",
+            "es": "Ruta de imagen de origen",
+            "fr": "Chemin de l'image source",
+            "de": "Quellbildpfad",
+            "pt-BR": "Caminho da imagem de origem",
+            "ru": "Путь исходного изображения",
+            "ar": "مسار الصورة المصدر",
+            "hi": "स्रोत इमेज पथ"
           },
           "desc": "Source image path"
         },
@@ -72,7 +112,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "目标宽度（像素）",
-            "en-US": "Target width in pixels"
+            "en-US": "Target width in pixels",
+            "zh-TW": "目標寬度（像素）",
+            "ja": "ターゲット幅（ピクセル）",
+            "ko": "대상 너비 (픽셀)",
+            "es": "Ancho objetivo en píxeles",
+            "fr": "Largeur cible en pixels",
+            "de": "Zielbreite in Pixeln",
+            "pt-BR": "Largura alvo em pixels",
+            "ru": "Целевая ширина в пикселях",
+            "ar": "العرض المستهدف بالبكسل",
+            "hi": "लक्ष्य चौड़ाई पिक्सेल में"
           },
           "desc": "Target width in pixels"
         },
@@ -81,7 +131,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "目标高度（像素）",
-            "en-US": "Target height in pixels"
+            "en-US": "Target height in pixels",
+            "zh-TW": "目標高度（像素）",
+            "ja": "ターゲット高さ（ピクセル）",
+            "ko": "대상 높이 (픽셀)",
+            "es": "Alto objetivo en píxeles",
+            "fr": "Hauteur cible en pixels",
+            "de": "Zielhöhe in Pixeln",
+            "pt-BR": "Altura alvo em pixels",
+            "ru": "Целевая высота в пикселях",
+            "ar": "الارتفاع المستهدف بالبكسل",
+            "hi": "लक्ष्य ऊंचाई पिक्सेल में"
           },
           "desc": "Target height in pixels"
         },
@@ -90,7 +150,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -99,14 +169,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "操作是否成功",
-          "en-US": "Whether operation succeeded"
+          "en-US": "Whether operation succeeded",
+          "zh-TW": "操作是否成功",
+          "ja": "操作成功したかどうか",
+          "ko": "작업성공 여부",
+          "es": "Si la operación tuvo éxito",
+          "fr": "Si l'opération a réussi",
+          "de": "Ob die Operation erfolgreich war",
+          "pt-BR": "Se a operação foi bem-sucedida",
+          "ru": "Успешна ли операция",
+          "ar": "هل نجحت العملية",
+          "hi": "क्या ऑपरेशन सफल हुआ"
         },
         "desc": "Whether operation succeeded"
       },
       "bridge_path": "image.resize",
       "descriptions": {
         "zh-CN": "按指定的目标宽高缩放图片文件，可选择不同的插值算法",
-        "en-US": "Resize image to specified dimensions with selectable interpolation"
+        "en-US": "Resize image to specified dimensions with selectable interpolation",
+        "zh-TW": "按指定的目標寬高縮放圖片檔案，可選擇不同的插值算法",
+        "ja": "選択可能な補間で画像を指定サイズにリサイズ",
+        "ko": "선택 가능한 보간법으로 지정 크기로 이미지 크기 조정",
+        "es": "Redimensionar imagen con interpolación seleccionable",
+        "fr": "Redimensionner l'image avec interpolation",
+        "de": "Bild mit wählbarer Interpolation skalieren",
+        "pt-BR": "Redimensionar imagem com interpolação selecionável",
+        "ru": "Изменить размер изображения с выбором интерполяции",
+        "ar": "تغيير حجم الصورة مع اختيار الاستكمال",
+        "hi": "चयन योग्य इंटरपोलेशन के साथ इमेज रीसाइज़ करें"
       },
       "group": "basic",
       "description": "Resize image to specified dimensions with selectable interpolation"
@@ -120,7 +210,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "源图片文件路径",
-            "en-US": "Source image path"
+            "en-US": "Source image path",
+            "zh-TW": "源圖片檔案路徑",
+            "ja": "源画像ファイルパス",
+            "ko": "원본 이미지 경로",
+            "es": "Ruta de imagen de origen",
+            "fr": "Chemin de l'image source",
+            "de": "Quellbildpfad",
+            "pt-BR": "Caminho da imagem de origem",
+            "ru": "Путь исходного изображения",
+            "ar": "مسار الصورة المصدر",
+            "hi": "स्रोत इमेज पथ"
           },
           "desc": "Source image path"
         },
@@ -129,7 +229,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "裁剪起始X坐标（像素）",
-            "en-US": "Crop start X coordinate"
+            "en-US": "Crop start X coordinate",
+            "zh-TW": "裁剪起始X坐標（像素）",
+            "ja": "クロップ開始X座標",
+            "ko": "자르기 시작 X 좌표",
+            "es": "Coordenada X de inicio del recorte",
+            "fr": "Coordonnée X de début du recadrage",
+            "de": "Zuschneide-Start X-Koordinate",
+            "pt-BR": "Coordenada X inicial do corte",
+            "ru": "Начальная X-координата обрезки",
+            "ar": "إحداثي X بداية القص",
+            "hi": "क्रॉप प्रारंभ X निर्देशांक"
           },
           "desc": "Crop start X coordinate"
         },
@@ -138,7 +248,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "裁剪起始Y坐标（像素）",
-            "en-US": "Crop start Y coordinate"
+            "en-US": "Crop start Y coordinate",
+            "zh-TW": "裁剪起始Y坐標（像素）",
+            "ja": "クロップ開始Y座標",
+            "ko": "자르기 시작 Y 좌표",
+            "es": "Coordenada Y de inicio del recorte",
+            "fr": "Coordonnée Y de début du recadrage",
+            "de": "Zuschneide-Start Y-Koordinate",
+            "pt-BR": "Coordenada Y inicial do corte",
+            "ru": "Начальная Y-координата обрезки",
+            "ar": "إحداثي Y بداية القص",
+            "hi": "क्रॉप प्रारंभ Y निर्देशांक"
           },
           "desc": "Crop start Y coordinate"
         },
@@ -147,7 +267,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "裁剪区域宽度（像素）",
-            "en-US": "Crop region width in pixels"
+            "en-US": "Crop region width in pixels",
+            "zh-TW": "裁剪區域寬度（像素）",
+            "ja": "トリミング領域の幅（ピクセル）",
+            "ko": "크롭 영역 너비 (픽셀)",
+            "es": "Ancho de la región de recorte (px)",
+            "fr": "Largeur de la région de recadrage (px)",
+            "de": "Zuschneide-Breite (Pixel)",
+            "pt-BR": "Largura da região de corte (px)",
+            "ru": "Ширина области обрезки (пикс.)",
+            "ar": "عرض منطقة القص (بكسل)",
+            "hi": "क्रॉप क्षेत्र चौड़ाई (पिक्सल)"
           },
           "desc": "Crop region width in pixels"
         },
@@ -156,7 +286,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "裁剪区域高度（像素）",
-            "en-US": "Crop region height in pixels"
+            "en-US": "Crop region height in pixels",
+            "zh-TW": "裁剪區域高度（像素）",
+            "ja": "トリミング領域の高さ（ピクセル）",
+            "ko": "크롭 영역 높이 (픽셀)",
+            "es": "Altura de la región de recorte (px)",
+            "fr": "Hauteur de la région de recadrage (px)",
+            "de": "Zuschneide-Höhe (Pixel)",
+            "pt-BR": "Altura da região de corte (px)",
+            "ru": "Высота области обрезки (пикс.)",
+            "ar": "ارتفاع منطقة القص (بكسل)",
+            "hi": "क्रॉप क्षेत्र ऊंचाई (पिक्सल)"
           },
           "desc": "Crop region height in pixels"
         },
@@ -165,7 +305,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -174,14 +324,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "操作是否成功",
-          "en-US": "Whether operation succeeded"
+          "en-US": "Whether operation succeeded",
+          "zh-TW": "操作是否成功",
+          "ja": "操作成功したかどうか",
+          "ko": "작업성공 여부",
+          "es": "Si la operación tuvo éxito",
+          "fr": "Si l'opération a réussi",
+          "de": "Ob die Operation erfolgreich war",
+          "pt-BR": "Se a operação foi bem-sucedida",
+          "ru": "Успешна ли операция",
+          "ar": "هل نجحت العملية",
+          "hi": "क्या ऑपरेशन सफल हुआ"
         },
         "desc": "Whether operation succeeded"
       },
       "bridge_path": "image.crop",
       "descriptions": {
         "zh-CN": "从图片中裁剪出指定坐标和尺寸的矩形区域",
-        "en-US": "Crop a rectangular region from the image at specified coordinates"
+        "en-US": "Crop a rectangular region from the image at specified coordinates",
+        "zh-TW": "從圖片中裁剪出指定坐標和尺寸的矩形區域",
+        "ja": "指定座標で画像から矩形領域をクロップ",
+        "ko": "지정된 좌표에서 이미지의 사각 영역 크롭",
+        "es": "Recortar región rectangular de la imagen",
+        "fr": "Recadrer une région rectangulaire de l'image",
+        "de": "Rechteckigen Bereich aus dem Bild zuschneiden",
+        "pt-BR": "Recortar região retangular da imagem",
+        "ru": "Обрезать прямоугольную область изображения",
+        "ar": "قص منطقة مستطيلة من الصورة",
+        "hi": "निर्दिष्ट निर्देशांक पर इमेज से आयताकार क्षेत्र क्रॉप करें"
       },
       "group": "basic",
       "description": "Crop a rectangular region from the image at specified coordinates"
@@ -195,7 +365,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "源图片文件路径",
-            "en-US": "Source image path"
+            "en-US": "Source image path",
+            "zh-TW": "源圖片檔案路徑",
+            "ja": "源画像ファイルパス",
+            "ko": "원본 이미지 경로",
+            "es": "Ruta de imagen de origen",
+            "fr": "Chemin de l'image source",
+            "de": "Quellbildpfad",
+            "pt-BR": "Caminho da imagem de origem",
+            "ru": "Путь исходного изображения",
+            "ar": "مسار الصورة المصدر",
+            "hi": "स्रोत इमेज पथ"
           },
           "desc": "Source image path"
         },
@@ -204,7 +384,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "旋转角度（顺时针，支持90/180/270或任意值）",
-            "en-US": "Rotation degrees (clockwise)"
+            "en-US": "Rotation degrees (clockwise)",
+            "zh-TW": "旋轉角度（順時針，支持90/180/270或任意值）",
+            "ja": "回転角度（時計回り）",
+            "ko": "회전 각도 (시계 방향)",
+            "es": "Grados de rotación (sentido horario)",
+            "fr": "Degrés de rotation (sens horaire)",
+            "de": "Rotationsgrad (im Uhrzeigersinn)",
+            "pt-BR": "Graus de rotação (sentido horário)",
+            "ru": "Градусы поворота (по часовой стрелке)",
+            "ar": "درجات الدوران (باتجاه عقارب الساعة)",
+            "hi": "घूर्णन डिग्री (दक्षिणावर्त)"
           },
           "desc": "Rotation degrees (clockwise)"
         },
@@ -213,7 +403,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径（不指定则覆盖原文件）",
-            "en-US": "Output path (overwrites source if not specified)"
+            "en-US": "Output path (overwrites source if not specified)",
+            "zh-TW": "輸出檔案路徑（不指定則覆蓋原檔案）",
+            "ja": "出力パス（未指定時はソースを上書き）",
+            "ko": "출력 경로 (미지정 시 원본 덮어쓰기)",
+            "es": "Ruta de salida (sobrescribe si no se especifica)",
+            "fr": "Chemin de sortie (écrase la source si non spécifié)",
+            "de": "Ausgabepfad (überschreibt Quelle wenn nicht angegeben)",
+            "pt-BR": "Caminho de saída (sobrescreve fonte se não especificado)",
+            "ru": "Путь вывода (перезаписывает исходный файл)",
+            "ar": "مسار الإخراج (يكتب فوق المصدر إن لم يحدد)",
+            "hi": "आउटपुट पथ (अनिर्दिष्ट होने पर स्रोत ओवरराइट)"
           },
           "desc": "Output path (overwrites source if not specified)"
         }
@@ -222,14 +422,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "操作是否成功",
-          "en-US": "Whether operation succeeded"
+          "en-US": "Whether operation succeeded",
+          "zh-TW": "操作是否成功",
+          "ja": "操作成功したかどうか",
+          "ko": "작업성공 여부",
+          "es": "Si la operación tuvo éxito",
+          "fr": "Si l'opération a réussi",
+          "de": "Ob die Operation erfolgreich war",
+          "pt-BR": "Se a operação foi bem-sucedida",
+          "ru": "Успешна ли операция",
+          "ar": "هل نجحت العملية",
+          "hi": "क्या ऑपरेशन सफल हुआ"
         },
         "desc": "Whether operation succeeded"
       },
       "bridge_path": "image.rotate",
       "descriptions": {
         "zh-CN": "将图片旋转指定角度（支持90/180/270或任意角度）",
-        "en-US": "Rotate image by specified degrees"
+        "en-US": "Rotate image by specified degrees",
+        "zh-TW": "將圖片旋轉指定角度（支持90/180/270或任意角度）",
+        "ja": "指定角度で画像を回転",
+        "ko": "지정 각도로 이미지 회전",
+        "es": "Rotar imagen por grados especificados",
+        "fr": "Faire pivoter l'image selon les degrés spécifiés",
+        "de": "Bild um angegebene Grad drehen",
+        "pt-BR": "Rotacionar imagem pelos graus especificados",
+        "ru": "Повернуть изображение на указанные градусы",
+        "ar": "تدوير الصورة بالدرجات المحددة",
+        "hi": "निर्दिष्ट डिग्री पर इमेज घुमाएं"
       },
       "group": "basic",
       "description": "Rotate image by specified degrees"
@@ -243,7 +463,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -252,7 +482,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "翻转方向：h=水平翻转，v=垂直翻转",
-            "en-US": "Flip direction: h=horizontal, v=vertical"
+            "en-US": "Flip direction: h=horizontal, v=vertical",
+            "zh-TW": "翻轉方向：h=水平翻轉，v=垂直翻轉",
+            "ja": "反転方向: h=水平, v=垂直",
+            "ko": "뒤집기 방향: h=수평, v=수직",
+            "es": "Dirección: h=horizontal, v=vertical",
+            "fr": "Direction: h=horizontal, v=vertical",
+            "de": "Richtung: h=horizontal, v=vertikal",
+            "pt-BR": "Direção: h=horizontal, v=vertical",
+            "ru": "Направление: h=горизонтально, v=вертикально",
+            "ar": "الاتجاه: h=أفقي، v=عمودي",
+            "hi": "दिशा: h=क्षैतिज, v=लंबवत"
           },
           "desc": "Flip direction: h=horizontal, v=vertical"
         },
@@ -261,7 +501,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -270,14 +520,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.flip",
       "descriptions": {
         "zh-CN": "将图片沿水平轴或垂直轴翻转",
-        "en-US": "Flip image along horizontal or vertical axis"
+        "en-US": "Flip image along horizontal or vertical axis",
+        "zh-TW": "將圖片沿水平轴或垂直轴翻轉",
+        "ja": "画像を水平または垂直軸で反転",
+        "ko": "수평 또는 수직 축으로 이미지 뒤집기",
+        "es": "Voltear imagen horizontal o verticalmente",
+        "fr": "Retourner l'image horizontalement ou verticalement",
+        "de": "Bild horizontal oder vertikal spiegeln",
+        "pt-BR": "Espelhar imagem horizontal ou verticalmente",
+        "ru": "Отразить изображение по горизонтали или вертикали",
+        "ar": "قلب الصورة أفقياً أو رأسياً",
+        "hi": "इमेज को क्षैतिज या लंबवत अक्ष पर फ्लिप करें"
       },
       "group": "basic",
       "description": "Flip image along horizontal or vertical axis"
@@ -291,7 +561,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "源图片文件路径",
-            "en-US": "Source image path"
+            "en-US": "Source image path",
+            "zh-TW": "源圖片檔案路徑",
+            "ja": "源画像ファイルパス",
+            "ko": "원본 이미지 경로",
+            "es": "Ruta de imagen de origen",
+            "fr": "Chemin de l'image source",
+            "de": "Quellbildpfad",
+            "pt-BR": "Caminho da imagem de origem",
+            "ru": "Путь исходного изображения",
+            "ar": "مسار الصورة المصدر",
+            "hi": "स्रोत इमेज पथ"
           },
           "desc": "Source image path"
         },
@@ -300,7 +580,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -309,14 +599,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.convert",
       "descriptions": {
         "zh-CN": "将图片转换为其他格式（PNG/JPEG/WebP/BMP等）",
-        "en-US": "Convert image to another format"
+        "en-US": "Convert image to another format",
+        "zh-TW": "將圖片轉換為其他格式（PNG/JPEG/WebP/BMP等）",
+        "ja": "画像を別の形式に変換",
+        "ko": "이미지를 다른 형식으로 변환",
+        "es": "Convertir imagen a otro formato",
+        "fr": "Convertir l'image dans un autre format",
+        "de": "Bild in anderes Format konvertieren",
+        "pt-BR": "Converter imagem para outro formato",
+        "ru": "Конвертировать изображение в другой формат",
+        "ar": "تحويل الصورة إلى تنسيق آخر",
+        "hi": "इमेज को दूसरे फ़ॉर्मैट में बदलें"
       },
       "group": "basic",
       "description": "Convert image to another format"
@@ -330,7 +640,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要压缩的图片文件路径",
-            "en-US": "Image file to compress"
+            "en-US": "Image file to compress",
+            "zh-TW": "要壓縮的圖片檔案路徑",
+            "ja": "要圧縮するの画像ファイルパス",
+            "ko": "압축할 이미지 파일",
+            "es": "Archivo de imagen a comprimir",
+            "fr": "Fichier image à compresser",
+            "de": "Zu komprimierende Bilddatei",
+            "pt-BR": "Arquivo de imagem a comprimir",
+            "ru": "Файл изображения для сжатия",
+            "ar": "ملف الصورة للضغط",
+            "hi": "संपीड़ित करने के लिए इमेज फ़ाइल"
           },
           "desc": "Image file to compress"
         },
@@ -339,7 +659,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "压缩质量（1-100，越低压缩率越高）",
-            "en-US": "Quality (1-100, lower = more compression)"
+            "en-US": "Quality (1-100, lower = more compression)",
+            "zh-TW": "壓縮質量（1-100，越低壓縮率越高）",
+            "ja": "圧縮する质量（1-100，越低圧縮する率越高）",
+            "ko": "품질 (1-100, 낮을수록 높은 압축)",
+            "es": "Calidad (1-100, menor = más compresión)",
+            "fr": "Qualité (1-100, plus bas = plus de compression)",
+            "de": "Qualität (1-100, niedriger = mehr Kompression)",
+            "pt-BR": "Qualidade (1-100, menor = mais compressão)",
+            "ru": "Качество (1-100, меньше = больше сжатие)",
+            "ar": "الجودة (1-100, أقل = ضغط أكثر)",
+            "hi": "गुणवत्ता (1-100, कम = अधिक संपीड़न)"
           },
           "desc": "Quality (1-100, lower = more compression)",
           "optional": true
@@ -349,7 +679,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -358,14 +698,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.compress",
       "descriptions": {
         "zh-CN": "压缩图片文件大小，可指定目标质量或最大文件尺寸",
-        "en-US": "Compress image file size with quality or max size target"
+        "en-US": "Compress image file size with quality or max size target",
+        "zh-TW": "壓縮圖片檔案大小，可指定目標質量或最大檔案尺寸",
+        "ja": "品質または最大サイズ目標で画像ファイルサイズを圧縮",
+        "ko": "품질 또는 최대 크기 목표로 이미지 파일 크기 압축",
+        "es": "Comprimir tamaño de imagen con calidad",
+        "fr": "Compresser la taille de l'image",
+        "de": "Bildgröße komprimieren",
+        "pt-BR": "Comprimir tamanho da imagem",
+        "ru": "Сжать размер изображения",
+        "ar": "ضغط حجم ملف الصورة",
+        "hi": "इमेज फ़ाइल साइज़ कंप्रेस करें"
       },
       "group": "basic",
       "description": "Compress image file size with quality or max size target"
@@ -379,7 +739,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "源图片文件路径",
-            "en-US": "Source image path"
+            "en-US": "Source image path",
+            "zh-TW": "源圖片檔案路徑",
+            "ja": "源画像ファイルパス",
+            "ko": "원본 이미지 경로",
+            "es": "Ruta de imagen de origen",
+            "fr": "Chemin de l'image source",
+            "de": "Quellbildpfad",
+            "pt-BR": "Caminho da imagem de origem",
+            "ru": "Путь исходного изображения",
+            "ar": "مسار الصورة المصدر",
+            "hi": "स्रोत इमेज पथ"
           },
           "desc": "Source image path"
         },
@@ -388,7 +758,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "大小数值",
-            "en-US": "Size value"
+            "en-US": "Size value",
+            "zh-TW": "大小數值",
+            "ja": "サイズ値",
+            "ko": "크기 값",
+            "es": "Valor de tamaño",
+            "fr": "Valeur de taille",
+            "de": "Größenwert",
+            "pt-BR": "Valor de tamanho",
+            "ru": "Значение размера",
+            "ar": "قيمة الحجم",
+            "hi": "आकार मान"
           },
           "desc": "Size value"
         },
@@ -397,7 +777,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -406,14 +796,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.thumbnail",
       "descriptions": {
         "zh-CN": "生成图片的缩略图（保持宽高比）",
-        "en-US": "Generate a thumbnail preserving aspect ratio"
+        "en-US": "Generate a thumbnail preserving aspect ratio",
+        "zh-TW": "產生圖片的縮略圖（保持寬高比）",
+        "ja": "アスペクト比を保持してサムネイルを生成",
+        "ko": "종횡비를 유지하며 썸네일 생성",
+        "es": "Generar miniatura preservando relación de aspecto",
+        "fr": "Générer une miniature en préservant le ratio",
+        "de": "Vorschaubild mit Seitenverhältnis erstellen",
+        "pt-BR": "Gerar miniatura preservando proporção",
+        "ru": "Создать миниатюру с сохранением пропорций",
+        "ar": "إنشاء صورة مصغرة مع الحفاظ على نسبة العرض",
+        "hi": "पहलू अनुपात बनाए रखते हुए थंबनेल बनाएं"
       },
       "group": "basic",
       "description": "Generate a thumbnail preserving aspect ratio"
@@ -427,7 +837,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -436,7 +856,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文本字符串",
-            "en-US": "Text string"
+            "en-US": "Text string",
+            "zh-TW": "文字字串",
+            "ja": "テキスト文字列",
+            "ko": "텍스트문자열",
+            "es": "Cadena de texto",
+            "fr": "Chaîne de texte",
+            "de": "Textzeichenkette",
+            "pt-BR": "String de texto",
+            "ru": "Текстовая строка",
+            "ar": "سلسلة نصية",
+            "hi": "टेक्स्ट स्ट्रिंग"
           },
           "desc": "Text string"
         },
@@ -445,7 +875,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -454,14 +894,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.watermarkText",
       "descriptions": {
         "zh-CN": "在图片上添加文字水印",
-        "en-US": "Watermark text of image"
+        "en-US": "Watermark text of image",
+        "zh-TW": "在圖片上添加文字水印",
+        "ja": "で画像上添加文字水印",
+        "ko": "이미지 텍스트 워터마크",
+        "es": "Marca de agua de texto en imagen",
+        "fr": "Filigrane texte de l'image",
+        "de": "Text-Wasserzeichen des Bildes",
+        "pt-BR": "Marca d'água de texto na imagem",
+        "ru": "Текстовый водяной знак изображения",
+        "ar": "علامة مائية نصية للصورة",
+        "hi": "इमेज पर टेक्स्ट वॉटरमार्क"
       },
       "group": "draw",
       "description": "Watermark text of image"
@@ -475,7 +935,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -484,7 +954,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "watermark参数",
-            "en-US": "watermark parameter"
+            "en-US": "watermark parameter",
+            "zh-TW": "watermark參數",
+            "ja": "watermarkパラメータ",
+            "ko": "watermark매개변수",
+            "es": "Parámetro de watermark",
+            "fr": "Paramètre de watermark",
+            "de": "watermark-Parameter",
+            "pt-BR": "Parâmetro de watermark",
+            "ru": "Параметр watermark",
+            "ar": "معلمة watermark",
+            "hi": "watermark पैरामीटर"
           },
           "desc": "watermark parameter"
         },
@@ -493,7 +973,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -502,14 +992,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.watermarkImage",
       "descriptions": {
         "zh-CN": "在图片上添加图片水印",
-        "en-US": "Watermark image of image"
+        "en-US": "Watermark image of image",
+        "zh-TW": "在圖片上添加圖片水印",
+        "ja": "で画像上添加画像水印",
+        "ko": "이미지 이미지 워터마크",
+        "es": "Marca de agua de imagen en imagen",
+        "fr": "Filigrane image de l'image",
+        "de": "Bild-Wasserzeichen des Bildes",
+        "pt-BR": "Marca d'água de imagem na imagem",
+        "ru": "Изображение-водяной знак",
+        "ar": "علامة مائية صورية للصورة",
+        "hi": "इमेज पर इमेज वॉटरमार्क"
       },
       "group": "draw",
       "description": "Watermark image of image"
@@ -523,7 +1033,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -532,7 +1052,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "模糊半径（像素，越大越模糊）",
-            "en-US": "Blur radius in pixels (larger = more blur)"
+            "en-US": "Blur radius in pixels (larger = more blur)",
+            "zh-TW": "模糊半徑（像素，越大越模糊）",
+            "ja": "模糊半径（ピクセル，越大越模糊）",
+            "ko": "블러 반경 (픽셀, 클수록 더 흐림)",
+            "es": "Radio de desenfoque en píxeles",
+            "fr": "Rayon de flou en pixels",
+            "de": "Unschärfe-Radius in Pixeln",
+            "pt-BR": "Raio de desfoque em pixels",
+            "ru": "Радиус размытия в пикселях",
+            "ar": "نصف قطر الضبابية بالبكسل",
+            "hi": "ब्लर रेडियस पिक्सल में"
           },
           "desc": "Blur radius in pixels (larger = more blur)"
         },
@@ -541,7 +1071,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -550,14 +1090,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.blur",
       "descriptions": {
         "zh-CN": "对图片应用高斯模糊滤镜",
-        "en-US": "Apply Gaussian blur filter to the image"
+        "en-US": "Apply Gaussian blur filter to the image",
+        "zh-TW": "對圖片應用高斯模糊濾鏡",
+        "ja": "画像にガウスぼかしフィルターを適用",
+        "ko": "이미지에 가우시안 블러 필터 적용",
+        "es": "Aplicar filtro de desenfoque gaussiano",
+        "fr": "Appliquer un filtre de flou gaussien",
+        "de": "Gaußschen Weichzeichner anwenden",
+        "pt-BR": "Aplicar filtro de desfoque gaussiano",
+        "ru": "Применить фильтр размытия по Гауссу",
+        "ar": "تطبيق مرشح ضبابية غاوسية",
+        "hi": "इमेज पर गॉसियन ब्लर फ़िल्टर लगाएं"
       },
       "group": "filter",
       "description": "Apply Gaussian blur filter to the image"
@@ -571,7 +1131,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -580,7 +1150,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "锐化强度值",
-            "en-US": "Sharpening intensity value"
+            "en-US": "Sharpening intensity value",
+            "zh-TW": "銳化強度值",
+            "ja": "シャープニング強度値",
+            "ko": "선명도 강도 값",
+            "es": "Valor de intensidad de nitidez",
+            "fr": "Valeur d'intensité de netteté",
+            "de": "Schärfungsintensitätswert",
+            "pt-BR": "Valor de intensidade de nitidez",
+            "ru": "Значение интенсивности резкости",
+            "ar": "قيمة كثافة الحدة",
+            "hi": "शार्पनिंग तीव्रता मान"
           },
           "desc": "Sharpening intensity value"
         },
@@ -589,7 +1169,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -598,14 +1188,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.sharpen",
       "descriptions": {
         "zh-CN": "对图片应用锐化滤镜以增强细节",
-        "en-US": "Apply sharpen filter to enhance details"
+        "en-US": "Apply sharpen filter to enhance details",
+        "zh-TW": "對圖片應用銳化濾鏡以增強細節",
+        "ja": "シャープフィルターを適用してディテールを強調",
+        "ko": "선명 필터를 적용하여 디테일 강화",
+        "es": "Aplicar filtro de enfoque para mejorar detalles",
+        "fr": "Appliquer un filtre de netteté",
+        "de": "Schärfefilter für Detailverbesserung anwenden",
+        "pt-BR": "Aplicar filtro de nitidez para melhorar detalhes",
+        "ru": "Применить фильтр резкости для улучшения деталей",
+        "ar": "تطبيق مرشح حدة لتحسين التفاصيل",
+        "hi": "डिटेल्स बढ़ाने के लिए शार्पन फ़िल्टर लगाएं"
       },
       "group": "filter",
       "description": "Apply sharpen filter to enhance details"
@@ -619,7 +1229,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -628,7 +1248,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -637,14 +1267,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.grayscale",
       "descriptions": {
         "zh-CN": "grayscale图片",
-        "en-US": "Grayscale image"
+        "en-US": "Grayscale image",
+        "zh-TW": "grayscale圖片",
+        "ja": "grayscale画像",
+        "ko": "grayscale이미지",
+        "es": "Convertir imagen a escala de grises",
+        "fr": "Convertir l'image en niveaux de gris",
+        "de": "Bild in Graustufen konvertieren",
+        "pt-BR": "Converter imagem para escala de cinza",
+        "ru": "Преобразовать в оттенки серого",
+        "ar": "تحويل الصورة إلى تدرج رمادي",
+        "hi": "इमेज को ग्रेस्केल में बदलें"
       },
       "group": "filter",
       "description": "Grayscale image"
@@ -658,7 +1308,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -667,7 +1327,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -676,14 +1346,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.adjust",
       "descriptions": {
         "zh-CN": "调整图片的色相、饱和度、亮度等色彩参数",
-        "en-US": "Adjust image hue, saturation, brightness parameters"
+        "en-US": "Adjust image hue, saturation, brightness parameters",
+        "zh-TW": "調整圖片的色相、飽和度、亮度等色彩參數",
+        "ja": "画像の色相・彩度・明度パラメータを調整",
+        "ko": "이미지 색조, 채도, 밝기 매개변수 조정",
+        "es": "Ajustar tono, saturación y brillo de la imagen",
+        "fr": "Ajuster teinte, saturation et luminosité",
+        "de": "Farbton, Sättigung und Helligkeit anpassen",
+        "pt-BR": "Ajustar matiz, saturação e brilho da imagem",
+        "ru": "Настроить оттенок, насыщенность и яркость",
+        "ar": "ضبط تدرج اللون والتشبع والسطوع",
+        "hi": "इमेज का ह्यू, सैचुरेशन, ब्राइटनेस एडजस्ट करें"
       },
       "group": "filter",
       "description": "Adjust image hue, saturation, brightness parameters"
@@ -697,7 +1387,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -706,7 +1406,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "要叠加的前景图片路径",
-            "en-US": "Foreground image path to overlay"
+            "en-US": "Foreground image path to overlay",
+            "zh-TW": "要疊加的前景圖片路徑",
+            "ja": "要叠加の前景画像パス",
+            "ko": "오버레이할 전경 이미지 경로",
+            "es": "Ruta de imagen de primer plano",
+            "fr": "Chemin de l'image de premier plan",
+            "de": "Vordergrund-Bildpfad zum Überlagern",
+            "pt-BR": "Caminho da imagem de primeiro plano",
+            "ru": "Путь к накладываемому изображению",
+            "ar": "مسار صورة المقدمة للتركيب",
+            "hi": "ओवरले के लिए अग्रभूमि इमेज पथ"
           },
           "desc": "Foreground image path to overlay"
         },
@@ -715,7 +1425,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -724,14 +1444,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.overlay",
       "descriptions": {
         "zh-CN": "将一张图片叠加覆盖到另一张图片上",
-        "en-US": "Overlay one image on top of another"
+        "en-US": "Overlay one image on top of another",
+        "zh-TW": "將一张圖片疊加覆蓋到另一张圖片上",
+        "ja": "画像を別の画像の上にオーバーレイ",
+        "ko": "이미지를 다른 이미지 위에 오버레이",
+        "es": "Superponer una imagen sobre otra",
+        "fr": "Superposer une image sur une autre",
+        "de": "Ein Bild über ein anderes legen",
+        "pt-BR": "Sobrepor uma imagem sobre outra",
+        "ru": "Наложить одно изображение на другое",
+        "ar": "تركيب صورة فوق أخرى",
+        "hi": "एक इमेज को दूसरी पर ओवरले करें"
       },
       "group": "draw",
       "description": "Overlay one image on top of another"
@@ -745,7 +1485,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -754,13 +1504,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "Base64",
-          "en-US": "Base64"
+          "en-US": "Base64",
+          "zh-TW": "Base64",
+          "ja": "Base64",
+          "ko": "Base64",
+          "es": "Base64",
+          "fr": "Base64",
+          "de": "Base64",
+          "pt-BR": "Base64",
+          "ru": "Base64",
+          "ar": "Base64",
+          "hi": "Base64"
         }
       },
       "bridge_path": "image.toBase64",
       "descriptions": {
         "zh-CN": "将图片转换为 Base64 字符串",
-        "en-US": "To base64"
+        "en-US": "To base64",
+        "zh-TW": "將圖片轉換為 Base64 字串",
+        "ja": "Base64にエンコード",
+        "ko": "Base64로 인코딩",
+        "es": "Codificar a Base64",
+        "fr": "Encoder en Base64",
+        "de": "In Base64 kodieren",
+        "pt-BR": "Codificar em Base64",
+        "ru": "Кодировать в Base64",
+        "ar": "ترميز إلى Base64",
+        "hi": "Base64 में एन्कोड करें"
       },
       "group": "basic"
     },
@@ -773,7 +1543,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64",
-            "en-US": "Base64"
+            "en-US": "Base64",
+            "zh-TW": "Base64",
+            "ja": "Base64",
+            "ko": "Base64",
+            "es": "Base64",
+            "fr": "Base64",
+            "de": "Base64",
+            "pt-BR": "Base64",
+            "ru": "Base64",
+            "ar": "Base64",
+            "hi": "Base64"
           }
         },
         {
@@ -781,7 +1561,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -790,14 +1580,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.fromBase64",
       "descriptions": {
         "zh-CN": "将 Base64 字符串保存为图片文件",
-        "en-US": "From base64"
+        "en-US": "From base64",
+        "zh-TW": "將 Base64 字串保存為圖片檔案",
+        "ja": "Base64からデコード",
+        "ko": "Base64에서 디코딩",
+        "es": "Decodificar desde Base64",
+        "fr": "Décoder depuis Base64",
+        "de": "Aus Base64 dekodieren",
+        "pt-BR": "Decodificar de Base64",
+        "ru": "Декодировать из Base64",
+        "ar": "فك ترميز من Base64",
+        "hi": "Base64 से डीकोड करें"
       },
       "group": "basic"
     },
@@ -810,7 +1620,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -819,13 +1639,33 @@
         "type": "ExifData",
         "descs": {
           "zh-CN": "EXIF",
-          "en-US": "EXIF"
+          "en-US": "EXIF",
+          "zh-TW": "EXIF",
+          "ja": "EXIF",
+          "ko": "EXIF",
+          "es": "EXIF",
+          "fr": "EXIF",
+          "de": "EXIF",
+          "pt-BR": "EXIF",
+          "ru": "EXIF",
+          "ar": "EXIF",
+          "hi": "EXIF"
         }
       },
       "bridge_path": "image.exif",
       "descriptions": {
         "zh-CN": "读取图片的EXIF元数据（拍摄信息、GPS等）",
-        "en-US": "Read image EXIF metadata (camera info, GPS, etc.)"
+        "en-US": "Read image EXIF metadata (camera info, GPS, etc.)",
+        "zh-TW": "讀取圖片的EXIF元數據（拍摄資訊、GPS等）",
+        "ja": "画像のEXIFメタデータを読み取る（カメラ情報、GPS等）",
+        "ko": "이미지 EXIF 메타데이터 읽기 (카메라 정보, GPS 등)",
+        "es": "Leer metadatos EXIF de imagen (cámara, GPS, etc.)",
+        "fr": "Lire les métadonnées EXIF de l'image (caméra, GPS, etc.)",
+        "de": "EXIF-Metadaten des Bildes lesen (Kamera, GPS etc.)",
+        "pt-BR": "Ler metadados EXIF da imagem (câmera, GPS, etc.)",
+        "ru": "Прочитать EXIF-метаданные изображения (камера, GPS и т.д.)",
+        "ar": "قراءة بيانات EXIF الوصفية للصورة (الكاميرا, GPS, إلخ)",
+        "hi": "इमेज EXIF मेटाडेटा पढ़ें (कैमरा जानकारी, GPS आदि)"
       },
       "group": "basic",
       "description": "Read image EXIF metadata (camera info, GPS, etc.)"
@@ -839,7 +1679,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -848,7 +1698,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -857,14 +1717,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.stripExif",
       "descriptions": {
         "zh-CN": "移除图片的 EXIF 元数据",
-        "en-US": "Strip exif of image"
+        "en-US": "Strip exif of image",
+        "zh-TW": "移除圖片的 EXIF 元數據",
+        "ja": "移除画像の EXIF 元データ",
+        "ko": "이미지 EXIF 데이터 제거",
+        "es": "Eliminar EXIF de imagen",
+        "fr": "Supprimer les EXIF de l'image",
+        "de": "EXIF-Daten des Bildes entfernen",
+        "pt-BR": "Remover EXIF da imagem",
+        "ru": "Удалить EXIF-данные изображения",
+        "ar": "إزالة بيانات EXIF من الصورة",
+        "hi": "इमेज से EXIF डेटा हटाएं"
       },
       "group": "basic",
       "description": "Strip exif of image"
@@ -878,7 +1758,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度（像素）",
-            "en-US": "Width in pixels"
+            "en-US": "Width in pixels",
+            "zh-TW": "寬度（像素）",
+            "ja": "幅（ピクセル）",
+            "ko": "너비 (픽셀)",
+            "es": "Ancho en píxeles",
+            "fr": "Largeur en pixels",
+            "de": "Breite in Pixel",
+            "pt-BR": "Largura em pixels",
+            "ru": "Ширина в пикселях",
+            "ar": "العرض بالبكسل",
+            "hi": "चौड़ाई पिक्सेल में"
           },
           "desc": "Width in pixels"
         },
@@ -887,7 +1777,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度（像素）",
-            "en-US": "Height in pixels"
+            "en-US": "Height in pixels",
+            "zh-TW": "高度（像素）",
+            "ja": "高さ（ピクセル）",
+            "ko": "높이 (픽셀)",
+            "es": "Alto en píxeles",
+            "fr": "Hauteur en pixels",
+            "de": "Höhe in Pixel",
+            "pt-BR": "Altura em pixels",
+            "ru": "Высота в пикселях",
+            "ar": "الارتفاع بالبكسل",
+            "hi": "ऊँचाई पिक्सेल में"
           },
           "desc": "Height in pixels"
         },
@@ -896,7 +1796,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "颜色值（十六进制或RGB）",
-            "en-US": "Color value (hex or RGB)"
+            "en-US": "Color value (hex or RGB)",
+            "zh-TW": "顏色值（十六進製或RGB）",
+            "ja": "カラー値（hexまたはRGB）",
+            "ko": "색상 값 (hex 또는 RGB)",
+            "es": "Valor de color (hex o RGB)",
+            "fr": "Valeur de couleur (hex ou RGB)",
+            "de": "Farbwert (hex oder RGB)",
+            "pt-BR": "Valor de cor (hex ou RGB)",
+            "ru": "Значение цвета (hex или RGB)",
+            "ar": "قيمة اللون (hex أو RGB)",
+            "hi": "रंग मान (hex या RGB)"
           },
           "desc": "Color value (hex or RGB)",
           "optional": true
@@ -906,7 +1816,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -915,14 +1835,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.createBlank",
       "descriptions": {
         "zh-CN": "创建blank",
-        "en-US": "Create blank of image"
+        "en-US": "Create blank of image",
+        "zh-TW": "建立blank",
+        "ja": "作成するblank",
+        "ko": "생성blank",
+        "es": "Crear imagen en blanco",
+        "fr": "Créer une image vierge",
+        "de": "Leeres Bild erstellen",
+        "pt-BR": "Criar imagem em branco",
+        "ru": "Создать пустое изображение",
+        "ar": "إنشاء صورة فارغة",
+        "hi": "खाली इमेज बनाएं"
       },
       "group": "draw",
       "description": "Create blank of image"
@@ -936,7 +1876,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -945,7 +1895,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文本字符串",
-            "en-US": "Text string"
+            "en-US": "Text string",
+            "zh-TW": "文字字串",
+            "ja": "テキスト文字列",
+            "ko": "텍스트문자열",
+            "es": "Cadena de texto",
+            "fr": "Chaîne de texte",
+            "de": "Textzeichenkette",
+            "pt-BR": "String de texto",
+            "ru": "Текстовая строка",
+            "ar": "سلسلة نصية",
+            "hi": "टेक्स्ट स्ट्रिंग"
           },
           "desc": "Text string"
         },
@@ -954,7 +1914,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -963,14 +1933,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.text",
       "descriptions": {
         "zh-CN": "在图片上绘制渲染文字",
-        "en-US": "Draw/render text on image"
+        "en-US": "Draw/render text on image",
+        "zh-TW": "在圖片上繪製渲染文字",
+        "ja": "画像にテキストを描画/レンダリング",
+        "ko": "이미지에 텍스트 렌더링",
+        "es": "Dibujar/renderizar texto en la imagen",
+        "fr": "Dessiner/rendre du texte sur l'image",
+        "de": "Text auf Bild zeichnen/rendern",
+        "pt-BR": "Desenhar/renderizar texto na imagem",
+        "ru": "Нарисовать/отрендерить текст на изображении",
+        "ar": "رسم/عرض نص على الصورة",
+        "hi": "इमेज पर टेक्स्ट बनाएं/रेंडर करें"
       },
       "group": "draw",
       "description": "Draw/render text on image"
@@ -984,7 +1974,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -993,14 +1993,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "image.extractColors",
       "descriptions": {
         "zh-CN": "提取图片中的主要颜色",
-        "en-US": "Extract colors of image"
+        "en-US": "Extract colors of image",
+        "zh-TW": "提取圖片中的主要顏色",
+        "ja": "提取画像中の主要カラー",
+        "ko": "이미지 색상 추출",
+        "es": "Extraer colores de la imagen",
+        "fr": "Extraire les couleurs de l'image",
+        "de": "Bildfarben extrahieren",
+        "pt-BR": "Extrair cores da imagem",
+        "ru": "Извлечь цвета изображения",
+        "ar": "استخراج ألوان الصورة",
+        "hi": "इमेज से रंग एक्सट्रैक्ट करें"
       },
       "group": "analyze",
       "description": "Extract colors of image"
@@ -1014,7 +2034,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "路径 A",
-            "en-US": "Path A"
+            "en-US": "Path A",
+            "zh-TW": "路徑 A",
+            "ja": "パス A",
+            "ko": "경로 A",
+            "es": "Ruta A",
+            "fr": "Chemin A",
+            "de": "Pfad A",
+            "pt-BR": "Caminho A",
+            "ru": "Путь A",
+            "ar": "المسار A",
+            "hi": "पथ A"
           }
         },
         {
@@ -1022,7 +2052,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "路径 B",
-            "en-US": "Path B"
+            "en-US": "Path B",
+            "zh-TW": "路徑 B",
+            "ja": "パス B",
+            "ko": "경로 B",
+            "es": "Ruta B",
+            "fr": "Chemin B",
+            "de": "Pfad B",
+            "pt-BR": "Caminho B",
+            "ru": "Путь B",
+            "ar": "المسار B",
+            "hi": "पथ B"
           }
         }
       ],
@@ -1030,14 +2070,34 @@
         "type": "CompareResult",
         "descs": {
           "zh-CN": "CompareResult类型的结果对象",
-          "en-US": "Result object of type CompareResult"
+          "en-US": "Result object of type CompareResult",
+          "zh-TW": "CompareResult類型的結果物件",
+          "ja": "CompareResultタイプの結果オブジェクト",
+          "ko": "CompareResult유형의결과객체",
+          "es": "Objeto resultado de tipo CompareResult",
+          "fr": "Objet résultat de type CompareResult",
+          "de": "Ergebnisobjekt vom Typ CompareResult",
+          "pt-BR": "Objeto resultado do tipo CompareResult",
+          "ru": "Объект результата типа CompareResult",
+          "ar": "كائن نتيجة من نوع CompareResult",
+          "hi": "CompareResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type CompareResult"
       },
       "bridge_path": "image.compare",
       "descriptions": {
         "zh-CN": "比较两张图片的相似度差异",
-        "en-US": "Compare similarity difference between two images"
+        "en-US": "Compare similarity difference between two images",
+        "zh-TW": "比較两张圖片的相似度差異",
+        "ja": "2つの画像間の類似度差分を比較",
+        "ko": "두 이미지 간 유사도 차이 비교",
+        "es": "Comparar similitud entre dos imágenes",
+        "fr": "Comparer la similarité entre deux images",
+        "de": "Ähnlichkeitsvergleich zweier Bilder",
+        "pt-BR": "Comparar similaridade entre duas imagens",
+        "ru": "Сравнить сходство двух изображений",
+        "ar": "مقارنة التشابه بين صورتين",
+        "hi": "दो इमेज के बीच समानता की तुलना करें"
       },
       "group": "analyze",
       "description": "Compare similarity difference between two images"
@@ -1051,7 +2111,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1060,7 +2130,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1069,14 +2149,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.pad",
       "descriptions": {
         "zh-CN": "为图片添加指定颜色和宽度的边距填充",
-        "en-US": "Add padding with specified color and width to image"
+        "en-US": "Add padding with specified color and width to image",
+        "zh-TW": "為圖片添加指定顏色和寬度的邊距填充",
+        "ja": "指定した色と幅で画像にパディングを追加",
+        "ko": "이미지에 지정된 색상과 너비의 패딩 추가",
+        "es": "Agregar relleno con color y ancho al imagen",
+        "fr": "Ajouter une marge à l'image",
+        "de": "Bild-Padding mit Farbe und Breite hinzufügen",
+        "pt-BR": "Adicionar preenchimento à imagem",
+        "ru": "Добавить отступ к изображению",
+        "ar": "إضافة حشو بلون وعرض محدد",
+        "hi": "इमेज में पैडिंग जोड़ें"
       },
       "group": "basic",
       "description": "Add padding with specified color and width to image"
@@ -1090,7 +2190,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "要拼接的多个图片文件路径列表",
-            "en-US": "List of image file paths to concatenate"
+            "en-US": "List of image file paths to concatenate",
+            "zh-TW": "要拼接的多個圖片檔案路徑列表",
+            "ja": "連結する画像ファイルパスのリスト",
+            "ko": "연결할 이미지 파일 경로 목록",
+            "es": "Lista de rutas de imágenes a concatenar",
+            "fr": "Liste des chemins d'images à concaténer",
+            "de": "Liste der zu verbindenden Bilddateipfade",
+            "pt-BR": "Lista de caminhos de imagens a concatenar",
+            "ru": "Список путей изображений для объединения",
+            "ar": "قائمة مسارات ملفات الصور للتجميع",
+            "hi": "जोड़ने के लिए इमेज फ़ाइल पथों की सूची"
           },
           "desc": "List of image file paths to concatenate"
         },
@@ -1099,7 +2209,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1108,14 +2228,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.concat",
       "descriptions": {
         "zh-CN": "将多张图片横向或纵向拼接合并",
-        "en-US": "Concatenate multiple images horizontally or vertically"
+        "en-US": "Concatenate multiple images horizontally or vertically",
+        "zh-TW": "將多张圖片横向或纵向拼接合並",
+        "ja": "複数の画像を水平または垂直に連結",
+        "ko": "여러 이미지를 수평 또는 수직으로 연결",
+        "es": "Concatenar imágenes horizontal o verticalmente",
+        "fr": "Concaténer les images horizontalement ou verticalement",
+        "de": "Bilder horizontal oder vertikal zusammenfügen",
+        "pt-BR": "Concatenar imagens horizontal ou verticalmente",
+        "ru": "Объединить изображения горизонтально или вертикально",
+        "ar": "دمج عدة صور أفقياً أو عمودياً",
+        "hi": "कई इमेज को क्षैतिज या लंबवत जोड़ें"
       },
       "group": "basic",
       "description": "Concatenate multiple images horizontally or vertically"
@@ -1129,7 +2269,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1138,7 +2288,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1147,14 +2307,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.invert",
       "descriptions": {
         "zh-CN": "反转图片颜色",
-        "en-US": "Invert all colors of image (negative effect)"
+        "en-US": "Invert all colors of image (negative effect)",
+        "zh-TW": "反轉圖片顏色",
+        "ja": "画像の全色を反転（ネガティブ効果）",
+        "ko": "이미지의 모든 색상 반전 (네거티브 효과)",
+        "es": "Invertir todos los colores de imagen (efecto negativo)",
+        "fr": "Inverser toutes les couleurs de l'image (effet négatif)",
+        "de": "Alle Bildfarben invertieren (Negativ-Effekt)",
+        "pt-BR": "Inverter todas as cores da imagem (efeito negativo)",
+        "ru": "Инвертировать все цвета изображения (негатив)",
+        "ar": "عكس جميع ألوان الصورة (تأثير سلبي)",
+        "hi": "इमेज के सभी रंग उलटें (नेगेटिव इफ़ेक्ट)"
       },
       "group": "filter",
       "description": "Invert all colors of image (negative effect)"
@@ -1168,7 +2348,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1177,7 +2367,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1186,14 +2386,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.sepia",
       "descriptions": {
         "zh-CN": "应用复古棕色调滤镜",
-        "en-US": "Convert image to vintage sepia tone"
+        "en-US": "Convert image to vintage sepia tone",
+        "zh-TW": "應用複古棕色調濾鏡",
+        "ja": "画像をビンテージセピアトーンに変換",
+        "ko": "이미지를 빈티지 세피아 톤으로 변환",
+        "es": "Convertir imagen a tono sepia",
+        "fr": "Convertir l'image en sépia",
+        "de": "Bild in Sepia konvertieren",
+        "pt-BR": "Converter imagem para sépia",
+        "ru": "Конвертировать в сепию",
+        "ar": "تحويل الصورة إلى نغمة بنية",
+        "hi": "इमेज को सेपिया टोन में बदलें"
       },
       "group": "filter",
       "description": "Convert image to vintage sepia tone"
@@ -1207,7 +2427,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1216,7 +2446,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1225,14 +2465,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.opacity",
       "descriptions": {
         "zh-CN": "调整图片的整体不透明度（透明度）",
-        "en-US": "Adjust overall image opacity/transparency"
+        "en-US": "Adjust overall image opacity/transparency",
+        "zh-TW": "調整圖片的整体不透明度（透明度）",
+        "ja": "画像全体の不透明度/透明度を調整",
+        "ko": "이미지 전체 불투명도/투명도 조정",
+        "es": "Ajustar opacidad/transparencia de la imagen",
+        "fr": "Ajuster l'opacité/transparence de l'image",
+        "de": "Gesamte Bildtransparenz anpassen",
+        "pt-BR": "Ajustar opacidade/transparência da imagem",
+        "ru": "Настроить прозрачность изображения",
+        "ar": "ضبط شفافية الصورة",
+        "hi": "इमेज की अपारदर्शिता/पारदर्शिता एडजस्ट करें"
       },
       "group": "filter",
       "description": "Adjust overall image opacity/transparency"
@@ -1246,7 +2506,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1255,7 +2525,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1264,14 +2544,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.trim",
       "descriptions": {
         "zh-CN": "自动裁剪图片周围的空白或指定颜色边框",
-        "en-US": "Auto-trim whitespace or specified color border around image"
+        "en-US": "Auto-trim whitespace or specified color border around image",
+        "zh-TW": "自動裁剪圖片周圍的空白或指定顏色邊框",
+        "ja": "画像周囲の空白または指定色の縁を自動トリミング",
+        "ko": "이미지 주변의 공백 또는 지정된 색상 테두리 자동 트리밍",
+        "es": "Recortar automáticamente bordes de la imagen",
+        "fr": "Rogner automatiquement les bordures",
+        "de": "Rand automatisch zuschneiden",
+        "pt-BR": "Cortar automaticamente bordas da imagem",
+        "ru": "Автообрезка белых полей или рамки изображения",
+        "ar": "قص تلقائي لحواف الصورة",
+        "hi": "इमेज के किनारे ऑटो-ट्रिम"
       },
       "group": "basic",
       "description": "Auto-trim whitespace or specified color border around image"
@@ -1285,7 +2585,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1294,7 +2604,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1303,14 +2623,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.pixelate",
       "descriptions": {
         "zh-CN": "pixelate图片",
-        "en-US": "Pixelate image"
+        "en-US": "Pixelate image",
+        "zh-TW": "pixelate圖片",
+        "ja": "pixelate画像",
+        "ko": "pixelate이미지",
+        "es": "Pixelar imagen",
+        "fr": "Pixeliser l'image",
+        "de": "Bild pixelieren",
+        "pt-BR": "Pixelizar imagem",
+        "ru": "Пикселизировать изображение",
+        "ar": "تقطيع الصورة إلى بكسلات",
+        "hi": "इमेज पिक्सेलेट करें"
       },
       "group": "filter",
       "description": "Pixelate image"
@@ -1324,7 +2664,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1333,7 +2683,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "蒙版图片文件路径",
-            "en-US": "Mask image file path"
+            "en-US": "Mask image file path",
+            "zh-TW": "蒙版圖片檔案路徑",
+            "ja": "蒙版画像ファイルパス",
+            "ko": "마스크 이미지 파일 경로",
+            "es": "Ruta del archivo de máscara",
+            "fr": "Chemin du fichier masque",
+            "de": "Maskenbild-Dateipfad",
+            "pt-BR": "Caminho do arquivo de máscara",
+            "ru": "Путь к файлу маски",
+            "ar": "مسار ملف صورة القناع",
+            "hi": "मास्क इमेज फ़ाइल पथ"
           },
           "desc": "Mask image file path"
         },
@@ -1342,7 +2702,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1351,14 +2721,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.mask",
       "descriptions": {
         "zh-CN": "使用蒙版图片对原图进行遮罩裁切",
-        "en-US": "Apply mask image to crop/clip original image"
+        "en-US": "Apply mask image to crop/clip original image",
+        "zh-TW": "使用蒙版圖片對原圖進行遮罩裁切",
+        "ja": "マスク画像を使用して元画像をクリッピング",
+        "ko": "마스크 이미지를 사용하여 원본 이미지 클리핑",
+        "es": "Aplicar imagen de máscara para recortar",
+        "fr": "Appliquer un masque pour découper l'image",
+        "de": "Maskenbild zum Zuschneiden anwenden",
+        "pt-BR": "Aplicar imagem de máscara para recortar",
+        "ru": "Применить маску для обрезки изображения",
+        "ar": "تطبيق صورة قناع للقص",
+        "hi": "मास्क इमेज से मूल इमेज क्रॉप करें"
       },
       "group": "draw",
       "description": "Apply mask image to crop/clip original image"
@@ -1372,7 +2762,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1381,7 +2781,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1390,14 +2800,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.drawRect",
       "descriptions": {
         "zh-CN": "在图片上绘制矩形",
-        "en-US": "Draw rect of image"
+        "en-US": "Draw rect of image",
+        "zh-TW": "在圖片上繪製矩形",
+        "ja": "画像に矩形を描画",
+        "ko": "이미지에 사각형 그리기",
+        "es": "Dibujar rectángulo en la imagen",
+        "fr": "Dessiner un rectangle sur l'image",
+        "de": "Rechteck auf Bild zeichnen",
+        "pt-BR": "Desenhar retângulo na imagem",
+        "ru": "Нарисовать прямоугольник на изображении",
+        "ar": "رسم مستطيل على الصورة",
+        "hi": "इमेज पर आयत बनाएं"
       },
       "group": "draw",
       "description": "Draw rect of image"
@@ -1411,7 +2841,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1420,7 +2860,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1429,14 +2879,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.drawCircle",
       "descriptions": {
         "zh-CN": "在图片上绘制圆形",
-        "en-US": "Draw circle of image"
+        "en-US": "Draw circle of image",
+        "zh-TW": "在圖片上繪製圆形",
+        "ja": "画像に円を描画",
+        "ko": "이미지에 원 그리기",
+        "es": "Dibujar círculo en la imagen",
+        "fr": "Dessiner un cercle sur l'image",
+        "de": "Kreis auf Bild zeichnen",
+        "pt-BR": "Desenhar círculo na imagem",
+        "ru": "Нарисовать круг на изображении",
+        "ar": "رسم دائرة على الصورة",
+        "hi": "इमेज पर वृत्त बनाएं"
       },
       "group": "draw",
       "description": "Draw circle of image"
@@ -1450,7 +2920,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1459,7 +2939,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1468,14 +2958,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.drawLine",
       "descriptions": {
         "zh-CN": "在图片上绘制线条",
-        "en-US": "Draw line of image"
+        "en-US": "Draw line of image",
+        "zh-TW": "在圖片上繪製线條",
+        "ja": "画像に線を描画",
+        "ko": "이미지에 선 그리기",
+        "es": "Dibujar línea en la imagen",
+        "fr": "Dessiner une ligne sur l'image",
+        "de": "Linie auf Bild zeichnen",
+        "pt-BR": "Desenhar linha na imagem",
+        "ru": "Нарисовать линию на изображении",
+        "ar": "رسم خط على الصورة",
+        "hi": "इमेज पर रेखा बनाएं"
       },
       "group": "draw",
       "description": "Draw line of image"
@@ -1489,7 +2999,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1498,7 +3018,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1507,14 +3037,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.drawArrow",
       "descriptions": {
         "zh-CN": "在图片上绘制箭头",
-        "en-US": "Draw arrow of image"
+        "en-US": "Draw arrow of image",
+        "zh-TW": "在圖片上繪製箭頭",
+        "ja": "画像に矢印を描画",
+        "ko": "이미지에 화살표 그리기",
+        "es": "Dibujar flecha en la imagen",
+        "fr": "Dessiner une flèche sur l'image",
+        "de": "Pfeil auf Bild zeichnen",
+        "pt-BR": "Desenhar seta na imagem",
+        "ru": "Нарисовать стрелку на изображении",
+        "ar": "رسم سهم على الصورة",
+        "hi": "इमेज पर तीर बनाएं"
       },
       "group": "draw",
       "description": "Draw arrow of image"
@@ -1528,7 +3078,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1537,7 +3097,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "X坐标位置",
-            "en-US": "X coordinate position"
+            "en-US": "X coordinate position",
+            "zh-TW": "X坐標位置",
+            "ja": "X座標位置",
+            "ko": "X 좌표 위치",
+            "es": "Posición coordenada X",
+            "fr": "Position coordonnée X",
+            "de": "X-Koordinatenposition",
+            "pt-BR": "Posição coordenada X",
+            "ru": "Позиция по X",
+            "ar": "موقع الإحداثي X",
+            "hi": "X निर्देशांक स्थिति"
           },
           "desc": "X coordinate position"
         },
@@ -1546,7 +3116,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Y坐标位置",
-            "en-US": "Y coordinate position"
+            "en-US": "Y coordinate position",
+            "zh-TW": "Y坐標位置",
+            "ja": "Y座標位置",
+            "ko": "Y 좌표 위치",
+            "es": "Posición coordenada Y",
+            "fr": "Position coordonnée Y",
+            "de": "Y-Koordinatenposition",
+            "pt-BR": "Posição coordenada Y",
+            "ru": "Позиция по Y",
+            "ar": "موقع الإحداثي Y",
+            "hi": "Y निर्देशांक स्थिति"
           },
           "desc": "Y coordinate position"
         }
@@ -1555,14 +3135,34 @@
         "type": "PixelColor",
         "descs": {
           "zh-CN": "PixelColor类型的结果对象",
-          "en-US": "Result object of type PixelColor"
+          "en-US": "Result object of type PixelColor",
+          "zh-TW": "PixelColor類型的結果物件",
+          "ja": "PixelColorタイプの結果オブジェクト",
+          "ko": "PixelColor유형의결과객체",
+          "es": "Objeto resultado de tipo PixelColor",
+          "fr": "Objet résultat de type PixelColor",
+          "de": "Ergebnisobjekt vom Typ PixelColor",
+          "pt-BR": "Objeto resultado do tipo PixelColor",
+          "ru": "Объект результата типа PixelColor",
+          "ar": "كائن نتيجة من نوع PixelColor",
+          "hi": "PixelColor प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type PixelColor"
       },
       "bridge_path": "image.getPixel",
       "descriptions": {
         "zh-CN": "获取pixel信息",
-        "en-US": "Get pixel info of image"
+        "en-US": "Get pixel info of image",
+        "zh-TW": "取得pixel資訊",
+        "ja": "取得するpixel情報",
+        "ko": "가져오기pixel정보",
+        "es": "Obtener información de píxel de imagen",
+        "fr": "Obtenir les informations de pixel de l'image",
+        "de": "Pixelinformationen des Bildes abrufen",
+        "pt-BR": "Obter informações de pixel da imagem",
+        "ru": "Получить информацию о пикселе изображения",
+        "ar": "الحصول على معلومات بكسل الصورة",
+        "hi": "इमेज पिक्सेल जानकारी प्राप्त करें"
       },
       "group": "analyze",
       "description": "Get pixel info of image"
@@ -1576,7 +3176,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -1585,13 +3195,33 @@
         "type": "HistogramData",
         "descs": {
           "zh-CN": "获取直方图",
-          "en-US": "Histogram"
+          "en-US": "Histogram",
+          "zh-TW": "取得直方圖",
+          "ja": "ヒストグラム",
+          "ko": "히스토그램",
+          "es": "Histograma",
+          "fr": "Histogramme",
+          "de": "Histogramm",
+          "pt-BR": "Histograma",
+          "ru": "Гистограмма",
+          "ar": "مخطط بياني",
+          "hi": "हिस्टोग्राम"
         }
       },
       "bridge_path": "image.histogram",
       "descriptions": {
         "zh-CN": "histogram图片",
-        "en-US": "Histogram image"
+        "en-US": "Histogram image",
+        "zh-TW": "histogram圖片",
+        "ja": "histogram画像",
+        "ko": "histogram이미지",
+        "es": "Histograma de imagen",
+        "fr": "Histogramme de l'image",
+        "de": "Bildhistogramm",
+        "pt-BR": "Histograma da imagem",
+        "ru": "Гистограмма изображения",
+        "ar": "مخطط بياني للصورة",
+        "hi": "इमेज हिस्टोग्राम"
       },
       "group": "analyze",
       "description": "Histogram image"
@@ -1605,7 +3235,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1614,7 +3254,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1623,14 +3273,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.roundCorners",
       "descriptions": {
         "zh-CN": "为图片添加圆角效果",
-        "en-US": "Round corners of image"
+        "en-US": "Round corners of image",
+        "zh-TW": "為圖片添加圆角效果",
+        "ja": "画像の角を丸くする",
+        "ko": "이미지 모서리 둥글게",
+        "es": "Redondear esquinas de imagen",
+        "fr": "Arrondir les coins de l'image",
+        "de": "Bildecken abrunden",
+        "pt-BR": "Arredondar cantos da imagem",
+        "ru": "Скруглить углы изображения",
+        "ar": "تدوير زوايا الصورة",
+        "hi": "इमेज के कोने गोल करें"
       },
       "group": "basic",
       "description": "Round corners of image"
@@ -1644,7 +3314,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "帧图片文件路径列表",
-            "en-US": "List of frame image file paths"
+            "en-US": "List of frame image file paths",
+            "zh-TW": "帧圖片檔案路徑列表",
+            "ja": "帧画像ファイルパスリスト",
+            "ko": "프레임 이미지 파일 경로 목록",
+            "es": "Lista de rutas de fotogramas",
+            "fr": "Liste des chemins des images de frame",
+            "de": "Liste der Frame-Bilddateipfade",
+            "pt-BR": "Lista de caminhos de frames",
+            "ru": "Список путей к кадрам",
+            "ar": "قائمة مسارات ملفات إطارات الصور",
+            "hi": "फ्रेम इमेज फ़ाइल पथों की सूची"
           },
           "desc": "List of frame image file paths"
         },
@@ -1653,7 +3333,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1662,14 +3352,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.gifFromFrames",
       "descriptions": {
         "zh-CN": "将多帧图片合成 GIF 动图",
-        "en-US": "Gif from frames of image"
+        "en-US": "Gif from frames of image",
+        "zh-TW": "將多帧圖片合成 GIF 動圖",
+        "ja": "画像フレームからGIFを作成",
+        "ko": "이미지 프레임에서 GIF 생성",
+        "es": "Crear GIF desde fotogramas de imagen",
+        "fr": "Créer un GIF à partir des images",
+        "de": "GIF aus Bildframes erstellen",
+        "pt-BR": "Criar GIF a partir de frames de imagem",
+        "ru": "Создать GIF из кадров изображения",
+        "ar": "إنشاء GIF من إطارات الصور",
+        "hi": "इमेज फ्रेम से GIF बनाएं"
       },
       "group": "gif",
       "description": "Gif from frames of image"
@@ -1683,7 +3393,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1692,7 +3412,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "output_dir参数",
-            "en-US": "output_dir parameter"
+            "en-US": "output_dir parameter",
+            "zh-TW": "output_dir參數",
+            "ja": "output_dirパラメータ",
+            "ko": "output_dir매개변수",
+            "es": "Parámetro de directorio de salida",
+            "fr": "Paramètre de répertoire de sortie",
+            "de": "Ausgabeverzeichnis-Parameter",
+            "pt-BR": "Parâmetro de diretório de saída",
+            "ru": "Параметр выходного каталога",
+            "ar": "معلمة مجلد الإخراج",
+            "hi": "आउटपुट डायरेक्टरी पैरामीटर"
           },
           "desc": "output_dir parameter"
         }
@@ -1701,14 +3431,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "image.splitGif",
       "descriptions": {
         "zh-CN": "将 GIF 拆分为多帧图片",
-        "en-US": "Split gif of image"
+        "en-US": "Split gif of image",
+        "zh-TW": "將 GIF 拆分為多帧圖片",
+        "ja": "画像のGIFを分割",
+        "ko": "이미지 GIF 분할",
+        "es": "Dividir GIF de imagen",
+        "fr": "Diviser le GIF de l'image",
+        "de": "GIF des Bildes aufteilen",
+        "pt-BR": "Dividir GIF da imagem",
+        "ru": "Разделить GIF изображения",
+        "ar": "تقسيم GIF الصورة",
+        "hi": "इमेज GIF विभाजित करें"
       },
       "group": "gif",
       "description": "Split gif of image"
@@ -1722,7 +3472,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         }
@@ -1731,14 +3491,34 @@
         "type": "GifInfo",
         "descs": {
           "zh-CN": "GifInfo类型的结果对象",
-          "en-US": "Result object of type GifInfo"
+          "en-US": "Result object of type GifInfo",
+          "zh-TW": "GifInfo類型的結果物件",
+          "ja": "GifInfoタイプの結果オブジェクト",
+          "ko": "GifInfo유형의결과객체",
+          "es": "Objeto resultado de tipo GifInfo",
+          "fr": "Objet résultat de type GifInfo",
+          "de": "Ergebnisobjekt vom Typ GifInfo",
+          "pt-BR": "Objeto resultado do tipo GifInfo",
+          "ru": "Объект результата типа GifInfo",
+          "ar": "كائن نتيجة من نوع GifInfo",
+          "hi": "GifInfo प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type GifInfo"
       },
       "bridge_path": "image.gifInfo",
       "descriptions": {
         "zh-CN": "获取 GIF 动图信息（帧数/时长）",
-        "en-US": "Gif info of image"
+        "en-US": "Gif info of image",
+        "zh-TW": "取得 GIF 動圖資訊（帧數/時長）",
+        "ja": "画像のGIF情報",
+        "ko": "이미지 GIF 정보",
+        "es": "Información GIF de imagen",
+        "fr": "Informations GIF de l'image",
+        "de": "GIF-Informationen des Bildes",
+        "pt-BR": "Informações GIF da imagem",
+        "ru": "Информация о GIF изображения",
+        "ar": "معلومات GIF للصورة",
+        "hi": "इमेज GIF जानकारी"
       },
       "group": "gif",
       "description": "Gif info of image"
@@ -1752,7 +3532,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           },
           "desc": "File path"
         },
@@ -1761,7 +3551,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出文件路径",
-            "en-US": "Output file path"
+            "en-US": "Output file path",
+            "zh-TW": "輸出檔案路徑",
+            "ja": "出力ファイルパス",
+            "ko": "출력파일경로",
+            "es": "Ruta del archivo de salida",
+            "fr": "Chemin du fichier de sortie",
+            "de": "Ausgabedateipfad",
+            "pt-BR": "Caminho do arquivo de saída",
+            "ru": "Путь выходного файла",
+            "ar": "مسار ملف الإخراج",
+            "hi": "आउटपुट फ़ाइल पथ"
           },
           "desc": "Output file path"
         }
@@ -1770,14 +3570,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "image.autoOrient",
       "descriptions": {
         "zh-CN": "根据 EXIF 自动旋转图片方向",
-        "en-US": "Auto orient of image"
+        "en-US": "Auto orient of image",
+        "zh-TW": "根據 EXIF 自動旋轉圖片方向",
+        "ja": "EXIFに基づき画像の向きを自動修正",
+        "ko": "EXIF 기반 이미지 방향 자동 보정",
+        "es": "Orientar imagen automáticamente",
+        "fr": "Orientation automatique de l'image",
+        "de": "Bild automatisch orientieren",
+        "pt-BR": "Orientar imagem automaticamente",
+        "ru": "Автоориентация изображения",
+        "ar": "التوجيه التلقائي للصورة",
+        "hi": "इमेज ऑटो ओरिएंट"
       },
       "group": "basic",
       "description": "Auto orient of image"
@@ -1785,14 +3605,34 @@
   ],
   "overviews": {
     "zh-CN": "提供图像处理能力，包括格式转换、缩放、裁剪、旋转、翻转、滤镜效果、水印添加、EXIF 读写、颜色空间转换、批量处理等功能。支持 PNG/JPEG/GIF/BMP/WebP/TIFF 等格式。",
-    "en-US": "Image processing including format conversion, resize, crop, rotate, flip, filters, watermarks, EXIF read/write, color space conversion, and batch processing. Supports PNG/JPEG/GIF/BMP/WebP/TIFF."
+    "en-US": "Image processing including format conversion, resize, crop, rotate, flip, filters, watermarks, EXIF read/write, color space conversion, and batch processing. Supports PNG/JPEG/GIF/BMP/WebP/TIFF.",
+    "zh-TW": "提供图像處理能力，包括格式轉换、縮放、裁剪、旋轉、翻轉、滤鏡效果、水印添加、EXIF 读写、颜色空间轉换、批量處理等功能。支援 PNG/JPEG/GIF/BMP/WebP/TIFF 等格式。",
+    "ja": "画像処理：形式変換・リサイズ・トリミング・回転・反転・フィルター・透かし・EXIF読み書き・色空間変換・バッチ処理。PNG/JPEG/GIF/BMP/WebP/TIFF対応。",
+    "ko": "이미지 처리: 형식 변환, 크기 조정, 자르기, 회전, 뒤집기, 필터, 워터마크, EXIF, 색 공간, 일괄 처리. PNG/JPEG/GIF/BMP/WebP/TIFF.",
+    "es": "Procesamiento de imágenes: conversión, redimensionar, recortar, rotar, voltear, filtros, marcas de agua, EXIF, espacio de color y lotes. PNG/JPEG/GIF/BMP/WebP/TIFF.",
+    "fr": "Traitement d'images : conversion, redimensionner, recadrer, rotation, retourner, filtres, filigranes, EXIF, espace colorimétrique et lots. PNG/JPEG/GIF/BMP/WebP/TIFF.",
+    "de": "Bildverarbeitung: Konvertierung, Größenänderung, Zuschneiden, Drehen, Spiegeln, Filter, Wasserzeichen, EXIF, Farbraum und Batch. PNG/JPEG/GIF/BMP/WebP/TIFF.",
+    "pt-BR": "Processamento de imagens: conversão, redimensionar, cortar, girar, espelhar, filtros, marca d'água, EXIF, espaço de cor e lotes. PNG/JPEG/GIF/BMP/WebP/TIFF.",
+    "ru": "Обработка изображений: конвертация, масштабирование, обрезка, поворот, отражение, фильтры, водяные знаки, EXIF, цветовое пространство и пакетная обработка. PNG/JPEG/GIF/BMP/WebP/TIFF.",
+    "ar": "معالجة الصور: تحويل وتغيير حجم وقص ودوران وعكس وفلاتر وعلامات مائية وEXIF ومساحة ألوان ودفعات. PNG/JPEG/GIF/BMP/WebP/TIFF.",
+    "hi": "इमेज प्रोसेसिंग: फॉर्मेट, रीसाइज़, क्रॉप, रोटेट, फ्लिप, फिल्टर, वॉटरमार्क, EXIF, कलर स्पेस और बैच। PNG/JPEG/GIF/BMP/WebP/TIFF।"
   },
   "types": [
     {
       "name": "Rect",
       "descriptions": {
         "zh-CN": "矩形区域",
-        "en-US": "Rectangle region"
+        "en-US": "Rectangle region",
+        "zh-TW": "矩形區域",
+        "ja": "矩形領域",
+        "ko": "직사각형 영역",
+        "es": "Región rectangular",
+        "fr": "Région rectangulaire",
+        "de": "Rechteckige Region",
+        "pt-BR": "Região retangular",
+        "ru": "Прямоугольная область",
+        "ar": "المنطقة المستطيلة",
+        "hi": "आयत क्षेत्र"
       },
       "fields": [
         {
@@ -1800,7 +3640,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "X坐标",
-            "en-US": "X coordinate"
+            "en-US": "X coordinate",
+            "zh-TW": "X坐標",
+            "ja": "X座標",
+            "ko": "X 좌표",
+            "es": "Coordenada X",
+            "fr": "Coordonnée X",
+            "de": "X-Koordinate",
+            "pt-BR": "Coordenada X",
+            "ru": "Координата X",
+            "ar": "إحداثي X",
+            "hi": "X निर्देशांक"
           }
         },
         {
@@ -1808,7 +3658,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Y坐标",
-            "en-US": "Y coordinate"
+            "en-US": "Y coordinate",
+            "zh-TW": "Y坐標",
+            "ja": "Y座標",
+            "ko": "Y 좌표",
+            "es": "Coordenada Y",
+            "fr": "Coordonnée Y",
+            "de": "Y-Koordinate",
+            "pt-BR": "Coordenada Y",
+            "ru": "Координата Y",
+            "ar": "إحداثي Y",
+            "hi": "Y निर्देशांक"
           }
         },
         {
@@ -1816,7 +3676,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度",
-            "en-US": "Width"
+            "en-US": "Width",
+            "zh-TW": "宽度",
+            "ja": "幅",
+            "ko": "너비",
+            "es": "Ancho",
+            "fr": "Largeur",
+            "de": "Breite",
+            "pt-BR": "Largura",
+            "ru": "Ширина",
+            "ar": "العرض",
+            "hi": "चौड़ाई"
           }
         },
         {
@@ -1824,7 +3694,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度",
-            "en-US": "Height"
+            "en-US": "Height",
+            "zh-TW": "高度",
+            "ja": "高さ",
+            "ko": "높이",
+            "es": "Altura",
+            "fr": "Hauteur",
+            "de": "Höhe",
+            "pt-BR": "Altura",
+            "ru": "Высота",
+            "ar": "الارتفاع",
+            "hi": "ऊँचाई"
           }
         }
       ]
@@ -1833,7 +3713,17 @@
       "name": "Color",
       "descriptions": {
         "zh-CN": "颜色值",
-        "en-US": "Color value"
+        "en-US": "Color value",
+        "zh-TW": "颜色值",
+        "ja": "カラー値",
+        "ko": "색상 값",
+        "es": "Valor de color",
+        "fr": "Valeur de couleur",
+        "de": "Farbwert",
+        "pt-BR": "Valor de cor",
+        "ru": "Значение цвета",
+        "ar": "قيمة اللون",
+        "hi": "रंग मान"
       },
       "fields": [
         {
@@ -1841,7 +3731,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "红色(0-255)",
-            "en-US": "Red(0-255)"
+            "en-US": "Red(0-255)",
+            "zh-TW": "红色(0-255)",
+            "ja": "赤(0-255)",
+            "ko": "빨강(0-255)",
+            "es": "Rojo(0-255)",
+            "fr": "Rouge(0-255)",
+            "de": "Rot(0-255)",
+            "pt-BR": "Vermelho(0-255)",
+            "ru": "Красный(0-255)",
+            "ar": "أحمر(0-255)",
+            "hi": "लाल(0-255)"
           }
         },
         {
@@ -1849,7 +3749,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "绿色(0-255)",
-            "en-US": "Green(0-255)"
+            "en-US": "Green(0-255)",
+            "zh-TW": "綠色(0-255)",
+            "ja": "緑(0-255)",
+            "ko": "초록(0-255)",
+            "es": "Verde(0-255)",
+            "fr": "Vert(0-255)",
+            "de": "Grün(0-255)",
+            "pt-BR": "Verde(0-255)",
+            "ru": "Зелёный(0-255)",
+            "ar": "أخضر(0-255)",
+            "hi": "हरा(0-255)"
           }
         },
         {
@@ -1857,7 +3767,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "蓝色(0-255)",
-            "en-US": "Blue(0-255)"
+            "en-US": "Blue(0-255)",
+            "zh-TW": "蓝色(0-255)",
+            "ja": "青(0-255)",
+            "ko": "파랑(0-255)",
+            "es": "Azul(0-255)",
+            "fr": "Bleu(0-255)",
+            "de": "Blau(0-255)",
+            "pt-BR": "Azul(0-255)",
+            "ru": "Синий(0-255)",
+            "ar": "أزرق(0-255)",
+            "hi": "नीला(0-255)"
           }
         },
         {
@@ -1867,7 +3787,17 @@
           "default_value": "255",
           "descs": {
             "zh-CN": "透明度(0-255)",
-            "en-US": "Alpha(0-255)"
+            "en-US": "Alpha(0-255)",
+            "zh-TW": "透明度(0-255)",
+            "ja": "アルファ(0-255)",
+            "ko": "알파(0-255)",
+            "es": "Alfa(0-255)",
+            "fr": "Alpha(0-255)",
+            "de": "Alpha(0-255)",
+            "pt-BR": "Alfa(0-255)",
+            "ru": "Альфа(0-255)",
+            "ar": "ألفا(0-255)",
+            "hi": "अल्फ़ा(0-255)"
           }
         }
       ]
@@ -1876,7 +3806,17 @@
       "name": "ImageInfo",
       "descriptions": {
         "zh-CN": "图片信息",
-        "en-US": "Image info"
+        "en-US": "Image info",
+        "zh-TW": "图片資訊",
+        "ja": "画像情報",
+        "ko": "이미지 정보",
+        "es": "Información de imagen",
+        "fr": "Informations sur l'image",
+        "de": "Bildinformationen",
+        "pt-BR": "Informações da imagem",
+        "ru": "Информация об изображении",
+        "ar": "معلومات الصورة",
+        "hi": "छवि जानकारी"
       },
       "fields": [
         {
@@ -1884,7 +3824,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度(px)",
-            "en-US": "Width(px)"
+            "en-US": "Width(px)",
+            "zh-TW": "宽度(px)",
+            "ja": "幅(px)",
+            "ko": "너비(px)",
+            "es": "Ancho(px)",
+            "fr": "Largeur(px)",
+            "de": "Breite(px)",
+            "pt-BR": "Largura(px)",
+            "ru": "Ширина(px)",
+            "ar": "العرض(بكسل)",
+            "hi": "चौड़ाई(px)"
           }
         },
         {
@@ -1892,7 +3842,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度(px)",
-            "en-US": "Height(px)"
+            "en-US": "Height(px)",
+            "zh-TW": "高度(px)",
+            "ja": "高さ(px)",
+            "ko": "높이(px)",
+            "es": "Altura(px)",
+            "fr": "Hauteur(px)",
+            "de": "Höhe(px)",
+            "pt-BR": "Altura(px)",
+            "ru": "Высота(px)",
+            "ar": "الارتفاع(بكسل)",
+            "hi": "ऊँचाई(px)"
           }
         },
         {
@@ -1900,7 +3860,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "格式",
-            "en-US": "Format"
+            "en-US": "Format",
+            "zh-TW": "格式",
+            "ja": "形式",
+            "ko": "형식",
+            "es": "Formato",
+            "fr": "Format",
+            "de": "Format",
+            "pt-BR": "Formato",
+            "ru": "Формат",
+            "ar": "التنسيق",
+            "hi": "प्रारूप"
           }
         },
         {
@@ -1908,7 +3878,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "文件大小",
-            "en-US": "File size"
+            "en-US": "File size",
+            "zh-TW": "檔案大小",
+            "ja": "ファイルサイズ",
+            "ko": "파일 크기",
+            "es": "Tamaño de archivo",
+            "fr": "Taille du fichier",
+            "de": "Dateigröße",
+            "pt-BR": "Tamanho do arquivo",
+            "ru": "Размер файла",
+            "ar": "حجم الملف",
+            "hi": "फ़ाइल आकार"
           }
         }
       ]
@@ -1917,7 +3897,17 @@
       "name": "ExifData",
       "descriptions": {
         "zh-CN": "EXIF数据",
-        "en-US": "EXIF data"
+        "en-US": "EXIF data",
+        "zh-TW": "EXIF數據",
+        "ja": "EXIFデータ",
+        "ko": "EXIF 데이터",
+        "es": "Datos EXIF",
+        "fr": "Données EXIF",
+        "de": "EXIF-Daten",
+        "pt-BR": "Dados EXIF",
+        "ru": "Данные EXIF",
+        "ar": "بيانات EXIF",
+        "hi": "EXIF डेटा"
       },
       "fields": [
         {
@@ -1926,7 +3916,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "相机型号",
-            "en-US": "Camera model"
+            "en-US": "Camera model",
+            "zh-TW": "相機型號",
+            "ja": "カメラモデル",
+            "ko": "카메라 모델",
+            "es": "Modelo de cámara",
+            "fr": "Modèle d'appareil photo",
+            "de": "Kameramodell",
+            "pt-BR": "Modelo da câmera",
+            "ru": "Модель камеры",
+            "ar": "طراز الكاميرا",
+            "hi": "कैमरा मॉडल"
           }
         },
         {
@@ -1935,7 +3935,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "拍摄时间",
-            "en-US": "Date taken"
+            "en-US": "Date taken",
+            "zh-TW": "拍攝時间",
+            "ja": "撮影日",
+            "ko": "촬영 날짜",
+            "es": "Fecha de captura",
+            "fr": "Date de prise de vue",
+            "de": "Aufnahmedatum",
+            "pt-BR": "Data da captura",
+            "ru": "Дата съёмки",
+            "ar": "تاريخ الالتقاط",
+            "hi": "ली गई तारीख"
           }
         },
         {
@@ -1944,7 +3954,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "GPS坐标",
-            "en-US": "GPS coordinates"
+            "en-US": "GPS coordinates",
+            "zh-TW": "GPS坐標",
+            "ja": "GPS座標",
+            "ko": "GPS 좌표",
+            "es": "Coordenadas GPS",
+            "fr": "Coordonnées GPS",
+            "de": "GPS-Koordinaten",
+            "pt-BR": "Coordenadas GPS",
+            "ru": "Координаты GPS",
+            "ar": "إحداثيات GPS",
+            "hi": "GPS निर्देशांक"
           }
         }
       ]
@@ -1953,7 +3973,17 @@
       "name": "PixelColor",
       "descriptions": {
         "zh-CN": "像素颜色",
-        "en-US": "Pixel color"
+        "en-US": "Pixel color",
+        "zh-TW": "像素颜色",
+        "ja": "ピクセル色",
+        "ko": "픽셀 색상",
+        "es": "Color del píxel",
+        "fr": "Couleur du pixel",
+        "de": "Pixelfarbe",
+        "pt-BR": "Cor do pixel",
+        "ru": "Цвет пикселя",
+        "ar": "لون البكسل",
+        "hi": "पिक्सेल रंग"
       },
       "fields": [
         {
@@ -1961,7 +3991,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "红(0-255)",
-            "en-US": "Red(0-255)"
+            "en-US": "Red(0-255)",
+            "zh-TW": "红(0-255)",
+            "ja": "赤(0-255)",
+            "ko": "빨강(0-255)",
+            "es": "Rojo(0-255)",
+            "fr": "Rouge(0-255)",
+            "de": "Rot(0-255)",
+            "pt-BR": "Vermelho(0-255)",
+            "ru": "Красный(0-255)",
+            "ar": "أحمر(0-255)",
+            "hi": "लाल(0-255)"
           }
         },
         {
@@ -1969,7 +4009,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "绿(0-255)",
-            "en-US": "Green(0-255)"
+            "en-US": "Green(0-255)",
+            "zh-TW": "綠(0-255)",
+            "ja": "緑(0-255)",
+            "ko": "초록(0-255)",
+            "es": "Verde(0-255)",
+            "fr": "Vert(0-255)",
+            "de": "Grün(0-255)",
+            "pt-BR": "Verde(0-255)",
+            "ru": "Зелёный(0-255)",
+            "ar": "أخضر(0-255)",
+            "hi": "हरा(0-255)"
           }
         },
         {
@@ -1977,7 +4027,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "蓝(0-255)",
-            "en-US": "Blue(0-255)"
+            "en-US": "Blue(0-255)",
+            "zh-TW": "蓝(0-255)",
+            "ja": "青(0-255)",
+            "ko": "파랑(0-255)",
+            "es": "Azul(0-255)",
+            "fr": "Bleu(0-255)",
+            "de": "Blau(0-255)",
+            "pt-BR": "Azul(0-255)",
+            "ru": "Синий(0-255)",
+            "ar": "أزرق(0-255)",
+            "hi": "नीला(0-255)"
           }
         },
         {
@@ -1985,7 +4045,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "透明度",
-            "en-US": "Alpha"
+            "en-US": "Alpha",
+            "zh-TW": "透明度",
+            "ja": "アルファ",
+            "ko": "알파",
+            "es": "Alfa",
+            "fr": "Alpha",
+            "de": "Alpha",
+            "pt-BR": "Alfa",
+            "ru": "Альфа",
+            "ar": "ألفا",
+            "hi": "अल्फ़ा"
           }
         }
       ]
@@ -1994,7 +4064,17 @@
       "name": "CompareResult",
       "descriptions": {
         "zh-CN": "图片对比结果",
-        "en-US": "Image compare result"
+        "en-US": "Image compare result",
+        "zh-TW": "图片對比结果",
+        "ja": "画像比較結果",
+        "ko": "이미지 비교 결과",
+        "es": "Resultado de comparación de imágenes",
+        "fr": "Résultat de comparaison d'images",
+        "de": "Bildvergleichsergebnis",
+        "pt-BR": "Resultado da comparação de imagens",
+        "ru": "Результат сравнения изображений",
+        "ar": "نتيجة مقارنة الصور",
+        "hi": "छवि तुलना परिणाम"
       },
       "fields": [
         {
@@ -2002,7 +4082,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "相似度(0-1)",
-            "en-US": "Similarity(0-1)"
+            "en-US": "Similarity(0-1)",
+            "zh-TW": "相似度(0-1)",
+            "ja": "類似度(0-1)",
+            "ko": "유사도(0-1)",
+            "es": "Similitud(0-1)",
+            "fr": "Similarité(0-1)",
+            "de": "Ähnlichkeit(0-1)",
+            "pt-BR": "Similaridade(0-1)",
+            "ru": "Сходство(0-1)",
+            "ar": "التشابه(0-1)",
+            "hi": "समानता(0-1)"
           }
         },
         {
@@ -2010,7 +4100,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "差异像素数",
-            "en-US": "Different pixels"
+            "en-US": "Different pixels",
+            "zh-TW": "差异像素数",
+            "ja": "異なるピクセル数",
+            "ko": "다른 픽셀 수",
+            "es": "Píxeles diferentes",
+            "fr": "Pixels différents",
+            "de": "Unterschiedliche Pixel",
+            "pt-BR": "Pixels diferentes",
+            "ru": "Различающиеся пиксели",
+            "ar": "البكسلات المختلفة",
+            "hi": "भिन्न पिक्सेल"
           }
         }
       ]
@@ -2019,7 +4119,17 @@
       "name": "GifInfo",
       "descriptions": {
         "zh-CN": "GIF信息",
-        "en-US": "GIF info"
+        "en-US": "GIF info",
+        "zh-TW": "GIF資訊",
+        "ja": "GIF情報",
+        "ko": "GIF 정보",
+        "es": "Información GIF",
+        "fr": "Informations GIF",
+        "de": "GIF-Informationen",
+        "pt-BR": "Informações GIF",
+        "ru": "Информация о GIF",
+        "ar": "معلومات GIF",
+        "hi": "GIF जानकारी"
       },
       "fields": [
         {
@@ -2027,7 +4137,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "帧数",
-            "en-US": "Frame count"
+            "en-US": "Frame count",
+            "zh-TW": "幀数",
+            "ja": "フレーム数",
+            "ko": "프레임 수",
+            "es": "Cantidad de cuadros",
+            "fr": "Nombre d'images",
+            "de": "Bildanzahl",
+            "pt-BR": "Contagem de quadros",
+            "ru": "Количество кадров",
+            "ar": "عدد الإطارات",
+            "hi": "फ़्रेम संख्या"
           }
         },
         {
@@ -2035,7 +4155,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度",
-            "en-US": "Width"
+            "en-US": "Width",
+            "zh-TW": "宽度",
+            "ja": "幅",
+            "ko": "너비",
+            "es": "Ancho",
+            "fr": "Largeur",
+            "de": "Breite",
+            "pt-BR": "Largura",
+            "ru": "Ширина",
+            "ar": "العرض",
+            "hi": "चौड़ाई"
           }
         },
         {
@@ -2043,7 +4173,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度",
-            "en-US": "Height"
+            "en-US": "Height",
+            "zh-TW": "高度",
+            "ja": "高さ",
+            "ko": "높이",
+            "es": "Altura",
+            "fr": "Hauteur",
+            "de": "Höhe",
+            "pt-BR": "Altura",
+            "ru": "Высота",
+            "ar": "الارتفاع",
+            "hi": "ऊँचाई"
           }
         },
         {
@@ -2051,7 +4191,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "总时长(ms)",
-            "en-US": "Duration(ms)"
+            "en-US": "Duration(ms)",
+            "zh-TW": "總時长(ms)",
+            "ja": "再生時間(ms)",
+            "ko": "지속 시간(ms)",
+            "es": "Duración(ms)",
+            "fr": "Durée(ms)",
+            "de": "Dauer(ms)",
+            "pt-BR": "Duração(ms)",
+            "ru": "Длительность(мс)",
+            "ar": "المدة(مللي ثانية)",
+            "hi": "अवधि(ms)"
           }
         }
       ]
@@ -2060,7 +4210,17 @@
       "name": "HistogramData",
       "descriptions": {
         "zh-CN": "图像直方图数据",
-        "en-US": "Image histogram data"
+        "en-US": "Image histogram data",
+        "zh-TW": "图像直方图數據",
+        "ja": "画像ヒストグラムデータ",
+        "ko": "이미지 히스토그램 데이터",
+        "es": "Datos de histograma de imagen",
+        "fr": "Données d'histogramme d'image",
+        "de": "Bild-Histogrammdaten",
+        "pt-BR": "Dados de histograma de imagem",
+        "ru": "Данные гистограммы изображения",
+        "ar": "بيانات رسم بياني للصورة",
+        "hi": "छवि हिस्टोग्राम डेटा"
       },
       "fields": [
         {
@@ -2068,7 +4228,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "红色通道分布(256值)",
-            "en-US": "Red channel distribution (256 values)"
+            "en-US": "Red channel distribution (256 values)",
+            "zh-TW": "红色通道分布(256值)",
+            "ja": "赤チャンネル分布（256値）",
+            "ko": "빨강 채널 분포(256개 값)",
+            "es": "Distribución del canal rojo (256 valores)",
+            "fr": "Distribution du canal rouge (256 valeurs)",
+            "de": "Rotkanal-Verteilung (256 Werte)",
+            "pt-BR": "Distribuição do canal vermelho (256 valores)",
+            "ru": "Распределение красного канала (256 значений)",
+            "ar": "توزيع القناة الحمراء (256 قيمة)",
+            "hi": "लाल चैनल वितरण (256 मान)"
           }
         },
         {
@@ -2076,7 +4246,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "绿色通道分布(256值)",
-            "en-US": "Green channel distribution"
+            "en-US": "Green channel distribution",
+            "zh-TW": "綠色通道分布(256值)",
+            "ja": "緑チャンネル分布",
+            "ko": "초록 채널 분포",
+            "es": "Distribución del canal verde",
+            "fr": "Distribution du canal vert",
+            "de": "Grünkanal-Verteilung",
+            "pt-BR": "Distribuição do canal verde",
+            "ru": "Распределение зелёного канала",
+            "ar": "توزيع القناة الخضراء",
+            "hi": "हरा चैनल वितरण"
           }
         },
         {
@@ -2084,7 +4264,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "蓝色通道分布(256值)",
-            "en-US": "Blue channel distribution"
+            "en-US": "Blue channel distribution",
+            "zh-TW": "蓝色通道分布(256值)",
+            "ja": "青チャンネル分布",
+            "ko": "파랑 채널 분포",
+            "es": "Distribución del canal azul",
+            "fr": "Distribution du canal bleu",
+            "de": "Blaukanal-Verteilung",
+            "pt-BR": "Distribuição do canal azul",
+            "ru": "Распределение синего канала",
+            "ar": "توزيع القناة الزرقاء",
+            "hi": "नीला चैनल वितरण"
           }
         }
       ]
@@ -2098,7 +4288,17 @@
       "group": "format",
       "descs": {
         "zh-CN": "PNG格式",
-        "en-US": "PNG format"
+        "en-US": "PNG format",
+        "zh-TW": "PNG格式",
+        "ja": "PNG形式",
+        "ko": "PNG 형식",
+        "es": "Formato PNG",
+        "fr": "Format PNG",
+        "de": "PNG-Format",
+        "pt-BR": "Formato PNG",
+        "ru": "Формат PNG",
+        "ar": "تنسيق PNG",
+        "hi": "PNG प्रारूप"
       }
     },
     {
@@ -2108,7 +4308,17 @@
       "group": "format",
       "descs": {
         "zh-CN": "JPEG格式",
-        "en-US": "JPEG format"
+        "en-US": "JPEG format",
+        "zh-TW": "JPEG格式",
+        "ja": "JPEG形式",
+        "ko": "JPEG 형식",
+        "es": "Formato JPEG",
+        "fr": "Format JPEG",
+        "de": "JPEG-Format",
+        "pt-BR": "Formato JPEG",
+        "ru": "Формат JPEG",
+        "ar": "تنسيق JPEG",
+        "hi": "JPEG प्रारूप"
       }
     },
     {
@@ -2118,7 +4328,17 @@
       "group": "format",
       "descs": {
         "zh-CN": "WebP格式",
-        "en-US": "WebP format"
+        "en-US": "WebP format",
+        "zh-TW": "WebP格式",
+        "ja": "WebP形式",
+        "ko": "WebP 형식",
+        "es": "Formato WebP",
+        "fr": "Format WebP",
+        "de": "WebP-Format",
+        "pt-BR": "Formato WebP",
+        "ru": "Формат WebP",
+        "ar": "تنسيق WebP",
+        "hi": "WebP प्रारूप"
       }
     },
     {
@@ -2128,7 +4348,17 @@
       "group": "format",
       "descs": {
         "zh-CN": "GIF格式",
-        "en-US": "GIF format"
+        "en-US": "GIF format",
+        "zh-TW": "GIF格式",
+        "ja": "GIF形式",
+        "ko": "GIF 형식",
+        "es": "Formato GIF",
+        "fr": "Format GIF",
+        "de": "GIF-Format",
+        "pt-BR": "Formato GIF",
+        "ru": "Формат GIF",
+        "ar": "تنسيق GIF",
+        "hi": "GIF प्रारूप"
       }
     },
     {
@@ -2138,7 +4368,17 @@
       "group": "format",
       "descs": {
         "zh-CN": "BMP格式",
-        "en-US": "BMP format"
+        "en-US": "BMP format",
+        "zh-TW": "BMP格式",
+        "ja": "BMP形式",
+        "ko": "BMP 형식",
+        "es": "Formato BMP",
+        "fr": "Format BMP",
+        "de": "BMP-Format",
+        "pt-BR": "Formato BMP",
+        "ru": "Формат BMP",
+        "ar": "تنسيق BMP",
+        "hi": "BMP प्रारूप"
       }
     }
   ]

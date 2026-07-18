@@ -22,7 +22,7 @@
     "ar": "وحدة XML",
     "hi": "XML मॉड्यूल"
   },
-  "permission": "",
+  "permission": "xml",
   "functions": [
     {
       "name": "parse",
@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "XML 字符串",
-            "en-US": "XML string"
+            "en-US": "XML string",
+            "zh-TW": "XML 字串",
+            "ja": "XML 文字列",
+            "ko": "XML 문자열",
+            "es": "Cadena XML",
+            "fr": "Chaîne XML",
+            "de": "XML-Zeichenkette",
+            "pt-BR": "String XML",
+            "ru": "XML-строка",
+            "ar": "سلسلة XML",
+            "hi": "XML स्ट्रिंग"
           }
         }
       ],
@@ -41,13 +51,33 @@
         "type": "XmlNode",
         "descs": {
           "zh-CN": "JSON 树",
-          "en-US": "JSON 树"
+          "en-US": "JSON 树",
+          "zh-TW": "JSON 樹",
+          "ja": "JSONツリー",
+          "ko": "JSON 트리",
+          "es": "Árbol JSON",
+          "fr": "Arbre JSON",
+          "de": "JSON-Baum",
+          "pt-BR": "Árvore JSON",
+          "ru": "JSON-дерево",
+          "ar": "شجرة JSON",
+          "hi": "JSON ट्री"
         }
       },
       "bridge_path": "xml.parse",
       "descriptions": {
         "zh-CN": "将XML字符串解析为结构化的节点树对象",
-        "en-US": "Parse XML string into structured node tree object"
+        "en-US": "Parse XML string into structured node tree object",
+        "zh-TW": "將XML字串解析為結構化的節點树物件",
+        "ja": "XML文字列を構造化ノードツリーオブジェクトに解析",
+        "ko": "XML 문자열을 구조화된 노드 트리 객체로 파싱",
+        "es": "Analizar cadena XML en árbol de nodos estructurado",
+        "fr": "Analyser la chaîne XML en arbre de nœuds structuré",
+        "de": "XML-String in strukturierten Knotenbaum parsen",
+        "pt-BR": "Analisar string XML em árvore de nós estruturada",
+        "ru": "Разобрать XML-строку в структурированное дерево узлов",
+        "ar": "تحليل سلسلة XML إلى شجرة عقد منظمة",
+        "hi": "XML स्ट्रिंग को संरचित नोड ट्री ऑब्जेक्ट में पार्स करें"
       },
       "group": "parse",
       "description": "Parse XML string into structured node tree object"
@@ -61,7 +91,17 @@
           "type": "XmlNode",
           "descs": {
             "zh-CN": "JSON 对象",
-            "en-US": "JSON object"
+            "en-US": "JSON object",
+            "zh-TW": "JSON 物件",
+            "ja": "JSON オブジェクト",
+            "ko": "JSON 객체",
+            "es": "Objeto JSON",
+            "fr": "Objet JSON",
+            "de": "JSON-Objekt",
+            "pt-BR": "Objeto JSON",
+            "ru": "Объект JSON",
+            "ar": "كائن JSON",
+            "hi": "JSON ऑब्जेक्ट"
           }
         }
       ],
@@ -69,13 +109,33 @@
         "type": "string",
         "descs": {
           "zh-CN": "XML 字符串",
-          "en-US": "XML string"
+          "en-US": "XML string",
+          "zh-TW": "XML 字串",
+          "ja": "XML 文字列",
+          "ko": "XML 문자열",
+          "es": "Cadena XML",
+          "fr": "Chaîne XML",
+          "de": "XML-Zeichenkette",
+          "pt-BR": "String XML",
+          "ru": "XML-строка",
+          "ar": "سلسلة XML",
+          "hi": "XML स्ट्रिंग"
         }
       },
       "bridge_path": "xml.stringify",
       "descriptions": {
         "zh-CN": "序列化为字符串到 XML",
-        "en-US": "Stringify to XML"
+        "en-US": "Stringify to XML",
+        "zh-TW": "序列化為字串到 XML",
+        "ja": "XMLに文字列化",
+        "ko": "XML로 문자열화",
+        "es": "Convertir a cadena XML",
+        "fr": "Convertir en chaîne XML",
+        "de": "In XML-String konvertieren",
+        "pt-BR": "Converter para string XML",
+        "ru": "Преобразовать в XML-строку",
+        "ar": "تحويل إلى سلسلة XML",
+        "hi": "XML में स्ट्रिंगिफाई करें"
       },
       "group": "generate"
     },
@@ -88,7 +148,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "XML 字符串",
-            "en-US": "XML string"
+            "en-US": "XML string",
+            "zh-TW": "XML 字串",
+            "ja": "XML 文字列",
+            "ko": "XML 문자열",
+            "es": "Cadena XML",
+            "fr": "Chaîne XML",
+            "de": "XML-Zeichenkette",
+            "pt-BR": "String XML",
+            "ru": "XML-строка",
+            "ar": "سلسلة XML",
+            "hi": "XML स्ट्रिंग"
           }
         },
         {
@@ -96,7 +166,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "XPath",
-            "en-US": "XPath"
+            "en-US": "XPath",
+            "zh-TW": "XPath",
+            "ja": "XPath",
+            "ko": "XPath",
+            "es": "XPath",
+            "fr": "XPath",
+            "de": "XPath",
+            "pt-BR": "XPath",
+            "ru": "XPath",
+            "ar": "XPath",
+            "hi": "XPath"
           }
         }
       ],
@@ -104,14 +184,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "xml.queryXpath",
       "descriptions": {
         "zh-CN": "查询XML的xpath",
-        "en-US": "Query xpath of XML"
+        "en-US": "Query xpath of XML",
+        "zh-TW": "查询XML的xpath",
+        "ja": "クエリするXMLのxpath",
+        "ko": "쿼리XML의xpath",
+        "es": "Consulta XPath de XML",
+        "fr": "Requête XPath de XML",
+        "de": "XPath-Abfrage von XML",
+        "pt-BR": "Consulta XPath de XML",
+        "ru": "XPath-запрос XML",
+        "ar": "استعلام XPath لـ XML",
+        "hi": "XML का XPath क्वेरी"
       },
       "group": "query",
       "description": "Query xpath of XML"
@@ -125,7 +225,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "XML 字符串",
-            "en-US": "XML string"
+            "en-US": "XML string",
+            "zh-TW": "XML 字串",
+            "ja": "XML 文字列",
+            "ko": "XML 문자열",
+            "es": "Cadena XML",
+            "fr": "Chaîne XML",
+            "de": "XML-Zeichenkette",
+            "pt-BR": "String XML",
+            "ru": "XML-строка",
+            "ar": "سلسلة XML",
+            "hi": "XML स्ट्रिंग"
           }
         }
       ],
@@ -133,14 +243,34 @@
         "type": "ValidationResult",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "xml.validate",
       "descriptions": {
         "zh-CN": "验证XML文档格式是否合法有效",
-        "en-US": "Validate if XML document is well-formed and valid"
+        "en-US": "Validate if XML document is well-formed and valid",
+        "zh-TW": "驗證XML文檔格式是否合法有效",
+        "ja": "XMLドキュメントが正しい形式で有効かを検証",
+        "ko": "XML 문서가 올바른 형식이고 유효한지 검증",
+        "es": "Validar si el documento XML está bien formado y es válido",
+        "fr": "Valider si le document XML est bien formé et valide",
+        "de": "Prüfen ob XML-Dokument wohlgeformt und gültig ist",
+        "pt-BR": "Validar se o documento XML é bem formado e válido",
+        "ru": "Проверить правильность формирования и валидность XML",
+        "ar": "التحقق مما إذا كان مستند XML صحيح البنية وصالحاً",
+        "hi": "XML दस्तावेज़ सही ढंग से बना और मान्य है क्या जांचें"
       },
       "group": "parse",
       "description": "Validate if XML document is well-formed and valid"
@@ -154,7 +284,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         }
       ],
@@ -162,13 +302,33 @@
         "type": "XmlNode",
         "descs": {
           "zh-CN": "JSON 树",
-          "en-US": "JSON 树"
+          "en-US": "JSON 树",
+          "zh-TW": "JSON 樹",
+          "ja": "JSONツリー",
+          "ko": "JSON 트리",
+          "es": "Árbol JSON",
+          "fr": "Arbre JSON",
+          "de": "JSON-Baum",
+          "pt-BR": "Árvore JSON",
+          "ru": "JSON-дерево",
+          "ar": "شجرة JSON",
+          "hi": "JSON ट्री"
         }
       },
       "bridge_path": "xml.readFile",
       "descriptions": {
         "zh-CN": "读取XML的file",
-        "en-US": "Read file of XML"
+        "en-US": "Read file of XML",
+        "zh-TW": "讀取XML的file",
+        "ja": "読み取るXMLのfile",
+        "ko": "읽기XML의file",
+        "es": "Leer archivo XML",
+        "fr": "Lire le fichier XML",
+        "de": "XML-Datei lesen",
+        "pt-BR": "Ler arquivo XML",
+        "ru": "Прочитать XML-файл",
+        "ar": "قراءة ملف XML",
+        "hi": "XML फ़ाइल पढ़ें"
       },
       "group": "parse",
       "description": "Read file of XML"
@@ -182,7 +342,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "文件路径",
-            "en-US": "File path"
+            "en-US": "File path",
+            "zh-TW": "檔案路徑",
+            "ja": "ファイルパス",
+            "ko": "파일경로",
+            "es": "Ruta de archivo",
+            "fr": "Chemin du fichier",
+            "de": "Dateipfad",
+            "pt-BR": "Caminho do arquivo",
+            "ru": "Путь к файлу",
+            "ar": "مسار الملف",
+            "hi": "फ़ाइल पथ"
           }
         },
         {
@@ -190,7 +360,17 @@
           "type": "XmlNode",
           "descs": {
             "zh-CN": "JSON 对象",
-            "en-US": "JSON object"
+            "en-US": "JSON object",
+            "zh-TW": "JSON 物件",
+            "ja": "JSON オブジェクト",
+            "ko": "JSON 객체",
+            "es": "Objeto JSON",
+            "fr": "Objet JSON",
+            "de": "JSON-Objekt",
+            "pt-BR": "Objeto JSON",
+            "ru": "Объект JSON",
+            "ar": "كائن JSON",
+            "hi": "JSON ऑब्जेक्ट"
           }
         }
       ],
@@ -198,14 +378,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "xml.writeFile",
       "descriptions": {
         "zh-CN": "写入XML的file",
-        "en-US": "Write file of XML"
+        "en-US": "Write file of XML",
+        "zh-TW": "寫入XML的file",
+        "ja": "書き込むXMLのfile",
+        "ko": "쓰기XML의file",
+        "es": "Escribir archivo XML",
+        "fr": "Écrire le fichier XML",
+        "de": "XML-Datei schreiben",
+        "pt-BR": "Escrever arquivo XML",
+        "ru": "Записать XML-файл",
+        "ar": "كتابة ملف XML",
+        "hi": "XML फ़ाइल लिखें"
       },
       "group": "generate",
       "description": "Write file of XML"
@@ -219,7 +419,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "XML 字符串",
-            "en-US": "XML string"
+            "en-US": "XML string",
+            "zh-TW": "XML 字串",
+            "ja": "XML 文字列",
+            "ko": "XML 문자열",
+            "es": "Cadena XML",
+            "fr": "Chaîne XML",
+            "de": "XML-Zeichenkette",
+            "pt-BR": "String XML",
+            "ru": "XML-строка",
+            "ar": "سلسلة XML",
+            "hi": "XML स्ट्रिंग"
           }
         },
         {
@@ -227,7 +437,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "XSLT 样式表",
-            "en-US": "XSLT 样式表"
+            "en-US": "XSLT 样式表",
+            "zh-TW": "XSLT 樣式表",
+            "ja": "XSLTスタイルシート",
+            "ko": "XSLT 스타일시트",
+            "es": "Hoja de estilo XSLT",
+            "fr": "Feuille de style XSLT",
+            "de": "XSLT-Stylesheet",
+            "pt-BR": "Folha de estilo XSLT",
+            "ru": "XSLT-таблица стилей",
+            "ar": "ورقة أنماط XSLT",
+            "hi": "XSLT स्टाइलशीट"
           }
         }
       ],
@@ -235,14 +455,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "xml.transformXslt",
       "descriptions": {
         "zh-CN": "transformXML的xslt",
-        "en-US": "Transform xslt of XML"
+        "en-US": "Transform xslt of XML",
+        "zh-TW": "transformXML的xslt",
+        "ja": "transformXMLのxslt",
+        "ko": "transformXML의xslt",
+        "es": "Transformar XSLT de XML",
+        "fr": "Transformer XSLT de XML",
+        "de": "XSLT-Transformation von XML",
+        "pt-BR": "Transformar XSLT de XML",
+        "ru": "XSLT-преобразование XML",
+        "ar": "تحويل XSLT لـ XML",
+        "hi": "XML का XSLT रूपांतरण"
       },
       "group": "query",
       "description": "Transform xslt of XML"
@@ -250,14 +490,34 @@
   ],
   "overviews": {
     "zh-CN": "提供 XML 文件的解析、生成、查询（XPath）和转换（XSLT）能力。支持 DOM 和 SAX 解析模式、命名空间处理、DTD/Schema 验证等功能。",
-    "en-US": "XML parsing, generation, XPath queries, and XSLT transformation. Supports DOM and SAX parsing, namespace handling, and DTD/Schema validation."
+    "en-US": "XML parsing, generation, XPath queries, and XSLT transformation. Supports DOM and SAX parsing, namespace handling, and DTD/Schema validation.",
+    "zh-TW": "提供 XML 檔案的解析、生成、查询（XPath）和轉换（XSLT）能力。支援 DOM 和 SAX 解析模式、命名空间處理、DTD/Schema 驗證等功能。",
+    "ja": "XMLの解析・生成・XPathクエリ・XSLT変換。DOM/SAXパース・名前空間・DTD/Schema検証対応。",
+    "ko": "XML 파싱, 생성, XPath 쿼리, XSLT 변환. DOM/SAX 파싱, 네임스페이스, DTD/Schema 검증 지원.",
+    "es": "Análisis, generación, XPath y XSLT de XML. DOM/SAX, espacios de nombres y validación DTD/Schema.",
+    "fr": "Analyse, génération, XPath et XSLT XML. DOM/SAX, espaces de noms et validation DTD/Schema.",
+    "de": "XML-Parsing, -Erzeugung, XPath und XSLT. DOM/SAX, Namespaces und DTD/Schema-Validierung.",
+    "pt-BR": "Parsing, geração, XPath e XSLT XML. DOM/SAX, namespaces e validação DTD/Schema.",
+    "ru": "Парсинг, генерация, XPath и XSLT XML. DOM/SAX, пространства имён и валидация DTD/Schema.",
+    "ar": "تحليل وإنشاء XML واستعلامات XPath وتحويل XSLT. DOM/SAX ومساحات أسماء والتحقق DTD/Schema.",
+    "hi": "XML पार्सिंग, जनरेशन, XPath और XSLT। DOM/SAX, नेमस्पेस और DTD/Schema वैलिडेशन।"
   },
   "types": [
     {
       "name": "XmlNode",
       "descriptions": {
         "zh-CN": "XML 节点对象",
-        "en-US": "XML node object"
+        "en-US": "XML node object",
+        "zh-TW": "XML 節点對象",
+        "ja": "XMLノードオブジェクト",
+        "ko": "XML 노드 객체",
+        "es": "Objeto de nodo XML",
+        "fr": "Objet de nœud XML",
+        "de": "XML-Knotenobjekt",
+        "pt-BR": "Objeto de nó XML",
+        "ru": "Объект узла XML",
+        "ar": "كائن عقدة XML",
+        "hi": "XML नोड ऑब्जेक्ट"
       },
       "fields": [
         {
@@ -265,7 +525,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "节点标签名",
-            "en-US": "Node tag name"
+            "en-US": "Node tag name",
+            "zh-TW": "節点標簽名",
+            "ja": "ノードタグ名",
+            "ko": "노드 태그 이름",
+            "es": "Nombre de etiqueta del nodo",
+            "fr": "Nom de balise du nœud",
+            "de": "Knoten-Tag-Name",
+            "pt-BR": "Nome da tag do nó",
+            "ru": "Имя тега узла",
+            "ar": "اسم وسم العقدة",
+            "hi": "नोड टैग नाम"
           }
         },
         {
@@ -273,7 +543,17 @@
           "type": "object",
           "descs": {
             "zh-CN": "节点属性键值对",
-            "en-US": "Node attributes"
+            "en-US": "Node attributes",
+            "zh-TW": "節点屬性鍵值對",
+            "ja": "ノード属性",
+            "ko": "노드 속성",
+            "es": "Atributos del nodo",
+            "fr": "Attributs du nœud",
+            "de": "Knotenattribute",
+            "pt-BR": "Atributos do nó",
+            "ru": "Атрибуты узла",
+            "ar": "سمات العقدة",
+            "hi": "नोड विशेषताएँ"
           }
         },
         {
@@ -281,7 +561,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "节点文本内容",
-            "en-US": "Node text content"
+            "en-US": "Node text content",
+            "zh-TW": "節点文本內容",
+            "ja": "ノードテキスト内容",
+            "ko": "노드 텍스트 내용",
+            "es": "Contenido de texto del nodo",
+            "fr": "Contenu texte du nœud",
+            "de": "Knoten-Textinhalt",
+            "pt-BR": "Conteúdo de texto do nó",
+            "ru": "Текстовое содержимое узла",
+            "ar": "محتوى نص العقدة",
+            "hi": "नोड टेक्स्ट सामग्री"
           },
           "optional": true
         },
@@ -290,7 +580,17 @@
           "type": "XmlNode[]",
           "descs": {
             "zh-CN": "子节点列表",
-            "en-US": "Child nodes"
+            "en-US": "Child nodes",
+            "zh-TW": "子節点列表",
+            "ja": "子ノード",
+            "ko": "자식 노드",
+            "es": "Nodos hijos",
+            "fr": "Nœuds enfants",
+            "de": "Kindknoten",
+            "pt-BR": "Nós filhos",
+            "ru": "Дочерние узлы",
+            "ar": "العقد الفرعية",
+            "hi": "चाइल्ड नोड"
           },
           "optional": true
         }
@@ -300,7 +600,17 @@
       "name": "ValidationResult",
       "descriptions": {
         "zh-CN": "XML验证结果",
-        "en-US": "XML validation result"
+        "en-US": "XML validation result",
+        "zh-TW": "XML驗證结果",
+        "ja": "XMLバリデーション結果",
+        "ko": "XML 유효성 검사 결과",
+        "es": "Resultado de validación XML",
+        "fr": "Résultat de validation XML",
+        "de": "XML-Validierungsergebnis",
+        "pt-BR": "Resultado da validação XML",
+        "ru": "Результат валидации XML",
+        "ar": "نتيجة التحقق من XML",
+        "hi": "XML सत्यापन परिणाम"
       },
       "fields": [
         {
@@ -308,7 +618,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否有效",
-            "en-US": "Whether valid"
+            "en-US": "Whether valid",
+            "zh-TW": "是否有效",
+            "ja": "有効かどうか",
+            "ko": "유효 여부",
+            "es": "Si es válido",
+            "fr": "Si valide",
+            "de": "Ob gültig",
+            "pt-BR": "Se válido",
+            "ru": "Действительно или нет",
+            "ar": "ما إذا كان صالحاً",
+            "hi": "मान्य है या नहीं"
           }
         },
         {
@@ -316,7 +636,17 @@
           "type": "array",
           "descs": {
             "zh-CN": "验证错误列表",
-            "en-US": "Validation error list"
+            "en-US": "Validation error list",
+            "zh-TW": "驗證錯誤列表",
+            "ja": "バリデーションエラー一覧",
+            "ko": "유효성 검사 오류 목록",
+            "es": "Lista de errores de validación",
+            "fr": "Liste d'erreurs de validation",
+            "de": "Validierungsfehlerliste",
+            "pt-BR": "Lista de erros de validação",
+            "ru": "Список ошибок валидации",
+            "ar": "قائمة أخطاء التحقق",
+            "hi": "सत्यापन त्रुटि सूची"
           }
         }
       ]

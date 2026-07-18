@@ -33,7 +33,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "显示器 ID",
-            "en-US": "Display ID"
+            "en-US": "Display ID",
+            "zh-TW": "顯示器 ID",
+            "ja": "ディスプレイID",
+            "ko": "디스플레이 ID",
+            "es": "ID de pantalla",
+            "fr": "ID d'écran",
+            "de": "Display-ID",
+            "pt-BR": "ID do display",
+            "ru": "ID дисплея",
+            "ar": "معرف الشاشة",
+            "hi": "डिस्प्ले ID"
           },
           "optional": true,
           "default_value": "0"
@@ -43,7 +53,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出格式",
-            "en-US": "Output format"
+            "en-US": "Output format",
+            "zh-TW": "輸出格式",
+            "ja": "出力フォーマット",
+            "ko": "출력형식",
+            "es": "Formato de salida",
+            "fr": "Format de sortie",
+            "de": "Ausgabeformat",
+            "pt-BR": "Formato de saída",
+            "ru": "Формат вывода",
+            "ar": "تنسيق الإخراج",
+            "hi": "आउटपुट फ़ॉर्मैट"
           },
           "optional": true
         },
@@ -52,7 +72,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "图像质量",
-            "en-US": "Image quality"
+            "en-US": "Image quality",
+            "zh-TW": "圖像質量",
+            "ja": "画像质量",
+            "ko": "이미지 품질",
+            "es": "Calidad de imagen",
+            "fr": "Qualité d'image",
+            "de": "Bildqualität",
+            "pt-BR": "Qualidade da imagem",
+            "ru": "Качество изображения",
+            "ar": "جودة الصورة",
+            "hi": "इमेज गुणवत्ता"
           },
           "optional": true,
           "default_value": "90"
@@ -62,14 +92,34 @@
         "type": "CaptureResult",
         "descs": {
           "zh-CN": "CaptureResult类型的结果对象",
-          "en-US": "Result object of type CaptureResult"
+          "en-US": "Result object of type CaptureResult",
+          "zh-TW": "CaptureResult類型的結果物件",
+          "ja": "CaptureResultタイプの結果オブジェクト",
+          "ko": "CaptureResult유형의결과객체",
+          "es": "Objeto resultado de tipo CaptureResult",
+          "fr": "Objet résultat de type CaptureResult",
+          "de": "Ergebnisobjekt vom Typ CaptureResult",
+          "pt-BR": "Objeto resultado do tipo CaptureResult",
+          "ru": "Объект результата типа CaptureResult",
+          "ar": "كائن نتيجة من نوع CaptureResult",
+          "hi": "CaptureResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type CaptureResult"
       },
       "bridge_path": "screen.captureFull",
       "descriptions": {
         "zh-CN": "截取整个屏幕的完整截图并返回图像数据",
-        "en-US": "Capture full screen screenshot and return image data"
+        "en-US": "Capture full screen screenshot and return image data",
+        "zh-TW": "截取整個屏幕的完整截圖並返回圖像數據",
+        "ja": "画面全体のスクリーンショットを取得して画像データを返す",
+        "ko": "전체 화면 스크린샷을 캡처하고 이미지 데이터 반환",
+        "es": "Capturar pantalla completa y devolver datos",
+        "fr": "Capturer l'écran et retourner les données",
+        "de": "Vollbild-Screenshot erfassen",
+        "pt-BR": "Capturar tela inteira e retornar dados",
+        "ru": "Сделать скриншот всего экрана",
+        "ar": "التقاط لقطة شاشة كاملة",
+        "hi": "पूर्ण स्क्रीन स्क्रीनशॉट कैप्चर करें"
       },
       "group": "capture",
       "description": "Capture full screen screenshot and return image data"
@@ -83,7 +133,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "X坐标位置",
-            "en-US": "X coordinate position"
+            "en-US": "X coordinate position",
+            "zh-TW": "X坐標位置",
+            "ja": "X座標位置",
+            "ko": "X 좌표 위치",
+            "es": "Posición coordenada X",
+            "fr": "Position coordonnée X",
+            "de": "X-Koordinatenposition",
+            "pt-BR": "Posição coordenada X",
+            "ru": "Позиция по X",
+            "ar": "موقع الإحداثي X",
+            "hi": "X निर्देशांक स्थिति"
           },
           "desc": "X coordinate position"
         },
@@ -92,7 +152,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Y坐标位置",
-            "en-US": "Y coordinate position"
+            "en-US": "Y coordinate position",
+            "zh-TW": "Y坐標位置",
+            "ja": "Y座標位置",
+            "ko": "Y 좌표 위치",
+            "es": "Posición coordenada Y",
+            "fr": "Position coordonnée Y",
+            "de": "Y-Koordinatenposition",
+            "pt-BR": "Posição coordenada Y",
+            "ru": "Позиция по Y",
+            "ar": "موقع الإحداثي Y",
+            "hi": "Y निर्देशांक स्थिति"
           },
           "desc": "Y coordinate position"
         },
@@ -101,7 +171,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "截取区域宽度（像素）",
-            "en-US": "Capture region width in pixels"
+            "en-US": "Capture region width in pixels",
+            "zh-TW": "截取區域寬度（像素）",
+            "ja": "キャプチャ領域の幅（ピクセル）",
+            "ko": "캡처 영역 너비 (픽셀)",
+            "es": "Ancho de la región de captura (px)",
+            "fr": "Largeur de la région de capture (px)",
+            "de": "Erfassungsbereich-Breite (Pixel)",
+            "pt-BR": "Largura da região de captura (px)",
+            "ru": "Ширина области захвата (пикс.)",
+            "ar": "عرض منطقة الالتقاط (بكسل)",
+            "hi": "कैप्चर क्षेत्र चौड़ाई (पिक्सल)"
           },
           "desc": "Capture region width in pixels"
         },
@@ -110,7 +190,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "截取区域高度（像素）",
-            "en-US": "Capture region height in pixels"
+            "en-US": "Capture region height in pixels",
+            "zh-TW": "截取區域高度（像素）",
+            "ja": "キャプチャ領域の高さ（ピクセル）",
+            "ko": "캡처 영역 높이 (픽셀)",
+            "es": "Altura de la región de captura (px)",
+            "fr": "Hauteur de la région de capture (px)",
+            "de": "Erfassungsbereich-Höhe (Pixel)",
+            "pt-BR": "Altura da região de captura (px)",
+            "ru": "Высота области захвата (пикс.)",
+            "ar": "ارتفاع منطقة الالتقاط (بكسل)",
+            "hi": "कैप्चर क्षेत्र ऊंचाई (पिक्सल)"
           },
           "desc": "Capture region height in pixels"
         },
@@ -119,7 +209,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出格式",
-            "en-US": "Output format"
+            "en-US": "Output format",
+            "zh-TW": "輸出格式",
+            "ja": "出力フォーマット",
+            "ko": "출력형식",
+            "es": "Formato de salida",
+            "fr": "Format de sortie",
+            "de": "Ausgabeformat",
+            "pt-BR": "Formato de saída",
+            "ru": "Формат вывода",
+            "ar": "تنسيق الإخراج",
+            "hi": "आउटपुट फ़ॉर्मैट"
           },
           "optional": true
         },
@@ -128,7 +228,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "图像质量",
-            "en-US": "Image quality"
+            "en-US": "Image quality",
+            "zh-TW": "圖像質量",
+            "ja": "画像质量",
+            "ko": "이미지 품질",
+            "es": "Calidad de imagen",
+            "fr": "Qualité d'image",
+            "de": "Bildqualität",
+            "pt-BR": "Qualidade da imagem",
+            "ru": "Качество изображения",
+            "ar": "جودة الصورة",
+            "hi": "इमेज गुणवत्ता"
           },
           "optional": true,
           "default_value": "90"
@@ -138,14 +248,34 @@
         "type": "CaptureResult",
         "descs": {
           "zh-CN": "CaptureResult类型的结果对象",
-          "en-US": "Result object of type CaptureResult"
+          "en-US": "Result object of type CaptureResult",
+          "zh-TW": "CaptureResult類型的結果物件",
+          "ja": "CaptureResultタイプの結果オブジェクト",
+          "ko": "CaptureResult유형의결과객체",
+          "es": "Objeto resultado de tipo CaptureResult",
+          "fr": "Objet résultat de type CaptureResult",
+          "de": "Ergebnisobjekt vom Typ CaptureResult",
+          "pt-BR": "Objeto resultado do tipo CaptureResult",
+          "ru": "Объект результата типа CaptureResult",
+          "ar": "كائن نتيجة من نوع CaptureResult",
+          "hi": "CaptureResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type CaptureResult"
       },
       "bridge_path": "screen.captureRegion",
       "descriptions": {
         "zh-CN": "截取屏幕指定区域",
-        "en-US": "Capture region of screen"
+        "en-US": "Capture region of screen",
+        "zh-TW": "截取屏幕指定區域",
+        "ja": "画面領域をキャプチャ",
+        "ko": "화면 영역 캡처",
+        "es": "Capturar región de pantalla",
+        "fr": "Capturer une région de l'écran",
+        "de": "Bildschirmbereich erfassen",
+        "pt-BR": "Capturar região da tela",
+        "ru": "Захват области экрана",
+        "ar": "التقاط منطقة الشاشة",
+        "hi": "स्क्रीन क्षेत्र कैप्चर"
       },
       "group": "capture",
       "description": "Capture region of screen"
@@ -159,7 +289,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出路径",
-            "en-US": "Output Path"
+            "en-US": "Output Path",
+            "zh-TW": "輸出路徑",
+            "ja": "出力パス",
+            "ko": "출력경로",
+            "es": "Ruta de salida",
+            "fr": "Chemin de sortie",
+            "de": "Ausgabepfad",
+            "pt-BR": "Caminho de saída",
+            "ru": "Путь вывода",
+            "ar": "مسار الإخراج",
+            "hi": "आउटपुट पथ"
           }
         },
         {
@@ -167,7 +307,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "显示器 ID",
-            "en-US": "Display ID"
+            "en-US": "Display ID",
+            "zh-TW": "顯示器 ID",
+            "ja": "ディスプレイID",
+            "ko": "디스플레이 ID",
+            "es": "ID de pantalla",
+            "fr": "ID d'écran",
+            "de": "Display-ID",
+            "pt-BR": "ID do display",
+            "ru": "ID дисплея",
+            "ar": "معرف الشاشة",
+            "hi": "डिस्प्ले ID"
           },
           "optional": true,
           "default_value": "0"
@@ -177,7 +327,17 @@
           "type": "CaptureRegion",
           "descs": {
             "zh-CN": "截取区域坐标{x,y,w,h}（空则全屏）",
-            "en-US": "Capture region {x,y,w,h} (empty=fullscreen)"
+            "en-US": "Capture region {x,y,w,h} (empty=fullscreen)",
+            "zh-TW": "截取區域坐標{x,y,w,h}（空則全屏）",
+            "ja": "キャプチャ領域 {x,y,w,h}（空=全画面）",
+            "ko": "캡처 영역 {x,y,w,h} (빈값=전체화면)",
+            "es": "Región de captura {x,y,w,h} (vacío=pantalla completa)",
+            "fr": "Région de capture {x,y,w,h} (vide=plein écran)",
+            "de": "Erfassungsbereich {x,y,w,h} (leer=Vollbild)",
+            "pt-BR": "Região de captura {x,y,w,h} (vazio=tela cheia)",
+            "ru": "Область захвата {x,y,w,h} (пусто=весь экран)",
+            "ar": "منطقة الالتقاط {x,y,w,h} (فارغ=كامل الشاشة)",
+            "hi": "कैप्चर क्षेत्र {x,y,w,h} (खाली=फ़ुलस्क्रीन)"
           },
           "optional": true,
           "desc": "Capture region {x,y,w,h} (empty=fullscreen)"
@@ -187,7 +347,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "输出格式",
-            "en-US": "Output format"
+            "en-US": "Output format",
+            "zh-TW": "輸出格式",
+            "ja": "出力フォーマット",
+            "ko": "출력형식",
+            "es": "Formato de salida",
+            "fr": "Format de sortie",
+            "de": "Ausgabeformat",
+            "pt-BR": "Formato de saída",
+            "ru": "Формат вывода",
+            "ar": "تنسيق الإخراج",
+            "hi": "आउटपुट फ़ॉर्मैट"
           },
           "optional": true
         },
@@ -196,7 +366,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "图像质量",
-            "en-US": "Image quality"
+            "en-US": "Image quality",
+            "zh-TW": "圖像質量",
+            "ja": "画像质量",
+            "ko": "이미지 품질",
+            "es": "Calidad de imagen",
+            "fr": "Qualité d'image",
+            "de": "Bildqualität",
+            "pt-BR": "Qualidade da imagem",
+            "ru": "Качество изображения",
+            "ar": "جودة الصورة",
+            "hi": "इमेज गुणवत्ता"
           },
           "optional": true,
           "default_value": "90"
@@ -206,14 +386,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "screen.saveCapture",
       "descriptions": {
         "zh-CN": "截图并保存到文件",
-        "en-US": "Save capture of screen"
+        "en-US": "Save capture of screen",
+        "zh-TW": "截圖並保存到檔案",
+        "ja": "スクリーンキャプチャを保存",
+        "ko": "화면 캡처 저장",
+        "es": "Guardar captura de pantalla",
+        "fr": "Enregistrer la capture d'écran",
+        "de": "Bildschirmaufnahme speichern",
+        "pt-BR": "Salvar captura de tela",
+        "ru": "Сохранить снимок экрана",
+        "ar": "حفظ لقطة الشاشة",
+        "hi": "स्क्रीन कैप्चर सहेजें"
       },
       "group": "capture",
       "description": "Save capture of screen"
@@ -226,14 +426,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "screen.listDisplays",
       "descriptions": {
         "zh-CN": "列出所有显示器",
-        "en-US": "List displays of screen"
+        "en-US": "List displays of screen",
+        "zh-TW": "列出所有顯示器",
+        "ja": "画面ディスプレイ一覧",
+        "ko": "화면 디스플레이 목록",
+        "es": "Listar pantallas",
+        "fr": "Lister les écrans",
+        "de": "Bildschirme auflisten",
+        "pt-BR": "Listar telas",
+        "ru": "Список дисплеев",
+        "ar": "قائمة شاشات العرض",
+        "hi": "स्क्रीन डिस्प्ले सूचीबद्ध करें"
       },
       "group": "display",
       "description": "List displays of screen"
@@ -246,14 +466,34 @@
         "type": "DisplayInfo",
         "descs": {
           "zh-CN": "DisplayInfo类型的结果对象",
-          "en-US": "Result object of type DisplayInfo"
+          "en-US": "Result object of type DisplayInfo",
+          "zh-TW": "DisplayInfo類型的結果物件",
+          "ja": "DisplayInfoタイプの結果オブジェクト",
+          "ko": "DisplayInfo유형의결과객체",
+          "es": "Objeto resultado de tipo DisplayInfo",
+          "fr": "Objet résultat de type DisplayInfo",
+          "de": "Ergebnisobjekt vom Typ DisplayInfo",
+          "pt-BR": "Objeto resultado do tipo DisplayInfo",
+          "ru": "Объект результата типа DisplayInfo",
+          "ar": "كائن نتيجة من نوع DisplayInfo",
+          "hi": "DisplayInfo प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type DisplayInfo"
       },
       "bridge_path": "screen.getPrimary",
       "descriptions": {
         "zh-CN": "获取primary信息",
-        "en-US": "Get primary info of screen"
+        "en-US": "Get primary info of screen",
+        "zh-TW": "取得primary資訊",
+        "ja": "取得するprimary情報",
+        "ko": "가져오기primary정보",
+        "es": "Obtener información de pantalla principal",
+        "fr": "Obtenir les informations de l'écran principal",
+        "de": "Primärbildschirm-Informationen abrufen",
+        "pt-BR": "Obter informações da tela principal",
+        "ru": "Получить информацию о главном экране",
+        "ar": "الحصول على معلومات الشاشة الرئيسية",
+        "hi": "प्राइमरी स्क्रीन जानकारी प्राप्त करें"
       },
       "group": "info",
       "description": "Get primary info of screen"
@@ -266,14 +506,34 @@
         "type": "CursorPosition",
         "descs": {
           "zh-CN": "CursorPosition类型的结果对象",
-          "en-US": "Result object of type CursorPosition"
+          "en-US": "Result object of type CursorPosition",
+          "zh-TW": "CursorPosition類型的結果物件",
+          "ja": "CursorPositionタイプの結果オブジェクト",
+          "ko": "CursorPosition유형의결과객체",
+          "es": "Objeto resultado de tipo CursorPosition",
+          "fr": "Objet résultat de type CursorPosition",
+          "de": "Ergebnisobjekt vom Typ CursorPosition",
+          "pt-BR": "Objeto resultado do tipo CursorPosition",
+          "ru": "Объект результата типа CursorPosition",
+          "ar": "كائن نتيجة من نوع CursorPosition",
+          "hi": "CursorPosition प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type CursorPosition"
       },
       "bridge_path": "screen.getCursorPos",
       "descriptions": {
         "zh-CN": "获取cursor pos信息",
-        "en-US": "Get cursor pos info of screen"
+        "en-US": "Get cursor pos info of screen",
+        "zh-TW": "取得cursor pos資訊",
+        "ja": "取得するcursor pos情報",
+        "ko": "가져오기cursor pos정보",
+        "es": "Obtener posición del cursor en pantalla",
+        "fr": "Obtenir la position du curseur à l'écran",
+        "de": "Cursorposition auf dem Bildschirm abrufen",
+        "pt-BR": "Obter posição do cursor na tela",
+        "ru": "Получить позицию курсора на экране",
+        "ar": "الحصول على موضع المؤشر على الشاشة",
+        "hi": "स्क्रीन पर कर्सर स्थिति जानकारी प्राप्त करें"
       },
       "group": "display",
       "description": "Get cursor pos info of screen"
@@ -287,7 +547,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "X坐标位置",
-            "en-US": "X coordinate position"
+            "en-US": "X coordinate position",
+            "zh-TW": "X坐標位置",
+            "ja": "X座標位置",
+            "ko": "X 좌표 위치",
+            "es": "Posición coordenada X",
+            "fr": "Position coordonnée X",
+            "de": "X-Koordinatenposition",
+            "pt-BR": "Posição coordenada X",
+            "ru": "Позиция по X",
+            "ar": "موقع الإحداثي X",
+            "hi": "X निर्देशांक स्थिति"
           },
           "desc": "X coordinate position"
         },
@@ -296,7 +566,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Y坐标位置",
-            "en-US": "Y coordinate position"
+            "en-US": "Y coordinate position",
+            "zh-TW": "Y坐標位置",
+            "ja": "Y座標位置",
+            "ko": "Y 좌표 위치",
+            "es": "Posición coordenada Y",
+            "fr": "Position coordonnée Y",
+            "de": "Y-Koordinatenposition",
+            "pt-BR": "Posição coordenada Y",
+            "ru": "Позиция по Y",
+            "ar": "موقع الإحداثي Y",
+            "hi": "Y निर्देशांक स्थिति"
           },
           "desc": "Y coordinate position"
         }
@@ -305,14 +585,34 @@
         "type": "ScreenColor",
         "descs": {
           "zh-CN": "ScreenColor类型的结果对象",
-          "en-US": "Result object of type ScreenColor"
+          "en-US": "Result object of type ScreenColor",
+          "zh-TW": "ScreenColor類型的結果物件",
+          "ja": "ScreenColorタイプの結果オブジェクト",
+          "ko": "ScreenColor유형의결과객체",
+          "es": "Objeto resultado de tipo ScreenColor",
+          "fr": "Objet résultat de type ScreenColor",
+          "de": "Ergebnisobjekt vom Typ ScreenColor",
+          "pt-BR": "Objeto resultado do tipo ScreenColor",
+          "ru": "Объект результата типа ScreenColor",
+          "ar": "كائن نتيجة من نوع ScreenColor",
+          "hi": "ScreenColor प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type ScreenColor"
       },
       "bridge_path": "screen.colorAt",
       "descriptions": {
         "zh-CN": "获取屏幕指定坐标的颜色值",
-        "en-US": "Color at of screen"
+        "en-US": "Color at of screen",
+        "zh-TW": "取得屏幕指定坐標的顏色值",
+        "ja": "画面の指定位置の色を取得",
+        "ko": "화면의 지정 위치 색상 가져오기",
+        "es": "Obtener color en posición de pantalla",
+        "fr": "Obtenir la couleur à la position",
+        "de": "Farbe an Bildschirmposition",
+        "pt-BR": "Obter cor na posição da tela",
+        "ru": "Цвет в точке экрана",
+        "ar": "الحصول على اللون في موضع الشاشة",
+        "hi": "स्क्रीन स्थिति पर रंग प्राप्त करें"
       },
       "group": "display",
       "description": "Color at of screen"
@@ -326,7 +626,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "window_id参数",
-            "en-US": "window_id parameter"
+            "en-US": "window_id parameter",
+            "zh-TW": "window_id參數",
+            "ja": "window_idパラメータ",
+            "ko": "window_id매개변수",
+            "es": "Parámetro de window_id",
+            "fr": "Paramètre de window_id",
+            "de": "window_id-Parameter",
+            "pt-BR": "Parâmetro de window_id",
+            "ru": "Параметр window_id",
+            "ar": "معلمة window_id",
+            "hi": "window_id पैरामीटर"
           },
           "desc": "window_id parameter"
         }
@@ -335,14 +645,34 @@
         "type": "CaptureResult",
         "descs": {
           "zh-CN": "CaptureResult类型的结果对象",
-          "en-US": "Result object of type CaptureResult"
+          "en-US": "Result object of type CaptureResult",
+          "zh-TW": "CaptureResult類型的結果物件",
+          "ja": "CaptureResultタイプの結果オブジェクト",
+          "ko": "CaptureResult유형의결과객체",
+          "es": "Objeto resultado de tipo CaptureResult",
+          "fr": "Objet résultat de type CaptureResult",
+          "de": "Ergebnisobjekt vom Typ CaptureResult",
+          "pt-BR": "Objeto resultado do tipo CaptureResult",
+          "ru": "Объект результата типа CaptureResult",
+          "ar": "كائن نتيجة من نوع CaptureResult",
+          "hi": "CaptureResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type CaptureResult"
       },
       "bridge_path": "screen.captureWindow",
       "descriptions": {
         "zh-CN": "截取指定窗口画面",
-        "en-US": "Capture window of screen"
+        "en-US": "Capture window of screen",
+        "zh-TW": "截取指定視窗畫面",
+        "ja": "截取指定ウィンドウ画面",
+        "ko": "화면 창 캡처",
+        "es": "Capturar ventana de pantalla",
+        "fr": "Capturer la fenêtre de l'écran",
+        "de": "Bildschirmfenster erfassen",
+        "pt-BR": "Capturar janela da tela",
+        "ru": "Захват окна экрана",
+        "ar": "التقاط نافذة الشاشة",
+        "hi": "स्क्रीन विंडो कैप्चर"
       },
       "group": "capture",
       "description": "Capture window of screen"
@@ -355,14 +685,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "screen.listWindows",
       "descriptions": {
         "zh-CN": "列出windows",
-        "en-US": "List windows of screen"
+        "en-US": "List windows of screen",
+        "zh-TW": "列出windows",
+        "ja": "画面のウィンドウ一覧",
+        "ko": "화면 윈도우 목록",
+        "es": "Listar ventanas de pantalla",
+        "fr": "Lister les fenêtres",
+        "de": "Bildschirmfenster auflisten",
+        "pt-BR": "Listar janelas da tela",
+        "ru": "Список окон экрана",
+        "ar": "قائمة نوافذ الشاشة",
+        "hi": "स्क्रीन विंडो सूची"
       },
       "group": "window",
       "description": "List windows of screen"
@@ -376,7 +726,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "window_id参数",
-            "en-US": "window_id parameter"
+            "en-US": "window_id parameter",
+            "zh-TW": "window_id參數",
+            "ja": "window_idパラメータ",
+            "ko": "window_id매개변수",
+            "es": "Parámetro de window_id",
+            "fr": "Paramètre de window_id",
+            "de": "window_id-Parameter",
+            "pt-BR": "Parâmetro de window_id",
+            "ru": "Параметр window_id",
+            "ar": "معلمة window_id",
+            "hi": "window_id पैरामीटर"
           },
           "desc": "window_id parameter"
         }
@@ -385,14 +745,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "screen.focusWindow",
       "descriptions": {
         "zh-CN": "聚焦指定窗口到前台",
-        "en-US": "Focus window of screen"
+        "en-US": "Focus window of screen",
+        "zh-TW": "聚焦指定視窗到前台",
+        "ja": "聚焦指定ウィンドウへ前台",
+        "ko": "화면 창 포커스",
+        "es": "Enfocar ventana de la pantalla",
+        "fr": "Mettre au premier plan la fenêtre",
+        "de": "Fenster auf dem Bildschirm fokussieren",
+        "pt-BR": "Focar janela da tela",
+        "ru": "Фокусировать окно на экране",
+        "ar": "تركيز نافذة الشاشة",
+        "hi": "स्क्रीन विंडो फ़ोकस करें"
       },
       "group": "window",
       "description": "Focus window of screen"
@@ -406,7 +786,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "窗口标题",
-            "en-US": "Window Title"
+            "en-US": "Window Title",
+            "zh-TW": "視窗標題",
+            "ja": "ウィンドウタイトル",
+            "ko": "윈도우제목",
+            "es": "Título de ventana",
+            "fr": "Titre de la fenêtre",
+            "de": "Fenstertitel",
+            "pt-BR": "Título da janela",
+            "ru": "Заголовок окна",
+            "ar": "عنوان النافذة",
+            "hi": "विंडो शीर्षक"
           }
         },
         {
@@ -414,7 +804,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "X坐标位置",
-            "en-US": "X coordinate position"
+            "en-US": "X coordinate position",
+            "zh-TW": "X坐標位置",
+            "ja": "X座標位置",
+            "ko": "X 좌표 위치",
+            "es": "Posición coordenada X",
+            "fr": "Position coordonnée X",
+            "de": "X-Koordinatenposition",
+            "pt-BR": "Posição coordenada X",
+            "ru": "Позиция по X",
+            "ar": "موقع الإحداثي X",
+            "hi": "X निर्देशांक स्थिति"
           },
           "desc": "X coordinate position"
         },
@@ -423,7 +823,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Y坐标位置",
-            "en-US": "Y coordinate position"
+            "en-US": "Y coordinate position",
+            "zh-TW": "Y坐標位置",
+            "ja": "Y座標位置",
+            "ko": "Y 좌표 위치",
+            "es": "Posición coordenada Y",
+            "fr": "Position coordonnée Y",
+            "de": "Y-Koordinatenposition",
+            "pt-BR": "Posição coordenada Y",
+            "ru": "Позиция по Y",
+            "ar": "موقع الإحداثي Y",
+            "hi": "Y निर्देशांक स्थिति"
           },
           "desc": "Y coordinate position"
         },
@@ -432,7 +842,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度(像素)",
-            "en-US": "Width px"
+            "en-US": "Width px",
+            "zh-TW": "寬度(像素)",
+            "ja": "幅(ピクセル)",
+            "ko": "너비 (px)",
+            "es": "Ancho (px)",
+            "fr": "Largeur (px)",
+            "de": "Breite (px)",
+            "pt-BR": "Largura (px)",
+            "ru": "Ширина (пикс.)",
+            "ar": "العرض (بكسل)",
+            "hi": "चौड़ाई (px)"
           }
         },
         {
@@ -440,7 +860,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度(像素)",
-            "en-US": "Height px"
+            "en-US": "Height px",
+            "zh-TW": "高度(像素)",
+            "ja": "高さ(ピクセル)",
+            "ko": "높이 (px)",
+            "es": "Alto (px)",
+            "fr": "Hauteur (px)",
+            "de": "Höhe (px)",
+            "pt-BR": "Altura (px)",
+            "ru": "Высота (пикс.)",
+            "ar": "الارتفاع (بكسل)",
+            "hi": "ऊंचाई (px)"
           }
         }
       ],
@@ -448,14 +878,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "screen.setWindowBounds",
       "descriptions": {
         "zh-CN": "设置window bounds property",
-        "en-US": "Set window bounds property of screen"
+        "en-US": "Set window bounds property of screen",
+        "zh-TW": "設定window bounds property",
+        "ja": "設定するwindow bounds property",
+        "ko": "설정window bounds property",
+        "es": "Establecer límites de ventana de la pantalla",
+        "fr": "Définir les limites de la fenêtre",
+        "de": "Fensterrahmen-Eigenschaft setzen",
+        "pt-BR": "Definir limites da janela da tela",
+        "ru": "Установить границы окна на экране",
+        "ar": "تعيين حدود نافذة الشاشة",
+        "hi": "स्क्रीन विंडो सीमा सेट करें"
       },
       "group": "window",
       "description": "Set window bounds property of screen"
@@ -469,7 +919,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "window_id参数",
-            "en-US": "window_id parameter"
+            "en-US": "window_id parameter",
+            "zh-TW": "window_id參數",
+            "ja": "window_idパラメータ",
+            "ko": "window_id매개변수",
+            "es": "Parámetro de window_id",
+            "fr": "Paramètre de window_id",
+            "de": "window_id-Parameter",
+            "pt-BR": "Parâmetro de window_id",
+            "ru": "Параметр window_id",
+            "ar": "معلمة window_id",
+            "hi": "window_id पैरामीटर"
           },
           "desc": "window_id parameter"
         }
@@ -478,14 +938,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "screen.minimizeWindow",
       "descriptions": {
         "zh-CN": "最小化指定窗口",
-        "en-US": "Minimize window of screen"
+        "en-US": "Minimize window of screen",
+        "zh-TW": "最小化指定視窗",
+        "ja": "最小化指定ウィンドウ",
+        "ko": "화면 창 최소화",
+        "es": "Minimizar ventana de la pantalla",
+        "fr": "Minimiser la fenêtre",
+        "de": "Fenster minimieren",
+        "pt-BR": "Minimizar janela da tela",
+        "ru": "Свернуть окно на экране",
+        "ar": "تصغير نافذة الشاشة",
+        "hi": "स्क्रीन विंडो मिनिमाइज़ करें"
       },
       "group": "window",
       "description": "Minimize window of screen"
@@ -499,7 +979,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "window_id参数",
-            "en-US": "window_id parameter"
+            "en-US": "window_id parameter",
+            "zh-TW": "window_id參數",
+            "ja": "window_idパラメータ",
+            "ko": "window_id매개변수",
+            "es": "Parámetro de window_id",
+            "fr": "Paramètre de window_id",
+            "de": "window_id-Parameter",
+            "pt-BR": "Parâmetro de window_id",
+            "ru": "Параметр window_id",
+            "ar": "معلمة window_id",
+            "hi": "window_id पैरामीटर"
           },
           "desc": "window_id parameter"
         }
@@ -508,14 +998,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "screen.restoreWindow",
       "descriptions": {
         "zh-CN": "恢复最小化的窗口",
-        "en-US": "Restore window of screen"
+        "en-US": "Restore window of screen",
+        "zh-TW": "恢複最小化的視窗",
+        "ja": "復元する最小化のウィンドウ",
+        "ko": "화면 창 복원",
+        "es": "Restaurar ventana de la pantalla",
+        "fr": "Restaurer la fenêtre",
+        "de": "Fenster wiederherstellen",
+        "pt-BR": "Restaurar janela da tela",
+        "ru": "Восстановить окно на экране",
+        "ar": "استعادة نافذة الشاشة",
+        "hi": "स्क्रीन विंडो रिस्टोर करें"
       },
       "group": "window",
       "description": "Restore window of screen"
@@ -529,7 +1039,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "window_id参数",
-            "en-US": "window_id parameter"
+            "en-US": "window_id parameter",
+            "zh-TW": "window_id參數",
+            "ja": "window_idパラメータ",
+            "ko": "window_id매개변수",
+            "es": "Parámetro de window_id",
+            "fr": "Paramètre de window_id",
+            "de": "window_id-Parameter",
+            "pt-BR": "Parâmetro de window_id",
+            "ru": "Параметр window_id",
+            "ar": "معلمة window_id",
+            "hi": "window_id पैरामीटर"
           },
           "desc": "window_id parameter"
         }
@@ -538,14 +1058,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "screen.maximizeWindow",
       "descriptions": {
         "zh-CN": "最大化指定窗口",
-        "en-US": "Maximize window of screen"
+        "en-US": "Maximize window of screen",
+        "zh-TW": "最大化指定視窗",
+        "ja": "最大化指定ウィンドウ",
+        "ko": "화면 창 최대화",
+        "es": "Maximizar ventana de la pantalla",
+        "fr": "Maximiser la fenêtre",
+        "de": "Fenster maximieren",
+        "pt-BR": "Maximizar janela da tela",
+        "ru": "Развернуть окно на экране",
+        "ar": "تكبير نافذة الشاشة",
+        "hi": "स्क्रीन विंडो मैक्सिमाइज़ करें"
       },
       "group": "window",
       "description": "Maximize window of screen"
@@ -559,7 +1099,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "window_id参数",
-            "en-US": "window_id parameter"
+            "en-US": "window_id parameter",
+            "zh-TW": "window_id參數",
+            "ja": "window_idパラメータ",
+            "ko": "window_id매개변수",
+            "es": "Parámetro de window_id",
+            "fr": "Paramètre de window_id",
+            "de": "window_id-Parameter",
+            "pt-BR": "Parâmetro de window_id",
+            "ru": "Параметр window_id",
+            "ar": "معلمة window_id",
+            "hi": "window_id पैरामीटर"
           },
           "desc": "window_id parameter"
         }
@@ -568,14 +1118,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "screen.closeWindow",
       "descriptions": {
         "zh-CN": "关闭window",
-        "en-US": "Close window of screen"
+        "en-US": "Close window of screen",
+        "zh-TW": "關閉window",
+        "ja": "閉じるwindow",
+        "ko": "닫기window",
+        "es": "Cerrar ventana de pantalla",
+        "fr": "Fermer la fenêtre de l'écran",
+        "de": "Bildschirmfenster schließen",
+        "pt-BR": "Fechar janela da tela",
+        "ru": "Закрыть окно экрана",
+        "ar": "إغلاق نافذة الشاشة",
+        "hi": "स्क्रीन विंडो बंद करें"
       },
       "group": "window",
       "description": "Close window of screen"
@@ -589,7 +1159,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "window_id参数",
-            "en-US": "window_id parameter"
+            "en-US": "window_id parameter",
+            "zh-TW": "window_id參數",
+            "ja": "window_idパラメータ",
+            "ko": "window_id매개변수",
+            "es": "Parámetro de window_id",
+            "fr": "Paramètre de window_id",
+            "de": "window_id-Parameter",
+            "pt-BR": "Parâmetro de window_id",
+            "ru": "Параметр window_id",
+            "ar": "معلمة window_id",
+            "hi": "window_id पैरामीटर"
           },
           "desc": "window_id parameter"
         }
@@ -598,14 +1178,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "screen.isWindowVisible",
       "descriptions": {
         "zh-CN": "检查是否screen window visible",
-        "en-US": "Check if screen window visible"
+        "en-US": "Check if screen window visible",
+        "zh-TW": "檢查是否screen window visible",
+        "ja": "チェックするかどうかscreen window visible",
+        "ko": "확인여부screen window visible",
+        "es": "Verificar si ventana es visible",
+        "fr": "Vérifier si la fenêtre est visible",
+        "de": "Fenster-Sichtbarkeit prüfen",
+        "pt-BR": "Verificar se janela está visível",
+        "ru": "Проверить видимость окна",
+        "ar": "التحقق من ظهور النافذة",
+        "hi": "विंडो दृश्य है जांचें"
       },
       "group": "window",
       "description": "Check if screen window visible"
@@ -618,14 +1218,34 @@
         "type": "WindowInfo",
         "descs": {
           "zh-CN": "WindowInfo类型的结果对象",
-          "en-US": "Result object of type WindowInfo"
+          "en-US": "Result object of type WindowInfo",
+          "zh-TW": "WindowInfo類型的結果物件",
+          "ja": "WindowInfoタイプの結果オブジェクト",
+          "ko": "WindowInfo유형의결과객체",
+          "es": "Objeto resultado de tipo WindowInfo",
+          "fr": "Objet résultat de type WindowInfo",
+          "de": "Ergebnisobjekt vom Typ WindowInfo",
+          "pt-BR": "Objeto resultado do tipo WindowInfo",
+          "ru": "Объект результата типа WindowInfo",
+          "ar": "كائن نتيجة من نوع WindowInfo",
+          "hi": "WindowInfo प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type WindowInfo"
       },
       "bridge_path": "screen.activeWindow",
       "descriptions": {
         "zh-CN": "获取当前活跃窗口信息",
-        "en-US": "Active window of screen"
+        "en-US": "Active window of screen",
+        "zh-TW": "取得當前活躍視窗資訊",
+        "ja": "取得する現で活跃ウィンドウ情報",
+        "ko": "화면의 활성 창 정보 가져오기",
+        "es": "Obtener ventana activa",
+        "fr": "Obtenir la fenêtre active",
+        "de": "Aktives Fenster abrufen",
+        "pt-BR": "Obter janela ativa",
+        "ru": "Получить активное окно",
+        "ar": "الحصول على النافذة النشطة",
+        "hi": "सक्रिय विंडो प्राप्त करें"
       },
       "group": "window",
       "description": "Active window of screen"
@@ -639,7 +1259,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "window_id参数",
-            "en-US": "window_id parameter"
+            "en-US": "window_id parameter",
+            "zh-TW": "window_id參數",
+            "ja": "window_idパラメータ",
+            "ko": "window_id매개변수",
+            "es": "Parámetro de window_id",
+            "fr": "Paramètre de window_id",
+            "de": "window_id-Parameter",
+            "pt-BR": "Parâmetro de window_id",
+            "ru": "Параметр window_id",
+            "ar": "معلمة window_id",
+            "hi": "window_id पैरामीटर"
           },
           "desc": "window_id parameter"
         },
@@ -648,7 +1278,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否置顶窗口",
-            "en-US": "Whether to keep window on top"
+            "en-US": "Whether to keep window on top",
+            "zh-TW": "是否置頂視窗",
+            "ja": "かどうか置顶ウィンドウ",
+            "ko": "창을 항상 위에 유지할지 여부",
+            "es": "Si mantener ventana siempre visible",
+            "fr": "Garder la fenêtre au premier plan",
+            "de": "Ob Fenster im Vordergrund bleiben soll",
+            "pt-BR": "Se deve manter janela no topo",
+            "ru": "Держать ли окно поверх всех",
+            "ar": "هل يتم إبقاء النافذة في المقدمة",
+            "hi": "विंडो को शीर्ष पर रखें क्या"
           },
           "desc": "Whether to keep window on top"
         }
@@ -657,14 +1297,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "screen.setAlwaysOnTop",
       "descriptions": {
         "zh-CN": "设置窗口置顶属性屏幕",
-        "en-US": "Set always on top property of screen"
+        "en-US": "Set always on top property of screen",
+        "zh-TW": "設定視窗置頂屬性屏幕",
+        "ja": "設定するウィンドウ置顶プロパティ屏幕",
+        "ko": "화면 항상 위 속성 설정",
+        "es": "Establecer siempre visible de la pantalla",
+        "fr": "Définir toujours au premier plan",
+        "de": "Immer-im-Vordergrund-Eigenschaft setzen",
+        "pt-BR": "Definir sempre no topo da tela",
+        "ru": "Установить свойство всегда наверху",
+        "ar": "تعيين خاصية الظهور دائماً في المقدمة",
+        "hi": "हमेशा शीर्ष पर सेट करें"
       },
       "group": "window",
       "description": "Set always on top property of screen"
@@ -678,7 +1338,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "window_id参数",
-            "en-US": "window_id parameter"
+            "en-US": "window_id parameter",
+            "zh-TW": "window_id參數",
+            "ja": "window_idパラメータ",
+            "ko": "window_id매개변수",
+            "es": "Parámetro de window_id",
+            "fr": "Paramètre de window_id",
+            "de": "window_id-Parameter",
+            "pt-BR": "Parâmetro de window_id",
+            "ru": "Параметр window_id",
+            "ar": "معلمة window_id",
+            "hi": "window_id पैरामीटर"
           },
           "desc": "window_id parameter"
         },
@@ -687,7 +1357,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "窗口不透明度（0.0-1.0）",
-            "en-US": "Window opacity (0.0-1.0)"
+            "en-US": "Window opacity (0.0-1.0)",
+            "zh-TW": "視窗不透明度（0.0-1.0）",
+            "ja": "ウィンドウ不透明度（0.0-1.0）",
+            "ko": "창 불투명도 (0.0-1.0)",
+            "es": "Opacidad de ventana (0.0-1.0)",
+            "fr": "Opacité de la fenêtre (0.0-1.0)",
+            "de": "Fenster-Deckkraft (0.0-1.0)",
+            "pt-BR": "Opacidade da janela (0.0-1.0)",
+            "ru": "Прозрачность окна (0.0-1.0)",
+            "ar": "شفافية النافذة (0.0-1.0)",
+            "hi": "विंडो अपारदर्शिता (0.0-1.0)"
           },
           "desc": "Window opacity (0.0-1.0)"
         }
@@ -696,14 +1376,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "screen.setWindowOpacity",
       "descriptions": {
         "zh-CN": "设置窗口透明度属性屏幕",
-        "en-US": "Set window opacity property of screen"
+        "en-US": "Set window opacity property of screen",
+        "zh-TW": "設定視窗透明度屬性屏幕",
+        "ja": "設定するウィンドウ透明度プロパティ屏幕",
+        "ko": "화면 창 불투명도 속성 설정",
+        "es": "Establecer opacidad de ventana de la pantalla",
+        "fr": "Définir l'opacité de la fenêtre",
+        "de": "Fenster-Deckkraft-Eigenschaft setzen",
+        "pt-BR": "Definir opacidade da janela da tela",
+        "ru": "Установить прозрачность окна на экране",
+        "ar": "تعيين شفافية نافذة الشاشة",
+        "hi": "स्क्रीन विंडो अपारदर्शिता सेट करें"
       },
       "group": "window",
       "description": "Set window opacity property of screen"
@@ -711,14 +1411,34 @@
   ],
   "overviews": {
     "zh-CN": "提供屏幕操作能力，包括截屏、录屏、获取屏幕信息、多显示器管理、屏幕亮度控制、分辨率查询/设置、鼠标位置追踪等功能。",
-    "en-US": "Screen operations including screenshots, screen recording, display info, multi-monitor management, brightness control, resolution query/set, and mouse position tracking."
+    "en-US": "Screen operations including screenshots, screen recording, display info, multi-monitor management, brightness control, resolution query/set, and mouse position tracking.",
+    "zh-TW": "提供屏幕操作能力，包括截屏、錄屏、取得屏幕資訊、多顯示器管理、屏幕亮度控制、分辨率查询/設置、鼠標位置追踪等功能。",
+    "ja": "スクリーン操作：スクリーンショット・画面録画・ディスプレイ情報・マルチモニター管理・明るさ制御・解像度クエリ/設定・マウス位置追跡。",
+    "ko": "화면 작업: 스크린샷, 화면 녹화, 디스플레이 정보, 다중 모니터, 밝기, 해상도 쿼리/설정, 마우스 위치 추적.",
+    "es": "Pantalla: capturas, grabación, info de pantalla, multi-monitor, brillo, resolución y seguimiento del ratón.",
+    "fr": "Écran : captures, enregistrement, info écran, multi-moniteur, luminosité, résolution et suivi souris.",
+    "de": "Bildschirm: Screenshots, Aufnahme, Display-Info, Multi-Monitor, Helligkeit, Auflösung und Mausverfolgung.",
+    "pt-BR": "Tela: capturas, gravação, info de display, multi-monitor, brilho, resolução e rastreamento do mouse.",
+    "ru": "Экран: скриншоты, запись, информация, мультимонитор, яркость, разрешение и отслеживание мыши.",
+    "ar": "الشاشة: لقطات وتسجيل ومعلومات وشاشات متعددة وسطوع ودقة وتتبع الماوس.",
+    "hi": "स्क्रीन: स्क्रीनशॉट, रिकॉर्डिंग, डिस्प्ले इंफो, मल्टी-मॉनिटर, ब्राइटनेस, रेज़ोल्यूशन और माउस ट्रैकिंग।"
   },
   "types": [
     {
       "name": "CaptureResult",
       "descriptions": {
         "zh-CN": "截屏结果",
-        "en-US": "Capture result"
+        "en-US": "Capture result",
+        "zh-TW": "截屏结果",
+        "ja": "キャプチャ結果",
+        "ko": "캡처 결과",
+        "es": "Resultado de captura",
+        "fr": "Résultat de capture",
+        "de": "Aufnahmeergebnis",
+        "pt-BR": "Resultado da captura",
+        "ru": "Результат захвата",
+        "ar": "نتيجة الالتقاط",
+        "hi": "कैप्चर परिणाम"
       },
       "fields": [
         {
@@ -726,7 +1446,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Base64图片",
-            "en-US": "Base64 image"
+            "en-US": "Base64 image",
+            "zh-TW": "Base64图片",
+            "ja": "Base64画像",
+            "ko": "Base64 이미지",
+            "es": "Imagen Base64",
+            "fr": "Image Base64",
+            "de": "Base64-Bild",
+            "pt-BR": "Imagem Base64",
+            "ru": "Изображение Base64",
+            "ar": "صورة Base64",
+            "hi": "Base64 छवि"
           }
         },
         {
@@ -734,7 +1464,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度",
-            "en-US": "Width"
+            "en-US": "Width",
+            "zh-TW": "宽度",
+            "ja": "幅",
+            "ko": "너비",
+            "es": "Ancho",
+            "fr": "Largeur",
+            "de": "Breite",
+            "pt-BR": "Largura",
+            "ru": "Ширина",
+            "ar": "العرض",
+            "hi": "चौड़ाई"
           }
         },
         {
@@ -742,7 +1482,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度",
-            "en-US": "Height"
+            "en-US": "Height",
+            "zh-TW": "高度",
+            "ja": "高さ",
+            "ko": "높이",
+            "es": "Altura",
+            "fr": "Hauteur",
+            "de": "Höhe",
+            "pt-BR": "Altura",
+            "ru": "Высота",
+            "ar": "الارتفاع",
+            "hi": "ऊँचाई"
           }
         }
       ]
@@ -751,7 +1501,17 @@
       "name": "DisplayInfo",
       "descriptions": {
         "zh-CN": "显示器信息",
-        "en-US": "Display info"
+        "en-US": "Display info",
+        "zh-TW": "顯示器資訊",
+        "ja": "ディスプレイ情報",
+        "ko": "디스플레이 정보",
+        "es": "Información de pantalla",
+        "fr": "Informations d'affichage",
+        "de": "Anzeigeinformationen",
+        "pt-BR": "Informações de exibição",
+        "ru": "Информация о дисплее",
+        "ar": "معلومات العرض",
+        "hi": "डिस्प्ले जानकारी"
       },
       "fields": [
         {
@@ -759,7 +1519,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "宽度",
-            "en-US": "Width"
+            "en-US": "Width",
+            "zh-TW": "宽度",
+            "ja": "幅",
+            "ko": "너비",
+            "es": "Ancho",
+            "fr": "Largeur",
+            "de": "Breite",
+            "pt-BR": "Largura",
+            "ru": "Ширина",
+            "ar": "العرض",
+            "hi": "चौड़ाई"
           }
         },
         {
@@ -767,7 +1537,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "高度",
-            "en-US": "Height"
+            "en-US": "Height",
+            "zh-TW": "高度",
+            "ja": "高さ",
+            "ko": "높이",
+            "es": "Altura",
+            "fr": "Hauteur",
+            "de": "Höhe",
+            "pt-BR": "Altura",
+            "ru": "Высота",
+            "ar": "الارتفاع",
+            "hi": "ऊँचाई"
           }
         },
         {
@@ -775,7 +1555,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "缩放比例",
-            "en-US": "Scale factor"
+            "en-US": "Scale factor",
+            "zh-TW": "縮放比例",
+            "ja": "スケール係数",
+            "ko": "배율",
+            "es": "Factor de escala",
+            "fr": "Facteur d'échelle",
+            "de": "Skalierungsfaktor",
+            "pt-BR": "Fator de escala",
+            "ru": "Коэффициент масштабирования",
+            "ar": "عامل القياس",
+            "hi": "स्केल फ़ैक्टर"
           }
         },
         {
@@ -783,7 +1573,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否主显示器",
-            "en-US": "Is primary"
+            "en-US": "Is primary",
+            "zh-TW": "是否主顯示器",
+            "ja": "プライマリかどうか",
+            "ko": "주요 여부",
+            "es": "Es primario",
+            "fr": "Est principal",
+            "de": "Ist primär",
+            "pt-BR": "É primário",
+            "ru": "Является основным",
+            "ar": "رئيسي",
+            "hi": "प्राथमिक है"
           }
         }
       ]
@@ -792,7 +1592,17 @@
       "name": "CursorPosition",
       "descriptions": {
         "zh-CN": "光标位置",
-        "en-US": "Cursor position"
+        "en-US": "Cursor position",
+        "zh-TW": "光標位置",
+        "ja": "カーソル位置",
+        "ko": "커서 위치",
+        "es": "Posición del cursor",
+        "fr": "Position du curseur",
+        "de": "Cursorposition",
+        "pt-BR": "Posição do cursor",
+        "ru": "Позиция курсора",
+        "ar": "موقع المؤشر",
+        "hi": "कर्सर स्थिति"
       },
       "fields": [
         {
@@ -800,7 +1610,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "X坐标",
-            "en-US": "X"
+            "en-US": "X",
+            "zh-TW": "X坐標",
+            "ja": "X",
+            "ko": "X",
+            "es": "X",
+            "fr": "X",
+            "de": "X",
+            "pt-BR": "X",
+            "ru": "X",
+            "ar": "X",
+            "hi": "X"
           }
         },
         {
@@ -808,7 +1628,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "Y坐标",
-            "en-US": "Y"
+            "en-US": "Y",
+            "zh-TW": "Y坐標",
+            "ja": "Y",
+            "ko": "Y",
+            "es": "Y",
+            "fr": "Y",
+            "de": "Y",
+            "pt-BR": "Y",
+            "ru": "Y",
+            "ar": "Y",
+            "hi": "Y"
           }
         }
       ]
@@ -817,7 +1647,17 @@
       "name": "ScreenColor",
       "descriptions": {
         "zh-CN": "屏幕颜色",
-        "en-US": "Screen color"
+        "en-US": "Screen color",
+        "zh-TW": "屏幕颜色",
+        "ja": "画面の色",
+        "ko": "화면 색상",
+        "es": "Color de pantalla",
+        "fr": "Couleur d'écran",
+        "de": "Bildschirmfarbe",
+        "pt-BR": "Cor da tela",
+        "ru": "Цвет экрана",
+        "ar": "لون الشاشة",
+        "hi": "स्क्रीन रंग"
       },
       "fields": [
         {
@@ -825,7 +1665,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "红",
-            "en-US": "Red"
+            "en-US": "Red",
+            "zh-TW": "红",
+            "ja": "赤",
+            "ko": "빨강",
+            "es": "Rojo",
+            "fr": "Rouge",
+            "de": "Rot",
+            "pt-BR": "Vermelho",
+            "ru": "Красный",
+            "ar": "أحمر",
+            "hi": "लाल"
           }
         },
         {
@@ -833,7 +1683,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "绿",
-            "en-US": "Green"
+            "en-US": "Green",
+            "zh-TW": "綠",
+            "ja": "緑",
+            "ko": "초록",
+            "es": "Verde",
+            "fr": "Vert",
+            "de": "Grün",
+            "pt-BR": "Verde",
+            "ru": "Зелёный",
+            "ar": "أخضر",
+            "hi": "हरा"
           }
         },
         {
@@ -841,7 +1701,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "蓝",
-            "en-US": "Blue"
+            "en-US": "Blue",
+            "zh-TW": "蓝",
+            "ja": "青",
+            "ko": "파랑",
+            "es": "Azul",
+            "fr": "Bleu",
+            "de": "Blau",
+            "pt-BR": "Azul",
+            "ru": "Синий",
+            "ar": "أزرق",
+            "hi": "नीला"
           }
         },
         {
@@ -849,7 +1719,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "十六进制",
-            "en-US": "Hex"
+            "en-US": "Hex",
+            "zh-TW": "十六進制",
+            "ja": "16進数",
+            "ko": "16진수",
+            "es": "Hexadecimal",
+            "fr": "Hexadécimal",
+            "de": "Hexadezimal",
+            "pt-BR": "Hexadecimal",
+            "ru": "Шестнадцатеричный",
+            "ar": "ست عشري",
+            "hi": "हेक्स"
           }
         }
       ]
@@ -858,7 +1738,17 @@
       "name": "WindowInfo",
       "descriptions": {
         "zh-CN": "窗口信息",
-        "en-US": "Window info"
+        "en-US": "Window info",
+        "zh-TW": "視窗資訊",
+        "ja": "ウィンドウ情報",
+        "ko": "윈도우 정보",
+        "es": "Información de ventana",
+        "fr": "Informations de fenêtre",
+        "de": "Fensterinformationen",
+        "pt-BR": "Informações da janela",
+        "ru": "Информация об окне",
+        "ar": "معلومات النافذة",
+        "hi": "विंडो जानकारी"
       },
       "fields": [
         {
@@ -866,7 +1756,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "窗口ID",
-            "en-US": "Window ID"
+            "en-US": "Window ID",
+            "zh-TW": "視窗ID",
+            "ja": "ウィンドウID",
+            "ko": "윈도우 ID",
+            "es": "ID de ventana",
+            "fr": "ID de fenêtre",
+            "de": "Fenster-ID",
+            "pt-BR": "ID da janela",
+            "ru": "ID окна",
+            "ar": "معرّف النافذة",
+            "hi": "विंडो ID"
           }
         },
         {
@@ -874,7 +1774,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "标题",
-            "en-US": "Title"
+            "en-US": "Title",
+            "zh-TW": "標题",
+            "ja": "タイトル",
+            "ko": "제목",
+            "es": "Título",
+            "fr": "Titre",
+            "de": "Titel",
+            "pt-BR": "Título",
+            "ru": "Заголовок",
+            "ar": "العنوان",
+            "hi": "शीर्षक"
           }
         },
         {
@@ -882,7 +1792,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "应用名",
-            "en-US": "App name"
+            "en-US": "App name",
+            "zh-TW": "應用名",
+            "ja": "アプリ名",
+            "ko": "앱 이름",
+            "es": "Nombre de la aplicación",
+            "fr": "Nom de l'application",
+            "de": "App-Name",
+            "pt-BR": "Nome do aplicativo",
+            "ru": "Имя приложения",
+            "ar": "اسم التطبيق",
+            "hi": "ऐप का नाम"
           }
         }
       ]
@@ -891,7 +1811,17 @@
       "name": "CaptureRegion",
       "descriptions": {
         "zh-CN": "屏幕截取区域",
-        "en-US": "Screen capture region"
+        "en-US": "Screen capture region",
+        "zh-TW": "屏幕截取區域",
+        "ja": "画面キャプチャ領域",
+        "ko": "화면 캡처 영역",
+        "es": "Región de captura de pantalla",
+        "fr": "Région de capture d'écran",
+        "de": "Bildschirmaufnahmebereich",
+        "pt-BR": "Região de captura de tela",
+        "ru": "Область захвата экрана",
+        "ar": "منطقة التقاط الشاشة",
+        "hi": "स्क्रीन कैप्चर क्षेत्र"
       },
       "fields": [
         {
@@ -899,7 +1829,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "起始X坐标",
-            "en-US": "Start X coordinate"
+            "en-US": "Start X coordinate",
+            "zh-TW": "起始X坐標",
+            "ja": "開始X座標",
+            "ko": "시작 X 좌표",
+            "es": "Coordenada X inicial",
+            "fr": "Coordonnée X de début",
+            "de": "Start-X-Koordinate",
+            "pt-BR": "Coordenada X inicial",
+            "ru": "Начальная координата X",
+            "ar": "إحداثي X البداية",
+            "hi": "प्रारंभ X निर्देशांक"
           }
         },
         {
@@ -907,7 +1847,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "起始Y坐标",
-            "en-US": "Start Y coordinate"
+            "en-US": "Start Y coordinate",
+            "zh-TW": "起始Y坐標",
+            "ja": "開始Y座標",
+            "ko": "시작 Y 좌표",
+            "es": "Coordenada Y inicial",
+            "fr": "Coordonnée Y de début",
+            "de": "Start-Y-Koordinate",
+            "pt-BR": "Coordenada Y inicial",
+            "ru": "Начальная координата Y",
+            "ar": "إحداثي Y البداية",
+            "hi": "प्रारंभ Y निर्देशांक"
           }
         },
         {
@@ -915,7 +1865,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "区域宽度",
-            "en-US": "Region width"
+            "en-US": "Region width",
+            "zh-TW": "區域宽度",
+            "ja": "領域の幅",
+            "ko": "영역 너비",
+            "es": "Ancho de la región",
+            "fr": "Largeur de la région",
+            "de": "Regionsbreite",
+            "pt-BR": "Largura da região",
+            "ru": "Ширина области",
+            "ar": "عرض المنطقة",
+            "hi": "क्षेत्र चौड़ाई"
           }
         },
         {
@@ -923,7 +1883,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "区域高度",
-            "en-US": "Region height"
+            "en-US": "Region height",
+            "zh-TW": "區域高度",
+            "ja": "領域の高さ",
+            "ko": "영역 높이",
+            "es": "Altura de la región",
+            "fr": "Hauteur de la région",
+            "de": "Regionshöhe",
+            "pt-BR": "Altura da região",
+            "ru": "Высота области",
+            "ar": "ارتفاع المنطقة",
+            "hi": "क्षेत्र ऊँचाई"
           }
         }
       ]

@@ -24,7 +24,17 @@
   },
   "overviews": {
     "zh-CN": "提供蓝牙低功耗(BLE)通信能力，支持设备扫描、连接、服务发现、特征值读写、通知订阅等功能。",
-    "en-US": "Provides Bluetooth Low Energy (BLE) communication including device scanning, connection, service discovery, characteristic read/write, and notification subscription."
+    "en-US": "Provides Bluetooth Low Energy (BLE) communication including device scanning, connection, service discovery, characteristic read/write, and notification subscription.",
+    "zh-TW": "提供蓝牙低功耗(BLE)通訊能力，支援設備掃描、連接、服務发現、特徵值读写、通知订閱等功能。",
+    "ja": "Bluetooth Low Energy (BLE) 通信：デバイススキャン・接続・サービスディスカバリー・特性値読み書き・通知サブスクリプション。",
+    "ko": "Bluetooth Low Energy (BLE) 통신: 장치 스캔, 연결, 서비스 발견, 특성 읽기/쓰기, 알림 구독.",
+    "es": "Comunicación Bluetooth Low Energy (BLE): escaneo, conexión, descubrimiento de servicios, lectura/escritura de características y suscripción a notificaciones.",
+    "fr": "Communication Bluetooth Low Energy (BLE) : scan, connexion, découverte de services, lecture/écriture de caractéristiques et abonnement aux notifications.",
+    "de": "Bluetooth Low Energy (BLE) Kommunikation: Gerätescan, Verbindung, Service-Discovery, Characteristic Read/Write und Benachrichtigungs-Abonnement.",
+    "pt-BR": "Comunicação Bluetooth Low Energy (BLE): varredura, conexão, descoberta de serviços, leitura/escrita de características e assinatura de notificações.",
+    "ru": "Связь Bluetooth Low Energy (BLE): сканирование, подключение, обнаружение сервисов, чтение/запись характеристик и подписка на уведомления.",
+    "ar": "اتصال Bluetooth Low Energy (BLE): مسح وتوصيل واكتشاف خدمات وقراءة/كتابة خصائص واشتراك في الإشعارات.",
+    "hi": "Bluetooth Low Energy (BLE): डिवाइस स्कैन, कनेक्शन, सर्विस डिस्कवरी, कैरेक्टरिस्टिक पढ़ना/लिखना और नोटिफिकेशन सब्सक्रिप्शन।"
   },
   "permission": "bluetooth",
   "functions": [
@@ -33,7 +43,17 @@
       "symbol": "hap_bluetooth_scan_start",
       "descriptions": {
         "zh-CN": "启动蓝牙低功耗（BLE）设备扫描，可按名称过滤",
-        "en-US": "Start BLE device scanning with optional name filter"
+        "en-US": "Start BLE device scanning with optional name filter",
+        "zh-TW": "啟動藍牙低功耗（BLE）設備掃描，可按名稱過濾",
+        "ja": "起動する蓝牙低功耗（BLE）デバイススキャンする，可按名称フィルタする",
+        "ko": "선택적 이름 필터로 BLE 장치 스캔 시작",
+        "es": "Iniciar escaneo BLE con filtro de nombre",
+        "fr": "Démarrer le scan BLE avec filtre de nom",
+        "de": "BLE-Gerätescan mit Namensfilter starten",
+        "pt-BR": "Iniciar scan BLE com filtro de nome",
+        "ru": "Начать сканирование BLE с фильтром имени",
+        "ar": "بدء مسح أجهزة BLE مع فلتر الاسم",
+        "hi": "ऑप्शनल नाम फ़िल्टर के साथ BLE स्कैन शुरू करें"
       },
       "params": [
         {
@@ -43,7 +63,17 @@
           "default_value": "10000",
           "descs": {
             "zh-CN": "扫描时长(毫秒)",
-            "en-US": "Scan duration (ms)"
+            "en-US": "Scan duration (ms)",
+            "zh-TW": "掃描時長(毫秒)",
+            "ja": "スキャンする时长(毫秒)",
+            "ko": "스캔 지속 시간 (ms)",
+            "es": "Duración del escaneo (ms)",
+            "fr": "Durée du scan (ms)",
+            "de": "Scan-Dauer (ms)",
+            "pt-BR": "Duração do scan (ms)",
+            "ru": "Длительность сканирования (мс)",
+            "ar": "مدة المسح (مللي ثانية)",
+            "hi": "स्कैन अवधि (ms)"
           }
         },
         {
@@ -52,7 +82,17 @@
           "optional": true,
           "descs": {
             "zh-CN": "按名称过滤",
-            "en-US": "Filter by name"
+            "en-US": "Filter by name",
+            "zh-TW": "按名稱過濾",
+            "ja": "按名称フィルタする",
+            "ko": "이름으로 필터링",
+            "es": "Filtrar por nombre",
+            "fr": "Filtrer par nom",
+            "de": "Nach Name filtern",
+            "pt-BR": "Filtrar por nome",
+            "ru": "Фильтр по имени",
+            "ar": "تصفية حسب الاسم",
+            "hi": "नाम से फ़िल्टर"
           }
         }
       ],
@@ -60,7 +100,17 @@
         "type": "array",
         "descs": {
           "zh-CN": "设备列表",
-          "en-US": "Device list"
+          "en-US": "Device list",
+          "zh-TW": "設備列表",
+          "ja": "デバイスリスト",
+          "ko": "디바이스목록",
+          "es": "Lista de dispositivos",
+          "fr": "Liste des périphériques",
+          "de": "Geräteliste",
+          "pt-BR": "Lista de dispositivos",
+          "ru": "Список устройств",
+          "ar": "قائمة الأجهزة",
+          "hi": "डिवाइस सूची"
         }
       },
       "bridge_path": "bluetooth.scanStart",
@@ -73,14 +123,34 @@
       "symbol": "hap_bluetooth_scan_stop",
       "descriptions": {
         "zh-CN": "停止正在进行的蓝牙设备扫描",
-        "en-US": "Stop ongoing Bluetooth device scanning"
+        "en-US": "Stop ongoing Bluetooth device scanning",
+        "zh-TW": "停止正在進行的藍牙設備掃描",
+        "ja": "進行中のBluetoothデバイススキャンを停止",
+        "ko": "진행 중인 블루투스 장치 스캔 중지",
+        "es": "Detener escaneo de dispositivos Bluetooth",
+        "fr": "Arrêter le scan Bluetooth en cours",
+        "de": "Bluetooth-Scan stoppen",
+        "pt-BR": "Parar scan Bluetooth em andamento",
+        "ru": "Остановить сканирование Bluetooth",
+        "ar": "إيقاف مسح أجهزة Bluetooth",
+        "hi": "चल रहे Bluetooth स्कैन को रोकें"
       },
       "params": [],
       "returns": {
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "bluetooth.scanStop",
@@ -92,7 +162,17 @@
       "symbol": "hap_bluetooth_connect",
       "descriptions": {
         "zh-CN": "连接到指定的 BLE 设备",
-        "en-US": "Connect to specified BLE device"
+        "en-US": "Connect to specified BLE device",
+        "zh-TW": "連接到指定的 BLE 設備",
+        "ja": "接続へ指定の BLE デバイス",
+        "ko": "연결으로지정의 BLE 디바이스",
+        "es": "Conectar al dispositivo BLE",
+        "fr": "Se connecter au périphérique BLE",
+        "de": "Mit BLE-Gerät verbinden",
+        "pt-BR": "Conectar ao dispositivo BLE",
+        "ru": "Подключиться к BLE-устройству",
+        "ar": "الاتصال بجهاز BLE المحدد",
+        "hi": "निर्दिष्ट BLE डिवाइस से कनेक्ट करें"
       },
       "params": [
         {
@@ -100,7 +180,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID/地址",
-            "en-US": "Device ID/address"
+            "en-US": "Device ID/address",
+            "zh-TW": "設備ID/地址",
+            "ja": "デバイスID/アドレス",
+            "ko": "디바이스ID/주소",
+            "es": "ID/dirección del dispositivo",
+            "fr": "ID/adresse du périphérique",
+            "de": "Geräte-ID/Adresse",
+            "pt-BR": "ID/endereço do dispositivo",
+            "ru": "ID/адрес устройства",
+            "ar": "معرف/عنوان الجهاز",
+            "hi": "डिवाइस ID/पता"
           }
         }
       ],
@@ -108,7 +198,17 @@
         "type": "BleConnection",
         "descs": {
           "zh-CN": "连接信息",
-          "en-US": "Connection info"
+          "en-US": "Connection info",
+          "zh-TW": "連接資訊",
+          "ja": "接続情報",
+          "ko": "연결정보",
+          "es": "Información de conexión",
+          "fr": "Informations de connexion",
+          "de": "Verbindungsinformationen",
+          "pt-BR": "Informações de conexão",
+          "ru": "Информация о подключении",
+          "ar": "معلومات الاتصال",
+          "hi": "कनेक्शन जानकारी"
         }
       },
       "bridge_path": "bluetooth.connect",
@@ -121,7 +221,17 @@
       "symbol": "hap_bluetooth_disconnect",
       "descriptions": {
         "zh-CN": "断开与指定 BLE 设备的连接",
-        "en-US": "Disconnect from specified BLE device"
+        "en-US": "Disconnect from specified BLE device",
+        "zh-TW": "斷開與指定 BLE 設備的連接",
+        "ja": "指定BLEデバイスから切断",
+        "ko": "지정된 BLE 장치에서 연결 해제",
+        "es": "Desconectar del dispositivo BLE",
+        "fr": "Se déconnecter du périphérique BLE",
+        "de": "BLE-Gerät trennen",
+        "pt-BR": "Desconectar do dispositivo BLE",
+        "ru": "Отключиться от BLE-устройства",
+        "ar": "قطع الاتصال بجهاز BLE",
+        "hi": "निर्दिष्ट BLE डिवाइस से डिस्कनेक्ट करें"
       },
       "params": [
         {
@@ -129,7 +239,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "디바이스ID",
+            "es": "ID del dispositivo",
+            "fr": "ID de l'appareil",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرف الجهاز",
+            "hi": "डिवाइस ID"
           }
         }
       ],
@@ -137,7 +257,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "bluetooth.disconnect",
@@ -149,7 +279,17 @@
       "symbol": "hap_bluetooth_discover_services",
       "descriptions": {
         "zh-CN": "发现已连接 BLE 设备上的所有 GATT 服务",
-        "en-US": "Discover all GATT services on connected BLE device"
+        "en-US": "Discover all GATT services on connected BLE device",
+        "zh-TW": "發現已連接 BLE 設備上的所有 GATT 服務",
+        "ja": "接続済みBLEデバイスのすべてのGATTサービスを検出",
+        "ko": "연결된 BLE 장치의 모든 GATT 서비스 검색",
+        "es": "Descubrir servicios GATT del dispositivo BLE",
+        "fr": "Découvrir les services GATT du périphérique BLE",
+        "de": "GATT-Dienste des BLE-Geräts entdecken",
+        "pt-BR": "Descobrir serviços GATT do dispositivo BLE",
+        "ru": "Обнаружить все сервисы GATT на BLE",
+        "ar": "اكتشاف جميع خدمات GATT على جهاز BLE",
+        "hi": "कनेक्टेड BLE डिवाइस के सभी GATT सर्विसेज खोजें"
       },
       "params": [
         {
@@ -157,7 +297,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "디바이스ID",
+            "es": "ID del dispositivo",
+            "fr": "ID de l'appareil",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرف الجهاز",
+            "hi": "डिवाइस ID"
           }
         }
       ],
@@ -165,7 +315,17 @@
         "type": "array",
         "descs": {
           "zh-CN": "服务列表",
-          "en-US": "Service list"
+          "en-US": "Service list",
+          "zh-TW": "服務列表",
+          "ja": "サービスリスト",
+          "ko": "서비스목록",
+          "es": "Lista de servicios",
+          "fr": "Liste des services",
+          "de": "Dienstliste",
+          "pt-BR": "Lista de serviços",
+          "ru": "Список сервисов",
+          "ar": "قائمة الخدمات",
+          "hi": "सर्विस सूची"
         }
       },
       "bridge_path": "bluetooth.discoverServices",
@@ -178,7 +338,17 @@
       "symbol": "hap_bluetooth_read_characteristic",
       "descriptions": {
         "zh-CN": "读取 BLE 设备指定服务中的特征值数据",
-        "en-US": "Read characteristic value from specified BLE service"
+        "en-US": "Read characteristic value from specified BLE service",
+        "zh-TW": "讀取 BLE 設備指定服務中的特徵值數據",
+        "ja": "指定BLEサービスから特性値を読み取り",
+        "ko": "지정된 BLE 서비스에서 특성값 읽기",
+        "es": "Leer valor de característica del servicio BLE",
+        "fr": "Lire la valeur de caractéristique du service BLE",
+        "de": "Charakteristikwert vom BLE-Dienst lesen",
+        "pt-BR": "Ler valor de característica do serviço BLE",
+        "ru": "Прочитать значение характеристики BLE",
+        "ar": "قراءة قيمة الخاصية من خدمة BLE",
+        "hi": "निर्दिष्ट BLE सर्विस से विशेषता मान पढ़ें"
       },
       "params": [
         {
@@ -186,7 +356,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "디바이스ID",
+            "es": "ID del dispositivo",
+            "fr": "ID de l'appareil",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرف الجهاز",
+            "hi": "डिवाइस ID"
           }
         },
         {
@@ -194,7 +374,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务UUID",
-            "en-US": "Service UUID"
+            "en-US": "Service UUID",
+            "zh-TW": "服務UUID",
+            "ja": "サービスUUID",
+            "ko": "서비스UUID",
+            "es": "UUID del servicio",
+            "fr": "UUID du service",
+            "de": "Dienst-UUID",
+            "pt-BR": "UUID do serviço",
+            "ru": "UUID сервиса",
+            "ar": "UUID الخدمة",
+            "hi": "सर्विस UUID"
           }
         },
         {
@@ -202,7 +392,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "特征UUID",
-            "en-US": "Characteristic UUID"
+            "en-US": "Characteristic UUID",
+            "zh-TW": "特徵UUID",
+            "ja": "キャラクタリスティックUUID",
+            "ko": "특성 UUID",
+            "es": "UUID de característica",
+            "fr": "UUID de caractéristique",
+            "de": "Charakteristik-UUID",
+            "pt-BR": "UUID da característica",
+            "ru": "UUID характеристики",
+            "ar": "UUID الخاصية",
+            "hi": "विशेषता UUID"
           }
         }
       ],
@@ -210,7 +410,17 @@
         "type": "CharValue",
         "descs": {
           "zh-CN": "特征值数据",
-          "en-US": "Characteristic data"
+          "en-US": "Characteristic data",
+          "zh-TW": "特徵值數據",
+          "ja": "特性値データ",
+          "ko": "특성값 데이터",
+          "es": "Datos de característica",
+          "fr": "Données de caractéristique",
+          "de": "Merkmalsdaten",
+          "pt-BR": "Dados da característica",
+          "ru": "Данные характеристики",
+          "ar": "بيانات الخاصية",
+          "hi": "विशेषता डेटा"
         }
       },
       "bridge_path": "bluetooth.readCharacteristic",
@@ -223,7 +433,17 @@
       "symbol": "hap_bluetooth_write_characteristic",
       "descriptions": {
         "zh-CN": "向 BLE 设备的指定特征写入数据",
-        "en-US": "Write data to specified BLE characteristic"
+        "en-US": "Write data to specified BLE characteristic",
+        "zh-TW": "向 BLE 設備的指定特徵寫入數據",
+        "ja": "向 BLE デバイスの指定特征書き込むデータ",
+        "ko": "지정된 BLE 특성에 데이터 쓰기",
+        "es": "Escribir datos en la característica BLE",
+        "fr": "Écrire des données dans la caractéristique BLE",
+        "de": "Daten in BLE-Charakteristik schreiben",
+        "pt-BR": "Escrever dados na característica BLE",
+        "ru": "Записать данные в характеристику BLE",
+        "ar": "كتابة بيانات إلى خاصية BLE",
+        "hi": "निर्दिष्ट BLE विशेषता में डेटा लिखें"
       },
       "params": [
         {
@@ -231,7 +451,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "디바이스ID",
+            "es": "ID del dispositivo",
+            "fr": "ID de l'appareil",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرف الجهاز",
+            "hi": "डिवाइस ID"
           }
         },
         {
@@ -239,7 +469,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务UUID",
-            "en-US": "Service UUID"
+            "en-US": "Service UUID",
+            "zh-TW": "服務UUID",
+            "ja": "サービスUUID",
+            "ko": "서비스UUID",
+            "es": "UUID del servicio",
+            "fr": "UUID du service",
+            "de": "Dienst-UUID",
+            "pt-BR": "UUID do serviço",
+            "ru": "UUID сервиса",
+            "ar": "UUID الخدمة",
+            "hi": "सर्विस UUID"
           }
         },
         {
@@ -247,7 +487,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "特征UUID",
-            "en-US": "Characteristic UUID"
+            "en-US": "Characteristic UUID",
+            "zh-TW": "特徵UUID",
+            "ja": "キャラクタリスティックUUID",
+            "ko": "특성 UUID",
+            "es": "UUID de característica",
+            "fr": "UUID de caractéristique",
+            "de": "Charakteristik-UUID",
+            "pt-BR": "UUID da característica",
+            "ru": "UUID характеристики",
+            "ar": "UUID الخاصية",
+            "hi": "विशेषता UUID"
           }
         },
         {
@@ -255,7 +505,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据(hex编码)",
-            "en-US": "Data (hex encoded)"
+            "en-US": "Data (hex encoded)",
+            "zh-TW": "數據(hex編碼)",
+            "ja": "データ(hexエンコーディング)",
+            "ko": "데이터(hex인코딩)",
+            "es": "Datos (codificación hex)",
+            "fr": "Données (encodage hex)",
+            "de": "Daten (hex-kodiert)",
+            "pt-BR": "Dados (codificação hex)",
+            "ru": "Данные (hex)",
+            "ar": "بيانات (مشفرة بالست عشري)",
+            "hi": "डेटा (हेक्स एनकोडेड)"
           }
         },
         {
@@ -265,7 +525,17 @@
           "default_value": "true",
           "descs": {
             "zh-CN": "是否需要响应",
-            "en-US": "With response"
+            "en-US": "With response",
+            "zh-TW": "是否需要回應",
+            "ja": "かどうか必要レスポンス",
+            "ko": "응답 포함",
+            "es": "Con respuesta",
+            "fr": "Avec réponse",
+            "de": "Mit Antwort",
+            "pt-BR": "Com resposta",
+            "ru": "С ответом",
+            "ar": "مع استجابة",
+            "hi": "प्रतिक्रिया के साथ"
           }
         }
       ],
@@ -273,7 +543,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "bluetooth.writeCharacteristic",
@@ -286,7 +566,17 @@
       "symbol": "hap_bluetooth_subscribe",
       "descriptions": {
         "zh-CN": "订阅 BLE 特征值变化通知，实时接收数据更新",
-        "en-US": "Subscribe to BLE characteristic notifications"
+        "en-US": "Subscribe to BLE characteristic notifications",
+        "zh-TW": "訂閱 BLE 特徵值變化通知，實時接收數據更新",
+        "ja": "BLE特性通知をサブスクライブ",
+        "ko": "BLE 특성 알림 구독",
+        "es": "Suscribirse a notificaciones BLE",
+        "fr": "S'abonner aux notifications BLE",
+        "de": "BLE-Benachrichtigungen abonnieren",
+        "pt-BR": "Assinar notificações BLE",
+        "ru": "Подписаться на уведомления BLE",
+        "ar": "الاشتراك في إشعارات خاصية BLE",
+        "hi": "BLE विशेषता अधिसूचना सब्सक्राइब करें"
       },
       "params": [
         {
@@ -294,7 +584,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "디바이스ID",
+            "es": "ID del dispositivo",
+            "fr": "ID de l'appareil",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرف الجهاز",
+            "hi": "डिवाइस ID"
           }
         },
         {
@@ -302,7 +602,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务UUID",
-            "en-US": "Service UUID"
+            "en-US": "Service UUID",
+            "zh-TW": "服務UUID",
+            "ja": "サービスUUID",
+            "ko": "서비스UUID",
+            "es": "UUID del servicio",
+            "fr": "UUID du service",
+            "de": "Dienst-UUID",
+            "pt-BR": "UUID do serviço",
+            "ru": "UUID сервиса",
+            "ar": "UUID الخدمة",
+            "hi": "सर्विस UUID"
           }
         },
         {
@@ -310,7 +620,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "特征UUID",
-            "en-US": "Characteristic UUID"
+            "en-US": "Characteristic UUID",
+            "zh-TW": "特徵UUID",
+            "ja": "キャラクタリスティックUUID",
+            "ko": "특성 UUID",
+            "es": "UUID de característica",
+            "fr": "UUID de caractéristique",
+            "de": "Charakteristik-UUID",
+            "pt-BR": "UUID da característica",
+            "ru": "UUID характеристики",
+            "ar": "UUID الخاصية",
+            "hi": "विशेषता UUID"
           }
         },
         {
@@ -318,7 +638,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "回调ID",
-            "en-US": "Callback ID"
+            "en-US": "Callback ID",
+            "zh-TW": "回調ID",
+            "ja": "コールバックID",
+            "ko": "콜백ID",
+            "es": "ID de callback",
+            "fr": "ID de callback",
+            "de": "Callback-ID",
+            "pt-BR": "ID de callback",
+            "ru": "ID обратного вызова",
+            "ar": "معرف رد الاتصال",
+            "hi": "कॉलबैक ID"
           }
         }
       ],
@@ -326,7 +656,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "bluetooth.subscribe",
@@ -338,7 +678,17 @@
       "symbol": "hap_bluetooth_unsubscribe",
       "descriptions": {
         "zh-CN": "取消订阅 BLE 特征值变化通知",
-        "en-US": "Unsubscribe from BLE characteristic notifications"
+        "en-US": "Unsubscribe from BLE characteristic notifications",
+        "zh-TW": "取消訂閱 BLE 特徵值變化通知",
+        "ja": "BLE特性通知のサブスクリプションを解除",
+        "ko": "BLE 특성 알림 구독 해제",
+        "es": "Cancelar suscripción a notificaciones BLE",
+        "fr": "Se désabonner des notifications BLE",
+        "de": "BLE-Benachrichtigungen abbestellen",
+        "pt-BR": "Cancelar assinatura de notificações BLE",
+        "ru": "Отписаться от уведомлений BLE",
+        "ar": "إلغاء الاشتراك في إشعارات BLE",
+        "hi": "BLE विशेषता अधिसूचना अनसब्सक्राइब करें"
       },
       "params": [
         {
@@ -346,7 +696,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "디바이스ID",
+            "es": "ID del dispositivo",
+            "fr": "ID de l'appareil",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرف الجهاز",
+            "hi": "डिवाइस ID"
           }
         },
         {
@@ -354,7 +714,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务UUID",
-            "en-US": "Service UUID"
+            "en-US": "Service UUID",
+            "zh-TW": "服務UUID",
+            "ja": "サービスUUID",
+            "ko": "서비스UUID",
+            "es": "UUID del servicio",
+            "fr": "UUID du service",
+            "de": "Dienst-UUID",
+            "pt-BR": "UUID do serviço",
+            "ru": "UUID сервиса",
+            "ar": "UUID الخدمة",
+            "hi": "सर्विस UUID"
           }
         },
         {
@@ -362,7 +732,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "特征UUID",
-            "en-US": "Characteristic UUID"
+            "en-US": "Characteristic UUID",
+            "zh-TW": "特徵UUID",
+            "ja": "キャラクタリスティックUUID",
+            "ko": "특성 UUID",
+            "es": "UUID de característica",
+            "fr": "UUID de caractéristique",
+            "de": "Charakteristik-UUID",
+            "pt-BR": "UUID da característica",
+            "ru": "UUID характеристики",
+            "ar": "UUID الخاصية",
+            "hi": "विशेषता UUID"
           }
         }
       ],
@@ -370,7 +750,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Success"
+          "en-US": "Success",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Éxito",
+          "fr": "Succès",
+          "de": "Erfolg",
+          "pt-BR": "Sucesso",
+          "ru": "Успех",
+          "ar": "نجاح",
+          "hi": "सफलता"
         }
       },
       "bridge_path": "bluetooth.unsubscribe",
@@ -382,7 +772,17 @@
       "symbol": "hap_bluetooth_is_connected",
       "descriptions": {
         "zh-CN": "检查与指定 BLE 设备的连接是否仍然活跃",
-        "en-US": "Check if connection to specified BLE device is still active"
+        "en-US": "Check if connection to specified BLE device is still active",
+        "zh-TW": "檢查與指定 BLE 設備的連接是否仍然活躍",
+        "ja": "指定BLEデバイスへの接続が有効か確認",
+        "ko": "지정된 BLE 장치 연결이 활성인지 확인",
+        "es": "Verificar si conexión BLE sigue activa",
+        "fr": "Vérifier si la connexion BLE est active",
+        "de": "BLE-Verbindungsstatus prüfen",
+        "pt-BR": "Verificar se conexão BLE está ativa",
+        "ru": "Проверить активно ли соединение BLE",
+        "ar": "التحقق من نشاط اتصال BLE",
+        "hi": "BLE डिवाइस कनेक्शन सक्रिय है जांचें"
       },
       "params": [
         {
@@ -390,7 +790,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "디바이스ID",
+            "es": "ID del dispositivo",
+            "fr": "ID de l'appareil",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرف الجهاز",
+            "hi": "डिवाइस ID"
           }
         }
       ],
@@ -398,7 +808,17 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否已连接",
-          "en-US": "Connected"
+          "en-US": "Connected",
+          "zh-TW": "是否已連接",
+          "ja": "かどうか済み接続",
+          "ko": "연결됨",
+          "es": "Conectado",
+          "fr": "Connecté",
+          "de": "Verbunden",
+          "pt-BR": "Conectado",
+          "ru": "Подключён",
+          "ar": "متصل",
+          "hi": "कनेक्टेड"
         }
       },
       "bridge_path": "bluetooth.isConnected",
@@ -411,7 +831,17 @@
       "name": "BleDevice",
       "descriptions": {
         "zh-CN": "蓝牙设备信息",
-        "en-US": "BLE device info"
+        "en-US": "BLE device info",
+        "zh-TW": "蓝牙設備資訊",
+        "ja": "BLEデバイス情報",
+        "ko": "BLE 장치 정보",
+        "es": "Información del dispositivo BLE",
+        "fr": "Informations sur le périphérique BLE",
+        "de": "BLE-Geräteinformationen",
+        "pt-BR": "Informações do dispositivo BLE",
+        "ru": "Информация об устройстве BLE",
+        "ar": "معلومات جهاز BLE",
+        "hi": "BLE डिवाइस जानकारी"
       },
       "fields": [
         {
@@ -419,7 +849,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "장치 ID",
+            "es": "ID del dispositivo",
+            "fr": "ID du périphérique",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرّف الجهاز",
+            "hi": "डिवाइस ID"
           }
         },
         {
@@ -427,7 +867,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备名称",
-            "en-US": "Device name"
+            "en-US": "Device name",
+            "zh-TW": "設備名稱",
+            "ja": "デバイス名",
+            "ko": "장치 이름",
+            "es": "Nombre del dispositivo",
+            "fr": "Nom du périphérique",
+            "de": "Gerätename",
+            "pt-BR": "Nome do dispositivo",
+            "ru": "Имя устройства",
+            "ar": "اسم الجهاز",
+            "hi": "डिवाइस नाम"
           }
         },
         {
@@ -435,7 +885,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "信号强度",
-            "en-US": "Signal strength"
+            "en-US": "Signal strength",
+            "zh-TW": "信號強度",
+            "ja": "信号強度",
+            "ko": "신호 강도",
+            "es": "Intensidad de señal",
+            "fr": "Force du signal",
+            "de": "Signalstärke",
+            "pt-BR": "Intensidade do sinal",
+            "ru": "Уровень сигнала",
+            "ar": "قوة الإشارة",
+            "hi": "सिग्नल शक्ति"
           }
         }
       ]
@@ -444,7 +904,17 @@
       "name": "BleConnection",
       "descriptions": {
         "zh-CN": "蓝牙连接",
-        "en-US": "BLE connection"
+        "en-US": "BLE connection",
+        "zh-TW": "蓝牙連接",
+        "ja": "BLE接続",
+        "ko": "BLE 연결",
+        "es": "Conexión BLE",
+        "fr": "Connexion BLE",
+        "de": "BLE-Verbindung",
+        "pt-BR": "Conexão BLE",
+        "ru": "BLE-соединение",
+        "ar": "اتصال BLE",
+        "hi": "BLE कनेक्शन"
       },
       "fields": [
         {
@@ -452,7 +922,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "장치 ID",
+            "es": "ID del dispositivo",
+            "fr": "ID du périphérique",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرّف الجهاز",
+            "hi": "डिवाइस ID"
           }
         },
         {
@@ -460,7 +940,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备名",
-            "en-US": "Device name"
+            "en-US": "Device name",
+            "zh-TW": "設備名",
+            "ja": "デバイス名",
+            "ko": "장치 이름",
+            "es": "Nombre del dispositivo",
+            "fr": "Nom du périphérique",
+            "de": "Gerätename",
+            "pt-BR": "Nome do dispositivo",
+            "ru": "Имя устройства",
+            "ar": "اسم الجهاز",
+            "hi": "डिवाइस नाम"
           }
         }
       ]
@@ -469,7 +959,17 @@
       "name": "CharValue",
       "descriptions": {
         "zh-CN": "特征值",
-        "en-US": "Characteristic value"
+        "en-US": "Characteristic value",
+        "zh-TW": "特徵值",
+        "ja": "キャラクタリスティック値",
+        "ko": "특성 값",
+        "es": "Valor de característica",
+        "fr": "Valeur de caractéristique",
+        "de": "Charakteristikwert",
+        "pt-BR": "Valor da característica",
+        "ru": "Значение характеристики",
+        "ar": "قيمة الخاصية",
+        "hi": "विशेषता मान"
       },
       "fields": [
         {
@@ -477,7 +977,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "值(Base64)",
-            "en-US": "Value(Base64)"
+            "en-US": "Value(Base64)",
+            "zh-TW": "值(Base64)",
+            "ja": "値(Base64)",
+            "ko": "값(Base64)",
+            "es": "Valor(Base64)",
+            "fr": "Valeur(Base64)",
+            "de": "Wert(Base64)",
+            "pt-BR": "Valor(Base64)",
+            "ru": "Значение(Base64)",
+            "ar": "القيمة(Base64)",
+            "hi": "मान(Base64)"
           }
         },
         {
@@ -485,7 +995,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "特征UUID",
-            "en-US": "Characteristic UUID"
+            "en-US": "Characteristic UUID",
+            "zh-TW": "特徵UUID",
+            "ja": "キャラクタリスティックUUID",
+            "ko": "특성 UUID",
+            "es": "UUID de característica",
+            "fr": "UUID de caractéristique",
+            "de": "Charakteristik-UUID",
+            "pt-BR": "UUID da característica",
+            "ru": "UUID характеристики",
+            "ar": "UUID الخاصية",
+            "hi": "विशेषता UUID"
           }
         }
       ]
@@ -496,7 +1016,17 @@
       "name": "device_found",
       "descriptions": {
         "zh-CN": "发现设备",
-        "en-US": "Device found"
+        "en-US": "Device found",
+        "zh-TW": "发現設備",
+        "ja": "デバイスが見つかりました",
+        "ko": "장치 발견됨",
+        "es": "Dispositivo encontrado",
+        "fr": "Périphérique trouvé",
+        "de": "Gerät gefunden",
+        "pt-BR": "Dispositivo encontrado",
+        "ru": "Устройство найдено",
+        "ar": "تم العثور على الجهاز",
+        "hi": "डिवाइस मिला"
       },
       "payload": [
         {
@@ -504,7 +1034,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "장치 ID",
+            "es": "ID de dispositivo",
+            "fr": "ID d'appareil",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرف الجهاز",
+            "hi": "डिवाइस ID"
           }
         },
         {
@@ -512,7 +1052,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备名",
-            "en-US": "Device name"
+            "en-US": "Device name",
+            "zh-TW": "設備名",
+            "ja": "デバイス名",
+            "ko": "장치 이름",
+            "es": "Nombre del dispositivo",
+            "fr": "Nom d'appareil",
+            "de": "Gerätename",
+            "pt-BR": "Nome do dispositivo",
+            "ru": "Имя устройства",
+            "ar": "اسم الجهاز",
+            "hi": "डिवाइस नाम"
           }
         },
         {
@@ -520,7 +1070,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "信号强度",
-            "en-US": "RSSI"
+            "en-US": "RSSI",
+            "zh-TW": "信號強度",
+            "ja": "RSSI",
+            "ko": "RSSI",
+            "es": "RSSI",
+            "fr": "RSSI",
+            "de": "RSSI",
+            "pt-BR": "RSSI",
+            "ru": "RSSI",
+            "ar": "RSSI",
+            "hi": "RSSI"
           }
         }
       ]
@@ -529,7 +1089,17 @@
       "name": "disconnected",
       "descriptions": {
         "zh-CN": "设备断开",
-        "en-US": "Device disconnected"
+        "en-US": "Device disconnected",
+        "zh-TW": "設備斷开",
+        "ja": "デバイスが切断されました",
+        "ko": "장치 연결 해제됨",
+        "es": "Dispositivo desconectado",
+        "fr": "Périphérique déconnecté",
+        "de": "Gerät getrennt",
+        "pt-BR": "Dispositivo desconectado",
+        "ru": "Устройство отключено",
+        "ar": "تم فصل الجهاز",
+        "hi": "डिवाइस डिस्कनेक्ट हो गया"
       },
       "payload": [
         {
@@ -537,7 +1107,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "장치 ID",
+            "es": "ID de dispositivo",
+            "fr": "ID d'appareil",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرف الجهاز",
+            "hi": "डिवाइस ID"
           }
         }
       ]
@@ -546,7 +1126,17 @@
       "name": "characteristic_changed",
       "descriptions": {
         "zh-CN": "特征值变化",
-        "en-US": "Characteristic changed"
+        "en-US": "Characteristic changed",
+        "zh-TW": "特徵值變化",
+        "ja": "キャラクタリスティックが変更されました",
+        "ko": "특성이 변경됨",
+        "es": "Característica cambiada",
+        "fr": "Caractéristique modifiée",
+        "de": "Charakteristik geändert",
+        "pt-BR": "Característica alterada",
+        "ru": "Характеристика изменена",
+        "ar": "تم تغيير الخاصية",
+        "hi": "विशेषता बदल गई"
       },
       "payload": [
         {
@@ -554,7 +1144,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "设备ID",
-            "en-US": "Device ID"
+            "en-US": "Device ID",
+            "zh-TW": "設備ID",
+            "ja": "デバイスID",
+            "ko": "장치 ID",
+            "es": "ID de dispositivo",
+            "fr": "ID d'appareil",
+            "de": "Geräte-ID",
+            "pt-BR": "ID do dispositivo",
+            "ru": "ID устройства",
+            "ar": "معرف الجهاز",
+            "hi": "डिवाइस ID"
           }
         },
         {
@@ -562,7 +1162,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务UUID",
-            "en-US": "Service UUID"
+            "en-US": "Service UUID",
+            "zh-TW": "服務UUID",
+            "ja": "サービスUUID",
+            "ko": "서비스 UUID",
+            "es": "UUID de servicio",
+            "fr": "UUID de service",
+            "de": "Service-UUID",
+            "pt-BR": "UUID do serviço",
+            "ru": "UUID сервиса",
+            "ar": "UUID الخدمة",
+            "hi": "सेवा UUID"
           }
         },
         {
@@ -570,7 +1180,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "特征UUID",
-            "en-US": "Characteristic UUID"
+            "en-US": "Characteristic UUID",
+            "zh-TW": "特徵UUID",
+            "ja": "キャラクタリスティックUUID",
+            "ko": "특성 UUID",
+            "es": "UUID de característica",
+            "fr": "UUID de caractéristique",
+            "de": "Charakteristik-UUID",
+            "pt-BR": "UUID da característica",
+            "ru": "UUID характеристики",
+            "ar": "UUID الخاصية",
+            "hi": "विशेषता UUID"
           }
         },
         {
@@ -578,7 +1198,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "值(Base64)",
-            "en-US": "Value(Base64)"
+            "en-US": "Value(Base64)",
+            "zh-TW": "值(Base64)",
+            "ja": "値(Base64)",
+            "ko": "값(Base64)",
+            "es": "Valor (Base64)",
+            "fr": "Valeur (Base64)",
+            "de": "Wert (Base64)",
+            "pt-BR": "Valor (Base64)",
+            "ru": "Значение (Base64)",
+            "ar": "القيمة (Base64)",
+            "hi": "मान (Base64)"
           }
         }
       ]

@@ -33,7 +33,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "远程主机地址（IP或域名）",
-            "en-US": "Remote host (IP or domain)"
+            "en-US": "Remote host (IP or domain)",
+            "zh-TW": "遠程主機地址（IP或域名）",
+            "ja": "リモートホストアドレス（IPまたは域名）",
+            "ko": "원격 호스트 (IP 또는 도메인)",
+            "es": "Host remoto (IP o dominio)",
+            "fr": "Hôte distant (IP ou domaine)",
+            "de": "Remote-Host (IP oder Domain)",
+            "pt-BR": "Host remoto (IP ou domínio)",
+            "ru": "Удалённый хост (IP или домен)",
+            "ar": "المضيف البعيد (IP أو نطاق)",
+            "hi": "रिमोट होस्ट (IP या डोमेन)"
           },
           "desc": "Remote host (IP or domain)",
           "optional": true
@@ -43,7 +53,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "远程端口号",
-            "en-US": "Remote port number"
+            "en-US": "Remote port number",
+            "zh-TW": "遠程埠號",
+            "ja": "リモートポート号",
+            "ko": "원격 포트 번호",
+            "es": "Número de puerto remoto",
+            "fr": "Numéro de port distant",
+            "de": "Remote-Portnummer",
+            "pt-BR": "Número da porta remota",
+            "ru": "Номер удалённого порта",
+            "ar": "رقم المنفذ البعيد",
+            "hi": "रिमोट पोर्ट नंबर"
           },
           "desc": "Remote port number",
           "optional": true,
@@ -54,14 +74,34 @@
         "type": "TcpConnection",
         "descs": {
           "zh-CN": "TcpConnection类型的结果对象",
-          "en-US": "Result object of type TcpConnection"
+          "en-US": "Result object of type TcpConnection",
+          "zh-TW": "TcpConnection類型的結果物件",
+          "ja": "TcpConnectionタイプの結果オブジェクト",
+          "ko": "TcpConnection유형의결과객체",
+          "es": "Objeto resultado de tipo TcpConnection",
+          "fr": "Objet résultat de type TcpConnection",
+          "de": "Ergebnisobjekt vom Typ TcpConnection",
+          "pt-BR": "Objeto resultado do tipo TcpConnection",
+          "ru": "Объект результата типа TcpConnection",
+          "ar": "كائن نتيجة من نوع TcpConnection",
+          "hi": "TcpConnection प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type TcpConnection"
       },
       "bridge_path": "net.tcpConnect",
       "descriptions": {
         "zh-CN": "建立到远程主机的TCP连接，返回连接句柄",
-        "en-US": "Establish TCP connection to remote host"
+        "en-US": "Establish TCP connection to remote host",
+        "zh-TW": "建立到遠程主機的TCP連接，返回連接句柄",
+        "ja": "建立へリモートホストのTCP接続，戻り値接続句柄",
+        "ko": "원격 호스트에 TCP 연결 설정",
+        "es": "Establecer conexión TCP con host remoto",
+        "fr": "Établir une connexion TCP",
+        "de": "TCP-Verbindung zum Remote-Host herstellen",
+        "pt-BR": "Estabelecer conexão TCP com host remoto",
+        "ru": "Установить TCP-соединение с удалённым хостом",
+        "ar": "إنشاء اتصال TCP بالمضيف البعيد",
+        "hi": "रिमोट होस्ट से TCP कनेक्शन स्थापित करें"
       },
       "group": "tcp",
       "async": true,
@@ -76,7 +116,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -84,7 +134,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -93,13 +153,33 @@
         "type": "number",
         "descs": {
           "zh-CN": "已发送字节",
-          "en-US": "Bytes sent"
+          "en-US": "Bytes sent",
+          "zh-TW": "已傳送位元組",
+          "ja": "済み送信するバイト",
+          "ko": "전송된 바이트",
+          "es": "Bytes enviados",
+          "fr": "Octets envoyés",
+          "de": "Gesendete Bytes",
+          "pt-BR": "Bytes enviados",
+          "ru": "Отправленные байты",
+          "ar": "البايتات المرسلة",
+          "hi": "भेजे गए बाइट्स"
         }
       },
       "bridge_path": "net.tcpSend",
       "descriptions": {
         "zh-CN": "通过已建立的TCP连接发送数据",
-        "en-US": "Send data over established TCP connection"
+        "en-US": "Send data over established TCP connection",
+        "zh-TW": "通過已建立的TCP連接傳送數據",
+        "ja": "を通じて済み建立のTCP接続送信するデータ",
+        "ko": "설정된 TCP 연결을 통해 데이터 전송",
+        "es": "Enviar datos por conexión TCP establecida",
+        "fr": "Envoyer des données via la connexion TCP établie",
+        "de": "Daten über bestehende TCP-Verbindung senden",
+        "pt-BR": "Enviar dados pela conexão TCP estabelecida",
+        "ru": "Отправить данные по установленному TCP-соединению",
+        "ar": "إرسال بيانات عبر اتصال TCP قائم",
+        "hi": "स्थापित TCP कनेक्शन पर डेटा भेजें"
       },
       "group": "tcp",
       "async": true,
@@ -114,7 +194,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         }
       ],
@@ -122,14 +212,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "net.tcpRecv",
       "descriptions": {
         "zh-CN": "从 TCP 连接接收数据",
-        "en-US": "Tcp recv of network"
+        "en-US": "Tcp recv of network",
+        "zh-TW": "從 TCP 連接接收數據",
+        "ja": "から TCP 接続受信するデータ",
+        "ko": "에서 TCP 연결수신데이터",
+        "es": "Recepción TCP de red",
+        "fr": "Réception TCP du réseau",
+        "de": "TCP-Empfang des Netzwerks",
+        "pt-BR": "Recepção TCP da rede",
+        "ru": "TCP-приём сети",
+        "ar": "استقبال TCP للشبكة",
+        "hi": "नेटवर्क TCP प्राप्त"
       },
       "group": "tcp",
       "async": true,
@@ -144,7 +254,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         }
       ],
@@ -152,14 +272,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "net.tcpClose",
       "descriptions": {
         "zh-CN": "关闭TCP连接并释放资源",
-        "en-US": "Close TCP connection and release resources"
+        "en-US": "Close TCP connection and release resources",
+        "zh-TW": "關閉TCP連接並釋放資源",
+        "ja": "TCP接続を閉じてリソースを解放",
+        "ko": "TCP 연결 닫기 및 리소스 해제",
+        "es": "Cerrar conexión TCP y liberar recursos",
+        "fr": "Fermer la connexion TCP et libérer les ressources",
+        "de": "TCP-Verbindung schließen und Ressourcen freigeben",
+        "pt-BR": "Fechar conexão TCP e liberar recursos",
+        "ru": "Закрыть TCP-соединение и освободить ресурсы",
+        "ar": "إغلاق اتصال TCP وتحرير الموارد",
+        "hi": "TCP कनेक्शन बंद करें और संसाधन मुक्त करें"
       },
       "group": "tcp",
       "description": "Close TCP connection and release resources"
@@ -173,7 +313,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         }
       ],
@@ -181,13 +331,33 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "已连接的",
-          "en-US": "Connected"
+          "en-US": "Connected",
+          "zh-TW": "已連接的",
+          "ja": "済み接続の",
+          "ko": "연결됨",
+          "es": "Conectado",
+          "fr": "Connecté",
+          "de": "Verbunden",
+          "pt-BR": "Conectado",
+          "ru": "Подключён",
+          "ar": "متصل",
+          "hi": "कनेक्टेड"
         }
       },
       "bridge_path": "net.tcpIsConnected",
       "descriptions": {
         "zh-CN": "检查 TCP 连接是否有效",
-        "en-US": "Tcp is connected of network"
+        "en-US": "Tcp is connected of network",
+        "zh-TW": "檢查 TCP 連接是否有效",
+        "ja": "チェックする TCP 接続かどうか有効",
+        "ko": "네트워크 TCP 연결 상태 확인",
+        "es": "Verificar conexión TCP de red",
+        "fr": "Vérifier la connexion TCP du réseau",
+        "de": "TCP-Verbindungsstatus des Netzwerks prüfen",
+        "pt-BR": "Verificar conexão TCP da rede",
+        "ru": "Проверить TCP-соединение сети",
+        "ar": "التحقق من اتصال TCP للشبكة",
+        "hi": "नेटवर्क TCP कनेक्शन स्थिति जांचें"
       },
       "group": "tcp",
       "description": "Tcp is connected of network"
@@ -201,7 +371,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -209,7 +389,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否启用TCP保活",
-            "en-US": "Whether to enable TCP keepalive"
+            "en-US": "Whether to enable TCP keepalive",
+            "zh-TW": "是否啟用TCP保活",
+            "ja": "TCPキープアライブを有効にするかどうか",
+            "ko": "TCP 킵얼라이브 활성화 여부",
+            "es": "Si habilitar TCP keepalive",
+            "fr": "Activer le TCP keepalive",
+            "de": "Ob TCP-Keepalive aktiviert werden soll",
+            "pt-BR": "Se deve habilitar TCP keepalive",
+            "ru": "Включить ли TCP keepalive",
+            "ar": "هل يتم تفعيل TCP keepalive",
+            "hi": "TCP कीपअलाइव सक्षम करें क्या"
           },
           "desc": "Whether to enable TCP keepalive"
         }
@@ -218,14 +408,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "net.tcpSetKeepalive",
       "descriptions": {
         "zh-CN": "设置 Keep-Alive",
-        "en-US": "Set keepalive"
+        "en-US": "Set keepalive",
+        "zh-TW": "設定 Keep-Alive",
+        "ja": "設定する Keep-Alive",
+        "ko": "설정 Keep-Alive",
+        "es": "Establecer keepalive",
+        "fr": "Définir le keepalive",
+        "de": "Keepalive setzen",
+        "pt-BR": "Definir keepalive",
+        "ru": "Установить keepalive",
+        "ar": "تعيين keepalive",
+        "hi": "कीपअलाइव सेट करें"
       },
       "group": "tcp"
     },
@@ -238,7 +448,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接 ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接 ID",
+            "ja": "接続 ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID подключения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -246,7 +466,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否启用TCP_NODELAY（禁用Nagle算法）",
-            "en-US": "Whether to enable TCP_NODELAY (disable Nagle)"
+            "en-US": "Whether to enable TCP_NODELAY (disable Nagle)",
+            "zh-TW": "是否啟用TCP_NODELAY（禁用Nagle算法）",
+            "ja": "TCP_NODELAYを有効にするか（Nagleアルゴリズムを無効化）",
+            "ko": "TCP_NODELAY 활성화 여부 (Nagle 비활성화)",
+            "es": "Si habilitar TCP_NODELAY (desactivar Nagle)",
+            "fr": "Activer TCP_NODELAY (désactiver Nagle)",
+            "de": "TCP_NODELAY aktivieren (Nagle deaktivieren)",
+            "pt-BR": "Se deve habilitar TCP_NODELAY (desativar Nagle)",
+            "ru": "Включить ли TCP_NODELAY (отключить Nagle)",
+            "ar": "هل يتم تفعيل TCP_NODELAY (تعطيل Nagle)",
+            "hi": "TCP_NODELAY सक्षम करें (Nagle अक्षम करें) क्या"
           },
           "desc": "Whether to enable TCP_NODELAY (disable Nagle)"
         }
@@ -255,14 +485,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "net.tcpSetNodelay",
       "descriptions": {
         "zh-CN": "设置 TCP 无延迟模式",
-        "en-US": "Tcp set nodelay of network"
+        "en-US": "Tcp set nodelay of network",
+        "zh-TW": "設定 TCP 無延迟模式",
+        "ja": "設定する TCP 无遅延モード",
+        "ko": "네트워크 TCP Nodelay 설정",
+        "es": "Establecer TCP nodelay de red",
+        "fr": "Définir TCP nodelay du réseau",
+        "de": "TCP-Nodelay des Netzwerks setzen",
+        "pt-BR": "Definir TCP nodelay da rede",
+        "ru": "Установить TCP nodelay сети",
+        "ar": "تعيين TCP nodelay للشبكة",
+        "hi": "नेटवर्क TCP Nodelay सेट करें"
       },
       "group": "tcp",
       "description": "Tcp set nodelay of network"
@@ -276,7 +526,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "主机地址（IP或域名）",
-            "en-US": "Host (IP or domain)"
+            "en-US": "Host (IP or domain)",
+            "zh-TW": "主機地址（IP或域名）",
+            "ja": "ホストアドレス（IPまたは域名）",
+            "ko": "호스트 (IP 또는 도메인)",
+            "es": "Host (IP o dominio)",
+            "fr": "Hôte (IP ou domaine)",
+            "de": "Host (IP oder Domain)",
+            "pt-BR": "Host (IP ou domínio)",
+            "ru": "Хост (IP или домен)",
+            "ar": "المضيف (IP أو نطاق)",
+            "hi": "होस्ट (IP या डोमेन)"
           },
           "desc": "Host (IP or domain)",
           "optional": true
@@ -286,7 +546,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "TCP监听端口号",
-            "en-US": "TCP listening port number"
+            "en-US": "TCP listening port number",
+            "zh-TW": "TCP監聽埠號",
+            "ja": "TCPリッスンするポート号",
+            "ko": "TCP 리스닝 포트 번호",
+            "es": "Número de puerto de escucha TCP",
+            "fr": "Numéro de port d'écoute TCP",
+            "de": "TCP-Listening-Portnummer",
+            "pt-BR": "Número da porta de escuta TCP",
+            "ru": "Номер порта прослушивания TCP",
+            "ar": "رقم منفذ استماع TCP",
+            "hi": "TCP लिसनिंग पोर्ट नंबर"
           },
           "desc": "TCP listening port number",
           "optional": true,
@@ -297,14 +567,34 @@
         "type": "TcpServer",
         "descs": {
           "zh-CN": "TcpServer类型的结果对象",
-          "en-US": "Result object of type TcpServer"
+          "en-US": "Result object of type TcpServer",
+          "zh-TW": "TcpServer類型的結果物件",
+          "ja": "TcpServerタイプの結果オブジェクト",
+          "ko": "TcpServer유형의결과객체",
+          "es": "Objeto resultado de tipo TcpServer",
+          "fr": "Objet résultat de type TcpServer",
+          "de": "Ergebnisobjekt vom Typ TcpServer",
+          "pt-BR": "Objeto resultado do tipo TcpServer",
+          "ru": "Объект результата типа TcpServer",
+          "ar": "كائن نتيجة من نوع TcpServer",
+          "hi": "TcpServer प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type TcpServer"
       },
       "bridge_path": "net.tcpListen",
       "descriptions": {
         "zh-CN": "启动 TCP 服务端监听",
-        "en-US": "Tcp listen of network"
+        "en-US": "Tcp listen of network",
+        "zh-TW": "啟動 TCP 服務端監聽",
+        "ja": "起動する TCP サービス端リッスンする",
+        "ko": "네트워크 TCP 리슨",
+        "es": "Escucha TCP de red",
+        "fr": "Écoute TCP du réseau",
+        "de": "TCP-Lauschen des Netzwerks",
+        "pt-BR": "Escuta TCP da rede",
+        "ru": "TCP-прослушивание сети",
+        "ar": "استماع TCP للشبكة",
+        "hi": "नेटवर्क TCP लिसन"
       },
       "group": "tcp",
       "async": true,
@@ -319,7 +609,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器 ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器 ID",
+            "ja": "サーバー ID",
+            "ko": "서버 ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         }
       ],
@@ -327,14 +627,34 @@
         "type": "TcpConnection",
         "descs": {
           "zh-CN": "TcpConnection类型的结果对象",
-          "en-US": "Result object of type TcpConnection"
+          "en-US": "Result object of type TcpConnection",
+          "zh-TW": "TcpConnection類型的結果物件",
+          "ja": "TcpConnectionタイプの結果オブジェクト",
+          "ko": "TcpConnection유형의결과객체",
+          "es": "Objeto resultado de tipo TcpConnection",
+          "fr": "Objet résultat de type TcpConnection",
+          "de": "Ergebnisobjekt vom Typ TcpConnection",
+          "pt-BR": "Objeto resultado do tipo TcpConnection",
+          "ru": "Объект результата типа TcpConnection",
+          "ar": "كائن نتيجة من نوع TcpConnection",
+          "hi": "TcpConnection प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type TcpConnection"
       },
       "bridge_path": "net.tcpAccept",
       "descriptions": {
         "zh-CN": "接受 TCP 客户端连接",
-        "en-US": "Tcp accept of network"
+        "en-US": "Tcp accept of network",
+        "zh-TW": "接受 TCP 客戶端連接",
+        "ja": "接受 TCP クライアント接続",
+        "ko": "네트워크 TCP 수락",
+        "es": "Aceptar TCP de red",
+        "fr": "Accepter TCP du réseau",
+        "de": "TCP-Verbindung des Netzwerks akzeptieren",
+        "pt-BR": "Aceitar TCP da rede",
+        "ru": "TCP-принятие соединения сети",
+        "ar": "قبول TCP للشبكة",
+        "hi": "नेटवर्क TCP स्वीकार"
       },
       "group": "tcp",
       "async": true,
@@ -349,7 +669,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器 ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器 ID",
+            "ja": "サーバー ID",
+            "ko": "서버 ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرف الخادم",
+            "hi": "सर्वर ID"
           }
         }
       ],
@@ -357,14 +687,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "net.tcpStop",
       "descriptions": {
         "zh-CN": "停止 TCP 服务器",
-        "en-US": "Stop TCP server"
+        "en-US": "Stop TCP server",
+        "zh-TW": "停止 TCP 服務器",
+        "ja": "停止する TCP サーバー",
+        "ko": "중지 TCP 서버",
+        "es": "Detener servidor TCP",
+        "fr": "Arrêter le serveur TCP",
+        "de": "TCP-Server stoppen",
+        "pt-BR": "Parar servidor TCP",
+        "ru": "Остановить TCP-сервер",
+        "ar": "إيقاف خادم TCP",
+        "hi": "TCP सर्वर रोकें"
       },
       "group": "tcp"
     },
@@ -377,7 +727,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "主机地址（IP或域名）",
-            "en-US": "Host (IP or domain)"
+            "en-US": "Host (IP or domain)",
+            "zh-TW": "主機地址（IP或域名）",
+            "ja": "ホストアドレス（IPまたは域名）",
+            "ko": "호스트 (IP 또는 도메인)",
+            "es": "Host (IP o dominio)",
+            "fr": "Hôte (IP ou domaine)",
+            "de": "Host (IP oder Domain)",
+            "pt-BR": "Host (IP ou domínio)",
+            "ru": "Хост (IP или домен)",
+            "ar": "المضيف (IP أو نطاق)",
+            "hi": "होस्ट (IP या डोमेन)"
           },
           "desc": "Host (IP or domain)",
           "optional": true
@@ -387,7 +747,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "UDP绑定端口号",
-            "en-US": "UDP bind port number"
+            "en-US": "UDP bind port number",
+            "zh-TW": "UDP綁定埠號",
+            "ja": "UDPバインドポート番号",
+            "ko": "UDP 바인드 포트 번호",
+            "es": "Número de puerto de enlace UDP",
+            "fr": "Numéro de port de liaison UDP",
+            "de": "UDP-Bind-Portnummer",
+            "pt-BR": "Número da porta de ligação UDP",
+            "ru": "Номер порта привязки UDP",
+            "ar": "رقم منفذ ربط UDP",
+            "hi": "UDP बाइंड पोर्ट नंबर"
           },
           "desc": "UDP bind port number",
           "optional": true,
@@ -398,14 +768,34 @@
         "type": "UdpSocket",
         "descs": {
           "zh-CN": "UdpSocket类型的结果对象",
-          "en-US": "Result object of type UdpSocket"
+          "en-US": "Result object of type UdpSocket",
+          "zh-TW": "UdpSocket類型的結果物件",
+          "ja": "UdpSocketタイプの結果オブジェクト",
+          "ko": "UdpSocket유형의결과객체",
+          "es": "Objeto resultado de tipo UdpSocket",
+          "fr": "Objet résultat de type UdpSocket",
+          "de": "Ergebnisobjekt vom Typ UdpSocket",
+          "pt-BR": "Objeto resultado do tipo UdpSocket",
+          "ru": "Объект результата типа UdpSocket",
+          "ar": "كائن نتيجة من نوع UdpSocket",
+          "hi": "UdpSocket प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type UdpSocket"
       },
       "bridge_path": "net.udpBind",
       "descriptions": {
         "zh-CN": "创建UDP套接字并绑定到本地端口",
-        "en-US": "Create UDP socket and bind to local port"
+        "en-US": "Create UDP socket and bind to local port",
+        "zh-TW": "建立UDP套接字並綁定到本地埠",
+        "ja": "UDPソケットを作成しローカルポートにバインド",
+        "ko": "UDP 소켓 생성 및 로컬 포트에 바인드",
+        "es": "Crear socket UDP y vincular al puerto",
+        "fr": "Créer un socket UDP et lier au port",
+        "de": "UDP-Socket erstellen und an Port binden",
+        "pt-BR": "Criar socket UDP e vincular à porta",
+        "ru": "Создать UDP-сокет и привязать к порту",
+        "ar": "إنشاء مقبس UDP وربطه بمنفذ محلي",
+        "hi": "UDP सॉकेट बनाएं और लोकल पोर्ट से बाइंड करें"
       },
       "group": "udp",
       "description": "Create UDP socket and bind to local port"
@@ -419,7 +809,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "套接字 ID",
-            "en-US": "Socket ID"
+            "en-US": "Socket ID",
+            "zh-TW": "套接字 ID",
+            "ja": "ソケットID",
+            "ko": "소켓 ID",
+            "es": "ID del socket",
+            "fr": "ID du socket",
+            "de": "Socket-ID",
+            "pt-BR": "ID do socket",
+            "ru": "ID сокета",
+            "ar": "معرف المقبس",
+            "hi": "सॉकेट ID"
           }
         },
         {
@@ -427,7 +827,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "主机地址（IP或域名）",
-            "en-US": "Host (IP or domain)"
+            "en-US": "Host (IP or domain)",
+            "zh-TW": "主機地址（IP或域名）",
+            "ja": "ホストアドレス（IPまたは域名）",
+            "ko": "호스트 (IP 또는 도메인)",
+            "es": "Host (IP o dominio)",
+            "fr": "Hôte (IP ou domaine)",
+            "de": "Host (IP oder Domain)",
+            "pt-BR": "Host (IP ou domínio)",
+            "ru": "Хост (IP или домен)",
+            "ar": "المضيف (IP أو نطاق)",
+            "hi": "होस्ट (IP या डोमेन)"
           },
           "desc": "Host (IP or domain)",
           "optional": true
@@ -437,7 +847,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "目标UDP端口号",
-            "en-US": "Target UDP port number"
+            "en-US": "Target UDP port number",
+            "zh-TW": "目標UDP埠號",
+            "ja": "ターゲットUDPポート番号",
+            "ko": "대상 UDP 포트 번호",
+            "es": "Número de puerto UDP de destino",
+            "fr": "Numéro de port UDP cible",
+            "de": "Ziel-UDP-Portnummer",
+            "pt-BR": "Número da porta UDP de destino",
+            "ru": "Целевой номер порта UDP",
+            "ar": "رقم منفذ UDP الهدف",
+            "hi": "लक्ष्य UDP पोर्ट नंबर"
           },
           "desc": "Target UDP port number",
           "optional": true,
@@ -448,7 +868,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data content"
+            "en-US": "Data content",
+            "zh-TW": "數據內容",
+            "ja": "データコンテンツ",
+            "ko": "데이터콘텐츠",
+            "es": "Contenido de datos",
+            "fr": "Contenu des données",
+            "de": "Dateninhalt",
+            "pt-BR": "Conteúdo de dados",
+            "ru": "Содержимое данных",
+            "ar": "محتوى البيانات",
+            "hi": "डेटा सामग्री"
           },
           "desc": "Data content"
         }
@@ -457,13 +887,33 @@
         "type": "number",
         "descs": {
           "zh-CN": "已发送字节",
-          "en-US": "Bytes sent"
+          "en-US": "Bytes sent",
+          "zh-TW": "已傳送位元組",
+          "ja": "済み送信するバイト",
+          "ko": "전송된 바이트",
+          "es": "Bytes enviados",
+          "fr": "Octets envoyés",
+          "de": "Gesendete Bytes",
+          "pt-BR": "Bytes enviados",
+          "ru": "Отправленные байты",
+          "ar": "البايتات المرسلة",
+          "hi": "भेजे गए बाइट्स"
         }
       },
       "bridge_path": "net.udpSend",
       "descriptions": {
         "zh-CN": "通过UDP发送数据报到指定地址和端口",
-        "en-US": "Send UDP datagram to specified address and port"
+        "en-US": "Send UDP datagram to specified address and port",
+        "zh-TW": "通過UDP傳送數據報到指定地址和埠",
+        "ja": "指定アドレスとポートにUDPデータグラムを送信",
+        "ko": "지정 주소와 포트로 UDP 데이터그램 전송",
+        "es": "Enviar datagrama UDP a dirección y puerto especificados",
+        "fr": "Envoyer un datagramme UDP à l'adresse et port spécifiés",
+        "de": "UDP-Datagramm an angegebene Adresse und Port senden",
+        "pt-BR": "Enviar datagrama UDP para endereço e porta especificados",
+        "ru": "Отправить UDP-датаграмму на указанный адрес и порт",
+        "ar": "إرسال مخطط بيانات UDP إلى عنوان ومنفذ محددين",
+        "hi": "निर्दिष्ट पते और पोर्ट पर UDP डेटाग्राम भेजें"
       },
       "group": "udp",
       "description": "Send UDP datagram to specified address and port"
@@ -477,7 +927,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "套接字 ID",
-            "en-US": "Socket ID"
+            "en-US": "Socket ID",
+            "zh-TW": "套接字 ID",
+            "ja": "ソケットID",
+            "ko": "소켓 ID",
+            "es": "ID del socket",
+            "fr": "ID du socket",
+            "de": "Socket-ID",
+            "pt-BR": "ID do socket",
+            "ru": "ID сокета",
+            "ar": "معرف المقبس",
+            "hi": "सॉकेट ID"
           }
         }
       ],
@@ -485,14 +945,34 @@
         "type": "UdpMessage",
         "descs": {
           "zh-CN": "UdpMessage类型的结果对象",
-          "en-US": "Result object of type UdpMessage"
+          "en-US": "Result object of type UdpMessage",
+          "zh-TW": "UdpMessage類型的結果物件",
+          "ja": "UdpMessageタイプの結果オブジェクト",
+          "ko": "UdpMessage유형의결과객체",
+          "es": "Objeto resultado de tipo UdpMessage",
+          "fr": "Objet résultat de type UdpMessage",
+          "de": "Ergebnisobjekt vom Typ UdpMessage",
+          "pt-BR": "Objeto resultado do tipo UdpMessage",
+          "ru": "Объект результата типа UdpMessage",
+          "ar": "كائن نتيجة من نوع UdpMessage",
+          "hi": "UdpMessage प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type UdpMessage"
       },
       "bridge_path": "net.udpRecv",
       "descriptions": {
         "zh-CN": "接收 UDP 数据包",
-        "en-US": "Udp recv of network"
+        "en-US": "Udp recv of network",
+        "zh-TW": "接收 UDP 數據包",
+        "ja": "受信する UDP データ包",
+        "ko": "네트워크 UDP 수신",
+        "es": "Recepción UDP de red",
+        "fr": "Réception UDP du réseau",
+        "de": "UDP-Empfang des Netzwerks",
+        "pt-BR": "Recepção UDP da rede",
+        "ru": "UDP-приём сети",
+        "ar": "استقبال UDP للشبكة",
+        "hi": "नेटवर्क UDP प्राप्त"
       },
       "group": "udp",
       "async": true,
@@ -507,7 +987,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "套接字 ID",
-            "en-US": "Socket ID"
+            "en-US": "Socket ID",
+            "zh-TW": "套接字 ID",
+            "ja": "ソケットID",
+            "ko": "소켓 ID",
+            "es": "ID del socket",
+            "fr": "ID du socket",
+            "de": "Socket-ID",
+            "pt-BR": "ID do socket",
+            "ru": "ID сокета",
+            "ar": "معرف المقبس",
+            "hi": "सॉकेट ID"
           }
         }
       ],
@@ -515,14 +1005,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "net.udpClose",
       "descriptions": {
         "zh-CN": "关闭 UDP 绑定",
-        "en-US": "Udp close of network"
+        "en-US": "Udp close of network",
+        "zh-TW": "關閉 UDP 綁定",
+        "ja": "ネットワークUDPクローズ",
+        "ko": "네트워크 UDP 닫기",
+        "es": "Cerrar UDP de red",
+        "fr": "Fermer UDP du réseau",
+        "de": "UDP des Netzwerks schließen",
+        "pt-BR": "Fechar UDP da rede",
+        "ru": "Закрыть UDP сети",
+        "ar": "إغلاق UDP للشبكة",
+        "hi": "नेटवर्क UDP बंद करें"
       },
       "group": "udp",
       "description": "Udp close of network"
@@ -536,7 +1046,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "套接字 ID",
-            "en-US": "Socket ID"
+            "en-US": "Socket ID",
+            "zh-TW": "套接字 ID",
+            "ja": "ソケットID",
+            "ko": "소켓 ID",
+            "es": "ID del socket",
+            "fr": "ID du socket",
+            "de": "Socket-ID",
+            "pt-BR": "ID do socket",
+            "ru": "ID сокета",
+            "ar": "معرف المقبس",
+            "hi": "सॉकेट ID"
           }
         },
         {
@@ -544,7 +1064,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否启用UDP广播",
-            "en-US": "Whether to enable UDP broadcast"
+            "en-US": "Whether to enable UDP broadcast",
+            "zh-TW": "是否啟用UDP廣播",
+            "ja": "UDPブロードキャストを有効にするかどうか",
+            "ko": "UDP 브로드캐스트 활성화 여부",
+            "es": "Si habilitar broadcast UDP",
+            "fr": "Activer le broadcast UDP",
+            "de": "Ob UDP-Broadcast aktiviert werden soll",
+            "pt-BR": "Se deve habilitar broadcast UDP",
+            "ru": "Включить ли UDP-широковещание",
+            "ar": "هل يتم تفعيل بث UDP",
+            "hi": "UDP ब्रॉडकास्ट सक्षम करें क्या"
           },
           "desc": "Whether to enable UDP broadcast"
         }
@@ -553,14 +1083,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "net.udpSetBroadcast",
       "descriptions": {
         "zh-CN": "设置 UDP 广播模式",
-        "en-US": "Udp set broadcast of network"
+        "en-US": "Udp set broadcast of network",
+        "zh-TW": "設定 UDP 廣播模式",
+        "ja": "設定する UDP 广播モード",
+        "ko": "네트워크 UDP 브로드캐스트 설정",
+        "es": "Establecer broadcast UDP de red",
+        "fr": "Définir le broadcast UDP du réseau",
+        "de": "UDP-Broadcast des Netzwerks setzen",
+        "pt-BR": "Definir broadcast UDP da rede",
+        "ru": "Установить UDP-широковещание сети",
+        "ar": "تعيين بث UDP للشبكة",
+        "hi": "नेटवर्क UDP ब्रॉडकास्ट सेट करें"
       },
       "group": "udp",
       "description": "Udp set broadcast of network"
@@ -574,7 +1124,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "hostname参数",
-            "en-US": "hostname parameter"
+            "en-US": "hostname parameter",
+            "zh-TW": "hostname參數",
+            "ja": "hostnameパラメータ",
+            "ko": "hostname매개변수",
+            "es": "Parámetro de hostname",
+            "fr": "Paramètre de hostname",
+            "de": "hostname-Parameter",
+            "pt-BR": "Parâmetro de hostname",
+            "ru": "Параметр hostname",
+            "ar": "معلمة hostname",
+            "hi": "hostname पैरामीटर"
           },
           "desc": "hostname parameter"
         }
@@ -583,14 +1143,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "net.dnsLookup",
       "descriptions": {
         "zh-CN": "解析域名获取对应的IP地址列表",
-        "en-US": "Resolve domain name to list of IP addresses"
+        "en-US": "Resolve domain name to list of IP addresses",
+        "zh-TW": "解析域名取得對應的IP地址列表",
+        "ja": "ドメイン名をIPアドレスのリストに解決",
+        "ko": "도메인 이름을 IP 주소 목록으로 확인",
+        "es": "Resolver nombre de dominio a lista de IPs",
+        "fr": "Résoudre le nom de domaine en liste d'adresses IP",
+        "de": "Domainname in Liste von IP-Adressen auflösen",
+        "pt-BR": "Resolver nome de domínio para lista de IPs",
+        "ru": "Разрешить доменное имя в список IP-адресов",
+        "ar": "تحليل اسم النطاق إلى قائمة عناوين IP",
+        "hi": "डोमेन नाम को IP पतों की सूची में हल करें"
       },
       "group": "dns",
       "async": true,
@@ -605,7 +1185,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "主机地址（IP或域名）",
-            "en-US": "Host (IP or domain)"
+            "en-US": "Host (IP or domain)",
+            "zh-TW": "主機地址（IP或域名）",
+            "ja": "ホストアドレス（IPまたは域名）",
+            "ko": "호스트 (IP 또는 도메인)",
+            "es": "Host (IP o dominio)",
+            "fr": "Hôte (IP ou domaine)",
+            "de": "Host (IP oder Domain)",
+            "pt-BR": "Host (IP ou domínio)",
+            "ru": "Хост (IP или домен)",
+            "ar": "المضيف (IP أو نطاق)",
+            "hi": "होस्ट (IP या डोमेन)"
           },
           "desc": "Host (IP or domain)",
           "optional": true
@@ -615,14 +1205,34 @@
         "type": "PingResult",
         "descs": {
           "zh-CN": "PingResult类型的结果对象",
-          "en-US": "Result object of type PingResult"
+          "en-US": "Result object of type PingResult",
+          "zh-TW": "PingResult類型的結果物件",
+          "ja": "PingResultタイプの結果オブジェクト",
+          "ko": "PingResult유형의결과객체",
+          "es": "Objeto resultado de tipo PingResult",
+          "fr": "Objet résultat de type PingResult",
+          "de": "Ergebnisobjekt vom Typ PingResult",
+          "pt-BR": "Objeto resultado do tipo PingResult",
+          "ru": "Объект результата типа PingResult",
+          "ar": "كائن نتيجة من نوع PingResult",
+          "hi": "PingResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type PingResult"
       },
       "bridge_path": "net.ping",
       "descriptions": {
         "zh-CN": "向目标主机发送ICMP Ping请求并返回延迟",
-        "en-US": "Send ICMP ping to target host and return latency"
+        "en-US": "Send ICMP ping to target host and return latency",
+        "zh-TW": "向目標主機傳送ICMP Ping請求並返回延迟",
+        "ja": "ターゲットホストにICMP pingを送信してレイテンシを返す",
+        "ko": "대상 호스트에 ICMP 핑 전송 및 지연 시간 반환",
+        "es": "Enviar ping ICMP al host y devolver latencia",
+        "fr": "Envoyer un ping ICMP à l'hôte et retourner la latence",
+        "de": "ICMP-Ping an Zielhost senden und Latenz zurückgeben",
+        "pt-BR": "Enviar ping ICMP ao host e retornar latência",
+        "ru": "Отправить ICMP ping целевому хосту и вернуть задержку",
+        "ar": "إرسال ping ICMP للمضيف وإرجاع زمن الاستجابة",
+        "hi": "लक्ष्य होस्ट को ICMP पिंग भेजें और विलंबता लौटाएं"
       },
       "group": "general",
       "async": true,
@@ -636,14 +1246,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "net.localIp",
       "descriptions": {
         "zh-CN": "获取本机局域网 IP 地址",
-        "en-US": "Local ip of network"
+        "en-US": "Local ip of network",
+        "zh-TW": "取得本機局域網 IP 地址",
+        "ja": "ネットワークのローカルIP",
+        "ko": "네트워크 로컬 IP",
+        "es": "IP local de red",
+        "fr": "IP locale du réseau",
+        "de": "Lokale IP des Netzwerks",
+        "pt-BR": "IP local da rede",
+        "ru": "Локальный IP сети",
+        "ar": "عنوان IP المحلي للشبكة",
+        "hi": "नेटवर्क लोकल IP"
       },
       "group": "general",
       "description": "Local ip of network"
@@ -656,14 +1286,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "net.interfaces",
       "descriptions": {
         "zh-CN": "interfaces网络",
-        "en-US": "Interfaces network"
+        "en-US": "Interfaces network",
+        "zh-TW": "interfaces網絡",
+        "ja": "interfacesネットワーク",
+        "ko": "interfaces네트워크",
+        "es": "Interfaces de red",
+        "fr": "Interfaces réseau",
+        "de": "Netzwerkschnittstellen",
+        "pt-BR": "Interfaces de rede",
+        "ru": "Сетевые интерфейсы",
+        "ar": "واجهات الشبكة",
+        "hi": "नेटवर्क इंटरफ़ेस"
       },
       "group": "general",
       "description": "Interfaces network"
@@ -676,14 +1326,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "net.isOnline",
       "descriptions": {
         "zh-CN": "检查网络是否连通",
-        "en-US": "Check if network online"
+        "en-US": "Check if network online",
+        "zh-TW": "檢查網絡是否連通",
+        "ja": "ネットワークがオンラインか確認",
+        "ko": "네트워크 온라인 상태 확인",
+        "es": "Verificar si hay conexión de red",
+        "fr": "Vérifier si le réseau est en ligne",
+        "de": "Netzwerkverbindung prüfen",
+        "pt-BR": "Verificar se está online",
+        "ru": "Проверить подключение к сети",
+        "ar": "التحقق من الاتصال بالشبكة",
+        "hi": "नेटवर्क ऑनलाइन है जांचें"
       },
       "group": "general",
       "description": "Check if network online"
@@ -697,7 +1367,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "要检测的端口号",
-            "en-US": "Port number to check"
+            "en-US": "Port number to check",
+            "zh-TW": "要檢測的埠號",
+            "ja": "要検出するのポート号",
+            "ko": "확인할 포트 번호",
+            "es": "Número de puerto a verificar",
+            "fr": "Numéro de port à vérifier",
+            "de": "Zu prüfende Portnummer",
+            "pt-BR": "Número da porta a verificar",
+            "ru": "Номер порта для проверки",
+            "ar": "رقم المنفذ للتحقق",
+            "hi": "जांचने के लिए पोर्ट नंबर"
           },
           "desc": "Port number to check",
           "optional": true,
@@ -708,14 +1388,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "net.portAvailable",
       "descriptions": {
         "zh-CN": "检查端口是否可用",
-        "en-US": "Port available of network"
+        "en-US": "Port available of network",
+        "zh-TW": "檢查埠是否可用",
+        "ja": "チェックするポートかどうか可用",
+        "ko": "네트워크 포트 사용 가능 확인",
+        "es": "Verificar disponibilidad de puerto",
+        "fr": "Vérifier la disponibilité du port réseau",
+        "de": "Port-Verfügbarkeit des Netzwerks prüfen",
+        "pt-BR": "Verificar disponibilidade de porta da rede",
+        "ru": "Проверить доступность порта сети",
+        "ar": "التحقق من توفر المنفذ",
+        "hi": "नेटवर्क पोर्ट उपलब्धता जांचें"
       },
       "group": "general",
       "description": "Port available of network"
@@ -728,14 +1428,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "net.publicIp",
       "descriptions": {
         "zh-CN": "获取本机公网 IP 地址",
-        "en-US": "Public ip of network"
+        "en-US": "Public ip of network",
+        "zh-TW": "取得本機公網 IP 地址",
+        "ja": "ネットワークのパブリックIP",
+        "ko": "네트워크 공인 IP",
+        "es": "IP pública de red",
+        "fr": "IP publique du réseau",
+        "de": "Öffentliche IP des Netzwerks",
+        "pt-BR": "IP público da rede",
+        "ru": "Публичный IP сети",
+        "ar": "عنوان IP العام للشبكة",
+        "hi": "नेटवर्क पब्लिक IP"
       },
       "group": "general",
       "description": "Public ip of network"
@@ -748,14 +1468,34 @@
         "type": "string",
         "descs": {
           "zh-CN": "返回的字符串结果",
-          "en-US": "Returned string result"
+          "en-US": "Returned string result",
+          "zh-TW": "返回的字串結果",
+          "ja": "戻り値の文字列結果",
+          "ko": "반환의문자열결과",
+          "es": "Resultado de cadena",
+          "fr": "Résultat de chaîne",
+          "de": "Zeichenfolge-Ergebnis",
+          "pt-BR": "Resultado de string",
+          "ru": "Строковый результат",
+          "ar": "نتيجة نصية",
+          "hi": "स्ट्रिंग परिणाम"
         },
         "desc": "Returned string result"
       },
       "bridge_path": "net.macAddress",
       "descriptions": {
         "zh-CN": "获取网络接口的 MAC 地址",
-        "en-US": "Mac address of network"
+        "en-US": "Mac address of network",
+        "zh-TW": "取得網絡接口的 MAC 地址",
+        "ja": "取得するネットワークインターフェースの MAC アドレス",
+        "ko": "네트워크 MAC 주소",
+        "es": "Dirección MAC de red",
+        "fr": "Adresse MAC du réseau",
+        "de": "MAC-Adresse des Netzwerks",
+        "pt-BR": "Endereço MAC da rede",
+        "ru": "MAC-адрес сети",
+        "ar": "عنوان MAC للشبكة",
+        "hi": "नेटवर्क MAC एड्रेस"
       },
       "group": "general",
       "description": "Mac address of network"
@@ -768,13 +1508,33 @@
         "type": "WifiInfo",
         "descs": {
           "zh-CN": "获取 WiFi 信息",
-          "en-US": "WiFi info"
+          "en-US": "WiFi info",
+          "zh-TW": "取得 WiFi 資訊",
+          "ja": "取得する WiFi 情報",
+          "ko": "가져오기 WiFi 정보",
+          "es": "Información WiFi",
+          "fr": "Informations WiFi",
+          "de": "WiFi-Informationen",
+          "pt-BR": "Informações WiFi",
+          "ru": "Информация о WiFi",
+          "ar": "معلومات WiFi",
+          "hi": "WiFi जानकारी"
         }
       },
       "bridge_path": "net.wifiInfo",
       "descriptions": {
         "zh-CN": "获取 WiFi 信息",
-        "en-US": "Get WiFi info"
+        "en-US": "Get WiFi info",
+        "zh-TW": "取得 WiFi 資訊",
+        "ja": "取得する WiFi 情報",
+        "ko": "가져오기 WiFi 정보",
+        "es": "Obtener información WiFi",
+        "fr": "Obtenir les informations WiFi",
+        "de": "WiFi-Informationen abrufen",
+        "pt-BR": "Obter informações WiFi",
+        "ru": "Получить информацию о WiFi",
+        "ar": "الحصول على معلومات WiFi",
+        "hi": "WiFi जानकारी प्राप्त करें"
       },
       "group": "general"
     },
@@ -787,7 +1547,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "主机地址（IP或域名）",
-            "en-US": "Host (IP or domain)"
+            "en-US": "Host (IP or domain)",
+            "zh-TW": "主機地址（IP或域名）",
+            "ja": "ホストアドレス（IPまたは域名）",
+            "ko": "호스트 (IP 또는 도메인)",
+            "es": "Host (IP o dominio)",
+            "fr": "Hôte (IP ou domaine)",
+            "de": "Host (IP oder Domain)",
+            "pt-BR": "Host (IP ou domínio)",
+            "ru": "Хост (IP или домен)",
+            "ar": "المضيف (IP أو نطاق)",
+            "hi": "होस्ट (IP या डोमेन)"
           },
           "desc": "Host (IP or domain)",
           "optional": true
@@ -797,13 +1567,33 @@
         "type": "SslInfo",
         "descs": {
           "zh-CN": "SSL 信息",
-          "en-US": "SSL info"
+          "en-US": "SSL info",
+          "zh-TW": "SSL 資訊",
+          "ja": "SSL 情報",
+          "ko": "SSL 정보",
+          "es": "Información SSL",
+          "fr": "Informations SSL",
+          "de": "SSL-Informationen",
+          "pt-BR": "Informações SSL",
+          "ru": "SSL-информация",
+          "ar": "معلومات SSL",
+          "hi": "SSL जानकारी"
         }
       },
       "bridge_path": "net.sslInfo",
       "descriptions": {
         "zh-CN": "获取 SSL/TLS 证书信息",
-        "en-US": "Ssl info of network"
+        "en-US": "Ssl info of network",
+        "zh-TW": "取得 SSL/TLS 證书資訊",
+        "ja": "取得する SSL/TLS 証明書情報",
+        "ko": "네트워크 SSL 정보",
+        "es": "Información SSL de red",
+        "fr": "Informations SSL du réseau",
+        "de": "SSL-Informationen des Netzwerks",
+        "pt-BR": "Informações SSL da rede",
+        "ru": "SSL-информация сети",
+        "ar": "معلومات SSL للشبكة",
+        "hi": "नेटवर्क SSL जानकारी"
       },
       "group": "general",
       "description": "Ssl info of network"
@@ -816,14 +1606,34 @@
         "type": "SpeedResult",
         "descs": {
           "zh-CN": "SpeedResult类型的结果对象",
-          "en-US": "Result object of type SpeedResult"
+          "en-US": "Result object of type SpeedResult",
+          "zh-TW": "SpeedResult類型的結果物件",
+          "ja": "SpeedResultタイプの結果オブジェクト",
+          "ko": "SpeedResult유형의결과객체",
+          "es": "Objeto resultado de tipo SpeedResult",
+          "fr": "Objet résultat de type SpeedResult",
+          "de": "Ergebnisobjekt vom Typ SpeedResult",
+          "pt-BR": "Objeto resultado do tipo SpeedResult",
+          "ru": "Объект результата типа SpeedResult",
+          "ar": "كائن نتيجة من نوع SpeedResult",
+          "hi": "SpeedResult प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type SpeedResult"
       },
       "bridge_path": "net.speedTest",
       "descriptions": {
         "zh-CN": "测试网络速度",
-        "en-US": "Speed test of network"
+        "en-US": "Speed test of network",
+        "zh-TW": "測試網絡速度",
+        "ja": "ネットワーク速度テスト",
+        "ko": "네트워크 속도 테스트",
+        "es": "Prueba de velocidad de red",
+        "fr": "Test de vitesse du réseau",
+        "de": "Netzwerk-Geschwindigkeitstest",
+        "pt-BR": "Teste de velocidade da rede",
+        "ru": "Тест скорости сети",
+        "ar": "اختبار سرعة الشبكة",
+        "hi": "नेटवर्क स्पीड टेस्ट"
       },
       "group": "general",
       "async": true,
@@ -838,7 +1648,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "主机地址（IP或域名）",
-            "en-US": "Host (IP or domain)"
+            "en-US": "Host (IP or domain)",
+            "zh-TW": "主機地址（IP或域名）",
+            "ja": "ホストアドレス（IPまたは域名）",
+            "ko": "호스트 (IP 또는 도메인)",
+            "es": "Host (IP o dominio)",
+            "fr": "Hôte (IP ou domaine)",
+            "de": "Host (IP oder Domain)",
+            "pt-BR": "Host (IP ou domínio)",
+            "ru": "Хост (IP или домен)",
+            "ar": "المضيف (IP أو نطاق)",
+            "hi": "होस्ट (IP या डोमेन)"
           },
           "desc": "Host (IP or domain)",
           "optional": true
@@ -848,14 +1668,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "net.traceroute",
       "descriptions": {
         "zh-CN": "traceroute网络",
-        "en-US": "Traceroute network"
+        "en-US": "Traceroute network",
+        "zh-TW": "traceroute網絡",
+        "ja": "tracerouteネットワーク",
+        "ko": "traceroute네트워크",
+        "es": "Traceroute de red",
+        "fr": "Traceroute du réseau",
+        "de": "Netzwerk-Traceroute",
+        "pt-BR": "Traceroute da rede",
+        "ru": "Трассировка маршрута сети",
+        "ar": "تتبع مسار الشبكة",
+        "hi": "नेटवर्क ट्रेसरूट"
       },
       "group": "general",
       "async": true,
@@ -870,7 +1710,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "mac_address参数",
-            "en-US": "mac_address parameter"
+            "en-US": "mac_address parameter",
+            "zh-TW": "mac_address參數",
+            "ja": "mac_addressパラメータ",
+            "ko": "mac_address매개변수",
+            "es": "Parámetro de mac_address",
+            "fr": "Paramètre de mac_address",
+            "de": "mac_address-Parameter",
+            "pt-BR": "Parâmetro de mac_address",
+            "ru": "Параметр mac_address",
+            "ar": "معلمة mac_address",
+            "hi": "mac_address पैरामीटर"
           },
           "desc": "mac_address parameter"
         }
@@ -879,14 +1729,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "net.wakeOnLan",
       "descriptions": {
         "zh-CN": "发送网络唤醒（WOL）数据包",
-        "en-US": "Wake on lan of network"
+        "en-US": "Wake on lan of network",
+        "zh-TW": "傳送網絡唤醒（WOL）數據包",
+        "ja": "ネットワークWake on LAN",
+        "ko": "네트워크 Wake on LAN",
+        "es": "Wake on LAN de red",
+        "fr": "Wake on LAN du réseau",
+        "de": "Wake-on-LAN des Netzwerks",
+        "pt-BR": "Wake on LAN da rede",
+        "ru": "Wake-on-LAN сети",
+        "ar": "تشغيل عبر الشبكة Wake on LAN",
+        "hi": "नेटवर्क Wake on LAN"
       },
       "group": "general",
       "description": "Wake on lan of network"
@@ -900,7 +1770,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "start_port参数",
-            "en-US": "start_port parameter"
+            "en-US": "start_port parameter",
+            "zh-TW": "start_port參數",
+            "ja": "start_portパラメータ",
+            "ko": "start_port매개변수",
+            "es": "Parámetro de start_port",
+            "fr": "Paramètre de start_port",
+            "de": "start_port-Parameter",
+            "pt-BR": "Parâmetro de start_port",
+            "ru": "Параметр start_port",
+            "ar": "معلمة start_port",
+            "hi": "start_port पैरामीटर"
           },
           "desc": "start_port parameter",
           "optional": true,
@@ -911,14 +1791,34 @@
         "type": "number",
         "descs": {
           "zh-CN": "i32类型的结果对象",
-          "en-US": "Result object of type i32"
+          "en-US": "Result object of type i32",
+          "zh-TW": "i32類型的結果物件",
+          "ja": "i32タイプの結果オブジェクト",
+          "ko": "i32유형의결과객체",
+          "es": "Objeto resultado de tipo i32",
+          "fr": "Objet résultat de type i32",
+          "de": "Ergebnisobjekt vom Typ i32",
+          "pt-BR": "Objeto resultado do tipo i32",
+          "ru": "Объект результата типа i32",
+          "ar": "كائن نتيجة من نوع i32",
+          "hi": "i32 प्रकार का परिणाम ऑब्जेक्ट"
         },
         "desc": "Result object of type i32"
       },
       "bridge_path": "net.findAvailablePort",
       "descriptions": {
         "zh-CN": "查找可用端口网络",
-        "en-US": "Find available port of network"
+        "en-US": "Find available port of network",
+        "zh-TW": "查找可用埠網絡",
+        "ja": "查找可用ポートネットワーク",
+        "ko": "네트워크에서 사용 가능한 포트 찾기",
+        "es": "Encontrar puerto disponible de red",
+        "fr": "Trouver un port réseau disponible",
+        "de": "Verfügbaren Netzwerk-Port finden",
+        "pt-BR": "Encontrar porta disponível da rede",
+        "ru": "Найти доступный порт сети",
+        "ar": "العثور على منفذ متاح في الشبكة",
+        "hi": "नेटवर्क में उपलब्ध पोर्ट खोजें"
       },
       "group": "general",
       "description": "Find available port of network"
@@ -932,7 +1832,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "异步回调标识符",
-            "en-US": "Async callback identifier"
+            "en-US": "Async callback identifier",
+            "zh-TW": "異步回調標識符",
+            "ja": "非同期コールバック識別子",
+            "ko": "비동기 콜백 식별자",
+            "es": "Identificador de callback asíncrono",
+            "fr": "Identifiant de rappel asynchrone",
+            "de": "Asynchroner Callback-Bezeichner",
+            "pt-BR": "Identificador de callback assíncrono",
+            "ru": "Идентификатор асинхронного обратного вызова",
+            "ar": "معرف رد الاتصال غير المتزامن",
+            "hi": "एसिंक कॉलबैक पहचानकर्ता"
           },
           "desc": "Async callback identifier",
           "optional": true
@@ -942,14 +1852,34 @@
         "type": "NetworkWatcher",
         "descs": {
           "zh-CN": "操作结果",
-          "en-US": "Operation result"
+          "en-US": "Operation result",
+          "zh-TW": "操作結果",
+          "ja": "操作結果",
+          "ko": "작업결과",
+          "es": "Resultado de la operación",
+          "fr": "Résultat de l'opération",
+          "de": "Operationsergebnis",
+          "pt-BR": "Resultado da operação",
+          "ru": "Результат операции",
+          "ar": "نتيجة العملية",
+          "hi": "ऑपरेशन परिणाम"
         },
         "desc": "Operation result"
       },
       "bridge_path": "net.onNetworkChange",
       "descriptions": {
         "zh-CN": "监听网络状态变化",
-        "en-US": "Listen for network change event on network"
+        "en-US": "Listen for network change event on network",
+        "zh-TW": "監聽網絡狀態變化",
+        "ja": "ネットワーク変更イベントを監視",
+        "ko": "네트워크 변경 이벤트 수신 대기",
+        "es": "Escuchar evento de cambio de red",
+        "fr": "Écouter l'événement de changement réseau",
+        "de": "Netzwerkänderungs-Ereignis überwachen",
+        "pt-BR": "Ouvir evento de mudança de rede",
+        "ru": "Слушать события изменения сети",
+        "ar": "الاستماع لحدث تغيير الشبكة",
+        "hi": "नेटवर्क परिवर्तन इवेंट सुनें"
       },
       "group": "general",
       "description": "Listen for network change event on network"
@@ -963,7 +1893,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "watcher_id参数",
-            "en-US": "watcher_id parameter"
+            "en-US": "watcher_id parameter",
+            "zh-TW": "watcher_id參數",
+            "ja": "watcher_idパラメータ",
+            "ko": "watcher_id매개변수",
+            "es": "Parámetro de ID del observador",
+            "fr": "Paramètre d'ID d'observateur",
+            "de": "Watcher-ID-Parameter",
+            "pt-BR": "Parâmetro de ID do observador",
+            "ru": "Параметр ID наблюдателя",
+            "ar": "معلمة معرف المراقب",
+            "hi": "वॉचर ID पैरामीटर"
           },
           "desc": "watcher_id parameter"
         }
@@ -972,14 +1912,34 @@
         "type": "boolean",
         "descs": {
           "zh-CN": "是否成功",
-          "en-US": "Whether successful"
+          "en-US": "Whether successful",
+          "zh-TW": "是否成功",
+          "ja": "成功したかどうか",
+          "ko": "성공 여부",
+          "es": "Si fue exitoso",
+          "fr": "Si réussi",
+          "de": "Ob erfolgreich",
+          "pt-BR": "Se bem-sucedido",
+          "ru": "Успешно ли",
+          "ar": "هل نجحت",
+          "hi": "सफल हुआ या नहीं"
         },
         "desc": "Whether successful"
       },
       "bridge_path": "net.offNetworkChange",
       "descriptions": {
         "zh-CN": "取消监听网络状态变化",
-        "en-US": "Stop listening for network change event on network"
+        "en-US": "Stop listening for network change event on network",
+        "zh-TW": "取消監聽網絡狀態變化",
+        "ja": "ネットワーク変更イベントの監視を停止",
+        "ko": "네트워크 변경 이벤트 수신 대기 중지",
+        "es": "Dejar de escuchar evento de cambio de red",
+        "fr": "Arrêter l'écoute de l'événement de changement réseau",
+        "de": "Überwachung der Netzwerkänderung beenden",
+        "pt-BR": "Parar de ouvir evento de mudança de rede",
+        "ru": "Прекратить слушать события изменения сети",
+        "ar": "التوقف عن الاستماع لحدث تغيير الشبكة",
+        "hi": "नेटवर्क परिवर्तन इवेंट सुनना बंद करें"
       },
       "group": "general",
       "description": "Stop listening for network change event on network"
@@ -992,14 +1952,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "net.listTcpConnections",
       "descriptions": {
         "zh-CN": "列出tcp connections",
-        "en-US": "List tcp connections of network"
+        "en-US": "List tcp connections of network",
+        "zh-TW": "列出tcp connections",
+        "ja": "TCP接続一覧",
+        "ko": "TCP 연결 목록",
+        "es": "Listar conexiones TCP",
+        "fr": "Lister les connexions TCP",
+        "de": "TCP-Verbindungen auflisten",
+        "pt-BR": "Listar conexões TCP",
+        "ru": "Список TCP-подключений",
+        "ar": "قائمة اتصالات TCP",
+        "hi": "TCP कनेक्शन सूची"
       },
       "group": "info",
       "description": "List tcp connections of network"
@@ -1012,14 +1992,34 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "net.listTcpServers",
       "descriptions": {
         "zh-CN": "列出 TCP 服务器",
-        "en-US": "List TCP servers"
+        "en-US": "List TCP servers",
+        "zh-TW": "列出 TCP 服務器",
+        "ja": "列出 TCP サーバー",
+        "ko": "TCP 서버 목록",
+        "es": "Listar servidores TCP",
+        "fr": "Lister les serveurs TCP",
+        "de": "TCP-Server auflisten",
+        "pt-BR": "Listar servidores TCP",
+        "ru": "Список TCP-серверов",
+        "ar": "قائمة خوادم TCP",
+        "hi": "TCP सर्वर सूचीबद्ध करें"
       },
       "group": "info"
     },
@@ -1031,28 +2031,68 @@
         "type": "array",
         "descs": {
           "zh-CN": "结果数组",
-          "en-US": "Result array"
+          "en-US": "Result array",
+          "zh-TW": "結果陣列",
+          "ja": "結果配列",
+          "ko": "결과배열",
+          "es": "Arreglo de resultados",
+          "fr": "Tableau de résultats",
+          "de": "Ergebnis-Array",
+          "pt-BR": "Array de resultados",
+          "ru": "Массив результатов",
+          "ar": "مصفوفة النتائج",
+          "hi": "परिणाम ऐरे"
         },
         "desc": "Result array"
       },
       "bridge_path": "net.listUdpSockets",
       "descriptions": {
         "zh-CN": "列出 UDP 套接字",
-        "en-US": "List UDP sockets"
+        "en-US": "List UDP sockets",
+        "zh-TW": "列出 UDP 套接字",
+        "ja": "UDPソケット一覧",
+        "ko": "UDP 소켓 목록",
+        "es": "Listar sockets UDP",
+        "fr": "Lister les sockets UDP",
+        "de": "UDP-Sockets auflisten",
+        "pt-BR": "Listar sockets UDP",
+        "ru": "Список UDP-сокетов",
+        "ar": "قائمة مقابس UDP",
+        "hi": "UDP सॉकेट सूची"
       },
       "group": "info"
     }
   ],
   "overviews": {
     "zh-CN": "提供网络工具能力，包括 TCP/UDP 通信、DNS 查询、端口扫描、Ping 检测、网络接口信息、IP 地址处理、traceroute、带宽测试等功能。",
-    "en-US": "Network utilities including TCP/UDP communication, DNS lookup, port scanning, ping, network interface info, IP address handling, traceroute, and bandwidth testing."
+    "en-US": "Network utilities including TCP/UDP communication, DNS lookup, port scanning, ping, network interface info, IP address handling, traceroute, and bandwidth testing.",
+    "zh-TW": "提供網路工具能力，包括 TCP/UDP 通訊、DNS 查询、端口掃描、Ping 檢測、網路介面資訊、IP 地址處理、traceroute、帶宽測試等功能。",
+    "ja": "ネットワークユーティリティ：TCP/UDP通信・DNS検索・ポートスキャン・ping・ネットワークインターフェース情報・IPアドレス・traceroute・帯域テスト。",
+    "ko": "네트워크 유틸리티: TCP/UDP 통신, DNS 조회, 포트 스캔, ping, 네트워크 인터페이스, IP 주소, traceroute, 대역폭 테스트.",
+    "es": "Utilidades de red: TCP/UDP, DNS, escaneo de puertos, ping, interfaces, IP, traceroute y pruebas de ancho de banda.",
+    "fr": "Utilitaires réseau : TCP/UDP, DNS, scan de ports, ping, interfaces, IP, traceroute et tests de bande passante.",
+    "de": "Netzwerk-Utilities: TCP/UDP, DNS, Port-Scan, Ping, Schnittstellen, IP, Traceroute und Bandbreitentest.",
+    "pt-BR": "Utilitários de rede: TCP/UDP, DNS, varredura de portas, ping, interfaces, IP, traceroute e testes de largura de banda.",
+    "ru": "Сетевые утилиты: TCP/UDP, DNS, сканирование портов, ping, интерфейсы, IP, traceroute и тесты пропускной способности.",
+    "ar": "أدوات الشبكة: TCP/UDP وDNS ومسح المنافذ وping وواجهات وIP وtraceroute واختبار النطاق.",
+    "hi": "नेटवर्क यूटिलिटीज: TCP/UDP, DNS, पोर्ट स्कैन, ping, इंटरफेस, IP, traceroute और बैंडविड्थ टेस्ट।"
   },
   "types": [
     {
       "name": "NetworkInterface",
       "descriptions": {
         "zh-CN": "网络接口信息",
-        "en-US": "Network interface info"
+        "en-US": "Network interface info",
+        "zh-TW": "網路介面資訊",
+        "ja": "ネットワークインターフェース情報",
+        "ko": "네트워크 인터페이스 정보",
+        "es": "Información de interfaz de red",
+        "fr": "Informations d'interface réseau",
+        "de": "Netzwerkschnittstelleninformationen",
+        "pt-BR": "Informações da interface de rede",
+        "ru": "Информация о сетевом интерфейсе",
+        "ar": "معلومات واجهة الشبكة",
+        "hi": "नेटवर्क इंटरफ़ेस जानकारी"
       },
       "fields": [
         {
@@ -1060,7 +2100,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "接口名",
-            "en-US": "Interface name"
+            "en-US": "Interface name",
+            "zh-TW": "介面名",
+            "ja": "インターフェース名",
+            "ko": "인터페이스 이름",
+            "es": "Nombre de interfaz",
+            "fr": "Nom de l'interface",
+            "de": "Schnittstellenname",
+            "pt-BR": "Nome da interface",
+            "ru": "Имя интерфейса",
+            "ar": "اسم الواجهة",
+            "hi": "इंटरफ़ेस नाम"
           }
         },
         {
@@ -1068,7 +2118,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "IP地址",
-            "en-US": "IP address"
+            "en-US": "IP address",
+            "zh-TW": "IP地址",
+            "ja": "IPアドレス",
+            "ko": "IP 주소",
+            "es": "Dirección IP",
+            "fr": "Adresse IP",
+            "de": "IP-Adresse",
+            "pt-BR": "Endereço IP",
+            "ru": "IP-адрес",
+            "ar": "عنوان IP",
+            "hi": "IP पता"
           }
         },
         {
@@ -1076,7 +2136,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "MAC地址",
-            "en-US": "MAC address"
+            "en-US": "MAC address",
+            "zh-TW": "MAC地址",
+            "ja": "MACアドレス",
+            "ko": "MAC 주소",
+            "es": "Dirección MAC",
+            "fr": "Adresse MAC",
+            "de": "MAC-Adresse",
+            "pt-BR": "Endereço MAC",
+            "ru": "MAC-адрес",
+            "ar": "عنوان MAC",
+            "hi": "MAC पता"
           }
         },
         {
@@ -1084,7 +2154,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否启用",
-            "en-US": "Is active"
+            "en-US": "Is active",
+            "zh-TW": "是否啟用",
+            "ja": "アクティブかどうか",
+            "ko": "활성 여부",
+            "es": "Está activo",
+            "fr": "Est actif",
+            "de": "Ist aktiv",
+            "pt-BR": "Está ativo",
+            "ru": "Активен",
+            "ar": "نشط",
+            "hi": "सक्रिय है"
           }
         }
       ]
@@ -1093,7 +2173,17 @@
       "name": "TcpConnection",
       "descriptions": {
         "zh-CN": "TCP连接",
-        "en-US": "TCP connection"
+        "en-US": "TCP connection",
+        "zh-TW": "TCP連接",
+        "ja": "TCP接続",
+        "ko": "TCP 연결",
+        "es": "Conexión TCP",
+        "fr": "Connexion TCP",
+        "de": "TCP-Verbindung",
+        "pt-BR": "Conexão TCP",
+        "ru": "TCP-соединение",
+        "ar": "اتصال TCP",
+        "hi": "TCP कनेक्शन"
       },
       "fields": [
         {
@@ -1101,7 +2191,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接ID",
+            "ja": "接続ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID da conexão",
+            "ru": "ID соединения",
+            "ar": "معرّف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -1109,7 +2209,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "本地地址",
-            "en-US": "Local address"
+            "en-US": "Local address",
+            "zh-TW": "本地地址",
+            "ja": "ローカルアドレス",
+            "ko": "로컬 주소",
+            "es": "Dirección local",
+            "fr": "Adresse locale",
+            "de": "Lokale Adresse",
+            "pt-BR": "Endereço local",
+            "ru": "Локальный адрес",
+            "ar": "العنوان المحلي",
+            "hi": "स्थानीय पता"
           }
         },
         {
@@ -1117,7 +2227,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "远端地址",
-            "en-US": "Remote address"
+            "en-US": "Remote address",
+            "zh-TW": "遠端地址",
+            "ja": "リモートアドレス",
+            "ko": "원격 주소",
+            "es": "Dirección remota",
+            "fr": "Adresse distante",
+            "de": "Remote-Adresse",
+            "pt-BR": "Endereço remoto",
+            "ru": "Удалённый адрес",
+            "ar": "العنوان البعيد",
+            "hi": "रिमोट पता"
           }
         }
       ]
@@ -1126,7 +2246,17 @@
       "name": "TcpServer",
       "descriptions": {
         "zh-CN": "TCP服务器",
-        "en-US": "TCP server"
+        "en-US": "TCP server",
+        "zh-TW": "TCP服務器",
+        "ja": "TCPサーバー",
+        "ko": "TCP 서버",
+        "es": "Servidor TCP",
+        "fr": "Serveur TCP",
+        "de": "TCP-Server",
+        "pt-BR": "Servidor TCP",
+        "ru": "TCP-сервер",
+        "ar": "خادم TCP",
+        "hi": "TCP सर्वर"
       },
       "fields": [
         {
@@ -1134,7 +2264,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "服务器ID",
-            "en-US": "Server ID"
+            "en-US": "Server ID",
+            "zh-TW": "服務器ID",
+            "ja": "サーバーID",
+            "ko": "서버 ID",
+            "es": "ID del servidor",
+            "fr": "ID du serveur",
+            "de": "Server-ID",
+            "pt-BR": "ID do servidor",
+            "ru": "ID сервера",
+            "ar": "معرّف الخادم",
+            "hi": "सर्वर ID"
           }
         },
         {
@@ -1142,7 +2282,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "监听地址",
-            "en-US": "Listen address"
+            "en-US": "Listen address",
+            "zh-TW": "監听地址",
+            "ja": "リスニングアドレス",
+            "ko": "수신 주소",
+            "es": "Dirección de escucha",
+            "fr": "Adresse d'écoute",
+            "de": "Lausch-Adresse",
+            "pt-BR": "Endereço de escuta",
+            "ru": "Адрес прослушивания",
+            "ar": "عنوان الاستماع",
+            "hi": "श्रवण पता"
           }
         }
       ]
@@ -1151,7 +2301,17 @@
       "name": "UdpSocket",
       "descriptions": {
         "zh-CN": "UDP套接字",
-        "en-US": "UDP socket"
+        "en-US": "UDP socket",
+        "zh-TW": "UDP套接字",
+        "ja": "UDPソケット",
+        "ko": "UDP 소켓",
+        "es": "Socket UDP",
+        "fr": "Socket UDP",
+        "de": "UDP-Socket",
+        "pt-BR": "Socket UDP",
+        "ru": "UDP-сокет",
+        "ar": "مقبس UDP",
+        "hi": "UDP सॉकेट"
       },
       "fields": [
         {
@@ -1159,7 +2319,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "套接字ID",
-            "en-US": "Socket ID"
+            "en-US": "Socket ID",
+            "zh-TW": "套接字ID",
+            "ja": "ソケットID",
+            "ko": "소켓 ID",
+            "es": "ID del socket",
+            "fr": "ID du socket",
+            "de": "Socket-ID",
+            "pt-BR": "ID do socket",
+            "ru": "ID сокета",
+            "ar": "معرّف المقبس",
+            "hi": "सॉकेट ID"
           }
         },
         {
@@ -1167,7 +2337,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "本地地址",
-            "en-US": "Local address"
+            "en-US": "Local address",
+            "zh-TW": "本地地址",
+            "ja": "ローカルアドレス",
+            "ko": "로컬 주소",
+            "es": "Dirección local",
+            "fr": "Adresse locale",
+            "de": "Lokale Adresse",
+            "pt-BR": "Endereço local",
+            "ru": "Локальный адрес",
+            "ar": "العنوان المحلي",
+            "hi": "स्थानीय पता"
           }
         }
       ]
@@ -1176,7 +2356,17 @@
       "name": "UdpMessage",
       "descriptions": {
         "zh-CN": "UDP消息",
-        "en-US": "UDP message"
+        "en-US": "UDP message",
+        "zh-TW": "UDP訊息",
+        "ja": "UDPメッセージ",
+        "ko": "UDP 메시지",
+        "es": "Mensaje UDP",
+        "fr": "Message UDP",
+        "de": "UDP-Nachricht",
+        "pt-BR": "Mensagem UDP",
+        "ru": "UDP-сообщение",
+        "ar": "رسالة UDP",
+        "hi": "UDP संदेश"
       },
       "fields": [
         {
@@ -1184,7 +2374,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "数据内容",
-            "en-US": "Data"
+            "en-US": "Data",
+            "zh-TW": "數據內容",
+            "ja": "データ",
+            "ko": "데이터",
+            "es": "Datos",
+            "fr": "Données",
+            "de": "Daten",
+            "pt-BR": "Dados",
+            "ru": "Данные",
+            "ar": "البيانات",
+            "hi": "डेटा"
           }
         },
         {
@@ -1192,7 +2392,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "来源地址",
-            "en-US": "Source address"
+            "en-US": "Source address",
+            "zh-TW": "來源地址",
+            "ja": "送信元アドレス",
+            "ko": "원본 주소",
+            "es": "Dirección de origen",
+            "fr": "Adresse source",
+            "de": "Quelladresse",
+            "pt-BR": "Endereço de origem",
+            "ru": "Адрес источника",
+            "ar": "عنوان المصدر",
+            "hi": "स्रोत पता"
           }
         }
       ]
@@ -1201,7 +2411,17 @@
       "name": "PingResult",
       "descriptions": {
         "zh-CN": "Ping结果",
-        "en-US": "Ping result"
+        "en-US": "Ping result",
+        "zh-TW": "Ping结果",
+        "ja": "Ping結果",
+        "ko": "Ping 결과",
+        "es": "Resultado de ping",
+        "fr": "Résultat du ping",
+        "de": "Ping-Ergebnis",
+        "pt-BR": "Resultado do ping",
+        "ru": "Результат ping",
+        "ar": "نتيجة الاختبار",
+        "hi": "Ping परिणाम"
       },
       "fields": [
         {
@@ -1209,7 +2429,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "目标主机",
-            "en-US": "Target host"
+            "en-US": "Target host",
+            "zh-TW": "目標主機",
+            "ja": "ターゲットホスト",
+            "ko": "대상 호스트",
+            "es": "Host de destino",
+            "fr": "Hôte cible",
+            "de": "Zielhost",
+            "pt-BR": "Host de destino",
+            "ru": "Целевой хост",
+            "ar": "المضيف الهدف",
+            "hi": "लक्ष्य होस्ट"
           }
         },
         {
@@ -1217,7 +2447,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "延迟(ms)",
-            "en-US": "Latency(ms)"
+            "en-US": "Latency(ms)",
+            "zh-TW": "延遲(ms)",
+            "ja": "レイテンシー(ms)",
+            "ko": "지연 시간(ms)",
+            "es": "Latencia(ms)",
+            "fr": "Latence(ms)",
+            "de": "Latenz(ms)",
+            "pt-BR": "Latência(ms)",
+            "ru": "Задержка(мс)",
+            "ar": "زمن الاستجابة(مللي ثانية)",
+            "hi": "विलंबता(ms)"
           }
         },
         {
@@ -1225,7 +2465,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "TTL",
-            "en-US": "TTL"
+            "en-US": "TTL",
+            "zh-TW": "TTL",
+            "ja": "TTL",
+            "ko": "TTL",
+            "es": "TTL",
+            "fr": "TTL",
+            "de": "TTL",
+            "pt-BR": "TTL",
+            "ru": "TTL",
+            "ar": "TTL",
+            "hi": "TTL"
           }
         }
       ]
@@ -1234,7 +2484,17 @@
       "name": "WifiInfo",
       "descriptions": {
         "zh-CN": "WiFi信息",
-        "en-US": "WiFi info"
+        "en-US": "WiFi info",
+        "zh-TW": "WiFi資訊",
+        "ja": "WiFi情報",
+        "ko": "WiFi 정보",
+        "es": "Información WiFi",
+        "fr": "Informations WiFi",
+        "de": "WiFi-Informationen",
+        "pt-BR": "Informações WiFi",
+        "ru": "Информация о WiFi",
+        "ar": "معلومات WiFi",
+        "hi": "WiFi जानकारी"
       },
       "fields": [
         {
@@ -1242,7 +2502,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "网络名称",
-            "en-US": "Network name"
+            "en-US": "Network name",
+            "zh-TW": "網路名稱",
+            "ja": "ネットワーク名",
+            "ko": "네트워크 이름",
+            "es": "Nombre de red",
+            "fr": "Nom du réseau",
+            "de": "Netzwerkname",
+            "pt-BR": "Nome da rede",
+            "ru": "Имя сети",
+            "ar": "اسم الشبكة",
+            "hi": "नेटवर्क नाम"
           }
         },
         {
@@ -1250,7 +2520,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "信号强度",
-            "en-US": "Signal strength"
+            "en-US": "Signal strength",
+            "zh-TW": "信號強度",
+            "ja": "信号強度",
+            "ko": "신호 강도",
+            "es": "Intensidad de señal",
+            "fr": "Force du signal",
+            "de": "Signalstärke",
+            "pt-BR": "Intensidade do sinal",
+            "ru": "Уровень сигнала",
+            "ar": "قوة الإشارة",
+            "hi": "सिग्नल शक्ति"
           }
         },
         {
@@ -1258,7 +2538,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "安全类型",
-            "en-US": "Security type"
+            "en-US": "Security type",
+            "zh-TW": "安全類型",
+            "ja": "セキュリティタイプ",
+            "ko": "보안 유형",
+            "es": "Tipo de seguridad",
+            "fr": "Type de sécurité",
+            "de": "Sicherheitstyp",
+            "pt-BR": "Tipo de segurança",
+            "ru": "Тип безопасности",
+            "ar": "نوع الأمان",
+            "hi": "सुरक्षा प्रकार"
           }
         }
       ]
@@ -1267,7 +2557,17 @@
       "name": "SslInfo",
       "descriptions": {
         "zh-CN": "SSL证书信息",
-        "en-US": "SSL certificate info"
+        "en-US": "SSL certificate info",
+        "zh-TW": "SSL證書資訊",
+        "ja": "SSL証明書情報",
+        "ko": "SSL 인증서 정보",
+        "es": "Información del certificado SSL",
+        "fr": "Informations du certificat SSL",
+        "de": "SSL-Zertifikatsinformationen",
+        "pt-BR": "Informações do certificado SSL",
+        "ru": "Информация о сертификате SSL",
+        "ar": "معلومات شهادة SSL",
+        "hi": "SSL प्रमाणपत्र जानकारी"
       },
       "fields": [
         {
@@ -1275,7 +2575,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "颁发者",
-            "en-US": "Issuer"
+            "en-US": "Issuer",
+            "zh-TW": "颁发者",
+            "ja": "発行者",
+            "ko": "발급자",
+            "es": "Emisor",
+            "fr": "Émetteur",
+            "de": "Aussteller",
+            "pt-BR": "Emissor",
+            "ru": "Издатель",
+            "ar": "المُصدِر",
+            "hi": "जारीकर्ता"
           }
         },
         {
@@ -1283,7 +2593,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "主题",
-            "en-US": "Subject"
+            "en-US": "Subject",
+            "zh-TW": "主题",
+            "ja": "件名",
+            "ko": "제목",
+            "es": "Asunto",
+            "fr": "Sujet",
+            "de": "Betreff",
+            "pt-BR": "Assunto",
+            "ru": "Тема",
+            "ar": "الموضوع",
+            "hi": "विषय"
           }
         },
         {
@@ -1291,7 +2611,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "过期时间",
-            "en-US": "Expiry date"
+            "en-US": "Expiry date",
+            "zh-TW": "过期時间",
+            "ja": "有効期限",
+            "ko": "만료 날짜",
+            "es": "Fecha de vencimiento",
+            "fr": "Date d'expiration",
+            "de": "Ablaufdatum",
+            "pt-BR": "Data de validade",
+            "ru": "Дата истечения срока",
+            "ar": "تاريخ انتهاء الصلاحية",
+            "hi": "समाप्ति तिथि"
           }
         },
         {
@@ -1299,7 +2629,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否有效",
-            "en-US": "Is valid"
+            "en-US": "Is valid",
+            "zh-TW": "是否有效",
+            "ja": "有効かどうか",
+            "ko": "유효 여부",
+            "es": "Es válido",
+            "fr": "Est valide",
+            "de": "Ist gültig",
+            "pt-BR": "É válido",
+            "ru": "Является действительным",
+            "ar": "صالح",
+            "hi": "मान्य है"
           }
         }
       ]
@@ -1308,7 +2648,17 @@
       "name": "SpeedResult",
       "descriptions": {
         "zh-CN": "测速结果",
-        "en-US": "Speed test result"
+        "en-US": "Speed test result",
+        "zh-TW": "測速结果",
+        "ja": "速度テスト結果",
+        "ko": "속도 테스트 결과",
+        "es": "Resultado de prueba de velocidad",
+        "fr": "Résultat du test de vitesse",
+        "de": "Geschwindigkeitstestergebnis",
+        "pt-BR": "Resultado do teste de velocidade",
+        "ru": "Результат теста скорости",
+        "ar": "نتيجة اختبار السرعة",
+        "hi": "गति परीक्षण परिणाम"
       },
       "fields": [
         {
@@ -1316,7 +2666,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "下载速度(Mbps)",
-            "en-US": "Download(Mbps)"
+            "en-US": "Download(Mbps)",
+            "zh-TW": "下載速度(Mbps)",
+            "ja": "ダウンロード(Mbps)",
+            "ko": "다운로드(Mbps)",
+            "es": "Descarga(Mbps)",
+            "fr": "Téléchargement(Mbps)",
+            "de": "Download(Mbps)",
+            "pt-BR": "Download(Mbps)",
+            "ru": "Загрузка(Mbps)",
+            "ar": "التحميل(Mbps)",
+            "hi": "डाउनलोड(Mbps)"
           }
         },
         {
@@ -1324,7 +2684,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "上传速度(Mbps)",
-            "en-US": "Upload(Mbps)"
+            "en-US": "Upload(Mbps)",
+            "zh-TW": "上傳速度(Mbps)",
+            "ja": "アップロード(Mbps)",
+            "ko": "업로드(Mbps)",
+            "es": "Subida(Mbps)",
+            "fr": "Téléversement(Mbps)",
+            "de": "Upload(Mbps)",
+            "pt-BR": "Upload(Mbps)",
+            "ru": "Выгрузка(Mbps)",
+            "ar": "الرفع(Mbps)",
+            "hi": "अपलोड(Mbps)"
           }
         },
         {
@@ -1332,7 +2702,17 @@
           "type": "number",
           "descs": {
             "zh-CN": "延迟(ms)",
-            "en-US": "Ping(ms)"
+            "en-US": "Ping(ms)",
+            "zh-TW": "延遲(ms)",
+            "ja": "Ping(ms)",
+            "ko": "Ping(ms)",
+            "es": "Ping(ms)",
+            "fr": "Ping(ms)",
+            "de": "Ping(ms)",
+            "pt-BR": "Ping(ms)",
+            "ru": "Пинг(мс)",
+            "ar": "Ping(مللي ثانية)",
+            "hi": "Ping(ms)"
           }
         }
       ]
@@ -1341,7 +2721,17 @@
       "name": "NetworkWatcher",
       "descriptions": {
         "zh-CN": "网络变化监听器",
-        "en-US": "Network change watcher"
+        "en-US": "Network change watcher",
+        "zh-TW": "網路變化監听器",
+        "ja": "ネットワーク変更監視",
+        "ko": "네트워크 변경 감시자",
+        "es": "Monitor de cambio de red",
+        "fr": "Surveillant de changement de réseau",
+        "de": "Netzwerkänderungsüberwachung",
+        "pt-BR": "Monitor de mudança de rede",
+        "ru": "Наблюдатель изменений сети",
+        "ar": "مراقب تغيير الشبكة",
+        "hi": "नेटवर्क परिवर्तन वॉचर"
       },
       "fields": [
         {
@@ -1349,7 +2739,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "监听器ID",
-            "en-US": "Watcher ID"
+            "en-US": "Watcher ID",
+            "zh-TW": "監听器ID",
+            "ja": "ウォッチャーID",
+            "ko": "감시자 ID",
+            "es": "ID del vigilante",
+            "fr": "ID du surveillant",
+            "de": "Wächter-ID",
+            "pt-BR": "ID do monitor",
+            "ru": "ID наблюдателя",
+            "ar": "معرّف المراقب",
+            "hi": "वॉचर ID"
           }
         }
       ]
@@ -1360,7 +2760,17 @@
       "name": "network_change",
       "descriptions": {
         "zh-CN": "网络状态变更",
-        "en-US": "Network state changed"
+        "en-US": "Network state changed",
+        "zh-TW": "網路狀態變更",
+        "ja": "ネットワーク状態が変更されました",
+        "ko": "네트워크 상태가 변경됨",
+        "es": "Estado de red cambiado",
+        "fr": "État du réseau modifié",
+        "de": "Netzwerkstatus geändert",
+        "pt-BR": "Estado da rede alterado",
+        "ru": "Состояние сети изменено",
+        "ar": "تم تغيير حالة الشبكة",
+        "hi": "नेटवर्क स्थिति बदल गई"
       },
       "payload": [
         {
@@ -1368,7 +2778,17 @@
           "type": "boolean",
           "descs": {
             "zh-CN": "是否在线",
-            "en-US": "Is online"
+            "en-US": "Is online",
+            "zh-TW": "是否在線",
+            "ja": "オンラインかどうか",
+            "ko": "온라인 여부",
+            "es": "Está en línea",
+            "fr": "Est en ligne",
+            "de": "Ist online",
+            "pt-BR": "Está online",
+            "ru": "В сети",
+            "ar": "متصل بالإنترنت",
+            "hi": "ऑनलाइन है"
           }
         }
       ]
@@ -1377,7 +2797,17 @@
       "name": "tcp_data",
       "descriptions": {
         "zh-CN": "TCP接收到数据",
-        "en-US": "TCP data received"
+        "en-US": "TCP data received",
+        "zh-TW": "TCP接收到數據",
+        "ja": "TCPデータ受信",
+        "ko": "TCP 데이터 수신됨",
+        "es": "Datos TCP recibidos",
+        "fr": "Données TCP reçues",
+        "de": "TCP-Daten empfangen",
+        "pt-BR": "Dados TCP recebidos",
+        "ru": "TCP-данные получены",
+        "ar": "تم استلام بيانات TCP",
+        "hi": "TCP डेटा प्राप्त"
       },
       "payload": [
         {
@@ -1385,7 +2815,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "连接ID",
-            "en-US": "Connection ID"
+            "en-US": "Connection ID",
+            "zh-TW": "連接ID",
+            "ja": "接続ID",
+            "ko": "연결 ID",
+            "es": "ID de conexión",
+            "fr": "ID de connexion",
+            "de": "Verbindungs-ID",
+            "pt-BR": "ID de conexão",
+            "ru": "ID соединения",
+            "ar": "معرف الاتصال",
+            "hi": "कनेक्शन ID"
           }
         },
         {
@@ -1393,7 +2833,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "接收的数据内容",
-            "en-US": "Received data content"
+            "en-US": "Received data content",
+            "zh-TW": "接收的資料內容",
+            "ja": "受信データ内容",
+            "ko": "수신 데이터 내용",
+            "es": "Contenido de datos recibidos",
+            "fr": "Contenu des données reçues",
+            "de": "Empfangener Dateninhalt",
+            "pt-BR": "Conteúdo dos dados recebidos",
+            "ru": "Содержимое полученных данных",
+            "ar": "محتوى البيانات المستلمة",
+            "hi": "प्राप्त डेटा सामग्री"
           }
         }
       ]
@@ -1402,7 +2852,17 @@
       "name": "udp_data",
       "descriptions": {
         "zh-CN": "UDP接收到数据",
-        "en-US": "UDP data received"
+        "en-US": "UDP data received",
+        "zh-TW": "UDP接收到數據",
+        "ja": "UDPデータ受信",
+        "ko": "UDP 데이터 수신됨",
+        "es": "Datos UDP recibidos",
+        "fr": "Données UDP reçues",
+        "de": "UDP-Daten empfangen",
+        "pt-BR": "Dados UDP recebidos",
+        "ru": "UDP-данные получены",
+        "ar": "تم استلام بيانات UDP",
+        "hi": "UDP डेटा प्राप्त"
       },
       "payload": [
         {
@@ -1410,7 +2870,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "Socket ID",
-            "en-US": "Socket ID"
+            "en-US": "Socket ID",
+            "zh-TW": "Socket ID",
+            "ja": "ソケットID",
+            "ko": "소켓 ID",
+            "es": "ID de socket",
+            "fr": "ID de socket",
+            "de": "Socket-ID",
+            "pt-BR": "ID do socket",
+            "ru": "ID сокета",
+            "ar": "معرف المقبس",
+            "hi": "सॉकेट ID"
           }
         },
         {
@@ -1418,7 +2888,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "接收的数据",
-            "en-US": "Received data"
+            "en-US": "Received data",
+            "zh-TW": "接收的資料",
+            "ja": "受信データ",
+            "ko": "수신 데이터",
+            "es": "Datos recibidos",
+            "fr": "Données reçues",
+            "de": "Empfangene Daten",
+            "pt-BR": "Dados recebidos",
+            "ru": "Полученные данные",
+            "ar": "البيانات المستلمة",
+            "hi": "प्राप्त डेटा"
           }
         },
         {
@@ -1426,7 +2906,17 @@
           "type": "string",
           "descs": {
             "zh-CN": "发送方地址",
-            "en-US": "Sender address"
+            "en-US": "Sender address",
+            "zh-TW": "發送方地址",
+            "ja": "送信元アドレス",
+            "ko": "발신자 주소",
+            "es": "Dirección del remitente",
+            "fr": "Adresse de l'expéditeur",
+            "de": "Absenderadresse",
+            "pt-BR": "Endereço do remetente",
+            "ru": "Адрес отправителя",
+            "ar": "عنوان المرسل",
+            "hi": "प्रेषक पता"
           }
         }
       ]
@@ -1438,7 +2928,17 @@
       "value": "tcp",
       "descs": {
         "zh-CN": "TCP协议",
-        "en-US": "TCP protocol"
+        "en-US": "TCP protocol",
+        "zh-TW": "TCP協議",
+        "ja": "TCPプロトコル",
+        "ko": "TCP 프로토콜",
+        "es": "Protocolo TCP",
+        "fr": "Protocole TCP",
+        "de": "TCP-Protokoll",
+        "pt-BR": "Protocolo TCP",
+        "ru": "Протокол TCP",
+        "ar": "بروتوكول TCP",
+        "hi": "TCP प्रोटोकॉल"
       },
       "type": "string"
     },
@@ -1447,7 +2947,17 @@
       "value": "udp",
       "descs": {
         "zh-CN": "UDP协议",
-        "en-US": "UDP protocol"
+        "en-US": "UDP protocol",
+        "zh-TW": "UDP協議",
+        "ja": "UDPプロトコル",
+        "ko": "UDP 프로토콜",
+        "es": "Protocolo UDP",
+        "fr": "Protocole UDP",
+        "de": "UDP-Protokoll",
+        "pt-BR": "Protocolo UDP",
+        "ru": "Протокол UDP",
+        "ar": "بروتوكول UDP",
+        "hi": "UDP प्रोटोकॉल"
       },
       "type": "string"
     }
