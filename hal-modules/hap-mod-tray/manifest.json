@@ -480,6 +480,25 @@
       },
       "group": "display",
       "description": "List all created tray icon instances"
+    },
+    {
+      "name": "poll_events",
+      "symbol": "hap_tray_poll_events",
+      "params": [],
+      "returns": {
+        "type": "array",
+        "descs": {
+          "zh-CN": "未处理的菜单点击事件ID列表",
+          "en-US": "List of unhandled menu click event IDs"
+        }
+      },
+      "bridge_path": "tray.poll_events",
+      "descriptions": {
+        "zh-CN": "轮询获取托盘菜单点击事件",
+        "en-US": "Poll tray menu click events"
+      },
+      "group": "event",
+      "description": "Poll tray menu click events"
     }
   ],
   "overviews": {

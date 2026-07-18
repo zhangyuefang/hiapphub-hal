@@ -1,4 +1,6 @@
 pub mod funcs;
+#[cfg(target_os = "macos")]
+pub mod macos;
 use hap_common::ffi::str_to_c;
 use std::ffi::c_char;
 hap_common::hap_module_init!("tray");
@@ -20,7 +22,7 @@ mod tests {
         let s = unsafe { CStr::from_ptr(ptr) }.to_str().unwrap();
         let v: serde_json::Value = serde_json::from_str(s).unwrap();
         assert_eq!(v["name"], "tray");
-        assert_eq!(v["functions"].as_array().unwrap().len(), 12);
+        assert_eq!(v["functions"].as_array().unwrap().len(), 13);
         unsafe { free_c_string(ptr as *mut _); }
     }
 }
