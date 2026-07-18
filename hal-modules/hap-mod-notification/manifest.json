@@ -10,7 +10,17 @@
   "category": "system",
   "descriptions": {
     "zh-CN": "系统通知模块",
-    "en-US": "System notification module"
+    "en-US": "System notification module",
+    "zh-TW": "通知模組",
+    "ja": "通知モジュール",
+    "ko": "알림 모듈",
+    "es": "Módulo de notificaciones",
+    "fr": "Module de notifications",
+    "de": "Benachrichtigungsmodul",
+    "pt-BR": "Módulo de notificações",
+    "ru": "Модуль уведомлений",
+    "ar": "وحدة الإشعارات",
+    "hi": "सूचना मॉड्यूल"
   },
   "permission": "",
   "functions": [

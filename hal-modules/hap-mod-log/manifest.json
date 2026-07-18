@@ -10,7 +10,17 @@
   "category": "system",
   "descriptions": {
     "zh-CN": "日志模块",
-    "en-US": "Logging module"
+    "en-US": "Logging module",
+    "zh-TW": "日誌模組",
+    "ja": "ログモジュール",
+    "ko": "로그 모듈",
+    "es": "Módulo de registros",
+    "fr": "Module de journalisation",
+    "de": "Protokollmodul",
+    "pt-BR": "Módulo de logs",
+    "ru": "Модуль логирования",
+    "ar": "وحدة السجلات",
+    "hi": "लॉग मॉड्यूल"
   },
   "permission": "",
   "functions": [

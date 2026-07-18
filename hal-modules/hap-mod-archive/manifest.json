@@ -10,7 +10,17 @@
   "category": "files",
   "descriptions": {
     "zh-CN": "压缩/解压模块",
-    "en-US": "Archive compress/decompress module"
+    "en-US": "Archive compress/decompress module",
+    "zh-TW": "壓縮檔模組",
+    "ja": "アーカイブモジュール",
+    "ko": "압축 모듈",
+    "es": "Módulo de archivos comprimidos",
+    "fr": "Module d'archivage",
+    "de": "Archivierungsmodul",
+    "pt-BR": "Módulo de compactação",
+    "ru": "Модуль архивирования",
+    "ar": "وحدة الأرشيف",
+    "hi": "आर्काइव मॉड्यूल"
   },
   "permission": "archive",
   "functions": [

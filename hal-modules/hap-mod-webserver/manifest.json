@@ -10,7 +10,17 @@
   "category": "network",
   "descriptions": {
     "zh-CN": "Web服务模块",
-    "en-US": "Web server module"
+    "en-US": "Web server module",
+    "zh-TW": "網頁伺服器模組",
+    "ja": "ウェブサーバーモジュール",
+    "ko": "웹 서버 모듈",
+    "es": "Módulo de servidor web",
+    "fr": "Module de serveur web",
+    "de": "Webserver-Modul",
+    "pt-BR": "Módulo de servidor web",
+    "ru": "Модуль веб-сервера",
+    "ar": "وحدة خادم الويب",
+    "hi": "वेब सर्वर मॉड्यूल"
   },
   "permission": "network",
   "functions": [

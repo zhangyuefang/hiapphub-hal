@@ -10,7 +10,17 @@
   "category": "database",
   "descriptions": {
     "zh-CN": "SQLite数据库模块",
-    "en-US": "SQLite database module"
+    "en-US": "SQLite database module",
+    "zh-TW": "SQLite 資料庫模組",
+    "ja": "SQLiteデータベースモジュール",
+    "ko": "SQLite 데이터베이스 모듈",
+    "es": "Módulo de base de datos SQLite",
+    "fr": "Module de base de données SQLite",
+    "de": "SQLite-Datenbankmodul",
+    "pt-BR": "Módulo de banco de dados SQLite",
+    "ru": "Модуль базы данных SQLite",
+    "ar": "وحدة قاعدة بيانات SQLite",
+    "hi": "SQLite डेटाबेस मॉड्यूल"
   },
   "permission": "database",
   "functions": [

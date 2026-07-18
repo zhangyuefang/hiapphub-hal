@@ -10,7 +10,17 @@
   "category": "files",
   "descriptions": {
     "zh-CN": "编码转换模块",
-    "en-US": "Encoding conversion module"
+    "en-US": "Encoding conversion module",
+    "zh-TW": "編碼轉換模組",
+    "ja": "エンコーディング変換モジュール",
+    "ko": "인코딩 변환 모듈",
+    "es": "Módulo de conversión de codificación",
+    "fr": "Module de conversion d'encodage",
+    "de": "Kodierungskonvertierungsmodul",
+    "pt-BR": "Módulo de conversão de codificação",
+    "ru": "Модуль преобразования кодировок",
+    "ar": "وحدة تحويل الترميز",
+    "hi": "एन्कोडिंग रूपांतरण मॉड्यूल"
   },
   "permission": "",
   "functions": [

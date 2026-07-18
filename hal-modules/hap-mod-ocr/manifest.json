@@ -10,7 +10,17 @@
   "category": "media",
   "descriptions": {
     "zh-CN": "文字识别(OCR)模块",
-    "en-US": "Optical Character Recognition module"
+    "en-US": "Optical Character Recognition module",
+    "zh-TW": "文字辨識模組",
+    "ja": "OCRモジュール",
+    "ko": "OCR 모듈",
+    "es": "Módulo OCR",
+    "fr": "Module OCR",
+    "de": "OCR-Modul",
+    "pt-BR": "Módulo OCR",
+    "ru": "Модуль OCR",
+    "ar": "وحدة التعرف على النصوص",
+    "hi": "OCR मॉड्यूल"
   },
   "overviews": {
     "zh-CN": "提供本地OCR文字识别能力，支持图片文字提取、区域识别、多语言识别、表格识别等功能。调用系统原生OCR引擎（macOS Vision/Windows OCR/Linux Tesseract）。",

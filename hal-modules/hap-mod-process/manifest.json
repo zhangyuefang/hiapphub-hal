@@ -10,7 +10,17 @@
   "category": "system",
   "descriptions": {
     "zh-CN": "进程管理模块",
-    "en-US": "Process management module"
+    "en-US": "Process management module",
+    "zh-TW": "進程管理模組",
+    "ja": "プロセス管理モジュール",
+    "ko": "프로세스 관리 모듈",
+    "es": "Módulo de gestión de procesos",
+    "fr": "Module de gestion de processus",
+    "de": "Prozessverwaltungsmodul",
+    "pt-BR": "Módulo de gerenciamento de processos",
+    "ru": "Модуль управления процессами",
+    "ar": "وحدة إدارة العمليات",
+    "hi": "प्रोसेस प्रबंधन मॉड्यूल"
   },
   "permission": "process",
   "functions": [

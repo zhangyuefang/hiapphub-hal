@@ -10,7 +10,17 @@
   "category": "security",
   "descriptions": {
     "zh-CN": "密钥/凭据管理模块",
-    "en-US": "Keychain credential management module"
+    "en-US": "Keychain credential management module",
+    "zh-TW": "鑰匙串模組",
+    "ja": "キーチェーンモジュール",
+    "ko": "키체인 모듈",
+    "es": "Módulo de llavero",
+    "fr": "Module trousseau",
+    "de": "Schlüsselbund-Modul",
+    "pt-BR": "Módulo de chaveiro",
+    "ru": "Модуль связки ключей",
+    "ar": "وحدة سلسلة المفاتيح",
+    "hi": "कीचेन मॉड्यूल"
   },
   "permission": "keychain",
   "functions": [

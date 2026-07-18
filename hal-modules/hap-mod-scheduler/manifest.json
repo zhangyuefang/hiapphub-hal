@@ -10,7 +10,17 @@
   "category": "utility",
   "descriptions": {
     "zh-CN": "定时任务模块",
-    "en-US": "Task scheduler module"
+    "en-US": "Task scheduler module",
+    "zh-TW": "排程模組",
+    "ja": "スケジューラモジュール",
+    "ko": "스케줄러 모듈",
+    "es": "Módulo de programador",
+    "fr": "Module planificateur",
+    "de": "Planer-Modul",
+    "pt-BR": "Módulo de agendador",
+    "ru": "Модуль планировщика",
+    "ar": "وحدة الجدولة",
+    "hi": "शेड्यूलर मॉड्यूल"
   },
   "overviews": {
     "zh-CN": "提供定时任务调度能力，支持Cron表达式、一次性延时任务、周期性任务、任务管理等功能。",

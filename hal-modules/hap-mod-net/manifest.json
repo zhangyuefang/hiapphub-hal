@@ -10,7 +10,17 @@
   "category": "network",
   "descriptions": {
     "zh-CN": "低级网络模块",
-    "en-US": "Low-level network module"
+    "en-US": "Low-level network module",
+    "zh-TW": "網路模組",
+    "ja": "ネットワークモジュール",
+    "ko": "네트워크 모듈",
+    "es": "Módulo de red",
+    "fr": "Module réseau",
+    "de": "Netzwerk-Modul",
+    "pt-BR": "Módulo de rede",
+    "ru": "Сетевой модуль",
+    "ar": "وحدة الشبكة",
+    "hi": "नेटवर्क मॉड्यूल"
   },
   "permission": "network",
   "functions": [

@@ -10,7 +10,17 @@
   "category": "files",
   "descriptions": {
     "zh-CN": "Excel读写模块",
-    "en-US": "Excel read/write module"
+    "en-US": "Excel read/write module",
+    "zh-TW": "Excel 模組",
+    "ja": "Excelモジュール",
+    "ko": "Excel 모듈",
+    "es": "Módulo Excel",
+    "fr": "Module Excel",
+    "de": "Excel-Modul",
+    "pt-BR": "Módulo Excel",
+    "ru": "Модуль Excel",
+    "ar": "وحدة Excel",
+    "hi": "Excel मॉड्यूल"
   },
   "permission": "",
   "functions": [

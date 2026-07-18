@@ -10,7 +10,17 @@
   "category": "hardware",
   "descriptions": {
     "zh-CN": "蓝牙BLE通信模块",
-    "en-US": "Bluetooth BLE communication module"
+    "en-US": "Bluetooth BLE communication module",
+    "zh-TW": "藍牙模組",
+    "ja": "Bluetoothモジュール",
+    "ko": "블루투스 모듈",
+    "es": "Módulo Bluetooth",
+    "fr": "Module Bluetooth",
+    "de": "Bluetooth-Modul",
+    "pt-BR": "Módulo Bluetooth",
+    "ru": "Модуль Bluetooth",
+    "ar": "وحدة البلوتوث",
+    "hi": "ब्लूटूथ मॉड्यूल"
   },
   "overviews": {
     "zh-CN": "提供蓝牙低功耗(BLE)通信能力，支持设备扫描、连接、服务发现、特征值读写、通知订阅等功能。",

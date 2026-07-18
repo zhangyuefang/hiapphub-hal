@@ -10,7 +10,17 @@
   "category": "system",
   "descriptions": {
     "zh-CN": "剪贴板模块",
-    "en-US": "Clipboard module"
+    "en-US": "Clipboard module",
+    "zh-TW": "剪貼簿模組",
+    "ja": "クリップボードモジュール",
+    "ko": "클립보드 모듈",
+    "es": "Módulo de portapapeles",
+    "fr": "Module presse-papiers",
+    "de": "Zwischenablage-Modul",
+    "pt-BR": "Módulo de área de transferência",
+    "ru": "Модуль буфера обмена",
+    "ar": "وحدة الحافظة",
+    "hi": "क्लिपबोर्ड मॉड्यूल"
   },
   "permission": "",
   "functions": [

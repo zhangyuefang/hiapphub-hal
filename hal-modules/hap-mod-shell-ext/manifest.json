@@ -10,7 +10,17 @@
   "category": "system",
   "descriptions": {
     "zh-CN": "Shell扩展模块",
-    "en-US": "Shell extension module"
+    "en-US": "Shell extension module",
+    "zh-TW": "Shell 擴展模組",
+    "ja": "Shell拡張モジュール",
+    "ko": "셸 확장 모듈",
+    "es": "Módulo de extensión de shell",
+    "fr": "Module d'extension shell",
+    "de": "Shell-Erweiterungsmodul",
+    "pt-BR": "Módulo de extensão shell",
+    "ru": "Модуль расширения оболочки",
+    "ar": "وحدة امتداد الشل",
+    "hi": "शेल एक्सटेंशन मॉड्यूल"
   },
   "permission": "shell-ext",
   "functions": [

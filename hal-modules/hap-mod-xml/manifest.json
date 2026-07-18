@@ -10,7 +10,17 @@
   "category": "files",
   "descriptions": {
     "zh-CN": "XML处理模块",
-    "en-US": "XML processing module"
+    "en-US": "XML processing module",
+    "zh-TW": "XML 模組",
+    "ja": "XMLモジュール",
+    "ko": "XML 모듈",
+    "es": "Módulo XML",
+    "fr": "Module XML",
+    "de": "XML-Modul",
+    "pt-BR": "Módulo XML",
+    "ru": "Модуль XML",
+    "ar": "وحدة XML",
+    "hi": "XML मॉड्यूल"
   },
   "permission": "",
   "functions": [

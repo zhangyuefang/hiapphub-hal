@@ -10,7 +10,17 @@
   "category": "system",
   "descriptions": {
     "zh-CN": "串口通信模块",
-    "en-US": "Serial port communication module"
+    "en-US": "Serial port communication module",
+    "zh-TW": "串口模組",
+    "ja": "シリアルポートモジュール",
+    "ko": "시리얼 포트 모듈",
+    "es": "Módulo de puerto serie",
+    "fr": "Module port série",
+    "de": "Serielle-Schnittstelle-Modul",
+    "pt-BR": "Módulo de porta serial",
+    "ru": "Модуль последовательного порта",
+    "ar": "وحدة المنفذ التسلسلي",
+    "hi": "सीरियल पोर्ट मॉड्यूल"
   },
   "permission": "serial",
   "functions": [

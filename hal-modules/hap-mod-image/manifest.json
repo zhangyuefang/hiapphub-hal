@@ -10,7 +10,17 @@
   "category": "media",
   "descriptions": {
     "zh-CN": "图像处理模块",
-    "en-US": "Image processing module"
+    "en-US": "Image processing module",
+    "zh-TW": "圖像處理模組",
+    "ja": "画像処理モジュール",
+    "ko": "이미지 처리 모듈",
+    "es": "Módulo de procesamiento de imágenes",
+    "fr": "Module de traitement d'images",
+    "de": "Bildverarbeitungsmodul",
+    "pt-BR": "Módulo de processamento de imagens",
+    "ru": "Модуль обработки изображений",
+    "ar": "وحدة معالجة الصور",
+    "hi": "इमेज प्रोसेसिंग मॉड्यूल"
   },
   "permission": "",
   "functions": [

@@ -10,7 +10,17 @@
   "category": "media",
   "descriptions": {
     "zh-CN": "音频播放录制模块",
-    "en-US": "Audio playback and recording module"
+    "en-US": "Audio playback and recording module",
+    "zh-TW": "音訊模組",
+    "ja": "オーディオモジュール",
+    "ko": "오디오 모듈",
+    "es": "Módulo de audio",
+    "fr": "Module audio",
+    "de": "Audio-Modul",
+    "pt-BR": "Módulo de áudio",
+    "ru": "Аудио модуль",
+    "ar": "وحدة الصوت",
+    "hi": "ऑडियो मॉड्यूल"
   },
   "permission": "",
   "functions": [

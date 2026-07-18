@@ -10,7 +10,17 @@
   "category": "system",
   "descriptions": {
     "zh-CN": "窗口管理模块",
-    "en-US": "Window management module"
+    "en-US": "Window management module",
+    "zh-TW": "視窗管理模組",
+    "ja": "ウィンドウ管理モジュール",
+    "ko": "창 관리 모듈",
+    "es": "Módulo de gestión de ventanas",
+    "fr": "Module de gestion de fenêtres",
+    "de": "Fensterverwaltungsmodul",
+    "pt-BR": "Módulo de gerenciamento de janelas",
+    "ru": "Модуль управления окнами",
+    "ar": "وحدة إدارة النوافذ",
+    "hi": "विंडो प्रबंधन मॉड्यूल"
   },
   "overviews": {
     "zh-CN": "提供系统窗口管理能力，支持枚举窗口、置顶/移动/调整大小、最小化/最大化、获取窗口截图、焦点切换等功能。",

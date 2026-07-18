@@ -10,7 +10,17 @@
   "category": "database",
   "descriptions": {
     "zh-CN": "本地键值存储模块",
-    "en-US": "Local key-value storage module"
+    "en-US": "Local key-value storage module",
+    "zh-TW": "本地儲存模組",
+    "ja": "ローカルストレージモジュール",
+    "ko": "로컬 스토리지 모듈",
+    "es": "Módulo de almacenamiento local",
+    "fr": "Module de stockage local",
+    "de": "Lokales Speichermodul",
+    "pt-BR": "Módulo de armazenamento local",
+    "ru": "Модуль локального хранения",
+    "ar": "وحدة التخزين المحلي",
+    "hi": "लोकल स्टोरेज मॉड्यूल"
   },
   "permission": "storage",
   "functions": [

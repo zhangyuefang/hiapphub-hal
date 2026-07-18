@@ -10,7 +10,17 @@
   "category": "system",
   "descriptions": {
     "zh-CN": "全局快捷键模块",
-    "en-US": "Global shortcut module"
+    "en-US": "Global shortcut module",
+    "zh-TW": "快捷鍵模組",
+    "ja": "ショートカットモジュール",
+    "ko": "단축키 모듈",
+    "es": "Módulo de atajos",
+    "fr": "Module de raccourcis",
+    "de": "Tastenkürzel-Modul",
+    "pt-BR": "Módulo de atalhos",
+    "ru": "Модуль горячих клавиш",
+    "ar": "وحدة الاختصارات",
+    "hi": "शॉर्टकट मॉड्यूल"
   },
   "permission": "",
   "functions": [

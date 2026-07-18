@@ -10,7 +10,17 @@
   "category": "system",
   "descriptions": {
     "zh-CN": "系统托盘模块",
-    "en-US": "System tray module"
+    "en-US": "System tray module",
+    "zh-TW": "系統托盤模組",
+    "ja": "システムトレイモジュール",
+    "ko": "시스템 트레이 모듈",
+    "es": "Módulo de bandeja del sistema",
+    "fr": "Module de barre des tâches",
+    "de": "Systemtray-Modul",
+    "pt-BR": "Módulo de bandeja do sistema",
+    "ru": "Модуль системного трея",
+    "ar": "وحدة علبة النظام",
+    "hi": "सिस्टम ट्रे मॉड्यूल"
   },
   "permission": "",
   "functions": [

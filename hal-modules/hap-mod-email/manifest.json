@@ -10,7 +10,17 @@
   "category": "network",
   "descriptions": {
     "zh-CN": "邮件收发模块",
-    "en-US": "Email send/receive module"
+    "en-US": "Email send/receive module",
+    "zh-TW": "電子郵件模組",
+    "ja": "メールモジュール",
+    "ko": "이메일 모듈",
+    "es": "Módulo de correo electrónico",
+    "fr": "Module e-mail",
+    "de": "E-Mail-Modul",
+    "pt-BR": "Módulo de e-mail",
+    "ru": "Модуль электронной почты",
+    "ar": "وحدة البريد الإلكتروني",
+    "hi": "ईमेल मॉड्यूल"
   },
   "overviews": {
     "zh-CN": "提供邮件收发能力，支持SMTP发送、IMAP/POP3收取、附件处理、HTML邮件、多收件人等功能。",

@@ -10,7 +10,17 @@
   "category": "security",
   "descriptions": {
     "zh-CN": "加密/哈希/随机数能力模块",
-    "en-US": "Cryptography, hashing and random number module"
+    "en-US": "Cryptography, hashing and random number module",
+    "zh-TW": "加密模組",
+    "ja": "暗号化モジュール",
+    "ko": "암호화 모듈",
+    "es": "Módulo de criptografía",
+    "fr": "Module de cryptographie",
+    "de": "Kryptografie-Modul",
+    "pt-BR": "Módulo de criptografia",
+    "ru": "Модуль криптографии",
+    "ar": "وحدة التشفير",
+    "hi": "क्रिप्टोग्राफी मॉड्यूल"
   },
   "permission": "crypto",
   "functions": [

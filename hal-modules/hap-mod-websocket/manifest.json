@@ -10,7 +10,17 @@
   "category": "network",
   "descriptions": {
     "zh-CN": "WebSocket 客户端与服务端模块",
-    "en-US": "WebSocket client and server module"
+    "en-US": "WebSocket client and server module",
+    "zh-TW": "WebSocket 模組",
+    "ja": "WebSocketモジュール",
+    "ko": "WebSocket 모듈",
+    "es": "Módulo WebSocket",
+    "fr": "Module WebSocket",
+    "de": "WebSocket-Modul",
+    "pt-BR": "Módulo WebSocket",
+    "ru": "Модуль WebSocket",
+    "ar": "وحدة WebSocket",
+    "hi": "WebSocket मॉड्यूल"
   },
   "permission": "network",
   "functions": [

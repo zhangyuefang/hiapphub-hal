@@ -10,7 +10,17 @@
   "category": "files",
   "descriptions": {
     "zh-CN": "条码/二维码模块",
-    "en-US": "Barcode and QR code module"
+    "en-US": "Barcode and QR code module",
+    "zh-TW": "條碼模組",
+    "ja": "バーコードモジュール",
+    "ko": "바코드 모듈",
+    "es": "Módulo de código de barras",
+    "fr": "Module de codes-barres",
+    "de": "Barcode-Modul",
+    "pt-BR": "Módulo de código de barras",
+    "ru": "Модуль штрих-кодов",
+    "ar": "وحدة الباركود",
+    "hi": "बारकोड मॉड्यूल"
   },
   "overviews": {
     "zh-CN": "提供条码和二维码的生成与识别能力。支持 QR Code、EAN-13、Code 128、Data Matrix 等多种格式，可自定义尺寸、颜色、纠错等级。",

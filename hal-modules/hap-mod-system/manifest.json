@@ -10,7 +10,17 @@
   "category": "system",
   "descriptions": {
     "zh-CN": "系统信息模块",
-    "en-US": "System information module"
+    "en-US": "System information module",
+    "zh-TW": "系統資訊模組",
+    "ja": "システム情報モジュール",
+    "ko": "시스템 정보 모듈",
+    "es": "Módulo de información del sistema",
+    "fr": "Module d'information système",
+    "de": "Systeminformationsmodul",
+    "pt-BR": "Módulo de informações do sistema",
+    "ru": "Модуль системной информации",
+    "ar": "وحدة معلومات النظام",
+    "hi": "सिस्टम जानकारी मॉड्यूल"
   },
   "permission": "system",
   "functions": [

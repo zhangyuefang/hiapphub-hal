@@ -10,7 +10,17 @@
   "category": "hardware",
   "descriptions": {
     "zh-CN": "USB设备通信模块",
-    "en-US": "USB device communication module"
+    "en-US": "USB device communication module",
+    "zh-TW": "USB 模組",
+    "ja": "USBモジュール",
+    "ko": "USB 모듈",
+    "es": "Módulo USB",
+    "fr": "Module USB",
+    "de": "USB-Modul",
+    "pt-BR": "Módulo USB",
+    "ru": "Модуль USB",
+    "ar": "وحدة USB",
+    "hi": "USB मॉड्यूल"
   },
   "overviews": {
     "zh-CN": "提供USB设备通信能力，支持设备枚举、HID读写、批量传输、设备信息查询等功能。",

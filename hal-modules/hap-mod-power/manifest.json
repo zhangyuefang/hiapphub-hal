@@ -10,7 +10,17 @@
   "category": "system",
   "descriptions": {
     "zh-CN": "电源管理模块",
-    "en-US": "Power management module"
+    "en-US": "Power management module",
+    "zh-TW": "電源管理模組",
+    "ja": "電源管理モジュール",
+    "ko": "전원 관리 모듈",
+    "es": "Módulo de gestión de energía",
+    "fr": "Module de gestion d'énergie",
+    "de": "Energieverwaltungsmodul",
+    "pt-BR": "Módulo de gerenciamento de energia",
+    "ru": "Модуль управления питанием",
+    "ar": "وحدة إدارة الطاقة",
+    "hi": "पावर प्रबंधन मॉड्यूल"
   },
   "permission": "power",
   "functions": [

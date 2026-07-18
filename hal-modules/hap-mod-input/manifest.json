@@ -10,7 +10,17 @@
   "category": "automation",
   "descriptions": {
     "zh-CN": "模拟输入模块",
-    "en-US": "Input simulation module"
+    "en-US": "Input simulation module",
+    "zh-TW": "輸入自動化模組",
+    "ja": "入力自動化モジュール",
+    "ko": "입력 자동화 모듈",
+    "es": "Módulo de automatización de entrada",
+    "fr": "Module d'automatisation de saisie",
+    "de": "Eingabeautomatisierungsmodul",
+    "pt-BR": "Módulo de automação de entrada",
+    "ru": "Модуль автоматизации ввода",
+    "ar": "وحدة أتمتة الإدخال",
+    "hi": "इनपुट ऑटोमेशन मॉड्यूल"
   },
   "overviews": {
     "zh-CN": "提供键盘和鼠标模拟输入能力，支持按键模拟、文本输入、鼠标移动/点击/拖拽、组合键、滚轮操作等自动化功能。",

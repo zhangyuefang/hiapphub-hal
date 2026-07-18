@@ -10,7 +10,17 @@
   "category": "media",
   "descriptions": {
     "zh-CN": "屏幕截图/信息模块",
-    "en-US": "Screen capture and info module"
+    "en-US": "Screen capture and info module",
+    "zh-TW": "螢幕擷取模組",
+    "ja": "スクリーンキャプチャモジュール",
+    "ko": "화면 캡처 모듈",
+    "es": "Módulo de captura de pantalla",
+    "fr": "Module de capture d'écran",
+    "de": "Bildschirmaufnahme-Modul",
+    "pt-BR": "Módulo de captura de tela",
+    "ru": "Модуль захвата экрана",
+    "ar": "وحدة التقاط الشاشة",
+    "hi": "स्क्रीन कैप्चर मॉड्यूल"
   },
   "permission": "screen",
   "functions": [

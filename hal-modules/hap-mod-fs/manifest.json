@@ -10,7 +10,17 @@
   "category": "files",
   "descriptions": {
     "zh-CN": "文件系统模块",
-    "en-US": "File system module"
+    "en-US": "File system module",
+    "zh-TW": "檔案系統模組",
+    "ja": "ファイルシステムモジュール",
+    "ko": "파일 시스템 모듈",
+    "es": "Módulo de sistema de archivos",
+    "fr": "Module système de fichiers",
+    "de": "Dateisystem-Modul",
+    "pt-BR": "Módulo de sistema de arquivos",
+    "ru": "Модуль файловой системы",
+    "ar": "وحدة نظام الملفات",
+    "hi": "फ़ाइल सिस्टम मॉड्यूल"
   },
   "permission": "fs",
   "functions": [

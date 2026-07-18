@@ -10,7 +10,17 @@
   "category": "files",
   "descriptions": {
     "zh-CN": "CSV读写模块",
-    "en-US": "CSV read/write module"
+    "en-US": "CSV read/write module",
+    "zh-TW": "CSV 模組",
+    "ja": "CSVモジュール",
+    "ko": "CSV 모듈",
+    "es": "Módulo CSV",
+    "fr": "Module CSV",
+    "de": "CSV-Modul",
+    "pt-BR": "Módulo CSV",
+    "ru": "Модуль CSV",
+    "ar": "وحدة CSV",
+    "hi": "CSV मॉड्यूल"
   },
   "permission": "",
   "functions": [

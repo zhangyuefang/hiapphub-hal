@@ -10,7 +10,17 @@
   "category": "network",
   "descriptions": {
     "zh-CN": "HTTP客户端模块",
-    "en-US": "HTTP client module"
+    "en-US": "HTTP client module",
+    "zh-TW": "HTTP 模組",
+    "ja": "HTTPモジュール",
+    "ko": "HTTP 모듈",
+    "es": "Módulo HTTP",
+    "fr": "Module HTTP",
+    "de": "HTTP-Modul",
+    "pt-BR": "Módulo HTTP",
+    "ru": "Модуль HTTP",
+    "ar": "وحدة HTTP",
+    "hi": "HTTP मॉड्यूल"
   },
   "permission": "network",
   "functions": [

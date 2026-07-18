@@ -10,7 +10,17 @@
   "category": "system",
   "descriptions": {
     "zh-CN": "日期时间模块",
-    "en-US": "Date and time module"
+    "en-US": "Date and time module",
+    "zh-TW": "日期時間模組",
+    "ja": "日時モジュール",
+    "ko": "날짜/시간 모듈",
+    "es": "Módulo de fecha y hora",
+    "fr": "Module date et heure",
+    "de": "Datum-Zeit-Modul",
+    "pt-BR": "Módulo de data e hora",
+    "ru": "Модуль даты и времени",
+    "ar": "وحدة التاريخ والوقت",
+    "hi": "दिनांक समय मॉड्यूल"
   },
   "permission": "",
   "functions": [

@@ -10,7 +10,17 @@
   "category": "automation",
   "descriptions": {
     "zh-CN": "浏览器自动化模块（CDP协议）",
-    "en-US": "Browser automation module (CDP protocol)"
+    "en-US": "Browser automation module (CDP protocol)",
+    "zh-TW": "瀏覽器自動化模組",
+    "ja": "ブラウザ自動化モジュール",
+    "ko": "브라우저 자동화 모듈",
+    "es": "Módulo de automatización de navegador",
+    "fr": "Module d'automatisation de navigateur",
+    "de": "Browserautomatisierungsmodul",
+    "pt-BR": "Módulo de automação de navegador",
+    "ru": "Модуль автоматизации браузера",
+    "ar": "وحدة أتمتة المتصفح",
+    "hi": "ब्राउज़र ऑटोमेशन मॉड्यूल"
   },
   "overviews": {
     "zh-CN": "通过Chrome DevTools Protocol控制外部浏览器，支持页面导航、元素操作、截图、Cookie管理、JavaScript执行、网络拦截等自动化能力。",

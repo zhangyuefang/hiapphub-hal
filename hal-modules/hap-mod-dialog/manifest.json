@@ -10,7 +10,17 @@
   "category": "system",
   "descriptions": {
     "zh-CN": "原生对话框模块",
-    "en-US": "Native dialog module"
+    "en-US": "Native dialog module",
+    "zh-TW": "對話框模組",
+    "ja": "ダイアログモジュール",
+    "ko": "대화상자 모듈",
+    "es": "Módulo de diálogos",
+    "fr": "Module de dialogues",
+    "de": "Dialog-Modul",
+    "pt-BR": "Módulo de diálogos",
+    "ru": "Модуль диалогов",
+    "ar": "وحدة مربعات الحوار",
+    "hi": "डायलॉग मॉड्यूल"
   },
   "permission": "",
   "functions": [

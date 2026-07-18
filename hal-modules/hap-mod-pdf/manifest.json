@@ -10,7 +10,17 @@
   "category": "media",
   "descriptions": {
     "zh-CN": "PDF处理模块",
-    "en-US": "PDF processing module"
+    "en-US": "PDF processing module",
+    "zh-TW": "PDF 模組",
+    "ja": "PDFモジュール",
+    "ko": "PDF 모듈",
+    "es": "Módulo PDF",
+    "fr": "Module PDF",
+    "de": "PDF-Modul",
+    "pt-BR": "Módulo PDF",
+    "ru": "Модуль PDF",
+    "ar": "وحدة PDF",
+    "hi": "PDF मॉड्यूल"
   },
   "permission": "",
   "functions": [
