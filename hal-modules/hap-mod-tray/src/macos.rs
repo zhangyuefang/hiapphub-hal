@@ -1,12 +1,15 @@
+#![allow(deprecated, clippy::all)]
+#[allow(unexpected_cfgs)]
+
 use cocoa::base::{id, nil, NO, YES};
 use cocoa::foundation::{NSAutoreleasePool, NSString, NSData, NSSize};
-use cocoa::appkit::{NSImage, NSStatusBar, NSMenu, NSMenuItem, NSVariableStatusItemLength};
+#[allow(unused_imports)]
+use cocoa::appkit::{NSMenu, NSMenuItem, NSVariableStatusItemLength};
 use hap_common::HapError;
 use objc::declare::ClassDecl;
-use objc::runtime::{Class, Object, Sel, BOOL};
+use objc::runtime::{Class, Object, Sel};
 use objc::{msg_send, sel, sel_impl, class};
 use serde_json::Value;
-use std::ffi::CString;
 use std::sync::Once;
 
 use crate::funcs::push_menu_event;
@@ -78,7 +81,7 @@ unsafe fn set_default_icon(item: id) {
             }
         }
     }
-    let ns_data = NSData::dataWithBytes_length_(nil, rgba.as_ptr() as *const _, rgba.len() as u64);
+    let _ns_data = NSData::dataWithBytes_length_(nil, rgba.as_ptr() as *const _, rgba.len() as u64);
     let bmp_rep: id = msg_send![class!(NSBitmapImageRep), alloc];
     let bmp_rep: id = msg_send![bmp_rep, initWithBitmapDataPlanes: std::ptr::null_mut::<*mut u8>()
         pixelsWide: size as isize

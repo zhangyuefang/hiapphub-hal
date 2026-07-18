@@ -1,3 +1,5 @@
+#![allow(deprecated, unused_imports)]
+
 pub mod funcs;
 #[cfg(target_os = "macos")]
 pub mod macos;
