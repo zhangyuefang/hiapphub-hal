@@ -1111,6 +1111,44 @@
       "description": "Server clients of WebSocket"
     },
     {
+      "name": "server_recv",
+      "symbol": "hap_ws_server_recv",
+      "group": "server",
+      "descriptions": {
+        "zh-CN": "接收客户端消息",
+        "en-US": "Receive messages from clients",
+        "zh-TW": "接收客戶端消息",
+        "ja": "クライアントメッセージを受信",
+        "ko": "클라이언트 메시지 수신",
+        "es": "Recibir mensajes de clientes",
+        "fr": "Recevoir des messages des clients",
+        "de": "Nachrichten von Clients empfangen",
+        "pt-BR": "Receber mensagens de clientes",
+        "ru": "Получить сообщения от клиентов",
+        "ar": "استقبال رسائل من العملاء",
+        "hi": "क्लाइंट से संदेश प्राप्त करें"
+      },
+      "params": [
+        {
+          "name": "server_id",
+          "type": "string",
+          "descs": { "zh-CN": "服务器 ID", "en-US": "Server ID" }
+        },
+        {
+          "name": "limit",
+          "type": "number",
+          "optional": true,
+          "descs": { "zh-CN": "最大数量", "en-US": "Max count" }
+        }
+      ],
+      "returns": {
+        "type": "array",
+        "descs": { "zh-CN": "消息列表", "en-US": "Message list" }
+      },
+      "bridge_path": "websocket.serverRecv",
+      "description": "Receive buffered messages from connected clients"
+    },
+    {
       "name": "server_disconnect",
       "symbol": "hap_ws_server_disconnect",
       "group": "server",
