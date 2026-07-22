@@ -250,7 +250,7 @@ static WATCHERS: LazyLock<Mutex<HashMap<String, WatcherEntry>>> = LazyLock::new(
 pub struct WatchParams { pub path: String, pub recursive: Option<bool>, pub debounce_ms: Option<u32>, pub callback_id: String }
 hap_fn!(hap_fs_watch, WatchParams, |p| {
     let watcher_id = format!("watch-{}", uuid_hex());
-    let _cb_id = p.callback_id.clone();
+    let cb_id = p.callback_id.clone();
     let watcher = notify::recommended_watcher(move |res: Result<notify::Event, notify::Error>| {
         if let Ok(event) = res {
             let kind = match event.kind {
@@ -260,7 +260,8 @@ hap_fn!(hap_fs_watch, WatchParams, |p| {
                 _ => "other",
             };
             let paths: Vec<String> = event.paths.iter().map(|p| p.to_string_lossy().to_string()).collect();
-            let _event_json = serde_json::json!({"kind": kind, "paths": paths});
+            let event_json = serde_json::json!({"kind": kind, "paths": paths});
+            hap_common::context::emit_callback(&cb_id, &event_json.to_string());
         }
     }).map_err(|e| HapError::internal(e.to_string()))?;
     let mode = if p.recursive.unwrap_or(false) { RecursiveMode::Recursive } else { RecursiveMode::NonRecursive };

@@ -19,6 +19,7 @@ struct BufferedMessage {
 struct WsServer {
     running: Arc<AtomicBool>,
     clients: Arc<Mutex<HashMap<String, Arc<Mutex<WebSocket<TcpStream>>>>>>,
+    #[allow(dead_code)]
     addr: String,
 }
 
@@ -46,7 +47,7 @@ hap_fn!(hap_ws_server_listen, ListenParams, |p| {
 
     let run_flag = running.clone();
     let clients_ref = clients.clone();
-    let sid = server_id.clone();
+    let _sid = server_id.clone();
 
     let sid_for_buf = server_id.clone();
     std::thread::spawn(move || {
