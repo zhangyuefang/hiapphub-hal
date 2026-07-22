@@ -1077,6 +1077,87 @@
       "description": "Close stdin of process"
     },
     {
+      "name": "read_output",
+      "symbol": "hap_process_read_output",
+      "params": [
+        {
+          "name": "pid",
+          "type": "number",
+          "descs": {
+            "zh-CN": "进程ID",
+            "en-US": "Process ID",
+            "zh-TW": "進程ID",
+            "ja": "プロセスID",
+            "ko": "프로세스 ID",
+            "es": "ID de proceso",
+            "fr": "ID du processus",
+            "de": "Prozess-ID",
+            "pt-BR": "ID do processo",
+            "ru": "ID процесса",
+            "ar": "معرف العملية",
+            "hi": "प्रोसेस आईडी"
+          },
+          "desc": "Process ID"
+        },
+        {
+          "name": "max_bytes",
+          "type": "number",
+          "descs": {
+            "zh-CN": "最大读取字节数",
+            "en-US": "Maximum bytes to read",
+            "zh-TW": "最大讀取位元組數",
+            "ja": "最大読み取りバイト数",
+            "ko": "최대 읽기 바이트",
+            "es": "Máximo de bytes a leer",
+            "fr": "Octets maximum à lire",
+            "de": "Maximale Lesebytes",
+            "pt-BR": "Máximo de bytes a ler",
+            "ru": "Максимум байт для чтения",
+            "ar": "الحد الأقصى للبايتات للقراءة",
+            "hi": "पढ़ने के लिए अधिकतम बाइट्स"
+          },
+          "optional": true,
+          "desc": "Maximum bytes to read (default: 8192)"
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "descs": {
+          "zh-CN": "包含 stdout 和 stderr 内容的对象",
+          "en-US": "Object containing stdout and stderr content",
+          "zh-TW": "包含 stdout 和 stderr 內容的物件",
+          "ja": "stdoutとstderrの内容を含むオブジェクト",
+          "ko": "stdout 및 stderr 내용을 포함하는 객체",
+          "es": "Objeto con contenido de stdout y stderr",
+          "fr": "Objet contenant stdout et stderr",
+          "de": "Objekt mit stdout- und stderr-Inhalt",
+          "pt-BR": "Objeto contendo stdout e stderr",
+          "ru": "Объект с содержимым stdout и stderr",
+          "ar": "كائن يحتوي على stdout و stderr",
+          "hi": "stdout और stderr सामग्री वाला ऑब्जेक्ट"
+        },
+        "desc": "Object containing stdout and stderr content"
+      },
+      "bridge_path": "process.read_output",
+      "descriptions": {
+        "zh-CN": "读取子进程的 stdout 和 stderr 输出（非阻塞）",
+        "en-US": "Read stdout and stderr output from child process (non-blocking)",
+        "zh-TW": "讀取子進程的 stdout 和 stderr 輸出（非阻塞）",
+        "ja": "子プロセスのstdoutとstderrを読み取る（非ブロッキング）",
+        "ko": "자식 프로세스의 stdout 및 stderr 읽기 (비차단)",
+        "es": "Leer stdout y stderr del proceso hijo (no bloqueante)",
+        "fr": "Lire stdout et stderr du processus enfant (non bloquant)",
+        "de": "stdout und stderr des Kindprozesses lesen (nicht blockierend)",
+        "pt-BR": "Ler stdout e stderr do processo filho (não bloqueante)",
+        "ru": "Чтение stdout и stderr дочернего процесса (неблокирующее)",
+        "ar": "قراءة stdout و stderr من العملية الفرعية (غير حاجب)",
+        "hi": "चाइल्ड प्रोसेस से stdout और stderr पढ़ें (नॉन-ब्लॉकिंग)"
+      },
+      "async": false,
+      "group": "io",
+      "description": "Read stdout and stderr output from child process (non-blocking)"
+    },
+    {
       "name": "set_priority",
       "symbol": "hap_process_set_priority",
       "params": [

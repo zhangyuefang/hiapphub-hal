@@ -205,6 +205,63 @@ hap_fn!(hap_process_close_stdin, CloseStdinParams, |p| {
     Ok(json!(true))
 });
 
+// ---------- read_output ----------
+#[derive(Deserialize)] pub struct ReadOutputParams { pub pid: i32, pub max_bytes: Option<usize> }
+hap_fn!(hap_process_read_output, ReadOutputParams, |p| {
+    let uid = p.pid as u32;
+    let max = p.max_bytes.unwrap_or(8192);
+    let mut map = CHILDREN.lock().unwrap();
+    let entry = map.get_mut(&uid).ok_or_else(|| HapError::invalid_param("invalid pid"))?;
+
+    let mut stdout_data = Vec::new();
+    let mut stderr_data = Vec::new();
+
+    if let Some(ref mut out) = entry.child.stdout {
+        #[cfg(unix)]
+        {
+            use std::os::unix::io::AsRawFd;
+            let fd = out.as_raw_fd();
+            let flags = unsafe { libc::fcntl(fd, libc::F_GETFL) };
+            unsafe { libc::fcntl(fd, libc::F_SETFL, flags | libc::O_NONBLOCK) };
+            let mut buf = vec![0u8; max];
+            match std::io::Read::read(out, &mut buf) {
+                Ok(n) if n > 0 => stdout_data.extend_from_slice(&buf[..n]),
+                _ => {}
+            }
+            unsafe { libc::fcntl(fd, libc::F_SETFL, flags) };
+        }
+        #[cfg(not(unix))]
+        {
+            let _ = out;
+        }
+    }
+
+    if let Some(ref mut err) = entry.child.stderr {
+        #[cfg(unix)]
+        {
+            use std::os::unix::io::AsRawFd;
+            let fd = err.as_raw_fd();
+            let flags = unsafe { libc::fcntl(fd, libc::F_GETFL) };
+            unsafe { libc::fcntl(fd, libc::F_SETFL, flags | libc::O_NONBLOCK) };
+            let mut buf = vec![0u8; max];
+            match std::io::Read::read(err, &mut buf) {
+                Ok(n) if n > 0 => stderr_data.extend_from_slice(&buf[..n]),
+                _ => {}
+            }
+            unsafe { libc::fcntl(fd, libc::F_SETFL, flags) };
+        }
+        #[cfg(not(unix))]
+        {
+            let _ = err;
+        }
+    }
+
+    Ok(json!({
+        "stdout": String::from_utf8_lossy(&stdout_data),
+        "stderr": String::from_utf8_lossy(&stderr_data)
+    }))
+});
+
 // ---------- list ----------
 #[derive(Deserialize)] pub struct ListParams { #[allow(dead_code)] pub sort_by: Option<String> }
 hap_fn!(hap_process_list, ListParams, |_p| {

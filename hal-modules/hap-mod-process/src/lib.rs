@@ -33,7 +33,7 @@ mod tests {
         let s = unsafe { CStr::from_ptr(ptr) }.to_str().unwrap();
         let v: serde_json::Value = serde_json::from_str(s).unwrap();
         assert_eq!(v["name"], "process");
-        assert_eq!(v["functions"].as_array().unwrap().len(), 15);
+        assert_eq!(v["functions"].as_array().unwrap().len(), 16);
         unsafe { free_c_string(ptr as *mut _); }
     }
 
@@ -100,6 +100,17 @@ mod tests {
 
         let r3 = call(hap_process_wait, json!({"pid": pid, "timeout_ms": 3000}));
         assert_eq!(r3["timed_out"], false);
+    }
+
+    #[test]
+    fn test_read_output() {
+        let r = call(hap_process_spawn, json!({"command": "echo", "args": ["hello_output"]}));
+        let pid = r["pid"].as_u64().unwrap() as i32;
+        std::thread::sleep(std::time::Duration::from_millis(200));
+        let out = call(hap_process_read_output, json!({"pid": pid}));
+        let stdout = out["stdout"].as_str().unwrap_or("");
+        assert!(stdout.contains("hello_output"), "stdout should contain 'hello_output', got: {stdout}");
+        call(hap_process_wait, json!({"pid": pid, "timeout_ms": 1000}));
     }
 
     #[test]
