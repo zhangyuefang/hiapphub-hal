@@ -56,6 +56,7 @@ hap_fn!(hap_ws_server_listen, ListenParams, |p| {
             match listener.accept() {
                 Ok((stream, _addr)) => {
                     stream.set_nonblocking(false).ok();
+                    stream.set_read_timeout(Some(std::time::Duration::from_millis(100))).ok();
                     let ws = match accept(stream) {
                         Ok(ws) => ws,
                         Err(_) => continue,
@@ -80,7 +81,16 @@ hap_fn!(hap_ws_server_listen, ListenParams, |p| {
                                         queue.push(BufferedMessage { client_id: cid.clone(), message: text });
                                     }
                                 }
-                                Ok(Message::Close(_)) | Err(_) => {
+                                Ok(Message::Close(_)) => {
+                                    clients_inner.lock().unwrap().remove(&cid);
+                                    break;
+                                }
+                                Err(tungstenite::Error::Io(ref e))
+                                    if e.kind() == std::io::ErrorKind::WouldBlock
+                                        || e.kind() == std::io::ErrorKind::TimedOut => {
+                                    continue;
+                                }
+                                Err(_) => {
                                     clients_inner.lock().unwrap().remove(&cid);
                                     break;
                                 }
