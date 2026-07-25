@@ -172,3 +172,47 @@ hap_fn!(hap_image_get_pixel, GetPixelParams, |p| {
         "hex": format!("#{:02x}{:02x}{:02x}", pixel[0], pixel[1], pixel[2]),
     }))
 });
+
+// ---------- to_icon (multi-size ICO) ----------
+#[derive(Deserialize)]
+pub struct ToIconParams {
+    pub path: String,
+    pub output: String,
+    pub sizes: Option<Vec<u32>>,
+}
+hap_fn!(hap_image_to_icon, ToIconParams, |p| {
+    let img = load_img(&p.path)?;
+    let sizes = p.sizes.unwrap_or_else(|| vec![16, 32, 48, 64, 128, 256]);
+    if let Some(parent) = Path::new(&p.output).parent() { std::fs::create_dir_all(parent)?; }
+    let mut png_frames: Vec<Vec<u8>> = Vec::new();
+    for &s in &sizes {
+        let resized = img.resize_to_fill(s, s, image::imageops::FilterType::Lanczos3).to_rgba8();
+        let mut png_buf = std::io::Cursor::new(Vec::new());
+        resized.write_with_encoder(image::codecs::png::PngEncoder::new(&mut png_buf))
+            .map_err(|e| HapError::internal(e.to_string()))?;
+        png_frames.push(png_buf.into_inner());
+    }
+    let count = sizes.len() as u16;
+    let mut ico_buf: Vec<u8> = Vec::new();
+    ico_buf.extend_from_slice(&[0, 0, 1, 0]);
+    ico_buf.extend_from_slice(&count.to_le_bytes());
+    let mut data_offset = 6u32 + count as u32 * 16;
+    for (i, &s) in sizes.iter().enumerate() {
+        let w: u8 = if s >= 256 { 0 } else { s as u8 };
+        ico_buf.push(w);
+        ico_buf.push(w);
+        ico_buf.push(0);
+        ico_buf.push(0);
+        ico_buf.extend_from_slice(&1u16.to_le_bytes());
+        ico_buf.extend_from_slice(&32u16.to_le_bytes());
+        let size = png_frames[i].len() as u32;
+        ico_buf.extend_from_slice(&size.to_le_bytes());
+        ico_buf.extend_from_slice(&data_offset.to_le_bytes());
+        data_offset += size;
+    }
+    for frame in &png_frames {
+        ico_buf.extend_from_slice(frame);
+    }
+    std::fs::write(&p.output, &ico_buf)?;
+    Ok(json!({"sizes": sizes, "file_size": ico_buf.len() as i64}))
+});

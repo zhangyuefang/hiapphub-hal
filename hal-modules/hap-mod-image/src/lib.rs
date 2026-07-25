@@ -149,4 +149,18 @@ mod tests {
         assert_eq!(r["identical"], true);
         assert_eq!(r["similarity"], 1.0);
     }
+
+    #[test]
+    fn test_to_icon() {
+        let d = td("icon");
+        let src = create_test_image(&d);
+        let out = d.join("test.ico").to_string_lossy().to_string();
+        let r = call(hap_image_to_icon, json!({"path": &src, "output": &out}));
+        assert_eq!(r["sizes"], json!([16, 32, 48, 64, 128, 256]));
+        assert!(r["file_size"].as_i64().unwrap() > 0);
+        assert!(std::path::Path::new(&out).exists());
+        let data = std::fs::read(&out).unwrap();
+        assert_eq!(&data[0..4], &[0, 0, 1, 0]); // ICO magic
+        assert_eq!(u16::from_le_bytes([data[4], data[5]]), 6); // 6 frames
+    }
 }
