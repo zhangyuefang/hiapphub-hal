@@ -51,7 +51,7 @@ mod tests {
         let s = unsafe { CStr::from_ptr(ptr) }.to_str().unwrap();
         let v: serde_json::Value = serde_json::from_str(s).unwrap();
         assert_eq!(v["name"], "image");
-        assert!(v["functions"].as_array().unwrap().len() >= 41);
+        assert!(v["functions"].as_array().unwrap().len() >= 42);
         unsafe { free_c_string(ptr as *mut _); }
     }
 

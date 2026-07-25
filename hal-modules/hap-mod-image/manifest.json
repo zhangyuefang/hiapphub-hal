@@ -4278,6 +4278,120 @@
           }
         }
       ]
+    },
+    {
+      "name": "toIcon",
+      "symbol": "hap_image_to_icon",
+      "params": [
+        {
+          "name": "path",
+          "type": "string",
+          "descs": {
+            "zh-CN": "源图片路径",
+            "en-US": "Source image path",
+            "zh-TW": "來源圖片路徑",
+            "ja": "ソース画像パス",
+            "ko": "원본 이미지 경로",
+            "es": "Ruta de imagen fuente",
+            "fr": "Chemin de l'image source",
+            "de": "Quellbildpfad",
+            "pt-BR": "Caminho da imagem de origem",
+            "ru": "Путь к исходному изображению",
+            "ar": "مسار الصورة المصدر",
+            "hi": "स्रोत इमेज पथ"
+          }
+        },
+        {
+          "name": "output",
+          "type": "string",
+          "descs": {
+            "zh-CN": "输出ICO文件路径",
+            "en-US": "Output ICO file path",
+            "zh-TW": "輸出ICO檔案路徑",
+            "ja": "出力ICOファイルパス",
+            "ko": "출력 ICO 파일 경로",
+            "es": "Ruta del archivo ICO de salida",
+            "fr": "Chemin du fichier ICO de sortie",
+            "de": "Ausgabe-ICO-Dateipfad",
+            "pt-BR": "Caminho do arquivo ICO de saída",
+            "ru": "Путь выходного ICO-файла",
+            "ar": "مسار ملف ICO الناتج",
+            "hi": "आउटपुट ICO फ़ाइल पथ"
+          }
+        },
+        {
+          "name": "sizes",
+          "type": "array",
+          "optional": true,
+          "default": [16, 32, 48, 64, 128, 256],
+          "descs": {
+            "zh-CN": "图标尺寸数组(默认[16,32,48,64,128,256])",
+            "en-US": "Icon sizes array (default [16,32,48,64,128,256])",
+            "zh-TW": "圖標尺寸陣列(預設[16,32,48,64,128,256])",
+            "ja": "アイコンサイズ配列(デフォルト[16,32,48,64,128,256])",
+            "ko": "아이콘 크기 배열(기본값 [16,32,48,64,128,256])",
+            "es": "Array de tamaños de icono (predeterminado [16,32,48,64,128,256])",
+            "fr": "Tableau des tailles d'icônes (défaut [16,32,48,64,128,256])",
+            "de": "Icon-Größen-Array (Standard [16,32,48,64,128,256])",
+            "pt-BR": "Array de tamanhos de ícone (padrão [16,32,48,64,128,256])",
+            "ru": "Массив размеров иконок (по умолчанию [16,32,48,64,128,256])",
+            "ar": "مصفوفة أحجام الأيقونة (افتراضي [16,32,48,64,128,256])",
+            "hi": "आइकन आकार सरणी (डिफ़ॉल्ट [16,32,48,64,128,256])"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "name": "sizes",
+          "type": "array",
+          "descs": {
+            "zh-CN": "生成的尺寸列表",
+            "en-US": "Generated sizes list",
+            "zh-TW": "產生的尺寸列表",
+            "ja": "生成されたサイズリスト",
+            "ko": "생성된 크기 목록",
+            "es": "Lista de tamaños generados",
+            "fr": "Liste des tailles générées",
+            "de": "Generierte Größenliste",
+            "pt-BR": "Lista de tamanhos gerados",
+            "ru": "Список сгенерированных размеров",
+            "ar": "قائمة الأحجام المولدة",
+            "hi": "उत्पन्न आकार सूची"
+          }
+        },
+        {
+          "name": "file_size",
+          "type": "integer",
+          "descs": {
+            "zh-CN": "ICO文件大小(字节)",
+            "en-US": "ICO file size in bytes",
+            "zh-TW": "ICO檔案大小(位元組)",
+            "ja": "ICOファイルサイズ(バイト)",
+            "ko": "ICO 파일 크기(바이트)",
+            "es": "Tamaño del archivo ICO en bytes",
+            "fr": "Taille du fichier ICO en octets",
+            "de": "ICO-Dateigröße in Bytes",
+            "pt-BR": "Tamanho do arquivo ICO em bytes",
+            "ru": "Размер ICO-файла в байтах",
+            "ar": "حجم ملف ICO بالبايت",
+            "hi": "ICO फ़ाइल का आकार बाइट्स में"
+          }
+        }
+      ],
+      "descs": {
+        "zh-CN": "将图片转换为多尺寸ICO图标文件",
+        "en-US": "Convert image to multi-size ICO icon file",
+        "zh-TW": "將圖片轉換為多尺寸ICO圖標檔案",
+        "ja": "画像をマルチサイズICOアイコンファイルに変換",
+        "ko": "이미지를 다중 크기 ICO 아이콘 파일로 변환",
+        "es": "Convertir imagen a archivo ICO de múltiples tamaños",
+        "fr": "Convertir une image en fichier ICO multi-tailles",
+        "de": "Bild in Multi-Size-ICO-Icon-Datei konvertieren",
+        "pt-BR": "Converter imagem para arquivo ICO de múltiplos tamanhos",
+        "ru": "Конвертировать изображение в ICO-файл с несколькими размерами",
+        "ar": "تحويل الصورة إلى ملف ICO متعدد الأحجام",
+        "hi": "इमेज को मल्टी-साइज़ ICO आइकन फ़ाइल में बदलें"
+      }
     }
   ],
   "constants": [
