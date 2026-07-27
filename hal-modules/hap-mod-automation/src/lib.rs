@@ -4,6 +4,8 @@ pub mod connect;
 pub mod interact;
 pub mod window;
 pub mod batch;
+pub mod monitor;
+pub mod storage;
 
 use hap_common::ffi::str_to_c;
 use std::ffi::c_char;
@@ -120,5 +122,58 @@ mod tests {
             "steps": [{"action": "click", "selector": "#btn"}]
         }));
         assert!(r.get("error").is_some());
+    }
+
+    #[test]
+    fn test_dom_tree_no_conn() {
+        let r = call(monitor::hap_automation_dom_tree, serde_json::json!({
+            "conn_id": "bad"
+        }));
+        assert!(r.get("error").is_some());
+    }
+
+    #[test]
+    fn test_console_start_no_conn() {
+        let r = call(monitor::hap_automation_console_start, serde_json::json!({
+            "conn_id": "bad"
+        }));
+        assert!(r.get("error").is_some());
+    }
+
+    #[test]
+    fn test_network_start_no_conn() {
+        let r = call(monitor::hap_automation_network_start, serde_json::json!({
+            "conn_id": "bad"
+        }));
+        assert!(r.get("error").is_some());
+    }
+
+    #[test]
+    fn test_storage_get_no_conn() {
+        let r = call(storage::hap_automation_storage_get, serde_json::json!({
+            "conn_id": "bad"
+        }));
+        assert!(r.get("error").is_some());
+    }
+
+    #[test]
+    fn test_mock_set_no_conn() {
+        let r = call(storage::hap_automation_mock_set, serde_json::json!({
+            "conn_id": "bad",
+            "module": "test",
+            "function": "fn1",
+            "response": {"ok": true}
+        }));
+        assert!(r.get("error").is_some());
+    }
+
+    #[test]
+    fn test_dom_diff_local() {
+        let r = call(storage::hap_automation_dom_diff, serde_json::json!({
+            "before": {"tag": "div", "text": "hello"},
+            "after": {"tag": "div", "text": "world"}
+        }));
+        assert!(r.get("error").is_none());
+        assert_eq!(r["count"], 1);
     }
 }
