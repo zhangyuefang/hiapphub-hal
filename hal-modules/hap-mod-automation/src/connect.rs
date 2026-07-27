@@ -19,12 +19,16 @@ fn conns() -> &'static Mutex<HashMap<String, Connection>> {
     CONNS.get_or_init(|| Mutex::new(HashMap::new()))
 }
 
+fn lock_conns() -> std::sync::MutexGuard<'static, HashMap<String, Connection>> {
+    conns().lock().unwrap_or_else(|e| e.into_inner())
+}
+
 fn gen_conn_id() -> String {
     format!("conn_{}", uuid::Uuid::new_v4().as_simple())
 }
 
 pub fn get_client(conn_id: &str) -> Result<(ApiClient, String, String), HapError> {
-    let map = conns().lock().unwrap();
+    let map = lock_conns();
     let conn = map.get(conn_id)
         .ok_or_else(|| HapError::internal("not_connected: invalid conn_id"))?;
     Ok((
@@ -54,7 +58,7 @@ hap_fn!(hap_automation_connect, ConnectParams, |params| {
     let window = params.window.unwrap_or_else(|| "main".to_string());
     let conn_id = gen_conn_id();
 
-    conns().lock().unwrap().insert(conn_id.clone(), Connection {
+    conns().lock().unwrap_or_else(|e| e.into_inner()).insert(conn_id.clone(), Connection {
         port,
         token,
         app_id: params.app_id.clone(),
@@ -65,7 +69,7 @@ hap_fn!(hap_automation_connect, ConnectParams, |params| {
 });
 
 hap_fn!(hap_automation_disconnect, DisconnectParams, |params| {
-    let removed = conns().lock().unwrap().remove(&params.conn_id).is_some();
+    let removed = lock_conns().remove(&params.conn_id).is_some();
     if !removed {
         return Err(HapError::internal("not_connected: conn_id not found"));
     }

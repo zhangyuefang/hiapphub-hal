@@ -153,14 +153,16 @@ hap_fn!(hap_automation_eval, EvalParams, |params| {
 });
 
 fn urlencoded(s: &str) -> String {
-    s.chars().map(|c| match c {
-        ' ' => "%20".to_string(),
-        '#' => "%23".to_string(),
-        '&' => "%26".to_string(),
-        '=' => "%3D".to_string(),
-        '?' => "%3F".to_string(),
-        '+' => "%2B".to_string(),
-        '%' => "%25".to_string(),
-        _ => c.to_string(),
-    }).collect()
+    let mut out = String::with_capacity(s.len() * 3);
+    for b in s.bytes() {
+        match b {
+            b'A'..=b'Z' | b'a'..=b'z' | b'0'..=b'9' | b'-' | b'_' | b'.' | b'~' => {
+                out.push(b as char);
+            }
+            _ => {
+                out.push_str(&format!("%{:02X}", b));
+            }
+        }
+    }
+    out
 }
