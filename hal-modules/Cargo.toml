@@ -41,6 +41,7 @@ members = [
     "hap-mod-input",
     "hap-mod-window",
     "hap-mod-webserver",
+    "hap-mod-automation",
 ]
 
 [profile.release]

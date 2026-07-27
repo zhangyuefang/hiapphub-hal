@@ -1,0 +1,260 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000040",
+  "name": "automation",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "author_email": "dev@hiapphub.com",
+  "author_url": "https://hiapphub.com",
+  "icon": "🤖",
+  "min_shell_version": "0.3.0",
+  "category": "automation",
+  "descriptions": {
+    "zh-CN": "HAP应用界面自动化模块",
+    "en-US": "HAP app UI automation module",
+    "zh-TW": "HAP應用介面自動化模組",
+    "ja": "HAPアプリUI自動化モジュール",
+    "ko": "HAP 앱 UI 자동화 모듈",
+    "es": "Módulo de automatización de UI HAP",
+    "fr": "Module d'automatisation UI HAP",
+    "de": "HAP App UI-Automatisierungsmodul",
+    "pt-BR": "Módulo de automação de UI HAP",
+    "ru": "Модуль автоматизации UI HAP",
+    "ar": "وحدة أتمتة واجهة HAP",
+    "hi": "HAP ऐप UI ऑटोमेशन मॉड्यूल"
+  },
+  "overviews": {
+    "zh-CN": "通过DevTools Automation API控制HAP应用窗口，支持元素查询、点击、输入、截图、DOM检查、网络监控等自动化能力。可用于应用间互控、自动化测试和RPA场景。",
+    "en-US": "Control HAP app windows via DevTools Automation API. Supports element queries, clicks, typing, screenshots, DOM inspection, network monitoring, and more. For inter-app control, testing, and RPA.",
+    "zh-TW": "通過DevTools Automation API控制HAP應用窗口，支援元素查詢、點擊、輸入、截圖、DOM檢查、網路監控等自動化能力。",
+    "ja": "DevTools Automation APIでHAPアプリを制御。要素クエリ・クリック・入力・スクリーンショット・DOM・ネットワーク監視対応。",
+    "ko": "DevTools Automation API로 HAP 앱 창 제어. 요소 쿼리, 클릭, 입력, 스크린샷, DOM, 네트워크 모니터링 지원.",
+    "es": "Control de ventanas HAP vía DevTools Automation API. Consultas de elementos, clics, escritura, capturas, DOM y monitoreo de red.",
+    "fr": "Contrôle de fenêtres HAP via DevTools Automation API. Requêtes d'éléments, clics, saisie, captures, DOM et surveillance réseau.",
+    "de": "HAP-Fenstersteuerung über DevTools Automation API. Elementabfragen, Klicks, Eingabe, Screenshots, DOM und Netzwerküberwachung.",
+    "pt-BR": "Controle de janelas HAP via DevTools Automation API. Consultas de elementos, cliques, digitação, capturas, DOM e monitoramento de rede.",
+    "ru": "Управление окнами HAP через DevTools Automation API. Запросы элементов, клики, ввод, скриншоты, DOM и мониторинг сети.",
+    "ar": "التحكم في نوافذ HAP عبر DevTools Automation API. استعلامات العناصر والنقر والكتابة ولقطات الشاشة وDOM ومراقبة الشبكة.",
+    "hi": "DevTools Automation API से HAP ऐप विंडो नियंत्रण। एलिमेंट क्वेरी, क्लिक, टाइपिंग, स्क्रीनशॉट, DOM और नेटवर्क मॉनिटरिंग।"
+  },
+  "permission": "automation",
+  "functions": [
+    {
+      "name": "connect",
+      "symbol": "hap_automation_connect",
+      "descriptions": {
+        "zh-CN": "连接到目标HAP应用，返回连接ID",
+        "en-US": "Connect to target HAP app, returns connection ID"
+      },
+      "params": [
+        { "name": "appId", "type": "string", "required": true, "descriptions": { "zh-CN": "目标应用ID", "en-US": "Target app ID" } },
+        { "name": "window", "type": "string", "required": false, "descriptions": { "zh-CN": "窗口标签（默认main）", "en-US": "Window label (default main)" } }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "disconnect",
+      "symbol": "hap_automation_disconnect",
+      "descriptions": {
+        "zh-CN": "断开与目标应用的连接",
+        "en-US": "Disconnect from target app"
+      },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true, "descriptions": { "zh-CN": "连接ID", "en-US": "Connection ID" } }
+      ],
+      "returns": { "type": "object" },
+      "async": false
+    },
+    {
+      "name": "list_apps",
+      "symbol": "hap_automation_list_apps",
+      "descriptions": {
+        "zh-CN": "列出所有运行中的HAP应用",
+        "en-US": "List all running HAP apps"
+      },
+      "params": [],
+      "returns": { "type": "array" },
+      "async": true
+    },
+    {
+      "name": "query",
+      "symbol": "hap_automation_query",
+      "descriptions": {
+        "zh-CN": "查询单个DOM元素",
+        "en-US": "Query single DOM element"
+      },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "selector", "type": "string", "required": true, "descriptions": { "zh-CN": "CSS/XPath/text选择器", "en-US": "CSS/XPath/text selector" } },
+        { "name": "type", "type": "string", "required": false, "descriptions": { "zh-CN": "选择器类型(css/xpath/text)", "en-US": "Selector type" } },
+        { "name": "includeStyles", "type": "boolean", "required": false }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "query_all",
+      "symbol": "hap_automation_query_all",
+      "descriptions": {
+        "zh-CN": "查询所有匹配的DOM元素",
+        "en-US": "Query all matching DOM elements"
+      },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "selector", "type": "string", "required": true },
+        { "name": "type", "type": "string", "required": false },
+        { "name": "limit", "type": "number", "required": false }
+      ],
+      "returns": { "type": "array" },
+      "async": true
+    },
+    {
+      "name": "wait_for",
+      "symbol": "hap_automation_wait_for",
+      "descriptions": {
+        "zh-CN": "等待元素出现",
+        "en-US": "Wait for element to appear"
+      },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "selector", "type": "string", "required": true },
+        { "name": "timeout", "type": "number", "required": false, "descriptions": { "zh-CN": "超时毫秒数（默认5000）", "en-US": "Timeout in ms (default 5000)" } }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "click",
+      "symbol": "hap_automation_click",
+      "descriptions": {
+        "zh-CN": "点击元素或坐标",
+        "en-US": "Click element or coordinates"
+      },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "selector", "type": "string", "required": false },
+        { "name": "x", "type": "number", "required": false },
+        { "name": "y", "type": "number", "required": false }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "type_text",
+      "symbol": "hap_automation_type_text",
+      "descriptions": {
+        "zh-CN": "向元素输入文本",
+        "en-US": "Type text into element"
+      },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "selector", "type": "string", "required": true },
+        { "name": "text", "type": "string", "required": true },
+        { "name": "clear", "type": "boolean", "required": false }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "scroll",
+      "symbol": "hap_automation_scroll",
+      "descriptions": {
+        "zh-CN": "滚动页面或元素",
+        "en-US": "Scroll page or element"
+      },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "selector", "type": "string", "required": false },
+        { "name": "deltaX", "type": "number", "required": false },
+        { "name": "deltaY", "type": "number", "required": false }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "eval",
+      "symbol": "hap_automation_eval",
+      "descriptions": {
+        "zh-CN": "在目标窗口执行JavaScript代码",
+        "en-US": "Execute JavaScript in target window"
+      },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "code", "type": "string", "required": true, "descriptions": { "zh-CN": "要执行的JS代码", "en-US": "JS code to execute" } }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "get_bounds",
+      "symbol": "hap_automation_get_bounds",
+      "descriptions": {
+        "zh-CN": "获取窗口位置和大小",
+        "en-US": "Get window position and size"
+      },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "resize",
+      "symbol": "hap_automation_resize",
+      "descriptions": {
+        "zh-CN": "调整窗口大小",
+        "en-US": "Resize window"
+      },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "width", "type": "number", "required": true },
+        { "name": "height", "type": "number", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "move_window",
+      "symbol": "hap_automation_move_window",
+      "descriptions": {
+        "zh-CN": "移动窗口位置",
+        "en-US": "Move window position"
+      },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "x", "type": "number", "required": true },
+        { "name": "y", "type": "number", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "screenshot",
+      "symbol": "hap_automation_screenshot",
+      "descriptions": {
+        "zh-CN": "窗口截图（返回base64 PNG）",
+        "en-US": "Take window screenshot (base64 PNG)"
+      },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "batch",
+      "symbol": "hap_automation_batch",
+      "descriptions": {
+        "zh-CN": "批量执行多步自动化操作",
+        "en-US": "Execute batch automation steps"
+      },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "steps", "type": "array", "required": true, "descriptions": { "zh-CN": "操作步骤数组", "en-US": "Array of action steps" } },
+        { "name": "stopOnError", "type": "boolean", "required": false }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    }
+  ]
+}

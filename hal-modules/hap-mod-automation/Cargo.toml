@@ -1,0 +1,15 @@
+[package]
+name = "hap-mod-automation"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+hap-common = { path = "../common" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+libc = { workspace = true }
+ureq = { version = "2", features = ["json"] }
+uuid = { version = "1", features = ["v4"] }
