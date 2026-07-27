@@ -43,7 +43,8 @@ hap_fn!(hap_automation_connect, ConnectParams, |params| {
     let client = ApiClient::new(port, token.clone());
 
     let apps = client.get("/api/v1/apps")?;
-    let apps_arr = apps.as_array()
+    let apps_arr = apps.get("apps").and_then(|v| v.as_array())
+        .or_else(|| apps.as_array())
         .ok_or_else(|| HapError::internal("invalid apps response"))?;
 
     let found = apps_arr.iter().any(|app| {

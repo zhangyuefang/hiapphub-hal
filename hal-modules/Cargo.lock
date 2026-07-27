@@ -2562,6 +2562,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "hap-mod-automation"
+version = "1.0.0"
+dependencies = [
+ "hap-common",
+ "libc",
+ "serde",
+ "serde_json",
+ "ureq",
+ "uuid",
+]
+
+[[package]]
 name = "hap-mod-barcode"
 version = "1.0.0"
 dependencies = [

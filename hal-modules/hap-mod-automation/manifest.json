@@ -23,18 +23,18 @@
     "hi": "HAP ऐप UI ऑटोमेशन कंट्रोल मॉड्यूल"
   },
   "overviews": {
-    "zh-CN": "控制HAP应用窗口，支持元素查询、点击、输入、截图、DOM检查、网络监控等自动化能力。任何应用均可通过此模块操控其他应用界面，用于应用间互控、自动化测试和RPA场景。",
-    "en-US": "Control HAP app windows with element queries, clicks, typing, screenshots, DOM inspection, and network monitoring. Any app can use this module to automate other apps for inter-app control, testing, and RPA.",
-    "zh-TW": "控制HAP應用窗口，支援元素查詢、點擊、輸入、截圖、DOM檢查、網路監控等自動化能力。任何應用均可操控其他應用介面。",
-    "ja": "HAPアプリウィンドウを制御。要素クエリ・クリック・入力・スクリーンショット・DOM・ネットワーク監視対応。アプリ間の相互制御やRPAに利用可能。",
-    "ko": "HAP 앱 창 제어. 요소 쿼리, 클릭, 입력, 스크린샷, DOM, 네트워크 모니터링 지원. 앱 간 상호 제어 및 RPA에 활용.",
-    "es": "Control de ventanas HAP con consultas de elementos, clics, escritura, capturas, DOM y monitoreo de red. Cualquier app puede automatizar otras apps.",
-    "fr": "Contrôle de fenêtres HAP avec requêtes d'éléments, clics, saisie, captures, DOM et surveillance réseau. Toute app peut automatiser d'autres apps.",
-    "de": "HAP-Fenstersteuerung mit Elementabfragen, Klicks, Eingabe, Screenshots, DOM und Netzwerküberwachung. Jede App kann andere Apps automatisieren.",
-    "pt-BR": "Controle de janelas HAP com consultas de elementos, cliques, digitação, capturas, DOM e monitoramento de rede. Qualquer app pode automatizar outras apps.",
-    "ru": "Управление окнами HAP: запросы элементов, клики, ввод, скриншоты, DOM и мониторинг сети. Любое приложение может автоматизировать другие.",
-    "ar": "التحكم في نوافذ HAP مع استعلامات العناصر والنقر والكتابة ولقطات الشاشة وDOM ومراقبة الشبكة. أي تطبيق يمكنه أتمتة التطبيقات الأخرى.",
-    "hi": "HAP ऐप विंडो नियंत्रण: एलिमेंट क्वेरी, क्लिक, टाइपिंग, स्क्रीनशॉट, DOM और नेटवर्क मॉनिटरिंग। कोई भी ऐप अन्य ऐप्स को ऑटोमेट कर सकता है।"
+    "zh-CN": "控制HAP应用窗口（包括自身或其它应用），支持元素查询、点击、输入、截图、DOM检查、网络监控等自动化能力。可用于应用自控、应用间互控、自动化测试和RPA场景。",
+    "en-US": "Control HAP app windows (self or other apps) with element queries, clicks, typing, screenshots, DOM inspection, and network monitoring. For self-automation, inter-app control, testing, and RPA.",
+    "zh-TW": "控制HAP應用窗口（包括自身或其他應用），支援元素查詢、點擊、輸入、截圖、DOM檢查、網路監控等自動化能力。可用於應用自控、互控及RPA。",
+    "ja": "HAPアプリウィンドウ（自身または他アプリ）を制御。要素クエリ・クリック・入力・スクリーンショット・DOM・ネットワーク監視対応。自己制御・アプリ間制御・RPAに利用可能。",
+    "ko": "HAP 앱 창 제어(자체 또는 다른 앱). 요소 쿼리, 클릭, 입력, 스크린샷, DOM, 네트워크 모니터링 지원. 자체 자동화, 앱 간 제어, RPA에 활용.",
+    "es": "Control de ventanas HAP (propia u otras apps) con consultas de elementos, clics, escritura, capturas, DOM y monitoreo de red. Para autocontrol, control inter-app y RPA.",
+    "fr": "Contrôle de fenêtres HAP (propre ou autres apps) avec requêtes d'éléments, clics, saisie, captures, DOM et surveillance réseau. Pour auto-contrôle, contrôle inter-app et RPA.",
+    "de": "HAP-Fenstersteuerung (eigene oder andere Apps) mit Elementabfragen, Klicks, Eingabe, Screenshots, DOM und Netzwerküberwachung. Für Selbstautomatisierung, App-übergreifende Steuerung und RPA.",
+    "pt-BR": "Controle de janelas HAP (própria ou outras apps) com consultas de elementos, cliques, digitação, capturas, DOM e monitoramento de rede. Para autocontrole, controle inter-app e RPA.",
+    "ru": "Управление окнами HAP (собственными или другими): запросы элементов, клики, ввод, скриншоты, DOM и мониторинг сети. Для самоуправления, межпрограммного контроля и RPA.",
+    "ar": "التحكم في نوافذ HAP (الخاصة أو التطبيقات الأخرى) مع استعلامات العناصر والنقر والكتابة ولقطات الشاشة وDOM ومراقبة الشبكة. للتحكم الذاتي والتحكم بين التطبيقات وRPA.",
+    "hi": "HAP ऐप विंडो नियंत्रण (स्वयं या अन्य ऐप्स): एलिमेंट क्वेरी, क्लिक, टाइपिंग, स्क्रीनशॉट, DOM और नेटवर्क मॉनिटरिंग। सेल्फ-ऑटोमेशन, इंटर-ऐप कंट्रोल और RPA के लिए।"
   },
   "permission": "automation",
   "functions": [
