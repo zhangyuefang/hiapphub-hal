@@ -255,6 +255,193 @@
       ],
       "returns": { "type": "object" },
       "async": true
+    },
+    {
+      "name": "observe_mutations",
+      "symbol": "hap_automation_observe_mutations",
+      "descriptions": { "zh-CN": "观察DOM变动", "en-US": "Observe DOM mutations" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "selector", "type": "string", "required": false },
+        { "name": "attributes", "type": "boolean", "required": false },
+        { "name": "childList", "type": "boolean", "required": false },
+        { "name": "characterData", "type": "boolean", "required": false },
+        { "name": "subtree", "type": "boolean", "required": false }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "get_mutations",
+      "symbol": "hap_automation_get_mutations",
+      "descriptions": { "zh-CN": "获取DOM变动记录", "en-US": "Get DOM mutation records" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "array" },
+      "async": true
+    },
+    {
+      "name": "stop_observe",
+      "symbol": "hap_automation_stop_observe",
+      "descriptions": { "zh-CN": "停止观察DOM变动", "en-US": "Stop observing DOM mutations" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "console_start",
+      "symbol": "hap_automation_console_start",
+      "descriptions": { "zh-CN": "开始捕获控制台日志", "en-US": "Start capturing console logs" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "console_logs",
+      "symbol": "hap_automation_console_logs",
+      "descriptions": { "zh-CN": "获取捕获的控制台日志", "en-US": "Get captured console logs" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "array" },
+      "async": true
+    },
+    {
+      "name": "network_start",
+      "symbol": "hap_automation_network_start",
+      "descriptions": { "zh-CN": "开始网络请求监控", "en-US": "Start network request monitoring" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "network_requests",
+      "symbol": "hap_automation_network_requests",
+      "descriptions": { "zh-CN": "获取捕获的网络请求", "en-US": "Get captured network requests" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "array" },
+      "async": true
+    },
+    {
+      "name": "network_stop",
+      "symbol": "hap_automation_network_stop",
+      "descriptions": { "zh-CN": "停止网络请求监控", "en-US": "Stop network request monitoring" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "performance",
+      "symbol": "hap_automation_performance",
+      "descriptions": { "zh-CN": "获取性能指标", "en-US": "Get performance metrics" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "accessibility",
+      "symbol": "hap_automation_accessibility",
+      "descriptions": { "zh-CN": "获取无障碍信息", "en-US": "Get accessibility info" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "dom_tree",
+      "symbol": "hap_automation_dom_tree",
+      "descriptions": { "zh-CN": "获取DOM树", "en-US": "Get DOM tree" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "storage_get",
+      "symbol": "hap_automation_storage_get",
+      "descriptions": { "zh-CN": "获取目标应用存储数据", "en-US": "Get target app storage data" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "type", "type": "string", "required": false, "descriptions": { "zh-CN": "存储类型", "en-US": "Storage type" } },
+        { "name": "key", "type": "string", "required": false }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "storage_set",
+      "symbol": "hap_automation_storage_set",
+      "descriptions": { "zh-CN": "设置目标应用存储数据", "en-US": "Set target app storage data" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "type", "type": "string", "required": true },
+        { "name": "action", "type": "string", "required": true },
+        { "name": "key", "type": "string", "required": false },
+        { "name": "value", "type": "string", "required": false }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "mock_set",
+      "symbol": "hap_automation_mock_set",
+      "descriptions": { "zh-CN": "设置HAL函数Mock", "en-US": "Set HAL function mock" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "module", "type": "string", "required": true },
+        { "name": "function", "type": "string", "required": true },
+        { "name": "response", "type": "object", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "mock_clear",
+      "symbol": "hap_automation_mock_clear",
+      "descriptions": { "zh-CN": "清除所有Mock", "en-US": "Clear all mocks" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "dom_snapshot",
+      "symbol": "hap_automation_dom_snapshot",
+      "descriptions": { "zh-CN": "获取DOM快照", "en-US": "Get DOM snapshot" },
+      "params": [
+        { "name": "conn_id", "type": "string", "required": true },
+        { "name": "selector", "type": "string", "required": false },
+        { "name": "depth", "type": "number", "required": false }
+      ],
+      "returns": { "type": "object" },
+      "async": true
+    },
+    {
+      "name": "dom_diff",
+      "symbol": "hap_automation_dom_diff",
+      "descriptions": { "zh-CN": "对比两个DOM快照差异", "en-US": "Diff two DOM snapshots" },
+      "params": [
+        { "name": "before", "type": "object", "required": true },
+        { "name": "after", "type": "object", "required": true }
+      ],
+      "returns": { "type": "object" },
+      "async": false
     }
   ]
 }

@@ -1,0 +1,83 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000042",
+  "name": "app_manager",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "icon": "📦",
+  "min_shell_version": "0.3.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "应用管理模块：插件列表、安装、卸载、版本管理、OTA更新",
+    "en-US": "App management: plugin listing, install, uninstall, version management, OTA updates"
+  },
+  "permission": "app_manager",
+  "functions": [
+    {
+      "name": "list_plugins",
+      "symbol": "hap_app_manager_list_plugins",
+      "descriptions": { "zh-CN": "列出已安装的应用", "en-US": "List installed apps" },
+      "params": [],
+      "returns": { "type": "array" }
+    },
+    {
+      "name": "install",
+      "symbol": "hap_app_manager_install",
+      "descriptions": { "zh-CN": "安装HAP应用", "en-US": "Install HAP app" },
+      "params": [
+        { "name": "hap_path", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" }
+    },
+    {
+      "name": "get_versions",
+      "symbol": "hap_app_manager_get_versions",
+      "descriptions": { "zh-CN": "获取版本信息", "en-US": "Get version info" },
+      "params": [],
+      "returns": { "type": "object" }
+    },
+    {
+      "name": "replace",
+      "symbol": "hap_app_manager_replace",
+      "descriptions": { "zh-CN": "替换应用（带备份）", "en-US": "Replace app with backup" },
+      "params": [
+        { "name": "app_id", "type": "string", "required": true },
+        { "name": "hap_path", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" }
+    },
+    {
+      "name": "rollback",
+      "symbol": "hap_app_manager_rollback",
+      "descriptions": { "zh-CN": "回滚应用到备份版本", "en-US": "Rollback app to backup version" },
+      "params": [
+        { "name": "app_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" }
+    },
+    {
+      "name": "uninstall",
+      "symbol": "hap_app_manager_uninstall",
+      "descriptions": { "zh-CN": "卸载应用", "en-US": "Uninstall app" },
+      "params": [
+        { "name": "app_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "boolean" }
+    },
+    {
+      "name": "get_manifest",
+      "symbol": "hap_app_manager_get_manifest",
+      "descriptions": { "zh-CN": "获取应用manifest", "en-US": "Get app manifest" },
+      "params": [
+        { "name": "app_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" }
+    },
+    {
+      "name": "ensure_dirs",
+      "symbol": "hap_app_manager_ensure_dirs",
+      "descriptions": { "zh-CN": "确保数据目录结构存在", "en-US": "Ensure data directory structure exists" },
+      "params": [],
+      "returns": { "type": "string" }
+    }
+  ]
+}

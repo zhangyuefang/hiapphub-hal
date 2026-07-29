@@ -3601,6 +3601,19 @@
       },
       "group": "basic",
       "description": "Auto orient of image"
+    },
+    {
+      "name": "to_icon",
+      "symbol": "hap_image_to_icon",
+      "descriptions": { "zh-CN": "将图片转换为多尺寸ICO图标", "en-US": "Convert image to multi-size ICO icon" },
+      "params": [
+        { "name": "path", "type": "string", "desc": "Source image path" },
+        { "name": "output", "type": "string", "desc": "Output ICO file path" },
+        { "name": "sizes", "type": "array", "desc": "Icon sizes (default [16,32,48,64,128,256])" }
+      ],
+      "returns": { "type": "boolean", "desc": "Whether successful" },
+      "group": "convert",
+      "description": "Convert image to multi-size ICO icon"
     }
   ],
   "overviews": {

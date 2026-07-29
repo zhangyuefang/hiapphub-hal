@@ -43,6 +43,7 @@ members = [
     "hap-mod-webserver",
     "hap-mod-automation",
     "hap-mod-devtools-server",
+    "hap-mod-app-manager",
 ]
 
 [profile.release]

@@ -6,6 +6,7 @@
   "functions": [
     {
       "name": "start",
+      "symbol": "hap_devtools_server_start",
       "group": "server",
       "description": "Start HTTP + WS servers",
       "params": [
@@ -17,6 +18,7 @@
     },
     {
       "name": "stop",
+      "symbol": "hap_devtools_server_stop",
       "group": "server",
       "description": "Stop all servers",
       "params": [],
@@ -24,6 +26,7 @@
     },
     {
       "name": "status",
+      "symbol": "hap_devtools_server_status",
       "group": "server",
       "description": "Get server status",
       "params": [],
@@ -31,6 +34,7 @@
     },
     {
       "name": "get_ws_clients",
+      "symbol": "hap_devtools_server_get_ws_clients",
       "group": "ws",
       "description": "List connected WS clients",
       "params": [],
@@ -38,6 +42,7 @@
     },
     {
       "name": "ws_send",
+      "symbol": "hap_devtools_server_ws_send",
       "group": "ws",
       "description": "Send message to specific WS client",
       "params": [
@@ -48,6 +53,7 @@
     },
     {
       "name": "ws_broadcast",
+      "symbol": "hap_devtools_server_ws_broadcast",
       "group": "ws",
       "description": "Broadcast message to all WS clients",
       "params": [
@@ -57,6 +63,7 @@
     },
     {
       "name": "ws_send_to_role",
+      "symbol": "hap_devtools_server_ws_send_to_role",
       "group": "ws",
       "description": "Send message to all clients with a specific role",
       "params": [
@@ -67,6 +74,7 @@
     },
     {
       "name": "poll_callbacks",
+      "symbol": "hap_devtools_server_poll_callbacks",
       "group": "callback",
       "description": "Poll pending callback requests that need webview processing",
       "params": [
@@ -76,6 +84,7 @@
     },
     {
       "name": "respond_callback",
+      "symbol": "hap_devtools_server_respond_callback",
       "group": "callback",
       "description": "Respond to a callback request",
       "params": [
@@ -87,6 +96,7 @@
     },
     {
       "name": "register_internal_route",
+      "symbol": "hap_devtools_server_register_internal_route",
       "group": "server",
       "description": "Register route on internal API server (port 19767)",
       "params": [
@@ -97,6 +107,7 @@
     },
     {
       "name": "poll_internal_requests",
+      "symbol": "hap_devtools_server_poll_internal_requests",
       "group": "server",
       "description": "Poll pending requests on internal API server",
       "params": [
@@ -106,6 +117,7 @@
     },
     {
       "name": "respond_internal",
+      "symbol": "hap_devtools_server_respond_internal",
       "group": "server",
       "description": "Respond to an internal API request",
       "params": [
