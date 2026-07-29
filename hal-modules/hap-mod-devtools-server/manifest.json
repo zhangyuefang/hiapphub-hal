@@ -1,0 +1,120 @@
+{
+  "name": "devtools_server",
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000041",
+  "version": "1.0.0",
+  "overview": "DevTools HTTP/WS server for automation API and runner management",
+  "functions": [
+    {
+      "name": "start",
+      "group": "server",
+      "description": "Start HTTP + WS servers",
+      "params": [
+        { "name": "http_port", "type": "number", "optional": true, "description": "HTTP port (default 19769)" },
+        { "name": "ws_port", "type": "number", "optional": true, "description": "WS port (default 19768)" },
+        { "name": "internal_port", "type": "number", "optional": true, "description": "Internal API port (default 19767)" }
+      ],
+      "returns": { "type": "object", "description": "{ token, http_port, ws_port, internal_port }" }
+    },
+    {
+      "name": "stop",
+      "group": "server",
+      "description": "Stop all servers",
+      "params": [],
+      "returns": { "type": "boolean" }
+    },
+    {
+      "name": "status",
+      "group": "server",
+      "description": "Get server status",
+      "params": [],
+      "returns": { "type": "object" }
+    },
+    {
+      "name": "get_ws_clients",
+      "group": "ws",
+      "description": "List connected WS clients",
+      "params": [],
+      "returns": { "type": "array" }
+    },
+    {
+      "name": "ws_send",
+      "group": "ws",
+      "description": "Send message to specific WS client",
+      "params": [
+        { "name": "client_id", "type": "string" },
+        { "name": "message", "type": "string" }
+      ],
+      "returns": { "type": "boolean" }
+    },
+    {
+      "name": "ws_broadcast",
+      "group": "ws",
+      "description": "Broadcast message to all WS clients",
+      "params": [
+        { "name": "message", "type": "string" }
+      ],
+      "returns": { "type": "boolean" }
+    },
+    {
+      "name": "ws_send_to_role",
+      "group": "ws",
+      "description": "Send message to all clients with a specific role",
+      "params": [
+        { "name": "role", "type": "string" },
+        { "name": "message", "type": "string" }
+      ],
+      "returns": { "type": "number", "description": "Number of clients sent to" }
+    },
+    {
+      "name": "poll_callbacks",
+      "group": "callback",
+      "description": "Poll pending callback requests that need webview processing",
+      "params": [
+        { "name": "limit", "type": "number", "optional": true }
+      ],
+      "returns": { "type": "array" }
+    },
+    {
+      "name": "respond_callback",
+      "group": "callback",
+      "description": "Respond to a callback request",
+      "params": [
+        { "name": "request_id", "type": "string" },
+        { "name": "status", "type": "number", "optional": true },
+        { "name": "body", "type": "string" }
+      ],
+      "returns": { "type": "boolean" }
+    },
+    {
+      "name": "register_internal_route",
+      "group": "server",
+      "description": "Register route on internal API server (port 19767)",
+      "params": [
+        { "name": "method", "type": "string" },
+        { "name": "path", "type": "string" }
+      ],
+      "returns": { "type": "boolean" }
+    },
+    {
+      "name": "poll_internal_requests",
+      "group": "server",
+      "description": "Poll pending requests on internal API server",
+      "params": [
+        { "name": "limit", "type": "number", "optional": true }
+      ],
+      "returns": { "type": "array" }
+    },
+    {
+      "name": "respond_internal",
+      "group": "server",
+      "description": "Respond to an internal API request",
+      "params": [
+        { "name": "request_id", "type": "string" },
+        { "name": "status", "type": "number", "optional": true },
+        { "name": "headers", "type": "object", "optional": true },
+        { "name": "body", "type": "string" }
+      ],
+      "returns": { "type": "boolean" }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+[package]
+name = "hap-mod-devtools-server"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+hap-common = { path = "../common" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+axum = { version = "0.8", features = ["ws"] }
+tokio = { version = "1", features = ["rt-multi-thread", "net", "sync", "time", "macros"] }
+tokio-tungstenite = "0.26"
+futures-util = "0.3"
+tower-http = { version = "0.6", features = ["cors"] }
+uuid = { version = "1", features = ["v4"] }
+rand = "0.8"

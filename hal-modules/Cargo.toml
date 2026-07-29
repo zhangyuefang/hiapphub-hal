@@ -42,6 +42,7 @@ members = [
     "hap-mod-window",
     "hap-mod-webserver",
     "hap-mod-automation",
+    "hap-mod-devtools-server",
 ]
 
 [profile.release]
