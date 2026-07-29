@@ -49,8 +49,14 @@ hap_fn!(hap_crypto_generate_keypair, GenKeypairParams, |p| {
 
 // ---------- sign ----------
 #[derive(Deserialize)]
-pub struct SignParams { pub algorithm: String, pub private_key: String, pub data: String }
+pub struct SignParams { pub algorithm: String, pub private_key: String, pub data: String, pub encoding: Option<String> }
 hap_fn!(hap_crypto_sign, SignParams, |p| {
+    let is_hex = p.encoding.as_deref() == Some("hex");
+    let data_bytes = if is_hex {
+        hex::decode(&p.data).map_err(|e| HapError::invalid_param(format!("data hex: {e}")))?
+    } else {
+        p.data.as_bytes().to_vec()
+    };
     match p.algorithm.as_str() {
         "ed25519" => {
             use ed25519_dalek::{SigningKey, Signer};
@@ -60,18 +66,26 @@ hap_fn!(hap_crypto_sign, SignParams, |p| {
                 key_bytes.as_slice().try_into()
                     .map_err(|_| HapError::invalid_param("ed25519 key must be 32 bytes"))?
             );
-            let sig = sk.sign(p.data.as_bytes());
-            Ok(json!(base64::engine::general_purpose::STANDARD.encode(sig.to_bytes())))
+            let sig = sk.sign(&data_bytes);
+            if is_hex {
+                Ok(json!(hex::encode(sig.to_bytes())))
+            } else {
+                Ok(json!(base64::engine::general_purpose::STANDARD.encode(sig.to_bytes())))
+            }
         }
         "rsa-sha256" => {
             use rsa::{RsaPrivateKey, pkcs8::DecodePrivateKey, Pkcs1v15Sign};
             use sha2::{Sha256, Digest};
             let sk = RsaPrivateKey::from_pkcs8_pem(&p.private_key)
                 .map_err(|e| HapError::invalid_param(format!("RSA private key parse failed: {e}")))?;
-            let digest = Sha256::digest(p.data.as_bytes());
+            let digest = Sha256::digest(&data_bytes);
             let sig = sk.sign(Pkcs1v15Sign::new::<Sha256>(), &digest)
                 .map_err(|e| HapError::internal(format!("signing failed: {e}")))?;
-            Ok(json!(base64::engine::general_purpose::STANDARD.encode(&sig)))
+            if is_hex {
+                Ok(json!(hex::encode(&sig)))
+            } else {
+                Ok(json!(base64::engine::general_purpose::STANDARD.encode(&sig)))
+            }
         }
         _ => Err(HapError::invalid_param(format!("unsupported: {}", p.algorithm))),
     }
@@ -79,10 +93,20 @@ hap_fn!(hap_crypto_sign, SignParams, |p| {
 
 // ---------- verify ----------
 #[derive(Deserialize)]
-pub struct VerifyParams { pub algorithm: String, pub public_key: String, pub data: String, pub signature: String }
+pub struct VerifyParams { pub algorithm: String, pub public_key: String, pub data: String, pub signature: String, pub encoding: Option<String> }
 hap_fn!(hap_crypto_verify, VerifyParams, |p| {
-    let sig_bytes = base64::engine::general_purpose::STANDARD.decode(&p.signature)
-        .map_err(|e| HapError::invalid_param(format!("signature base64: {e}")))?;
+    let is_hex = p.encoding.as_deref() == Some("hex");
+    let sig_bytes = if is_hex {
+        hex::decode(&p.signature).map_err(|e| HapError::invalid_param(format!("signature hex: {e}")))?
+    } else {
+        base64::engine::general_purpose::STANDARD.decode(&p.signature)
+            .map_err(|e| HapError::invalid_param(format!("signature base64: {e}")))?
+    };
+    let data_bytes = if is_hex {
+        hex::decode(&p.data).map_err(|e| HapError::invalid_param(format!("data hex: {e}")))?
+    } else {
+        p.data.as_bytes().to_vec()
+    };
     match p.algorithm.as_str() {
         "ed25519" => {
             use ed25519_dalek::{VerifyingKey, Verifier, Signature};
@@ -96,14 +120,14 @@ hap_fn!(hap_crypto_verify, VerifyParams, |p| {
                 sig_bytes.as_slice().try_into()
                     .map_err(|_| HapError::invalid_param("signature must be 64 bytes"))?
             );
-            Ok(json!(pk.verify(p.data.as_bytes(), &sig).is_ok()))
+            Ok(json!(pk.verify(&data_bytes, &sig).is_ok()))
         }
         "rsa-sha256" => {
             use rsa::{RsaPublicKey, pkcs8::DecodePublicKey, Pkcs1v15Sign};
             use sha2::{Sha256, Digest};
             let pk = RsaPublicKey::from_public_key_pem(&p.public_key)
                 .map_err(|e| HapError::invalid_param(format!("RSA public key parse failed: {e}")))?;
-            let digest = Sha256::digest(p.data.as_bytes());
+            let digest = Sha256::digest(&data_bytes);
             Ok(json!(pk.verify(Pkcs1v15Sign::new::<Sha256>(), &digest, &sig_bytes).is_ok()))
         }
         _ => Err(HapError::invalid_param(format!("unsupported: {}", p.algorithm))),

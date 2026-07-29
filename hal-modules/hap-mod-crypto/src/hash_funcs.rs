@@ -5,13 +5,18 @@ use hmac::Mac;
 
 // ---------- hash ----------
 #[derive(Deserialize)]
-pub struct HashParams { pub algorithm: String, pub data: String }
+pub struct HashParams { pub algorithm: String, pub data: String, pub encoding: Option<String> }
 hap_fn!(hap_crypto_hash, HashParams, |p| {
     use sha2::{Sha256, Sha384, Sha512, Digest};
     use sha1::Sha1;
     use md5::Md5;
     use sha3::{Sha3_256, Sha3_512};
-    let bytes = p.data.as_bytes();
+    let raw = if p.encoding.as_deref() == Some("hex") {
+        hex::decode(&p.data).map_err(|e| HapError::invalid_param(format!("data hex decode: {e}")))?
+    } else {
+        p.data.as_bytes().to_vec()
+    };
+    let bytes = raw.as_slice();
     let hex_result = match p.algorithm.as_str() {
         "md5" => hex::encode(Md5::digest(bytes)),
         "sha1" => hex::encode(Sha1::digest(bytes)),

@@ -23,10 +23,15 @@ hap_fn!(hap_crypto_generate_key, GenKeyParams, |p| {
 
 // ---------- encrypt (AES-256-GCM / ChaCha20-Poly1305) ----------
 #[derive(Deserialize)]
-pub struct EncryptParams { pub algorithm: String, pub key: String, pub data: String, pub iv: Option<String>, #[allow(dead_code)] pub aad: Option<String> }
+pub struct EncryptParams { pub algorithm: String, pub key: String, pub data: String, pub iv: Option<String>, #[allow(dead_code)] pub aad: Option<String>, pub encoding: Option<String> }
 hap_fn!(hap_crypto_encrypt, EncryptParams, |p| {
     use aes_gcm::aead::Aead;
     let key_bytes = hex::decode(&p.key).map_err(|e| HapError::invalid_param(format!("key hex decode failed: {e}")))?;
+    let data_bytes = if p.encoding.as_deref() == Some("hex") {
+        hex::decode(&p.data).map_err(|e| HapError::invalid_param(format!("data hex decode: {e}")))?
+    } else {
+        p.data.as_bytes().to_vec()
+    };
 
     match p.algorithm.as_str() {
         "aes-256-gcm" => {
@@ -41,7 +46,7 @@ hap_fn!(hap_crypto_encrypt, EncryptParams, |p| {
                 iv.to_vec()
             };
             let nonce = Nonce::from_slice(&iv_bytes);
-            let ct = cipher.encrypt(nonce, p.data.as_bytes().as_ref())
+            let ct = cipher.encrypt(nonce, data_bytes.as_ref())
                 .map_err(|e| HapError::internal(format!("encryption failed: {e}")))?;
             Ok(json!({
                 "ciphertext": base64::engine::general_purpose::STANDARD.encode(&ct),
@@ -60,7 +65,7 @@ hap_fn!(hap_crypto_encrypt, EncryptParams, |p| {
                 iv.to_vec()
             };
             let nonce = Nonce::from_slice(&iv_bytes);
-            let ct = cipher.encrypt(nonce, p.data.as_bytes().as_ref())
+            let ct = cipher.encrypt(nonce, data_bytes.as_ref())
                 .map_err(|e| HapError::internal(format!("encryption failed: {e}")))?;
             Ok(json!({
                 "ciphertext": base64::engine::general_purpose::STANDARD.encode(&ct),
@@ -73,13 +78,14 @@ hap_fn!(hap_crypto_encrypt, EncryptParams, |p| {
 
 // ---------- decrypt ----------
 #[derive(Deserialize)]
-pub struct DecryptParams { pub algorithm: String, pub key: String, pub ciphertext: String, pub iv: String, #[allow(dead_code)] pub tag: Option<String>, #[allow(dead_code)] pub aad: Option<String> }
+pub struct DecryptParams { pub algorithm: String, pub key: String, pub ciphertext: String, pub iv: String, #[allow(dead_code)] pub tag: Option<String>, #[allow(dead_code)] pub aad: Option<String>, pub encoding: Option<String> }
 hap_fn!(hap_crypto_decrypt, DecryptParams, |p| {
     use aes_gcm::aead::Aead;
     let key_bytes = hex::decode(&p.key).map_err(|e| HapError::invalid_param(format!("key: {e}")))?;
     let iv_bytes = hex::decode(&p.iv).map_err(|e| HapError::invalid_param(format!("iv: {e}")))?;
     let ct_bytes = base64::engine::general_purpose::STANDARD.decode(&p.ciphertext)
         .map_err(|e| HapError::invalid_param(format!("ciphertext: {e}")))?;
+    let want_hex = p.encoding.as_deref() == Some("hex");
 
     match p.algorithm.as_str() {
         "aes-256-gcm" => {
@@ -88,7 +94,7 @@ hap_fn!(hap_crypto_decrypt, DecryptParams, |p| {
             let nonce = Nonce::from_slice(&iv_bytes);
             let pt = cipher.decrypt(nonce, ct_bytes.as_ref())
                 .map_err(|_| HapError::internal("decryption failed: key/IV/ciphertext mismatch"))?;
-            Ok(json!(String::from_utf8_lossy(&pt).into_owned()))
+            if want_hex { Ok(json!(hex::encode(&pt))) } else { Ok(json!(String::from_utf8_lossy(&pt).into_owned())) }
         }
         "chacha20-poly1305" => {
             use chacha20poly1305::{ChaCha20Poly1305, KeyInit, Nonce};
@@ -96,7 +102,7 @@ hap_fn!(hap_crypto_decrypt, DecryptParams, |p| {
             let nonce = Nonce::from_slice(&iv_bytes);
             let pt = cipher.decrypt(nonce, ct_bytes.as_ref())
                 .map_err(|_| HapError::internal("decryption failed: key/IV/ciphertext mismatch"))?;
-            Ok(json!(String::from_utf8_lossy(&pt).into_owned()))
+            if want_hex { Ok(json!(hex::encode(&pt))) } else { Ok(json!(String::from_utf8_lossy(&pt).into_owned())) }
         }
         _ => Err(HapError::invalid_param(format!("unsupported: {}", p.algorithm))),
     }

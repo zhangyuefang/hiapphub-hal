@@ -449,7 +449,7 @@
     },
     {
       "name": "stat",
-      "symbol": "hap_fs_stat",
+      "symbol": "hap_fs_metadata",
       "params": [
         {
           "name": "path",
@@ -510,7 +510,7 @@
     },
     {
       "name": "list_dir",
-      "symbol": "hap_fs_list_dir",
+      "symbol": "hap_fs_read_dir",
       "params": [
         {
           "name": "path",
@@ -631,7 +631,7 @@
     },
     {
       "name": "mkdir",
-      "symbol": "hap_fs_mkdir",
+      "symbol": "hap_fs_create_dir",
       "params": [
         {
           "name": "path",

@@ -26,8 +26,18 @@ pub struct ExecParams {
     #[allow(dead_code)] pub encoding: Option<String>,
 }
 hap_fn!(hap_process_exec, ExecParams, |p| {
-    let mut cmd = Command::new(&p.command);
-    if let Some(ref args) = p.args { cmd.args(args); }
+    let use_shell = p.args.is_none() && p.command.contains(' ');
+    let mut cmd = if use_shell {
+        if cfg!(windows) {
+            let mut c = Command::new("cmd"); c.args(["/C", &p.command]); c
+        } else {
+            let mut c = Command::new("sh"); c.args(["-c", &p.command]); c
+        }
+    } else {
+        let mut c = Command::new(&p.command);
+        if let Some(ref args) = p.args { c.args(args); }
+        c
+    };
     if let Some(ref cwd) = p.cwd { cmd.current_dir(cwd); }
     if let Some(ref env) = p.env { for (k, v) in env { cmd.env(k, v); } }
     if p.stdin.is_some() {
