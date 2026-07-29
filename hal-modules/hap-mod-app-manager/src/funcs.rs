@@ -273,6 +273,81 @@ hap_fn!(hap_app_manager_get_manifest, ManifestParams, |p| {
     read_manifest_from_hap(&hap_path)
 });
 
+static UPDATE_ENDPOINT: &str = "https://api.hiapphub.com/v1/updates/check";
+
+hap_fn!(hap_app_manager_check_updates, EmptyParams, |_p| {
+    let versions = read_versions_cache();
+    let body = json!({
+        "bootstrapVersion": versions["bootstrap"].as_str().unwrap_or("0.0.0"),
+        "shellVersion": versions["shell"].as_str().unwrap_or("0.0.0"),
+        "devtoolsVersion": versions["devtools"].as_str().unwrap_or("0.0.0"),
+        "devRunnerVersion": versions["devRunner"].as_str().unwrap_or("0.0.0"),
+        "platform": std::env::consts::OS,
+        "arch": std::env::consts::ARCH,
+    });
+
+    let result = match ureq_post_json(UPDATE_ENDPOINT, &body.to_string()) {
+        Ok(resp) => serde_json::from_str::<Value>(&resp)
+            .unwrap_or_else(|_| json!({ "updates": [], "raw": resp })),
+        Err(e) => json!({ "updates": [], "error": e, "offline": true }),
+    };
+
+    let mut v = read_versions_cache();
+    v["lastCheck"] = Value::String(iso_now());
+    let _ = write_versions_cache(&v);
+
+    Ok(result)
+});
+
+fn ureq_post_json(url: &str, body: &str) -> Result<String, String> {
+    let req = format!(
+        "POST {} HTTP/1.1\r\nHost: {}\r\nContent-Type: application/json\r\nContent-Length: {}\r\nConnection: close\r\n\r\n{}",
+        url.split("://").nth(1).and_then(|s| s.find('/').map(|i| &s[i..])).unwrap_or("/"),
+        url.split("://").nth(1).and_then(|s| s.split('/').next()).unwrap_or(""),
+        body.len(),
+        body,
+    );
+    let _ = req;
+    Err("HTTP not available in HAL; use hap.hal('http', 'request', ...) from frontend".into())
+}
+
+fn iso_now() -> String {
+    use std::time::{SystemTime, UNIX_EPOCH};
+    let secs = SystemTime::now().duration_since(UNIX_EPOCH).unwrap_or_default().as_secs();
+    let days = secs / 86400;
+    let rem = secs % 86400;
+    let (y, m, d) = days_to_ymd(days);
+    format!("{y:04}-{m:02}-{d:02}T{:02}:{:02}:{:02}Z", rem / 3600, (rem % 3600) / 60, rem % 60)
+}
+
+fn days_to_ymd(days: u64) -> (u64, u64, u64) {
+    let mut y = 1970u64;
+    let mut r = days;
+    loop {
+        let dy = if y % 4 == 0 && (y % 100 != 0 || y % 400 == 0) { 366 } else { 365 };
+        if r < dy { break; }
+        r -= dy;
+        y += 1;
+    }
+    let leap = y % 4 == 0 && (y % 100 != 0 || y % 400 == 0);
+    let dm: [u64; 12] = if leap { [31,29,31,30,31,30,31,31,30,31,30,31] } else { [31,28,31,30,31,30,31,31,30,31,30,31] };
+    let mut m = 0;
+    for &md in &dm { if r < md { break; } r -= md; m += 1; }
+    (y, m + 1, r + 1)
+}
+
+#[derive(Deserialize)]
+pub struct DownloadUpdateParams {
+    pub url: String,
+    pub app_id: String,
+}
+
+hap_fn!(hap_app_manager_download_update, DownloadUpdateParams, |_p| {
+    Err(HapError::internal(
+        "download_update requires HTTP; call from frontend: hap.hal('http', 'request', {url, output_file}) then hap.system.replaceHap(appId, path)"
+    ))
+});
+
 hap_fn!(hap_app_manager_ensure_dirs, EmptyParams, |_p| {
     let base = data_dir();
     let dirs = ["data", "data/plugins", "config", "app", "lib", "cache/downloads", "backup", "logs"];

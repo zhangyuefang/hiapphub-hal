@@ -73,6 +73,23 @@
       "returns": { "type": "object" }
     },
     {
+      "name": "check_updates",
+      "symbol": "hap_app_manager_check_updates",
+      "descriptions": { "zh-CN": "检查更新", "en-US": "Check for updates" },
+      "params": [],
+      "returns": { "type": "object" }
+    },
+    {
+      "name": "download_update",
+      "symbol": "hap_app_manager_download_update",
+      "descriptions": { "zh-CN": "下载更新", "en-US": "Download update" },
+      "params": [
+        { "name": "url", "type": "string", "required": true },
+        { "name": "app_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" }
+    },
+    {
       "name": "ensure_dirs",
       "symbol": "hap_app_manager_ensure_dirs",
       "descriptions": { "zh-CN": "确保数据目录结构存在", "en-US": "Ensure data directory structure exists" },

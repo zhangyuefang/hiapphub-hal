@@ -65,6 +65,8 @@ struct ServerState {
     next_req_id: u64,
 }
 
+const MAX_PENDING: usize = 1000;
+
 static SERVER: OnceLock<Arc<Mutex<ServerState>>> = OnceLock::new();
 
 fn get_state() -> Arc<Mutex<ServerState>> {
@@ -143,7 +145,9 @@ pub fn stop_server() -> bool {
     s.running = false;
     s.connections.clear();
     s.apps.clear();
+    s.tokens.clear();
     s.pending_requests.clear();
+    s.pending_responses.clear();
     let _ = std::fs::remove_file(&s.socket_path);
     true
 }
@@ -300,6 +304,11 @@ fn handle_connection(stream: StreamType, state: Arc<Mutex<ServerState>>) {
                 let mut s = state.lock().unwrap();
                 req_id = format!("ipc-{}", s.next_req_id);
                 s.next_req_id += 1;
+                while s.pending_requests.len() >= MAX_PENDING {
+                    if let Some(old) = s.pending_requests.pop_front() {
+                        s.pending_responses.remove(&old.request_id);
+                    }
+                }
                 s.pending_requests.push_back(PendingRequest {
                     request_id: req_id.clone(),
                     app_id,
