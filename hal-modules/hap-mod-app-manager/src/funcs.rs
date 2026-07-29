@@ -38,6 +38,17 @@ fn get_plugin_version(app_id: &str) -> Option<String> {
         .and_then(|m| m["version"].as_str().map(String::from))
 }
 
+fn verify_data_integrity<R: std::io::Read + std::io::Seek>(
+    reader: &mut hap_format::HapReader<R>,
+) -> Result<(), HapError> {
+    for entry in reader.entries.clone() {
+        if entry.encrypted { continue; }
+        reader.read_entry(&entry)
+            .map_err(|e| HapError::internal(format!("integrity check failed for '{}': {e}", entry.path)))?;
+    }
+    Ok(())
+}
+
 fn is_platform_app(app_id: &str) -> bool {
     matches!(app_id, "hiapphub-shell" | "hiapphub-devtools" | "hiapphub-dev-runner")
 }
@@ -112,6 +123,7 @@ hap_fn!(hap_app_manager_install, InstallParams, |p| {
     }
     let mut reader = hap_format::HapReader::open_file(hap_file)
         .map_err(|e| HapError::internal(format!("{e}")))?;
+    verify_data_integrity(&mut reader)?;
     let manifest_data = reader.read_file("manifest.json")
         .map_err(|e| HapError::internal(format!("{e}")))?;
     let manifest_str = String::from_utf8(manifest_data)
@@ -240,6 +252,11 @@ hap_fn!(hap_app_manager_uninstall, AppIdParams, |p| {
     if backup.exists() {
         let _ = fs::remove_file(&backup);
     }
+    let mut versions = read_versions_cache();
+    if let Some(obj) = versions.as_object_mut() {
+        obj.remove(&p.app_id);
+    }
+    let _ = write_versions_cache(&versions);
     Ok(json!(true))
 });
 

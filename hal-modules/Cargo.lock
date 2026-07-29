@@ -2830,6 +2830,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "hap-mod-ipc-server"
+version = "1.0.0"
+dependencies = [
+ "hap-common",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "hap-mod-keychain"
 version = "1.0.0"
 dependencies = [

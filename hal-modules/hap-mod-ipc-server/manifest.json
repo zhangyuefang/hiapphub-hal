@@ -1,0 +1,112 @@
+{
+  "uuid": "a1b2c3d4-1000-4000-8000-000000000043",
+  "name": "ipc_server",
+  "version": "1.0.0",
+  "author": "HiAppHub",
+  "icon": "🔌",
+  "min_shell_version": "0.3.0",
+  "category": "system",
+  "descriptions": {
+    "zh-CN": "IPC服务器模块：管理子进程连接与通信",
+    "en-US": "IPC server: manage child process connections and communication"
+  },
+  "permission": "ipc_server",
+  "functions": [
+    {
+      "name": "start",
+      "symbol": "hap_ipc_server_start",
+      "descriptions": { "zh-CN": "启动IPC服务器", "en-US": "Start IPC server" },
+      "params": [],
+      "returns": { "type": "object" }
+    },
+    {
+      "name": "stop",
+      "symbol": "hap_ipc_server_stop",
+      "descriptions": { "zh-CN": "停止IPC服务器", "en-US": "Stop IPC server" },
+      "params": [],
+      "returns": { "type": "boolean" }
+    },
+    {
+      "name": "status",
+      "symbol": "hap_ipc_server_status",
+      "descriptions": { "zh-CN": "获取服务器状态", "en-US": "Get server status" },
+      "params": [],
+      "returns": { "type": "object" }
+    },
+    {
+      "name": "generate_token",
+      "symbol": "hap_ipc_server_generate_token",
+      "descriptions": { "zh-CN": "为应用生成认证token", "en-US": "Generate auth token for app" },
+      "params": [
+        { "name": "app_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "object" }
+    },
+    {
+      "name": "list_apps",
+      "symbol": "hap_ipc_server_list_apps",
+      "descriptions": { "zh-CN": "列出已连接的应用", "en-US": "List connected apps" },
+      "params": [],
+      "returns": { "type": "array" }
+    },
+    {
+      "name": "is_app_connected",
+      "symbol": "hap_ipc_server_is_app_connected",
+      "descriptions": { "zh-CN": "检查应用是否已连接", "en-US": "Check if app is connected" },
+      "params": [
+        { "name": "app_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "boolean" }
+    },
+    {
+      "name": "poll_requests",
+      "symbol": "hap_ipc_server_poll_requests",
+      "descriptions": { "zh-CN": "轮询待处理的请求", "en-US": "Poll pending requests" },
+      "params": [
+        { "name": "limit", "type": "number", "required": false }
+      ],
+      "returns": { "type": "array" }
+    },
+    {
+      "name": "respond",
+      "symbol": "hap_ipc_server_respond",
+      "descriptions": { "zh-CN": "响应待处理的请求", "en-US": "Respond to pending request" },
+      "params": [
+        { "name": "request_id", "type": "string", "required": true },
+        { "name": "result", "type": "object", "required": false },
+        { "name": "error_code", "type": "number", "required": false },
+        { "name": "error_message", "type": "string", "required": false }
+      ],
+      "returns": { "type": "boolean" }
+    },
+    {
+      "name": "send_to_app",
+      "symbol": "hap_ipc_server_send_to_app",
+      "descriptions": { "zh-CN": "向指定应用发送消息", "en-US": "Send message to app" },
+      "params": [
+        { "name": "app_id", "type": "string", "required": true },
+        { "name": "method", "type": "string", "required": true },
+        { "name": "params", "type": "object", "required": false }
+      ],
+      "returns": { "type": "boolean" }
+    },
+    {
+      "name": "activate_app",
+      "symbol": "hap_ipc_server_activate_app",
+      "descriptions": { "zh-CN": "激活应用窗口", "en-US": "Activate app window" },
+      "params": [
+        { "name": "app_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "boolean" }
+    },
+    {
+      "name": "terminate_app",
+      "symbol": "hap_ipc_server_terminate_app",
+      "descriptions": { "zh-CN": "终止应用", "en-US": "Terminate app" },
+      "params": [
+        { "name": "app_id", "type": "string", "required": true }
+      ],
+      "returns": { "type": "boolean" }
+    }
+  ]
+}
