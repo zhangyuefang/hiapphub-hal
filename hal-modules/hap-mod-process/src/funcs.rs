@@ -369,3 +369,4 @@ hap_fn!(hap_process_set_priority, SetPriorityParams, |p| {
         Err(HapError::new("NOT_IMPLEMENTED", "set_priority only supported on Unix"))
     }
 });
+
