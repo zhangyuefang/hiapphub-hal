@@ -1,0 +1,51 @@
+name: Build HAL Modules
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        include:
+          - target: aarch64-apple-darwin
+            os: macos-14
+          - target: x86_64-apple-darwin
+            os: macos-13
+          - target: x86_64-unknown-linux-gnu
+            os: ubuntu-22.04
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Install Linux deps
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.1-dev libayatana-appindicator3-dev
+
+      - name: Build all modules
+        run: cargo build --release --target ${{ matrix.target }}
+
+      - name: Check build artifacts
+        shell: bash
+        run: |
+          count=$(find target/${{ matrix.target }}/release -name "libhap_mod_*" | wc -l)
+          echo "Built $count HAL modules"
+          if [ "$count" -lt 40 ]; then
+            echo "ERROR: Expected 40+ modules, got $count"
+            exit 1
+          fi
