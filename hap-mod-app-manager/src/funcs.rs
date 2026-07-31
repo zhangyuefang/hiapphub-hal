@@ -32,7 +32,7 @@ fn read_manifest_from_hap(hap_path: &Path) -> Result<Value, HapError> {
 }
 
 fn get_plugin_version(app_id: &str) -> Option<String> {
-    let hap_path = app_dir().join(format!("{app_id}.hap"));
+    let hap_path = app_dir().join(format!("{app_id}.hapk"));
     if !hap_path.exists() { return None; }
     read_manifest_from_hap(&hap_path).ok()
         .and_then(|m| m["version"].as_str().map(String::from))
@@ -135,7 +135,7 @@ hap_fn!(hap_app_manager_install, InstallParams, |p| {
 
     let target_dir = app_dir();
     let _ = fs::create_dir_all(&target_dir);
-    let target = target_dir.join(format!("{plugin_id}.hap"));
+    let target = target_dir.join(format!("{plugin_id}.hapk"));
     fs::copy(hap_file, &target)
         .map_err(|e| HapError::internal(format!("copy failed: {e}")))?;
     Ok(manifest)
@@ -176,8 +176,8 @@ hap_fn!(hap_app_manager_replace, ReplaceParams, |p| {
         )));
     }
 
-    let target = app_dir().join(format!("{}.hap", p.app_id));
-    let backup = app_dir().join(format!("{}.hap.backup", p.app_id));
+    let target = app_dir().join(format!("{}.hapk", p.app_id));
+    let backup = app_dir().join(format!("{}.hapk.backup", p.app_id));
 
     let src_canonical = new_path.canonicalize().unwrap_or_else(|_| new_path.to_path_buf());
     let dst_canonical = target.canonicalize().unwrap_or_else(|_| target.clone());
@@ -214,8 +214,8 @@ pub struct AppIdParams {
 }
 
 hap_fn!(hap_app_manager_rollback, AppIdParams, |p| {
-    let target = app_dir().join(format!("{}.hap", p.app_id));
-    let backup = app_dir().join(format!("{}.hap.backup", p.app_id));
+    let target = app_dir().join(format!("{}.hapk", p.app_id));
+    let backup = app_dir().join(format!("{}.hapk.backup", p.app_id));
     if !backup.exists() {
         return Err(HapError::internal(format!("no backup found for {}", p.app_id)));
     }
@@ -244,8 +244,8 @@ hap_fn!(hap_app_manager_uninstall, AppIdParams, |p| {
     if is_platform_app(&p.app_id) {
         return Err(HapError::invalid_param("cannot uninstall platform apps"));
     }
-    let hap = app_dir().join(format!("{}.hap", p.app_id));
-    let backup = app_dir().join(format!("{}.hap.backup", p.app_id));
+    let hap = app_dir().join(format!("{}.hapk", p.app_id));
+    let backup = app_dir().join(format!("{}.hapk.backup", p.app_id));
     if hap.exists() {
         fs::remove_file(&hap).map_err(|e| HapError::internal(format!("{e}")))?;
     }
@@ -266,7 +266,7 @@ pub struct ManifestParams {
 }
 
 hap_fn!(hap_app_manager_get_manifest, ManifestParams, |p| {
-    let hap_path = app_dir().join(format!("{}.hap", p.app_id));
+    let hap_path = app_dir().join(format!("{}.hapk", p.app_id));
     if !hap_path.exists() {
         return Err(HapError::internal(format!("app '{}' not installed", p.app_id)));
     }
