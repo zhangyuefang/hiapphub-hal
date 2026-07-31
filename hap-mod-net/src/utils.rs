@@ -1,6 +1,7 @@
 use hap_common::{hap_fn, HapError};
 use serde::Deserialize;
 use serde_json::{json, Value};
+use std::io::{Read, Write};
 use std::net::{TcpStream, UdpSocket, SocketAddr};
 use std::time::{Duration, Instant};
 
@@ -187,22 +188,33 @@ hap_fn!(hap_net_wifi_info, Value, |_p| {
 #[derive(Deserialize)]
 pub struct SslInfoParams { pub host: String, pub port: Option<i32> }
 hap_fn!(hap_net_ssl_info, SslInfoParams, |p| {
+    use rustls::pki_types::ServerName;
+    use std::sync::Arc;
+
     let port = p.port.unwrap_or(443);
-    let connector = native_tls::TlsConnector::new().map_err(|e| HapError::internal(e.to_string()))?;
-    let stream = TcpStream::connect_timeout(
-        &format!("{}:{}", p.host, port).parse::<SocketAddr>()
-            .or_else(|_| -> Result<SocketAddr, HapError> {
-                let ips = dns_lookup::lookup_host(&p.host).map_err(|e| HapError::internal(e.to_string()))?;
-                let ip = ips.into_iter().next().ok_or_else(|| HapError::internal("cannot resolve"))?;
-                Ok(SocketAddr::new(ip, port as u16))
-            })?,
-        Duration::from_secs(5),
-    ).map_err(|e| HapError::internal(e.to_string()))?;
-    let tls_stream = connector.connect(&p.host, stream)
-        .map_err(|e| HapError::internal(format!("TLS handshake failed: {e}")))?;
-    let cert = tls_stream.peer_certificate().map_err(|e| HapError::internal(e.to_string()))?;
-    if let Some(cert) = cert {
-        let der = cert.to_der().map_err(|e| HapError::internal(e.to_string()))?;
+    let root_store = rustls::RootCertStore::from_iter(webpki_roots::TLS_SERVER_ROOTS.iter().cloned());
+    let config = rustls::ClientConfig::builder()
+        .with_root_certificates(root_store)
+        .with_no_client_auth();
+    let server_name = ServerName::try_from(p.host.as_str())
+        .map_err(|e| HapError::internal(format!("invalid hostname: {e}")))?
+        .to_owned();
+    let mut conn = rustls::ClientConnection::new(Arc::new(config), server_name)
+        .map_err(|e| HapError::internal(e.to_string()))?;
+    let addr = format!("{}:{}", p.host, port).parse::<SocketAddr>()
+        .or_else(|_| -> Result<SocketAddr, HapError> {
+            let ips = dns_lookup::lookup_host(&p.host).map_err(|e| HapError::internal(e.to_string()))?;
+            let ip = ips.into_iter().next().ok_or_else(|| HapError::internal("cannot resolve"))?;
+            Ok(SocketAddr::new(ip, port as u16))
+        })?;
+    let mut tcp = TcpStream::connect_timeout(&addr, Duration::from_secs(5))
+        .map_err(|e| HapError::internal(e.to_string()))?;
+    let mut stream = rustls::Stream::new(&mut conn, &mut tcp);
+    stream.flush().ok();
+    let _ = stream.read(&mut [0u8; 1]);
+    let certs = conn.peer_certificates().unwrap_or(&[]);
+    if let Some(cert) = certs.first() {
+        let der = cert.as_ref();
         Ok(json!({
             "subject": "",
             "issuer": "",
@@ -353,5 +365,3 @@ hap_fn!(hap_net_off_network_change, OffNetworkChangeParams, |p| {
         Ok(json!(false))
     }
 });
-
-use std::io::Read;

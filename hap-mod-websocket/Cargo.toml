@@ -11,6 +11,8 @@ hap-common = { path = "../common" }
 serde = { workspace = true }
 serde_json = { workspace = true }
 libc = { workspace = true }
-tungstenite = { version = "0.24", features = ["native-tls"] }
+tungstenite = { version = "0.24", default-features = false, features = ["handshake", "__rustls-tls"] }
+rustls = { workspace = true }
+rustls-native-certs = "0.8"
 base64 = "0.22"
 url = "2"

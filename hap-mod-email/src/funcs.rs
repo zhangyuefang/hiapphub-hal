@@ -88,13 +88,24 @@ hap_fn!(hap_email_send, SendParams, |params| {
 });
 
 fn connect_imap(host: &str, port: u16, username: &str, password: &str)
-    -> Result<imap::Session<native_tls::TlsStream<std::net::TcpStream>>, HapError>
+    -> Result<imap::Session<rustls::StreamOwned<rustls::ClientConnection, std::net::TcpStream>>, HapError>
 {
-    let tls = native_tls::TlsConnector::builder()
-        .build()
+    use rustls::pki_types::ServerName;
+    use std::sync::Arc;
+
+    let root_store = rustls::RootCertStore::from_iter(webpki_roots::TLS_SERVER_ROOTS.iter().cloned());
+    let config = Arc::new(rustls::ClientConfig::builder()
+        .with_root_certificates(root_store)
+        .with_no_client_auth());
+    let server_name = ServerName::try_from(host)
+        .map_err(|e| HapError::internal(format!("invalid hostname: {e}")))?
+        .to_owned();
+    let conn = rustls::ClientConnection::new(config, server_name)
         .map_err(|e| HapError::internal(format!("tls init: {e}")))?;
-    let client = imap::connect((host, port), host, &tls)
-        .map_err(|e| HapError::internal(format!("imap connect: {e}")))?;
+    let tcp = std::net::TcpStream::connect((host, port))
+        .map_err(|e| HapError::internal(format!("tcp connect: {e}")))?;
+    let tls_stream = rustls::StreamOwned::new(conn, tcp);
+    let client = imap::Client::new(tls_stream);
     let session = client.login(username, password)
         .map_err(|e| HapError::internal(format!("imap login: {}", e.0)))?;
     Ok(session)

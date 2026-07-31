@@ -13,5 +13,6 @@ serde_json = { workspace = true }
 libc = { workspace = true }
 lettre = { version = "0.11", default-features = false, features = ["smtp-transport", "rustls-tls", "builder", "hostname"] }
 mail-parser = "0.9"
-imap = "2"
-native-tls = "0.2"
+imap = { version = "2", default-features = false }
+rustls = { workspace = true }
+webpki-roots = "0.26"
