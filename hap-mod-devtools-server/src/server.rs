@@ -3,6 +3,7 @@ use crate::callback_routes::{self, CallbackRequest};
 use crate::ws_manager::{WsClient, WsManager};
 use axum::extract::ws::{Message, WebSocket};
 use axum::extract::{State, WebSocketUpgrade};
+use axum::extract::Json;
 use axum::http::StatusCode;
 use axum::response::IntoResponse;
 use axum::routing::{get, post};
@@ -21,6 +22,14 @@ pub struct AppState {
     pub pending_callbacks: Mutex<Vec<CallbackRequest>>,
     pub internal_requests: Mutex<Vec<InternalRequest>>,
     pub internal_routes: RwLock<Vec<(String, String)>>,
+    pub eval_queue: Mutex<Vec<EvalEntry>>,
+}
+
+pub struct EvalEntry {
+    pub id: String,
+    pub app_id: String,
+    pub script: String,
+    pub result_tx: Option<tokio::sync::oneshot::Sender<String>>,
 }
 
 pub struct InternalRequest {
@@ -88,6 +97,7 @@ pub fn start(http_port: u16, ws_port: u16, internal_port: u16) -> Result<Value, 
             pending_callbacks: Mutex::new(Vec::new()),
             internal_requests: Mutex::new(Vec::new()),
             internal_routes: RwLock::new(Vec::new()),
+            eval_queue: Mutex::new(Vec::new()),
         });
 
         let http_state = state.clone();
@@ -153,6 +163,7 @@ pub fn status() -> Result<Value, String> {
                 "http_port": h.http_port,
                 "ws_port": h.ws_port,
                 "internal_port": h.internal_port,
+                "token": h.state.token,
             })),
             None => Ok(json!({ "running": false })),
         }
@@ -232,9 +243,17 @@ async fn run_http_server(state: Arc<AppState>, port: u16) {
         .route("/api/v1/devtools/project/start", post(callback_routes::project_start))
         .route("/api/v1/devtools/project/stop", post(callback_routes::project_stop))
         .route("/api/v1/projects/start", post(callback_routes::projects_start))
+        .route("/api/v1/ohos/eval/pending", get(ohos_eval_pending))
+        .route("/api/v1/ohos/eval/result", post(ohos_eval_result))
+        .route("/api/v1/ohos/logs", post(ohos_log_broadcast))
+        .route("/api/v1/ohos/eval", post(ohos_eval_submit))
         .layer(axum::middleware::from_fn(move |req: axum::extract::Request, next: axum::middleware::Next| {
             let t = token.clone();
             async move {
+                let path = req.uri().path().to_string();
+                if path.starts_with("/api/v1/ohos/eval/pending") || path.starts_with("/api/v1/ohos/eval/result") || path.starts_with("/api/v1/ohos/logs") {
+                    return next.run(req).await;
+                }
                 if let Some(resp) = auth_middleware(&t, req.headers()).await {
                     return resp;
                 }
@@ -247,6 +266,54 @@ async fn run_http_server(state: Arc<AppState>, port: u16) {
     let addr = SocketAddr::from(([127, 0, 0, 1], port));
     let listener = tokio::net::TcpListener::bind(addr).await.unwrap();
     axum::serve(listener, app).await.ok();
+}
+
+async fn ohos_eval_pending(State(state): State<Arc<AppState>>) -> impl IntoResponse {
+    let queue = state.eval_queue.lock().await;
+    let pending: Vec<Value> = queue.iter().map(|e| json!({"id": e.id, "appId": e.app_id, "script": e.script})).collect();
+    Json(json!({"pending": pending}))
+}
+
+async fn ohos_eval_result(State(state): State<Arc<AppState>>, Json(body): Json<Value>) -> impl IntoResponse {
+    let id = body.get("id").and_then(|v| v.as_str()).unwrap_or("");
+    let result = body.get("result").and_then(|v| v.as_str()).unwrap_or("null");
+    let mut queue = state.eval_queue.lock().await;
+    if let Some(pos) = queue.iter().position(|e| e.id == id) {
+        let entry = queue.remove(pos);
+        if let Some(tx) = entry.result_tx {
+            let _ = tx.send(result.to_string());
+        }
+    }
+    // Also broadcast to WS clients
+    let _ = state.ws.broadcast(&json!({"type": "custom", "event": "hap:eval:response", "data": {"id": id, "result": result}})).await;
+    Json(json!({"ok": true}))
+}
+
+async fn ohos_log_broadcast(State(state): State<Arc<AppState>>, Json(body): Json<Value>) -> impl IntoResponse {
+    let _ = state.ws.broadcast(&json!({"type": "custom", "event": "hap:log", "data": body})).await;
+    Json(json!({"ok": true}))
+}
+
+async fn ohos_eval_submit(State(state): State<Arc<AppState>>, Json(body): Json<Value>) -> impl IntoResponse {
+    let app_id = body.get("appId").and_then(|v| v.as_str()).unwrap_or("").to_string();
+    let script = body.get("script").and_then(|v| v.as_str()).unwrap_or("").to_string();
+    if script.is_empty() {
+        return Json(json!({"error": "script required"}));
+    }
+    let id = format!("eval_{}_{}", millis(), &uuid::Uuid::new_v4().to_string()[..8]);
+    let (tx, rx) = tokio::sync::oneshot::channel();
+    {
+        let mut queue = state.eval_queue.lock().await;
+        queue.push(EvalEntry { id: id.clone(), app_id, script, result_tx: Some(tx) });
+    }
+    match tokio::time::timeout(std::time::Duration::from_secs(10), rx).await {
+        Ok(Ok(result)) => Json(json!({"id": id, "result": result})),
+        _ => {
+            let mut queue = state.eval_queue.lock().await;
+            queue.retain(|e| e.id != id);
+            Json(json!({"id": id, "error": "timeout"}))
+        }
+    }
 }
 
 async fn ws_upgrade_handler(ws: WebSocketUpgrade, State(state): State<Arc<AppState>>) -> impl IntoResponse {
@@ -278,6 +345,13 @@ async fn handle_ws_connection(socket: WebSocket, state: Arc<AppState>) {
     while let Some(result) = ws_rx.next().await {
         match result {
             Ok(Message::Text(text)) => {
+                if let Ok(msg) = serde_json::from_str::<serde_json::Value>(&text) {
+                    if msg.get("type").and_then(|t| t.as_str()) == Some("get_token") {
+                        let resp = serde_json::json!({"type":"token","token":&state.token});
+                        let _ = state.ws.send_to_client(&client_id, &resp).await;
+                        continue;
+                    }
+                }
                 state.ws.handle_message(&client_id, &text).await;
             }
             Ok(Message::Close(_)) | Err(_) => break,
@@ -356,9 +430,20 @@ async fn run_internal_server(state: Arc<AppState>, port: u16) {
 
 fn write_port_file(port: u16, token: &str) {
     let content = serde_json::to_string(&json!({ "port": port, "token": token })).unwrap_or_default();
-    if let Ok(home) = std::env::var("HOME") {
-        let path = format!("{}/.hiapphub/devtools.port", home);
-        let _ = std::fs::write(&path, &content);
+    let candidates: Vec<Option<String>> = vec![
+        std::env::var("HOME").ok().filter(|h| h != "/").map(|h| format!("{}/.hiapphub", h)),
+        std::env::current_dir().ok().map(|d| format!("{}/.hiapphub", d.display())),
+        Some("/data/storage/el2/base/haps/entry/files/.hiapphub".to_string()),
+        Some("/data/storage/el2/base/files/.hiapphub".to_string()),
+    ];
+    for dir_opt in &candidates {
+        if let Some(dir) = dir_opt {
+            let _ = std::fs::create_dir_all(dir);
+            let path = format!("{}/devtools.port", dir);
+            if std::fs::write(&path, &content).is_ok() {
+                return;
+            }
+        }
     }
 }
 

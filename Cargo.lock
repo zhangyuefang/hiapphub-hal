@@ -2886,6 +2886,56 @@ dependencies = [
 ]
 
 [[package]]
+name = "hap-mod-ohos-ability"
+version = "1.0.0"
+dependencies = [
+ "hap-common",
+ "libc",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "hap-mod-ohos-file"
+version = "1.0.0"
+dependencies = [
+ "hap-common",
+ "libc",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "hap-mod-ohos-media"
+version = "1.0.0"
+dependencies = [
+ "hap-common",
+ "libc",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "hap-mod-ohos-network"
+version = "1.0.0"
+dependencies = [
+ "hap-common",
+ "libc",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "hap-mod-ohos-notification"
+version = "1.0.0"
+dependencies = [
+ "hap-common",
+ "libc",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "hap-mod-pdf"
 version = "1.0.0"
 dependencies = [

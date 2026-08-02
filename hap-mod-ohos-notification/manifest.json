@@ -1,0 +1,14 @@
+{
+  "name": "ohos-notification",
+  "version": "1.0.0",
+  "platform": ["ohos"],
+  "description": "HarmonyOS notification manager",
+  "functions": [
+    { "name": "publish", "description": "Publish a notification", "params": ["title:string", "text:string", "id?:number"] },
+    { "name": "cancel", "description": "Cancel a notification by id", "params": ["id:number"] },
+    { "name": "cancel_all", "description": "Cancel all notifications", "params": [] },
+    { "name": "get_active_count", "description": "Get active notification count", "params": [] },
+    { "name": "is_enabled", "description": "Check if notification is enabled for this app", "params": [] },
+    { "name": "request_enable", "description": "Request user to enable notifications", "params": [] }
+  ]
+}

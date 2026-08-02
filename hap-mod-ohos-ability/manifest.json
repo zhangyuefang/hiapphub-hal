@@ -1,0 +1,18 @@
+{
+  "name": "ohos-ability",
+  "version": "1.0.0",
+  "platform": ["ohos"],
+  "description": "HarmonyOS Ability lifecycle and system interaction",
+  "functions": [
+    { "name": "start_ability", "description": "Start another Ability via Want", "params": ["bundle_name:string", "ability_name:string", "params?:object"] },
+    { "name": "get_context", "description": "Get current Ability context info", "params": [] },
+    { "name": "get_app_info", "description": "Get current app bundle info", "params": [] },
+    { "name": "request_permission", "description": "Request runtime permission", "params": ["permission:string"] },
+    { "name": "check_permission", "description": "Check if permission is granted", "params": ["permission:string"] },
+    { "name": "show_toast", "description": "Show a prompt toast message", "params": ["message:string", "duration?:number"] },
+    { "name": "show_dialog", "description": "Show a system dialog", "params": ["title:string", "message:string", "buttons?:array"] },
+    { "name": "set_brightness", "description": "Set screen brightness", "params": ["value:number"] },
+    { "name": "vibrate", "description": "Trigger device vibration", "params": ["duration?:number", "pattern?:array"] },
+    { "name": "get_display_info", "description": "Get screen display properties", "params": [] }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "ohos-media",
+  "version": "1.0.0",
+  "platform": ["ohos"],
+  "description": "HarmonyOS media access (PhotoAccessHelper, AudioRenderer)",
+  "functions": [
+    { "name": "pick_photo", "description": "Launch photo picker and return selected URI(s)", "params": ["max_count?:number", "mime_type?:string"] },
+    { "name": "pick_video", "description": "Launch video picker and return selected URI(s)", "params": ["max_count?:number"] },
+    { "name": "save_to_gallery", "description": "Save file to gallery", "params": ["source_path:string", "display_name:string"] },
+    { "name": "play_audio", "description": "Play audio file via AudioRenderer", "params": ["path:string"] },
+    { "name": "stop_audio", "description": "Stop current audio playback", "params": [] },
+    { "name": "get_volume", "description": "Get current system volume", "params": [] },
+    { "name": "capture_image", "description": "Capture image from camera", "params": ["quality?:number"] },
+    { "name": "record_audio", "description": "Start audio recording", "params": ["output_path:string", "format?:string"] },
+    { "name": "stop_recording", "description": "Stop audio recording", "params": [] },
+    { "name": "get_media_info", "description": "Get media file metadata", "params": ["path:string"] }
+  ]
+}

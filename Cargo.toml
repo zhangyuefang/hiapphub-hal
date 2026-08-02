@@ -45,6 +45,11 @@ members = [
     "hap-mod-devtools-server",
     "hap-mod-app-manager",
     "hap-mod-ipc-server",
+    "hap-mod-ohos-media",
+    "hap-mod-ohos-ability",
+    "hap-mod-ohos-file",
+    "hap-mod-ohos-notification",
+    "hap-mod-ohos-network",
 ]
 
 [profile.release]

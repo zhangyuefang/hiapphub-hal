@@ -1,0 +1,18 @@
+{
+  "name": "ohos-file",
+  "version": "1.0.0",
+  "platform": ["ohos"],
+  "description": "HarmonyOS file management (sandbox, picker, share)",
+  "functions": [
+    { "name": "pick_file", "description": "Open file picker dialog", "params": ["suffixes?:array", "max_count?:number"] },
+    { "name": "save_file", "description": "Open save file dialog", "params": ["default_name?:string", "suffixes?:array"] },
+    { "name": "get_sandbox_path", "description": "Get app sandbox directory path", "params": ["type:string"] },
+    { "name": "copy_to_sandbox", "description": "Copy URI file to app sandbox", "params": ["uri:string", "dest_name:string"] },
+    { "name": "share_file", "description": "Share file via system share sheet", "params": ["path:string", "mime_type?:string"] },
+    { "name": "get_file_info", "description": "Get file stat info (size, mtime)", "params": ["path:string"] },
+    { "name": "list_dir", "description": "List directory contents", "params": ["path:string"] },
+    { "name": "read_text", "description": "Read text file from sandbox", "params": ["path:string", "encoding?:string"] },
+    { "name": "write_text", "description": "Write text file to sandbox", "params": ["path:string", "content:string"] },
+    { "name": "delete_file", "description": "Delete file from sandbox", "params": ["path:string"] }
+  ]
+}

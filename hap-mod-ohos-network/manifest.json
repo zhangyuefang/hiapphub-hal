@@ -1,0 +1,14 @@
+{
+  "name": "ohos-network",
+  "version": "1.0.0",
+  "platform": ["ohos"],
+  "description": "HarmonyOS network info and connectivity",
+  "functions": [
+    { "name": "get_type", "description": "Get current network type (wifi/cellular/none)", "params": [] },
+    { "name": "is_connected", "description": "Check if network is available", "params": [] },
+    { "name": "get_wifi_info", "description": "Get WiFi connection details", "params": [] },
+    { "name": "get_cellular_info", "description": "Get cellular network info", "params": [] },
+    { "name": "on_change", "description": "Register network state change listener", "params": [] },
+    { "name": "get_ip_address", "description": "Get device IP address", "params": [] }
+  ]
+}
