@@ -46,6 +46,7 @@ macro_rules! hap_module_init {
 macro_rules! hap_fn {
     ($symbol:ident, $params_ty:ty, $body:expr) => {
         #[no_mangle]
+        #[allow(clippy::not_unsafe_ptr_arg_deref)]
         pub extern "C" fn $symbol(
             params_json: *const std::os::raw::c_char,
         ) -> *const std::os::raw::c_char {

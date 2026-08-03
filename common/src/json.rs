@@ -4,6 +4,7 @@ use std::os::raw::c_char;
 
 use crate::HapError;
 
+#[allow(clippy::not_unsafe_ptr_arg_deref)]
 pub fn parse_params<T: DeserializeOwned>(params_json: *const c_char) -> Result<T, HapError> {
     if params_json.is_null() {
         return Err(HapError::invalid_param("argument is null"));
