@@ -97,9 +97,13 @@ hap_fn!(hap_app_manager_list_plugins, EmptyParams, |_p| {
         .map_err(|e| HapError::internal(format!("read app dir: {e}")))?;
     for entry in entries.flatten() {
         let path = entry.path();
-        if path.extension().and_then(|e| e.to_str()) == Some("hap") {
-            if let Ok(manifest) = read_manifest_from_hap(&path) {
-                plugins.push(manifest);
+        let ext = path.extension().and_then(|e| e.to_str());
+        if ext == Some("hapk") || ext == Some("hap") {
+            match read_manifest_from_hap(&path) {
+                Ok(manifest) => plugins.push(manifest),
+                Err(e) => {
+                    eprintln!("[app-manager] failed to read {}: {e}", path.display());
+                }
             }
         }
     }
