@@ -9,7 +9,7 @@ pub struct EmptyParams {}
 
 hap_fn!(hap_ipc_server_start, EmptyParams, |_p| {
     let path = server::start_server()
-        .map_err(|e| HapError::internal(e))?;
+        .map_err(HapError::internal)?;
     Ok(json!({ "socket_path": path, "running": true }))
 });
 
@@ -83,18 +83,18 @@ pub struct SendParams {
 
 hap_fn!(hap_ipc_server_send_to_app, SendParams, |p| {
     server::send_to_app(&p.app_id, &p.method, p.params.unwrap_or(json!({})))
-        .map_err(|e| HapError::internal(e))?;
+        .map_err(HapError::internal)?;
     Ok(json!(true))
 });
 
 hap_fn!(hap_ipc_server_activate_app, AppIdParams, |p| {
     server::send_to_app(&p.app_id, "window.activate", json!({}))
-        .map_err(|e| HapError::internal(e))?;
+        .map_err(HapError::internal)?;
     Ok(json!(true))
 });
 
 hap_fn!(hap_ipc_server_terminate_app, AppIdParams, |p| {
     server::send_to_app(&p.app_id, "lifecycle.terminate", json!({}))
-        .map_err(|e| HapError::internal(e))?;
+        .map_err(HapError::internal)?;
     Ok(json!(true))
 });

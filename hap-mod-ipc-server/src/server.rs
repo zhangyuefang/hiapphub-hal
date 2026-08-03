@@ -108,11 +108,9 @@ pub fn start_server() -> Result<String, String> {
             .map_err(|e| format!("bind failed: {e}"))?;
         let state_clone = state.clone();
         std::thread::spawn(move || {
-            for stream in listener.incoming() {
-                if let Ok(stream) = stream {
-                    let sc = state_clone.clone();
-                    std::thread::spawn(move || handle_connection(stream, sc));
-                }
+            for stream in listener.incoming().flatten() {
+                let sc = state_clone.clone();
+                std::thread::spawn(move || handle_connection(stream, sc));
             }
         });
     }

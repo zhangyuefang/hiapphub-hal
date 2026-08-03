@@ -259,7 +259,7 @@ hap_fn!(hap_image_auto_orient, AutoOrientParams, |p| {
         Ok(exif_data) => {
             exif_data.get_field(exif::Tag::Orientation, exif::In::PRIMARY)
                 .and_then(|f| f.value.get_uint(0))
-                .unwrap_or(1) as u32
+                .unwrap_or(1)
         }
         Err(_) => 1,
     };
@@ -347,12 +347,10 @@ hap_fn!(hap_image_gif_info, GifInfoParams, |p| {
     let frames = decoder.into_frames();
     let mut count = 0i32;
     let mut total_ms = 0.0f64;
-    for frame_result in frames {
-        if let Ok(frame) = frame_result {
-            let (numer, denom) = frame.delay().numer_denom_ms();
-            total_ms += numer as f64 / denom as f64;
-            count += 1;
-        }
+    for frame in frames.flatten() {
+        let (numer, denom) = frame.delay().numer_denom_ms();
+        total_ms += numer as f64 / denom as f64;
+        count += 1;
     }
     Ok(json!({"frames": count, "width": w, "height": h, "duration_ms": total_ms, "loop_count": 0}))
 });

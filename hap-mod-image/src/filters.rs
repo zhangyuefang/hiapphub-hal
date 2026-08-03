@@ -226,7 +226,7 @@ hap_fn!(hap_image_trim, TrimParams, |p| {
     let img = load_img(&p.path)?;
     let rgba = img.to_rgba8();
     let (w, h) = rgba.dimensions();
-    let tol = p.tolerance.unwrap_or(10) as i32;
+    let tol = p.tolerance.unwrap_or(10);
     let bg = rgba.get_pixel(0, 0);
     let is_bg = |px: &image::Rgba<u8>| -> bool {
         (px[0] as i32 - bg[0] as i32).abs() <= tol &&
