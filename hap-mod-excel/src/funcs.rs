@@ -95,7 +95,7 @@ hap_fn!(hap_excel_write, WriteParams, |p| {
                 Value::String(s) => { let _ = ws.write_string(row_idx, c as u16, s); },
                 Value::Number(n) => { let _ = ws.write_number(row_idx, c as u16, n.as_f64().unwrap_or(0.0)); },
                 Value::Bool(b) => { let _ = ws.write_boolean(row_idx, c as u16, *b); },
-                _ => { let _ = ws.write_string(row_idx, c as u16, &val.to_string()); },
+                _ => { let _ = ws.write_string(row_idx, c as u16, val.to_string()); },
             }
         }
         row_idx += 1;
@@ -250,7 +250,7 @@ hap_fn!(hap_excel_set_cell, SetCellParams, |p| {
         Value::String(s) => { ws.write_string(row, col, s).map_err(|e| HapError::internal(e.to_string()))?; },
         Value::Number(n) => { ws.write_number(row, col, n.as_f64().unwrap_or(0.0)).map_err(|e| HapError::internal(e.to_string()))?; },
         Value::Bool(b) => { ws.write_boolean(row, col, *b).map_err(|e| HapError::internal(e.to_string()))?; },
-        _ => { ws.write_string(row, col, &p.value.to_string()).map_err(|e| HapError::internal(e.to_string()))?; },
+        _ => { ws.write_string(row, col, p.value.to_string()).map_err(|e| HapError::internal(e.to_string()))?; },
     }
     Ok(json!(true))
 });
@@ -274,7 +274,7 @@ hap_fn!(hap_excel_set_range, SetRangeParams, |p| {
                 Value::Number(n) => { ws.write_number(r, c, n.as_f64().unwrap_or(0.0)).map_err(|e| HapError::internal(e.to_string()))?; },
                 Value::Bool(b) => { ws.write_boolean(r, c, *b).map_err(|e| HapError::internal(e.to_string()))?; },
                 Value::Null => {},
-                _ => { ws.write_string(r, c, &val.to_string()).map_err(|e| HapError::internal(e.to_string()))?; },
+                _ => { ws.write_string(r, c, val.to_string()).map_err(|e| HapError::internal(e.to_string()))?; },
             }
             count += 1;
         }
@@ -580,7 +580,7 @@ hap_fn!(hap_excel_add_data_validation, DataValParams, |p| {
             rust_xlsxwriter::DataValidation::new()
                 .allow_text_length(rust_xlsxwriter::DataValidationRule::Between(mn, mx))
         },
-        _ => return Err(HapError::invalid_param(&format!("unsupported validation type: {}", p.r#type))),
+        _ => return Err(HapError::invalid_param(format!("unsupported validation type: {}", p.r#type))),
     };
     let dv = if let Some(ref msg) = p.error_message {
         dv.set_error_message(msg).map_err(|e| HapError::internal(e.to_string()))?
