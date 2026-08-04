@@ -65,7 +65,7 @@ hap_fn!(hap_screen_save_capture, SaveCaptureParams, |p| {
 // ---------- list_displays ----------
 hap_fn!(hap_screen_list_displays, Value, |_p| {
     let monitors = xcap::Monitor::all().map_err(|e| HapError::internal(e.to_string()))?;
-    let list: Vec<Value> = monitors.iter().enumerate().map(|(_i, m)| {
+    let list: Vec<Value> = monitors.iter().map(|m| {
         json!({
             "id": ok_or_default(m.id()), "name": ok_or_empty(m.name()),
             "width": ok_or_default(m.width()), "height": ok_or_default(m.height()),

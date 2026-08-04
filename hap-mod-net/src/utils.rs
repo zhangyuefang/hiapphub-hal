@@ -285,7 +285,7 @@ hap_fn!(hap_net_traceroute, TracerouteParams, |p| {
 #[derive(Deserialize)]
 pub struct WolParams { pub mac_address: String, pub broadcast_ip: Option<String> }
 hap_fn!(hap_net_wake_on_lan, WolParams, |p| {
-    let mac_bytes: Vec<u8> = p.mac_address.split(|c| c == ':' || c == '-')
+    let mac_bytes: Vec<u8> = p.mac_address.split([':', '-'])
         .map(|s| u8::from_str_radix(s, 16).unwrap_or(0)).collect();
     if mac_bytes.len() != 6 { return Err(HapError::invalid_param("invalid MAC address format")); }
     let mut magic = vec![0xFFu8; 6];

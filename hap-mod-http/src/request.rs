@@ -66,6 +66,7 @@ fn response_to_json(resp: ureq::Response) -> Result<Value, HapError> {
     Ok(json!({"status": status, "headers": resp_headers, "body": body, "url": url}))
 }
 
+#[allow(clippy::too_many_arguments)]
 fn do_request(method: &str, url: &str, headers: Option<&Map<String, Value>>,
               body: Option<&str>, timeout_ms: Option<u32>, follow_redirects: bool,
               _max_redirects: Option<i32>, _verify_ssl: bool) -> Result<Value, HapError> {
@@ -214,7 +215,7 @@ hap_fn!(hap_http_upload, UploadParams, |p| {
     body_bytes.extend_from_slice(&data);
     body_bytes.extend_from_slice(format!("\r\n--{boundary}--\r\n").as_bytes());
     let resp = req.send_bytes(&body_bytes).map_err(|e| match e {
-        ureq::Error::Status(_, r) => { return HapError::internal(format!("status {}", r.status())); }
+        ureq::Error::Status(_, r) => { HapError::internal(format!("status {}", r.status()))}
         other => HapError::internal(other.to_string()),
     })?;
     let status = resp.status();

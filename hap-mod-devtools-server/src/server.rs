@@ -436,13 +436,11 @@ fn write_port_file(port: u16, token: &str) {
         Some("/data/storage/el2/base/haps/entry/files/.hiapphub".to_string()),
         Some("/data/storage/el2/base/files/.hiapphub".to_string()),
     ];
-    for dir_opt in &candidates {
-        if let Some(dir) = dir_opt {
-            let _ = std::fs::create_dir_all(dir);
-            let path = format!("{}/devtools.port", dir);
-            if std::fs::write(&path, &content).is_ok() {
-                return;
-            }
+    for dir in candidates.iter().flatten() {
+        let _ = std::fs::create_dir_all(dir);
+        let path = format!("{}/devtools.port", dir);
+        if std::fs::write(&path, &content).is_ok() {
+            return;
         }
     }
 }

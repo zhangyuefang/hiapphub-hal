@@ -281,7 +281,7 @@ hap_fn!(hap_system_machine_id, EmptyParams, |_p| {
         .and_then(|o| String::from_utf8(o.stdout).ok())
         .and_then(|s| {
             s.lines().find(|l| l.contains("IOPlatformUUID"))
-                .and_then(|l| l.split('=').last())
+                .and_then(|l| l.split('=').next_back())
                 .map(|v| v.trim().trim_matches('"').to_string())
         }).unwrap_or_default();
     #[cfg(not(target_os = "macos"))]
@@ -305,7 +305,7 @@ hap_fn!(hap_system_default_browser, EmptyParams, |_p| {
                     if let Some(bundle) = raw.lines()
                         .skip_while(|l| !l.contains("LSHandlerURLScheme") || !l.contains("http"))
                         .find(|l| l.contains("LSHandlerRoleAll"))
-                        .and_then(|l| l.split('=').last())
+                        .and_then(|l| l.split('=').next_back())
                     {
                         let name = bundle.trim().trim_matches('"').trim_matches(';').to_string();
                         return Ok(json!({"name": name, "path": ""}));

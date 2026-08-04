@@ -113,7 +113,7 @@ hap_fn!(hap_shell_ext_get_file_icon, GetFileIconParams, |p| {
         };
         let output = std::process::Command::new("osascript")
             .arg("-l").arg("JavaScript")
-            .arg("-e").arg(&format!(
+            .arg("-e").arg(format!(
                 r#"ObjC.import('AppKit');
                 var ws = $.NSWorkspace.sharedWorkspace;
                 var icon = ws.iconForFile($('{}'));
@@ -210,11 +210,7 @@ pub struct CreateShortcutParams {
 hap_fn!(hap_shell_ext_create_shortcut, CreateShortcutParams, |p| {
     #[cfg(target_os = "macos")]
     {
-        if p.shortcut_path.ends_with(".app") || p.shortcut_path.ends_with(".lnk") {
-            std::os::unix::fs::symlink(&p.target_path, &p.shortcut_path)?;
-        } else {
-            std::os::unix::fs::symlink(&p.target_path, &p.shortcut_path)?;
-        }
+        std::os::unix::fs::symlink(&p.target_path, &p.shortcut_path)?;
     }
     #[cfg(target_os = "linux")]
     { std::os::unix::fs::symlink(&p.target_path, &p.shortcut_path)?; }

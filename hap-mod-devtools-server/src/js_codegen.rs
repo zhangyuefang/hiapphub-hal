@@ -56,7 +56,7 @@ pub fn dom_query(selector: &str, query_type: &str, all: bool, limit: usize, incl
 }
 
 pub fn dom_tree(selector: Option<&str>, max_depth: u32) -> String {
-    let root_sel = selector.map(|s| json_str(s)).unwrap_or_else(|| "null".into());
+    let root_sel = selector.map(json_str).unwrap_or_else(|| "null".into());
     format!(
         "(function(){{var md={max_depth};function ser(el,d){{if(!el||d>md&&md!==-1)return null;var o={{tag:el.tagName?el.tagName.toLowerCase():'#text'}};if(!el.tagName){{o.text=el.textContent;return o}}if(el.id)o.id=el.id;if(el.className&&typeof el.className==='string')o.class=el.className;var ch=[];for(var i=0;i<el.childNodes.length;i++){{var c=ser(el.childNodes[i],d+1);if(c)ch.push(c)}}if(ch.length)o.children=ch;return o}}var root={root_sel}?document.querySelector({root_sel}):document.body;if(!root)return{{error:'root not found'}};return ser(root,0)}})()"
     )
@@ -230,8 +230,8 @@ pub fn mock_set(module: &str, command: &str, response: &Value) -> String {
 }
 
 pub fn mock_clear(module: Option<&str>, command: Option<&str>) -> String {
-    let m = module.map(|m| json_str(m)).unwrap_or("null".into());
-    let c = command.map(|c| json_str(c)).unwrap_or("null".into());
+    let m = module.map(json_str).unwrap_or("null".into());
+    let c = command.map(json_str).unwrap_or("null".into());
     format!("(function(){{if(!window.__hapMocks)return{{cleared:0}};var m={m};var c={c};if(m&&c){{delete window.__hapMocks[m+'::'+c];return{{cleared:1}}}}if(m){{var n=0;Object.keys(window.__hapMocks).forEach(function(k){{if(k.startsWith(m+'::')){{delete window.__hapMocks[k];n++}}}});return{{cleared:n}}}}var n=Object.keys(window.__hapMocks).length;window.__hapMocks={{}};return{{cleared:n}}}})()")
 }
 

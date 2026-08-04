@@ -28,22 +28,22 @@ hap_fn!(hap_devtools_server_start, StartParams, |p| {
     let http = p.http_port.unwrap_or(19769);
     let ws = p.ws_port.unwrap_or(19768);
     let internal = p.internal_port.unwrap_or(19767);
-    server::start(http, ws, internal).map_err(|e| hap_common::HapError::internal(e))
+    server::start(http, ws, internal).map_err(hap_common::HapError::internal)
 });
 
 #[derive(Deserialize)]
 pub struct EmptyParams {}
 
 hap_fn!(hap_devtools_server_stop, EmptyParams, |_p| {
-    server::stop().map_err(|e| hap_common::HapError::internal(e))
+    server::stop().map_err(hap_common::HapError::internal)
 });
 
 hap_fn!(hap_devtools_server_status, EmptyParams, |_p| {
-    server::status().map_err(|e| hap_common::HapError::internal(e))
+    server::status().map_err(hap_common::HapError::internal)
 });
 
 hap_fn!(hap_devtools_server_get_ws_clients, EmptyParams, |_p| {
-    let state = server::get_state().map_err(|e| hap_common::HapError::internal(e))?;
+    let state = server::get_state().map_err(hap_common::HapError::internal)?;
     let rt = server::runtime();
     let clients = rt.block_on(state.ws.get_clients_info());
     Ok(serde_json::to_value(clients).unwrap_or(serde_json::json!([])))
@@ -56,7 +56,7 @@ pub struct WsSendParams {
 }
 
 hap_fn!(hap_devtools_server_ws_send, WsSendParams, |p| {
-    let state = server::get_state().map_err(|e| hap_common::HapError::internal(e))?;
+    let state = server::get_state().map_err(hap_common::HapError::internal)?;
     let msg: Value = serde_json::from_str(&p.message).unwrap_or(Value::String(p.message));
     let rt = server::runtime();
     let ok = rt.block_on(state.ws.send_to_client(&p.client_id, &msg));
@@ -69,7 +69,7 @@ pub struct WsBroadcastParams {
 }
 
 hap_fn!(hap_devtools_server_ws_broadcast, WsBroadcastParams, |p| {
-    let state = server::get_state().map_err(|e| hap_common::HapError::internal(e))?;
+    let state = server::get_state().map_err(hap_common::HapError::internal)?;
     let msg: Value = serde_json::from_str(&p.message).unwrap_or(Value::String(p.message));
     let rt = server::runtime();
     rt.block_on(state.ws.broadcast(&msg));
@@ -83,7 +83,7 @@ pub struct WsSendToRoleParams {
 }
 
 hap_fn!(hap_devtools_server_ws_send_to_role, WsSendToRoleParams, |p| {
-    let state = server::get_state().map_err(|e| hap_common::HapError::internal(e))?;
+    let state = server::get_state().map_err(hap_common::HapError::internal)?;
     let msg: Value = serde_json::from_str(&p.message).unwrap_or(Value::String(p.message));
     let rt = server::runtime();
     let count = rt.block_on(state.ws.send_to_role(&p.role, &msg));
@@ -96,7 +96,7 @@ pub struct PollParams {
 }
 
 hap_fn!(hap_devtools_server_poll_callbacks, PollParams, |p| {
-    let state = server::get_state().map_err(|e| hap_common::HapError::internal(e))?;
+    let state = server::get_state().map_err(hap_common::HapError::internal)?;
     let rt = server::runtime();
     let limit = p.limit.unwrap_or(10);
     let callbacks = rt.block_on(async {
@@ -119,7 +119,7 @@ pub struct RespondCallbackParams {
 }
 
 hap_fn!(hap_devtools_server_respond_callback, RespondCallbackParams, |p| {
-    let state = server::get_state().map_err(|e| hap_common::HapError::internal(e))?;
+    let state = server::get_state().map_err(hap_common::HapError::internal)?;
     let rt = server::runtime();
     let found = rt.block_on(async {
         let mut pending = state.pending_callbacks.lock().await;
@@ -144,7 +144,7 @@ pub struct RegisterRouteParams {
 }
 
 hap_fn!(hap_devtools_server_register_internal_route, RegisterRouteParams, |p| {
-    let state = server::get_state().map_err(|e| hap_common::HapError::internal(e))?;
+    let state = server::get_state().map_err(hap_common::HapError::internal)?;
     let rt = server::runtime();
     rt.block_on(async {
         let mut routes = state.internal_routes.write().await;
@@ -154,7 +154,7 @@ hap_fn!(hap_devtools_server_register_internal_route, RegisterRouteParams, |p| {
 });
 
 hap_fn!(hap_devtools_server_poll_internal_requests, PollParams, |p| {
-    let state = server::get_state().map_err(|e| hap_common::HapError::internal(e))?;
+    let state = server::get_state().map_err(hap_common::HapError::internal)?;
     let rt = server::runtime();
     let limit = p.limit.unwrap_or(10);
     let requests = rt.block_on(async {
@@ -179,7 +179,7 @@ pub struct RespondInternalParams {
 }
 
 hap_fn!(hap_devtools_server_respond_internal, RespondInternalParams, |p| {
-    let state = server::get_state().map_err(|e| hap_common::HapError::internal(e))?;
+    let state = server::get_state().map_err(hap_common::HapError::internal)?;
     let rt = server::runtime();
     let found = rt.block_on(async {
         let mut reqs = state.internal_requests.lock().await;

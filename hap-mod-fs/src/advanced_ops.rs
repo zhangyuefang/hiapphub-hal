@@ -120,7 +120,7 @@ hap_fn!(hap_fs_read_text_lines, ReadTextLinesParams, |p| {
     use std::io::{BufRead, BufReader};
     let f = std::fs::File::open(&p.path)?;
     let reader = BufReader::new(f);
-    let all_lines: Vec<String> = reader.lines().filter_map(|l| l.ok()).collect();
+    let all_lines: Vec<String> = reader.lines().map_while(Result::ok).collect();
     let total = all_lines.len() as i32;
     let start = (p.start_line.unwrap_or(1).max(1) - 1) as usize;
     let end = (start + p.count as usize).min(all_lines.len());

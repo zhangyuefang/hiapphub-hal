@@ -76,13 +76,13 @@ hap_fn!(hap_power_screen_off, Value, |_p| {
 hap_fn!(hap_power_idle_time, Value, |_p| {
     #[cfg(target_os = "macos")]
     {
-        let output = std::process::Command::new("ioreg").args(&["-c", "IOHIDSystem"]).output();
+        let output = std::process::Command::new("ioreg").args(["-c", "IOHIDSystem"]).output();
         if let Ok(out) = output {
             let s = String::from_utf8_lossy(&out.stdout);
             if let Some(pos) = s.find("HIDIdleTime") {
                 let after = &s[pos..];
                 if let Some(num) = after.split('=').nth(1) {
-                    if let Ok(ns) = num.trim().split_whitespace().next().unwrap_or("0").parse::<i64>() {
+                    if let Ok(ns) = num.split_whitespace().next().unwrap_or("0").parse::<i64>() {
                         return Ok(json!(ns / 1_000_000));
                     }
                 }

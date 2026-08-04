@@ -70,7 +70,7 @@ fn encode_barcode(data: &str, format: &str) -> Result<Vec<u8>, HapError> {
         "ean8" => sym::ean8::EAN8::new(data).map_err(|e| HapError::internal(e.to_string()))?.encode(),
         "codabar" => sym::codabar::Codabar::new(data).map_err(|e| HapError::internal(e.to_string()))?.encode(),
         "code93" => sym::code93::Code93::new(data).map_err(|e| HapError::internal(e.to_string()))?.encode(),
-        _ => return Err(HapError::invalid_param(&format!("unsupported barcode format: {}", format))),
+        _ => return Err(HapError::invalid_param(format!("unsupported barcode format: {}", format))),
     };
     Ok(encoded)
 }
@@ -118,16 +118,13 @@ fn decode_from_dynamic_image(img: &image::DynamicImage) -> serde_json::Value {
     let h = luma.height();
     let raw = luma.into_raw();
     let mut results = Vec::new();
-    match rxing::helpers::detect_multiple_in_luma(raw, w, h) {
-        Ok(detected) => {
-            for r in &detected {
-                results.push(json!({
-                    "format": format!("{:?}", r.getBarcodeFormat()),
-                    "data": r.getText(),
-                }));
-            }
-        },
-        Err(_) => {},
+    if let Ok(detected) = rxing::helpers::detect_multiple_in_luma(raw, w, h) {
+        for r in &detected {
+            results.push(json!({
+                "format": format!("{:?}", r.getBarcodeFormat()),
+                "data": r.getText(),
+            }));
+        }
     }
     json!(results)
 }

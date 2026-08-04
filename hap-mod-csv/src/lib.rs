@@ -137,9 +137,8 @@ hap_fn!(hap_csv_read_stream, ReadStreamParams, |p| {
     let offset = p.offset as usize;
     let limit = p.limit as usize;
     let mut rows = Vec::new();
-    let mut idx = 0usize;
     let mut has_more = false;
-    for result in rdr.records() {
+    for (idx, result) in rdr.records().enumerate() {
         let record = result.map_err(|e| HapError::internal(e.to_string()))?;
         if idx >= offset && rows.len() < limit {
             rows.push(record.iter().map(|s| json!(s)).collect::<Vec<_>>());
@@ -147,7 +146,6 @@ hap_fn!(hap_csv_read_stream, ReadStreamParams, |p| {
             has_more = true;
             break;
         }
-        idx += 1;
     }
     Ok(json!({ "headers": headers, "rows": rows, "has_more": has_more }))
 });

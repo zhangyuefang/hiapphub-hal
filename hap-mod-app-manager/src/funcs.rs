@@ -328,12 +328,12 @@ fn days_to_ymd(days: u64) -> (u64, u64, u64) {
     let mut y = 1970u64;
     let mut r = days;
     loop {
-        let dy = if y % 4 == 0 && (y % 100 != 0 || y % 400 == 0) { 366 } else { 365 };
+        let dy = if y.is_multiple_of(4) && (!y.is_multiple_of(100) || y.is_multiple_of(400)) { 366 } else { 365 };
         if r < dy { break; }
         r -= dy;
         y += 1;
     }
-    let leap = y % 4 == 0 && (y % 100 != 0 || y % 400 == 0);
+    let leap = y.is_multiple_of(4) && (!y.is_multiple_of(100) || y.is_multiple_of(400));
     let dm: [u64; 12] = if leap { [31,29,31,30,31,30,31,31,30,31,30,31] } else { [31,28,31,30,31,30,31,31,30,31,30,31] };
     let mut m = 0;
     for &md in &dm { if r < md { break; } r -= md; m += 1; }

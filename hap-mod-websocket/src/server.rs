@@ -16,9 +16,11 @@ struct BufferedMessage {
     message: String,
 }
 
+type WsClientMap = HashMap<String, Arc<Mutex<WebSocket<TcpStream>>>>;
+
 struct WsServer {
     running: Arc<AtomicBool>,
-    clients: Arc<Mutex<HashMap<String, Arc<Mutex<WebSocket<TcpStream>>>>>>,
+    clients: Arc<Mutex<WsClientMap>>,
     #[allow(dead_code)]
     addr: String,
 }
@@ -42,8 +44,7 @@ hap_fn!(hap_ws_server_listen, ListenParams, |p| {
 
     let server_id = format!("wss_{}", SERVER_COUNTER.fetch_add(1, Ordering::Relaxed));
     let running = Arc::new(AtomicBool::new(true));
-    let clients: Arc<Mutex<HashMap<String, Arc<Mutex<WebSocket<TcpStream>>>>>> =
-        Arc::new(Mutex::new(HashMap::new()));
+    let clients: Arc<Mutex<WsClientMap>> = Arc::new(Mutex::new(HashMap::new()));
 
     let run_flag = running.clone();
     let clients_ref = clients.clone();
@@ -76,7 +77,7 @@ hap_fn!(hap_ws_server_listen, ListenParams, |p| {
                             match msg {
                                 Ok(Message::Text(text)) => {
                                     let mut buf = MSG_BUFFER.lock().unwrap();
-                                    let queue = buf.entry(buf_sid.clone()).or_insert_with(Vec::new);
+                                    let queue = buf.entry(buf_sid.clone()).or_default();
                                     if queue.len() < 1000 {
                                         queue.push(BufferedMessage { client_id: cid.clone(), message: text });
                                     }
@@ -190,7 +191,7 @@ pub struct ServerRecvParams { pub server_id: String, pub limit: Option<usize> }
 hap_fn!(hap_ws_server_recv, ServerRecvParams, |p| {
     let limit = p.limit.unwrap_or(50);
     let mut buf = MSG_BUFFER.lock().unwrap();
-    let queue = buf.entry(p.server_id.clone()).or_insert_with(Vec::new);
+    let queue = buf.entry(p.server_id.clone()).or_default();
     let count = queue.len().min(limit);
     let messages: Vec<Value> = queue.drain(..count)
         .map(|m| json!({"client_id": m.client_id, "message": m.message}))

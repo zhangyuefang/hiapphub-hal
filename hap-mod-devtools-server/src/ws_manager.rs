@@ -152,9 +152,8 @@ impl WsManager {
         let clients = self.clients.read().await;
         let mut count = 0;
         for c in clients.iter() {
-            if c.role.as_deref() == Some(role) {
-                if c.tx.send(msg_str.clone()).is_ok() { count += 1; }
-            }
+            if c.role.as_deref() == Some(role)
+                && c.tx.send(msg_str.clone()).is_ok() { count += 1; }
         }
         count
     }

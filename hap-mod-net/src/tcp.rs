@@ -25,7 +25,7 @@ fn encode_data(data: &[u8], encoding: &str) -> String {
 
 fn decode_data(data: &str, encoding: &str) -> Result<Vec<u8>, HapError> {
     match encoding {
-        "hex" => hex_decode(data).map_err(|e| HapError::invalid_param(e)),
+        "hex" => hex_decode(data).map_err(HapError::invalid_param),
         "base64" => base64::Engine::decode(&base64::engine::general_purpose::STANDARD, data)
             .map_err(|e| HapError::invalid_param(e.to_string())),
         _ => Ok(data.as_bytes().to_vec()),
@@ -61,7 +61,7 @@ hap_fn!(hap_net_tcp_connect, TcpConnectParams, |p| {
             .unwrap_or_default().into_iter()
             .map(|ip| SocketAddr::new(ip, p.port as u16)).collect();
         if addrs.is_empty() { return HapError::invalid_param(format!("cannot resolve: {e}")); }
-        return HapError::invalid_param("".to_string()); // won't reach
+        HapError::invalid_param("".to_string())// won't reach
     }).or_else(|_| -> Result<SocketAddr, HapError> {
         let addrs: Vec<SocketAddr> = dns_lookup::lookup_host(&p.host)
             .map_err(|e| HapError::internal(e.to_string()))?

@@ -86,7 +86,7 @@ hap_fn!(hap_serial_write, WriteParams, |p| {
 
 fn hex_to_bytes(s: &str) -> Result<Vec<u8>, HapError> {
     let clean: String = s.chars().filter(|c| !c.is_whitespace()).collect();
-    if clean.len() % 2 != 0 { return Err(HapError::invalid_param("hex length must be even")); }
+    if !clean.len().is_multiple_of(2) { return Err(HapError::invalid_param("hex length must be even")); }
     (0..clean.len()).step_by(2)
         .map(|i| u8::from_str_radix(&clean[i..i+2], 16).map_err(|e| HapError::invalid_param(e.to_string())))
         .collect()

@@ -127,7 +127,7 @@ struct FetchParams {
 hap_fn!(hap_email_fetch, FetchParams, |params| {
     let port = params.port.unwrap_or(993) as u16;
     let folder = params.folder.as_deref().unwrap_or("INBOX");
-    let limit = params.limit.unwrap_or(20).max(1).min(100) as usize;
+    let limit = params.limit.unwrap_or(20).clamp(1, 100) as usize;
 
     let mut session = connect_imap(&params.host, port, &params.username, &params.password)?;
 

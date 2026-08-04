@@ -219,7 +219,7 @@ hap_fn!(hap_audio_record_stop, RecIdParams, |p| {
         drop(entry);
         std::thread::sleep(std::time::Duration::from_millis(50));
         let size = std::fs::metadata(&p.recorder_id).map(|m| m.len() as i64).ok()
-            .or_else(|| Some(0)).unwrap();
+            .unwrap_or(0);
         Ok(json!({"path": "", "duration_ms": duration_ms, "size": size}))
     } else {
         Ok(json!({"path": "", "duration_ms": 0.0, "size": 0}))

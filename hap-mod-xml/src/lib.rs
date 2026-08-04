@@ -158,7 +158,7 @@ hap_fn!(hap_xml_query_xpath, XPathParams, |p| {
 
     let parts: Vec<&str> = p.xpath.trim_start_matches('/').split('/').filter(|s| !s.is_empty()).collect();
     let root = doc.root_element();
-    let mut nodes: Vec<roxmltree::Node> = if parts.first().map_or(false, |&p| p == root.tag_name().name()) {
+    let mut nodes: Vec<roxmltree::Node> = if parts.first().is_some_and(|&p| p == root.tag_name().name()) {
         vec![root]
     } else {
         return Ok(json!(Vec::<String>::new()));

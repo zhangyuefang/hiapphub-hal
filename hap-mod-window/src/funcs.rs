@@ -27,7 +27,7 @@ struct ListParams {
 hap_fn!(hap_window_list, ListParams, |params| {
     let visible = params.visible_only.unwrap_or(true);
     #[cfg(target_os = "macos")]
-    { return list_windows_macos(visible); }
+    { list_windows_macos(visible)}
     #[cfg(not(target_os = "macos"))]
     { Ok(json!([])) }
 });
@@ -44,7 +44,7 @@ hap_fn!(hap_window_get_active, EmptyParams, |_params| {
             .output()
             .map_err(|e| HapError::internal(format!("{e}")))?;
         let name = String::from_utf8_lossy(&output.stdout).trim().to_string();
-        return Ok(json!({ "name": name, "window_id": name }));
+        Ok(json!({ "name": name, "window_id": name }))
     }
     #[cfg(not(target_os = "macos"))]
     { Ok(json!({})) }
@@ -65,7 +65,7 @@ hap_fn!(hap_window_focus, WindowIdParams, |params| {
         );
         Command::new("osascript").args(["-e", &script]).output()
             .map_err(|e| HapError::internal(format!("{e}")))?;
-        return Ok(json!(true));
+        Ok(json!(true))
     }
     #[cfg(not(target_os = "macos"))]
     { Ok(json!(true)) }
@@ -88,7 +88,7 @@ hap_fn!(hap_window_move_to, MoveToParams, |params| {
         );
         Command::new("osascript").args(["-e", &script]).output()
             .map_err(|e| HapError::internal(format!("{e}")))?;
-        return Ok(json!(true));
+        Ok(json!(true))
     }
     #[cfg(not(target_os = "macos"))]
     { Ok(json!(true)) }
@@ -111,7 +111,7 @@ hap_fn!(hap_window_resize, ResizeParams, |params| {
         );
         Command::new("osascript").args(["-e", &script]).output()
             .map_err(|e| HapError::internal(format!("{e}")))?;
-        return Ok(json!(true));
+        Ok(json!(true))
     }
     #[cfg(not(target_os = "macos"))]
     { Ok(json!(true)) }
@@ -126,7 +126,7 @@ hap_fn!(hap_window_minimize, WindowIdParams, |params| {
         );
         Command::new("osascript").args(["-e", &script]).output()
             .map_err(|e| HapError::internal(format!("{e}")))?;
-        return Ok(json!(true));
+        Ok(json!(true))
     }
     #[cfg(not(target_os = "macos"))]
     { Ok(json!(true)) }
@@ -142,7 +142,7 @@ hap_fn!(hap_window_maximize, WindowIdParams, |params| {
         );
         Command::new("osascript").args(["-e", &script]).output()
             .map_err(|e| HapError::internal(format!("{e}")))?;
-        return Ok(json!(true));
+        Ok(json!(true))
     }
     #[cfg(not(target_os = "macos"))]
     { Ok(json!(true)) }
@@ -157,7 +157,7 @@ hap_fn!(hap_window_restore, WindowIdParams, |params| {
         );
         Command::new("osascript").args(["-e", &script]).output()
             .map_err(|e| HapError::internal(format!("{e}")))?;
-        return Ok(json!(true));
+        Ok(json!(true))
     }
     #[cfg(not(target_os = "macos"))]
     { Ok(json!(true)) }
@@ -183,7 +183,7 @@ hap_fn!(hap_window_close, WindowIdParams, |params| {
         );
         Command::new("osascript").args(["-e", &script]).output()
             .map_err(|e| HapError::internal(format!("{e}")))?;
-        return Ok(json!(true));
+        Ok(json!(true))
     }
     #[cfg(not(target_os = "macos"))]
     { Ok(json!(true)) }
@@ -212,7 +212,7 @@ hap_fn!(hap_window_screenshot, ScreenshotParams, |params| {
         Command::new("osascript").args(["-e", &script]).output().ok();
         Command::new("screencapture").args(["-w", "-x", &save_path]).output()
             .map_err(|e| HapError::internal(format!("{e}")))?;
-        return Ok(json!({ "path": save_path, "success": true }));
+        Ok(json!({ "path": save_path, "success": true }))
     }
     #[cfg(not(target_os = "macos"))]
     { Ok(json!({ "path": save_path, "success": false, "error": "not supported" })) }
@@ -236,7 +236,7 @@ hap_fn!(hap_window_get_bounds, WindowIdParams, |params| {
         if parts.len() == 4 {
             return Ok(json!({ "x": parts[0], "y": parts[1], "width": parts[2], "height": parts[3] }));
         }
-        return Ok(json!({ "x": 0, "y": 0, "width": 0, "height": 0 }));
+        Ok(json!({ "x": 0, "y": 0, "width": 0, "height": 0 }))
     }
     #[cfg(not(target_os = "macos"))]
     { Ok(json!({ "x": 0, "y": 0, "width": 0, "height": 0 })) }

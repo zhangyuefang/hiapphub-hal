@@ -23,14 +23,14 @@ fn get_db(ns: &str, custom_dir: Option<&str>) -> Result<(), HapError> {
     let db_path = dir.join(format!("{ns}.db"));
     let mut conns = CONNECTIONS.lock().unwrap();
     let key = db_path.to_string_lossy().to_string();
-    if !conns.contains_key(&key) {
+    if let std::collections::hash_map::Entry::Vacant(e) = conns.entry(key) {
         let conn = Connection::open(&db_path)
             .map_err(|e| HapError::internal(format!("SQLite open: {e}")))?;
         conn.execute_batch(
             "CREATE TABLE IF NOT EXISTS kv (key TEXT PRIMARY KEY, value TEXT NOT NULL, expires_at INTEGER);
              CREATE INDEX IF NOT EXISTS idx_expires ON kv(expires_at);"
         ).map_err(|e| HapError::internal(format!("init: {e}")))?;
-        conns.insert(key, conn);
+        e.insert(conn);
     }
     Ok(())
 }
@@ -127,7 +127,7 @@ hap_fn!(hap_storage_get_many, GetManyParams, |p| {
         let mut result = Map::new();
         for k in &p.keys {
             let v: Option<String> = conn.query_row("SELECT value FROM kv WHERE key = ?1", params![k], |row| row.get(0)).ok();
-            result.insert(k.clone(), v.map(|s| Value::String(s)).unwrap_or(Value::Null));
+            result.insert(k.clone(), v.map(Value::String).unwrap_or(Value::Null));
         }
         Ok(Value::Object(result))
     })
